@@ -2,18 +2,37 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
 import { Card } from "@/components/ui/card";
-import { Loader2, Brain } from "lucide-react";
+import { Loader2, Brain, AlertCircle } from "lucide-react";
 import { supabase } from "@/integrations/supabase/client";
 import { toast } from "sonner";
 
+type CheckResult = {
+  ai_probability: number;
+  human_probability: number;
+  confidence?: string;
+  reasoning?: string;
+};
+
+const SAMPLE_TEXTS = {
+  ai: "The implementation of artificial intelligence in modern business operations has revolutionized organizational efficiency. Companies are increasingly leveraging machine learning algorithms to optimize their processes. This technological advancement enables enhanced decision-making capabilities and improved operational outcomes.",
+  human: "Look, I've been working with AI tools for months now, and honestly? It's pretty wild how much they've changed my workflow. Sure, they're not perfect - sometimes they mess up in hilarious ways - but when they work, they're absolute game-changers for my productivity."
+};
+
 const AIChecker = () => {
   const [text, setText] = useState("");
-  const [result, setResult] = useState<{ ai_probability: number; human_probability: number } | null>(null);
+  const [result, setResult] = useState<CheckResult | null>(null);
   const [isLoading, setIsLoading] = useState(false);
+
+  const wordCount = text.trim().split(/\s+/).filter(w => w.length > 0).length;
 
   const handleCheck = async () => {
     if (!text.trim()) {
       toast.error("Please enter some text to check");
+      return;
+    }
+
+    if (wordCount < 50) {
+      toast.error("Please provide at least 50 words for accurate detection");
       return;
     }
 
@@ -25,7 +44,10 @@ const AIChecker = () => {
         body: { text }
       });
 
-      if (error) throw error;
+      if (error) {
+        toast.error(data?.error || "Failed to analyze text. Please try again.");
+        return;
+      }
 
       setResult(data);
       toast.success("Analysis complete!");
@@ -35,6 +57,28 @@ const AIChecker = () => {
     } finally {
       setIsLoading(false);
     }
+  };
+
+  const loadSample = (type: 'ai' | 'human') => {
+    setText(SAMPLE_TEXTS[type]);
+    setResult(null);
+    toast.success(`Sample ${type === 'ai' ? 'AI' : 'human'} text loaded`);
+  };
+
+  const getConfidenceColor = (confidence?: string) => {
+    if (!confidence) return 'text-muted-foreground';
+    switch (confidence.toLowerCase()) {
+      case 'high': return 'text-green-500';
+      case 'medium': return 'text-yellow-500';
+      case 'low': return 'text-orange-500';
+      default: return 'text-muted-foreground';
+    }
+  };
+
+  const getResultZone = (aiProb: number) => {
+    if (aiProb >= 70) return { label: 'Likely AI', color: 'from-red-500/20 to-red-600/20 border-red-500/50' };
+    if (aiProb >= 40) return { label: 'Uncertain', color: 'from-yellow-500/20 to-yellow-600/20 border-yellow-500/50' };
+    return { label: 'Likely Human', color: 'from-green-500/20 to-green-600/20 border-green-500/50' };
   };
 
   return (
@@ -54,23 +98,50 @@ const AIChecker = () => {
 
         <Card className="p-6 space-y-6 bg-gradient-to-br from-card to-card/80 backdrop-blur border-border/50 shadow-xl animate-in fade-in slide-in-from-bottom duration-700">
           <div className="space-y-2">
-            <label className="text-sm font-medium text-foreground">Your Text</label>
+            <div className="flex items-center justify-between">
+              <label className="text-sm font-medium text-foreground">Your Text</label>
+              <div className="flex gap-2">
+                <Button
+                  onClick={() => loadSample('ai')}
+                  variant="outline"
+                  size="sm"
+                  className="text-xs"
+                >
+                  Try AI Sample
+                </Button>
+                <Button
+                  onClick={() => loadSample('human')}
+                  variant="outline"
+                  size="sm"
+                  className="text-xs"
+                >
+                  Try Human Sample
+                </Button>
+              </div>
+            </div>
             <Textarea
               value={text}
               onChange={(e) => setText(e.target.value)}
               placeholder="Paste your text here for AI detection analysis..."
               className="min-h-[300px] resize-none bg-background/50 border-border/50 focus:border-primary transition-all"
+              maxLength={10000}
             />
             <div className="flex justify-between items-center">
               <p className="text-xs text-muted-foreground">
-                {text.length} characters
+                {text.length} / 10,000 characters • {wordCount} words
               </p>
+              {wordCount > 0 && wordCount < 50 && (
+                <p className="text-xs text-orange-500 flex items-center gap-1">
+                  <AlertCircle className="w-3 h-3" />
+                  Need 50+ words for accuracy
+                </p>
+              )}
             </div>
           </div>
 
           <Button
             onClick={handleCheck}
-            disabled={isLoading || !text.trim()}
+            disabled={isLoading || !text.trim() || wordCount < 50}
             className="w-full bg-gradient-to-r from-primary to-secondary hover:opacity-90 transition-all shadow-lg hover:shadow-xl"
             size="lg"
           >
@@ -86,8 +157,28 @@ const AIChecker = () => {
         </Card>
 
         {result && (
-          <Card className="p-8 space-y-6 bg-gradient-to-br from-card to-card/80 backdrop-blur border-border/50 shadow-xl animate-in fade-in slide-in-from-bottom duration-500">
-            <h3 className="text-xl font-semibold text-center">Analysis Results</h3>
+          <Card className={`p-8 space-y-6 bg-gradient-to-br ${getResultZone(result.ai_probability).color} backdrop-blur border shadow-xl animate-in fade-in slide-in-from-bottom duration-500`}>
+            <div className="flex items-center justify-between">
+              <h3 className="text-xl font-semibold">Analysis Results</h3>
+              <div className="flex items-center gap-2">
+                {result.confidence && (
+                  <span className={`text-sm font-medium ${getConfidenceColor(result.confidence)}`}>
+                    {result.confidence.charAt(0).toUpperCase() + result.confidence.slice(1)} Confidence
+                  </span>
+                )}
+              </div>
+            </div>
+            
+            <div className="p-4 bg-card/50 rounded-lg border border-border/30">
+              <p className="text-center text-2xl font-bold">
+                {getResultZone(result.ai_probability).label}
+              </p>
+              <p className="text-center text-sm text-muted-foreground mt-1">
+                {result.ai_probability > result.human_probability
+                  ? "This text shows strong AI-generated patterns"
+                  : "This text shows human-written characteristics"}
+              </p>
+            </div>
             
             <div className="grid md:grid-cols-2 gap-6">
               <div className="space-y-3">
@@ -117,13 +208,14 @@ const AIChecker = () => {
               </div>
             </div>
 
-            <div className="pt-4 border-t border-border/50">
-              <p className="text-center text-sm text-muted-foreground">
-                {result.ai_probability > result.human_probability
-                  ? "This text appears to be AI-generated"
-                  : "This text appears to be human-written"}
-              </p>
-            </div>
+            {result.reasoning && (
+              <div className="pt-4 border-t border-border/50">
+                <p className="text-sm text-muted-foreground">
+                  <span className="font-semibold text-foreground">Analysis: </span>
+                  {result.reasoning}
+                </p>
+              </div>
+            )}
           </Card>
         )}
       </div>

@@ -14,11 +14,24 @@ serve(async (req) => {
   }
 
   try {
+    // Validate API key at startup
+    if (!openAIApiKey) {
+      console.error('OPENAI_API_KEY is not configured');
+      return new Response(
+        JSON.stringify({ error: 'API configuration error. Please contact support.' }), 
+        { 
+          status: 500, 
+          headers: { ...corsHeaders, 'Content-Type': 'application/json' } 
+        }
+      );
+    }
+
     const { text } = await req.json();
     
+    // Input validation
     if (!text || text.trim().length === 0) {
       return new Response(
-        JSON.stringify({ error: 'Text is required' }), 
+        JSON.stringify({ error: 'Please enter some text to analyze' }), 
         { 
           status: 400, 
           headers: { ...corsHeaders, 'Content-Type': 'application/json' } 
@@ -26,7 +39,28 @@ serve(async (req) => {
       );
     }
 
-    console.log('Checking text for AI probability:', text.substring(0, 100));
+    const wordCount = text.trim().split(/\s+/).length;
+    if (wordCount < 50) {
+      return new Response(
+        JSON.stringify({ error: 'Please provide at least 50 words for accurate detection' }), 
+        { 
+          status: 400, 
+          headers: { ...corsHeaders, 'Content-Type': 'application/json' } 
+        }
+      );
+    }
+
+    if (text.length > 10000) {
+      return new Response(
+        JSON.stringify({ error: 'Text is too long. Maximum 10,000 characters allowed' }), 
+        { 
+          status: 400, 
+          headers: { ...corsHeaders, 'Content-Type': 'application/json' } 
+        }
+      );
+    }
+
+    console.log('Checking text for AI probability:', text.substring(0, 100), `(${wordCount} words)`);
 
     const response = await fetch('https://api.openai.com/v1/chat/completions', {
       method: 'POST',
@@ -39,7 +73,22 @@ serve(async (req) => {
         messages: [
           { 
             role: 'system', 
-            content: 'You are an AI detection system. Classify this text as AI-written or Human-written. Respond ONLY with JSON in this format: {"ai_probability": <number 0-100>, "human_probability": <number 0-100>}. Do not include any other text or explanation.' 
+            content: `You are an advanced AI detection system. Analyze the text for AI-generated patterns including:
+- Repetitive sentence structures and predictable patterns
+- Overly formal or generic language
+- Lack of personal voice or unique perspective
+- Perfect grammar with no natural human errors
+- Uniform vocabulary complexity throughout
+- Generic transitions and connector words
+- Absence of colloquialisms or informal expressions
+
+Respond ONLY with JSON in this exact format: 
+{
+  "ai_probability": <number 0-100>, 
+  "human_probability": <number 0-100>,
+  "confidence": <"high" | "medium" | "low">,
+  "reasoning": "<brief 1-2 sentence explanation>"
+}` 
           },
           { role: 'user', content: text }
         ],
@@ -50,6 +99,27 @@ serve(async (req) => {
     if (!response.ok) {
       const errorText = await response.text();
       console.error('OpenAI API error:', response.status, errorText);
+      
+      if (response.status === 401) {
+        return new Response(
+          JSON.stringify({ error: 'API authentication failed. Please check your API key configuration.' }), 
+          { 
+            status: 500, 
+            headers: { ...corsHeaders, 'Content-Type': 'application/json' } 
+          }
+        );
+      }
+      
+      if (response.status === 429) {
+        return new Response(
+          JSON.stringify({ error: 'Too many requests. Please wait a moment and try again.' }), 
+          { 
+            status: 429, 
+            headers: { ...corsHeaders, 'Content-Type': 'application/json' } 
+          }
+        );
+      }
+      
       throw new Error(`OpenAI API error: ${response.status}`);
     }
 
@@ -68,7 +138,7 @@ serve(async (req) => {
     console.error('Error in ai-checker function:', error);
     const errorMessage = error instanceof Error ? error.message : 'An error occurred';
     return new Response(
-      JSON.stringify({ error: errorMessage }), 
+      JSON.stringify({ error: 'Failed to analyze text. Please try again.' }), 
       {
         status: 500,
         headers: { ...corsHeaders, 'Content-Type': 'application/json' },

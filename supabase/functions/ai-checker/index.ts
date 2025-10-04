@@ -73,12 +73,14 @@ serve(async (req) => {
         messages: [
           { 
             role: 'system', 
-            content: `You are an advanced AI detection system. Analyze the text for AI-generated patterns including:
+            content: `You are an advanced AI detection system. Analyze the text for AI-generated patterns and provide both overall and sentence-level analysis.
+
+Analyze each sentence for:
 - Repetitive sentence structures and predictable patterns
 - Overly formal or generic language
 - Lack of personal voice or unique perspective
 - Perfect grammar with no natural human errors
-- Uniform vocabulary complexity throughout
+- Uniform vocabulary complexity
 - Generic transitions and connector words
 - Absence of colloquialisms or informal expressions
 
@@ -87,8 +89,16 @@ Respond ONLY with JSON in this exact format:
   "ai_probability": <number 0-100>, 
   "human_probability": <number 0-100>,
   "confidence": <"high" | "medium" | "low">,
-  "reasoning": "<brief 1-2 sentence explanation>"
-}` 
+  "reasoning": "<brief 1-2 sentence explanation>",
+  "segments": [
+    {
+      "text": "<exact sentence or phrase from input>",
+      "ai_probability": <number 0-100>
+    }
+  ]
+}
+
+Break the text into natural segments (sentences or short phrases). Each segment should have its own AI probability score.` 
           },
           { role: 'user', content: text }
         ],

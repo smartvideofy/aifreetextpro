@@ -6,11 +6,17 @@ import { Loader2, Brain, AlertCircle } from "lucide-react";
 import { supabase } from "@/integrations/supabase/client";
 import { toast } from "sonner";
 
+type Segment = {
+  text: string;
+  ai_probability: number;
+};
+
 type CheckResult = {
   ai_probability: number;
   human_probability: number;
   confidence?: string;
   reasoning?: string;
+  segments?: Segment[];
 };
 
 const SAMPLE_TEXTS = {
@@ -79,6 +85,12 @@ const AIChecker = () => {
     if (aiProb >= 70) return { label: 'Likely AI', color: 'from-red-500/20 to-red-600/20 border-red-500/50' };
     if (aiProb >= 40) return { label: 'Uncertain', color: 'from-yellow-500/20 to-yellow-600/20 border-yellow-500/50' };
     return { label: 'Likely Human', color: 'from-green-500/20 to-green-600/20 border-green-500/50' };
+  };
+
+  const getSegmentHighlight = (aiProb: number) => {
+    if (aiProb >= 70) return 'bg-red-200/80 text-red-900 dark:bg-red-500/30 dark:text-red-100';
+    if (aiProb >= 40) return 'bg-yellow-200/80 text-yellow-900 dark:bg-yellow-500/30 dark:text-yellow-100';
+    return 'bg-green-200/80 text-green-900 dark:bg-green-500/30 dark:text-green-100';
   };
 
   return (
@@ -214,6 +226,39 @@ const AIChecker = () => {
                   <span className="font-semibold text-foreground">Analysis: </span>
                   {result.reasoning}
                 </p>
+              </div>
+            )}
+
+            {result.segments && result.segments.length > 0 && (
+              <div className="pt-6 border-t border-border/50 space-y-3">
+                <div className="flex items-center justify-between">
+                  <h4 className="text-sm font-semibold text-foreground">Highlighted Text Analysis</h4>
+                  <div className="flex items-center gap-3 text-xs">
+                    <div className="flex items-center gap-1">
+                      <div className="w-3 h-3 rounded bg-red-200 dark:bg-red-500/30 border border-red-400"></div>
+                      <span className="text-muted-foreground">AI</span>
+                    </div>
+                    <div className="flex items-center gap-1">
+                      <div className="w-3 h-3 rounded bg-yellow-200 dark:bg-yellow-500/30 border border-yellow-400"></div>
+                      <span className="text-muted-foreground">Uncertain</span>
+                    </div>
+                    <div className="flex items-center gap-1">
+                      <div className="w-3 h-3 rounded bg-green-200 dark:bg-green-500/30 border border-green-400"></div>
+                      <span className="text-muted-foreground">Human</span>
+                    </div>
+                  </div>
+                </div>
+                <div className="p-4 bg-background/50 rounded-lg border border-border/30 leading-relaxed">
+                  {result.segments.map((segment, index) => (
+                    <span
+                      key={index}
+                      className={`${getSegmentHighlight(segment.ai_probability)} px-1 py-0.5 rounded transition-colors`}
+                      title={`AI Probability: ${segment.ai_probability}%`}
+                    >
+                      {segment.text}
+                    </span>
+                  ))}
+                </div>
               </div>
             )}
           </Card>

@@ -1,15 +1,17 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
 import { Card } from "@/components/ui/card";
 import { Label } from "@/components/ui/label";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { Loader2, Sparkles, Copy, Check, Download, RefreshCw } from "lucide-react";
+import { Loader2, Sparkles, Copy, Check, Download, RefreshCw, Clock, Info, Brain } from "lucide-react";
 import { supabase } from "@/integrations/supabase/client";
 import { toast } from "sonner";
+import { Slider } from "@/components/ui/slider";
+import { Badge } from "@/components/ui/badge";
 
-const SAMPLE_AI_TEXT = "The implementation of artificial intelligence in modern business operations has revolutionized organizational efficiency. Companies are increasingly leveraging machine learning algorithms to optimize their processes. This technological advancement enables enhanced decision-making capabilities and improved operational outcomes across various industries.";
+const SAMPLE_AI_TEXT = "The implementation of artificial intelligence in modern business operations has revolutionized organizational efficiency. Companies are increasingly leveraging machine learning algorithms to optimize their processes and streamline workflows. This technological advancement enables enhanced decision-making capabilities and improved operational outcomes across various industries. Organizations must carefully evaluate the integration of these systems to maximize return on investment.";
 
 type ChangeStats = {
   wordsChanged: number;
@@ -25,6 +27,26 @@ const Humanizer = () => {
   const [style, setStyle] = useState<'professional' | 'casual' | 'academic'>('professional');
   const [preserveFormatting, setPreserveFormatting] = useState(false);
   const [changeStats, setChangeStats] = useState<ChangeStats | null>(null);
+  const [strength, setStrength] = useState<number>(50);
+  const [domain, setDomain] = useState<string>('general');
+  const [processingTime, setProcessingTime] = useState<number | null>(null);
+  const [autoRecheck, setAutoRecheck] = useState(false);
+  const [recheckResult, setRecheckResult] = useState<any>(null);
+
+  // Keyboard shortcuts
+  useEffect(() => {
+    const handleKeyPress = (e: KeyboardEvent) => {
+      if ((e.ctrlKey || e.metaKey) && e.key === 'Enter') {
+        e.preventDefault();
+        if (text.trim() && !isLoading) {
+          handleHumanize();
+        }
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyPress);
+    return () => window.removeEventListener('keydown', handleKeyPress);
+  }, [text, isLoading]);
 
   const wordCount = text.trim().split(/\s+/).filter(w => w.length > 0).length;
 
@@ -37,11 +59,17 @@ const Humanizer = () => {
     setIsLoading(true);
     setHumanizedText("");
     setChangeStats(null);
+    setRecheckResult(null);
+    setProcessingTime(null);
+    const startTime = Date.now();
 
     try {
       const { data, error } = await supabase.functions.invoke('humanizer', {
-        body: { text, style, preserveFormatting }
+        body: { text, style, preserveFormatting, strength, domain }
       });
+
+      const endTime = Date.now();
+      setProcessingTime((endTime - startTime) / 1000);
 
       if (error) {
         toast.error(data?.error || "Failed to humanize text. Please try again.");
@@ -51,11 +79,30 @@ const Humanizer = () => {
       setHumanizedText(data.humanizedText);
       setChangeStats(data.changeStats);
       toast.success("Text humanized successfully!");
+
+      // Auto re-check if enabled
+      if (autoRecheck) {
+        await performRecheck(data.humanizedText);
+      }
     } catch (error) {
       console.error('Error humanizing text:', error);
       toast.error("Failed to humanize text. Please try again.");
     } finally {
       setIsLoading(false);
+    }
+  };
+
+  const performRecheck = async (textToCheck: string) => {
+    try {
+      const { data, error } = await supabase.functions.invoke('ai-checker', {
+        body: { text: textToCheck }
+      });
+
+      if (!error && data) {
+        setRecheckResult(data);
+      }
+    } catch (error) {
+      console.error('Error rechecking text:', error);
     }
   };
 
@@ -83,7 +130,22 @@ const Humanizer = () => {
     setText(SAMPLE_AI_TEXT);
     setHumanizedText("");
     setChangeStats(null);
+    setRecheckResult(null);
     toast.success("Sample AI text loaded");
+  };
+
+  const getStrengthLabel = () => {
+    if (strength < 30) return 'Light';
+    if (strength < 60) return 'Moderate';
+    if (strength < 85) return 'Aggressive';
+    return 'Maximum';
+  };
+
+  const getStrengthDescription = () => {
+    if (strength < 30) return 'Minimal changes, preserve most original structure';
+    if (strength < 60) return 'Balanced approach with natural improvements';
+    if (strength < 85) return 'Significant rewriting for maximum humanization';
+    return 'Complete transformation with creative liberty';
   };
 
   return (
@@ -97,7 +159,7 @@ const Humanizer = () => {
             Text Humanizer
           </h1>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Transform AI-generated text into natural, human-like writing with improved flow and authenticity
+            Transform AI-generated text into natural, human-like writing powered by AI
           </p>
         </div>
 
@@ -128,44 +190,96 @@ const Humanizer = () => {
             </div>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-4">
+          <div className="space-y-4">
             <div className="space-y-2">
-              <Label htmlFor="style" className="text-sm font-medium">Writing Style</Label>
-              <Select value={style} onValueChange={(val: any) => setStyle(val)}>
-                <SelectTrigger id="style" className="bg-background/50">
-                  <SelectValue />
-                </SelectTrigger>
-                <SelectContent className="bg-background z-50">
-                  <SelectItem value="professional">Professional</SelectItem>
-                  <SelectItem value="casual">Casual</SelectItem>
-                  <SelectItem value="academic">Academic</SelectItem>
-                </SelectContent>
-              </Select>
-              <p className="text-xs text-muted-foreground">
-                {style === 'professional' && 'Balanced formality with natural readability'}
-                {style === 'casual' && 'Conversational and friendly tone'}
-                {style === 'academic' && 'Scholarly with natural flow'}
-              </p>
+              <Label className="text-sm font-medium">Humanization Strength: {getStrengthLabel()}</Label>
+              <Slider
+                value={[strength]}
+                onValueChange={(val) => setStrength(val[0])}
+                min={0}
+                max={100}
+                step={10}
+                className="w-full"
+              />
+              <p className="text-xs text-muted-foreground">{getStrengthDescription()}</p>
             </div>
 
-            <div className="space-y-2">
-              <Label className="text-sm font-medium">Formatting Options</Label>
-              <div className="flex items-center space-x-2 h-10">
-                <Checkbox 
-                  id="preserve" 
-                  checked={preserveFormatting}
-                  onCheckedChange={(checked) => setPreserveFormatting(checked as boolean)}
-                />
-                <label
-                  htmlFor="preserve"
-                  className="text-sm text-muted-foreground cursor-pointer leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                >
-                  Preserve line breaks and spacing
-                </label>
+            <div className="grid md:grid-cols-2 gap-4">
+              <div className="space-y-2">
+                <Label htmlFor="style" className="text-sm font-medium">Writing Style</Label>
+                <Select value={style} onValueChange={(val: any) => setStyle(val)}>
+                  <SelectTrigger id="style" className="bg-background/50">
+                    <SelectValue />
+                  </SelectTrigger>
+                  <SelectContent className="bg-background z-50">
+                    <SelectItem value="professional">Professional</SelectItem>
+                    <SelectItem value="casual">Casual</SelectItem>
+                    <SelectItem value="academic">Academic</SelectItem>
+                  </SelectContent>
+                </Select>
+                <p className="text-xs text-muted-foreground">
+                  {style === 'professional' && 'Balanced formality with natural readability'}
+                  {style === 'casual' && 'Conversational and friendly tone'}
+                  {style === 'academic' && 'Scholarly with natural flow'}
+                </p>
               </div>
-              <p className="text-xs text-muted-foreground">
-                Keep original paragraph structure intact
-              </p>
+
+              <div className="space-y-2">
+                <Label htmlFor="domain" className="text-sm font-medium">Content Domain</Label>
+                <Select value={domain} onValueChange={setDomain}>
+                  <SelectTrigger id="domain" className="bg-background/50">
+                    <SelectValue />
+                  </SelectTrigger>
+                  <SelectContent className="bg-background z-50">
+                    <SelectItem value="general">General</SelectItem>
+                    <SelectItem value="blog">Blog Post</SelectItem>
+                    <SelectItem value="marketing">Marketing Copy</SelectItem>
+                    <SelectItem value="technical">Technical Writing</SelectItem>
+                    <SelectItem value="creative">Creative Writing</SelectItem>
+                    <SelectItem value="email">Email</SelectItem>
+                  </SelectContent>
+                </Select>
+                <p className="text-xs text-muted-foreground">
+                  {domain === 'general' && 'Versatile humanization for any content'}
+                  {domain === 'blog' && 'Engaging, conversational blog style'}
+                  {domain === 'marketing' && 'Persuasive with natural flow'}
+                  {domain === 'technical' && 'Clear technical content with personality'}
+                  {domain === 'creative' && 'Enhanced creativity and flair'}
+                  {domain === 'email' && 'Professional yet personal communication'}
+                </p>
+              </div>
+            </div>
+
+            <div className="space-y-3">
+              <Label className="text-sm font-medium">Options</Label>
+              <div className="flex flex-col gap-2">
+                <div className="flex items-center space-x-2">
+                  <Checkbox 
+                    id="preserve" 
+                    checked={preserveFormatting}
+                    onCheckedChange={(checked) => setPreserveFormatting(checked as boolean)}
+                  />
+                  <label
+                    htmlFor="preserve"
+                    className="text-sm text-muted-foreground cursor-pointer leading-none"
+                  >
+                    Preserve line breaks and spacing
+                  </label>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <Checkbox 
+                    id="autoRecheck" 
+                    checked={autoRecheck}
+                    onCheckedChange={(checked) => setAutoRecheck(checked as boolean)}
+                  />
+                  <label
+                    htmlFor="autoRecheck"
+                    className="text-sm text-muted-foreground cursor-pointer leading-none"
+                  >
+                    Auto re-check with AI detector after humanizing
+                  </label>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -178,12 +292,13 @@ const Humanizer = () => {
             {isLoading ? (
               <>
                 <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-                Humanizing...
+                {autoRecheck ? 'Humanizing & Checking...' : 'Humanizing...'}
               </>
             ) : (
               <>
                 <Sparkles className="mr-2 h-4 w-4" />
                 Humanize Text
+                <span className="ml-2 text-xs opacity-70">(Ctrl+Enter)</span>
               </>
             )}
           </Button>
@@ -192,7 +307,15 @@ const Humanizer = () => {
         {humanizedText && (
           <Card className="p-6 space-y-4 bg-gradient-to-br from-card to-card/80 backdrop-blur border-border/50 shadow-xl animate-in fade-in slide-in-from-bottom duration-500">
             <div className="flex items-center justify-between">
-              <h3 className="text-lg font-semibold">Humanized Result</h3>
+              <div className="flex items-center gap-3">
+                <h3 className="text-lg font-semibold">Humanized Result</h3>
+                {processingTime && (
+                  <Badge variant="outline" className="gap-1">
+                    <Clock className="w-3 h-3" />
+                    {processingTime.toFixed(2)}s
+                  </Badge>
+                )}
+              </div>
               <div className="flex gap-2">
                 <Button
                   onClick={handleHumanize}
@@ -234,6 +357,33 @@ const Humanizer = () => {
               </div>
             </div>
 
+            {recheckResult && (
+              <Card className={`p-4 ${
+                recheckResult.ai_probability < 40 ? 'bg-green-500/10 border-green-500/30' :
+                recheckResult.ai_probability < 70 ? 'bg-yellow-500/10 border-yellow-500/30' :
+                'bg-red-500/10 border-red-500/30'
+              }`}>
+                <div className="flex items-center justify-between mb-2">
+                  <h4 className="font-semibold text-sm flex items-center gap-2">
+                    <Brain className="w-4 h-4" />
+                    AI Detection Re-check
+                  </h4>
+                  <Badge variant="outline">
+                    {recheckResult.ai_probability}% AI Probability
+                  </Badge>
+                </div>
+                <p className="text-sm text-muted-foreground">
+                  {recheckResult.ai_probability < 40 ? (
+                    '✅ Great! Text appears naturally written and likely to pass AI detectors.'
+                  ) : recheckResult.ai_probability < 70 ? (
+                    '⚠️ Some AI patterns still detected. Consider adjusting humanization strength.'
+                  ) : (
+                    '❌ Still showing strong AI patterns. Try increasing humanization strength or regenerating.'
+                  )}
+                </p>
+              </Card>
+            )}
+
             {changeStats && (
               <div className="flex items-center gap-4 p-3 bg-secondary/10 rounded-lg border border-secondary/20">
                 <Sparkles className="h-4 w-4 text-secondary flex-shrink-0" />
@@ -267,7 +417,7 @@ const Humanizer = () => {
 
             <div className="flex justify-between items-center text-xs text-muted-foreground pt-2 border-t border-border/50">
               <span>{humanizedText.length} characters • {humanizedText.trim().split(/\s+/).length} words</span>
-              <span>✨ Humanized with AI</span>
+              <span>✨ Powered by AI</span>
             </div>
           </Card>
         )}

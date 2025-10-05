@@ -26,7 +26,7 @@ serve(async (req) => {
       );
     }
 
-    const { text, style = 'professional', preserveFormatting = false } = await req.json();
+    const { text, style = 'professional', preserveFormatting = false, strength = 50, domain = 'general' } = await req.json();
     
     // Input validation
     if (!text || text.trim().length === 0) {
@@ -49,7 +49,35 @@ serve(async (req) => {
       );
     }
 
-    console.log('Humanizing text:', text.substring(0, 100), 'Style:', style, 'Preserve:', preserveFormatting);
+    console.log('Humanizing text:', text.substring(0, 100), 'Style:', style, 'Preserve:', preserveFormatting, 'Strength:', strength, 'Domain:', domain);
+
+    // Build strength-specific instructions
+    let strengthInstructions = '';
+    if (strength < 30) {
+      strengthInstructions = 'Apply light modifications. Keep most of the original structure intact while adding subtle human touches.';
+    } else if (strength < 60) {
+      strengthInstructions = 'Apply moderate changes. Balance between preserving original meaning and adding natural human flow.';
+    } else if (strength < 85) {
+      strengthInstructions = 'Apply aggressive rewriting. Significantly transform the text while maintaining core message.';
+    } else {
+      strengthInstructions = 'Apply maximum transformation. Completely rewrite with creative liberty while preserving key points.';
+    }
+
+    // Build domain-specific instructions
+    let domainInstructions = '';
+    if (domain === 'blog') {
+      domainInstructions = 'Write in an engaging blog style with personal touches, relatable examples, and conversational flow.';
+    } else if (domain === 'marketing') {
+      domainInstructions = 'Use persuasive, benefit-focused language while maintaining authenticity and natural appeal.';
+    } else if (domain === 'technical') {
+      domainInstructions = 'Maintain technical accuracy while adding personality and making complex concepts accessible.';
+    } else if (domain === 'creative') {
+      domainInstructions = 'Enhance creativity with vivid imagery, emotional resonance, and distinctive voice.';
+    } else if (domain === 'email') {
+      domainInstructions = 'Write in a professional yet personal email style - friendly, direct, and appropriately informal.';
+    } else {
+      domainInstructions = 'Use versatile, natural writing suitable for general content.';
+    }
 
     // Build style-specific instructions
     let styleInstructions = '';
@@ -81,12 +109,14 @@ serve(async (req) => {
         messages: [
           { 
             role: 'system', 
-            content: `You are a professional humanizer. Transform AI-like text into natural, human-like writing.
+            content: `You are a professional humanizer powered by AI. Transform AI-like text into natural, human-like writing.
 
+${strengthInstructions}
+${domainInstructions}
 ${styleInstructions}
 ${toneGuidance}
 
-Apply these techniques:
+Apply these techniques based on the strength level:
 1. Vary sentence length - mix short punchy sentences with longer, more complex ones
 2. Add natural flow - use transitions that sound conversational, not robotic
 3. Include subtle imperfections - occasional contractions, informal phrasing where appropriate
@@ -94,6 +124,8 @@ Apply these techniques:
 5. Add human touches - personal perspective, natural emphasis, relatable examples
 6. Maintain authenticity - ensure the tone feels genuine and conversational
 7. Preserve the original meaning - keep all key points and information intact
+8. Avoid AI-typical phrases like "delve into", "comprehensive", "leverage", "ecosystem" when overused
+9. Add personality markers - rhetorical questions, emphasis, natural asides
 
 ${formattingInstruction}
 

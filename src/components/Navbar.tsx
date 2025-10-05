@@ -50,6 +50,22 @@ const Navbar = () => {
                 Humanizer
               </Button>
             </Link>
+            <Link to="/about">
+              <Button 
+                variant={isActive("/about") ? "default" : "ghost"}
+                className="transition-colors"
+              >
+                About
+              </Button>
+            </Link>
+            <Link to="/contact">
+              <Button 
+                variant={isActive("/contact") ? "default" : "ghost"}
+                className="transition-colors"
+              >
+                Contact
+              </Button>
+            </Link>
           </div>
 
           {/* Mobile Navigation */}

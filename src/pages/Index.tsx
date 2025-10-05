@@ -2,7 +2,8 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { ArrowRight, CheckCircle, Zap, Shield, FileText, Sparkles, Brain, Target } from "lucide-react";
+import { ArrowRight, CheckCircle, Zap, Shield, FileText, Sparkles, Brain, Target, Star } from "lucide-react";
+import beforeAfterDemo from "@/assets/before-after-demo.png";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import AnimatedBackground from "@/components/AnimatedBackground";
@@ -21,14 +22,14 @@ const Index = () => {
           
           <div className="container mx-auto px-4 relative z-10">
             <div className="text-center space-y-6 max-w-4xl mx-auto animate-in fade-in slide-in-from-bottom duration-700">
-              <h1 className="text-5xl md:text-7xl font-bold leading-tight">
+              <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold leading-tight">
                 <span className="bg-gradient-to-r from-primary via-secondary to-primary bg-clip-text text-transparent bg-[length:200%_auto] animate-[gradient_8s_linear_infinite]">
-                  Detect AI. Rewrite Human.
+                  Turn AI Text into Authentic Human Voice
                 </span>
               </h1>
               
-              <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto">
-                Instantly identify AI-generated text and transform it into natural, human tone.
+              <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto">
+                Instantly identify AI-generated content and humanize it naturally. Perfect for writers, students, and professionals.
               </p>
 
               <div className="flex items-center justify-center gap-4 text-sm text-muted-foreground pt-2">
@@ -50,23 +51,42 @@ const Index = () => {
                 <Link to="/ai-checker" className="w-full sm:w-auto">
                   <Button 
                     size="lg" 
-                    className="text-lg px-10 py-6 bg-gradient-to-r from-primary via-primary/90 to-secondary hover:opacity-90 shadow-xl hover:shadow-2xl shadow-primary/20 group w-full transition-all"
+                    className="text-base sm:text-lg px-8 sm:px-10 py-5 sm:py-6 bg-gradient-to-r from-primary via-primary/90 to-secondary hover:opacity-90 shadow-xl hover:shadow-2xl shadow-primary/20 group w-full transition-all font-bold"
                   >
                     <Brain className="mr-2 h-5 w-5" />
-                    Try AI Checker
+                    Try Detector Now
                     <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                   </Button>
                 </Link>
                 <Link to="/humanizer" className="w-full sm:w-auto">
                   <Button 
                     size="lg"
-                    className="text-lg px-10 py-6 bg-gradient-to-r from-secondary via-secondary/90 to-primary hover:opacity-90 shadow-xl hover:shadow-2xl shadow-secondary/20 group w-full transition-all"
+                    className="text-base sm:text-lg px-8 sm:px-10 py-5 sm:py-6 bg-gradient-to-r from-secondary via-secondary/90 to-primary hover:opacity-90 shadow-xl hover:shadow-2xl shadow-secondary/20 group w-full transition-all font-bold"
                   >
                     <Sparkles className="mr-2 h-5 w-5" />
-                    Try Humanizer
+                    Humanize Your Text Now
                     <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                   </Button>
                 </Link>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Visual Demo Preview */}
+        <section className="py-12 md:py-20 bg-gradient-to-b from-background to-card/20">
+          <div className="container mx-auto px-4">
+            <div className="max-w-5xl mx-auto">
+              <div className="text-center mb-8">
+                <h2 className="text-3xl md:text-4xl font-bold mb-4">See the Transformation</h2>
+                <p className="text-muted-foreground text-lg">Watch AI text become authentically human in seconds</p>
+              </div>
+              <div className="rounded-xl overflow-hidden shadow-2xl border border-border/50">
+                <img 
+                  src={beforeAfterDemo} 
+                  alt="Before and after comparison showing AI-generated text transformed into natural human writing" 
+                  className="w-full h-auto"
+                />
               </div>
             </div>
           </div>
@@ -414,22 +434,31 @@ const Index = () => {
         {/* Final CTA */}
         <section className="py-20 md:py-28">
           <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto text-center space-y-10 bg-gradient-to-r from-primary/10 via-secondary/10 to-primary/10 rounded-3xl p-16 border border-border/50">
-              <h2 className="text-4xl md:text-5xl font-bold">
+            <div className="max-w-4xl mx-auto text-center space-y-8 bg-gradient-to-r from-primary/10 via-secondary/10 to-primary/10 rounded-3xl p-8 md:p-16 border border-border/50">
+              <div className="flex justify-center mb-4">
+                <div className="flex gap-1">
+                  {[1, 2, 3, 4, 5].map((star) => (
+                    <Star key={star} className="w-6 h-6 fill-primary text-primary" />
+                  ))}
+                </div>
+              </div>
+              <h2 className="text-3xl md:text-5xl font-bold">
                 Ready to Transform Your Text?
               </h2>
-              <p className="text-xl md:text-2xl text-muted-foreground">
+              <p className="text-lg md:text-2xl text-muted-foreground">
                 Join thousands using AI Free Text Pro to create authentic, human-like content.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
-                <Link to="/ai-checker">
-                  <Button size="lg" className="text-lg px-8 bg-gradient-to-r from-primary to-primary/80 hover:opacity-90 shadow-lg w-full sm:w-auto">
-                    Start Checking
+                <Link to="/ai-checker" className="w-full sm:w-auto">
+                  <Button size="lg" className="text-base sm:text-lg px-8 sm:px-10 py-5 sm:py-6 bg-gradient-to-r from-primary to-primary/80 hover:opacity-90 shadow-xl hover:shadow-2xl shadow-primary/20 w-full font-bold transition-all group">
+                    Try Detector Now
+                    <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                   </Button>
                 </Link>
-                <Link to="/humanizer">
-                  <Button size="lg" className="text-lg px-8 bg-gradient-to-r from-secondary to-secondary/80 hover:opacity-90 shadow-lg w-full sm:w-auto">
-                    Start Humanizing
+                <Link to="/humanizer" className="w-full sm:w-auto">
+                  <Button size="lg" className="text-base sm:text-lg px-8 sm:px-10 py-5 sm:py-6 bg-gradient-to-r from-secondary to-secondary/80 hover:opacity-90 shadow-xl hover:shadow-2xl shadow-secondary/20 w-full font-bold transition-all group">
+                    Humanize Your Text Now
+                    <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                   </Button>
                 </Link>
               </div>

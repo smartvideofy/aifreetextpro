@@ -9,6 +9,7 @@ import Humanizer from "./pages/Humanizer";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsOfService from "./pages/TermsOfService";
 import Contact from "./pages/Contact";
+import About from "./pages/About";
 import NotFound from "./pages/NotFound";
 import Navbar from "./components/Navbar";
 
@@ -27,6 +28,7 @@ const App = () => (
           <Route path="/privacy-policy" element={<><Navbar /><PrivacyPolicy /></>} />
           <Route path="/terms-of-service" element={<><Navbar /><TermsOfService /></>} />
           <Route path="/contact" element={<><Navbar /><Contact /></>} />
+          <Route path="/about" element={<About />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<><Navbar /><NotFound /></>} />
         </Routes>

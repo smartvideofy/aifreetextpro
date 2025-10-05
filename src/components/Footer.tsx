@@ -35,8 +35,11 @@ const Footer = () => {
 
           {/* Legal Column */}
           <div className="space-y-4">
-            <h3 className="font-semibold text-foreground">Legal</h3>
+            <h3 className="font-semibold text-foreground">Company</h3>
             <nav className="flex flex-col gap-2 text-sm">
+              <Link to="/about" className="text-muted-foreground hover:text-primary transition-colors">
+                About Us
+              </Link>
               <Link to="/privacy-policy" className="text-muted-foreground hover:text-primary transition-colors">
                 Privacy Policy
               </Link>
@@ -57,7 +60,15 @@ const Footer = () => {
                 <Mail className="w-4 h-4" />
                 support@aifreetextpro.com
               </a>
+              <a href="#faq" className="text-muted-foreground hover:text-primary transition-colors">
+                FAQs
+              </a>
             </nav>
+            <div className="pt-2">
+              <p className="text-xs text-muted-foreground leading-relaxed">
+                AI Free Text Pro helps you detect and humanize AI-generated content with 98% accuracy. Fast, free, and privacy-focused.
+              </p>
+            </div>
           </div>
         </div>
 

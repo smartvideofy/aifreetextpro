@@ -93,12 +93,13 @@ Respond ONLY with JSON in this exact format:
   "segments": [
     {
       "text": "<exact sentence or phrase from input>",
-      "ai_probability": <number 0-100>
+      "ai_probability": <number 0-100>,
+      "reason": "<brief explanation why this segment was flagged>"
     }
   ]
 }
 
-Break the text into natural segments (sentences or short phrases). Each segment should have its own AI probability score.` 
+Break the text into natural segments (sentences or short phrases). Each segment should have its own AI probability score and a brief reason explaining the detection (e.g., "Formal structure and repetitive phrasing", "Natural conversational tone", "Generic AI transitions").`
           },
           { role: 'user', content: text }
         ],

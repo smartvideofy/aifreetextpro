@@ -11,12 +11,19 @@ import { toast } from "sonner";
 import { Slider } from "@/components/ui/slider";
 import { Badge } from "@/components/ui/badge";
 
-const SAMPLE_AI_TEXT = "The implementation of artificial intelligence in modern business operations has revolutionized organizational efficiency. Companies are increasingly leveraging machine learning algorithms to optimize their processes and streamline workflows. This technological advancement enables enhanced decision-making capabilities and improved operational outcomes across various industries. Organizations must carefully evaluate the integration of these systems to maximize return on investment.";
+const SAMPLE_AI_TEXT = "Artificial intelligence has fundamentally transformed how businesses operate in the modern era. Organizations across diverse sectors are increasingly adopting machine learning algorithms to optimize workflows, enhance productivity, and streamline complex processes. This technological revolution enables companies to make more informed decisions, improve operational efficiency, and achieve better outcomes. However, successful integration requires careful evaluation of costs, benefits, and organizational readiness. Leaders must consider factors such as employee training, system compatibility, data security, and long-term scalability. The implementation process demands strategic planning, substantial investment, and ongoing commitment to adaptation. Companies that navigate these challenges effectively position themselves for sustained competitive advantage in an increasingly digital marketplace. The key lies in balancing innovation with practical execution, ensuring that technological adoption aligns with core business objectives and delivers measurable value.";
 
 type ChangeStats = {
   wordsChanged: number;
   sentencesModified: number;
   restructured: number;
+};
+
+type QualityMetrics = {
+  sentenceLengthVariance: number;
+  vocabularyDiversity: number;
+  humanMarkerDensity: number;
+  patternIrregularity: number;
 };
 
 const Humanizer = () => {
@@ -32,6 +39,10 @@ const Humanizer = () => {
   const [processingTime, setProcessingTime] = useState<number | null>(null);
   const [autoRecheck, setAutoRecheck] = useState(false);
   const [recheckResult, setRecheckResult] = useState<any>(null);
+  const [undetectabilityScore, setUndetectabilityScore] = useState<number | null>(null);
+  const [qualityMetrics, setQualityMetrics] = useState<QualityMetrics | null>(null);
+  const [processingStage, setProcessingStage] = useState<string>('');
+  const [originalAiProbability, setOriginalAiProbability] = useState<number | null>(null);
 
   // Keyboard shortcuts
   useEffect(() => {
@@ -61,39 +72,73 @@ const Humanizer = () => {
     setChangeStats(null);
     setRecheckResult(null);
     setProcessingTime(null);
+    setUndetectabilityScore(null);
+    setQualityMetrics(null);
+    setOriginalAiProbability(null);
     const startTime = Date.now();
 
     try {
+      // Stage 1: Analyzing
+      setProcessingStage('Analyzing patterns...');
+      await new Promise(resolve => setTimeout(resolve, 300));
+
+      // Stage 2: Rewriting
+      setProcessingStage(strength >= 60 ? 'Multi-pass rewriting...' : 'Rewriting...');
+      
       const { data, error } = await supabase.functions.invoke('humanizer', {
         body: { text, style, preserveFormatting, strength, domain }
       });
+
+      // Stage 3: Enhancing
+      setProcessingStage('Enhancing quality...');
+      await new Promise(resolve => setTimeout(resolve, 200));
 
       const endTime = Date.now();
       setProcessingTime((endTime - startTime) / 1000);
 
       if (error) {
         toast.error(data?.error || "Failed to humanize text. Please try again.");
+        setProcessingStage('');
         return;
       }
 
       setHumanizedText(data.humanizedText);
       setChangeStats(data.changeStats);
+      setUndetectabilityScore(data.undetectabilityScore);
+      setQualityMetrics(data.metrics);
+      
+      // Stage 4: Finalizing
+      setProcessingStage('Finalizing...');
+      await new Promise(resolve => setTimeout(resolve, 200));
+      
       toast.success("Text humanized successfully!");
 
       // Auto re-check if enabled
       if (autoRecheck) {
-        await performRecheck(data.humanizedText);
+        setProcessingStage('Running AI detection check...');
+        await performRecheck(data.humanizedText, true);
       }
     } catch (error) {
       console.error('Error humanizing text:', error);
       toast.error("Failed to humanize text. Please try again.");
     } finally {
       setIsLoading(false);
+      setProcessingStage('');
     }
   };
 
-  const performRecheck = async (textToCheck: string) => {
+  const performRecheck = async (textToCheck: string, storeOriginal = false) => {
     try {
+      // Check original if requested
+      if (storeOriginal) {
+        const { data: originalData } = await supabase.functions.invoke('ai-checker', {
+          body: { text }
+        });
+        if (originalData) {
+          setOriginalAiProbability(originalData.ai_probability);
+        }
+      }
+
       const { data, error } = await supabase.functions.invoke('ai-checker', {
         body: { text: textToCheck }
       });
@@ -131,6 +176,9 @@ const Humanizer = () => {
     setHumanizedText("");
     setChangeStats(null);
     setRecheckResult(null);
+    setUndetectabilityScore(null);
+    setQualityMetrics(null);
+    setOriginalAiProbability(null);
     toast.success("Sample AI text loaded");
   };
 
@@ -292,7 +340,7 @@ const Humanizer = () => {
             {isLoading ? (
               <>
                 <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-                {autoRecheck ? 'Humanizing & Checking...' : 'Humanizing...'}
+                {processingStage || (autoRecheck ? 'Humanizing & Checking...' : 'Humanizing...')}
               </>
             ) : (
               <>
@@ -357,30 +405,161 @@ const Humanizer = () => {
               </div>
             </div>
 
+            {undetectabilityScore !== null && (
+              <Card className="p-5 bg-gradient-to-br from-secondary/10 to-primary/5 border-secondary/30">
+                <div className="space-y-4">
+                  <div className="flex items-center justify-between">
+                    <h4 className="font-semibold flex items-center gap-2">
+                      <Sparkles className="w-4 h-4 text-secondary" />
+                      Undetectability Score
+                    </h4>
+                    <Badge 
+                      variant="outline" 
+                      className={`text-lg font-bold px-3 py-1 ${
+                        undetectabilityScore >= 85 ? 'border-green-500/50 text-green-600' :
+                        undetectabilityScore >= 70 ? 'border-blue-500/50 text-blue-600' :
+                        undetectabilityScore >= 55 ? 'border-yellow-500/50 text-yellow-600' :
+                        'border-red-500/50 text-red-600'
+                      }`}
+                    >
+                      {undetectabilityScore}/100
+                    </Badge>
+                  </div>
+                  
+                  {/* Visual Gauge */}
+                  <div className="space-y-2">
+                    <div className="h-3 bg-background/50 rounded-full overflow-hidden">
+                      <div 
+                        className={`h-full transition-all duration-1000 ${
+                          undetectabilityScore >= 85 ? 'bg-gradient-to-r from-green-500 to-green-600' :
+                          undetectabilityScore >= 70 ? 'bg-gradient-to-r from-blue-500 to-blue-600' :
+                          undetectabilityScore >= 55 ? 'bg-gradient-to-r from-yellow-500 to-yellow-600' :
+                          'bg-gradient-to-r from-red-500 to-red-600'
+                        }`}
+                        style={{ width: `${undetectabilityScore}%` }}
+                      />
+                    </div>
+                    <div className="flex justify-between text-xs text-muted-foreground">
+                      <span>Detectable</span>
+                      <span>Highly Natural</span>
+                    </div>
+                  </div>
+
+                  <p className="text-sm text-foreground">
+                    {undetectabilityScore >= 85 ? (
+                      <span className="text-green-600 font-medium">🎯 Excellent - Highly unlikely to be detected as AI</span>
+                    ) : undetectabilityScore >= 70 ? (
+                      <span className="text-blue-600 font-medium">✅ Good - Should pass most AI detectors</span>
+                    ) : undetectabilityScore >= 55 ? (
+                      <span className="text-yellow-600 font-medium">⚠️ Fair - May trigger some detectors</span>
+                    ) : (
+                      <span className="text-red-600 font-medium">⚡ Needs improvement - Try increasing strength</span>
+                    )}
+                  </p>
+
+                  {/* Metrics Breakdown */}
+                  {qualityMetrics && (
+                    <div className="grid grid-cols-2 gap-2 pt-2 border-t border-border/30">
+                      <div className="flex items-center justify-between text-xs">
+                        <span className="text-muted-foreground">Sentence Variety:</span>
+                        <Badge variant="outline" className="text-xs">
+                          {qualityMetrics.sentenceLengthVariance}/25
+                        </Badge>
+                      </div>
+                      <div className="flex items-center justify-between text-xs">
+                        <span className="text-muted-foreground">Vocabulary:</span>
+                        <Badge variant="outline" className="text-xs">
+                          {qualityMetrics.vocabularyDiversity}/25
+                        </Badge>
+                      </div>
+                      <div className="flex items-center justify-between text-xs">
+                        <span className="text-muted-foreground">Human Markers:</span>
+                        <Badge variant="outline" className="text-xs">
+                          {qualityMetrics.humanMarkerDensity}/25
+                        </Badge>
+                      </div>
+                      <div className="flex items-center justify-between text-xs">
+                        <span className="text-muted-foreground">Pattern Mix:</span>
+                        <Badge variant="outline" className="text-xs">
+                          {qualityMetrics.patternIrregularity}/25
+                        </Badge>
+                      </div>
+                    </div>
+                  )}
+                </div>
+              </Card>
+            )}
+
             {recheckResult && (
               <Card className={`p-4 ${
                 recheckResult.ai_probability < 40 ? 'bg-green-500/10 border-green-500/30' :
                 recheckResult.ai_probability < 70 ? 'bg-yellow-500/10 border-yellow-500/30' :
                 'bg-red-500/10 border-red-500/30'
               }`}>
-                <div className="flex items-center justify-between mb-2">
+                <div className="flex items-center justify-between mb-3">
                   <h4 className="font-semibold text-sm flex items-center gap-2">
                     <Brain className="w-4 h-4" />
                     AI Detection Re-check
                   </h4>
-                  <Badge variant="outline">
-                    {recheckResult.ai_probability}% AI Probability
-                  </Badge>
+                  <div className="flex items-center gap-2">
+                    {originalAiProbability !== null && (
+                      <div className="text-xs text-muted-foreground">
+                        Before: <span className="font-semibold">{originalAiProbability}%</span>
+                      </div>
+                    )}
+                    <Badge variant="outline" className={
+                      recheckResult.ai_probability < 40 ? 'border-green-500/50 text-green-600' :
+                      recheckResult.ai_probability < 70 ? 'border-yellow-500/50 text-yellow-600' :
+                      'border-red-500/50 text-red-600'
+                    }>
+                      After: {recheckResult.ai_probability}%
+                    </Badge>
+                  </div>
                 </div>
-                <p className="text-sm text-muted-foreground">
+
+                {originalAiProbability !== null && (
+                  <div className="mb-3 p-2 bg-background/50 rounded border border-border/30">
+                    <div className="flex items-center justify-between text-xs">
+                      <span className="text-muted-foreground">Improvement:</span>
+                      <span className={`font-semibold ${
+                        originalAiProbability - recheckResult.ai_probability > 0 ? 'text-green-600' : 'text-red-600'
+                      }`}>
+                        {originalAiProbability - recheckResult.ai_probability > 0 ? '↓' : '↑'} 
+                        {Math.abs(originalAiProbability - recheckResult.ai_probability)}% 
+                        {originalAiProbability - recheckResult.ai_probability > 0 ? ' reduced' : ' increased'}
+                      </span>
+                    </div>
+                  </div>
+                )}
+
+                <p className="text-sm text-foreground mb-2">
                   {recheckResult.ai_probability < 40 ? (
-                    '✅ Great! Text appears naturally written and likely to pass AI detectors.'
+                    '✅ Excellent! Text appears naturally written and likely to pass AI detectors.'
                   ) : recheckResult.ai_probability < 70 ? (
-                    '⚠️ Some AI patterns still detected. Consider adjusting humanization strength.'
+                    '⚠️ Some AI patterns still detected. Consider these actions:'
                   ) : (
-                    '❌ Still showing strong AI patterns. Try increasing humanization strength or regenerating.'
+                    '❌ Strong AI patterns detected. Recommended actions:'
                   )}
                 </p>
+
+                {recheckResult.ai_probability >= 40 && (
+                  <ul className="text-xs text-muted-foreground space-y-1 ml-4 list-disc">
+                    {recheckResult.ai_probability >= 70 && (
+                      <>
+                        <li>Increase humanization strength to 80+ for aggressive rewriting</li>
+                        <li>Try regenerating with a different writing style</li>
+                        <li>Consider manual edits to add more personal touches</li>
+                      </>
+                    )}
+                    {recheckResult.ai_probability >= 40 && recheckResult.ai_probability < 70 && (
+                      <>
+                        <li>Increase strength by 20-30 points for better results</li>
+                        <li>Add more conversational elements manually</li>
+                        <li>Vary sentence structures further</li>
+                      </>
+                    )}
+                  </ul>
+                )}
               </Card>
             )}
 

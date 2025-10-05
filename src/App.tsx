@@ -10,6 +10,7 @@ import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsOfService from "./pages/TermsOfService";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
+import Navbar from "./components/Navbar";
 
 const queryClient = new QueryClient();
 
@@ -21,13 +22,13 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
-          <Route path="/ai-checker" element={<AIChecker />} />
-          <Route path="/humanizer" element={<Humanizer />} />
-          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-          <Route path="/terms-of-service" element={<TermsOfService />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/ai-checker" element={<><Navbar /><AIChecker /></>} />
+          <Route path="/humanizer" element={<><Navbar /><Humanizer /></>} />
+          <Route path="/privacy-policy" element={<><Navbar /><PrivacyPolicy /></>} />
+          <Route path="/terms-of-service" element={<><Navbar /><TermsOfService /></>} />
+          <Route path="/contact" element={<><Navbar /><Contact /></>} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-          <Route path="*" element={<NotFound />} />
+          <Route path="*" element={<><Navbar /><NotFound /></>} />
         </Routes>
       </BrowserRouter>
     </TooltipProvider>

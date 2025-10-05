@@ -90,9 +90,9 @@ const AIChecker = () => {
   };
 
   const getSegmentHighlight = (aiProb: number) => {
-    if (aiProb >= 70) return 'bg-red-200/80 text-red-900 dark:bg-red-500/30 dark:text-red-100';
-    if (aiProb >= 40) return 'bg-yellow-200/80 text-yellow-900 dark:bg-yellow-500/30 dark:text-yellow-100';
-    return 'bg-green-200/80 text-green-900 dark:bg-green-500/30 dark:text-green-100';
+    if (aiProb >= 70) return 'bg-red-200/80 text-red-900 dark:bg-red-500/40 dark:text-red-50';
+    if (aiProb >= 40) return 'bg-yellow-200/80 text-yellow-900 dark:bg-yellow-500/40 dark:text-yellow-50';
+    return 'bg-green-200/80 text-green-900 dark:bg-green-500/40 dark:text-green-50';
   };
 
   const getBreakdownStats = () => {

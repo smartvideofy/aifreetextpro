@@ -6,6 +6,8 @@ import { ArrowRight, CheckCircle, Zap, Shield, FileText, Sparkles, Brain, Target
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import AnimatedBackground from "@/components/AnimatedBackground";
+import DemoSection from "@/components/DemoSection";
+import AboutSection from "@/components/AboutSection";
 
 const Index = () => {
   return (
@@ -14,38 +16,55 @@ const Index = () => {
       
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="relative py-20 md:py-32 overflow-hidden">
+        <section className="relative py-16 md:py-24 overflow-hidden">
           <AnimatedBackground />
           
           <div className="container mx-auto px-4 relative z-10">
-            <div className="text-center space-y-8 max-w-4xl mx-auto animate-in fade-in slide-in-from-bottom duration-700">
-              <h1 className="text-6xl md:text-8xl font-bold leading-tight tracking-tight">
-                <span className="bg-gradient-to-r from-primary via-secondary to-primary bg-clip-text text-transparent">
+            <div className="text-center space-y-6 max-w-4xl mx-auto animate-in fade-in slide-in-from-bottom duration-700">
+              <h1 className="text-5xl md:text-7xl font-bold leading-tight">
+                <span className="bg-gradient-to-r from-primary via-secondary to-primary bg-clip-text text-transparent bg-[length:200%_auto] animate-[gradient_8s_linear_infinite]">
                   Detect AI. Rewrite Human.
                 </span>
               </h1>
               
-              <p className="text-2xl md:text-3xl text-muted-foreground max-w-3xl mx-auto font-medium">
+              <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto">
                 Instantly identify AI-generated text and transform it into natural, human tone.
               </p>
+
+              <div className="flex items-center justify-center gap-4 text-sm text-muted-foreground pt-2">
+                <div className="flex items-center gap-2">
+                  <CheckCircle className="w-4 h-4 text-primary" />
+                  <span>50K+ Users</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <CheckCircle className="w-4 h-4 text-primary" />
+                  <span>98% Accuracy</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <CheckCircle className="w-4 h-4 text-primary" />
+                  <span>Free Forever</span>
+                </div>
+              </div>
               
-              <div className="flex flex-col sm:flex-row gap-6 justify-center pt-6">
+              <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
                 <Link to="/ai-checker" className="w-full sm:w-auto">
                   <Button 
                     size="lg" 
-                    className="text-xl px-12 py-7 bg-gradient-to-r from-primary via-primary/90 to-secondary hover:opacity-90 shadow-2xl shadow-primary/30 group w-full"
+                    className="text-lg px-10 py-6 bg-gradient-to-r from-primary via-primary/90 to-secondary hover:opacity-90 shadow-xl hover:shadow-2xl shadow-primary/20 group w-full transition-all"
                   >
+                    <Brain className="mr-2 h-5 w-5" />
                     Try AI Checker
-                    <ArrowRight className="ml-3 h-6 w-6 group-hover:translate-x-1 transition-transform" />
+                    <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                   </Button>
                 </Link>
                 <Link to="/humanizer" className="w-full sm:w-auto">
                   <Button 
                     size="lg"
-                    className="text-xl px-12 py-7 bg-gradient-to-r from-secondary via-secondary/90 to-primary hover:opacity-90 shadow-2xl shadow-secondary/30 group w-full"
+                    className="text-lg px-10 py-6 bg-gradient-to-r from-secondary via-secondary/90 to-primary hover:opacity-90 shadow-xl hover:shadow-2xl shadow-secondary/20 group w-full transition-all"
                   >
+                    <Sparkles className="mr-2 h-5 w-5" />
                     Try Humanizer
-                    <Sparkles className="ml-3 h-6 w-6 group-hover:rotate-12 transition-transform" />
+                    <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                   </Button>
                 </Link>
               </div>
@@ -318,54 +337,14 @@ const Index = () => {
           </div>
         </section>
 
-        {/* Demo Preview */}
-        <section className="py-20 md:py-28">
-          <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto">
-              <div className="text-center space-y-6 mb-16">
-                <h2 className="text-4xl md:text-5xl font-bold">
-                  Try It Yourself
-                </h2>
-                <p className="text-muted-foreground text-lg md:text-xl">
-                  Experience the power of AI Free Text Pro with our interactive demo
-                </p>
-              </div>
-              
-              <Card className="p-8 space-y-6 bg-gradient-to-br from-card to-card/80 backdrop-blur border-border/50">
-                <div className="space-y-4">
-                  <label className="text-sm font-medium">Paste your text here to check if it's AI-written</label>
-                  <textarea 
-                    className="w-full h-40 px-4 py-3 bg-background border border-border rounded-lg resize-none focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
-                    placeholder="Paste your text here..."
-                    defaultValue="Artificial intelligence has revolutionized numerous industries by providing innovative solutions to complex problems. Through machine learning algorithms and neural networks, AI systems can analyze vast amounts of data and generate insights that would be impossible for humans to derive manually."
-                  />
-                </div>
-                
-                <div className="flex flex-col sm:flex-row gap-4">
-                  <Link to="/ai-checker" className="flex-1">
-                    <Button className="w-full bg-gradient-to-r from-primary to-primary/80">
-                      Check for AI
-                    </Button>
-                  </Link>
-                  <Link to="/humanizer" className="flex-1">
-                    <Button className="w-full bg-gradient-to-r from-secondary to-secondary/80">
-                      Humanize Text
-                    </Button>
-                  </Link>
-                </div>
-                
-                <div className="pt-4 border-t border-border/50">
-                  <p className="text-sm text-muted-foreground text-center">
-                    This is a sample demonstration. Click the buttons above to try the full tools.
-                  </p>
-                </div>
-              </Card>
-            </div>
-          </div>
-        </section>
+        {/* Interactive Demo Section */}
+        <DemoSection />
 
-        {/* FAQ Section */}
-        <section className="py-20 md:py-28 bg-card/20">
+        {/* About Section */}
+        <AboutSection />
+
+        {/* FAQ Section with Schema */}
+        <section className="py-20 md:py-28 bg-card/20" itemScope itemType="https://schema.org/FAQPage">
           <div className="container mx-auto px-4">
             <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">
               Frequently Asked Questions
@@ -373,48 +352,58 @@ const Index = () => {
             
             <div className="max-w-3xl mx-auto">
               <Accordion type="single" collapsible className="space-y-4">
-                <AccordionItem value="item-1" className="bg-card border border-border/50 rounded-lg px-6">
-                  <AccordionTrigger className="text-left hover:no-underline">
+                <AccordionItem value="item-1" className="bg-card border border-border/50 rounded-lg px-6" itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
+                  <AccordionTrigger className="text-left hover:no-underline" itemProp="name">
                     How accurate is AI Free Text Pro's AI detection?
                   </AccordionTrigger>
-                  <AccordionContent className="text-muted-foreground">
-                    AI Free Text Pro uses advanced AI models (GPT-4o Mini) to analyze text patterns, vocabulary, and structure. Our detection system provides probability scores with detailed breakdowns, achieving high accuracy in identifying AI-generated content. However, no AI detector is 100% accurate, so we provide detailed analysis to help you make informed decisions.
+                  <AccordionContent className="text-muted-foreground" itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer">
+                    <div itemProp="text">
+                      AI Free Text Pro uses advanced AI models (GPT-4o Mini) to analyze text patterns, vocabulary, and structure. Our detection system provides probability scores with detailed breakdowns, achieving high accuracy in identifying AI-generated content. However, no AI detector is 100% accurate, so we provide detailed analysis to help you make informed decisions.
+                    </div>
                   </AccordionContent>
                 </AccordionItem>
 
-                <AccordionItem value="item-2" className="bg-card border border-border/50 rounded-lg px-6">
-                  <AccordionTrigger className="text-left hover:no-underline">
+                <AccordionItem value="item-2" className="bg-card border border-border/50 rounded-lg px-6" itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
+                  <AccordionTrigger className="text-left hover:no-underline" itemProp="name">
                     Is my text stored or shared?
                   </AccordionTrigger>
-                  <AccordionContent className="text-muted-foreground">
-                    No. Your privacy is our priority. AI Free Text Pro processes your content in real-time and does not store, log, or share your text with third parties. All analysis happens on-demand, and your content is immediately discarded after processing.
+                  <AccordionContent className="text-muted-foreground" itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer">
+                    <div itemProp="text">
+                      No. Your privacy is our priority. AI Free Text Pro processes your content in real-time and does not store, log, or share your text with third parties. All analysis happens on-demand, and your content is immediately discarded after processing.
+                    </div>
                   </AccordionContent>
                 </AccordionItem>
 
-                <AccordionItem value="item-3" className="bg-card border border-border/50 rounded-lg px-6">
-                  <AccordionTrigger className="text-left hover:no-underline">
+                <AccordionItem value="item-3" className="bg-card border border-border/50 rounded-lg px-6" itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
+                  <AccordionTrigger className="text-left hover:no-underline" itemProp="name">
                     Can I use it for academic writing?
                   </AccordionTrigger>
-                  <AccordionContent className="text-muted-foreground">
-                    AI Free Text Pro can be used to check and improve academic writing. However, we encourage ethical use - our humanizer is designed to help refine AI-assisted drafts and improve readability, not to deceive academic integrity systems. Always follow your institution's guidelines regarding AI usage in academic work.
+                  <AccordionContent className="text-muted-foreground" itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer">
+                    <div itemProp="text">
+                      AI Free Text Pro can be used to check and improve academic writing. However, we encourage ethical use - our humanizer is designed to help refine AI-assisted drafts and improve readability, not to deceive academic integrity systems. Always follow your institution's guidelines regarding AI usage in academic work.
+                    </div>
                   </AccordionContent>
                 </AccordionItem>
 
-                <AccordionItem value="item-4" className="bg-card border border-border/50 rounded-lg px-6">
-                  <AccordionTrigger className="text-left hover:no-underline">
+                <AccordionItem value="item-4" className="bg-card border border-border/50 rounded-lg px-6" itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
+                  <AccordionTrigger className="text-left hover:no-underline" itemProp="name">
                     What's the difference between AI Checker and Humanizer?
                   </AccordionTrigger>
-                  <AccordionContent className="text-muted-foreground">
-                    AI Checker analyzes and detects whether text is AI-generated, providing probability scores and highlighting suspicious patterns. Humanizer transforms robotic or AI-generated text into natural, human-like writing by improving flow, variety, and authenticity. Use them together for best results!
+                  <AccordionContent className="text-muted-foreground" itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer">
+                    <div itemProp="text">
+                      AI Checker analyzes and detects whether text is AI-generated, providing probability scores and highlighting suspicious patterns. Humanizer transforms robotic or AI-generated text into natural, human-like writing by improving flow, variety, and authenticity. Use them together for best results!
+                    </div>
                   </AccordionContent>
                 </AccordionItem>
 
-                <AccordionItem value="item-5" className="bg-card border border-border/50 rounded-lg px-6">
-                  <AccordionTrigger className="text-left hover:no-underline">
+                <AccordionItem value="item-5" className="bg-card border border-border/50 rounded-lg px-6" itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
+                  <AccordionTrigger className="text-left hover:no-underline" itemProp="name">
                     Is AI Free Text Pro free to use?
                   </AccordionTrigger>
-                  <AccordionContent className="text-muted-foreground">
-                    Yes! AI Free Text Pro currently offers full access to both AI Checker and Humanizer tools for free. We're working on premium features and upgrades that will be available in the future, but core functionality will always remain accessible.
+                  <AccordionContent className="text-muted-foreground" itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer">
+                    <div itemProp="text">
+                      Yes! AI Free Text Pro currently offers full access to both AI Checker and Humanizer tools for free. We're working on premium features and upgrades that will be available in the future, but core functionality will always remain accessible.
+                    </div>
                   </AccordionContent>
                 </AccordionItem>
               </Accordion>

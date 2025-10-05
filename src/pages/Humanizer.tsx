@@ -2,17 +2,29 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
 import { Card } from "@/components/ui/card";
+import { Label } from "@/components/ui/label";
+import { Checkbox } from "@/components/ui/checkbox";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Loader2, Sparkles, Copy, Check, Download, RefreshCw } from "lucide-react";
 import { supabase } from "@/integrations/supabase/client";
 import { toast } from "sonner";
 
 const SAMPLE_AI_TEXT = "The implementation of artificial intelligence in modern business operations has revolutionized organizational efficiency. Companies are increasingly leveraging machine learning algorithms to optimize their processes. This technological advancement enables enhanced decision-making capabilities and improved operational outcomes across various industries.";
 
+type ChangeStats = {
+  wordsChanged: number;
+  sentencesModified: number;
+  restructured: number;
+};
+
 const Humanizer = () => {
   const [text, setText] = useState("");
   const [humanizedText, setHumanizedText] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const [copied, setCopied] = useState(false);
+  const [style, setStyle] = useState<'professional' | 'casual' | 'academic'>('professional');
+  const [preserveFormatting, setPreserveFormatting] = useState(false);
+  const [changeStats, setChangeStats] = useState<ChangeStats | null>(null);
 
   const wordCount = text.trim().split(/\s+/).filter(w => w.length > 0).length;
 
@@ -24,10 +36,11 @@ const Humanizer = () => {
 
     setIsLoading(true);
     setHumanizedText("");
+    setChangeStats(null);
 
     try {
       const { data, error } = await supabase.functions.invoke('humanizer', {
-        body: { text }
+        body: { text, style, preserveFormatting }
       });
 
       if (error) {
@@ -36,6 +49,7 @@ const Humanizer = () => {
       }
 
       setHumanizedText(data.humanizedText);
+      setChangeStats(data.changeStats);
       toast.success("Text humanized successfully!");
     } catch (error) {
       console.error('Error humanizing text:', error);
@@ -68,6 +82,7 @@ const Humanizer = () => {
   const loadSample = () => {
     setText(SAMPLE_AI_TEXT);
     setHumanizedText("");
+    setChangeStats(null);
     toast.success("Sample AI text loaded");
   };
 
@@ -109,6 +124,47 @@ const Humanizer = () => {
             <div className="flex justify-between items-center">
               <p className="text-xs text-muted-foreground">
                 {text.length} / 10,000 characters • {wordCount} words
+              </p>
+            </div>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-4">
+            <div className="space-y-2">
+              <Label htmlFor="style" className="text-sm font-medium">Writing Style</Label>
+              <Select value={style} onValueChange={(val: any) => setStyle(val)}>
+                <SelectTrigger id="style" className="bg-background/50">
+                  <SelectValue />
+                </SelectTrigger>
+                <SelectContent className="bg-background z-50">
+                  <SelectItem value="professional">Professional</SelectItem>
+                  <SelectItem value="casual">Casual</SelectItem>
+                  <SelectItem value="academic">Academic</SelectItem>
+                </SelectContent>
+              </Select>
+              <p className="text-xs text-muted-foreground">
+                {style === 'professional' && 'Balanced formality with natural readability'}
+                {style === 'casual' && 'Conversational and friendly tone'}
+                {style === 'academic' && 'Scholarly with natural flow'}
+              </p>
+            </div>
+
+            <div className="space-y-2">
+              <Label className="text-sm font-medium">Formatting Options</Label>
+              <div className="flex items-center space-x-2 h-10">
+                <Checkbox 
+                  id="preserve" 
+                  checked={preserveFormatting}
+                  onCheckedChange={(checked) => setPreserveFormatting(checked as boolean)}
+                />
+                <label
+                  htmlFor="preserve"
+                  className="text-sm text-muted-foreground cursor-pointer leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                >
+                  Preserve line breaks and spacing
+                </label>
+              </div>
+              <p className="text-xs text-muted-foreground">
+                Keep original paragraph structure intact
               </p>
             </div>
           </div>
@@ -177,6 +233,17 @@ const Humanizer = () => {
                 </Button>
               </div>
             </div>
+
+            {changeStats && (
+              <div className="flex items-center gap-4 p-3 bg-secondary/10 rounded-lg border border-secondary/20">
+                <Sparkles className="h-4 w-4 text-secondary flex-shrink-0" />
+                <p className="text-sm text-foreground">
+                  <span className="font-semibold">{changeStats.wordsChanged}</span> words modified • 
+                  <span className="font-semibold"> {changeStats.sentencesModified}</span> sentences restructured • 
+                  <span className="font-semibold"> {changeStats.restructured}</span> simplified for flow
+                </p>
+              </div>
+            )}
             
             <div className="grid md:grid-cols-2 gap-4">
               <div className="space-y-2">

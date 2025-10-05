@@ -15,11 +15,11 @@ const Navbar = () => {
           <Link to="/" className="flex items-center gap-4 group mx-auto md:mx-0">
             <img 
               src={logo} 
-              alt="Text Reborn Logo" 
+              alt="AI Free Text Pro Logo" 
               className="w-14 h-14 md:w-16 md:h-16 transition-transform group-hover:scale-110"
             />
             <span className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-              Text Reborn
+              AI Free Text Pro
             </span>
           </Link>
           

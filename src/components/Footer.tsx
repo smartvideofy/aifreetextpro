@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="container mx-auto px-4 py-12">
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="text-sm text-muted-foreground">
-            © 2025 Text Reborn. All rights reserved.
+            © 2025 AI Free Text Pro. All rights reserved.
           </div>
           <div className="flex flex-wrap justify-center gap-6 text-sm">
             <Link to="/privacy-policy" className="text-muted-foreground hover:text-primary transition-colors">

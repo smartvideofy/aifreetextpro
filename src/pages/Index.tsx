@@ -57,7 +57,7 @@ const Index = () => {
         <section className="py-20 md:py-28 bg-card/20">
           <div className="container mx-auto px-4">
             <h2 className="text-4xl md:text-5xl font-bold text-center mb-20">
-              How Text Reborn Works
+              How AI Free Text Pro Works
             </h2>
             
             <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
@@ -225,7 +225,7 @@ const Index = () => {
                     </div>
                   </div>
                   <p className="text-muted-foreground italic">
-                    "Text Reborn saved me hours of editing. The humanizer makes AI drafts sound natural and authentic."
+                    "AI Free Text Pro saved me hours of editing. The humanizer makes AI drafts sound natural and authentic."
                   </p>
                 </div>
               </Card>
@@ -267,11 +267,11 @@ const Index = () => {
           </div>
         </section>
 
-        {/* Why Use Text Reborn */}
+        {/* Why Use AI Free Text Pro */}
         <section className="py-20 md:py-28 bg-card/20">
           <div className="container mx-auto px-4">
             <h2 className="text-4xl md:text-5xl font-bold text-center mb-20">
-              Why Use Text Reborn
+              Why Use AI Free Text Pro
             </h2>
             
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
@@ -327,7 +327,7 @@ const Index = () => {
                   Try It Yourself
                 </h2>
                 <p className="text-muted-foreground text-lg md:text-xl">
-                  Experience the power of Text Reborn with our interactive demo
+                  Experience the power of AI Free Text Pro with our interactive demo
                 </p>
               </div>
               
@@ -375,10 +375,10 @@ const Index = () => {
               <Accordion type="single" collapsible className="space-y-4">
                 <AccordionItem value="item-1" className="bg-card border border-border/50 rounded-lg px-6">
                   <AccordionTrigger className="text-left hover:no-underline">
-                    How accurate is Text Reborn's AI detection?
+                    How accurate is AI Free Text Pro's AI detection?
                   </AccordionTrigger>
                   <AccordionContent className="text-muted-foreground">
-                    Text Reborn uses advanced AI models (GPT-4o Mini) to analyze text patterns, vocabulary, and structure. Our detection system provides probability scores with detailed breakdowns, achieving high accuracy in identifying AI-generated content. However, no AI detector is 100% accurate, so we provide detailed analysis to help you make informed decisions.
+                    AI Free Text Pro uses advanced AI models (GPT-4o Mini) to analyze text patterns, vocabulary, and structure. Our detection system provides probability scores with detailed breakdowns, achieving high accuracy in identifying AI-generated content. However, no AI detector is 100% accurate, so we provide detailed analysis to help you make informed decisions.
                   </AccordionContent>
                 </AccordionItem>
 
@@ -387,7 +387,7 @@ const Index = () => {
                     Is my text stored or shared?
                   </AccordionTrigger>
                   <AccordionContent className="text-muted-foreground">
-                    No. Your privacy is our priority. Text Reborn processes your content in real-time and does not store, log, or share your text with third parties. All analysis happens on-demand, and your content is immediately discarded after processing.
+                    No. Your privacy is our priority. AI Free Text Pro processes your content in real-time and does not store, log, or share your text with third parties. All analysis happens on-demand, and your content is immediately discarded after processing.
                   </AccordionContent>
                 </AccordionItem>
 
@@ -396,7 +396,7 @@ const Index = () => {
                     Can I use it for academic writing?
                   </AccordionTrigger>
                   <AccordionContent className="text-muted-foreground">
-                    Text Reborn can be used to check and improve academic writing. However, we encourage ethical use - our humanizer is designed to help refine AI-assisted drafts and improve readability, not to deceive academic integrity systems. Always follow your institution's guidelines regarding AI usage in academic work.
+                    AI Free Text Pro can be used to check and improve academic writing. However, we encourage ethical use - our humanizer is designed to help refine AI-assisted drafts and improve readability, not to deceive academic integrity systems. Always follow your institution's guidelines regarding AI usage in academic work.
                   </AccordionContent>
                 </AccordionItem>
 
@@ -411,10 +411,10 @@ const Index = () => {
 
                 <AccordionItem value="item-5" className="bg-card border border-border/50 rounded-lg px-6">
                   <AccordionTrigger className="text-left hover:no-underline">
-                    Is Text Reborn free to use?
+                    Is AI Free Text Pro free to use?
                   </AccordionTrigger>
                   <AccordionContent className="text-muted-foreground">
-                    Yes! Text Reborn currently offers full access to both AI Checker and Humanizer tools for free. We're working on premium features and upgrades that will be available in the future, but core functionality will always remain accessible.
+                    Yes! AI Free Text Pro currently offers full access to both AI Checker and Humanizer tools for free. We're working on premium features and upgrades that will be available in the future, but core functionality will always remain accessible.
                   </AccordionContent>
                 </AccordionItem>
               </Accordion>
@@ -430,7 +430,7 @@ const Index = () => {
                 Ready to Transform Your Text?
               </h2>
               <p className="text-xl md:text-2xl text-muted-foreground">
-                Join thousands using Text Reborn to create authentic, human-like content.
+                Join thousands using AI Free Text Pro to create authentic, human-like content.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
                 <Link to="/ai-checker">

@@ -6,10 +6,12 @@ import { Label } from "@/components/ui/label";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Loader2, Sparkles, Copy, Check, Download, RefreshCw, Clock, Info, Brain } from "lucide-react";
+import { Helmet } from "react-helmet-async";
 import { supabase } from "@/integrations/supabase/client";
 import { toast } from "sonner";
 import { Slider } from "@/components/ui/slider";
 import { Badge } from "@/components/ui/badge";
+import Footer from "@/components/Footer";
 
 const SAMPLE_AI_TEXT = "Artificial intelligence has fundamentally transformed how businesses operate in the modern era. Organizations across diverse sectors are increasingly adopting machine learning algorithms to optimize workflows, enhance productivity, and streamline complex processes. This technological revolution enables companies to make more informed decisions, improve operational efficiency, and achieve better outcomes. However, successful integration requires careful evaluation of costs, benefits, and organizational readiness. Leaders must consider factors such as employee training, system compatibility, data security, and long-term scalability. The implementation process demands strategic planning, substantial investment, and ongoing commitment to adaptation. Companies that navigate these challenges effectively position themselves for sustained competitive advantage in an increasingly digital marketplace. The key lies in balancing innovation with practical execution, ensuring that technological adoption aligns with core business objectives and delivers measurable value.";
 
@@ -197,8 +199,17 @@ const Humanizer = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-background via-background to-secondary/5 p-6">
-      <div className="max-w-4xl mx-auto space-y-8">
+    <div className="min-h-screen bg-gradient-to-br from-background via-background to-secondary/5">
+      <Helmet>
+        <title>Free AI Humanizer - Convert AI Text to Human Writing | Bypass AI Detection</title>
+        <meta name="description" content="Free AI humanizer tool to convert robotic AI text into natural, human-like writing. Bypass AI detectors, improve readability, and make AI content undetectable. Works with ChatGPT, GPT-4, and all AI writers." />
+        <meta name="keywords" content="ai humanizer, humanize ai text, bypass ai detection, undetectable ai, ai to human text, make ai text human, chatgpt humanizer, ai text converter, bypass turnitin, humanize chatgpt" />
+        <link rel="canonical" href="https://aifreetextpro.com/humanizer" />
+        <meta property="og:title" content="Free AI Humanizer - Convert AI Text to Human Writing" />
+        <meta property="og:description" content="Free AI humanizer tool to convert robotic AI text into natural, human-like writing. Bypass AI detectors and improve readability." />
+        <meta property="og:url" content="https://aifreetextpro.com/humanizer" />
+      </Helmet>
+      <div className="max-w-4xl mx-auto space-y-8 p-6">
         <div className="text-center space-y-3 animate-in fade-in slide-in-from-top duration-500">
           <div className="inline-flex items-center gap-2 text-secondary">
             <Sparkles className="w-8 h-8" />
@@ -601,6 +612,7 @@ const Humanizer = () => {
           </Card>
         )}
       </div>
+      <Footer />
     </div>
   );
 };

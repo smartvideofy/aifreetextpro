@@ -1,11 +1,19 @@
 import { Link } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Helmet } from "react-helmet-async";
 import Footer from "@/components/Footer";
 
 const PrivacyPolicy = () => {
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-br from-background via-background to-primary/5">
+      <Helmet>
+        <title>Privacy Policy - AI Free Text Pro | Your Data Privacy & Security</title>
+        <meta name="description" content="Read AI Free Text Pro's privacy policy to understand how we protect your data. We do not store or share your text submissions. Your privacy is our priority." />
+        <meta name="keywords" content="privacy policy, data protection, user privacy, secure ai detector" />
+        <link rel="canonical" href="https://aifreetextpro.com/privacy-policy" />
+        <meta name="robots" content="noindex, follow" />
+      </Helmet>
       <main className="flex-1">
         <div className="container mx-auto px-4 py-16 max-w-4xl">
           <Link to="/">

@@ -1,11 +1,19 @@
 import { Link } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Helmet } from "react-helmet-async";
 import Footer from "@/components/Footer";
 
 const TermsOfService = () => {
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-br from-background via-background to-primary/5">
+      <Helmet>
+        <title>Terms of Service - AI Free Text Pro | Usage Terms & Conditions</title>
+        <meta name="description" content="Read AI Free Text Pro's terms of service to understand acceptable use, user responsibilities, and service limitations for our AI detection and humanization tools." />
+        <meta name="keywords" content="terms of service, usage terms, terms and conditions, service agreement" />
+        <link rel="canonical" href="https://aifreetextpro.com/terms-of-service" />
+        <meta name="robots" content="noindex, follow" />
+      </Helmet>
       <main className="flex-1">
         <div className="container mx-auto px-4 py-16 max-w-4xl">
           <Link to="/">

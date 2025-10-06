@@ -1,10 +1,20 @@
 import { Target, Zap, Shield, Users } from "lucide-react";
+import { Helmet } from "react-helmet-async";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 const About = () => {
   return (
     <div className="min-h-screen flex flex-col">
+      <Helmet>
+        <title>About Us - AI Free Text Pro | Free AI Detection & Humanization Tools</title>
+        <meta name="description" content="Learn about AI Free Text Pro, the leading free AI detector and humanizer. Discover our mission to provide accurate AI detection and text humanization tools for students, writers, and professionals." />
+        <meta name="keywords" content="about ai detector, ai text tools, free ai detection, ai humanizer company, text analysis tools" />
+        <link rel="canonical" href="https://aifreetextpro.com/about" />
+        <meta property="og:title" content="About Us - AI Free Text Pro" />
+        <meta property="og:description" content="Learn about AI Free Text Pro and our mission to provide accurate AI detection and text humanization tools." />
+        <meta property="og:url" content="https://aifreetextpro.com/about" />
+      </Helmet>
       <Navbar />
       
       <main className="flex-1">

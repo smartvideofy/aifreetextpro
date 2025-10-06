@@ -2,11 +2,21 @@ import { Link } from "react-router-dom";
 import { ArrowLeft, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import { Helmet } from "react-helmet-async";
 import Footer from "@/components/Footer";
 
 const Contact = () => {
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-br from-background via-background to-primary/5">
+      <Helmet>
+        <title>Contact Us - AI Free Text Pro | Get Help with AI Detection & Humanization</title>
+        <meta name="description" content="Contact AI Free Text Pro for support, questions, or feedback about our free AI detector and humanizer tools. We're here to help with AI text detection and humanization." />
+        <meta name="keywords" content="contact ai detector, ai tool support, ai humanizer help, customer service, technical support" />
+        <link rel="canonical" href="https://aifreetextpro.com/contact" />
+        <meta property="og:title" content="Contact Us - AI Free Text Pro" />
+        <meta property="og:description" content="Contact AI Free Text Pro for support and questions about our free AI detection and humanization tools." />
+        <meta property="og:url" content="https://aifreetextpro.com/contact" />
+      </Helmet>
       <main className="flex-1">
         <div className="container mx-auto px-4 py-16 max-w-4xl">
           <Link to="/">

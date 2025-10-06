@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { ArrowRight, CheckCircle, Zap, Shield, FileText, Sparkles, Brain, Target, Star } from "lucide-react";
+import { Helmet } from "react-helmet-async";
 import beforeAfterDemo from "@/assets/before-after-demo.png";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -13,6 +14,16 @@ import AboutSection from "@/components/AboutSection";
 const Index = () => {
   return (
     <div className="min-h-screen flex flex-col">
+      <Helmet>
+        <title>AI Free Text Pro - Free AI Detector & Humanizer Tool | Bypass AI Detection</title>
+        <meta name="description" content="Free AI text detector and humanizer with 98% accuracy. Check if text is AI-generated, bypass AI detection, and convert AI text to human-like writing. Works with ChatGPT, GPT-4, Claude, and all AI writing tools." />
+        <meta name="keywords" content="ai detector, ai humanizer, free ai checker, bypass ai detection, ai text detector, humanize ai text, chatgpt detector, detect ai writing, ai content detector, zerogpt alternative" />
+        <link rel="canonical" href="https://aifreetextpro.com/" />
+        <meta property="og:title" content="AI Free Text Pro - Free AI Detector & Humanizer Tool" />
+        <meta property="og:description" content="Free AI text detector and humanizer with 98% accuracy. Check if text is AI-generated and convert AI text to human-like writing." />
+        <meta property="og:url" content="https://aifreetextpro.com/" />
+        <meta property="og:type" content="website" />
+      </Helmet>
       <Navbar />
       
       <main className="flex-1">

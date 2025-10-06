@@ -88,9 +88,43 @@ const PrivacyPolicy = () => {
               <p className="text-muted-foreground leading-relaxed mb-3">We use the following third-party services:</p>
               <ul className="list-disc list-inside space-y-2 text-muted-foreground">
                 <li>OpenAI API for AI text processing</li>
-                <li>Analytics services for usage tracking</li>
+                <li>Analytics services for usage tracking (Google Analytics)</li>
                 <li>Hosting and infrastructure providers</li>
               </ul>
+              
+              <h3 className="text-xl font-semibold mb-3 mt-6 text-foreground">Advertising Partners</h3>
+              <p className="text-muted-foreground leading-relaxed mb-3">
+                We may partner with third-party advertising networks (such as Google AdSense) to display advertisements on our website. These advertising partners may use cookies and similar technologies to:
+              </p>
+              <ul className="list-disc list-inside space-y-2 text-muted-foreground">
+                <li>Serve ads based on your prior visits to our website or other websites</li>
+                <li>Measure ad performance and user engagement</li>
+                <li>Prevent fraudulent ad clicks</li>
+                <li>Provide aggregated analytics to advertisers</li>
+              </ul>
+              <p className="text-muted-foreground leading-relaxed mt-3">
+                You can opt out of personalized advertising by visiting <a href="https://www.google.com/settings/ads" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Google Ads Settings</a> or <a href="http://www.aboutads.info/choices/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">NAI Opt-Out</a>.
+              </p>
+              
+              <h3 className="text-xl font-semibold mb-3 mt-6 text-foreground">Google Analytics</h3>
+              <p className="text-muted-foreground leading-relaxed">
+                We use Google Analytics to understand how visitors use our site. Google Analytics collects information anonymously and reports website trends without identifying individual visitors. You can opt out of Google Analytics by installing the <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Google Analytics Opt-out Browser Add-on</a>.
+              </p>
+            </section>
+
+            <section>
+              <h2 className="text-2xl font-semibold mb-4 text-foreground">Cookies and Tracking Technologies</h2>
+              <p className="text-muted-foreground leading-relaxed mb-3">
+                We use cookies and similar tracking technologies to improve your experience on our website. These may include:
+              </p>
+              <ul className="list-disc list-inside space-y-2 text-muted-foreground">
+                <li><strong>Essential Cookies:</strong> Required for basic website functionality</li>
+                <li><strong>Analytics Cookies:</strong> Help us understand how visitors use our site (Google Analytics)</li>
+                <li><strong>Advertising Cookies:</strong> Used by our advertising partners to show relevant ads</li>
+              </ul>
+              <p className="text-muted-foreground leading-relaxed mt-3">
+                You can control cookie settings through your browser preferences. Note that disabling cookies may affect website functionality.
+              </p>
             </section>
 
             <section>
@@ -101,6 +135,8 @@ const PrivacyPolicy = () => {
                 <li>Request correction of inaccurate data</li>
                 <li>Request deletion of your data</li>
                 <li>Opt-out of certain data collection practices</li>
+                <li>Opt-out of personalized advertising</li>
+                <li>Object to automated decision-making</li>
               </ul>
             </section>
 

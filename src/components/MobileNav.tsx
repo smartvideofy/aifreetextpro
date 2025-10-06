@@ -15,8 +15,6 @@ const MobileNav = () => {
     { to: "/ai-checker", label: "AI Checker" },
     { to: "/humanizer", label: "Humanizer" },
     { to: "/about", label: "About" },
-    { to: "/blog", label: "Blog" },
-    { to: "/contact", label: "Contact" },
   ];
   
   return (

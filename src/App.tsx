@@ -2,8 +2,10 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
+import { useEffect } from "react";
+import { GoogleAnalytics, trackPageView } from "@/lib/analytics";
 import Index from "./pages/Index";
 import AIChecker from "./pages/AIChecker";
 import Humanizer from "./pages/Humanizer";
@@ -20,13 +22,26 @@ import Navbar from "./components/Navbar";
 
 const queryClient = new QueryClient();
 
+// Component to track route changes
+const RouteTracker = () => {
+  const location = useLocation();
+  
+  useEffect(() => {
+    trackPageView(location.pathname + location.search);
+  }, [location]);
+  
+  return null;
+};
+
 const App = () => (
   <HelmetProvider>
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
+        <GoogleAnalytics />
         <Toaster />
         <Sonner />
         <BrowserRouter>
+          <RouteTracker />
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/ai-checker" element={<><Navbar /><AIChecker /></>} />

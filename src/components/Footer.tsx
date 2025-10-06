@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Mail, Github, Twitter } from "lucide-react";
+import { Mail, BookOpen, MessageSquare, Shield, Check } from "lucide-react";
 import logo from "@/assets/logo.png";
 
 const Footer = () => {
@@ -33,10 +33,14 @@ const Footer = () => {
             </nav>
           </div>
 
-          {/* Legal Column */}
+          {/* Resources Column */}
           <div className="space-y-4">
-            <h3 className="font-semibold text-foreground">Company</h3>
+            <h3 className="font-semibold text-foreground">Resources</h3>
             <nav className="flex flex-col gap-2 text-sm">
+              <Link to="/blog" className="text-muted-foreground hover:text-primary transition-colors flex items-center gap-2">
+                <BookOpen className="w-4 h-4" />
+                Blog
+              </Link>
               <Link to="/about" className="text-muted-foreground hover:text-primary transition-colors">
                 About Us
               </Link>
@@ -49,41 +53,46 @@ const Footer = () => {
             </nav>
           </div>
 
-          {/* Support Column */}
+          {/* Contact Column */}
           <div className="space-y-4">
-            <h3 className="font-semibold text-foreground">Support</h3>
+            <h3 className="font-semibold text-foreground">Contact</h3>
             <nav className="flex flex-col gap-2 text-sm">
-              <Link to="/contact" className="text-muted-foreground hover:text-primary transition-colors">
+              <Link to="/contact" className="text-muted-foreground hover:text-primary transition-colors flex items-center gap-2">
+                <MessageSquare className="w-4 h-4" />
                 Contact Us
               </Link>
               <a href="mailto:support@aifreetextpro.com" className="text-muted-foreground hover:text-primary transition-colors flex items-center gap-2">
                 <Mail className="w-4 h-4" />
-                support@aifreetextpro.com
-              </a>
-              <a href="#faq" className="text-muted-foreground hover:text-primary transition-colors">
-                FAQs
+                Email Support
               </a>
             </nav>
-            <div className="pt-2">
-              <p className="text-xs text-muted-foreground leading-relaxed">
-                AI Free Text Pro helps you detect and humanize AI-generated content with 98% accuracy. Fast, free, and privacy-focused.
-              </p>
+            
+            {/* Trust Badges */}
+            <div className="pt-4 space-y-2">
+              <div className="flex items-center gap-2 text-xs text-muted-foreground">
+                <Shield className="w-4 h-4 text-green-600" />
+                <span>Privacy Protected</span>
+              </div>
+              <div className="flex items-center gap-2 text-xs text-muted-foreground">
+                <Check className="w-4 h-4 text-green-600" />
+                <span>98% Accuracy Rate</span>
+              </div>
+              <div className="flex items-center gap-2 text-xs text-muted-foreground">
+                <Check className="w-4 h-4 text-green-600" />
+                <span>50,000+ Users</span>
+              </div>
             </div>
           </div>
         </div>
 
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-border/40 flex flex-col md:flex-row justify-between items-center gap-4">
-          <div className="text-sm text-muted-foreground">
-            © 2025 AI Free Text Pro. All rights reserved.
+          <div className="text-sm text-muted-foreground text-center md:text-left">
+            © 2025 AI Free Text Pro. All rights reserved. | Free AI Detection & Humanization Tools
           </div>
-          <div className="flex gap-4">
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
-              <Twitter className="w-5 h-5" />
-            </a>
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
-              <Github className="w-5 h-5" />
-            </a>
+          <div className="flex items-center gap-2 text-xs text-muted-foreground">
+            <Shield className="w-4 h-4" />
+            <span>Secure & Private</span>
           </div>
         </div>
       </div>

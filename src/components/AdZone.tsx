@@ -1,58 +1,89 @@
-// Ad Placement Zones Component
-// This component defines placeholder zones where ads will be placed once AdSense is approved
-// DO NOT add actual ad code until AdSense approval is received
+// Professional AdSense Implementation
+// Follows Google AdSense policies for visitor-friendly ad placement
 
-import { Card } from "@/components/ui/card";
+import { useEffect, useRef } from "react";
 
 interface AdZoneProps {
-  position: "header" | "sidebar" | "in-content" | "footer";
-  size?: "banner" | "square" | "leaderboard" | "skyscraper";
+  slot: string;
+  format?: "auto" | "rectangle" | "vertical" | "horizontal";
+  responsive?: boolean;
   className?: string;
+  style?: React.CSSProperties;
 }
 
-export const AdZone = ({ position, size = "banner", className = "" }: AdZoneProps) => {
-  // Ad zones are currently disabled for development
-  // Enable only after AdSense approval
-  const isAdEnabled = false;
-
-  if (!isAdEnabled) {
-    return null; // Don't render ad zones until approved
+declare global {
+  interface Window {
+    adsbygoogle: any[];
   }
+}
 
-  const adDimensions = {
-    banner: "w-full h-24", // 728x90 or responsive
-    square: "w-64 h-64", // 250x250
-    leaderboard: "w-full h-20", // 728x90
-    skyscraper: "w-40 h-[600px]", // 160x600
-  };
+export const AdZone = ({ 
+  slot, 
+  format = "auto", 
+  responsive = true,
+  className = "",
+  style = {}
+}: AdZoneProps) => {
+  const adRef = useRef<HTMLModElement>(null);
+
+  useEffect(() => {
+    try {
+      if (adRef.current) {
+        (window.adsbygoogle = window.adsbygoogle || []).push({});
+      }
+    } catch (error) {
+      console.error('AdSense error:', error);
+    }
+  }, []);
 
   return (
-    <div className={`ad-zone ad-zone--${position} ${className}`}>
-      <Card className={`${adDimensions[size]} flex items-center justify-center bg-muted/30 border-dashed`}>
-        <span className="text-xs text-muted-foreground">Ad Space ({position})</span>
-      </Card>
+    <div className={`ad-container ${className}`} style={style}>
+      <ins
+        ref={adRef}
+        className="adsbygoogle"
+        style={{ display: "block", ...style }}
+        data-ad-client="ca-pub-9996862426063829"
+        data-ad-slot={slot}
+        data-ad-format={format}
+        data-full-width-responsive={responsive.toString()}
+      />
     </div>
   );
 };
 
-// Ad placement guidelines for future implementation:
-// 
-// COMPLIANT PLACEMENT ZONES:
-// 1. Header: Below navigation (728x90 leaderboard) - 50px from primary CTA
-// 2. Sidebar: Right side on desktop (300x250 or 160x600)
-// 3. In-Content: Between paragraphs in blog posts (responsive or 336x280)
-// 4. Footer: Above footer content (728x90 leaderboard)
-//
-// IMPORTANT ADSENSE RULES:
-// - Minimum 150px from primary action buttons (Try Now, Check Text, etc.)
-// - No more than 3 ad units per page
-// - Must not push content below the fold
-// - Cannot be placed in sticky headers/footers
-// - Must have clear separation from content
-// - No accidental clicks encouraged
-//
-// RECOMMENDED PLACEMENTS BY PAGE:
-// - Homepage: Header + Sidebar
-// - Blog Posts: In-Content (after 2nd paragraph) + Sidebar
-// - Tool Pages (AI Checker/Humanizer): Sidebar only (after results)
-// - About/Contact: Footer only
+// Predefined ad components for common placements
+export const SidebarAd = ({ className = "" }: { className?: string }) => (
+  <div className={`mb-8 ${className}`}>
+    <p className="text-xs text-muted-foreground mb-2 text-center">Advertisement</p>
+    <AdZone 
+      slot="1234567890" // Replace with actual ad slot ID from AdSense
+      format="auto"
+      responsive={true}
+      className="min-h-[250px]"
+    />
+  </div>
+);
+
+export const InContentAd = ({ className = "" }: { className?: string }) => (
+  <div className={`my-8 flex flex-col items-center ${className}`}>
+    <p className="text-xs text-muted-foreground mb-2">Advertisement</p>
+    <AdZone 
+      slot="2345678901" // Replace with actual ad slot ID from AdSense
+      format="auto"
+      responsive={true}
+      className="w-full max-w-3xl"
+    />
+  </div>
+);
+
+export const FooterAd = ({ className = "" }: { className?: string }) => (
+  <div className={`py-6 ${className}`}>
+    <p className="text-xs text-muted-foreground mb-2 text-center">Advertisement</p>
+    <AdZone 
+      slot="3456789012" // Replace with actual ad slot ID from AdSense
+      format="horizontal"
+      responsive={true}
+      className="w-full"
+    />
+  </div>
+);

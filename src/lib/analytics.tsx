@@ -7,9 +7,7 @@ declare global {
   }
 }
 
-// TODO: Add your Google Analytics 4 Measurement ID here
-// Get it from: https://analytics.google.com/analytics/web/ -> Admin -> Data Streams
-const GA_MEASUREMENT_ID = 'G-XXXXXXXXXX'; // Replace with your actual GA4 ID
+const GA_MEASUREMENT_ID = 'G-G1YR6ZJWZE';
 
 export const GoogleAnalytics = () => {
   useEffect(() => {

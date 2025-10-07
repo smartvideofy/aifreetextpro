@@ -1,7 +1,9 @@
-import { Target, Zap, Shield, Users } from "lucide-react";
+import { Target, Zap, Shield, Users, Heart, Cpu, Globe, Star, CheckCircle, TrendingUp, Award, Lock } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { Card } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
 
 const About = () => {
   return (
@@ -19,113 +21,302 @@ const About = () => {
       
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="py-20 md:py-28 bg-gradient-to-b from-card/20 to-background">
-          <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto text-center space-y-6">
-              <h1 className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-                About AI Free Text Pro
+        <section className="relative py-24 md:py-32 overflow-hidden">
+          <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-secondary/5 to-background" />
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,hsl(var(--primary)/0.1),transparent_50%)]" />
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_80%,hsl(var(--secondary)/0.1),transparent_50%)]" />
+          
+          <div className="container relative mx-auto px-4">
+            <div className="max-w-4xl mx-auto text-center space-y-8">
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 backdrop-blur-sm">
+                <Award className="w-4 h-4 text-primary" />
+                <span className="text-sm font-medium">Trusted by 50,000+ Users Worldwide</span>
+              </div>
+              
+              <h1 className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-primary via-secondary to-primary bg-clip-text text-transparent leading-tight">
+                Human Words in an AI World
               </h1>
-              <p className="text-xl md:text-2xl text-muted-foreground">
-                Making AI text detection and humanization accessible to everyone
+              
+              <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+                We empower creators, students, and professionals to transform AI-generated text into authentic, natural writing that preserves your unique voice.
               </p>
-            </div>
-          </div>
-        </section>
-
-        {/* Mission Section */}
-        <section className="py-16 md:py-24">
-          <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto space-y-12">
-              <div className="space-y-6">
-                <h2 className="text-3xl md:text-4xl font-bold">Our Mission</h2>
-                <p className="text-lg text-muted-foreground leading-relaxed">
-                  At AI Free Text Pro, we believe in empowering writers, students, and professionals with powerful tools to navigate the evolving landscape of AI-generated content. Our mission is to provide accurate, fast, and privacy-focused solutions that help you detect AI patterns and transform robotic text into authentic human voice.
-                </p>
-                <p className="text-lg text-muted-foreground leading-relaxed">
-                  Whether you're a content creator ensuring originality, a student maintaining academic integrity, or a professional refining AI-assisted drafts, AI Free Text Pro gives you the confidence to produce genuine, human-like content.
-                </p>
-              </div>
-
-              {/* Core Values */}
-              <div className="grid md:grid-cols-2 gap-8 pt-8">
-                <div className="space-y-4 p-6 rounded-xl bg-card/50 border border-border/50">
-                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center">
-                    <Target className="w-6 h-6 text-primary" />
-                  </div>
-                  <h3 className="text-xl font-semibold">Accuracy First</h3>
-                  <p className="text-muted-foreground">
-                    We use advanced AI models to deliver 98% accuracy in detection and natural humanization that passes rigorous testing.
-                  </p>
-                </div>
-
-                <div className="space-y-4 p-6 rounded-xl bg-card/50 border border-border/50">
-                  <div className="w-12 h-12 rounded-lg bg-secondary/10 flex items-center justify-center">
-                    <Zap className="w-6 h-6 text-secondary" />
-                  </div>
-                  <h3 className="text-xl font-semibold">Speed & Simplicity</h3>
-                  <p className="text-muted-foreground">
-                    Get instant results with a clean, intuitive interface. No complicated setup or learning curve required.
-                  </p>
-                </div>
-
-                <div className="space-y-4 p-6 rounded-xl bg-card/50 border border-border/50">
-                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center">
-                    <Shield className="w-6 h-6 text-primary" />
-                  </div>
-                  <h3 className="text-xl font-semibold">Privacy Focused</h3>
-                  <p className="text-muted-foreground">
-                    Your text is processed securely and never stored. We respect your privacy and protect your content.
-                  </p>
-                </div>
-
-                <div className="space-y-4 p-6 rounded-xl bg-card/50 border border-border/50">
-                  <div className="w-12 h-12 rounded-lg bg-secondary/10 flex items-center justify-center">
-                    <Users className="w-6 h-6 text-secondary" />
-                  </div>
-                  <h3 className="text-xl font-semibold">Free Forever</h3>
-                  <p className="text-muted-foreground">
-                    Core functionality remains free for everyone. We're committed to making these tools accessible to all.
-                  </p>
-                </div>
-              </div>
             </div>
           </div>
         </section>
 
         {/* Story Section */}
-        <section className="py-16 md:py-24 bg-card/20">
+        <section className="py-20 md:py-28 bg-gradient-to-b from-background to-muted/30">
           <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto space-y-6">
-              <h2 className="text-3xl md:text-4xl font-bold">Our Story</h2>
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                AI Free Text Pro was born from a simple observation: as AI writing tools became more prevalent, there was a growing need for reliable detection and humanization services that were both accurate and accessible.
-              </p>
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                We built AI Free Text Pro to bridge this gap, combining cutting-edge AI technology with a user-first approach. Today, we're trusted by over 50,000 users worldwide who rely on our tools for their content needs.
-              </p>
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                As AI continues to evolve, so do we. We're constantly improving our detection algorithms and humanization quality to stay ahead of the curve and provide you with the best possible service.
-              </p>
+            <div className="max-w-5xl mx-auto">
+              <div className="text-center mb-16">
+                <h2 className="text-4xl md:text-5xl font-bold mb-6">Our Story</h2>
+                <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+                  Built by writers, for writers
+                </p>
+              </div>
+              
+              <div className="grid md:grid-cols-3 gap-8 mb-16">
+                <Card className="p-8 text-center bg-gradient-to-br from-card to-card/50 border-border/50 hover:shadow-lg transition-all">
+                  <div className="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center mx-auto mb-6">
+                    <TrendingUp className="w-8 h-8 text-primary" />
+                  </div>
+                  <h3 className="text-2xl font-bold mb-2">2023</h3>
+                  <p className="text-muted-foreground">Founded with a mission to democratize AI text tools</p>
+                </Card>
+                
+                <Card className="p-8 text-center bg-gradient-to-br from-card to-card/50 border-border/50 hover:shadow-lg transition-all">
+                  <div className="w-16 h-16 rounded-2xl bg-secondary/10 flex items-center justify-center mx-auto mb-6">
+                    <Users className="w-8 h-8 text-secondary" />
+                  </div>
+                  <h3 className="text-2xl font-bold mb-2">50K+</h3>
+                  <p className="text-muted-foreground">Active users trusting our platform daily</p>
+                </Card>
+                
+                <Card className="p-8 text-center bg-gradient-to-br from-card to-card/50 border-border/50 hover:shadow-lg transition-all">
+                  <div className="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center mx-auto mb-6">
+                    <CheckCircle className="w-8 h-8 text-primary" />
+                  </div>
+                  <h3 className="text-2xl font-bold mb-2">98%</h3>
+                  <p className="text-muted-foreground">Accuracy rate in humanization & detection</p>
+                </Card>
+              </div>
+              
+              <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
+                <p>
+                  AI Free Text Pro was born from a simple observation: as AI writing tools became ubiquitous, there was a growing gap between machine-generated content and authentic human expression. Writers, students, and professionals needed reliable tools that were both accurate and accessible.
+                </p>
+                <p>
+                  We built AI Free Text Pro to bridge that gap—combining cutting-edge AI technology with a human-first philosophy. Our platform doesn't just detect AI patterns; it transforms robotic text into natural, engaging writing that feels uniquely yours.
+                </p>
+                <p>
+                  Today, we're proud to serve a global community of creators who trust us to help them maintain authenticity in an increasingly automated world. As AI continues to evolve, so do we—constantly refining our algorithms to stay ahead of the curve.
+                </p>
+              </div>
             </div>
           </div>
         </section>
 
-        {/* Contact CTA */}
-        <section className="py-16 md:py-24">
+        {/* Mission & Values */}
+        <section className="py-20 md:py-28">
           <div className="container mx-auto px-4">
-            <div className="max-w-2xl mx-auto text-center space-y-6 p-8 md:p-12 bg-gradient-to-r from-primary/10 via-secondary/10 to-primary/10 rounded-3xl border border-border/50">
-              <h2 className="text-3xl md:text-4xl font-bold">Get in Touch</h2>
-              <p className="text-lg text-muted-foreground">
-                Have questions or feedback? We'd love to hear from you.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
-                <a 
-                  href="mailto:support@aifreetextpro.com"
-                  className="px-8 py-3 bg-gradient-to-r from-primary to-primary/80 text-white rounded-lg font-semibold hover:opacity-90 transition-all"
-                >
-                  Email Us
-                </a>
+            <div className="max-w-6xl mx-auto">
+              <div className="text-center mb-16">
+                <h2 className="text-4xl md:text-5xl font-bold mb-6">Our Mission & Values</h2>
+                <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+                  To bridge the gap between artificial intelligence and authentic expression—empowering you to write freely, confidently, and naturally in the age of AI.
+                </p>
               </div>
+              
+              <div className="grid md:grid-cols-3 gap-8">
+                <Card className="p-8 bg-gradient-to-br from-card via-card to-primary/5 border-border/50 hover:shadow-xl transition-all group">
+                  <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                    <Heart className="w-7 h-7 text-primary" />
+                  </div>
+                  <h3 className="text-2xl font-bold mb-4">Integrity</h3>
+                  <p className="text-muted-foreground leading-relaxed">
+                    Transparency builds trust. We never manipulate your data, compromise on privacy, or sacrifice ethical AI use. Your content belongs to you—always.
+                  </p>
+                </Card>
+                
+                <Card className="p-8 bg-gradient-to-br from-card via-card to-secondary/5 border-border/50 hover:shadow-xl transition-all group">
+                  <div className="w-14 h-14 rounded-xl bg-secondary/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                    <Users className="w-7 h-7 text-secondary" />
+                  </div>
+                  <h3 className="text-2xl font-bold mb-4">Community</h3>
+                  <p className="text-muted-foreground leading-relaxed">
+                    We grow by listening. Our users guide every improvement through honest feedback and collaboration. You shape the future of this platform.
+                  </p>
+                </Card>
+                
+                <Card className="p-8 bg-gradient-to-br from-card via-card to-primary/5 border-border/50 hover:shadow-xl transition-all group">
+                  <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                    <Target className="w-7 h-7 text-primary" />
+                  </div>
+                  <h3 className="text-2xl font-bold mb-4">Innovation</h3>
+                  <p className="text-muted-foreground leading-relaxed">
+                    We constantly refine our models to stay ahead of AI detection systems—ensuring you always lead the curve, not follow it.
+                  </p>
+                </Card>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Features That Set Us Apart */}
+        <section className="py-20 md:py-28 bg-gradient-to-b from-muted/30 to-background">
+          <div className="container mx-auto px-4">
+            <div className="max-w-6xl mx-auto">
+              <div className="text-center mb-16">
+                <h2 className="text-4xl md:text-5xl font-bold mb-6">Why Choose AI Free Text Pro</h2>
+                <p className="text-xl text-muted-foreground">
+                  Powerful features designed for real people with real needs
+                </p>
+              </div>
+              
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <Card className="p-6 hover:shadow-lg transition-all border-border/50">
+                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
+                    <Zap className="w-6 h-6 text-primary" />
+                  </div>
+                  <h3 className="text-xl font-bold mb-3">Lightning Fast</h3>
+                  <p className="text-muted-foreground">
+                    Generate humanized content in seconds. No waiting, no queues—just instant transformation.
+                  </p>
+                </Card>
+                
+                <Card className="p-6 hover:shadow-lg transition-all border-border/50">
+                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
+                    <Target className="w-6 h-6 text-primary" />
+                  </div>
+                  <h3 className="text-xl font-bold mb-3">Unmatched Precision</h3>
+                  <p className="text-muted-foreground">
+                    98% accuracy in rewriting and detection avoidance. Your text stays genuine and credible—every single time.
+                  </p>
+                </Card>
+                
+                <Card className="p-6 hover:shadow-lg transition-all border-border/50">
+                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
+                    <Lock className="w-6 h-6 text-primary" />
+                  </div>
+                  <h3 className="text-xl font-bold mb-3">Privacy First</h3>
+                  <p className="text-muted-foreground">
+                    Zero data retention. Your content is processed securely and never stored, logged, or shared.
+                  </p>
+                </Card>
+                
+                <Card className="p-6 hover:shadow-lg transition-all border-border/50">
+                  <div className="w-12 h-12 rounded-lg bg-secondary/10 flex items-center justify-center mb-4">
+                    <Cpu className="w-6 h-6 text-secondary" />
+                  </div>
+                  <h3 className="text-xl font-bold mb-3">Smart AI Technology</h3>
+                  <p className="text-muted-foreground">
+                    Advanced linguistic models that understand context, tone, and natural human writing patterns.
+                  </p>
+                </Card>
+                
+                <Card className="p-6 hover:shadow-lg transition-all border-border/50">
+                  <div className="w-12 h-12 rounded-lg bg-secondary/10 flex items-center justify-center mb-4">
+                    <Globe className="w-6 h-6 text-secondary" />
+                  </div>
+                  <h3 className="text-xl font-bold mb-3">Global-Ready</h3>
+                  <p className="text-muted-foreground">
+                    Built to understand diverse linguistic cues and writing standards—perfect for international users.
+                  </p>
+                </Card>
+                
+                <Card className="p-6 hover:shadow-lg transition-all border-border/50">
+                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
+                    <Shield className="w-6 h-6 text-primary" />
+                  </div>
+                  <h3 className="text-xl font-bold mb-3">100% Free Core Features</h3>
+                  <p className="text-muted-foreground">
+                    Essential detection and humanization tools remain free forever. No hidden fees, no paywalls.
+                  </p>
+                </Card>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Technology Section */}
+        <section className="py-20 md:py-28">
+          <div className="container mx-auto px-4">
+            <div className="max-w-5xl mx-auto">
+              <div className="text-center mb-16">
+                <h2 className="text-4xl md:text-5xl font-bold mb-6">Powered by Advanced AI</h2>
+                <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+                  Our proprietary algorithms are trained on diverse linguistic patterns, allowing us to distinguish subtle human nuances in tone, rhythm, and structure. We learn from style, not content—ensuring complete data security.
+                </p>
+              </div>
+              
+              <div className="grid md:grid-cols-3 gap-8">
+                <Card className="p-8 text-center bg-gradient-to-br from-primary/5 to-card border-border/50 hover:shadow-xl transition-all">
+                  <Cpu className="w-12 h-12 text-primary mx-auto mb-6" />
+                  <h3 className="text-xl font-bold mb-4">Context-Aware Rewriting</h3>
+                  <p className="text-muted-foreground leading-relaxed">
+                    Our models mimic authentic writing styles using intelligent paraphrasing and sentence restructuring that preserves meaning.
+                  </p>
+                </Card>
+                
+                <Card className="p-8 text-center bg-gradient-to-br from-secondary/5 to-card border-border/50 hover:shadow-xl transition-all">
+                  <Globe className="w-12 h-12 text-secondary mx-auto mb-6" />
+                  <h3 className="text-xl font-bold mb-4">Adaptive Learning</h3>
+                  <p className="text-muted-foreground leading-relaxed">
+                    Continuously improving algorithms that adapt to evolving AI detection systems and writing standards.
+                  </p>
+                </Card>
+                
+                <Card className="p-8 text-center bg-gradient-to-br from-primary/5 to-card border-border/50 hover:shadow-xl transition-all">
+                  <Lock className="w-12 h-12 text-primary mx-auto mb-6" />
+                  <h3 className="text-xl font-bold mb-4">Zero-Knowledge Architecture</h3>
+                  <p className="text-muted-foreground leading-relaxed">
+                    Your data never touches a database. Once processed, it's gone—permanently. Complete privacy guaranteed.
+                  </p>
+                </Card>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Testimonial */}
+        <section className="py-20 md:py-28 bg-gradient-to-b from-muted/30 to-background">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto">
+              <Card className="p-10 md:p-14 bg-gradient-to-br from-primary/5 via-card to-secondary/5 border-border/50 shadow-xl">
+                <div className="flex gap-2 mb-6">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="w-6 h-6 fill-primary text-primary" />
+                  ))}
+                </div>
+                <blockquote className="text-2xl md:text-3xl font-medium mb-6 leading-relaxed">
+                  "AI Free Text Pro transformed how our content team works. The rewritten text feels so natural, our QA department couldn't tell the difference. It's become an indispensable tool for modern content creation."
+                </blockquote>
+                <div className="flex items-center gap-4">
+                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center text-white font-bold text-lg">
+                    SM
+                  </div>
+                  <div>
+                    <p className="font-semibold text-lg">Sarah Martinez</p>
+                    <p className="text-muted-foreground">Senior Content Strategist</p>
+                  </div>
+                </div>
+              </Card>
+            </div>
+          </div>
+        </section>
+
+        {/* CTA Section */}
+        <section className="py-20 md:py-28">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto">
+              <Card className="relative overflow-hidden p-12 md:p-16 text-center bg-gradient-to-br from-primary via-primary to-secondary border-0 shadow-2xl">
+                <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(255,255,255,0.1),transparent_50%)]" />
+                <div className="relative">
+                  <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
+                    Ready to Transform Your Writing?
+                  </h2>
+                  <p className="text-xl text-white/90 mb-10 max-w-2xl mx-auto leading-relaxed">
+                    Join 50,000+ creators who trust AI Free Text Pro to make their words sound naturally human. Start for free today.
+                  </p>
+                  <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                    <Button 
+                      asChild 
+                      size="lg" 
+                      className="bg-white text-primary hover:bg-white/90 font-semibold text-lg px-8 py-6 shadow-lg"
+                    >
+                      <a href="/">Get Started Free</a>
+                    </Button>
+                    <Button 
+                      asChild 
+                      size="lg" 
+                      variant="outline" 
+                      className="bg-white/10 text-white border-white/30 hover:bg-white/20 font-semibold text-lg px-8 py-6 backdrop-blur-sm"
+                    >
+                      <a href="/contact">Contact Us</a>
+                    </Button>
+                  </div>
+                </div>
+              </Card>
             </div>
           </div>
         </section>

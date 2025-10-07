@@ -9,6 +9,13 @@ import { toast } from "sonner";
 import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
 import { Badge } from "@/components/ui/badge";
 import Footer from "@/components/Footer";
+import { 
+  trackAICheckerStart, 
+  trackAICheckerComplete, 
+  trackAICheckerSample, 
+  trackAICheckerCopyReport,
+  trackError 
+} from "@/lib/analytics";
 
 type Segment = {
   text: string;
@@ -66,6 +73,9 @@ const AIChecker = () => {
       return;
     }
 
+    // Track start of AI check
+    trackAICheckerStart(wordCount);
+
     setIsLoading(true);
     setResult(null);
     setProcessingTime(null);
@@ -77,17 +87,24 @@ const AIChecker = () => {
       });
 
       const endTime = Date.now();
-      setProcessingTime((endTime - startTime) / 1000);
+      const timeTaken = (endTime - startTime) / 1000;
+      setProcessingTime(timeTaken);
 
       if (error) {
+        trackError('ai_checker_error', data?.error || 'Unknown error');
         toast.error(data?.error || "Failed to analyze text. Please try again.");
         return;
       }
 
       setResult(data);
+      
+      // Track successful completion
+      trackAICheckerComplete(data.ai_probability, timeTaken);
+      
       toast.success("Analysis complete!");
     } catch (error) {
       console.error('Error checking text:', error);
+      trackError('ai_checker_exception', error instanceof Error ? error.message : 'Unknown error');
       toast.error("Failed to analyze text. Please try again.");
     } finally {
       setIsLoading(false);
@@ -95,6 +112,7 @@ const AIChecker = () => {
   };
 
   const loadSample = (type: 'ai' | 'human') => {
+    trackAICheckerSample(type);
     setText(SAMPLE_TEXTS[type]);
     setResult(null);
     toast.success(`Sample ${type === 'ai' ? 'AI' : 'human'} text loaded`);
@@ -138,6 +156,8 @@ const AIChecker = () => {
 
   const copyAnalysisReport = () => {
     if (!result) return;
+    
+    trackAICheckerCopyReport();
     
     const zone = getResultZone(result.ai_probability);
     const stats = getBreakdownStats();

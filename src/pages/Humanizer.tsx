@@ -12,6 +12,16 @@ import { toast } from "sonner";
 import { Slider } from "@/components/ui/slider";
 import { Badge } from "@/components/ui/badge";
 import Footer from "@/components/Footer";
+import {
+  trackHumanizerStart,
+  trackHumanizerComplete,
+  trackHumanizerCopy,
+  trackHumanizerDownload,
+  trackHumanizerRegenerate,
+  trackHumanizerSample,
+  trackHumanizerRecheck,
+  trackError
+} from "@/lib/analytics";
 
 const SAMPLE_AI_TEXT = "Artificial intelligence has fundamentally transformed how businesses operate in the modern era. Organizations across diverse sectors are increasingly adopting machine learning algorithms to optimize workflows, enhance productivity, and streamline complex processes. This technological revolution enables companies to make more informed decisions, improve operational efficiency, and achieve better outcomes. However, successful integration requires careful evaluation of costs, benefits, and organizational readiness. Leaders must consider factors such as employee training, system compatibility, data security, and long-term scalability. The implementation process demands strategic planning, substantial investment, and ongoing commitment to adaptation. Companies that navigate these challenges effectively position themselves for sustained competitive advantage in an increasingly digital marketplace. The key lies in balancing innovation with practical execution, ensuring that technological adoption aligns with core business objectives and delivers measurable value.";
 
@@ -69,6 +79,9 @@ const Humanizer = () => {
       return;
     }
 
+    // Track start of humanization
+    trackHumanizerStart(wordCount, style, strength);
+
     setIsLoading(true);
     setHumanizedText("");
     setChangeStats(null);
@@ -96,9 +109,11 @@ const Humanizer = () => {
       await new Promise(resolve => setTimeout(resolve, 200));
 
       const endTime = Date.now();
-      setProcessingTime((endTime - startTime) / 1000);
+      const timeTaken = (endTime - startTime) / 1000;
+      setProcessingTime(timeTaken);
 
       if (error) {
+        trackError('humanizer_error', data?.error || 'Unknown error');
         toast.error(data?.error || "Failed to humanize text. Please try again.");
         setProcessingStage('');
         return;
@@ -108,6 +123,13 @@ const Humanizer = () => {
       setChangeStats(data.changeStats);
       setUndetectabilityScore(data.undetectabilityScore);
       setQualityMetrics(data.metrics);
+      
+      // Track successful completion
+      trackHumanizerComplete(
+        data.undetectabilityScore,
+        timeTaken,
+        data.changeStats?.wordsChanged || 0
+      );
       
       // Stage 4: Finalizing
       setProcessingStage('Finalizing...');
@@ -122,6 +144,7 @@ const Humanizer = () => {
       }
     } catch (error) {
       console.error('Error humanizing text:', error);
+      trackError('humanizer_exception', error instanceof Error ? error.message : 'Unknown error');
       toast.error("Failed to humanize text. Please try again.");
     } finally {
       setIsLoading(false);
@@ -147,13 +170,16 @@ const Humanizer = () => {
 
       if (!error && data) {
         setRecheckResult(data);
+        trackHumanizerRecheck(data.ai_probability);
       }
     } catch (error) {
       console.error('Error rechecking text:', error);
+      trackError('humanizer_recheck_error', error instanceof Error ? error.message : 'Unknown error');
     }
   };
 
   const handleCopy = async () => {
+    trackHumanizerCopy();
     await navigator.clipboard.writeText(humanizedText);
     setCopied(true);
     toast.success("Copied to clipboard!");
@@ -161,6 +187,7 @@ const Humanizer = () => {
   };
 
   const handleDownload = () => {
+    trackHumanizerDownload();
     const blob = new Blob([humanizedText], { type: 'text/plain' });
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
@@ -174,6 +201,7 @@ const Humanizer = () => {
   };
 
   const loadSample = () => {
+    trackHumanizerSample();
     setText(SAMPLE_AI_TEXT);
     setHumanizedText("");
     setChangeStats(null);
@@ -377,7 +405,10 @@ const Humanizer = () => {
               </div>
               <div className="flex gap-2">
                 <Button
-                  onClick={handleHumanize}
+                  onClick={() => {
+                    trackHumanizerRegenerate();
+                    handleHumanize();
+                  }}
                   variant="outline"
                   size="sm"
                   className="gap-2"

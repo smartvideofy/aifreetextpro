@@ -6,6 +6,7 @@ import { Brain, Sparkles, Loader2, ArrowRight } from "lucide-react";
 import { supabase } from "@/integrations/supabase/client";
 import { toast } from "sonner";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { trackDemoDetect, trackDemoHumanize, trackDemoTabSwitch, trackError } from "@/lib/analytics";
 
 const SAMPLE_TEXT = "Artificial intelligence has revolutionized various industries by enabling automation and enhancing efficiency. Organizations are increasingly adopting machine learning algorithms to optimize workflows and improve decision-making processes. This technological advancement represents a significant milestone in human progress.";
 
@@ -21,6 +22,8 @@ const DemoSection = () => {
       return;
     }
 
+    trackDemoDetect();
+
     setIsLoading(true);
     setResult(null);
 
@@ -30,6 +33,7 @@ const DemoSection = () => {
       });
 
       if (error) {
+        trackError('demo_detect_error', 'Failed to analyze');
         toast.error("Failed to analyze. Please try again.");
         return;
       }
@@ -38,6 +42,7 @@ const DemoSection = () => {
       toast.success("Analysis complete!");
     } catch (error) {
       console.error('Error:', error);
+      trackError('demo_detect_exception', error instanceof Error ? error.message : 'Unknown error');
       toast.error("Failed to analyze text.");
     } finally {
       setIsLoading(false);
@@ -50,6 +55,8 @@ const DemoSection = () => {
       return;
     }
 
+    trackDemoHumanize();
+
     setIsLoading(true);
     setResult(null);
 
@@ -59,6 +66,7 @@ const DemoSection = () => {
       });
 
       if (error) {
+        trackError('demo_humanize_error', 'Failed to humanize');
         toast.error("Failed to humanize. Please try again.");
         return;
       }
@@ -67,6 +75,7 @@ const DemoSection = () => {
       toast.success("Text humanized!");
     } catch (error) {
       console.error('Error:', error);
+      trackError('demo_humanize_exception', error instanceof Error ? error.message : 'Unknown error');
       toast.error("Failed to humanize text.");
     } finally {
       setIsLoading(false);
@@ -91,7 +100,10 @@ const DemoSection = () => {
         </div>
 
         <Card className="p-6 bg-card/50 backdrop-blur border-border/50 shadow-xl">
-          <Tabs value={activeTab} onValueChange={(v) => setActiveTab(v as any)} className="space-y-6">
+          <Tabs value={activeTab} onValueChange={(v) => {
+            setActiveTab(v as any);
+            trackDemoTabSwitch(v as 'detect' | 'humanize');
+          }} className="space-y-6">
             <TabsList className="grid w-full grid-cols-2 max-w-md mx-auto">
               <TabsTrigger value="detect" className="gap-2">
                 <Brain className="w-4 h-4" />

@@ -4,8 +4,25 @@ import { ArrowLeft, CheckCircle, AlertCircle, Lightbulb, Target } from "lucide-r
 import { Helmet } from "react-helmet-async";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
+import { RelatedArticles } from "@/components/RelatedArticles";
 
 const BypassAIDetection = () => {
+  const relatedArticles = [
+    {
+      title: "How to Detect AI-Generated Text: Complete Guide",
+      description: "Learn professional techniques to identify AI-written content and understand AI detection patterns.",
+      href: "/blog/how-to-detect-ai-generated-text",
+      category: "Detection"
+    },
+    {
+      title: "Best Free AI Humanizers in 2025: Complete Comparison",
+      description: "Discover the top free AI humanizer tools and find the perfect one for your needs.",
+      href: "/blog/best-free-ai-humanizer-tools-2025",
+      category: "Tools & Reviews"
+    }
+  ];
+
   return (
     <div className="min-h-screen flex flex-col">
       <Helmet>
@@ -23,6 +40,11 @@ const BypassAIDetection = () => {
       
       <article className="flex-1 py-12 md:py-20">
         <div className="container mx-auto px-4 max-w-4xl">
+          <Breadcrumbs items={[
+            { label: 'Home', href: '/' },
+            { label: 'Blog', href: '/blog' },
+            { label: 'Bypass AI Detection' }
+          ]} />
           <Link to="/blog">
             <Button variant="ghost" className="mb-8">
               <ArrowLeft className="mr-2 h-4 w-4" />
@@ -235,6 +257,8 @@ const BypassAIDetection = () => {
                 </div>
               </div>
             </div>
+
+            <RelatedArticles articles={relatedArticles} />
           </div>
         </div>
       </article>

@@ -5,8 +5,25 @@ import { ArrowLeft, Star, Sparkles, Zap, Shield, DollarSign } from "lucide-react
 import { Helmet } from "react-helmet-async";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
+import { RelatedArticles } from "@/components/RelatedArticles";
 
 const BestAIHumanizers = () => {
+  const relatedArticles = [
+    {
+      title: "How to Bypass AI Detection: Ethical Strategies & Tips",
+      description: "Learn legitimate techniques to make AI-assisted content more human-like and authentic.",
+      href: "/blog/bypass-ai-detection-ethical-tips",
+      category: "Guides"
+    },
+    {
+      title: "How to Detect AI-Generated Text: Complete Guide",
+      description: "Learn professional techniques to identify AI-written content and understand AI detection patterns.",
+      href: "/blog/how-to-detect-ai-generated-text",
+      category: "Detection"
+    }
+  ];
+
   return (
     <div className="min-h-screen flex flex-col">
       <Helmet>
@@ -24,6 +41,11 @@ const BestAIHumanizers = () => {
       
       <article className="flex-1 py-12 md:py-20">
         <div className="container mx-auto px-4 max-w-4xl">
+          <Breadcrumbs items={[
+            { label: 'Home', href: '/' },
+            { label: 'Blog', href: '/blog' },
+            { label: 'Best AI Humanizers 2025' }
+          ]} />
           <Link to="/blog">
             <Button variant="ghost" className="mb-8">
               <ArrowLeft className="mr-2 h-4 w-4" />
@@ -258,6 +280,8 @@ const BestAIHumanizers = () => {
                 </div>
               </div>
             </div>
+
+            <RelatedArticles articles={relatedArticles} />
           </div>
         </div>
       </article>

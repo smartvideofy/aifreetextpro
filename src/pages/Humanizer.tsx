@@ -12,6 +12,8 @@ import { toast } from "sonner";
 import { Slider } from "@/components/ui/slider";
 import { Badge } from "@/components/ui/badge";
 import Footer from "@/components/Footer";
+import { FAQSection } from "@/components/FAQSection";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 import {
   trackHumanizerStart,
   trackHumanizerComplete,
@@ -226,6 +228,59 @@ const Humanizer = () => {
     return 'Complete transformation with creative liberty';
   };
 
+  const faqs = [
+    {
+      question: "What is AI text humanization?",
+      answer: "AI humanization transforms robotic, AI-generated text into natural, human-like writing by varying sentence structure, adding personality, and making the content more engaging while preserving the original meaning."
+    },
+    {
+      question: "Will humanized text bypass AI detectors?",
+      answer: "Yes, our humanizer is specifically designed to reduce AI detection scores. Most humanized text scores below 30% on AI detectors, making it indistinguishable from human writing."
+    },
+    {
+      question: "Does humanizing change the meaning of my text?",
+      answer: "No, the humanizer preserves your original meaning and intent. It only improves readability, flow, and naturalness by restructuring sentences and varying vocabulary."
+    },
+    {
+      question: "How many times can I use the humanizer for free?",
+      answer: "Unlimited! Our humanizer is completely free with no usage limits or hidden fees."
+    },
+    {
+      question: "What's the difference between humanization strengths?",
+      answer: "Light (0-30%) makes minimal changes, Moderate (30-60%) balances naturalness and originality, Aggressive (60-85%) significantly rewrites the text, and Maximum (85-100%) completely transforms it for maximum humanization."
+    }
+  ];
+
+  // HowTo Schema
+  const howToSchema = {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": "How to Humanize AI Text",
+    "description": "Step-by-step guide to convert AI-generated text into natural, human-like writing",
+    "step": [
+      {
+        "@type": "HowToStep",
+        "name": "Paste AI Text",
+        "text": "Copy and paste your AI-generated or robotic text into the input field."
+      },
+      {
+        "@type": "HowToStep",
+        "name": "Choose Settings",
+        "text": "Select your preferred writing style (professional, casual, or academic) and humanization strength."
+      },
+      {
+        "@type": "HowToStep",
+        "name": "Humanize",
+        "text": "Click 'Humanize Text' button or press Ctrl+Enter to transform your text."
+      },
+      {
+        "@type": "HowToStep",
+        "name": "Copy Result",
+        "text": "Review the humanized text and copy it to use in your content."
+      }
+    ]
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-background via-background to-secondary/5">
       <Helmet>
@@ -236,8 +291,15 @@ const Humanizer = () => {
         <meta property="og:title" content="Free AI Humanizer - Convert AI Text to Human Writing" />
         <meta property="og:description" content="Free AI humanizer tool to convert robotic AI text into natural, human-like writing. Bypass AI detectors and improve readability." />
         <meta property="og:url" content="https://aifreetextpro.com/humanizer" />
+        <script type="application/ld+json">
+          {JSON.stringify(howToSchema)}
+        </script>
       </Helmet>
       <div className="max-w-4xl mx-auto space-y-8 p-6">
+        <Breadcrumbs items={[
+          { label: 'Home', href: '/' },
+          { label: 'Text Humanizer' }
+        ]} />
         <div className="text-center space-y-3 animate-in fade-in slide-in-from-top duration-500">
           <div className="inline-flex items-center gap-2 text-secondary">
             <Sparkles className="w-8 h-8" />
@@ -642,6 +704,8 @@ const Humanizer = () => {
             </div>
           </Card>
         )}
+
+        <FAQSection faqs={faqs} title="Common Questions About Text Humanization" />
       </div>
       <Footer />
     </div>

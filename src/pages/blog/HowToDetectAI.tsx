@@ -5,8 +5,25 @@ import { Helmet } from "react-helmet-async";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { SidebarAd, InContentAd } from "@/components/AdZone";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
+import { RelatedArticles } from "@/components/RelatedArticles";
 
 const HowToDetectAI = () => {
+  const relatedArticles = [
+    {
+      title: "Best Free AI Humanizers in 2025: Complete Comparison",
+      description: "Discover the top free AI humanizer tools and find the perfect one for your needs. Compare features, accuracy, and ease of use.",
+      href: "/blog/best-free-ai-humanizer-tools-2025",
+      category: "Tools & Reviews"
+    },
+    {
+      title: "How to Bypass AI Detection: Ethical Strategies & Tips",
+      description: "Learn legitimate techniques to make AI-assisted content more human-like and authentic while maintaining quality.",
+      href: "/blog/bypass-ai-detection-ethical-tips",
+      category: "Guides"
+    }
+  ];
+
   return (
     <div className="min-h-screen flex flex-col">
       <Helmet>
@@ -28,6 +45,11 @@ const HowToDetectAI = () => {
           <div className="grid lg:grid-cols-[1fr_300px] gap-8 max-w-7xl mx-auto">
             {/* Main Content */}
             <div>
+              <Breadcrumbs items={[
+                { label: 'Home', href: '/' },
+                { label: 'Blog', href: '/blog' },
+                { label: 'How to Detect AI-Generated Text' }
+              ]} />
               <Link to="/blog">
                 <Button variant="ghost" className="mb-8">
                   <ArrowLeft className="mr-2 h-4 w-4" />
@@ -190,6 +212,8 @@ const HowToDetectAI = () => {
                     </div>
                   </div>
                 </div>
+
+                <RelatedArticles articles={relatedArticles} />
               </div>
             </div>
             

@@ -25,15 +25,39 @@ export const AdZone = ({
   style = {}
 }: AdZoneProps) => {
   const adRef = useRef<HTMLModElement>(null);
+  const isVisible = useRef(false);
+  const observerRef = useRef<IntersectionObserver | null>(null);
 
   useEffect(() => {
-    try {
-      if (adRef.current) {
-        (window.adsbygoogle = window.adsbygoogle || []).push({});
+    // Lazy load ads using Intersection Observer
+    if (!adRef.current) return;
+
+    observerRef.current = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting && !isVisible.current) {
+            isVisible.current = true;
+            try {
+              (window.adsbygoogle = window.adsbygoogle || []).push({});
+            } catch (error) {
+              console.error('AdSense error:', error);
+            }
+          }
+        });
+      },
+      {
+        rootMargin: '200px', // Load ad 200px before it enters viewport
+        threshold: 0.01
       }
-    } catch (error) {
-      console.error('AdSense error:', error);
-    }
+    );
+
+    observerRef.current.observe(adRef.current);
+
+    return () => {
+      if (observerRef.current) {
+        observerRef.current.disconnect();
+      }
+    };
   }, []);
 
   return (

@@ -40,11 +40,11 @@ const App = () => (
   <HelmetProvider>
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
-        <AuthProvider>
-          <GoogleAnalytics />
-          <Toaster />
-          <Sonner />
-          <BrowserRouter>
+        <BrowserRouter>
+          <AuthProvider>
+            <GoogleAnalytics />
+            <Toaster />
+            <Sonner />
             <RouteTracker />
             <Routes>
               <Route path="/" element={<Index />} />
@@ -63,8 +63,8 @@ const App = () => (
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<><Navbar /><NotFound /></>} />
             </Routes>
-          </BrowserRouter>
-        </AuthProvider>
+          </AuthProvider>
+        </BrowserRouter>
       </TooltipProvider>
     </QueryClientProvider>
   </HelmetProvider>

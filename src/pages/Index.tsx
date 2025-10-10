@@ -1,14 +1,12 @@
-import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { ArrowRight, CheckCircle, Zap, Shield, FileText, Sparkles, Brain, Target, Star } from "lucide-react";
+import { ArrowRight, CheckCircle, Shield, FileText, Sparkles, Brain, Star, Pen, BookOpen, Target, Zap } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 import beforeAfterDemo from "@/assets/before-after-demo.png";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import AnimatedBackground from "@/components/AnimatedBackground";
-import DemoSection from "@/components/DemoSection";
 import AboutSection from "@/components/AboutSection";
 import { InContentAd } from "@/components/AdZone";
 
@@ -16,12 +14,12 @@ const Index = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <Helmet>
-        <title>AI Free Text Pro - Free AI Detector & Humanizer Tool | Bypass AI Detection</title>
-        <meta name="description" content="Free AI text detector and humanizer with 98% accuracy. Check if text is AI-generated, bypass AI detection, and convert AI text to human-like writing. Works with ChatGPT, GPT-4, Claude, and all AI writing tools." />
-        <meta name="keywords" content="ai detector, ai humanizer, free ai checker, bypass ai detection, ai text detector, humanize ai text, chatgpt detector, detect ai writing, ai content detector, zerogpt alternative" />
+        <title>AI Free Text Pro - Your AI Writing Partner | Rewrite, Refine & Publish with Confidence</title>
+        <meta name="description" content="Transform your writing with AI Free Text Pro. Detect AI-generated content, humanize text naturally, and create authentic content. Trusted by 50,000+ writers, students, and professionals worldwide." />
+        <meta name="keywords" content="ai writing partner, ai detector, ai humanizer, writing tool, content refinement, ai text detector, humanize ai text, authentic writing, professional writing tool" />
         <link rel="canonical" href="https://aifreetextpro.com/" />
-        <meta property="og:title" content="AI Free Text Pro - Free AI Detector & Humanizer Tool" />
-        <meta property="og:description" content="Free AI text detector and humanizer with 98% accuracy. Check if text is AI-generated and convert AI text to human-like writing." />
+        <meta property="og:title" content="AI Free Text Pro - Your AI Writing Partner" />
+        <meta property="og:description" content="Rewrite, refine, and publish with confidence. The ultimate AI writing partner for authentic content creation." />
         <meta property="og:url" content="https://aifreetextpro.com/" />
         <meta property="og:type" content="website" />
       </Helmet>
@@ -36,12 +34,12 @@ const Index = () => {
             <div className="text-center space-y-6 max-w-4xl mx-auto animate-in fade-in slide-in-from-bottom duration-700">
               <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold leading-tight">
                 <span className="bg-gradient-to-r from-primary via-secondary to-primary bg-clip-text text-transparent bg-[length:200%_auto] animate-[gradient_8s_linear_infinite]">
-                  Turn AI Text into Authentic Human Voice
+                  Your AI Writing Partner
                 </span>
               </h1>
               
               <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto">
-                Instantly identify AI-generated content and humanize it naturally. Perfect for writers, students, and professionals.
+                Rewrite, refine, and publish with confidence. AI-Free Writing Made Effortless for students, researchers, and professionals.
               </p>
 
               <div className="flex items-center justify-center gap-4 text-sm text-muted-foreground pt-2">
@@ -60,26 +58,27 @@ const Index = () => {
               </div>
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
-                <Link to="/ai-checker" className="w-full sm:w-auto">
+                <a href="https://app.aifreetextpro.com/auth" className="w-full sm:w-auto">
                   <Button 
                     size="lg" 
                     className="text-base sm:text-lg px-8 sm:px-10 py-5 sm:py-6 bg-gradient-to-r from-primary via-primary/90 to-secondary hover:opacity-90 shadow-xl hover:shadow-2xl shadow-primary/20 group w-full transition-all font-bold"
                   >
-                    <Brain className="mr-2 h-5 w-5" />
-                    Try Detector Now
+                    <Pen className="mr-2 h-5 w-5" />
+                    Start Writing Smarter
                     <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                   </Button>
-                </Link>
-                <Link to="/humanizer" className="w-full sm:w-auto">
+                </a>
+                <a href="https://app.aifreetextpro.com/auth" className="w-full sm:w-auto">
                   <Button 
                     size="lg"
-                    className="text-base sm:text-lg px-8 sm:px-10 py-5 sm:py-6 bg-gradient-to-r from-secondary via-secondary/90 to-primary hover:opacity-90 shadow-xl hover:shadow-2xl shadow-secondary/20 group w-full transition-all font-bold"
+                    variant="outline"
+                    className="text-base sm:text-lg px-8 sm:px-10 py-5 sm:py-6 group w-full transition-all font-bold border-2"
                   >
-                    <Sparkles className="mr-2 h-5 w-5" />
-                    Humanize Your Text Now
+                    <BookOpen className="mr-2 h-5 w-5" />
+                    Login to App
                     <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                   </Button>
-                </Link>
+                </a>
               </div>
             </div>
           </div>
@@ -90,15 +89,23 @@ const Index = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-5xl mx-auto">
               <div className="text-center mb-8">
-                <h2 className="text-3xl md:text-4xl font-bold mb-4">See the Transformation</h2>
-                <p className="text-muted-foreground text-lg">Watch AI text become authentically human in seconds</p>
+                <h2 className="text-3xl md:text-4xl font-bold mb-4">See How It Works</h2>
+                <p className="text-muted-foreground text-lg">Experience the power of AI-assisted writing refinement</p>
               </div>
-              <div className="rounded-xl overflow-hidden shadow-2xl border border-border/50">
+              <div className="rounded-xl overflow-hidden shadow-2xl border border-border/50 bg-card/50 backdrop-blur">
                 <img 
                   src={beforeAfterDemo} 
-                  alt="Before and after comparison showing AI-generated text transformed into natural human writing" 
+                  alt="AI Free Text Pro dashboard showing text transformation and analysis features" 
                   className="w-full h-auto"
                 />
+                <div className="p-6 bg-gradient-to-br from-primary/10 to-secondary/10 text-center">
+                  <p className="text-sm text-muted-foreground mb-4">Join thousands of writers using AI Free Text Pro</p>
+                  <a href="https://app.aifreetextpro.com/auth">
+                    <Button size="lg" className="bg-gradient-to-r from-primary to-secondary">
+                      Go to App <ArrowRight className="ml-2 h-4 w-4" />
+                    </Button>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -119,9 +126,9 @@ const Index = () => {
                 <div className="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center mx-auto">
                   <span className="text-lg font-bold text-primary">1</span>
                 </div>
-                <h3 className="text-xl font-semibold">Paste Your Text</h3>
+                <h3 className="text-xl font-semibold">Input Your Content</h3>
                 <p className="text-muted-foreground">
-                  Simply paste the text you want to analyze or transform into our interface.
+                  Import or paste your text directly into the intuitive writing workspace.
                 </p>
               </div>
 
@@ -132,9 +139,9 @@ const Index = () => {
                 <div className="w-8 h-8 rounded-full bg-secondary/20 flex items-center justify-center mx-auto">
                   <span className="text-lg font-bold text-secondary">2</span>
                 </div>
-                <h3 className="text-xl font-semibold">Detect AI Patterns Instantly</h3>
+                <h3 className="text-xl font-semibold">Smart Analysis & Refinement</h3>
                 <p className="text-muted-foreground">
-                  Our advanced AI analyzes your text and identifies AI-generated patterns with precision.
+                  Advanced AI analyzes patterns and suggests improvements for authenticity and readability.
                 </p>
               </div>
 
@@ -145,9 +152,9 @@ const Index = () => {
                 <div className="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center mx-auto">
                   <span className="text-lg font-bold text-primary">3</span>
                 </div>
-                <h3 className="text-xl font-semibold">Humanize in One Click</h3>
+                <h3 className="text-xl font-semibold">Polish & Publish</h3>
                 <p className="text-muted-foreground">
-                  Transform robotic text into natural, engaging content that sounds authentically human.
+                  Transform your content into polished, authentic writing ready for publication.
                 </p>
               </div>
             </div>
@@ -165,17 +172,17 @@ const Index = () => {
             </p>
             
             <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-              {/* AI Checker Card */}
+              {/* Smart Text Rewriting Card */}
               <Card className="p-8 space-y-6 bg-gradient-to-br from-card to-card/80 backdrop-blur border-border/50 hover:shadow-2xl hover:shadow-primary/20 transition-all duration-300 hover:-translate-y-1">
                 <div className="space-y-4">
                   <div className="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center">
-                    <Brain className="w-8 h-8 text-primary" />
+                    <Sparkles className="w-8 h-8 text-primary" />
                   </div>
                   
-                  <h3 className="text-2xl font-bold">AI Checker</h3>
+                  <h3 className="text-2xl font-bold">Smart Text Rewriting</h3>
                   
                   <p className="text-muted-foreground leading-relaxed">
-                    Advanced AI detection system that analyzes text and provides probability scores for AI-generated vs. human-written content.
+                    Transform any text into natural, engaging content that maintains your authentic voice while improving clarity and flow.
                   </p>
 
                   <div className="space-y-3 pt-2">
@@ -183,42 +190,42 @@ const Index = () => {
                       <div className="w-5 h-5 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0 mt-0.5">
                         <CheckCircle className="w-3 h-3 text-primary" />
                       </div>
-                      <span className="text-sm text-muted-foreground">Accurate AI probability analysis with detailed breakdown</span>
+                      <span className="text-sm text-muted-foreground">Natural, human-like writing style</span>
                     </div>
                     <div className="flex items-start gap-3">
                       <div className="w-5 h-5 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0 mt-0.5">
                         <CheckCircle className="w-3 h-3 text-primary" />
                       </div>
-                      <span className="text-sm text-muted-foreground">Instant results with highlighted AI patterns</span>
+                      <span className="text-sm text-muted-foreground">Maintains meaning and intent</span>
                     </div>
                     <div className="flex items-start gap-3">
                       <div className="w-5 h-5 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0 mt-0.5">
                         <CheckCircle className="w-3 h-3 text-primary" />
                       </div>
-                      <span className="text-sm text-muted-foreground">Powered by GPT-4o Mini for precision</span>
+                      <span className="text-sm text-muted-foreground">Instant refinement suggestions</span>
                     </div>
                   </div>
                 </div>
 
-                <Link to="/ai-checker" className="block">
+                <a href="https://app.aifreetextpro.com/auth" className="block">
                   <Button className="w-full bg-gradient-to-r from-primary to-primary/80 hover:opacity-90 transition-all group">
-                    Try AI Checker
+                    Access in App
                     <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                   </Button>
-                </Link>
+                </a>
               </Card>
 
-              {/* Humanizer Card */}
+              {/* Polish Grammar Instantly Card */}
               <Card className="p-8 space-y-6 bg-gradient-to-br from-card to-card/80 backdrop-blur border-border/50 hover:shadow-2xl hover:shadow-secondary/20 transition-all duration-300 hover:-translate-y-1">
                 <div className="space-y-4">
                   <div className="w-16 h-16 rounded-2xl bg-secondary/10 flex items-center justify-center">
-                    <Sparkles className="w-8 h-8 text-secondary" />
+                    <Brain className="w-8 h-8 text-secondary" />
                   </div>
                   
-                  <h3 className="text-2xl font-bold">Text Humanizer</h3>
+                  <h3 className="text-2xl font-bold">Polish Grammar Instantly</h3>
                   
                   <p className="text-muted-foreground leading-relaxed">
-                    Transform AI-generated or robotic text into natural, engaging content with improved flow, vocabulary, and authenticity.
+                    Advanced AI detection and grammar refinement tools that ensure your writing is polished, professional, and authentic.
                   </p>
 
                   <div className="space-y-3 pt-2">
@@ -226,29 +233,29 @@ const Index = () => {
                       <div className="w-5 h-5 rounded-full bg-secondary/20 flex items-center justify-center flex-shrink-0 mt-0.5">
                         <CheckCircle className="w-3 h-3 text-secondary" />
                       </div>
-                      <span className="text-sm text-muted-foreground">Natural, human-like writing style with personality</span>
+                      <span className="text-sm text-muted-foreground">Detect AI-generated patterns</span>
                     </div>
                     <div className="flex items-start gap-3">
                       <div className="w-5 h-5 rounded-full bg-secondary/20 flex items-center justify-center flex-shrink-0 mt-0.5">
                         <CheckCircle className="w-3 h-3 text-secondary" />
                       </div>
-                      <span className="text-sm text-muted-foreground">Varied sentence structure and authentic flow</span>
+                      <span className="text-sm text-muted-foreground">Real-time authenticity scoring</span>
                     </div>
                     <div className="flex items-start gap-3">
                       <div className="w-5 h-5 rounded-full bg-secondary/20 flex items-center justify-center flex-shrink-0 mt-0.5">
                         <CheckCircle className="w-3 h-3 text-secondary" />
                       </div>
-                      <span className="text-sm text-muted-foreground">Maintains original meaning and intent</span>
+                      <span className="text-sm text-muted-foreground">Professional-grade refinement</span>
                     </div>
                   </div>
                 </div>
 
-                <Link to="/humanizer" className="block">
+                <a href="https://app.aifreetextpro.com/auth" className="block">
                   <Button className="w-full bg-gradient-to-r from-secondary to-secondary/80 hover:opacity-90 transition-all group">
-                    Try Humanizer
+                    Access in App
                     <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                   </Button>
-                </Link>
+                </a>
               </Card>
             </div>
           </div>
@@ -321,11 +328,11 @@ const Index = () => {
           </div>
         </section>
 
-        {/* Why Use AI Free Text Pro */}
+        {/* Why Choose AI Free Text Pro */}
         <section className="py-20 md:py-28 bg-card/20">
           <div className="container mx-auto px-4">
             <h2 className="text-4xl md:text-5xl font-bold text-center mb-20">
-              Why Use AI Free Text Pro
+              Why Choose AI Free Text Pro
             </h2>
             
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
@@ -333,9 +340,9 @@ const Index = () => {
                 <div className="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center mx-auto">
                   <Target className="w-8 h-8 text-primary" />
                 </div>
-                <h3 className="text-lg font-semibold">Detect AI with Confidence</h3>
+                <h3 className="text-lg font-semibold">Stay Authentic</h3>
                 <p className="text-sm text-muted-foreground">
-                  Accurately identify AI-generated content with advanced detection algorithms.
+                  Maintain your unique voice while creating polished, professional content.
                 </p>
               </div>
 
@@ -343,9 +350,9 @@ const Index = () => {
                 <div className="w-16 h-16 rounded-2xl bg-secondary/10 flex items-center justify-center mx-auto">
                   <Sparkles className="w-8 h-8 text-secondary" />
                 </div>
-                <h3 className="text-lg font-semibold">Sound Genuinely Human</h3>
+                <h3 className="text-lg font-semibold">Stay Human</h3>
                 <p className="text-sm text-muted-foreground">
-                  Rewrite content to sound natural, engaging, and authentically human.
+                  Transform content into natural, engaging writing that resonates with readers.
                 </p>
               </div>
 
@@ -353,9 +360,9 @@ const Index = () => {
                 <div className="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center mx-auto">
                   <Zap className="w-8 h-8 text-primary" />
                 </div>
-                <h3 className="text-lg font-semibold">Improve Readability</h3>
+                <h3 className="text-lg font-semibold">Work Faster</h3>
                 <p className="text-sm text-muted-foreground">
-                  Enhance text flow, structure, and overall readability instantly.
+                  Streamline your writing process with intelligent refinement suggestions.
                 </p>
               </div>
 
@@ -363,17 +370,47 @@ const Index = () => {
                 <div className="w-16 h-16 rounded-2xl bg-secondary/10 flex items-center justify-center mx-auto">
                   <Shield className="w-8 h-8 text-secondary" />
                 </div>
-                <h3 className="text-lg font-semibold">Free to Use</h3>
+                <h3 className="text-lg font-semibold">Privacy First</h3>
                 <p className="text-sm text-muted-foreground">
-                  Full access to both tools with premium upgrades coming soon.
+                  Your content stays private and secure. No storage, no sharing.
                 </p>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Interactive Demo Section */}
-        <DemoSection />
+        {/* Social Proof Section */}
+        <section className="py-16 md:py-20 bg-gradient-to-b from-card/10 to-background">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto text-center space-y-8">
+              <h2 className="text-3xl md:text-4xl font-bold">Designed for Everyone</h2>
+              <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+                From students perfecting essays to professionals crafting reports, AI Free Text Pro helps you write better, faster.
+              </p>
+              <div className="grid md:grid-cols-3 gap-6 pt-8">
+                <Card className="p-6 bg-card/50 backdrop-blur border-border/50">
+                  <h3 className="font-bold text-xl mb-2">Students</h3>
+                  <p className="text-sm text-muted-foreground">Perfect essays and research papers with authentic, polished writing</p>
+                </Card>
+                <Card className="p-6 bg-card/50 backdrop-blur border-border/50">
+                  <h3 className="font-bold text-xl mb-2">Researchers</h3>
+                  <p className="text-sm text-muted-foreground">Ensure academic integrity while refining complex technical content</p>
+                </Card>
+                <Card className="p-6 bg-card/50 backdrop-blur border-border/50">
+                  <h3 className="font-bold text-xl mb-2">Professionals</h3>
+                  <p className="text-sm text-muted-foreground">Create compelling business content that resonates with your audience</p>
+                </Card>
+              </div>
+              <div className="pt-8">
+                <a href="https://app.aifreetextpro.com/auth">
+                  <Button size="lg" className="bg-gradient-to-r from-primary to-secondary text-lg px-12 py-6">
+                    Start Your Free Trial <ArrowRight className="ml-2 h-5 w-5" />
+                  </Button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
 
         {/* About Section */}
         <AboutSection />
@@ -458,24 +495,24 @@ const Index = () => {
                 </div>
               </div>
               <h2 className="text-3xl md:text-5xl font-bold">
-                Ready to Transform Your Text?
+                Ready to Write Smarter?
               </h2>
               <p className="text-lg md:text-2xl text-muted-foreground">
-                Join thousands using AI Free Text Pro to create authentic, human-like content.
+                Join 50,000+ writers creating authentic, polished content with AI Free Text Pro.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
-                <Link to="/ai-checker" className="w-full sm:w-auto">
-                  <Button size="lg" className="text-base sm:text-lg px-8 sm:px-10 py-5 sm:py-6 bg-gradient-to-r from-primary to-primary/80 hover:opacity-90 shadow-xl hover:shadow-2xl shadow-primary/20 w-full font-bold transition-all group">
-                    Try Detector Now
+                <a href="https://app.aifreetextpro.com/auth" className="w-full sm:w-auto">
+                  <Button size="lg" className="text-base sm:text-lg px-8 sm:px-10 py-5 sm:py-6 bg-gradient-to-r from-primary to-secondary hover:opacity-90 shadow-xl hover:shadow-2xl shadow-primary/20 w-full font-bold transition-all group">
+                    Get Started Free
                     <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                   </Button>
-                </Link>
-                <Link to="/humanizer" className="w-full sm:w-auto">
-                  <Button size="lg" className="text-base sm:text-lg px-8 sm:px-10 py-5 sm:py-6 bg-gradient-to-r from-secondary to-secondary/80 hover:opacity-90 shadow-xl hover:shadow-2xl shadow-secondary/20 w-full font-bold transition-all group">
-                    Humanize Your Text Now
+                </a>
+                <a href="https://app.aifreetextpro.com/auth" className="w-full sm:w-auto">
+                  <Button size="lg" variant="outline" className="text-base sm:text-lg px-8 sm:px-10 py-5 sm:py-6 w-full font-bold transition-all group border-2">
+                    Login to App
                     <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                   </Button>
-                </Link>
+                </a>
               </div>
             </div>
           </div>

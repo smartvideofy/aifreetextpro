@@ -13,9 +13,9 @@ const MobileNav = () => {
   
   const links = [
     { to: "/", label: "Home" },
-    { to: "/ai-checker", label: "AI Checker" },
-    { to: "/humanizer", label: "Humanizer" },
     { to: "/about", label: "About" },
+    { to: "/blog", label: "Blog" },
+    { to: "/contact", label: "Contact" },
   ];
   
   return (
@@ -44,7 +44,7 @@ const MobileNav = () => {
             </Link>
           ))}
 
-          {/* Dashboard Link */}
+          {/* App Access Link */}
           <Separator />
           <a 
             href="https://app.aifreetextpro.com/auth" 
@@ -52,7 +52,7 @@ const MobileNav = () => {
             rel="noopener noreferrer"
             onClick={() => setOpen(false)}
           >
-            <Button className="w-full">Sign In</Button>
+            <Button className="w-full">Login / Get Started</Button>
           </a>
         </nav>
       </SheetContent>

@@ -20,16 +20,16 @@ const Footer = () => {
             </p>
           </div>
 
-          {/* Tools Column */}
+          {/* Product Column */}
           <div className="space-y-4">
-            <h3 className="font-semibold text-foreground">Tools</h3>
+            <h3 className="font-semibold text-foreground">Product</h3>
             <nav className="flex flex-col gap-2 text-sm">
-              <Link to="/ai-checker" className="text-muted-foreground hover:text-primary transition-colors">
-                AI Checker
-              </Link>
-              <Link to="/humanizer" className="text-muted-foreground hover:text-primary transition-colors">
-                Text Humanizer
-              </Link>
+              <a href="https://app.aifreetextpro.com/auth" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+                Go to App
+              </a>
+              <a href="https://app.aifreetextpro.com/auth" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+                Sign Up Free
+              </a>
             </nav>
           </div>
 

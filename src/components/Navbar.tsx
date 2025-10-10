@@ -34,22 +34,6 @@ const Navbar = () => {
                 Home
               </Button>
             </Link>
-            <Link to="/ai-checker">
-              <Button 
-                variant={isActive("/ai-checker") ? "default" : "ghost"}
-                className="transition-colors"
-              >
-                AI Checker
-              </Button>
-            </Link>
-            <Link to="/humanizer">
-              <Button 
-                variant={isActive("/humanizer") ? "default" : "ghost"}
-                className="transition-colors"
-              >
-                Humanizer
-              </Button>
-            </Link>
             <Link to="/about">
               <Button 
                 variant={isActive("/about") ? "default" : "ghost"}
@@ -58,10 +42,26 @@ const Navbar = () => {
                 About
               </Button>
             </Link>
+            <Link to="/blog">
+              <Button 
+                variant={isActive("/blog") ? "default" : "ghost"}
+                className="transition-colors"
+              >
+                Blog
+              </Button>
+            </Link>
+            <Link to="/contact">
+              <Button 
+                variant={isActive("/contact") ? "default" : "ghost"}
+                className="transition-colors"
+              >
+                Contact
+              </Button>
+            </Link>
 
-            {/* Dashboard Link */}
+            {/* App Link */}
             <a href="https://app.aifreetextpro.com/auth" target="_blank" rel="noopener noreferrer">
-              <Button>Sign In</Button>
+              <Button>Login / Get Started</Button>
             </a>
           </div>
 

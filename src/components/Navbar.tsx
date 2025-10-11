@@ -61,7 +61,7 @@ const Navbar = () => {
 
             {/* App Link */}
             <a href="https://app.aifreetextpro.com/auth" target="_blank" rel="noopener noreferrer">
-              <Button>Login / Get Started</Button>
+              <Button>Start Writing Free</Button>
             </a>
           </div>
 

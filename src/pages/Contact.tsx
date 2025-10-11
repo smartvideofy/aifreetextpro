@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { ArrowLeft, Mail, Clock } from "lucide-react";
+import { ArrowLeft, ArrowRight, Mail, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Helmet } from "react-helmet-async";
@@ -42,7 +42,7 @@ const Contact = () => {
               </p>
               <a href="https://app.aifreetextpro.com/auth">
                 <Button size="lg" className="w-full bg-gradient-to-r from-primary to-secondary">
-                  Go to App
+                  Start Writing Now <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
               </a>
             </Card>

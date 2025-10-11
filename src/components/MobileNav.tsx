@@ -52,7 +52,7 @@ const MobileNav = () => {
             rel="noopener noreferrer"
             onClick={() => setOpen(false)}
           >
-            <Button className="w-full">Login / Get Started</Button>
+            <Button className="w-full">Start Writing Free</Button>
           </a>
         </nav>
       </SheetContent>

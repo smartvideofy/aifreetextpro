@@ -64,7 +64,7 @@ const Index = () => {
                     className="text-base sm:text-lg px-8 sm:px-10 py-5 sm:py-6 bg-gradient-to-r from-primary via-primary/90 to-secondary hover:opacity-90 shadow-xl hover:shadow-2xl shadow-primary/20 group w-full transition-all font-bold"
                   >
                     <Pen className="mr-2 h-5 w-5" />
-                    Start Writing Smarter
+                    Try Free — Instant Access
                     <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                   </Button>
                 </a>
@@ -75,7 +75,7 @@ const Index = () => {
                     className="text-base sm:text-lg px-8 sm:px-10 py-5 sm:py-6 group w-full transition-all font-bold border-2"
                   >
                     <BookOpen className="mr-2 h-5 w-5" />
-                    Login to App
+                    See Live Demo
                     <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                   </Button>
                 </a>
@@ -102,7 +102,7 @@ const Index = () => {
                   <p className="text-sm text-muted-foreground mb-4">Join thousands of writers using AI Free Text Pro</p>
                   <a href="https://app.aifreetextpro.com/auth">
                     <Button size="lg" className="bg-gradient-to-r from-primary to-secondary">
-                      Go to App <ArrowRight className="ml-2 h-4 w-4" />
+                      Start Free Trial <ArrowRight className="ml-2 h-4 w-4" />
                     </Button>
                   </a>
                 </div>
@@ -209,7 +209,7 @@ const Index = () => {
 
                 <a href="https://app.aifreetextpro.com/auth" className="block">
                   <Button className="w-full bg-gradient-to-r from-primary to-primary/80 hover:opacity-90 transition-all group">
-                    Access in App
+                    Try Rewriting Now
                     <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                   </Button>
                 </a>
@@ -252,7 +252,7 @@ const Index = () => {
 
                 <a href="https://app.aifreetextpro.com/auth" className="block">
                   <Button className="w-full bg-gradient-to-r from-secondary to-secondary/80 hover:opacity-90 transition-all group">
-                    Access in App
+                    Check Your Text
                     <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                   </Button>
                 </a>
@@ -512,7 +512,7 @@ const Index = () => {
             <div className="text-center pt-12">
               <a href="https://app.aifreetextpro.com/auth">
                 <Button size="lg" className="bg-gradient-to-r from-primary to-secondary text-lg px-12 py-6">
-                  Start Your Free Trial <ArrowRight className="ml-2 h-5 w-5" />
+                  Join Free — No Credit Card <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
               </a>
             </div>
@@ -610,13 +610,13 @@ const Index = () => {
               <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
                 <a href="https://app.aifreetextpro.com/auth" className="w-full sm:w-auto">
                   <Button size="lg" className="text-base sm:text-lg px-8 sm:px-10 py-5 sm:py-6 bg-gradient-to-r from-primary to-secondary hover:opacity-90 shadow-xl hover:shadow-2xl shadow-primary/20 w-full font-bold transition-all group">
-                    Get Started Free
+                    Start Writing Free
                     <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                   </Button>
                 </a>
                 <a href="https://app.aifreetextpro.com/auth" className="w-full sm:w-auto">
                   <Button size="lg" variant="outline" className="text-base sm:text-lg px-8 sm:px-10 py-5 sm:py-6 w-full font-bold transition-all group border-2">
-                    Login to App
+                    View Live Demo
                     <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                   </Button>
                 </a>

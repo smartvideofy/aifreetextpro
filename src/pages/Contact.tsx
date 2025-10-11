@@ -3,7 +3,6 @@ import { ArrowLeft, Mail, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Helmet } from "react-helmet-async";
-import ContactForm from "@/components/ContactForm";
 import Footer from "@/components/Footer";
 
 const Contact = () => {
@@ -33,7 +32,20 @@ const Contact = () => {
           </p>
 
           <div className="grid md:grid-cols-2 gap-8 mb-8">
-            <ContactForm />
+            <Card className="p-8 bg-card/50 backdrop-blur border-border/50">
+              <h2 className="text-2xl font-semibold mb-6">Send us a message</h2>
+              <p className="text-muted-foreground mb-6">
+                Have questions or feedback? We'd love to hear from you. Send us an email at{" "}
+                <a href="mailto:support@aifreetextpro.com" className="text-primary hover:underline font-medium">
+                  support@aifreetextpro.com
+                </a>
+              </p>
+              <a href="https://app.aifreetextpro.com/auth">
+                <Button size="lg" className="w-full bg-gradient-to-r from-primary to-secondary">
+                  Go to App
+                </Button>
+              </a>
+            </Card>
 
             <div className="space-y-6">
               <Card className="p-8 space-y-4">

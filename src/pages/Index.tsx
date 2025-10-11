@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { ArrowRight, CheckCircle, Shield, FileText, Sparkles, Brain, Star, Pen, BookOpen, Target, Zap } from "lucide-react";
+import { ArrowRight, CheckCircle, Shield, FileText, Sparkles, Brain, Star, Pen, BookOpen, Target, Zap, Users, TrendingUp, Lock, Globe } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 import beforeAfterDemo from "@/assets/before-after-demo.png";
 import Navbar from "@/components/Navbar";
@@ -379,35 +379,142 @@ const Index = () => {
           </div>
         </section>
 
-        {/* Social Proof Section */}
+        {/* Stats Section */}
         <section className="py-16 md:py-20 bg-gradient-to-b from-card/10 to-background">
           <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto text-center space-y-8">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">Trusted by Writers Worldwide</h2>
+              <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+                Join thousands of professionals, students, and creators who rely on AI Free Text Pro
+              </p>
+            </div>
+            
+            <div className="grid md:grid-cols-4 gap-8 max-w-5xl mx-auto">
+              <div className="text-center space-y-2">
+                <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-3">
+                  <Users className="w-8 h-8 text-primary" />
+                </div>
+                <div className="text-4xl font-bold text-primary">50K+</div>
+                <div className="text-sm text-muted-foreground">Active Users</div>
+              </div>
+              
+              <div className="text-center space-y-2">
+                <div className="w-16 h-16 rounded-full bg-secondary/10 flex items-center justify-center mx-auto mb-3">
+                  <FileText className="w-8 h-8 text-secondary" />
+                </div>
+                <div className="text-4xl font-bold text-secondary">2M+</div>
+                <div className="text-sm text-muted-foreground">Texts Analyzed</div>
+              </div>
+              
+              <div className="text-center space-y-2">
+                <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-3">
+                  <TrendingUp className="w-8 h-8 text-primary" />
+                </div>
+                <div className="text-4xl font-bold text-primary">98%</div>
+                <div className="text-sm text-muted-foreground">Accuracy Rate</div>
+              </div>
+              
+              <div className="text-center space-y-2">
+                <div className="w-16 h-16 rounded-full bg-secondary/10 flex items-center justify-center mx-auto mb-3">
+                  <Globe className="w-8 h-8 text-secondary" />
+                </div>
+                <div className="text-4xl font-bold text-secondary">120+</div>
+                <div className="text-sm text-muted-foreground">Countries</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Use Cases Section */}
+        <section className="py-20 md:py-28">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto text-center space-y-8 mb-16">
               <h2 className="text-3xl md:text-4xl font-bold">Designed for Everyone</h2>
               <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
                 From students perfecting essays to professionals crafting reports, AI Free Text Pro helps you write better, faster.
               </p>
-              <div className="grid md:grid-cols-3 gap-6 pt-8">
-                <Card className="p-6 bg-card/50 backdrop-blur border-border/50">
-                  <h3 className="font-bold text-xl mb-2">Students</h3>
-                  <p className="text-sm text-muted-foreground">Perfect essays and research papers with authentic, polished writing</p>
-                </Card>
-                <Card className="p-6 bg-card/50 backdrop-blur border-border/50">
-                  <h3 className="font-bold text-xl mb-2">Researchers</h3>
-                  <p className="text-sm text-muted-foreground">Ensure academic integrity while refining complex technical content</p>
-                </Card>
-                <Card className="p-6 bg-card/50 backdrop-blur border-border/50">
-                  <h3 className="font-bold text-xl mb-2">Professionals</h3>
-                  <p className="text-sm text-muted-foreground">Create compelling business content that resonates with your audience</p>
-                </Card>
-              </div>
-              <div className="pt-8">
-                <a href="https://app.aifreetextpro.com/auth">
-                  <Button size="lg" className="bg-gradient-to-r from-primary to-secondary text-lg px-12 py-6">
-                    Start Your Free Trial <ArrowRight className="ml-2 h-5 w-5" />
-                  </Button>
-                </a>
-              </div>
+            </div>
+            
+            <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+              <Card className="p-8 bg-gradient-to-br from-card to-card/80 backdrop-blur border-border/50 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mb-6">
+                  <BookOpen className="w-7 h-7 text-primary" />
+                </div>
+                <h3 className="font-bold text-2xl mb-4">Students</h3>
+                <p className="text-muted-foreground mb-6">
+                  Perfect your essays, research papers, and assignments. Ensure authenticity while maintaining academic integrity and improving writing quality.
+                </p>
+                <ul className="space-y-2 text-sm text-muted-foreground">
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
+                    <span>Essay refinement and polishing</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
+                    <span>Research paper improvement</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
+                    <span>Academic integrity checking</span>
+                  </li>
+                </ul>
+              </Card>
+
+              <Card className="p-8 bg-gradient-to-br from-card to-card/80 backdrop-blur border-border/50 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                <div className="w-14 h-14 rounded-full bg-secondary/10 flex items-center justify-center mb-6">
+                  <Target className="w-7 h-7 text-secondary" />
+                </div>
+                <h3 className="font-bold text-2xl mb-4">Researchers</h3>
+                <p className="text-muted-foreground mb-6">
+                  Ensure your technical writing maintains authenticity while refining complex content for publication and peer review.
+                </p>
+                <ul className="space-y-2 text-sm text-muted-foreground">
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="w-4 h-4 text-secondary mt-0.5 flex-shrink-0" />
+                    <span>Technical content refinement</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="w-4 h-4 text-secondary mt-0.5 flex-shrink-0" />
+                    <span>Publication-ready polishing</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="w-4 h-4 text-secondary mt-0.5 flex-shrink-0" />
+                    <span>Authenticity verification</span>
+                  </li>
+                </ul>
+              </Card>
+
+              <Card className="p-8 bg-gradient-to-br from-card to-card/80 backdrop-blur border-border/50 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mb-6">
+                  <Pen className="w-7 h-7 text-primary" />
+                </div>
+                <h3 className="font-bold text-2xl mb-4">Professionals</h3>
+                <p className="text-muted-foreground mb-6">
+                  Create compelling business content that resonates with your audience while maintaining professionalism and authenticity.
+                </p>
+                <ul className="space-y-2 text-sm text-muted-foreground">
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
+                    <span>Business communication</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
+                    <span>Marketing content creation</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
+                    <span>Professional reports</span>
+                  </li>
+                </ul>
+              </Card>
+            </div>
+            
+            <div className="text-center pt-12">
+              <a href="https://app.aifreetextpro.com/auth">
+                <Button size="lg" className="bg-gradient-to-r from-primary to-secondary text-lg px-12 py-6">
+                  Start Your Free Trial <ArrowRight className="ml-2 h-5 w-5" />
+                </Button>
+              </a>
             </div>
           </div>
         </section>

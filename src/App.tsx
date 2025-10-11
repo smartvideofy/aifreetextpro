@@ -7,8 +7,6 @@ import { HelmetProvider } from "react-helmet-async";
 import { useEffect } from "react";
 import { GoogleAnalytics, trackPageView } from "@/lib/analytics";
 import Index from "./pages/Index";
-import AIChecker from "./pages/AIChecker";
-import Humanizer from "./pages/Humanizer";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsOfService from "./pages/TermsOfService";
 import Contact from "./pages/Contact";
@@ -44,8 +42,6 @@ const App = () => (
           <RouteTracker />
           <Routes>
             <Route path="/" element={<Index />} />
-            <Route path="/ai-checker" element={<><Navbar /><AIChecker /></>} />
-            <Route path="/humanizer" element={<><Navbar /><Humanizer /></>} />
             <Route path="/privacy-policy" element={<><Navbar /><PrivacyPolicy /></>} />
             <Route path="/terms-of-service" element={<><Navbar /><TermsOfService /></>} />
             <Route path="/contact" element={<><Navbar /><Contact /></>} />

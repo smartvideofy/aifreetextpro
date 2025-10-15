@@ -12,7 +12,7 @@ const PrivacyPolicy = () => {
         <meta name="description" content="Read AI Free Text Pro's privacy policy to understand how we protect your data. We do not store or share your text submissions. Your privacy is our priority." />
         <meta name="keywords" content="privacy policy, data protection, user privacy, secure ai detector" />
         <link rel="canonical" href="https://aifreetextpro.com/privacy-policy" />
-        <meta name="robots" content="noindex, follow" />
+        <meta name="robots" content="index, follow" />
       </Helmet>
       <main className="flex-1">
         <div className="container mx-auto px-4 py-16 max-w-4xl">

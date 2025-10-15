@@ -41,6 +41,7 @@ const Blog = () => {
         <meta name="description" content="Expert guides on AI detection, humanization tools, and writing tips. Learn how to detect AI-generated text, use AI humanizers effectively, and improve your content quality." />
         <meta name="keywords" content="ai writing blog, ai detection guide, humanizer tools, ai content tips, writing improvement, ai text analysis" />
         <link rel="canonical" href="https://aifreetextpro.com/blog" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta property="og:title" content="AI Writing Blog - Tips, Guides & Tools" />
         <meta property="og:description" content="Expert guides on AI detection, humanization tools, and writing tips." />
         <meta property="og:url" content="https://aifreetextpro.com/blog" />

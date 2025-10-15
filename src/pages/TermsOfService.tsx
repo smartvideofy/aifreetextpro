@@ -13,6 +13,7 @@ const TermsOfService = () => {
         <meta name="keywords" content="terms of service, usage terms, terms and conditions, service agreement" />
         <link rel="canonical" href="https://aifreetextpro.com/terms-of-service" />
         <meta name="robots" content="index, follow" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Helmet>
       <main className="flex-1">
         <div className="container mx-auto px-4 py-16 max-w-4xl">

@@ -31,6 +31,7 @@ const BestAIHumanizers = () => {
         <meta name="description" content="Compare the top 5 free AI humanizer tools in 2025. Find the best AI text humanizer for converting AI-generated content to natural human writing. Features, pricing, and expert reviews." />
         <meta name="keywords" content="best ai humanizer, free humanizer tools, ai to human text, humanize ai writing, top ai humanizers 2025, ai text converter" />
         <link rel="canonical" href="https://aifreetextpro.com/blog/best-free-ai-humanizer-tools-2025" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta property="og:title" content="Best Free AI Humanizer Tools in 2025 - Complete Comparison" />
         <meta property="og:description" content="Compare the top 5 free AI humanizer tools and find the best one for your needs." />
         <meta property="og:url" content="https://aifreetextpro.com/blog/best-free-ai-humanizer-tools-2025" />

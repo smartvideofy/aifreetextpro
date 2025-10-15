@@ -18,6 +18,7 @@ const Index = () => {
         <meta name="description" content="Transform your writing with AI Free Text Pro. Detect AI-generated content, humanize text naturally, and create authentic content. Trusted by 50,000+ writers, students, and professionals worldwide." />
         <meta name="keywords" content="ai writing partner, ai detector, ai humanizer, writing tool, content refinement, ai text detector, humanize ai text, authentic writing, professional writing tool" />
         <link rel="canonical" href="https://aifreetextpro.com/" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta property="og:title" content="AI Free Text Pro - Your AI Writing Partner" />
         <meta property="og:description" content="Rewrite, refine, and publish with confidence. The ultimate AI writing partner for authentic content creation." />
         <meta property="og:url" content="https://aifreetextpro.com/" />
@@ -97,6 +98,8 @@ const Index = () => {
                   src={beforeAfterDemo} 
                   alt="AI Free Text Pro dashboard showing text transformation and analysis features" 
                   className="w-full h-auto"
+                  loading="lazy"
+                  decoding="async"
                 />
                 <div className="p-6 bg-gradient-to-br from-primary/10 to-secondary/10 text-center">
                   <p className="text-sm text-muted-foreground mb-4">Join thousands of writers using AI Free Text Pro</p>

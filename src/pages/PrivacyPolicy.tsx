@@ -13,6 +13,7 @@ const PrivacyPolicy = () => {
         <meta name="keywords" content="privacy policy, data protection, user privacy, secure ai detector" />
         <link rel="canonical" href="https://aifreetextpro.com/privacy-policy" />
         <meta name="robots" content="index, follow" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Helmet>
       <main className="flex-1">
         <div className="container mx-auto px-4 py-16 max-w-4xl">

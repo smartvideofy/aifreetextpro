@@ -35,12 +35,14 @@ const Index = () => {
             <div className="text-center space-y-6 max-w-4xl mx-auto animate-in fade-in slide-in-from-bottom duration-700">
               <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold leading-tight">
                 <span className="bg-gradient-to-r from-primary via-secondary to-primary bg-clip-text text-transparent bg-[length:200%_auto] animate-[gradient_8s_linear_infinite]">
-                  Your AI Writing Partner
+                  Detect AI Content & Humanize Text
                 </span>
+                <br />
+                <span className="text-3xl sm:text-4xl md:text-5xl">in Seconds</span>
               </h1>
               
               <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto">
-                Rewrite, refine, and publish with confidence. AI-Free Writing Made Effortless for students, researchers, and professionals.
+                The ultimate AI content tool for writers, students & professionals. Transform robotic AI text into natural, human-like content that bypasses detectors.
               </p>
 
               <div className="flex items-center justify-center gap-4 text-sm text-muted-foreground pt-2">
@@ -85,13 +87,90 @@ const Index = () => {
           </div>
         </section>
 
-        {/* Visual Demo Preview */}
+        {/* Problem-Solution Section */}
         <section className="py-12 md:py-20 bg-gradient-to-b from-background to-card/20">
+          <div className="container mx-auto px-4">
+            <div className="max-w-6xl mx-auto">
+              <div className="text-center mb-12">
+                <h2 className="text-3xl md:text-5xl font-bold mb-6">Why AI Free Text Pro?</h2>
+              </div>
+              
+              <div className="grid md:grid-cols-2 gap-12 items-center">
+                <div className="space-y-6">
+                  <h3 className="text-2xl font-bold text-destructive">The Problem</h3>
+                  <div className="space-y-4">
+                    <div className="flex items-start gap-3">
+                      <div className="w-6 h-6 rounded-full bg-destructive/20 flex items-center justify-center flex-shrink-0 mt-1">
+                        <span className="text-destructive text-sm">✗</span>
+                      </div>
+                      <p className="text-muted-foreground">AI detectors flagging legitimate content</p>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <div className="w-6 h-6 rounded-full bg-destructive/20 flex items-center justify-center flex-shrink-0 mt-1">
+                        <span className="text-destructive text-sm">✗</span>
+                      </div>
+                      <p className="text-muted-foreground">Robotic, unnatural AI-generated text</p>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <div className="w-6 h-6 rounded-full bg-destructive/20 flex items-center justify-center flex-shrink-0 mt-1">
+                        <span className="text-destructive text-sm">✗</span>
+                      </div>
+                      <p className="text-muted-foreground">Risk of academic or professional consequences</p>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <div className="w-6 h-6 rounded-full bg-destructive/20 flex items-center justify-center flex-shrink-0 mt-1">
+                        <span className="text-destructive text-sm">✗</span>
+                      </div>
+                      <p className="text-muted-foreground">Time-consuming manual editing</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="space-y-6">
+                  <h3 className="text-2xl font-bold text-primary">The Solution</h3>
+                  <div className="space-y-4">
+                    <div className="flex items-start gap-3">
+                      <CheckCircle className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
+                      <div>
+                        <p className="font-semibold mb-1">Dual Functionality</p>
+                        <p className="text-sm text-muted-foreground">Both detect AND humanize in one platform</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <CheckCircle className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
+                      <div>
+                        <p className="font-semibold mb-1">Enterprise-Grade Detection</p>
+                        <p className="text-sm text-muted-foreground">Advanced algorithms with detailed reports</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <CheckCircle className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
+                      <div>
+                        <p className="font-semibold mb-1">Natural Humanization</p>
+                        <p className="text-sm text-muted-foreground">4 writing styles: Professional, Academic, Creative, Casual</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <CheckCircle className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
+                      <div>
+                        <p className="font-semibold mb-1">File Support</p>
+                        <p className="text-sm text-muted-foreground">PDF, DOCX, TXT uploads up to 10MB</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Visual Demo Preview */}
+        <section className="py-12 md:py-20">
           <div className="container mx-auto px-4">
             <div className="max-w-5xl mx-auto">
               <div className="text-center mb-8">
-                <h2 className="text-3xl md:text-4xl font-bold mb-4">See How It Works</h2>
-                <p className="text-muted-foreground text-lg">Experience the power of AI-assisted writing refinement</p>
+                <h2 className="text-3xl md:text-4xl font-bold mb-4">See It in Action</h2>
+                <p className="text-muted-foreground text-lg">Experience the power of AI detection and humanization</p>
               </div>
               <div className="rounded-xl overflow-hidden shadow-2xl border border-border/50 bg-card/50 backdrop-blur">
                 <img 
@@ -102,10 +181,10 @@ const Index = () => {
                   decoding="async"
                 />
                 <div className="p-6 bg-gradient-to-br from-primary/10 to-secondary/10 text-center">
-                  <p className="text-sm text-muted-foreground mb-4">Join thousands of writers using AI Free Text Pro</p>
+                  <p className="text-sm text-muted-foreground mb-4">Join 50,000+ writers transforming their content</p>
                   <a href="https://app.aifreetextpro.com/auth">
                     <Button size="lg" className="bg-gradient-to-r from-primary to-secondary">
-                      Start Free Trial <ArrowRight className="ml-2 h-4 w-4" />
+                      Start Free — 1,000 Words <ArrowRight className="ml-2 h-4 w-4" />
                     </Button>
                   </a>
                 </div>
@@ -165,100 +244,123 @@ const Index = () => {
         </section>
 
         {/* Core Features */}
-        <section className="py-20 md:py-28">
+        <section className="py-20 md:py-28 bg-card/20">
           <div className="container mx-auto px-4">
             <h2 className="text-4xl md:text-5xl font-bold text-center mb-6">
-              Core Features
+              Powerful Features
             </h2>
             <p className="text-center text-muted-foreground text-lg md:text-xl mb-20 max-w-2xl mx-auto">
-              Two powerful tools working together to help you create authentic, human-like content.
+              Everything you need to detect and humanize AI content, all in one platform
             </p>
             
-            <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-              {/* Smart Text Rewriting Card */}
+            <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto mb-16">
+              {/* AI Detector Card */}
               <Card className="p-8 space-y-6 bg-gradient-to-br from-card to-card/80 backdrop-blur border-border/50 hover:shadow-2xl hover:shadow-primary/20 transition-all duration-300 hover:-translate-y-1">
                 <div className="space-y-4">
                   <div className="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center">
-                    <Sparkles className="w-8 h-8 text-primary" />
+                    <Shield className="w-8 h-8 text-primary" />
                   </div>
                   
-                  <h3 className="text-2xl font-bold">Smart Text Rewriting</h3>
+                  <h3 className="text-2xl font-bold">AI Content Detector</h3>
                   
                   <p className="text-muted-foreground leading-relaxed">
-                    Transform any text into natural, engaging content that maintains your authentic voice while improving clarity and flow.
+                    Advanced AI detection with detailed analysis. Identify AI-generated content with precision and confidence.
                   </p>
 
                   <div className="space-y-3 pt-2">
                     <div className="flex items-start gap-3">
-                      <div className="w-5 h-5 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0 mt-0.5">
-                        <CheckCircle className="w-3 h-3 text-primary" />
-                      </div>
-                      <span className="text-sm text-muted-foreground">Natural, human-like writing style</span>
+                      <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                      <span className="text-sm text-muted-foreground">Instant analysis up to 5,000 words</span>
                     </div>
                     <div className="flex items-start gap-3">
-                      <div className="w-5 h-5 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0 mt-0.5">
-                        <CheckCircle className="w-3 h-3 text-primary" />
-                      </div>
-                      <span className="text-sm text-muted-foreground">Maintains meaning and intent</span>
+                      <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                      <span className="text-sm text-muted-foreground">Detailed probability scores & word-by-word breakdown</span>
                     </div>
                     <div className="flex items-start gap-3">
-                      <div className="w-5 h-5 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0 mt-0.5">
-                        <CheckCircle className="w-3 h-3 text-primary" />
-                      </div>
-                      <span className="text-sm text-muted-foreground">Instant refinement suggestions</span>
+                      <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                      <span className="text-sm text-muted-foreground">Professional PDF export reports</span>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                      <span className="text-sm text-muted-foreground">Support for PDF, DOCX, TXT files</span>
                     </div>
                   </div>
                 </div>
 
                 <a href="https://app.aifreetextpro.com/auth" className="block">
                   <Button className="w-full bg-gradient-to-r from-primary to-primary/80 hover:opacity-90 transition-all group">
-                    Try Rewriting Now
+                    Try Detector Free
                     <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                   </Button>
                 </a>
               </Card>
 
-              {/* Polish Grammar Instantly Card */}
+              {/* AI Humanizer Card */}
               <Card className="p-8 space-y-6 bg-gradient-to-br from-card to-card/80 backdrop-blur border-border/50 hover:shadow-2xl hover:shadow-secondary/20 transition-all duration-300 hover:-translate-y-1">
                 <div className="space-y-4">
                   <div className="w-16 h-16 rounded-2xl bg-secondary/10 flex items-center justify-center">
-                    <Brain className="w-8 h-8 text-secondary" />
+                    <Sparkles className="w-8 h-8 text-secondary" />
                   </div>
                   
-                  <h3 className="text-2xl font-bold">Polish Grammar Instantly</h3>
+                  <h3 className="text-2xl font-bold">AI Text Humanizer</h3>
                   
                   <p className="text-muted-foreground leading-relaxed">
-                    Advanced AI detection and grammar refinement tools that ensure your writing is polished, professional, and authentic.
+                    Transform robotic AI text into natural, human-like content that bypasses detection while maintaining meaning.
                   </p>
 
                   <div className="space-y-3 pt-2">
                     <div className="flex items-start gap-3">
-                      <div className="w-5 h-5 rounded-full bg-secondary/20 flex items-center justify-center flex-shrink-0 mt-0.5">
-                        <CheckCircle className="w-3 h-3 text-secondary" />
-                      </div>
-                      <span className="text-sm text-muted-foreground">Detect AI-generated patterns</span>
+                      <CheckCircle className="w-5 h-5 text-secondary flex-shrink-0 mt-0.5" />
+                      <span className="text-sm text-muted-foreground">4 writing styles: Professional, Casual, Academic, Creative</span>
                     </div>
                     <div className="flex items-start gap-3">
-                      <div className="w-5 h-5 rounded-full bg-secondary/20 flex items-center justify-center flex-shrink-0 mt-0.5">
-                        <CheckCircle className="w-3 h-3 text-secondary" />
-                      </div>
-                      <span className="text-sm text-muted-foreground">Real-time authenticity scoring</span>
+                      <CheckCircle className="w-5 h-5 text-secondary flex-shrink-0 mt-0.5" />
+                      <span className="text-sm text-muted-foreground">5 content domains with customization</span>
                     </div>
                     <div className="flex items-start gap-3">
-                      <div className="w-5 h-5 rounded-full bg-secondary/20 flex items-center justify-center flex-shrink-0 mt-0.5">
-                        <CheckCircle className="w-3 h-3 text-secondary" />
-                      </div>
-                      <span className="text-sm text-muted-foreground">Professional-grade refinement</span>
+                      <CheckCircle className="w-5 h-5 text-secondary flex-shrink-0 mt-0.5" />
+                      <span className="text-sm text-muted-foreground">Adjustable humanization strength (0-100%)</span>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <CheckCircle className="w-5 h-5 text-secondary flex-shrink-0 mt-0.5" />
+                      <span className="text-sm text-muted-foreground">One-click copy & download</span>
                     </div>
                   </div>
                 </div>
 
                 <a href="https://app.aifreetextpro.com/auth" className="block">
                   <Button className="w-full bg-gradient-to-r from-secondary to-secondary/80 hover:opacity-90 transition-all group">
-                    Check Your Text
+                    Try Humanizer Free
                     <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                   </Button>
                 </a>
+              </Card>
+            </div>
+
+            {/* Additional Features Grid */}
+            <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+              <Card className="p-6 bg-card/50 backdrop-blur border-border/50">
+                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
+                  <TrendingUp className="w-6 h-6 text-primary" />
+                </div>
+                <h4 className="font-semibold mb-2">Real-Time Analytics</h4>
+                <p className="text-sm text-muted-foreground">Track usage, monitor trends, and view detailed history with comprehensive dashboard.</p>
+              </Card>
+
+              <Card className="p-6 bg-card/50 backdrop-blur border-border/50">
+                <div className="w-12 h-12 rounded-xl bg-secondary/10 flex items-center justify-center mb-4">
+                  <FileText className="w-6 h-6 text-secondary" />
+                </div>
+                <h4 className="font-semibold mb-2">Multi-Format Support</h4>
+                <p className="text-sm text-muted-foreground">Upload PDF, DOCX, TXT files up to 10MB or paste text directly.</p>
+              </Card>
+
+              <Card className="p-6 bg-card/50 backdrop-blur border-border/50">
+                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
+                  <Lock className="w-6 h-6 text-primary" />
+                </div>
+                <h4 className="font-semibold mb-2">Privacy First</h4>
+                <p className="text-sm text-muted-foreground">Your content is never stored. Bank-grade encryption ensures complete security.</p>
               </Card>
             </div>
           </div>
@@ -428,8 +530,330 @@ const Index = () => {
           </div>
         </section>
 
-        {/* Use Cases Section */}
+        {/* Pricing Preview Section */}
+        <section className="py-20 md:py-28 bg-gradient-to-b from-background via-card/10 to-background">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl md:text-5xl font-bold mb-6">Choose Your Plan</h2>
+              <p className="text-muted-foreground text-lg md:text-xl max-w-3xl mx-auto">
+                Select the perfect plan for your needs. All plans include our core AI detection and humanization features.
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
+              {/* Starter Plan */}
+              <Card className="p-6 bg-card/80 backdrop-blur border-border/50 hover:shadow-xl transition-all duration-300">
+                <div className="space-y-6">
+                  <div className="flex items-center gap-3">
+                    <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
+                      <Zap className="w-6 h-6 text-primary" />
+                    </div>
+                    <div>
+                      <h3 className="text-2xl font-bold">Starter</h3>
+                      <div className="flex items-baseline gap-1">
+                        <span className="text-3xl font-bold">$0</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="space-y-3">
+                    <div className="flex items-start gap-2">
+                      <CheckCircle className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
+                      <span className="text-sm">1,000 words per month</span>
+                    </div>
+                    <div className="flex items-start gap-2">
+                      <CheckCircle className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
+                      <span className="text-sm">Basic AI detection</span>
+                    </div>
+                    <div className="flex items-start gap-2">
+                      <CheckCircle className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
+                      <span className="text-sm">Basic humanization</span>
+                    </div>
+                    <div className="flex items-start gap-2">
+                      <CheckCircle className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
+                      <span className="text-sm">Email support</span>
+                    </div>
+                  </div>
+
+                  <a href="https://app.aifreetextpro.com/auth" className="block">
+                    <Button variant="outline" className="w-full">
+                      Get Started
+                    </Button>
+                  </a>
+                </div>
+              </Card>
+
+              {/* Lite Plan */}
+              <Card className="p-6 bg-card/80 backdrop-blur border-border/50 hover:shadow-xl transition-all duration-300">
+                <div className="space-y-6">
+                  <div className="flex items-center gap-3">
+                    <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
+                      <Zap className="w-6 h-6 text-primary" />
+                    </div>
+                    <div>
+                      <h3 className="text-2xl font-bold">Lite</h3>
+                      <div className="flex items-baseline gap-1">
+                        <span className="text-3xl font-bold">$9.99</span>
+                        <span className="text-muted-foreground text-sm">/month</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="space-y-3">
+                    <div className="flex items-start gap-2">
+                      <CheckCircle className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
+                      <span className="text-sm">10,000 words per month</span>
+                    </div>
+                    <div className="flex items-start gap-2">
+                      <CheckCircle className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
+                      <span className="text-sm">Advanced AI detection</span>
+                    </div>
+                    <div className="flex items-start gap-2">
+                      <CheckCircle className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
+                      <span className="text-sm">Advanced humanization</span>
+                    </div>
+                    <div className="flex items-start gap-2">
+                      <CheckCircle className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
+                      <span className="text-sm">Priority email support</span>
+                    </div>
+                    <div className="flex items-start gap-2">
+                      <CheckCircle className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
+                      <span className="text-sm">Export reports (PDF)</span>
+                    </div>
+                  </div>
+
+                  <a href="https://app.aifreetextpro.com/auth" className="block">
+                    <Button className="w-full bg-gradient-to-r from-primary to-primary/80">
+                      Subscribe Now
+                    </Button>
+                  </a>
+                </div>
+              </Card>
+
+              {/* Pro Writer Plan - Most Popular */}
+              <Card className="p-6 bg-gradient-to-br from-primary/10 via-card/80 to-secondary/10 backdrop-blur border-primary/50 hover:shadow-2xl transition-all duration-300 relative">
+                <div className="absolute -top-3 left-1/2 -translate-x-1/2">
+                  <div className="bg-primary text-primary-foreground px-4 py-1 rounded-full text-xs font-bold">
+                    Most Popular
+                  </div>
+                </div>
+                
+                <div className="space-y-6">
+                  <div className="flex items-center gap-3">
+                    <div className="w-12 h-12 rounded-xl bg-primary/20 flex items-center justify-center">
+                      <Star className="w-6 h-6 text-primary" />
+                    </div>
+                    <div>
+                      <h3 className="text-2xl font-bold">Pro Writer</h3>
+                      <div className="flex items-baseline gap-1">
+                        <span className="text-3xl font-bold">$24.99</span>
+                        <span className="text-muted-foreground text-sm">/month</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="space-y-3">
+                    <div className="flex items-start gap-2">
+                      <CheckCircle className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
+                      <span className="text-sm font-medium">50,000 words per month</span>
+                    </div>
+                    <div className="flex items-start gap-2">
+                      <CheckCircle className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
+                      <span className="text-sm">Premium AI detection</span>
+                    </div>
+                    <div className="flex items-start gap-2">
+                      <CheckCircle className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
+                      <span className="text-sm">Premium humanization</span>
+                    </div>
+                    <div className="flex items-start gap-2">
+                      <CheckCircle className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
+                      <span className="text-sm">Priority support</span>
+                    </div>
+                    <div className="flex items-start gap-2">
+                      <CheckCircle className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
+                      <span className="text-sm">Export reports (PDF)</span>
+                    </div>
+                    <div className="flex items-start gap-2">
+                      <CheckCircle className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
+                      <span className="text-sm">Advanced analytics</span>
+                    </div>
+                  </div>
+
+                  <a href="https://app.aifreetextpro.com/auth" className="block">
+                    <Button className="w-full bg-gradient-to-r from-primary to-secondary">
+                      Subscribe Now
+                    </Button>
+                  </a>
+                </div>
+              </Card>
+
+              {/* Unlimited Creator Plan */}
+              <Card className="p-6 bg-card/80 backdrop-blur border-border/50 hover:shadow-xl transition-all duration-300">
+                <div className="space-y-6">
+                  <div className="flex items-center gap-3">
+                    <div className="w-12 h-12 rounded-xl bg-secondary/10 flex items-center justify-center">
+                      <Target className="w-6 h-6 text-secondary" />
+                    </div>
+                    <div>
+                      <h3 className="text-2xl font-bold">Unlimited</h3>
+                      <div className="flex items-baseline gap-1">
+                        <span className="text-3xl font-bold">$59.99</span>
+                        <span className="text-muted-foreground text-sm">/month</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="space-y-3">
+                    <div className="flex items-start gap-2">
+                      <CheckCircle className="w-4 h-4 text-secondary mt-0.5 flex-shrink-0" />
+                      <span className="text-sm font-medium">Unlimited words</span>
+                    </div>
+                    <div className="flex items-start gap-2">
+                      <CheckCircle className="w-4 h-4 text-secondary mt-0.5 flex-shrink-0" />
+                      <span className="text-sm">Premium AI detection</span>
+                    </div>
+                    <div className="flex items-start gap-2">
+                      <CheckCircle className="w-4 h-4 text-secondary mt-0.5 flex-shrink-0" />
+                      <span className="text-sm">Premium humanization</span>
+                    </div>
+                    <div className="flex items-start gap-2">
+                      <CheckCircle className="w-4 h-4 text-secondary mt-0.5 flex-shrink-0" />
+                      <span className="text-sm">24/7 Priority support</span>
+                    </div>
+                    <div className="flex items-start gap-2">
+                      <CheckCircle className="w-4 h-4 text-secondary mt-0.5 flex-shrink-0" />
+                      <span className="text-sm">Export reports (PDF)</span>
+                    </div>
+                    <div className="flex items-start gap-2">
+                      <CheckCircle className="w-4 h-4 text-secondary mt-0.5 flex-shrink-0" />
+                      <span className="text-sm">Advanced analytics</span>
+                    </div>
+                    <div className="flex items-start gap-2">
+                      <CheckCircle className="w-4 h-4 text-secondary mt-0.5 flex-shrink-0" />
+                      <span className="text-sm">Dedicated account manager</span>
+                    </div>
+                  </div>
+
+                  <a href="https://app.aifreetextpro.com/auth" className="block">
+                    <Button variant="outline" className="w-full border-secondary text-secondary hover:bg-secondary/10">
+                      Subscribe Now
+                    </Button>
+                  </a>
+                </div>
+              </Card>
+            </div>
+
+            <p className="text-center text-muted-foreground text-sm mt-8">
+              All plans are billed monthly. Cancel anytime with no questions asked.
+            </p>
+          </div>
+        </section>
+
+        {/* Comparison Table */}
         <section className="py-20 md:py-28">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl md:text-5xl font-bold mb-6">Why Choose Us?</h2>
+              <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+                See how AI Free Text Pro compares to other solutions
+              </p>
+            </div>
+
+            <div className="max-w-5xl mx-auto overflow-x-auto">
+              <table className="w-full border-collapse">
+                <thead>
+                  <tr className="border-b border-border">
+                    <th className="text-left py-4 px-4 font-semibold">Feature</th>
+                    <th className="text-center py-4 px-4 font-semibold bg-primary/5">AI Free Text Pro</th>
+                    <th className="text-center py-4 px-4 font-semibold">Others</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-border">
+                  <tr>
+                    <td className="py-4 px-4">AI Detection</td>
+                    <td className="text-center py-4 px-4 bg-primary/5">
+                      <CheckCircle className="w-5 h-5 text-primary mx-auto" />
+                    </td>
+                    <td className="text-center py-4 px-4">
+                      <CheckCircle className="w-5 h-5 text-muted-foreground mx-auto" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="py-4 px-4">AI Humanization</td>
+                    <td className="text-center py-4 px-4 bg-primary/5">
+                      <CheckCircle className="w-5 h-5 text-primary mx-auto" />
+                    </td>
+                    <td className="text-center py-4 px-4">
+                      <CheckCircle className="w-5 h-5 text-muted-foreground mx-auto" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="py-4 px-4">Multiple Writing Styles</td>
+                    <td className="text-center py-4 px-4 bg-primary/5">
+                      <div className="flex items-center justify-center gap-2">
+                        <CheckCircle className="w-5 h-5 text-primary" />
+                        <span className="text-sm font-medium">4 Styles</span>
+                      </div>
+                    </td>
+                    <td className="text-center py-4 px-4 text-muted-foreground text-sm">Limited</td>
+                  </tr>
+                  <tr>
+                    <td className="py-4 px-4">File Upload Support</td>
+                    <td className="text-center py-4 px-4 bg-primary/5">
+                      <div className="flex items-center justify-center gap-2">
+                        <CheckCircle className="w-5 h-5 text-primary" />
+                        <span className="text-sm font-medium">PDF, DOCX, TXT</span>
+                      </div>
+                    </td>
+                    <td className="text-center py-4 px-4 text-muted-foreground text-sm">PDF Only</td>
+                  </tr>
+                  <tr>
+                    <td className="py-4 px-4">Customization Settings</td>
+                    <td className="text-center py-4 px-4 bg-primary/5">
+                      <CheckCircle className="w-5 h-5 text-primary mx-auto" />
+                    </td>
+                    <td className="text-center py-4 px-4 text-muted-foreground">✗</td>
+                  </tr>
+                  <tr>
+                    <td className="py-4 px-4">Professional PDF Reports</td>
+                    <td className="text-center py-4 px-4 bg-primary/5">
+                      <CheckCircle className="w-5 h-5 text-primary mx-auto" />
+                    </td>
+                    <td className="text-center py-4 px-4 text-muted-foreground">✗</td>
+                  </tr>
+                  <tr>
+                    <td className="py-4 px-4">Analytics Dashboard</td>
+                    <td className="text-center py-4 px-4 bg-primary/5">
+                      <CheckCircle className="w-5 h-5 text-primary mx-auto" />
+                    </td>
+                    <td className="text-center py-4 px-4 text-muted-foreground">✗</td>
+                  </tr>
+                  <tr>
+                    <td className="py-4 px-4">Free Tier</td>
+                    <td className="text-center py-4 px-4 bg-primary/5">
+                      <div className="flex items-center justify-center gap-2">
+                        <CheckCircle className="w-5 h-5 text-primary" />
+                        <span className="text-sm font-medium">1,000 words</span>
+                      </div>
+                    </td>
+                    <td className="text-center py-4 px-4 text-muted-foreground text-sm">500 words</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div className="text-center mt-12">
+              <a href="https://app.aifreetextpro.com/auth">
+                <Button size="lg" className="bg-gradient-to-r from-primary to-secondary text-lg px-12 py-6">
+                  Start Free — No Credit Card <ArrowRight className="ml-2 h-5 w-5" />
+                </Button>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        {/* Use Cases Section */}
+        <section className="py-20 md:py-28 bg-card/20">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center space-y-8 mb-16">
               <h2 className="text-3xl md:text-4xl font-bold">Designed for Everyone</h2>

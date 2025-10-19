@@ -1,18 +1,48 @@
+# Allow all crawlers to access all content
 User-agent: *
 Allow: /
+Disallow: /auth
+Disallow: /dashboard
+Disallow: /app
 
-# Sitemap
+# Crawl delay for polite crawling
+Crawl-delay: 1
+
+# Sitemap location
 Sitemap: https://aifreetextpro.com/sitemap.xml
 
-# Specific bots
+# Specific bot configurations
 User-agent: Googlebot
 Allow: /
+Crawl-delay: 0
 
 User-agent: Bingbot
 Allow: /
+Crawl-delay: 1
 
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+# Social media crawlers
 User-agent: Twitterbot
 Allow: /
 
 User-agent: facebookexternalhit
 Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+User-agent: Pinterestbot
+Allow: /
+
+# Ensure all blog posts are crawlable
+User-agent: *
+Allow: /blog/
+Allow: /blog/*

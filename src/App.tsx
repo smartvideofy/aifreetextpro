@@ -15,6 +15,9 @@ import Blog from "./pages/Blog";
 import HowToDetectAI from "./pages/blog/HowToDetectAI";
 import BestAIHumanizers from "./pages/blog/BestAIHumanizers";
 import BypassAIDetection from "./pages/blog/BypassAIDetection";
+import AIDetectionComparison from "./pages/blog/AIDetectionComparison";
+import HumanizeAIText from "./pages/blog/HumanizeAIText";
+import AIWritingStudents from "./pages/blog/AIWritingStudents";
 import NotFound from "./pages/NotFound";
 import Navbar from "./components/Navbar";
 
@@ -47,6 +50,9 @@ const App = () => (
             <Route path="/contact" element={<><Navbar /><Contact /></>} />
             <Route path="/about" element={<About />} />
             <Route path="/blog" element={<Blog />} />
+            <Route path="/blog/ai-detection-tools-compared-2025" element={<AIDetectionComparison />} />
+            <Route path="/blog/humanize-ai-text-without-losing-voice" element={<HumanizeAIText />} />
+            <Route path="/blog/ai-writing-students-avoid-plagiarism" element={<AIWritingStudents />} />
             <Route path="/blog/how-to-detect-ai-generated-text" element={<HowToDetectAI />} />
             <Route path="/blog/best-free-ai-humanizer-tools-2025" element={<BestAIHumanizers />} />
             <Route path="/blog/bypass-ai-detection-ethical-tips" element={<BypassAIDetection />} />

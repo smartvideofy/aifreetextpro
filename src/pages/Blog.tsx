@@ -8,6 +8,30 @@ import Footer from "@/components/Footer";
 
 const blogPosts = [
   {
+    slug: "ai-detection-tools-compared-2025",
+    title: "AI Detection Tools Compared (2025 Edition): GPTZero vs AI Free Text Pro vs Rewritify",
+    excerpt: "See which AI detector is most accurate in 2025. We compare GPTZero, Rewritify, and AI Free Text Pro in real-world tests.",
+    date: "2025-10-19",
+    readTime: "12 min read",
+    category: "Comparison"
+  },
+  {
+    slug: "humanize-ai-text-without-losing-voice",
+    title: "How to Humanize AI-Generated Text Without Losing Your Voice",
+    excerpt: "Learn proven strategies and tools to make ChatGPT or Gemini text sound naturally human while keeping your tone.",
+    date: "2025-10-19",
+    readTime: "10 min read",
+    category: "Writing Guide"
+  },
+  {
+    slug: "ai-writing-students-avoid-plagiarism",
+    title: "AI Writing for Students: How to Avoid Plagiarism and AI Detection Ethically",
+    excerpt: "Discover safe ways to use AI writing assistants in academia without triggering AI detectors or plagiarism checks.",
+    date: "2025-10-19",
+    readTime: "11 min read",
+    category: "Student Guide"
+  },
+  {
     slug: "how-to-detect-ai-generated-text",
     title: "How to Detect AI-Generated Text: Complete Guide",
     excerpt: "Learn the proven techniques and tools to identify AI-generated content. Discover key patterns, linguistic markers, and detection strategies used by experts.",

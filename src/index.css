@@ -117,3 +117,83 @@ All colors MUST be HSL.
     background-position: 100% 50%;
   }
 }
+
+/* Blog Post Prose Styles */
+@layer components {
+  .prose {
+    @apply text-foreground;
+  }
+  
+  .prose h2 {
+    @apply text-3xl font-bold mt-12 mb-6 text-foreground;
+    scroll-margin-top: 2rem;
+  }
+  
+  .prose h3 {
+    @apply text-2xl font-semibold mt-8 mb-4 text-foreground;
+  }
+  
+  .prose h4 {
+    @apply text-xl font-semibold mt-6 mb-3 text-foreground;
+  }
+  
+  .prose p {
+    @apply text-lg leading-relaxed mb-6 text-muted-foreground;
+  }
+  
+  .prose a {
+    @apply text-primary underline decoration-2 underline-offset-4 hover:text-primary/80 transition-colors font-medium;
+  }
+  
+  .prose ul {
+    @apply space-y-3 mb-6 ml-6;
+  }
+  
+  .prose ol {
+    @apply space-y-3 mb-6 ml-6 list-decimal;
+  }
+  
+  .prose li {
+    @apply text-lg text-muted-foreground leading-relaxed;
+  }
+  
+  .prose strong {
+    @apply text-foreground font-semibold;
+  }
+  
+  .prose em {
+    @apply italic;
+  }
+  
+  .prose blockquote {
+    @apply border-l-4 border-primary pl-6 py-2 my-6 italic text-muted-foreground;
+  }
+  
+  .prose table {
+    @apply w-full border-collapse my-8;
+  }
+  
+  .prose th {
+    @apply bg-muted p-4 text-left font-semibold text-foreground border-b-2 border-border;
+  }
+  
+  .prose td {
+    @apply p-4 border-b border-border text-muted-foreground;
+  }
+  
+  .prose tr:hover {
+    @apply bg-muted/50;
+  }
+  
+  .prose code {
+    @apply bg-muted px-2 py-1 rounded text-sm font-mono text-primary;
+  }
+  
+  .prose pre {
+    @apply bg-muted p-6 rounded-lg overflow-x-auto my-6;
+  }
+  
+  .prose img {
+    @apply rounded-lg my-8 w-full;
+  }
+}

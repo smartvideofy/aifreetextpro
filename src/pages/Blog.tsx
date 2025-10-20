@@ -32,6 +32,62 @@ const blogPosts = [
     category: "Student Guide"
   },
   {
+    slug: "zerogpt-vs-ai-free-text-pro-2025",
+    title: "ZeroGPT vs AI Free Text Pro: Which Detects Better in 2025?",
+    excerpt: "We test ZeroGPT and AI Free Text Pro on different writing samples — see which tool spots AI content more accurately.",
+    date: "2025-10-19",
+    readTime: "8 min read",
+    category: "Comparison"
+  },
+  {
+    slug: "top-10-ai-humanizer-tools-2025",
+    title: "Top 10 AI Humanizer Tools for 2025 (Free & Paid)",
+    excerpt: "A curated list of the top AI humanizers this year — features, pricing, and accuracy ratings included.",
+    date: "2025-10-19",
+    readTime: "12 min read",
+    category: "Tool Comparison"
+  },
+  {
+    slug: "how-ai-detectors-work",
+    title: "How AI Detectors Work: Inside the Science of AI Text Analysis",
+    excerpt: "Understand the machine-learning and linguistic patterns behind AI detectors and how to write authentically human content.",
+    date: "2025-10-19",
+    readTime: "10 min read",
+    category: "Educational"
+  },
+  {
+    slug: "why-ai-content-fails-human-review",
+    title: "Why Most AI Content Fails Human Review (and How to Fix It)",
+    excerpt: "Discover why AI-generated content still gets flagged and the practical steps to make your writing pass any human review.",
+    date: "2025-10-19",
+    readTime: "9 min read",
+    category: "Problem-Solving"
+  },
+  {
+    slug: "ai-tools-for-writers-2025",
+    title: "AI Tools for Writers: Boost Creativity and Productivity in 2025",
+    excerpt: "The best AI writing tools to plan, edit, and refine your stories and essays — including AI Free Text Pro for authenticity checks.",
+    date: "2025-10-19",
+    readTime: "11 min read",
+    category: "Productivity"
+  },
+  {
+    slug: "can-ai-writing-be-original",
+    title: "Can AI Writing Be Truly Original? Exploring Creativity in the Age of GPT",
+    excerpt: "Explore how AI can assist rather than replace creativity — what 'original' means in the era of ChatGPT and humanizers.",
+    date: "2025-10-19",
+    readTime: "10 min read",
+    category: "Thought Leadership"
+  },
+  {
+    slug: "ai-detection-in-publishing-2025",
+    title: "AI Detection in Publishing: How Editors and Writers Can Adapt in 2025",
+    excerpt: "How editors and publishers are adapting to AI-generated content — and why AI Free Text Pro is part of the solution.",
+    date: "2025-10-19",
+    readTime: "12 min read",
+    category: "Industry Insights"
+  },
+  {
     slug: "how-to-detect-ai-generated-text",
     title: "How to Detect AI-Generated Text: Complete Guide",
     excerpt: "Learn the proven techniques and tools to identify AI-generated content. Discover key patterns, linguistic markers, and detection strategies used by experts.",

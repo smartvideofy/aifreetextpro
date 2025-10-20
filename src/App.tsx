@@ -18,6 +18,13 @@ import BypassAIDetection from "./pages/blog/BypassAIDetection";
 import AIDetectionComparison from "./pages/blog/AIDetectionComparison";
 import HumanizeAIText from "./pages/blog/HumanizeAIText";
 import AIWritingStudents from "./pages/blog/AIWritingStudents";
+import ZeroGPTComparison from "./pages/blog/ZeroGPTComparison";
+import Top10AIHumanizers from "./pages/blog/Top10AIHumanizers";
+import HowAIDetectorsWork from "./pages/blog/HowAIDetectorsWork";
+import WhyAIContentFails from "./pages/blog/WhyAIContentFails";
+import AIToolsForWriters from "./pages/blog/AIToolsForWriters";
+import AICreativityOriginality from "./pages/blog/AICreativityOriginality";
+import AIDetectionPublishing from "./pages/blog/AIDetectionPublishing";
 import NotFound from "./pages/NotFound";
 import Navbar from "./components/Navbar";
 
@@ -56,6 +63,13 @@ const App = () => (
             <Route path="/blog/how-to-detect-ai-generated-text" element={<HowToDetectAI />} />
             <Route path="/blog/best-free-ai-humanizer-tools-2025" element={<BestAIHumanizers />} />
             <Route path="/blog/bypass-ai-detection-ethical-tips" element={<BypassAIDetection />} />
+            <Route path="/blog/zerogpt-vs-ai-free-text-pro-2025" element={<ZeroGPTComparison />} />
+            <Route path="/blog/top-10-ai-humanizer-tools-2025" element={<Top10AIHumanizers />} />
+            <Route path="/blog/how-ai-detectors-work" element={<HowAIDetectorsWork />} />
+            <Route path="/blog/why-ai-content-fails-human-review" element={<WhyAIContentFails />} />
+            <Route path="/blog/ai-tools-for-writers-2025" element={<AIToolsForWriters />} />
+            <Route path="/blog/can-ai-writing-be-original" element={<AICreativityOriginality />} />
+            <Route path="/blog/ai-detection-in-publishing-2025" element={<AIDetectionPublishing />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<><Navbar /><NotFound /></>} />
           </Routes>

@@ -4,6 +4,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 
 const About = () => {
   return (
@@ -21,6 +22,15 @@ const About = () => {
       <Navbar />
       
       <main className="flex-1">
+        <div className="container mx-auto px-4 pt-6">
+          <Breadcrumbs 
+            items={[
+              { label: "Home", href: "/" },
+              { label: "About" }
+            ]} 
+          />
+        </div>
+
         {/* Hero Section */}
         <section className="relative py-24 md:py-32 overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-secondary/5 to-background" />

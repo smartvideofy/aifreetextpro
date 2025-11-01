@@ -4,6 +4,8 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Helmet } from "react-helmet-async";
 import Footer from "@/components/Footer";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
+import Navbar from "@/components/Navbar";
 
 const Contact = () => {
   return (
@@ -18,14 +20,16 @@ const Contact = () => {
         <meta property="og:description" content="Contact AI Free Text Pro for support and questions about our free AI detection and humanization tools." />
         <meta property="og:url" content="https://aifreetextpro.com/contact" />
       </Helmet>
+      <Navbar />
+      
       <main className="flex-1">
-        <div className="container mx-auto px-4 py-16 max-w-4xl">
-          <Link to="/">
-            <Button variant="ghost" className="mb-8">
-              <ArrowLeft className="mr-2 h-4 w-4" />
-              Back to Home
-            </Button>
-          </Link>
+        <div className="container mx-auto px-4 py-12 max-w-4xl">
+          <Breadcrumbs 
+            items={[
+              { label: "Home", href: "/" },
+              { label: "Contact" }
+            ]} 
+          />
 
           <h1 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">Contact Us</h1>
           <p className="text-muted-foreground mb-8 text-lg">

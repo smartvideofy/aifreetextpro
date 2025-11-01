@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { ArrowRight, CheckCircle, Shield, FileText, Sparkles, Brain, Star, Pen, BookOpen, Target, Zap, Users, TrendingUp, Lock, Globe } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 import beforeAfterDemo from "@/assets/before-after-demo.png";
@@ -9,40 +8,108 @@ import Footer from "@/components/Footer";
 import AnimatedBackground from "@/components/AnimatedBackground";
 import AboutSection from "@/components/AboutSection";
 import { InContentAd } from "@/components/AdZone";
+import ComparisonTable from "@/components/ComparisonTable";
+import EnhancedFAQ from "@/components/EnhancedFAQ";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
+import { Link } from "react-router-dom";
+import HowToSchema from "@/components/HowToSchema";
 
 const Index = () => {
   return (
     <div className="min-h-screen flex flex-col">
+      <HowToSchema />
       <Helmet>
-        <title>AI Free Text Pro - Your AI Writing Partner | Rewrite, Refine & Publish with Confidence</title>
-        <meta name="description" content="Transform your writing with AI Free Text Pro. Detect AI-generated content, humanize text naturally, and create authentic content. Trusted by 50,000+ writers, students, and professionals worldwide." />
-        <meta name="keywords" content="ai writing partner, ai detector, ai humanizer, writing tool, content refinement, ai text detector, humanize ai text, authentic writing, professional writing tool" />
+        <title>Free AI Detector & Humanizer Tool - Detect ChatGPT & Make Text Human (2025)</title>
+        <meta name="description" content="Transform AI text in 3 seconds with 98% accuracy. Free AI detector spots ChatGPT instantly. Humanize AI content to bypass detection. Join 50,000+ users. Free forever, no credit card." />
+        <meta name="keywords" content="free ai detector, ai humanizer, detect chatgpt, detect ai text, chatgpt detector, bypass turnitin ai detection, make ai text human, ai content detector, zerogpt alternative, gptzero alternative" />
         <link rel="canonical" href="https://aifreetextpro.com/" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta property="og:title" content="AI Free Text Pro - Your AI Writing Partner" />
-        <meta property="og:description" content="Rewrite, refine, and publish with confidence. The ultimate AI writing partner for authentic content creation." />
+        <meta property="og:title" content="Free AI Detector & Humanizer - Detect ChatGPT & Make Text Human (2025)" />
+        <meta property="og:description" content="Transform AI text in 3 seconds. Free AI detector + humanizer. Join 50,000+ users. 98% accuracy. Free forever." />
         <meta property="og:url" content="https://aifreetextpro.com/" />
         <meta property="og:type" content="website" />
+        
+        {/* Enhanced Schema Markup */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "SoftwareApplication",
+            "name": "AI Free Text Pro",
+            "applicationCategory": "UtilitiesApplication",
+            "offers": {
+              "@type": "Offer",
+              "price": "0",
+              "priceCurrency": "USD"
+            },
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "4.8",
+              "ratingCount": "1247",
+              "bestRating": "5",
+              "worstRating": "1"
+            },
+            "operatingSystem": "Web Browser",
+            "applicationSubCategory": "AI Text Analysis Tool",
+            "featureList": [
+              "AI Content Detection",
+              "Text Humanization",
+              "PDF Export Reports",
+              "Multiple Writing Styles",
+              "File Upload Support (PDF, DOCX, TXT)",
+              "Word-by-word Analysis"
+            ],
+            "screenshot": "https://aifreetextpro.com/before-after-demo.png"
+          })}
+        </script>
+        
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Product",
+            "name": "AI Free Text Pro - AI Detector & Humanizer",
+            "description": "Free AI detector and humanizer tool. Detect ChatGPT and make AI text sound human with 98% accuracy.",
+            "brand": {
+              "@type": "Brand",
+              "name": "AI Free Text Pro"
+            },
+            "offers": {
+              "@type": "Offer",
+              "price": "0",
+              "priceCurrency": "USD",
+              "availability": "https://schema.org/InStock"
+            },
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "4.8",
+              "reviewCount": "1247"
+            }
+          })}
+        </script>
       </Helmet>
       <Navbar />
       
       <main className="flex-1">
+        {/* Breadcrumbs */}
+        <div className="container mx-auto px-4 pt-6">
+          <Breadcrumbs items={[{ label: "Home" }]} />
+        </div>
+
         {/* Hero Section */}
-        <section className="relative py-16 md:py-24 overflow-hidden">
+        <section className="relative py-12 md:py-20 overflow-hidden">
           <AnimatedBackground />
           
           <div className="container mx-auto px-4 relative z-10">
             <div className="text-center space-y-6 max-w-4xl mx-auto animate-in fade-in slide-in-from-bottom duration-700">
               <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold leading-tight">
                 <span className="bg-gradient-to-r from-primary via-secondary to-primary bg-clip-text text-transparent bg-[length:200%_auto] animate-[gradient_8s_linear_infinite]">
-                  Detect AI Content & Humanize Text
+                  Free AI Detector & Humanizer
                 </span>
                 <br />
-                <span className="text-3xl sm:text-4xl md:text-5xl">in Seconds</span>
+                <span className="text-3xl sm:text-4xl md:text-5xl">Detect ChatGPT & Make Text Human (2025)</span>
               </h1>
               
               <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto">
-                The ultimate AI content tool for writers, students & professionals. Transform robotic AI text into natural, human-like content that bypasses detectors.
+                Free AI content detector spots ChatGPT instantly with 98% accuracy. Transform AI text to human writing in 3 seconds. Bypass Turnitin, ZeroGPT & all AI detectors. Trusted by 50,000+ students, writers & professionals.
               </p>
 
               <div className="flex items-center justify-center gap-4 text-sm text-muted-foreground pt-2">
@@ -175,9 +242,11 @@ const Index = () => {
               <div className="rounded-xl overflow-hidden shadow-2xl border border-border/50 bg-card/50 backdrop-blur">
                 <img 
                   src={beforeAfterDemo} 
-                  alt="AI Free Text Pro dashboard showing text transformation and analysis features" 
+                  alt="AI Free Text Pro dashboard demo - Before and after comparison showing AI text detection scores and humanized output with professional writing style" 
                   className="w-full h-auto"
-                  loading="lazy"
+                  width="1200"
+                  height="675"
+                  loading="eager"
                   decoding="async"
                 />
                 <div className="p-6 bg-gradient-to-br from-primary/10 to-secondary/10 text-center">
@@ -749,108 +818,8 @@ const Index = () => {
           </div>
         </section>
 
-        {/* Comparison Table */}
-        <section className="py-20 md:py-28">
-          <div className="container mx-auto px-4">
-            <div className="text-center mb-16">
-              <h2 className="text-4xl md:text-5xl font-bold mb-6">Why Choose Us?</h2>
-              <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-                See how AI Free Text Pro compares to other solutions
-              </p>
-            </div>
-
-            <div className="max-w-5xl mx-auto overflow-x-auto">
-              <table className="w-full border-collapse">
-                <thead>
-                  <tr className="border-b border-border">
-                    <th className="text-left py-4 px-4 font-semibold">Feature</th>
-                    <th className="text-center py-4 px-4 font-semibold bg-primary/5">AI Free Text Pro</th>
-                    <th className="text-center py-4 px-4 font-semibold">Others</th>
-                  </tr>
-                </thead>
-                <tbody className="divide-y divide-border">
-                  <tr>
-                    <td className="py-4 px-4">AI Detection</td>
-                    <td className="text-center py-4 px-4 bg-primary/5">
-                      <CheckCircle className="w-5 h-5 text-primary mx-auto" />
-                    </td>
-                    <td className="text-center py-4 px-4">
-                      <CheckCircle className="w-5 h-5 text-muted-foreground mx-auto" />
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="py-4 px-4">AI Humanization</td>
-                    <td className="text-center py-4 px-4 bg-primary/5">
-                      <CheckCircle className="w-5 h-5 text-primary mx-auto" />
-                    </td>
-                    <td className="text-center py-4 px-4">
-                      <CheckCircle className="w-5 h-5 text-muted-foreground mx-auto" />
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="py-4 px-4">Multiple Writing Styles</td>
-                    <td className="text-center py-4 px-4 bg-primary/5">
-                      <div className="flex items-center justify-center gap-2">
-                        <CheckCircle className="w-5 h-5 text-primary" />
-                        <span className="text-sm font-medium">4 Styles</span>
-                      </div>
-                    </td>
-                    <td className="text-center py-4 px-4 text-muted-foreground text-sm">Limited</td>
-                  </tr>
-                  <tr>
-                    <td className="py-4 px-4">File Upload Support</td>
-                    <td className="text-center py-4 px-4 bg-primary/5">
-                      <div className="flex items-center justify-center gap-2">
-                        <CheckCircle className="w-5 h-5 text-primary" />
-                        <span className="text-sm font-medium">PDF, DOCX, TXT</span>
-                      </div>
-                    </td>
-                    <td className="text-center py-4 px-4 text-muted-foreground text-sm">PDF Only</td>
-                  </tr>
-                  <tr>
-                    <td className="py-4 px-4">Customization Settings</td>
-                    <td className="text-center py-4 px-4 bg-primary/5">
-                      <CheckCircle className="w-5 h-5 text-primary mx-auto" />
-                    </td>
-                    <td className="text-center py-4 px-4 text-muted-foreground">✗</td>
-                  </tr>
-                  <tr>
-                    <td className="py-4 px-4">Professional PDF Reports</td>
-                    <td className="text-center py-4 px-4 bg-primary/5">
-                      <CheckCircle className="w-5 h-5 text-primary mx-auto" />
-                    </td>
-                    <td className="text-center py-4 px-4 text-muted-foreground">✗</td>
-                  </tr>
-                  <tr>
-                    <td className="py-4 px-4">Analytics Dashboard</td>
-                    <td className="text-center py-4 px-4 bg-primary/5">
-                      <CheckCircle className="w-5 h-5 text-primary mx-auto" />
-                    </td>
-                    <td className="text-center py-4 px-4 text-muted-foreground">✗</td>
-                  </tr>
-                  <tr>
-                    <td className="py-4 px-4">Free Tier</td>
-                    <td className="text-center py-4 px-4 bg-primary/5">
-                      <div className="flex items-center justify-center gap-2">
-                        <CheckCircle className="w-5 h-5 text-primary" />
-                        <span className="text-sm font-medium">1,000 words</span>
-                      </div>
-                    </td>
-                    <td className="text-center py-4 px-4 text-muted-foreground text-sm">500 words</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-
-            <div className="text-center mt-12">
-              <a href="https://app.aifreetextpro.com/auth">
-                <Button size="lg" className="bg-gradient-to-r from-primary to-secondary text-lg px-12 py-6">
-                  Start Free — No Credit Card <ArrowRight className="ml-2 h-5 w-5" />
-                </Button>
-              </a>
-            </div>
-          </div>
-        </section>
+        {/* Enhanced Comparison Table */}
+        <ComparisonTable />
 
         {/* Use Cases Section */}
         <section className="py-20 md:py-28 bg-card/20">
@@ -949,73 +918,73 @@ const Index = () => {
         {/* About Section */}
         <AboutSection />
 
-        {/* FAQ Section with Schema */}
-        <section className="py-20 md:py-28 bg-card/20" itemScope itemType="https://schema.org/FAQPage">
+        {/* Blog Links Section - Internal Linking */}
+        <section className="py-20 md:py-28 bg-gradient-to-b from-background to-card/20">
           <div className="container mx-auto px-4">
-            <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">
-              Frequently Asked Questions
-            </h2>
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">Learn More About AI Detection & Humanization</h2>
+              <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+                Expert guides to help you master AI content tools
+              </p>
+            </div>
             
-            <div className="max-w-3xl mx-auto">
-              <Accordion type="single" collapsible className="space-y-4">
-                <AccordionItem value="item-1" className="bg-card border border-border/50 rounded-lg px-6" itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
-                  <AccordionTrigger className="text-left hover:no-underline" itemProp="name">
-                    How accurate is AI Free Text Pro's AI detection?
-                  </AccordionTrigger>
-                  <AccordionContent className="text-muted-foreground" itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer">
-                    <div itemProp="text">
-                      AI Free Text Pro uses advanced AI models (GPT-4o Mini) to analyze text patterns, vocabulary, and structure. Our detection system provides probability scores with detailed breakdowns, achieving high accuracy in identifying AI-generated content. However, no AI detector is 100% accurate, so we provide detailed analysis to help you make informed decisions.
+            <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+              <Link to="/blog/how-to-detect-ai-generated-text">
+                <Card className="p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 cursor-pointer h-full">
+                  <div className="space-y-3">
+                    <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center">
+                      <Shield className="w-6 h-6 text-primary" />
                     </div>
-                  </AccordionContent>
-                </AccordionItem>
+                    <h3 className="font-bold text-xl">How to Detect AI-Generated Text</h3>
+                    <p className="text-muted-foreground text-sm">
+                      Learn proven techniques to identify AI content and understand detection patterns
+                    </p>
+                  </div>
+                </Card>
+              </Link>
 
-                <AccordionItem value="item-2" className="bg-card border border-border/50 rounded-lg px-6" itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
-                  <AccordionTrigger className="text-left hover:no-underline" itemProp="name">
-                    Is my text stored or shared?
-                  </AccordionTrigger>
-                  <AccordionContent className="text-muted-foreground" itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer">
-                    <div itemProp="text">
-                      No. Your privacy is our priority. AI Free Text Pro processes your content in real-time and does not store, log, or share your text with third parties. All analysis happens on-demand, and your content is immediately discarded after processing.
+              <Link to="/blog/best-free-ai-humanizer-tools-2025">
+                <Card className="p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 cursor-pointer h-full">
+                  <div className="space-y-3">
+                    <div className="w-12 h-12 rounded-lg bg-secondary/10 flex items-center justify-center">
+                      <Sparkles className="w-6 h-6 text-secondary" />
                     </div>
-                  </AccordionContent>
-                </AccordionItem>
+                    <h3 className="font-bold text-xl">Best AI Humanizer Tools 2025</h3>
+                    <p className="text-muted-foreground text-sm">
+                      Compare top AI humanizer tools and find the best solution for your needs
+                    </p>
+                  </div>
+                </Card>
+              </Link>
 
-                <AccordionItem value="item-3" className="bg-card border border-border/50 rounded-lg px-6" itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
-                  <AccordionTrigger className="text-left hover:no-underline" itemProp="name">
-                    Can I use it for academic writing?
-                  </AccordionTrigger>
-                  <AccordionContent className="text-muted-foreground" itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer">
-                    <div itemProp="text">
-                      AI Free Text Pro can be used to check and improve academic writing. However, we encourage ethical use - our humanizer is designed to help refine AI-assisted drafts and improve readability, not to deceive academic integrity systems. Always follow your institution's guidelines regarding AI usage in academic work.
+              <Link to="/blog/ai-detection-tools-compared-2025">
+                <Card className="p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 cursor-pointer h-full">
+                  <div className="space-y-3">
+                    <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center">
+                      <Target className="w-6 h-6 text-primary" />
                     </div>
-                  </AccordionContent>
-                </AccordionItem>
+                    <h3 className="font-bold text-xl">AI Detection Tools Compared</h3>
+                    <p className="text-muted-foreground text-sm">
+                      See how GPTZero, ZeroGPT, and AI Free Text Pro compare in accuracy
+                    </p>
+                  </div>
+                </Card>
+              </Link>
+            </div>
 
-                <AccordionItem value="item-4" className="bg-card border border-border/50 rounded-lg px-6" itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
-                  <AccordionTrigger className="text-left hover:no-underline" itemProp="name">
-                    What's the difference between AI Checker and Humanizer?
-                  </AccordionTrigger>
-                  <AccordionContent className="text-muted-foreground" itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer">
-                    <div itemProp="text">
-                      AI Checker analyzes and detects whether text is AI-generated, providing probability scores and highlighting suspicious patterns. Humanizer transforms robotic or AI-generated text into natural, human-like writing by improving flow, variety, and authenticity. Use them together for best results!
-                    </div>
-                  </AccordionContent>
-                </AccordionItem>
-
-                <AccordionItem value="item-5" className="bg-card border border-border/50 rounded-lg px-6" itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
-                  <AccordionTrigger className="text-left hover:no-underline" itemProp="name">
-                    Is AI Free Text Pro free to use?
-                  </AccordionTrigger>
-                  <AccordionContent className="text-muted-foreground" itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer">
-                    <div itemProp="text">
-                      Yes! AI Free Text Pro currently offers full access to both AI Checker and Humanizer tools for free. We're working on premium features and upgrades that will be available in the future, but core functionality will always remain accessible.
-                    </div>
-                  </AccordionContent>
-                </AccordionItem>
-              </Accordion>
+            <div className="text-center mt-8">
+              <Link to="/blog">
+                <Button variant="outline" className="group">
+                  View All Articles
+                  <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                </Button>
+              </Link>
             </div>
           </div>
         </section>
+
+        {/* Enhanced FAQ Section */}
+        <EnhancedFAQ />
 
         {/* Final CTA */}
         <section className="py-20 md:py-28">

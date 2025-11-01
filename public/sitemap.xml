@@ -3,109 +3,111 @@
   <!-- Main Pages -->
   <url>
     <loc>https://aifreetextpro.com/</loc>
-    <lastmod>2025-10-19</lastmod>
-    <changefreq>daily</changefreq>
+    <lastmod>2025-11-01</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://aifreetextpro.com/about</loc>
-    <lastmod>2025-10-19</lastmod>
+    <lastmod>2025-11-01</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aifreetextpro.com/contact</loc>
-    <lastmod>2025-10-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <lastmod>2025-11-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <!-- Blog Main Page -->
   <url>
     <loc>https://aifreetextpro.com/blog</loc>
-    <lastmod>2025-10-19</lastmod>
+    <lastmod>2025-11-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   
-  <!-- Blog Posts -->
+  <!-- Blog Posts - High Priority Keywords -->
   <url>
-    <loc>https://aifreetextpro.com/blog/ai-detection-tools-compared-2025</loc>
-    <lastmod>2025-10-19</lastmod>
+    <loc>https://aifreetextpro.com/blog/how-to-detect-ai-generated-text</loc>
+    <lastmod>2025-11-01</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://aifreetextpro.com/blog/best-free-ai-humanizer-tools-2025</loc>
+    <lastmod>2025-11-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://aifreetextpro.com/blog/ai-detection-tools-compared-2025</loc>
+    <lastmod>2025-11-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://aifreetextpro.com/blog/zerogpt-vs-ai-free-text-pro-2025</loc>
+    <lastmod>2025-11-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- Blog Posts - Medium Priority -->
+  <url>
     <loc>https://aifreetextpro.com/blog/humanize-ai-text-without-losing-voice</loc>
-    <lastmod>2025-10-19</lastmod>
+    <lastmod>2025-11-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aifreetextpro.com/blog/ai-writing-students-avoid-plagiarism</loc>
-    <lastmod>2025-10-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://aifreetextpro.com/blog/zerogpt-vs-ai-free-text-pro-2025</loc>
-    <lastmod>2025-10-19</lastmod>
+    <lastmod>2025-11-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aifreetextpro.com/blog/top-10-ai-humanizer-tools-2025</loc>
-    <lastmod>2025-10-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://aifreetextpro.com/blog/how-ai-detectors-work</loc>
-    <lastmod>2025-10-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://aifreetextpro.com/blog/why-ai-content-fails-human-review</loc>
-    <lastmod>2025-10-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://aifreetextpro.com/blog/ai-tools-for-writers-2025</loc>
-    <lastmod>2025-10-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://aifreetextpro.com/blog/can-ai-writing-be-original</loc>
-    <lastmod>2025-10-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://aifreetextpro.com/blog/ai-detection-in-publishing-2025</loc>
-    <lastmod>2025-10-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://aifreetextpro.com/blog/how-to-detect-ai-generated-text</loc>
-    <lastmod>2025-10-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://aifreetextpro.com/blog/best-free-ai-humanizer-tools-2025</loc>
-    <lastmod>2025-10-19</lastmod>
+    <lastmod>2025-11-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aifreetextpro.com/blog/bypass-ai-detection-ethical-tips</loc>
-    <lastmod>2025-10-19</lastmod>
+    <lastmod>2025-11-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://aifreetextpro.com/blog/how-ai-detectors-work</loc>
+    <lastmod>2025-11-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://aifreetextpro.com/blog/why-ai-content-fails-human-review</loc>
+    <lastmod>2025-11-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://aifreetextpro.com/blog/ai-tools-for-writers-2025</loc>
+    <lastmod>2025-11-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://aifreetextpro.com/blog/can-ai-writing-be-original</loc>
+    <lastmod>2025-11-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://aifreetextpro.com/blog/ai-detection-in-publishing-2025</loc>
+    <lastmod>2025-11-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   
   <!-- Legal Pages -->

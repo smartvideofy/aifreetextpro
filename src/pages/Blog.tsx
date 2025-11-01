@@ -5,6 +5,7 @@ import { Calendar, Clock, ArrowRight, BookOpen } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 
 const blogPosts = [
   {
@@ -129,8 +130,14 @@ const Blog = () => {
       </Helmet>
       <Navbar />
       
-      <main className="flex-1 py-20 md:py-28">
+      <main className="flex-1 py-12 md:py-20">
         <div className="container mx-auto px-4">
+          <Breadcrumbs 
+            items={[
+              { label: "Home", href: "/" },
+              { label: "Blog" }
+            ]} 
+          />
           <div className="max-w-4xl mx-auto">
             <div className="text-center space-y-6 mb-16">
               <div className="inline-flex items-center gap-2 text-primary">

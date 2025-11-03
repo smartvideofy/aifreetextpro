@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { ArrowRight, CheckCircle, Shield, FileText, Sparkles, Brain, Star, Pen, BookOpen, Target, Zap, Users, TrendingUp, Lock, Globe } from "lucide-react";
+import { ArrowRight, CheckCircle, Shield, FileText, Sparkles, Brain, Star, Pen, BookOpen, Target, Zap, Users, TrendingUp, Lock, Globe, Crown } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 import beforeAfterDemo from "@/assets/before-after-demo.png";
 import Navbar from "@/components/Navbar";
@@ -609,42 +609,38 @@ const Index = () => {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
-              {/* Starter Plan */}
-              <Card className="p-6 bg-card/80 backdrop-blur border-border/50 hover:shadow-xl transition-all duration-300">
-                <div className="space-y-6">
-                  <div className="flex items-center gap-3">
-                    <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
-                      <Zap className="w-6 h-6 text-primary" />
-                    </div>
-                    <div>
-                      <h3 className="text-2xl font-bold">Starter</h3>
-                      <div className="flex items-baseline gap-1">
-                        <span className="text-3xl font-bold">$0</span>
-                      </div>
-                    </div>
+            <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-6 max-w-7xl mx-auto">
+              {/* Free Plan */}
+              <Card className="relative border-2 hover:border-primary/50 transition-all duration-300 flex flex-col">
+                <div className="p-6 flex-1 flex flex-col">
+                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                    <Zap className="h-6 w-6 text-primary" />
                   </div>
-
-                  <div className="space-y-3">
-                    <div className="flex items-start gap-2">
-                      <CheckCircle className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
-                      <span className="text-sm">1,000 words per month</span>
-                    </div>
-                    <div className="flex items-start gap-2">
-                      <CheckCircle className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
+                  <h3 className="text-2xl font-bold mb-2">Free</h3>
+                  <div className="mb-6">
+                    <span className="text-4xl font-bold">$0</span>
+                  </div>
+                  
+                  <ul className="space-y-3 flex-1">
+                    <li className="flex items-start gap-2">
+                      <CheckCircle className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                      <span className="text-sm">500 words per month</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
                       <span className="text-sm">Basic AI detection</span>
-                    </div>
-                    <div className="flex items-start gap-2">
-                      <CheckCircle className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
                       <span className="text-sm">Basic humanization</span>
-                    </div>
-                    <div className="flex items-start gap-2">
-                      <CheckCircle className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
                       <span className="text-sm">Email support</span>
-                    </div>
-                  </div>
-
-                  <a href="https://app.aifreetextpro.com/auth" className="block">
+                    </li>
+                  </ul>
+                  
+                  <a href="https://app.aifreetextpro.com/auth" className="block mt-6">
                     <Button variant="outline" className="w-full">
                       Get Started
                     </Button>
@@ -652,46 +648,85 @@ const Index = () => {
                 </div>
               </Card>
 
-              {/* Lite Plan */}
-              <Card className="p-6 bg-card/80 backdrop-blur border-border/50 hover:shadow-xl transition-all duration-300">
-                <div className="space-y-6">
-                  <div className="flex items-center gap-3">
-                    <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
-                      <Zap className="w-6 h-6 text-primary" />
-                    </div>
-                    <div>
-                      <h3 className="text-2xl font-bold">Lite</h3>
-                      <div className="flex items-baseline gap-1">
-                        <span className="text-3xl font-bold">$9.99</span>
-                        <span className="text-muted-foreground text-sm">/month</span>
-                      </div>
-                    </div>
+              {/* Starter Plan */}
+              <Card className="relative border-2 hover:border-primary/50 transition-all duration-300 flex flex-col">
+                <div className="p-6 flex-1 flex flex-col">
+                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                    <Zap className="h-6 w-6 text-primary" />
                   </div>
-
-                  <div className="space-y-3">
-                    <div className="flex items-start gap-2">
-                      <CheckCircle className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
-                      <span className="text-sm">10,000 words per month</span>
-                    </div>
-                    <div className="flex items-start gap-2">
-                      <CheckCircle className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
+                  <h3 className="text-2xl font-bold mb-2">Starter</h3>
+                  <div className="mb-6">
+                    <span className="text-4xl font-bold">$4.99</span>
+                    <span className="text-muted-foreground">/month</span>
+                  </div>
+                  
+                  <ul className="space-y-3 flex-1">
+                    <li className="flex items-start gap-2">
+                      <CheckCircle className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                      <span className="text-sm">5,000 words per month</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
                       <span className="text-sm">Advanced AI detection</span>
-                    </div>
-                    <div className="flex items-start gap-2">
-                      <CheckCircle className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
                       <span className="text-sm">Advanced humanization</span>
-                    </div>
-                    <div className="flex items-start gap-2">
-                      <CheckCircle className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
                       <span className="text-sm">Priority email support</span>
-                    </div>
-                    <div className="flex items-start gap-2">
-                      <CheckCircle className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
                       <span className="text-sm">Export reports (PDF)</span>
-                    </div>
-                  </div>
+                    </li>
+                  </ul>
+                  
+                  <a href="https://app.aifreetextpro.com/auth" className="block mt-6">
+                    <Button className="w-full bg-gradient-to-r from-primary to-primary/80">
+                      Subscribe Now
+                    </Button>
+                  </a>
+                </div>
+              </Card>
 
-                  <a href="https://app.aifreetextpro.com/auth" className="block">
+              {/* Lite Plan */}
+              <Card className="relative border-2 hover:border-primary/50 transition-all duration-300 flex flex-col">
+                <div className="p-6 flex-1 flex flex-col">
+                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                    <Zap className="h-6 w-6 text-primary" />
+                  </div>
+                  <h3 className="text-2xl font-bold mb-2">Lite</h3>
+                  <div className="mb-6">
+                    <span className="text-4xl font-bold">$9.99</span>
+                    <span className="text-muted-foreground">/month</span>
+                  </div>
+                  
+                  <ul className="space-y-3 flex-1">
+                    <li className="flex items-start gap-2">
+                      <CheckCircle className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                      <span className="text-sm">10,000 words per month</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                      <span className="text-sm">Advanced AI detection</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                      <span className="text-sm">Advanced humanization</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                      <span className="text-sm">Priority email support</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                      <span className="text-sm">Export reports (PDF)</span>
+                    </li>
+                  </ul>
+                  
+                  <a href="https://app.aifreetextpro.com/auth" className="block mt-6">
                     <Button className="w-full bg-gradient-to-r from-primary to-primary/80">
                       Subscribe Now
                     </Button>
@@ -700,55 +735,50 @@ const Index = () => {
               </Card>
 
               {/* Pro Writer Plan - Most Popular */}
-              <Card className="p-6 bg-gradient-to-br from-primary/10 via-card/80 to-secondary/10 backdrop-blur border-primary/50 hover:shadow-2xl transition-all duration-300 relative">
-                <div className="absolute -top-3 left-1/2 -translate-x-1/2">
-                  <div className="bg-primary text-primary-foreground px-4 py-1 rounded-full text-xs font-bold">
+              <Card className="relative border-2 border-primary shadow-xl scale-105 flex flex-col">
+                <div className="absolute -top-4 left-1/2 -translate-x-1/2">
+                  <span className="bg-gradient-to-r from-primary to-secondary text-primary-foreground px-4 py-1 rounded-full text-sm font-semibold whitespace-nowrap">
                     Most Popular
-                  </div>
+                  </span>
                 </div>
-                
-                <div className="space-y-6">
-                  <div className="flex items-center gap-3">
-                    <div className="w-12 h-12 rounded-xl bg-primary/20 flex items-center justify-center">
-                      <Star className="w-6 h-6 text-primary" />
-                    </div>
-                    <div>
-                      <h3 className="text-2xl font-bold">Pro Writer</h3>
-                      <div className="flex items-baseline gap-1">
-                        <span className="text-3xl font-bold">$24.99</span>
-                        <span className="text-muted-foreground text-sm">/month</span>
-                      </div>
-                    </div>
+                <div className="p-6 pt-8 flex-1 flex flex-col">
+                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                    <Sparkles className="h-6 w-6 text-primary" />
                   </div>
-
-                  <div className="space-y-3">
-                    <div className="flex items-start gap-2">
-                      <CheckCircle className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
-                      <span className="text-sm font-medium">50,000 words per month</span>
-                    </div>
-                    <div className="flex items-start gap-2">
-                      <CheckCircle className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
+                  <h3 className="text-2xl font-bold mb-2">Pro Writer</h3>
+                  <div className="mb-6">
+                    <span className="text-4xl font-bold">$24.99</span>
+                    <span className="text-muted-foreground">/month</span>
+                  </div>
+                  
+                  <ul className="space-y-3 flex-1">
+                    <li className="flex items-start gap-2">
+                      <CheckCircle className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                      <span className="text-sm">50,000 words per month</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
                       <span className="text-sm">Premium AI detection</span>
-                    </div>
-                    <div className="flex items-start gap-2">
-                      <CheckCircle className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
                       <span className="text-sm">Premium humanization</span>
-                    </div>
-                    <div className="flex items-start gap-2">
-                      <CheckCircle className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
                       <span className="text-sm">Priority support</span>
-                    </div>
-                    <div className="flex items-start gap-2">
-                      <CheckCircle className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
                       <span className="text-sm">Export reports (PDF)</span>
-                    </div>
-                    <div className="flex items-start gap-2">
-                      <CheckCircle className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
                       <span className="text-sm">Advanced analytics</span>
-                    </div>
-                  </div>
-
-                  <a href="https://app.aifreetextpro.com/auth" className="block">
+                    </li>
+                  </ul>
+                  
+                  <a href="https://app.aifreetextpro.com/auth" className="block mt-6">
                     <Button className="w-full bg-gradient-to-r from-primary to-secondary">
                       Subscribe Now
                     </Button>
@@ -757,54 +787,50 @@ const Index = () => {
               </Card>
 
               {/* Unlimited Creator Plan */}
-              <Card className="p-6 bg-card/80 backdrop-blur border-border/50 hover:shadow-xl transition-all duration-300">
-                <div className="space-y-6">
-                  <div className="flex items-center gap-3">
-                    <div className="w-12 h-12 rounded-xl bg-secondary/10 flex items-center justify-center">
-                      <Target className="w-6 h-6 text-secondary" />
-                    </div>
-                    <div>
-                      <h3 className="text-2xl font-bold">Unlimited</h3>
-                      <div className="flex items-baseline gap-1">
-                        <span className="text-3xl font-bold">$59.99</span>
-                        <span className="text-muted-foreground text-sm">/month</span>
-                      </div>
-                    </div>
+              <Card className="relative border-2 hover:border-primary/50 transition-all duration-300 flex flex-col">
+                <div className="p-6 flex-1 flex flex-col">
+                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                    <Crown className="h-6 w-6 text-primary" />
                   </div>
-
-                  <div className="space-y-3">
-                    <div className="flex items-start gap-2">
-                      <CheckCircle className="w-4 h-4 text-secondary mt-0.5 flex-shrink-0" />
-                      <span className="text-sm font-medium">Unlimited words</span>
-                    </div>
-                    <div className="flex items-start gap-2">
-                      <CheckCircle className="w-4 h-4 text-secondary mt-0.5 flex-shrink-0" />
+                  <h3 className="text-2xl font-bold mb-2">Unlimited Creator</h3>
+                  <div className="mb-6">
+                    <span className="text-4xl font-bold">$59.99</span>
+                    <span className="text-muted-foreground">/month</span>
+                  </div>
+                  
+                  <ul className="space-y-3 flex-1">
+                    <li className="flex items-start gap-2">
+                      <CheckCircle className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                      <span className="text-sm">Unlimited words</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
                       <span className="text-sm">Premium AI detection</span>
-                    </div>
-                    <div className="flex items-start gap-2">
-                      <CheckCircle className="w-4 h-4 text-secondary mt-0.5 flex-shrink-0" />
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
                       <span className="text-sm">Premium humanization</span>
-                    </div>
-                    <div className="flex items-start gap-2">
-                      <CheckCircle className="w-4 h-4 text-secondary mt-0.5 flex-shrink-0" />
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
                       <span className="text-sm">24/7 Priority support</span>
-                    </div>
-                    <div className="flex items-start gap-2">
-                      <CheckCircle className="w-4 h-4 text-secondary mt-0.5 flex-shrink-0" />
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
                       <span className="text-sm">Export reports (PDF)</span>
-                    </div>
-                    <div className="flex items-start gap-2">
-                      <CheckCircle className="w-4 h-4 text-secondary mt-0.5 flex-shrink-0" />
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
                       <span className="text-sm">Advanced analytics</span>
-                    </div>
-                    <div className="flex items-start gap-2">
-                      <CheckCircle className="w-4 h-4 text-secondary mt-0.5 flex-shrink-0" />
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
                       <span className="text-sm">Dedicated account manager</span>
-                    </div>
-                  </div>
-
-                  <a href="https://app.aifreetextpro.com/auth" className="block">
-                    <Button variant="outline" className="w-full border-secondary text-secondary hover:bg-secondary/10">
+                    </li>
+                  </ul>
+                  
+                  <a href="https://app.aifreetextpro.com/auth" className="block mt-6">
+                    <Button variant="outline" className="w-full border-primary text-primary hover:bg-primary/10">
                       Subscribe Now
                     </Button>
                   </a>
@@ -812,9 +838,14 @@ const Index = () => {
               </Card>
             </div>
 
-            <p className="text-center text-muted-foreground text-sm mt-8">
-              All plans are billed monthly. Cancel anytime with no questions asked.
-            </p>
+            <div className="text-center mt-12">
+              <p className="text-sm text-muted-foreground">
+                All plans are billed monthly. Cancel anytime with no questions asked.
+              </p>
+              <p className="text-sm text-muted-foreground mt-2">
+                Secure payments powered by Paystack. Your data is always protected.
+              </p>
+            </div>
           </div>
         </section>
 

@@ -4,7 +4,6 @@ import { ArrowLeft, CheckCircle, AlertTriangle, Brain } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { SidebarAd, InContentAd } from "@/components/AdZone";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { RelatedArticles } from "@/components/RelatedArticles";
 
@@ -83,9 +82,6 @@ const HowToDetectAI = () => {
                     As AI writing tools like ChatGPT, GPT-4, and Claude become increasingly sophisticated, the ability to distinguish between human and AI-generated content has never been more critical. Whether you're an educator checking student work, a content manager reviewing submissions, or a professional maintaining authenticity standards, understanding AI detection is essential.
                   </p>
                 </section>
-
-                {/* Ad Placement - After introduction */}
-                <InContentAd />
 
                 <section>
                   <h2 className="text-3xl font-bold mb-6">Key Signs of AI-Generated Text</h2>
@@ -217,13 +213,6 @@ const HowToDetectAI = () => {
                 <RelatedArticles articles={relatedArticles} />
               </div>
             </div>
-            
-            {/* Sidebar for desktop */}
-            <aside className="hidden lg:block">
-              <div className="sticky top-24">
-                <SidebarAd />
-              </div>
-            </aside>
           </div>
         </div>
       </article>

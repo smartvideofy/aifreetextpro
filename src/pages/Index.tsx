@@ -7,7 +7,6 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import AnimatedBackground from "@/components/AnimatedBackground";
 import AboutSection from "@/components/AboutSection";
-import { InContentAd } from "@/components/AdZone";
 import ComparisonTable from "@/components/ComparisonTable";
 import EnhancedFAQ from "@/components/EnhancedFAQ";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
@@ -434,9 +433,6 @@ const Index = () => {
             </div>
           </div>
         </section>
-
-        {/* Ad Placement - After Core Features, good spacing from CTAs */}
-        <InContentAd className="container mx-auto px-4" />
 
         {/* Trust & Credibility */}
         <section className="py-12 md:py-16 bg-card/10">

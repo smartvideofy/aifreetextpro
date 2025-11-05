@@ -24,11 +24,14 @@ const Footer = () => {
           <div className="space-y-4">
             <h3 className="font-semibold text-foreground">Product</h3>
             <nav className="flex flex-col gap-2 text-sm">
-              <a href="https://app.aifreetextpro.com/auth" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
-                Go to App
+              <a href="https://app.aifreetextpro.com/detector" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+                AI Detector
               </a>
-              <a href="https://app.aifreetextpro.com/auth" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
-                Sign Up Free
+              <a href="https://app.aifreetextpro.com/humanizer" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+                AI Humanizer
+              </a>
+              <a href="https://app.aifreetextpro.com/plagiarism" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+                Plagiarism Checker
               </a>
             </nav>
           </div>

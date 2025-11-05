@@ -47,7 +47,7 @@ const MobileNav = () => {
           {/* App Access Link */}
           <Separator />
           <a 
-            href="https://app.aifreetextpro.com/auth" 
+            href="https://app.aifreetextpro.com/" 
             target="_blank" 
             rel="noopener noreferrer"
             onClick={() => setOpen(false)}

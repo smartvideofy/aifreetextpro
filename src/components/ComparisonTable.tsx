@@ -193,7 +193,7 @@ const ComparisonTable = () => {
         </div>
 
         <div className="text-center mt-12">
-          <a href="https://app.aifreetextpro.com/auth">
+          <a href="https://app.aifreetextpro.com/">
             <Button size="lg" className="bg-gradient-to-r from-primary to-secondary text-lg px-12 py-6 shadow-xl hover:shadow-2xl shadow-primary/20">
               Try AI Free Text Pro Free — No Credit Card <ArrowRight className="ml-2 h-5 w-5" />
             </Button>

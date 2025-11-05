@@ -45,7 +45,7 @@ const Contact = () => {
                   support@aifreetextpro.com
                 </a>
               </p>
-              <a href="https://app.aifreetextpro.com/auth">
+              <a href="https://app.aifreetextpro.com/">
                 <Button size="lg" className="w-full bg-gradient-to-r from-primary to-secondary">
                   Start Writing Now <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>

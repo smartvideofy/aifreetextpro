@@ -27,6 +27,7 @@ import AICreativityOriginality from "./pages/blog/AICreativityOriginality";
 import AIDetectionPublishing from "./pages/blog/AIDetectionPublishing";
 import NotFound from "./pages/NotFound";
 import Navbar from "./components/Navbar";
+import { ScrollToTop } from "./components/ScrollToTop";
 
 const queryClient = new QueryClient();
 
@@ -50,6 +51,7 @@ const App = () => (
           <Toaster />
           <Sonner />
           <RouteTracker />
+          <ScrollToTop />
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/privacy-policy" element={<><Navbar /><PrivacyPolicy /></>} />

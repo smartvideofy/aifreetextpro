@@ -267,7 +267,7 @@ const HumanizeAIText = () => {
                 <p className="text-muted-foreground max-w-2xl mx-auto">
                   Try AI Free Text Pro's humanizer with 4 writing styles and customizable settings. Start free with 1,000 words/month.
                 </p>
-                <a href="https://app.aifreetextpro.com/auth" target="_blank" rel="noopener noreferrer">
+                <a href="https://app.aifreetextpro.com/" target="_blank" rel="noopener noreferrer">
                   <Button size="lg" className="text-lg px-8">
                     Try Free Humanizer
                   </Button>

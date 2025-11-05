@@ -297,7 +297,7 @@ const AIWritingStudents = () => {
                 <p className="text-muted-foreground max-w-2xl mx-auto">
                   Use AI Free Text Pro to detect any unintentional AI patterns in your writing. Avoid false positives and submit with confidence.
                 </p>
-                <a href="https://app.aifreetextpro.com/auth" target="_blank" rel="noopener noreferrer">
+                <a href="https://app.aifreetextpro.com/" target="_blank" rel="noopener noreferrer">
                   <Button size="lg" className="text-lg px-8">
                     Check Your Essay Free
                   </Button>

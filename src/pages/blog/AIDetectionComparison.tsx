@@ -305,7 +305,7 @@ const AIDetectionComparison = () => {
                 <p className="text-muted-foreground max-w-2xl mx-auto">
                   Experience the most accurate AI detector on the market. Start with 1,000 free words — no credit card required.
                 </p>
-                <a href="https://app.aifreetextpro.com/auth" target="_blank" rel="noopener noreferrer">
+                <a href="https://app.aifreetextpro.com/" target="_blank" rel="noopener noreferrer">
                   <Button size="lg" className="text-lg px-8">
                     Start Free Detection
                   </Button>

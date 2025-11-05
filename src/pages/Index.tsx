@@ -127,7 +127,7 @@ const Index = () => {
               </div>
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
-                <a href="https://app.aifreetextpro.com/auth" className="w-full sm:w-auto">
+                <a href="https://app.aifreetextpro.com/" className="w-full sm:w-auto">
                   <Button 
                     size="lg" 
                     className="text-base sm:text-lg px-8 sm:px-10 py-5 sm:py-6 bg-gradient-to-r from-primary via-primary/90 to-secondary hover:opacity-90 shadow-xl hover:shadow-2xl shadow-primary/20 group w-full transition-all font-bold"
@@ -137,7 +137,7 @@ const Index = () => {
                     <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                   </Button>
                 </a>
-                <a href="https://app.aifreetextpro.com/auth" className="w-full sm:w-auto">
+                <a href="https://app.aifreetextpro.com/detector" className="w-full sm:w-auto">
                   <Button 
                     size="lg"
                     variant="outline"
@@ -250,7 +250,7 @@ const Index = () => {
                 />
                 <div className="p-6 bg-gradient-to-br from-primary/10 to-secondary/10 text-center">
                   <p className="text-sm text-muted-foreground mb-4">Join 50,000+ writers transforming their content</p>
-                  <a href="https://app.aifreetextpro.com/auth">
+                  <a href="https://app.aifreetextpro.com/">
                     <Button size="lg" className="bg-gradient-to-r from-primary to-secondary">
                       Start Free — 1,000 Words <ArrowRight className="ml-2 h-4 w-4" />
                     </Button>
@@ -355,7 +355,7 @@ const Index = () => {
                   </div>
                 </div>
 
-                <a href="https://app.aifreetextpro.com/auth" className="block">
+                <a href="https://app.aifreetextpro.com/detector" className="block">
                   <Button className="w-full bg-gradient-to-r from-primary to-primary/80 hover:opacity-90 transition-all group">
                     Try Detector Free
                     <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
@@ -396,7 +396,7 @@ const Index = () => {
                   </div>
                 </div>
 
-                <a href="https://app.aifreetextpro.com/auth" className="block">
+                <a href="https://app.aifreetextpro.com/humanizer" className="block">
                   <Button className="w-full bg-gradient-to-r from-secondary to-secondary/80 hover:opacity-90 transition-all group">
                     Try Humanizer Free
                     <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
@@ -636,7 +636,7 @@ const Index = () => {
                     </li>
                   </ul>
                   
-                  <a href="https://app.aifreetextpro.com/auth" className="block mt-6">
+                  <a href="https://app.aifreetextpro.com/" className="block mt-6">
                     <Button variant="outline" className="w-full">
                       Get Started
                     </Button>
@@ -679,7 +679,7 @@ const Index = () => {
                     </li>
                   </ul>
                   
-                  <a href="https://app.aifreetextpro.com/auth" className="block mt-6">
+                  <a href="https://app.aifreetextpro.com/" className="block mt-6">
                     <Button className="w-full bg-gradient-to-r from-primary to-primary/80">
                       Subscribe Now
                     </Button>
@@ -722,7 +722,7 @@ const Index = () => {
                     </li>
                   </ul>
                   
-                  <a href="https://app.aifreetextpro.com/auth" className="block mt-6">
+                  <a href="https://app.aifreetextpro.com/" className="block mt-6">
                     <Button className="w-full bg-gradient-to-r from-primary to-primary/80">
                       Subscribe Now
                     </Button>
@@ -774,7 +774,7 @@ const Index = () => {
                     </li>
                   </ul>
                   
-                  <a href="https://app.aifreetextpro.com/auth" className="block mt-6">
+                  <a href="https://app.aifreetextpro.com/" className="block mt-6">
                     <Button className="w-full bg-gradient-to-r from-primary to-secondary">
                       Subscribe Now
                     </Button>
@@ -825,7 +825,7 @@ const Index = () => {
                     </li>
                   </ul>
                   
-                  <a href="https://app.aifreetextpro.com/auth" className="block mt-6">
+                  <a href="https://app.aifreetextpro.com/" className="block mt-6">
                     <Button variant="outline" className="w-full border-primary text-primary hover:bg-primary/10">
                       Subscribe Now
                     </Button>
@@ -933,7 +933,7 @@ const Index = () => {
             </div>
             
             <div className="text-center pt-12">
-              <a href="https://app.aifreetextpro.com/auth">
+              <a href="https://app.aifreetextpro.com/">
                 <Button size="lg" className="bg-gradient-to-r from-primary to-secondary text-lg px-12 py-6">
                   Join Free — No Credit Card <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
@@ -1031,13 +1031,13 @@ const Index = () => {
                 Join 50,000+ writers creating authentic, polished content with AI Free Text Pro.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
-                <a href="https://app.aifreetextpro.com/auth" className="w-full sm:w-auto">
+                <a href="https://app.aifreetextpro.com/" className="w-full sm:w-auto">
                   <Button size="lg" className="text-base sm:text-lg px-8 sm:px-10 py-5 sm:py-6 bg-gradient-to-r from-primary to-secondary hover:opacity-90 shadow-xl hover:shadow-2xl shadow-primary/20 w-full font-bold transition-all group">
                     Start Writing Free
                     <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                   </Button>
                 </a>
-                <a href="https://app.aifreetextpro.com/auth" className="w-full sm:w-auto">
+                <a href="https://app.aifreetextpro.com/detector" className="w-full sm:w-auto">
                   <Button size="lg" variant="outline" className="text-base sm:text-lg px-8 sm:px-10 py-5 sm:py-6 w-full font-bold transition-all group border-2">
                     View Live Demo
                     <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />

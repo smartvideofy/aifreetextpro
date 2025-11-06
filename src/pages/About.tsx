@@ -15,6 +15,7 @@ const About = () => {
         <meta name="keywords" content="about ai detector, ai text tools, free ai detection, ai humanizer company, text analysis tools" />
         <link rel="canonical" href="https://aifreetextpro.com/about" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="robots" content="index, follow" />
         <meta property="og:title" content="About Us - AI Free Text Pro" />
         <meta property="og:description" content="Learn about AI Free Text Pro and our mission to provide accurate AI detection and text humanization tools." />
         <meta property="og:url" content="https://aifreetextpro.com/about" />

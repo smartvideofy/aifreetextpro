@@ -12,7 +12,7 @@ const TermsOfService = () => {
         <meta name="description" content="Read AI Free Text Pro's terms of service to understand acceptable use, user responsibilities, and service limitations for our AI detection and humanization tools." />
         <meta name="keywords" content="terms of service, usage terms, terms and conditions, service agreement" />
         <link rel="canonical" href="https://aifreetextpro.com/terms-of-service" />
-        <meta name="robots" content="index, follow" />
+        <meta name="robots" content="noindex, follow" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Helmet>
       <main className="flex-1">

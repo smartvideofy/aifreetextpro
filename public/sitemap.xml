@@ -109,18 +109,4 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
-  
-  <!-- Legal Pages -->
-  <url>
-    <loc>https://aifreetextpro.com/privacy-policy</loc>
-    <lastmod>2025-10-19</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://aifreetextpro.com/terms-of-service</loc>
-    <lastmod>2025-10-19</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
 </urlset>

@@ -145,11 +145,11 @@ const BestAIHumanizers = () => {
                     </div>
                   </div>
                   
-                  <Link to="/humanizer">
+                  <a href="https://app.aifreetextpro.com/humanizer" target="_blank" rel="noopener noreferrer">
                     <Button className="w-full bg-gradient-to-r from-primary to-secondary">
                       Try AI Free Text Pro
                     </Button>
-                  </Link>
+                  </a>
                 </Card>
 
                 <Card className="p-6">
@@ -273,11 +273,11 @@ const BestAIHumanizers = () => {
                   <p className="text-muted-foreground mb-4">
                     Try our award-winning humanizer and see why thousands choose AI Free Text Pro for their content needs.
                   </p>
-                  <Link to="/humanizer">
+                  <a href="https://app.aifreetextpro.com/humanizer" target="_blank" rel="noopener noreferrer">
                     <Button className="bg-gradient-to-r from-secondary to-primary">
                       Humanize Your Text Free
                     </Button>
-                  </Link>
+                  </a>
                 </div>
               </div>
             </div>

@@ -250,11 +250,11 @@ const BypassAIDetection = () => {
                   <p className="text-muted-foreground mb-4">
                     Our humanizer tool helps you transform AI-assisted drafts into natural, authentic writing while maintaining your original intent and expertise.
                   </p>
-                  <Link to="/humanizer">
+                  <a href="https://app.aifreetextpro.com/humanizer" target="_blank" rel="noopener noreferrer">
                     <Button className="bg-gradient-to-r from-primary to-secondary">
                       Try Humanizer Tool
                     </Button>
-                  </Link>
+                  </a>
                 </div>
               </div>
             </div>

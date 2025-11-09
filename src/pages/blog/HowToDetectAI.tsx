@@ -39,6 +39,44 @@ const HowToDetectAI = () => {
         <meta property="og:type" content="article" />
         <meta property="article:published_time" content="2025-10-05" />
         <meta property="article:author" content="AI Free Text Pro" />
+        
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "How to Detect AI-Generated Text: Complete Guide 2025",
+            "description": "Learn expert techniques to detect AI-generated text. Discover key linguistic patterns, AI writing markers, and detection tools to identify ChatGPT, GPT-4, and AI-written content with 98% accuracy.",
+            "image": {
+              "@type": "ImageObject",
+              "url": "https://aifreetextpro.com/before-after-demo.png",
+              "width": 1200,
+              "height": 675
+            },
+            "datePublished": "2025-10-05",
+            "dateModified": "2025-10-05",
+            "author": {
+              "@type": "Organization",
+              "name": "AI Free Text Pro",
+              "url": "https://aifreetextpro.com",
+              "logo": {
+                "@type": "ImageObject",
+                "url": "https://aifreetextpro.com/before-after-demo.png"
+              }
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "AI Free Text Pro",
+              "logo": {
+                "@type": "ImageObject",
+                "url": "https://aifreetextpro.com/before-after-demo.png"
+              }
+            },
+            "mainEntityOfPage": {
+              "@type": "WebPage",
+              "@id": "https://aifreetextpro.com/blog/how-to-detect-ai-generated-text"
+            }
+          })}
+        </script>
       </Helmet>
       <Navbar />
       

@@ -36,6 +36,44 @@ const HumanizeAIText = () => {
         <meta property="og:description" content="Proven strategies to make AI writing sound naturally human" />
         <meta property="og:url" content="https://aifreetextpro.com/blog/humanize-ai-text-without-losing-voice" />
         <meta property="og:type" content="article" />
+        
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "How to Humanize AI-Generated Text Without Losing Your Voice",
+            "description": "Learn proven strategies and tools to make ChatGPT or Gemini text sound naturally human while keeping your tone.",
+            "image": {
+              "@type": "ImageObject",
+              "url": "https://aifreetextpro.com/before-after-demo.png",
+              "width": 1200,
+              "height": 675
+            },
+            "datePublished": "2025-01-19",
+            "dateModified": "2025-01-19",
+            "author": {
+              "@type": "Organization",
+              "name": "AI Free Text Pro",
+              "url": "https://aifreetextpro.com",
+              "logo": {
+                "@type": "ImageObject",
+                "url": "https://aifreetextpro.com/before-after-demo.png"
+              }
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "AI Free Text Pro",
+              "logo": {
+                "@type": "ImageObject",
+                "url": "https://aifreetextpro.com/before-after-demo.png"
+              }
+            },
+            "mainEntityOfPage": {
+              "@type": "WebPage",
+              "@id": "https://aifreetextpro.com/blog/humanize-ai-text-without-losing-voice"
+            }
+          })}
+        </script>
       </Helmet>
       <Navbar />
       

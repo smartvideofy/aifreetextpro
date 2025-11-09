@@ -86,6 +86,25 @@ const Index = () => {
             }
           })}
         </script>
+        
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "AI Free Text Pro",
+            "url": "https://aifreetextpro.com",
+            "logo": "https://aifreetextpro.com/before-after-demo.png",
+            "description": "Free AI detector and humanizer tool. Detect ChatGPT and make AI text sound human with 98% accuracy.",
+            "sameAs": [
+              "https://app.aifreetextpro.com"
+            ],
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "contactType": "Customer Support",
+              "url": "https://aifreetextpro.com/contact"
+            }
+          })}
+        </script>
       </Helmet>
       <Navbar />
       

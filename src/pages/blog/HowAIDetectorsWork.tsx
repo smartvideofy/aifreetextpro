@@ -41,8 +41,36 @@ export default function HowAIDetectorsWork() {
             "@context": "https://schema.org",
             "@type": "Article",
             "headline": "How AI Detectors Work: Inside the Science of AI Text Analysis",
+            "description": "Understand the machine-learning and linguistic patterns behind AI detectors and how to write authentically human content.",
+            "image": {
+              "@type": "ImageObject",
+              "url": "https://aifreetextpro.com/before-after-demo.png",
+              "width": 1200,
+              "height": 675
+            },
             "datePublished": "2025-01-19",
-            "author": { "@type": "Organization", "name": "AI Free Text Pro" }
+            "dateModified": "2025-01-19",
+            "author": {
+              "@type": "Organization",
+              "name": "AI Free Text Pro",
+              "url": "https://aifreetextpro.com",
+              "logo": {
+                "@type": "ImageObject",
+                "url": "https://aifreetextpro.com/before-after-demo.png"
+              }
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "AI Free Text Pro",
+              "logo": {
+                "@type": "ImageObject",
+                "url": "https://aifreetextpro.com/before-after-demo.png"
+              }
+            },
+            "mainEntityOfPage": {
+              "@type": "WebPage",
+              "@id": "https://aifreetextpro.com/blog/how-ai-detectors-work"
+            }
           })}
         </script>
       </Helmet>

@@ -38,6 +38,44 @@ const BypassAIDetection = () => {
         <meta property="og:url" content="https://aifreetextpro.com/blog/bypass-ai-detection-ethical-tips" />
         <meta property="og:type" content="article" />
         <meta property="article:published_time" content="2025-10-03" />
+        
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "Bypass AI Detection: Ethical Tips & Tricks 2025",
+            "description": "Learn ethical strategies to bypass AI detection and make AI-assisted content more human-like. Discover proven techniques to improve writing quality while maintaining authenticity and academic integrity.",
+            "image": {
+              "@type": "ImageObject",
+              "url": "https://aifreetextpro.com/before-after-demo.png",
+              "width": 1200,
+              "height": 675
+            },
+            "datePublished": "2025-10-03",
+            "dateModified": "2025-10-03",
+            "author": {
+              "@type": "Organization",
+              "name": "AI Free Text Pro",
+              "url": "https://aifreetextpro.com",
+              "logo": {
+                "@type": "ImageObject",
+                "url": "https://aifreetextpro.com/before-after-demo.png"
+              }
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "AI Free Text Pro",
+              "logo": {
+                "@type": "ImageObject",
+                "url": "https://aifreetextpro.com/before-after-demo.png"
+              }
+            },
+            "mainEntityOfPage": {
+              "@type": "WebPage",
+              "@id": "https://aifreetextpro.com/blog/bypass-ai-detection-ethical-tips"
+            }
+          })}
+        </script>
       </Helmet>
       <Navbar />
       

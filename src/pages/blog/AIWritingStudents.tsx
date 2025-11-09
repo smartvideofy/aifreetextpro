@@ -36,6 +36,44 @@ const AIWritingStudents = () => {
         <meta property="og:description" content="Safe ways to use AI writing assistants in academia" />
         <meta property="og:url" content="https://aifreetextpro.com/blog/ai-writing-students-avoid-plagiarism" />
         <meta property="og:type" content="article" />
+        
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "AI Writing for Students: How to Avoid Plagiarism and AI Detection Ethically",
+            "description": "Discover safe ways to use AI writing assistants in academia without triggering AI detectors or plagiarism checks.",
+            "image": {
+              "@type": "ImageObject",
+              "url": "https://aifreetextpro.com/before-after-demo.png",
+              "width": 1200,
+              "height": 675
+            },
+            "datePublished": "2025-01-19",
+            "dateModified": "2025-01-19",
+            "author": {
+              "@type": "Organization",
+              "name": "AI Free Text Pro",
+              "url": "https://aifreetextpro.com",
+              "logo": {
+                "@type": "ImageObject",
+                "url": "https://aifreetextpro.com/before-after-demo.png"
+              }
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "AI Free Text Pro",
+              "logo": {
+                "@type": "ImageObject",
+                "url": "https://aifreetextpro.com/before-after-demo.png"
+              }
+            },
+            "mainEntityOfPage": {
+              "@type": "WebPage",
+              "@id": "https://aifreetextpro.com/blog/ai-writing-students-avoid-plagiarism"
+            }
+          })}
+        </script>
       </Helmet>
       <Navbar />
       

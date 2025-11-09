@@ -46,11 +46,34 @@ export default function AIDetectionPublishing() {
             "@type": "Article",
             "headline": "AI Detection in Publishing: How Editors and Writers Can Adapt in 2025",
             "description": "How editors and publishers are adapting to AI-generated content — and why AI Free Text Pro is part of the solution.",
+            "image": {
+              "@type": "ImageObject",
+              "url": "https://aifreetextpro.com/before-after-demo.png",
+              "width": 1200,
+              "height": 675
+            },
             "datePublished": "2025-01-19",
             "dateModified": "2025-01-19",
             "author": {
               "@type": "Organization",
-              "name": "AI Free Text Pro"
+              "name": "AI Free Text Pro",
+              "url": "https://aifreetextpro.com",
+              "logo": {
+                "@type": "ImageObject",
+                "url": "https://aifreetextpro.com/before-after-demo.png"
+              }
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "AI Free Text Pro",
+              "logo": {
+                "@type": "ImageObject",
+                "url": "https://aifreetextpro.com/before-after-demo.png"
+              }
+            },
+            "mainEntityOfPage": {
+              "@type": "WebPage",
+              "@id": "https://aifreetextpro.com/blog/ai-detection-in-publishing-2025"
             }
           })}
         </script>

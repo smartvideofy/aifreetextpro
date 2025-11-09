@@ -36,6 +36,44 @@ const AIDetectionComparison = () => {
         <meta property="og:description" content="Real-world comparison of leading AI detectors" />
         <meta property="og:url" content="https://aifreetextpro.com/blog/ai-detection-tools-compared-2025" />
         <meta property="og:type" content="article" />
+        
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "AI Detection Tools Compared (2025): GPTZero vs AI Free Text Pro vs Rewritify",
+            "description": "See which AI detector is most accurate in 2025. We compare GPTZero, Rewritify, and AI Free Text Pro in real-world tests.",
+            "image": {
+              "@type": "ImageObject",
+              "url": "https://aifreetextpro.com/before-after-demo.png",
+              "width": 1200,
+              "height": 675
+            },
+            "datePublished": "2025-01-19",
+            "dateModified": "2025-01-19",
+            "author": {
+              "@type": "Organization",
+              "name": "AI Free Text Pro",
+              "url": "https://aifreetextpro.com",
+              "logo": {
+                "@type": "ImageObject",
+                "url": "https://aifreetextpro.com/before-after-demo.png"
+              }
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "AI Free Text Pro",
+              "logo": {
+                "@type": "ImageObject",
+                "url": "https://aifreetextpro.com/before-after-demo.png"
+              }
+            },
+            "mainEntityOfPage": {
+              "@type": "WebPage",
+              "@id": "https://aifreetextpro.com/blog/ai-detection-tools-compared-2025"
+            }
+          })}
+        </script>
       </Helmet>
       <Navbar />
       

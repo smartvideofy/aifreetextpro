@@ -39,6 +39,44 @@ const BestAIHumanizers = () => {
         <meta property="og:url" content="https://aifreetextpro.com/blog/best-free-ai-humanizer-tools-2025" />
         <meta property="og:type" content="article" />
         <meta property="article:published_time" content="2025-10-04" />
+        
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "Best Free AI Humanizer Tools in 2025 - Complete Comparison",
+            "description": "Compare the top 5 free AI humanizer tools in 2025. Find the best AI text humanizer for converting AI-generated content to natural human writing. Features, pricing, and expert reviews.",
+            "image": {
+              "@type": "ImageObject",
+              "url": "https://aifreetextpro.com/before-after-demo.png",
+              "width": 1200,
+              "height": 675
+            },
+            "datePublished": "2025-10-04",
+            "dateModified": "2025-10-04",
+            "author": {
+              "@type": "Organization",
+              "name": "AI Free Text Pro",
+              "url": "https://aifreetextpro.com",
+              "logo": {
+                "@type": "ImageObject",
+                "url": "https://aifreetextpro.com/before-after-demo.png"
+              }
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "AI Free Text Pro",
+              "logo": {
+                "@type": "ImageObject",
+                "url": "https://aifreetextpro.com/before-after-demo.png"
+              }
+            },
+            "mainEntityOfPage": {
+              "@type": "WebPage",
+              "@id": "https://aifreetextpro.com/blog/best-free-ai-humanizer-tools-2025"
+            }
+          })}
+        </script>
       </Helmet>
       <Navbar />
       

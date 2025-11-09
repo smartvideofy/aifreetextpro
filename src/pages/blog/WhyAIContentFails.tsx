@@ -37,8 +37,36 @@ export default function WhyAIContentFails() {
             "@context": "https://schema.org",
             "@type": "Article",
             "headline": "Why Most AI Content Fails Human Review (and How to Fix It)",
+            "description": "Discover why AI-generated content still gets flagged and the practical steps to make your writing pass any human review.",
+            "image": {
+              "@type": "ImageObject",
+              "url": "https://aifreetextpro.com/before-after-demo.png",
+              "width": 1200,
+              "height": 675
+            },
             "datePublished": "2025-01-19",
-            "author": { "@type": "Organization", "name": "AI Free Text Pro" }
+            "dateModified": "2025-01-19",
+            "author": {
+              "@type": "Organization",
+              "name": "AI Free Text Pro",
+              "url": "https://aifreetextpro.com",
+              "logo": {
+                "@type": "ImageObject",
+                "url": "https://aifreetextpro.com/before-after-demo.png"
+              }
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "AI Free Text Pro",
+              "logo": {
+                "@type": "ImageObject",
+                "url": "https://aifreetextpro.com/before-after-demo.png"
+              }
+            },
+            "mainEntityOfPage": {
+              "@type": "WebPage",
+              "@id": "https://aifreetextpro.com/blog/why-ai-content-fails-human-review"
+            }
           })}
         </script>
       </Helmet>

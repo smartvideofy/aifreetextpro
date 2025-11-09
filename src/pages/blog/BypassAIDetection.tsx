@@ -31,6 +31,8 @@ const BypassAIDetection = () => {
         <meta name="keywords" content="bypass ai detection, avoid ai detectors, make ai text human, undetectable ai writing, humanize ai content, beat turnitin ai" />
         <link rel="canonical" href="https://aifreetextpro.com/blog/bypass-ai-detection-ethical-tips" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="index, follow" />
         <meta property="og:title" content="Bypass AI Detection: Ethical Tips & Tricks 2025" />
         <meta property="og:description" content="Learn ethical strategies to bypass AI detection and improve writing quality." />
         <meta property="og:url" content="https://aifreetextpro.com/blog/bypass-ai-detection-ethical-tips" />

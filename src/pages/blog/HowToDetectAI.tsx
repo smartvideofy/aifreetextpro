@@ -31,6 +31,8 @@ const HowToDetectAI = () => {
         <meta name="keywords" content="detect ai text, identify ai writing, chatgpt detection, ai generated content, spot ai writing, ai detection methods, gpt detector" />
         <link rel="canonical" href="https://aifreetextpro.com/blog/how-to-detect-ai-generated-text" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="index, follow" />
         <meta property="og:title" content="How to Detect AI-Generated Text: Complete Guide 2025" />
         <meta property="og:description" content="Learn expert techniques to detect AI-generated text with 98% accuracy." />
         <meta property="og:url" content="https://aifreetextpro.com/blog/how-to-detect-ai-generated-text" />
@@ -201,11 +203,11 @@ const HowToDetectAI = () => {
                       <p className="text-muted-foreground mb-4">
                         Put your knowledge into practice with our advanced AI detection tool. Get detailed analysis with probability scores and highlighted AI patterns.
                       </p>
-                      <Link to="/ai-checker">
+                      <a href="https://app.aifreetextpro.com/detector" target="_blank" rel="noopener noreferrer">
                         <Button className="bg-gradient-to-r from-primary to-primary/80">
                           Check Your Text Now
                         </Button>
-                      </Link>
+                      </a>
                     </div>
                   </div>
                 </div>

@@ -29,6 +29,8 @@ export default function HowAIDetectorsWork() {
         <meta name="description" content="Understand the machine-learning and linguistic patterns behind AI detectors and how to write authentically human content." />
         <meta name="keywords" content="how ai detectors work, ai content analysis, gpt detection algorithm, ai detection science" />
         <link rel="canonical" href="https://aifreetextpro.com/blog/how-ai-detectors-work" />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="index, follow" />
         
         <meta property="og:title" content="How AI Detectors Work: Inside the Science" />
         <meta property="og:description" content="Deep dive into the technology and algorithms powering AI detection tools." />

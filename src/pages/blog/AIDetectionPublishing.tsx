@@ -29,6 +29,8 @@ export default function AIDetectionPublishing() {
         <meta name="description" content="How editors and publishers are adapting to AI-generated content — and why AI Free Text Pro is part of the solution." />
         <meta name="keywords" content="ai detection in publishing, ai editing tools, future of writing 2025, publishing industry ai" />
         <link rel="canonical" href="https://aifreetextpro.com/blog/ai-detection-in-publishing-2025" />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="index, follow" />
         
         <meta property="og:title" content="AI Detection in Publishing: How Editors and Writers Can Adapt in 2025" />
         <meta property="og:description" content="The publishing industry's response to AI-generated content and practical strategies for adaptation." />

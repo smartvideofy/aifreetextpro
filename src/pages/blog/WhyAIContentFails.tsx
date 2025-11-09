@@ -29,6 +29,8 @@ export default function WhyAIContentFails() {
         <meta name="description" content="Discover why AI-generated content still gets flagged and the practical steps to make your writing pass any human review." />
         <meta name="keywords" content="ai content fails detection, improve ai writing, humanize content, ai writing quality" />
         <link rel="canonical" href="https://aifreetextpro.com/blog/why-ai-content-fails-human-review" />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="index, follow" />
         
         <script type="application/ld+json">
           {JSON.stringify({

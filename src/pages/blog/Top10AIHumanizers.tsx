@@ -29,6 +29,8 @@ export default function Top10AIHumanizers() {
         <meta name="description" content="A curated list of the top AI humanizers this year — features, pricing, and accuracy ratings included. Find the best tool for your needs." />
         <meta name="keywords" content="ai humanizer tools, bypass ai detection 2025, best ai humanizer, humanize ai text" />
         <link rel="canonical" href="https://aifreetextpro.com/blog/top-10-ai-humanizer-tools-2025" />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="index, follow" />
         
         <meta property="og:title" content="Top 10 AI Humanizer Tools for 2025 (Free & Paid)" />
         <meta property="og:description" content="Curated list of the best AI humanizer tools with features, pricing, and accuracy ratings." />

@@ -30,6 +30,8 @@ const AIWritingStudents = () => {
         <meta name="description" content="Discover safe ways to use AI writing assistants in academia without triggering AI detectors or plagiarism checks." />
         <meta name="keywords" content="ai writing for students, avoid plagiarism ai tools, ethical ai writing, student ai tools, academic integrity" />
         <link rel="canonical" href="https://aifreetextpro.com/blog/ai-writing-students-avoid-plagiarism" />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="index, follow" />
         <meta property="og:title" content="AI Writing for Students: Avoid Plagiarism and AI Detection Ethically" />
         <meta property="og:description" content="Safe ways to use AI writing assistants in academia" />
         <meta property="og:url" content="https://aifreetextpro.com/blog/ai-writing-students-avoid-plagiarism" />

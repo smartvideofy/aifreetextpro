@@ -8,6 +8,7 @@ import { useEffect } from "react";
 import { GoogleAnalytics, trackPageView } from "@/lib/analytics";
 import Index from "./pages/Index";
 import Pricing from "./pages/Pricing";
+import Guarantee from "./pages/Guarantee";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsOfService from "./pages/TermsOfService";
 import Contact from "./pages/Contact";
@@ -55,7 +56,8 @@ const App = () => (
           <ScrollToTop />
           <Routes>
             <Route path="/" element={<Index />} />
-            <Route path="/pricing" element={<Pricing />} />
+          <Route path="/pricing" element={<Pricing />} />
+          <Route path="/guarantee" element={<Guarantee />} />
             <Route path="/privacy-policy" element={<><Navbar /><PrivacyPolicy /></>} />
             <Route path="/terms-of-service" element={<><Navbar /><TermsOfService /></>} />
             <Route path="/contact" element={<><Navbar /><Contact /></>} />

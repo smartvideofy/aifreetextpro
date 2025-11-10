@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { CheckCircle, ArrowRight, Crown, Zap, Rocket } from "lucide-react";
+import { CheckCircle, ArrowRight, Crown, Zap, Sparkles } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -16,66 +16,88 @@ const Pricing = () => {
       icon: Zap,
       iconColor: "text-primary",
       features: [
-        "1,000 words/month",
+        "500 words per month",
         "Basic AI detection",
-        "Standard humanization",
-        "4 writing styles",
-        "PDF export",
-        "File upload (PDF, DOCX, TXT)",
-        "Community support"
+        "Basic humanization",
+        "Email support"
       ],
-      cta: "Start Free",
+      cta: "Get Started",
       ctaLink: "https://app.aifreetextpro.com/",
       highlighted: false
     },
     {
-      name: "Pro",
-      price: "19",
+      name: "Starter",
+      price: "4.99",
       period: "month",
-      annualPrice: "15.20",
-      description: "Best for students, writers & professionals",
-      icon: Rocket,
-      iconColor: "text-secondary",
+      description: "Great for occasional users",
+      icon: Zap,
+      iconColor: "text-primary",
       features: [
-        "30,000 words/month",
+        "5,000 words per month",
         "Advanced AI detection",
-        "All humanization modes",
-        "4 premium writing styles",
-        "Priority processing",
-        "PDF export with branding",
-        "Batch processing (up to 10 files)",
-        "Email support (24h response)",
-        "No ads",
-        "Usage analytics"
+        "Advanced humanization",
+        "Priority email support",
+        "Export reports (PDF)"
       ],
-      cta: "Upgrade to Pro",
+      cta: "Subscribe Now",
+      ctaLink: "https://app.aifreetextpro.com/",
+      highlighted: false
+    },
+    {
+      name: "Lite",
+      price: "9.99",
+      period: "month",
+      description: "Perfect for regular content creators",
+      icon: Zap,
+      iconColor: "text-primary",
+      features: [
+        "10,000 words per month",
+        "Advanced AI detection",
+        "Advanced humanization",
+        "Priority email support",
+        "Export reports (PDF)"
+      ],
+      cta: "Subscribe Now",
+      ctaLink: "https://app.aifreetextpro.com/",
+      highlighted: false
+    },
+    {
+      name: "Pro Writer",
+      price: "24.99",
+      period: "month",
+      description: "Best for students, writers & professionals",
+      icon: Sparkles,
+      iconColor: "text-primary",
+      features: [
+        "50,000 words per month",
+        "Premium AI detection",
+        "Premium humanization",
+        "Priority support",
+        "Export reports (PDF)",
+        "Advanced analytics"
+      ],
+      cta: "Subscribe Now",
       ctaLink: "https://app.aifreetextpro.com/",
       highlighted: true,
       badge: "Most Popular"
     },
     {
-      name: "Business",
-      price: "49",
+      name: "Unlimited Creator",
+      price: "59.99",
       period: "month",
-      annualPrice: "39.20",
-      description: "For teams and high-volume users",
+      description: "For high-volume users and teams",
       icon: Crown,
-      iconColor: "text-accent",
+      iconColor: "text-primary",
       features: [
-        "150,000 words/month",
-        "Enterprise AI detection",
-        "All humanization modes",
-        "Custom writing styles",
-        "Priority processing",
-        "White-label PDF reports",
-        "Unlimited batch processing",
-        "API access (1,000 requests/day)",
-        "Team collaboration (5 users)",
-        "Priority support (2h response)",
-        "Custom integrations",
-        "Usage analytics & reporting"
+        "Unlimited words",
+        "Premium AI detection",
+        "Premium humanization",
+        "24/7 Priority support",
+        "Export reports (PDF)",
+        "Advanced analytics",
+        "Dedicated account manager"
       ],
-      cta: "Upgrade to Business",
+      cta: "Subscribe Now",
       ctaLink: "https://app.aifreetextpro.com/",
       highlighted: false
     }
@@ -85,11 +107,11 @@ const Pricing = () => {
     <div className="min-h-screen flex flex-col">
       <Helmet>
         <title>Pricing Plans - AI Free Text Pro | Free AI Detector & Humanizer</title>
-        <meta name="description" content="Choose the perfect plan for your needs. Start free with 1,000 words/month. Pro at $19/mo for 30,000 words. Business at $49/mo for 150,000 words + API access." />
+        <meta name="description" content="Choose the perfect plan for your needs. Start free with 500 words/month. Plans from $4.99 to $59.99/month. Pro Writer at $24.99/mo with 50,000 words. Unlimited Creator at $59.99/mo." />
         <meta name="keywords" content="ai detector pricing, ai humanizer pricing, free ai detector, ai text humanizer cost, chatgpt detector price" />
         <link rel="canonical" href="https://aifreetextpro.com/pricing" />
         <meta property="og:title" content="Pricing Plans - AI Free Text Pro" />
-        <meta property="og:description" content="Start free with 1,000 words/month. Upgrade to Pro for $19/mo or Business for $49/mo." />
+        <meta property="og:description" content="Start free with 500 words/month. Plans from $4.99 to $59.99. Pro Writer at $24.99/mo with 50,000 words." />
         <meta property="og:url" content="https://aifreetextpro.com/pricing" />
       </Helmet>
       
@@ -115,12 +137,12 @@ const Pricing = () => {
               </p>
               <div className="mt-6 inline-flex items-center gap-2 px-4 py-2 bg-primary/10 rounded-full">
                 <CheckCircle className="w-5 h-5 text-primary" />
-                <span className="text-sm font-medium">Save 20% with annual billing</span>
+                <span className="text-sm font-medium">All plans billed monthly. Cancel anytime.</span>
               </div>
             </div>
 
             {/* Pricing Cards */}
-            <div className="grid md:grid-cols-3 gap-8 max-w-7xl mx-auto">
+            <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-6 max-w-7xl mx-auto">
               {plans.map((plan) => {
                 const Icon = plan.icon;
                 return (
@@ -153,12 +175,6 @@ const Pricing = () => {
                         <span className="text-5xl font-bold">${plan.price}</span>
                         <span className="text-muted-foreground">/{plan.period}</span>
                       </div>
-                      
-                      {plan.annualPrice && (
-                        <p className="text-sm text-primary font-medium">
-                          ${plan.annualPrice}/mo billed annually
-                        </p>
-                      )}
                     </div>
 
                     <ul className="space-y-3 mb-8">
@@ -190,7 +206,7 @@ const Pricing = () => {
             </div>
 
             {/* Comparison Table */}
-            <div className="mt-20 max-w-5xl mx-auto">
+            <div className="mt-20 max-w-6xl mx-auto">
               <h2 className="text-3xl font-bold text-center mb-8">Compare Plans</h2>
               <div className="overflow-x-auto">
                 <table className="w-full border-collapse">
@@ -198,46 +214,60 @@ const Pricing = () => {
                     <tr className="border-b-2 border-border">
                       <th className="text-left py-4 px-4 font-semibold">Feature</th>
                       <th className="text-center py-4 px-4 font-semibold">Free</th>
-                      <th className="text-center py-4 px-4 font-semibold bg-primary/5">Pro</th>
-                      <th className="text-center py-4 px-4 font-semibold">Business</th>
+                      <th className="text-center py-4 px-4 font-semibold">Starter</th>
+                      <th className="text-center py-4 px-4 font-semibold">Lite</th>
+                      <th className="text-center py-4 px-4 font-semibold bg-primary/5">Pro Writer</th>
+                      <th className="text-center py-4 px-4 font-semibold">Unlimited</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-border">
                     <tr>
                       <td className="py-4 px-4">Monthly word limit</td>
-                      <td className="text-center py-4 px-4">1,000</td>
-                      <td className="text-center py-4 px-4 bg-primary/5 font-semibold">30,000</td>
-                      <td className="text-center py-4 px-4">150,000</td>
-                    </tr>
-                    <tr>
-                      <td className="py-4 px-4">AI detection accuracy</td>
-                      <td className="text-center py-4 px-4">Basic (95%)</td>
-                      <td className="text-center py-4 px-4 bg-primary/5 font-semibold">Advanced (98%)</td>
-                      <td className="text-center py-4 px-4">Enterprise (99%)</td>
-                    </tr>
-                    <tr>
-                      <td className="py-4 px-4">Batch processing</td>
-                      <td className="text-center py-4 px-4">1 file</td>
-                      <td className="text-center py-4 px-4 bg-primary/5">10 files</td>
+                      <td className="text-center py-4 px-4">500</td>
+                      <td className="text-center py-4 px-4">5,000</td>
+                      <td className="text-center py-4 px-4">10,000</td>
+                      <td className="text-center py-4 px-4 bg-primary/5 font-semibold">50,000</td>
                       <td className="text-center py-4 px-4">Unlimited</td>
                     </tr>
                     <tr>
-                      <td className="py-4 px-4">API access</td>
+                      <td className="py-4 px-4">AI detection</td>
+                      <td className="text-center py-4 px-4">Basic</td>
+                      <td className="text-center py-4 px-4">Advanced</td>
+                      <td className="text-center py-4 px-4">Advanced</td>
+                      <td className="text-center py-4 px-4 bg-primary/5 font-semibold">Premium</td>
+                      <td className="text-center py-4 px-4">Premium</td>
+                    </tr>
+                    <tr>
+                      <td className="py-4 px-4">Humanization</td>
+                      <td className="text-center py-4 px-4">Basic</td>
+                      <td className="text-center py-4 px-4">Advanced</td>
+                      <td className="text-center py-4 px-4">Advanced</td>
+                      <td className="text-center py-4 px-4 bg-primary/5 font-semibold">Premium</td>
+                      <td className="text-center py-4 px-4">Premium</td>
+                    </tr>
+                    <tr>
+                      <td className="py-4 px-4">PDF Export</td>
                       <td className="text-center py-4 px-4">-</td>
-                      <td className="text-center py-4 px-4 bg-primary/5">-</td>
+                      <td className="text-center py-4 px-4"><CheckCircle className="w-5 h-5 text-primary mx-auto" /></td>
+                      <td className="text-center py-4 px-4"><CheckCircle className="w-5 h-5 text-primary mx-auto" /></td>
+                      <td className="text-center py-4 px-4 bg-primary/5"><CheckCircle className="w-5 h-5 text-primary mx-auto" /></td>
                       <td className="text-center py-4 px-4"><CheckCircle className="w-5 h-5 text-primary mx-auto" /></td>
                     </tr>
                     <tr>
-                      <td className="py-4 px-4">Team collaboration</td>
+                      <td className="py-4 px-4">Analytics</td>
                       <td className="text-center py-4 px-4">-</td>
-                      <td className="text-center py-4 px-4 bg-primary/5">-</td>
-                      <td className="text-center py-4 px-4">5 users</td>
+                      <td className="text-center py-4 px-4">-</td>
+                      <td className="text-center py-4 px-4">-</td>
+                      <td className="text-center py-4 px-4 bg-primary/5"><CheckCircle className="w-5 h-5 text-primary mx-auto" /></td>
+                      <td className="text-center py-4 px-4"><CheckCircle className="w-5 h-5 text-primary mx-auto" /></td>
                     </tr>
                     <tr>
-                      <td className="py-4 px-4">Support response time</td>
-                      <td className="text-center py-4 px-4">Community</td>
-                      <td className="text-center py-4 px-4 bg-primary/5">24 hours</td>
-                      <td className="text-center py-4 px-4">2 hours</td>
+                      <td className="py-4 px-4">Support</td>
+                      <td className="text-center py-4 px-4">Email</td>
+                      <td className="text-center py-4 px-4">Priority</td>
+                      <td className="text-center py-4 px-4">Priority</td>
+                      <td className="text-center py-4 px-4 bg-primary/5">Priority</td>
+                      <td className="text-center py-4 px-4">24/7</td>
                     </tr>
                   </tbody>
                 </table>

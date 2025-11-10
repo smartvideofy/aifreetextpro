@@ -42,30 +42,6 @@ const Navbar = () => {
                 About
               </Button>
             </Link>
-            <Link to="/blog">
-              <Button 
-                variant={isActive("/blog") ? "default" : "ghost"}
-                className="transition-colors"
-              >
-                Blog
-              </Button>
-            </Link>
-            <Link to="/pricing">
-              <Button 
-                variant={isActive("/pricing") ? "default" : "ghost"}
-                className="transition-colors"
-              >
-                Pricing
-              </Button>
-            </Link>
-            <Link to="/contact">
-              <Button 
-                variant={isActive("/contact") ? "default" : "ghost"}
-                className="transition-colors"
-              >
-                Contact
-              </Button>
-            </Link>
 
             {/* App Link */}
             <a href="https://app.aifreetextpro.com/" target="_blank" rel="noopener noreferrer">

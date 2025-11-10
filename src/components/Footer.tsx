@@ -40,15 +40,19 @@ const Footer = () => {
           <div className="space-y-4">
             <h3 className="font-semibold text-foreground">Resources</h3>
             <nav className="flex flex-col gap-2 text-sm">
-              <Link to="/pricing" className="text-muted-foreground hover:text-primary transition-colors">
-                Pricing
-              </Link>
               <Link to="/blog" className="text-muted-foreground hover:text-primary transition-colors flex items-center gap-2">
                 <BookOpen className="w-4 h-4" />
                 Blog
               </Link>
+              <Link to="/pricing" className="text-muted-foreground hover:text-primary transition-colors">
+                Pricing
+              </Link>
               <Link to="/about" className="text-muted-foreground hover:text-primary transition-colors">
                 About Us
+              </Link>
+              <Link to="/contact" className="text-muted-foreground hover:text-primary transition-colors flex items-center gap-2">
+                <MessageSquare className="w-4 h-4" />
+                Contact Us
               </Link>
               <Link to="/privacy-policy" className="text-muted-foreground hover:text-primary transition-colors">
                 Privacy Policy
@@ -59,14 +63,10 @@ const Footer = () => {
             </nav>
           </div>
 
-          {/* Contact Column */}
+          {/* Support Column */}
           <div className="space-y-4">
-            <h3 className="font-semibold text-foreground">Contact</h3>
+            <h3 className="font-semibold text-foreground">Support</h3>
             <nav className="flex flex-col gap-2 text-sm">
-              <Link to="/contact" className="text-muted-foreground hover:text-primary transition-colors flex items-center gap-2">
-                <MessageSquare className="w-4 h-4" />
-                Contact Us
-              </Link>
               <a href="mailto:support@aifreetextpro.com" className="text-muted-foreground hover:text-primary transition-colors flex items-center gap-2">
                 <Mail className="w-4 h-4" />
                 Email Support

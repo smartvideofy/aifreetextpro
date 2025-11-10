@@ -129,8 +129,14 @@ const Index = () => {
               </h1>
               
               <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto">
-                Free AI content detector spots ChatGPT instantly with 98% accuracy. Transform AI text to human writing in 3 seconds. Bypass Turnitin, ZeroGPT & all AI detectors. Trusted by 50,000+ students, writers & professionals.
+                Free AI content detector spots ChatGPT instantly with 98% accuracy. Transform AI text to human writing in 3 seconds. Bypass GPTZero, Turnitin, Originality.AI, ZeroGPT, Copyleaks & 15+ AI detectors. Trusted by 50,000+ students, writers & professionals.
               </p>
+
+              {/* Money-Back Guarantee Badge */}
+              <div className="flex items-center justify-center gap-2 mt-4 px-4 py-2 bg-primary/10 rounded-full inline-flex mx-auto">
+                <Shield className="w-5 h-5 text-primary" />
+                <span className="text-sm font-semibold">100% Money-Back Guarantee - If flagged by any AI detector, full refund</span>
+              </div>
 
               <div className="flex items-center justify-center gap-4 text-sm text-muted-foreground pt-2">
                 <div className="flex items-center gap-2">
@@ -226,8 +232,8 @@ const Index = () => {
                     <div className="flex items-start gap-3">
                       <CheckCircle className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
                       <div>
-                        <p className="font-semibold mb-1">Enterprise-Grade Detection</p>
-                        <p className="text-sm text-muted-foreground">Advanced algorithms with detailed reports</p>
+                        <p className="font-semibold mb-1">Bypass All Major Detectors</p>
+                        <p className="text-sm text-muted-foreground">Works against GPTZero, Turnitin, Originality.AI, ZeroGPT, Copyleaks & more</p>
                       </div>
                     </div>
                     <div className="flex items-start gap-3">

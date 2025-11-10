@@ -50,6 +50,14 @@ const Navbar = () => {
                 Blog
               </Button>
             </Link>
+            <Link to="/pricing">
+              <Button 
+                variant={isActive("/pricing") ? "default" : "ghost"}
+                className="transition-colors"
+              >
+                Pricing
+              </Button>
+            </Link>
             <Link to="/contact">
               <Button 
                 variant={isActive("/contact") ? "default" : "ghost"}

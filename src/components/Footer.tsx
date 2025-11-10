@@ -40,6 +40,9 @@ const Footer = () => {
           <div className="space-y-4">
             <h3 className="font-semibold text-foreground">Resources</h3>
             <nav className="flex flex-col gap-2 text-sm">
+              <Link to="/pricing" className="text-muted-foreground hover:text-primary transition-colors">
+                Pricing
+              </Link>
               <Link to="/blog" className="text-muted-foreground hover:text-primary transition-colors flex items-center gap-2">
                 <BookOpen className="w-4 h-4" />
                 Blog

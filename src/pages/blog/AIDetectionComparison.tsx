@@ -11,7 +11,7 @@ const relatedArticles = [
   {
     title: "ZeroGPT vs AI Free Text Pro: Which Detects Better in 2025?",
     description: "In-depth comparison of ZeroGPT and AI Free Text Pro detection accuracy",
-    href: "/blog/zerogpt-vs-ai-free-text-pro",
+    href: "/blog/zerogpt-vs-ai-free-text-pro-2025",
     category: "Comparison"
   },
   {

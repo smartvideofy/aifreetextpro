@@ -121,4 +121,24 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  
+  <!-- Detector Landing Pages - High Priority -->
+  <url>
+    <loc>https://aifreetextpro.com/bypass-turnitin-ai-detection</loc>
+    <lastmod>2025-01-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://aifreetextpro.com/bypass-gptzero-detection</loc>
+    <lastmod>2025-01-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://aifreetextpro.com/bypass-originality-ai</loc>
+    <lastmod>2025-01-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
 </urlset>

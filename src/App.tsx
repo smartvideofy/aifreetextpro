@@ -18,6 +18,9 @@ import HowToDetectAI from "./pages/blog/HowToDetectAI";
 import BestAIHumanizers from "./pages/blog/BestAIHumanizers";
 import BypassAIDetection from "./pages/blog/BypassAIDetection";
 import AIDetectionComparison from "./pages/blog/AIDetectionComparison";
+import BypassTurnitin from "./pages/BypassTurnitin";
+import BypassGPTZero from "./pages/BypassGPTZero";
+import BypassOriginality from "./pages/BypassOriginality";
 import HumanizeAIText from "./pages/blog/HumanizeAIText";
 import AIWritingStudents from "./pages/blog/AIWritingStudents";
 import ZeroGPTComparison from "./pages/blog/ZeroGPTComparison";
@@ -76,6 +79,9 @@ const App = () => (
             <Route path="/blog/ai-tools-for-writers-2025" element={<AIToolsForWriters />} />
             <Route path="/blog/can-ai-writing-be-original" element={<AICreativityOriginality />} />
             <Route path="/blog/ai-detection-in-publishing-2025" element={<AIDetectionPublishing />} />
+            <Route path="/bypass-turnitin-ai-detection" element={<BypassTurnitin />} />
+            <Route path="/bypass-gptzero-detection" element={<BypassGPTZero />} />
+            <Route path="/bypass-originality-ai" element={<BypassOriginality />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<><Navbar /><NotFound /></>} />
           </Routes>

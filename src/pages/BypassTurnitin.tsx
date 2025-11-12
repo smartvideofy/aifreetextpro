@@ -4,6 +4,7 @@ import { Helmet } from "react-helmet-async";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
+import { RelatedArticles } from "@/components/RelatedArticles";
 import { CheckCircle, X, ArrowRight, Shield, Zap, TrendingUp } from "lucide-react";
 
 const BypassTurnitin = () => {
@@ -77,11 +78,13 @@ const BypassTurnitin = () => {
       <Navbar />
       
       <main className="min-h-screen bg-background">
-        <div className="container mx-auto px-4 py-8">
+        <div className="container mx-auto px-4 pt-6">
           <Breadcrumbs items={[
             { label: "Home", href: "/" },
             { label: "Bypass Turnitin AI Detection" }
           ]} />
+        </div>
+        <div className="container mx-auto px-4 py-8">
           
           {/* Hero Section */}
           <section className="py-12 text-center">
@@ -348,6 +351,27 @@ const BypassTurnitin = () => {
               </div>
             </div>
           </section>
+
+          <RelatedArticles articles={[
+            {
+              title: "How to Detect AI-Generated Text: Complete 2025 Guide",
+              description: "Learn the methods, tools, and techniques to identify AI-generated content including ChatGPT, GPT-4, and other AI writing tools.",
+              href: "/blog/how-to-detect-ai-generated-text",
+              category: "Detection Guide"
+            },
+            {
+              title: "Best Free AI Humanizer Tools in 2025",
+              description: "Compare the top AI humanizer tools available, their features, pricing, and effectiveness at bypassing AI detection systems.",
+              href: "/blog/best-free-ai-humanizer-tools-2025",
+              category: "Tool Comparison"
+            },
+            {
+              title: "AI Writing for Students: How to Avoid Plagiarism Issues",
+              description: "Complete guide for students using AI writing tools responsibly while maintaining academic integrity and avoiding detection.",
+              href: "/blog/ai-writing-students-avoid-plagiarism",
+              category: "Student Guide"
+            }
+          ]} />
         </div>
       </main>
 

@@ -5,6 +5,7 @@ import { Helmet } from "react-helmet-async";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
+import { RelatedArticles } from "@/components/RelatedArticles";
 import { Link } from "react-router-dom";
 
 const VsUndetectable = () => {
@@ -240,6 +241,29 @@ const VsUndetectable = () => {
             </div>
           </div>
         </section>
+
+        <div className="container mx-auto px-4">
+          <RelatedArticles articles={[
+            {
+              title: "AI Free Text Pro vs WriteHuman: Which is Better?",
+              description: "Detailed comparison between AI Free Text Pro and WriteHuman including pricing, features, and detection bypass rates.",
+              href: "/vs-writehuman",
+              category: "Comparison"
+            },
+            {
+              title: "Bypass GPTZero Detection: Complete Guide 2025",
+              description: "Advanced techniques to bypass GPTZero AI detection with proven strategies and live test results.",
+              href: "/bypass-gptzero-detection",
+              category: "Detection Guide"
+            },
+            {
+              title: "Can AI Writing Be Creative and Original?",
+              description: "Explore whether AI-generated content can achieve true creativity and originality in the age of ChatGPT.",
+              href: "/blog/can-ai-writing-be-original",
+              category: "AI Writing"
+            }
+          ]} />
+        </div>
       </main>
       
       <Footer />

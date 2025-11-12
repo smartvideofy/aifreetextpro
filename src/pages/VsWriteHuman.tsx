@@ -5,6 +5,7 @@ import { Helmet } from "react-helmet-async";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
+import { RelatedArticles } from "@/components/RelatedArticles";
 import { Link } from "react-router-dom";
 
 const VsWriteHuman = () => {
@@ -309,6 +310,29 @@ const VsWriteHuman = () => {
             </div>
           </div>
         </section>
+
+        <div className="container mx-auto px-4">
+          <RelatedArticles articles={[
+            {
+              title: "Top 10 AI Humanizer Tools Compared in 2025",
+              description: "Comprehensive comparison of the best AI humanizer tools including features, pricing, and effectiveness ratings.",
+              href: "/blog/top-10-ai-humanizer-tools-2025",
+              category: "Comparison"
+            },
+            {
+              title: "Bypass Turnitin AI Detection in 2025",
+              description: "Learn advanced strategies to make AI-generated content pass Turnitin's AI detection with 97% success rate.",
+              href: "/bypass-turnitin-ai-detection",
+              category: "Bypass Guide"
+            },
+            {
+              title: "Best AI Tools for Writers in 2025",
+              description: "Discover the essential AI writing tools for content creators, including humanizers, detectors, and writing assistants.",
+              href: "/blog/ai-tools-for-writers-2025",
+              category: "Writer Resources"
+            }
+          ]} />
+        </div>
       </main>
       
       <Footer />

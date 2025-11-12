@@ -5,6 +5,7 @@ import { Helmet } from "react-helmet-async";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
+import { RelatedArticles } from "@/components/RelatedArticles";
 import { Link } from "react-router-dom";
 
 const AIHumanizerForStudents = () => {
@@ -332,6 +333,29 @@ const AIHumanizerForStudents = () => {
             </div>
           </div>
         </section>
+
+        <div className="container mx-auto px-4">
+          <RelatedArticles articles={[
+            {
+              title: "AI Writing for Students: How to Avoid Plagiarism Issues",
+              description: "Complete guide for students using AI writing tools responsibly while maintaining academic integrity and avoiding detection.",
+              href: "/blog/ai-writing-students-avoid-plagiarism",
+              category: "Student Guide"
+            },
+            {
+              title: "Bypass Turnitin AI Detection in 2025",
+              description: "Advanced strategies specifically designed to bypass Turnitin's AI detection algorithm with 97% success rate.",
+              href: "/bypass-turnitin-ai-detection",
+              category: "Detection Guide"
+            },
+            {
+              title: "Academic AI Writing Tool: Research Papers & Essays",
+              description: "Specialized AI writing tool for academic content that passes Turnitin with citation preservation and scholarly tone.",
+              href: "/academic-ai-writing-tool",
+              category: "Academic Tools"
+            }
+          ]} />
+        </div>
       </main>
       
       <Footer />

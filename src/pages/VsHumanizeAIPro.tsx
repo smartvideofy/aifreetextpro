@@ -5,6 +5,7 @@ import { Helmet } from "react-helmet-async";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
+import { RelatedArticles } from "@/components/RelatedArticles";
 import { Link } from "react-router-dom";
 
 const VsHumanizeAIPro = () => {
@@ -281,6 +282,29 @@ const VsHumanizeAIPro = () => {
             </div>
           </div>
         </section>
+
+        <div className="container mx-auto px-4">
+          <RelatedArticles articles={[
+            {
+              title: "Best Free AI Humanizer Tools in 2025",
+              description: "Compare the top AI humanizer tools available, their features, pricing, and effectiveness at bypassing AI detection systems.",
+              href: "/blog/best-free-ai-humanizer-tools-2025",
+              category: "Tool Comparison"
+            },
+            {
+              title: "AI Free Text Pro vs Undetectable.AI Comparison",
+              description: "Detailed feature and pricing comparison between AI Free Text Pro and Undetectable.AI with real test results.",
+              href: "/vs-undetectable-ai",
+              category: "Comparison"
+            },
+            {
+              title: "Bypass Originality.AI Detection: Complete Guide",
+              description: "Learn advanced strategies to make AI-generated content pass Originality.AI with 96% success rate.",
+              href: "/bypass-originality-ai",
+              category: "Detection Guide"
+            }
+          ]} />
+        </div>
       </main>
       
       <Footer />

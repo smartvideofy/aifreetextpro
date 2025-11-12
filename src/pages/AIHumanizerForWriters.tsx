@@ -5,6 +5,7 @@ import { Helmet } from "react-helmet-async";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
+import { RelatedArticles } from "@/components/RelatedArticles";
 import { Link } from "react-router-dom";
 
 const AIHumanizerForWriters = () => {
@@ -376,6 +377,29 @@ const AIHumanizerForWriters = () => {
             </div>
           </div>
         </section>
+
+        <div className="container mx-auto px-4">
+          <RelatedArticles articles={[
+            {
+              title: "AI Tools for Writers: Complete 2025 Guide",
+              description: "Discover the best AI tools for content creators including writing assistants, humanizers, detectors, and SEO tools.",
+              href: "/blog/ai-tools-for-writers-2025",
+              category: "Writer Resources"
+            },
+            {
+              title: "AI Detection in Publishing: What You Need to Know",
+              description: "How publishers are using AI detection tools and what content creators need to know to get published in 2025.",
+              href: "/blog/ai-detection-in-publishing-2025",
+              category: "Publishing"
+            },
+            {
+              title: "Humanize AI Text Without Losing Your Voice",
+              description: "Proven techniques to transform AI content into natural human writing while preserving your unique style and authenticity.",
+              href: "/blog/humanize-ai-text-without-losing-voice",
+              category: "Writing Tips"
+            }
+          ]} />
+        </div>
       </main>
       
       <Footer />

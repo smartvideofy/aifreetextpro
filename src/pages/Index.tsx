@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { ArrowRight, CheckCircle, Shield, FileText, Sparkles, Brain, Star, Pen, BookOpen, Target, Zap, Users, TrendingUp, Lock, Globe, Crown } from "lucide-react";
+import { ArrowRight, CheckCircle, Shield, FileText, Sparkles, Brain, Star, Pen, BookOpen, Target, Zap, Users, TrendingUp, Lock, Globe, Crown, GraduationCap } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 import beforeAfterDemo from "@/assets/before-after-demo.png";
 import Navbar from "@/components/Navbar";
@@ -233,7 +233,9 @@ const Index = () => {
                       <CheckCircle className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
                       <div>
                         <p className="font-semibold mb-1">Bypass All Major Detectors</p>
-                        <p className="text-sm text-muted-foreground">Works against GPTZero, Turnitin, Originality.AI, ZeroGPT, Copyleaks & more</p>
+                        <p className="text-sm text-muted-foreground">
+                          Works against <Link to="/bypass-gptzero-detection" className="text-primary hover:underline">GPTZero</Link>, <Link to="/bypass-turnitin-ai-detection" className="text-primary hover:underline">Turnitin</Link>, <Link to="/bypass-originality-ai" className="text-primary hover:underline">Originality.AI</Link>, ZeroGPT, Copyleaks & more
+                        </p>
                       </div>
                     </div>
                     <div className="flex items-start gap-3">
@@ -1033,6 +1035,103 @@ const Index = () => {
                   <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                 </Button>
               </Link>
+            </div>
+            
+            {/* Detector-Specific Landing Pages */}
+            <div className="mt-16">
+              <h3 className="text-2xl font-bold text-center mb-8">Bypass Specific AI Detectors</h3>
+              <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+                <Link to="/bypass-turnitin-ai-detection">
+                  <Card className="p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 cursor-pointer h-full bg-gradient-to-br from-card to-primary/5">
+                    <div className="space-y-3">
+                      <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center">
+                        <Shield className="w-6 h-6 text-primary" />
+                      </div>
+                      <h3 className="font-bold text-xl">Bypass Turnitin</h3>
+                      <p className="text-muted-foreground text-sm">
+                        97% success rate bypassing Turnitin's AI detection algorithm
+                      </p>
+                      <div className="flex items-center gap-2 text-primary text-sm font-medium">
+                        Learn more <ArrowRight className="w-4 h-4" />
+                      </div>
+                    </div>
+                  </Card>
+                </Link>
+                
+                <Link to="/bypass-gptzero-detection">
+                  <Card className="p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 cursor-pointer h-full bg-gradient-to-br from-card to-secondary/5">
+                    <div className="space-y-3">
+                      <div className="w-12 h-12 rounded-lg bg-secondary/10 flex items-center justify-center">
+                        <Lock className="w-6 h-6 text-secondary" />
+                      </div>
+                      <h3 className="font-bold text-xl">Bypass GPTZero</h3>
+                      <p className="text-muted-foreground text-sm">
+                        95% success rate against GPTZero's perplexity detection
+                      </p>
+                      <div className="flex items-center gap-2 text-primary text-sm font-medium">
+                        Learn more <ArrowRight className="w-4 h-4" />
+                      </div>
+                    </div>
+                  </Card>
+                </Link>
+                
+                <Link to="/bypass-originality-ai">
+                  <Card className="p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 cursor-pointer h-full bg-gradient-to-br from-card to-primary/5">
+                    <div className="space-y-3">
+                      <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center">
+                        <Target className="w-6 h-6 text-primary" />
+                      </div>
+                      <h3 className="font-bold text-xl">Bypass Originality.AI</h3>
+                      <p className="text-muted-foreground text-sm">
+                        96% success rate for long-form content detection bypass
+                      </p>
+                      <div className="flex items-center gap-2 text-primary text-sm font-medium">
+                        Learn more <ArrowRight className="w-4 h-4" />
+                      </div>
+                    </div>
+                  </Card>
+                </Link>
+              </div>
+            </div>
+            
+            {/* Use Case Pages */}
+            <div className="mt-16">
+              <h3 className="text-2xl font-bold text-center mb-8">Solutions for Your Needs</h3>
+              <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+                <Link to="/ai-humanizer-for-students">
+                  <Card className="p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 cursor-pointer h-full">
+                    <div className="space-y-3">
+                      <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center">
+                        <GraduationCap className="w-6 h-6 text-primary" />
+                      </div>
+                      <h3 className="font-bold text-xl">For Students</h3>
+                      <p className="text-muted-foreground text-sm">
+                        Pass Turnitin checks while maintaining academic integrity. Perfect for essays, research papers, and assignments.
+                      </p>
+                      <div className="flex items-center gap-2 text-primary text-sm font-medium">
+                        View student guide <ArrowRight className="w-4 h-4" />
+                      </div>
+                    </div>
+                  </Card>
+                </Link>
+                
+                <Link to="/ai-humanizer-for-writers">
+                  <Card className="p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 cursor-pointer h-full">
+                    <div className="space-y-3">
+                      <div className="w-12 h-12 rounded-lg bg-secondary/10 flex items-center justify-center">
+                        <Pen className="w-6 h-6 text-secondary" />
+                      </div>
+                      <h3 className="font-bold text-xl">For Content Writers</h3>
+                      <p className="text-muted-foreground text-sm">
+                        Scale content production 10x while maintaining authenticity. Ideal for blogs, articles, and marketing copy.
+                      </p>
+                      <div className="flex items-center gap-2 text-primary text-sm font-medium">
+                        View writer guide <ArrowRight className="w-4 h-4" />
+                      </div>
+                    </div>
+                  </Card>
+                </Link>
+              </div>
             </div>
           </div>
         </section>

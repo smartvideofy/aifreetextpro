@@ -18,9 +18,9 @@ const Index = () => {
     <div className="min-h-screen flex flex-col">
       <HowToSchema />
       <Helmet>
-        <title>Free AI Detector & Humanizer Tool - Detect ChatGPT & Make Text Human (2025)</title>
-        <meta name="description" content="Transform AI text in 3 seconds with 98% accuracy. Free AI detector spots ChatGPT instantly. Humanize AI content to bypass detection. Join 50,000+ users. Free forever, no credit card." />
-        <meta name="keywords" content="free ai detector, ai humanizer, detect chatgpt, detect ai text, chatgpt detector, bypass turnitin ai detection, make ai text human, ai content detector, zerogpt alternative, gptzero alternative" />
+        <title>Free AI Detector & Humanizer - Detect AI Text & Make Content Human (2025)</title>
+        <meta name="description" content="Transform AI text in 3 seconds with 98% accuracy. Free AI detector spots ChatGPT instantly. Humanize AI content naturally. Join 50,000+ users. Free forever, no credit card." />
+        <meta name="keywords" content="free ai detector, ai humanizer, detect ai text" />
         <link rel="canonical" href="https://aifreetextpro.com/" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="robots" content="index, follow" />
@@ -125,11 +125,11 @@ const Index = () => {
                   Free AI Detector & Humanizer
                 </span>
                 <br />
-                <span className="text-3xl sm:text-4xl md:text-5xl">Detect ChatGPT & Make Text Human (2025)</span>
+                <span className="text-3xl sm:text-4xl md:text-5xl">Detect AI Text & Make Content Human</span>
               </h1>
               
               <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto">
-                Free AI content detector spots ChatGPT instantly with 98% accuracy. Transform AI text to human writing in 3 seconds. Bypass GPTZero, Turnitin, Originality.AI, ZeroGPT, Copyleaks & 15+ AI detectors. Trusted by 50,000+ students, writers & professionals.
+                Free AI content detector spots ChatGPT instantly with 98% accuracy. Transform AI text to human writing in 3 seconds. Trusted by 50,000+ students, writers & professionals.
               </p>
 
               {/* Money-Back Guarantee Badge */}

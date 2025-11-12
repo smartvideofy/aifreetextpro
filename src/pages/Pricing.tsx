@@ -113,6 +113,39 @@ const Pricing = () => {
         <meta property="og:title" content="Pricing Plans - AI Free Text Pro" />
         <meta property="og:description" content="Start free with 500 words/month. Plans from $4.99 to $59.99. Pro Writer at $24.99/mo with 50,000 words." />
         <meta property="og:url" content="https://aifreetextpro.com/pricing" />
+        
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Can I change plans anytime?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes! You can upgrade, downgrade, or cancel your subscription at any time. Changes take effect at the start of your next billing cycle."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What happens if I exceed my word limit?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "You'll receive a notification when you approach your limit. You can either upgrade to a higher plan or wait for your limit to reset at the start of your next billing cycle."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Do you offer refunds?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes! We offer a 100% money-back guarantee. If our humanizer is flagged by any AI detector, we'll refund you - no questions asked."
+                }
+              }
+            ]
+          })}
+        </script>
       </Helmet>
       
       <Navbar />

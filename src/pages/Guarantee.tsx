@@ -60,6 +60,55 @@ const Guarantee = () => {
         <meta property="og:title" content="100% Money-Back Guarantee - AI Free Text Pro" />
         <meta property="og:description" content="If our humanizer is flagged by any AI detector, we refund 100% - no questions asked. Fast 24-hour processing." />
         <meta property="og:url" content="https://aifreetextpro.com/guarantee" />
+        
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "How long does the refund process take?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "We review claims within 24 hours on business days. Once approved, refunds are processed immediately. Depending on your payment provider, it may take 3-5 business days for the refund to appear in your account."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What if I lost my order ID?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "No problem! You can provide the email address you used to sign up or make the purchase. We'll locate your account and process your refund request."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Does this guarantee apply to the free plan?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The money-back guarantee applies only to paid plans (Starter, Lite, Pro Writer, and Unlimited Creator) since there is no payment to refund on the free plan. However, we're constantly working to improve our technology for all users."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Can I get a partial refund if only some content was detected?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Our guarantee is all-or-nothing. If any content humanized with our tool is flagged by an AI detector during your billing period, you're eligible for a full 100% refund of that period's payment."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What AI detectors are covered?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "All major AI detectors are covered including GPTZero, Turnitin, Originality.AI, ZeroGPT, Copyleaks, Winston AI, and any other recognized AI detection tool. If it's a legitimate AI detector and it flags your humanized content, you're covered."
+                }
+              }
+            ]
+          })}
+        </script>
       </Helmet>
       
       <Navbar />

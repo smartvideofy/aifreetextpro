@@ -88,6 +88,12 @@ const App = () => (
             <Route path="/bypass-turnitin-ai-detection" element={<BypassTurnitin />} />
             <Route path="/bypass-gptzero-detection" element={<BypassGPTZero />} />
             <Route path="/bypass-originality-ai" element={<BypassOriginality />} />
+            <Route path="/vs-writehuman" element={<VsWriteHuman />} />
+            <Route path="/vs-undetectable-ai" element={<VsUndetectable />} />
+            <Route path="/vs-humanizeai-pro" element={<VsHumanizeAIPro />} />
+            <Route path="/ai-humanizer-for-students" element={<AIHumanizerForStudents />} />
+            <Route path="/ai-humanizer-for-writers" element={<AIHumanizerForWriters />} />
+            <Route path="/academic-ai-writing-tool" element={<AcademicAIWritingTool />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<><Navbar /><NotFound /></>} />
           </Routes>

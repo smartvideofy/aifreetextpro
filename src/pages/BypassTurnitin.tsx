@@ -32,6 +32,46 @@ const BypassTurnitin = () => {
             "dateModified": "2025-01-11"
           })}
         </script>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "How does AI Free Text Pro bypass Turnitin detection?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "We use advanced pattern disruption, perplexity injection, and citation preservation techniques specifically designed for Turnitin's algorithm. Our technology restructures AI-generated text while maintaining academic integrity and preserving proper citations."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What is the success rate against Turnitin?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Our bypass technology achieves a 97% success rate against Turnitin AI detection, reducing detection scores from 95%+ to under 10% in most cases."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Is it safe to use for academic papers?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes, our tool preserves academic tone, maintains proper citations, and keeps the original meaning of your content. We focus on making AI-generated text sound more human while maintaining scholarly integrity."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Does it work with all Turnitin versions?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes, our technology works with all current versions of Turnitin including Turnitin Feedback Studio and iThenticate, which use similar AI detection algorithms."
+                }
+              }
+            ]
+          })}
+        </script>
       </Helmet>
 
       <Navbar />

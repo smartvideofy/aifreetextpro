@@ -56,6 +56,63 @@ const VsHumanizeAIPro = () => {
         <meta property="og:title" content="AI Free Text Pro vs HumanizeAI.pro - 2025 Comparison" />
         <meta property="og:description" content="Side-by-side comparison: AI Free Text Pro costs $4.99/mo with free detector. HumanizeAI.pro costs $12/mo without detector. See features, pricing, test results." />
         <meta property="og:url" content="https://aifreetextpro.com/vs-humanizeai-pro" />
+        
+        {/* FAQ Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Is AI Free Text Pro better than HumanizeAI.pro?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "AI Free Text Pro offers significant advantages: 60% lower cost ($4.99 vs $12/mo), free built-in AI detector (HumanizeAI.pro doesn't include one), 3.3x larger free tier (1,000 vs 300 words), PDF/DOCX upload support, and higher bypass rates (98% vs 93% on GPTZero)."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How much cheaper is AI Free Text Pro compared to HumanizeAI.pro?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "AI Free Text Pro is 60% cheaper at $4.99/mo vs $12/mo for entry plans. The cost per 1,000 words is $0.50 with AI Free Text Pro vs $0.98 with HumanizeAI.pro. Annual savings exceed $84."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Does HumanizeAI.pro include an AI detector?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "No, HumanizeAI.pro does NOT include an AI detector. You need a separate tool to verify your content passes detection. AI Free Text Pro includes a free built-in detector with all plans."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What file formats does AI Free Text Pro support vs HumanizeAI.pro?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "AI Free Text Pro supports PDF, DOCX, and TXT file uploads up to 10MB. HumanizeAI.pro only supports TXT files and requires manual copy-paste for other formats."
+                }
+              }
+            ]
+          })}
+        </script>
+
+        {/* VideoObject Schema Placeholder */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "VideoObject",
+            "name": "AI Free Text Pro vs HumanizeAI.pro Comparison",
+            "description": "Detailed comparison of AI Free Text Pro and HumanizeAI.pro showing pricing, features, and bypass performance tests.",
+            "thumbnailUrl": "https://aifreetextpro.com/images/vs-humanizeai-video-thumbnail.jpg",
+            "uploadDate": "2025-01-15",
+            "duration": "PT4M15S",
+            "contentUrl": "https://aifreetextpro.com/videos/vs-humanizeai-comparison.mp4",
+            "embedUrl": "https://www.youtube.com/embed/placeholder"
+          })}
+        </script>
       </Helmet>
       
       <Navbar />

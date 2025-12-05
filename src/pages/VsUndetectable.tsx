@@ -57,6 +57,63 @@ const VsUndetectable = () => {
         <meta property="og:title" content="AI Free Text Pro vs Undetectable AI - Honest Comparison" />
         <meta property="og:description" content="Side-by-side: AI Free Text Pro offers better value ($4.99 vs $9.99), free detector, and 98% bypass rate. See full comparison." />
         <meta property="og:url" content="https://aifreetextpro.com/vs-undetectable-ai" />
+        
+        {/* FAQ Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Is AI Free Text Pro better than Undetectable AI?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "AI Free Text Pro offers better value than Undetectable AI with 50% lower pricing ($4.99 vs $9.99 starter), 2.7x more free words (1,000 vs 375), a free built-in detector (Undetectable AI charges extra), and higher bypass rates (98% vs 95% on GPTZero)."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What is the free plan comparison between AI Free Text Pro and Undetectable AI?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "AI Free Text Pro offers 1,000 free words per month, while Undetectable AI only offers 375 free words. That's 2.7x more free content with AI Free Text Pro."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Does AI Free Text Pro include an AI detector like Undetectable AI?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes, AI Free Text Pro includes a free built-in AI detector. Undetectable AI charges extra for their detector as a paid add-on feature."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Which has better bypass rates: AI Free Text Pro or Undetectable AI?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "AI Free Text Pro has higher bypass rates across all major detectors: 98% vs 95% on GPTZero, 97% vs 94% on Turnitin, and 96% vs 93% on Originality.AI."
+                }
+              }
+            ]
+          })}
+        </script>
+
+        {/* VideoObject Schema Placeholder */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "VideoObject",
+            "name": "AI Free Text Pro vs Undetectable AI Comparison",
+            "description": "Complete comparison of AI Free Text Pro and Undetectable AI including pricing, features, and bypass rate tests.",
+            "thumbnailUrl": "https://aifreetextpro.com/images/vs-undetectable-video-thumbnail.jpg",
+            "uploadDate": "2025-01-15",
+            "duration": "PT4M45S",
+            "contentUrl": "https://aifreetextpro.com/videos/vs-undetectable-comparison.mp4",
+            "embedUrl": "https://www.youtube.com/embed/placeholder"
+          })}
+        </script>
       </Helmet>
       
       <Navbar />

@@ -87,6 +87,63 @@ const VsWriteHuman = () => {
         <meta property="og:title" content="AI Free Text Pro vs WriteHuman - Honest Comparison 2025" />
         <meta property="og:description" content="Side-by-side comparison: AI Free Text Pro offers 98% bypass rate + built-in detector. WriteHuman requires separate tools. See pricing, features, test results." />
         <meta property="og:url" content="https://aifreetextpro.com/vs-writehuman" />
+        
+        {/* FAQ Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Is AI Free Text Pro better than WriteHuman?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "AI Free Text Pro offers significant advantages over WriteHuman including a built-in AI detector (WriteHuman requires a separate tool), higher bypass rates (98% vs 92%), more file format support (PDF, DOCX, TXT), and better value at $4.99/mo vs $9/mo starter pricing."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What is the success rate of AI Free Text Pro vs WriteHuman?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "AI Free Text Pro achieves 98% bypass rate on GPTZero and 97% on Turnitin, compared to WriteHuman's 92% and 89% respectively. Our technology delivers consistently higher bypass rates across all major AI detectors."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Which is cheaper: AI Free Text Pro or WriteHuman?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "AI Free Text Pro is significantly cheaper. The starter plan is $4.99/mo vs WriteHuman's $9/mo. Plus, AI Free Text Pro includes a free AI detector, while WriteHuman requires purchasing a separate detection tool."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Does AI Free Text Pro include an AI detector like WriteHuman?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes, AI Free Text Pro includes a built-in AI detector at no extra cost. WriteHuman does NOT include an AI detector - you need to purchase a separate tool to verify your content passes detection."
+                }
+              }
+            ]
+          })}
+        </script>
+
+        {/* VideoObject Schema Placeholder */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "VideoObject",
+            "name": "AI Free Text Pro vs WriteHuman Comparison",
+            "description": "Side-by-side comparison of AI Free Text Pro and WriteHuman showing features, pricing, and bypass rate test results.",
+            "thumbnailUrl": "https://aifreetextpro.com/images/vs-writehuman-video-thumbnail.jpg",
+            "uploadDate": "2025-01-15",
+            "duration": "PT5M30S",
+            "contentUrl": "https://aifreetextpro.com/videos/vs-writehuman-comparison.mp4",
+            "embedUrl": "https://www.youtube.com/embed/placeholder"
+          })}
+        </script>
       </Helmet>
       
       <Navbar />

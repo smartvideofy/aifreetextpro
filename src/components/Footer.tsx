@@ -1,14 +1,14 @@
 import { Link } from "react-router-dom";
-import { Mail, BookOpen, MessageSquare, Shield, Check } from "lucide-react";
+import { Mail, BookOpen, MessageSquare, Shield, Check, Target, Users, FileText } from "lucide-react";
 import logo from "@/assets/logo.png";
 
 const Footer = () => {
   return (
     <footer className="border-t border-border/40 bg-card/50 backdrop-blur-sm">
       <div className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-8">
           {/* Brand Column */}
-          <div className="space-y-4">
+          <div className="space-y-4 lg:col-span-1">
             <Link to="/" className="flex items-center gap-2">
               <img src={logo} alt="AI Free Text Pro" className="w-8 h-8" />
               <span className="font-bold text-lg bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
@@ -30,9 +30,66 @@ const Footer = () => {
               <a href="https://app.aifreetextpro.com/humanizer" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
                 AI Humanizer
               </a>
+              <Link to="/ai-checker" className="text-muted-foreground hover:text-primary transition-colors">
+                AI Checker
+              </Link>
               <a href="https://app.aifreetextpro.com/plagiarism" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
                 Plagiarism Checker
               </a>
+            </nav>
+          </div>
+
+          {/* Bypass Guides Column */}
+          <div className="space-y-4">
+            <h3 className="font-semibold text-foreground flex items-center gap-2">
+              <Target className="w-4 h-4" />
+              Bypass Guides
+            </h3>
+            <nav className="flex flex-col gap-2 text-sm">
+              <Link to="/bypass-turnitin-ai-detection" className="text-muted-foreground hover:text-primary transition-colors">
+                Bypass Turnitin
+              </Link>
+              <Link to="/bypass-gptzero-detection" className="text-muted-foreground hover:text-primary transition-colors">
+                Bypass GPTZero
+              </Link>
+              <Link to="/bypass-originality-ai" className="text-muted-foreground hover:text-primary transition-colors">
+                Bypass Originality.AI
+              </Link>
+            </nav>
+          </div>
+
+          {/* Compare Tools Column */}
+          <div className="space-y-4">
+            <h3 className="font-semibold text-foreground flex items-center gap-2">
+              <FileText className="w-4 h-4" />
+              Compare Tools
+            </h3>
+            <nav className="flex flex-col gap-2 text-sm">
+              <Link to="/vs-writehuman" className="text-muted-foreground hover:text-primary transition-colors">
+                vs WriteHuman
+              </Link>
+              <Link to="/vs-undetectable-ai" className="text-muted-foreground hover:text-primary transition-colors">
+                vs Undetectable AI
+              </Link>
+              <Link to="/vs-humanizeai-pro" className="text-muted-foreground hover:text-primary transition-colors">
+                vs HumanizeAI.pro
+              </Link>
+            </nav>
+            
+            <h3 className="font-semibold text-foreground flex items-center gap-2 pt-2">
+              <Users className="w-4 h-4" />
+              Use Cases
+            </h3>
+            <nav className="flex flex-col gap-2 text-sm">
+              <Link to="/ai-humanizer-for-students" className="text-muted-foreground hover:text-primary transition-colors">
+                For Students
+              </Link>
+              <Link to="/ai-humanizer-for-writers" className="text-muted-foreground hover:text-primary transition-colors">
+                For Writers
+              </Link>
+              <Link to="/academic-ai-writing-tool" className="text-muted-foreground hover:text-primary transition-colors">
+                Academic Writing
+              </Link>
             </nav>
           </div>
 
@@ -58,19 +115,6 @@ const Footer = () => {
                 <MessageSquare className="w-4 h-4" />
                 Contact Us
               </Link>
-              <Link to="/privacy-policy" className="text-muted-foreground hover:text-primary transition-colors">
-                Privacy Policy
-              </Link>
-              <Link to="/terms-of-service" className="text-muted-foreground hover:text-primary transition-colors">
-                Terms of Service
-              </Link>
-            </nav>
-          </div>
-
-          {/* Support Column */}
-          <div className="space-y-4">
-            <h3 className="font-semibold text-foreground">Support</h3>
-            <nav className="flex flex-col gap-2 text-sm">
               <a href="mailto:support@aifreetextpro.com" className="text-muted-foreground hover:text-primary transition-colors flex items-center gap-2">
                 <Mail className="w-4 h-4" />
                 Email Support
@@ -100,9 +144,17 @@ const Footer = () => {
           <div className="text-sm text-muted-foreground text-center md:text-left">
             © 2025 AI Free Text Pro. All rights reserved. | Free AI Detection & Humanization Tools
           </div>
-          <div className="flex items-center gap-2 text-xs text-muted-foreground">
-            <Shield className="w-4 h-4" />
-            <span>Secure & Private</span>
+          <div className="flex items-center gap-4 text-xs text-muted-foreground">
+            <Link to="/privacy-policy" className="hover:text-primary transition-colors">
+              Privacy Policy
+            </Link>
+            <Link to="/terms-of-service" className="hover:text-primary transition-colors">
+              Terms of Service
+            </Link>
+            <div className="flex items-center gap-2">
+              <Shield className="w-4 h-4" />
+              <span>Secure & Private</span>
+            </div>
           </div>
         </div>
       </div>

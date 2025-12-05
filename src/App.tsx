@@ -37,6 +37,7 @@ import AIToolsForWriters from "./pages/blog/AIToolsForWriters";
 import AICreativityOriginality from "./pages/blog/AICreativityOriginality";
 import AIDetectionPublishing from "./pages/blog/AIDetectionPublishing";
 import NotFound from "./pages/NotFound";
+import AIChecker from "./pages/AIChecker";
 import Navbar from "./components/Navbar";
 import { ScrollToTop } from "./components/ScrollToTop";
 
@@ -94,8 +95,9 @@ const App = () => (
             <Route path="/ai-humanizer-for-students" element={<AIHumanizerForStudents />} />
             <Route path="/ai-humanizer-for-writers" element={<AIHumanizerForWriters />} />
             <Route path="/academic-ai-writing-tool" element={<AcademicAIWritingTool />} />
+            <Route path="/ai-checker" element={<AIChecker />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-            <Route path="*" element={<><Navbar /><NotFound /></>} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>
       </TooltipProvider>

@@ -1,17 +1,20 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { ArrowRight, CheckCircle, Shield, FileText, Sparkles, Brain, Star, Pen, BookOpen, Target, Zap, Users, TrendingUp, Lock, Globe, Crown, GraduationCap } from "lucide-react";
+import { ArrowRight, CheckCircle, Shield, FileText, Sparkles, Brain, Star, Pen, BookOpen, Target, Zap, Lock, Crown, GraduationCap, TrendingUp } from "lucide-react";
 import { Helmet } from "react-helmet-async";
-import beforeAfterDemo from "@/assets/before-after-demo.png";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import AnimatedBackground from "@/components/AnimatedBackground";
 import AboutSection from "@/components/AboutSection";
 import ComparisonTable from "@/components/ComparisonTable";
 import EnhancedFAQ from "@/components/EnhancedFAQ";
-import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { Link } from "react-router-dom";
 import HowToSchema from "@/components/HowToSchema";
+import InteractiveDemo from "@/components/InteractiveDemo";
+import TestimonialCarousel from "@/components/TestimonialCarousel";
+import AnimatedStats from "@/components/AnimatedStats";
+import ScrollToTopButton from "@/components/ScrollToTopButton";
+import StickyHeaderCTA from "@/components/StickyHeaderCTA";
 
 const Index = () => {
   return (
@@ -107,57 +110,87 @@ const Index = () => {
         </script>
       </Helmet>
       <Navbar />
+      <StickyHeaderCTA />
+      <ScrollToTopButton />
       
       <main className="flex-1">
-        {/* Breadcrumbs */}
-        <div className="container mx-auto px-4 pt-6">
-          <Breadcrumbs items={[{ label: "Home" }]} />
-        </div>
-
         {/* Hero Section */}
-        <section className="relative py-12 md:py-20 overflow-hidden">
+        <section className="relative py-16 md:py-24 overflow-hidden">
           <AnimatedBackground />
           
           <div className="container mx-auto px-4 relative z-10">
-            <div className="text-center space-y-6 max-w-4xl mx-auto animate-in fade-in slide-in-from-bottom duration-700">
-              <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold leading-tight">
-                <span className="bg-gradient-to-r from-primary via-secondary to-primary bg-clip-text text-transparent bg-[length:200%_auto] animate-[gradient_8s_linear_infinite]">
+            <div className="text-center space-y-8 max-w-4xl mx-auto">
+              {/* Social Proof Badge */}
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-muted/80 backdrop-blur border border-border/50 text-sm animate-fade-in">
+                <div className="flex -space-x-2">
+                  {["MR", "JC", "SP", "EW"].map((initials, i) => (
+                    <div 
+                      key={i} 
+                      className="w-6 h-6 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center text-[10px] font-bold text-primary-foreground border-2 border-background"
+                    >
+                      {initials}
+                    </div>
+                  ))}
+                </div>
+                <span className="text-muted-foreground">
+                  Trusted by <span className="font-semibold text-foreground">50,000+</span> writers
+                </span>
+                <div className="flex gap-0.5">
+                  {[1, 2, 3, 4, 5].map((i) => (
+                    <Star key={i} className="w-3 h-3 fill-amber-400 text-amber-400" />
+                  ))}
+                </div>
+                <span className="text-muted-foreground">4.8/5</span>
+              </div>
+
+              <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold leading-tight animate-fade-in" style={{ animationDelay: "100ms" }}>
+                <span className="bg-gradient-to-r from-primary via-secondary to-primary bg-clip-text text-transparent bg-[length:200%_auto] animate-[gradient_8s_linear_infinite] drop-shadow-sm">
                   Free AI Detector & Humanizer
                 </span>
                 <br />
-                <span className="text-3xl sm:text-4xl md:text-5xl">Detect AI Text & Make Content Human</span>
+                <span className="text-3xl sm:text-4xl md:text-5xl text-foreground">Detect AI Text & Make Content Human</span>
               </h1>
               
-              <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto">
-                Free AI content detector spots ChatGPT instantly with 98% accuracy. Transform AI text to human writing in 3 seconds. Trusted by 50,000+ students, writers & professionals.
+              <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto animate-fade-in" style={{ animationDelay: "200ms" }}>
+                Free AI content detector spots ChatGPT instantly with 98% accuracy. Transform AI text to human writing in 3 seconds. Join 50,000+ students, writers & professionals.
               </p>
 
-              {/* Money-Back Guarantee Badge */}
-              <div className="flex items-center justify-center gap-2 mt-4 px-4 py-2 bg-primary/10 rounded-full inline-flex mx-auto">
-                <Shield className="w-5 h-5 text-primary" />
-                <span className="text-sm font-semibold">100% Money-Back Guarantee - If flagged by any AI detector, full refund</span>
+              {/* Enhanced Money-Back Guarantee Badge */}
+              <div className="animate-fade-in" style={{ animationDelay: "300ms" }}>
+                <Link to="/guarantee" className="inline-flex items-center gap-3 px-6 py-3 bg-gradient-to-r from-primary/20 to-secondary/20 rounded-full border border-primary/30 hover:border-primary/50 transition-all group animate-glow-pulse">
+                  <Shield className="w-6 h-6 text-primary" />
+                  <div className="text-left">
+                    <span className="text-sm font-bold text-foreground block">100% Money-Back Guarantee</span>
+                    <span className="text-xs text-muted-foreground">If flagged by any AI detector, full refund</span>
+                  </div>
+                  <ArrowRight className="w-4 h-4 text-primary group-hover:translate-x-1 transition-transform" />
+                </Link>
               </div>
 
-              <div className="flex items-center justify-center gap-4 text-sm text-muted-foreground pt-2">
+              <div className="flex flex-wrap items-center justify-center gap-6 text-sm text-muted-foreground pt-2 animate-fade-in" style={{ animationDelay: "400ms" }}>
                 <div className="flex items-center gap-2">
-                  <CheckCircle className="w-4 h-4 text-primary" />
-                  <span>50K+ Users</span>
+                  <CheckCircle className="w-5 h-5 text-primary" />
+                  <span className="font-medium">Free Forever</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <CheckCircle className="w-4 h-4 text-primary" />
-                  <span>98% Accuracy</span>
+                  <CheckCircle className="w-5 h-5 text-primary" />
+                  <span className="font-medium">No Credit Card</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <CheckCircle className="w-4 h-4 text-primary" />
-                  <span>Free Forever</span>
+                  <CheckCircle className="w-5 h-5 text-primary" />
+                  <span className="font-medium">98% Accuracy</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <CheckCircle className="w-5 h-5 text-primary" />
+                  <span className="font-medium">Instant Results</span>
                 </div>
               </div>
               
-              <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
+              <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4 animate-fade-in" style={{ animationDelay: "500ms" }}>
                 <a href="https://app.aifreetextpro.com/" className="w-full sm:w-auto">
                   <Button 
                     size="lg" 
-                    className="text-base sm:text-lg px-8 sm:px-10 py-5 sm:py-6 bg-gradient-to-r from-primary via-primary/90 to-secondary hover:opacity-90 shadow-xl hover:shadow-2xl shadow-primary/20 group w-full transition-all font-bold"
+                    className="text-base sm:text-lg px-8 sm:px-10 py-6 sm:py-7 bg-gradient-to-r from-primary via-primary/90 to-secondary hover:opacity-90 shadow-xl hover:shadow-2xl shadow-primary/30 group w-full transition-all font-bold"
                   >
                     <Pen className="mr-2 h-5 w-5" />
                     Try Free — Instant Access
@@ -168,7 +201,7 @@ const Index = () => {
                   <Button 
                     size="lg"
                     variant="outline"
-                    className="text-base sm:text-lg px-8 sm:px-10 py-5 sm:py-6 group w-full transition-all font-bold border-2"
+                    className="text-base sm:text-lg px-8 sm:px-10 py-6 sm:py-7 group w-full transition-all font-bold border-2 hover:bg-muted/50"
                   >
                     <BookOpen className="mr-2 h-5 w-5" />
                     See Live Demo
@@ -259,36 +292,8 @@ const Index = () => {
           </div>
         </section>
 
-        {/* Visual Demo Preview */}
-        <section className="py-12 md:py-20">
-          <div className="container mx-auto px-4">
-            <div className="max-w-5xl mx-auto">
-              <div className="text-center mb-8">
-                <h2 className="text-3xl md:text-4xl font-bold mb-4">See It in Action</h2>
-                <p className="text-muted-foreground text-lg">Experience the power of AI detection and humanization</p>
-              </div>
-              <div className="rounded-xl overflow-hidden shadow-2xl border border-border/50 bg-card/50 backdrop-blur">
-                <img 
-                  src={beforeAfterDemo} 
-                  alt="AI Free Text Pro dashboard demo - Before and after comparison showing AI text detection scores and humanized output with professional writing style" 
-                  className="w-full h-auto"
-                  width="1200"
-                  height="675"
-                  loading="eager"
-                  decoding="async"
-                />
-                <div className="p-6 bg-gradient-to-br from-primary/10 to-secondary/10 text-center">
-                  <p className="text-sm text-muted-foreground mb-4">Join 50,000+ writers transforming their content</p>
-                  <a href="https://app.aifreetextpro.com/">
-                    <Button size="lg" className="bg-gradient-to-r from-primary to-secondary">
-                      Start Free — 1,000 Words <ArrowRight className="ml-2 h-4 w-4" />
-                    </Button>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        {/* Interactive Demo Section */}
+        <InteractiveDemo />
 
         {/* How It Works */}
         <section className="py-20 md:py-28 bg-card/20">
@@ -578,51 +583,8 @@ const Index = () => {
           </div>
         </section>
 
-        {/* Stats Section */}
-        <section className="py-16 md:py-20 bg-gradient-to-b from-card/10 to-background">
-          <div className="container mx-auto px-4">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">Trusted by Writers Worldwide</h2>
-              <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-                Join thousands of professionals, students, and creators who rely on AI Free Text Pro
-              </p>
-            </div>
-            
-            <div className="grid md:grid-cols-4 gap-8 max-w-5xl mx-auto">
-              <div className="text-center space-y-2">
-                <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-3">
-                  <Users className="w-8 h-8 text-primary" />
-                </div>
-                <div className="text-4xl font-bold text-primary">50K+</div>
-                <div className="text-sm text-muted-foreground">Active Users</div>
-              </div>
-              
-              <div className="text-center space-y-2">
-                <div className="w-16 h-16 rounded-full bg-secondary/10 flex items-center justify-center mx-auto mb-3">
-                  <FileText className="w-8 h-8 text-secondary" />
-                </div>
-                <div className="text-4xl font-bold text-secondary">2M+</div>
-                <div className="text-sm text-muted-foreground">Texts Analyzed</div>
-              </div>
-              
-              <div className="text-center space-y-2">
-                <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-3">
-                  <TrendingUp className="w-8 h-8 text-primary" />
-                </div>
-                <div className="text-4xl font-bold text-primary">98%</div>
-                <div className="text-sm text-muted-foreground">Accuracy Rate</div>
-              </div>
-              
-              <div className="text-center space-y-2">
-                <div className="w-16 h-16 rounded-full bg-secondary/10 flex items-center justify-center mx-auto mb-3">
-                  <Globe className="w-8 h-8 text-secondary" />
-                </div>
-                <div className="text-4xl font-bold text-secondary">120+</div>
-                <div className="text-sm text-muted-foreground">Countries</div>
-              </div>
-            </div>
-          </div>
-        </section>
+        {/* Animated Stats Section */}
+        <AnimatedStats />
 
         {/* Pricing Preview Section */}
         <section className="py-20 md:py-28 bg-gradient-to-b from-background via-card/10 to-background">

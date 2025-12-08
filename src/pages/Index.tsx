@@ -947,43 +947,43 @@ const Index = () => {
             </div>
             
             <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
-              <Link to="/blog/how-to-detect-ai-generated-text">
+              <Link to="/blog/make-chatgpt-undetectable-guide-2025">
                 <Card className="p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 cursor-pointer h-full">
                   <div className="space-y-3">
                     <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center">
                       <Shield className="w-6 h-6 text-primary" />
                     </div>
-                    <h3 className="font-bold text-xl">How to Detect AI-Generated Text</h3>
+                    <h3 className="font-bold text-xl">Make ChatGPT Undetectable: 2025 Guide</h3>
                     <p className="text-muted-foreground text-sm">
-                      Learn proven techniques to identify AI content and understand detection patterns
+                      The ultimate guide to making AI writing completely undetectable by all major detectors
                     </p>
                   </div>
                 </Card>
               </Link>
 
-              <Link to="/blog/best-free-ai-humanizer-tools-2025">
+              <Link to="/blog/pass-all-ai-detectors-guide-2025">
                 <Card className="p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 cursor-pointer h-full">
                   <div className="space-y-3">
                     <div className="w-12 h-12 rounded-lg bg-secondary/10 flex items-center justify-center">
                       <Sparkles className="w-6 h-6 text-secondary" />
                     </div>
-                    <h3 className="font-bold text-xl">Best AI Humanizer Tools 2025</h3>
+                    <h3 className="font-bold text-xl">Pass All AI Detectors Guide</h3>
                     <p className="text-muted-foreground text-sm">
-                      Compare top AI humanizer tools and find the best solution for your needs
+                      Definitive guide to bypassing ZeroGPT, Turnitin, Copyleaks and more
                     </p>
                   </div>
                 </Card>
               </Link>
 
-              <Link to="/blog/ai-detection-tools-compared-2025">
+              <Link to="/blog/ai-detection-patterns-perplexity-burstiness">
                 <Card className="p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 cursor-pointer h-full">
                   <div className="space-y-3">
                     <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center">
                       <Target className="w-6 h-6 text-primary" />
                     </div>
-                    <h3 className="font-bold text-xl">AI Detection Tools Compared</h3>
+                    <h3 className="font-bold text-xl">AI Detection Patterns Explained</h3>
                     <p className="text-muted-foreground text-sm">
-                      See how GPTZero, ZeroGPT, and AI Free Text Pro compare in accuracy
+                      Understand perplexity, burstiness, and what AI detectors really look for
                     </p>
                   </div>
                 </Card>

@@ -354,22 +354,22 @@ const BypassTurnitin = () => {
 
           <RelatedArticles articles={[
             {
-              title: "How to Detect AI-Generated Text: Complete 2025 Guide",
-              description: "Learn the methods, tools, and techniques to identify AI-generated content including ChatGPT, GPT-4, and other AI writing tools.",
-              href: "/blog/how-to-detect-ai-generated-text",
-              category: "Detection Guide"
+              title: "How to Make ChatGPT Writing Undetectable: Ultimate 2025 Guide",
+              description: "Master the techniques to make AI writing completely undetectable. The #1 guide for students and professionals.",
+              href: "/blog/make-chatgpt-undetectable-guide-2025",
+              category: "Ultimate Guide"
             },
             {
-              title: "Best Free AI Humanizer Tools in 2025",
-              description: "Compare the top AI humanizer tools available, their features, pricing, and effectiveness at bypassing AI detection systems.",
-              href: "/blog/best-free-ai-humanizer-tools-2025",
-              category: "Tool Comparison"
+              title: "Academic AI Writing: Using AI for Thesis and Essays Safely",
+              description: "Learn responsible AI use for academic writing. Maintain integrity while leveraging AI tools effectively.",
+              href: "/blog/academic-ai-writing-thesis-essays-safely",
+              category: "Academic Guide"
             },
             {
-              title: "AI Writing for Students: How to Avoid Plagiarism Issues",
-              description: "Complete guide for students using AI writing tools responsibly while maintaining academic integrity and avoiding detection.",
-              href: "/blog/ai-writing-students-avoid-plagiarism",
-              category: "Student Guide"
+              title: "The Definitive Guide to Passing All Major AI Detectors",
+              description: "How to bypass ZeroGPT, Turnitin, Copyleaks & more with AI Free Text Pro's proven strategies.",
+              href: "/blog/pass-all-ai-detectors-guide-2025",
+              category: "Bypass Guide"
             }
           ]} />
         </div>

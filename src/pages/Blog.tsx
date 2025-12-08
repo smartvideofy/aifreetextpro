@@ -9,6 +9,70 @@ import { Breadcrumbs } from "@/components/Breadcrumbs";
 
 const blogPosts = [
   {
+    slug: "make-chatgpt-undetectable-2025",
+    title: "How to Make ChatGPT Writing Undetectable: The Ultimate 2025 Guide",
+    excerpt: "The complete playbook for transforming AI-generated content into undetectable, human-quality writing that passes every major detector.",
+    date: "2025-01-20",
+    readTime: "15 min read",
+    category: "How-To Guide"
+  },
+  {
+    slug: "ai-detection-patterns-explained",
+    title: "AI vs. Human: 5 Subtle Linguistic Patterns AI Detectors Look For",
+    excerpt: "Discover the 5 linguistic patterns AI detectors analyze including perplexity, burstiness, and predictability.",
+    date: "2025-01-20",
+    readTime: "12 min read",
+    category: "Educational"
+  },
+  {
+    slug: "paraphrasing-vs-humanizing",
+    title: "Paraphrasing vs. Humanizing: Why Marketers Need a True AI Humanizer",
+    excerpt: "Understand the critical difference between AI paraphrasing and humanizing. Learn why simple paraphrasers fail against AI detectors.",
+    date: "2025-01-20",
+    readTime: "10 min read",
+    category: "Marketing Guide"
+  },
+  {
+    slug: "gptinf-vs-ai-free-text-pro",
+    title: "GPTinf vs. AI Free Text Pro: Which Humanizer Offers the Highest Success Rate?",
+    excerpt: "Detailed comparison of GPTinf and AI Free Text Pro humanizers with real test results and pricing analysis.",
+    date: "2025-01-20",
+    readTime: "11 min read",
+    category: "Comparison"
+  },
+  {
+    slug: "originality-ai-review-how-to-beat",
+    title: "Originality.AI Detector Review: Accuracy, Pricing, and How to Beat It",
+    excerpt: "Complete Originality.AI review covering accuracy, pricing, and the most reliable method to bypass it with 96% success.",
+    date: "2025-01-20",
+    readTime: "13 min read",
+    category: "Detector Review"
+  },
+  {
+    slug: "pass-all-ai-detectors-guide",
+    title: "The Definitive Guide to Passing All Major AI Detectors (2025)",
+    excerpt: "How to bypass GPTZero, Turnitin, Originality.AI, ZeroGPT, Copyleaks, and every other AI detector — with a money-back guarantee.",
+    date: "2025-01-20",
+    readTime: "14 min read",
+    category: "Ultimate Guide"
+  },
+  {
+    slug: "ai-content-seo-undetectable",
+    title: "AI Content for SEO: How to Generate Undetectable Articles That Rank",
+    excerpt: "Learn how to use AI for SEO content at scale while ensuring articles pass detection and rank well in search.",
+    date: "2025-01-20",
+    readTime: "14 min read",
+    category: "SEO Strategy"
+  },
+  {
+    slug: "academic-ai-writing-safely",
+    title: "Maintaining Academic Integrity: Using AI to Write Thesis and Essays Safely",
+    excerpt: "A thoughtful guide to leveraging AI writing tools responsibly while preserving academic integrity principles.",
+    date: "2025-01-20",
+    readTime: "12 min read",
+    category: "Academic Guide"
+  },
+  {
     slug: "ai-detection-tools-compared-2025",
     title: "AI Detection Tools Compared (2025 Edition): GPTZero vs AI Free Text Pro vs Rewritify",
     excerpt: "See which AI detector is most accurate in 2025. We compare GPTZero, Rewritify, and AI Free Text Pro in real-world tests.",

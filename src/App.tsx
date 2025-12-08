@@ -36,6 +36,14 @@ import WhyAIContentFails from "./pages/blog/WhyAIContentFails";
 import AIToolsForWriters from "./pages/blog/AIToolsForWriters";
 import AICreativityOriginality from "./pages/blog/AICreativityOriginality";
 import AIDetectionPublishing from "./pages/blog/AIDetectionPublishing";
+import MakeChatGPTUndetectable from "./pages/blog/MakeChatGPTUndetectable";
+import AIDetectionPatterns from "./pages/blog/AIDetectionPatterns";
+import ParaphrasingVsHumanizing from "./pages/blog/ParaphrasingVsHumanizing";
+import GPTinfComparison from "./pages/blog/GPTinfComparison";
+import OriginalityAIReview from "./pages/blog/OriginalityAIReview";
+import PassAllDetectorsGuide from "./pages/blog/PassAllDetectorsGuide";
+import AIContentSEO from "./pages/blog/AIContentSEO";
+import AcademicAIWritingSafely from "./pages/blog/AcademicAIWritingSafely";
 import NotFound from "./pages/NotFound";
 import AIChecker from "./pages/AIChecker";
 import Navbar from "./components/Navbar";
@@ -86,6 +94,14 @@ const App = () => (
             <Route path="/blog/ai-tools-for-writers-2025" element={<AIToolsForWriters />} />
             <Route path="/blog/can-ai-writing-be-original" element={<AICreativityOriginality />} />
             <Route path="/blog/ai-detection-in-publishing-2025" element={<AIDetectionPublishing />} />
+            <Route path="/blog/make-chatgpt-undetectable-2025" element={<MakeChatGPTUndetectable />} />
+            <Route path="/blog/ai-detection-patterns-explained" element={<AIDetectionPatterns />} />
+            <Route path="/blog/paraphrasing-vs-humanizing" element={<ParaphrasingVsHumanizing />} />
+            <Route path="/blog/gptinf-vs-ai-free-text-pro" element={<GPTinfComparison />} />
+            <Route path="/blog/originality-ai-review-how-to-beat" element={<OriginalityAIReview />} />
+            <Route path="/blog/pass-all-ai-detectors-guide" element={<PassAllDetectorsGuide />} />
+            <Route path="/blog/ai-content-seo-undetectable" element={<AIContentSEO />} />
+            <Route path="/blog/academic-ai-writing-safely" element={<AcademicAIWritingSafely />} />
             <Route path="/bypass-turnitin-ai-detection" element={<BypassTurnitin />} />
             <Route path="/bypass-gptzero-detection" element={<BypassGPTZero />} />
             <Route path="/bypass-originality-ai" element={<BypassOriginality />} />

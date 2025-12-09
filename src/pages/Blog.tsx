@@ -1,7 +1,9 @@
+import { useState, useMemo } from "react";
 import { Link } from "react-router-dom";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Calendar, Clock, ArrowRight, BookOpen } from "lucide-react";
+import { Input } from "@/components/ui/input";
+import { Calendar, Clock, ArrowRight, BookOpen, Search, X, Filter } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -9,7 +11,7 @@ import { Breadcrumbs } from "@/components/Breadcrumbs";
 
 const blogPosts = [
   {
-    slug: "make-chatgpt-undetectable-2025",
+    slug: "make-chatgpt-undetectable",
     title: "How to Make ChatGPT Writing Undetectable: The Ultimate 2025 Guide",
     excerpt: "The complete playbook for transforming AI-generated content into undetectable, human-quality writing that passes every major detector.",
     date: "2025-01-20",
@@ -17,7 +19,7 @@ const blogPosts = [
     category: "How-To Guide"
   },
   {
-    slug: "ai-detection-patterns-explained",
+    slug: "ai-detection-patterns",
     title: "AI vs. Human: 5 Subtle Linguistic Patterns AI Detectors Look For",
     excerpt: "Discover the 5 linguistic patterns AI detectors analyze including perplexity, burstiness, and predictability.",
     date: "2025-01-20",
@@ -30,10 +32,10 @@ const blogPosts = [
     excerpt: "Understand the critical difference between AI paraphrasing and humanizing. Learn why simple paraphrasers fail against AI detectors.",
     date: "2025-01-20",
     readTime: "10 min read",
-    category: "Marketing Guide"
+    category: "Marketing"
   },
   {
-    slug: "gptinf-vs-ai-free-text-pro",
+    slug: "gptinf-comparison",
     title: "GPTinf vs. AI Free Text Pro: Which Humanizer Offers the Highest Success Rate?",
     excerpt: "Detailed comparison of GPTinf and AI Free Text Pro humanizers with real test results and pricing analysis.",
     date: "2025-01-20",
@@ -41,7 +43,7 @@ const blogPosts = [
     category: "Comparison"
   },
   {
-    slug: "originality-ai-review-how-to-beat",
+    slug: "originality-ai-review",
     title: "Originality.AI Detector Review: Accuracy, Pricing, and How to Beat It",
     excerpt: "Complete Originality.AI review covering accuracy, pricing, and the most reliable method to bypass it with 96% success.",
     date: "2025-01-20",
@@ -49,20 +51,20 @@ const blogPosts = [
     category: "Detector Review"
   },
   {
-    slug: "pass-all-ai-detectors-guide",
+    slug: "pass-all-detectors-guide",
     title: "The Definitive Guide to Passing All Major AI Detectors (2025)",
     excerpt: "How to bypass GPTZero, Turnitin, Originality.AI, ZeroGPT, Copyleaks, and every other AI detector — with a money-back guarantee.",
     date: "2025-01-20",
     readTime: "14 min read",
-    category: "Ultimate Guide"
+    category: "How-To Guide"
   },
   {
-    slug: "ai-content-seo-undetectable",
+    slug: "ai-content-seo",
     title: "AI Content for SEO: How to Generate Undetectable Articles That Rank",
     excerpt: "Learn how to use AI for SEO content at scale while ensuring articles pass detection and rank well in search.",
     date: "2025-01-20",
     readTime: "14 min read",
-    category: "SEO Strategy"
+    category: "SEO"
   },
   {
     slug: "academic-ai-writing-safely",
@@ -70,10 +72,10 @@ const blogPosts = [
     excerpt: "A thoughtful guide to leveraging AI writing tools responsibly while preserving academic integrity principles.",
     date: "2025-01-20",
     readTime: "12 min read",
-    category: "Academic Guide"
+    category: "Academic"
   },
   {
-    slug: "ai-detection-tools-compared-2025",
+    slug: "ai-detection-comparison",
     title: "AI Detection Tools Compared (2025 Edition): GPTZero vs AI Free Text Pro vs Rewritify",
     excerpt: "See which AI detector is most accurate in 2025. We compare GPTZero, Rewritify, and AI Free Text Pro in real-world tests.",
     date: "2025-10-19",
@@ -81,23 +83,23 @@ const blogPosts = [
     category: "Comparison"
   },
   {
-    slug: "humanize-ai-text-without-losing-voice",
+    slug: "humanize-ai-text",
     title: "How to Humanize AI-Generated Text Without Losing Your Voice",
     excerpt: "Learn proven strategies and tools to make ChatGPT or Gemini text sound naturally human while keeping your tone.",
     date: "2025-10-19",
     readTime: "10 min read",
-    category: "Writing Guide"
+    category: "How-To Guide"
   },
   {
-    slug: "ai-writing-students-avoid-plagiarism",
+    slug: "ai-writing-students",
     title: "AI Writing for Students: How to Avoid Plagiarism and AI Detection Ethically",
     excerpt: "Discover safe ways to use AI writing assistants in academia without triggering AI detectors or plagiarism checks.",
     date: "2025-10-19",
     readTime: "11 min read",
-    category: "Student Guide"
+    category: "Academic"
   },
   {
-    slug: "zerogpt-vs-ai-free-text-pro-2025",
+    slug: "zerogpt-comparison",
     title: "ZeroGPT vs AI Free Text Pro: Which Detects Better in 2025?",
     excerpt: "We test ZeroGPT and AI Free Text Pro on different writing samples — see which tool spots AI content more accurately.",
     date: "2025-10-19",
@@ -105,12 +107,12 @@ const blogPosts = [
     category: "Comparison"
   },
   {
-    slug: "top-10-ai-humanizer-tools-2025",
+    slug: "top-10-ai-humanizers",
     title: "Top 10 AI Humanizer Tools for 2025 (Free & Paid)",
     excerpt: "A curated list of the top AI humanizers this year — features, pricing, and accuracy ratings included.",
     date: "2025-10-19",
     readTime: "12 min read",
-    category: "Tool Comparison"
+    category: "Comparison"
   },
   {
     slug: "how-ai-detectors-work",
@@ -121,64 +123,100 @@ const blogPosts = [
     category: "Educational"
   },
   {
-    slug: "why-ai-content-fails-human-review",
+    slug: "why-ai-content-fails",
     title: "Why Most AI Content Fails Human Review (and How to Fix It)",
     excerpt: "Discover why AI-generated content still gets flagged and the practical steps to make your writing pass any human review.",
     date: "2025-10-19",
     readTime: "9 min read",
-    category: "Problem-Solving"
+    category: "How-To Guide"
   },
   {
-    slug: "ai-tools-for-writers-2025",
+    slug: "ai-tools-for-writers",
     title: "AI Tools for Writers: Boost Creativity and Productivity in 2025",
     excerpt: "The best AI writing tools to plan, edit, and refine your stories and essays — including AI Free Text Pro for authenticity checks.",
     date: "2025-10-19",
     readTime: "11 min read",
-    category: "Productivity"
+    category: "Tools"
   },
   {
-    slug: "can-ai-writing-be-original",
+    slug: "ai-creativity-originality",
     title: "Can AI Writing Be Truly Original? Exploring Creativity in the Age of GPT",
     excerpt: "Explore how AI can assist rather than replace creativity — what 'original' means in the era of ChatGPT and humanizers.",
     date: "2025-10-19",
     readTime: "10 min read",
-    category: "Thought Leadership"
+    category: "Educational"
   },
   {
-    slug: "ai-detection-in-publishing-2025",
+    slug: "ai-detection-publishing",
     title: "AI Detection in Publishing: How Editors and Writers Can Adapt in 2025",
     excerpt: "How editors and publishers are adapting to AI-generated content — and why AI Free Text Pro is part of the solution.",
     date: "2025-10-19",
     readTime: "12 min read",
-    category: "Industry Insights"
+    category: "Industry"
   },
   {
-    slug: "how-to-detect-ai-generated-text",
+    slug: "how-to-detect-ai",
     title: "How to Detect AI-Generated Text: Complete Guide",
     excerpt: "Learn the proven techniques and tools to identify AI-generated content. Discover key patterns, linguistic markers, and detection strategies used by experts.",
     date: "2025-10-05",
     readTime: "8 min read",
-    category: "AI Detection"
+    category: "How-To Guide"
   },
   {
-    slug: "best-free-ai-humanizer-tools-2025",
+    slug: "best-ai-humanizers",
     title: "Best Free AI Humanizer Tools in 2025",
     excerpt: "Compare the top free AI humanizer tools available today. Find out which tool works best for your needs, from academic writing to content creation.",
     date: "2025-10-04",
     readTime: "10 min read",
-    category: "AI Tools"
+    category: "Tools"
   },
   {
-    slug: "bypass-ai-detection-ethical-tips",
+    slug: "bypass-ai-detection",
     title: "Bypass AI Detection: Ethical Tips & Tricks",
     excerpt: "Discover ethical strategies to make AI-assisted content more human-like. Learn techniques that improve writing quality while maintaining authenticity.",
     date: "2025-10-03",
     readTime: "7 min read",
-    category: "Writing Tips"
+    category: "How-To Guide"
   }
 ];
 
+// Extract unique categories
+const allCategories = [...new Set(blogPosts.map(post => post.category))].sort();
+
 const Blog = () => {
+  const [searchQuery, setSearchQuery] = useState("");
+  const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
+
+  // Filter posts based on search and category
+  const filteredPosts = useMemo(() => {
+    return blogPosts.filter(post => {
+      const matchesSearch = searchQuery === "" || 
+        post.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        post.excerpt.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        post.category.toLowerCase().includes(searchQuery.toLowerCase());
+      
+      const matchesCategory = selectedCategory === null || post.category === selectedCategory;
+      
+      return matchesSearch && matchesCategory;
+    });
+  }, [searchQuery, selectedCategory]);
+
+  // Count posts per category
+  const categoryCounts = useMemo(() => {
+    const counts: Record<string, number> = {};
+    blogPosts.forEach(post => {
+      counts[post.category] = (counts[post.category] || 0) + 1;
+    });
+    return counts;
+  }, []);
+
+  const clearFilters = () => {
+    setSearchQuery("");
+    setSelectedCategory(null);
+  };
+
+  const hasActiveFilters = searchQuery !== "" || selectedCategory !== null;
+
   return (
     <div className="min-h-screen flex flex-col">
       <Helmet>
@@ -192,6 +230,27 @@ const Blog = () => {
         <meta property="og:description" content="Expert guides on AI detection, humanization tools, and writing tips." />
         <meta property="og:url" content="https://aifreetextpro.com/blog" />
         <meta property="og:type" content="website" />
+        
+        {/* Blog CollectionPage Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "CollectionPage",
+            "name": "AI Writing Blog",
+            "description": "Expert guides on AI detection, humanization tools, and writing tips",
+            "url": "https://aifreetextpro.com/blog",
+            "mainEntity": {
+              "@type": "ItemList",
+              "numberOfItems": blogPosts.length,
+              "itemListElement": blogPosts.slice(0, 10).map((post, index) => ({
+                "@type": "ListItem",
+                "position": index + 1,
+                "url": `https://aifreetextpro.com/blog/${post.slug}`,
+                "name": post.title
+              }))
+            }
+          })}
+        </script>
       </Helmet>
       <Navbar />
       
@@ -203,61 +262,172 @@ const Blog = () => {
               { label: "Blog" }
             ]} 
           />
-          <div className="max-w-4xl mx-auto">
-            <div className="text-center space-y-6 mb-16">
-              <div className="inline-flex items-center gap-2 text-primary">
-                <BookOpen className="w-8 h-8" />
-              </div>
-              <h1 className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-                AI Writing Blog
-              </h1>
-              <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-                Expert guides, tips, and insights on AI detection and humanization
-              </p>
+          
+          {/* Header */}
+          <div className="max-w-4xl mx-auto text-center space-y-6 mb-12">
+            <div className="inline-flex items-center gap-2 text-primary">
+              <BookOpen className="w-8 h-8" />
+            </div>
+            <h1 className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+              AI Writing Blog
+            </h1>
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+              Expert guides, tips, and insights on AI detection and humanization
+            </p>
+          </div>
+
+          {/* Search and Filter Section */}
+          <div className="max-w-5xl mx-auto mb-10">
+            {/* Search Bar */}
+            <div className="relative mb-6">
+              <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-muted-foreground" />
+              <Input
+                type="text"
+                placeholder="Search articles by title, topic, or keyword..."
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                className="pl-12 pr-12 py-6 text-lg rounded-xl border-border/50 focus:border-primary"
+              />
+              {searchQuery && (
+                <button
+                  onClick={() => setSearchQuery("")}
+                  className="absolute right-4 top-1/2 -translate-y-1/2 text-muted-foreground hover:text-foreground transition-colors"
+                >
+                  <X className="w-5 h-5" />
+                </button>
+              )}
             </div>
 
-            <div className="space-y-8">
-              {blogPosts.map((post) => (
-                <Card key={post.slug} className="p-8 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-                  <div className="space-y-4">
-                    <div className="flex items-center gap-4 text-sm text-muted-foreground">
-                      <span className="px-3 py-1 rounded-full bg-primary/10 text-primary font-medium">
-                        {post.category}
-                      </span>
-                      <div className="flex items-center gap-2">
-                        <Calendar className="w-4 h-4" />
+            {/* Category Filter */}
+            <div className="space-y-3">
+              <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                <Filter className="w-4 h-4" />
+                <span>Filter by category:</span>
+              </div>
+              <div className="flex flex-wrap gap-2">
+                <button
+                  onClick={() => setSelectedCategory(null)}
+                  className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${
+                    selectedCategory === null
+                      ? "bg-primary text-primary-foreground shadow-md"
+                      : "bg-muted hover:bg-muted/80 text-muted-foreground hover:text-foreground"
+                  }`}
+                >
+                  All ({blogPosts.length})
+                </button>
+                {allCategories.map((category) => (
+                  <button
+                    key={category}
+                    onClick={() => setSelectedCategory(category)}
+                    className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${
+                      selectedCategory === category
+                        ? "bg-primary text-primary-foreground shadow-md"
+                        : "bg-muted hover:bg-muted/80 text-muted-foreground hover:text-foreground"
+                    }`}
+                  >
+                    {category} ({categoryCounts[category]})
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            {/* Active Filters & Results Count */}
+            {hasActiveFilters && (
+              <div className="mt-6 flex items-center justify-between">
+                <p className="text-muted-foreground">
+                  Showing <span className="font-semibold text-foreground">{filteredPosts.length}</span> of {blogPosts.length} articles
+                  {selectedCategory && (
+                    <span> in <span className="text-primary font-medium">{selectedCategory}</span></span>
+                  )}
+                  {searchQuery && (
+                    <span> matching "<span className="text-primary font-medium">{searchQuery}</span>"</span>
+                  )}
+                </p>
+                <Button variant="ghost" size="sm" onClick={clearFilters} className="text-muted-foreground hover:text-foreground">
+                  <X className="w-4 h-4 mr-1" />
+                  Clear filters
+                </Button>
+              </div>
+            )}
+          </div>
+
+          {/* Blog Posts Grid */}
+          <div className="max-w-5xl mx-auto">
+            {filteredPosts.length > 0 ? (
+              <div className="grid md:grid-cols-2 gap-6">
+                {filteredPosts.map((post) => (
+                  <Card key={post.slug} className="p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col">
+                    <div className="space-y-4 flex-1">
+                      <div className="flex items-center gap-3 text-sm text-muted-foreground">
+                        <span className="px-3 py-1 rounded-full bg-primary/10 text-primary font-medium text-xs">
+                          {post.category}
+                        </span>
+                        <div className="flex items-center gap-1">
+                          <Clock className="w-3.5 h-3.5" />
+                          {post.readTime}
+                        </div>
+                      </div>
+
+                      <h2 className="text-xl font-bold hover:text-primary transition-colors line-clamp-2">
+                        <Link to={`/blog/${post.slug}`}>
+                          {post.title}
+                        </Link>
+                      </h2>
+
+                      <p className="text-muted-foreground text-sm leading-relaxed line-clamp-3">
+                        {post.excerpt}
+                      </p>
+                    </div>
+
+                    <div className="mt-4 pt-4 border-t border-border/50 flex items-center justify-between">
+                      <div className="flex items-center gap-2 text-xs text-muted-foreground">
+                        <Calendar className="w-3.5 h-3.5" />
                         {new Date(post.date).toLocaleDateString('en-US', { 
-                          month: 'long', 
+                          month: 'short', 
                           day: 'numeric', 
                           year: 'numeric' 
                         })}
                       </div>
-                      <div className="flex items-center gap-2">
-                        <Clock className="w-4 h-4" />
-                        {post.readTime}
-                      </div>
-                    </div>
-
-                    <h2 className="text-2xl md:text-3xl font-bold hover:text-primary transition-colors">
                       <Link to={`/blog/${post.slug}`}>
-                        {post.title}
+                        <Button variant="ghost" size="sm" className="group text-primary hover:text-primary">
+                          Read more
+                          <ArrowRight className="ml-1 h-3.5 w-3.5 group-hover:translate-x-1 transition-transform" />
+                        </Button>
                       </Link>
-                    </h2>
+                    </div>
+                  </Card>
+                ))}
+              </div>
+            ) : (
+              <div className="text-center py-16">
+                <div className="w-16 h-16 rounded-full bg-muted flex items-center justify-center mx-auto mb-4">
+                  <Search className="w-8 h-8 text-muted-foreground" />
+                </div>
+                <h3 className="text-xl font-semibold mb-2">No articles found</h3>
+                <p className="text-muted-foreground mb-6">
+                  Try adjusting your search or filter to find what you're looking for.
+                </p>
+                <Button onClick={clearFilters} variant="outline">
+                  Clear all filters
+                </Button>
+              </div>
+            )}
+          </div>
 
-                    <p className="text-muted-foreground leading-relaxed">
-                      {post.excerpt}
-                    </p>
-
-                    <Link to={`/blog/${post.slug}`}>
-                      <Button variant="outline" className="group">
-                        Read Full Article
-                        <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-                      </Button>
-                    </Link>
-                  </div>
-                </Card>
-              ))}
-            </div>
+          {/* CTA Section */}
+          <div className="max-w-3xl mx-auto mt-16 text-center">
+            <Card className="p-8 bg-gradient-to-br from-primary/5 via-secondary/5 to-primary/5 border-primary/20">
+              <h3 className="text-2xl font-bold mb-3">Ready to Make Your AI Content Undetectable?</h3>
+              <p className="text-muted-foreground mb-6">
+                Try AI Free Text Pro free — 1,000 words/month with no credit card required.
+              </p>
+              <a href="https://app.aifreetextpro.com/">
+                <Button size="lg" className="bg-gradient-to-r from-primary to-secondary">
+                  Start Free — No Credit Card
+                  <ArrowRight className="ml-2 h-4 w-4" />
+                </Button>
+              </a>
+            </Card>
           </div>
         </div>
       </main>

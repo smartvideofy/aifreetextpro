@@ -302,22 +302,22 @@ const VsUndetectable = () => {
         <div className="container mx-auto px-4">
           <RelatedArticles articles={[
             {
-              title: "AI Free Text Pro vs WriteHuman: Which is Better?",
-              description: "Detailed comparison between AI Free Text Pro and WriteHuman including pricing, features, and detection bypass rates.",
-              href: "/vs-writehuman",
-              category: "Comparison"
+              title: "Originality.AI Review: How to Beat It",
+              description: "Complete review of Originality.AI detector with accuracy analysis and proven bypass strategies.",
+              href: "/blog/originality-ai-review",
+              category: "Detector Review"
             },
             {
-              title: "Bypass GPTZero Detection: Complete Guide 2025",
-              description: "Advanced techniques to bypass GPTZero AI detection with proven strategies and live test results.",
-              href: "/bypass-gptzero-detection",
-              category: "Detection Guide"
+              title: "Pass All AI Detectors: The Definitive Guide",
+              description: "Master techniques to bypass ZeroGPT, Turnitin, Copyleaks and all major AI detection tools.",
+              href: "/blog/pass-all-detectors-guide",
+              category: "How-To Guide"
             },
             {
-              title: "Can AI Writing Be Creative and Original?",
-              description: "Explore whether AI-generated content can achieve true creativity and originality in the age of ChatGPT.",
-              href: "/blog/can-ai-writing-be-original",
-              category: "AI Writing"
+              title: "5 AI Detection Patterns Detectors Look For",
+              description: "Understand perplexity, burstiness, and vocabulary patterns that trigger AI detection flags.",
+              href: "/blog/ai-detection-patterns",
+              category: "Education"
             }
           ]} />
         </div>

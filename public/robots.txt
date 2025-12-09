@@ -46,3 +46,14 @@ Allow: /
 User-agent: *
 Allow: /blog/
 Allow: /blog/*
+
+# Ensure comparison and landing pages are crawlable
+Allow: /vs-*
+Allow: /bypass-*
+Allow: /ai-humanizer-*
+Allow: /academic-*
+Allow: /ai-checker
+
+# Static assets
+Allow: /assets/
+Allow: /images/

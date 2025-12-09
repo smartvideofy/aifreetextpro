@@ -11,7 +11,7 @@ import { Breadcrumbs } from "@/components/Breadcrumbs";
 
 const blogPosts = [
   {
-    slug: "make-chatgpt-undetectable",
+    slug: "make-chatgpt-undetectable-2025",
     title: "How to Make ChatGPT Writing Undetectable: The Ultimate 2025 Guide",
     excerpt: "The complete playbook for transforming AI-generated content into undetectable, human-quality writing that passes every major detector.",
     date: "2025-01-20",
@@ -19,7 +19,7 @@ const blogPosts = [
     category: "How-To Guide"
   },
   {
-    slug: "ai-detection-patterns",
+    slug: "ai-detection-patterns-explained",
     title: "AI vs. Human: 5 Subtle Linguistic Patterns AI Detectors Look For",
     excerpt: "Discover the 5 linguistic patterns AI detectors analyze including perplexity, burstiness, and predictability.",
     date: "2025-01-20",
@@ -35,7 +35,7 @@ const blogPosts = [
     category: "Marketing"
   },
   {
-    slug: "gptinf-comparison",
+    slug: "gptinf-vs-ai-free-text-pro",
     title: "GPTinf vs. AI Free Text Pro: Which Humanizer Offers the Highest Success Rate?",
     excerpt: "Detailed comparison of GPTinf and AI Free Text Pro humanizers with real test results and pricing analysis.",
     date: "2025-01-20",
@@ -43,7 +43,7 @@ const blogPosts = [
     category: "Comparison"
   },
   {
-    slug: "originality-ai-review",
+    slug: "originality-ai-review-how-to-beat",
     title: "Originality.AI Detector Review: Accuracy, Pricing, and How to Beat It",
     excerpt: "Complete Originality.AI review covering accuracy, pricing, and the most reliable method to bypass it with 96% success.",
     date: "2025-01-20",
@@ -51,7 +51,7 @@ const blogPosts = [
     category: "Detector Review"
   },
   {
-    slug: "pass-all-detectors-guide",
+    slug: "pass-all-ai-detectors-guide",
     title: "The Definitive Guide to Passing All Major AI Detectors (2025)",
     excerpt: "How to bypass GPTZero, Turnitin, Originality.AI, ZeroGPT, Copyleaks, and every other AI detector — with a money-back guarantee.",
     date: "2025-01-20",
@@ -59,7 +59,7 @@ const blogPosts = [
     category: "How-To Guide"
   },
   {
-    slug: "ai-content-seo",
+    slug: "ai-content-seo-undetectable",
     title: "AI Content for SEO: How to Generate Undetectable Articles That Rank",
     excerpt: "Learn how to use AI for SEO content at scale while ensuring articles pass detection and rank well in search.",
     date: "2025-01-20",
@@ -75,7 +75,7 @@ const blogPosts = [
     category: "Academic"
   },
   {
-    slug: "ai-detection-comparison",
+    slug: "ai-detection-tools-compared-2025",
     title: "AI Detection Tools Compared (2025 Edition): GPTZero vs AI Free Text Pro vs Rewritify",
     excerpt: "See which AI detector is most accurate in 2025. We compare GPTZero, Rewritify, and AI Free Text Pro in real-world tests.",
     date: "2025-10-19",
@@ -83,7 +83,7 @@ const blogPosts = [
     category: "Comparison"
   },
   {
-    slug: "humanize-ai-text",
+    slug: "humanize-ai-text-without-losing-voice",
     title: "How to Humanize AI-Generated Text Without Losing Your Voice",
     excerpt: "Learn proven strategies and tools to make ChatGPT or Gemini text sound naturally human while keeping your tone.",
     date: "2025-10-19",
@@ -91,7 +91,7 @@ const blogPosts = [
     category: "How-To Guide"
   },
   {
-    slug: "ai-writing-students",
+    slug: "ai-writing-students-avoid-plagiarism",
     title: "AI Writing for Students: How to Avoid Plagiarism and AI Detection Ethically",
     excerpt: "Discover safe ways to use AI writing assistants in academia without triggering AI detectors or plagiarism checks.",
     date: "2025-10-19",
@@ -99,7 +99,7 @@ const blogPosts = [
     category: "Academic"
   },
   {
-    slug: "zerogpt-comparison",
+    slug: "zerogpt-vs-ai-free-text-pro-2025",
     title: "ZeroGPT vs AI Free Text Pro: Which Detects Better in 2025?",
     excerpt: "We test ZeroGPT and AI Free Text Pro on different writing samples — see which tool spots AI content more accurately.",
     date: "2025-10-19",
@@ -107,7 +107,7 @@ const blogPosts = [
     category: "Comparison"
   },
   {
-    slug: "top-10-ai-humanizers",
+    slug: "top-10-ai-humanizer-tools-2025",
     title: "Top 10 AI Humanizer Tools for 2025 (Free & Paid)",
     excerpt: "A curated list of the top AI humanizers this year — features, pricing, and accuracy ratings included.",
     date: "2025-10-19",
@@ -123,7 +123,7 @@ const blogPosts = [
     category: "Educational"
   },
   {
-    slug: "why-ai-content-fails",
+    slug: "why-ai-content-fails-human-review",
     title: "Why Most AI Content Fails Human Review (and How to Fix It)",
     excerpt: "Discover why AI-generated content still gets flagged and the practical steps to make your writing pass any human review.",
     date: "2025-10-19",
@@ -131,7 +131,7 @@ const blogPosts = [
     category: "How-To Guide"
   },
   {
-    slug: "ai-tools-for-writers",
+    slug: "ai-tools-for-writers-2025",
     title: "AI Tools for Writers: Boost Creativity and Productivity in 2025",
     excerpt: "The best AI writing tools to plan, edit, and refine your stories and essays — including AI Free Text Pro for authenticity checks.",
     date: "2025-10-19",
@@ -139,7 +139,7 @@ const blogPosts = [
     category: "Tools"
   },
   {
-    slug: "ai-creativity-originality",
+    slug: "can-ai-writing-be-original",
     title: "Can AI Writing Be Truly Original? Exploring Creativity in the Age of GPT",
     excerpt: "Explore how AI can assist rather than replace creativity — what 'original' means in the era of ChatGPT and humanizers.",
     date: "2025-10-19",
@@ -147,7 +147,7 @@ const blogPosts = [
     category: "Educational"
   },
   {
-    slug: "ai-detection-publishing",
+    slug: "ai-detection-in-publishing-2025",
     title: "AI Detection in Publishing: How Editors and Writers Can Adapt in 2025",
     excerpt: "How editors and publishers are adapting to AI-generated content — and why AI Free Text Pro is part of the solution.",
     date: "2025-10-19",
@@ -155,7 +155,7 @@ const blogPosts = [
     category: "Industry"
   },
   {
-    slug: "how-to-detect-ai",
+    slug: "how-to-detect-ai-generated-text",
     title: "How to Detect AI-Generated Text: Complete Guide",
     excerpt: "Learn the proven techniques and tools to identify AI-generated content. Discover key patterns, linguistic markers, and detection strategies used by experts.",
     date: "2025-10-05",
@@ -163,7 +163,7 @@ const blogPosts = [
     category: "How-To Guide"
   },
   {
-    slug: "best-ai-humanizers",
+    slug: "best-free-ai-humanizer-tools-2025",
     title: "Best Free AI Humanizer Tools in 2025",
     excerpt: "Compare the top free AI humanizer tools available today. Find out which tool works best for your needs, from academic writing to content creation.",
     date: "2025-10-04",
@@ -171,7 +171,7 @@ const blogPosts = [
     category: "Tools"
   },
   {
-    slug: "bypass-ai-detection",
+    slug: "bypass-ai-detection-ethical-tips",
     title: "Bypass AI Detection: Ethical Tips & Tricks",
     excerpt: "Discover ethical strategies to make AI-assisted content more human-like. Learn techniques that improve writing quality while maintaining authenticity.",
     date: "2025-10-03",

@@ -54,6 +54,12 @@ Allow: /ai-humanizer-*
 Allow: /academic-*
 Allow: /ai-checker
 
+# E-E-A-T pages - Trust & Authority
+Allow: /team
+Allow: /technology
+Allow: /case-studies
+Allow: /editorial-guidelines
+
 # Static assets
 Allow: /assets/
 Allow: /images/

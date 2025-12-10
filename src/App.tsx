@@ -46,6 +46,10 @@ import AIContentSEO from "./pages/blog/AIContentSEO";
 import AcademicAIWritingSafely from "./pages/blog/AcademicAIWritingSafely";
 import NotFound from "./pages/NotFound";
 import AIChecker from "./pages/AIChecker";
+import Team from "./pages/Team";
+import Technology from "./pages/Technology";
+import CaseStudies from "./pages/CaseStudies";
+import EditorialGuidelines from "./pages/EditorialGuidelines";
 import Navbar from "./components/Navbar";
 import { ScrollToTop } from "./components/ScrollToTop";
 
@@ -112,6 +116,10 @@ const App = () => (
             <Route path="/ai-humanizer-for-writers" element={<AIHumanizerForWriters />} />
             <Route path="/academic-ai-writing-tool" element={<AcademicAIWritingTool />} />
             <Route path="/ai-checker" element={<AIChecker />} />
+            <Route path="/team" element={<Team />} />
+            <Route path="/technology" element={<Technology />} />
+            <Route path="/case-studies" element={<CaseStudies />} />
+            <Route path="/editorial-guidelines" element={<EditorialGuidelines />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>

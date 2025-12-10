@@ -111,6 +111,18 @@ const Footer = () => {
               <Link to="/about" className="text-muted-foreground hover:text-primary transition-colors">
                 About Us
               </Link>
+              <Link to="/team" className="text-muted-foreground hover:text-primary transition-colors">
+                Our Team
+              </Link>
+              <Link to="/technology" className="text-muted-foreground hover:text-primary transition-colors">
+                Our Technology
+              </Link>
+              <Link to="/case-studies" className="text-muted-foreground hover:text-primary transition-colors">
+                Case Studies
+              </Link>
+              <Link to="/editorial-guidelines" className="text-muted-foreground hover:text-primary transition-colors">
+                Editorial Guidelines
+              </Link>
               <Link to="/contact" className="text-muted-foreground hover:text-primary transition-colors flex items-center gap-2">
                 <MessageSquare className="w-4 h-4" />
                 Contact Us

@@ -1095,6 +1095,33 @@ const Index = () => {
                 </Link>
               </div>
             </div>
+
+            {/* Meet Our Team Section */}
+            <div className="mt-16 max-w-4xl mx-auto">
+              <Card className="p-8 bg-gradient-to-br from-card to-muted/30 border-border/50">
+                <div className="flex flex-col md:flex-row items-center gap-6">
+                  <div className="flex -space-x-4">
+                    {["SC", "MW", "ER", "JO"].map((initials, i) => (
+                      <div 
+                        key={i} 
+                        className="w-14 h-14 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center text-sm font-bold text-primary-foreground border-4 border-background"
+                      >
+                        {initials}
+                      </div>
+                    ))}
+                  </div>
+                  <div className="text-center md:text-left flex-1">
+                    <h3 className="text-xl font-bold mb-2">Built by Experts in AI & Linguistics</h3>
+                    <p className="text-muted-foreground text-sm mb-3">
+                      Our team includes Ph.D. researchers from MIT, Stanford, and Carnegie Mellon with decades of experience in NLP and machine learning.
+                    </p>
+                    <Link to="/team" className="text-primary font-medium hover:underline inline-flex items-center gap-1">
+                      Meet our team <ArrowRight className="w-4 h-4" />
+                    </Link>
+                  </div>
+                </div>
+              </Card>
+            </div>
           </div>
         </section>
 

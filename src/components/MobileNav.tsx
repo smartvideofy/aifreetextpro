@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, Home, Info, DollarSign, BookOpen, Mail, ArrowRight } from "lucide-react";
+import { Menu, Home, Info, DollarSign, BookOpen, Mail, ArrowRight, Users, Cpu, FileText, Shield, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger, SheetHeader, SheetTitle } from "@/components/ui/sheet";
 import { Separator } from "@/components/ui/separator";
@@ -12,12 +12,24 @@ const MobileNav = () => {
   
   const isActive = (path: string) => location.pathname === path;
   
-  const links = [
+  const mainLinks = [
     { to: "/", label: "Home", icon: Home },
-    { to: "/about", label: "About", icon: Info },
     { to: "/pricing", label: "Pricing", icon: DollarSign },
-    { to: "/blog", label: "Blog", icon: BookOpen },
+    { to: "/about", label: "About", icon: Info },
     { to: "/contact", label: "Contact", icon: Mail },
+  ];
+
+  const resourceLinks = [
+    { to: "/blog", label: "Blog", icon: BookOpen },
+    { to: "/team", label: "Our Team", icon: Users },
+    { to: "/technology", label: "Technology", icon: Cpu },
+    { to: "/case-studies", label: "Case Studies", icon: FileText },
+  ];
+
+  const toolLinks = [
+    { to: "/bypass-turnitin-ai-detection", label: "Bypass Turnitin", icon: Shield },
+    { to: "/bypass-gptzero-detection", label: "Bypass GPTZero", icon: Shield },
+    { to: "/bypass-originality-ai", label: "Bypass Originality.AI", icon: Shield },
   ];
   
   return (
@@ -39,8 +51,8 @@ const MobileNav = () => {
         </SheetHeader>
         
         <nav className="flex flex-col gap-1 p-4">
-          {/* Navigation Links */}
-          {links.map((link) => {
+          {/* Main Navigation Links */}
+          {mainLinks.map((link) => {
             const Icon = link.icon;
             return (
               <Link 
@@ -61,6 +73,60 @@ const MobileNav = () => {
                   {isActive(link.to) && (
                     <span className="ml-auto w-2 h-2 rounded-full bg-primary-foreground" />
                   )}
+                </Button>
+              </Link>
+            );
+          })}
+
+          {/* Resources Section */}
+          <Separator className="my-3" />
+          <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider px-3 mb-2">Resources</p>
+          {resourceLinks.map((link) => {
+            const Icon = link.icon;
+            return (
+              <Link 
+                key={link.to} 
+                to={link.to}
+                onClick={() => setOpen(false)}
+              >
+                <Button 
+                  variant={isActive(link.to) ? "default" : "ghost"}
+                  className={`w-full justify-start text-sm gap-3 ${
+                    isActive(link.to) 
+                      ? "bg-primary text-primary-foreground" 
+                      : "hover:bg-muted"
+                  }`}
+                >
+                  <Icon className="h-4 w-4" />
+                  {link.label}
+                  <ChevronRight className="h-4 w-4 ml-auto opacity-50" />
+                </Button>
+              </Link>
+            );
+          })}
+
+          {/* Tools Section */}
+          <Separator className="my-3" />
+          <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider px-3 mb-2">Bypass Tools</p>
+          {toolLinks.map((link) => {
+            const Icon = link.icon;
+            return (
+              <Link 
+                key={link.to} 
+                to={link.to}
+                onClick={() => setOpen(false)}
+              >
+                <Button 
+                  variant={isActive(link.to) ? "default" : "ghost"}
+                  className={`w-full justify-start text-sm gap-3 ${
+                    isActive(link.to) 
+                      ? "bg-primary text-primary-foreground" 
+                      : "hover:bg-muted"
+                  }`}
+                >
+                  <Icon className="h-4 w-4" />
+                  {link.label}
+                  <ChevronRight className="h-4 w-4 ml-auto opacity-50" />
                 </Button>
               </Link>
             );

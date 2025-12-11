@@ -1,11 +1,13 @@
 import { Helmet } from "react-helmet-async";
+import { Link } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Card } from "@/components/ui/card";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
+import { Button } from "@/components/ui/button";
 import { 
   Cpu, Brain, Layers, Zap, Shield, Target, 
-  BarChart3, RefreshCw, Lock, Eye, Sparkles, CheckCircle 
+  BarChart3, RefreshCw, Lock, Eye, Sparkles, CheckCircle, ArrowRight, Users 
 } from "lucide-react";
 
 const Technology = () => {
@@ -329,8 +331,49 @@ const Technology = () => {
           </div>
         </section>
 
-        {/* CTA */}
+        {/* Related Links */}
         <section className="py-16 md:py-24">
+          <div className="container mx-auto px-4">
+            <div className="max-w-5xl mx-auto">
+              <h2 className="text-2xl font-bold mb-8 text-center">Explore More</h2>
+              <div className="grid md:grid-cols-3 gap-6">
+                <Link to="/team" className="group">
+                  <Card className="p-6 h-full hover:shadow-lg transition-all border-border/50">
+                    <Users className="w-8 h-8 text-primary mb-3" />
+                    <h3 className="font-bold mb-2 group-hover:text-primary transition-colors">Meet Our Team</h3>
+                    <p className="text-sm text-muted-foreground mb-3">The experts behind our AI technology.</p>
+                    <span className="text-primary text-sm flex items-center gap-1">
+                      View team <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                    </span>
+                  </Card>
+                </Link>
+                <Link to="/case-studies" className="group">
+                  <Card className="p-6 h-full hover:shadow-lg transition-all border-border/50">
+                    <BarChart3 className="w-8 h-8 text-primary mb-3" />
+                    <h3 className="font-bold mb-2 group-hover:text-primary transition-colors">Case Studies</h3>
+                    <p className="text-sm text-muted-foreground mb-3">Real results from our customers.</p>
+                    <span className="text-primary text-sm flex items-center gap-1">
+                      See results <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                    </span>
+                  </Card>
+                </Link>
+                <Link to="/blog/how-ai-detectors-work" className="group">
+                  <Card className="p-6 h-full hover:shadow-lg transition-all border-border/50">
+                    <Brain className="w-8 h-8 text-primary mb-3" />
+                    <h3 className="font-bold mb-2 group-hover:text-primary transition-colors">How Detectors Work</h3>
+                    <p className="text-sm text-muted-foreground mb-3">Deep dive into AI detection methods.</p>
+                    <span className="text-primary text-sm flex items-center gap-1">
+                      Read article <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                    </span>
+                  </Card>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* CTA */}
+        <section className="py-16 md:py-24 bg-gradient-to-b from-muted/30 to-background">
           <div className="container mx-auto px-4">
             <Card className="max-w-4xl mx-auto p-10 text-center bg-gradient-to-br from-primary via-primary to-secondary border-0 text-primary-foreground">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">Experience the Technology</h2>

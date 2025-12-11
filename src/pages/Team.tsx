@@ -1,14 +1,16 @@
 import { Helmet } from "react-helmet-async";
+import { Link } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Card } from "@/components/ui/card";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
-import { Linkedin, Twitter, BookOpen, Award, GraduationCap, Code } from "lucide-react";
+import { Linkedin, Twitter, BookOpen, Award, GraduationCap, Code, ArrowRight } from "lucide-react";
 
 const teamMembers = [
   {
     name: "Dr. Sarah Chen",
     role: "Founder & CEO",
+    slug: "sarah-chen",
     initials: "SC",
     bio: "Former computational linguistics researcher at MIT with 12+ years in NLP and AI. Sarah pioneered early work on stylometric analysis and authored 15+ peer-reviewed papers on machine learning applications in text analysis. She founded AI Free Text Pro to democratize access to advanced AI writing tools.",
     credentials: ["Ph.D. Computational Linguistics, MIT", "Former Research Lead at Google AI", "15+ Published Papers in NLP"],
@@ -19,6 +21,7 @@ const teamMembers = [
   {
     name: "Marcus Williams",
     role: "Chief Technology Officer",
+    slug: "marcus-williams",
     initials: "MW",
     bio: "15 years in software engineering with expertise in distributed systems and AI infrastructure. Marcus previously led engineering teams at Grammarly and built scalable NLP pipelines processing billions of documents. His architecture ensures our platform handles peak loads with sub-second response times.",
     credentials: ["M.S. Computer Science, Stanford", "Former Engineering Lead at Grammarly", "AWS Certified Solutions Architect"],
@@ -29,6 +32,7 @@ const teamMembers = [
   {
     name: "Dr. Emily Rodriguez",
     role: "Head of AI Research",
+    slug: "emily-rodriguez",
     initials: "ER",
     bio: "AI researcher specializing in transformer models and text generation. Emily's doctoral work focused on detecting synthetic text patterns, giving her unique insight into both AI detection and humanization. She leads our R&D team in developing next-generation rewriting algorithms.",
     credentials: ["Ph.D. Artificial Intelligence, Carnegie Mellon", "Former Researcher at OpenAI", "10+ Papers on Text Generation"],
@@ -39,6 +43,7 @@ const teamMembers = [
   {
     name: "James Okonkwo",
     role: "Lead Content Strategist",
+    slug: "james-okonkwo",
     initials: "JO",
     bio: "Award-winning journalist and content strategist with 10+ years in digital publishing. James brings real-world writing expertise to our product development, ensuring our humanization algorithms produce content that meets professional editorial standards.",
     credentials: ["M.A. Journalism, Columbia University", "Former Senior Editor at Forbes", "PRSA Award Winner"],
@@ -49,6 +54,7 @@ const teamMembers = [
   {
     name: "Dr. Anika Patel",
     role: "Lead Data Scientist",
+    slug: "anika-patel",
     initials: "AP",
     bio: "Specialist in statistical modeling and linguistic pattern recognition. Anika's research on writing style fingerprinting forms the foundation of our detection bypass technology. She continuously refines our models based on the latest AI detector developments.",
     credentials: ["Ph.D. Statistics, UC Berkeley", "Former Data Scientist at Amazon", "Expert in Linguistic Modeling"],
@@ -59,6 +65,7 @@ const teamMembers = [
   {
     name: "Thomas Müller",
     role: "Head of Customer Success",
+    slug: "thomas-mueller",
     initials: "TM",
     bio: "Customer experience leader with deep expertise in SaaS products and educational technology. Thomas ensures our users get maximum value from AI Free Text Pro, gathering feedback that directly influences product development.",
     credentials: ["MBA, INSEAD", "Former VP at Coursera", "Customer Success Specialist"],
@@ -169,7 +176,7 @@ const Team = () => {
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
               {teamMembers.map((member, index) => (
-                <Card key={index} className="p-6 hover:shadow-xl transition-all border-border/50 bg-gradient-to-br from-card to-card/80">
+                <Card key={index} id={member.slug} className="p-6 hover:shadow-xl transition-all border-border/50 bg-gradient-to-br from-card to-card/80 scroll-mt-24">
                   <div className="flex items-start gap-4 mb-4">
                     <div className="w-16 h-16 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center text-white font-bold text-xl flex-shrink-0">
                       {member.initials}
@@ -250,6 +257,44 @@ const Team = () => {
           </div>
         </section>
 
+        {/* Related Links Section */}
+        <section className="py-16 md:py-24 bg-gradient-to-b from-background to-muted/30">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto">
+              <h2 className="text-2xl font-bold mb-8 text-center">Learn More About Us</h2>
+              <div className="grid md:grid-cols-3 gap-6">
+                <Link to="/technology" className="group">
+                  <Card className="p-6 h-full hover:shadow-lg transition-all border-border/50">
+                    <h3 className="font-bold mb-2 group-hover:text-primary transition-colors">Our Technology</h3>
+                    <p className="text-sm text-muted-foreground mb-3">Discover how our AI humanization algorithms work.</p>
+                    <span className="text-primary text-sm flex items-center gap-1">
+                      Learn more <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                    </span>
+                  </Card>
+                </Link>
+                <Link to="/case-studies" className="group">
+                  <Card className="p-6 h-full hover:shadow-lg transition-all border-border/50">
+                    <h3 className="font-bold mb-2 group-hover:text-primary transition-colors">Case Studies</h3>
+                    <p className="text-sm text-muted-foreground mb-3">See real results from our customers.</p>
+                    <span className="text-primary text-sm flex items-center gap-1">
+                      View results <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                    </span>
+                  </Card>
+                </Link>
+                <Link to="/editorial-guidelines" className="group">
+                  <Card className="p-6 h-full hover:shadow-lg transition-all border-border/50">
+                    <h3 className="font-bold mb-2 group-hover:text-primary transition-colors">Editorial Standards</h3>
+                    <p className="text-sm text-muted-foreground mb-3">Our commitment to quality content.</p>
+                    <span className="text-primary text-sm flex items-center gap-1">
+                      Read guidelines <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                    </span>
+                  </Card>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Join Us CTA */}
         <section className="py-16 md:py-24">
           <div className="container mx-auto px-4">
@@ -258,12 +303,12 @@ const Team = () => {
               <p className="text-lg text-muted-foreground mb-6 max-w-2xl mx-auto">
                 We're always looking for talented individuals passionate about AI, writing, and making technology accessible to everyone.
               </p>
-              <a 
-                href="/contact" 
+              <Link 
+                to="/contact" 
                 className="inline-flex items-center justify-center px-6 py-3 rounded-lg bg-primary text-primary-foreground font-semibold hover:bg-primary/90 transition-colors"
               >
                 Get in Touch
-              </a>
+              </Link>
             </Card>
           </div>
         </section>

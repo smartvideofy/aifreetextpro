@@ -119,97 +119,97 @@ const Index = () => {
       
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="relative py-16 md:py-24 overflow-hidden">
+        <section className="relative py-10 md:py-24 overflow-hidden">
           <AnimatedBackground />
           
           <div className="container mx-auto px-4 relative z-10">
-            <div className="text-center space-y-8 max-w-4xl mx-auto">
+            <div className="text-center space-y-4 md:space-y-8 max-w-4xl mx-auto">
               {/* Social Proof Badge */}
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-muted/80 backdrop-blur border border-border/50 text-sm animate-fade-in">
-                <div className="flex -space-x-2">
+              <div className="inline-flex items-center gap-1.5 md:gap-2 px-3 md:px-4 py-1.5 md:py-2 rounded-full bg-muted/80 backdrop-blur border border-border/50 text-xs md:text-sm animate-fade-in">
+                <div className="flex -space-x-1.5 md:-space-x-2">
                   {["MR", "JC", "SP", "EW"].map((initials, i) => (
                     <div 
                       key={i} 
-                      className="w-6 h-6 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center text-[10px] font-bold text-primary-foreground border-2 border-background"
+                      className="w-5 h-5 md:w-6 md:h-6 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center text-[8px] md:text-[10px] font-bold text-primary-foreground border-2 border-background"
                     >
                       {initials}
                     </div>
                   ))}
                 </div>
                 <span className="text-muted-foreground">
-                  Trusted by <span className="font-semibold text-foreground">50,000+</span> writers
+                  <span className="font-semibold text-foreground">50K+</span> writers
                 </span>
                 <div className="flex gap-0.5">
                   {[1, 2, 3, 4, 5].map((i) => (
-                    <Star key={i} className="w-3 h-3 fill-amber-400 text-amber-400" />
+                    <Star key={i} className="w-2.5 h-2.5 md:w-3 md:h-3 fill-amber-400 text-amber-400" />
                   ))}
                 </div>
-                <span className="text-muted-foreground">4.8/5</span>
+                <span className="text-muted-foreground hidden sm:inline">4.8/5</span>
               </div>
 
-              <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold leading-tight animate-fade-in" style={{ animationDelay: "100ms" }}>
+              <h1 className="text-3xl sm:text-4xl md:text-7xl font-bold leading-tight animate-fade-in" style={{ animationDelay: "100ms" }}>
                 <span className="bg-gradient-to-r from-primary via-secondary to-primary bg-clip-text text-transparent bg-[length:200%_auto] animate-[gradient_8s_linear_infinite] drop-shadow-sm">
                   Free AI Detector & Humanizer
                 </span>
                 <br />
-                <span className="text-3xl sm:text-4xl md:text-5xl text-foreground">Detect AI Text & Make Content Human</span>
+                <span className="text-xl sm:text-2xl md:text-5xl text-foreground mt-2 block">Detect AI Text & Make Content Human</span>
               </h1>
               
-              <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto animate-fade-in" style={{ animationDelay: "200ms" }}>
-                Free AI content detector spots ChatGPT instantly with 98% accuracy. Transform AI text to human writing in 3 seconds. Join 50,000+ students, writers & professionals.
+              <p className="text-sm sm:text-base md:text-2xl text-muted-foreground max-w-3xl mx-auto animate-fade-in px-2" style={{ animationDelay: "200ms" }}>
+                Free AI detector spots ChatGPT with 98% accuracy. Transform AI text to human writing in 3 seconds. Join 50,000+ users.
               </p>
 
               {/* Enhanced Money-Back Guarantee Badge */}
               <div className="animate-fade-in" style={{ animationDelay: "300ms" }}>
-                <Link to="/guarantee" className="inline-flex items-center gap-3 px-6 py-3 bg-gradient-to-r from-primary/20 to-secondary/20 rounded-full border border-primary/30 hover:border-primary/50 transition-all group animate-glow-pulse">
-                  <Shield className="w-6 h-6 text-primary" />
+                <Link to="/guarantee" className="inline-flex items-center gap-2 md:gap-3 px-4 md:px-6 py-2 md:py-3 bg-gradient-to-r from-primary/20 to-secondary/20 rounded-full border border-primary/30 hover:border-primary/50 transition-all group animate-glow-pulse">
+                  <Shield className="w-5 h-5 md:w-6 md:h-6 text-primary" />
                   <div className="text-left">
-                    <span className="text-sm font-bold text-foreground block">100% Money-Back Guarantee</span>
-                    <span className="text-xs text-muted-foreground">If flagged by any AI detector, full refund</span>
+                    <span className="text-xs md:text-sm font-bold text-foreground block">100% Money-Back Guarantee</span>
+                    <span className="text-[10px] md:text-xs text-muted-foreground hidden sm:block">If flagged by any AI detector, full refund</span>
                   </div>
-                  <ArrowRight className="w-4 h-4 text-primary group-hover:translate-x-1 transition-transform" />
+                  <ArrowRight className="w-3 h-3 md:w-4 md:h-4 text-primary group-hover:translate-x-1 transition-transform" />
                 </Link>
               </div>
 
-              <div className="flex flex-wrap items-center justify-center gap-6 text-sm text-muted-foreground pt-2 animate-fade-in" style={{ animationDelay: "400ms" }}>
-                <div className="flex items-center gap-2">
-                  <CheckCircle className="w-5 h-5 text-primary" />
+              <div className="grid grid-cols-2 md:flex md:flex-wrap items-center justify-center gap-3 md:gap-6 text-xs md:text-sm text-muted-foreground pt-2 animate-fade-in" style={{ animationDelay: "400ms" }}>
+                <div className="flex items-center gap-1.5 md:gap-2 justify-center">
+                  <CheckCircle className="w-4 h-4 md:w-5 md:h-5 text-primary flex-shrink-0" />
                   <span className="font-medium">Free Forever</span>
                 </div>
-                <div className="flex items-center gap-2">
-                  <CheckCircle className="w-5 h-5 text-primary" />
+                <div className="flex items-center gap-1.5 md:gap-2 justify-center">
+                  <CheckCircle className="w-4 h-4 md:w-5 md:h-5 text-primary flex-shrink-0" />
                   <span className="font-medium">No Credit Card</span>
                 </div>
-                <div className="flex items-center gap-2">
-                  <CheckCircle className="w-5 h-5 text-primary" />
+                <div className="flex items-center gap-1.5 md:gap-2 justify-center">
+                  <CheckCircle className="w-4 h-4 md:w-5 md:h-5 text-primary flex-shrink-0" />
                   <span className="font-medium">98% Accuracy</span>
                 </div>
-                <div className="flex items-center gap-2">
-                  <CheckCircle className="w-5 h-5 text-primary" />
+                <div className="flex items-center gap-1.5 md:gap-2 justify-center">
+                  <CheckCircle className="w-4 h-4 md:w-5 md:h-5 text-primary flex-shrink-0" />
                   <span className="font-medium">Instant Results</span>
                 </div>
               </div>
               
-              <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4 animate-fade-in" style={{ animationDelay: "500ms" }}>
+              <div className="flex flex-col gap-3 md:flex-row md:gap-4 justify-center pt-2 md:pt-4 animate-fade-in" style={{ animationDelay: "500ms" }}>
                 <a href="https://app.aifreetextpro.com/" className="w-full sm:w-auto">
                   <Button 
                     size="lg" 
-                    className="text-base sm:text-lg px-8 sm:px-10 py-6 sm:py-7 bg-gradient-to-r from-primary via-primary/90 to-secondary hover:opacity-90 shadow-xl hover:shadow-2xl shadow-primary/30 group w-full transition-all font-bold"
+                    className="text-sm sm:text-base md:text-lg px-6 sm:px-10 py-5 sm:py-7 bg-gradient-to-r from-primary via-primary/90 to-secondary hover:opacity-90 shadow-xl hover:shadow-2xl shadow-primary/30 group w-full transition-all font-bold"
                   >
-                    <Pen className="mr-2 h-5 w-5" />
+                    <Pen className="mr-2 h-4 w-4 md:h-5 md:w-5" />
                     Try Free — Instant Access
-                    <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                    <ArrowRight className="ml-2 h-4 w-4 md:h-5 md:w-5 group-hover:translate-x-1 transition-transform" />
                   </Button>
                 </a>
                 <a href="https://app.aifreetextpro.com/detector" className="w-full sm:w-auto">
                   <Button 
                     size="lg"
                     variant="outline"
-                    className="text-base sm:text-lg px-8 sm:px-10 py-6 sm:py-7 group w-full transition-all font-bold border-2 hover:bg-muted/50"
+                    className="text-sm sm:text-base md:text-lg px-6 sm:px-10 py-5 sm:py-7 group w-full transition-all font-bold border-2 hover:bg-muted/50"
                   >
-                    <BookOpen className="mr-2 h-5 w-5" />
+                    <BookOpen className="mr-2 h-4 w-4 md:h-5 md:w-5" />
                     See Live Demo
-                    <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                    <ArrowRight className="ml-2 h-4 w-4 md:h-5 md:w-5 group-hover:translate-x-1 transition-transform" />
                   </Button>
                 </a>
               </div>
@@ -221,75 +221,75 @@ const Index = () => {
         <TrustBadges />
 
         {/* Problem-Solution Section */}
-        <section className="py-12 md:py-20 bg-gradient-to-b from-background to-card/20">
+        <section className="py-8 md:py-20 bg-gradient-to-b from-background to-card/20">
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
-              <div className="text-center mb-12">
-                <h2 className="text-3xl md:text-5xl font-bold mb-6">Why AI Free Text Pro?</h2>
+              <div className="text-center mb-8 md:mb-12">
+                <h2 className="text-2xl md:text-5xl font-bold mb-3 md:mb-6">Why AI Free Text Pro?</h2>
               </div>
               
-              <div className="grid md:grid-cols-2 gap-12 items-center">
-                <div className="space-y-6">
-                  <h3 className="text-2xl font-bold text-destructive">The Problem</h3>
-                  <div className="space-y-4">
-                    <div className="flex items-start gap-3">
-                      <div className="w-6 h-6 rounded-full bg-destructive/20 flex items-center justify-center flex-shrink-0 mt-1">
-                        <span className="text-destructive text-sm">✗</span>
+              <div className="grid md:grid-cols-2 gap-6 md:gap-12 items-start">
+                <div className="space-y-4 md:space-y-6">
+                  <h3 className="text-lg md:text-2xl font-bold text-destructive">The Problem</h3>
+                  <div className="space-y-3 md:space-y-4">
+                    <div className="flex items-start gap-2 md:gap-3">
+                      <div className="w-5 h-5 md:w-6 md:h-6 rounded-full bg-destructive/20 flex items-center justify-center flex-shrink-0 mt-0.5">
+                        <span className="text-destructive text-xs md:text-sm">✗</span>
                       </div>
-                      <p className="text-muted-foreground">AI detectors flagging legitimate content</p>
+                      <p className="text-sm md:text-base text-muted-foreground">AI detectors flagging legitimate content</p>
                     </div>
-                    <div className="flex items-start gap-3">
-                      <div className="w-6 h-6 rounded-full bg-destructive/20 flex items-center justify-center flex-shrink-0 mt-1">
-                        <span className="text-destructive text-sm">✗</span>
+                    <div className="flex items-start gap-2 md:gap-3">
+                      <div className="w-5 h-5 md:w-6 md:h-6 rounded-full bg-destructive/20 flex items-center justify-center flex-shrink-0 mt-0.5">
+                        <span className="text-destructive text-xs md:text-sm">✗</span>
                       </div>
-                      <p className="text-muted-foreground">Robotic, unnatural AI-generated text</p>
+                      <p className="text-sm md:text-base text-muted-foreground">Robotic, unnatural AI-generated text</p>
                     </div>
-                    <div className="flex items-start gap-3">
-                      <div className="w-6 h-6 rounded-full bg-destructive/20 flex items-center justify-center flex-shrink-0 mt-1">
-                        <span className="text-destructive text-sm">✗</span>
+                    <div className="flex items-start gap-2 md:gap-3">
+                      <div className="w-5 h-5 md:w-6 md:h-6 rounded-full bg-destructive/20 flex items-center justify-center flex-shrink-0 mt-0.5">
+                        <span className="text-destructive text-xs md:text-sm">✗</span>
                       </div>
-                      <p className="text-muted-foreground">Risk of academic or professional consequences</p>
+                      <p className="text-sm md:text-base text-muted-foreground">Risk of academic or professional consequences</p>
                     </div>
-                    <div className="flex items-start gap-3">
-                      <div className="w-6 h-6 rounded-full bg-destructive/20 flex items-center justify-center flex-shrink-0 mt-1">
-                        <span className="text-destructive text-sm">✗</span>
+                    <div className="flex items-start gap-2 md:gap-3">
+                      <div className="w-5 h-5 md:w-6 md:h-6 rounded-full bg-destructive/20 flex items-center justify-center flex-shrink-0 mt-0.5">
+                        <span className="text-destructive text-xs md:text-sm">✗</span>
                       </div>
-                      <p className="text-muted-foreground">Time-consuming manual editing</p>
+                      <p className="text-sm md:text-base text-muted-foreground">Time-consuming manual editing</p>
                     </div>
                   </div>
                 </div>
 
-                <div className="space-y-6">
-                  <h3 className="text-2xl font-bold text-primary">The Solution</h3>
-                  <div className="space-y-4">
-                    <div className="flex items-start gap-3">
-                      <CheckCircle className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
+                <div className="space-y-4 md:space-y-6">
+                  <h3 className="text-lg md:text-2xl font-bold text-primary">The Solution</h3>
+                  <div className="space-y-3 md:space-y-4">
+                    <div className="flex items-start gap-2 md:gap-3">
+                      <CheckCircle className="w-5 h-5 md:w-6 md:h-6 text-primary flex-shrink-0 mt-0.5" />
                       <div>
-                        <p className="font-semibold mb-1">Dual Functionality</p>
-                        <p className="text-sm text-muted-foreground">Both detect AND humanize in one platform</p>
+                        <p className="font-semibold mb-0.5 text-sm md:text-base">Dual Functionality</p>
+                        <p className="text-xs md:text-sm text-muted-foreground">Both detect AND humanize in one platform</p>
                       </div>
                     </div>
-                    <div className="flex items-start gap-3">
-                      <CheckCircle className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
+                    <div className="flex items-start gap-2 md:gap-3">
+                      <CheckCircle className="w-5 h-5 md:w-6 md:h-6 text-primary flex-shrink-0 mt-0.5" />
                       <div>
-                        <p className="font-semibold mb-1">Bypass All Major Detectors</p>
-                        <p className="text-sm text-muted-foreground">
-                          Works against <Link to="/bypass-gptzero-detection" className="text-primary hover:underline">GPTZero</Link>, <Link to="/bypass-turnitin-ai-detection" className="text-primary hover:underline">Turnitin</Link>, <Link to="/bypass-originality-ai" className="text-primary hover:underline">Originality.AI</Link>, ZeroGPT, Copyleaks & more
+                        <p className="font-semibold mb-0.5 text-sm md:text-base">Bypass All Major Detectors</p>
+                        <p className="text-xs md:text-sm text-muted-foreground">
+                          Works against <Link to="/bypass-gptzero-detection" className="text-primary hover:underline">GPTZero</Link>, <Link to="/bypass-turnitin-ai-detection" className="text-primary hover:underline">Turnitin</Link>, <Link to="/bypass-originality-ai" className="text-primary hover:underline">Originality.AI</Link> & more
                         </p>
                       </div>
                     </div>
-                    <div className="flex items-start gap-3">
-                      <CheckCircle className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
+                    <div className="flex items-start gap-2 md:gap-3">
+                      <CheckCircle className="w-5 h-5 md:w-6 md:h-6 text-primary flex-shrink-0 mt-0.5" />
                       <div>
-                        <p className="font-semibold mb-1">Natural Humanization</p>
-                        <p className="text-sm text-muted-foreground">4 writing styles: Professional, Academic, Creative, Casual</p>
+                        <p className="font-semibold mb-0.5 text-sm md:text-base">Natural Humanization</p>
+                        <p className="text-xs md:text-sm text-muted-foreground">4 writing styles: Professional, Academic, Creative, Casual</p>
                       </div>
                     </div>
-                    <div className="flex items-start gap-3">
-                      <CheckCircle className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
+                    <div className="flex items-start gap-2 md:gap-3">
+                      <CheckCircle className="w-5 h-5 md:w-6 md:h-6 text-primary flex-shrink-0 mt-0.5" />
                       <div>
-                        <p className="font-semibold mb-1">File Support</p>
-                        <p className="text-sm text-muted-foreground">PDF, DOCX, TXT uploads up to 10MB</p>
+                        <p className="font-semibold mb-0.5 text-sm md:text-base">File Support</p>
+                        <p className="text-xs md:text-sm text-muted-foreground">PDF, DOCX, TXT uploads up to 10MB</p>
                       </div>
                     </div>
                   </div>
@@ -303,48 +303,48 @@ const Index = () => {
         <InteractiveDemo />
 
         {/* How It Works */}
-        <section className="py-20 md:py-28 bg-card/20">
+        <section className="py-12 md:py-28 bg-card/20">
           <div className="container mx-auto px-4">
-            <h2 className="text-4xl md:text-5xl font-bold text-center mb-20">
+            <h2 className="text-2xl md:text-5xl font-bold text-center mb-10 md:mb-20">
               How AI Free Text Pro Works
             </h2>
             
-            <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-              <div className="text-center space-y-4 group">
-                <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-primary/20 to-primary/10 flex items-center justify-center mx-auto group-hover:scale-110 transition-transform">
-                  <FileText className="w-10 h-10 text-primary" />
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 max-w-5xl mx-auto">
+              <div className="text-center space-y-3 md:space-y-4 group">
+                <div className="w-14 h-14 md:w-20 md:h-20 rounded-2xl bg-gradient-to-br from-primary/20 to-primary/10 flex items-center justify-center mx-auto group-hover:scale-110 transition-transform">
+                  <FileText className="w-7 h-7 md:w-10 md:h-10 text-primary" />
                 </div>
-                <div className="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center mx-auto">
-                  <span className="text-lg font-bold text-primary">1</span>
+                <div className="w-6 h-6 md:w-8 md:h-8 rounded-full bg-primary/20 flex items-center justify-center mx-auto">
+                  <span className="text-sm md:text-lg font-bold text-primary">1</span>
                 </div>
-                <h3 className="text-xl font-semibold">Input Your Content</h3>
-                <p className="text-muted-foreground">
+                <h3 className="text-base md:text-xl font-semibold">Input Your Content</h3>
+                <p className="text-muted-foreground text-sm md:text-base">
                   Import or paste your text directly into the intuitive writing workspace.
                 </p>
               </div>
 
-              <div className="text-center space-y-4 group">
-                <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-secondary/20 to-secondary/10 flex items-center justify-center mx-auto group-hover:scale-110 transition-transform">
-                  <Brain className="w-10 h-10 text-secondary" />
+              <div className="text-center space-y-3 md:space-y-4 group">
+                <div className="w-14 h-14 md:w-20 md:h-20 rounded-2xl bg-gradient-to-br from-secondary/20 to-secondary/10 flex items-center justify-center mx-auto group-hover:scale-110 transition-transform">
+                  <Brain className="w-7 h-7 md:w-10 md:h-10 text-secondary" />
                 </div>
-                <div className="w-8 h-8 rounded-full bg-secondary/20 flex items-center justify-center mx-auto">
-                  <span className="text-lg font-bold text-secondary">2</span>
+                <div className="w-6 h-6 md:w-8 md:h-8 rounded-full bg-secondary/20 flex items-center justify-center mx-auto">
+                  <span className="text-sm md:text-lg font-bold text-secondary">2</span>
                 </div>
-                <h3 className="text-xl font-semibold">Smart Analysis & Refinement</h3>
-                <p className="text-muted-foreground">
-                  Advanced AI analyzes patterns and suggests improvements for authenticity and readability.
+                <h3 className="text-base md:text-xl font-semibold">Smart Analysis</h3>
+                <p className="text-muted-foreground text-sm md:text-base">
+                  Advanced AI analyzes patterns and suggests improvements for authenticity.
                 </p>
               </div>
 
-              <div className="text-center space-y-4 group">
-                <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-primary/20 to-primary/10 flex items-center justify-center mx-auto group-hover:scale-110 transition-transform">
-                  <Sparkles className="w-10 h-10 text-primary" />
+              <div className="text-center space-y-3 md:space-y-4 group">
+                <div className="w-14 h-14 md:w-20 md:h-20 rounded-2xl bg-gradient-to-br from-primary/20 to-primary/10 flex items-center justify-center mx-auto group-hover:scale-110 transition-transform">
+                  <Sparkles className="w-7 h-7 md:w-10 md:h-10 text-primary" />
                 </div>
-                <div className="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center mx-auto">
-                  <span className="text-lg font-bold text-primary">3</span>
+                <div className="w-6 h-6 md:w-8 md:h-8 rounded-full bg-primary/20 flex items-center justify-center mx-auto">
+                  <span className="text-sm md:text-lg font-bold text-primary">3</span>
                 </div>
-                <h3 className="text-xl font-semibold">Polish & Publish</h3>
-                <p className="text-muted-foreground">
+                <h3 className="text-base md:text-xl font-semibold">Polish & Publish</h3>
+                <p className="text-muted-foreground text-sm md:text-base">
                   Transform your content into polished, authentic writing ready for publication.
                 </p>
               </div>

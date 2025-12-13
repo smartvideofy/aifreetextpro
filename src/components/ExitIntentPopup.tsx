@@ -55,12 +55,12 @@ const ExitIntentPopup = () => {
   if (!isVisible) return null;
 
   return (
-    <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-background/80 backdrop-blur-sm animate-in fade-in duration-300">
-      <Card className="relative max-w-lg w-full p-8 shadow-2xl border-primary/20">
+    <div className="fixed inset-0 z-[100] flex items-center justify-center p-3 md:p-4 bg-background/80 backdrop-blur-sm animate-in fade-in duration-300">
+      <Card className="relative max-w-lg w-full p-5 md:p-8 shadow-2xl border-primary/20">
         <Button
           variant="ghost"
           size="icon"
-          className="absolute top-4 right-4 h-8 w-8"
+          className="absolute top-3 right-3 md:top-4 md:right-4 h-7 w-7 md:h-8 md:w-8"
           onClick={handleDismiss}
           aria-label="Close popup"
         >
@@ -68,62 +68,62 @@ const ExitIntentPopup = () => {
         </Button>
 
         {!isSubmitted ? (
-          <div className="space-y-6 text-center">
-            <div className="w-16 h-16 rounded-full bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center mx-auto">
-              <Gift className="w-8 h-8 text-primary" />
+          <div className="space-y-4 md:space-y-6 text-center">
+            <div className="w-12 h-12 md:w-16 md:h-16 rounded-full bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center mx-auto">
+              <Gift className="w-6 h-6 md:w-8 md:h-8 text-primary" />
             </div>
 
-            <div className="space-y-2">
-              <h2 className="text-2xl font-bold">Wait! Don't Leave Empty-Handed</h2>
-              <p className="text-muted-foreground">
-                Get our exclusive guide: <span className="font-semibold text-foreground">"10 Secrets to Make AI Content Undetectable"</span> — absolutely free!
+            <div className="space-y-1.5 md:space-y-2">
+              <h2 className="text-xl md:text-2xl font-bold">Wait! Don't Leave Empty-Handed</h2>
+              <p className="text-sm md:text-base text-muted-foreground">
+                Get our exclusive guide: <span className="font-semibold text-foreground">"10 Secrets to Make AI Content Undetectable"</span>
               </p>
             </div>
 
-            <div className="bg-muted/50 rounded-lg p-4 space-y-2">
-              <div className="flex items-center gap-2 text-sm">
-                <CheckCircle className="w-4 h-4 text-primary flex-shrink-0" />
+            <div className="bg-muted/50 rounded-lg p-3 md:p-4 space-y-1.5 md:space-y-2 text-left">
+              <div className="flex items-center gap-2 text-xs md:text-sm">
+                <CheckCircle className="w-3.5 h-3.5 md:w-4 md:h-4 text-primary flex-shrink-0" />
                 <span>Bypass Turnitin, GPTZero & more</span>
               </div>
-              <div className="flex items-center gap-2 text-sm">
-                <CheckCircle className="w-4 h-4 text-primary flex-shrink-0" />
+              <div className="flex items-center gap-2 text-xs md:text-sm">
+                <CheckCircle className="w-3.5 h-3.5 md:w-4 md:h-4 text-primary flex-shrink-0" />
                 <span>Step-by-step humanization techniques</span>
               </div>
-              <div className="flex items-center gap-2 text-sm">
-                <CheckCircle className="w-4 h-4 text-primary flex-shrink-0" />
+              <div className="flex items-center gap-2 text-xs md:text-sm">
+                <CheckCircle className="w-3.5 h-3.5 md:w-4 md:h-4 text-primary flex-shrink-0" />
                 <span>Pro tips from AI detection experts</span>
               </div>
             </div>
 
-            <form onSubmit={handleSubmit} className="space-y-4">
+            <form onSubmit={handleSubmit} className="space-y-3 md:space-y-4">
               <Input
                 type="email"
                 placeholder="Enter your email address"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
-                className="text-center"
+                className="text-center text-sm py-5"
               />
-              <Button type="submit" className="w-full bg-gradient-to-r from-primary to-secondary font-semibold group">
+              <Button type="submit" className="w-full bg-gradient-to-r from-primary to-secondary font-semibold group py-5 text-sm md:text-base">
                 <Sparkles className="mr-2 h-4 w-4" />
                 Get Free Guide
                 <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
               </Button>
             </form>
 
-            <p className="text-xs text-muted-foreground">
-              No spam. Unsubscribe anytime. By subscribing, you agree to our Privacy Policy.
+            <p className="text-[10px] md:text-xs text-muted-foreground">
+              No spam. Unsubscribe anytime.
             </p>
           </div>
         ) : (
-          <div className="space-y-6 text-center py-4">
-            <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto">
-              <CheckCircle className="w-8 h-8 text-primary" />
+          <div className="space-y-4 md:space-y-6 text-center py-3 md:py-4">
+            <div className="w-12 h-12 md:w-16 md:h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto">
+              <CheckCircle className="w-6 h-6 md:w-8 md:h-8 text-primary" />
             </div>
-            <div className="space-y-2">
-              <h2 className="text-2xl font-bold text-primary">Check Your Inbox!</h2>
-              <p className="text-muted-foreground">
-                Your free guide is on its way. Check your email to access "10 Secrets to Make AI Content Undetectable".
+            <div className="space-y-1.5 md:space-y-2">
+              <h2 className="text-xl md:text-2xl font-bold text-primary">Check Your Inbox!</h2>
+              <p className="text-sm md:text-base text-muted-foreground">
+                Your free guide is on its way.
               </p>
             </div>
           </div>

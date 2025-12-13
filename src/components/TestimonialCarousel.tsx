@@ -65,8 +65,19 @@ const testimonials: Testimonial[] = [
 const TestimonialCarousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);
+  const [itemsPerView, setItemsPerView] = useState(1);
 
-  const itemsPerView = typeof window !== "undefined" && window.innerWidth >= 768 ? 3 : 1;
+  // Handle responsive items per view
+  useEffect(() => {
+    const updateItemsPerView = () => {
+      setItemsPerView(window.innerWidth >= 768 ? 3 : 1);
+    };
+    
+    updateItemsPerView();
+    window.addEventListener('resize', updateItemsPerView);
+    return () => window.removeEventListener('resize', updateItemsPerView);
+  }, []);
+
   const maxIndex = Math.max(0, testimonials.length - itemsPerView);
 
   useEffect(() => {

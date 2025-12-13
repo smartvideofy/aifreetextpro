@@ -16,10 +16,11 @@ const InteractiveDemo = () => {
     setIsAnalyzing(true);
     setResult(null);
     
-    // Simulate detection
+    // Simulate detection with slight randomness for realism
     setTimeout(() => {
       setIsAnalyzing(false);
-      setResult({ type: "detect", score: 87 });
+      const baseScore = 85 + Math.floor(Math.random() * 10);
+      setResult({ type: "detect", score: baseScore });
     }, 1500);
   };
 
@@ -56,9 +57,14 @@ const InteractiveDemo = () => {
             <div className="space-y-4">
               <div className="flex items-center justify-between">
                 <label className="text-sm font-medium text-foreground">Your Text</label>
-                <Button variant="ghost" size="sm" onClick={handleTrySample} className="text-xs text-muted-foreground hover:text-primary">
-                  Try sample text
-                </Button>
+                <div className="flex items-center gap-3">
+                  <span className="text-xs text-muted-foreground">
+                    {text.trim().split(/\s+/).filter(Boolean).length} words / {text.length} chars
+                  </span>
+                  <Button variant="ghost" size="sm" onClick={handleTrySample} className="text-xs text-muted-foreground hover:text-primary">
+                    Try sample text
+                  </Button>
+                </div>
               </div>
               
               <Textarea 
@@ -66,6 +72,7 @@ const InteractiveDemo = () => {
                 value={text}
                 onChange={(e) => { setText(e.target.value); setResult(null); }}
                 className="min-h-[140px] resize-none bg-background/50 border-border/50 focus:border-primary transition-colors"
+                maxLength={5000}
               />
               
               <div className="flex flex-col sm:flex-row gap-3">

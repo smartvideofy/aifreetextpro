@@ -72,35 +72,37 @@ const AnimatedStats = () => {
   }, []);
 
   return (
-    <section ref={sectionRef} className="py-16 md:py-20 bg-gradient-to-b from-card/10 to-background">
+    <section ref={sectionRef} className="py-10 md:py-20 bg-gradient-to-b from-card/10 to-background">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Trusted by Writers Worldwide</h2>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+        <div className="text-center mb-8 md:mb-16">
+          <h2 className="text-2xl md:text-4xl font-bold mb-3 md:mb-4">Trusted by Writers Worldwide</h2>
+          <p className="text-muted-foreground text-sm md:text-lg max-w-2xl mx-auto">
             Join thousands of professionals, students, and creators who rely on AI Free Text Pro
           </p>
         </div>
         
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-5xl mx-auto">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 max-w-5xl mx-auto">
           {stats.map((stat, index) => (
             <div 
               key={index} 
-              className={`text-center space-y-2 transition-all duration-700 ${
+              className={`text-center space-y-1 md:space-y-2 transition-all duration-700 ${
                 isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
               }`}
               style={{ transitionDelay: `${index * 100}ms` }}
             >
-              <div className={`w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3 ${
+              <div className={`w-12 h-12 md:w-16 md:h-16 rounded-full flex items-center justify-center mx-auto mb-2 md:mb-3 ${
                 stat.color === "primary" ? "bg-primary/10 text-primary" : "bg-secondary/10 text-secondary"
               }`}>
-                {stat.icon}
+                <div className="w-6 h-6 md:w-8 md:h-8">
+                  {stat.icon}
+                </div>
               </div>
-              <div className={`text-4xl font-bold ${
+              <div className={`text-2xl md:text-4xl font-bold ${
                 stat.color === "primary" ? "text-primary" : "text-secondary"
               }`}>
                 <AnimatedCounter end={stat.value} suffix={stat.suffix} isVisible={isVisible} />
               </div>
-              <div className="text-sm text-muted-foreground">{stat.label}</div>
+              <div className="text-[10px] md:text-sm text-muted-foreground">{stat.label}</div>
             </div>
           ))}
         </div>

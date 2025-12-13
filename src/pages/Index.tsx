@@ -15,6 +15,9 @@ import TestimonialCarousel from "@/components/TestimonialCarousel";
 import AnimatedStats from "@/components/AnimatedStats";
 import ScrollToTopButton from "@/components/ScrollToTopButton";
 import StickyHeaderCTA from "@/components/StickyHeaderCTA";
+import TrustBadges from "@/components/TrustBadges";
+import NewsletterSignup from "@/components/NewsletterSignup";
+import ExitIntentPopup from "@/components/ExitIntentPopup";
 
 const Index = () => {
   return (
@@ -112,6 +115,7 @@ const Index = () => {
       <Navbar />
       <StickyHeaderCTA />
       <ScrollToTopButton />
+      <ExitIntentPopup />
       
       <main className="flex-1">
         {/* Hero Section */}
@@ -212,6 +216,9 @@ const Index = () => {
             </div>
           </div>
         </section>
+
+        {/* Trust Badges */}
+        <TrustBadges />
 
         {/* Problem-Solution Section */}
         <section className="py-12 md:py-20 bg-gradient-to-b from-background to-card/20">
@@ -531,6 +538,9 @@ const Index = () => {
             </div>
           </div>
         </section>
+
+        {/* Testimonial Carousel */}
+        <TestimonialCarousel />
 
         {/* Why Choose AI Free Text Pro */}
         <section className="py-20 md:py-28 bg-card/20">
@@ -1124,6 +1134,9 @@ const Index = () => {
             </div>
           </div>
         </section>
+
+        {/* Newsletter Signup */}
+        <NewsletterSignup />
 
         {/* Enhanced FAQ Section */}
         <EnhancedFAQ />

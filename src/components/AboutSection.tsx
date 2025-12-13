@@ -161,8 +161,8 @@ const AboutSection = () => {
             human.
           </p>
           <a
-            href="/"
-            className="inline-block px-6 py-3 bg-primary text-white rounded-full font-medium hover:opacity-90 transition"
+            href="https://app.aifreetextpro.com/"
+            className="inline-block px-6 py-3 bg-primary text-primary-foreground rounded-full font-medium hover:opacity-90 transition shadow-lg"
           >
             Get Started Free
           </a>

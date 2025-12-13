@@ -8,15 +8,12 @@ const StickyHeaderCTA = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      // Show after scrolling past hero section (roughly 600px)
       setIsVisible(window.scrollY > 600);
     };
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-
-  if (!isVisible || isDismissed) return null;
 
   // Notify navbar about visibility state
   useEffect(() => {

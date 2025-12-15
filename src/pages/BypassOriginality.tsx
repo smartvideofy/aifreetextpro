@@ -11,14 +11,24 @@ const BypassOriginality = () => {
   return (
     <>
       <Helmet>
-        <title>Bypass Originality.AI Detection 2025 - 97.5% Success | AI Free Text Pro</title>
-        <meta name="description" content="Bypass Originality.AI detection with 97.5% success rate. Transform AI content to pass Originality.AI checks. Free test with proven strategies and live results." />
+        <title>Bypass Originality.AI [Tested Dec 2025] - 97.5% Pass Rate Free</title>
+        <meta name="description" content="Beat Originality.AI detection in seconds. 97.5% success rate tested Dec 2025. Free tool makes AI content undetectable. Live test results & instant access." />
         <meta name="keywords" content="bypass originality ai, originality ai bypass, pass originality ai check, humanize ai for originality, originality ai detector bypass" />
         <link rel="canonical" href="https://aifreetextpro.com/bypass-originality-ai" />
-        <meta property="og:title" content="Bypass Originality.AI Detection 2025 - 97.5% Success" />
-        <meta property="og:description" content="Bypass Originality.AI detection with proven techniques. 97.5% success rate in live tests. Transform AI content to pass checks." />
+        <meta property="og:title" content="Bypass Originality.AI [Tested Dec 2025] - 97.5% Pass Rate" />
+        <meta property="og:description" content="Beat Originality.AI detection in seconds. 97.5% success rate tested Dec 2025. Free tool makes AI content undetectable." />
         <meta property="og:url" content="https://aifreetextpro.com/bypass-originality-ai" />
         <meta property="og:type" content="website" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://aifreetextpro.com/" },
+              { "@type": "ListItem", "position": 2, "name": "Bypass Originality.AI", "item": "https://aifreetextpro.com/bypass-originality-ai" }
+            ]
+          })}
+        </script>
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
@@ -30,7 +40,7 @@ const BypassOriginality = () => {
               "name": "AI Free Text Pro"
             },
             "datePublished": "2025-01-11",
-            "dateModified": "2025-01-11"
+            "dateModified": "2025-12-15"
           })}
         </script>
         <script type="application/ld+json">

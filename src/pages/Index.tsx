@@ -24,15 +24,15 @@ const Index = () => {
     <div className="min-h-screen flex flex-col">
       <HowToSchema />
       <Helmet>
-        <title>Free AI Detector & Humanizer - Detect AI Text & Make Content Human (2025)</title>
-        <meta name="description" content="Transform AI text in 3 seconds with 98% accuracy. Free AI detector spots ChatGPT instantly. Humanize AI content naturally. Join 50,000+ users. Free forever, no credit card." />
-        <meta name="keywords" content="free ai detector, ai humanizer, detect ai text" />
+        <title>Free AI Detector & Humanizer - Bypass GPTZero, Turnitin [Dec 2025]</title>
+        <meta name="description" content="Free AI detector spots ChatGPT in 3 seconds. Humanize AI text to bypass Turnitin, GPTZero, Originality.AI. 98% accuracy. 50,000+ users. No credit card." />
+        <meta name="keywords" content="free ai detector, ai humanizer, detect ai text, bypass turnitin, bypass gptzero" />
         <link rel="canonical" href="https://aifreetextpro.com/" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="robots" content="index, follow" />
         <meta name="googlebot" content="index, follow" />
-        <meta property="og:title" content="Free AI Detector & Humanizer - Detect ChatGPT & Make Text Human (2025)" />
-        <meta property="og:description" content="Transform AI text in 3 seconds. Free AI detector + humanizer. Join 50,000+ users. 98% accuracy. Free forever." />
+        <meta property="og:title" content="Free AI Detector & Humanizer - Bypass GPTZero, Turnitin [Dec 2025]" />
+        <meta property="og:description" content="Free AI detector spots ChatGPT in 3 seconds. Humanize AI text to bypass Turnitin, GPTZero, Originality.AI. 98% accuracy." />
         <meta property="og:url" content="https://aifreetextpro.com/" />
         <meta property="og:type" content="website" />
         

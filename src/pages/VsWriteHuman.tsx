@@ -80,13 +80,23 @@ const VsWriteHuman = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <Helmet>
-        <title>AI Free Text Pro vs WriteHuman: Which AI Humanizer is Better? (2025)</title>
-        <meta name="description" content="Honest comparison of AI Free Text Pro vs WriteHuman. See side-by-side pricing, features, detection bypass rates, and real user reviews. AI Free Text Pro: 98% bypass rate, all-in-one tool. WriteHuman: requires separate detector." />
+        <title>AI Free Text Pro vs WriteHuman [Dec 2025] - Full Comparison</title>
+        <meta name="description" content="AI Free Text Pro vs WriteHuman comparison: 98% vs 92% bypass rate, built-in detector (WriteHuman needs separate tool), $4.99 vs $9/mo. See test results." />
         <meta name="keywords" content="ai free text pro vs writehuman, writehuman alternative, best ai humanizer, writehuman comparison, ai humanizer reviews" />
         <link rel="canonical" href="https://aifreetextpro.com/vs-writehuman" />
-        <meta property="og:title" content="AI Free Text Pro vs WriteHuman - Honest Comparison 2025" />
-        <meta property="og:description" content="Side-by-side comparison: AI Free Text Pro offers 98% bypass rate + built-in detector. WriteHuman requires separate tools. See pricing, features, test results." />
+        <meta property="og:title" content="AI Free Text Pro vs WriteHuman [Dec 2025] - Full Comparison" />
+        <meta property="og:description" content="AI Free Text Pro vs WriteHuman: 98% vs 92% bypass rate. Built-in detector vs separate tool. $4.99 vs $9/mo. See comparison." />
         <meta property="og:url" content="https://aifreetextpro.com/vs-writehuman" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://aifreetextpro.com/" },
+              { "@type": "ListItem", "position": 2, "name": "AI Free Text Pro vs WriteHuman", "item": "https://aifreetextpro.com/vs-writehuman" }
+            ]
+          })}
+        </script>
         
         {/* FAQ Schema */}
         <script type="application/ld+json">

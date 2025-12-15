@@ -11,14 +11,24 @@ const BypassTurnitin = () => {
   return (
     <>
       <Helmet>
-        <title>Bypass Turnitin AI Detection 2025 - 99.8% Success Rate | AI Free Text Pro</title>
-        <meta name="description" content="Bypass Turnitin AI detection with 99.8% success rate. Transform AI-generated content to pass Turnitin checks. Free test with before/after examples and proven strategies." />
+        <title>Bypass Turnitin AI Detection [Tested Dec 2025] - 99.8% Pass Rate Free</title>
+        <meta name="description" content="Beat Turnitin AI detection in 30 seconds. 99.8% success rate tested Dec 2025. Free tool transforms ChatGPT text to pass Turnitin. See live before/after results." />
         <meta name="keywords" content="bypass turnitin ai detection, turnitin ai detector bypass, pass turnitin ai check, humanize ai for turnitin, turnitin ai detection removal" />
         <link rel="canonical" href="https://aifreetextpro.com/bypass-turnitin-ai-detection" />
-        <meta property="og:title" content="Bypass Turnitin AI Detection 2025 - 99.8% Success Rate" />
-        <meta property="og:description" content="Bypass Turnitin AI detection with proven strategies. 99.8% success rate in live tests. Transform AI content to pass Turnitin checks." />
+        <meta property="og:title" content="Bypass Turnitin AI Detection [Tested Dec 2025] - 99.8% Pass Rate" />
+        <meta property="og:description" content="Beat Turnitin AI detection in 30 seconds. 99.8% success rate tested Dec 2025. Free tool transforms ChatGPT text to pass Turnitin." />
         <meta property="og:url" content="https://aifreetextpro.com/bypass-turnitin-ai-detection" />
         <meta property="og:type" content="website" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://aifreetextpro.com/" },
+              { "@type": "ListItem", "position": 2, "name": "Bypass Turnitin AI Detection", "item": "https://aifreetextpro.com/bypass-turnitin-ai-detection" }
+            ]
+          })}
+        </script>
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
@@ -30,7 +40,7 @@ const BypassTurnitin = () => {
               "name": "AI Free Text Pro"
             },
             "datePublished": "2025-01-11",
-            "dateModified": "2025-01-11"
+            "dateModified": "2025-12-15"
           })}
         </script>
         <script type="application/ld+json">

@@ -58,6 +58,27 @@ const VsUndetectable = () => {
         <meta property="og:description" content="Side-by-side: AI Free Text Pro offers better value ($4.99 vs $9.99), free detector, and 98% bypass rate. See full comparison." />
         <meta property="og:url" content="https://aifreetextpro.com/vs-undetectable-ai" />
         
+        {/* BreadcrumbList Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://aifreetextpro.com/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "vs Undetectable AI"
+              }
+            ]
+          })}
+        </script>
+
         {/* FAQ Schema */}
         <script type="application/ld+json">
           {JSON.stringify({

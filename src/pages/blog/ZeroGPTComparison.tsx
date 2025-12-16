@@ -78,6 +78,33 @@ export default function ZeroGPTComparison() {
             }
           })}
         </script>
+        
+        {/* BreadcrumbList Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://aifreetextpro.com/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Blog",
+                "item": "https://aifreetextpro.com/blog"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "ZeroGPT vs AI Free Text Pro"
+              }
+            ]
+          })}
+        </script>
       </Helmet>
 
       <div className="min-h-screen bg-background">

@@ -1,32 +1,38 @@
-# Allow all crawlers to access all content
+# AI Free Text Pro - Robots.txt
+# https://aifreetextpro.com
+
+# Default rules for all crawlers
 User-agent: *
 Allow: /
 Disallow: /auth
 Disallow: /dashboard
 Disallow: /app
-
-# Crawl delay for polite crawling
 Crawl-delay: 1
 
-# Sitemap location
-Sitemap: https://aifreetextpro.com/sitemap.xml
-
-# Specific bot configurations
+# Google bot - priority crawler
 User-agent: Googlebot
 Allow: /
 Crawl-delay: 0
 
+# Bing bot
 User-agent: Bingbot
 Allow: /
 Crawl-delay: 1
 
+# Yahoo bot
 User-agent: Slurp
 Allow: /
 
+# DuckDuckGo bot
 User-agent: DuckDuckBot
 Allow: /
 
+# Baidu spider
 User-agent: Baiduspider
+Allow: /
+
+# Yandex bot
+User-agent: YandexBot
 Allow: /
 
 # Social media crawlers
@@ -42,19 +48,19 @@ Allow: /
 User-agent: Pinterestbot
 Allow: /
 
-# Ensure all blog posts are crawlable
+# Ensure all content pages are crawlable
 User-agent: *
 Allow: /blog/
 Allow: /blog/*
-
-# Ensure comparison and landing pages are crawlable
 Allow: /vs-*
 Allow: /bypass-*
 Allow: /ai-humanizer-*
 Allow: /academic-*
 Allow: /ai-checker
-
-# E-E-A-T pages - Trust & Authority
+Allow: /pricing
+Allow: /about
+Allow: /contact
+Allow: /guarantee
 Allow: /team
 Allow: /technology
 Allow: /case-studies
@@ -63,3 +69,6 @@ Allow: /editorial-guidelines
 # Static assets
 Allow: /assets/
 Allow: /images/
+
+# Sitemap location
+Sitemap: https://aifreetextpro.com/sitemap.xml

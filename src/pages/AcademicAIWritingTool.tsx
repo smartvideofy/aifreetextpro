@@ -15,6 +15,27 @@ const AcademicAIWritingTool = () => {
         <meta name="description" content="Academic AI writing tool for research papers, essays, and thesis work. 97% Turnitin bypass rate. Academic writing mode preserves scholarly tone. Citations support. Used by 20,000+ students and researchers." />
         <meta name="keywords" content="academic ai writing tool, research paper ai, thesis writing ai, turnitin bypass, scholarly writing ai" />
         <link rel="canonical" href="https://aifreetextpro.com/academic-ai-writing-tool" />
+        
+        {/* BreadcrumbList Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://aifreetextpro.com/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Academic AI Writing Tool"
+              }
+            ]
+          })}
+        </script>
       </Helmet>
       
       <Navbar />

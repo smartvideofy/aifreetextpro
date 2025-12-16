@@ -145,6 +145,27 @@ const AIHumanizerForWriters = () => {
         <meta property="og:title" content="AI Humanizer for Content Writers - Scale 5x 2025" />
         <meta property="og:description" content="96% bypass on Originality.AI. Transform AI drafts to publishing-ready content. 15,000+ writers scale output 5x." />
         <meta property="og:url" content="https://aifreetextpro.com/ai-humanizer-for-content-writers" />
+        
+        {/* BreadcrumbList Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://aifreetextpro.com/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "AI Humanizer for Content Writers"
+              }
+            ]
+          })}
+        </script>
       </Helmet>
       
       <Navbar />

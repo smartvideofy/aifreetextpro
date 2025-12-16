@@ -57,6 +57,27 @@ const VsHumanizeAIPro = () => {
         <meta property="og:description" content="Side-by-side comparison: AI Free Text Pro costs $4.99/mo with free detector. HumanizeAI.pro costs $12/mo without detector. See features, pricing, test results." />
         <meta property="og:url" content="https://aifreetextpro.com/vs-humanizeai-pro" />
         
+        {/* BreadcrumbList Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://aifreetextpro.com/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "vs HumanizeAI.pro"
+              }
+            ]
+          })}
+        </script>
+
         {/* FAQ Schema */}
         <script type="application/ld+json">
           {JSON.stringify({

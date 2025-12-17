@@ -398,10 +398,10 @@ const BypassTurnitin = () => {
               category: "Academic Guide"
             },
             {
-              title: "The Definitive Guide to Passing All Major AI Detectors",
-              description: "How to bypass ZeroGPT, Turnitin, Copyleaks & more with AI Free Text Pro's proven strategies.",
-              href: "/blog/pass-all-ai-detectors-guide-2025",
-              category: "Bypass Guide"
+              title: "The Definitive Guide to Writing Human-Like Content",
+              description: "How to create natural content across GPTZero, Turnitin, Copyleaks & more.",
+              href: "/blog/pass-all-ai-detectors-guide",
+              category: "Writing Guide"
             },
             {
               title: "AI vs. Human: 5 Linguistic Patterns AI Detectors Look For",

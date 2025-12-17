@@ -408,10 +408,10 @@ const BypassOriginality = () => {
               category: "Comparison"
             },
             {
-              title: "The Definitive Guide to Passing All Major AI Detectors",
-              description: "How to bypass ZeroGPT, Turnitin, Copyleaks & more with proven strategies.",
-              href: "/blog/pass-all-ai-detectors-guide-2025",
-              category: "Bypass Guide"
+              title: "The Definitive Guide to Writing Human-Like Content",
+              description: "How to create natural content across GPTZero, Turnitin, Copyleaks & more.",
+              href: "/blog/pass-all-ai-detectors-guide",
+              category: "Writing Guide"
             }
           ]} />
         </div>

@@ -971,7 +971,7 @@ const Index = () => {
                 </Card>
               </Link>
 
-              <Link to="/blog/pass-all-ai-detectors-guide-2025">
+              <Link to="/blog/pass-all-ai-detectors-guide">
                 <Card className="p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 cursor-pointer h-full">
                   <div className="space-y-3">
                     <div className="w-12 h-12 rounded-lg bg-secondary/10 flex items-center justify-center">

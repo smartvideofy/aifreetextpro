@@ -957,7 +957,7 @@ const Index = () => {
             </div>
             
             <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
-              <Link to="/blog/make-chatgpt-undetectable-guide-2025">
+              <Link to="/blog/make-chatgpt-undetectable-2025">
                 <Card className="p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 cursor-pointer h-full">
                   <div className="space-y-3">
                     <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center">
@@ -985,7 +985,7 @@ const Index = () => {
                 </Card>
               </Link>
 
-              <Link to="/blog/ai-detection-patterns-perplexity-burstiness">
+              <Link to="/blog/ai-detection-patterns-explained">
                 <Card className="p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 cursor-pointer h-full">
                   <div className="space-y-3">
                     <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center">

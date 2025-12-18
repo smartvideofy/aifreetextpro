@@ -11,6 +11,30 @@ import { Breadcrumbs } from "@/components/Breadcrumbs";
 
 const blogPosts = [
   {
+    slug: "how-to-write-naturally-with-ai",
+    title: "How to Write Naturally with AI: A Complete Guide",
+    excerpt: "Learn the art of crafting natural, engaging content with AI assistance. Discover techniques for prompting, structuring, and refining AI-generated text.",
+    date: "2024-12-20",
+    readTime: "14 min read",
+    category: "Writing Craft"
+  },
+  {
+    slug: "editing-ai-drafts-human-editor",
+    title: "Editing AI Drafts Like a Human Editor",
+    excerpt: "Professional editing techniques to transform AI-generated drafts into polished, publication-ready content that reads authentically human.",
+    date: "2024-12-18",
+    readTime: "12 min read",
+    category: "Professional Editing"
+  },
+  {
+    slug: "tone-voice-flow-ai-writing",
+    title: "Tone, Voice, and Flow in AI-Assisted Writing",
+    excerpt: "Master the three pillars of great writing: tone sets emotional temperature, voice creates distinctiveness, and flow carries readers forward.",
+    date: "2024-12-16",
+    readTime: "11 min read",
+    category: "Writing Craft"
+  },
+  {
     slug: "make-chatgpt-undetectable-2025",
     title: "How to Improve AI Writing Quality: The Complete 2025 Guide",
     excerpt: "The complete playbook for transforming AI-generated content into natural, human-quality writing that reads authentically.",

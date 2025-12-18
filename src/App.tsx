@@ -44,6 +44,9 @@ import OriginalityAIReview from "./pages/blog/OriginalityAIReview";
 import PassAllDetectorsGuide from "./pages/blog/PassAllDetectorsGuide";
 import AIContentSEO from "./pages/blog/AIContentSEO";
 import AcademicAIWritingSafely from "./pages/blog/AcademicAIWritingSafely";
+import HowToWriteNaturallyWithAI from "./pages/blog/HowToWriteNaturallyWithAI";
+import EditingAIDraftsHumanEditor from "./pages/blog/EditingAIDraftsHumanEditor";
+import ToneVoiceFlowAIWriting from "./pages/blog/ToneVoiceFlowAIWriting";
 import NotFound from "./pages/NotFound";
 import AIChecker from "./pages/AIChecker";
 import Team from "./pages/Team";
@@ -106,6 +109,9 @@ const App = () => (
             <Route path="/blog/pass-all-ai-detectors-guide" element={<PassAllDetectorsGuide />} />
             <Route path="/blog/ai-content-seo-undetectable" element={<AIContentSEO />} />
             <Route path="/blog/academic-ai-writing-safely" element={<AcademicAIWritingSafely />} />
+            <Route path="/blog/how-to-write-naturally-with-ai" element={<HowToWriteNaturallyWithAI />} />
+            <Route path="/blog/editing-ai-drafts-human-editor" element={<EditingAIDraftsHumanEditor />} />
+            <Route path="/blog/tone-voice-flow-ai-writing" element={<ToneVoiceFlowAIWriting />} />
             <Route path="/bypass-turnitin-ai-detection" element={<BypassTurnitin />} />
             <Route path="/bypass-gptzero-detection" element={<BypassGPTZero />} />
             <Route path="/bypass-originality-ai" element={<BypassOriginality />} />

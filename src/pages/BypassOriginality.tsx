@@ -392,19 +392,19 @@ const BypassOriginality = () => {
             {
               title: "Originality.AI Detector Review: Accuracy, Pricing, and How to Beat It",
               description: "In-depth review of Originality.AI's detection capabilities and proven strategies to bypass it with AI Free Text Pro.",
-              href: "/blog/originality-ai-review-pricing-bypass",
+              href: "/blog/originality-ai-review-how-to-beat",
               category: "Detector Review"
             },
             {
               title: "AI Content for SEO: How to Generate Undetectable Articles That Rank",
               description: "Learn how to create AI-generated SEO content that passes Originality.AI checks and ranks on Google.",
-              href: "/blog/ai-content-seo-undetectable-articles",
+              href: "/blog/ai-content-seo-undetectable",
               category: "SEO Guide"
             },
             {
               title: "GPTinf vs. AI Free Text Pro: Which Humanizer Offers Highest Success?",
               description: "Compare GPTinf and AI Free Text Pro for bypassing Originality.AI with detailed test results.",
-              href: "/blog/gptinf-vs-ai-free-text-pro-comparison",
+              href: "/blog/gptinf-vs-ai-free-text-pro",
               category: "Comparison"
             },
             {

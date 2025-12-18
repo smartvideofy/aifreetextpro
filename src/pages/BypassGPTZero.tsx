@@ -389,19 +389,19 @@ const BypassGPTZero = () => {
             {
               title: "AI vs. Human: 5 Linguistic Patterns AI Detectors Look For",
               description: "Understand perplexity, burstiness, and the exact patterns GPTZero uses to identify AI-generated content.",
-              href: "/blog/ai-detection-patterns-perplexity-burstiness",
+              href: "/blog/ai-detection-patterns-explained",
               category: "Technical Guide"
             },
             {
               title: "Paraphrasing vs. Humanizing: Why Marketers Need a True AI Humanizer",
               description: "Learn the difference between simple paraphrasing and true humanization that bypasses GPTZero's detection.",
-              href: "/blog/paraphrasing-vs-humanizing-ai-text",
+              href: "/blog/paraphrasing-vs-humanizing",
               category: "Strategy Guide"
             },
             {
               title: "How to Make ChatGPT Writing Undetectable: Ultimate 2025 Guide",
               description: "Master the techniques to make AI writing completely undetectable by GPTZero and other detectors.",
-              href: "/blog/make-chatgpt-undetectable-guide-2025",
+              href: "/blog/make-chatgpt-undetectable-2025",
               category: "Ultimate Guide"
             },
             {

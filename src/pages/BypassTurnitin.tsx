@@ -388,13 +388,13 @@ const BypassTurnitin = () => {
             {
               title: "How to Make ChatGPT Writing Undetectable: Ultimate 2025 Guide",
               description: "Master the techniques to make AI writing completely undetectable. The #1 guide for students and professionals.",
-              href: "/blog/make-chatgpt-undetectable-guide-2025",
+              href: "/blog/make-chatgpt-undetectable-2025",
               category: "Ultimate Guide"
             },
             {
               title: "Academic AI Writing: Using AI for Thesis and Essays Safely",
               description: "Learn responsible AI use for academic writing. Maintain integrity while leveraging AI tools effectively.",
-              href: "/blog/academic-ai-writing-thesis-essays-safely",
+              href: "/blog/academic-ai-writing-safely",
               category: "Academic Guide"
             },
             {
@@ -406,7 +406,7 @@ const BypassTurnitin = () => {
             {
               title: "AI vs. Human: 5 Linguistic Patterns AI Detectors Look For",
               description: "Understand perplexity, burstiness, and the exact patterns Turnitin uses to identify AI content.",
-              href: "/blog/ai-detection-patterns-perplexity-burstiness",
+              href: "/blog/ai-detection-patterns-explained",
               category: "Technical Guide"
             }
           ]} />

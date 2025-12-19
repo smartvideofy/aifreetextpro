@@ -9,6 +9,12 @@ import { RelatedArticles } from "@/components/RelatedArticles";
 
 const relatedArticles = [
   {
+    title: "AI Humanization Pitfalls: Common Mistakes",
+    description: "What to avoid when refining AI text",
+    href: "/blog/ai-humanization-pitfalls",
+    category: "Best Practices"
+  },
+  {
     title: "Top 10 AI Humanizer Tools for 2025",
     description: "Compare the best AI humanizers and find the right one for you",
     href: "/blog/top-10-ai-humanizer-tools-2025",

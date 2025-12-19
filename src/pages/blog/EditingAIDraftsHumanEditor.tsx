@@ -9,6 +9,12 @@ import { Button } from "@/components/ui/button";
 
 const relatedArticles = [
   {
+    title: "AI Humanization Pitfalls: Common Mistakes",
+    description: "What to avoid when refining AI text — learn from others' errors.",
+    href: "/blog/ai-humanization-pitfalls",
+    category: "Best Practices"
+  },
+  {
     title: "How to Write Naturally with AI",
     description: "Master the art of crafting natural content with AI assistance from the start.",
     href: "/blog/how-to-write-naturally-with-ai",
@@ -19,12 +25,6 @@ const relatedArticles = [
     description: "Ensure your AI content maintains consistent voice and natural rhythm.",
     href: "/blog/tone-voice-flow-ai-writing",
     category: "Craft"
-  },
-  {
-    title: "Why AI Content Fails Human Review",
-    description: "Understand why AI text often feels robotic and how editors catch it.",
-    href: "/blog/why-ai-content-fails-human-review",
-    category: "Educational"
   }
 ];
 

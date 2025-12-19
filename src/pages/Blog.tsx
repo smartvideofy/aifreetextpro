@@ -11,6 +11,30 @@ import { Breadcrumbs } from "@/components/Breadcrumbs";
 
 const blogPosts = [
   {
+    slug: "how-ai-detectors-score-text",
+    title: "How AI Detectors Score Text: A Behind-the-Scenes Look",
+    excerpt: "Breaking down the metrics AI detectors use in plain language. Understand perplexity, burstiness, and confidence scores.",
+    date: "2025-01-15",
+    readTime: "12 min read",
+    category: "Technical"
+  },
+  {
+    slug: "signal-vs-noise-human-text",
+    title: "Signal vs. Noise: What Makes Text Human in 2026",
+    excerpt: "Current patterns detectors care about — with concrete examples of what distinguishes human writing from AI output.",
+    date: "2025-01-15",
+    readTime: "14 min read",
+    category: "Technical"
+  },
+  {
+    slug: "ai-humanization-pitfalls",
+    title: "AI Humanization Pitfalls: Common Mistakes Writers Make",
+    excerpt: "What to avoid when refining AI text. Learn the most common mistakes and how to fix them.",
+    date: "2025-01-15",
+    readTime: "11 min read",
+    category: "Best Practices"
+  },
+  {
     slug: "how-to-write-naturally-with-ai",
     title: "How to Write Naturally with AI: A Complete Guide",
     excerpt: "Learn the art of crafting natural, engaging content with AI assistance. Discover techniques for prompting, structuring, and refining AI-generated text.",

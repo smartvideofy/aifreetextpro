@@ -18,19 +18,19 @@ const AIHumanizationPitfalls = () => {
     {
       title: "Editing AI Drafts Like a Human Editor",
       description: "Professional techniques for refining AI content",
-      url: "/blog/editing-ai-drafts-human-editor",
+      href: "/blog/editing-ai-drafts-human-editor",
       category: "Editing"
     },
     {
       title: "How to Write Naturally with AI",
       description: "Collaborative techniques for authentic content",
-      url: "/blog/how-to-write-naturally-with-ai",
+      href: "/blog/how-to-write-naturally-with-ai",
       category: "Writing"
     },
     {
       title: "Paraphrasing vs. Humanizing",
       description: "Understanding the difference and when to use each",
-      url: "/blog/paraphrasing-vs-humanizing",
+      href: "/blog/paraphrasing-vs-humanizing",
       category: "Techniques"
     }
   ];

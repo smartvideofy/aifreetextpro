@@ -9,6 +9,12 @@ import { Button } from "@/components/ui/button";
 
 const relatedArticles = [
   {
+    title: "Signal vs. Noise: What Makes Text Human",
+    description: "Current patterns that distinguish human writing from AI output.",
+    href: "/blog/signal-vs-noise-human-text",
+    category: "Technical"
+  },
+  {
     title: "How to Write Naturally with AI",
     description: "Master the fundamentals of natural AI-assisted content creation.",
     href: "/blog/how-to-write-naturally-with-ai",
@@ -19,12 +25,6 @@ const relatedArticles = [
     description: "Professional techniques to polish AI drafts into publication-ready content.",
     href: "/blog/editing-ai-drafts-human-editor",
     category: "Professional Editing"
-  },
-  {
-    title: "How to Humanize AI Text Without Losing Your Voice",
-    description: "Preserve your unique style while improving AI-generated content.",
-    href: "/blog/humanize-ai-text-without-losing-voice",
-    category: "How-To Guide"
   }
 ];
 

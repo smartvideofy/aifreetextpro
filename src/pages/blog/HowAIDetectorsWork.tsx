@@ -8,16 +8,22 @@ import { ArrowRight, Brain, Search, Zap } from "lucide-react";
 
 const relatedArticles = [
   {
+    title: "How AI Detectors Score Text",
+    description: "Behind-the-scenes look at detection metrics and scoring",
+    href: "/blog/how-ai-detectors-score-text",
+    category: "Technical"
+  },
+  {
+    title: "Signal vs. Noise: What Makes Text Human",
+    description: "Current patterns detectors care about with examples",
+    href: "/blog/signal-vs-noise-human-text",
+    category: "Technical"
+  },
+  {
     title: "AI Detection Tools Compared (2025 Edition)",
     description: "See which AI detector is most accurate in real-world tests",
     href: "/blog/ai-detection-tools-compared-2025",
     category: "Comparison"
-  },
-  {
-    title: "How to Detect AI-Generated Text",
-    description: "Learn to spot AI-generated content manually",
-    href: "/blog/how-to-detect-ai-generated-text",
-    category: "Guide"
   }
 ];
 

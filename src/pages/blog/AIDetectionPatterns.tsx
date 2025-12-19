@@ -9,10 +9,16 @@ import { RelatedArticles } from "@/components/RelatedArticles";
 
 const relatedArticles = [
   {
-    title: "How to Make ChatGPT Writing Undetectable",
-    description: "The ultimate guide to bypassing AI detection in 2025",
-    href: "/blog/make-chatgpt-undetectable-2025",
-    category: "Guide"
+    title: "Signal vs. Noise: What Makes Text Human",
+    description: "Deep dive into patterns that distinguish human writing",
+    href: "/blog/signal-vs-noise-human-text",
+    category: "Technical"
+  },
+  {
+    title: "How AI Detectors Score Text",
+    description: "Behind-the-scenes look at detection metrics",
+    href: "/blog/how-ai-detectors-score-text",
+    category: "Technical"
   },
   {
     title: "How AI Detectors Work",

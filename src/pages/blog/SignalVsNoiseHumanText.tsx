@@ -18,19 +18,19 @@ const SignalVsNoiseHumanText = () => {
     {
       title: "How AI Detectors Score Text",
       description: "Behind-the-scenes look at detection metrics",
-      url: "/blog/how-ai-detectors-score-text",
+      href: "/blog/how-ai-detectors-score-text",
       category: "Technical"
     },
     {
       title: "Tone, Voice, and Flow in AI Writing",
       description: "Elements that make content feel authentically human",
-      url: "/blog/tone-voice-flow-ai-writing",
+      href: "/blog/tone-voice-flow-ai-writing",
       category: "Writing Quality"
     },
     {
       title: "AI Humanization Pitfalls",
       description: "Common mistakes when refining AI text",
-      url: "/blog/ai-humanization-pitfalls",
+      href: "/blog/ai-humanization-pitfalls",
       category: "Best Practices"
     }
   ];

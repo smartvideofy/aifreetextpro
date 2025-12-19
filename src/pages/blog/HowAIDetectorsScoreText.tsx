@@ -18,19 +18,19 @@ const HowAIDetectorsScoreText = () => {
     {
       title: "Signal vs. Noise: What Makes Text Human",
       description: "Current patterns detectors care about with examples",
-      url: "/blog/signal-vs-noise-human-text",
+      href: "/blog/signal-vs-noise-human-text",
       category: "Technical"
     },
     {
       title: "How AI Detectors Work",
       description: "Understanding the technology behind detection",
-      url: "/blog/how-ai-detectors-work",
+      href: "/blog/how-ai-detectors-work",
       category: "Technical"
     },
     {
       title: "AI Detection Patterns Explained",
       description: "Understanding perplexity and burstiness",
-      url: "/blog/ai-detection-patterns-explained",
+      href: "/blog/ai-detection-patterns-explained",
       category: "Technical"
     }
   ];

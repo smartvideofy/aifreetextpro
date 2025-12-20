@@ -37,7 +37,14 @@ const BypassAIDetection = () => {
         <meta property="og:description" content="Learn ethical strategies to improve AI writing quality and make content more human-like." />
         <meta property="og:url" content="https://aifreetextpro.com/blog/bypass-ai-detection-ethical-tips" />
         <meta property="og:type" content="article" />
+        <meta property="og:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" />
+        <meta property="og:site_name" content="AI Free Text Pro" />
         <meta property="article:published_time" content="2024-07-28" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@aifreetextpro" />
+        <meta name="twitter:title" content="Improve AI Writing Quality: Ethical Tips & Best Practices" />
+        <meta name="twitter:description" content="Learn ethical strategies to improve AI writing quality and make content more human-like." />
+        <meta name="twitter:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" />
         
         <script type="application/ld+json">
           {JSON.stringify({

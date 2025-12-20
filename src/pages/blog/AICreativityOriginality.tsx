@@ -31,7 +31,17 @@ export default function AICreativityOriginality() {
         <link rel="canonical" href="https://aifreetextpro.com/blog/can-ai-writing-be-original" />
         <meta name="robots" content="index, follow" />
         <meta name="googlebot" content="index, follow" />
-        
+        <meta property="og:title" content="Can AI Writing Be Truly Original? Exploring Creativity in the Age of GPT" />
+        <meta property="og:description" content="Explore how AI can assist rather than replace creativity." />
+        <meta property="og:url" content="https://aifreetextpro.com/blog/can-ai-writing-be-original" />
+        <meta property="og:type" content="article" />
+        <meta property="og:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" />
+        <meta property="og:site_name" content="AI Free Text Pro" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@aifreetextpro" />
+        <meta name="twitter:title" content="Can AI Writing Be Truly Original?" />
+        <meta name="twitter:description" content="Explore creativity and originality in the age of ChatGPT." />
+        <meta name="twitter:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" />
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",

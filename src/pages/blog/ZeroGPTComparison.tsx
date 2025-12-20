@@ -36,10 +36,13 @@ export default function ZeroGPTComparison() {
         <meta property="og:description" content="We test ZeroGPT and AI Free Text Pro on different writing samples — see which tool spots AI content more accurately." />
         <meta property="og:type" content="article" />
         <meta property="og:url" content="https://aifreetextpro.com/blog/zerogpt-vs-ai-free-text-pro-2025" />
-        
+        <meta property="og:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" />
+        <meta property="og:site_name" content="AI Free Text Pro" />
         <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@aifreetextpro" />
         <meta name="twitter:title" content="ZeroGPT vs AI Free Text Pro: Which Detects Better in 2025?" />
         <meta name="twitter:description" content="Real-world tests comparing ZeroGPT and AI Free Text Pro accuracy." />
+        <meta name="twitter:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" />
         
         <script type="application/ld+json">
           {JSON.stringify({

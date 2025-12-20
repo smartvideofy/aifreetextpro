@@ -36,6 +36,13 @@ const AIDetectionComparison = () => {
         <meta property="og:description" content="Real-world comparison of leading AI detectors" />
         <meta property="og:url" content="https://aifreetextpro.com/blog/ai-detection-tools-compared-2025" />
         <meta property="og:type" content="article" />
+        <meta property="og:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" />
+        <meta property="og:site_name" content="AI Free Text Pro" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@aifreetextpro" />
+        <meta name="twitter:title" content="AI Detection Tools Compared (2025)" />
+        <meta name="twitter:description" content="Real-world comparison of GPTZero, AI Free Text Pro, and Rewritify." />
+        <meta name="twitter:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" />
         
         <script type="application/ld+json">
           {JSON.stringify({

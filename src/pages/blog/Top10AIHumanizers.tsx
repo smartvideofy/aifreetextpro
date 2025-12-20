@@ -36,10 +36,13 @@ export default function Top10AIHumanizers() {
         <meta property="og:description" content="Curated list of the best AI humanizer tools with features, pricing, and accuracy ratings." />
         <meta property="og:type" content="article" />
         <meta property="og:url" content="https://aifreetextpro.com/blog/top-10-ai-humanizer-tools-2025" />
-        
+        <meta property="og:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" />
+        <meta property="og:site_name" content="AI Free Text Pro" />
         <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@aifreetextpro" />
         <meta name="twitter:title" content="Top 10 AI Humanizer Tools for 2025 (Free & Paid)" />
         <meta name="twitter:description" content="Find the best AI humanizer tool for your needs with our comprehensive comparison." />
+        <meta name="twitter:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" />
         
         <script type="application/ld+json">
           {JSON.stringify({

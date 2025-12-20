@@ -113,6 +113,14 @@ const Pricing = () => {
         <meta property="og:title" content="Pricing Plans - AI Free Text Pro" />
         <meta property="og:description" content="Start free with 500 words/month. Plans from $4.99 to $59.99. Pro Writer at $24.99/mo with 50,000 words." />
         <meta property="og:url" content="https://aifreetextpro.com/pricing" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" />
+        <meta property="og:site_name" content="AI Free Text Pro" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@aifreetextpro" />
+        <meta name="twitter:title" content="Pricing Plans - AI Free Text Pro" />
+        <meta name="twitter:description" content="Start free with 500 words/month. Plans from $4.99 to $59.99. Pro Writer at $24.99/mo with 50,000 words." />
+        <meta name="twitter:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" />
         
         <script type="application/ld+json">
           {JSON.stringify({

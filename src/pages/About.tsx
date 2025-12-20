@@ -19,6 +19,14 @@ const About = () => {
         <meta property="og:title" content="About Us - AI Free Text Pro" />
         <meta property="og:description" content="Learn about AI Free Text Pro and our mission to provide accurate AI detection and text humanization tools." />
         <meta property="og:url" content="https://aifreetextpro.com/about" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" />
+        <meta property="og:site_name" content="AI Free Text Pro" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@aifreetextpro" />
+        <meta name="twitter:title" content="About Us - AI Free Text Pro" />
+        <meta name="twitter:description" content="Learn about AI Free Text Pro and our mission to provide accurate AI detection and text humanization tools." />
+        <meta name="twitter:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" />
       </Helmet>
       <Navbar />
       

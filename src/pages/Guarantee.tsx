@@ -60,6 +60,14 @@ const Guarantee = () => {
         <meta property="og:title" content="100% Money-Back Guarantee - AI Free Text Pro" />
         <meta property="og:description" content="If our humanizer is flagged by any AI detector, we refund 100% - no questions asked. Fast 24-hour processing." />
         <meta property="og:url" content="https://aifreetextpro.com/guarantee" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" />
+        <meta property="og:site_name" content="AI Free Text Pro" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@aifreetextpro" />
+        <meta name="twitter:title" content="100% Money-Back Guarantee - AI Free Text Pro" />
+        <meta name="twitter:description" content="If our humanizer is flagged by any AI detector, we refund 100% - no questions asked. Fast 24-hour processing." />
+        <meta name="twitter:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" />
         
         <script type="application/ld+json">
           {JSON.stringify({

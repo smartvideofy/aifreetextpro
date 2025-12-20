@@ -128,6 +128,13 @@ const Team = () => {
         <meta property="og:description" content="Meet our team of AI researchers, linguists, and content experts building the most advanced AI humanization tools." />
         <meta property="og:url" content="https://aifreetextpro.com/team" />
         <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" />
+        <meta property="og:site_name" content="AI Free Text Pro" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@aifreetextpro" />
+        <meta name="twitter:title" content="Our Team - Meet the Experts Behind AI Free Text Pro" />
+        <meta name="twitter:description" content="Meet our team of AI researchers, linguists, and content experts building the most advanced AI humanization tools." />
+        <meta name="twitter:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" />
         <script type="application/ld+json">
           {JSON.stringify(teamSchema)}
         </script>

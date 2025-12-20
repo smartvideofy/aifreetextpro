@@ -35,6 +35,14 @@ const Index = () => {
         <meta property="og:description" content="Free AI detector spots ChatGPT in 3 seconds. Humanize AI text to bypass Turnitin, GPTZero, Originality.AI. 98% accuracy." />
         <meta property="og:url" content="https://aifreetextpro.com/" />
         <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" />
+        <meta property="og:site_name" content="AI Free Text Pro" />
+        <meta property="og:locale" content="en_US" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@aifreetextpro" />
+        <meta name="twitter:title" content="Free AI Detector & Humanizer - Bypass GPTZero, Turnitin [Dec 2025]" />
+        <meta name="twitter:description" content="Free AI detector spots ChatGPT in 3 seconds. Humanize AI text to bypass Turnitin, GPTZero, Originality.AI. 98% accuracy." />
+        <meta name="twitter:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" />
         
         {/* Enhanced Schema Markup */}
         <script type="application/ld+json">

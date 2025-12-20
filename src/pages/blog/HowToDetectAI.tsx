@@ -37,8 +37,15 @@ const HowToDetectAI = () => {
         <meta property="og:description" content="Learn expert techniques to detect AI-generated text with 98% accuracy." />
         <meta property="og:url" content="https://aifreetextpro.com/blog/how-to-detect-ai-generated-text" />
         <meta property="og:type" content="article" />
+        <meta property="og:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" />
+        <meta property="og:site_name" content="AI Free Text Pro" />
         <meta property="article:published_time" content="2025-10-05" />
         <meta property="article:author" content="AI Free Text Pro" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@aifreetextpro" />
+        <meta name="twitter:title" content="How to Detect AI-Generated Text: Complete Guide" />
+        <meta name="twitter:description" content="Expert techniques to detect AI-generated text with 98% accuracy." />
+        <meta name="twitter:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" />
         
         <script type="application/ld+json">
           {JSON.stringify({

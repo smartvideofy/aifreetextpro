@@ -36,9 +36,13 @@ export default function AIDetectionPublishing() {
         <meta property="og:description" content="The publishing industry's response to AI-generated content and practical strategies for adaptation." />
         <meta property="og:type" content="article" />
         <meta property="og:url" content="https://aifreetextpro.com/blog/ai-detection-in-publishing-2025" />
-        
+        <meta property="og:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" />
+        <meta property="og:site_name" content="AI Free Text Pro" />
         <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@aifreetextpro" />
         <meta name="twitter:title" content="AI Detection in Publishing: How to Adapt in 2025" />
+        <meta name="twitter:description" content="How publishers adapt to AI content and strategies for writers." />
+        <meta name="twitter:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" />
         
         <script type="application/ld+json">
           {JSON.stringify({

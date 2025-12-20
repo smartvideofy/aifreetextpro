@@ -35,6 +35,13 @@ const GPTinfComparison = () => {
         <meta property="og:description" content="Detailed comparison of GPTinf and AI Free Text Pro humanizers" />
         <meta property="og:url" content="https://aifreetextpro.com/blog/gptinf-vs-ai-free-text-pro" />
         <meta property="og:type" content="article" />
+        <meta property="og:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" />
+        <meta property="og:site_name" content="AI Free Text Pro" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@aifreetextpro" />
+        <meta name="twitter:title" content="GPTinf vs. AI Free Text Pro: Humanizer Comparison" />
+        <meta name="twitter:description" content="Detailed comparison of GPTinf and AI Free Text Pro humanizers with test results." />
+        <meta name="twitter:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" />
         
         <script type="application/ld+json">
           {JSON.stringify({

@@ -40,7 +40,14 @@ const EditingAIDraftsHumanEditor = () => {
         <meta property="og:title" content="Editing AI Drafts Like a Human Editor" />
         <meta property="og:description" content="Professional techniques to polish AI-generated content into publication-ready prose." />
         <meta property="og:type" content="article" />
-        <meta property="og:url" content="https://aifreetext.pro/blog/editing-ai-drafts-human-editor" />
+        <meta property="og:url" content="https://aifreetextpro.com/blog/editing-ai-drafts-human-editor" />
+        <meta property="og:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" />
+        <meta property="og:site_name" content="AI Free Text Pro" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@aifreetextpro" />
+        <meta name="twitter:title" content="Editing AI Drafts Like a Human Editor" />
+        <meta name="twitter:description" content="Professional techniques to polish AI content into publication-ready prose." />
+        <meta name="twitter:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" />
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",

@@ -38,7 +38,14 @@ const BestAIHumanizers = () => {
         <meta property="og:description" content="Compare the top 5 free AI humanizer tools and find the best one for your needs." />
         <meta property="og:url" content="https://aifreetextpro.com/blog/best-free-ai-humanizer-tools-2025" />
         <meta property="og:type" content="article" />
+        <meta property="og:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" />
+        <meta property="og:site_name" content="AI Free Text Pro" />
         <meta property="article:published_time" content="2025-10-04" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@aifreetextpro" />
+        <meta name="twitter:title" content="Best Free AI Humanizer Tools in 2025" />
+        <meta name="twitter:description" content="Compare the top 5 free AI humanizer tools and find the best one for your needs." />
+        <meta name="twitter:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" />
         
         <script type="application/ld+json">
           {JSON.stringify({

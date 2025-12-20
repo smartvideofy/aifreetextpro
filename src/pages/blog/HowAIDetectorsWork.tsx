@@ -41,6 +41,14 @@ export default function HowAIDetectorsWork() {
         <meta property="og:title" content="How AI Detectors Work: Inside the Science" />
         <meta property="og:description" content="Deep dive into the technology and algorithms powering AI detection tools." />
         <meta property="og:type" content="article" />
+        <meta property="og:url" content="https://aifreetextpro.com/blog/how-ai-detectors-work" />
+        <meta property="og:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" />
+        <meta property="og:site_name" content="AI Free Text Pro" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@aifreetextpro" />
+        <meta name="twitter:title" content="How AI Detectors Work: Inside the Science" />
+        <meta name="twitter:description" content="Deep dive into the technology and algorithms powering AI detection tools." />
+        <meta name="twitter:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" />
         
         <script type="application/ld+json">
           {JSON.stringify({

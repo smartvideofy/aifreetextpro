@@ -60,6 +60,33 @@ const EditingAIDraftsHumanEditor = () => {
             "dateModified": "2024-12-18"
           })}
         </script>
+        
+        {/* BreadcrumbList Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://aifreetextpro.com/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Blog",
+                "item": "https://aifreetextpro.com/blog"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Editing AI Drafts Like a Human Editor"
+              }
+            ]
+          })}
+        </script>
       </Helmet>
 
       <div className="min-h-screen bg-gradient-to-b from-background via-background to-card/20">

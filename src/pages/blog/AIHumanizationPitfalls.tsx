@@ -65,6 +65,33 @@ const AIHumanizationPitfalls = () => {
             "dateModified": "2025-01-15"
           })}
         </script>
+        
+        {/* BreadcrumbList Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://aifreetextpro.com/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Blog",
+                "item": "https://aifreetextpro.com/blog"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "AI Humanization Pitfalls"
+              }
+            ]
+          })}
+        </script>
       </Helmet>
 
       <div className="min-h-screen bg-background">

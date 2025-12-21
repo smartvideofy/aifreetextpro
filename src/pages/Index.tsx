@@ -119,6 +119,64 @@ const Index = () => {
             }
           })}
         </script>
+        
+        {/* FAQ Schema for Rich Snippets */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "How accurate is AI Free Text Pro compared to GPTZero?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "AI Free Text Pro achieves 98% accuracy using advanced GPT-4o Mini models for text pattern analysis. Our testing shows we outperform GPTZero (90% accuracy) and ZeroGPT (85% accuracy) in detecting ChatGPT, Claude, and other AI-generated content."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Can AI Free Text Pro detect ChatGPT 4 and Claude?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes! AI Free Text Pro is specifically designed to detect the latest AI models including ChatGPT-4, GPT-4 Turbo, Claude 3, Gemini, and other leading language models."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Is AI Free Text Pro free forever?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes, AI Free Text Pro offers a generous free tier with 1,000 words per analysis — double what competitors like ZeroGPT (500 words) and Rewritify (250 words) offer. Our core AI detection and humanization features remain free forever."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How does the AI humanizer work?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Our AI humanizer transforms robotic AI text into natural, human-like writing using advanced language models. You can choose from 4 writing styles (Professional, Academic, Creative, Casual) and customize settings for tone and complexity."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Is my text stored or shared with anyone?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "No, never. Your privacy is our top priority. AI Free Text Pro processes all content in real-time and does not store, log, or share your text with third parties."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What file formats can I upload?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "AI Free Text Pro supports PDF, DOCX (Microsoft Word), and TXT file uploads up to 10MB in size. You can also paste text directly into the editor."
+                }
+              }
+            ]
+          })}
+        </script>
       </Helmet>
       <Navbar />
       <StickyHeaderCTA />

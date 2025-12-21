@@ -28,6 +28,48 @@ const Contact = () => {
         <meta name="twitter:title" content="Contact Us - AI Free Text Pro" />
         <meta name="twitter:description" content="Contact AI Free Text Pro for support and questions about our free AI detection and humanization tools." />
         <meta name="twitter:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" />
+        
+        {/* FAQ Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "How accurate is the AI detection?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Our AI Checker provides probability scores based on advanced analysis. While highly accurate, results should be considered as guidance rather than absolute certainty."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Will humanized text always pass AI detectors?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Our humanization service significantly improves text naturalness and reduces AI detection probability, but we cannot guarantee 100% success across all detection systems due to their varying methodologies."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Do you store my submitted text?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "No, we process your text in real-time and do not permanently store submissions on our servers."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Can I use this for academic work?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Our tools are designed to help you understand AI content patterns. Always ensure your use complies with your institution's academic integrity policies."
+                }
+              }
+            ]
+          })}
+        </script>
       </Helmet>
       <Navbar />
       

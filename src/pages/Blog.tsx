@@ -11,6 +11,134 @@ import { Breadcrumbs } from "@/components/Breadcrumbs";
 
 const blogPosts = [
   {
+    slug: "ai-product-descriptions",
+    title: "How to Humanize AI-Generated Product Descriptions",
+    excerpt: "Transform AI product copy into compelling, human-like descriptions that convert customers and build trust.",
+    date: "2025-12-22",
+    readTime: "10 min read",
+    category: "eCommerce"
+  },
+  {
+    slug: "ai-youtube-scripts",
+    title: "How to Humanize AI-Generated YouTube Scripts",
+    excerpt: "Create engaging, authentic YouTube scripts using AI while maintaining your unique voice and style.",
+    date: "2025-12-22",
+    readTime: "11 min read",
+    category: "Content Creation"
+  },
+  {
+    slug: "humanize-ai-generated-stories-fiction",
+    title: "How to Humanize AI-Generated Stories & Fiction",
+    excerpt: "Transform AI-generated stories and fiction into human-like narratives that captivate readers.",
+    date: "2025-12-22",
+    readTime: "12 min read",
+    category: "Creative Writing"
+  },
+  {
+    slug: "ai-writing-academia",
+    title: "Ethical AI Writing in Academia: A Complete Guide",
+    excerpt: "Navigate the ethical landscape of AI writing tools in academic settings while maintaining integrity.",
+    date: "2025-12-22",
+    readTime: "14 min read",
+    category: "Academic"
+  },
+  {
+    slug: "ai-humanizers-for-email-marketing",
+    title: "AI Humanizers for Email Marketing: Complete Guide",
+    excerpt: "Master the art of humanizing AI-generated email campaigns for better engagement and conversions.",
+    date: "2025-12-22",
+    readTime: "13 min read",
+    category: "Email Marketing"
+  },
+  {
+    slug: "ai-powered-seo-content-2026",
+    title: "AI-Powered SEO Content Strategies for 2026",
+    excerpt: "Future-proof your content strategy with AI-powered SEO techniques that rank and convert.",
+    date: "2025-12-22",
+    readTime: "15 min read",
+    category: "SEO"
+  },
+  {
+    slug: "humanize-ai-linkedin-2026",
+    title: "Humanize AI Content for LinkedIn in 2026",
+    excerpt: "Create authentic LinkedIn content using AI that builds professional credibility and engagement.",
+    date: "2025-12-22",
+    readTime: "11 min read",
+    category: "Social Media"
+  },
+  {
+    slug: "humanize-ai-social-media-2026",
+    title: "How to Humanize AI Content for Social Media in 2026",
+    excerpt: "Transform AI-generated social media content into engaging, authentic posts that resonate.",
+    date: "2025-12-22",
+    readTime: "12 min read",
+    category: "Social Media"
+  },
+  {
+    slug: "ai-humanizer-travel-blogs",
+    title: "AI Humanizer for Travel Blogs: Complete Guide",
+    excerpt: "Create authentic travel content using AI tools while maintaining your unique travel writing voice.",
+    date: "2025-12-22",
+    readTime: "13 min read",
+    category: "Travel Writing"
+  },
+  {
+    slug: "zero-click-search-ai-2026",
+    title: "Zero-Click Search and AI Content in 2026",
+    excerpt: "Adapt your AI content strategy for the zero-click search era and featured snippet optimization.",
+    date: "2025-12-22",
+    readTime: "14 min read",
+    category: "SEO"
+  },
+  {
+    slug: "humanize-ai-travel-blogs",
+    title: "How to Humanize AI-Generated Travel Blogs",
+    excerpt: "Transform AI-generated travel content into authentic, engaging narratives that inspire readers.",
+    date: "2025-12-22",
+    readTime: "12 min read",
+    category: "Travel Writing"
+  },
+  {
+    slug: "ai-content-marketing-trends-2026",
+    title: "AI Content Marketing Trends to Watch in 2026",
+    excerpt: "Discover emerging AI content marketing trends including automation, personalization, and analytics.",
+    date: "2025-12-22",
+    readTime: "13 min read",
+    category: "Marketing"
+  },
+  {
+    slug: "mastering-ai-powered-email-campaigns-2026",
+    title: "Mastering AI-Powered Email Campaigns in 2026",
+    excerpt: "Advanced strategies for integrating AI into your email marketing for maximum engagement.",
+    date: "2025-12-22",
+    readTime: "14 min read",
+    category: "Email Marketing"
+  },
+  {
+    slug: "bypass-ai-detection-guide",
+    title: "The Ultimate Guide to Bypassing AI Detection",
+    excerpt: "Comprehensive strategies for creating human-like content that passes AI detection tools.",
+    date: "2025-12-22",
+    readTime: "16 min read",
+    category: "How-To Guide"
+  },
+  {
+    slug: "top-10-ai-writing-tools-2026",
+    title: "Top 10 AI Writing Tools in 2026",
+    excerpt: "Discover the best AI writing tools for 2026 and how they enhance content creation.",
+    date: "2025-12-22",
+    readTime: "12 min read",
+    category: "Tools"
+  },
+  {
+    slug: "write-ai-resistant-content",
+    title: "Write AI-Resistant Content in 2026",
+    excerpt: "Advanced techniques to make your content resistant to AI detection while staying authentic.",
+    date: "2025-12-22",
+    readTime: "11 min read",
+    category: "How-To Guide"
+  },
+  {
     slug: "bypass-copyleaks-ai-detection",
     title: "Bypass Copyleaks AI Detection – Proven Techniques for 2025",
     excerpt: "Learn expert strategies to humanize AI-generated text, lower Copyleaks detection scores, and maintain readability while preserving integrity.",

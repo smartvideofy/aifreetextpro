@@ -53,6 +53,22 @@ import AIHumanizationPitfalls from "./pages/blog/AIHumanizationPitfalls";
 import BypassCopyleaksDetection from "./pages/blog/BypassCopyleaksDetection";
 import BypassWinstonAIDetection from "./pages/blog/BypassWinstonAIDetection";
 import BypassZeroGPTDetection from "./pages/blog/BypassZeroGPTDetection";
+import WriteAIResistantContent from "./pages/blog/WriteAIResistantContent";
+import Top10AIWritingTools2026 from "./pages/blog/Top10AIWritingTools2026";
+import BypassAIDetectionGuide from "./pages/blog/BypassAIDetectionGuide";
+import MasteringAIPoweredEmailCampaigns2026 from "./pages/blog/MasteringAIPoweredEmailCampaigns2026";
+import AIContentMarketingTrends2026 from "./pages/blog/AIContentMarketingTrends2026";
+import HumanizeAITravelBlogs from "./pages/blog/HumanizeAITravelBlogs";
+import ZeroClickSearchAI2026 from "./pages/blog/ZeroClickSearchAI2026";
+import AIHumanizerTravelBlogs from "./pages/blog/AIHumanizerTravelBlogs";
+import HumanizeAISocialMedia2026 from "./pages/blog/HumanizeAISocialMedia2026";
+import HumanizeAILinkedIn2026 from "./pages/blog/HumanizeAILinkedIn2026";
+import AIPoweredSEOContent2026 from "./pages/blog/AIPoweredSEOContent2026";
+import AIHumanizersForEmailMarketing from "./pages/blog/AIHumanizersForEmailMarketing";
+import AIWritingAcademia from "./pages/blog/AIWritingAcademia";
+import HumanizeAIStories from "./pages/blog/HumanizeAIStories";
+import AIYouTubeScripts from "./pages/blog/AIYouTubeScripts";
+import AIProductDescriptions from "./pages/blog/AIProductDescriptions";
 import NotFound from "./pages/NotFound";
 import AIChecker from "./pages/AIChecker";
 import Team from "./pages/Team";
@@ -124,6 +140,22 @@ const App = () => (
             <Route path="/blog/bypass-copyleaks-ai-detection" element={<BypassCopyleaksDetection />} />
             <Route path="/blog/bypass-winston-ai-detection" element={<BypassWinstonAIDetection />} />
             <Route path="/blog/bypass-zerogpt-ai-detection" element={<BypassZeroGPTDetection />} />
+            <Route path="/blog/write-ai-resistant-content" element={<WriteAIResistantContent />} />
+            <Route path="/blog/top-10-ai-writing-tools-2026" element={<Top10AIWritingTools2026 />} />
+            <Route path="/blog/bypass-ai-detection-guide" element={<BypassAIDetectionGuide />} />
+            <Route path="/blog/mastering-ai-powered-email-campaigns-2026" element={<MasteringAIPoweredEmailCampaigns2026 />} />
+            <Route path="/blog/ai-content-marketing-trends-2026" element={<AIContentMarketingTrends2026 />} />
+            <Route path="/blog/humanize-ai-travel-blogs" element={<HumanizeAITravelBlogs />} />
+            <Route path="/blog/zero-click-search-ai-2026" element={<ZeroClickSearchAI2026 />} />
+            <Route path="/blog/ai-humanizer-travel-blogs" element={<AIHumanizerTravelBlogs />} />
+            <Route path="/blog/humanize-ai-social-media-2026" element={<HumanizeAISocialMedia2026 />} />
+            <Route path="/blog/humanize-ai-linkedin-2026" element={<HumanizeAILinkedIn2026 />} />
+            <Route path="/blog/ai-powered-seo-content-2026" element={<AIPoweredSEOContent2026 />} />
+            <Route path="/blog/ai-humanizers-for-email-marketing" element={<AIHumanizersForEmailMarketing />} />
+            <Route path="/blog/ai-writing-academia" element={<AIWritingAcademia />} />
+            <Route path="/blog/humanize-ai-generated-stories-fiction" element={<HumanizeAIStories />} />
+            <Route path="/blog/ai-youtube-scripts" element={<AIYouTubeScripts />} />
+            <Route path="/blog/ai-product-descriptions" element={<AIProductDescriptions />} />
             <Route path="/bypass-turnitin-ai-detection" element={<BypassTurnitin />} />
             <Route path="/bypass-gptzero-detection" element={<BypassGPTZero />} />
             <Route path="/bypass-originality-ai" element={<BypassOriginality />} />

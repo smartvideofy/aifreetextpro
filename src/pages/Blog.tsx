@@ -11,6 +11,30 @@ import { Breadcrumbs } from "@/components/Breadcrumbs";
 
 const blogPosts = [
   {
+    slug: "bypass-copyleaks-ai-detection",
+    title: "Bypass Copyleaks AI Detection – Proven Techniques for 2025",
+    excerpt: "Learn expert strategies to humanize AI-generated text, lower Copyleaks detection scores, and maintain readability while preserving integrity.",
+    date: "2025-01-20",
+    readTime: "12 min read",
+    category: "How-To Guide"
+  },
+  {
+    slug: "bypass-winston-ai-detection",
+    title: "Bypass Winston AI Detection – Reduce AI Scores & Humanize Text",
+    excerpt: "Discover how to bypass Winston AI detection safely. Expert strategies to humanize AI-generated text and lower detection scores.",
+    date: "2025-01-20",
+    readTime: "11 min read",
+    category: "How-To Guide"
+  },
+  {
+    slug: "bypass-zerogpt-ai-detection",
+    title: "Bypass ZeroGPT AI Detection – Humanize AI Content & Reduce Scores",
+    excerpt: "Learn how to bypass ZeroGPT AI detection effectively. Strategies to humanize AI-generated content and reduce detection scores.",
+    date: "2025-01-20",
+    readTime: "10 min read",
+    category: "How-To Guide"
+  },
+  {
     slug: "how-ai-detectors-score-text",
     title: "How AI Detectors Score Text: A Behind-the-Scenes Look",
     excerpt: "Breaking down the metrics AI detectors use in plain language. Understand perplexity, burstiness, and confidence scores.",

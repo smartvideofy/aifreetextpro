@@ -50,6 +50,9 @@ import ToneVoiceFlowAIWriting from "./pages/blog/ToneVoiceFlowAIWriting";
 import HowAIDetectorsScoreText from "./pages/blog/HowAIDetectorsScoreText";
 import SignalVsNoiseHumanText from "./pages/blog/SignalVsNoiseHumanText";
 import AIHumanizationPitfalls from "./pages/blog/AIHumanizationPitfalls";
+import BypassCopyleaksDetection from "./pages/blog/BypassCopyleaksDetection";
+import BypassWinstonAIDetection from "./pages/blog/BypassWinstonAIDetection";
+import BypassZeroGPTDetection from "./pages/blog/BypassZeroGPTDetection";
 import NotFound from "./pages/NotFound";
 import AIChecker from "./pages/AIChecker";
 import Team from "./pages/Team";
@@ -118,6 +121,9 @@ const App = () => (
             <Route path="/blog/how-ai-detectors-score-text" element={<HowAIDetectorsScoreText />} />
             <Route path="/blog/signal-vs-noise-human-text" element={<SignalVsNoiseHumanText />} />
             <Route path="/blog/ai-humanization-pitfalls" element={<AIHumanizationPitfalls />} />
+            <Route path="/blog/bypass-copyleaks-ai-detection" element={<BypassCopyleaksDetection />} />
+            <Route path="/blog/bypass-winston-ai-detection" element={<BypassWinstonAIDetection />} />
+            <Route path="/blog/bypass-zerogpt-ai-detection" element={<BypassZeroGPTDetection />} />
             <Route path="/bypass-turnitin-ai-detection" element={<BypassTurnitin />} />
             <Route path="/bypass-gptzero-detection" element={<BypassGPTZero />} />
             <Route path="/bypass-originality-ai" element={<BypassOriginality />} />

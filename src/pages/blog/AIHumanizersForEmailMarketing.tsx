@@ -10,13 +10,13 @@ const relatedArticles = [
   {
     title: "How to Humanize AI Content for Social Media in 2026",
     description: "Step-by-step tips for humanizing AI content on LinkedIn, Instagram, TikTok",
-    href: "/blog/humanize-ai-content-social-media-2026",
+    href: "/blog/humanize-ai-social-media-2026",
     category: "Marketing"
   },
   {
     title: "AI-Powered SEO Content in 2026: Writing Naturally That Ranks",
     description: "Using AI to generate SEO-friendly content without losing authenticity",
-    href: "/blog/ai-seo-content-2026",
+    href: "/blog/ai-powered-seo-content-2026",
     category: "SEO"
   },
   {

@@ -8,22 +8,22 @@ import { ArrowRight, Brain, Search, Zap } from "lucide-react";
 
 const relatedArticles = [
   {
-    title: "How to Humanize AI Content Without Losing SEO",
+    title: "How to Humanize AI Text Without Losing Your Voice",
     description: "Maintain authenticity and search ranking with AI humanization",
-    href: "/blog/how-to-humanize-ai-content-without-losing-seo",
+    href: "/blog/humanize-ai-text-without-losing-voice",
     category: "Humanize"
   },
   {
-    title: "Writing Blogs With AI Assistance",
+    title: "AI Content and SEO: Staying Undetectable",
     description: "Tips for developing authentic blog posts using AI tools",
-    href: "/blog/writing-blogs-with-ai-assistance",
-    category: "AI Humanizer"
+    href: "/blog/ai-content-seo-undetectable",
+    category: "SEO"
   },
   {
-    title: "How to Humanize AI Text in Minutes",
+    title: "How to Write Naturally With AI",
     description: "Professional strategies for natural, engaging AI content",
-    href: "/blog/how-to-humanize-ai-text-in-minutes",
-    category: "Humanize"
+    href: "/blog/how-to-write-naturally-with-ai",
+    category: "Writing Craft"
   }
 ];
 

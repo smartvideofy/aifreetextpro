@@ -8,13 +8,13 @@ import { ArrowRight, Brain, Search, Zap } from "lucide-react";
 
 const relatedArticles = [
   {
-    title: "How to Humanize AI Text in Minutes",
+    title: "How to Humanize AI Text Without Losing Your Voice",
     description: "Pro writers share secrets for natural, engaging AI text",
-    href: "/blog/how-to-humanize-ai-text-in-minutes",
+    href: "/blog/humanize-ai-text-without-losing-voice",
     category: "Humanize"
   },
   {
-    title: "How to Write Naturally with AI: A Complete Guide",
+    title: "How to Write Naturally With AI",
     description: "Master natural writing with AI assistance",
     href: "/blog/how-to-write-naturally-with-ai",
     category: "Writing Craft"
@@ -133,7 +133,7 @@ export default function HumanizeAISocialMedia2026() {
                 <img src="/public/images/blog/HumanizeAISocialMedia2026.png" alt="Humanizing AI for Social Media" className="w-full rounded-lg mb-4" />
                 <h2 className="text-3xl font-bold mb-4">Why Humanizing AI Posts Matters</h2>
                 <p>
-                  Social media audiences crave authenticity. AI-generated content often feels robotic, overly structured, or impersonal. Humanizing posts increases engagement, shares, and audience trust.
+                  Social media audiences crave authenticity. According to <a href="https://sproutsocial.com/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Sprout Social</a> research, AI-generated content often feels robotic, overly structured, or impersonal. Platforms like <a href="https://buffer.com/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Buffer</a> recommend humanizing posts to increase engagement, shares, and audience trust.
                 </p>
               </section>
 

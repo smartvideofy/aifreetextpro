@@ -10,19 +10,19 @@ const relatedArticles = [
   {
     title: "AI Content for YouTube Scripts: How to Sound Human in 2026",
     description: "Transform AI-generated scripts into natural, engaging narration for videos and podcasts.",
-    href: "/blog/ai-content-youtube-scripts-2026",
+    href: "/blog/ai-youtube-scripts",
     category: "Video Content"
   },
   {
     title: "How to Humanize AI Content for Social Media in 2026",
     description: "Tips to adapt AI-generated content for LinkedIn, Twitter, Instagram, TikTok",
-    href: "/blog/humanize-ai-content-social-media-2026",
+    href: "/blog/humanize-ai-social-media-2026",
     category: "Marketing"
   },
   {
-    title: "Top 10 AI Humanizer Tools for 2026 (Updated)",
+    title: "Top 10 AI Humanizer Tools for 2025",
     description: "Updated list of AI humanizers with tests, pricing, and feature comparisons.",
-    href: "/blog/top-10-ai-humanizer-tools-2026",
+    href: "/blog/top-10-ai-humanizer-tools-2025",
     category: "Tools"
   }
 ];

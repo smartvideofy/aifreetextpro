@@ -8,16 +8,16 @@ import { ArrowRight, Brain, Search, Zap } from "lucide-react";
 
 const relatedArticles = [
   {
-    title: "The Future of AI Content Detection in 2026",
+    title: "How AI Detectors Work",
     description: "Next-generation detection trends for writers",
-    href: "/blog/future-of-ai-detection-2026",
+    href: "/blog/how-ai-detectors-work",
     category: "Analysis"
   },
   {
-    title: "Writing Blogs With AI Assistance",
+    title: "AI Content and SEO: Staying Undetectable",
     description: "Tips for authentic blog posts with AI humanizer tools",
-    href: "/blog/writing-blogs-with-ai-assistance",
-    category: "AI Humanizer"
+    href: "/blog/ai-content-seo-undetectable",
+    category: "SEO"
   },
   {
     title: "How to Humanize AI Text for Travel Blogs",
@@ -146,7 +146,7 @@ export default function ZeroClickSearchAI2026() {
                 <img src="/public/images/blog/zero-click-search-ai-2026.png" alt="Zero Click Search AI 2026" className="w-full rounded-lg mb-4" />
                 <h2 className="text-3xl font-bold mb-4">What Zero-Click Searches Are</h2>
                 <p>
-                  Zero-click searches happen when users get the answers directly in search results without visiting a website. AI chatbots, featured snippets, and knowledge panels increasingly provide instant answers, bypassing traditional traffic.
+                  Zero-click searches happen when users get the answers directly in search results without visiting a website. According to <a href="https://sparktoro.com/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">SparkToro</a> research, over 65% of Google searches now end without a click. AI chatbots like <a href="https://openai.com/chatgpt" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">ChatGPT</a>, featured snippets, and knowledge panels increasingly provide instant answers, bypassing traditional traffic.
                 </p>
               </section>
 

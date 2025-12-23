@@ -8,10 +8,10 @@ import { ArrowRight, Brain, Search, Zap } from "lucide-react";
 
 const relatedArticles = [
   {
-    title: "Writing Blogs With AI Assistance",
+    title: "How to Write Naturally With AI",
     description: "Tips for authentic blog posts with AI humanizer tools",
-    href: "/blog/writing-blogs-with-ai-assistance",
-    category: "AI Humanizer"
+    href: "/blog/how-to-write-naturally-with-ai",
+    category: "Writing Craft"
   },
   {
     title: "Zero-Click Searches in 2026",
@@ -20,9 +20,9 @@ const relatedArticles = [
     category: "SEO"
   },
   {
-    title: "The Future of AI Content Detection in 2026",
+    title: "How AI Detectors Work",
     description: "Next-generation detection trends for writers",
-    href: "/blog/future-of-ai-detection-2026",
+    href: "/blog/how-ai-detectors-work",
     category: "Analysis"
   }
 ];

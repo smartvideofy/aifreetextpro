@@ -10,19 +10,19 @@ const relatedArticles = [
   {
     title: "How to Humanize AI Content for Social Media in 2026",
     description: "Step-by-step tips for humanizing AI content on LinkedIn, Instagram, TikTok",
-    href: "/blog/humanize-ai-content-social-media-2026",
+    href: "/blog/humanize-ai-social-media-2026",
     category: "Marketing"
   },
   {
     title: "How to Humanize AI Content for eCommerce Product Descriptions",
     description: "Make AI-generated product copy sound authentic for better conversions",
-    href: "/blog/humanize-ai-ecommerce-product-descriptions",
+    href: "/blog/ai-product-descriptions",
     category: "eCommerce"
   },
   {
     title: "How to Write Naturally with AI: A Complete Guide",
     description: "Craft natural, engaging AI-generated content for all types of writing",
-    href: "/blog/write-naturally-with-ai",
+    href: "/blog/how-to-write-naturally-with-ai",
     category: "Writing Craft"
   }
 ];

@@ -8,21 +8,21 @@ import { ArrowRight, Brain, Search, Zap } from "lucide-react";
 
 const relatedArticles = [
   {
-    title: "How to Humanize AI Content for Social Media in 2026",
-    description: "Step-by-step tips for humanizing AI content on LinkedIn, Instagram, TikTok",
-    href: "/blog/humanize-ai-content-social-media-2026",
-    category: "Marketing"
+    title: "AI Writing for Students: Avoiding Plagiarism",
+    description: "Best practices for students using AI writing assistants",
+    href: "/blog/ai-writing-students-avoid-plagiarism",
+    category: "Academic"
   },
   {
-    title: "How to Humanize AI-Generated Text Without Losing Your Voice",
+    title: "How to Humanize AI Text Without Losing Your Voice",
     description: "Proven strategies to make ChatGPT or Gemini text sound naturally human",
-    href: "/blog/humanize-ai-text-2025",
+    href: "/blog/humanize-ai-text-without-losing-voice",
     category: "How-To"
   },
   {
-    title: "Maintaining Academic Integrity: Using AI to Write Thesis and Essays Responsibly",
+    title: "Academic AI Writing: How to Use It Safely",
     description: "Responsible ways to leverage AI while preserving academic standards",
-    href: "/blog/ai-writing-academia-integrity",
+    href: "/blog/academic-ai-writing-safely",
     category: "Academic"
   }
 ];
@@ -123,7 +123,7 @@ export default function AIWritingAcademia() {
                 <img src="/public/images/blog/ai-writing-in-academia.png" alt="AI Writing in Academia" className="w-full rounded-lg mb-4" />
                 <h2 className="text-3xl font-bold mb-4">The Academic AI Challenge</h2>
                 <p>
-                  AI-generated content can save time, but students must avoid plagiarism detection and maintain academic integrity. Humanizing AI drafts is essential to producing credible, undetectable work.
+                  AI-generated content can save time, but students must avoid plagiarism detection tools like <a href="https://www.turnitin.com/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Turnitin</a> and maintain academic integrity per <a href="https://academicintegrity.org/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">ICAI guidelines</a>. Humanizing AI drafts is essential to producing credible, undetectable work while respecting institutional policies.
                 </p>
               </section>
 

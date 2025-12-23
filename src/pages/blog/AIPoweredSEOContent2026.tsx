@@ -10,13 +10,13 @@ const relatedArticles = [
   {
     title: "How to Humanize AI Content for Social Media in 2026",
     description: "Tips for adapting AI content to social platforms",
-    href: "/blog/how-to-humanize-ai-content-social-media-2026",
+    href: "/blog/humanize-ai-social-media-2026",
     category: "Social Media"
   },
   {
-    title: "Top 10 AI Humanizer Tools for 2026",
+    title: "Top 10 AI Humanizer Tools for 2025",
     description: "Updated list of AI humanizers tested and rated",
-    href: "/blog/top-10-ai-humanizer-tools-2026",
+    href: "/blog/top-10-ai-humanizer-tools-2025",
     category: "Tools"
   },
   {
@@ -132,7 +132,7 @@ export default function AIPoweredSEOContent2026() {
                 <img src="/public/images/blog/ai-powered-seo-content-2026.png" alt="AI SEO Content" className="w-full rounded-lg mb-4" />
                 <h2 className="text-3xl font-bold mb-4">Why Natural SEO Content Matters in 2026</h2>
                 <p>
-                  Search engines are increasingly sophisticated in detecting unnatural or AI-heavy content. To rank high, content must be informative, readable, and human-like, while still targeting strategic keywords.
+                  Search engines like <a href="https://developers.google.com/search" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Google Search</a> are increasingly sophisticated in detecting unnatural or AI-heavy content. According to <a href="https://moz.com/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Moz</a> and <a href="https://ahrefs.com/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Ahrefs</a>, to rank high, content must be informative, readable, and human-like, while still targeting strategic keywords.
                 </p>
               </section>
 

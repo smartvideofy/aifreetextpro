@@ -8,10 +8,10 @@ import { ArrowRight, Brain, Search, Zap } from "lucide-react";
 
 const relatedArticles = [
   {
-    title: "How to Humanize AI Content Without Losing SEO",
+    title: "AI Content and SEO: Staying Undetectable",
     description: "Strategies for authentic content and better search rankings",
-    href: "/blog/humanize-ai-content-without-losing-seo",
-    category: "Humanize"
+    href: "/blog/ai-content-seo-undetectable",
+    category: "SEO"
   },
   {
     title: "Tone, Voice, and Flow in AI-Assisted Writing",
@@ -132,7 +132,7 @@ export default function HumanizeAILinkedIn2026() {
                 <img src="/public/images/blog/humanize-ai-linkedin-2026.png" alt="Humanize AI LinkedIn" className="w-full rounded-lg mb-4" />
                 <h2 className="text-3xl font-bold mb-4">Why LinkedIn Needs Humanized AI Content</h2>
                 <p>
-                  LinkedIn readers expect posts to be personal, insightful, and authentic. AI-generated content often feels generic and robotic. Humanizing AI text ensures your updates, articles, and comments resonate with your professional network.
+                  <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">LinkedIn</a> readers expect posts to be personal, insightful, and authentic. According to <a href="https://www.hootsuite.com/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Hootsuite's</a> social media trends report, AI-generated content often feels generic and robotic. Humanizing AI text ensures your updates, articles, and comments resonate with your professional network.
                 </p>
               </section>
 

@@ -10,7 +10,7 @@ const relatedArticles = [
   {
     title: "How to Humanize AI-Generated Stories & Fiction",
     description: "Practical workflows to make AI-generated stories feel natural and human.",
-    href: "/blog/humanize-ai-generated-stories-fiction",
+    href: "/blog/humanize-ai-stories",
     category: "Writing Craft"
   },
   {
@@ -20,7 +20,7 @@ const relatedArticles = [
     category: "Marketing"
   },
   {
-    title: "AI-Powered SEO Content in 2026: Writing Naturally That Ranks",
+    title: "AI-Powered SEO Content in 2026",
     description: "Use AI to write SEO content that ranks and reads naturally.",
     href: "/blog/ai-powered-seo-content-2026",
     category: "SEO"
@@ -116,9 +116,9 @@ export default function AIYouTubeScripts() {
             <div className="space-y-8">
               <section>
                 <img src="/public/images/blog/ai-youtube-scripts.png" alt="AI YouTube Scripts" className="w-full rounded-lg mb-4" />
-                <h2 className="text-3xl font-bold mb-4">Why Humanizing AI Scripts Matters</h2>
+              <h2 className="text-3xl font-bold mb-4">Why Humanizing AI Scripts Matters</h2>
                 <p>
-                  AI can write scripts fast, but without human-like pacing and voice, they sound robotic. Natural scripts improve audience retention, engagement, and relatability.
+                  AI can write scripts fast, but without human-like pacing and voice, they sound robotic. According to <a href="https://www.tubebuddy.com/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">TubeBuddy</a> and <a href="https://vidiq.com/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">VidIQ</a> research, natural scripts improve audience retention, engagement, and channel growth.
                 </p>
               </section>
 
@@ -167,13 +167,15 @@ export default function AIYouTubeScripts() {
                 <p className="text-lg mb-6">
                   Use AI Free Text Pro to refine your scripts for natural delivery, engaging narration, and authentic voice.
                 </p>
-                <Link 
-                  to="/"
+              <a 
+                  href="https://app.aifreetextpro.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg font-semibold hover:bg-primary/90 transition-colors"
                 >
                   Humanize My Script
                   <ArrowRight className="w-5 h-5" />
-                </Link>
+                </a>
               </div>
             </div>
           </article>

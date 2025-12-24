@@ -8,15 +8,15 @@ import { ArrowRight, Brain, Search, Zap } from "lucide-react";
 
 const relatedArticles = [
   {
-    title: "AI Writing for Students: Avoiding Plagiarism",
+    title: "AI Writing for Students",
     description: "Best practices for students using AI writing assistants",
-    href: "/blog/ai-writing-students-avoid-plagiarism",
+    href: "/blog/ai-writing-students",
     category: "Academic"
   },
   {
-    title: "How to Humanize AI Text Without Losing Your Voice",
+    title: "How to Humanize AI Text",
     description: "Proven strategies to make ChatGPT or Gemini text sound naturally human",
-    href: "/blog/humanize-ai-text-without-losing-voice",
+    href: "/blog/humanize-ai-text",
     category: "How-To"
   },
   {
@@ -168,13 +168,15 @@ export default function AIWritingAcademia() {
                 <p className="text-lg mb-6">
                   Safely leverage AI for research and essays by following humanization workflows and ethical practices. Ensure your work reads naturally and maintains integrity.
                 </p>
-                <Link 
-                  to="/"
+              <a 
+                  href="https://app.aifreetextpro.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg font-semibold hover:bg-primary/90 transition-colors"
                 >
                   Humanize My Academic Content
                   <ArrowRight className="w-5 h-5" />
-                </Link>
+                </a>
               </div>
             </div>
           </article>

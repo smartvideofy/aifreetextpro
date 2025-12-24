@@ -8,7 +8,7 @@ import { ArrowRight, ShoppingCart, Star, Zap } from "lucide-react";
 
 const relatedArticles = [
   {
-    title: "AI Content for YouTube Scripts: How to Sound Human in 2026",
+    title: "AI Content for YouTube Scripts",
     description: "Transform AI-generated scripts into natural, engaging narration for videos and podcasts.",
     href: "/blog/ai-youtube-scripts",
     category: "Video Content"
@@ -20,9 +20,9 @@ const relatedArticles = [
     category: "Marketing"
   },
   {
-    title: "Top 10 AI Humanizer Tools for 2025",
+    title: "Top 10 AI Humanizers",
     description: "Updated list of AI humanizers with tests, pricing, and feature comparisons.",
-    href: "/blog/top-10-ai-humanizer-tools-2025",
+    href: "/blog/top-10-ai-humanizers",
     category: "Tools"
   }
 ];
@@ -116,9 +116,9 @@ export default function AIProductDescriptions() {
             <div className="space-y-8">
               <section>
                 <img src="/public/images/blog/ai-product-descriptions.png" alt="AI Product Descriptions" className="w-full rounded-lg mb-4" />
-                <h2 className="text-3xl font-bold mb-4">Why Humanizing Product Descriptions Matters</h2>
+              <h2 className="text-3xl font-bold mb-4">Why Humanizing Product Descriptions Matters</h2>
                 <p>
-                  AI can generate quick product copy, but without natural tone, it risks sounding robotic and generic. Humanized descriptions increase trust, improve conversions, and reduce bounce rates.
+                  AI can generate quick product copy, but without natural tone, it risks sounding robotic and generic. According to <a href="https://www.shopify.com/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Shopify</a> research, humanized descriptions increase trust, improve conversions, and reduce bounce rates on eCommerce sites.
                 </p>
               </section>
 
@@ -167,13 +167,15 @@ export default function AIProductDescriptions() {
                 <p className="text-lg mb-6">
                   Use AI Free Text Pro to refine product descriptions, boost engagement, and increase conversions with human-like copy.
                 </p>
-                <Link 
-                  to="/"
+              <a 
+                  href="https://app.aifreetextpro.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg font-semibold hover:bg-primary/90 transition-colors"
                 >
                   Humanize My Product Descriptions
                   <ArrowRight className="w-5 h-5" />
-                </Link>
+                </a>
               </div>
             </div>
           </article>

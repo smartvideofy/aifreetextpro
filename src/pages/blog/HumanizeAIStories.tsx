@@ -20,7 +20,7 @@ const relatedArticles = [
     category: "eCommerce"
   },
   {
-    title: "How to Write Naturally with AI: A Complete Guide",
+    title: "How to Write Naturally with AI",
     description: "Craft natural, engaging AI-generated content for all types of writing",
     href: "/blog/how-to-write-naturally-with-ai",
     category: "Writing Craft"
@@ -121,9 +121,9 @@ export default function HumanizeAIStories() {
             <div className="space-y-8">
               <section>
                 <img src="/public/images/blog/humanize-ai-stories.png" alt="Humanize AI Stories" className="w-full rounded-lg mb-4" />
-                <h2 className="text-3xl font-bold mb-4">Why Humanizing AI Stories Matters</h2>
+              <h2 className="text-3xl font-bold mb-4">Why Humanizing AI Stories Matters</h2>
                 <p>
-                  AI can generate plots and dialogues quickly, but raw AI text often feels mechanical. Humanization ensures your stories have emotional depth, natural pacing, and relatable characters.
+                  AI can generate plots and dialogues quickly, but raw AI text often feels mechanical. According to <a href="https://www.writersdigest.com/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Writer's Digest</a>, humanization ensures your stories have emotional depth, natural pacing, and relatable characters that engage readers.
                 </p>
               </section>
 
@@ -172,13 +172,15 @@ export default function HumanizeAIStories() {
                 <p className="text-lg mb-6">
                   Transform your AI-generated plots and characters into captivating fiction with AI Free Text Pro and humanization techniques.
                 </p>
-                <Link 
-                  to="/"
+              <a 
+                  href="https://app.aifreetextpro.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg font-semibold hover:bg-primary/90 transition-colors"
                 >
                   Humanize My Story
                   <ArrowRight className="w-5 h-5" />
-                </Link>
+                </a>
               </div>
             </div>
           </article>

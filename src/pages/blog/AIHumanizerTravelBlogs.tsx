@@ -144,9 +144,9 @@ export default function AIHumanizerTravelBlogs() {
             <div className="space-y-8">
               <section>
                 <img src="/public/images/blog/ai-humanizer-travel-blogs.png" alt="AI Humanizer Travel Blogs" className="w-full rounded-lg mb-4" />
-                <h2 className="text-3xl font-bold mb-4">Why AI Humanizers Help Travel Bloggers</h2>
+              <h2 className="text-3xl font-bold mb-4">Why AI Humanizers Help Travel Bloggers</h2>
                 <p>
-                  Travel bloggers often face writer's block or tight deadlines. AI humanizer tools assist by generating drafts while keeping your personal style, making it faster to turn notes into polished posts.
+                  Travel bloggers often face writer's block or tight deadlines. AI humanizer tools assist by generating drafts while keeping your personal style, making it faster to turn notes into polished posts. Leading travel platforms like <a href="https://www.lonelyplanet.com/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Lonely Planet</a> emphasize the importance of authentic storytelling in travel content.
                 </p>
               </section>
 
@@ -187,13 +187,15 @@ export default function AIHumanizerTravelBlogs() {
                 <p className="text-lg mb-6">
                   Use AI Free Text Pro to enhance AI-generated drafts, adding your voice, style, and authenticity to every travel blog you publish.
                 </p>
-                <Link 
-                  to="/"
+              <a 
+                  href="https://app.aifreetextpro.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg font-semibold hover:bg-primary/90 transition-colors"
                 >
                   Humanize Your Drafts Now
                   <ArrowRight className="w-5 h-5" />
-                </Link>
+                </a>
               </div>
             </div>
           </article>

@@ -8,9 +8,9 @@ import { ArrowRight, Brain, Search, Zap } from "lucide-react";
 
 const relatedArticles = [
   {
-    title: "AI Content and SEO: Staying Undetectable",
+    title: "AI-Powered SEO Content in 2026",
     description: "Strategies for authentic content and better search rankings",
-    href: "/blog/ai-content-seo-undetectable",
+    href: "/blog/ai-powered-seo-content-2026",
     category: "SEO"
   },
   {
@@ -20,9 +20,9 @@ const relatedArticles = [
     category: "Writing Craft"
   },
   {
-    title: "Top 10 AI Humanizer Tools for 2025",
+    title: "Top 10 AI Humanizers",
     description: "A curated list of AI humanizers for content creators",
-    href: "/blog/top-10-ai-humanizer-tools-2025",
+    href: "/blog/top-10-ai-humanizers",
     category: "Comparison"
   }
 ];
@@ -180,13 +180,15 @@ export default function HumanizeAILinkedIn2026() {
                 <p className="text-lg mb-6">
                   Combine AI drafting with human editing to create LinkedIn posts and articles that truly connect with your audience.
                 </p>
-                <Link 
-                  to="/"
+              <a 
+                  href="https://app.aifreetextpro.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg font-semibold hover:bg-primary/90 transition-colors"
                 >
                   Analyze Your LinkedIn Content
                   <ArrowRight className="w-5 h-5" />
-                </Link>
+                </a>
               </div>
             </div>
           </article>

@@ -14,9 +14,9 @@ const relatedArticles = [
     category: "Social Media"
   },
   {
-    title: "Top 10 AI Humanizer Tools for 2025",
+    title: "Top 10 AI Humanizers",
     description: "Updated list of AI humanizers tested and rated",
-    href: "/blog/top-10-ai-humanizer-tools-2025",
+    href: "/blog/top-10-ai-humanizers",
     category: "Tools"
   },
   {
@@ -177,13 +177,15 @@ export default function AIPoweredSEOContent2026() {
                 <p className="text-lg mb-6">
                   Use AI Free Text Pro to humanize your SEO content and create articles that perform well in 2026's search landscape.
                 </p>
-                <Link 
-                  to="/"
+              <a 
+                  href="https://app.aifreetextpro.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg font-semibold hover:bg-primary/90 transition-colors"
                 >
                   Humanize Your SEO Content
                   <ArrowRight className="w-5 h-5" />
-                </Link>
+                </a>
               </div>
             </div>
           </article>

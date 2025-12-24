@@ -8,9 +8,9 @@ import { ArrowRight, Brain, Search, Zap } from "lucide-react";
 
 const relatedArticles = [
   {
-    title: "How to Humanize AI Text Without Losing Your Voice",
+    title: "How to Humanize AI Text",
     description: "Pro writers share secrets for natural, engaging AI text",
-    href: "/blog/humanize-ai-text-without-losing-voice",
+    href: "/blog/humanize-ai-text",
     category: "Humanize"
   },
   {
@@ -20,7 +20,7 @@ const relatedArticles = [
     category: "Writing Craft"
   },
   {
-    title: "AI Humanization Pitfalls: Common Mistakes Writers Make",
+    title: "AI Humanization Pitfalls",
     description: "Learn what to avoid when humanizing AI text",
     href: "/blog/ai-humanization-pitfalls",
     category: "Best Practices"
@@ -177,13 +177,15 @@ export default function HumanizeAISocialMedia2026() {
                 <p className="text-lg mb-6">
                   Use these strategies to turn AI drafts into authentic content that resonates. Combine with AI Free Text Pro to analyze and refine your posts.
                 </p>
-                <Link 
-                  to="/"
+              <a 
+                  href="https://app.aifreetextpro.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg font-semibold hover:bg-primary/90 transition-colors"
                 >
                   Analyze Text Now
                   <ArrowRight className="w-5 h-5" />
-                </Link>
+                </a>
               </div>
             </div>
           </article>

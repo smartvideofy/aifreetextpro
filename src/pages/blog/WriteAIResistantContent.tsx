@@ -8,22 +8,22 @@ import { ArrowRight, Brain, Search, Zap } from "lucide-react";
 
 const relatedArticles = [
   {
-    title: "The Future of AI Content Detection in 2026",
-    description: "Upcoming detection trends and algorithms",
-    href: "/blog/future-of-ai-detection-2026",
-    category: "Analysis"
-  },
-  {
     title: "How AI Detectors Work",
     description: "Inside the science of AI text analysis",
     href: "/blog/how-ai-detectors-work",
     category: "Technical"
   },
   {
-    title: "AI Detection Tools Compared (2025 Edition)",
+    title: "AI Detection Comparison: Finding the Best Tool",
     description: "See which AI detector is most accurate in real-world tests",
-    href: "/blog/ai-detection-tools-compared-2025",
+    href: "/blog/ai-detection-comparison",
     category: "Comparison"
+  },
+  {
+    title: "How to Bypass AI Detection Guide",
+    description: "Complete strategies to make your content undetectable",
+    href: "/blog/bypass-ai-detection-guide",
+    category: "Guide"
   }
 ];
 
@@ -116,9 +116,9 @@ export default function WriteAIResistantContent() {
             <div className="space-y-12">
               <section>
                 <img src={ogImage} alt="AI Resistant Content" className="w-full rounded-lg mb-4" />
-                <h2 className="text-3xl font-bold mb-4">Why AI-Resistant Content Matters</h2>
+              <h2 className="text-3xl font-bold mb-4">Why AI-Resistant Content Matters</h2>
                 <p>
-                  As AI content detectors become increasingly sophisticated, traditional AI-generated content is flagged more often. Humanized, AI-resistant writing helps maintain engagement, authenticity, and trust. It also improves SEO performance because search engines favor natural and original content.
+                  As AI content detectors become increasingly sophisticated, traditional AI-generated content is flagged more often. According to <a href="https://originality.ai/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Originality.ai</a> research, humanized, AI-resistant writing helps maintain engagement, authenticity, and trust. It also improves SEO performance because search engines like <a href="https://developers.google.com/search" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Google Search</a> favor natural and original content.
                 </p>
               </section>
 
@@ -180,13 +180,15 @@ export default function WriteAIResistantContent() {
                 <p className="text-lg mb-6">
                   Use AI Free Text Pro to check drafts, identify AI patterns, and enhance authenticity. Make your content engaging, unique, and AI-resistant.
                 </p>
-                <Link 
-                  to="/"
+              <a 
+                  href="https://app.aifreetextpro.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg font-semibold hover:bg-primary/90 transition-colors"
                 >
                   Analyze Text Now
                   <ArrowRight className="w-5 h-5" />
-                </Link>
+                </a>
               </div>
             </div>
           </article>

@@ -10,20 +10,20 @@ const relatedArticles = [
   {
     title: "Top 10 AI Writing Tools in 2026",
     description: "Best AI content generators for marketers and writers",
-    href: "/blog/top10-ai-writing-tools-2026",
+    href: "/blog/top-10-ai-writing-tools-2026",
     category: "Tools"
   },
   {
-    title: "Write AI-Resistant Content",
+    title: "Write AI-Resistant Content in 2026",
     description: "How to create content that passes AI detectors",
     href: "/blog/write-ai-resistant-content",
     category: "Guides"
   },
   {
-    title: "The Future of AI Content Detection in 2026",
-    description: "Upcoming trends and algorithms for AI detection",
-    href: "/blog/future-of-ai-detection-2026",
-    category: "Analysis"
+    title: "AI Humanizers for Email Marketing",
+    description: "Make AI-generated emails sound personal and human",
+    href: "/blog/ai-humanizers-for-email-marketing",
+    category: "Marketing"
   }
 ];
 
@@ -128,9 +128,9 @@ export default function MasteringAIPoweredEmailCampaigns2026() {
             <div className="space-y-8">
               <section>
                 <img src="/public/images/blog/mastering-ai-email-2026.png" alt="AI Email Campaigns" className="w-full rounded-lg mb-4" />
-                <h2 className="text-3xl font-bold mb-4">Why AI is a Game-Changer for Email Marketing</h2>
+              <h2 className="text-3xl font-bold mb-4">Why AI is a Game-Changer for Email Marketing</h2>
                 <p>
-                  AI-powered tools allow marketers to personalize at scale, optimize subject lines, predict engagement, and analyze patterns that humans cannot easily detect. In 2026, these capabilities will become standard, helping campaigns achieve higher open and click-through rates.
+                  AI-powered tools allow marketers to personalize at scale, optimize subject lines, predict engagement, and analyze patterns that humans cannot easily detect. Research from <a href="https://www.hubspot.com/state-of-marketing" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">HubSpot</a> and <a href="https://mailchimp.com/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Mailchimp</a> shows that in 2026, these capabilities are becoming standard, helping campaigns achieve higher open and click-through rates.
                 </p>
                 <ul className="space-y-2">
                   <li><strong>Dynamic personalization:</strong> AI predicts user behavior and adjusts content for each subscriber.</li>
@@ -187,13 +187,15 @@ export default function MasteringAIPoweredEmailCampaigns2026() {
                 <p className="text-lg mb-6">
                   Use AI Free Text Pro to improve copy, predict engagement, and craft campaigns that resonate with subscribers.
                 </p>
-                <Link 
-                  to="/"
+              <a 
+                  href="https://app.aifreetextpro.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg font-semibold hover:bg-primary/90 transition-colors"
                 >
                   Optimize Your Emails Now
                   <ArrowRight className="w-5 h-5" />
-                </Link>
+                </a>
               </div>
             </div>
           </article>

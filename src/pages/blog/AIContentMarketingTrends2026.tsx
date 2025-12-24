@@ -210,13 +210,15 @@ export default function AIContentMarketingTrends2026() {
                 <p className="text-lg mb-6">
                   Leverage AI tools to optimize campaigns, create impactful content, and anticipate audience needs before they arise.
                 </p>
-                <Link 
-                  to="/"
+              <a 
+                  href="https://app.aifreetextpro.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg font-semibold hover:bg-primary/90 transition-colors"
                 >
                   Explore AI Tools Now
                   <ArrowRight className="w-5 h-5" />
-                </Link>
+                </a>
               </div>
             </div>
           </article>

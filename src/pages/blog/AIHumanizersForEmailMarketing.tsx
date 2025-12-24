@@ -130,9 +130,9 @@ export default function AIHumanizersForEmailMarketing() {
             <div className="space-y-8">
               <section>
                 <img src="/public/images/blog/ai-humanizers-for-email-marketing.png" alt="AI Humanizers Email Marketing" className="w-full rounded-lg mb-4" />
-                <h2 className="text-3xl font-bold mb-4">Why AI Humanizers Matter in Email Marketing</h2>
+              <h2 className="text-3xl font-bold mb-4">Why AI Humanizers Matter in Email Marketing</h2>
                 <p>
-                  Emails generated solely by AI often feel robotic. Humanizers help add warmth, natural phrasing, and personalization that resonates with your audience.
+                  Emails generated solely by AI often feel robotic. According to <a href="https://www.campaignmonitor.com/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Campaign Monitor</a> research, humanizers help add warmth, natural phrasing, and personalization that resonates with your audience and improves conversion rates.
                 </p>
               </section>
 
@@ -177,13 +177,15 @@ export default function AIHumanizersForEmailMarketing() {
                 <p className="text-lg mb-6">
                   Improve open rates, engagement, and replies by making your AI-generated emails feel human. Apply the workflow and tools above to transform your campaigns.
                 </p>
-                <Link 
-                  to="/"
+              <a 
+                  href="https://app.aifreetextpro.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg font-semibold hover:bg-primary/90 transition-colors"
                 >
                   Humanize My Email
                   <ArrowRight className="w-5 h-5" />
-                </Link>
+                </a>
               </div>
             </div>
           </article>

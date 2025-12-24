@@ -14,9 +14,9 @@ const relatedArticles = [
     category: "Analysis"
   },
   {
-    title: "AI Content and SEO: Staying Undetectable",
+    title: "AI-Powered SEO Content in 2026",
     description: "Tips for authentic blog posts with AI humanizer tools",
-    href: "/blog/ai-content-seo-undetectable",
+    href: "/blog/ai-powered-seo-content-2026",
     category: "SEO"
   },
   {
@@ -186,13 +186,15 @@ export default function ZeroClickSearchAI2026() {
                 <p className="text-lg mb-6">
                   Use AI Free Text Pro to analyze your content’s readability, clarity, and likelihood to be cited in AI-powered search results.
                 </p>
-                <Link 
-                  to="/"
+              <a 
+                  href="https://app.aifreetextpro.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg font-semibold hover:bg-primary/90 transition-colors"
                 >
                   Test AI Citation Potential
                   <ArrowRight className="w-5 h-5" />
-                </Link>
+                </a>
               </div>
             </div>
           </article>

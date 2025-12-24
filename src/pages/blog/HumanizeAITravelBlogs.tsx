@@ -8,15 +8,15 @@ import { ArrowRight, Brain, Search, Zap } from "lucide-react";
 
 const relatedArticles = [
   {
-    title: "How to Humanize AI Text Without Losing Your Voice",
+    title: "How to Humanize AI Text",
     description: "Maintain authenticity and search ranking with AI humanization",
-    href: "/blog/humanize-ai-text-without-losing-voice",
+    href: "/blog/humanize-ai-text",
     category: "Humanize"
   },
   {
-    title: "AI Content and SEO: Staying Undetectable",
+    title: "AI-Powered SEO Content in 2026",
     description: "Tips for developing authentic blog posts using AI tools",
-    href: "/blog/ai-content-seo-undetectable",
+    href: "/blog/ai-powered-seo-content-2026",
     category: "SEO"
   },
   {
@@ -144,9 +144,9 @@ export default function HumanizeAITravelBlogs() {
             <div className="space-y-8">
               <section>
                 <img src="/public/images/blog/humanize-ai-travel-blogs.png" alt="Humanize AI Travel Blog" className="w-full rounded-lg mb-4" />
-                <h2 className="text-3xl font-bold mb-4">Why Humanizing Travel Content Matters</h2>
+              <h2 className="text-3xl font-bold mb-4">Why Humanizing Travel Content Matters</h2>
                 <p>
-                  Readers want more than generic itineraries. Humanized content makes your trips come alive, sharing emotion, humor, and local insights that AI alone cannot convey.
+                  Readers want more than generic itineraries. According to <a href="https://www.travelandleisure.com/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Travel + Leisure</a>, humanized content makes your trips come alive, sharing emotion, humor, and local insights that AI alone cannot convey authentically.
                 </p>
               </section>
 
@@ -205,13 +205,15 @@ export default function HumanizeAITravelBlogs() {
                 <p className="text-lg mb-6">
                   Use AI Free Text Pro to humanize drafts, test readability, and add your unique travel voice.
                 </p>
-                <Link 
-                  to="/"
+              <a 
+                  href="https://app.aifreetextpro.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg font-semibold hover:bg-primary/90 transition-colors"
                 >
                   Humanize Your Text Now
                   <ArrowRight className="w-5 h-5" />
-                </Link>
+                </a>
               </div>
             </div>
           </article>

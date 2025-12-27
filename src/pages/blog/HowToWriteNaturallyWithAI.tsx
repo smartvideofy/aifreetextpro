@@ -35,7 +35,7 @@ const HowToWriteNaturallyWithAI = () => {
         <title>How to Write Naturally with AI: A Complete Guide for 2025 | AI Free Text Pro</title>
         <meta name="description" content="Learn the art of crafting natural, engaging content with AI assistance. Discover techniques for prompting, structuring, and refining AI-generated text." />
         <meta name="keywords" content="write naturally with AI, AI writing tips, natural AI content, AI writing techniques, improve AI writing" />
-        <link rel="canonical" href="https://aifreetext.pro/blog/how-to-write-naturally-with-ai" />
+        <link rel="canonical" href="https://aifreetextpro.com/blog/how-to-write-naturally-with-ai" />
         <meta name="robots" content="index, follow" />
         <meta property="og:title" content="How to Write Naturally with AI: A Complete Guide" />
         <meta property="og:description" content="Master the art of creating natural, engaging content with AI tools. Professional techniques for better AI-assisted writing." />
@@ -251,12 +251,12 @@ const HowToWriteNaturallyWithAI = () => {
                 <p className="text-muted-foreground mb-6">
                   Ready to transform AI-assisted content into naturally engaging prose? AI Free Text Pro's humanization tools help ensure your content reads as authentically human while maintaining your unique voice.
                 </p>
-                <Link to="/">
+                <a href="https://app.aifreetextpro.com" target="_blank" rel="noopener noreferrer">
                   <Button size="lg" className="group">
                     Try AI Free Text Pro
                     <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                   </Button>
-                </Link>
+                </a>
               </section>
             </article>
 

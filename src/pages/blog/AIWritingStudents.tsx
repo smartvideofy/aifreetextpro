@@ -9,10 +9,10 @@ import { RelatedArticles } from "@/components/RelatedArticles";
 
 const relatedArticles = [
   {
-    title: "How to Detect AI-Generated Text: Complete Guide",
-    description: "Learn proven techniques to identify AI-generated content",
-    href: "/blog/how-to-detect-ai-generated-text",
-    category: "AI Detection"
+    title: "Academic AI Writing Safely: Maintaining Integrity",
+    description: "Using AI responsibly for academic writing",
+    href: "/blog/academic-ai-writing-safely",
+    category: "Academic"
   },
   {
     title: "How to Humanize AI-Generated Text Without Losing Your Voice",

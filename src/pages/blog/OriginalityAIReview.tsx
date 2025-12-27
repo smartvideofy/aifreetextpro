@@ -144,7 +144,7 @@ const OriginalityAIReview = () => {
 
                 <h2>What Is Originality.AI?</h2>
                 <p>
-                  Originality.AI is an AI content detection and plagiarism checking tool launched in 2022. It's specifically marketed to:
+                  <a href="https://originality.ai" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary/80">Originality.AI</a> is an AI content detection and plagiarism checking tool launched in 2022. It's specifically marketed to:
                 </p>
                 <ul>
                   <li>Content publishers and editors vetting freelance submissions</li>

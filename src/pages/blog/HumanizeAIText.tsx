@@ -9,15 +9,15 @@ import { RelatedArticles } from "@/components/RelatedArticles";
 
 const relatedArticles = [
   {
-    title: "Best Free AI Humanizer Tools in 2025",
+    title: "Top 10 AI Humanizer Tools for 2025",
     description: "Compare the top AI humanizer tools and find the perfect one for your needs",
-    href: "/blog/best-free-ai-humanizer-tools-2025",
+    href: "/blog/top-10-ai-humanizer-tools-2025",
     category: "Tools"
   },
   {
-    title: "Bypass AI Detection: Ethical Tips & Tricks",
-    description: "Learn ethical strategies to make AI content more human-like",
-    href: "/blog/bypass-ai-detection-ethical-tips",
+    title: "How AI Detectors Work",
+    description: "Understand the technology behind AI detection",
+    href: "/blog/how-ai-detectors-work",
     category: "Guide"
   }
 ];

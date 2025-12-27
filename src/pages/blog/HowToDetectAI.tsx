@@ -8,17 +8,17 @@ import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { RelatedArticles } from "@/components/RelatedArticles";
 
 const HowToDetectAI = () => {
-  const relatedArticles = [
+const relatedArticles = [
     {
-      title: "Best Free AI Humanizers in 2025: Complete Comparison",
-      description: "Discover the top free AI humanizer tools and find the perfect one for your needs. Compare features, accuracy, and ease of use.",
-      href: "/blog/best-free-ai-humanizer-tools-2025",
+      title: "Top 10 AI Humanizer Tools for 2025",
+      description: "Complete comparison of the best AI humanizers available",
+      href: "/blog/top-10-ai-humanizer-tools-2025",
       category: "Tools & Reviews"
     },
     {
-      title: "How to Bypass AI Detection: Ethical Strategies & Tips",
-      description: "Learn legitimate techniques to make AI-assisted content more human-like and authentic while maintaining quality.",
-      href: "/blog/bypass-ai-detection-ethical-tips",
+      title: "How AI Detectors Work",
+      description: "Understand the technology behind AI detection algorithms",
+      href: "/blog/how-ai-detectors-work",
       category: "Guides"
     }
   ];

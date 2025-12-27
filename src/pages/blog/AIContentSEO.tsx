@@ -15,8 +15,8 @@ const relatedArticles = [
     category: "Marketing"
   },
   {
-    title: "The Definitive Guide to Passing All Detectors",
-    description: "How to bypass every major AI detector",
+    title: "The Definitive Guide to Writing Human-Like Content",
+    description: "How to create natural content that reads authentically",
     href: "/blog/pass-all-ai-detectors-guide",
     category: "Guide"
   }

@@ -9,9 +9,9 @@ import { RelatedArticles } from "@/components/RelatedArticles";
 
 const relatedArticles = [
   {
-    title: "ZeroGPT vs AI Free Text Pro: Which Detects Better in 2025?",
-    description: "In-depth comparison of ZeroGPT and AI Free Text Pro detection accuracy",
-    href: "/blog/zerogpt-vs-ai-free-text-pro-2025",
+    title: "Top 10 AI Humanizer Tools for 2025",
+    description: "Complete comparison of the best AI humanizers available",
+    href: "/blog/top-10-ai-humanizer-tools-2025",
     category: "Comparison"
   },
   {

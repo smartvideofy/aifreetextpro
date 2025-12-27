@@ -35,7 +35,7 @@ const EditingAIDraftsHumanEditor = () => {
         <title>Editing AI Drafts Like a Human Editor: Professional Techniques | AI Free Text Pro</title>
         <meta name="description" content="Learn professional editing techniques to transform AI-generated drafts into polished, publication-ready content that reads authentically human." />
         <meta name="keywords" content="editing AI content, AI draft editing, professional editing, humanize AI text, content editing techniques" />
-        <link rel="canonical" href="https://aifreetext.pro/blog/editing-ai-drafts-human-editor" />
+        <link rel="canonical" href="https://aifreetextpro.com/blog/editing-ai-drafts-human-editor" />
         <meta name="robots" content="index, follow" />
         <meta property="og:title" content="Editing AI Drafts Like a Human Editor" />
         <meta property="og:description" content="Professional techniques to polish AI-generated content into publication-ready prose." />

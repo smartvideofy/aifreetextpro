@@ -15,9 +15,9 @@ const relatedArticles = [
     category: "Educational"
   },
   {
-    title: "Bypass AI Detection: Ethical Tips & Tricks",
-    description: "Learn ethical strategies to make AI content more human-like",
-    href: "/blog/bypass-ai-detection-ethical-tips",
+    title: "How to Humanize AI-Generated Text Without Losing Your Voice",
+    description: "Transform AI content into natural, authentic writing",
+    href: "/blog/humanize-ai-text-without-losing-voice",
     category: "Guide"
   }
 ];

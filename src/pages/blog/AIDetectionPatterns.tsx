@@ -145,7 +145,7 @@ const AIDetectionPatterns = () => {
                 </p>
                 
                 <p>
-                  In this article, we'll break down the five most important patterns AI detectors analyze, explain the science behind each, and show you exactly how <a href="/">AI Free Text Pro's humanizer</a> automatically fixes these issues.
+                  In this article, we'll break down the five most important patterns AI detectors analyze, explain the science behind each (based on research published by <a href="https://arxiv.org/abs/2301.10416" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary/80">OpenAI</a> and <a href="https://research.google/pubs/palm-scaling-language-modeling-with-pathways/" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary/80">Google Research</a>), and show you exactly how <a href="https://app.aifreetextpro.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary/80">AI Free Text Pro's humanizer</a> automatically fixes these issues.
                 </p>
 
                 <h2>Pattern #1: Perplexity (Predictability)</h2>
@@ -162,7 +162,7 @@ const AIDetectionPatterns = () => {
 
                 <h3>Why AI Has Low Perplexity</h3>
                 <p>
-                  Large language models like GPT-4 are trained to predict the most probable next word. When generating text, they naturally gravitate toward safe, expected choices:
+                  Large language models like <a href="https://openai.com/gpt-4" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary/80">GPT-4</a> are trained to predict the most probable next word. When generating text, they naturally gravitate toward safe, expected choices:
                 </p>
                 <ul>
                   <li>"The sky is..." → "blue" (99% of the time)</li>

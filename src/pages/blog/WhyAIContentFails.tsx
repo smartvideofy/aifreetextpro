@@ -165,13 +165,15 @@ export default function WhyAIContentFails() {
                 <p className="text-lg mb-6">
                   Use AI Free Text Pro to identify AI patterns in your writing and get specific suggestions for improvement.
                 </p>
-                <Link 
-                  to="/"
+                <a 
+                  href="https://app.aifreetextpro.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg font-semibold hover:bg-primary/90 transition-colors"
                 >
                   Analyze Your Content
                   <ArrowRight className="w-5 h-5" />
-                </Link>
+                </a>
               </div>
             </div>
           </article>

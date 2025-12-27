@@ -35,7 +35,7 @@ const ToneVoiceFlowAIWriting = () => {
         <title>Tone, Voice, and Flow in AI-Assisted Writing | AI Free Text Pro</title>
         <meta name="description" content="Master the three pillars of great writing: tone, voice, and flow. Learn how to maintain these elements when working with AI writing tools." />
         <meta name="keywords" content="writing tone, writing voice, content flow, AI writing style, natural writing rhythm" />
-        <link rel="canonical" href="https://aifreetext.pro/blog/tone-voice-flow-ai-writing" />
+        <link rel="canonical" href="https://aifreetextpro.com/blog/tone-voice-flow-ai-writing" />
         <meta name="robots" content="index, follow" />
         <meta property="og:title" content="Tone, Voice, and Flow in AI-Assisted Writing" />
         <meta property="og:description" content="Master the three pillars of great writing when working with AI tools." />
@@ -329,12 +329,12 @@ const ToneVoiceFlowAIWriting = () => {
                 <p className="text-muted-foreground mb-6">
                   AI Free Text Pro helps preserve your tone and voice while ensuring natural flow. Our humanization technology maintains the elements that make your writing distinctly yours.
                 </p>
-                <Link to="/">
+                <a href="https://app.aifreetextpro.com" target="_blank" rel="noopener noreferrer">
                   <Button size="lg" className="group">
                     Try AI Free Text Pro
                     <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                   </Button>
-                </Link>
+                </a>
               </section>
             </article>
 

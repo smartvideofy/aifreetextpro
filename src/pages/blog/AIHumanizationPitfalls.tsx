@@ -41,7 +41,7 @@ const AIHumanizationPitfalls = () => {
         <title>AI Humanization Pitfalls: Common Mistakes Writers Make | AI Free Text Pro</title>
         <meta name="description" content="Learn the most common mistakes when humanizing AI text and how to avoid them. Improve your AI content refinement process with expert tips." />
         <meta name="keywords" content="AI humanization mistakes, content refinement errors, AI text editing, humanizing pitfalls, AI writing mistakes" />
-        <link rel="canonical" href="https://aifreetext.pro/blog/ai-humanization-pitfalls" />
+        <link rel="canonical" href="https://aifreetextpro.com/blog/ai-humanization-pitfalls" />
         <meta property="og:title" content="AI Humanization Pitfalls: Common Mistakes Writers Make" />
         <meta property="og:description" content="Learn the most common mistakes when humanizing AI text and how to avoid them." />
         <meta property="og:type" content="article" />

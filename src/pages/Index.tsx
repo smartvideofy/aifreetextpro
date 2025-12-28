@@ -18,6 +18,7 @@ import StickyHeaderCTA from "@/components/StickyHeaderCTA";
 import TrustBadges from "@/components/TrustBadges";
 import NewsletterSignup from "@/components/NewsletterSignup";
 import ExitIntentPopup from "@/components/ExitIntentPopup";
+import ProductMockup from "@/components/ProductMockup";
 
 const Index = () => {
   return (
@@ -278,6 +279,11 @@ const Index = () => {
                     <ArrowRight className="ml-2 h-4 w-4 md:h-5 md:w-5 group-hover:translate-x-1 transition-transform" />
                   </Button>
                 </a>
+              </div>
+
+              {/* Product Mockup Visual */}
+              <div className="mt-10 md:mt-16 animate-fade-in" style={{ animationDelay: "600ms" }}>
+                <ProductMockup />
               </div>
             </div>
           </div>

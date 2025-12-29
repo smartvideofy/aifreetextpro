@@ -77,6 +77,7 @@ import CaseStudies from "./pages/CaseStudies";
 import EditorialGuidelines from "./pages/EditorialGuidelines";
 import Navbar from "./components/Navbar";
 import { ScrollToTop } from "./components/ScrollToTop";
+import CookieConsent from "./components/CookieConsent";
 
 const queryClient = new QueryClient();
 
@@ -101,6 +102,7 @@ const App = () => (
           <Sonner />
           <RouteTracker />
           <ScrollToTop />
+          <CookieConsent />
           <Routes>
             <Route path="/" element={<Index />} />
           <Route path="/pricing" element={<Pricing />} />

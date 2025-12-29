@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { Cookie, X } from "lucide-react";
+import { Cookie, X, Settings } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const CookieConsent = () => {
@@ -17,11 +17,23 @@ const CookieConsent = () => {
 
   const handleAccept = () => {
     localStorage.setItem("cookie-consent", "accepted");
+    localStorage.setItem("cookie-preferences", JSON.stringify({
+      essential: true,
+      analytics: true,
+      marketing: true,
+      functional: true,
+    }));
     setIsVisible(false);
   };
 
   const handleDecline = () => {
     localStorage.setItem("cookie-consent", "declined");
+    localStorage.setItem("cookie-preferences", JSON.stringify({
+      essential: true,
+      analytics: false,
+      marketing: false,
+      functional: false,
+    }));
     setIsVisible(false);
   };
 
@@ -40,29 +52,32 @@ const CookieConsent = () => {
           <div className="flex-1">
             <h3 className="font-semibold text-foreground mb-1">We value your privacy</h3>
             <p className="text-sm text-muted-foreground">
-              We use cookies to enhance your browsing experience, analyze site traffic, and personalize content. 
-              By clicking "Accept", you consent to our use of cookies. Read our{" "}
+              We use cookies to enhance your browsing experience and analyze site traffic.{" "}
               <Link to="/privacy-policy" className="text-primary hover:underline">
                 Privacy Policy
-              </Link>{" "}
-              for more information.
+              </Link>
             </p>
           </div>
 
           {/* Actions */}
           <div className="flex items-center gap-2 w-full md:w-auto flex-shrink-0">
+            <Link to="/cookie-settings">
+              <Button variant="ghost" size="sm" className="gap-1">
+                <Settings className="w-4 h-4" />
+                <span className="hidden sm:inline">Customize</span>
+              </Button>
+            </Link>
             <Button
               variant="outline"
               size="sm"
               onClick={handleDecline}
-              className="flex-1 md:flex-none"
             >
               Decline
             </Button>
             <Button
               size="sm"
               onClick={handleAccept}
-              className="flex-1 md:flex-none bg-primary hover:bg-primary/90"
+              className="bg-primary hover:bg-primary/90"
             >
               Accept All
             </Button>

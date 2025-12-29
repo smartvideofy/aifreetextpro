@@ -19,6 +19,11 @@ import TrustBadges from "@/components/TrustBadges";
 import NewsletterSignup from "@/components/NewsletterSignup";
 import ExitIntentPopup from "@/components/ExitIntentPopup";
 import ProductMockup from "@/components/ProductMockup";
+import heroIllustration from "@/assets/hero-illustration.png";
+import aiDetectorFeature from "@/assets/ai-detector-feature.png";
+import aiHumanizerFeature from "@/assets/ai-humanizer-feature.png";
+import studentWriting from "@/assets/student-writing.png";
+import writerProfessional from "@/assets/writer-professional.png";
 
 const Index = () => {
   return (
@@ -285,6 +290,15 @@ const Index = () => {
               <div className="mt-10 md:mt-16 animate-fade-in" style={{ animationDelay: "600ms" }}>
                 <ProductMockup />
               </div>
+
+              {/* Hero Illustration */}
+              <div className="mt-8 md:mt-12 animate-fade-in" style={{ animationDelay: "700ms" }}>
+                <img 
+                  src={heroIllustration} 
+                  alt="AI text analysis and detection visualization showing documents being scanned" 
+                  className="w-full max-w-4xl mx-auto rounded-2xl shadow-2xl shadow-primary/20 border border-border/50"
+                />
+              </div>
             </div>
           </div>
         </section>
@@ -436,8 +450,18 @@ const Index = () => {
             
             <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto mb-16">
               {/* AI Detector Card */}
-              <Card className="p-8 space-y-6 bg-gradient-to-br from-card to-card/80 backdrop-blur border-border/50 hover:shadow-2xl hover:shadow-primary/20 transition-all duration-300 hover:-translate-y-1">
+              <Card className="p-8 space-y-6 bg-gradient-to-br from-card to-card/80 backdrop-blur border-border/50 hover:shadow-2xl hover:shadow-primary/20 transition-all duration-300 hover:-translate-y-1 overflow-hidden">
                 <div className="space-y-4">
+                  {/* Feature Image */}
+                  <div className="relative -mx-8 -mt-8 mb-6">
+                    <img 
+                      src={aiDetectorFeature} 
+                      alt="AI content detection with magnifying glass analyzing text" 
+                      className="w-full h-48 object-cover"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-card to-transparent" />
+                  </div>
+                  
                   <div className="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center">
                     <Shield className="w-8 h-8 text-primary" />
                   </div>
@@ -477,8 +501,18 @@ const Index = () => {
               </Card>
 
               {/* AI Humanizer Card */}
-              <Card className="p-8 space-y-6 bg-gradient-to-br from-card to-card/80 backdrop-blur border-border/50 hover:shadow-2xl hover:shadow-secondary/20 transition-all duration-300 hover:-translate-y-1">
+              <Card className="p-8 space-y-6 bg-gradient-to-br from-card to-card/80 backdrop-blur border-border/50 hover:shadow-2xl hover:shadow-secondary/20 transition-all duration-300 hover:-translate-y-1 overflow-hidden">
                 <div className="space-y-4">
+                  {/* Feature Image */}
+                  <div className="relative -mx-8 -mt-8 mb-6">
+                    <img 
+                      src={aiHumanizerFeature} 
+                      alt="AI text humanization transforming robotic text to natural writing" 
+                      className="w-full h-48 object-cover"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-card to-transparent" />
+                  </div>
+                  
                   <div className="w-16 h-16 rounded-2xl bg-secondary/10 flex items-center justify-center">
                     <Sparkles className="w-8 h-8 text-secondary" />
                   </div>
@@ -932,28 +966,35 @@ const Index = () => {
             </div>
             
             <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-              <Card className="p-8 bg-gradient-to-br from-card to-card/80 backdrop-blur border-border/50 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-                <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mb-6">
-                  <BookOpen className="w-7 h-7 text-primary" />
+              <Card className="p-0 bg-gradient-to-br from-card to-card/80 backdrop-blur border-border/50 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden">
+                <img 
+                  src={studentWriting} 
+                  alt="Happy student using laptop for academic writing" 
+                  className="w-full h-48 object-cover"
+                />
+                <div className="p-8">
+                  <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mb-6 -mt-14 relative z-10 border-4 border-card">
+                    <BookOpen className="w-7 h-7 text-primary" />
+                  </div>
+                  <h3 className="font-bold text-2xl mb-4">Students</h3>
+                  <p className="text-muted-foreground mb-6">
+                    Perfect your essays, research papers, and assignments. Ensure authenticity while maintaining academic integrity and improving writing quality.
+                  </p>
+                  <ul className="space-y-2 text-sm text-muted-foreground">
+                    <li className="flex items-start gap-2">
+                      <CheckCircle className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
+                      <span>Essay refinement and polishing</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
+                      <span>Research paper improvement</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
+                      <span>Academic integrity checking</span>
+                    </li>
+                  </ul>
                 </div>
-                <h3 className="font-bold text-2xl mb-4">Students</h3>
-                <p className="text-muted-foreground mb-6">
-                  Perfect your essays, research papers, and assignments. Ensure authenticity while maintaining academic integrity and improving writing quality.
-                </p>
-                <ul className="space-y-2 text-sm text-muted-foreground">
-                  <li className="flex items-start gap-2">
-                    <CheckCircle className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
-                    <span>Essay refinement and polishing</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
-                    <span>Research paper improvement</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
-                    <span>Academic integrity checking</span>
-                  </li>
-                </ul>
               </Card>
 
               <Card className="p-8 bg-gradient-to-br from-card to-card/80 backdrop-blur border-border/50 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
@@ -980,28 +1021,35 @@ const Index = () => {
                 </ul>
               </Card>
 
-              <Card className="p-8 bg-gradient-to-br from-card to-card/80 backdrop-blur border-border/50 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-                <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mb-6">
-                  <Pen className="w-7 h-7 text-primary" />
+              <Card className="p-0 bg-gradient-to-br from-card to-card/80 backdrop-blur border-border/50 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden">
+                <img 
+                  src={writerProfessional} 
+                  alt="Professional content writer working at modern office" 
+                  className="w-full h-48 object-cover"
+                />
+                <div className="p-8">
+                  <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mb-6 -mt-14 relative z-10 border-4 border-card">
+                    <Pen className="w-7 h-7 text-primary" />
+                  </div>
+                  <h3 className="font-bold text-2xl mb-4">Professionals</h3>
+                  <p className="text-muted-foreground mb-6">
+                    Create compelling business content that resonates with your audience while maintaining professionalism and authenticity.
+                  </p>
+                  <ul className="space-y-2 text-sm text-muted-foreground">
+                    <li className="flex items-start gap-2">
+                      <CheckCircle className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
+                      <span>Business communication</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
+                      <span>Marketing content creation</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
+                      <span>Professional reports</span>
+                    </li>
+                  </ul>
                 </div>
-                <h3 className="font-bold text-2xl mb-4">Professionals</h3>
-                <p className="text-muted-foreground mb-6">
-                  Create compelling business content that resonates with your audience while maintaining professionalism and authenticity.
-                </p>
-                <ul className="space-y-2 text-sm text-muted-foreground">
-                  <li className="flex items-start gap-2">
-                    <CheckCircle className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
-                    <span>Business communication</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
-                    <span>Marketing content creation</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
-                    <span>Professional reports</span>
-                  </li>
-                </ul>
               </Card>
             </div>
             

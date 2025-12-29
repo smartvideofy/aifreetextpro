@@ -325,19 +325,19 @@ const VsUndetectable = () => {
             {
               title: "Originality.AI Review: How to Beat It",
               description: "Complete review of Originality.AI detector with accuracy analysis and proven bypass strategies.",
-              href: "/blog/originality-ai-review",
+              href: "/blog/originality-ai-review-how-to-beat",
               category: "Detector Review"
             },
             {
               title: "Pass All AI Detectors: The Definitive Guide",
               description: "Master techniques to bypass ZeroGPT, Turnitin, Copyleaks and all major AI detection tools.",
-              href: "/blog/pass-all-detectors-guide",
+              href: "/blog/pass-all-ai-detectors-guide",
               category: "How-To Guide"
             },
             {
               title: "5 AI Detection Patterns Detectors Look For",
               description: "Understand perplexity, burstiness, and vocabulary patterns that trigger AI detection flags.",
-              href: "/blog/ai-detection-patterns",
+              href: "/blog/ai-detection-patterns-explained",
               category: "Education"
             }
           ]} />

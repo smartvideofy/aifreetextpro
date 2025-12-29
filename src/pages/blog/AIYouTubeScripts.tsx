@@ -10,7 +10,7 @@ const relatedArticles = [
   {
     title: "How to Humanize AI-Generated Stories & Fiction",
     description: "Practical workflows to make AI-generated stories feel natural and human.",
-    href: "/blog/humanize-ai-stories",
+    href: "/blog/humanize-ai-generated-stories-fiction",
     category: "Writing Craft"
   },
   {

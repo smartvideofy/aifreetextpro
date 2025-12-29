@@ -383,13 +383,13 @@ const VsWriteHuman = () => {
             {
               title: "How to Make ChatGPT Writing Undetectable",
               description: "The ultimate 2025 guide to making AI-generated content pass all major detectors with proven techniques.",
-              href: "/blog/make-chatgpt-undetectable",
+              href: "/blog/make-chatgpt-undetectable-2025",
               category: "How-To Guide"
             },
             {
               title: "GPTinf vs AI Free Text Pro: Comparison",
               description: "Detailed comparison of GPTinf and AI Free Text Pro humanizers with success rate tests and pricing.",
-              href: "/blog/gptinf-comparison",
+              href: "/blog/gptinf-vs-ai-free-text-pro",
               category: "Comparison"
             },
             {

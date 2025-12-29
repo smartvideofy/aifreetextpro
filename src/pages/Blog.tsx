@@ -8,6 +8,7 @@ import { Helmet } from "react-helmet-async";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
+import blogHero from "@/assets/blog-hero.png";
 
 const blogPosts = [
   {
@@ -481,6 +482,15 @@ const Blog = () => {
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               Expert guides, tips, and insights on AI detection and humanization
             </p>
+            
+            {/* Blog Hero Image */}
+            <div className="mt-8">
+              <img 
+                src={blogHero} 
+                alt="Open book with floating pages representing knowledge and content" 
+                className="w-full max-w-2xl mx-auto rounded-xl shadow-lg"
+              />
+            </div>
           </div>
 
           {/* Search and Filter Section */}

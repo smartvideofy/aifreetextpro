@@ -5,6 +5,8 @@ import Footer from "@/components/Footer";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
+import aboutTeam from "@/assets/about-team.png";
+import technologyAbstract from "@/assets/technology-abstract.png";
 
 const About = () => {
   return (
@@ -60,6 +62,15 @@ const About = () => {
               <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
                 We empower creators, students, and professionals to transform AI-generated text into authentic, natural writing that preserves your unique voice.
               </p>
+
+              {/* Hero Image */}
+              <div className="mt-12">
+                <img 
+                  src={aboutTeam} 
+                  alt="AI Free Text Pro team collaborating in modern office" 
+                  className="w-full max-w-3xl mx-auto rounded-2xl shadow-2xl shadow-primary/10 border border-border/50"
+                />
+              </div>
             </div>
           </div>
         </section>
@@ -247,6 +258,15 @@ const About = () => {
                 <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
                   Our proprietary algorithms are trained on diverse linguistic patterns, allowing us to distinguish subtle human nuances in tone, rhythm, and structure. We learn from style, not content—ensuring complete data security.
                 </p>
+              </div>
+
+              {/* Technology Image */}
+              <div className="mb-16">
+                <img 
+                  src={technologyAbstract} 
+                  alt="Neural network and AI technology visualization" 
+                  className="w-full rounded-2xl shadow-xl"
+                />
               </div>
               
               <div className="grid md:grid-cols-3 gap-8">

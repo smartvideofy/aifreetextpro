@@ -5,6 +5,7 @@ import { Helmet } from "react-helmet-async";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
+import pricingHero from "@/assets/pricing-hero.png";
 
 const Pricing = () => {
   const plans = [
@@ -179,6 +180,15 @@ const Pricing = () => {
               <div className="mt-6 inline-flex items-center gap-2 px-4 py-2 bg-primary/10 rounded-full">
                 <CheckCircle className="w-5 h-5 text-primary" />
                 <span className="text-sm font-medium">All plans billed monthly. Cancel anytime.</span>
+              </div>
+              
+              {/* Pricing Hero Image */}
+              <div className="mt-10">
+                <img 
+                  src={pricingHero} 
+                  alt="Pricing tiers visualization showing value progression" 
+                  className="w-full max-w-2xl mx-auto rounded-xl shadow-lg"
+                />
               </div>
             </div>
 

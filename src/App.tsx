@@ -75,6 +75,7 @@ import Team from "./pages/Team";
 import Technology from "./pages/Technology";
 import CaseStudies from "./pages/CaseStudies";
 import EditorialGuidelines from "./pages/EditorialGuidelines";
+import CookieSettings from "./pages/CookieSettings";
 import Navbar from "./components/Navbar";
 import { ScrollToTop } from "./components/ScrollToTop";
 import CookieConsent from "./components/CookieConsent";
@@ -172,6 +173,7 @@ const App = () => (
             <Route path="/technology" element={<Technology />} />
             <Route path="/case-studies" element={<CaseStudies />} />
             <Route path="/editorial-guidelines" element={<EditorialGuidelines />} />
+            <Route path="/cookie-settings" element={<CookieSettings />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>

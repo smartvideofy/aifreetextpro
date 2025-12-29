@@ -10,6 +10,39 @@ import Footer from "@/components/Footer";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import blogHero from "@/assets/blog-hero.png";
 
+// Category thumbnail images
+import categorySeo from "@/assets/blog/category-seo.png";
+import categoryAcademic from "@/assets/blog/category-academic.png";
+import categoryHowto from "@/assets/blog/category-howto.png";
+import categoryComparison from "@/assets/blog/category-comparison.png";
+import categoryMarketing from "@/assets/blog/category-marketing.png";
+import categoryWriting from "@/assets/blog/category-writing.png";
+import categorySocial from "@/assets/blog/category-social.png";
+import categoryTools from "@/assets/blog/category-tools.png";
+
+// Map categories to thumbnail images
+const categoryThumbnails: Record<string, string> = {
+  "SEO": categorySeo,
+  "Academic": categoryAcademic,
+  "How-To Guide": categoryHowto,
+  "Comparison": categoryComparison,
+  "Marketing": categoryMarketing,
+  "Email Marketing": categoryMarketing,
+  "Writing Craft": categoryWriting,
+  "Creative Writing": categoryWriting,
+  "Professional Editing": categoryWriting,
+  "Social Media": categorySocial,
+  "Content Creation": categorySocial,
+  "Tools": categoryTools,
+  "Technical": categoryTools,
+  "Educational": categoryAcademic,
+  "Industry": categoryTools,
+  "Best Practices": categoryHowto,
+  "Detector Review": categoryComparison,
+  "Travel Writing": categoryWriting,
+  "eCommerce": categoryMarketing,
+};
+
 const blogPosts = [
   {
     slug: "ai-product-descriptions",
@@ -572,48 +605,65 @@ const Blog = () => {
           <div className="max-w-5xl mx-auto">
             {filteredPosts.length > 0 ? (
               <div className="grid md:grid-cols-2 gap-6">
-                {filteredPosts.map((post) => (
-                  <Card key={post.slug} className="p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col">
-                    <div className="space-y-4 flex-1">
-                      <div className="flex items-center gap-3 text-sm text-muted-foreground">
-                        <span className="px-3 py-1 rounded-full bg-primary/10 text-primary font-medium text-xs">
-                          {post.category}
-                        </span>
-                        <div className="flex items-center gap-1">
-                          <Clock className="w-3.5 h-3.5" />
-                          {post.readTime}
+                {filteredPosts.map((post) => {
+                  const thumbnail = categoryThumbnails[post.category] || categoryHowto;
+                  return (
+                    <Card key={post.slug} className="overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col">
+                      {/* Thumbnail Image */}
+                      <Link to={`/blog/${post.slug}`} className="block">
+                        <div className="relative h-40 overflow-hidden">
+                          <img 
+                            src={thumbnail} 
+                            alt={post.title}
+                            className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+                          />
+                          <div className="absolute inset-0 bg-gradient-to-t from-card/80 to-transparent" />
+                          <span className="absolute bottom-3 left-3 px-3 py-1 rounded-full bg-primary/90 text-primary-foreground font-medium text-xs">
+                            {post.category}
+                          </span>
+                        </div>
+                      </Link>
+                      
+                      <div className="p-6 flex-1 flex flex-col">
+                        <div className="space-y-3 flex-1">
+                          <div className="flex items-center gap-3 text-sm text-muted-foreground">
+                            <div className="flex items-center gap-1">
+                              <Clock className="w-3.5 h-3.5" />
+                              {post.readTime}
+                            </div>
+                          </div>
+
+                          <h2 className="text-xl font-bold hover:text-primary transition-colors line-clamp-2">
+                            <Link to={`/blog/${post.slug}`}>
+                              {post.title}
+                            </Link>
+                          </h2>
+
+                          <p className="text-muted-foreground text-sm leading-relaxed line-clamp-2">
+                            {post.excerpt}
+                          </p>
+                        </div>
+
+                        <div className="mt-4 pt-4 border-t border-border/50 flex items-center justify-between">
+                          <div className="flex items-center gap-2 text-xs text-muted-foreground">
+                            <Calendar className="w-3.5 h-3.5" />
+                            {new Date(post.date).toLocaleDateString('en-US', { 
+                              month: 'short', 
+                              day: 'numeric', 
+                              year: 'numeric' 
+                            })}
+                          </div>
+                          <Link to={`/blog/${post.slug}`}>
+                            <Button variant="ghost" size="sm" className="group text-primary hover:text-primary">
+                              Read more
+                              <ArrowRight className="ml-1 h-3.5 w-3.5 group-hover:translate-x-1 transition-transform" />
+                            </Button>
+                          </Link>
                         </div>
                       </div>
-
-                      <h2 className="text-xl font-bold hover:text-primary transition-colors line-clamp-2">
-                        <Link to={`/blog/${post.slug}`}>
-                          {post.title}
-                        </Link>
-                      </h2>
-
-                      <p className="text-muted-foreground text-sm leading-relaxed line-clamp-3">
-                        {post.excerpt}
-                      </p>
-                    </div>
-
-                    <div className="mt-4 pt-4 border-t border-border/50 flex items-center justify-between">
-                      <div className="flex items-center gap-2 text-xs text-muted-foreground">
-                        <Calendar className="w-3.5 h-3.5" />
-                        {new Date(post.date).toLocaleDateString('en-US', { 
-                          month: 'short', 
-                          day: 'numeric', 
-                          year: 'numeric' 
-                        })}
-                      </div>
-                      <Link to={`/blog/${post.slug}`}>
-                        <Button variant="ghost" size="sm" className="group text-primary hover:text-primary">
-                          Read more
-                          <ArrowRight className="ml-1 h-3.5 w-3.5 group-hover:translate-x-1 transition-transform" />
-                        </Button>
-                      </Link>
-                    </div>
-                  </Card>
-                ))}
+                    </Card>
+                  );
+                })}
               </div>
             ) : (
               <div className="text-center py-16">

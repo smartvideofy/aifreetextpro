@@ -10,13 +10,13 @@ const relatedArticles = [
   {
     title: "AI Writing for Students",
     description: "Best practices for students using AI writing assistants",
-    href: "/blog/ai-writing-students",
+    href: "/blog/ai-writing-students-avoid-plagiarism",
     category: "Academic"
   },
   {
     title: "How to Humanize AI Text",
     description: "Proven strategies to make ChatGPT or Gemini text sound naturally human",
-    href: "/blog/humanize-ai-text",
+    href: "/blog/humanize-ai-text-without-losing-voice",
     category: "How-To"
   },
   {

@@ -10,7 +10,7 @@ const relatedArticles = [
   {
     title: "How to Humanize AI Text",
     description: "Maintain authenticity and search ranking with AI humanization",
-    href: "/blog/humanize-ai-text",
+    href: "/blog/humanize-ai-text-without-losing-voice",
     category: "Humanize"
   },
   {

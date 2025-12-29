@@ -366,7 +366,7 @@ const VsHumanizeAIPro = () => {
             {
               title: "AI Content for SEO: Undetectable Articles That Rank",
               description: "How to generate AI content that passes detection and ranks on Google for SEO professionals.",
-              href: "/blog/ai-content-seo",
+              href: "/blog/ai-content-seo-undetectable",
               category: "SEO"
             },
             {

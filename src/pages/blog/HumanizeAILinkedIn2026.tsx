@@ -20,9 +20,9 @@ const relatedArticles = [
     category: "Writing Craft"
   },
   {
-    title: "Top 10 AI Humanizers",
+    title: "Top 10 AI Humanizer Tools for 2025",
     description: "A curated list of AI humanizers for content creators",
-    href: "/blog/top-10-ai-humanizers",
+    href: "/blog/top-10-ai-humanizer-tools-2025",
     category: "Comparison"
   }
 ];

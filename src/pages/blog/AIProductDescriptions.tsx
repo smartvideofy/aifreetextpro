@@ -20,9 +20,9 @@ const relatedArticles = [
     category: "Marketing"
   },
   {
-    title: "Top 10 AI Humanizers",
+    title: "Top 10 AI Humanizer Tools for 2025",
     description: "Updated list of AI humanizers with tests, pricing, and feature comparisons.",
-    href: "/blog/top-10-ai-humanizers",
+    href: "/blog/top-10-ai-humanizer-tools-2025",
     category: "Tools"
   }
 ];

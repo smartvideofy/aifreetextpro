@@ -16,7 +16,8 @@ const EditorialGuidelines = () => {
         <meta name="description" content="Learn about AI Free Text Pro's editorial standards, fact-checking process, and commitment to accurate, trustworthy content. Our content is reviewed by experts and regularly updated." />
         <meta name="keywords" content="editorial guidelines, content standards, fact-checking, AI content quality, trusted content" />
         <link rel="canonical" href="https://aifreetextpro.com/editorial-guidelines" />
-        <meta name="robots" content="index, follow" />
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta property="og:title" content="Editorial Guidelines - AI Free Text Pro Content Standards" />
         <meta property="og:description" content="Our commitment to accurate, expert-reviewed, and regularly updated content." />
         <meta property="og:url" content="https://aifreetextpro.com/editorial-guidelines" />

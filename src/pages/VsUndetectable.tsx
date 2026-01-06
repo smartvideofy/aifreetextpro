@@ -54,6 +54,8 @@ const VsUndetectable = () => {
         <meta name="description" content="Compare AI Free Text Pro vs Undetectable AI. See pricing, bypass rates, features, and value. AI Free Text Pro: $4.99 starter, 1,000 free words, 98% bypass rate. Undetectable AI: $9.99 starter, 375 free words, paid detector." />
         <meta name="keywords" content="ai free text pro vs undetectable ai, undetectable ai alternative, best ai humanizer, undetectable ai comparison" />
         <link rel="canonical" href="https://aifreetextpro.com/vs-undetectable-ai" />
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta property="og:title" content="AI Free Text Pro vs Undetectable AI - Honest Comparison" />
         <meta property="og:description" content="Side-by-side: AI Free Text Pro offers better value ($4.99 vs $9.99), free detector, and 98% bypass rate. See full comparison." />
         <meta property="og:url" content="https://aifreetextpro.com/vs-undetectable-ai" />

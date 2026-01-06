@@ -53,6 +53,8 @@ const VsHumanizeAIPro = () => {
         <meta name="description" content="Compare AI Free Text Pro vs HumanizeAI.pro. Pricing: $4.99 vs $12/mo. Features: Built-in detector, 4 writing modes, PDF/DOCX support. Bypass rates: 98% vs 93% on GPTZero. See which tool offers better value." />
         <meta name="keywords" content="ai free text pro vs humanizeai pro, humanizeai pro alternative, best ai humanizer comparison" />
         <link rel="canonical" href="https://aifreetextpro.com/vs-humanizeai-pro" />
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta property="og:title" content="AI Free Text Pro vs HumanizeAI.pro - 2025 Comparison" />
         <meta property="og:description" content="Side-by-side comparison: AI Free Text Pro costs $4.99/mo with free detector. HumanizeAI.pro costs $12/mo without detector. See features, pricing, test results." />
         <meta property="og:url" content="https://aifreetextpro.com/vs-humanizeai-pro" />

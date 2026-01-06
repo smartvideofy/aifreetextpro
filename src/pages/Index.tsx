@@ -35,8 +35,8 @@ const Index = () => {
         <meta name="keywords" content="free ai detector, ai humanizer, detect ai text, bypass turnitin, bypass gptzero" />
         <link rel="canonical" href="https://aifreetextpro.com/" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="robots" content="index, follow" />
-        <meta name="googlebot" content="index, follow" />
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta property="og:title" content="Free AI Detector & Humanizer - Bypass GPTZero, Turnitin [Dec 2025]" />
         <meta property="og:description" content="Free AI detector spots ChatGPT in 3 seconds. Humanize AI text to bypass Turnitin, GPTZero, Originality.AI. 98% accuracy." />
         <meta property="og:url" content="https://aifreetextpro.com/" />

@@ -123,7 +123,8 @@ const Team = () => {
         <meta name="description" content="Meet the team of AI researchers, linguists, and content experts building AI Free Text Pro. Our experts bring decades of experience in NLP, machine learning, and digital publishing." />
         <meta name="keywords" content="AI Free Text Pro team, AI experts, NLP researchers, content strategists, AI humanizer developers" />
         <link rel="canonical" href="https://aifreetextpro.com/team" />
-        <meta name="robots" content="index, follow" />
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta property="og:title" content="Our Team - Meet the Experts Behind AI Free Text Pro" />
         <meta property="og:description" content="Meet our team of AI researchers, linguists, and content experts building the most advanced AI humanization tools." />
         <meta property="og:url" content="https://aifreetextpro.com/team" />

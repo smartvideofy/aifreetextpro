@@ -102,7 +102,8 @@ const CaseStudies = () => {
         <meta name="description" content="See real-world examples of how students, businesses, and freelancers use AI Free Text Pro to pass AI detection checks while maintaining content quality. Before/after comparisons included." />
         <meta name="keywords" content="AI humanizer case studies, bypass AI detection examples, Turnitin bypass results, AI content success stories" />
         <link rel="canonical" href="https://aifreetextpro.com/case-studies" />
-        <meta name="robots" content="index, follow" />
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta property="og:title" content="Case Studies - Real Results from AI Free Text Pro Users" />
         <meta property="og:description" content="Real examples showing before/after results of AI humanization passing major detectors." />
         <meta property="og:url" content="https://aifreetextpro.com/case-studies" />

@@ -15,6 +15,8 @@ const BypassTurnitin = () => {
         <meta name="description" content="Beat Turnitin AI detection in 30 seconds. 99.8% success rate tested Dec 2025. Free tool transforms ChatGPT text to pass Turnitin. See live before/after results." />
         <meta name="keywords" content="bypass turnitin ai detection, turnitin ai detector bypass, pass turnitin ai check, humanize ai for turnitin, turnitin ai detection removal" />
         <link rel="canonical" href="https://aifreetextpro.com/bypass-turnitin-ai-detection" />
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta property="og:title" content="Bypass Turnitin AI Detection [Tested Dec 2025] - 99.8% Pass Rate" />
         <meta property="og:description" content="Beat Turnitin AI detection in 30 seconds. 99.8% success rate tested Dec 2025. Free tool transforms ChatGPT text to pass Turnitin." />
         <meta property="og:url" content="https://aifreetextpro.com/bypass-turnitin-ai-detection" />

@@ -84,6 +84,8 @@ const VsWriteHuman = () => {
         <meta name="description" content="AI Free Text Pro vs WriteHuman comparison: 98% vs 92% bypass rate, built-in detector (WriteHuman needs separate tool), $4.99 vs $9/mo. See test results." />
         <meta name="keywords" content="ai free text pro vs writehuman, writehuman alternative, best ai humanizer, writehuman comparison, ai humanizer reviews" />
         <link rel="canonical" href="https://aifreetextpro.com/vs-writehuman" />
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta property="og:title" content="AI Free Text Pro vs WriteHuman [Dec 2025] - Full Comparison" />
         <meta property="og:description" content="AI Free Text Pro vs WriteHuman: 98% vs 92% bypass rate. Built-in detector vs separate tool. $4.99 vs $9/mo. See comparison." />
         <meta property="og:url" content="https://aifreetextpro.com/vs-writehuman" />

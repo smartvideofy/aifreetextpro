@@ -41,8 +41,9 @@ export const SEOHead = ({
       {keywords && <meta name="keywords" content={keywords} />}
       <link rel="canonical" href={fullUrl} />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <meta name="robots" content={noindex ? "noindex, nofollow" : "index, follow"} />
-      <meta name="googlebot" content={noindex ? "noindex, nofollow" : "index, follow"} />
+      <meta name="robots" content={noindex ? "noindex, nofollow" : "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"} />
+      <meta name="googlebot" content={noindex ? "noindex, nofollow" : "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"} />
+      <meta name="bingbot" content={noindex ? "noindex, nofollow" : "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"} />
       <meta name="author" content={author} />
 
       {/* Open Graph / Facebook */}

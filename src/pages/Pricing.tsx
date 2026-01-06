@@ -111,6 +111,8 @@ const Pricing = () => {
         <meta name="description" content="Choose the perfect plan for your needs. Start free with 500 words/month. Plans from $4.99 to $59.99/month. Pro Writer at $24.99/mo with 50,000 words. Unlimited Creator at $59.99/mo." />
         <meta name="keywords" content="ai detector pricing, ai humanizer pricing, free ai detector, ai text humanizer cost, chatgpt detector price" />
         <link rel="canonical" href="https://aifreetextpro.com/pricing" />
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta property="og:title" content="Pricing Plans - AI Free Text Pro" />
         <meta property="og:description" content="Start free with 500 words/month. Plans from $4.99 to $59.99. Pro Writer at $24.99/mo with 50,000 words." />
         <meta property="og:url" content="https://aifreetextpro.com/pricing" />

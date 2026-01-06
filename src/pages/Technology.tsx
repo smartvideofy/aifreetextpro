@@ -34,7 +34,8 @@ const Technology = () => {
         <meta name="description" content="Discover how AI Free Text Pro's proprietary technology transforms AI-generated text into natural, human-like writing. Learn about our stylometric analysis, contextual rewriting, and zero-knowledge architecture." />
         <meta name="keywords" content="AI humanization technology, NLP algorithms, stylometric analysis, AI detection bypass, text transformation technology" />
         <link rel="canonical" href="https://aifreetextpro.com/technology" />
-        <meta name="robots" content="index, follow" />
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta property="og:title" content="Our Technology - How AI Free Text Pro Works" />
         <meta property="og:description" content="Deep dive into our proprietary AI humanization technology and how it transforms robotic text into natural writing." />
         <meta property="og:url" content="https://aifreetextpro.com/technology" />

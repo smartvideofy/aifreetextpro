@@ -72,6 +72,8 @@ const AIChecker = () => {
         <meta name="description" content="Free AI checker to detect AI-generated content with 98% accuracy. Check text against GPTZero, Turnitin, Originality.AI & 15+ detectors. Instant results, privacy protected." />
         <meta name="keywords" content="ai checker, ai content detector, check ai text, detect ai writing, ai detection tool, free ai checker" />
         <link rel="canonical" href="https://aifreetextpro.com/ai-checker" />
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta property="og:title" content="Free AI Checker - Detect AI Content with 98% Accuracy" />
         <meta property="og:description" content="Check if text is AI-generated with 98% accuracy. Multi-detector analysis against GPTZero, Turnitin, Originality.AI & more. Free, fast, private." />
         <meta property="og:url" content="https://aifreetextpro.com/ai-checker" />

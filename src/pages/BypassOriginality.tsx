@@ -15,6 +15,8 @@ const BypassOriginality = () => {
         <meta name="description" content="Beat Originality.AI detection in seconds. 97.5% success rate tested Dec 2025. Free tool makes AI content undetectable. Live test results & instant access." />
         <meta name="keywords" content="bypass originality ai, originality ai bypass, pass originality ai check, humanize ai for originality, originality ai detector bypass" />
         <link rel="canonical" href="https://aifreetextpro.com/bypass-originality-ai" />
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta property="og:title" content="Bypass Originality.AI [Tested Dec 2025] - 97.5% Pass Rate" />
         <meta property="og:description" content="Beat Originality.AI detection in seconds. 97.5% success rate tested Dec 2025. Free tool makes AI content undetectable." />
         <meta property="og:url" content="https://aifreetextpro.com/bypass-originality-ai" />

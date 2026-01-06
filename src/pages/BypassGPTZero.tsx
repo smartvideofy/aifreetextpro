@@ -15,6 +15,8 @@ const BypassGPTZero = () => {
         <meta name="description" content="Beat GPTZero AI detection instantly. 98.9% success rate tested Dec 2025. Free tool makes ChatGPT undetectable. See live test results & try free." />
         <meta name="keywords" content="bypass gptzero, gptzero bypass, pass gptzero detection, humanize ai for gptzero, gptzero ai detector bypass" />
         <link rel="canonical" href="https://aifreetextpro.com/bypass-gptzero-detection" />
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta property="og:title" content="Bypass GPTZero Detection [Tested Dec 2025] - 98.9% Pass Rate" />
         <meta property="og:description" content="Beat GPTZero AI detection instantly. 98.9% success rate tested Dec 2025. Free tool makes ChatGPT undetectable." />
         <meta property="og:url" content="https://aifreetextpro.com/bypass-gptzero-detection" />

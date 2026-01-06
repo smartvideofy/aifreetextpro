@@ -142,6 +142,8 @@ const AIHumanizerForWriters = () => {
         <meta name="description" content="Content writer AI humanizer bypasses Originality.AI and Google detection. Transform AI drafts to publishing-ready articles in seconds. 4 writing styles. Professional, creative, casual modes. Used by 15,000+ writers. Scale from 10 to 50 articles/week without sacrificing quality." />
         <meta name="keywords" content="ai humanizer for writers, content writing ai tool, bypass originality ai, scale content production, freelance writer ai" />
         <link rel="canonical" href="https://aifreetextpro.com/ai-humanizer-for-content-writers" />
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta property="og:title" content="AI Humanizer for Content Writers - Scale 5x 2025" />
         <meta property="og:description" content="96% bypass on Originality.AI. Transform AI drafts to publishing-ready content. 15,000+ writers scale output 5x." />
         <meta property="og:url" content="https://aifreetextpro.com/ai-humanizer-for-content-writers" />

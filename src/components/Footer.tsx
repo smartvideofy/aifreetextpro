@@ -36,6 +36,12 @@ const Footer = () => {
               <a href="https://app.aifreetextpro.com/plagiarism" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
                 Plagiarism Checker
               </a>
+              <a href="https://app.getstudily.com" target="_blank" rel="noopener" className="text-muted-foreground hover:text-primary transition-colors">
+                Create Flashcard
+              </a>
+              <a href="https://getstudily.com" target="_blank" rel="noopener" className="text-muted-foreground hover:text-primary transition-colors">
+                AI Study Notes
+              </a>
             </nav>
           </div>
 

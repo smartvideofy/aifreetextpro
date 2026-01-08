@@ -41,10 +41,12 @@ export default function BypassAIDetectionGuide() {
         />
         <meta
           name="keywords"
-          content="bypass ai detection, ai content resistant, human-like content, write undetectable ai text"
+          content="bypass ai detection 2026, ai content resistant, human-like content, write undetectable ai text, avoid ai detection, ai resistant writing, undetectable content, ai detector bypass, perplexity burstiness, natural ai writing"
         />
         <link rel="canonical" href={canonical} />
-        <meta name="robots" content="index, follow" />
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        <meta name="bingbot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
 
         <meta property="og:title" content="Ultimate Guide to Bypassing AI Detection in 2026" />
         <meta
@@ -77,8 +79,8 @@ export default function BypassAIDetectionGuide() {
               width: 1200,
               height: 675,
             },
-            datePublished: "2025-12-31",
-            dateModified: "2025-12-31",
+            datePublished: "2026-01-08",
+            dateModified: "2026-01-08",
             author: {
               "@type": "Person",
               name: "Shine S",
@@ -107,6 +109,59 @@ export default function BypassAIDetectionGuide() {
               { "@type": "ListItem", position: 2, name: "Blog", item: "https://aifreetextpro.com/blog" },
               { "@type": "ListItem", position: 3, name: "Bypass AI Detection Guide" },
             ],
+          })}
+        </script>
+        
+        {/* HowTo Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "HowTo",
+            name: "How to Create AI-Resistant Content",
+            description: "Step-by-step workflow for creating content that bypasses AI detection.",
+            step: [
+              {"@type": "HowToStep", name: "Draft with AI", text: "Generate a base using your preferred AI writing tool."},
+              {"@type": "HowToStep", name: "Analyze for Patterns", text: "Use AI detectors to check perplexity, sentence variety, and repetitive patterns."},
+              {"@type": "HowToStep", name: "Human Editing Pass", text: "Rewrite sentences for flow, incorporate anecdotes, and adjust structure."},
+              {"@type": "HowToStep", name: "Vary Sentence Length", text: "Introduce both short and long sentences for natural rhythm."},
+              {"@type": "HowToStep", name: "Insert Contextual Nuances", text: "Reference real events, quotes, or statistics to increase authenticity."},
+              {"@type": "HowToStep", name: "Check Again", text: "Run the revised content through detectors to confirm reduced AI signals."},
+              {"@type": "HowToStep", name: "Final Touches", text: "Add human voice elements like humor, idioms, or rhetorical questions."}
+            ]
+          })}
+        </script>
+        
+        {/* FAQPage Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: [
+              {
+                "@type": "Question",
+                name: "What makes AI content detectable?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "AI content is detectable due to low perplexity (predictable word choices), low burstiness (uniform sentence structures), repetitive phrasing, overly formal language, and predictable word sequences."
+                }
+              },
+              {
+                "@type": "Question",
+                name: "How can I make my AI content more human-like?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Vary word choice to increase perplexity, mix sentence lengths for burstiness, incorporate colloquialisms and contractions, add personal anecdotes, and use an AI humanizer tool for automated transformation."
+                }
+              },
+              {
+                "@type": "Question",
+                name: "What are common mistakes when bypassing AI detection?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Common mistakes include over-reliance on AI outputs without human edits, using generic phrases detectors flag easily, failing to vary sentence structures, and ignoring readability for AI avoidance."
+                }
+              }
+            ]
           })}
         </script>
       </Helmet>

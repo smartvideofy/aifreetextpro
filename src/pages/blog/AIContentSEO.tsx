@@ -30,7 +30,9 @@ const AIContentSEO = () => {
         <meta name="description" content="Learn how to use AI for SEO content at scale while ensuring articles pass detection and rank well. Complete guide to undetectable AI writing for search." />
         <meta name="keywords" content="undetectable AI SEO content, AI writing for SEO that passes detection, Google AI content policy, AI content marketing, scaled AI content" />
         <link rel="canonical" href="https://aifreetextpro.com/blog/ai-content-seo-undetectable" />
-        <meta name="robots" content="index, follow" />
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        <meta name="bingbot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta property="og:title" content="AI Content for SEO: How to Generate Undetectable Articles That Rank" />
         <meta property="og:description" content="Scale SEO content with AI while staying undetectable and ranking well" />
         <meta property="og:url" content="https://aifreetextpro.com/blog/ai-content-seo-undetectable" />

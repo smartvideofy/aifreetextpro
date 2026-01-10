@@ -30,8 +30,9 @@ const AIDetectionComparison = () => {
         <meta name="description" content="See which AI detector is most accurate in 2025. We compare GPTZero, Rewritify, and AI Free Text Pro in real-world tests." />
         <meta name="keywords" content="ai detection tools, compare ai detectors 2025, best ai detector, gptzero, ai free text pro, rewritify" />
         <link rel="canonical" href="https://aifreetextpro.com/blog/ai-detection-tools-compared-2025" />
-        <meta name="robots" content="index, follow" />
-        <meta name="googlebot" content="index, follow" />
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        <meta name="bingbot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta property="og:title" content="AI Detection Tools Compared (2025 Edition)" />
         <meta property="og:description" content="Real-world comparison of leading AI detectors" />
         <meta property="og:url" content="https://aifreetextpro.com/blog/ai-detection-tools-compared-2025" />

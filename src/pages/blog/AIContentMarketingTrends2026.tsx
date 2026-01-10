@@ -38,7 +38,9 @@ export default function AIContentMarketingTrends2026() {
         <meta name="description" content="Explore how AI is reshaping marketing strategies in 2026, from hyper-personalization to predictive analytics and ethical considerations." />
         <meta name="keywords" content="AI content marketing 2026, AI marketing trends, hyper-personalization, predictive analytics marketing" />
         <link rel="canonical" href={canonical} />
-        <meta name="robots" content="index, follow" />
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        <meta name="bingbot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta property="og:title" content="AI Content Marketing Trends to Watch in 2026" />
         <meta property="og:description" content="Explore how AI is reshaping marketing strategies in 2026, from hyper-personalization to predictive analytics." />
         <meta property="og:type" content="article" />

@@ -36,7 +36,9 @@ const ToneVoiceFlowAIWriting = () => {
         <meta name="description" content="Master the three pillars of great writing: tone, voice, and flow. Learn how to maintain these elements when working with AI writing tools." />
         <meta name="keywords" content="writing tone, writing voice, content flow, AI writing style, natural writing rhythm" />
         <link rel="canonical" href="https://aifreetextpro.com/blog/tone-voice-flow-ai-writing" />
-        <meta name="robots" content="index, follow" />
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        <meta name="bingbot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta property="og:title" content="Tone, Voice, and Flow in AI-Assisted Writing" />
         <meta property="og:description" content="Master the three pillars of great writing when working with AI tools." />
         <meta property="og:type" content="article" />

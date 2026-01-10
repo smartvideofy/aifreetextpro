@@ -38,7 +38,9 @@ export default function AIYouTubeScripts() {
         <meta name="description" content="Learn to humanize AI-generated scripts for YouTube videos, podcasts, and narration to engage viewers naturally." />
         <meta name="keywords" content="AI YouTube scripts, humanize AI content, AI video scripts, natural AI voice" />
         <link rel="canonical" href={canonical} />
-        <meta name="robots" content="index, follow" />
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        <meta name="bingbot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta property="og:title" content="AI Content for YouTube Scripts: How to Sound Human in 2026" />
         <meta property="og:description" content="Learn to humanize AI-generated scripts for YouTube videos, podcasts, and narration to engage viewers naturally." />
         <meta property="og:type" content="article" />

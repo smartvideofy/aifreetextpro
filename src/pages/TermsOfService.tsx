@@ -12,8 +12,17 @@ const TermsOfService = () => {
         <meta name="description" content="Read AI Free Text Pro's terms of service to understand acceptable use, user responsibilities, and service limitations for our AI detection and humanization tools." />
         <meta name="keywords" content="terms of service, usage terms, terms and conditions, service agreement" />
         <link rel="canonical" href="https://aifreetextpro.com/terms-of-service" />
-        <meta name="robots" content="noindex, follow" />
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        <meta name="bingbot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta property="og:title" content="Terms of Service - AI Free Text Pro" />
+        <meta property="og:description" content="Read AI Free Text Pro's terms of service to understand acceptable use and service limitations." />
+        <meta property="og:url" content="https://aifreetextpro.com/terms-of-service" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="AI Free Text Pro" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="Terms of Service - AI Free Text Pro" />
       </Helmet>
       <main className="flex-1">
         <div className="container mx-auto px-4 py-16 max-w-4xl">

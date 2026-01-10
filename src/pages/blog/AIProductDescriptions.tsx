@@ -38,7 +38,9 @@ export default function AIProductDescriptions() {
         <meta name="description" content="Learn to make AI-generated eCommerce product descriptions sound authentic, engaging, and optimized for conversions." />
         <meta name="keywords" content="AI product descriptions, humanize AI content, eCommerce copywriting, AI writing tools" />
         <link rel="canonical" href={canonical} />
-        <meta name="robots" content="index, follow" />
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        <meta name="bingbot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta property="og:title" content="How to Humanize AI Content for eCommerce Product Descriptions" />
         <meta property="og:description" content="Learn to make AI-generated eCommerce product descriptions sound authentic, engaging, and optimized for conversions." />
         <meta property="og:type" content="article" />

@@ -30,7 +30,9 @@ const AcademicAIWritingSafely = () => {
         <meta name="description" content="Learn how to use AI responsibly for academic writing including thesis and essays. Understand ethical boundaries while leveraging AI tools effectively." />
         <meta name="keywords" content="AI writing for thesis, academic integrity AI tool, AI text in research paper, ethical AI writing, AI essay writing safely" />
         <link rel="canonical" href="https://aifreetextpro.com/blog/academic-ai-writing-safely" />
-        <meta name="robots" content="index, follow" />
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        <meta name="bingbot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta property="og:title" content="Maintaining Academic Integrity: Using AI to Write Thesis and Essays Safely" />
         <meta property="og:description" content="Responsible AI use for academic writing" />
         <meta property="og:url" content="https://aifreetextpro.com/blog/academic-ai-writing-safely" />

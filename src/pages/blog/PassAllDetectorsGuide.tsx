@@ -30,7 +30,9 @@ const PassAllDetectorsGuide = () => {
         <meta name="description" content="Complete guide to creating natural, human-like content that reads authentically across GPTZero, Turnitin, Originality.AI, ZeroGPT, and Copyleaks." />
         <meta name="keywords" content="humanize AI writing, improve AI content, natural AI writing, human-like AI content, AI writing guide" />
         <link rel="canonical" href="https://aifreetextpro.com/blog/pass-all-ai-detectors-guide" />
-        <meta name="robots" content="index, follow" />
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        <meta name="bingbot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta property="og:title" content="The Definitive Guide to Writing Human-Like Content (2025)" />
         <meta property="og:description" content="How to create natural human-like content that reads authentically" />
         <meta property="og:url" content="https://aifreetextpro.com/blog/pass-all-ai-detectors-guide" />

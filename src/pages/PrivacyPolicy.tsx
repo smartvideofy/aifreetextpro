@@ -12,8 +12,17 @@ const PrivacyPolicy = () => {
         <meta name="description" content="Read AI Free Text Pro's privacy policy to understand how we protect your data. We do not store or share your text submissions. Your privacy is our priority." />
         <meta name="keywords" content="privacy policy, data protection, user privacy, secure ai detector" />
         <link rel="canonical" href="https://aifreetextpro.com/privacy-policy" />
-        <meta name="robots" content="noindex, follow" />
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        <meta name="bingbot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta property="og:title" content="Privacy Policy - AI Free Text Pro" />
+        <meta property="og:description" content="Read AI Free Text Pro's privacy policy to understand how we protect your data." />
+        <meta property="og:url" content="https://aifreetextpro.com/privacy-policy" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="AI Free Text Pro" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="Privacy Policy - AI Free Text Pro" />
       </Helmet>
       <main className="flex-1">
         <div className="container mx-auto px-4 py-16 max-w-4xl">

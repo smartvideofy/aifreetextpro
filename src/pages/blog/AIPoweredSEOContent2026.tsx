@@ -38,7 +38,9 @@ export default function AIPoweredSEOContent2026() {
         <meta name="description" content="Learn how to create AI-generated SEO content that reads naturally and ranks high in search results in 2026." />
         <meta name="keywords" content="AI SEO content, AI humanizer, natural writing SEO, AI content ranking 2026" />
         <link rel="canonical" href={canonical} />
-        <meta name="robots" content="index, follow" />
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        <meta name="bingbot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta property="og:title" content="AI-Powered SEO Content in 2026" />
         <meta property="og:description" content="Learn how to create AI-generated SEO content that reads naturally and ranks high in search results in 2026." />
         <meta property="og:type" content="article" />

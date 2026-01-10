@@ -36,7 +36,9 @@ const AIDetectionPatterns = () => {
         <meta name="description" content="Discover the 5 linguistic patterns AI detectors analyze including perplexity, burstiness, and predictability. Learn what makes AI writing different from human writing." />
         <meta name="keywords" content="AI detection patterns, perplexity and burstiness explained, is my writing human or AI, AI linguistic patterns, how AI detectors work" />
         <link rel="canonical" href="https://aifreetextpro.com/blog/ai-detection-patterns-explained" />
-        <meta name="robots" content="index, follow" />
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        <meta name="bingbot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta property="og:title" content="AI vs. Human: 5 Subtle Linguistic Patterns AI Detectors Look For" />
         <meta property="og:description" content="Understand the linguistic patterns that distinguish AI writing from human writing" />
         <meta property="og:url" content="https://aifreetextpro.com/blog/ai-detection-patterns-explained" />

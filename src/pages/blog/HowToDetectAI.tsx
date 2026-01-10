@@ -31,8 +31,9 @@ const relatedArticles = [
         <meta name="keywords" content="detect ai text, identify ai writing, chatgpt detection, ai generated content, spot ai writing, ai detection methods, gpt detector" />
         <link rel="canonical" href="https://aifreetextpro.com/blog/how-to-detect-ai-generated-text" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="robots" content="index, follow" />
-        <meta name="googlebot" content="index, follow" />
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        <meta name="bingbot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta property="og:title" content="How to Detect AI-Generated Text: Complete Guide 2025" />
         <meta property="og:description" content="Learn expert techniques to detect AI-generated text with 98% accuracy." />
         <meta property="og:url" content="https://aifreetextpro.com/blog/how-to-detect-ai-generated-text" />

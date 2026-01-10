@@ -38,8 +38,9 @@ export default function HumanizeAISocialMedia2026() {
         <meta name="description" content="Learn how to turn AI-generated content into human-like social media posts that engage readers and avoid robotic tone." />
         <meta name="keywords" content="AI social media content, humanize AI posts, AI writing tips, social media engagement" />
         <link rel="canonical" href={canonical} />
-        <meta name="robots" content="index, follow" />
-
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        <meta name="bingbot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta property="og:title" content="How to Humanize AI Content for Social Media in 2026" />
         <meta property="og:description" content="Practical tips and examples to make AI-generated posts feel authentic and engaging." />
         <meta property="og:type" content="article" />

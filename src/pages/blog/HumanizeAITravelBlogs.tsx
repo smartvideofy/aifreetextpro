@@ -38,7 +38,9 @@ export default function HumanizeAITravelBlogs() {
         <meta name="description" content="Learn step-by-step techniques to humanize AI-generated travel content while keeping your unique voice and storytelling style intact." />
         <meta name="keywords" content="humanize ai travel blogs, ai humanizer, travel content ai" />
         <link rel="canonical" href={canonical} />
-        <meta name="robots" content="index, follow" />
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        <meta name="bingbot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta property="og:title" content="How to Humanize AI Text for Travel Blogs" />
         <meta property="og:description" content="Learn step-by-step techniques to humanize AI-generated travel content while keeping your unique voice and storytelling style intact." />
         <meta property="og:type" content="article" />

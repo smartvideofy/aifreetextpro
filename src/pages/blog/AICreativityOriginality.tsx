@@ -29,8 +29,9 @@ export default function AICreativityOriginality() {
         <meta name="description" content="Explore how AI can assist rather than replace creativity — what 'original' means in the era of ChatGPT and humanizers." />
         <meta name="keywords" content="ai creativity, ai writing originality, creative ai tools, ai and human creativity" />
         <link rel="canonical" href="https://aifreetextpro.com/blog/can-ai-writing-be-original" />
-        <meta name="robots" content="index, follow" />
-        <meta name="googlebot" content="index, follow" />
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        <meta name="bingbot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta property="og:title" content="Can AI Writing Be Truly Original? Exploring Creativity in the Age of GPT" />
         <meta property="og:description" content="Explore how AI can assist rather than replace creativity." />
         <meta property="og:url" content="https://aifreetextpro.com/blog/can-ai-writing-be-original" />

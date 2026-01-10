@@ -38,8 +38,9 @@ export default function AIContentSEO2026() {
         <meta name="description" content="Learn how AI is transforming content SEO in 2026, including ranking factors, optimization tools, and best practices for writers and marketers." />
         <meta name="keywords" content="AI SEO 2026, AI content optimization, content SEO tools, AI writing SEO" />
         <link rel="canonical" href={canonical} />
-        <meta name="robots" content="index, follow" />
-        
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        <meta name="bingbot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta property="og:title" content="AI Content SEO in 2026: Boost Rankings with Smart AI" />
         <meta property="og:description" content="Learn how AI is transforming content SEO in 2026, including ranking factors, optimization tools, and best practices for writers and marketers." />
         <meta property="og:type" content="article" />

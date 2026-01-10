@@ -29,9 +29,9 @@ export default function ZeroGPTComparison() {
         <meta name="description" content="We test ZeroGPT and AI Free Text Pro on different writing samples — see which tool spots AI content more accurately in 2025." />
         <meta name="keywords" content="zerogpt accuracy, best ai detector 2025, ai detection comparison, zerogpt vs ai free text pro" />
         <link rel="canonical" href="https://aifreetextpro.com/blog/zerogpt-vs-ai-free-text-pro-2025" />
-        <meta name="robots" content="index, follow" />
-        <meta name="googlebot" content="index, follow" />
-        
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        <meta name="bingbot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta property="og:title" content="ZeroGPT vs AI Free Text Pro: Which Detects Better in 2025?" />
         <meta property="og:description" content="We test ZeroGPT and AI Free Text Pro on different writing samples — see which tool spots AI content more accurately." />
         <meta property="og:type" content="article" />

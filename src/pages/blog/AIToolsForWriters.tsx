@@ -29,8 +29,9 @@ export default function AIToolsForWriters() {
         <meta name="description" content="The best AI writing tools to plan, edit, and refine your stories and essays — including AI Free Text Pro for authenticity checks." />
         <meta name="keywords" content="ai tools for writers, writing apps 2025, ai writing assistant, creative writing ai" />
         <link rel="canonical" href="https://aifreetextpro.com/blog/ai-tools-for-writers-2025" />
-        <meta name="robots" content="index, follow" />
-        <meta name="googlebot" content="index, follow" />
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        <meta name="bingbot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta property="og:title" content="AI Tools for Writers: Boost Creativity and Productivity in 2025" />
         <meta property="og:description" content="The best AI writing tools to plan, edit, and refine your stories and essays." />
         <meta property="og:url" content="https://aifreetextpro.com/blog/ai-tools-for-writers-2025" />

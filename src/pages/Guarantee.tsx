@@ -59,6 +59,7 @@ const Guarantee = () => {
         <link rel="canonical" href="https://aifreetextpro.com/guarantee" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        <meta name="bingbot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta property="og:title" content="100% Money-Back Guarantee - AI Free Text Pro" />
         <meta property="og:description" content="If our humanizer is flagged by any AI detector, we refund 100% - no questions asked. Fast 24-hour processing." />
         <meta property="og:url" content="https://aifreetextpro.com/guarantee" />

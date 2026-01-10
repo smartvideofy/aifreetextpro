@@ -16,7 +16,9 @@ const Contact = () => {
         <meta name="keywords" content="contact ai detector, ai tool support, ai humanizer help, customer service, technical support" />
         <link rel="canonical" href="https://aifreetextpro.com/contact" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="robots" content="index, follow" />
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        <meta name="bingbot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta property="og:title" content="Contact Us - AI Free Text Pro" />
         <meta property="og:description" content="Contact AI Free Text Pro for support and questions about our free AI detection and humanization tools." />
         <meta property="og:url" content="https://aifreetextpro.com/contact" />

@@ -36,7 +36,9 @@ const HowToWriteNaturallyWithAI = () => {
         <meta name="description" content="Learn the art of crafting natural, engaging content with AI assistance. Discover techniques for prompting, structuring, and refining AI-generated text." />
         <meta name="keywords" content="write naturally with AI, AI writing tips, natural AI content, AI writing techniques, improve AI writing" />
         <link rel="canonical" href="https://aifreetextpro.com/blog/how-to-write-naturally-with-ai" />
-        <meta name="robots" content="index, follow" />
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        <meta name="bingbot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta property="og:title" content="How to Write Naturally with AI: A Complete Guide" />
         <meta property="og:description" content="Master the art of creating natural, engaging content with AI tools. Professional techniques for better AI-assisted writing." />
         <meta property="og:type" content="article" />

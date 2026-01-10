@@ -38,7 +38,9 @@ export default function AIHumanizersForEmailMarketing() {
         <meta name="description" content="Learn how to make AI-generated emails sound personal and human, improving open and reply rates for your campaigns." />
         <meta name="keywords" content="AI humanizer email marketing, AI email personalization, human-like outreach emails" />
         <link rel="canonical" href={canonical} />
-        <meta name="robots" content="index, follow" />
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        <meta name="bingbot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta property="og:title" content="How to Use AI Humanizers for Email Marketing & Outreach" />
         <meta property="og:description" content="Learn how to make AI-generated emails sound personal and human, improving open and reply rates for your campaigns." />
         <meta property="og:type" content="article" />

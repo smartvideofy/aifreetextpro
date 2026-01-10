@@ -38,7 +38,9 @@ export default function ZeroClickSearchAI2026() {
         <meta name="description" content="Learn strategies to capture traffic and authority in zero-click search results using AI-optimized content in 2026." />
         <meta name="keywords" content="zero click search 2026, ai seo, ai traffic strategies" />
         <link rel="canonical" href={canonical} />
-        <meta name="robots" content="index, follow" />
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        <meta name="bingbot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta property="og:title" content="Zero-Click Searches in 2026: Win Traffic in the AI Era" />
         <meta property="og:description" content="Learn strategies to capture traffic and authority in zero-click search results using AI-optimized content in 2026." />
         <meta property="og:type" content="article" />

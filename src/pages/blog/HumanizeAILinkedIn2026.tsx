@@ -38,7 +38,9 @@ export default function HumanizeAILinkedIn2026() {
         <meta name="description" content="Learn how to transform AI-generated LinkedIn posts and articles into authentic human-sounding content that drives engagement." />
         <meta name="keywords" content="AI LinkedIn posts, humanize AI content, LinkedIn engagement, AI writing 2026" />
         <link rel="canonical" href={canonical} />
-        <meta name="robots" content="index, follow" />
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        <meta name="bingbot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta property="og:title" content="AI Content for LinkedIn: How to Sound Human in 2026" />
         <meta property="og:description" content="Learn how to transform AI-generated LinkedIn posts and articles into authentic human-sounding content that drives engagement." />
         <meta property="og:type" content="article" />

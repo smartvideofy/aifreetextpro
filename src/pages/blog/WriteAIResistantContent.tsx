@@ -38,8 +38,9 @@ export default function WriteAIResistantContent() {
         <meta name="description" content="Learn advanced techniques to make your content resistant to AI detection while staying authentic, engaging, and human." />
         <meta name="keywords" content="ai resistant content, humanized writing, content tips 2026, avoid ai detection" />
         <link rel="canonical" href={canonical} />
-        <meta name="robots" content="index, follow" />
-
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        <meta name="bingbot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta property="og:title" content="Write AI-Resistant Content in 2026" />
         <meta property="og:description" content="Learn advanced techniques to make your content resistant to AI detection while staying authentic, engaging, and human." />
         <meta property="og:type" content="article" />

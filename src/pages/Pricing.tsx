@@ -113,6 +113,7 @@ const Pricing = () => {
         <link rel="canonical" href="https://aifreetextpro.com/pricing" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        <meta name="bingbot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta property="og:title" content="Pricing Plans - AI Free Text Pro" />
         <meta property="og:description" content="Start free with 500 words/month. Plans from $4.99 to $59.99. Pro Writer at $24.99/mo with 50,000 words." />
         <meta property="og:url" content="https://aifreetextpro.com/pricing" />

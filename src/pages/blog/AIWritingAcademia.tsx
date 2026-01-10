@@ -38,7 +38,9 @@ export default function AIWritingAcademia() {
         <meta name="description" content="Learn how to use AI responsibly for research papers, essays, and thesis writing while avoiding detection flags." />
         <meta name="keywords" content="AI writing academia, AI humanizer for students, undetectable AI academic content" />
         <link rel="canonical" href={canonical} />
-        <meta name="robots" content="index, follow" />
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        <meta name="bingbot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta property="og:title" content="AI Writing in Academia: Staying Undetected Without Losing Integrity" />
         <meta property="og:description" content="Learn how to use AI responsibly for research papers, essays, and thesis writing while avoiding detection flags." />
         <meta property="og:type" content="article" />

@@ -36,7 +36,9 @@ const ParaphrasingVsHumanizing = () => {
         <meta name="description" content="Understand the critical difference between AI paraphrasing and humanizing. Learn why simple paraphrasers fail against AI detectors and what marketers actually need." />
         <meta name="keywords" content="AI paraphrasing vs humanizer, AI content tone shift, make copy sound human, paraphrasing tool undetectable, QuillBot vs humanizer" />
         <link rel="canonical" href="https://aifreetextpro.com/blog/paraphrasing-vs-humanizing" />
-        <meta name="robots" content="index, follow" />
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        <meta name="bingbot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta property="og:title" content="Paraphrasing vs. Humanizing: Why Marketers Need a True AI Humanizer" />
         <meta property="og:description" content="The critical difference between paraphrasing and humanizing AI content" />
         <meta property="og:url" content="https://aifreetextpro.com/blog/paraphrasing-vs-humanizing" />

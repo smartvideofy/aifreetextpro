@@ -38,8 +38,9 @@ export default function MasteringAIPoweredEmailCampaigns2026() {
         <meta name="description" content="Learn how to use AI tools to craft engaging, high-converting email campaigns in 2026 with practical strategies and tool recommendations." />
         <meta name="keywords" content="AI email marketing, AI-powered email campaigns, email automation, AI writing tools" />
         <link rel="canonical" href={canonical} />
-        <meta name="robots" content="index, follow" />
-        
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        <meta name="bingbot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta property="og:title" content="Mastering AI-Powered Email Campaigns in 2026" />
         <meta property="og:description" content="Learn how to use AI tools to craft engaging, high-converting email campaigns in 2026 with practical strategies and tool recommendations." />
         <meta property="og:type" content="article" />

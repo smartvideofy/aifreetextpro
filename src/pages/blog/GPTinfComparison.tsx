@@ -30,7 +30,9 @@ const GPTinfComparison = () => {
         <meta name="description" content="Detailed comparison of GPTinf and AI Free Text Pro humanizers. Compare success rates, pricing, features, and real test results to find the best AI humanizer for you." />
         <meta name="keywords" content="GPTinf review, GPTinf vs AI Free Text Pro, GPTinf alternatives, best AI humanizer comparison, GPTinf accuracy" />
         <link rel="canonical" href="https://aifreetextpro.com/blog/gptinf-vs-ai-free-text-pro" />
-        <meta name="robots" content="index, follow" />
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        <meta name="bingbot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta property="og:title" content="GPTinf vs. AI Free Text Pro: Which Humanizer Offers the Highest Success Rate?" />
         <meta property="og:description" content="Detailed comparison of GPTinf and AI Free Text Pro humanizers" />
         <meta property="og:url" content="https://aifreetextpro.com/blog/gptinf-vs-ai-free-text-pro" />

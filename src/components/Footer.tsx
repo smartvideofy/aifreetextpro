@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom";
-import { Mail, BookOpen, MessageSquare, Shield, Check, Target, Users, FileText } from "lucide-react";
+import { Mail, BookOpen, MessageSquare, Shield, Check, Target, Users, FileText, Sparkles, GraduationCap } from "lucide-react";
 import logo from "@/assets/logo.png";
 
 const Footer = () => {
   return (
     <footer className="border-t border-border/40 bg-card/50 backdrop-blur-sm">
       <div className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8 mb-8">
           {/* Brand Column */}
           <div className="space-y-4 lg:col-span-1">
             <Link to="/" className="flex items-center gap-2">
@@ -61,13 +61,22 @@ const Footer = () => {
               <Link to="/bypass-originality-ai" className="text-muted-foreground hover:text-primary transition-colors">
                 Bypass Originality.AI
               </Link>
+              <Link to="/blog/bypass-copyleaks-ai-detection" className="text-muted-foreground hover:text-primary transition-colors">
+                Bypass Copyleaks
+              </Link>
+              <Link to="/blog/bypass-winston-ai-detection" className="text-muted-foreground hover:text-primary transition-colors">
+                Bypass Winston AI
+              </Link>
+              <Link to="/blog/bypass-zerogpt-ai-detection" className="text-muted-foreground hover:text-primary transition-colors">
+                Bypass ZeroGPT
+              </Link>
             </nav>
           </div>
 
-          {/* Compare Tools Column */}
+          {/* Compare & Use Cases Column */}
           <div className="space-y-4">
             <h3 className="font-semibold text-foreground flex items-center gap-2">
-              <FileText className="w-4 h-4" />
+              <Sparkles className="w-4 h-4" />
               Compare Tools
             </h3>
             <nav className="flex flex-col gap-2 text-sm">
@@ -79,6 +88,12 @@ const Footer = () => {
               </Link>
               <Link to="/vs-humanizeai-pro" className="text-muted-foreground hover:text-primary transition-colors">
                 vs HumanizeAI.pro
+              </Link>
+              <Link to="/blog/gptinf-vs-ai-free-text-pro" className="text-muted-foreground hover:text-primary transition-colors">
+                vs GPTinf
+              </Link>
+              <Link to="/blog/zerogpt-vs-ai-free-text-pro-2025" className="text-muted-foreground hover:text-primary transition-colors">
+                vs ZeroGPT
               </Link>
             </nav>
             
@@ -95,6 +110,34 @@ const Footer = () => {
               </Link>
               <Link to="/academic-ai-writing-tool" className="text-muted-foreground hover:text-primary transition-colors">
                 Academic Writing
+              </Link>
+            </nav>
+          </div>
+
+          {/* Popular Guides Column */}
+          <div className="space-y-4">
+            <h3 className="font-semibold text-foreground flex items-center gap-2">
+              <GraduationCap className="w-4 h-4" />
+              Popular Guides
+            </h3>
+            <nav className="flex flex-col gap-2 text-sm">
+              <Link to="/blog/how-ai-detectors-work" className="text-muted-foreground hover:text-primary transition-colors">
+                How AI Detectors Work
+              </Link>
+              <Link to="/blog/humanize-ai-text-without-losing-voice" className="text-muted-foreground hover:text-primary transition-colors">
+                Humanize AI Text
+              </Link>
+              <Link to="/blog/pass-all-ai-detectors-guide" className="text-muted-foreground hover:text-primary transition-colors">
+                Pass All AI Detectors
+              </Link>
+              <Link to="/blog/ai-content-seo-undetectable" className="text-muted-foreground hover:text-primary transition-colors">
+                AI Content for SEO
+              </Link>
+              <Link to="/blog/top-10-ai-humanizer-tools-2025" className="text-muted-foreground hover:text-primary transition-colors">
+                Top 10 AI Humanizers
+              </Link>
+              <Link to="/blog/academic-ai-writing-safely" className="text-muted-foreground hover:text-primary transition-colors">
+                Academic AI Writing
               </Link>
             </nav>
           </div>

@@ -79,19 +79,22 @@ const Navbar = () => {
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
                 <Button 
-                  variant={isActiveGroup(["/bypass-", "/ai-humanizer", "/ai-checker"]) ? "default" : "ghost"}
+                  variant={isActiveGroup(["/bypass-", "/ai-humanizer", "/ai-checker", "/academic"]) ? "default" : "ghost"}
                   className="transition-colors gap-1"
                 >
                   Tools
                   <ChevronDown className="h-4 w-4" />
                 </Button>
               </DropdownMenuTrigger>
-              <DropdownMenuContent align="center" className="w-52 bg-background border border-border">
+              <DropdownMenuContent align="center" className="w-56 bg-background border border-border">
                 <DropdownMenuItem asChild>
                   <a href="https://app.aifreetextpro.com/detector" className="w-full cursor-pointer">AI Detector</a>
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>
                   <a href="https://app.aifreetextpro.com/humanizer" className="w-full cursor-pointer">AI Humanizer</a>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <Link to="/ai-checker" className="w-full cursor-pointer">AI Checker</Link>
                 </DropdownMenuItem>
                 <DropdownMenuSeparator />
                 <DropdownMenuItem asChild>
@@ -102,6 +105,16 @@ const Navbar = () => {
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>
                   <Link to="/bypass-originality-ai" className="w-full cursor-pointer">Bypass Originality.AI</Link>
+                </DropdownMenuItem>
+                <DropdownMenuSeparator />
+                <DropdownMenuItem asChild>
+                  <Link to="/ai-humanizer-for-students" className="w-full cursor-pointer">For Students</Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <Link to="/ai-humanizer-for-writers" className="w-full cursor-pointer">For Writers</Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <Link to="/academic-ai-writing-tool" className="w-full cursor-pointer">Academic Writing</Link>
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>

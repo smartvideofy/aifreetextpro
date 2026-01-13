@@ -99,6 +99,20 @@ const blogPosts = [
   { title: "Academic AI Writing", href: "/blog/academic-ai-writing-safely" },
   { title: "Originality.AI Review", href: "/blog/originality-ai-review-how-to-beat" },
   { title: "Pass All AI Detectors", href: "/blog/pass-all-ai-detectors-guide" },
+  { title: "Make ChatGPT Undetectable", href: "/blog/make-chatgpt-undetectable-guide-2025" },
+  { title: "GPTinf Comparison", href: "/blog/gptinf-vs-ai-free-text-pro-comparison" },
+  { title: "Paraphrasing vs Humanizing", href: "/blog/paraphrasing-vs-humanizing-ai-text" },
+  { title: "Bypass ZeroGPT", href: "/blog/bypass-zerogpt-ai-detection" },
+  { title: "Bypass Winston AI", href: "/blog/bypass-winston-ai-detection" },
+  { title: "Bypass Copyleaks", href: "/blog/bypass-copyleaks-ai-detection" },
+  { title: "How AI Detectors Score Text", href: "/blog/how-ai-detectors-score-text" },
+  { title: "Signal vs Noise in Human Text", href: "/blog/signal-vs-noise-human-text" },
+  { title: "AI Humanization Pitfalls", href: "/blog/ai-humanization-pitfalls" },
+  { title: "Tone Voice Flow AI Writing", href: "/blog/tone-voice-flow-ai-writing" },
+  { title: "Edit AI Drafts Like a Pro", href: "/blog/editing-ai-drafts-human-editor" },
+  { title: "Write Naturally with AI", href: "/blog/how-to-write-naturally-with-ai" },
+  { title: "Best Free AI Humanizers", href: "/blog/best-free-ai-humanizer-tools-2025" },
+  { title: "ZeroGPT Comparison", href: "/blog/zerogpt-vs-ai-free-text-pro-comparison" },
 ];
 
 export const InternalLinks = ({ currentPage, showTitle = true, variant = "compact" }: InternalLinksProps) => {

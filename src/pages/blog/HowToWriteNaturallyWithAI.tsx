@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { RelatedArticles } from "@/components/RelatedArticles";
 import { Button } from "@/components/ui/button";
+import { InternalLinks } from "@/components/InternalLinks";
 
 const relatedArticles = [
   {
@@ -263,6 +264,8 @@ const HowToWriteNaturallyWithAI = () => {
             </article>
 
             <RelatedArticles articles={relatedArticles} />
+            
+            <InternalLinks currentPage="/blog/how-to-write-naturally-with-ai" />
           </div>
         </main>
 

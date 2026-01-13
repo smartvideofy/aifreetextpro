@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { RelatedArticles } from "@/components/RelatedArticles";
 import { Button } from "@/components/ui/button";
+import { InternalLinks } from "@/components/InternalLinks";
 
 const relatedArticles = [
   {
@@ -310,6 +311,8 @@ const EditingAIDraftsHumanEditor = () => {
             </article>
 
             <RelatedArticles articles={relatedArticles} />
+            
+            <InternalLinks currentPage="/blog/editing-ai-drafts-human-editor" />
           </div>
         </main>
 

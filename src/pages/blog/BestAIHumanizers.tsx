@@ -7,6 +7,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { RelatedArticles } from "@/components/RelatedArticles";
+import { InternalLinks } from "@/components/InternalLinks";
 
 const BestAIHumanizers = () => {
 const relatedArticles = [
@@ -400,6 +401,8 @@ const relatedArticles = [
             </div>
 
             <RelatedArticles articles={relatedArticles} />
+            
+            <InternalLinks currentPage="/blog/best-free-ai-humanizer-tools-2025" />
           </div>
         </div>
       </article>

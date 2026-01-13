@@ -6,6 +6,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { RelatedArticles } from "@/components/RelatedArticles";
+import { InternalLinks } from "@/components/InternalLinks";
 
 const relatedArticles = [
   {
@@ -455,6 +456,8 @@ const OriginalityAIReview = () => {
               </div>
 
               <RelatedArticles articles={relatedArticles} />
+              
+              <InternalLinks currentPage="/blog/originality-ai-review-pricing-bypass" />
             </article>
           </div>
         </div>

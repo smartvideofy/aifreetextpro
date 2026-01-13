@@ -4,6 +4,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { RelatedArticles } from "@/components/RelatedArticles";
+import { InternalLinks } from "@/components/InternalLinks";
 import { CheckCircle, X, ArrowRight, AlertTriangle, BookOpen, Lightbulb, Target, Sparkles } from "lucide-react";
 
 const BypassCopyleaksDetection = () => {
@@ -428,6 +429,8 @@ const BypassCopyleaksDetection = () => {
 
           {/* Related Articles */}
           <RelatedArticles articles={relatedArticles} />
+          
+          <InternalLinks currentPage="/blog/bypass-copyleaks-ai-detection" />
         </article>
       </main>
 

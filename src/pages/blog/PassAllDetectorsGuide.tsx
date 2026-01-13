@@ -6,6 +6,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { RelatedArticles } from "@/components/RelatedArticles";
+import { InternalLinks } from "@/components/InternalLinks";
 
 const relatedArticles = [
   {
@@ -417,6 +418,8 @@ const PassAllDetectorsGuide = () => {
               </div>
 
               <RelatedArticles articles={relatedArticles} />
+              
+              <InternalLinks currentPage="/blog/pass-all-ai-detectors-guide" />
             </article>
           </div>
         </div>

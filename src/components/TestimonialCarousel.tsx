@@ -2,7 +2,15 @@ import { useState, useEffect } from "react";
 import { Card } from "@/components/ui/card";
 import { Star, ChevronLeft, ChevronRight, BadgeCheck, User } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Avatar, AvatarFallback } from "@/components/ui/avatar";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+
+// Import testimonial profile images
+import michaelRodriguez from "@/assets/testimonials/michael-rodriguez.jpg";
+import jamesChen from "@/assets/testimonials/james-chen.jpg";
+import sarahPatel from "@/assets/testimonials/sarah-patel.jpg";
+import emilyWatson from "@/assets/testimonials/emily-watson.jpg";
+import davidKim from "@/assets/testimonials/david-kim.jpg";
+import lisaMartinez from "@/assets/testimonials/lisa-martinez.jpg";
 
 interface Testimonial {
   initials: string;
@@ -22,6 +30,7 @@ const testimonials: Testimonial[] = [
     company: "TechBlog Pro",
     text: "This tool transformed my content workflow. I can now produce authentic-sounding articles 3x faster without worrying about AI flags.",
     rating: 5,
+    avatar: michaelRodriguez,
   },
   {
     initials: "JC",
@@ -30,6 +39,7 @@ const testimonials: Testimonial[] = [
     company: "Stanford University",
     text: "The AI checker is incredibly accurate. Helps me ensure my academic writing maintains authenticity before submission.",
     rating: 5,
+    avatar: jamesChen,
   },
   {
     initials: "SP",
@@ -38,6 +48,7 @@ const testimonials: Testimonial[] = [
     company: "GrowthHub",
     text: "Perfect for refining AI-assisted content. The results sound genuinely human every time. Our engagement rates improved 40%.",
     rating: 5,
+    avatar: sarahPatel,
   },
   {
     initials: "EW",
@@ -45,6 +56,7 @@ const testimonials: Testimonial[] = [
     role: "Freelance Writer",
     text: "I was skeptical at first, but this tool genuinely delivers. My clients can't tell the difference, and neither can Turnitin!",
     rating: 5,
+    avatar: emilyWatson,
   },
   {
     initials: "DK",
@@ -53,6 +65,7 @@ const testimonials: Testimonial[] = [
     company: "MIT",
     text: "As someone who uses AI for initial drafts, this humanizer is essential. It preserves meaning while adding natural variation.",
     rating: 5,
+    avatar: davidKim,
   },
   {
     initials: "LM",
@@ -60,6 +73,7 @@ const testimonials: Testimonial[] = [
     role: "SEO Specialist",
     text: "Google rankings improved significantly after humanizing our AI content. This tool is now part of our standard workflow.",
     rating: 5,
+    avatar: lisaMartinez,
   },
 ];
 
@@ -163,6 +177,9 @@ const TestimonialCarousel = () => {
                     {/* Author */}
                     <div className="flex items-center gap-3 pt-2 border-t border-border/50">
                       <Avatar className="w-12 h-12 border-2 border-primary/20">
+                        {testimonial.avatar && (
+                          <AvatarImage src={testimonial.avatar} alt={testimonial.name} className="object-cover" />
+                        )}
                         <AvatarFallback className="bg-gradient-to-br from-primary/20 to-secondary/20 text-primary font-bold">
                           {testimonial.initials}
                         </AvatarFallback>

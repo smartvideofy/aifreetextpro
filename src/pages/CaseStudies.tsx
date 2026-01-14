@@ -3,6 +3,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Card } from "@/components/ui/card";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
+import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import { 
   CheckCircle, XCircle, ArrowRight, Star, TrendingUp, 
   GraduationCap, Briefcase, PenTool, BarChart3 
@@ -184,9 +185,11 @@ const CaseStudies = () => {
                     </div>
                     
                     <div className="flex items-center gap-3">
-                      <div className="w-10 h-10 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center text-white font-semibold text-sm">
-                        {study.user.initials}
-                      </div>
+                      <Avatar className="w-10 h-10 border-2 border-primary/30">
+                        <AvatarFallback className="bg-gradient-to-br from-primary to-secondary text-primary-foreground font-semibold text-sm">
+                          {study.user.initials}
+                        </AvatarFallback>
+                      </Avatar>
                       <div>
                         <p className="font-medium">{study.user.name}</p>
                         <p className="text-sm text-muted-foreground">{study.user.role}</p>

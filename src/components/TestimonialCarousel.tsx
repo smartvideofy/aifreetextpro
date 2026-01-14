@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 import { Card } from "@/components/ui/card";
-import { Star, ChevronLeft, ChevronRight, BadgeCheck } from "lucide-react";
+import { Star, ChevronLeft, ChevronRight, BadgeCheck, User } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 
 interface Testimonial {
   initials: string;
@@ -161,9 +162,11 @@ const TestimonialCarousel = () => {
                     
                     {/* Author */}
                     <div className="flex items-center gap-3 pt-2 border-t border-border/50">
-                      <div className="w-12 h-12 rounded-full bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center text-lg font-bold text-primary">
-                        {testimonial.initials}
-                      </div>
+                      <Avatar className="w-12 h-12 border-2 border-primary/20">
+                        <AvatarFallback className="bg-gradient-to-br from-primary/20 to-secondary/20 text-primary font-bold">
+                          {testimonial.initials}
+                        </AvatarFallback>
+                      </Avatar>
                       <div className="flex-1">
                         <div className="flex items-center gap-2">
                           <p className="font-semibold">{testimonial.name}</p>

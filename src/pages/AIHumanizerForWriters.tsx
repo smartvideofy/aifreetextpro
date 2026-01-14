@@ -7,6 +7,7 @@ import Footer from "@/components/Footer";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { RelatedArticles } from "@/components/RelatedArticles";
 import { Link } from "react-router-dom";
+import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 
 const AIHumanizerForWriters = () => {
   const writerChallenges = [
@@ -307,9 +308,16 @@ const AIHumanizerForWriters = () => {
                 {caseStudies.map((study, idx) => (
                   <Card key={idx} className="p-8">
                     <div className="grid md:grid-cols-3 gap-6">
-                      <div>
-                        <p className="font-bold text-lg mb-1">{study.name}</p>
-                        <p className="text-sm text-muted-foreground">{study.role}</p>
+                      <div className="flex items-center gap-3">
+                        <Avatar className="w-12 h-12 border-2 border-primary/20">
+                          <AvatarFallback className="bg-gradient-to-br from-primary/20 to-secondary/20 text-primary font-semibold">
+                            {study.name.split(' ').map(n => n[0]).join('')}
+                          </AvatarFallback>
+                        </Avatar>
+                        <div>
+                          <p className="font-bold text-lg">{study.name}</p>
+                          <p className="text-sm text-muted-foreground">{study.role}</p>
+                        </div>
                       </div>
                       <div className="space-y-2">
                         <div>

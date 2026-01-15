@@ -7,7 +7,12 @@ import Footer from "@/components/Footer";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { RelatedArticles } from "@/components/RelatedArticles";
 import { Link } from "react-router-dom";
-import { Avatar, AvatarFallback } from "@/components/ui/avatar";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+
+// Import testimonial profile images
+import sarahPatel from "@/assets/testimonials/sarah-patel.jpg";
+import jamesChen from "@/assets/testimonials/james-chen.jpg";
+import lisaMartinez from "@/assets/testimonials/lisa-martinez.jpg";
 
 const AIHumanizerForStudents = () => {
   const painPoints = [
@@ -66,21 +71,24 @@ const AIHumanizerForStudents = () => {
       school: "UC Berkeley",
       major: "Computer Science",
       text: "Used AI Free Text Pro for my entire senior thesis. Passed Turnitin with 0% AI detection. My professor praised the 'natural writing style.' Saved my GPA and my sanity.",
-      rating: 5
+      rating: 5,
+      avatar: sarahPatel
     },
     {
       name: "Marcus Johnson",
       school: "University of Texas",
       major: "Business Administration",
       text: "Weekly case studies were killing me. This tool cut my writing time from 6 hours to 2 hours per assignment. Still got A's. Game-changer for busy students.",
-      rating: 5
+      rating: 5,
+      avatar: jamesChen
     },
     {
       name: "Sophia Chen",
       school: "MIT",
       major: "Biology",
       text: "Lab reports require perfect technical writing. AI Free Text Pro maintains scientific accuracy while making it sound human. My TA can't tell the difference. Worth every penny.",
-      rating: 5
+      rating: 5,
+      avatar: lisaMartinez
     }
   ];
 
@@ -268,6 +276,9 @@ const AIHumanizerForStudents = () => {
                     <p className="text-muted-foreground mb-4 italic text-sm">"{testimonial.text}"</p>
                     <div className="flex items-center gap-3 pt-4 border-t border-border">
                       <Avatar className="w-10 h-10 border-2 border-primary/20">
+                        {testimonial.avatar && (
+                          <AvatarImage src={testimonial.avatar} alt={testimonial.name} className="object-cover" />
+                        )}
                         <AvatarFallback className="bg-gradient-to-br from-primary/20 to-secondary/20 text-primary font-semibold text-sm">
                           {testimonial.name.split(' ').map(n => n[0]).join('')}
                         </AvatarFallback>

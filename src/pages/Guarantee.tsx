@@ -6,7 +6,12 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { Link } from "react-router-dom";
-import { Avatar, AvatarFallback } from "@/components/ui/avatar";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+
+// Import testimonial profile images
+import sarahPatel from "@/assets/testimonials/sarah-patel.jpg";
+import jamesChen from "@/assets/testimonials/james-chen.jpg";
+import emilyWatson from "@/assets/testimonials/emily-watson.jpg";
 
 const Guarantee = () => {
   const testimonials = [
@@ -15,21 +20,24 @@ const Guarantee = () => {
       role: "Graduate Student",
       rating: 5,
       text: "I was skeptical at first, but when Turnitin flagged my humanized content, I reached out for a refund. The team processed it within 24 hours - no questions asked. They even helped me understand what went wrong. Incredible customer service!",
-      date: "January 2025"
+      date: "January 2025",
+      avatar: sarahPatel
     },
     {
       name: "James Rodriguez",
       role: "Content Writer",
       rating: 5,
       text: "Used the Pro plan for a month. The humanizer worked flawlessly on 99% of my content, but one piece got flagged by Originality.AI. Submitted the refund request with screenshots and got my money back the same day. This guarantee is legit!",
-      date: "December 2024"
+      date: "December 2024",
+      avatar: jamesChen
     },
     {
       name: "Emily Chen",
       role: "Marketing Manager",
       rating: 5,
       text: "Our team processes hundreds of articles monthly. When we had an issue with detection, the refund process was straightforward and fast. They honored their guarantee completely. This is the kind of transparency that builds long-term trust.",
-      date: "November 2024"
+      date: "November 2024",
+      avatar: emilyWatson
     }
   ];
 
@@ -372,6 +380,9 @@ const Guarantee = () => {
                   <p className="text-muted-foreground mb-4 italic">"{testimonial.text}"</p>
                   <div className="flex items-center gap-3 pt-4 border-t border-border">
                     <Avatar className="w-10 h-10 border-2 border-primary/20">
+                      {testimonial.avatar && (
+                        <AvatarImage src={testimonial.avatar} alt={testimonial.name} className="object-cover" />
+                      )}
                       <AvatarFallback className="bg-gradient-to-br from-primary/20 to-secondary/20 text-primary font-semibold text-sm">
                         {testimonial.name.split(' ').map(n => n[0]).join('')}
                       </AvatarFallback>

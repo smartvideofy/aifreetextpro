@@ -7,7 +7,12 @@ import Footer from "@/components/Footer";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { RelatedArticles } from "@/components/RelatedArticles";
 import { Link } from "react-router-dom";
-import { Avatar, AvatarFallback } from "@/components/ui/avatar";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+
+// Import testimonial profile images
+import michaelRodriguez from "@/assets/testimonials/michael-rodriguez.jpg";
+import emilyWatson from "@/assets/testimonials/emily-watson.jpg";
+import davidKim from "@/assets/testimonials/david-kim.jpg";
 
 const VsWriteHuman = () => {
   const comparisonFeatures = [
@@ -62,19 +67,22 @@ const VsWriteHuman = () => {
       name: "Alex Thompson",
       role: "Content Writer",
       text: "Switched from WriteHuman to AI Free Text Pro and saved $15/month while getting BETTER results. The built-in detector is a game-changer.",
-      rating: 5
+      rating: 5,
+      avatar: michaelRodriguez
     },
     {
       name: "Maria Rodriguez",
       role: "PhD Student",
       text: "WriteHuman failed on Turnitin twice. AI Free Text Pro? Zero failures in 6 months. The PDF upload feature saves me hours.",
-      rating: 5
+      rating: 5,
+      avatar: emilyWatson
     },
     {
       name: "David Kim",
       role: "Marketing Manager",
       text: "We process 50+ articles monthly. AI Free Text Pro's all-in-one approach is 10x more efficient than juggling WriteHuman + a separate detector.",
-      rating: 5
+      rating: 5,
+      avatar: davidKim
     }
   ];
 
@@ -341,6 +349,9 @@ const VsWriteHuman = () => {
                     <p className="text-muted-foreground mb-4 italic">"{testimonial.text}"</p>
                     <div className="flex items-center gap-3 pt-4 border-t border-border">
                       <Avatar className="w-10 h-10 border-2 border-primary/20">
+                        {testimonial.avatar && (
+                          <AvatarImage src={testimonial.avatar} alt={testimonial.name} className="object-cover" />
+                        )}
                         <AvatarFallback className="bg-gradient-to-br from-primary/20 to-secondary/20 text-primary font-semibold text-sm">
                           {testimonial.name.split(' ').map(n => n[0]).join('')}
                         </AvatarFallback>

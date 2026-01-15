@@ -3,11 +3,16 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Card } from "@/components/ui/card";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
-import { Avatar, AvatarFallback } from "@/components/ui/avatar";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { 
   CheckCircle, XCircle, ArrowRight, Star, TrendingUp, 
   GraduationCap, Briefcase, PenTool, BarChart3 
 } from "lucide-react";
+
+// Import testimonial profile images
+import michaelRodriguez from "@/assets/testimonials/michael-rodriguez.jpg";
+import jamesChen from "@/assets/testimonials/james-chen.jpg";
+import davidKim from "@/assets/testimonials/david-kim.jpg";
 
 const caseStudies = [
   {
@@ -18,7 +23,8 @@ const caseStudies = [
     user: {
       name: "Michael R.",
       role: "Master's Student, Computer Science",
-      initials: "MR"
+      initials: "MR",
+      avatar: michaelRodriguez
     },
     problem: "Used ChatGPT to help structure and expand thesis sections. Initial Turnitin scan showed 78% AI probability.",
     solution: "Processed 12,000-word document through AI Free Text Pro using Academic mode with original meaning preservation.",
@@ -39,7 +45,8 @@ const caseStudies = [
     user: {
       name: "Jennifer K.",
       role: "Content Director, Digital Marketing Agency",
-      initials: "JK"
+      initials: "JK",
+      avatar: jamesChen
     },
     problem: "Agency needed to produce 100+ blog posts monthly. AI-generated content was being rejected by client sites using Originality.AI.",
     solution: "Integrated AI Free Text Pro API into content workflow. All AI-drafted content processed through Professional mode before delivery.",
@@ -60,7 +67,8 @@ const caseStudies = [
     user: {
       name: "David L.",
       role: "Freelance Tech Writer",
-      initials: "DL"
+      initials: "DL",
+      avatar: davidKim
     },
     problem: "Clients started requiring AI-free content verified by ZeroGPT. Writing speed couldn't keep up with demand without AI assistance.",
     solution: "Uses ChatGPT for initial drafts, then humanizes with AI Free Text Pro before submission. All content verified AI-free.",
@@ -186,6 +194,9 @@ const CaseStudies = () => {
                     
                     <div className="flex items-center gap-3">
                       <Avatar className="w-10 h-10 border-2 border-primary/30">
+                        {study.user.avatar && (
+                          <AvatarImage src={study.user.avatar} alt={study.user.name} className="object-cover" />
+                        )}
                         <AvatarFallback className="bg-gradient-to-br from-primary to-secondary text-primary-foreground font-semibold text-sm">
                           {study.user.initials}
                         </AvatarFallback>

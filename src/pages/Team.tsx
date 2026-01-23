@@ -4,7 +4,16 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Card } from "@/components/ui/card";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import { Linkedin, Twitter, BookOpen, Award, GraduationCap, Code, ArrowRight } from "lucide-react";
+
+// Import team member profile images
+import sarahChen from "@/assets/team/sarah-chen.jpg";
+import marcusWilliams from "@/assets/team/marcus-williams.jpg";
+import emilyRodriguez from "@/assets/team/emily-rodriguez.jpg";
+import jamesOkonkwo from "@/assets/team/james-okonkwo.jpg";
+import anikaPatel from "@/assets/team/anika-patel.jpg";
+import thomasMueller from "@/assets/team/thomas-mueller.jpg";
 
 const teamMembers = [
   {
@@ -12,6 +21,7 @@ const teamMembers = [
     role: "Founder & CEO",
     slug: "sarah-chen",
     initials: "SC",
+    avatar: sarahChen,
     bio: "Former computational linguistics researcher at MIT with 12+ years in NLP and AI. Sarah pioneered early work on stylometric analysis and authored 15+ peer-reviewed papers on machine learning applications in text analysis. She founded AI Free Text Pro to democratize access to advanced AI writing tools.",
     credentials: ["Ph.D. Computational Linguistics, MIT", "Former Research Lead at Google AI", "15+ Published Papers in NLP"],
     specialties: ["Natural Language Processing", "Machine Learning", "Stylometric Analysis"],
@@ -23,6 +33,7 @@ const teamMembers = [
     role: "Chief Technology Officer",
     slug: "marcus-williams",
     initials: "MW",
+    avatar: marcusWilliams,
     bio: "15 years in software engineering with expertise in distributed systems and AI infrastructure. Marcus previously led engineering teams at Grammarly and built scalable NLP pipelines processing billions of documents. His architecture ensures our platform handles peak loads with sub-second response times.",
     credentials: ["M.S. Computer Science, Stanford", "Former Engineering Lead at Grammarly", "AWS Certified Solutions Architect"],
     specialties: ["Distributed Systems", "AI Infrastructure", "Scalable Architecture"],
@@ -34,6 +45,7 @@ const teamMembers = [
     role: "Head of AI Research",
     slug: "emily-rodriguez",
     initials: "ER",
+    avatar: emilyRodriguez,
     bio: "AI researcher specializing in transformer models and text generation. Emily's doctoral work focused on detecting synthetic text patterns, giving her unique insight into both AI detection and humanization. She leads our R&D team in developing next-generation rewriting algorithms.",
     credentials: ["Ph.D. Artificial Intelligence, Carnegie Mellon", "Former Researcher at OpenAI", "10+ Papers on Text Generation"],
     specialties: ["Transformer Models", "Text Generation", "AI Detection"],
@@ -45,6 +57,7 @@ const teamMembers = [
     role: "Lead Content Strategist",
     slug: "james-okonkwo",
     initials: "JO",
+    avatar: jamesOkonkwo,
     bio: "Award-winning journalist and content strategist with 10+ years in digital publishing. James brings real-world writing expertise to our product development, ensuring our humanization algorithms produce content that meets professional editorial standards.",
     credentials: ["M.A. Journalism, Columbia University", "Former Senior Editor at Forbes", "PRSA Award Winner"],
     specialties: ["Content Strategy", "Editorial Standards", "Digital Publishing"],
@@ -56,6 +69,7 @@ const teamMembers = [
     role: "Lead Data Scientist",
     slug: "anika-patel",
     initials: "AP",
+    avatar: anikaPatel,
     bio: "Specialist in statistical modeling and linguistic pattern recognition. Anika's research on writing style fingerprinting forms the foundation of our detection bypass technology. She continuously refines our models based on the latest AI detector developments.",
     credentials: ["Ph.D. Statistics, UC Berkeley", "Former Data Scientist at Amazon", "Expert in Linguistic Modeling"],
     specialties: ["Statistical Modeling", "Pattern Recognition", "Writing Style Analysis"],
@@ -67,6 +81,7 @@ const teamMembers = [
     role: "Head of Customer Success",
     slug: "thomas-mueller",
     initials: "TM",
+    avatar: thomasMueller,
     bio: "Customer experience leader with deep expertise in SaaS products and educational technology. Thomas ensures our users get maximum value from AI Free Text Pro, gathering feedback that directly influences product development.",
     credentials: ["MBA, INSEAD", "Former VP at Coursera", "Customer Success Specialist"],
     specialties: ["Customer Experience", "EdTech", "Product Feedback"],
@@ -186,9 +201,12 @@ const Team = () => {
               {teamMembers.map((member, index) => (
                 <Card key={index} id={member.slug} className="p-6 hover:shadow-xl transition-all border-border/50 bg-gradient-to-br from-card to-card/80 scroll-mt-24">
                   <div className="flex items-start gap-4 mb-4">
-                    <div className="w-16 h-16 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center text-white font-bold text-xl flex-shrink-0">
-                      {member.initials}
-                    </div>
+                    <Avatar className="w-16 h-16 border-2 border-primary/30 flex-shrink-0">
+                      <AvatarImage src={member.avatar} alt={member.name} className="object-cover" />
+                      <AvatarFallback className="bg-gradient-to-br from-primary to-secondary text-primary-foreground font-bold text-xl">
+                        {member.initials}
+                      </AvatarFallback>
+                    </Avatar>
                     <div>
                       <h3 className="text-xl font-bold">{member.name}</h3>
                       <p className="text-primary font-medium">{member.role}</p>

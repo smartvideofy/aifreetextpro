@@ -19,11 +19,15 @@ import TrustBadges from "@/components/TrustBadges";
 import NewsletterSignup from "@/components/NewsletterSignup";
 import ExitIntentPopup from "@/components/ExitIntentPopup";
 import ProductMockup from "@/components/ProductMockup";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import heroIllustration from "@/assets/hero-illustration.png";
 import aiDetectorFeature from "@/assets/ai-detector-feature.png";
 import aiHumanizerFeature from "@/assets/ai-humanizer-feature.png";
 import studentWriting from "@/assets/student-writing.png";
 import writerProfessional from "@/assets/writer-professional.png";
+import jamesChen from "@/assets/testimonials/james-chen.jpg";
+import sarahPatel from "@/assets/testimonials/sarah-patel.jpg";
+import lisaMartinez from "@/assets/testimonials/lisa-martinez.jpg";
 
 const Index = () => {
   return (
@@ -594,9 +598,12 @@ const Index = () => {
               <Card className="p-6 bg-card/50 backdrop-blur border-border/50">
                 <div className="space-y-4">
                   <div className="flex items-center gap-3">
-                    <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center text-xl font-bold">
-                      MR
-                    </div>
+                    <Avatar className="w-12 h-12 border-2 border-primary/20">
+                      <AvatarImage src={lisaMartinez} alt="Maria Rodriguez" className="object-cover" />
+                      <AvatarFallback className="bg-gradient-to-br from-primary/20 to-secondary/20 text-primary font-bold">
+                        MR
+                      </AvatarFallback>
+                    </Avatar>
                     <div>
                       <p className="font-semibold">Maria Rodriguez</p>
                       <p className="text-sm text-muted-foreground">Content Writer</p>
@@ -611,9 +618,12 @@ const Index = () => {
               <Card className="p-6 bg-card/50 backdrop-blur border-border/50">
                 <div className="space-y-4">
                   <div className="flex items-center gap-3">
-                    <div className="w-12 h-12 rounded-full bg-secondary/20 flex items-center justify-center text-xl font-bold">
-                      JC
-                    </div>
+                    <Avatar className="w-12 h-12 border-2 border-secondary/20">
+                      <AvatarImage src={jamesChen} alt="James Chen" className="object-cover" />
+                      <AvatarFallback className="bg-gradient-to-br from-secondary/20 to-primary/20 text-secondary font-bold">
+                        JC
+                      </AvatarFallback>
+                    </Avatar>
                     <div>
                       <p className="font-semibold">James Chen</p>
                       <p className="text-sm text-muted-foreground">Graduate Student</p>
@@ -628,9 +638,12 @@ const Index = () => {
               <Card className="p-6 bg-card/50 backdrop-blur border-border/50">
                 <div className="space-y-4">
                   <div className="flex items-center gap-3">
-                    <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center text-xl font-bold">
-                      SP
-                    </div>
+                    <Avatar className="w-12 h-12 border-2 border-primary/20">
+                      <AvatarImage src={sarahPatel} alt="Sarah Patel" className="object-cover" />
+                      <AvatarFallback className="bg-gradient-to-br from-primary/20 to-secondary/20 text-primary font-bold">
+                        SP
+                      </AvatarFallback>
+                    </Avatar>
                     <div>
                       <p className="font-semibold">Sarah Patel</p>
                       <p className="text-sm text-muted-foreground">Marketing Manager</p>

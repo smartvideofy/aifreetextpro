@@ -1,12 +1,15 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { CheckCircle, X, ArrowRight, Zap, Shield } from "lucide-react";
+import { CheckCircle, X, ArrowRight, Zap, Shield, Star } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { RelatedArticles } from "@/components/RelatedArticles";
 import { Link } from "react-router-dom";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
+import michaelRodriguez from "@/assets/testimonials/michael-rodriguez.jpg";
+import emilyWatson from "@/assets/testimonials/emily-watson.jpg";
 
 const VsUndetectable = () => {
   const comparisonFeatures = [
@@ -290,6 +293,58 @@ const VsUndetectable = () => {
                   </Card>
                 </div>
               ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Social Proof - Switchers */}
+        <section className="py-16 bg-gradient-to-b from-background to-card/20">
+          <div className="container mx-auto px-4">
+            <div className="max-w-5xl mx-auto">
+              <h2 className="text-3xl font-bold text-center mb-4">Why Users Switched from Undetectable AI</h2>
+              <p className="text-center text-muted-foreground mb-10">Real feedback from former Undetectable AI users</p>
+              <div className="grid md:grid-cols-2 gap-6">
+                <Card className="p-6">
+                  <div className="flex gap-1 mb-4">
+                    {[...Array(5)].map((_, i) => (
+                      <Star key={i} className="w-5 h-5 fill-primary text-primary" />
+                    ))}
+                  </div>
+                  <p className="text-muted-foreground mb-4">
+                    "I was paying $9.99/month for Undetectable AI and still had to use a separate detector. AI Free Text Pro gives me both for half the price. The switch was a no-brainer."
+                  </p>
+                  <div className="flex items-center gap-3">
+                    <Avatar className="h-12 w-12 border-2 border-primary/20">
+                      <AvatarImage src={michaelRodriguez} alt="Michael R." />
+                      <AvatarFallback className="bg-gradient-to-br from-primary to-secondary text-primary-foreground">MR</AvatarFallback>
+                    </Avatar>
+                    <div>
+                      <p className="font-semibold">Michael R.</p>
+                      <p className="text-sm text-muted-foreground">Content Creator • Former Undetectable AI User</p>
+                    </div>
+                  </div>
+                </Card>
+                <Card className="p-6">
+                  <div className="flex gap-1 mb-4">
+                    {[...Array(5)].map((_, i) => (
+                      <Star key={i} className="w-5 h-5 fill-primary text-primary" />
+                    ))}
+                  </div>
+                  <p className="text-muted-foreground mb-4">
+                    "The bypass rates are noticeably better with AI Free Text Pro. My content passes Turnitin consistently now, which wasn't always the case with Undetectable AI."
+                  </p>
+                  <div className="flex items-center gap-3">
+                    <Avatar className="h-12 w-12 border-2 border-primary/20">
+                      <AvatarImage src={emilyWatson} alt="Emily W." />
+                      <AvatarFallback className="bg-gradient-to-br from-primary to-secondary text-primary-foreground">EW</AvatarFallback>
+                    </Avatar>
+                    <div>
+                      <p className="font-semibold">Emily W.</p>
+                      <p className="text-sm text-muted-foreground">Graduate Student • Switched 3 months ago</p>
+                    </div>
+                  </div>
+                </Card>
+              </div>
             </div>
           </div>
         </section>

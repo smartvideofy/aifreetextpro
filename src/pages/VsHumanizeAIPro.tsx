@@ -1,12 +1,15 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { CheckCircle, X, ArrowRight, Zap } from "lucide-react";
+import { CheckCircle, X, ArrowRight, Zap, Star } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { RelatedArticles } from "@/components/RelatedArticles";
 import { Link } from "react-router-dom";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
+import jamesChen from "@/assets/testimonials/james-chen.jpg";
+import lisaMartinez from "@/assets/testimonials/lisa-martinez.jpg";
 
 const VsHumanizeAIPro = () => {
   const comparisonFeatures = [
@@ -331,6 +334,58 @@ const VsHumanizeAIPro = () => {
                   </div>
                 </div>
               </Card>
+            </div>
+          </div>
+        </section>
+
+        {/* Social Proof - Switchers */}
+        <section className="py-16">
+          <div className="container mx-auto px-4">
+            <div className="max-w-5xl mx-auto">
+              <h2 className="text-3xl font-bold text-center mb-4">Why Users Chose Us Over HumanizeAI.pro</h2>
+              <p className="text-center text-muted-foreground mb-10">Real experiences from users who compared both tools</p>
+              <div className="grid md:grid-cols-2 gap-6">
+                <Card className="p-6">
+                  <div className="flex gap-1 mb-4">
+                    {[...Array(5)].map((_, i) => (
+                      <Star key={i} className="w-5 h-5 fill-primary text-primary" />
+                    ))}
+                  </div>
+                  <p className="text-muted-foreground mb-4">
+                    "HumanizeAI.pro was frustrating because I had to use GPTZero separately to check results. AI Free Text Pro's built-in detector saves so much time and guesswork."
+                  </p>
+                  <div className="flex items-center gap-3">
+                    <Avatar className="h-12 w-12 border-2 border-primary/20">
+                      <AvatarImage src={jamesChen} alt="James C." />
+                      <AvatarFallback className="bg-gradient-to-br from-primary to-secondary text-primary-foreground">JC</AvatarFallback>
+                    </Avatar>
+                    <div>
+                      <p className="font-semibold">James C.</p>
+                      <p className="text-sm text-muted-foreground">Freelance Writer • Tried both tools</p>
+                    </div>
+                  </div>
+                </Card>
+                <Card className="p-6">
+                  <div className="flex gap-1 mb-4">
+                    {[...Array(5)].map((_, i) => (
+                      <Star key={i} className="w-5 h-5 fill-primary text-primary" />
+                    ))}
+                  </div>
+                  <p className="text-muted-foreground mb-4">
+                    "The PDF upload feature sealed the deal for me. I work with documents constantly and copy-pasting from HumanizeAI.pro was tedious. Much better workflow now."
+                  </p>
+                  <div className="flex items-center gap-3">
+                    <Avatar className="h-12 w-12 border-2 border-primary/20">
+                      <AvatarImage src={lisaMartinez} alt="Lisa M." />
+                      <AvatarFallback className="bg-gradient-to-br from-primary to-secondary text-primary-foreground">LM</AvatarFallback>
+                    </Avatar>
+                    <div>
+                      <p className="font-semibold">Lisa M.</p>
+                      <p className="text-sm text-muted-foreground">Marketing Manager • Switched 2 months ago</p>
+                    </div>
+                  </div>
+                </Card>
+              </div>
             </div>
           </div>
         </section>

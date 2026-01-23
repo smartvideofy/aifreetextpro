@@ -15,6 +15,11 @@ import jamesOkonkwo from "@/assets/team/james-okonkwo.jpg";
 import anikaPatel from "@/assets/team/anika-patel.jpg";
 import thomasMueller from "@/assets/team/thomas-mueller.jpg";
 
+// Import advisor profile images
+import robertLancaster from "@/assets/team/robert-lancaster.jpg";
+import lisaChang from "@/assets/team/lisa-chang.jpg";
+import michaelTorres from "@/assets/team/michael-torres.jpg";
+
 const teamMembers = [
   {
     name: "Dr. Sarah Chen",
@@ -94,18 +99,24 @@ const advisors = [
   {
     name: "Prof. Robert Lancaster",
     role: "Academic Advisor",
+    initials: "RL",
+    avatar: robertLancaster,
     affiliation: "Professor of Digital Humanities, Oxford University",
     expertise: "Academic integrity and AI in education"
   },
   {
     name: "Dr. Lisa Chang",
     role: "AI Ethics Advisor",
+    initials: "LC",
+    avatar: lisaChang,
     affiliation: "Former Google AI Ethics Board Member",
     expertise: "Responsible AI development and deployment"
   },
   {
     name: "Michael Torres",
     role: "Industry Advisor",
+    initials: "MT",
+    avatar: michaelTorres,
     affiliation: "Former VP of Product, Grammarly",
     expertise: "AI writing tools and market strategy"
   }
@@ -270,9 +281,12 @@ const Team = () => {
             <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
               {advisors.map((advisor, index) => (
                 <Card key={index} className="p-6 text-center border-border/50">
-                  <div className="w-14 h-14 rounded-full bg-secondary/10 flex items-center justify-center mx-auto mb-4">
-                    <BookOpen className="w-6 h-6 text-secondary" />
-                  </div>
+                  <Avatar className="w-14 h-14 mx-auto mb-4 border-2 border-secondary/30">
+                    <AvatarImage src={advisor.avatar} alt={advisor.name} className="object-cover" />
+                    <AvatarFallback className="bg-secondary/10 text-secondary font-bold">
+                      {advisor.initials}
+                    </AvatarFallback>
+                  </Avatar>
                   <h3 className="font-bold text-lg mb-1">{advisor.name}</h3>
                   <p className="text-primary text-sm font-medium mb-2">{advisor.role}</p>
                   <p className="text-muted-foreground text-sm mb-2">{advisor.affiliation}</p>

@@ -428,7 +428,7 @@ const OriginalityAIReview = () => {
 
                 <h2>Should You Worry About Originality.AI?</h2>
                 <p>
-                  If you're using AI to generate content that will be checked by editors, clients, or publishers using Originality.AI — yes, you should take it seriously. It's one of the more capable detectors on the market.
+                  If you're using AI to generate content that will be checked by editors, clients, or publishers using Originality.AI, yes, you should take it seriously. It's one of the more capable detectors on the market.
                 </p>
                 <p>
                   However, with the right tools, it's not a barrier. <Link to="/bypass-originality-ai" className="text-primary hover:text-primary/80">AI Free Text Pro achieves a 96% bypass rate</Link>, which is among the highest in the industry. Combined with our money-back guarantee, there's essentially no risk.

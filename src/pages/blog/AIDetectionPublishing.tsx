@@ -38,7 +38,7 @@ export default function AIDetectionPublishing() {
     <>
       <Helmet>
         <title>AI Detection in Publishing: How Editors and Writers Can Adapt in 2025 | AI Free Text Pro</title>
-        <meta name="description" content="How editors and publishers are adapting to AI-generated content — and why AI Free Text Pro is part of the solution." />
+        <meta name="description" content="How editors and publishers are adapting to AI-generated content, and why AI Free Text Pro is part of the solution." />
         <meta name="keywords" content="ai detection in publishing, ai editing tools, future of writing 2025, publishing industry ai" />
         <link rel="canonical" href="https://aifreetextpro.com/blog/ai-detection-in-publishing-2025" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
@@ -253,7 +253,7 @@ export default function AIDetectionPublishing() {
               <section>
                 <h2 className="text-3xl font-bold mb-4">The Future of Publishing and AI</h2>
                 <p>
-                  Rather than banning AI outright, forward-thinking publishers are establishing frameworks for ethical AI use. The goal isn't to eliminate AI from the writing process—it's to ensure published work maintains human creativity, originality, and voice.
+                  Rather than banning AI outright, forward-thinking publishers are establishing frameworks for ethical AI use. The goal isn't to eliminate AI from the writing process. It's to ensure published work maintains human creativity, originality, and voice.
                 </p>
                 
                 <div className="bg-muted/50 rounded-lg p-6 my-4">

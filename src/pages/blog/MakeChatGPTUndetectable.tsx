@@ -340,7 +340,7 @@ const MakeChatGPTUndetectable = () => {
                       <CheckCircle className="w-5 h-5 text-primary" />
                       <strong>4 Writing Styles</strong>
                     </div>
-                    <p className="text-sm text-muted-foreground mb-0">Professional, Casual, Academic, Creative — match your exact use case.</p>
+                    <p className="text-sm text-muted-foreground mb-0">Professional, Casual, Academic, Creative. Match your exact use case.</p>
                   </div>
                   
                   <div className="p-4 border rounded-lg">
@@ -356,7 +356,7 @@ const MakeChatGPTUndetectable = () => {
                       <Shield className="w-5 h-5 text-primary" />
                       <strong>100% Money-Back Guarantee</strong>
                     </div>
-                    <p className="text-sm text-muted-foreground mb-0">If our humanizer is flagged by ANY detector, full refund — no questions asked.</p>
+                    <p className="text-sm text-muted-foreground mb-0">If our humanizer is flagged by ANY detector, full refund, no questions asked.</p>
                   </div>
                 </div>
 
@@ -387,7 +387,7 @@ const MakeChatGPTUndetectable = () => {
 
                 <h2>The Ethical Approach to AI Writing</h2>
                 <p>
-                  Making AI content undetectable isn't about cheating — it's about using AI as the powerful tool it is. The key is:
+                  Making AI content undetectable isn't about cheating. It's about using AI as the powerful tool it is. The key is:
                 </p>
                 <ul>
                   <li>Use AI to accelerate research and ideation</li>
@@ -401,7 +401,7 @@ const MakeChatGPTUndetectable = () => {
 
                 <h2>Conclusion: Stop Worrying About Detection</h2>
                 <p>
-                  In 2025, making AI writing undetectable is a solved problem — if you use the right tools. AI Free Text Pro gives you the fastest, most reliable method to transform any AI-generated content into undetectable human writing.
+                  In 2025, making AI writing undetectable is a solved problem, if you use the right tools. AI Free Text Pro gives you the fastest, most reliable method to transform any AI-generated content into undetectable human writing.
                 </p>
                 <p>
                   Stop spending hours manually editing. Stop worrying if your content will pass. Start with 1,000 free words and see the difference.

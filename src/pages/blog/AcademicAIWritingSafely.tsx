@@ -389,7 +389,7 @@ const AcademicAIWritingSafely = () => {
 
                 <h3>Can Turnitin detect humanized AI content?</h3>
                 <p>
-                  Turnitin's AI detection has limitations. Properly humanized content typically passes, but the goal shouldn't be to "beat" detection — it should be to ensure your legitimate work isn't wrongly flagged. <Link to="/bypass-turnitin-ai-detection" className="text-primary hover:text-primary/80">Learn more about Turnitin AI detection.</Link>
+                  Turnitin's AI detection has limitations. Properly humanized content typically passes, but the goal shouldn't be to "beat" detection. It should be to ensure your legitimate work isn't wrongly flagged. <Link to="/bypass-turnitin-ai-detection" className="text-primary hover:text-primary/80">Learn more about Turnitin AI detection.</Link>
                 </p>
 
                 <h3>Should I tell my professor I used AI?</h3>
@@ -399,7 +399,7 @@ const AcademicAIWritingSafely = () => {
 
                 <h2>Conclusion: AI as a Learning Tool</h2>
                 <p>
-                  The purpose of academic work is learning — developing critical thinking, research skills, and subject expertise. AI tools can support this journey when used responsibly:
+                  The purpose of academic work is learning, developing critical thinking, research skills, and subject expertise. AI tools can support this journey when used responsibly:
                 </p>
                 <ul>
                   <li>Use AI to understand, not to avoid understanding</li>
@@ -408,7 +408,7 @@ const AcademicAIWritingSafely = () => {
                   <li>Verify your work doesn't trigger false positives</li>
                 </ul>
                 <p>
-                  AI Free Text Pro's Academic style and detection tools are designed to support this approach — helping you produce your best work while maintaining the integrity that makes academic achievement meaningful.
+                  AI Free Text Pro's Academic style and detection tools are designed to support this approach, helping you produce your best work while maintaining the integrity that makes academic achievement meaningful.
                 </p>
               </div>
 

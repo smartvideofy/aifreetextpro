@@ -113,7 +113,7 @@ const AIHumanizationPitfalls = () => {
                 AI Humanization Pitfalls: Common Mistakes Writers Make
               </h1>
               <p className="text-xl text-muted-foreground mb-6">
-                What to avoid when refining AI text — and what to do instead.
+                What to avoid when refining AI text, and what to do instead.
               </p>
               <div className="flex items-center gap-4 text-sm text-muted-foreground">
                 <span>January 15, 2025</span>
@@ -142,7 +142,7 @@ const AIHumanizationPitfalls = () => {
                 add a few contractions, vary sentence length. But these tactics often backfire.
               </p>
               <p className="text-muted-foreground mb-4">
-                The problem isn't that the advice is wrong—it's that it's incomplete. Humanization isn't 
+                The problem isn't that the advice is wrong; it's that it's incomplete. Humanization isn't 
                 about tricking detectors; it's about making content genuinely better. When you focus on 
                 the wrong things, you make the content worse while the underlying AI patterns remain.
               </p>
@@ -226,7 +226,7 @@ const AIHumanizationPitfalls = () => {
                   </li>
                   <li className="flex items-start gap-2">
                     <XCircle className="h-4 w-4 text-destructive mt-1 flex-shrink-0" />
-                    <span>The result sounds neither human nor machine—just confused</span>
+                    <span>The result sounds neither human nor machine, just confused</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <XCircle className="h-4 w-4 text-destructive mt-1 flex-shrink-0" />
@@ -334,7 +334,7 @@ const AIHumanizationPitfalls = () => {
                   <div className="border-l-4 border-primary pl-4">
                     <p className="font-medium text-foreground mb-1">Specific (Human Pattern):</p>
                     <p className="text-muted-foreground italic">
-                      "I switched from Todoist to Linear last month. Game changer for technical projects—
+                      "I switched from Todoist to Linear last month. Game changer for technical projects,
                       the keyboard shortcuts alone save me 20 minutes a day."
                     </p>
                   </div>

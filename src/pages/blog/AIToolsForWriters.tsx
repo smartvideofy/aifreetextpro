@@ -38,7 +38,7 @@ export default function AIToolsForWriters() {
     <>
       <Helmet>
         <title>AI Tools for Writers: Boost Creativity and Productivity in 2025 | AI Free Text Pro</title>
-        <meta name="description" content="The best AI writing tools to plan, edit, and refine your stories and essays — including AI Free Text Pro for authenticity checks." />
+        <meta name="description" content="The best AI writing tools to plan, edit, and refine your stories and essays, including AI Free Text Pro for authenticity checks." />
         <meta name="keywords" content="ai tools for writers, writing apps 2025, ai writing assistant, creative writing ai" />
         <link rel="canonical" href="https://aifreetextpro.com/blog/ai-tools-for-writers-2025" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
@@ -152,7 +152,7 @@ export default function AIToolsForWriters() {
               <section>
                 <h2 className="text-3xl font-bold mb-4">The Modern Writer's AI Toolkit</h2>
                 <p>
-                  AI isn't replacing writers—it's empowering them. The right tools can help you brainstorm ideas, overcome writer's block, edit faster, and maintain authenticity. Here's your complete guide to the best AI writing tools in 2025.
+                  AI isn't replacing writers; it's empowering them. The right tools can help you brainstorm ideas, overcome writer's block, edit faster, and maintain authenticity. Here's your complete guide to the best AI writing tools in 2025.
                 </p>
               </section>
 

@@ -118,10 +118,10 @@ const About = () => {
                   AI Free Text Pro was born from a simple observation: as AI writing tools became ubiquitous, there was a growing gap between machine-generated content and authentic human expression. Writers, students, and professionals needed reliable tools that were both accurate and accessible.
                 </p>
                 <p>
-                  We built AI Free Text Pro to bridge that gap—combining cutting-edge AI technology with a human-first philosophy. Our platform doesn't just detect AI patterns; it transforms robotic text into natural, engaging writing that feels uniquely yours.
+                  We built AI Free Text Pro to bridge that gap, combining cutting-edge AI technology with a human-first philosophy. Our platform doesn't just detect AI patterns; it transforms robotic text into natural, engaging writing that feels uniquely yours.
                 </p>
                 <p>
-                  Today, we're proud to serve a global community of creators who trust us to help them maintain authenticity in an increasingly automated world. As AI continues to evolve, so do we—constantly refining our algorithms to stay ahead of the curve.
+                  Today, we're proud to serve a global community of creators who trust us to help them maintain authenticity in an increasingly automated world. As AI continues to evolve, so do we, constantly refining our algorithms to stay ahead of the curve.
                 </p>
               </div>
             </div>
@@ -135,7 +135,7 @@ const About = () => {
               <div className="text-center mb-16">
                 <h2 className="text-4xl md:text-5xl font-bold mb-6">Our Mission & Values</h2>
                 <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                  To bridge the gap between artificial intelligence and authentic expression—empowering you to write freely, confidently, and naturally in the age of AI.
+                  To bridge the gap between artificial intelligence and authentic expression, empowering you to write freely, confidently, and naturally in the age of AI.
                 </p>
               </div>
               
@@ -192,7 +192,7 @@ const About = () => {
                   </div>
                   <h3 className="text-xl font-bold mb-3">Lightning Fast</h3>
                   <p className="text-muted-foreground">
-                    Generate humanized content in seconds. No waiting, no queues—just instant transformation.
+                    Generate humanized content in seconds. No waiting, no queues, just instant transformation.
                   </p>
                 </Card>
                 
@@ -202,7 +202,7 @@ const About = () => {
                   </div>
                   <h3 className="text-xl font-bold mb-3">Unmatched Precision</h3>
                   <p className="text-muted-foreground">
-                    98% accuracy in rewriting and detection avoidance. Your text stays genuine and credible—every single time.
+                    98% accuracy in rewriting and detection avoidance. Your text stays genuine and credible, every single time.
                   </p>
                 </Card>
                 
@@ -257,7 +257,7 @@ const About = () => {
               <div className="text-center mb-16">
                 <h2 className="text-4xl md:text-5xl font-bold mb-6">Powered by Advanced AI</h2>
                 <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-                  Our proprietary algorithms are trained on diverse linguistic patterns, allowing us to distinguish subtle human nuances in tone, rhythm, and structure. We learn from style, not content—ensuring complete data security.
+                  Our proprietary algorithms are trained on diverse linguistic patterns, allowing us to distinguish subtle human nuances in tone, rhythm, and structure. We learn from style, not content, ensuring complete data security.
                 </p>
               </div>
 
@@ -291,7 +291,7 @@ const About = () => {
                   <Lock className="w-12 h-12 text-primary mx-auto mb-6" />
                   <h3 className="text-xl font-bold mb-4">Zero-Knowledge Architecture</h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    Your data never touches a database. Once processed, it's gone—permanently. Complete privacy guaranteed.
+                    Your data never touches a database. Once processed, it's gone, permanently. Complete privacy guaranteed.
                   </p>
                 </Card>
               </div>

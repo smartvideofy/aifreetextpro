@@ -347,7 +347,7 @@ const GPTinfComparison = () => {
                   <li>You don't need multiple writing styles</li>
                 </ul>
                 <p>
-                  However, for anyone serious about AI content — students, professional writers, marketers, SEO agencies — the performance gap makes AI Free Text Pro the clear choice.
+                  However, for anyone serious about AI content, including students, professional writers, marketers, and SEO agencies, the performance gap makes AI Free Text Pro the clear choice.
                 </p>
 
                 <h2>Our Test Methodology</h2>

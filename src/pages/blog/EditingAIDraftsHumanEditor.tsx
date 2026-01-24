@@ -236,14 +236,14 @@ const EditingAIDraftsHumanEditor = () => {
                     <h4 className="font-semibold mb-2">Inject Imperfection</h4>
                     <p className="text-muted-foreground mb-2">Real writing has personality quirks. Use parentheticals, dashes, sentence fragments.</p>
                     <p className="text-sm text-muted-foreground italic">Before: "This approach is surprisingly effective."</p>
-                    <p className="text-sm text-primary italic">After: "This approach is—honestly?—shockingly effective."</p>
+                    <p className="text-sm text-primary italic">After: "This approach is, honestly, shockingly effective."</p>
                   </div>
 
                   <div className="border-l-4 border-secondary pl-6">
                     <h4 className="font-semibold mb-2">Inject Vulnerability</h4>
                     <p className="text-muted-foreground mb-2">AI never admits uncertainty. Humans do.</p>
                     <p className="text-sm text-muted-foreground italic">Before: "The following strategies will help you succeed."</p>
-                    <p className="text-sm text-primary italic">After: "I'm not sure this will work for everyone—but it transformed my own process."</p>
+                    <p className="text-sm text-primary italic">After: "I'm not sure this will work for everyone, but it transformed my own process."</p>
                   </div>
                 </div>
               </section>
@@ -287,7 +287,7 @@ const EditingAIDraftsHumanEditor = () => {
                   <div className="bg-primary/10 border border-primary/20 rounded-lg p-6">
                     <h4 className="font-semibold text-primary mb-3">After Professional Editing</h4>
                     <p className="text-muted-foreground italic">
-                      "Last Tuesday, I lost a $50,000 client because of one poorly worded email. Three sentences. That's all it took to undo six months of relationship building. If you've ever hit 'send' and immediately felt that stomach drop—this is for you."
+                      "Last Tuesday, I lost a $50,000 client because of one poorly worded email. Three sentences. That's all it took to undo six months of relationship building. If you've ever hit 'send' and immediately felt that stomach drop, this is for you."
                     </p>
                   </div>
                 </div>
@@ -299,7 +299,7 @@ const EditingAIDraftsHumanEditor = () => {
               <section className="bg-gradient-to-r from-primary/10 to-secondary/10 border border-primary/20 rounded-xl p-8 my-12">
                 <h2 className="text-2xl font-bold mb-4">Streamline Your Editing Process</h2>
                 <p className="text-muted-foreground mb-6">
-                  Professional editing takes time—but AI Free Text Pro can handle the heavy lifting. Our humanization technology applies many of these editing principles automatically, giving you a stronger starting point for your final polish.
+                  Professional editing takes time, but AI Free Text Pro can handle the heavy lifting. Our humanization technology applies many of these editing principles automatically, giving you a stronger starting point for your final polish.
                 </p>
                 <Link to="/">
                   <Button size="lg" className="group">

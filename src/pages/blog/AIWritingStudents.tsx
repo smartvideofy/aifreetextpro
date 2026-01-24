@@ -203,7 +203,7 @@ const AIWritingStudents = () => {
                     <h3 className="text-lg font-semibold mb-0">Academic Integrity First</h3>
                   </div>
                   <p className="mb-0">
-                    This guide shows you how to use AI tools <strong>ethically and responsibly</strong> as learning aids — not as shortcuts to avoid learning. Always follow your institution's AI policy.
+                    This guide shows you how to use AI tools <strong>ethically and responsibly</strong> as learning aids, not as shortcuts to avoid learning. Always follow your institution's AI policy.
                   </p>
                 </div>
 
@@ -215,14 +215,14 @@ const AIWritingStudents = () => {
                   But here's the problem: Your university has strict plagiarism policies. Professors use <a href="/blog/ai-detection-tools-compared-2025">AI detection tools</a>. And you're not sure where the line is between "using AI as a learning tool" and "academic dishonesty."
                 </p>
                 <p>
-                  This comprehensive guide will show you exactly <strong>how to use AI ethically</strong> in your academic work — while staying on the right side of academic integrity policies and avoiding false positives from AI detectors.
+                  This comprehensive guide will show you exactly <strong>how to use AI ethically</strong> in your academic work, while staying on the right side of academic integrity policies and avoiding false positives from AI detectors.
                 </p>
 
                 <h2>Understanding Academic Integrity vs. AI Use</h2>
 
                 <h3>What is Academic Integrity?</h3>
                 <p>
-                  Academic integrity means submitting work that represents your own understanding, effort, and thinking. It's about learning — not just getting grades.
+                  Academic integrity means submitting work that represents your own understanding, effort, and thinking. It's about learning, not just getting grades.
                 </p>
 
                 <h3>Where AI Fits (and Doesn't Fit)</h3>
@@ -384,7 +384,7 @@ const AIWritingStudents = () => {
 
                 <h2>The Bottom Line: Learn First, Tools Second</h2>
                 <p>
-                  AI tools are incredibly powerful learning aids. But education isn't about submitting perfect papers — it's about learning to think critically, write clearly, and develop genuine expertise in your field.
+                  AI tools are incredibly powerful learning aids. But education isn't about submitting perfect papers. It's about learning to think critically, write clearly, and develop genuine expertise in your field.
                 </p>
                 <p>
                   Use AI as a tutor and research assistant, not a replacement for learning. Your future career success depends on the skills you develop now, not the grades you get by cutting corners. The students who thrive are those who use AI to <strong>enhance their learning</strong>, not bypass it.

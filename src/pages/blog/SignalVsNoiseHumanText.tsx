@@ -113,7 +113,7 @@ const SignalVsNoiseHumanText = () => {
                 Signal vs. Noise: What Makes Text "Human" in 2026
               </h1>
               <p className="text-xl text-muted-foreground mb-6">
-                Current patterns detectors care about — with concrete examples you can learn from.
+                Current patterns detectors care about, with concrete examples you can learn from.
               </p>
               <div className="flex items-center gap-4 text-sm text-muted-foreground">
                 <span>January 15, 2025</span>
@@ -143,7 +143,7 @@ const SignalVsNoiseHumanText = () => {
               </p>
               <p className="text-muted-foreground mb-4">
                 This guide breaks down the six most significant patterns that current detectors use to distinguish 
-                human writing from AI output—with real examples you can study and apply.
+                human writing from AI output, with real examples you can study and apply.
               </p>
             </section>
 
@@ -157,7 +157,7 @@ const SignalVsNoiseHumanText = () => {
                 <CardContent className="pt-6">
                   <h3 className="font-semibold text-foreground mb-2">The Pattern</h3>
                   <p className="text-muted-foreground">
-                    Humans have vocabulary quirks—favorite words, unusual metaphors, industry jargon used conversationally. 
+                    Humans have vocabulary quirks: favorite words, unusual metaphors, industry jargon used conversationally. 
                     AI defaults to the statistically most common phrasing.
                   </p>
                 </CardContent>
@@ -176,7 +176,7 @@ const SignalVsNoiseHumanText = () => {
                   <div className="border-l-4 border-primary pl-4">
                     <p className="font-medium text-foreground mb-1">Human Pattern:</p>
                     <p className="text-muted-foreground italic">
-                      "We shipped it Thursday—two days early, which basically never happens on my team."
+                      "We shipped it Thursday, two days early, which basically never happens on my team."
                     </p>
                     <p className="text-xs text-primary mt-1">Casual phrasing, personal context, mild surprise</p>
                   </div>

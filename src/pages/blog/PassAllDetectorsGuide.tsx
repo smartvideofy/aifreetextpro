@@ -144,13 +144,13 @@ const PassAllDetectorsGuide = () => {
                 </h1>
 
                 <p className="text-xl text-muted-foreground">
-                  How to bypass GPTZero, Turnitin, Originality.AI, ZeroGPT, Copyleaks, and every other AI detector — with a money-back guarantee.
+                  How to bypass GPTZero, Turnitin, Originality.AI, ZeroGPT, Copyleaks, and every other AI detector, with a money-back guarantee.
                 </p>
               </header>
 
               <div className="prose prose-lg max-w-none">
                 <p>
-                  In 2025, AI detectors are everywhere. Publishers run your articles through Originality.AI. Teachers submit essays to Turnitin. Clients check blog posts with GPTZero. The AI detection landscape has never been more challenging — or more critical to navigate.
+                  In 2025, AI detectors are everywhere. Publishers run your articles through Originality.AI. Teachers submit essays to Turnitin. Clients check blog posts with GPTZero. The AI detection landscape has never been more challenging, or more critical to navigate.
                 </p>
                 
                 <p>
@@ -404,7 +404,7 @@ const PassAllDetectorsGuide = () => {
 
                 <h2>Conclusion: Stop Worrying About Detection</h2>
                 <p>
-                  In 2025, the AI detection arms race is real — but it's a solved problem for those using the right tools. AI Free Text Pro gives you:
+                  In 2025, the AI detection arms race is real, but it's a solved problem for those using the right tools. AI Free Text Pro gives you:
                 </p>
                 <ul>
                   <li>96-98% success against every major detector</li>

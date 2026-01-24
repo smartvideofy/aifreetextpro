@@ -8,7 +8,7 @@ import { ArrowRight, BookOpen, Shield, TrendingUp } from "lucide-react";
 
 const relatedArticles = [
   {
-    title: "AI Detection Tools Compared (2025 Edition)",
+    title: "AI Detection Tools Compared (2026 Edition)",
     description: "See which AI detector is most accurate for publishers",
     href: "/blog/ai-detection-tools-compared-2025",
     category: "Comparison"
@@ -18,6 +18,18 @@ const relatedArticles = [
     description: "Understand the science behind AI text detection",
     href: "/blog/how-ai-detectors-work",
     category: "Educational"
+  },
+  {
+    title: "Editing AI Drafts Like a Human Editor",
+    description: "Professional techniques for refining AI content",
+    href: "/blog/editing-ai-drafts-human-editor",
+    category: "Editing"
+  },
+  {
+    title: "AI Content Marketing Trends 2026",
+    description: "Key trends shaping AI content in publishing",
+    href: "/blog/ai-content-marketing-trends-2026",
+    category: "Trends"
   }
 ];
 

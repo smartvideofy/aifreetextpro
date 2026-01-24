@@ -24,6 +24,12 @@ const relatedArticles = [
     description: "Understand the metrics behind AI detection tools",
     href: "/blog/how-ai-detectors-score-text",
     category: "Technical"
+  },
+  {
+    title: "Mastering AI-Powered Email Campaigns in 2026",
+    description: "Advanced strategies for email personalization with AI",
+    href: "/blog/mastering-ai-email-campaigns-2026",
+    category: "Email Marketing"
   }
 ];
 

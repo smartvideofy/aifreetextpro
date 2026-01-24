@@ -32,6 +32,12 @@ const AIHumanizationPitfalls = () => {
       description: "Understanding the difference and when to use each",
       href: "/blog/paraphrasing-vs-humanizing",
       category: "Techniques"
+    },
+    {
+      title: "Why Most AI Content Fails Human Review",
+      description: "Common pitfalls and how to fix AI-generated content",
+      href: "/blog/why-ai-content-fails-human-review",
+      category: "Guide"
     }
   ];
 

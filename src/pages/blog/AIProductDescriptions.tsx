@@ -20,10 +20,16 @@ const relatedArticles = [
     category: "Marketing"
   },
   {
-    title: "Top 10 AI Humanizer Tools for 2025",
+    title: "Top 10 AI Humanizer Tools for 2026",
     description: "Updated list of AI humanizers with tests, pricing, and feature comparisons.",
     href: "/blog/top-10-ai-humanizer-tools-2025",
     category: "Tools"
+  },
+  {
+    title: "AI Humanizers for Email Marketing",
+    description: "Boost email engagement with humanized AI copy",
+    href: "/blog/ai-humanizers-for-email-marketing",
+    category: "Email Marketing"
   }
 ];
 

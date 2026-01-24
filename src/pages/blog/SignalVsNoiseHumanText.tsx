@@ -32,6 +32,12 @@ const SignalVsNoiseHumanText = () => {
       description: "Common mistakes when refining AI text",
       href: "/blog/ai-humanization-pitfalls",
       category: "Best Practices"
+    },
+    {
+      title: "How AI Detectors Work",
+      description: "Inside the science of AI text analysis",
+      href: "/blog/how-ai-detectors-work",
+      category: "Educational"
     }
   ];
 

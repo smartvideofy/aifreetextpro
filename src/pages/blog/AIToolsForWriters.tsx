@@ -8,7 +8,7 @@ import { ArrowRight } from "lucide-react";
 
 const relatedArticles = [
   {
-    title: "Top 10 AI Humanizer Tools for 2025",
+    title: "Top 10 AI Humanizer Tools for 2026",
     description: "Comprehensive review of the best AI humanizers",
     href: "/blog/top-10-ai-humanizer-tools-2025",
     category: "Tools"
@@ -18,6 +18,18 @@ const relatedArticles = [
     description: "How to use AI ethically in academic writing",
     href: "/blog/ai-writing-students-avoid-plagiarism",
     category: "Education"
+  },
+  {
+    title: "Can AI Writing Be Truly Original?",
+    description: "Exploring creativity in the age of GPT",
+    href: "/blog/ai-creativity-and-originality",
+    category: "Insights"
+  },
+  {
+    title: "Top 10 AI Writing Tools in 2026",
+    description: "Best AI writing assistants for professionals",
+    href: "/blog/top-10-ai-writing-tools-2026",
+    category: "Tools"
   }
 ];
 

@@ -20,6 +20,18 @@ const relatedArticles = [
     description: "How to pass Turnitin's AI detection system",
     href: "/blog/bypass-turnitin-ai-detection",
     category: "Guide"
+  },
+  {
+    title: "AI Writing in Academia",
+    description: "Navigating ethical use of AI in academic settings",
+    href: "/blog/ai-writing-academia",
+    category: "Academic"
+  },
+  {
+    title: "How AI Detectors Work",
+    description: "Understanding the technology behind detection tools",
+    href: "/blog/how-ai-detectors-work",
+    category: "Educational"
   }
 ];
 

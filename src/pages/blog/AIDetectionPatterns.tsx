@@ -26,6 +26,12 @@ const relatedArticles = [
     description: "Inside the science of AI text analysis",
     href: "/blog/how-ai-detectors-work",
     category: "Educational"
+  },
+  {
+    title: "AI Detection Tools Compared (2026 Edition)",
+    description: "Which AI detector is most accurate?",
+    href: "/blog/ai-detection-tools-compared-2025",
+    category: "Comparison"
   }
 ];
 

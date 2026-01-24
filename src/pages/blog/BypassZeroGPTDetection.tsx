@@ -26,6 +26,12 @@ const BypassZeroGPTDetection = () => {
       description: "Breaking down the metrics AI detectors use in plain language. Understand perplexity, burstiness, and confidence scores.",
       href: "/blog/how-ai-detectors-score-text",
       category: "Technical"
+    },
+    {
+      title: "Bypass Copyleaks AI Detection",
+      description: "Strategies to reduce Copyleaks AI detection scores effectively.",
+      href: "/blog/bypass-copyleaks-ai-detection",
+      category: "How-To Guide"
     }
   ];
 

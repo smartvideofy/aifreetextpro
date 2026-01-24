@@ -26,6 +26,7 @@ import aiDetectorFeature from "@/assets/ai-detector-feature.png";
 import aiHumanizerFeature from "@/assets/ai-humanizer-feature.png";
 import studentWriting from "@/assets/student-writing.png";
 import writerProfessional from "@/assets/writer-professional.png";
+import researcherWorking from "@/assets/researcher-working.png";
 import jamesChen from "@/assets/testimonials/james-chen.jpg";
 import sarahPatel from "@/assets/testimonials/sarah-patel.jpg";
 import lisaMartinez from "@/assets/testimonials/lisa-martinez.jpg";
@@ -1014,28 +1015,37 @@ const Index = () => {
                 </div>
               </Card>
 
-              <Card className="p-8 bg-gradient-to-br from-card to-card/80 backdrop-blur border-border/50 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-                <div className="w-14 h-14 rounded-full bg-secondary/10 flex items-center justify-center mb-6">
-                  <Target className="w-7 h-7 text-secondary" />
+              <Card className="p-0 hover:shadow-lg transition-shadow overflow-hidden">
+                <img 
+                  src={researcherWorking} 
+                  alt="Researcher working on academic papers in modern office" 
+                  className="w-full h-48 object-cover"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <div className="p-8">
+                  <div className="w-14 h-14 rounded-full bg-secondary/10 flex items-center justify-center mb-6 -mt-14 relative z-10 border-4 border-card">
+                    <Target className="w-7 h-7 text-secondary" />
+                  </div>
+                  <h3 className="font-bold text-2xl mb-4">Researchers</h3>
+                  <p className="text-muted-foreground mb-6">
+                    Ensure your technical writing maintains authenticity while refining complex content for publication and peer review.
+                  </p>
+                  <ul className="space-y-2 text-sm text-muted-foreground">
+                    <li className="flex items-start gap-2">
+                      <CheckCircle className="w-4 h-4 text-secondary mt-0.5 flex-shrink-0" />
+                      <span>Technical content refinement</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle className="w-4 h-4 text-secondary mt-0.5 flex-shrink-0" />
+                      <span>Publication-ready polishing</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckCircle className="w-4 h-4 text-secondary mt-0.5 flex-shrink-0" />
+                      <span>Authenticity verification</span>
+                    </li>
+                  </ul>
                 </div>
-                <h3 className="font-bold text-2xl mb-4">Researchers</h3>
-                <p className="text-muted-foreground mb-6">
-                  Ensure your technical writing maintains authenticity while refining complex content for publication and peer review.
-                </p>
-                <ul className="space-y-2 text-sm text-muted-foreground">
-                  <li className="flex items-start gap-2">
-                    <CheckCircle className="w-4 h-4 text-secondary mt-0.5 flex-shrink-0" />
-                    <span>Technical content refinement</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle className="w-4 h-4 text-secondary mt-0.5 flex-shrink-0" />
-                    <span>Publication-ready polishing</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle className="w-4 h-4 text-secondary mt-0.5 flex-shrink-0" />
-                    <span>Authenticity verification</span>
-                  </li>
-                </ul>
               </Card>
 
               <Card className="p-0 hover:shadow-lg transition-shadow overflow-hidden">

@@ -12,7 +12,7 @@ const AboutSection = () => {
             <strong>AI Free Text Pro</strong> was born from a simple idea:
             <em> powerful AI should enhance human creativity, not replace it.</em>
             We built a platform that transforms AI-generated text into natural, engaging writing that feels uniquely
-            human — without compromising integrity or privacy. Whether you’re a student, researcher, marketer, or
+            human, without compromising integrity or privacy. Whether you're a student, researcher, marketer, or
             creator, AI Free Text Pro helps your words regain their human touch.
           </p>
         </div>
@@ -21,7 +21,7 @@ const AboutSection = () => {
         <div className="max-w-5xl mx-auto text-center">
           <h3 className="text-2xl font-semibold mb-4">Our Mission</h3>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            To bridge the gap between artificial intelligence and authentic expression — empowering individuals to write
+            To bridge the gap between artificial intelligence and authentic expression, empowering individuals to write
             freely, confidently, and undetected in an increasingly automated world. We believe in responsible AI use,
             digital privacy, and helping humans reclaim their voice in the age of algorithms.
           </p>
@@ -37,7 +37,7 @@ const AboutSection = () => {
               </div>
               <h3 className="text-xl font-semibold mb-3">Lightning Fast</h3>
               <p className="text-muted-foreground">
-                Generate humanized content in seconds. No waiting, no queues — just instant transformation.
+                Generate humanized content in seconds. No waiting, no queues, just instant transformation.
               </p>
             </Card>
 
@@ -48,7 +48,7 @@ const AboutSection = () => {
               <h3 className="text-xl font-semibold mb-3">Unmatched Precision</h3>
               <p className="text-muted-foreground">
                 With <strong>98% rewriting accuracy</strong> and advanced detection avoidance, your text stays genuine
-                and credible — every single time.
+                and credible, every single time.
               </p>
             </Card>
 
@@ -58,7 +58,7 @@ const AboutSection = () => {
               </div>
               <h3 className="text-xl font-semibold mb-3">Privacy First</h3>
               <p className="text-muted-foreground">
-                We never store, log, or share your content. Your words belong to you — and no one else.
+                We never store, log, or share your content. Your words belong to you, and no one else.
               </p>
             </Card>
           </div>
@@ -70,7 +70,7 @@ const AboutSection = () => {
           <p className="text-lg text-muted-foreground mb-10">
             AI Free Text Pro uses proprietary algorithms trained on diverse linguistic patterns, allowing it to
             distinguish subtle human nuances in tone, rhythm, and structure. Our adaptive model learns from style, not
-            content — ensuring data security while continuously improving.
+            content, ensuring data security while continuously improving.
           </p>
 
           <div className="grid md:grid-cols-3 gap-8">
@@ -86,7 +86,7 @@ const AboutSection = () => {
               <Globe className="w-10 h-10 text-primary mx-auto mb-4" />
               <h4 className="text-xl font-semibold mb-2">Global-Ready Design</h4>
               <p className="text-muted-foreground">
-                Built to understand diverse linguistic cues and writing standards — perfect for international users.
+                Built to understand diverse linguistic cues and writing standards, perfect for international users.
               </p>
             </Card>
 
@@ -94,7 +94,7 @@ const AboutSection = () => {
               <Shield className="w-10 h-10 text-primary mx-auto mb-4" />
               <h4 className="text-xl font-semibold mb-2">Zero Data Retention</h4>
               <p className="text-muted-foreground">
-                Your data never touches a database. Once processed, it’s gone — permanently.
+                Your data never touches a database. Once processed, it's gone, permanently.
               </p>
             </Card>
           </div>
@@ -108,7 +108,7 @@ const AboutSection = () => {
               <Heart className="w-8 h-8 text-primary mb-3 mx-auto" />
               <h4 className="text-lg font-semibold mb-2">Integrity</h4>
               <p className="text-muted-foreground">
-                We believe transparency builds trust. That’s why we never manipulate your data or compromise ethical AI
+                We believe transparency builds trust. That's why we never manipulate your data or compromise ethical AI
                 use.
               </p>
             </Card>
@@ -126,7 +126,7 @@ const AboutSection = () => {
               <Target className="w-8 h-8 text-primary mb-3 mx-auto" />
               <h4 className="text-lg font-semibold mb-2">Innovation</h4>
               <p className="text-muted-foreground">
-                We constantly refine our models to stay ahead of AI detection systems — ensuring our users always lead
+                We constantly refine our models to stay ahead of AI detection systems, ensuring our users always lead
                 the curve.
               </p>
             </Card>
@@ -146,9 +146,9 @@ const AboutSection = () => {
             <div>
               <p className="text-lg italic mb-2 leading-relaxed">
                 "AI Free Text Pro transformed how our team works. The rewritten content feels so natural, our QA
-                department couldn’t tell the difference. It’s an indispensable tool for modern writing."
+                department couldn't tell the difference. It's an indispensable tool for modern writing."
               </p>
-              <p className="text-sm text-muted-foreground">— Sarah M., Senior Content Strategist</p>
+              <p className="text-sm text-muted-foreground">Sarah M., Senior Content Strategist</p>
             </div>
           </div>
         </Card>

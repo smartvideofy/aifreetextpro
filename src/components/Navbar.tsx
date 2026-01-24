@@ -18,27 +18,27 @@ const Navbar = () => {
   const isActiveGroup = (paths: string[]) => paths.some(p => location.pathname.startsWith(p));
   
   return (
-    <nav className="sticky top-0 z-50 border-b border-border/40 bg-background/95 backdrop-blur-lg shadow-sm transition-[top] duration-300 [body[data-sticky-cta='visible']_&]:top-[44px]">
+    <nav className="sticky top-0 z-50 bg-background/80 backdrop-blur-xl border-b border-border/40 transition-[top] duration-300 [body[data-sticky-cta='visible']_&]:top-[44px]">
       <div className="container mx-auto px-4">
-        <div className="flex h-18 items-center justify-between">
+        <div className="flex h-16 md:h-[72px] items-center justify-between">
           {/* Logo & Brand */}
-          <Link to="/" className="flex items-center gap-3 group">
+          <Link to="/" className="flex items-center gap-2.5 group">
             <img 
               src={logo} 
               alt="AI Free Text Pro Logo" 
-              className="w-12 h-12 md:w-14 md:h-14 transition-transform group-hover:scale-110"
+              className="w-10 h-10 md:w-11 md:h-11 transition-transform duration-200 group-hover:scale-105"
             />
-            <span className="text-xl md:text-2xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+            <span className="text-lg md:text-xl font-bold text-foreground">
               AI Free Text Pro
             </span>
           </Link>
           
           {/* Desktop Navigation Links */}
-          <div className="hidden md:flex items-center gap-1">
+          <div className="hidden md:flex items-center gap-0.5">
             <Link to="/">
               <Button 
-                variant={isActive("/") ? "default" : "ghost"}
-                className="transition-colors"
+                variant="ghost"
+                className={`text-muted-foreground hover:text-foreground font-medium ${isActive("/") ? "text-foreground" : ""}`}
               >
                 Home
               </Button>
@@ -48,14 +48,14 @@ const Navbar = () => {
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
                 <Button 
-                  variant={isActiveGroup(["/blog", "/team", "/technology", "/case-studies"]) ? "default" : "ghost"}
-                  className="transition-colors gap-1"
+                  variant="ghost"
+                  className={`text-muted-foreground hover:text-foreground font-medium gap-1 ${isActiveGroup(["/blog", "/team", "/technology", "/case-studies"]) ? "text-foreground" : ""}`}
                 >
                   Resources
-                  <ChevronDown className="h-4 w-4" />
+                  <ChevronDown className="h-4 w-4 opacity-60" />
                 </Button>
               </DropdownMenuTrigger>
-              <DropdownMenuContent align="center" className="w-48 bg-background border border-border">
+              <DropdownMenuContent align="center" className="w-48">
                 <DropdownMenuItem asChild>
                   <Link to="/blog" className="w-full cursor-pointer">Blog</Link>
                 </DropdownMenuItem>
@@ -79,14 +79,14 @@ const Navbar = () => {
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
                 <Button 
-                  variant={isActiveGroup(["/bypass-", "/ai-humanizer", "/ai-checker", "/academic"]) ? "default" : "ghost"}
-                  className="transition-colors gap-1"
+                  variant="ghost"
+                  className={`text-muted-foreground hover:text-foreground font-medium gap-1 ${isActiveGroup(["/bypass-", "/ai-humanizer", "/ai-checker", "/academic"]) ? "text-foreground" : ""}`}
                 >
                   Tools
-                  <ChevronDown className="h-4 w-4" />
+                  <ChevronDown className="h-4 w-4 opacity-60" />
                 </Button>
               </DropdownMenuTrigger>
-              <DropdownMenuContent align="center" className="w-56 bg-background border border-border">
+              <DropdownMenuContent align="center" className="w-56">
                 <DropdownMenuItem asChild>
                   <a href="https://app.aifreetextpro.com/detector" className="w-full cursor-pointer">AI Detector</a>
                 </DropdownMenuItem>
@@ -121,8 +121,8 @@ const Navbar = () => {
 
             <Link to="/pricing">
               <Button 
-                variant={isActive("/pricing") ? "default" : "ghost"}
-                className="transition-colors"
+                variant="ghost"
+                className={`text-muted-foreground hover:text-foreground font-medium ${isActive("/pricing") ? "text-foreground" : ""}`}
               >
                 Pricing
               </Button>
@@ -130,16 +130,16 @@ const Navbar = () => {
 
             <Link to="/about">
               <Button 
-                variant={isActive("/about") ? "default" : "ghost"}
-                className="transition-colors"
+                variant="ghost"
+                className={`text-muted-foreground hover:text-foreground font-medium ${isActive("/about") ? "text-foreground" : ""}`}
               >
                 About
               </Button>
             </Link>
 
-            {/* App Link */}
-            <a href="https://app.aifreetextpro.com/" target="_blank" rel="noopener noreferrer" className="ml-2">
-              <Button className="bg-gradient-to-r from-primary to-secondary hover:opacity-90">
+            {/* App Link - Premium CTA */}
+            <a href="https://app.aifreetextpro.com/" target="_blank" rel="noopener noreferrer" className="ml-3">
+              <Button size="sm" className="shadow-sm">
                 Start Writing Free
               </Button>
             </a>

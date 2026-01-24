@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Mail, BookOpen, MessageSquare, Shield, Check, Target, Users, FileText, Sparkles, GraduationCap, ChevronDown } from "lucide-react";
+import { Mail, BookOpen, MessageSquare, Shield, Check, Target, Users, Sparkles, GraduationCap, ChevronDown } from "lucide-react";
 import logo from "@/assets/logo.png";
 import { useState } from "react";
 
@@ -83,28 +83,28 @@ const footerSections: FooterSection[] = [
 
 const FooterAccordionItem = ({ section, isOpen, onToggle }: { section: FooterSection; isOpen: boolean; onToggle: () => void }) => {
   return (
-    <div className="border-b border-border/30 last:border-b-0 md:border-b-0">
+    <div className="border-b border-border/20 last:border-b-0 md:border-b-0">
       {/* Mobile: Collapsible */}
       <button
         onClick={onToggle}
         className="md:hidden flex items-center justify-between w-full py-4 text-left"
         aria-expanded={isOpen}
       >
-        <h3 className="font-semibold text-foreground flex items-center gap-2">
+        <h3 className="font-medium text-foreground flex items-center gap-2 text-sm">
           {section.icon}
           {section.title}
         </h3>
-        <ChevronDown className={`w-5 h-5 text-muted-foreground transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`} />
+        <ChevronDown className={`w-4 h-4 text-muted-foreground transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`} />
       </button>
       
       {/* Desktop: Always visible title */}
-      <h3 className="hidden md:flex font-semibold text-foreground items-center gap-2 mb-4">
+      <h3 className="hidden md:flex font-medium text-foreground items-center gap-2 mb-4 text-sm">
         {section.icon}
         {section.title}
       </h3>
       
-      {/* Links - collapsible on mobile */}
-      <nav className={`flex flex-col gap-2 text-sm overflow-hidden transition-all duration-300 md:overflow-visible ${
+      {/* Links */}
+      <nav className={`flex flex-col gap-2.5 text-sm overflow-hidden transition-all duration-300 md:overflow-visible ${
         isOpen ? 'max-h-96 pb-4' : 'max-h-0 md:max-h-none'
       }`}>
         {section.links.map((link, index) => (
@@ -114,7 +114,7 @@ const FooterAccordionItem = ({ section, isOpen, onToggle }: { section: FooterSec
               href={link.href} 
               target="_blank" 
               rel="noopener noreferrer" 
-              className="text-muted-foreground hover:text-primary transition-colors py-1 md:py-0 flex items-center gap-2"
+              className="text-muted-foreground hover:text-foreground transition-colors py-0.5 flex items-center gap-2"
             >
               {link.icon}
               {link.label}
@@ -123,7 +123,7 @@ const FooterAccordionItem = ({ section, isOpen, onToggle }: { section: FooterSec
             <Link 
               key={index}
               to={link.href} 
-              className="text-muted-foreground hover:text-primary transition-colors py-1 md:py-0 flex items-center gap-2"
+              className="text-muted-foreground hover:text-foreground transition-colors py-0.5 flex items-center gap-2"
             >
               {link.icon}
               {link.label}
@@ -151,33 +151,33 @@ const Footer = () => {
   };
 
   return (
-    <footer className="border-t border-border/40 bg-card/50 backdrop-blur-sm">
-      <div className="container mx-auto px-4 py-8 md:py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-0 md:gap-8 mb-8">
-          {/* Brand Column - Always visible */}
-          <div className="space-y-4 lg:col-span-1 pb-6 md:pb-0 border-b border-border/30 md:border-b-0">
+    <footer className="border-t border-border/40 bg-muted/30">
+      <div className="container mx-auto px-4 py-12 md:py-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-7 gap-0 md:gap-8 mb-10">
+          {/* Brand Column */}
+          <div className="space-y-4 lg:col-span-1 pb-6 md:pb-0 border-b border-border/20 md:border-b-0">
             <Link to="/" className="flex items-center gap-2">
               <img src={logo} alt="AI Free Text Pro" className="w-8 h-8" />
-              <span className="font-bold text-lg bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+              <span className="font-semibold text-base text-foreground">
                 AI Free Text Pro
               </span>
             </Link>
-            <p className="text-sm text-muted-foreground">
+            <p className="text-sm text-muted-foreground leading-relaxed">
               Detect and humanize AI text with 98% accuracy. Fast, free, and privacy-focused.
             </p>
             
-            {/* Trust Badges - Visible on mobile too */}
-            <div className="pt-2 space-y-2">
+            {/* Trust Badges */}
+            <div className="pt-3 space-y-2">
               <div className="flex items-center gap-2 text-xs text-muted-foreground">
-                <Shield className="w-4 h-4 text-green-600 flex-shrink-0" />
+                <Shield className="w-3.5 h-3.5 text-primary flex-shrink-0" />
                 <span>Privacy Protected</span>
               </div>
               <div className="flex items-center gap-2 text-xs text-muted-foreground">
-                <Check className="w-4 h-4 text-green-600 flex-shrink-0" />
+                <Check className="w-3.5 h-3.5 text-primary flex-shrink-0" />
                 <span>98% Accuracy Rate</span>
               </div>
               <div className="flex items-center gap-2 text-xs text-muted-foreground">
-                <Check className="w-4 h-4 text-green-600 flex-shrink-0" />
+                <Check className="w-3.5 h-3.5 text-primary flex-shrink-0" />
                 <span>50,000+ Users</span>
               </div>
             </div>
@@ -194,33 +194,29 @@ const Footer = () => {
           ))}
         </div>
 
-        {/* Email Support - Mobile friendly */}
-        <div className="py-4 border-t border-border/30 md:hidden">
-          <a href="mailto:support@aifreetextpro.com" className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors py-2">
+        {/* Email Support - Mobile */}
+        <div className="py-4 border-t border-border/20 md:hidden">
+          <a href="mailto:support@aifreetextpro.com" className="flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors py-2">
             <Mail className="w-4 h-4" />
             support@aifreetextpro.com
           </a>
         </div>
 
         {/* Bottom Bar */}
-        <div className="pt-6 md:pt-8 border-t border-border/40 flex flex-col md:flex-row justify-between items-center gap-4">
-          <div className="text-xs md:text-sm text-muted-foreground text-center md:text-left">
+        <div className="pt-8 border-t border-border/30 flex flex-col md:flex-row justify-between items-center gap-4">
+          <div className="text-xs text-muted-foreground text-center md:text-left">
             © 2026 AI Free Text Pro. All rights reserved.
           </div>
-          <div className="flex flex-wrap items-center justify-center gap-3 md:gap-4 text-xs text-muted-foreground">
-            <Link to="/privacy-policy" className="hover:text-primary transition-colors py-2">
+          <div className="flex flex-wrap items-center justify-center gap-4 md:gap-6 text-xs text-muted-foreground">
+            <Link to="/privacy-policy" className="hover:text-foreground transition-colors">
               Privacy Policy
             </Link>
-            <Link to="/terms-of-service" className="hover:text-primary transition-colors py-2">
+            <Link to="/terms-of-service" className="hover:text-foreground transition-colors">
               Terms of Service
             </Link>
-            <Link to="/cookie-settings" className="hover:text-primary transition-colors py-2">
+            <Link to="/cookie-settings" className="hover:text-foreground transition-colors">
               Cookie Settings
             </Link>
-            <div className="hidden md:flex items-center gap-2">
-              <Shield className="w-4 h-4" />
-              <span>Secure & Private</span>
-            </div>
           </div>
         </div>
       </div>

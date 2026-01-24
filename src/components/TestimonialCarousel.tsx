@@ -1,10 +1,9 @@
 import { useState, useEffect } from "react";
 import { Card } from "@/components/ui/card";
-import { Star, ChevronLeft, ChevronRight, BadgeCheck, User } from "lucide-react";
+import { Star, ChevronLeft, ChevronRight, BadgeCheck } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
-// Import testimonial profile images
 import michaelRodriguez from "@/assets/testimonials/michael-rodriguez.jpg";
 import jamesChen from "@/assets/testimonials/james-chen.jpg";
 import sarahPatel from "@/assets/testimonials/sarah-patel.jpg";
@@ -82,7 +81,6 @@ const TestimonialCarousel = () => {
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);
   const [itemsPerView, setItemsPerView] = useState(1);
 
-  // Handle responsive items per view
   useEffect(() => {
     const updateItemsPerView = () => {
       setItemsPerView(window.innerWidth >= 768 ? 3 : 1);
@@ -116,17 +114,17 @@ const TestimonialCarousel = () => {
   };
 
   return (
-    <section className="py-20 md:py-28 bg-gradient-to-b from-card/20 to-background overflow-hidden">
+    <section className="py-20 md:py-28 overflow-hidden">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4">
-            <Star className="w-4 h-4 fill-current" />
-            4.8/5 from 1,200+ reviews
+        <div className="text-center mb-14">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-muted border border-border/40 text-sm font-medium mb-5">
+            <Star className="w-4 h-4 fill-amber-400 text-amber-400" />
+            <span className="text-muted-foreground">4.8/5 from 1,200+ reviews</span>
           </div>
-          <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold mb-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">
             Loved by Writers Worldwide
           </h2>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+          <p className="text-muted-foreground text-base md:text-lg max-w-2xl mx-auto">
             Join thousands of students, professionals, and creators who trust AI Free Text Pro
           </p>
         </div>
@@ -137,7 +135,7 @@ const TestimonialCarousel = () => {
             variant="outline"
             size="icon"
             onClick={handlePrev}
-            className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 z-10 bg-background/80 backdrop-blur hidden md:flex"
+            className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 z-10 hidden md:flex shadow-sm"
           >
             <ChevronLeft className="h-5 w-5" />
           </Button>
@@ -145,7 +143,7 @@ const TestimonialCarousel = () => {
             variant="outline"
             size="icon"
             onClick={handleNext}
-            className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 z-10 bg-background/80 backdrop-blur hidden md:flex"
+            className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 z-10 hidden md:flex shadow-sm"
           >
             <ChevronRight className="h-5 w-5" />
           </Button>
@@ -159,39 +157,39 @@ const TestimonialCarousel = () => {
               {testimonials.map((testimonial, index) => (
                 <Card 
                   key={index}
-                  className="flex-shrink-0 w-full md:w-[calc(33.333%-1rem)] p-6 bg-card/50 backdrop-blur border-border/50 hover:border-primary/30 transition-all duration-300"
+                  className="flex-shrink-0 w-full md:w-[calc(33.333%-1rem)] p-6 border-border/50 hover:border-border hover:shadow-md transition-all duration-200"
                 >
                   <div className="space-y-4">
                     {/* Stars */}
-                    <div className="flex gap-1">
+                    <div className="flex gap-0.5">
                       {Array.from({ length: testimonial.rating }).map((_, i) => (
                         <Star key={i} className="w-4 h-4 fill-amber-400 text-amber-400" />
                       ))}
                     </div>
                     
                     {/* Quote */}
-                    <p className="text-muted-foreground italic leading-relaxed">
+                    <p className="text-muted-foreground leading-relaxed text-sm">
                       "{testimonial.text}"
                     </p>
                     
                     {/* Author */}
-                    <div className="flex items-center gap-3 pt-2 border-t border-border/50">
-                      <Avatar className="w-12 h-12 border-2 border-primary/20">
+                    <div className="flex items-center gap-3 pt-3 border-t border-border/40">
+                      <Avatar className="w-10 h-10 border border-border/50">
                         {testimonial.avatar && (
                           <AvatarImage src={testimonial.avatar} alt={testimonial.name} className="object-cover" />
                         )}
-                        <AvatarFallback className="bg-gradient-to-br from-primary/20 to-secondary/20 text-primary font-bold">
+                        <AvatarFallback className="bg-muted text-muted-foreground text-sm font-medium">
                           {testimonial.initials}
                         </AvatarFallback>
                       </Avatar>
-                      <div className="flex-1">
-                        <div className="flex items-center gap-2">
-                          <p className="font-semibold">{testimonial.name}</p>
-                          <BadgeCheck className="w-4 h-4 text-primary" />
+                      <div className="flex-1 min-w-0">
+                        <div className="flex items-center gap-1.5">
+                          <p className="font-medium text-sm truncate">{testimonial.name}</p>
+                          <BadgeCheck className="w-3.5 h-3.5 text-primary flex-shrink-0" />
                         </div>
-                        <p className="text-sm text-muted-foreground">
+                        <p className="text-xs text-muted-foreground truncate">
                           {testimonial.role}
-                          {testimonial.company && <span className="text-primary"> · {testimonial.company}</span>}
+                          {testimonial.company && <span> · {testimonial.company}</span>}
                         </p>
                       </div>
                     </div>
@@ -201,19 +199,19 @@ const TestimonialCarousel = () => {
             </div>
           </div>
 
-          {/* Dots Indicator - Mobile touch-friendly */}
+          {/* Dots Indicator */}
           <div className="flex justify-center gap-3 mt-8">
             {Array.from({ length: maxIndex + 1 }).map((_, index) => (
               <button
                 key={index}
                 onClick={() => { setCurrentIndex(index); setIsAutoPlaying(false); }}
-                className={`min-w-[44px] min-h-[44px] flex items-center justify-center transition-all duration-300`}
+                className="min-w-[44px] min-h-[44px] flex items-center justify-center transition-all duration-300"
                 aria-label={`Go to slide ${index + 1}`}
               >
                 <span className={`rounded-full transition-all duration-300 ${
                   index === currentIndex 
-                    ? "bg-primary w-8 h-3" 
-                    : "bg-muted-foreground/30 hover:bg-muted-foreground/50 w-3 h-3"
+                    ? "bg-primary w-6 h-2" 
+                    : "bg-border hover:bg-muted-foreground/40 w-2 h-2"
                 }`} />
               </button>
             ))}

@@ -201,7 +201,7 @@ const MakeChatGPTUndetectable = () => {
 
               <div className="prose prose-lg max-w-none">
                 <p>
-                  Whether you're a student, content creator, or professional writer, you've probably asked yourself: <strong>"How do I make my ChatGPT writing undetectable?"</strong> With AI detectors becoming more sophisticated, the challenge has never been greater — or more important to solve.
+                  Whether you're a student, content creator, or professional writer, you've probably asked yourself: <strong>"How do I make my ChatGPT writing undetectable?"</strong> With AI detectors becoming more sophisticated, the challenge has never been greater, or more important to solve.
                 </p>
                 
                 <p>

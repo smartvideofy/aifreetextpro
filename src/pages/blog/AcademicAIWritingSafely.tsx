@@ -155,12 +155,12 @@ const AcademicAIWritingSafely = () => {
                     <h3 className="text-lg font-semibold">A Note on Ethics</h3>
                   </div>
                   <p className="mb-0">
-                    This article acknowledges the ongoing debate about AI in academia. We believe AI can be a legitimate learning tool when used responsibly — enhancing understanding rather than replacing critical thinking. The key is transparency and genuine engagement with the material.
+                    This article acknowledges the ongoing debate about AI in academia. We believe AI can be a legitimate learning tool when used responsibly, enhancing understanding rather than replacing critical thinking. The key is transparency and genuine engagement with the material.
                   </p>
                 </div>
 
                 <p>
-                  AI writing tools have transformed academic work. Students and researchers worldwide use ChatGPT, Claude, and similar tools for research, brainstorming, and drafting. The question isn't whether to use AI — it's <em>how</em> to use it responsibly.
+                  AI writing tools have transformed academic work. Students and researchers worldwide use ChatGPT, Claude, and similar tools for research, brainstorming, and drafting. The question isn't whether to use AI, it's <em>how</em> to use it responsibly.
                 </p>
                 
                 <p>

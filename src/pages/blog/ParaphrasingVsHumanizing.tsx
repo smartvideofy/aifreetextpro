@@ -144,7 +144,7 @@ const ParaphrasingVsHumanizing = () => {
 
               <div className="prose prose-lg max-w-none">
                 <p>
-                  If you're using AI to generate marketing content — blog posts, email campaigns, social media copy — you've probably asked: <strong>"Is QuillBot enough to make my content undetectable?"</strong>
+                  If you're using AI to generate marketing content, blog posts, email campaigns, social media copy, you've probably asked: <strong>"Is QuillBot enough to make my content undetectable?"</strong>
                 </p>
                 
                 <p>
@@ -193,7 +193,7 @@ const ParaphrasingVsHumanizing = () => {
 
                 <h2>Why Paraphrasers Fail Against AI Detectors</h2>
                 <p>
-                  AI detectors like <Link to="/bypass-gptzero-detection" className="text-primary hover:text-primary/80">GPTZero</Link>, <Link to="/bypass-turnitin-ai-detection" className="text-primary hover:text-primary/80">Turnitin</Link>, and <Link to="/bypass-originality-ai" className="text-primary hover:text-primary/80">Originality.AI</Link> don't just look at vocabulary — they analyze deeper patterns:
+                  AI detectors like <Link to="/bypass-gptzero-detection" className="text-primary hover:text-primary/80">GPTZero</Link>, <Link to="/bypass-turnitin-ai-detection" className="text-primary hover:text-primary/80">Turnitin</Link>, and <Link to="/bypass-originality-ai" className="text-primary hover:text-primary/80">Originality.AI</Link> don't just look at vocabulary, they analyze deeper patterns:
                 </p>
 
                 <div className="space-y-4 my-6">

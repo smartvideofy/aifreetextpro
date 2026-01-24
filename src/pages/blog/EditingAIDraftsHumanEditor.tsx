@@ -11,7 +11,7 @@ import { InternalLinks } from "@/components/InternalLinks";
 const relatedArticles = [
   {
     title: "AI Humanization Pitfalls: Common Mistakes",
-    description: "What to avoid when refining AI text — learn from others' errors.",
+    description: "What to avoid when refining AI text, learn from others' errors.",
     href: "/blog/ai-humanization-pitfalls",
     category: "Best Practices"
   },
@@ -128,7 +128,7 @@ const EditingAIDraftsHumanEditor = () => {
                   The Editor's First Read
                 </h2>
                 <p className="text-muted-foreground mb-4">
-                  Before making any changes, professional editors do a complete read-through. Not to fix—just to feel. They're asking: Does this flow? Where does my attention wander? What feels off?
+                  Before making any changes, professional editors do a complete read-through. Not to fix, just to feel. They're asking: Does this flow? Where does my attention wander? What feels off?
                 </p>
                 
                 <div className="bg-card/50 border border-border rounded-lg p-6 my-6">

@@ -11,7 +11,7 @@ import { InternalLinks } from "@/components/InternalLinks";
 const relatedArticles = [
   {
     title: "AI Humanization Pitfalls: Common Mistakes",
-    description: "What to avoid when refining AI text — and what to do instead.",
+    description: "What to avoid when refining AI text, and what to do instead.",
     href: "/blog/ai-humanization-pitfalls",
     category: "Best Practices"
   },
@@ -128,7 +128,7 @@ const HowToWriteNaturallyWithAI = () => {
                   The Mindset Shift: AI as Writing Partner
                 </h2>
                 <p className="text-muted-foreground mb-4">
-                  The biggest mistake writers make with AI is treating it like a vending machine—insert prompt, receive finished content. Natural AI writing requires a different approach: think of AI as a talented but inexperienced collaborator who needs guidance.
+                  The biggest mistake writers make with AI is treating it like a vending machine: insert prompt, receive finished content. Natural AI writing requires a different approach: think of AI as a talented but inexperienced collaborator who needs guidance.
                 </p>
                 <div className="bg-card/50 border border-border rounded-lg p-6 my-6">
                   <h3 className="font-semibold mb-3">The Collaboration Framework</h3>

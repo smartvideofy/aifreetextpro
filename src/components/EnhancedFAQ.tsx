@@ -19,7 +19,7 @@ const faqs = [
   },
   {
     question: "Can I use this to bypass Turnitin AI detection?",
-    answer: "AI Free Text Pro's humanizer improves text quality and naturalness, which may help content pass AI detection systems. However, we strongly encourage ethical use. Our tool is designed to help refine AI-assisted drafts and improve readability — not to deceive academic integrity systems. Always follow your institution's guidelines on AI usage."
+    answer: "AI Free Text Pro's humanizer improves text quality and naturalness, which may help content pass AI detection systems. However, we strongly encourage ethical use. Our tool is designed to help refine AI-assisted drafts and improve readability, not to deceive academic integrity systems. Always follow your institution's guidelines on AI usage."
   },
   {
     question: "Is my text stored or shared with anyone?",
@@ -31,7 +31,7 @@ const faqs = [
   },
   {
     question: "What's the difference between AI Detector and Humanizer?",
-    answer: "AI Detector analyzes text to identify AI-generated content, providing probability scores and word-by-word breakdowns highlighting suspicious patterns. AI Humanizer transforms robotic or AI-generated text into natural, human-like writing by improving flow, vocabulary variety, and authenticity. Use them together for best results — detect first, then humanize!"
+    answer: "AI Detector analyzes text to identify AI-generated content, providing probability scores and word-by-word breakdowns highlighting suspicious patterns. AI Humanizer transforms robotic or AI-generated text into natural, human-like writing by improving flow, vocabulary variety, and authenticity. Use them together for best results, detect first, then humanize!"
   },
   {
     question: "How does AI Free Text Pro compare to ZeroGPT?",

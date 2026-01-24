@@ -132,7 +132,7 @@ const AIContentSEO = () => {
                 </h1>
 
                 <p className="text-xl text-muted-foreground">
-                  The complete playbook for SEO professionals who want to scale content production with AI — without sacrificing rankings or authenticity.
+                  The complete playbook for SEO professionals who want to scale content production with AI, without sacrificing rankings or authenticity.
                 </p>
               </header>
 

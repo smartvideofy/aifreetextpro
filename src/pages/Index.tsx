@@ -303,6 +303,8 @@ const Index = () => {
                   src={heroIllustration} 
                   alt="AI text analysis and detection visualization showing documents being scanned" 
                   className="w-full max-w-4xl mx-auto rounded-2xl shadow-2xl shadow-primary/20 border border-border/50"
+                  fetchPriority="high"
+                  decoding="async"
                 />
               </div>
             </div>
@@ -317,7 +319,7 @@ const Index = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
               <div className="text-center mb-8 md:mb-12">
-                <h2 className="text-2xl md:text-5xl font-bold mb-3 md:mb-6">Why AI Free Text Pro?</h2>
+                <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold mb-3 md:mb-6">Why AI Free Text Pro?</h2>
               </div>
               
               <div className="grid md:grid-cols-2 gap-6 md:gap-12 items-start">
@@ -397,7 +399,7 @@ const Index = () => {
         {/* How It Works */}
         <section className="py-12 md:py-28 bg-card/20">
           <div className="container mx-auto px-4">
-            <h2 className="text-2xl md:text-5xl font-bold text-center mb-10 md:mb-20">
+            <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold text-center mb-10 md:mb-20">
               How AI Free Text Pro Works
             </h2>
             
@@ -447,7 +449,7 @@ const Index = () => {
         {/* Core Features */}
         <section className="py-20 md:py-28 bg-card/20">
           <div className="container mx-auto px-4">
-            <h2 className="text-4xl md:text-5xl font-bold text-center mb-6">
+            <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold text-center mb-6">
               Powerful Features
             </h2>
             <p className="text-center text-muted-foreground text-lg md:text-xl mb-20 max-w-2xl mx-auto">
@@ -464,6 +466,8 @@ const Index = () => {
                       src={aiDetectorFeature} 
                       alt="AI content detection with magnifying glass analyzing text" 
                       className="w-full h-48 object-cover"
+                      loading="lazy"
+                      decoding="async"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-card to-transparent" />
                   </div>
@@ -515,6 +519,8 @@ const Index = () => {
                       src={aiHumanizerFeature} 
                       alt="AI text humanization transforming robotic text to natural writing" 
                       className="w-full h-48 object-cover"
+                      loading="lazy"
+                      decoding="async"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-card to-transparent" />
                   </div>
@@ -721,13 +727,13 @@ const Index = () => {
         <section className="py-20 md:py-28 bg-gradient-to-b from-background via-card/10 to-background">
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
-              <h2 className="text-4xl md:text-5xl font-bold mb-6">Choose Your Plan</h2>
+              <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold mb-6">Choose Your Plan</h2>
               <p className="text-muted-foreground text-lg md:text-xl max-w-3xl mx-auto">
                 Select the perfect plan for your needs. All plans include our core AI detection and humanization features.
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-6 max-w-7xl mx-auto">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4 md:gap-6 max-w-7xl mx-auto overflow-hidden">
               {/* Free Plan */}
               <Card className="relative border-2 hover:border-primary/50 transition-all duration-300 flex flex-col">
                 <div className="p-6 flex-1 flex flex-col">
@@ -853,7 +859,7 @@ const Index = () => {
               </Card>
 
               {/* Pro Writer Plan - Most Popular */}
-              <Card className="relative border-2 border-primary shadow-xl scale-105 flex flex-col">
+              <Card className="relative border-2 border-primary shadow-xl md:scale-105 flex flex-col sm:col-span-2 lg:col-span-1">
                 <div className="absolute -top-4 left-1/2 -translate-x-1/2">
                   <span className="bg-gradient-to-r from-primary to-secondary text-primary-foreground px-4 py-1 rounded-full text-sm font-semibold whitespace-nowrap">
                     Most Popular
@@ -986,6 +992,8 @@ const Index = () => {
                   src={studentWriting} 
                   alt="Happy student using laptop for academic writing" 
                   className="w-full h-48 object-cover"
+                  loading="lazy"
+                  decoding="async"
                 />
                 <div className="p-8">
                   <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mb-6 -mt-14 relative z-10 border-4 border-card">
@@ -1041,6 +1049,8 @@ const Index = () => {
                   src={writerProfessional} 
                   alt="Professional content writer working at modern office" 
                   className="w-full h-48 object-cover"
+                  loading="lazy"
+                  decoding="async"
                 />
                 <div className="p-8">
                   <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mb-6 -mt-14 relative z-10 border-4 border-card">
@@ -1085,7 +1095,7 @@ const Index = () => {
         <section className="py-20 md:py-28 bg-gradient-to-b from-background to-card/20">
           <div className="container mx-auto px-4">
             <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">Learn More About AI Detection & Humanization</h2>
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Learn More About AI Detection & Humanization</h2>
               <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
                 Expert guides to help you master AI content tools
               </p>

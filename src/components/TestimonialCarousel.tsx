@@ -123,7 +123,7 @@ const TestimonialCarousel = () => {
             <Star className="w-4 h-4 fill-current" />
             4.8/5 from 1,200+ reviews
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
+          <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold mb-4">
             Loved by Writers Worldwide
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
@@ -201,19 +201,21 @@ const TestimonialCarousel = () => {
             </div>
           </div>
 
-          {/* Dots Indicator */}
-          <div className="flex justify-center gap-2 mt-8">
+          {/* Dots Indicator - Mobile touch-friendly */}
+          <div className="flex justify-center gap-3 mt-8">
             {Array.from({ length: maxIndex + 1 }).map((_, index) => (
               <button
                 key={index}
                 onClick={() => { setCurrentIndex(index); setIsAutoPlaying(false); }}
-                className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                  index === currentIndex 
-                    ? "bg-primary w-6" 
-                    : "bg-muted-foreground/30 hover:bg-muted-foreground/50"
-                }`}
+                className={`min-w-[44px] min-h-[44px] flex items-center justify-center transition-all duration-300`}
                 aria-label={`Go to slide ${index + 1}`}
-              />
+              >
+                <span className={`rounded-full transition-all duration-300 ${
+                  index === currentIndex 
+                    ? "bg-primary w-8 h-3" 
+                    : "bg-muted-foreground/30 hover:bg-muted-foreground/50 w-3 h-3"
+                }`} />
+              </button>
             ))}
           </div>
         </div>

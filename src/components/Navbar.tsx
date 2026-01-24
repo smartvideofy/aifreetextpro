@@ -18,7 +18,7 @@ const Navbar = () => {
   const isActiveGroup = (paths: string[]) => paths.some(p => location.pathname.startsWith(p));
   
   return (
-    <nav className="sticky top-0 z-50 border-b border-border/40 bg-background/95 backdrop-blur-lg shadow-sm">
+    <nav className="sticky top-0 z-50 border-b border-border/40 bg-background/95 backdrop-blur-lg shadow-sm transition-[top] duration-300 [body[data-sticky-cta='visible']_&]:top-[44px]">
       <div className="container mx-auto px-4">
         <div className="flex h-18 items-center justify-between">
           {/* Logo & Brand */}

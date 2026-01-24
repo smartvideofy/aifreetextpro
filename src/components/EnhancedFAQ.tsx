@@ -68,9 +68,9 @@ const EnhancedFAQ = () => {
   return (
     <section className="py-20 md:py-28 bg-card/20" itemScope itemType="https://schema.org/FAQPage">
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-center gap-3 mb-6">
-          <HelpCircle className="w-8 h-8 text-primary" />
-          <h2 className="text-4xl md:text-5xl font-bold text-center">
+        <div className="flex items-center justify-center gap-2 md:gap-3 mb-6">
+          <HelpCircle className="w-6 h-6 md:w-8 md:h-8 text-primary flex-shrink-0" />
+          <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold text-center">
             Frequently Asked Questions
           </h2>
         </div>

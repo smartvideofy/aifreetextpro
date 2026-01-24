@@ -197,7 +197,7 @@ const ProductMockup = () => {
         </div>
       </div>
 
-      {/* Floating Badges */}
+      {/* Floating Badges - Desktop */}
       <div className="absolute -top-4 -right-4 hidden md:flex items-center gap-2 px-3 py-1.5 bg-primary text-primary-foreground rounded-full text-xs font-medium shadow-lg animate-bounce">
         <Sparkles className="w-3 h-3" />
         Live Preview
@@ -206,6 +206,18 @@ const ProductMockup = () => {
       <div className="absolute -bottom-3 -left-3 hidden md:flex items-center gap-2 px-3 py-1.5 bg-card border border-border rounded-full text-xs shadow-lg">
         <CheckCircle className="w-3 h-3 text-primary" />
         <span className="text-muted-foreground">Bypasses GPTZero, Turnitin, Originality</span>
+      </div>
+      
+      {/* Mobile Trust Badges - Inline */}
+      <div className="flex md:hidden flex-wrap justify-center gap-2 mt-4">
+        <div className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-primary/10 text-primary rounded-full text-xs font-medium">
+          <Sparkles className="w-3 h-3" />
+          Live Preview
+        </div>
+        <div className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-card border border-border rounded-full text-xs">
+          <CheckCircle className="w-3 h-3 text-primary" />
+          <span className="text-muted-foreground">Bypasses All Detectors</span>
+        </div>
       </div>
     </div>
   );

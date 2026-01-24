@@ -28,10 +28,16 @@ const HowAIDetectorsScoreText = () => {
       category: "Technical"
     },
     {
-      title: "AI Detection Patterns Explained",
-      description: "Understanding perplexity and burstiness",
-      href: "/blog/ai-detection-patterns-explained",
+      title: "AI Detection Patterns: 5 Linguistic Signs",
+      description: "Learn the patterns AI detectors analyze in your writing",
+      href: "/blog/ai-detection-patterns-linguistic-signs",
       category: "Technical"
+    },
+    {
+      title: "AI Detection Tools Compared (2026 Edition)",
+      description: "See which AI detector is most accurate",
+      href: "/blog/ai-detection-tools-compared-2025",
+      category: "Comparison"
     }
   ];
 

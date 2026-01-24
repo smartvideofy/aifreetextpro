@@ -14,10 +14,22 @@ const relatedArticles = [
     category: "Guide"
   },
   {
-    title: "Top 10 AI Humanizer Tools for 2025",
+    title: "Top 10 AI Humanizer Tools for 2026",
     description: "Best tools to improve AI-generated content",
     href: "/blog/top-10-ai-humanizer-tools-2025",
     category: "Tools"
+  },
+  {
+    title: "Editing AI Drafts Like a Human Editor",
+    description: "Professional techniques for refining AI content",
+    href: "/blog/editing-ai-drafts-human-editor",
+    category: "Editing"
+  },
+  {
+    title: "AI Humanization Pitfalls to Avoid",
+    description: "Common mistakes writers make when humanizing AI text",
+    href: "/blog/ai-humanization-pitfalls",
+    category: "Best Practices"
   }
 ];
 

@@ -18,6 +18,18 @@ const relatedArticles = [
     description: "Maintain your unique voice with AI assistance",
     href: "/blog/humanize-ai-text-without-losing-voice",
     category: "Guide"
+  },
+  {
+    title: "Tone, Voice, and Flow in AI Writing",
+    description: "Master the art of natural AI-assisted writing",
+    href: "/blog/tone-voice-flow-ai-writing",
+    category: "Writing Craft"
+  },
+  {
+    title: "How to Write Naturally with AI",
+    description: "Techniques for authentic AI-assisted content",
+    href: "/blog/how-to-write-naturally-with-ai",
+    category: "Guide"
   }
 ];
 

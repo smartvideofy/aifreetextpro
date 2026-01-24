@@ -26,6 +26,12 @@ const BypassWinstonAIDetection = () => {
       description: "Discover how to humanize AI content and reduce ZeroGPT detection scores effectively.",
       href: "/blog/bypass-zerogpt-ai-detection",
       category: "How-To Guide"
+    },
+    {
+      title: "AI Detection Patterns: 5 Linguistic Signs",
+      description: "Learn the patterns AI detectors analyze in your writing",
+      href: "/blog/ai-detection-patterns-linguistic-signs",
+      category: "Technical"
     }
   ];
 

@@ -135,7 +135,7 @@ export default function HowAIDetectorsWork() {
                 "name": "What is burstiness in AI detection?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Burstiness measures variation in sentence structure. Humans naturally write with variation—mixing short, punchy sentences with longer, complex ones—while AI tends to generate uniform sentence lengths and structures."
+                  "text": "Burstiness measures variation in sentence structure. Humans naturally write with variation, mixing short, punchy sentences with longer, complex ones, while AI tends to generate uniform sentence lengths and structures."
                 }
               },
               {
@@ -228,7 +228,7 @@ export default function HowAIDetectorsWork() {
               <section>
                 <h2 className="text-3xl font-bold mb-4">Burstiness: The Human Touch</h2>
                 <p>
-                  Humans write with variation—short punchy sentences followed by longer, complex ones. AI tends to generate uniform sentence lengths and structures. This variation, called <strong>burstiness</strong>, is a key indicator of human writing.
+                  Humans write with variation, short punchy sentences followed by longer, complex ones. AI tends to generate uniform sentence lengths and structures. This variation, called <strong>burstiness</strong>, is a key indicator of human writing.
                 </p>
               </section>
 

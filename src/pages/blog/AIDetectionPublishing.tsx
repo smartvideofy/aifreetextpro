@@ -61,7 +61,7 @@ export default function AIDetectionPublishing() {
             "@context": "https://schema.org",
             "@type": "Article",
             "headline": "AI Detection in Publishing: How Editors and Writers Can Adapt in 2025",
-            "description": "How editors and publishers are adapting to AI-generated content — and why AI Free Text Pro is part of the solution.",
+            "description": "How editors and publishers are adapting to AI-generated content, and why AI Free Text Pro is part of the solution.",
             "image": {
               "@type": "ImageObject",
               "url": "https://aifreetextpro.com/before-after-demo.png",

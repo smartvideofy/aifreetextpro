@@ -26,14 +26,14 @@ export default function ZeroGPTComparison() {
     <>
       <Helmet>
         <title>ZeroGPT vs AI Free Text Pro: Which Detects Better in 2025? | AI Free Text Pro</title>
-        <meta name="description" content="We test ZeroGPT and AI Free Text Pro on different writing samples — see which tool spots AI content more accurately in 2025." />
+        <meta name="description" content="We test ZeroGPT and AI Free Text Pro on different writing samples, see which tool spots AI content more accurately in 2025." />
         <meta name="keywords" content="zerogpt accuracy, best ai detector 2025, ai detection comparison, zerogpt vs ai free text pro" />
         <link rel="canonical" href="https://aifreetextpro.com/blog/zerogpt-vs-ai-free-text-pro-2025" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="bingbot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta property="og:title" content="ZeroGPT vs AI Free Text Pro: Which Detects Better in 2025?" />
-        <meta property="og:description" content="We test ZeroGPT and AI Free Text Pro on different writing samples — see which tool spots AI content more accurately." />
+        <meta property="og:description" content="We test ZeroGPT and AI Free Text Pro on different writing samples, see which tool spots AI content more accurately." />
         <meta property="og:type" content="article" />
         <meta property="og:url" content="https://aifreetextpro.com/blog/zerogpt-vs-ai-free-text-pro-2025" />
         <meta property="og:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" />
@@ -49,7 +49,7 @@ export default function ZeroGPTComparison() {
             "@context": "https://schema.org",
             "@type": "Article",
             "headline": "ZeroGPT vs AI Free Text Pro: Which Detects Better in 2025?",
-            "description": "We test ZeroGPT and AI Free Text Pro on different writing samples — see which tool spots AI content more accurately in 2025.",
+            "description": "We test ZeroGPT and AI Free Text Pro on different writing samples, see which tool spots AI content more accurately in 2025.",
             "image": {
               "@type": "ImageObject",
               "url": "https://aifreetextpro.com/before-after-demo.png",

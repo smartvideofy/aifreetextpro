@@ -270,7 +270,7 @@ const relatedArticles = [
                     While manual inspection is valuable, AI detection tools provide objective analysis. Free tools like AI Free Text Pro analyze linguistic patterns, vocabulary diversity, and structural consistency to provide probability scores.
                   </p>
                   <p className="text-muted-foreground leading-relaxed">
-                    The best approach combines automated detection with human judgment. Use tools to flag suspicious content, then apply manual review techniques to confirm findings. Remember that no detector is 100% accurate—context and multiple verification methods matter.
+                    The best approach combines automated detection with human judgment. Use tools to flag suspicious content, then apply manual review techniques to confirm findings. Remember that no detector is 100% accurate, context and multiple verification methods matter.
                   </p>
                 </section>
 

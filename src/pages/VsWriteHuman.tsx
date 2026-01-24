@@ -382,7 +382,7 @@ const VsWriteHuman = () => {
                 <a href="https://app.aifreetextpro.com/" className="w-full sm:w-auto">
                   <Button size="lg" className="w-full bg-gradient-to-r from-primary to-secondary text-lg px-8 py-6">
                     <Zap className="mr-2 h-5 w-5" />
-                    Try Free — No Credit Card
+                    Try Free, No Credit Card
                     <ArrowRight className="ml-2 h-5 w-5" />
                   </Button>
                 </a>

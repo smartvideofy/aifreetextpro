@@ -158,7 +158,7 @@ export default function AIHumanizersForEmailMarketing() {
               <section>
                 <h2 className="text-3xl font-bold mb-4">Personalization Strategies</h2>
                 <ul className="space-y-2">
-                  <li>Use the recipient’s name in the subject line and greeting.</li>
+                  <li>Use the recipient's name in the subject line and greeting.</li>
                   <li>Reference past interactions or specific interests.</li>
                   <li>Adapt tone based on your relationship with the reader (friendly, professional, casual).</li>
                   <li>Include dynamic content blocks to make emails feel less repetitive.</li>
@@ -169,7 +169,7 @@ export default function AIHumanizersForEmailMarketing() {
                 <h2 className="text-3xl font-bold mb-4">Example: AI Humanized vs Raw AI Email</h2>
                 <div className="bg-primary/10 rounded-lg p-6 my-4">
                   <p className="mb-2"><strong>Raw AI Draft:</strong> "Dear Customer, we are excited to inform you about our new product release. Check it out now."</p>
-                  <p><strong>Humanized Email:</strong> "Hi Sarah, I thought of you when we launched our latest gadget—it’s perfect for your needs! Can’t wait for you to see it."</p>
+                  <p><strong>Humanized Email:</strong> "Hi Sarah, I thought of you when we launched our latest gadget, it's perfect for your needs! Can't wait for you to see it."</p>
                 </div>
               </section>
 

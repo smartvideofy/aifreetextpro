@@ -11,7 +11,7 @@ const faqs = [
   },
   {
     question: "Is AI Free Text Pro free forever?",
-    answer: "Yes, AI Free Text Pro offers a generous free tier with 1,000 words per analysis — double what competitors like ZeroGPT (500 words) and Rewritify (250 words) offer. Our core AI detection and humanization features remain free forever. Premium features with higher limits are planned for the future."
+    answer: "Yes, AI Free Text Pro offers a generous free tier with 1,000 words per analysis, double what competitors like ZeroGPT (500 words) and Rewritify (250 words) offer. Our core AI detection and humanization features remain free forever. Premium features with higher limits are planned for the future."
   },
   {
     question: "How does the AI humanizer work?",

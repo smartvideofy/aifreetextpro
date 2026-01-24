@@ -342,7 +342,7 @@ const HumanizeAIText = () => {
                   </p>
                   <p className="text-sm text-muted-foreground mb-2">✅ Humanized Version</p>
                   <p className="italic mb-0">
-                    "Let's be honest: creating great content is hard. But here's the thing — you don't need to reinvent the wheel. I've spent five years figuring out what works (and what doesn't). Here's everything I learned..."
+                    "Let's be honest: creating great content is hard. But here's the thing, you don't need to reinvent the wheel. I've spent five years figuring out what works (and what doesn't). Here's everything I learned..."
                   </p>
                 </div>
 

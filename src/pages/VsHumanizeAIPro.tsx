@@ -212,7 +212,7 @@ const VsHumanizeAIPro = () => {
                   </ul>
                   <a href="https://app.aifreetextpro.com/" className="block mt-6">
                     <Button size="lg" className="w-full bg-gradient-to-r from-primary to-secondary">
-                      Try Free — 1,000 Words <ArrowRight className="ml-2 h-4 w-4" />
+                      Try Free, 1,000 Words <ArrowRight className="ml-2 h-4 w-4" />
                     </Button>
                   </a>
                 </Card>

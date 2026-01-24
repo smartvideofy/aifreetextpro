@@ -35,7 +35,7 @@ const caseStudies = [
     ],
     testimonial: "I was devastated when my thesis flagged as AI-generated. AI Free Text Pro saved my degree. The rewritten version reads even better than my original and passed Turnitin completely.",
     beforeText: "The implementation of machine learning algorithms in healthcare diagnostics represents a significant advancement in medical technology. Furthermore, the integration of these systems enables more accurate and efficient patient care. Additionally, the utilization of neural networks facilitates pattern recognition in complex medical data.",
-    afterText: "Machine learning is changing how doctors diagnose patients—and the results are striking. When hospitals integrate these AI systems, they're seeing real improvements in accuracy and efficiency. Neural networks, in particular, excel at spotting patterns in medical scans that human eyes might miss."
+    afterText: "Machine learning is changing how doctors diagnose patients, and the results are striking. When hospitals integrate these AI systems, they're seeing real improvements in accuracy and efficiency. Neural networks, in particular, excel at spotting patterns in medical scans that human eyes might miss."
   },
   {
     id: "seo-content",
@@ -57,7 +57,7 @@ const caseStudies = [
     ],
     testimonial: "We went from producing 20 articles monthly to 100+. Every single piece passes Originality.AI. Our clients are thrilled with the quality, and they have no idea we're using AI assistance.",
     beforeText: "In today's digital landscape, implementing effective SEO strategies is essential for business success. Moreover, companies that prioritize search engine optimization consistently outperform their competitors. It is important to note that content quality remains a crucial factor in ranking algorithms.",
-    afterText: "SEO isn't optional anymore—it's survival. The businesses crushing it online? They're the ones who figured out search early. But here's the thing most people miss: Google's gotten smart. Keyword stuffing is dead. What works now is genuinely useful content that people actually want to read."
+    afterText: "SEO isn't optional anymore, it's survival. The businesses crushing it online? They're the ones who figured out search early. But here's the thing most people miss: Google's gotten smart. Keyword stuffing is dead. What works now is genuinely useful content that people actually want to read."
   },
   {
     id: "freelance-writer",
@@ -79,7 +79,7 @@ const caseStudies = [
     ],
     testimonial: "I was about to lose clients when they started checking for AI. Now I can take on triple the work, deliver faster, and everything passes their AI checks. It's completely changed my business.",
     beforeText: "Artificial intelligence has fundamentally transformed the technology sector. The implementation of AI solutions across various industries has led to increased efficiency and productivity. It is worth noting that companies investing in AI technologies are seeing substantial returns on their investments.",
-    afterText: "AI didn't just change tech—it blew the doors off. Every industry from healthcare to finance is scrambling to figure out how to use it. And the early adopters? They're already seeing returns that make their competitors nervous."
+    afterText: "AI didn't just change tech, it blew the doors off. Every industry from healthcare to finance is scrambling to figure out how to use it. And the early adopters? They're already seeing returns that make their competitors nervous."
   }
 ];
 

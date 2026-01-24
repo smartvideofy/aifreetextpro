@@ -23,7 +23,7 @@ const AIChecker = () => {
     {
       icon: FileText,
       title: "PDF & DOCX Support",
-      description: "Upload files directly — no more copy-pasting. Support for PDF, DOCX, and TXT files up to 10MB."
+      description: "Upload files directly, no more copy-pasting. Support for PDF, DOCX, and TXT files up to 10MB."
     },
     {
       icon: Clock,
@@ -57,7 +57,7 @@ const AIChecker = () => {
     },
     {
       question: "Can I check and humanize in one tool?",
-      answer: "Yes! AI Free Text Pro is the only tool that combines AI detection and humanization. Detect AI content, then humanize it with one click — no need for separate tools."
+      answer: "Yes! AI Free Text Pro is the only tool that combines AI detection and humanization. Detect AI content, then humanize it with one click, no need for separate tools."
     },
     {
       question: "How many words can I check for free?",
@@ -211,7 +211,7 @@ const AIChecker = () => {
                 Why Choose Our AI Checker?
               </h2>
               <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-                The most comprehensive AI detection tool available — check, analyze, and humanize all in one place.
+                The most comprehensive AI detection tool available, check, analyze, and humanize all in one place.
               </p>
             </div>
 

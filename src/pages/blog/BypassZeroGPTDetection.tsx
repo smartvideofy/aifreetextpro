@@ -11,7 +11,7 @@ const BypassZeroGPTDetection = () => {
   const relatedArticles = [
     {
       title: "ZeroGPT vs AI Free Text Pro: Which Tool Is More Accurate?",
-      description: "We test ZeroGPT and AI Free Text Pro on different writing samples — see which tool spots AI content more accurately.",
+      description: "We test ZeroGPT and AI Free Text Pro on different writing samples, see which tool spots AI content more accurately.",
       href: "/blog/zerogpt-vs-ai-free-text-pro-2025",
       category: "Comparison"
     },

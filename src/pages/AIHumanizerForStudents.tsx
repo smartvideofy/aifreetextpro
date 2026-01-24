@@ -184,7 +184,7 @@ const AIHumanizerForStudents = () => {
                 <a href="https://app.aifreetextpro.com/" className="w-full sm:w-auto">
                   <Button size="lg" className="w-full bg-gradient-to-r from-primary to-secondary text-lg px-8 py-6">
                     <BookOpen className="mr-2 h-5 w-5" />
-                    Start Free — 1,000 Words
+                    Start Free, 1,000 Words
                     <ArrowRight className="ml-2 h-5 w-5" />
                   </Button>
                 </a>
@@ -354,7 +354,7 @@ const AIHumanizerForStudents = () => {
               </p>
               <a href="https://app.aifreetextpro.com/" className="inline-block">
                 <Button size="lg" className="bg-gradient-to-r from-primary to-secondary text-lg px-10 py-6">
-                  Start Writing — 100% Free Trial
+                  Start Writing, 100% Free Trial
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
               </a>

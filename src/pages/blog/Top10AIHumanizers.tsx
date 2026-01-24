@@ -18,6 +18,18 @@ const relatedArticles = [
     description: "Understand the technology behind AI detection",
     href: "/blog/how-ai-detectors-work",
     category: "Tips"
+  },
+  {
+    title: "GPTinf vs AI Free Text Pro Comparison",
+    description: "Head-to-head comparison of two popular AI humanizers",
+    href: "/blog/gptinf-vs-ai-free-text-pro",
+    category: "Comparison"
+  },
+  {
+    title: "Best Free AI Humanizer Tools in 2026",
+    description: "Compare the top free AI humanizer tools available",
+    href: "/blog/best-free-ai-humanizer-tools-2025",
+    category: "Tools"
   }
 ];
 

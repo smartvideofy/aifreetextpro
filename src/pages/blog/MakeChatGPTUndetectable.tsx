@@ -20,6 +20,18 @@ const relatedArticles = [
     description: "Transform AI content into natural, authentic writing",
     href: "/blog/humanize-ai-text-without-losing-voice",
     category: "Guide"
+  },
+  {
+    title: "AI Detection Patterns Explained",
+    description: "5 subtle linguistic patterns AI detectors look for",
+    href: "/blog/ai-detection-patterns-explained",
+    category: "Technical"
+  },
+  {
+    title: "The Definitive Guide to Writing Human-Like Content",
+    description: "Complete guide to natural AI-assisted writing",
+    href: "/blog/pass-all-ai-detectors-guide",
+    category: "Guide"
   }
 ];
 

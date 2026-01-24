@@ -151,7 +151,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="border-t border-border/40 bg-muted/30">
+    <footer className="border-t bg-gradient-to-b from-background to-muted/50">
       <div className="container mx-auto px-4 py-12 md:py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-7 gap-0 md:gap-8 mb-10">
           {/* Brand Column */}

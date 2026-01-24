@@ -77,24 +77,24 @@ const EnhancedFAQ = () => {
         </div>
         
         <div className="max-w-3xl mx-auto">
-          <Accordion type="single" collapsible className="space-y-3">
+          <Accordion type="single" collapsible className="space-y-4">
             {faqs.map((faq, index) => (
               <AccordionItem 
                 key={index}
                 value={`item-${index}`}
-                className="bg-card border border-border/50 rounded-xl px-6 hover:border-border transition-colors" 
+                className="border rounded-lg px-4" 
                 itemScope 
                 itemProp="mainEntity" 
                 itemType="https://schema.org/Question"
               >
                 <AccordionTrigger 
-                  className="text-left hover:no-underline py-5 text-base font-medium" 
+                  className="text-left hover:no-underline py-4 text-base font-medium" 
                   itemProp="name"
                 >
                   {faq.question}
                 </AccordionTrigger>
                 <AccordionContent 
-                  className="text-muted-foreground pb-5 leading-relaxed text-sm" 
+                  className="text-muted-foreground pb-4 leading-relaxed" 
                   itemScope 
                   itemProp="acceptedAnswer" 
                   itemType="https://schema.org/Answer"

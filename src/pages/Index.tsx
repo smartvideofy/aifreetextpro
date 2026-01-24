@@ -197,18 +197,18 @@ const Index = () => {
       
       <main className="flex-1">
         {/* Hero Section - Premium Minimalist */}
-        <section className="relative py-16 md:py-28 lg:py-32 overflow-hidden">
+        <section className="relative py-16 md:py-24 lg:py-32 overflow-hidden">
           <AnimatedBackground />
           
           <div className="container mx-auto px-4 relative z-10">
             <div className="text-center space-y-6 md:space-y-8 max-w-4xl mx-auto">
-              {/* Social Proof Badge - Refined */}
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-muted/60 border border-border/40 text-sm animate-fade-in">
+              {/* Social Proof Badge */}
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-sm animate-fade-in">
                 <div className="flex -space-x-1.5">
                   {["MR", "JC", "SP", "EW"].map((initials, i) => (
                     <div 
                       key={i} 
-                      className="w-6 h-6 rounded-full bg-muted flex items-center justify-center text-[10px] font-medium text-muted-foreground border-2 border-background"
+                      className="w-6 h-6 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center text-[10px] font-bold text-primary-foreground border-2 border-background"
                     >
                       {initials}
                     </div>
@@ -224,11 +224,11 @@ const Index = () => {
                 </div>
               </div>
 
-              {/* Main Headline - Clean, no gradient */}
-              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.1] animate-fade-in" style={{ animationDelay: "100ms" }}>
+              {/* Main Headline with Gradient */}
+              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold leading-[1.1] animate-fade-in" style={{ animationDelay: "100ms" }}>
                 Free AI Detector
                 <br />
-                <span className="text-muted-foreground">&</span> Humanizer
+                <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">&</span> Humanizer
               </h1>
               
               {/* Subheadline - Refined */}
@@ -257,7 +257,7 @@ const Index = () => {
                 <a href="https://app.aifreetextpro.com/">
                   <Button 
                     size="xl" 
-                    className="w-full sm:w-auto shadow-md group"
+                    className="w-full sm:w-auto bg-gradient-to-r from-primary to-secondary hover:opacity-90 shadow-lg hover:shadow-xl shadow-primary/20 group"
                   >
                     <Pen className="mr-2 h-5 w-5" />
                     Start Writing Free
@@ -452,7 +452,7 @@ const Index = () => {
             
             <div className="grid md:grid-cols-2 gap-6 md:gap-8 max-w-6xl mx-auto mb-12">
               {/* AI Detector Card */}
-              <Card className="p-6 md:p-8 space-y-5 border-border/50 hover:shadow-lg hover:border-border transition-all duration-200 overflow-hidden">
+              <Card className="p-6 md:p-8 space-y-5 hover:shadow-lg transition-shadow overflow-hidden">
                 <div className="space-y-4">
                   {/* Feature Image */}
                   <div className="relative -mx-8 -mt-8 mb-6">
@@ -505,7 +505,7 @@ const Index = () => {
               </Card>
 
               {/* AI Humanizer Card */}
-              <Card className="p-6 md:p-8 space-y-5 border-border/50 hover:shadow-lg hover:border-border transition-all duration-200 overflow-hidden">
+              <Card className="p-6 md:p-8 space-y-5 hover:shadow-lg transition-shadow overflow-hidden">
                 <div className="space-y-4">
                   {/* Feature Image */}
                   <div className="relative -mx-8 -mt-8 mb-6">
@@ -560,7 +560,7 @@ const Index = () => {
 
             {/* Additional Features Grid */}
             <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 max-w-6xl mx-auto">
-              <Card className="p-5 md:p-6 border-border/50 hover:border-border transition-colors">
+              <Card className="p-5 md:p-6 hover:shadow-md transition-shadow">
                 <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
                   <TrendingUp className="w-6 h-6 text-primary" />
                 </div>
@@ -568,7 +568,7 @@ const Index = () => {
                 <p className="text-sm text-muted-foreground">Track usage, monitor trends, and view detailed history with comprehensive dashboard.</p>
               </Card>
 
-              <Card className="p-5 md:p-6 border-border/50 hover:border-border transition-colors">
+              <Card className="p-5 md:p-6 hover:shadow-md transition-shadow">
                 <div className="w-10 h-10 rounded-lg bg-secondary/10 flex items-center justify-center mb-3">
                   <FileText className="w-6 h-6 text-secondary" />
                 </div>
@@ -576,7 +576,7 @@ const Index = () => {
                 <p className="text-sm text-muted-foreground">Upload PDF, DOCX, TXT files up to 10MB or paste text directly.</p>
               </Card>
 
-              <Card className="p-5 md:p-6 border-border/50 hover:border-border transition-colors">
+              <Card className="p-5 md:p-6 hover:shadow-md transition-shadow">
                 <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center mb-3">
                   <Lock className="w-6 h-6 text-primary" />
                 </div>
@@ -597,7 +597,7 @@ const Index = () => {
             </div>
             
             <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-              <Card className="p-6 bg-card/50 backdrop-blur border-border/50">
+              <Card className="p-6 bg-card/50 backdrop-blur">
                 <div className="space-y-4">
                   <div className="flex items-center gap-3">
                     <Avatar className="w-12 h-12 border-2 border-primary/20">
@@ -617,7 +617,7 @@ const Index = () => {
                 </div>
               </Card>
 
-              <Card className="p-6 bg-card/50 backdrop-blur border-border/50">
+              <Card className="p-6 bg-card/50 backdrop-blur">
                 <div className="space-y-4">
                   <div className="flex items-center gap-3">
                     <Avatar className="w-12 h-12 border-2 border-secondary/20">
@@ -637,7 +637,7 @@ const Index = () => {
                 </div>
               </Card>
 
-              <Card className="p-6 bg-card/50 backdrop-blur border-border/50">
+              <Card className="p-6 bg-card/50 backdrop-blur">
                 <div className="space-y-4">
                   <div className="flex items-center gap-3">
                     <Avatar className="w-12 h-12 border-2 border-primary/20">
@@ -729,7 +729,7 @@ const Index = () => {
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4 md:gap-6 max-w-7xl mx-auto overflow-hidden">
               {/* Free Plan */}
-              <Card className="relative hover:border-border hover:shadow-md transition-all duration-200 flex flex-col">
+              <Card className="relative hover:shadow-lg transition-shadow flex flex-col">
                 <div className="p-6 flex-1 flex flex-col">
                   <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
                     <Zap className="h-6 w-6 text-primary" />
@@ -767,7 +767,7 @@ const Index = () => {
               </Card>
 
               {/* Starter Plan */}
-              <Card className="relative hover:border-border hover:shadow-md transition-all duration-200 flex flex-col">
+              <Card className="relative hover:shadow-lg transition-shadow flex flex-col">
                 <div className="p-6 flex-1 flex flex-col">
                   <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
                     <Zap className="h-6 w-6 text-primary" />
@@ -810,7 +810,7 @@ const Index = () => {
               </Card>
 
               {/* Lite Plan */}
-              <Card className="relative hover:border-border hover:shadow-md transition-all duration-200 flex flex-col">
+              <Card className="relative hover:shadow-lg transition-shadow flex flex-col">
                 <div className="p-6 flex-1 flex flex-col">
                   <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
                     <Zap className="h-6 w-6 text-primary" />
@@ -897,7 +897,7 @@ const Index = () => {
                   </ul>
                   
                   <a href="https://app.aifreetextpro.com/" className="block mt-6">
-                    <Button variant="premium" className="w-full">
+                    <Button className="w-full bg-gradient-to-r from-primary to-secondary hover:opacity-90">
                       Subscribe Now
                     </Button>
                   </a>
@@ -905,7 +905,7 @@ const Index = () => {
               </Card>
 
               {/* Unlimited Creator Plan */}
-              <Card className="relative hover:border-border hover:shadow-md transition-all duration-200 flex flex-col">
+              <Card className="relative hover:shadow-lg transition-shadow flex flex-col">
                 <div className="p-6 flex-1 flex flex-col">
                   <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
                     <Crown className="h-6 w-6 text-primary" />
@@ -981,7 +981,7 @@ const Index = () => {
             </div>
             
             <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
-              <Card className="p-0 border-border/50 hover:shadow-lg hover:border-border transition-all duration-200 overflow-hidden">
+              <Card className="p-0 hover:shadow-lg transition-shadow overflow-hidden">
                 <img 
                   src={studentWriting} 
                   alt="Happy student using laptop for academic writing" 
@@ -1038,7 +1038,7 @@ const Index = () => {
                 </ul>
               </Card>
 
-              <Card className="p-0 bg-gradient-to-br from-card to-card/80 backdrop-blur border-border/50 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden">
+              <Card className="p-0 hover:shadow-lg transition-shadow overflow-hidden">
                 <img 
                   src={writerProfessional} 
                   alt="Professional content writer working at modern office" 

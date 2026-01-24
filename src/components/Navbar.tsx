@@ -18,9 +18,9 @@ const Navbar = () => {
   const isActiveGroup = (paths: string[]) => paths.some(p => location.pathname.startsWith(p));
   
   return (
-    <nav className="sticky top-0 z-50 bg-background/80 backdrop-blur-xl border-b border-border/40 transition-[top] duration-300 [body[data-sticky-cta='visible']_&]:top-[44px]">
+    <nav className="sticky top-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b border-border transition-[top] duration-300 [body[data-sticky-cta='visible']_&]:top-[44px]">
       <div className="container mx-auto px-4">
-        <div className="flex h-16 md:h-[72px] items-center justify-between">
+        <div className="flex h-16 items-center justify-between">
           {/* Logo & Brand */}
           <Link to="/" className="flex items-center gap-2.5 group">
             <img 
@@ -139,7 +139,7 @@ const Navbar = () => {
 
             {/* App Link - Premium CTA */}
             <a href="https://app.aifreetextpro.com/" target="_blank" rel="noopener noreferrer" className="ml-3">
-              <Button size="sm" className="shadow-sm">
+              <Button size="sm" className="bg-gradient-to-r from-primary to-secondary hover:opacity-90">
                 Start Writing Free
               </Button>
             </a>

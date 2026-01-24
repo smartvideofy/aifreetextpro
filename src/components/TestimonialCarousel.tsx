@@ -157,7 +157,7 @@ const TestimonialCarousel = () => {
               {testimonials.map((testimonial, index) => (
                 <Card 
                   key={index}
-                  className="flex-shrink-0 w-full md:w-[calc(33.333%-1rem)] p-6 border-border/50 hover:border-border hover:shadow-md transition-all duration-200"
+                  className="flex-shrink-0 w-full md:w-[calc(33.333%-1rem)] p-6 hover:shadow-lg transition-shadow"
                 >
                   <div className="space-y-4">
                     {/* Stars */}

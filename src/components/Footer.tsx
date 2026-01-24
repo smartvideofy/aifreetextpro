@@ -1,14 +1,161 @@
 import { Link } from "react-router-dom";
-import { Mail, BookOpen, MessageSquare, Shield, Check, Target, Users, FileText, Sparkles, GraduationCap } from "lucide-react";
+import { Mail, BookOpen, MessageSquare, Shield, Check, Target, Users, FileText, Sparkles, GraduationCap, ChevronDown } from "lucide-react";
 import logo from "@/assets/logo.png";
+import { useState } from "react";
+
+type FooterSection = {
+  title: string;
+  icon?: React.ReactNode;
+  links: { href: string; label: string; external?: boolean; icon?: React.ReactNode }[];
+};
+
+const footerSections: FooterSection[] = [
+  {
+    title: "Product",
+    links: [
+      { href: "https://app.aifreetextpro.com/detector", label: "AI Detector", external: true },
+      { href: "https://app.aifreetextpro.com/humanizer", label: "AI Humanizer", external: true },
+      { href: "/ai-checker", label: "AI Checker" },
+      { href: "https://app.aifreetextpro.com/plagiarism", label: "Plagiarism Checker", external: true },
+      { href: "https://app.getstudily.com", label: "Create Flashcard", external: true },
+      { href: "https://getstudily.com", label: "AI Study Notes", external: true },
+    ],
+  },
+  {
+    title: "Bypass Guides",
+    icon: <Target className="w-4 h-4" />,
+    links: [
+      { href: "/bypass-turnitin-ai-detection", label: "Bypass Turnitin" },
+      { href: "/bypass-gptzero-detection", label: "Bypass GPTZero" },
+      { href: "/bypass-originality-ai", label: "Bypass Originality.AI" },
+      { href: "/blog/bypass-copyleaks-ai-detection", label: "Bypass Copyleaks" },
+      { href: "/blog/bypass-winston-ai-detection", label: "Bypass Winston AI" },
+      { href: "/blog/bypass-zerogpt-ai-detection", label: "Bypass ZeroGPT" },
+    ],
+  },
+  {
+    title: "Compare Tools",
+    icon: <Sparkles className="w-4 h-4" />,
+    links: [
+      { href: "/vs-writehuman", label: "vs WriteHuman" },
+      { href: "/vs-undetectable-ai", label: "vs Undetectable AI" },
+      { href: "/vs-humanizeai-pro", label: "vs HumanizeAI.pro" },
+      { href: "/blog/gptinf-vs-ai-free-text-pro", label: "vs GPTinf" },
+      { href: "/blog/zerogpt-vs-ai-free-text-pro-2025", label: "vs ZeroGPT" },
+    ],
+  },
+  {
+    title: "Use Cases",
+    icon: <Users className="w-4 h-4" />,
+    links: [
+      { href: "/ai-humanizer-for-students", label: "For Students" },
+      { href: "/ai-humanizer-for-writers", label: "For Writers" },
+      { href: "/academic-ai-writing-tool", label: "Academic Writing" },
+    ],
+  },
+  {
+    title: "Popular Guides",
+    icon: <GraduationCap className="w-4 h-4" />,
+    links: [
+      { href: "/blog/how-ai-detectors-work", label: "How AI Detectors Work" },
+      { href: "/blog/humanize-ai-text-without-losing-voice", label: "Humanize AI Text" },
+      { href: "/blog/pass-all-ai-detectors-guide", label: "Pass All AI Detectors" },
+      { href: "/blog/ai-content-seo-undetectable", label: "AI Content for SEO" },
+      { href: "/blog/top-10-ai-humanizer-tools-2025", label: "Top 10 AI Humanizers" },
+      { href: "/blog/academic-ai-writing-safely", label: "Academic AI Writing" },
+    ],
+  },
+  {
+    title: "Resources",
+    links: [
+      { href: "/blog", label: "Blog", icon: <BookOpen className="w-4 h-4" /> },
+      { href: "/pricing", label: "Pricing" },
+      { href: "/guarantee", label: "Money-Back Guarantee", icon: <Shield className="w-4 h-4" /> },
+      { href: "/about", label: "About Us" },
+      { href: "/team", label: "Our Team" },
+      { href: "/technology", label: "Our Technology" },
+      { href: "/case-studies", label: "Case Studies" },
+      { href: "/editorial-guidelines", label: "Editorial Guidelines" },
+      { href: "/contact", label: "Contact Us", icon: <MessageSquare className="w-4 h-4" /> },
+    ],
+  },
+];
+
+const FooterAccordionItem = ({ section, isOpen, onToggle }: { section: FooterSection; isOpen: boolean; onToggle: () => void }) => {
+  return (
+    <div className="border-b border-border/30 last:border-b-0 md:border-b-0">
+      {/* Mobile: Collapsible */}
+      <button
+        onClick={onToggle}
+        className="md:hidden flex items-center justify-between w-full py-4 text-left"
+        aria-expanded={isOpen}
+      >
+        <h3 className="font-semibold text-foreground flex items-center gap-2">
+          {section.icon}
+          {section.title}
+        </h3>
+        <ChevronDown className={`w-5 h-5 text-muted-foreground transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`} />
+      </button>
+      
+      {/* Desktop: Always visible title */}
+      <h3 className="hidden md:flex font-semibold text-foreground items-center gap-2 mb-4">
+        {section.icon}
+        {section.title}
+      </h3>
+      
+      {/* Links - collapsible on mobile */}
+      <nav className={`flex flex-col gap-2 text-sm overflow-hidden transition-all duration-300 md:overflow-visible ${
+        isOpen ? 'max-h-96 pb-4' : 'max-h-0 md:max-h-none'
+      }`}>
+        {section.links.map((link, index) => (
+          link.external ? (
+            <a 
+              key={index}
+              href={link.href} 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="text-muted-foreground hover:text-primary transition-colors py-1 md:py-0 flex items-center gap-2"
+            >
+              {link.icon}
+              {link.label}
+            </a>
+          ) : (
+            <Link 
+              key={index}
+              to={link.href} 
+              className="text-muted-foreground hover:text-primary transition-colors py-1 md:py-0 flex items-center gap-2"
+            >
+              {link.icon}
+              {link.label}
+            </Link>
+          )
+        ))}
+      </nav>
+    </div>
+  );
+};
 
 const Footer = () => {
+  const [openSections, setOpenSections] = useState<Set<number>>(new Set());
+
+  const toggleSection = (index: number) => {
+    setOpenSections(prev => {
+      const newSet = new Set(prev);
+      if (newSet.has(index)) {
+        newSet.delete(index);
+      } else {
+        newSet.add(index);
+      }
+      return newSet;
+    });
+  };
+
   return (
     <footer className="border-t border-border/40 bg-card/50 backdrop-blur-sm">
-      <div className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8 mb-8">
-          {/* Brand Column */}
-          <div className="space-y-4 lg:col-span-1">
+      <div className="container mx-auto px-4 py-8 md:py-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-0 md:gap-8 mb-8">
+          {/* Brand Column - Always visible */}
+          <div className="space-y-4 lg:col-span-1 pb-6 md:pb-0 border-b border-border/30 md:border-b-0">
             <Link to="/" className="flex items-center gap-2">
               <img src={logo} alt="AI Free Text Pro" className="w-8 h-8" />
               <span className="font-bold text-lg bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
@@ -18,204 +165,59 @@ const Footer = () => {
             <p className="text-sm text-muted-foreground">
               Detect and humanize AI text with 98% accuracy. Fast, free, and privacy-focused.
             </p>
-          </div>
-
-          {/* Product Column */}
-          <div className="space-y-4">
-            <h3 className="font-semibold text-foreground">Product</h3>
-            <nav className="flex flex-col gap-2 text-sm">
-              <a href="https://app.aifreetextpro.com/detector" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
-                AI Detector
-              </a>
-              <a href="https://app.aifreetextpro.com/humanizer" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
-                AI Humanizer
-              </a>
-              <Link to="/ai-checker" className="text-muted-foreground hover:text-primary transition-colors">
-                AI Checker
-              </Link>
-              <a href="https://app.aifreetextpro.com/plagiarism" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
-                Plagiarism Checker
-              </a>
-              <a href="https://app.getstudily.com" target="_blank" rel="noopener" className="text-muted-foreground hover:text-primary transition-colors">
-                Create Flashcard
-              </a>
-              <a href="https://getstudily.com" target="_blank" rel="noopener" className="text-muted-foreground hover:text-primary transition-colors">
-                AI Study Notes
-              </a>
-            </nav>
-          </div>
-
-          {/* Bypass Guides Column */}
-          <div className="space-y-4">
-            <h3 className="font-semibold text-foreground flex items-center gap-2">
-              <Target className="w-4 h-4" />
-              Bypass Guides
-            </h3>
-            <nav className="flex flex-col gap-2 text-sm">
-              <Link to="/bypass-turnitin-ai-detection" className="text-muted-foreground hover:text-primary transition-colors">
-                Bypass Turnitin
-              </Link>
-              <Link to="/bypass-gptzero-detection" className="text-muted-foreground hover:text-primary transition-colors">
-                Bypass GPTZero
-              </Link>
-              <Link to="/bypass-originality-ai" className="text-muted-foreground hover:text-primary transition-colors">
-                Bypass Originality.AI
-              </Link>
-              <Link to="/blog/bypass-copyleaks-ai-detection" className="text-muted-foreground hover:text-primary transition-colors">
-                Bypass Copyleaks
-              </Link>
-              <Link to="/blog/bypass-winston-ai-detection" className="text-muted-foreground hover:text-primary transition-colors">
-                Bypass Winston AI
-              </Link>
-              <Link to="/blog/bypass-zerogpt-ai-detection" className="text-muted-foreground hover:text-primary transition-colors">
-                Bypass ZeroGPT
-              </Link>
-            </nav>
-          </div>
-
-          {/* Compare & Use Cases Column */}
-          <div className="space-y-4">
-            <h3 className="font-semibold text-foreground flex items-center gap-2">
-              <Sparkles className="w-4 h-4" />
-              Compare Tools
-            </h3>
-            <nav className="flex flex-col gap-2 text-sm">
-              <Link to="/vs-writehuman" className="text-muted-foreground hover:text-primary transition-colors">
-                vs WriteHuman
-              </Link>
-              <Link to="/vs-undetectable-ai" className="text-muted-foreground hover:text-primary transition-colors">
-                vs Undetectable AI
-              </Link>
-              <Link to="/vs-humanizeai-pro" className="text-muted-foreground hover:text-primary transition-colors">
-                vs HumanizeAI.pro
-              </Link>
-              <Link to="/blog/gptinf-vs-ai-free-text-pro" className="text-muted-foreground hover:text-primary transition-colors">
-                vs GPTinf
-              </Link>
-              <Link to="/blog/zerogpt-vs-ai-free-text-pro-2025" className="text-muted-foreground hover:text-primary transition-colors">
-                vs ZeroGPT
-              </Link>
-            </nav>
             
-            <h3 className="font-semibold text-foreground flex items-center gap-2 pt-2">
-              <Users className="w-4 h-4" />
-              Use Cases
-            </h3>
-            <nav className="flex flex-col gap-2 text-sm">
-              <Link to="/ai-humanizer-for-students" className="text-muted-foreground hover:text-primary transition-colors">
-                For Students
-              </Link>
-              <Link to="/ai-humanizer-for-writers" className="text-muted-foreground hover:text-primary transition-colors">
-                For Writers
-              </Link>
-              <Link to="/academic-ai-writing-tool" className="text-muted-foreground hover:text-primary transition-colors">
-                Academic Writing
-              </Link>
-            </nav>
-          </div>
-
-          {/* Popular Guides Column */}
-          <div className="space-y-4">
-            <h3 className="font-semibold text-foreground flex items-center gap-2">
-              <GraduationCap className="w-4 h-4" />
-              Popular Guides
-            </h3>
-            <nav className="flex flex-col gap-2 text-sm">
-              <Link to="/blog/how-ai-detectors-work" className="text-muted-foreground hover:text-primary transition-colors">
-                How AI Detectors Work
-              </Link>
-              <Link to="/blog/humanize-ai-text-without-losing-voice" className="text-muted-foreground hover:text-primary transition-colors">
-                Humanize AI Text
-              </Link>
-              <Link to="/blog/pass-all-ai-detectors-guide" className="text-muted-foreground hover:text-primary transition-colors">
-                Pass All AI Detectors
-              </Link>
-              <Link to="/blog/ai-content-seo-undetectable" className="text-muted-foreground hover:text-primary transition-colors">
-                AI Content for SEO
-              </Link>
-              <Link to="/blog/top-10-ai-humanizer-tools-2025" className="text-muted-foreground hover:text-primary transition-colors">
-                Top 10 AI Humanizers
-              </Link>
-              <Link to="/blog/academic-ai-writing-safely" className="text-muted-foreground hover:text-primary transition-colors">
-                Academic AI Writing
-              </Link>
-            </nav>
-          </div>
-
-          {/* Resources Column */}
-          <div className="space-y-4">
-            <h3 className="font-semibold text-foreground">Resources</h3>
-            <nav className="flex flex-col gap-2 text-sm">
-              <Link to="/blog" className="text-muted-foreground hover:text-primary transition-colors flex items-center gap-2">
-                <BookOpen className="w-4 h-4" />
-                Blog
-              </Link>
-              <Link to="/pricing" className="text-muted-foreground hover:text-primary transition-colors">
-                Pricing
-              </Link>
-              <Link to="/guarantee" className="text-muted-foreground hover:text-primary transition-colors flex items-center gap-2">
-                <Shield className="w-4 h-4" />
-                Money-Back Guarantee
-              </Link>
-              <Link to="/about" className="text-muted-foreground hover:text-primary transition-colors">
-                About Us
-              </Link>
-              <Link to="/team" className="text-muted-foreground hover:text-primary transition-colors">
-                Our Team
-              </Link>
-              <Link to="/technology" className="text-muted-foreground hover:text-primary transition-colors">
-                Our Technology
-              </Link>
-              <Link to="/case-studies" className="text-muted-foreground hover:text-primary transition-colors">
-                Case Studies
-              </Link>
-              <Link to="/editorial-guidelines" className="text-muted-foreground hover:text-primary transition-colors">
-                Editorial Guidelines
-              </Link>
-              <Link to="/contact" className="text-muted-foreground hover:text-primary transition-colors flex items-center gap-2">
-                <MessageSquare className="w-4 h-4" />
-                Contact Us
-              </Link>
-              <a href="mailto:support@aifreetextpro.com" className="text-muted-foreground hover:text-primary transition-colors flex items-center gap-2">
-                <Mail className="w-4 h-4" />
-                Email Support
-              </a>
-            </nav>
-            
-            {/* Trust Badges */}
-            <div className="pt-4 space-y-2">
+            {/* Trust Badges - Visible on mobile too */}
+            <div className="pt-2 space-y-2">
               <div className="flex items-center gap-2 text-xs text-muted-foreground">
-                <Shield className="w-4 h-4 text-green-600" />
+                <Shield className="w-4 h-4 text-green-600 flex-shrink-0" />
                 <span>Privacy Protected</span>
               </div>
               <div className="flex items-center gap-2 text-xs text-muted-foreground">
-                <Check className="w-4 h-4 text-green-600" />
+                <Check className="w-4 h-4 text-green-600 flex-shrink-0" />
                 <span>98% Accuracy Rate</span>
               </div>
               <div className="flex items-center gap-2 text-xs text-muted-foreground">
-                <Check className="w-4 h-4 text-green-600" />
+                <Check className="w-4 h-4 text-green-600 flex-shrink-0" />
                 <span>50,000+ Users</span>
               </div>
             </div>
           </div>
+
+          {/* Accordion Sections */}
+          {footerSections.map((section, index) => (
+            <FooterAccordionItem
+              key={index}
+              section={section}
+              isOpen={openSections.has(index)}
+              onToggle={() => toggleSection(index)}
+            />
+          ))}
+        </div>
+
+        {/* Email Support - Mobile friendly */}
+        <div className="py-4 border-t border-border/30 md:hidden">
+          <a href="mailto:support@aifreetextpro.com" className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors py-2">
+            <Mail className="w-4 h-4" />
+            support@aifreetextpro.com
+          </a>
         </div>
 
         {/* Bottom Bar */}
-        <div className="pt-8 border-t border-border/40 flex flex-col md:flex-row justify-between items-center gap-4">
-          <div className="text-sm text-muted-foreground text-center md:text-left">
-            © 2026 AI Free Text Pro. All rights reserved. | Free AI Detection & Humanization Tools
+        <div className="pt-6 md:pt-8 border-t border-border/40 flex flex-col md:flex-row justify-between items-center gap-4">
+          <div className="text-xs md:text-sm text-muted-foreground text-center md:text-left">
+            © 2026 AI Free Text Pro. All rights reserved.
           </div>
-          <div className="flex items-center gap-4 text-xs text-muted-foreground">
-            <Link to="/privacy-policy" className="hover:text-primary transition-colors">
+          <div className="flex flex-wrap items-center justify-center gap-3 md:gap-4 text-xs text-muted-foreground">
+            <Link to="/privacy-policy" className="hover:text-primary transition-colors py-2">
               Privacy Policy
             </Link>
-            <Link to="/terms-of-service" className="hover:text-primary transition-colors">
+            <Link to="/terms-of-service" className="hover:text-primary transition-colors py-2">
               Terms of Service
             </Link>
-            <Link to="/cookie-settings" className="hover:text-primary transition-colors">
+            <Link to="/cookie-settings" className="hover:text-primary transition-colors py-2">
               Cookie Settings
             </Link>
-            <div className="flex items-center gap-2">
+            <div className="hidden md:flex items-center gap-2">
               <Shield className="w-4 h-4" />
               <span>Secure & Private</span>
             </div>

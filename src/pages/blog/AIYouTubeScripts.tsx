@@ -160,7 +160,7 @@ export default function AIYouTubeScripts() {
                 <h2 className="text-3xl font-bold mb-4">Example: Humanized AI Script</h2>
                 <div className="bg-primary/10 rounded-lg p-6 my-4">
                   <p className="mb-2"><strong>AI Draft:</strong> "Welcome to my channel. Today we will discuss AI scripts. Stay tuned."</p>
-                  <p><strong>Humanized:</strong> "Hey everyone! Thanks for stopping by. Today, we're diving into AI-generated scripts and how to make them feel natural — so grab a coffee and let's get started!"</p>
+                  <p><strong>Humanized:</strong> "Hey everyone! Thanks for stopping by. Today, we're diving into AI-generated scripts and how to make them feel natural, so grab a coffee and let's get started!"</p>
                 </div>
               </section>
 

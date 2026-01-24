@@ -344,7 +344,7 @@ const AIDetectionComparison = () => {
                   We tested each platform with 50 text samples: 25 AI-generated (ChatGPT, Claude, Gemini) and 25 human-written. Here are the comprehensive results:
                 </p>
                 <ul>
-                  <li><strong>AI Free Text Pro:</strong> 47/50 correct (94% accuracy) — <a href="/">Try it free</a></li>
+                  <li><strong>AI Free Text Pro:</strong> 47/50 correct (94% accuracy), <a href="/">Try it free</a></li>
                   <li><strong>GPTZero:</strong> 43/50 correct (87% accuracy)</li>
                   <li><strong>Rewritify:</strong> 41/50 correct (82% accuracy)</li>
                 </ul>
@@ -391,7 +391,7 @@ const AIDetectionComparison = () => {
               <div className="bg-gradient-to-r from-primary/10 to-secondary/10 p-8 rounded-lg text-center space-y-4 my-12">
                 <h3 className="text-2xl font-bold">Try AI Free Text Pro Today</h3>
                 <p className="text-muted-foreground max-w-2xl mx-auto">
-                  Experience the most accurate AI detector on the market. Start with 1,000 free words — no credit card required.
+                  Experience the most accurate AI detector on the market. Start with 1,000 free words, no credit card required.
                 </p>
                 <a href="https://app.aifreetextpro.com/" target="_blank" rel="noopener noreferrer">
                   <Button size="lg" className="text-lg px-8">

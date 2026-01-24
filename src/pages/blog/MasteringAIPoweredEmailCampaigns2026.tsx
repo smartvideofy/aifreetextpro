@@ -179,7 +179,7 @@ export default function MasteringAIPoweredEmailCampaigns2026() {
                   <h3 className="font-semibold mb-2">Before AI Optimization:</h3>
                   <p>"Dear customer, check out our new products this month!"</p>
                   <h3 className="font-semibold mb-2">After AI Optimization:</h3>
-                  <p>"Hi Sarah, we've hand-picked products just for you based on your recent favorites — explore this month's top picks!"</p>
+                  <p>"Hi Sarah, we've hand-picked products just for you based on your recent favorites, explore this month's top picks!"</p>
                 </div>
               </section>
 

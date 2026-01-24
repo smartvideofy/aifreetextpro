@@ -60,7 +60,7 @@ export default function AIToolsForWriters() {
             "@context": "https://schema.org",
             "@type": "Article",
             "headline": "AI Tools for Writers: Boost Creativity and Productivity in 2025",
-            "description": "The best AI writing tools to plan, edit, and refine your stories and essays — including AI Free Text Pro for authenticity checks.",
+            "description": "The best AI writing tools to plan, edit, and refine your stories and essays, including AI Free Text Pro for authenticity checks.",
             "image": {
               "@type": "ImageObject",
               "url": "https://aifreetextpro.com/before-after-demo.png",

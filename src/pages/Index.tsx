@@ -159,7 +159,7 @@ const Index = () => {
                 "name": "Is AI Free Text Pro free forever?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Yes, AI Free Text Pro offers a generous free tier with 1,000 words per analysis — double what competitors like ZeroGPT (500 words) and Rewritify (250 words) offer. Our core AI detection and humanization features remain free forever."
+                  "text": "Yes, AI Free Text Pro offers a generous free tier with 1,000 words per analysis, double what competitors like ZeroGPT (500 words) and Rewritify (250 words) offer. Our core AI detection and humanization features remain free forever."
                 }
               },
               {
@@ -1075,7 +1075,7 @@ const Index = () => {
             <div className="text-center pt-12">
               <a href="https://app.aifreetextpro.com/">
                 <Button size="lg" className="bg-gradient-to-r from-primary to-secondary text-lg px-12 py-6">
-                  Join Free — No Credit Card <ArrowRight className="ml-2 h-5 w-5" />
+                  Join Free, No Credit Card <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
               </a>
             </div>

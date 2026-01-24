@@ -605,7 +605,7 @@ export default function Top10AIHumanizers() {
               <div className="bg-gradient-to-r from-primary/10 to-primary/5 rounded-xl p-8 my-12">
                 <h2 className="text-2xl font-bold mb-4">Start with the #1 Rated Tool</h2>
                 <p className="text-lg mb-6">
-                  AI Free Text Pro combines the best humanization technology with built-in AI detection — completely free. No sign-up, no limits, no hassle.
+                  AI Free Text Pro combines the best humanization technology with built-in AI detection, completely free. No sign-up, no limits, no hassle.
                 </p>
                 <Link 
                   to="/"

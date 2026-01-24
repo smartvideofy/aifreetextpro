@@ -48,7 +48,7 @@ const InteractiveDemo = () => {
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-10">
             <h2 className="text-2xl md:text-4xl font-bold mb-3">Try It Now</h2>
-            <p className="text-muted-foreground text-base md:text-lg">No sign up required — paste your text and see results instantly</p>
+            <p className="text-muted-foreground text-base md:text-lg">No sign up required, paste your text and see results instantly</p>
           </div>
           
           <Card className="p-6 md:p-8 shadow-lg border-border/50">
@@ -151,7 +151,7 @@ const InteractiveDemo = () => {
                 <p className="text-sm text-muted-foreground mb-4">Want unlimited access with advanced features?</p>
                 <a href="https://app.aifreetextpro.com/">
                   <Button size="lg" className="shadow-md w-full sm:w-auto">
-                    Get Full Access — Free to Start 
+                    Get Full Access, Free to Start 
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
                 </a>

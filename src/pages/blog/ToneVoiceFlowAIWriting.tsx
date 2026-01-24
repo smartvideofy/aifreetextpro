@@ -155,7 +155,7 @@ const ToneVoiceFlowAIWriting = () => {
                 </p>
                 <ul className="space-y-2 text-muted-foreground">
                   <li><strong>Instead of:</strong> "Write about productivity tips"</li>
-                  <li><strong>Try:</strong> "Write about productivity tips in a tone that's encouraging but not preachy—like a supportive friend who's been there, not a guru on a mountaintop"</li>
+                  <li><strong>Try:</strong> "Write about productivity tips in a tone that's encouraging but not preachy, like a supportive friend who's been there, not a guru on a mountaintop"</li>
                 </ul>
               </section>
 
@@ -226,7 +226,7 @@ const ToneVoiceFlowAIWriting = () => {
                     </p>
                     <div className="bg-card/50 border border-border rounded-lg p-6">
                       <p className="text-muted-foreground">
-                        "She hesitated. The door stood before her, its paint peeling in long strips that reminded her of the wallpaper in her grandmother's kitchen—the one she used to trace with her fingers during endless summer afternoons. Then she knocked. Three times. Sharp. Decisive."
+                        "She hesitated. The door stood before her, its paint peeling in long strips that reminded her of the wallpaper in her grandmother's kitchen, the one she used to trace with her fingers during endless summer afternoons. Then she knocked. Three times. Sharp. Decisive."
                       </p>
                       <p className="text-sm text-primary mt-4">
                         Notice: 2 words → 41 words → 3 words → 2 words → 1 word → 1 word

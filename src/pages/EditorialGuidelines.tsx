@@ -61,7 +61,7 @@ const EditorialGuidelines = () => {
               <div>
                 <h2 className="text-2xl md:text-3xl font-bold mb-4">Our Commitment to Quality</h2>
                 <p className="text-lg text-muted-foreground mb-6">
-                  At AI Free Text Pro, we believe that trust is earned through consistent accuracy and transparency. Every piece of content on our website—from blog articles to product descriptions—undergoes a rigorous review process to ensure it meets our high standards.
+                  At AI Free Text Pro, we believe that trust is earned through consistent accuracy and transparency. Every piece of content on our website, from blog articles to product descriptions, undergoes a rigorous review process to ensure it meets our high standards.
                 </p>
                 <Card className="p-6 bg-primary/5 border-primary/20">
                   <p className="text-muted-foreground">

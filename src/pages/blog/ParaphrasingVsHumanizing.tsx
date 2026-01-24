@@ -380,7 +380,7 @@ const ParaphrasingVsHumanizing = () => {
                   Paraphrasing tools were built for plagiarism, not AI detection. They solve a 2015 problem. In 2025, you need tools built specifically for the AI detection challenge.
                 </p>
                 <p>
-                  AI Free Text Pro isn't just a better paraphraser — it's a fundamentally different approach. One that actually works.
+                  AI Free Text Pro isn't just a better paraphraser, it's a fundamentally different approach. One that actually works.
                 </p>
               </div>
 

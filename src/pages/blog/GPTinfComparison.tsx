@@ -367,12 +367,12 @@ const GPTinfComparison = () => {
                 <div className="space-y-4 my-6">
                   <div className="p-4 border rounded-lg bg-muted/50">
                     <p className="italic mb-2">"GPTinf worked okay for simple blog posts, but when I submitted an essay to Turnitin, it still flagged 45% AI-generated. Switched to AI Free Text Pro and got 0% detection on the same content."</p>
-                    <p className="text-sm text-muted-foreground mb-0">— Former GPTinf user, Reddit r/ChatGPT</p>
+                    <p className="text-sm text-muted-foreground mb-0">Former GPTinf user, Reddit r/ChatGPT</p>
                   </div>
                   
                   <div className="p-4 border rounded-lg bg-muted/50">
                     <p className="italic mb-2">"The Academic style in AI Free Text Pro is a game-changer. My papers sound natural but still professional. GPTinf didn't have anything like that."</p>
-                    <p className="text-sm text-muted-foreground mb-0">— Graduate student, Trustpilot review</p>
+                    <p className="text-sm text-muted-foreground mb-0">Graduate student, Trustpilot review</p>
                   </div>
                 </div>
 
@@ -406,7 +406,7 @@ const GPTinfComparison = () => {
               <div className="bg-gradient-to-r from-primary/10 to-secondary/10 p-8 rounded-lg text-center space-y-4 my-12">
                 <h3 className="text-2xl font-bold">Ready to Switch from GPTinf?</h3>
                 <p className="text-muted-foreground max-w-2xl mx-auto">
-                  Experience the difference with AI Free Text Pro. Start free with 1,000 words — no credit card required.
+                  Experience the difference with AI Free Text Pro. Start free with 1,000 words, no credit card required.
                 </p>
                 <a href="https://app.aifreetextpro.com/" target="_blank" rel="noopener noreferrer">
                   <Button size="lg" className="text-lg px-8">

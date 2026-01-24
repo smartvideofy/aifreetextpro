@@ -271,7 +271,7 @@ const CaseStudies = () => {
                         ))}
                       </div>
                       <p className="text-muted-foreground italic">"{study.testimonial}"</p>
-                      <p className="text-sm font-medium mt-2">— {study.user.name}</p>
+                      <p className="text-sm font-medium mt-2">{study.user.name}</p>
                     </div>
                   </div>
                 </Card>

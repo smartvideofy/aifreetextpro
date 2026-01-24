@@ -174,13 +174,13 @@ const OriginalityAIReview = () => {
                 </h1>
 
                 <p className="text-xl text-muted-foreground">
-                  Everything you need to know about one of the most aggressive AI detectors — and how to reliably bypass it.
+                  Everything you need to know about one of the most aggressive AI detectors, and how to reliably bypass it.
                 </p>
               </header>
 
               <div className="prose prose-lg max-w-none">
                 <p>
-                  Originality.AI has positioned itself as the go-to AI detector for publishers, content agencies, and anyone concerned about AI-generated content. But is it as accurate as claimed? And more importantly — can it be bypassed?
+                  Originality.AI has positioned itself as the go-to AI detector for publishers, content agencies, and anyone concerned about AI-generated content. But is it as accurate as claimed? And more importantly, can it be bypassed?
                 </p>
                 
                 <p>
@@ -297,7 +297,7 @@ const OriginalityAIReview = () => {
                   <li><strong>Coherence patterns:</strong> How logically structured the text is</li>
                 </ul>
                 <p>
-                  Unlike simpler detectors, Originality.AI claims to update its models regularly to catch newer AI systems. This makes it one of the more challenging detectors to bypass — but not impossible.
+                  Unlike simpler detectors, Originality.AI claims to update its models regularly to catch newer AI systems. This makes it one of the more challenging detectors to bypass, but not impossible.
                 </p>
 
                 <h2>How to Beat Originality.AI Detection</h2>

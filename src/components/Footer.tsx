@@ -203,7 +203,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-border/40 flex flex-col md:flex-row justify-between items-center gap-4">
           <div className="text-sm text-muted-foreground text-center md:text-left">
-            © 2025 AI Free Text Pro. All rights reserved. | Free AI Detection & Humanization Tools
+            © 2026 AI Free Text Pro. All rights reserved. | Free AI Detection & Humanization Tools
           </div>
           <div className="flex items-center gap-4 text-xs text-muted-foreground">
             <Link to="/privacy-policy" className="hover:text-primary transition-colors">

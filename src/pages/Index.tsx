@@ -34,14 +34,14 @@ const Index = () => {
     <div className="min-h-screen flex flex-col">
       <HowToSchema />
       <Helmet>
-        <title>Free AI Detector & Humanizer - Bypass GPTZero, Turnitin [Dec 2025]</title>
+        <title>Free AI Detector & Humanizer - Bypass GPTZero, Turnitin [Jan 2026]</title>
         <meta name="description" content="Free AI detector spots ChatGPT in 3 seconds. Humanize AI text to bypass Turnitin, GPTZero, Originality.AI. 98% accuracy. 50,000+ users. No credit card." />
         <meta name="keywords" content="free ai detector, ai humanizer, detect ai text, bypass turnitin, bypass gptzero" />
         <link rel="canonical" href="https://aifreetextpro.com/" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-        <meta property="og:title" content="Free AI Detector & Humanizer - Bypass GPTZero, Turnitin [Dec 2025]" />
+        <meta property="og:title" content="Free AI Detector & Humanizer - Bypass GPTZero, Turnitin [Jan 2026]" />
         <meta property="og:description" content="Free AI detector spots ChatGPT in 3 seconds. Humanize AI text to bypass Turnitin, GPTZero, Originality.AI. 98% accuracy." />
         <meta property="og:url" content="https://aifreetextpro.com/" />
         <meta property="og:type" content="website" />
@@ -50,7 +50,7 @@ const Index = () => {
         <meta property="og:locale" content="en_US" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@aifreetextpro" />
-        <meta name="twitter:title" content="Free AI Detector & Humanizer - Bypass GPTZero, Turnitin [Dec 2025]" />
+        <meta name="twitter:title" content="Free AI Detector & Humanizer - Bypass GPTZero, Turnitin [Jan 2026]" />
         <meta name="twitter:description" content="Free AI detector spots ChatGPT in 3 seconds. Humanize AI text to bypass Turnitin, GPTZero, Originality.AI. 98% accuracy." />
         <meta name="twitter:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" />
         
@@ -1096,7 +1096,7 @@ const Index = () => {
                     <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center">
                       <Shield className="w-6 h-6 text-primary" />
                     </div>
-                    <h3 className="font-bold text-xl">Make ChatGPT Undetectable: 2025 Guide</h3>
+                    <h3 className="font-bold text-xl">Make ChatGPT Undetectable: 2026 Guide</h3>
                     <p className="text-muted-foreground text-sm">
                       The ultimate guide to making AI writing completely undetectable by all major detectors
                     </p>

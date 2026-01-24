@@ -1,5 +1,4 @@
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { HelpCircle } from "lucide-react";
 
 const faqs = [
   {
@@ -66,37 +65,36 @@ const faqs = [
 
 const EnhancedFAQ = () => {
   return (
-    <section className="py-20 md:py-28 bg-card/20" itemScope itemType="https://schema.org/FAQPage">
+    <section className="py-20 md:py-28" itemScope itemType="https://schema.org/FAQPage">
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-center gap-2 md:gap-3 mb-6">
-          <HelpCircle className="w-6 h-6 md:w-8 md:h-8 text-primary flex-shrink-0" />
-          <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold text-center">
+        <div className="text-center mb-12">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">
             Frequently Asked Questions
           </h2>
+          <p className="text-muted-foreground text-base md:text-lg max-w-2xl mx-auto">
+            Everything you need to know about AI Free Text Pro
+          </p>
         </div>
-        <p className="text-center text-muted-foreground text-lg mb-12 max-w-2xl mx-auto">
-          Everything you need to know about AI Free Text Pro, detection accuracy, and humanization
-        </p>
         
-        <div className="max-w-4xl mx-auto">
-          <Accordion type="single" collapsible className="space-y-4">
+        <div className="max-w-3xl mx-auto">
+          <Accordion type="single" collapsible className="space-y-3">
             {faqs.map((faq, index) => (
               <AccordionItem 
                 key={index}
                 value={`item-${index}`}
-                className="bg-card border border-border/50 rounded-lg px-6 hover:shadow-lg transition-shadow" 
+                className="bg-card border border-border/50 rounded-xl px-6 hover:border-border transition-colors" 
                 itemScope 
                 itemProp="mainEntity" 
                 itemType="https://schema.org/Question"
               >
                 <AccordionTrigger 
-                  className="text-left hover:no-underline py-5 text-lg font-semibold" 
+                  className="text-left hover:no-underline py-5 text-base font-medium" 
                   itemProp="name"
                 >
                   {faq.question}
                 </AccordionTrigger>
                 <AccordionContent 
-                  className="text-muted-foreground pb-5 leading-relaxed" 
+                  className="text-muted-foreground pb-5 leading-relaxed text-sm" 
                   itemScope 
                   itemProp="acceptedAnswer" 
                   itemType="https://schema.org/Answer"

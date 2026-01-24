@@ -1,17 +1,28 @@
 const AnimatedBackground = () => {
   return (
     <div className="absolute inset-0 overflow-hidden pointer-events-none">
-      {/* Gradient Orbs */}
-      <div className="absolute top-0 left-1/4 w-96 h-96 bg-primary/20 rounded-full blur-3xl animate-pulse" />
-      <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-secondary/20 rounded-full blur-3xl animate-pulse delay-1000" />
-      
-      {/* Grid Pattern */}
+      {/* Subtle radial gradient from top */}
       <div 
-        className="absolute inset-0 opacity-[0.02]"
+        className="absolute inset-0"
         style={{
-          backgroundImage: `linear-gradient(hsl(var(--border)) 1px, transparent 1px),
-                           linear-gradient(90deg, hsl(var(--border)) 1px, transparent 1px)`,
-          backgroundSize: '50px 50px'
+          background: 'radial-gradient(ellipse 80% 50% at 50% -20%, hsl(var(--primary) / 0.08), transparent)'
+        }}
+      />
+      
+      {/* Ultra-subtle dot pattern */}
+      <div 
+        className="absolute inset-0 opacity-[0.4]"
+        style={{
+          backgroundImage: `radial-gradient(circle, hsl(var(--muted-foreground) / 0.15) 1px, transparent 1px)`,
+          backgroundSize: '24px 24px'
+        }}
+      />
+      
+      {/* Soft gradient accent at bottom */}
+      <div 
+        className="absolute bottom-0 left-0 right-0 h-[500px]"
+        style={{
+          background: 'linear-gradient(to top, hsl(var(--muted) / 0.5), transparent)'
         }}
       />
     </div>

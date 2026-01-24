@@ -196,113 +196,106 @@ const Index = () => {
       <ExitIntentPopup />
       
       <main className="flex-1">
-        {/* Hero Section */}
-        <section className="relative py-10 md:py-24 overflow-hidden">
+        {/* Hero Section - Premium Minimalist */}
+        <section className="relative py-16 md:py-28 lg:py-32 overflow-hidden">
           <AnimatedBackground />
           
           <div className="container mx-auto px-4 relative z-10">
-            <div className="text-center space-y-4 md:space-y-8 max-w-4xl mx-auto">
-              {/* Social Proof Badge */}
-              <div className="inline-flex items-center gap-1.5 md:gap-2 px-3 md:px-4 py-1.5 md:py-2 rounded-full bg-muted/80 backdrop-blur border border-border/50 text-xs md:text-sm animate-fade-in">
-                <div className="flex -space-x-1.5 md:-space-x-2">
+            <div className="text-center space-y-6 md:space-y-8 max-w-4xl mx-auto">
+              {/* Social Proof Badge - Refined */}
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-muted/60 border border-border/40 text-sm animate-fade-in">
+                <div className="flex -space-x-1.5">
                   {["MR", "JC", "SP", "EW"].map((initials, i) => (
                     <div 
                       key={i} 
-                      className="w-5 h-5 md:w-6 md:h-6 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center text-[8px] md:text-[10px] font-bold text-primary-foreground border-2 border-background"
+                      className="w-6 h-6 rounded-full bg-muted flex items-center justify-center text-[10px] font-medium text-muted-foreground border-2 border-background"
                     >
                       {initials}
                     </div>
                   ))}
                 </div>
                 <span className="text-muted-foreground">
-                  <span className="font-semibold text-foreground">50K+</span> writers
+                  <span className="font-semibold text-foreground">50,000+</span> writers trust us
                 </span>
-                <div className="flex gap-0.5">
+                <div className="flex gap-0.5 ml-1">
                   {[1, 2, 3, 4, 5].map((i) => (
-                    <Star key={i} className="w-2.5 h-2.5 md:w-3 md:h-3 fill-amber-400 text-amber-400" />
+                    <Star key={i} className="w-3 h-3 fill-amber-400 text-amber-400" />
                   ))}
                 </div>
-                <span className="text-muted-foreground hidden sm:inline">4.8/5</span>
               </div>
 
-              <h1 className="text-3xl sm:text-4xl md:text-7xl font-bold leading-tight animate-fade-in" style={{ animationDelay: "100ms" }}>
-                <span className="bg-gradient-to-r from-primary via-secondary to-primary bg-clip-text text-transparent bg-[length:200%_auto] animate-[gradient_8s_linear_infinite] drop-shadow-sm">
-                  Free AI Detector & Humanizer
-                </span>
+              {/* Main Headline - Clean, no gradient */}
+              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.1] animate-fade-in" style={{ animationDelay: "100ms" }}>
+                Free AI Detector
                 <br />
-                <span className="text-xl sm:text-2xl md:text-5xl text-foreground mt-2 block">Detect AI Text & Make Content Human</span>
+                <span className="text-muted-foreground">&</span> Humanizer
               </h1>
               
-              <p className="text-sm sm:text-base md:text-2xl text-muted-foreground max-w-3xl mx-auto animate-fade-in px-2" style={{ animationDelay: "200ms" }}>
-                Free AI detector spots ChatGPT with 98% accuracy. Transform AI text to human writing in 3 seconds. Join 50,000+ users.
+              {/* Subheadline - Refined */}
+              <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed animate-fade-in px-4" style={{ animationDelay: "200ms" }}>
+                Detect AI-generated content with 98% accuracy. Transform robotic text into natural, human writing in seconds.
               </p>
 
-              {/* Enhanced Money-Back Guarantee Badge */}
-              <div className="animate-fade-in" style={{ animationDelay: "300ms" }}>
-                <Link to="/guarantee" className="inline-flex items-center gap-2 md:gap-3 px-4 md:px-6 py-2 md:py-3 bg-gradient-to-r from-primary/20 to-secondary/20 rounded-full border border-primary/30 hover:border-primary/50 transition-all group animate-glow-pulse">
-                  <Shield className="w-5 h-5 md:w-6 md:h-6 text-primary" />
-                  <div className="text-left">
-                    <span className="text-xs md:text-sm font-bold text-foreground block">100% Money-Back Guarantee</span>
-                    <span className="text-[10px] md:text-xs text-muted-foreground hidden sm:block">If flagged by any AI detector, full refund</span>
-                  </div>
-                  <ArrowRight className="w-3 h-3 md:w-4 md:h-4 text-primary group-hover:translate-x-1 transition-transform" />
+              {/* Trust Indicators - Minimal inline */}
+              <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-sm text-muted-foreground pt-2 animate-fade-in" style={{ animationDelay: "300ms" }}>
+                <div className="flex items-center gap-1.5">
+                  <CheckCircle className="w-4 h-4 text-primary" />
+                  <span>Free forever</span>
+                </div>
+                <div className="flex items-center gap-1.5">
+                  <CheckCircle className="w-4 h-4 text-primary" />
+                  <span>No credit card</span>
+                </div>
+                <div className="flex items-center gap-1.5">
+                  <CheckCircle className="w-4 h-4 text-primary" />
+                  <span>Instant results</span>
+                </div>
+              </div>
+              
+              {/* CTA Buttons - Premium styling */}
+              <div className="flex flex-col sm:flex-row gap-3 justify-center pt-4 animate-fade-in" style={{ animationDelay: "400ms" }}>
+                <a href="https://app.aifreetextpro.com/">
+                  <Button 
+                    size="xl" 
+                    className="w-full sm:w-auto shadow-md group"
+                  >
+                    <Pen className="mr-2 h-5 w-5" />
+                    Start Writing Free
+                    <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-0.5 transition-transform" />
+                  </Button>
+                </a>
+                <a href="https://app.aifreetextpro.com/detector">
+                  <Button 
+                    size="xl"
+                    variant="outline"
+                    className="w-full sm:w-auto"
+                  >
+                    <BookOpen className="mr-2 h-5 w-5" />
+                    See Live Demo
+                  </Button>
+                </a>
+              </div>
+
+              {/* Money-Back Guarantee - Subtle */}
+              <div className="animate-fade-in pt-2" style={{ animationDelay: "500ms" }}>
+                <Link to="/guarantee" className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors">
+                  <Shield className="w-4 h-4 text-primary" />
+                  <span>100% Money-Back Guarantee</span>
+                  <ArrowRight className="w-3 h-3" />
                 </Link>
               </div>
 
-              <div className="grid grid-cols-2 md:flex md:flex-wrap items-center justify-center gap-3 md:gap-6 text-xs md:text-sm text-muted-foreground pt-2 animate-fade-in" style={{ animationDelay: "400ms" }}>
-                <div className="flex items-center gap-1.5 md:gap-2 justify-center">
-                  <CheckCircle className="w-4 h-4 md:w-5 md:h-5 text-primary flex-shrink-0" />
-                  <span className="font-medium">Free Forever</span>
-                </div>
-                <div className="flex items-center gap-1.5 md:gap-2 justify-center">
-                  <CheckCircle className="w-4 h-4 md:w-5 md:h-5 text-primary flex-shrink-0" />
-                  <span className="font-medium">No Credit Card</span>
-                </div>
-                <div className="flex items-center gap-1.5 md:gap-2 justify-center">
-                  <CheckCircle className="w-4 h-4 md:w-5 md:h-5 text-primary flex-shrink-0" />
-                  <span className="font-medium">98% Accuracy</span>
-                </div>
-                <div className="flex items-center gap-1.5 md:gap-2 justify-center">
-                  <CheckCircle className="w-4 h-4 md:w-5 md:h-5 text-primary flex-shrink-0" />
-                  <span className="font-medium">Instant Results</span>
-                </div>
-              </div>
-              
-              <div className="flex flex-col gap-3 md:flex-row md:gap-4 justify-center pt-2 md:pt-4 animate-fade-in" style={{ animationDelay: "500ms" }}>
-                <a href="https://app.aifreetextpro.com/" className="w-full sm:w-auto">
-                  <Button 
-                    size="lg" 
-                    className="text-sm sm:text-base md:text-lg px-6 sm:px-10 py-5 sm:py-7 bg-gradient-to-r from-primary via-primary/90 to-secondary hover:opacity-90 shadow-xl hover:shadow-2xl shadow-primary/30 group w-full transition-all font-bold"
-                  >
-                    <Pen className="mr-2 h-4 w-4 md:h-5 md:w-5" />
-                    Try Free — Instant Access
-                    <ArrowRight className="ml-2 h-4 w-4 md:h-5 md:w-5 group-hover:translate-x-1 transition-transform" />
-                  </Button>
-                </a>
-                <a href="https://app.aifreetextpro.com/detector" className="w-full sm:w-auto">
-                  <Button 
-                    size="lg"
-                    variant="outline"
-                    className="text-sm sm:text-base md:text-lg px-6 sm:px-10 py-5 sm:py-7 group w-full transition-all font-bold border-2 hover:bg-muted/50"
-                  >
-                    <BookOpen className="mr-2 h-4 w-4 md:h-5 md:w-5" />
-                    See Live Demo
-                    <ArrowRight className="ml-2 h-4 w-4 md:h-5 md:w-5 group-hover:translate-x-1 transition-transform" />
-                  </Button>
-                </a>
-              </div>
-
               {/* Product Mockup Visual */}
-              <div className="mt-10 md:mt-16 animate-fade-in" style={{ animationDelay: "600ms" }}>
+              <div className="mt-12 md:mt-20 animate-fade-in" style={{ animationDelay: "600ms" }}>
                 <ProductMockup />
               </div>
 
               {/* Hero Illustration */}
-              <div className="mt-8 md:mt-12 animate-fade-in" style={{ animationDelay: "700ms" }}>
+              <div className="mt-10 md:mt-16 animate-fade-in" style={{ animationDelay: "700ms" }}>
                 <img 
                   src={heroIllustration} 
                   alt="AI text analysis and detection visualization showing documents being scanned" 
-                  className="w-full max-w-4xl mx-auto rounded-2xl shadow-2xl shadow-primary/20 border border-border/50"
+                  className="w-full max-w-4xl mx-auto rounded-2xl shadow-xl border border-border/40"
                   fetchPriority="high"
                   decoding="async"
                 />
@@ -315,11 +308,12 @@ const Index = () => {
         <TrustBadges />
 
         {/* Problem-Solution Section */}
-        <section className="py-8 md:py-20 bg-gradient-to-b from-background to-card/20">
+        <section className="py-16 md:py-24">
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
-              <div className="text-center mb-8 md:mb-12">
-                <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold mb-3 md:mb-6">Why AI Free Text Pro?</h2>
+              <div className="text-center mb-12 md:mb-16">
+                <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Why AI Free Text Pro?</h2>
+                <p className="text-muted-foreground text-base md:text-lg max-w-2xl mx-auto">The all-in-one solution for detecting and humanizing AI content</p>
               </div>
               
               <div className="grid md:grid-cols-2 gap-6 md:gap-12 items-start">
@@ -397,9 +391,9 @@ const Index = () => {
         <InteractiveDemo />
 
         {/* How It Works */}
-        <section className="py-12 md:py-28 bg-card/20">
+        <section className="py-16 md:py-24 bg-muted/30">
           <div className="container mx-auto px-4">
-            <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold text-center mb-10 md:mb-20">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-12 md:mb-16">
               How AI Free Text Pro Works
             </h2>
             
@@ -447,18 +441,18 @@ const Index = () => {
         </section>
 
         {/* Core Features */}
-        <section className="py-20 md:py-28 bg-card/20">
+        <section className="py-16 md:py-24">
           <div className="container mx-auto px-4">
-            <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold text-center mb-6">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-4">
               Powerful Features
             </h2>
-            <p className="text-center text-muted-foreground text-lg md:text-xl mb-20 max-w-2xl mx-auto">
-              Everything you need to detect and humanize AI content, all in one platform
+            <p className="text-center text-muted-foreground text-base md:text-lg mb-12 md:mb-16 max-w-2xl mx-auto">
+              Everything you need to detect and humanize AI content
             </p>
             
-            <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto mb-16">
+            <div className="grid md:grid-cols-2 gap-6 md:gap-8 max-w-6xl mx-auto mb-12">
               {/* AI Detector Card */}
-              <Card className="p-8 space-y-6 bg-gradient-to-br from-card to-card/80 backdrop-blur border-border/50 hover:shadow-2xl hover:shadow-primary/20 transition-all duration-300 hover:-translate-y-1 overflow-hidden">
+              <Card className="p-6 md:p-8 space-y-5 border-border/50 hover:shadow-lg hover:border-border transition-all duration-200 overflow-hidden">
                 <div className="space-y-4">
                   {/* Feature Image */}
                   <div className="relative -mx-8 -mt-8 mb-6">
@@ -503,15 +497,15 @@ const Index = () => {
                 </div>
 
                 <a href="https://app.aifreetextpro.com/detector" className="block">
-                  <Button className="w-full bg-gradient-to-r from-primary to-primary/80 hover:opacity-90 transition-all group">
+                  <Button className="w-full group">
                     Try Detector Free
-                    <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                    <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-0.5 transition-transform" />
                   </Button>
                 </a>
               </Card>
 
               {/* AI Humanizer Card */}
-              <Card className="p-8 space-y-6 bg-gradient-to-br from-card to-card/80 backdrop-blur border-border/50 hover:shadow-2xl hover:shadow-secondary/20 transition-all duration-300 hover:-translate-y-1 overflow-hidden">
+              <Card className="p-6 md:p-8 space-y-5 border-border/50 hover:shadow-lg hover:border-border transition-all duration-200 overflow-hidden">
                 <div className="space-y-4">
                   {/* Feature Image */}
                   <div className="relative -mx-8 -mt-8 mb-6">
@@ -556,17 +550,17 @@ const Index = () => {
                 </div>
 
                 <a href="https://app.aifreetextpro.com/humanizer" className="block">
-                  <Button className="w-full bg-gradient-to-r from-secondary to-secondary/80 hover:opacity-90 transition-all group">
+                  <Button variant="secondary" className="w-full group">
                     Try Humanizer Free
-                    <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                    <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-0.5 transition-transform" />
                   </Button>
                 </a>
               </Card>
             </div>
 
             {/* Additional Features Grid */}
-            <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
-              <Card className="p-6 bg-card/50 backdrop-blur border-border/50">
+            <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 max-w-6xl mx-auto">
+              <Card className="p-5 md:p-6 border-border/50 hover:border-border transition-colors">
                 <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
                   <TrendingUp className="w-6 h-6 text-primary" />
                 </div>
@@ -574,16 +568,16 @@ const Index = () => {
                 <p className="text-sm text-muted-foreground">Track usage, monitor trends, and view detailed history with comprehensive dashboard.</p>
               </Card>
 
-              <Card className="p-6 bg-card/50 backdrop-blur border-border/50">
-                <div className="w-12 h-12 rounded-xl bg-secondary/10 flex items-center justify-center mb-4">
+              <Card className="p-5 md:p-6 border-border/50 hover:border-border transition-colors">
+                <div className="w-10 h-10 rounded-lg bg-secondary/10 flex items-center justify-center mb-3">
                   <FileText className="w-6 h-6 text-secondary" />
                 </div>
                 <h4 className="font-semibold mb-2">Multi-Format Support</h4>
                 <p className="text-sm text-muted-foreground">Upload PDF, DOCX, TXT files up to 10MB or paste text directly.</p>
               </Card>
 
-              <Card className="p-6 bg-card/50 backdrop-blur border-border/50">
-                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
+              <Card className="p-5 md:p-6 border-border/50 hover:border-border transition-colors">
+                <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center mb-3">
                   <Lock className="w-6 h-6 text-primary" />
                 </div>
                 <h4 className="font-semibold mb-2">Privacy First</h4>
@@ -724,18 +718,18 @@ const Index = () => {
         <AnimatedStats />
 
         {/* Pricing Preview Section */}
-        <section className="py-20 md:py-28 bg-gradient-to-b from-background via-card/10 to-background">
+        <section className="py-16 md:py-24">
           <div className="container mx-auto px-4">
-            <div className="text-center mb-16">
-              <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold mb-6">Choose Your Plan</h2>
-              <p className="text-muted-foreground text-lg md:text-xl max-w-3xl mx-auto">
-                Select the perfect plan for your needs. All plans include our core AI detection and humanization features.
+            <div className="text-center mb-12 md:mb-16">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Choose Your Plan</h2>
+              <p className="text-muted-foreground text-base md:text-lg max-w-2xl mx-auto">
+                Select the perfect plan for your needs
               </p>
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4 md:gap-6 max-w-7xl mx-auto overflow-hidden">
               {/* Free Plan */}
-              <Card className="relative border-2 hover:border-primary/50 transition-all duration-300 flex flex-col">
+              <Card className="relative hover:border-border hover:shadow-md transition-all duration-200 flex flex-col">
                 <div className="p-6 flex-1 flex flex-col">
                   <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
                     <Zap className="h-6 w-6 text-primary" />
@@ -773,7 +767,7 @@ const Index = () => {
               </Card>
 
               {/* Starter Plan */}
-              <Card className="relative border-2 hover:border-primary/50 transition-all duration-300 flex flex-col">
+              <Card className="relative hover:border-border hover:shadow-md transition-all duration-200 flex flex-col">
                 <div className="p-6 flex-1 flex flex-col">
                   <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
                     <Zap className="h-6 w-6 text-primary" />
@@ -808,7 +802,7 @@ const Index = () => {
                   </ul>
                   
                   <a href="https://app.aifreetextpro.com/" className="block mt-6">
-                    <Button className="w-full bg-gradient-to-r from-primary to-primary/80">
+                    <Button className="w-full">
                       Subscribe Now
                     </Button>
                   </a>
@@ -816,7 +810,7 @@ const Index = () => {
               </Card>
 
               {/* Lite Plan */}
-              <Card className="relative border-2 hover:border-primary/50 transition-all duration-300 flex flex-col">
+              <Card className="relative hover:border-border hover:shadow-md transition-all duration-200 flex flex-col">
                 <div className="p-6 flex-1 flex flex-col">
                   <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
                     <Zap className="h-6 w-6 text-primary" />
@@ -851,7 +845,7 @@ const Index = () => {
                   </ul>
                   
                   <a href="https://app.aifreetextpro.com/" className="block mt-6">
-                    <Button className="w-full bg-gradient-to-r from-primary to-primary/80">
+                    <Button className="w-full">
                       Subscribe Now
                     </Button>
                   </a>
@@ -859,9 +853,9 @@ const Index = () => {
               </Card>
 
               {/* Pro Writer Plan - Most Popular */}
-              <Card className="relative border-2 border-primary shadow-xl md:scale-105 flex flex-col sm:col-span-2 lg:col-span-1">
-                <div className="absolute -top-4 left-1/2 -translate-x-1/2">
-                  <span className="bg-gradient-to-r from-primary to-secondary text-primary-foreground px-4 py-1 rounded-full text-sm font-semibold whitespace-nowrap">
+              <Card className="relative border-primary shadow-lg md:scale-[1.02] flex flex-col sm:col-span-2 lg:col-span-1">
+                <div className="absolute -top-3 left-1/2 -translate-x-1/2">
+                  <span className="bg-foreground text-background px-4 py-1.5 rounded-full text-xs font-semibold whitespace-nowrap">
                     Most Popular
                   </span>
                 </div>
@@ -903,7 +897,7 @@ const Index = () => {
                   </ul>
                   
                   <a href="https://app.aifreetextpro.com/" className="block mt-6">
-                    <Button className="w-full bg-gradient-to-r from-primary to-secondary">
+                    <Button variant="premium" className="w-full">
                       Subscribe Now
                     </Button>
                   </a>
@@ -911,7 +905,7 @@ const Index = () => {
               </Card>
 
               {/* Unlimited Creator Plan */}
-              <Card className="relative border-2 hover:border-primary/50 transition-all duration-300 flex flex-col">
+              <Card className="relative hover:border-border hover:shadow-md transition-all duration-200 flex flex-col">
                 <div className="p-6 flex-1 flex flex-col">
                   <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
                     <Crown className="h-6 w-6 text-primary" />
@@ -977,17 +971,17 @@ const Index = () => {
         <ComparisonTable />
 
         {/* Use Cases Section */}
-        <section className="py-20 md:py-28 bg-card/20">
+        <section className="py-16 md:py-24 bg-muted/30">
           <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto text-center space-y-8 mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold">Designed for Everyone</h2>
-              <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+            <div className="max-w-4xl mx-auto text-center space-y-4 mb-12 md:mb-16">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold">Designed for Everyone</h2>
+              <p className="text-muted-foreground text-base md:text-lg max-w-2xl mx-auto">
                 From students perfecting essays to professionals crafting reports, AI Free Text Pro helps you write better, faster.
               </p>
             </div>
             
-            <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-              <Card className="p-0 bg-gradient-to-br from-card to-card/80 backdrop-blur border-border/50 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden">
+            <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+              <Card className="p-0 border-border/50 hover:shadow-lg hover:border-border transition-all duration-200 overflow-hidden">
                 <img 
                   src={studentWriting} 
                   alt="Happy student using laptop for academic writing" 

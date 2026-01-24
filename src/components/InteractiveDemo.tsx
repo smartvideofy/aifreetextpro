@@ -51,7 +51,7 @@ const InteractiveDemo = () => {
             <p className="text-muted-foreground text-base md:text-lg">No sign up required, paste your text and see results instantly</p>
           </div>
           
-          <Card className="p-6 md:p-8 shadow-lg border-border/50">
+          <Card className="p-6 md:p-8 shadow-xl border-primary/20">
             <div className="space-y-5">
               <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
                 <label className="text-sm font-medium text-foreground">Your Text</label>
@@ -74,7 +74,7 @@ const InteractiveDemo = () => {
                 placeholder="Paste your AI-generated text here..."
                 value={text}
                 onChange={(e) => { setText(e.target.value); setResult(null); }}
-                className="min-h-[120px] md:min-h-[160px] resize-none bg-muted/30 border-border/50 focus:border-primary/50 focus:bg-background transition-all text-sm"
+                className="min-h-[120px] md:min-h-[160px] resize-none text-sm"
                 maxLength={5000}
               />
               

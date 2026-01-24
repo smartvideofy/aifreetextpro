@@ -6,6 +6,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import AnimatedBackground from "@/components/AnimatedBackground";
 import AboutSection from "@/components/AboutSection";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 import ComparisonTable from "@/components/ComparisonTable";
 import EnhancedFAQ from "@/components/EnhancedFAQ";
 import { Link } from "react-router-dom";
@@ -33,6 +34,7 @@ const Index = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <HowToSchema />
+      <Breadcrumbs items={[{ label: "Home" }]} />
       <Helmet>
         <title>Free AI Detector & Humanizer - Bypass GPTZero, Turnitin [Jan 2026]</title>
         <meta name="description" content="Free AI detector spots ChatGPT in 3 seconds. Humanize AI text to bypass Turnitin, GPTZero, Originality.AI. 98% accuracy. 50,000+ users. No credit card." />

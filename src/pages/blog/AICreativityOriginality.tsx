@@ -177,7 +177,7 @@ export default function AICreativityOriginality() {
               <section>
                 <h2 className="text-3xl font-bold mb-4">Maintaining Authenticity</h2>
                 <p>
-                  As we navigate this new creative landscape, tools like <Link to="/" className="text-primary hover:underline">AI Free Text Pro</Link> help ensure that AI-assisted work still sounds genuinely human. The goal isn't to hide AI use—it's to ensure the final product reflects human creativity and voice.
+                  As we navigate this new creative landscape, tools like <Link to="/" className="text-primary hover:underline">AI Free Text Pro</Link> help ensure that AI-assisted work still sounds genuinely human. The goal isn't to hide AI use. It's to ensure the final product reflects human creativity and voice.
                 </p>
               </section>
 

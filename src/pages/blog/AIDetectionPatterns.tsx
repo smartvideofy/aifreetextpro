@@ -245,13 +245,13 @@ const AIDetectionPatterns = () => {
 
                 <h3>Common AI Word Choices</h3>
                 <ul>
-                  <li><strong>"Delve"</strong> — appears 10x more often in AI text than human writing</li>
-                  <li><strong>"Crucial"</strong> — overused as a generic intensifier</li>
-                  <li><strong>"Comprehensive"</strong> — AI loves claiming thoroughness</li>
-                  <li><strong>"Leverage"</strong> — corporate-speak AI gravitates toward</li>
-                  <li><strong>"It's important to note"</strong> — a classic AI transition phrase</li>
-                  <li><strong>"In the realm of"</strong> — unnecessarily formal</li>
-                  <li><strong>"Game-changer"</strong> — overused hyperbole</li>
+                  <li><strong>"Delve"</strong>: appears 10x more often in AI text than human writing</li>
+                  <li><strong>"Crucial"</strong>: overused as a generic intensifier</li>
+                  <li><strong>"Comprehensive"</strong>: AI loves claiming thoroughness</li>
+                  <li><strong>"Leverage"</strong>: corporate-speak AI gravitates toward</li>
+                  <li><strong>"It's important to note"</strong>: a classic AI transition phrase</li>
+                  <li><strong>"In the realm of"</strong>: unnecessarily formal</li>
+                  <li><strong>"Game-changer"</strong>: overused hyperbole</li>
                 </ul>
 
                 <h3>What Humans Actually Say</h3>

@@ -203,7 +203,7 @@ const HumanizeAIText = () => {
                 </h1>
 
                 <p className="text-xl text-muted-foreground">
-                  Transform robotic AI content into authentic, engaging writing that sounds like you — not a machine.
+                  Transform robotic AI content into authentic, engaging writing that sounds like you, not a machine.
                 </p>
               </header>
 
@@ -381,7 +381,7 @@ const HumanizeAIText = () => {
 
                 <h2>Conclusion: AI + Your Voice = Magic</h2>
                 <p>
-                  <a href="/">AI writing tools</a> aren't meant to replace you — they're meant to amplify your voice and save you time. Use them for the heavy lifting (structure, research, drafts), then add the magic ingredient: your unique perspective and personality.
+                  <a href="/">AI writing tools</a> aren't meant to replace you. They're meant to amplify your voice and save you time. Use them for the heavy lifting (structure, research, drafts), then add the magic ingredient: your unique perspective and personality.
                 </p>
                 <p>
                   The writers who win in 2025 aren't those who reject AI or use it blindly. They're the ones who blend AI efficiency with human authenticity. Whether you're a <Link to="/blog/ai-writing-students-avoid-plagiarism" className="text-primary hover:text-primary/80">student</Link>, content creator, or professional writer, mastering the art of humanizing AI text is your competitive advantage.

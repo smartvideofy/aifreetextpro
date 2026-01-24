@@ -138,7 +138,7 @@ const AIContentSEO = () => {
 
               <div className="prose prose-lg max-w-none">
                 <p>
-                  SEO agencies are in a bind. Clients demand more content. Budgets don't increase. AI can generate thousands of words per hour — but raw AI content reads like... well, AI content. It's detectable, often generic, and increasingly clients are running submissions through AI checkers.
+                  SEO agencies are in a bind. Clients demand more content. Budgets don't increase. AI can generate thousands of words per hour, but raw AI content reads like... well, AI content. It's detectable, often generic, and increasingly clients are running submissions through AI checkers.
                 </p>
                 
                 <p>
@@ -156,7 +156,7 @@ const AIContentSEO = () => {
                     "Our focus on the quality of content, rather than how content is produced, is a useful guide... Using AI to generate content with the primary purpose of manipulating ranking in search results is a violation of our spam policies. But not all uses of AI-generated content are spam."
                   </blockquote>
                   <p className="text-sm text-muted-foreground mb-0">
-                    — Google Search Central, February 2023 (updated 2024)
+                    Google Search Central, February 2023 (updated 2024)
                   </p>
                 </div>
 

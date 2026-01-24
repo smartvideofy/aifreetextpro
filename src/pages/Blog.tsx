@@ -207,7 +207,7 @@ const blogPosts = [
   {
     slug: "signal-vs-noise-human-text",
     title: "Signal vs. Noise: What Makes Text Human in 2026",
-    excerpt: "Current patterns detectors care about — with concrete examples of what distinguishes human writing from AI output.",
+    excerpt: "Current patterns detectors care about, with concrete examples of what distinguishes human writing from AI output.",
     date: "2026-01-15",
     readTime: "14 min read",
     category: "Technical"
@@ -335,7 +335,7 @@ const blogPosts = [
   {
     slug: "zerogpt-vs-ai-free-text-pro-2025",
     title: "ZeroGPT vs AI Free Text Pro: Which Tool Is More Accurate? (2026)",
-    excerpt: "We test ZeroGPT and AI Free Text Pro on different writing samples — see which tool spots AI content more accurately.",
+    excerpt: "We test ZeroGPT and AI Free Text Pro on different writing samples to see which tool spots AI content more accurately.",
     date: "2025-12-15",
     readTime: "8 min read",
     category: "Comparison"
@@ -343,7 +343,7 @@ const blogPosts = [
   {
     slug: "top-10-ai-humanizer-tools-2025",
     title: "Top 10 AI Humanizer Tools for 2026 (Free & Paid)",
-    excerpt: "A curated list of the top AI humanizers this year — features, pricing, and accuracy ratings included.",
+    excerpt: "A curated list of the top AI humanizers this year, with features, pricing, and accuracy ratings included.",
     date: "2025-12-12",
     readTime: "12 min read",
     category: "Comparison"
@@ -367,7 +367,7 @@ const blogPosts = [
   {
     slug: "ai-tools-for-writers-2025",
     title: "AI Tools for Writers: Boost Creativity and Productivity in 2026",
-    excerpt: "The best AI writing tools to plan, edit, and refine your stories and essays — including AI Free Text Pro for authenticity checks.",
+    excerpt: "The best AI writing tools to plan, edit, and refine your stories and essays, including AI Free Text Pro for authenticity checks.",
     date: "2025-12-05",
     readTime: "11 min read",
     category: "Tools"
@@ -375,7 +375,7 @@ const blogPosts = [
   {
     slug: "can-ai-writing-be-original",
     title: "Can AI Writing Be Truly Original? Exploring Creativity in the Age of GPT",
-    excerpt: "Explore how AI can assist rather than replace creativity — what 'original' means in the era of ChatGPT and humanizers.",
+    excerpt: "Explore how AI can assist rather than replace creativity, and what 'original' means in the era of ChatGPT and humanizers.",
     date: "2025-12-02",
     readTime: "10 min read",
     category: "Educational"
@@ -383,7 +383,7 @@ const blogPosts = [
   {
     slug: "ai-detection-in-publishing-2025",
     title: "AI Detection in Publishing: How Editors and Writers Can Adapt (2026)",
-    excerpt: "How editors and publishers are adapting to AI-generated content — and why AI Free Text Pro is part of the solution.",
+    excerpt: "How editors and publishers are adapting to AI-generated content, and why AI Free Text Pro is part of the solution.",
     date: "2025-11-28",
     readTime: "12 min read",
     category: "Industry"
@@ -687,11 +687,11 @@ const Blog = () => {
             <Card className="p-8 bg-gradient-to-br from-primary/5 via-secondary/5 to-primary/5 border-primary/20">
               <h3 className="text-2xl font-bold mb-3">Ready to Make Your AI Content Undetectable?</h3>
               <p className="text-muted-foreground mb-6">
-                Try AI Free Text Pro free — 1,000 words/month with no credit card required.
+                Try AI Free Text Pro free, 1,000 words/month with no credit card required.
               </p>
               <a href="https://app.aifreetextpro.com/">
                 <Button size="lg" className="bg-gradient-to-r from-primary to-secondary">
-                  Start Free — No Credit Card
+                  Start Free, No Credit Card
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
               </a>

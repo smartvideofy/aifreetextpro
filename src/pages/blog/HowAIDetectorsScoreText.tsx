@@ -176,7 +176,7 @@ const HowAIDetectorsScoreText = () => {
                   <div className="border-l-4 border-primary pl-4">
                     <p className="font-medium text-foreground mb-1">Higher Perplexity (Human-like):</p>
                     <p className="text-muted-foreground italic">
-                      "Education matters—maybe more than we'd like to admit when scrolling past another think piece."
+                      "Education matters, maybe more than we'd like to admit when scrolling past another think piece."
                     </p>
                     <p className="text-xs text-primary mt-1">Unexpected transitions increase perplexity</p>
                   </div>

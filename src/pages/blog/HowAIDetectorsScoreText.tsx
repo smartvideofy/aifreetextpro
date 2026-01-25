@@ -199,7 +199,7 @@ const HowAIDetectorsScoreText = () => {
                 <CardContent className="pt-6">
                   <h3 className="font-semibold text-foreground mb-2">What It Measures</h3>
                   <p className="text-muted-foreground">
-                    Burstiness tracks the variance in sentence structure throughout a text. Humans write in "bursts"—
+                    Burstiness tracks the variance in sentence structure throughout a text. Humans write in "bursts",
                     mixing long analytical sentences with punchy fragments. AI tends toward uniform complexity.
                   </p>
                 </CardContent>
@@ -267,7 +267,7 @@ const HowAIDetectorsScoreText = () => {
                 <div className="bg-muted/50 rounded-lg p-4">
                   <h4 className="font-semibold text-foreground mb-2">Vocabulary Richness</h4>
                   <p className="text-sm text-muted-foreground">
-                    Type-token ratio—how many unique words vs. total words. AI often recycles vocabulary more than humans.
+                    Type-token ratio: how many unique words vs. total words. AI often recycles vocabulary more than humans.
                   </p>
                 </div>
                 <div className="bg-muted/50 rounded-lg p-4">

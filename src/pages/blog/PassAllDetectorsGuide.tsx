@@ -266,11 +266,11 @@ const PassAllDetectorsGuide = () => {
                 <h3>6. Other Detectors</h3>
                 <p>AI Free Text Pro also bypasses:</p>
                 <ul>
-                  <li><strong>Winston AI</strong> — 97% success rate</li>
-                  <li><strong>Content at Scale</strong> — 96% success rate</li>
-                  <li><strong>Writer.com</strong> — 98% success rate</li>
-                  <li><strong>Sapling</strong> — 97% success rate</li>
-                  <li><strong>Crossplag</strong> — 96% success rate</li>
+                  <li><strong>Winston AI:</strong> 97% success rate</li>
+                  <li><strong>Content at Scale:</strong> 96% success rate</li>
+                  <li><strong>Writer.com:</strong> 98% success rate</li>
+                  <li><strong>Sapling:</strong> 97% success rate</li>
+                  <li><strong>Crossplag:</strong> 96% success rate</li>
                 </ul>
 
                 <h2>Why One Tool Works Against All Detectors</h2>
@@ -424,7 +424,7 @@ const PassAllDetectorsGuide = () => {
                 </p>
                 <a href="https://app.aifreetextpro.com/" target="_blank" rel="noopener noreferrer">
                   <Button size="lg" className="text-lg px-8">
-                    Try Free — 1,000 Words
+                    Try Free, 1,000 Words
                   </Button>
                 </a>
               </div>

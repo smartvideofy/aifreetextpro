@@ -177,7 +177,7 @@ const AIContentSEO = () => {
                 <div className="space-y-4 my-6">
                   <div className="p-4 border-l-4 border-destructive/50 bg-destructive/5 rounded-r-lg">
                     <h4 className="font-semibold">1. Generic and Undifferentiated</h4>
-                    <p className="text-muted-foreground mb-0">AI produces the "average" of its training data. Your content sounds like everyone else's — no unique angle, no original insights.</p>
+                    <p className="text-muted-foreground mb-0">AI produces the "average" of its training data. Your content sounds like everyone else's, no unique angle, no original insights.</p>
                   </div>
                   
                   <div className="p-4 border-l-4 border-destructive/50 bg-destructive/5 rounded-r-lg">

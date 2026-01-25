@@ -144,13 +144,13 @@ const AIDetectionPatterns = () => {
                 </h1>
 
                 <p className="text-xl text-muted-foreground">
-                  A deep dive into the science behind AI detection — and how understanding these patterns helps you write undetectably.
+                  A deep dive into the science behind AI detection, and how understanding these patterns helps you write undetectably.
                 </p>
               </header>
 
               <div className="prose prose-lg max-w-none">
                 <p>
-                  AI detectors don't use magic. They use mathematics. Every detection tool analyzes specific linguistic patterns that statistically differentiate AI-generated text from human writing. Understanding these patterns isn't just academically interesting — it's the key to creating content that reads authentically human.
+                  AI detectors don't use magic. They use mathematics. Every detection tool analyzes specific linguistic patterns that statistically differentiate AI-generated text from human writing. Understanding these patterns isn't just academically interesting, it's the key to creating content that reads authentically human.
                 </p>
                 
                 <p>
@@ -219,7 +219,7 @@ const AIDetectionPatterns = () => {
                 <h3>Human Writing Example (High Burstiness)</h3>
                 <div className="bg-muted p-4 rounded-lg my-4">
                   <p className="italic mb-0">
-                    "Want to know the secret to good communication at work? It's not what you think. Most people focus on speaking clearly — but listening? That's where the magic happens. I've seen entire projects fail because nobody stopped to actually hear what the other person was saying. True story. It took us three months to realize we'd been building the wrong feature because someone nodded along in a meeting instead of asking a clarifying question."
+                    "Want to know the secret to good communication at work? It's not what you think. Most people focus on speaking clearly, but listening? That's where the magic happens. I've seen entire projects fail because nobody stopped to actually hear what the other person was saying. True story. It took us three months to realize we'd been building the wrong feature because someone nodded along in a meeting instead of asking a clarifying question."
                   </p>
                 </div>
                 <p>
@@ -228,7 +228,7 @@ const AIDetectionPatterns = () => {
 
                 <div className="bg-muted p-4 rounded-lg my-6">
                   <p className="font-semibold mb-2">How AI Free Text Pro Fixes This:</p>
-                  <p className="mb-0">Our humanizer restructures content to match natural human burstiness patterns — breaking up monotonous paragraphs, adding variation, and creating the rhythmic flow that human readers expect.</p>
+                  <p className="mb-0">Our humanizer restructures content to match natural human burstiness patterns, breaking up monotonous paragraphs, adding variation, and creating the rhythmic flow that human readers expect.</p>
                 </div>
 
                 <h2>Pattern #3: Vocabulary Distribution</h2>

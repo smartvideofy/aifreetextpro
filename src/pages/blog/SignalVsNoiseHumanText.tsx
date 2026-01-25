@@ -138,7 +138,7 @@ const SignalVsNoiseHumanText = () => {
             <section className="mb-12">
               <h2 className="text-2xl font-bold text-foreground mb-4">The Detection Landscape Has Changed</h2>
               <p className="text-muted-foreground mb-4">
-                In early AI detection, algorithms focused primarily on perplexity—how predictable word choices were. 
+                In early AI detection, algorithms focused primarily on perplexity, how predictable word choices were. 
                 But as AI models improved, so did detection methods. Today's systems analyze dozens of overlapping signals.
               </p>
               <p className="text-muted-foreground mb-4">
@@ -222,7 +222,7 @@ const SignalVsNoiseHumanText = () => {
                   <div className="border-l-4 border-primary pl-4">
                     <p className="font-medium text-foreground mb-1">Human Pattern:</p>
                     <p className="text-muted-foreground italic">
-                      "Data visualization matters—though, honestly, most pie charts I see make things worse, 
+                      "Data visualization matters, though honestly most pie charts I see make things worse, 
                       not better. (Side rant: 3D pie charts should be illegal.) The point is, a good chart 
                       lets people actually understand what's happening."
                     </p>
@@ -301,7 +301,7 @@ const SignalVsNoiseHumanText = () => {
 
               <p className="text-muted-foreground">
                 That short sentence at the end of a complex paragraph? It's doing rhetorical work. 
-                The variety in human text reflects how we actually think—sometimes elaborating, sometimes summarizing, 
+                The variety in human text reflects how we actually think, sometimes elaborating, sometimes summarizing, 
                 sometimes just landing a point.
               </p>
             </section>
@@ -337,7 +337,7 @@ const SignalVsNoiseHumanText = () => {
                     <p className="font-medium text-foreground mb-1">Human Pattern:</p>
                     <p className="text-muted-foreground italic">
                       "When Slack added the 'remind me later' feature in 2019, it came directly from user requests 
-                      on Twitter. That single change reduced our team's message backlog anxiety by about 40%—at least 
+                      on Twitter. That single change reduced our team's message backlog anxiety by about 40%, at least 
                       that's what our internal survey showed."
                     </p>
                     <p className="text-xs text-primary mt-1">Specific: product, year, source, personal data</p>

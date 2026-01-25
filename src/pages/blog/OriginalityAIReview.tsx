@@ -341,7 +341,7 @@ const OriginalityAIReview = () => {
                     <div className="flex-shrink-0 w-8 h-8 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-bold">1</div>
                     <div>
                       <h4 className="font-semibold">Generate your content with any AI</h4>
-                      <p className="text-muted-foreground mb-0">ChatGPT, Claude, Gemini — it doesn't matter. Focus on getting the structure and information right.</p>
+                      <p className="text-muted-foreground mb-0">ChatGPT, Claude, Gemini, it doesn't matter. Focus on getting the structure and information right.</p>
                     </div>
                   </div>
                   

@@ -146,7 +146,7 @@ const About = () => {
                   </div>
                   <h3 className="text-2xl font-bold mb-4">Integrity</h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    Transparency builds trust. We never manipulate your data, compromise on privacy, or sacrifice ethical AI use. Your content belongs to you—always.
+                    Transparency builds trust. We never manipulate your data, compromise on privacy, or sacrifice ethical AI use. Your content belongs to you, always.
                   </p>
                 </Card>
                 

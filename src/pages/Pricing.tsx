@@ -17,7 +17,7 @@ const Pricing = () => {
       icon: Zap,
       iconColor: "text-primary",
       features: [
-        "500 words per month",
+        "1,000 words per month",
         "Basic AI detection",
         "Basic humanization",
         "Email support"
@@ -108,7 +108,7 @@ const Pricing = () => {
     <div className="min-h-screen flex flex-col">
       <Helmet>
         <title>Pricing Plans - AI Free Text Pro | Free AI Detector & Humanizer</title>
-        <meta name="description" content="Choose the perfect plan for your needs. Start free with 500 words/month. Plans from $4.99 to $59.99/month. Pro Writer at $24.99/mo with 50,000 words. Unlimited Creator at $59.99/mo." />
+        <meta name="description" content="Choose the perfect plan for your needs. Start free with 1,000 words/month. Plans from $4.99 to $59.99/month. Pro Writer at $24.99/mo with 50,000 words. Unlimited Creator at $59.99/mo." />
         <meta name="keywords" content="ai detector pricing, ai humanizer pricing, free ai detector, ai text humanizer cost, chatgpt detector price" />
         <link rel="canonical" href="https://aifreetextpro.com/pricing" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
@@ -277,7 +277,7 @@ const Pricing = () => {
                   <tbody className="divide-y divide-border">
                     <tr>
                       <td className="py-4 px-4">Monthly word limit</td>
-                      <td className="text-center py-4 px-4">500</td>
+                      <td className="text-center py-4 px-4">1,000</td>
                       <td className="text-center py-4 px-4">5,000</td>
                       <td className="text-center py-4 px-4">10,000</td>
                       <td className="text-center py-4 px-4 bg-primary/5 font-semibold">50,000</td>

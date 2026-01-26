@@ -743,7 +743,7 @@ const Index = () => {
                   <ul className="space-y-3 flex-1">
                     <li className="flex items-start gap-2">
                       <CheckCircle className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                      <span className="text-sm">500 words per month</span>
+                      <span className="text-sm">1,000 words per month</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <CheckCircle className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />

@@ -68,9 +68,9 @@ const AIChecker = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <Helmet>
-        <title>Free AI Checker - Detect AI Content with 98% Accuracy | AI Free Text Pro</title>
-        <meta name="description" content="Free AI checker to detect AI-generated content with 98% accuracy. Check text against GPTZero, Turnitin, Originality.AI & 15+ detectors. Instant results, privacy protected." />
-        <meta name="keywords" content="ai checker, ai content detector, check ai text, detect ai writing, ai detection tool, free ai checker" />
+        <title>Free AI Detector & AI Checker - 98% Accuracy | AI Free Text Pro</title>
+        <meta name="description" content="Free AI detector and AI checker to detect AI-generated content with 98% accuracy. Check text against GPTZero, Turnitin, Originality.AI & 15+ detectors. AI detector unlimited words on Pro plan." />
+        <meta name="keywords" content="free ai detector, ai checker, ai detector unlimited words, free ai detector unlimited words, ai content detector, check ai text, detect ai writing, ai detection tool, free ai checker" />
         <link rel="canonical" href="https://aifreetextpro.com/ai-checker" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
@@ -153,10 +153,10 @@ const AIChecker = () => {
                 <span className="text-sm font-medium">98% Detection Accuracy</span>
               </div>
               <h1 className="text-4xl md:text-6xl font-bold mb-6">
-                Free AI Checker
+                Free AI Detector & AI Checker
               </h1>
               <p className="text-xl md:text-2xl text-muted-foreground mb-8">
-                Detect AI-generated content instantly. Check against GPTZero, Turnitin, Originality.AI & 15+ detectors in one click.
+                Free AI detector with 98% accuracy. Check against GPTZero, Turnitin, Originality.AI & 15+ detectors. Unlimited words on Pro plan.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
                 <a href="https://app.aifreetextpro.com/detector" className="w-full sm:w-auto">

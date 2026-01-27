@@ -2,10 +2,12 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route, useLocation, Navigate } from "react-router-dom";
+import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
 import { useEffect } from "react";
 import { GoogleAnalytics, trackPageView } from "@/lib/analytics";
+import { SEORedirect } from "@/components/SEORedirect";
+import { ExternalSEORedirect } from "@/components/ExternalSEORedirect";
 import Index from "./pages/Index";
 import Pricing from "./pages/Pricing";
 import Guarantee from "./pages/Guarantee";
@@ -81,14 +83,6 @@ import { ScrollToTop } from "./components/ScrollToTop";
 import CookieConsent from "./components/CookieConsent";
 
 const queryClient = new QueryClient();
-
-// External redirect component for app subdomain URLs
-const ExternalRedirect = ({ to }: { to: string }) => {
-  useEffect(() => {
-    window.location.href = to;
-  }, [to]);
-  return null;
-};
 
 // Component to track route changes
 const RouteTracker = () => {
@@ -183,21 +177,21 @@ const App = () => (
             <Route path="/editorial-guidelines" element={<EditorialGuidelines />} />
             <Route path="/cookie-settings" element={<CookieSettings />} />
             
-            {/* 301 Redirects for old/changed URLs - these are critical for SEO */}
-            <Route path="/humanizer" element={<ExternalRedirect to="https://app.aifreetextpro.com/humanizer" />} />
-            <Route path="/detector" element={<ExternalRedirect to="https://app.aifreetextpro.com/detector" />} />
-            <Route path="/auth" element={<ExternalRedirect to="https://app.aifreetextpro.com/auth" />} />
-            <Route path="/plagiarism" element={<ExternalRedirect to="https://app.aifreetextpro.com/plagiarism" />} />
+            {/* SEO-friendly redirects for external app subdomain URLs */}
+            <Route path="/humanizer" element={<ExternalSEORedirect to="https://app.aifreetextpro.com/humanizer" />} />
+            <Route path="/detector" element={<ExternalSEORedirect to="https://app.aifreetextpro.com/detector" />} />
+            <Route path="/auth" element={<ExternalSEORedirect to="https://app.aifreetextpro.com/auth" />} />
+            <Route path="/plagiarism" element={<ExternalSEORedirect to="https://app.aifreetextpro.com/plagiarism" />} />
             
-            {/* Old blog URL redirects to new slugs */}
-            <Route path="/blog/make-chatgpt-undetectable-guide-2025" element={<Navigate to="/blog/make-chatgpt-undetectable-2025" replace />} />
-            <Route path="/blog/ai-detection-patterns-perplexity-burstiness" element={<Navigate to="/blog/ai-detection-patterns-explained" replace />} />
-            <Route path="/blog/academic-ai-writing-thesis-essays-safely" element={<Navigate to="/blog/academic-ai-writing-safely" replace />} />
-            <Route path="/blog/ai-content-seo-undetectable-articles" element={<Navigate to="/blog/ai-content-seo-undetectable" replace />} />
-            <Route path="/blog/gptinf-vs-ai-free-text-pro-comparison" element={<Navigate to="/blog/gptinf-vs-ai-free-text-pro" replace />} />
-            <Route path="/blog/originality-ai-review-pricing-bypass" element={<Navigate to="/blog/originality-ai-review-how-to-beat" replace />} />
-            <Route path="/blog/paraphrasing-vs-humanizing-ai-text" element={<Navigate to="/blog/paraphrasing-vs-humanizing" replace />} />
-            <Route path="/bypass-turnitin" element={<Navigate to="/bypass-turnitin-ai-detection" replace />} />
+            {/* SEO-friendly redirects for old blog URL slugs */}
+            <Route path="/blog/make-chatgpt-undetectable-guide-2025" element={<SEORedirect to="/blog/make-chatgpt-undetectable-2025" />} />
+            <Route path="/blog/ai-detection-patterns-perplexity-burstiness" element={<SEORedirect to="/blog/ai-detection-patterns-explained" />} />
+            <Route path="/blog/academic-ai-writing-thesis-essays-safely" element={<SEORedirect to="/blog/academic-ai-writing-safely" />} />
+            <Route path="/blog/ai-content-seo-undetectable-articles" element={<SEORedirect to="/blog/ai-content-seo-undetectable" />} />
+            <Route path="/blog/gptinf-vs-ai-free-text-pro-comparison" element={<SEORedirect to="/blog/gptinf-vs-ai-free-text-pro" />} />
+            <Route path="/blog/originality-ai-review-pricing-bypass" element={<SEORedirect to="/blog/originality-ai-review-how-to-beat" />} />
+            <Route path="/blog/paraphrasing-vs-humanizing-ai-text" element={<SEORedirect to="/blog/paraphrasing-vs-humanizing" />} />
+            <Route path="/bypass-turnitin" element={<SEORedirect to="/bypass-turnitin-ai-detection" />} />
             
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />

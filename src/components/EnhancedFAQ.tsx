@@ -60,6 +60,18 @@ const faqs = [
   {
     question: "Does AI Free Text Pro work in languages other than English?",
     answer: "Currently, AI Free Text Pro is optimized for English text analysis and humanization. We're working on adding support for Spanish, French, German, and other major languages in future updates."
+  },
+  {
+    question: "Is there a free AI humanizer tool?",
+    answer: "Yes! AI Free Text Pro is a free AI humanizer tool that transforms AI-generated text into natural, human-like writing. Get 1,000 free words per month with no credit card required. Our free tier offers 4x more words than competitors like Rewritify (250 words)."
+  },
+  {
+    question: "Can I use an AI detector with unlimited words?",
+    answer: "Our free tier includes 1,000 words per month for AI detection and humanization. Upgrade to Pro for unlimited AI detection and humanization with no word limits. This makes AI Free Text Pro perfect for high-volume content creators and agencies."
+  },
+  {
+    question: "How do I use an AI humanizer for free?",
+    answer: "Simply paste your AI-generated text into our free AI humanizer at app.aifreetextpro.com. Select a writing style (Academic, Professional, Creative, or Casual) and click Humanize. Your first 1,000 words each month are completely free with no signup required."
   }
 ];
 

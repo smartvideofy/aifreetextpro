@@ -37,15 +37,15 @@ const Index = () => {
       <HowToSchema />
       <Breadcrumbs items={[{ label: "Home" }]} />
       <Helmet>
-        <title>Free AI Detector & Humanizer - Bypass GPTZero, Turnitin [Jan 2026]</title>
-        <meta name="description" content="Free AI detector spots ChatGPT in 3 seconds. Humanize AI text to bypass Turnitin, GPTZero, Originality.AI. 98% accuracy. 50,000+ users. No credit card." />
-        <meta name="keywords" content="free ai detector, ai humanizer, detect ai text, bypass turnitin, bypass gptzero" />
+        <title>Free AI Humanizer & Detector Tool - Bypass Turnitin, GPTZero [Jan 2026]</title>
+        <meta name="description" content="Free AI humanizer tool & AI checker. Humanize AI text free online. Bypass Turnitin, GPTZero, Originality.AI with 98% accuracy. 1,000 free words. No signup." />
+        <meta name="keywords" content="free ai humanizer, ai humanizer free, ai humanizer tool free, free humanizer, ai checker, free ai detector, detect ai text, bypass turnitin, bypass gptzero, ai detector unlimited words" />
         <link rel="canonical" href="https://aifreetextpro.com/" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-        <meta property="og:title" content="Free AI Detector & Humanizer - Bypass GPTZero, Turnitin [Jan 2026]" />
-        <meta property="og:description" content="Free AI detector spots ChatGPT in 3 seconds. Humanize AI text to bypass Turnitin, GPTZero, Originality.AI. 98% accuracy." />
+        <meta property="og:title" content="Free AI Humanizer & Detector Tool - Bypass Turnitin, GPTZero [Jan 2026]" />
+        <meta property="og:description" content="Free AI humanizer tool & AI checker. Humanize AI text free online. Bypass Turnitin, GPTZero, Originality.AI with 98% accuracy." />
         <meta property="og:url" content="https://aifreetextpro.com/" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" />
@@ -53,8 +53,8 @@ const Index = () => {
         <meta property="og:locale" content="en_US" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@aifreetextpro" />
-        <meta name="twitter:title" content="Free AI Detector & Humanizer - Bypass GPTZero, Turnitin [Jan 2026]" />
-        <meta name="twitter:description" content="Free AI detector spots ChatGPT in 3 seconds. Humanize AI text to bypass Turnitin, GPTZero, Originality.AI. 98% accuracy." />
+        <meta name="twitter:title" content="Free AI Humanizer & Detector Tool - Bypass Turnitin, GPTZero [Jan 2026]" />
+        <meta name="twitter:description" content="Free AI humanizer tool & AI checker. Humanize AI text free online. Bypass Turnitin, GPTZero, Originality.AI with 98% accuracy." />
         <meta name="twitter:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" />
         
         {/* Enhanced Schema Markup */}
@@ -62,7 +62,8 @@ const Index = () => {
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "SoftwareApplication",
-            "name": "AI Free Text Pro",
+            "name": "AI Free Text Pro - Free AI Humanizer Tool",
+            "alternateName": ["Free AI Humanizer", "AI Checker", "AI Detector", "AI Humanizer Tool Free"],
             "applicationCategory": "UtilitiesApplication",
             "offers": {
               "@type": "Offer",
@@ -79,8 +80,12 @@ const Index = () => {
             "operatingSystem": "Web Browser",
             "applicationSubCategory": "AI Text Analysis Tool",
             "featureList": [
-              "AI Content Detection",
-              "Text Humanization",
+              "Free AI humanizer tool",
+              "AI checker with 98% accuracy",
+              "Unlimited words on Pro plan",
+              "Turnitin bypass",
+              "Originality.AI bypass",
+              "GPTZero bypass",
               "PDF Export Reports",
               "Multiple Writing Styles",
               "File Upload Support (PDF, DOCX, TXT)",
@@ -186,6 +191,30 @@ const Index = () => {
                   "@type": "Answer",
                   "text": "AI Free Text Pro supports PDF, DOCX (Microsoft Word), and TXT file uploads up to 10MB in size. You can also paste text directly into the editor."
                 }
+              },
+              {
+                "@type": "Question",
+                "name": "Is there a free AI humanizer tool?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes! AI Free Text Pro is a free AI humanizer tool that transforms AI-generated text into natural, human-like writing. Get 1,000 free words per month with no credit card required."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Is there a free AI detector with unlimited words?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "AI Free Text Pro offers 1,000 free words per month. For unlimited AI detection and humanization, upgrade to our Pro plan with no word limits."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How do I use an AI humanizer for free?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Simply paste your AI-generated text into our free AI humanizer. Select a writing style (Academic, Professional, Creative, or Casual) and click Humanize. Your first 1,000 words each month are completely free."
+                }
               }
             ]
           })}
@@ -227,9 +256,9 @@ const Index = () => {
 
               {/* Main Headline with Gradient */}
               <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold leading-[1.1] animate-fade-in" style={{ animationDelay: "100ms" }}>
-                Free AI Detector
+                Free AI Humanizer Tool
                 <br />
-                <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">&</span> Humanizer
+                <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">&</span> AI Checker
               </h1>
               
               {/* Subheadline - Refined */}
@@ -313,8 +342,8 @@ const Index = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
               <div className="text-center mb-12 md:mb-16">
-                <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Why AI Free Text Pro?</h2>
-                <p className="text-muted-foreground text-base md:text-lg max-w-2xl mx-auto">The all-in-one solution for detecting and humanizing AI content</p>
+                <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Free AI Humanizer - Transform AI Text Instantly</h2>
+                <p className="text-muted-foreground text-base md:text-lg max-w-2xl mx-auto">The all-in-one AI checker tool for detecting and humanizing AI content</p>
               </div>
               
               <div className="grid md:grid-cols-2 gap-6 md:gap-12 items-start">

@@ -78,6 +78,9 @@ import Technology from "./pages/Technology";
 import CaseStudies from "./pages/CaseStudies";
 import EditorialGuidelines from "./pages/EditorialGuidelines";
 import CookieSettings from "./pages/CookieSettings";
+import HelpCenter from "./pages/HelpCenter";
+import HelpCollection from "./pages/HelpCollection";
+import HelpArticle from "./pages/HelpArticle";
 import Navbar from "./components/Navbar";
 import { ScrollToTop } from "./components/ScrollToTop";
 import CookieConsent from "./components/CookieConsent";
@@ -176,6 +179,9 @@ const App = () => (
             <Route path="/case-studies" element={<CaseStudies />} />
             <Route path="/editorial-guidelines" element={<EditorialGuidelines />} />
             <Route path="/cookie-settings" element={<CookieSettings />} />
+            <Route path="/help-center" element={<HelpCenter />} />
+            <Route path="/help-center/:collectionId" element={<HelpCollection />} />
+            <Route path="/help-center/:collectionId/:articleSlug" element={<HelpArticle />} />
             
             {/* SEO-friendly redirects for external app subdomain URLs */}
             <Route path="/humanizer" element={<ExternalSEORedirect to="https://app.aifreetextpro.com/humanizer" />} />

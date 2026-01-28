@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Mail, BookOpen, MessageSquare, Shield, Check, Target, Users, Sparkles, GraduationCap, ChevronDown } from "lucide-react";
+import { Mail, BookOpen, MessageSquare, Shield, Check, Target, Users, Sparkles, GraduationCap, ChevronDown, HelpCircle } from "lucide-react";
 import logo from "@/assets/logo.png";
 import { useState } from "react";
 
@@ -71,6 +71,7 @@ const footerSections: FooterSection[] = [
       { href: "/blog", label: "Blog", icon: <BookOpen className="w-4 h-4" /> },
       { href: "/pricing", label: "Pricing" },
       { href: "/guarantee", label: "Money-Back Guarantee", icon: <Shield className="w-4 h-4" /> },
+      { href: "/help-center", label: "Help Center", icon: <HelpCircle className="w-4 h-4" /> },
       { href: "/about", label: "About Us" },
       { href: "/team", label: "Our Team" },
       { href: "/technology", label: "Our Technology" },

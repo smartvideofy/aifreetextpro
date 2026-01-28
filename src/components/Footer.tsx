@@ -68,16 +68,16 @@ const footerSections: FooterSection[] = [
   {
     title: "Resources",
     links: [
-      { href: "/blog", label: "Blog", icon: <BookOpen className="w-4 h-4" /> },
+      { href: "/blog", label: "Blog" },
       { href: "/pricing", label: "Pricing" },
-      { href: "/guarantee", label: "Money-Back Guarantee", icon: <Shield className="w-4 h-4" /> },
-      { href: "/help-center", label: "Help Center", icon: <HelpCircle className="w-4 h-4" /> },
+      { href: "/guarantee", label: "Money-Back Guarantee" },
+      { href: "/help-center", label: "Help Center" },
       { href: "/about", label: "About Us" },
       { href: "/team", label: "Our Team" },
       { href: "/technology", label: "Our Technology" },
       { href: "/case-studies", label: "Case Studies" },
       { href: "/editorial-guidelines", label: "Editorial Guidelines" },
-      { href: "/contact", label: "Contact Us", icon: <MessageSquare className="w-4 h-4" /> },
+      { href: "/contact", label: "Contact Us" },
     ],
   },
 ];

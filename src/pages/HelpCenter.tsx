@@ -94,6 +94,30 @@ const HelpCenter = () => {
       })).filter(collection => collection.articles.length > 0)
     : collections;
 
+  // Generate CollectionPage schema
+  const collectionPageSchema = {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Help Center - AI Free Text Pro",
+    "description": "Browse help articles, guides, and FAQs for AI Free Text Pro. Get support for AI humanization, billing, account issues, and troubleshooting.",
+    "url": "https://aifreetextpro.com/help-center",
+    "mainEntity": {
+      "@type": "ItemList",
+      "itemListElement": collections.map((collection, index) => ({
+        "@type": "ListItem",
+        "position": index + 1,
+        "name": collection.title,
+        "description": collection.description,
+        "url": `https://aifreetextpro.com/help-center/${collection.id}`
+      }))
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "AI Free Text Pro",
+      "url": "https://aifreetextpro.com"
+    }
+  };
+
   return (
     <>
       <Helmet>
@@ -101,7 +125,20 @@ const HelpCenter = () => {
         <meta name="description" content="Browse help articles, guides, and FAQs for AI Free Text Pro. Get support for AI humanization, billing, account issues, and troubleshooting." />
         <meta name="keywords" content="ai free text pro help, support, faq, guides, troubleshooting, ai humanizer help" />
         <link rel="canonical" href="https://aifreetextpro.com/help-center" />
-        <meta name="robots" content="index, follow" />
+        <meta name="robots" content="index, follow, max-image-preview:large" />
+        <meta name="googlebot" content="index, follow, max-image-preview:large" />
+        <meta name="bingbot" content="index, follow" />
+        <meta property="og:title" content="Help Center - AI Free Text Pro Support & Guides" />
+        <meta property="og:description" content="Browse help articles, guides, and FAQs for AI Free Text Pro. Get support for AI humanization, billing, and troubleshooting." />
+        <meta property="og:url" content="https://aifreetextpro.com/help-center" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="AI Free Text Pro" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Help Center - AI Free Text Pro" />
+        <meta name="twitter:description" content="Browse help articles and guides for AI Free Text Pro support." />
+        <script type="application/ld+json">
+          {JSON.stringify(collectionPageSchema)}
+        </script>
       </Helmet>
 
       <Navbar />

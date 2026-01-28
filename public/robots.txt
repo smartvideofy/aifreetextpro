@@ -65,6 +65,8 @@ Allow: /team
 Allow: /technology
 Allow: /case-studies
 Allow: /editorial-guidelines
+Allow: /help-center
+Allow: /help-center/*
 
 # Static assets
 Allow: /assets/

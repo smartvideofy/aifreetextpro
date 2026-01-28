@@ -39,13 +39,58 @@ const HelpArticle = () => {
     toast.success(type === "helpful" ? "Thanks for your feedback!" : "Sorry to hear that. We'll work on improving this article.");
   };
 
+  // Generate Article schema
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": article.title,
+    "description": `Learn about ${article.title.toLowerCase()} in AI Free Text Pro. Step-by-step guide and troubleshooting tips.`,
+    "url": `https://aifreetextpro.com/help-center/${collectionId}/${articleSlug}`,
+    "datePublished": "2026-01-27",
+    "dateModified": "2026-01-28",
+    "author": {
+      "@type": "Organization",
+      "name": "AI Free Text Pro",
+      "url": "https://aifreetextpro.com"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "AI Free Text Pro",
+      "url": "https://aifreetextpro.com"
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": `https://aifreetextpro.com/help-center/${collectionId}/${articleSlug}`
+    },
+    "isPartOf": {
+      "@type": "CollectionPage",
+      "name": collectionNames[collectionId] || collectionId,
+      "url": `https://aifreetextpro.com/help-center/${collectionId}`
+    }
+  };
+
+  const metaDescription = `Learn about ${article.title.toLowerCase()} in AI Free Text Pro. Step-by-step guide and troubleshooting tips.`;
+
   return (
     <>
       <Helmet>
         <title>{article.title} - Help Center | AI Free Text Pro</title>
-        <meta name="description" content={`Learn about ${article.title.toLowerCase()} in AI Free Text Pro. Step-by-step guide and troubleshooting tips.`} />
+        <meta name="description" content={metaDescription} />
         <link rel="canonical" href={`https://aifreetextpro.com/help-center/${collectionId}/${articleSlug}`} />
-        <meta name="robots" content="index, follow" />
+        <meta name="robots" content="index, follow, max-image-preview:large" />
+        <meta name="googlebot" content="index, follow, max-image-preview:large" />
+        <meta name="bingbot" content="index, follow" />
+        <meta property="og:title" content={`${article.title} - Help Center | AI Free Text Pro`} />
+        <meta property="og:description" content={metaDescription} />
+        <meta property="og:url" content={`https://aifreetextpro.com/help-center/${collectionId}/${articleSlug}`} />
+        <meta property="og:type" content="article" />
+        <meta property="og:site_name" content="AI Free Text Pro" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content={article.title} />
+        <meta name="twitter:description" content={metaDescription} />
+        <script type="application/ld+json">
+          {JSON.stringify(articleSchema)}
+        </script>
       </Helmet>
 
       <Navbar />

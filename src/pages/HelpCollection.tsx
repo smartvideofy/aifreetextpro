@@ -166,13 +166,50 @@ const HelpCollection = () => {
 
   const IconComponent = collection.icon;
 
+  // Generate ItemList schema for articles
+  const itemListSchema = {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": `${collection.title} - Help Center`,
+    "description": collection.description,
+    "url": `https://aifreetextpro.com/help-center/${collection.id}`,
+    "mainEntity": {
+      "@type": "ItemList",
+      "itemListElement": collection.articles.map((article, index) => ({
+        "@type": "ListItem",
+        "position": index + 1,
+        "name": article.title,
+        "description": article.description,
+        "url": `https://aifreetextpro.com/help-center/${collection.id}/${article.slug}`
+      }))
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "AI Free Text Pro",
+      "url": "https://aifreetextpro.com"
+    }
+  };
+
   return (
     <>
       <Helmet>
         <title>{collection.title} - Help Center | AI Free Text Pro</title>
         <meta name="description" content={collection.description} />
         <link rel="canonical" href={`https://aifreetextpro.com/help-center/${collection.id}`} />
-        <meta name="robots" content="index, follow" />
+        <meta name="robots" content="index, follow, max-image-preview:large" />
+        <meta name="googlebot" content="index, follow, max-image-preview:large" />
+        <meta name="bingbot" content="index, follow" />
+        <meta property="og:title" content={`${collection.title} - Help Center | AI Free Text Pro`} />
+        <meta property="og:description" content={collection.description} />
+        <meta property="og:url" content={`https://aifreetextpro.com/help-center/${collection.id}`} />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="AI Free Text Pro" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content={`${collection.title} - Help Center`} />
+        <meta name="twitter:description" content={collection.description} />
+        <script type="application/ld+json">
+          {JSON.stringify(itemListSchema)}
+        </script>
       </Helmet>
 
       <Navbar />

@@ -113,9 +113,9 @@ const App = () => (
             <Route path="/" element={<Index />} />
             <Route path="/pricing" element={<Pricing />} />
             <Route path="/guarantee" element={<Guarantee />} />
-            <Route path="/privacy-policy" element={<><Navbar /><PrivacyPolicy /></>} />
-            <Route path="/terms-of-service" element={<><Navbar /><TermsOfService /></>} />
-            <Route path="/contact" element={<><Navbar /><Contact /></>} />
+            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+            <Route path="/terms-of-service" element={<TermsOfService />} />
+            <Route path="/contact" element={<Contact />} />
             <Route path="/about" element={<About />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/blog/ai-detection-tools-compared-2025" element={<AIDetectionComparison />} />

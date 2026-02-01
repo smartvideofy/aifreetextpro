@@ -326,6 +326,8 @@ const Index = () => {
                   src={heroIllustration} 
                   alt="AI text analysis and detection visualization showing documents being scanned" 
                   className="w-full max-w-4xl mx-auto rounded-2xl shadow-xl border border-border/40"
+                  width={1200}
+                  height={675}
                   fetchPriority="high"
                   decoding="async"
                 />
@@ -490,6 +492,8 @@ const Index = () => {
                       src={aiDetectorFeature} 
                       alt="AI content detection with magnifying glass analyzing text" 
                       className="w-full h-48 object-cover"
+                      width={600}
+                      height={192}
                       loading="lazy"
                       decoding="async"
                     />
@@ -543,6 +547,8 @@ const Index = () => {
                       src={aiHumanizerFeature} 
                       alt="AI text humanization transforming robotic text to natural writing" 
                       className="w-full h-48 object-cover"
+                      width={600}
+                      height={192}
                       loading="lazy"
                       decoding="async"
                     />

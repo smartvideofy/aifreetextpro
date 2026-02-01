@@ -25,7 +25,7 @@ const relatedArticles = [
     {
       title: "AI Detection Patterns: 5 Linguistic Signs",
       description: "Learn the patterns AI detectors analyze in your writing",
-      href: "/blog/ai-detection-patterns-linguistic-signs",
+      href: "/blog/ai-detection-patterns-explained",
       category: "Technical"
     },
     {

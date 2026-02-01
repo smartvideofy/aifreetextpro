@@ -4,6 +4,25 @@
 # Default rules for all crawlers
 User-agent: *
 Allow: /
+Allow: /blog/
+Allow: /blog/*
+Allow: /vs-*
+Allow: /bypass-*
+Allow: /ai-humanizer-*
+Allow: /academic-*
+Allow: /ai-checker
+Allow: /pricing
+Allow: /about
+Allow: /contact
+Allow: /guarantee
+Allow: /team
+Allow: /technology
+Allow: /case-studies
+Allow: /editorial-guidelines
+Allow: /help-center
+Allow: /help-center/*
+Allow: /assets/
+Allow: /images/
 Disallow: /auth
 Disallow: /dashboard
 Disallow: /app
@@ -47,30 +66,6 @@ Allow: /
 
 User-agent: Pinterestbot
 Allow: /
-
-# Ensure all content pages are crawlable
-User-agent: *
-Allow: /blog/
-Allow: /blog/*
-Allow: /vs-*
-Allow: /bypass-*
-Allow: /ai-humanizer-*
-Allow: /academic-*
-Allow: /ai-checker
-Allow: /pricing
-Allow: /about
-Allow: /contact
-Allow: /guarantee
-Allow: /team
-Allow: /technology
-Allow: /case-studies
-Allow: /editorial-guidelines
-Allow: /help-center
-Allow: /help-center/*
-
-# Static assets
-Allow: /assets/
-Allow: /images/
 
 # Sitemap location
 Sitemap: https://aifreetextpro.com/sitemap.xml

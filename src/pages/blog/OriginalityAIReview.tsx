@@ -24,7 +24,7 @@ const relatedArticles = [
   {
     title: "Bypass Originality AI Detection",
     description: "Strategies to pass Originality.AI detection",
-    href: "/bypass-originality-ai-detection",
+    href: "/bypass-originality-ai",
     category: "Guide"
   },
   {

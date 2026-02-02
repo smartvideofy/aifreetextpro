@@ -29,7 +29,7 @@ const relatedArticles = [
   {
     title: "Mastering AI-Powered Email Campaigns in 2026",
     description: "Advanced strategies for email personalization with AI",
-    href: "/blog/mastering-ai-email-campaigns-2026",
+    href: "/blog/mastering-ai-powered-email-campaigns-2026",
     category: "Email Marketing"
   }
 ];

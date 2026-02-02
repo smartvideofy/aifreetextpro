@@ -151,11 +151,11 @@ const AIContentSEO = () => {
 
               <div className="prose prose-lg max-w-none">
                 <p>
-                  SEO agencies are in a bind. Clients demand more content. Budgets don't increase. AI can generate thousands of words per hour, but raw AI content reads like... well, AI content. It's detectable, often generic, and increasingly clients are running submissions through AI checkers.
+                  SEO agencies are in a bind. Clients demand more content. Budgets don't increase. AI can generate thousands of words per hour, but raw AI content reads like... well, AI content. It's detectable, often generic, and increasingly clients are running submissions through AI checkers. Understanding <Link to="/blog/how-ai-detectors-work" className="text-primary hover:underline">how AI detectors work</Link> is essential for any content team using AI at scale.
                 </p>
                 
                 <p>
-                  This guide shows you how to build an AI-powered content production workflow that creates genuinely useful, undetectable articles that rank.
+                  This guide shows you how to build an AI-powered content production workflow that creates genuinely useful, undetectable articles that rank. We'll cover everything from initial generation to <Link to="/blog/write-ai-resistant-content" className="text-primary hover:underline">writing AI-resistant content</Link> that passes detection while maintaining quality.
                 </p>
 
                 <h2>Google's Actual Position on AI Content</h2>

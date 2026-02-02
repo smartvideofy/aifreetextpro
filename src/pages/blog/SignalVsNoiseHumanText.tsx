@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -144,11 +145,11 @@ const SignalVsNoiseHumanText = () => {
               <h2 className="text-2xl font-bold text-foreground mb-4">The Detection Landscape Has Changed</h2>
               <p className="text-muted-foreground mb-4">
                 In early AI detection, algorithms focused primarily on perplexity, how predictable word choices were. 
-                But as AI models improved, so did detection methods. Today's systems analyze dozens of overlapping signals.
+                But as AI models improved, so did detection methods. Today's systems analyze dozens of overlapping signals. To understand the full picture, see our guide on <Link to="/blog/how-ai-detectors-work" className="text-primary hover:underline">how AI detectors work</Link>.
               </p>
               <p className="text-muted-foreground mb-4">
                 This guide breaks down the six most significant patterns that current detectors use to distinguish 
-                human writing from AI output, with real examples you can study and apply.
+                human writing from AI output, with real examples you can study and apply. For the scoring mechanics behind these signals, check out <Link to="/blog/how-ai-detectors-score-text" className="text-primary hover:underline">how AI detectors score text</Link>.
               </p>
             </section>
 

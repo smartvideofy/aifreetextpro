@@ -151,11 +151,11 @@ const AIDetectionPatterns = () => {
 
               <div className="prose prose-lg max-w-none">
                 <p>
-                  AI detectors don't use magic. They use mathematics. Every detection tool analyzes specific linguistic patterns that statistically differentiate AI-generated text from human writing. Understanding these patterns isn't just academically interesting, it's the key to creating content that reads authentically human.
+                  AI detectors don't use magic. They use mathematics. Every detection tool analyzes specific linguistic patterns that statistically differentiate AI-generated text from human writing. Understanding these patterns isn't just academically interesting, it's the key to creating content that reads authentically human. For a deeper look at the scoring mechanics, see our guide on <Link to="/blog/how-ai-detectors-score-text" className="text-primary hover:underline">how AI detectors score text</Link>.
                 </p>
                 
                 <p>
-                  In this article, we'll break down the five most important patterns AI detectors analyze, explain the science behind each (based on research published by <a href="https://arxiv.org/abs/2301.10416" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary/80">OpenAI</a> and <a href="https://research.google/pubs/palm-scaling-language-modeling-with-pathways/" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary/80">Google Research</a>), and show you exactly how <a href="https://app.aifreetextpro.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary/80">AI Free Text Pro's humanizer</a> automatically fixes these issues.
+                  In this article, we'll break down the five most important patterns AI detectors analyze, explain the science behind each (based on research published by <a href="https://arxiv.org/abs/2301.10416" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary/80">OpenAI</a> and <a href="https://research.google/pubs/palm-scaling-language-modeling-with-pathways/" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary/80">Google Research</a>), and show you exactly how <a href="https://app.aifreetextpro.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary/80">AI Free Text Pro's humanizer</a> automatically fixes these issues. To learn practical strategies, check out our <Link to="/blog/bypass-ai-detection-ethical-tips" className="text-primary hover:underline">ethical bypass tips guide</Link>.
                 </p>
 
                 <h2>Pattern #1: Perplexity (Predictability)</h2>

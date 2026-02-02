@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -144,12 +145,12 @@ const AIHumanizationPitfalls = () => {
               <h2 className="text-2xl font-bold text-foreground mb-4">Why Humanization Goes Wrong</h2>
               <p className="text-muted-foreground mb-4">
                 Most advice about "humanizing" AI text focuses on surface-level changes: swap some words, 
-                add a few contractions, vary sentence length. But these tactics often backfire.
+                add a few contractions, vary sentence length. But these tactics often backfire. Understanding the right approach starts with learning <Link to="/blog/humanize-ai-text-without-losing-voice" className="text-primary hover:underline">how to humanize AI text without losing your voice</Link>.
               </p>
               <p className="text-muted-foreground mb-4">
                 The problem isn't that the advice is wrong; it's that it's incomplete. Humanization isn't 
                 about tricking detectors; it's about making content genuinely better. When you focus on 
-                the wrong things, you make the content worse while the underlying AI patterns remain.
+                the wrong things, you make the content worse while the underlying AI patterns remain. For a deep dive into what makes text feel human, see our guide on <Link to="/blog/tone-voice-flow-ai-writing" className="text-primary hover:underline">tone, voice, and flow in AI writing</Link>.
               </p>
             </section>
 

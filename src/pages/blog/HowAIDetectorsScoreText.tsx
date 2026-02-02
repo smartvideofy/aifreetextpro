@@ -28,9 +28,9 @@ const HowAIDetectorsScoreText = () => {
       category: "Technical"
     },
     {
-      title: "AI Detection Patterns: 5 Linguistic Signs",
+      title: "AI Detection Patterns Explained",
       description: "Learn the patterns AI detectors analyze in your writing",
-      href: "/blog/ai-detection-patterns-linguistic-signs",
+      href: "/blog/ai-detection-patterns-explained",
       category: "Technical"
     },
     {

@@ -26,6 +26,12 @@ const relatedArticles = [
     description: "Ensure your AI content maintains consistent voice and natural rhythm.",
     href: "/blog/tone-voice-flow-ai-writing",
     category: "Craft"
+  },
+  {
+    title: "Why Most AI Content Fails Human Review",
+    description: "Common pitfalls and how to fix AI-generated content",
+    href: "/blog/why-ai-content-fails-human-review",
+    category: "Guide"
   }
 ];
 
@@ -57,10 +63,15 @@ const EditingAIDraftsHumanEditor = () => {
             "@type": "Article",
             "headline": "Editing AI Drafts Like a Human Editor: Professional Techniques",
             "description": "Learn professional editing techniques to transform AI-generated drafts into polished content.",
-            "author": { "@type": "Organization", "name": "AI Free Text Pro" },
+            "author": { 
+              "@type": "Person", 
+              "name": "Dr. Sarah Chen",
+              "url": "https://aifreetextpro.com/team#sarah-chen",
+              "jobTitle": "Founder & CEO"
+            },
             "publisher": { "@type": "Organization", "name": "AI Free Text Pro" },
-            "datePublished": "2024-12-18",
-            "dateModified": "2024-12-18"
+            "datePublished": "2026-02-02",
+            "dateModified": "2026-02-02"
           })}
         </script>
         

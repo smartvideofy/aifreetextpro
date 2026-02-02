@@ -64,12 +64,13 @@ const MakeChatGPTUndetectable = () => {
             "@type": "Article",
             "headline": "How to Improve AI Writing Quality: The Complete 2026 Guide",
             "description": "Learn the fastest and most effective methods to make AI writing sound natural and human-like in 2026.",
-            "datePublished": "2026-01-08",
-            "dateModified": "2026-01-08",
+            "datePublished": "2026-02-02",
+            "dateModified": "2026-02-02",
             "author": {
-              "@type": "Organization",
-              "name": "AI Free Text Pro",
-              "url": "https://aifreetextpro.com"
+              "@type": "Person",
+              "name": "Dr. Sarah Chen",
+              "url": "https://aifreetextpro.com/team#sarah-chen",
+              "jobTitle": "Founder & CEO"
             },
             "publisher": {
               "@type": "Organization",

@@ -20,10 +20,16 @@ const relatedArticles = [
     category: "Analysis",
   },
   {
-    title: "Top 10 AI Humanizer Tools for 2025",
+    title: "Top 10 AI Humanizer Tools for 2026",
     description: "Best AI platforms for content humanization",
     href: "/blog/top-10-ai-humanizer-tools-2025",
     category: "Tools",
+  },
+  {
+    title: "How AI Detectors Work",
+    description: "Understanding the technology behind AI detection",
+    href: "/blog/how-ai-detectors-work",
+    category: "Educational",
   },
 ];
 
@@ -79,11 +85,13 @@ export default function BypassAIDetectionGuide() {
               width: 1200,
               height: 675,
             },
-            datePublished: "2026-01-08",
-            dateModified: "2026-01-08",
+            datePublished: "2026-02-02",
+            dateModified: "2026-02-02",
             author: {
               "@type": "Person",
-              name: "Shine S",
+              name: "Dr. Sarah Chen",
+              url: "https://aifreetextpro.com/team#sarah-chen",
+              jobTitle: "Founder & CEO"
             },
             publisher: {
               "@type": "Organization",

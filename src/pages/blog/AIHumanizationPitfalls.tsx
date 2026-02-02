@@ -65,10 +65,15 @@ const AIHumanizationPitfalls = () => {
             "@type": "Article",
             "headline": "AI Humanization Pitfalls: Common Mistakes Writers Make",
             "description": "What to avoid when refining AI text",
-            "author": { "@type": "Organization", "name": "AI Free Text Pro" },
+            "author": { 
+              "@type": "Person", 
+              "name": "Dr. Sarah Chen",
+              "url": "https://aifreetextpro.com/team#sarah-chen",
+              "jobTitle": "Founder & CEO"
+            },
             "publisher": { "@type": "Organization", "name": "AI Free Text Pro" },
-            "datePublished": "2025-01-15",
-            "dateModified": "2025-01-15"
+            "datePublished": "2026-02-02",
+            "dateModified": "2026-02-02"
           })}
         </script>
         

@@ -10,7 +10,7 @@ import { InternalLinks } from "@/components/InternalLinks";
 
 const relatedArticles = [
   {
-    title: "Top 10 AI Humanizer Tools for 2025",
+    title: "Top 10 AI Humanizer Tools for 2026",
     description: "Compare the top AI humanizer tools and find the perfect one for your needs",
     href: "/blog/top-10-ai-humanizer-tools-2025",
     category: "Tools"
@@ -20,6 +20,18 @@ const relatedArticles = [
     description: "Understand the technology behind AI detection",
     href: "/blog/how-ai-detectors-work",
     category: "Guide"
+  },
+  {
+    title: "AI Humanization Pitfalls to Avoid",
+    description: "Common mistakes when humanizing AI-generated content",
+    href: "/blog/ai-humanization-pitfalls",
+    category: "Best Practices"
+  },
+  {
+    title: "Editing AI Drafts Like a Human Editor",
+    description: "Professional techniques for refining AI content",
+    href: "/blog/editing-ai-drafts-human-editor",
+    category: "Editing"
   }
 ];
 
@@ -58,16 +70,13 @@ const HumanizeAIText = () => {
               "width": 1200,
               "height": 675
             },
-            "datePublished": "2026-01-08",
-            "dateModified": "2026-01-08",
+            "datePublished": "2026-02-02",
+            "dateModified": "2026-02-02",
             "author": {
-              "@type": "Organization",
-              "name": "AI Free Text Pro",
-              "url": "https://aifreetextpro.com",
-              "logo": {
-                "@type": "ImageObject",
-                "url": "https://aifreetextpro.com/before-after-demo.png"
-              }
+              "@type": "Person",
+              "name": "Dr. Sarah Chen",
+              "url": "https://aifreetextpro.com/team#sarah-chen",
+              "jobTitle": "Founder & CEO"
             },
             "publisher": {
               "@type": "Organization",

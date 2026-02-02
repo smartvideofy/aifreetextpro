@@ -65,10 +65,15 @@ const HowAIDetectorsScoreText = () => {
             "@type": "Article",
             "headline": "How AI Detectors Score Text: A Behind-the-Scenes Look",
             "description": "Breaking down AI detection metrics in plain language",
-            "author": { "@type": "Organization", "name": "AI Free Text Pro" },
+            "author": {
+              "@type": "Person",
+              "name": "Dr. Sarah Chen",
+              "url": "https://aifreetextpro.com/team#sarah-chen",
+              "jobTitle": "Founder & CEO"
+            },
             "publisher": { "@type": "Organization", "name": "AI Free Text Pro" },
-            "datePublished": "2025-01-15",
-            "dateModified": "2025-01-15"
+            "datePublished": "2026-02-02",
+            "dateModified": "2026-02-02"
           })}
         </script>
         
@@ -116,7 +121,7 @@ const HowAIDetectorsScoreText = () => {
                 Breaking down the metrics in plain language so you understand what's really being measured.
               </p>
               <div className="flex items-center gap-4 text-sm text-muted-foreground">
-                <span>January 15, 2025</span>
+                <span>February 2, 2026</span>
                 <span>•</span>
                 <span>12 min read</span>
               </div>

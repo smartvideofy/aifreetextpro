@@ -72,8 +72,10 @@ const BypassCopyleaksDetection = () => {
             "headline": "Bypass Copyleaks AI Detection – Proven Techniques for 2025",
             "description": "Comprehensive guide to bypassing Copyleaks AI detection with proven strategies and techniques for humanizing AI-generated text.",
             "author": {
-              "@type": "Organization",
-              "name": "AI Free Text Pro"
+              "@type": "Person",
+              "name": "Dr. Sarah Chen",
+              "url": "https://aifreetextpro.com/team#sarah-chen",
+              "jobTitle": "Founder & CEO"
             },
             "publisher": {
               "@type": "Organization",
@@ -83,8 +85,8 @@ const BypassCopyleaksDetection = () => {
                 "url": "https://aifreetextpro.com/logo.png"
               }
             },
-            "datePublished": "2025-01-20",
-            "dateModified": "2025-01-20"
+            "datePublished": "2026-02-02",
+            "dateModified": "2026-02-02"
           })}
         </script>
       </Helmet>
@@ -107,7 +109,7 @@ const BypassCopyleaksDetection = () => {
               <BookOpen className="w-5 h-5" />
               <span className="text-sm font-medium">How-To Guide</span>
               <span className="text-muted-foreground">•</span>
-              <span className="text-sm text-muted-foreground">January 20, 2025</span>
+              <span className="text-sm text-muted-foreground">February 2, 2026</span>
               <span className="text-muted-foreground">•</span>
               <span className="text-sm text-muted-foreground">12 min read</span>
             </div>

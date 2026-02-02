@@ -14,7 +14,7 @@ const relatedArticles = [
     category: "Social Media"
   },
   {
-    title: "Top 10 AI Humanizer Tools for 2025",
+    title: "Top 10 AI Humanizer Tools for 2026",
     description: "Updated list of AI humanizers tested and rated",
     href: "/blog/top-10-ai-humanizer-tools-2025",
     category: "Tools"
@@ -24,6 +24,12 @@ const relatedArticles = [
     description: "Understand how AI detection works under the hood",
     href: "/blog/how-ai-detectors-score-text",
     category: "Technical"
+  },
+  {
+    title: "Zero-Click Searches in 2026",
+    description: "Win traffic in the AI era with zero-click optimization",
+    href: "/blog/zero-click-search-ai-2026",
+    category: "SEO"
   }
 ];
 
@@ -64,11 +70,13 @@ export default function AIPoweredSEOContent2026() {
               "width": 1200,
               "height": 675
             },
-            "datePublished": "2025-12-30",
-            "dateModified": "2025-12-30",
+            "datePublished": "2026-02-02",
+            "dateModified": "2026-02-02",
             "author": {
               "@type": "Person",
-              "name": "Shine S"
+              "name": "Dr. Sarah Chen",
+              "url": "https://aifreetextpro.com/team#sarah-chen",
+              "jobTitle": "Founder & CEO"
             },
             "publisher": {
               "@type": "Organization",
@@ -115,7 +123,7 @@ export default function AIPoweredSEOContent2026() {
               <div className="flex items-center gap-2 text-sm text-muted-foreground mb-4">
                 <span className="px-3 py-1 bg-primary/10 text-primary rounded-full">SEO & AI</span>
                 <span>•</span>
-                <time dateTime="2025-12-30">December 30, 2025</time>
+                <time dateTime="2026-02-02">February 2, 2026</time>
                 <span>•</span>
                 <span>12 min read</span>
               </div>

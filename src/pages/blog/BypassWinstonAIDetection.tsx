@@ -72,8 +72,10 @@ const BypassWinstonAIDetection = () => {
             "headline": "Bypass Winston AI Detection – Reduce AI Scores & Humanize Text",
             "description": "Comprehensive guide to bypassing Winston AI detection with proven strategies and techniques for humanizing AI-generated text.",
             "author": {
-              "@type": "Organization",
-              "name": "AI Free Text Pro"
+              "@type": "Person",
+              "name": "Dr. Sarah Chen",
+              "url": "https://aifreetextpro.com/team#sarah-chen",
+              "jobTitle": "Founder & CEO"
             },
             "publisher": {
               "@type": "Organization",
@@ -83,8 +85,8 @@ const BypassWinstonAIDetection = () => {
                 "url": "https://aifreetextpro.com/logo.png"
               }
             },
-            "datePublished": "2025-01-20",
-            "dateModified": "2025-01-20"
+            "datePublished": "2026-02-02",
+            "dateModified": "2026-02-02"
           })}
         </script>
       </Helmet>
@@ -107,7 +109,7 @@ const BypassWinstonAIDetection = () => {
               <BookOpen className="w-5 h-5" />
               <span className="text-sm font-medium">How-To Guide</span>
               <span className="text-muted-foreground">•</span>
-              <span className="text-sm text-muted-foreground">January 20, 2025</span>
+              <span className="text-sm text-muted-foreground">February 2, 2026</span>
               <span className="text-muted-foreground">•</span>
               <span className="text-sm text-muted-foreground">11 min read</span>
             </div>

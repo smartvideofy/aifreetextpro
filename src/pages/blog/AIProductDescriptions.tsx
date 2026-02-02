@@ -65,9 +65,14 @@ export default function AIProductDescriptions() {
             "headline": "How to Humanize AI Content for eCommerce Product Descriptions",
             "description": "Learn to make AI-generated eCommerce product descriptions sound authentic, engaging, and optimized for conversions.",
             "image": { "@type": "ImageObject", "url": ogImage, "width": 1200, "height": 675 },
-            "datePublished": "2025-12-22",
-            "dateModified": "2025-12-22",
-            "author": { "@type": "Person", "name": "Shine S" },
+            "datePublished": "2026-02-02",
+            "dateModified": "2026-02-02",
+            "author": {
+              "@type": "Person",
+              "name": "Dr. Sarah Chen",
+              "url": "https://aifreetextpro.com/team#sarah-chen",
+              "jobTitle": "Founder & CEO"
+            },
             "publisher": {
               "@type": "Organization",
               "name": "AI Free Text Pro",
@@ -107,7 +112,7 @@ export default function AIProductDescriptions() {
               <div className="flex items-center gap-2 text-sm text-muted-foreground mb-4">
                 <span className="px-3 py-1 bg-primary/10 text-primary rounded-full">eCommerce</span>
                 <span>•</span>
-                <time dateTime="2025-12-22">December 22, 2025</time>
+                <time dateTime="2026-02-02">February 2, 2026</time>
                 <span>•</span>
                 <span>12 min read</span>
               </div>

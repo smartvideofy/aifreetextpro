@@ -26,6 +26,12 @@ const relatedArticles = [
     description: "Professional techniques to polish AI drafts into publication-ready content.",
     href: "/blog/editing-ai-drafts-human-editor",
     category: "Professional Editing"
+  },
+  {
+    title: "AI Humanization Pitfalls",
+    description: "Common mistakes to avoid when refining AI-generated text.",
+    href: "/blog/ai-humanization-pitfalls",
+    category: "Best Practices"
   }
 ];
 
@@ -57,10 +63,15 @@ const ToneVoiceFlowAIWriting = () => {
             "@type": "Article",
             "headline": "Tone, Voice, and Flow in AI-Assisted Writing",
             "description": "Master the three pillars of great writing: tone, voice, and flow.",
-            "author": { "@type": "Organization", "name": "AI Free Text Pro" },
+            "author": {
+              "@type": "Person",
+              "name": "Dr. Sarah Chen",
+              "url": "https://aifreetextpro.com/team#sarah-chen",
+              "jobTitle": "Founder & CEO"
+            },
             "publisher": { "@type": "Organization", "name": "AI Free Text Pro" },
-            "datePublished": "2024-12-16",
-            "dateModified": "2024-12-16"
+            "datePublished": "2026-02-02",
+            "dateModified": "2026-02-02"
           })}
         </script>
         
@@ -111,7 +122,7 @@ const ToneVoiceFlowAIWriting = () => {
               <header className="mb-8">
                 <div className="flex items-center gap-4 text-sm text-muted-foreground mb-4">
                   <span className="bg-primary/10 text-primary px-3 py-1 rounded-full font-medium">Writing Craft</span>
-                  <span>December 16, 2024</span>
+                  <span>February 2, 2026</span>
                   <span>11 min read</span>
                 </div>
                 <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 bg-gradient-to-r from-foreground to-foreground/70 bg-clip-text">

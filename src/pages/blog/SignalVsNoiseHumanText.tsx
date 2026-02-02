@@ -65,10 +65,15 @@ const SignalVsNoiseHumanText = () => {
             "@type": "Article",
             "headline": "Signal vs. Noise: What Makes Text Human in 2026",
             "description": "Current patterns detectors care about with examples",
-            "author": { "@type": "Organization", "name": "AI Free Text Pro" },
+            "author": {
+              "@type": "Person",
+              "name": "Dr. Sarah Chen",
+              "url": "https://aifreetextpro.com/team#sarah-chen",
+              "jobTitle": "Founder & CEO"
+            },
             "publisher": { "@type": "Organization", "name": "AI Free Text Pro" },
-            "datePublished": "2025-01-15",
-            "dateModified": "2025-01-15"
+            "datePublished": "2026-02-02",
+            "dateModified": "2026-02-02"
           })}
         </script>
         
@@ -116,7 +121,7 @@ const SignalVsNoiseHumanText = () => {
                 Current patterns detectors care about, with concrete examples you can learn from.
               </p>
               <div className="flex items-center gap-4 text-sm text-muted-foreground">
-                <span>January 15, 2025</span>
+                <span>February 2, 2026</span>
                 <span>•</span>
                 <span>14 min read</span>
               </div>

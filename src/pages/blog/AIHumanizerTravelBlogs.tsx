@@ -24,6 +24,12 @@ const relatedArticles = [
     description: "Next-generation detection trends for writers",
     href: "/blog/how-ai-detectors-work",
     category: "Analysis"
+  },
+  {
+    title: "How to Humanize AI Text for Travel Blogs",
+    description: "Transform AI drafts into authentic travel stories",
+    href: "/blog/humanize-ai-travel-blogs",
+    category: "Humanize"
   }
 ];
 
@@ -64,11 +70,13 @@ export default function AIHumanizerTravelBlogs() {
               "width": 1200,
               "height": 675
             },
-            "datePublished": "2025-12-19",
-            "dateModified": "2025-12-19",
+            "datePublished": "2026-02-02",
+            "dateModified": "2026-02-02",
             "author": {
               "@type": "Person",
-              "name": "Shine S"
+              "name": "Dr. Sarah Chen",
+              "url": "https://aifreetextpro.com/team#sarah-chen",
+              "jobTitle": "Founder & CEO"
             },
             "publisher": {
               "@type": "Organization",
@@ -129,7 +137,7 @@ export default function AIHumanizerTravelBlogs() {
               <div className="flex items-center gap-2 text-sm text-muted-foreground mb-4">
                 <span className="px-3 py-1 bg-primary/10 text-primary rounded-full">Humanize</span>
                 <span>•</span>
-                <time dateTime="2025-12-19">December 19, 2025</time>
+                <time dateTime="2026-02-02">February 2, 2026</time>
                 <span>•</span>
                 <span>10 min read</span>
               </div>

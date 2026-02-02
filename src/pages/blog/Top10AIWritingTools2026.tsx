@@ -24,6 +24,12 @@ const relatedArticles = [
     description: "Understanding the technology behind AI detection",
     href: "/blog/how-ai-detectors-work",
     category: "Technical"
+  },
+  {
+    title: "Top 10 AI Humanizer Tools for 2026",
+    description: "Best tools to make AI content sound human",
+    href: "/blog/top-10-ai-humanizer-tools-2025",
+    category: "Tools"
   }
 ];
 
@@ -67,11 +73,13 @@ export default function Top10AIWritingTools2026() {
               "width": 1200,
               "height": 675
             },
-            "datePublished": "2026-01-08",
-            "dateModified": "2026-01-08",
+            "datePublished": "2026-02-02",
+            "dateModified": "2026-02-02",
             "author": {
               "@type": "Person",
-              "name": "Shine S"
+              "name": "Dr. Sarah Chen",
+              "url": "https://aifreetextpro.com/team#sarah-chen",
+              "jobTitle": "Founder & CEO"
             },
             "publisher": {
               "@type": "Organization",
@@ -152,7 +160,7 @@ export default function Top10AIWritingTools2026() {
               <div className="flex items-center gap-2 text-sm text-muted-foreground mb-4">
                 <span className="px-3 py-1 bg-primary/10 text-primary rounded-full">Tools</span>
                 <span>•</span>
-                <time dateTime="2025-12-29">December 29, 2025</time>
+                <time dateTime="2026-02-02">February 2, 2026</time>
                 <span>•</span>
                 <span>10 min read</span>
               </div>

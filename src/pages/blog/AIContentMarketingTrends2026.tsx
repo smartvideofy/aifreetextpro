@@ -24,6 +24,12 @@ const relatedArticles = [
     description: "Transform email marketing with AI personalization and humanization",
     href: "/blog/mastering-ai-powered-email-campaigns-2026",
     category: "Email Marketing"
+  },
+  {
+    title: "Top 10 AI Writing Tools in 2026",
+    description: "Discover the best AI writing tools for content creators and marketers",
+    href: "/blog/top-10-ai-writing-tools-2026",
+    category: "Tools"
   }
 ];
 
@@ -59,9 +65,14 @@ export default function AIContentMarketingTrends2026() {
             "headline": "AI Content Marketing Trends to Watch in 2026",
             "description": "Explore how AI is reshaping marketing strategies in 2026, from hyper-personalization to predictive analytics and ethical considerations.",
             "image": { "@type": "ImageObject", "url": ogImage, "width": 1200, "height": 675 },
-            "datePublished": "2025-12-22",
-            "dateModified": "2025-12-22",
-            "author": { "@type": "Person", "name": "Shine S" },
+            "datePublished": "2026-02-02",
+            "dateModified": "2026-02-02",
+            "author": {
+              "@type": "Person",
+              "name": "Dr. Sarah Chen",
+              "url": "https://aifreetextpro.com/team#sarah-chen",
+              "jobTitle": "Founder & CEO"
+            },
             "publisher": {
               "@type": "Organization",
               "name": "AI Free Text Pro",
@@ -101,7 +112,7 @@ export default function AIContentMarketingTrends2026() {
               <div className="flex items-center gap-2 text-sm text-muted-foreground mb-4">
                 <span className="px-3 py-1 bg-primary/10 text-primary rounded-full">Marketing</span>
                 <span>•</span>
-                <time dateTime="2025-12-22">December 22, 2025</time>
+                <time dateTime="2026-02-02">February 2, 2026</time>
                 <span>•</span>
                 <span>18 min read</span>
               </div>

@@ -64,12 +64,13 @@ const AIDetectionPatterns = () => {
             "@type": "Article",
             "headline": "AI vs. Human: 5 Subtle Linguistic Patterns AI Detectors Look For",
             "description": "Discover the 5 linguistic patterns AI detectors analyze to distinguish AI writing from human writing.",
-            "datePublished": "2025-01-20",
-            "dateModified": "2025-01-20",
+            "datePublished": "2026-02-02",
+            "dateModified": "2026-02-02",
             "author": {
-              "@type": "Organization",
-              "name": "AI Free Text Pro",
-              "url": "https://aifreetextpro.com"
+              "@type": "Person",
+              "name": "Dr. Sarah Chen",
+              "url": "https://aifreetextpro.com/team#sarah-chen",
+              "jobTitle": "Founder & CEO"
             },
             "publisher": {
               "@type": "Organization",
@@ -131,7 +132,7 @@ const AIDetectionPatterns = () => {
                   </span>
                   <div className="flex items-center gap-2">
                     <Calendar className="w-4 h-4" />
-                    January 20, 2025
+                    February 2, 2026
                   </div>
                   <div className="flex items-center gap-2">
                     <Clock className="w-4 h-4" />

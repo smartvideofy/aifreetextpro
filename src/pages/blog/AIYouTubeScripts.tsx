@@ -93,6 +93,23 @@ export default function AIYouTubeScripts() {
             ]
           })}
         </script>
+
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "HowTo",
+            "name": "How to Humanize AI Scripts for YouTube",
+            "description": "Transform AI-generated scripts into natural, engaging narration for videos and podcasts.",
+            "totalTime": "PT15M",
+            "step": [
+              { "@type": "HowToStep", "position": 1, "name": "Draft AI Script", "text": "Generate the base narrative, dialogue, and scene instructions." },
+              { "@type": "HowToStep", "position": 2, "name": "Adjust Voice", "text": "Refine word choice, tone, and sentence rhythm to sound natural." },
+              { "@type": "HowToStep", "position": 3, "name": "Emphasize Timing", "text": "Add pauses, emphasis, and pacing for better delivery." },
+              { "@type": "HowToStep", "position": 4, "name": "Inject Personality", "text": "Add humor, anecdotes, or colloquialisms that match the creator's style." },
+              { "@type": "HowToStep", "position": 5, "name": "Review & Revise", "text": "Read aloud to ensure it sounds human and engaging." }
+            ]
+          })}
+        </script>
       </Helmet>
 
       <div className="min-h-screen bg-background">

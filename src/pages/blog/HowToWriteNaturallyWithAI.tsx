@@ -101,6 +101,25 @@ const HowToWriteNaturallyWithAI = () => {
             ]
           })}
         </script>
+
+        {/* HowTo Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "HowTo",
+            "name": "How to Write Naturally with AI",
+            "description": "Master the art of crafting natural, engaging content with AI assistance.",
+            "totalTime": "PT15M",
+            "step": [
+              { "@type": "HowToStep", "position": 1, "name": "Adopt AI as Partner Mindset", "text": "Think of AI as a talented but inexperienced collaborator who needs guidance." },
+              { "@type": "HowToStep", "position": 2, "name": "Use Natural Prompts", "text": "Include audience specificity, emotional context, voice guidelines, and unique angles in prompts." },
+              { "@type": "HowToStep", "position": 3, "name": "Build Conversational Flow", "text": "Read output aloud, add human markers like contractions, and vary sentence length." },
+              { "@type": "HowToStep", "position": 4, "name": "Structure Check Pass", "text": "Ensure the piece flows logically with smooth transitions and compelling opening." },
+              { "@type": "HowToStep", "position": 5, "name": "Voice Injection Pass", "text": "Add your personality, replace generic phrases, and insert opinions and experiences." },
+              { "@type": "HowToStep", "position": 6, "name": "Polish Pass", "text": "Tighten sentences, eliminate redundancy, and ensure every word earns its place." }
+            ]
+          })}
+        </script>
       </Helmet>
 
       <div className="min-h-screen bg-gradient-to-b from-background via-background to-card/20">
@@ -122,7 +141,7 @@ const HowToWriteNaturallyWithAI = () => {
               <header className="mb-8">
                 <div className="flex items-center gap-4 text-sm text-muted-foreground mb-4">
                   <span className="bg-primary/10 text-primary px-3 py-1 rounded-full font-medium">Writing Craft</span>
-                  <span>December 20, 2024</span>
+                  <time dateTime="2026-02-02">February 2, 2026</time>
                   <span>14 min read</span>
                 </div>
                 <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 bg-gradient-to-r from-foreground to-foreground/70 bg-clip-text">

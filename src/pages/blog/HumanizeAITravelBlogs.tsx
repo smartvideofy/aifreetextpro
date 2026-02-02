@@ -118,6 +118,23 @@ export default function HumanizeAITravelBlogs() {
             ]
           })}
         </script>
+
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "HowTo",
+            "name": "How to Humanize AI Text for Travel Blogs",
+            "description": "Step-by-step techniques to humanize AI-generated travel content while keeping your unique voice.",
+            "totalTime": "PT20M",
+            "step": [
+              { "@type": "HowToStep", "position": 1, "name": "Draft with AI, Then Humanize", "text": "Generate a draft with AI focusing on core travel notes, then add personal anecdotes and sensory details." },
+              { "@type": "HowToStep", "position": 2, "name": "Adjust Tone and Voice", "text": "Use contractions, vary sentence length, and add humor, metaphors, and descriptive imagery." },
+              { "@type": "HowToStep", "position": 3, "name": "Fact-Check and Enrich", "text": "Verify locations and cultural references. Add insider tips and links to authentic sources." },
+              { "@type": "HowToStep", "position": 4, "name": "Optimize for Readability", "text": "Use headings, bullet points, short paragraphs, and include images and travel snapshots." },
+              { "@type": "HowToStep", "position": 5, "name": "Publish and Refine", "text": "Gather reader feedback and update posts regularly with new photos and experiences." }
+            ]
+          })}
+        </script>
       </Helmet>
 
       <div className="min-h-screen bg-background">

@@ -104,6 +104,23 @@ export default function HumanizeAILinkedIn2026() {
             ]
           })}
         </script>
+
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "HowTo",
+            "name": "How to Humanize AI Content for LinkedIn",
+            "description": "Transform AI-generated LinkedIn posts into authentic human-sounding content that drives engagement.",
+            "totalTime": "PT10M",
+            "step": [
+              { "@type": "HowToStep", "position": 1, "name": "Add Personal Anecdotes", "text": "Share experiences, lessons, or insights from your career." },
+              { "@type": "HowToStep", "position": 2, "name": "Use Active Voice", "text": "Reframe AI text to active voice for more natural readability." },
+              { "@type": "HowToStep", "position": 3, "name": "Vary Sentence Structure", "text": "Mix short, punchy sentences with longer reflective ones." },
+              { "@type": "HowToStep", "position": 4, "name": "Add Formatting", "text": "Use subtle emojis and line breaks to make content more approachable." },
+              { "@type": "HowToStep", "position": 5, "name": "Proofread & Adapt", "text": "Edit AI-generated text to match your personal tone and style." }
+            ]
+          })}
+        </script>
       </Helmet>
 
       <div className="min-h-screen bg-background">

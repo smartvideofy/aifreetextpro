@@ -47,7 +47,7 @@ const relatedArticles = [
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="bingbot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-        <meta property="og:title" content="How to Detect AI-Generated Text: Complete Guide 2025" />
+        <meta property="og:title" content="How to Detect AI-Generated Text: Complete Guide 2026" />
         <meta property="og:description" content="Learn expert techniques to detect AI-generated text with 98% accuracy." />
         <meta property="og:url" content="https://aifreetextpro.com/blog/how-to-detect-ai-generated-text" />
         <meta property="og:type" content="article" />
@@ -119,6 +119,26 @@ const relatedArticles = [
                 "position": 3,
                 "name": "How to Detect AI-Generated Text"
               }
+            ]
+          })}
+        </script>
+        
+        {/* HowTo Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "HowTo",
+            "name": "How to Detect AI-Generated Text",
+            "description": "Learn expert techniques to detect AI-generated text with key linguistic patterns and detection methods.",
+            "totalTime": "PT10M",
+            "step": [
+              { "@type": "HowToStep", "position": 1, "name": "Check for Perfect Structure", "text": "AI-generated text often maintains unnaturally consistent quality with perfect grammar throughout." },
+              { "@type": "HowToStep", "position": 2, "name": "Look for Repetitive Phrases", "text": "Watch for phrases like 'it's important to note,' 'however,' and 'furthermore' appearing frequently." },
+              { "@type": "HowToStep", "position": 3, "name": "Identify Lack of Personal Voice", "text": "AI cannot draw from personal experiences or unique perspectives. Look for missing anecdotes." },
+              { "@type": "HowToStep", "position": 4, "name": "Spot Generic Statements", "text": "AI tends to make safe, general statements rather than diving into specific details." },
+              { "@type": "HowToStep", "position": 5, "name": "Check Emotional Depth", "text": "AI struggles with authentic emotional expression and nuanced feelings." },
+              { "@type": "HowToStep", "position": 6, "name": "Analyze Sentence Variety", "text": "AI often produces similar sentence lengths and structures. Human writing varies naturally." },
+              { "@type": "HowToStep", "position": 7, "name": "Use AI Detection Tools", "text": "Combine automated detection with human judgment for best results." }
             ]
           })}
         </script>

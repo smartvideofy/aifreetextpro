@@ -98,6 +98,23 @@ export default function HumanizeAIStories() {
             ]
           })}
         </script>
+
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "HowTo",
+            "name": "How to Humanize AI-Generated Stories & Fiction",
+            "description": "Transform AI-generated stories into human-like narratives that captivate readers.",
+            "totalTime": "PT20M",
+            "step": [
+              { "@type": "HowToStep", "position": 1, "name": "Generate AI Draft", "text": "Use AI to outline plots, dialogues, and characters." },
+              { "@type": "HowToStep", "position": 2, "name": "Adjust Tone and Voice", "text": "Refine dialogue, internal thoughts, and narrative voice for emotional authenticity." },
+              { "@type": "HowToStep", "position": 3, "name": "Enhance Characters", "text": "Add quirks, motivations, and backstory to make them relatable." },
+              { "@type": "HowToStep", "position": 4, "name": "Refine Plot Flow", "text": "Smooth transitions, pacing, and dramatic tension for engaging reading." },
+              { "@type": "HowToStep", "position": 5, "name": "Edit and Proofread", "text": "Ensure readability, consistency, and human-like style." }
+            ]
+          })}
+        </script>
       </Helmet>
 
       <div className="min-h-screen bg-background">

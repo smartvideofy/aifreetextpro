@@ -65,9 +65,14 @@ export default function WriteAIResistantContent() {
             "headline": "Write AI-Resistant Content in 2026",
             "description": "Learn advanced techniques to make your content resistant to AI detection while staying authentic, engaging, and human.",
             "image": { "@type": "ImageObject", "url": ogImage, "width": 1200, "height": 675 },
-            "datePublished": "2025-12-29",
-            "dateModified": "2025-12-29",
-            "author": { "@type": "Person", "name": "Shine S" },
+            "datePublished": "2026-02-02",
+            "dateModified": "2026-02-02",
+            "author": {
+              "@type": "Person",
+              "name": "Dr. Sarah Chen",
+              "url": "https://aifreetextpro.com/team#sarah-chen",
+              "jobTitle": "Founder & CEO"
+            },
             "publisher": {
               "@type": "Organization",
               "name": "AI Free Text Pro",
@@ -85,6 +90,24 @@ export default function WriteAIResistantContent() {
               { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://aifreetextpro.com/" },
               { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://aifreetextpro.com/blog" },
               { "@type": "ListItem", "position": 3, "name": "Write AI-Resistant Content in 2026" }
+            ]
+          })}
+        </script>
+
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "HowTo",
+            "name": "How to Write AI-Resistant Content",
+            "description": "Step-by-step workflow to humanize AI content and make it resistant to detection.",
+            "totalTime": "PT20M",
+            "step": [
+              { "@type": "HowToStep", "position": 1, "name": "Start with a Base Draft", "text": "Use AI to generate a raw draft with key ideas." },
+              { "@type": "HowToStep", "position": 2, "name": "Analyze for AI Patterns", "text": "Check for repetition, uniform sentence structures, and generic phrasing." },
+              { "@type": "HowToStep", "position": 3, "name": "Inject Human Voice", "text": "Rewrite sections with personal anecdotes, humor, or colloquial phrasing." },
+              { "@type": "HowToStep", "position": 4, "name": "Vary Sentence Lengths", "text": "Mix short and long sentences to increase burstiness." },
+              { "@type": "HowToStep", "position": 5, "name": "Enrich with References", "text": "Add credible sources, quotes, and examples to contextualize content." },
+              { "@type": "HowToStep", "position": 6, "name": "Edit Iteratively", "text": "Repeat steps until the text reads naturally and passes AI-resistance tests." }
             ]
           })}
         </script>
@@ -106,7 +129,7 @@ export default function WriteAIResistantContent() {
               <div className="flex items-center gap-2 text-sm text-muted-foreground mb-4">
                 <span className="px-3 py-1 bg-primary/10 text-primary rounded-full">Tips</span>
                 <span>•</span>
-                <time dateTime="2025-12-29">December 29, 2025</time>
+                <time dateTime="2026-02-02">February 2, 2026</time>
                 <span>•</span>
                 <span>12 min read</span>
               </div>

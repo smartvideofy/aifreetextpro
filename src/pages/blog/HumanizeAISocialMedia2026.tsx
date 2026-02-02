@@ -104,6 +104,23 @@ export default function HumanizeAISocialMedia2026() {
             ]
           })}
         </script>
+
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "HowTo",
+            "name": "How to Humanize AI Content for Social Media",
+            "description": "Practical strategies to make AI-generated posts sound natural, authentic, and engaging across platforms.",
+            "totalTime": "PT15M",
+            "step": [
+              { "@type": "HowToStep", "position": 1, "name": "Adjust Tone and Voice", "text": "Ensure your AI posts match your brand voice with colloquialisms and contractions." },
+              { "@type": "HowToStep", "position": 2, "name": "Add Personal Details", "text": "Enhance posts with real anecdotes, user experiences, or relevant references." },
+              { "@type": "HowToStep", "position": 3, "name": "Vary Sentence Structure", "text": "Break up long sentences, alternate short punchy lines with longer thoughts." },
+              { "@type": "HowToStep", "position": 4, "name": "Engage With Questions", "text": "Ask questions, encourage replies, and prompt interaction." },
+              { "@type": "HowToStep", "position": 5, "name": "Proofread and Refine", "text": "Review AI content for clarity, coherence, and emotional impact." }
+            ]
+          })}
+        </script>
       </Helmet>
 
       <div className="min-h-screen bg-background">

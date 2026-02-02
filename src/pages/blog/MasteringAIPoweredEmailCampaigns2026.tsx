@@ -104,6 +104,23 @@ export default function MasteringAIPoweredEmailCampaigns2026() {
             ]
           })}
         </script>
+
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "HowTo",
+            "name": "How to Master AI-Powered Email Campaigns",
+            "description": "Learn to use AI tools to craft engaging, high-converting email campaigns.",
+            "totalTime": "PT15M",
+            "step": [
+              { "@type": "HowToStep", "position": 1, "name": "Segment Your Audience", "text": "Use AI to create micro-segments for precise targeting." },
+              { "@type": "HowToStep", "position": 2, "name": "Personalize Content", "text": "Dynamic content blocks adapt emails for individual subscribers." },
+              { "@type": "HowToStep", "position": 3, "name": "Optimize Send Times", "text": "AI predicts when each subscriber is most likely to open your emails." },
+              { "@type": "HowToStep", "position": 4, "name": "Analyze Engagement Metrics", "text": "AI dashboards highlight opportunities and underperforming content." },
+              { "@type": "HowToStep", "position": 5, "name": "Humanize Your Emails", "text": "Combine AI efficiency with authentic voice and storytelling." }
+            ]
+          })}
+        </script>
       </Helmet>
 
       <div className="min-h-screen bg-background">

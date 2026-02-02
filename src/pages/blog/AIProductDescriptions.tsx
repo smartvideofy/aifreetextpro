@@ -85,6 +85,23 @@ export default function AIProductDescriptions() {
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
+            "@type": "HowTo",
+            "name": "How to Humanize AI Content for eCommerce Product Descriptions",
+            "description": "Step-by-step guide to transform AI-generated product descriptions into authentic, conversion-optimized copy.",
+            "totalTime": "PT15M",
+            "step": [
+              { "@type": "HowToStep", "position": 1, "name": "Generate Base Description", "text": "Use AI to draft product features, specs, and benefits." },
+              { "@type": "HowToStep", "position": 2, "name": "Refine Tone", "text": "Adjust for warmth, excitement, and clarity. Match your brand voice." },
+              { "@type": "HowToStep", "position": 3, "name": "Add Storytelling", "text": "Include relatable use cases or customer scenarios." },
+              { "@type": "HowToStep", "position": 4, "name": "Incorporate SEO Naturally", "text": "Sprinkle keywords without disrupting flow." },
+              { "@type": "HowToStep", "position": 5, "name": "Proofread & Edit", "text": "Check readability, flow, and emotional appeal." }
+            ]
+          })}
+        </script>
+
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             "itemListElement": [
               { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://aifreetextpro.com/" },

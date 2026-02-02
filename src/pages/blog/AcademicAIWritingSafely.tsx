@@ -18,7 +18,7 @@ const relatedArticles = [
   {
     title: "Bypass Turnitin AI Detection",
     description: "How to pass Turnitin's AI detection system",
-    href: "/blog/bypass-turnitin-ai-detection",
+    href: "/bypass-turnitin-ai-detection",
     category: "Guide"
   },
   {

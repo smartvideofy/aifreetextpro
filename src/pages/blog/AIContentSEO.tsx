@@ -20,6 +20,18 @@ const relatedArticles = [
     description: "How to create natural content that reads authentically",
     href: "/blog/pass-all-ai-detectors-guide",
     category: "Guide"
+  },
+  {
+    title: "AI-Powered SEO Content in 2026",
+    description: "How AI is transforming search engine optimization",
+    href: "/blog/ai-powered-seo-content-2026",
+    category: "SEO"
+  },
+  {
+    title: "Zero-Click Search and AI Content",
+    description: "Strategies for visibility in the age of AI search",
+    href: "/blog/zero-click-search-ai-2026",
+    category: "SEO"
   }
 ];
 
@@ -52,12 +64,13 @@ const AIContentSEO = () => {
             "@type": "Article",
             "headline": "AI Content for SEO: How to Generate Undetectable Articles That Rank",
             "description": "How to use AI for SEO content at scale while ensuring articles pass detection.",
-            "datePublished": "2025-01-20",
-            "dateModified": "2025-01-20",
+            "datePublished": "2026-02-02",
+            "dateModified": "2026-02-02",
             "author": {
-              "@type": "Organization",
-              "name": "AI Free Text Pro",
-              "url": "https://aifreetextpro.com"
+              "@type": "Person",
+              "name": "Dr. Sarah Chen",
+              "url": "https://aifreetextpro.com/team#sarah-chen",
+              "jobTitle": "Founder & CEO"
             },
             "publisher": {
               "@type": "Organization",

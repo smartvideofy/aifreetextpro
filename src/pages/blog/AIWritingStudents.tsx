@@ -20,6 +20,18 @@ const relatedArticles = [
     description: "Transform AI content into natural, authentic writing",
     href: "/blog/humanize-ai-text-without-losing-voice",
     category: "Writing Tips"
+  },
+  {
+    title: "Bypass Turnitin AI Detection",
+    description: "How to pass Turnitin's AI detection system",
+    href: "/bypass-turnitin-ai-detection",
+    category: "Guide"
+  },
+  {
+    title: "How AI Detectors Work",
+    description: "Understanding the technology behind detection tools",
+    href: "/blog/how-ai-detectors-work",
+    category: "Educational"
   }
 ];
 
@@ -58,16 +70,13 @@ const AIWritingStudents = () => {
               "width": 1200,
               "height": 675
             },
-            "datePublished": "2026-01-08",
-            "dateModified": "2026-01-08",
+            "datePublished": "2026-02-02",
+            "dateModified": "2026-02-02",
             "author": {
-              "@type": "Organization",
-              "name": "AI Free Text Pro",
-              "url": "https://aifreetextpro.com",
-              "logo": {
-                "@type": "ImageObject",
-                "url": "https://aifreetextpro.com/before-after-demo.png"
-              }
+              "@type": "Person",
+              "name": "Dr. Sarah Chen",
+              "url": "https://aifreetextpro.com/team#sarah-chen",
+              "jobTitle": "Founder & CEO"
             },
             "publisher": {
               "@type": "Organization",

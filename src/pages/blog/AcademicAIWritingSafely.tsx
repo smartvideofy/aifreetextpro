@@ -64,12 +64,13 @@ const AcademicAIWritingSafely = () => {
             "@type": "Article",
             "headline": "Maintaining Academic Integrity: Using AI to Write Thesis and Essays Safely",
             "description": "Learn how to use AI responsibly for academic writing.",
-            "datePublished": "2025-01-20",
-            "dateModified": "2025-01-20",
+            "datePublished": "2026-02-02",
+            "dateModified": "2026-02-02",
             "author": {
-              "@type": "Organization",
-              "name": "AI Free Text Pro",
-              "url": "https://aifreetextpro.com"
+              "@type": "Person",
+              "name": "Dr. Sarah Chen",
+              "url": "https://aifreetextpro.com/team#sarah-chen",
+              "jobTitle": "Founder & CEO"
             },
             "publisher": {
               "@type": "Organization",

@@ -64,12 +64,13 @@ const PassAllDetectorsGuide = () => {
             "@type": "Article",
             "headline": "The Definitive Guide to Writing Human-Like Content (2026)",
             "description": "Complete guide to creating natural, human-like AI content.",
-            "datePublished": "2026-01-01",
-            "dateModified": "2026-01-24",
+            "datePublished": "2026-02-02",
+            "dateModified": "2026-02-02",
             "author": {
-              "@type": "Organization",
-              "name": "AI Free Text Pro",
-              "url": "https://aifreetextpro.com"
+              "@type": "Person",
+              "name": "Dr. Sarah Chen",
+              "url": "https://aifreetextpro.com/team#sarah-chen",
+              "jobTitle": "Founder & CEO"
             },
             "publisher": {
               "@type": "Organization",

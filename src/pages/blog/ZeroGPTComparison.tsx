@@ -8,8 +8,8 @@ import { ArrowRight, CheckCircle2, XCircle } from "lucide-react";
 
 const relatedArticles = [
   {
-    title: "AI Detection Tools Compared (2025 Edition)",
-    description: "Comprehensive comparison of the top AI detection tools in 2025",
+    title: "AI Detection Tools Compared (2026 Edition)",
+    description: "Comprehensive comparison of the top AI detection tools in 2026",
     href: "/blog/ai-detection-tools-compared-2025",
     category: "Comparison"
   },
@@ -18,6 +18,18 @@ const relatedArticles = [
     description: "Understand the technology behind AI text detection algorithms",
     href: "/blog/how-ai-detectors-work",
     category: "Educational"
+  },
+  {
+    title: "GPTinf vs AI Free Text Pro",
+    description: "Head-to-head comparison of two popular AI humanizers",
+    href: "/blog/gptinf-vs-ai-free-text-pro",
+    category: "Comparison"
+  },
+  {
+    title: "Originality.AI Review",
+    description: "Accuracy, pricing, and how to improve your writing",
+    href: "/blog/originality-ai-review-how-to-beat",
+    category: "Review"
   }
 ];
 
@@ -56,16 +68,13 @@ export default function ZeroGPTComparison() {
               "width": 1200,
               "height": 675
             },
-            "datePublished": "2025-01-19",
-            "dateModified": "2025-01-19",
+            "datePublished": "2026-02-02",
+            "dateModified": "2026-02-02",
             "author": {
-              "@type": "Organization",
-              "name": "AI Free Text Pro",
-              "url": "https://aifreetextpro.com",
-              "logo": {
-                "@type": "ImageObject",
-                "url": "https://aifreetextpro.com/before-after-demo.png"
-              }
+              "@type": "Person",
+              "name": "Dr. Sarah Chen",
+              "url": "https://aifreetextpro.com/team#sarah-chen",
+              "jobTitle": "Founder & CEO"
             },
             "publisher": {
               "@type": "Organization",

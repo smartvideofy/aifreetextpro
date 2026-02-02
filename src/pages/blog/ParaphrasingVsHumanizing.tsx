@@ -16,7 +16,7 @@ const relatedArticles = [
     category: "Best Practices"
   },
   {
-    title: "Top 10 AI Humanizer Tools for 2025",
+    title: "Top 10 AI Humanizer Tools for 2026",
     description: "Compare the best AI humanizers and find the right one for you",
     href: "/blog/top-10-ai-humanizer-tools-2025",
     category: "Comparison"
@@ -26,6 +26,12 @@ const relatedArticles = [
     description: "Learn what AI detectors look for in text",
     href: "/blog/ai-detection-patterns-explained",
     category: "Educational"
+  },
+  {
+    title: "How to Humanize AI-Generated Text",
+    description: "Transform AI content into natural, authentic writing",
+    href: "/blog/humanize-ai-text-without-losing-voice",
+    category: "Guide"
   }
 ];
 
@@ -58,12 +64,13 @@ const ParaphrasingVsHumanizing = () => {
             "@type": "Article",
             "headline": "Paraphrasing vs. Humanizing: Why Marketers Need a True AI Humanizer",
             "description": "Understand the critical difference between AI paraphrasing and humanizing.",
-            "datePublished": "2025-01-20",
-            "dateModified": "2025-01-20",
+            "datePublished": "2026-02-02",
+            "dateModified": "2026-02-02",
             "author": {
-              "@type": "Organization",
-              "name": "AI Free Text Pro",
-              "url": "https://aifreetextpro.com"
+              "@type": "Person",
+              "name": "Dr. Sarah Chen",
+              "url": "https://aifreetextpro.com/team#sarah-chen",
+              "jobTitle": "Founder & CEO"
             },
             "publisher": {
               "@type": "Organization",

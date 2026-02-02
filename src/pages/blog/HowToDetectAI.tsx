@@ -23,7 +23,7 @@ const relatedArticles = [
       category: "Guides"
     },
     {
-      title: "AI Detection Patterns: 5 Linguistic Signs",
+      title: "AI Detection Patterns Explained",
       description: "Learn the patterns AI detectors analyze in your writing",
       href: "/blog/ai-detection-patterns-explained",
       category: "Technical"
@@ -39,7 +39,7 @@ const relatedArticles = [
   return (
     <div className="min-h-screen flex flex-col">
       <Helmet>
-        <title>How to Detect AI-Generated Text: Complete Guide 2025 | AI Free Text Pro</title>
+        <title>How to Detect AI-Generated Text: Complete Guide 2026 | AI Free Text Pro</title>
         <meta name="description" content="Learn expert techniques to detect AI-generated text. Discover key linguistic patterns, AI writing markers, and detection tools to identify ChatGPT, GPT-4, and AI-written content with 98% accuracy." />
         <meta name="keywords" content="detect ai text, identify ai writing, chatgpt detection, ai generated content, spot ai writing, ai detection methods, gpt detector" />
         <link rel="canonical" href="https://aifreetextpro.com/blog/how-to-detect-ai-generated-text" />
@@ -53,19 +53,19 @@ const relatedArticles = [
         <meta property="og:type" content="article" />
         <meta property="og:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" />
         <meta property="og:site_name" content="AI Free Text Pro" />
-        <meta property="article:published_time" content="2025-10-05" />
-        <meta property="article:author" content="AI Free Text Pro" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@aifreetextpro" />
-        <meta name="twitter:title" content="How to Detect AI-Generated Text: Complete Guide" />
-        <meta name="twitter:description" content="Expert techniques to detect AI-generated text with 98% accuracy." />
-        <meta name="twitter:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" />
+            <meta property="article:published_time" content="2026-02-02" />
+            <meta property="article:author" content="Dr. Sarah Chen" />
+            <meta name="twitter:card" content="summary_large_image" />
+            <meta name="twitter:site" content="@aifreetextpro" />
+            <meta name="twitter:title" content="How to Detect AI-Generated Text: Complete Guide" />
+            <meta name="twitter:description" content="Expert techniques to detect AI-generated text with 98% accuracy." />
+            <meta name="twitter:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" />
         
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Article",
-            "headline": "How to Detect AI-Generated Text: Complete Guide 2025",
+            "headline": "How to Detect AI-Generated Text: Complete Guide 2026",
             "description": "Learn expert techniques to detect AI-generated text. Discover key linguistic patterns, AI writing markers, and detection tools to identify ChatGPT, GPT-4, and AI-written content with 98% accuracy.",
             "image": {
               "@type": "ImageObject",
@@ -73,16 +73,13 @@ const relatedArticles = [
               "width": 1200,
               "height": 675
             },
-            "datePublished": "2025-10-05",
-            "dateModified": "2025-10-05",
+            "datePublished": "2026-02-02",
+            "dateModified": "2026-02-02",
             "author": {
-              "@type": "Organization",
-              "name": "AI Free Text Pro",
-              "url": "https://aifreetextpro.com",
-              "logo": {
-                "@type": "ImageObject",
-                "url": "https://aifreetextpro.com/before-after-demo.png"
-              }
+              "@type": "Person",
+              "name": "Dr. Sarah Chen",
+              "url": "https://aifreetextpro.com/team#sarah-chen",
+              "jobTitle": "Founder & CEO"
             },
             "publisher": {
               "@type": "Organization",
@@ -150,7 +147,7 @@ const relatedArticles = [
                   <span className="px-3 py-1 rounded-full bg-primary/10 text-primary font-medium">
                     AI Detection
                   </span>
-                  <time dateTime="2025-10-05">October 5, 2025</time>
+                  <time dateTime="2026-02-02">February 2, 2026</time>
                   <span>8 min read</span>
                 </div>
 

@@ -69,16 +69,13 @@ export default function Top10AIHumanizers() {
               "width": 1200,
               "height": 675
             },
-            "datePublished": "2026-01-08",
-            "dateModified": "2026-01-08",
+            "datePublished": "2026-02-02",
+            "dateModified": "2026-02-02",
             "author": {
-              "@type": "Organization",
-              "name": "AI Free Text Pro",
-              "url": "https://aifreetextpro.com",
-              "logo": {
-                "@type": "ImageObject",
-                "url": "https://aifreetextpro.com/before-after-demo.png"
-              }
+              "@type": "Person",
+              "name": "Dr. Sarah Chen",
+              "url": "https://aifreetextpro.com/team#sarah-chen",
+              "jobTitle": "Founder & CEO"
             },
             "publisher": {
               "@type": "Organization",

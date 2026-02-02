@@ -24,6 +24,12 @@ const relatedArticles = [
     description: "Complete strategies to make your content undetectable",
     href: "/blog/bypass-ai-detection-guide",
     category: "Guide"
+  },
+  {
+    title: "AI Detection Patterns Explained",
+    description: "Understanding perplexity and burstiness in AI detection",
+    href: "/blog/ai-detection-patterns-explained",
+    category: "Technical"
   }
 ];
 

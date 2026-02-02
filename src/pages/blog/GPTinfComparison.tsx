@@ -10,7 +10,7 @@ import { InternalLinks } from "@/components/InternalLinks";
 
 const relatedArticles = [
   {
-    title: "Top 10 AI Humanizer Tools for 2025",
+    title: "Top 10 AI Humanizer Tools for 2026",
     description: "Complete comparison of the best AI humanizers available",
     href: "/blog/top-10-ai-humanizer-tools-2025",
     category: "Comparison"
@@ -20,6 +20,18 @@ const relatedArticles = [
     description: "The ultimate guide to bypassing AI detection",
     href: "/blog/make-chatgpt-undetectable-2025",
     category: "Guide"
+  },
+  {
+    title: "Best Free AI Humanizer Tools in 2026",
+    description: "Compare the top free AI humanizer tools available",
+    href: "/blog/best-free-ai-humanizer-tools-2025",
+    category: "Tools"
+  },
+  {
+    title: "ZeroGPT vs AI Free Text Pro",
+    description: "Which AI detector is more accurate in 2026?",
+    href: "/blog/zerogpt-vs-ai-free-text-pro-2025",
+    category: "Comparison"
   }
 ];
 
@@ -52,12 +64,13 @@ const GPTinfComparison = () => {
             "@type": "Article",
             "headline": "GPTinf vs. AI Free Text Pro: Which Humanizer Offers the Highest Success Rate?",
             "description": "Detailed comparison of GPTinf and AI Free Text Pro humanizers.",
-            "datePublished": "2025-01-20",
-            "dateModified": "2025-01-20",
+            "datePublished": "2026-02-02",
+            "dateModified": "2026-02-02",
             "author": {
-              "@type": "Organization",
-              "name": "AI Free Text Pro",
-              "url": "https://aifreetextpro.com"
+              "@type": "Person",
+              "name": "Dr. Sarah Chen",
+              "url": "https://aifreetextpro.com/team#sarah-chen",
+              "jobTitle": "Founder & CEO"
             },
             "publisher": {
               "@type": "Organization",

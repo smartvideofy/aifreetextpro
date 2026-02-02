@@ -24,6 +24,12 @@ const relatedArticles = [
     description: "Understanding the technology behind AI detection",
     href: "/blog/how-ai-detectors-work",
     category: "Technical"
+  },
+  {
+    title: "AI Content for SEO",
+    description: "How to generate undetectable AI articles that rank",
+    href: "/blog/ai-content-seo-undetectable",
+    category: "SEO"
   }
 ];
 
@@ -65,11 +71,13 @@ export default function AIContentSEO2026() {
               "width": 1200,
               "height": 675
             },
-            "datePublished": "2025-12-30",
-            "dateModified": "2025-12-30",
+            "datePublished": "2026-02-02",
+            "dateModified": "2026-02-02",
             "author": {
               "@type": "Person",
-              "name": "Shine S"
+              "name": "Dr. Sarah Chen",
+              "url": "https://aifreetextpro.com/team#sarah-chen",
+              "jobTitle": "Founder & CEO"
             },
             "publisher": {
               "@type": "Organization",

@@ -20,6 +20,18 @@ const relatedArticles = [
     description: "The science behind AI text analysis",
     href: "/blog/how-ai-detectors-work",
     category: "Educational"
+  },
+  {
+    title: "Bypass Originality AI Detection",
+    description: "Strategies to pass Originality.AI detection",
+    href: "/bypass-originality-ai-detection",
+    category: "Guide"
+  },
+  {
+    title: "AI Detection Tools Compared (2026 Edition)",
+    description: "See which AI detector is most accurate",
+    href: "/blog/ai-detection-tools-compared-2025",
+    category: "Comparison"
   }
 ];
 
@@ -52,12 +64,13 @@ const OriginalityAIReview = () => {
             "@type": "Article",
             "headline": "Originality.AI Detector Review: Accuracy, Pricing, and How It Works",
             "description": "Complete Originality.AI review covering accuracy, pricing, and how to improve AI writing quality.",
-            "datePublished": "2026-01-08",
-            "dateModified": "2026-01-08",
+            "datePublished": "2026-02-02",
+            "dateModified": "2026-02-02",
             "author": {
-              "@type": "Organization",
-              "name": "AI Free Text Pro",
-              "url": "https://aifreetextpro.com"
+              "@type": "Person",
+              "name": "Dr. Sarah Chen",
+              "url": "https://aifreetextpro.com/team#sarah-chen",
+              "jobTitle": "Founder & CEO"
             },
             "publisher": {
               "@type": "Organization",

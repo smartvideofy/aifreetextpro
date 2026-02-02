@@ -189,33 +189,175 @@ export default function WhyAIContentFails() {
 
             <div className="space-y-8">
               <section>
-                <h2 className="text-3xl font-bold mb-4">The Five Fatal Flaws</h2>
-                <ol className="space-y-4">
-                  <li><strong>Generic, Template-Like Structure:</strong> AI loves formulas. Every article follows the same pattern, making it instantly recognizable.</li>
-                  <li><strong>Lack of Personal Experience:</strong> AI can't share stories from your life or unique insights from your work.</li>
-                  <li><strong>Surface-Level Analysis:</strong> AI often states the obvious without diving deep into nuanced arguments.</li>
-                  <li><strong>Overly Perfect Grammar:</strong> Real humans make small mistakes, use fragments, and write conversationally.</li>
-                  <li><strong>Missing Emotional Depth:</strong> AI struggles to convey genuine emotion, humor, or passion.</li>
-                </ol>
+                <p className="text-xl text-muted-foreground leading-relaxed mb-6">
+                  You've carefully prompted ChatGPT, reviewed the output, maybe even run it through a spell-checker. Yet somehow, your content still gets flagged by detection tools or rejected by editors. The problem isn't the AI; it's understanding why AI-generated text fails the "human test" and knowing how to fix it.
+                </p>
+              </section>
+
+              <section>
+                <h2 className="text-3xl font-bold mb-4">The Five Fatal Flaws of AI Content</h2>
+                <p className="text-muted-foreground mb-6">
+                  After analyzing thousands of flagged AI texts, we've identified five consistent patterns that cause content to fail human review. Understanding these patterns is the first step toward creating content that truly resonates.
+                </p>
+                
+                <div className="space-y-6">
+                  <div className="bg-muted/30 rounded-lg p-6">
+                    <h3 className="text-xl font-semibold mb-3">1. Generic, Template-Like Structure</h3>
+                    <p className="text-muted-foreground mb-3">
+                      AI loves formulas. Introduction, three main points, conclusion. Every sentence is grammatically perfect. Every paragraph transitions smoothly to the next. This very consistency becomes the tell.
+                    </p>
+                    <div className="bg-background rounded p-4">
+                      <p className="text-sm font-medium text-red-600 dark:text-red-400 mb-2">Red Flag Example:</p>
+                      <p className="text-sm text-muted-foreground italic">"In today's digital age, content marketing has become increasingly important. First, it helps build brand awareness. Second, it drives traffic. Third, it generates leads. In conclusion, businesses should invest in content marketing."</p>
+                    </div>
+                  </div>
+
+                  <div className="bg-muted/30 rounded-lg p-6">
+                    <h3 className="text-xl font-semibold mb-3">2. Lack of Personal Experience</h3>
+                    <p className="text-muted-foreground mb-3">
+                      AI cannot share stories from your life. It doesn't know about the time your marketing campaign flopped, the lesson you learned from a mentor, or the specific moment when everything clicked. This absence of lived experience creates hollow content.
+                    </p>
+                    <p className="text-muted-foreground">
+                      Human readers instinctively notice when content lacks the texture of real experience. They might not consciously identify the issue, but something feels off.
+                    </p>
+                  </div>
+
+                  <div className="bg-muted/30 rounded-lg p-6">
+                    <h3 className="text-xl font-semibold mb-3">3. Surface-Level Analysis</h3>
+                    <p className="text-muted-foreground mb-3">
+                      AI tends to state the obvious rather than diving deep. It will tell you "SEO is important for visibility" but won't share the specific tactic that doubled organic traffic for a niche e-commerce site, or why a particular approach failed in B2B contexts.
+                    </p>
+                    <p className="text-muted-foreground">
+                      Expert human writers offer insights born from experience, testing, and failure. AI offers summaries of what's already been written elsewhere.
+                    </p>
+                  </div>
+
+                  <div className="bg-muted/30 rounded-lg p-6">
+                    <h3 className="text-xl font-semibold mb-3">4. Overly Perfect Grammar and Structure</h3>
+                    <p className="text-muted-foreground mb-3">
+                      Paradoxically, perfect writing can be a problem. Real humans make small mistakes. We use fragments. Sometimes on purpose. We start sentences with "And" or "But" when it feels right. We occasionally break rules for emphasis or rhythm.
+                    </p>
+                    <p className="text-muted-foreground">
+                      AI, trained to produce "correct" output, rarely takes these creative liberties. The result is text that's technically flawless but stylistically flat.
+                    </p>
+                  </div>
+
+                  <div className="bg-muted/30 rounded-lg p-6">
+                    <h3 className="text-xl font-semibold mb-3">5. Missing Emotional Depth</h3>
+                    <p className="text-muted-foreground mb-3">
+                      AI struggles to convey genuine emotion, humor, or passion. It can describe emotions but rarely evokes them. The difference between "This approach can be frustrating" and actually making the reader feel that frustration is what separates forgettable content from memorable writing.
+                    </p>
+                    <p className="text-muted-foreground">
+                      Human reviewers and readers sense this emotional flatness, even if they can't articulate it. Content that doesn't move them won't be shared, remembered, or acted upon.
+                    </p>
+                  </div>
+                </div>
               </section>
 
               <section>
                 <h2 className="text-3xl font-bold mb-4">The Fix: 7 Steps to Human-Quality Content</h2>
-                <ol className="space-y-3">
-                  <li><strong>Add Personal Anecdotes:</strong> Insert real examples from your experience</li>
-                  <li><strong>Vary Sentence Structure:</strong> Mix short and long sentences naturally</li>
-                  <li><strong>Use Conversational Language:</strong> Write like you speak</li>
-                  <li><strong>Include Specific Details:</strong> Replace generic statements with concrete examples</li>
-                  <li><strong>Show Personality:</strong> Let your voice and style shine through</li>
-                  <li><strong>Edit for Natural Flow:</strong> Read aloud and adjust awkward phrasing</li>
-                  <li><strong>Test with <Link to="/" className="text-primary hover:underline">AI Free Text Pro</Link>:</strong> Verify your content passes detection</li>
-                </ol>
+                <p className="text-muted-foreground mb-6">
+                  Transforming AI output into content that passes human review requires systematic attention to the elements that make writing feel authentically human.
+                </p>
+                
+                <div className="space-y-4">
+                  <div className="flex gap-4 items-start">
+                    <div className="flex-shrink-0 w-8 h-8 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-bold">1</div>
+                    <div>
+                      <h3 className="font-semibold mb-1">Add Personal Anecdotes</h3>
+                      <p className="text-muted-foreground">Insert real examples from your experience. Even brief mentions of specific situations you've encountered add authenticity that AI cannot replicate.</p>
+                    </div>
+                  </div>
+
+                  <div className="flex gap-4 items-start">
+                    <div className="flex-shrink-0 w-8 h-8 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-bold">2</div>
+                    <div>
+                      <h3 className="font-semibold mb-1">Vary Sentence Structure</h3>
+                      <p className="text-muted-foreground">Mix short punchy sentences with longer explanatory ones. Add questions. Use fragments sparingly but deliberately. Break the monotonous rhythm AI creates.</p>
+                    </div>
+                  </div>
+
+                  <div className="flex gap-4 items-start">
+                    <div className="flex-shrink-0 w-8 h-8 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-bold">3</div>
+                    <div>
+                      <h3 className="font-semibold mb-1">Use Conversational Language</h3>
+                      <p className="text-muted-foreground">Write like you speak. Use contractions. Start sentences with "And" or "But" when natural. Include informal phrases that match how people actually communicate.</p>
+                    </div>
+                  </div>
+
+                  <div className="flex gap-4 items-start">
+                    <div className="flex-shrink-0 w-8 h-8 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-bold">4</div>
+                    <div>
+                      <h3 className="font-semibold mb-1">Include Specific Details</h3>
+                      <p className="text-muted-foreground">Replace generic statements with concrete examples. Instead of "many companies benefit," name specific companies and what they did. Specificity signals expertise.</p>
+                    </div>
+                  </div>
+
+                  <div className="flex gap-4 items-start">
+                    <div className="flex-shrink-0 w-8 h-8 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-bold">5</div>
+                    <div>
+                      <h3 className="font-semibold mb-1">Show Your Personality</h3>
+                      <p className="text-muted-foreground">Let your voice and style shine through. Be opinionated. Share what you genuinely believe, not what seems safe and balanced. Readers connect with authentic perspectives.</p>
+                    </div>
+                  </div>
+
+                  <div className="flex gap-4 items-start">
+                    <div className="flex-shrink-0 w-8 h-8 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-bold">6</div>
+                    <div>
+                      <h3 className="font-semibold mb-1">Edit for Natural Flow</h3>
+                      <p className="text-muted-foreground">Read your content aloud. Awkward phrasing becomes obvious when spoken. If you stumble over a sentence, rewrite it the way you'd actually say it.</p>
+                    </div>
+                  </div>
+
+                  <div className="flex gap-4 items-start">
+                    <div className="flex-shrink-0 w-8 h-8 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-bold">7</div>
+                    <div>
+                      <h3 className="font-semibold mb-1">Test with <Link to="/" className="text-primary hover:underline">AI Free Text Pro</Link></h3>
+                      <p className="text-muted-foreground">Verify your content passes detection before publishing. Our tool identifies remaining AI patterns and provides specific suggestions for improvement.</p>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <section>
+                <h2 className="text-3xl font-bold mb-4">Before and After: A Real Example</h2>
+                <div className="grid md:grid-cols-2 gap-4 mb-6">
+                  <div className="bg-red-50 dark:bg-red-950/30 rounded-lg p-4 border border-red-200 dark:border-red-900">
+                    <h3 className="font-semibold text-red-700 dark:text-red-400 mb-2">Before (AI-Generated)</h3>
+                    <p className="text-sm text-muted-foreground italic">
+                      "Content marketing is an essential component of modern business strategy. It helps companies build brand awareness, establish authority, and drive customer engagement. By creating valuable content, businesses can attract and retain a clearly defined audience."
+                    </p>
+                  </div>
+                  <div className="bg-green-50 dark:bg-green-950/30 rounded-lg p-4 border border-green-200 dark:border-green-900">
+                    <h3 className="font-semibold text-green-700 dark:text-green-400 mb-2">After (Humanized)</h3>
+                    <p className="text-sm text-muted-foreground italic">
+                      "I spent two years convinced content marketing was a waste of time. Then a single blog post brought in $47,000 in consulting revenue. Here's what changed: I stopped writing what I thought people wanted to hear and started sharing what I'd actually learned, failures included."
+                    </p>
+                  </div>
+                </div>
+                <p className="text-muted-foreground">
+                  The humanized version includes personal experience, specific numbers, emotional journey (skepticism to success), and an authentic voice. It reads like a real person sharing real insights.
+                </p>
+              </section>
+
+              <section>
+                <h2 className="text-3xl font-bold mb-4">Why This Matters for Your Content</h2>
+                <p className="text-muted-foreground mb-4">
+                  Whether you're a student, marketer, or professional writer, content that feels authentically human performs better on every metric:
+                </p>
+                <ul className="space-y-2 text-muted-foreground">
+                  <li><strong className="text-foreground">Higher engagement:</strong> Readers spend more time with content that feels genuine</li>
+                  <li><strong className="text-foreground">Better SEO performance:</strong> Google increasingly rewards content that demonstrates E-E-A-T (Experience, Expertise, Authoritativeness, Trustworthiness)</li>
+                  <li><strong className="text-foreground">More shares:</strong> People share content that made them feel something</li>
+                  <li><strong className="text-foreground">Stronger trust:</strong> Authentic voice builds credibility over time</li>
+                  <li><strong className="text-foreground">Pass reviews:</strong> Human editors and AI detectors are less likely to flag genuinely humanized content</li>
+                </ul>
               </section>
 
               <div className="bg-gradient-to-r from-primary/10 to-primary/5 rounded-xl p-8 my-12">
                 <h2 className="text-2xl font-bold mb-4">Check Your Content Quality</h2>
-                <p className="text-lg mb-6">
-                  Use AI Free Text Pro to identify AI patterns in your writing and get specific suggestions for improvement.
+                <p className="text-lg mb-6 text-muted-foreground">
+                  Use AI Free Text Pro to identify AI patterns in your writing and get specific suggestions for improvement. See exactly which elements trigger detection and learn how to fix them.
                 </p>
                 <a 
                   href="https://app.aifreetextpro.com"

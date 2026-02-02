@@ -196,69 +196,175 @@ export default function HowAIDetectorsWork() {
             <div className="space-y-8">
               <section>
                 <h2 className="text-3xl font-bold mb-4">The Three Pillars of AI Detection</h2>
+                <p className="text-muted-foreground mb-6">
+                  Modern AI detection relies on a sophisticated combination of technologies that analyze text at multiple levels. Understanding these core components helps explain why some content gets flagged while other text passes undetected.
+                </p>
                 
                 <div className="grid md:grid-cols-3 gap-4 mb-6">
                   <div className="bg-muted/50 rounded-lg p-4">
                     <Brain className="w-6 h-6 text-primary mb-2" />
                     <h3 className="font-semibold mb-2">Machine Learning Models</h3>
-                    <p className="text-sm">Trained on millions of human and AI-written texts</p>
+                    <p className="text-sm text-muted-foreground">Trained on millions of human and AI-written texts to recognize subtle differences in writing patterns</p>
                   </div>
                   <div className="bg-muted/50 rounded-lg p-4">
                     <Search className="w-6 h-6 text-primary mb-2" />
                     <h3 className="font-semibold mb-2">Pattern Recognition</h3>
-                    <p className="text-sm">Identifies linguistic markers unique to AI</p>
+                    <p className="text-sm text-muted-foreground">Identifies linguistic markers and structural patterns unique to AI-generated content</p>
                   </div>
                   <div className="bg-muted/50 rounded-lg p-4">
                     <Zap className="w-6 h-6 text-primary mb-2" />
                     <h3 className="font-semibold mb-2">Statistical Analysis</h3>
-                    <p className="text-sm">Measures perplexity and burstiness scores</p>
+                    <p className="text-sm text-muted-foreground">Measures perplexity, burstiness, and entropy scores to quantify human-like qualities</p>
                   </div>
                 </div>
               </section>
 
               <section>
-                <h2 className="text-3xl font-bold mb-4">Understanding Perplexity</h2>
-                <p>
-                  <strong>Perplexity</strong> measures how "surprised" a language model is by the text. AI-generated content typically has low perplexity because it chooses predictable words and phrases. Human writing, being more creative and varied, has higher perplexity.
+                <h2 className="text-3xl font-bold mb-4">Understanding Perplexity: The Predictability Metric</h2>
+                <p className="text-muted-foreground mb-4">
+                  <strong className="text-foreground">Perplexity</strong> is one of the most important metrics in AI detection. It measures how "surprised" a language model would be by a piece of text, essentially scoring how predictable the word choices are.
+                </p>
+                <p className="text-muted-foreground mb-4">
+                  When an AI generates text, it selects words based on probability distributions learned during training. This means AI-generated content tends to use the most statistically likely words and phrases, resulting in <strong className="text-foreground">low perplexity scores</strong>. The text flows smoothly but predictably.
+                </p>
+                <p className="text-muted-foreground mb-4">
+                  Human writers, conversely, make unexpected choices. We use unusual word combinations, incorporate slang, make creative leaps, and sometimes break grammatical conventions for effect. This unpredictability creates <strong className="text-foreground">higher perplexity scores</strong>.
                 </p>
                 <div className="bg-primary/10 rounded-lg p-6 my-4">
-                  <h3 className="font-semibold mb-2">Example:</h3>
-                  <p className="mb-2"><strong>AI Text (Low Perplexity):</strong> "In conclusion, it is important to note that..."</p>
-                  <p><strong>Human Text (High Perplexity):</strong> "So here's the thing..."</p>
+                  <h3 className="font-semibold mb-3">Perplexity in Practice:</h3>
+                  <div className="space-y-3">
+                    <div>
+                      <p className="font-medium text-red-600 dark:text-red-400">AI Text (Low Perplexity):</p>
+                      <p className="text-muted-foreground italic">"In conclusion, it is important to note that artificial intelligence has become an increasingly significant factor in modern business operations, offering numerous advantages for organizations seeking to improve efficiency."</p>
+                    </div>
+                    <div>
+                      <p className="font-medium text-green-600 dark:text-green-400">Human Text (High Perplexity):</p>
+                      <p className="text-muted-foreground italic">"So here's the thing about AI in business: it's messy. Sure, the marketing pitches make it sound like magic, but I've watched three companies blow their budgets on 'AI solutions' that never quite delivered."</p>
+                    </div>
+                  </div>
                 </div>
               </section>
 
               <section>
-                <h2 className="text-3xl font-bold mb-4">Burstiness: The Human Touch</h2>
-                <p>
-                  Humans write with variation, short punchy sentences followed by longer, complex ones. AI tends to generate uniform sentence lengths and structures. This variation, called <strong>burstiness</strong>, is a key indicator of human writing.
+                <h2 className="text-3xl font-bold mb-4">Burstiness: The Rhythm of Human Writing</h2>
+                <p className="text-muted-foreground mb-4">
+                  <strong className="text-foreground">Burstiness</strong> measures the variation in sentence structure, length, and complexity throughout a piece of text. It captures the natural rhythm of human communication.
+                </p>
+                <p className="text-muted-foreground mb-4">
+                  Humans naturally vary their writing. We might fire off three short sentences in a row when we're excited, then settle into a longer, more contemplative passage. A sudden question breaks the pattern. Then we're back to explaining. This ebb and flow creates "bursts" of different sentence types.
+                </p>
+                <p className="text-muted-foreground mb-4">
+                  AI, trained to produce consistently "good" output, tends toward uniformity. Sentences hover around similar lengths. Paragraph structures repeat. The result reads smoothly but monotonously, lacking the dynamic quality of human prose.
+                </p>
+                <div className="bg-muted/50 rounded-lg p-6 my-4">
+                  <h3 className="font-semibold mb-3">How Burstiness is Measured:</h3>
+                  <ul className="space-y-2 text-muted-foreground">
+                    <li><strong className="text-foreground">Sentence Length Variance:</strong> Standard deviation of word counts per sentence</li>
+                    <li><strong className="text-foreground">Structural Diversity:</strong> Variety in sentence openings and constructions</li>
+                    <li><strong className="text-foreground">Complexity Fluctuation:</strong> Changes in readability scores across paragraphs</li>
+                    <li><strong className="text-foreground">Punctuation Patterns:</strong> Use of fragments, questions, and exclamations</li>
+                  </ul>
+                </div>
+              </section>
+
+              <section>
+                <h2 className="text-3xl font-bold mb-4">Token Probability Analysis</h2>
+                <p className="text-muted-foreground mb-4">
+                  Advanced AI detectors examine <strong className="text-foreground">token-level probabilities</strong>, looking at how likely each word (or subword token) is given the preceding context. This technique is particularly effective because it directly targets how language models generate text.
+                </p>
+                <p className="text-muted-foreground mb-4">
+                  Language models like GPT-4 and Claude select each token based on a probability distribution. While they don't always choose the most probable token (they use sampling with temperature), the overall pattern of selections follows predictable statistical patterns.
+                </p>
+                <p className="text-muted-foreground">
+                  Detection systems can identify when token choices consistently fall within the "high probability" range that AI tends to favor, versus the more varied probability distribution seen in human writing.
                 </p>
               </section>
 
               <section>
-                <h2 className="text-3xl font-bold mb-4">Common AI Writing Patterns</h2>
-                <p>Detectors look for these telltale signs:</p>
-                <ul className="space-y-2">
-                  <li>Overuse of transition phrases ("moreover," "furthermore," "in addition")</li>
-                  <li>Repetitive sentence structures</li>
-                  <li>Lack of contractions and colloquialisms</li>
-                  <li>Overly formal or generic language</li>
-                  <li>Perfect grammar with no typos or quirks</li>
-                  <li>Balanced, methodical organization</li>
+                <h2 className="text-3xl font-bold mb-4">Common AI Writing Patterns Detectors Target</h2>
+                <p className="text-muted-foreground mb-4">Beyond statistical measures, detectors are trained to recognize specific linguistic patterns that appear more frequently in AI output:</p>
+                <div className="grid md:grid-cols-2 gap-4">
+                  <div className="bg-muted/30 rounded-lg p-4">
+                    <h3 className="font-semibold mb-2 text-red-600 dark:text-red-400">Structural Patterns</h3>
+                    <ul className="space-y-1 text-sm text-muted-foreground">
+                      <li>• Overuse of transition phrases ("moreover," "furthermore")</li>
+                      <li>• Repetitive sentence structures</li>
+                      <li>• Predictable paragraph organization</li>
+                      <li>• Balanced, symmetrical arguments</li>
+                    </ul>
+                  </div>
+                  <div className="bg-muted/30 rounded-lg p-4">
+                    <h3 className="font-semibold mb-2 text-red-600 dark:text-red-400">Vocabulary Patterns</h3>
+                    <ul className="space-y-1 text-sm text-muted-foreground">
+                      <li>• Lack of contractions ("do not" vs "don't")</li>
+                      <li>• Overly formal or generic language</li>
+                      <li>• Missing colloquialisms and slang</li>
+                      <li>• Perfect grammar without quirks</li>
+                    </ul>
+                  </div>
+                  <div className="bg-muted/30 rounded-lg p-4">
+                    <h3 className="font-semibold mb-2 text-red-600 dark:text-red-400">Content Patterns</h3>
+                    <ul className="space-y-1 text-sm text-muted-foreground">
+                      <li>• Surface-level analysis without depth</li>
+                      <li>• Absence of personal anecdotes</li>
+                      <li>• Generic examples and citations</li>
+                      <li>• Hedging language ("it's important to note")</li>
+                    </ul>
+                  </div>
+                  <div className="bg-muted/30 rounded-lg p-4">
+                    <h3 className="font-semibold mb-2 text-red-600 dark:text-red-400">Flow Patterns</h3>
+                    <ul className="space-y-1 text-sm text-muted-foreground">
+                      <li>• Lack of emotional variation</li>
+                      <li>• Missing rhetorical questions</li>
+                      <li>• No humor or wit</li>
+                      <li>• Consistent tone throughout</li>
+                    </ul>
+                  </div>
+                </div>
+              </section>
+
+              <section>
+                <h2 className="text-3xl font-bold mb-4">The Training Process: How Detectors Learn</h2>
+                <p className="text-muted-foreground mb-4">
+                  AI detectors are themselves machine learning models, trained on massive datasets containing both human-written and AI-generated text. The training process typically involves:
+                </p>
+                <ol className="space-y-3 text-muted-foreground">
+                  <li><strong className="text-foreground">1. Data Collection:</strong> Gathering millions of text samples from diverse sources including books, articles, social media, and academic papers</li>
+                  <li><strong className="text-foreground">2. AI Text Generation:</strong> Using various AI models (GPT-3, GPT-4, Claude, Llama) to generate comparable text on similar topics</li>
+                  <li><strong className="text-foreground">3. Feature Extraction:</strong> Analyzing both sets for perplexity, burstiness, vocabulary patterns, and other markers</li>
+                  <li><strong className="text-foreground">4. Model Training:</strong> Teaching a classifier to distinguish between the two categories based on extracted features</li>
+                  <li><strong className="text-foreground">5. Validation:</strong> Testing on held-out data to measure accuracy and reduce false positives</li>
+                </ol>
+              </section>
+
+              <section>
+                <h2 className="text-3xl font-bold mb-4">Limitations and False Positives</h2>
+                <p className="text-muted-foreground mb-4">
+                  No AI detector is perfect. Understanding their limitations helps contextualize results:
+                </p>
+                <ul className="space-y-2 text-muted-foreground">
+                  <li><strong className="text-foreground">Non-native speakers:</strong> ESL writers sometimes produce patterns similar to AI due to learned formal structures</li>
+                  <li><strong className="text-foreground">Technical writing:</strong> Academic and professional content often uses formal language that triggers false positives</li>
+                  <li><strong className="text-foreground">Edited AI content:</strong> Human-edited AI text may pass detection even though it originated from AI</li>
+                  <li><strong className="text-foreground">Short samples:</strong> Texts under 250 words often lack sufficient data for reliable analysis</li>
+                  <li><strong className="text-foreground">New AI models:</strong> Detectors trained on older models may miss patterns from newer AI systems</li>
                 </ul>
               </section>
 
               <section>
                 <h2 className="text-3xl font-bold mb-4">How <Link to="/" className="text-primary hover:underline">AI Free Text Pro</Link> Uses This Science</h2>
-                <p>
-                  Our detector combines multiple detection methods for superior accuracy. We analyze perplexity, burstiness, linguistic patterns, and compare against our trained models to give you the most reliable results available.
+                <p className="text-muted-foreground mb-4">
+                  Our detector combines multiple detection methods for superior accuracy. We analyze perplexity, burstiness, token probabilities, and linguistic patterns, then cross-reference against our continuously updated trained models.
+                </p>
+                <p className="text-muted-foreground">
+                  The result is a comprehensive analysis that provides not just a score, but actionable insights into which specific patterns triggered detection and how to address them.
                 </p>
               </section>
 
               <div className="bg-gradient-to-r from-primary/10 to-primary/5 rounded-xl p-8 my-12">
                 <h2 className="text-2xl font-bold mb-4">Test Your Understanding</h2>
-                <p className="text-lg mb-6">
-                  Use AI Free Text Pro to see these principles in action. Check any text for AI patterns and learn how to write more naturally.
+                <p className="text-lg mb-6 text-muted-foreground">
+                  Use AI Free Text Pro to see these principles in action. Check any text for AI patterns and learn exactly which markers triggered detection.
                 </p>
                 <a 
                   href="https://app.aifreetextpro.com"

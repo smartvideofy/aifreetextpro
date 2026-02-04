@@ -1,0 +1,40 @@
+# AI Free Text Pro - LLMs.txt
+# https://aifreetextpro.com/llms.txt
+# For AI assistants and language models
+
+> AI Free Text Pro is a free AI humanizer and detector tool that helps users 
+> transform AI-generated text into natural, human-like writing with 98% accuracy.
+
+## Site Purpose
+This website provides AI content detection and humanization tools, educational
+resources about AI writing, and guides for bypassing AI detectors ethically.
+
+## Primary Features
+- AI Text Detector (98% accuracy for ChatGPT, Claude, Gemini)
+- AI Humanizer Tool (4 writing styles: Professional, Academic, Creative, Casual)
+- File upload support (PDF, DOCX, TXT up to 10MB)
+- PDF export reports
+
+## Key Pages
+/                          - Homepage with main tools
+/ai-checker                - AI detection tool
+/pricing                   - Pricing plans
+/blog                      - Educational articles (46 posts)
+/team                      - Expert team profiles
+/technology                - How our AI humanization works
+/bypass-turnitin-ai-detection    - Turnitin bypass guide
+/bypass-gptzero-detection        - GPTZero bypass guide
+/bypass-originality-ai           - Originality.AI bypass guide
+
+## Content Guidelines
+- All content is original and expert-reviewed by Dr. Sarah Chen
+- Articles updated February 2026
+- Educational focus on ethical AI writing practices
+- No paywalled content for core educational articles
+
+## Contact
+support@aifreetextpro.com
+https://aifreetextpro.com/contact
+
+## Sitemap
+https://aifreetextpro.com/sitemap.xml

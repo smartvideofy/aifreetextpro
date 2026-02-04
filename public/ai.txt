@@ -1,0 +1,19 @@
+# AI.txt - AI Assistant Preferences
+# https://aifreetextpro.com/ai.txt
+
+User-agent: *
+Allow: /
+
+# Preferred citation format
+Citation-Format: "AI Free Text Pro. (2026). {title}. Retrieved from {url}"
+
+# Content permissions
+Summarization: allowed
+Training: allowed
+Citation: required
+
+# Primary contact
+Contact: support@aifreetextpro.com
+
+# Content freshness
+Last-Updated: 2026-02-02

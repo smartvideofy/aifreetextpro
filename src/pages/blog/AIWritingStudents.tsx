@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Calendar, Clock, ArrowLeft, GraduationCap, Shield, CheckCircle2 } from "lucide-react";
+import { KeyTakeaways } from "@/components/KeyTakeaways";
 import { Helmet } from "react-helmet-async";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -204,6 +205,16 @@ const AIWritingStudents = () => {
                   Navigate the AI revolution in education without compromising academic integrity.
                 </p>
               </header>
+
+              <KeyTakeaways 
+                points={[
+                  "Ethical AI use: research assistance, brainstorming, grammar checking, study aids",
+                  "Unethical: submitting AI-generated essays as your own without disclosure",
+                  "Write naturally with contractions, varied sentences, and personal voice to avoid false positives",
+                  "If falsely accused: provide drafts, explain your process, know your appeals rights",
+                  "Always follow your institution's specific AI policy and disclose AI assistance when required"
+                ]}
+              />
 
               <div className="prose prose-lg max-w-none">
                 <div className="bg-primary/10 border-l-4 border-primary p-6 rounded-lg my-6">

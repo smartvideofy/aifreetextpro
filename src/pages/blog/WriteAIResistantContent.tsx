@@ -5,6 +5,7 @@ import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { RelatedArticles } from "@/components/RelatedArticles";
 import { Link } from "react-router-dom";
 import { ArrowRight, Brain, Search, Zap } from "lucide-react";
+import { KeyTakeaways } from "@/components/KeyTakeaways";
 
 const relatedArticles = [
   {
@@ -142,6 +143,16 @@ export default function WriteAIResistantContent() {
                 Advanced strategies to humanize your writing, improve authenticity, and reduce AI detection scores while engaging readers.
               </p>
             </header>
+
+            <KeyTakeaways 
+              points={[
+                "AI-resistant content requires human voice, structural variation, and contextual depth",
+                "Add idioms, personal anecdotes, and natural phrasing to reflect genuine human thought",
+                "Mix sentence lengths and paragraph formats to increase burstiness scores",
+                "Enrich content with credible sources, quotes, and real-world examples",
+                "Edit iteratively and test with AI detectors until content reads naturally"
+              ]}
+            />
 
             <div className="space-y-12">
               <section>

@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, CheckCircle, AlertTriangle, Brain } from "lucide-react";
+import { KeyTakeaways } from "@/components/KeyTakeaways";
 import { Helmet } from "react-helmet-async";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -179,6 +180,16 @@ const relatedArticles = [
                   Master the art of identifying AI-generated content with proven detection techniques, key linguistic patterns, and expert strategies used by professionals worldwide.
                 </p>
               </header>
+
+              <KeyTakeaways 
+                points={[
+                  "AI text is overly formal with perfect structure, lacking natural human imperfections",
+                  "Watch for repetitive phrases: 'it's important to note,' 'delve into,' 'furthermore'",
+                  "AI lacks personal voice, anecdotes, and genuine emotional authenticity",
+                  "Uniform sentence length is a key tell; humans naturally vary between short and long",
+                  "Combine automated detection tools with human judgment for best accuracy"
+                ]}
+              />
 
               <div className="prose prose-lg max-w-none space-y-8">
                 <section>

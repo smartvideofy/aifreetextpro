@@ -23,6 +23,8 @@ Allow: /help-center
 Allow: /help-center/*
 Allow: /assets/
 Allow: /images/
+Allow: /llms.txt
+Allow: /ai.txt
 Disallow: /auth
 Disallow: /dashboard
 Disallow: /app
@@ -54,7 +56,62 @@ Allow: /
 User-agent: YandexBot
 Allow: /
 
+# ========================================
+# AI Crawler Permissions (AIO/GEO Optimization)
+# ========================================
+
+# OpenAI crawlers
+User-agent: GPTBot
+Allow: /
+Allow: /blog/
+Allow: /llms.txt
+Allow: /ai.txt
+Disallow: /auth
+Disallow: /dashboard
+Disallow: /app
+
+User-agent: ChatGPT-User
+Allow: /
+
+# Anthropic crawlers
+User-agent: ClaudeBot
+Allow: /
+Allow: /llms.txt
+Allow: /ai.txt
+
+User-agent: Claude-Web
+Allow: /
+
+# Perplexity crawler
+User-agent: PerplexityBot
+Allow: /
+Allow: /llms.txt
+Allow: /ai.txt
+
+# Google AI (Gemini/Bard)
+User-agent: Google-Extended
+Allow: /
+
+# Cohere crawler
+User-agent: cohere-ai
+Allow: /
+
+# Microsoft Copilot / Bing AI
+User-agent: Applebot-Extended
+Allow: /
+
+# Meta AI
+User-agent: meta-externalagent
+Allow: /
+
+# Common Crawl (used by many AI trainers)
+User-agent: CCBot
+Allow: /
+
+# ========================================
 # Social media crawlers
+# ========================================
+
 User-agent: Twitterbot
 Allow: /
 

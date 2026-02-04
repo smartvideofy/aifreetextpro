@@ -128,12 +128,28 @@ const Index = () => {
             "logo": "https://aifreetextpro.com/before-after-demo.png",
             "description": "Free AI detector and humanizer tool. Detect ChatGPT and make AI text sound human with 98% accuracy.",
             "sameAs": [
-              "https://app.aifreetextpro.com"
+              "https://app.aifreetextpro.com",
+              "https://twitter.com/aifreetextpro",
+              "https://www.linkedin.com/company/aifreetextpro"
             ],
             "contactPoint": {
               "@type": "ContactPoint",
               "contactType": "Customer Support",
               "url": "https://aifreetextpro.com/contact"
+            }
+          })}
+        </script>
+        
+        {/* Speakable Schema for Voice Assistants */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "name": "Free AI Humanizer & Detector Tool",
+            "url": "https://aifreetextpro.com/",
+            "speakable": {
+              "@type": "SpeakableSpecification",
+              "cssSelector": ["h1", ".hero-description", ".key-features"]
             }
           })}
         </script>

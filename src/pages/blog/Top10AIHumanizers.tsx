@@ -5,6 +5,7 @@ import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { RelatedArticles } from "@/components/RelatedArticles";
 import { Link } from "react-router-dom";
 import { ArrowRight, Star, DollarSign, Zap } from "lucide-react";
+import { KeyTakeaways } from "@/components/KeyTakeaways";
 
 const relatedArticles = [
   {
@@ -192,6 +193,16 @@ export default function Top10AIHumanizers() {
                 A comprehensive comparison of the best AI humanizer tools available this year, tested and rated for accuracy, features, and value.
               </p>
             </header>
+
+            <KeyTakeaways 
+              points={[
+                "AI Free Text Pro leads with 9.8/10 score: free unlimited use, 96% bypass rate, integrated detection",
+                "Top-tier humanizers achieve 89-96% bypass rates; mid-range tools hit 72-80%",
+                "Free options exist: AI Free Text Pro is fully free; others limit to 125-500 words",
+                "Key evaluation criteria: accuracy, value (price vs features), and additional capabilities",
+                "Premium tools ($10-50/month) may not outperform free alternatives like AI Free Text Pro"
+              ]}
+            />
 
             <div className="space-y-8">
               <section>

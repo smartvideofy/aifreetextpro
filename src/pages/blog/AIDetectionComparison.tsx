@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Calendar, Clock, ArrowLeft, CheckCircle2, XCircle, Award } from "lucide-react";
+import { KeyTakeaways } from "@/components/KeyTakeaways";
 import { Helmet } from "react-helmet-async";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -162,6 +163,16 @@ const AIDetectionComparison = () => {
                   We tested the top AI detectors with real-world samples to find which one delivers the most accurate results in 2025.
                 </p>
               </header>
+
+              <KeyTakeaways 
+                points={[
+                  "AI Free Text Pro leads with 94% accuracy and dual detection + humanization functionality",
+                  "GPTZero achieves 87% accuracy and is widely adopted in educational institutions",
+                  "Rewritify is fastest (1-2 sec) but has lower 82% accuracy",
+                  "Only AI Free Text Pro offers integrated humanization tool among tested platforms",
+                  "We tested 50 samples: 25 AI-generated (ChatGPT, Claude, Gemini) and 25 human-written"
+                ]}
+              />
 
               <div className="prose prose-lg max-w-none">
                 <h2>The AI Detection Landscape in 2025</h2>

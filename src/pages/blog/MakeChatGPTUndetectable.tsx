@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Calendar, Clock, ArrowLeft, Shield, Eye, Wand2, CheckCircle } from "lucide-react";
+import { KeyTakeaways } from "@/components/KeyTakeaways";
 import { Helmet } from "react-helmet-async";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -199,6 +200,16 @@ const MakeChatGPTUndetectable = () => {
                   The complete playbook for transforming AI-generated content into natural, human-quality writing that reads authentically.
                 </p>
               </header>
+
+              <KeyTakeaways 
+                points={[
+                  "AI detectors analyze perplexity (word predictability) and burstiness (sentence variation)",
+                  "Manual rewriting takes 15-30 min per 500 words with 70-85% success rate",
+                  "Prompt engineering achieves only 40-60% success, hit or miss",
+                  "AI humanizer tools like AI Free Text Pro achieve 96-98% success in seconds",
+                  "Always verify with multiple detectors before publishing or submitting"
+                ]}
+              />
 
               <div className="prose prose-lg max-w-none">
                 <p>

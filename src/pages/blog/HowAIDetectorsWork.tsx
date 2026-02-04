@@ -5,6 +5,7 @@ import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { RelatedArticles } from "@/components/RelatedArticles";
 import { Link } from "react-router-dom";
 import { ArrowRight, Brain, Search, Zap } from "lucide-react";
+import { KeyTakeaways } from "@/components/KeyTakeaways";
 
 const relatedArticles = [
   {
@@ -192,6 +193,16 @@ export default function HowAIDetectorsWork() {
                 Understanding the technology behind AI detection helps you write better, more authentic content.
               </p>
             </header>
+
+            <KeyTakeaways 
+              points={[
+                "AI detectors analyze perplexity (word predictability) and burstiness (sentence variation) to identify AI text",
+                "Low perplexity + uniform sentence length = high AI probability score",
+                "Human writing naturally has higher variation in word choice and structure",
+                "Detectors like GPTZero, Originality.AI, and Turnitin use similar underlying ML techniques",
+                "You can humanize AI text by adding personal anecdotes, varying sentence length, and using contractions"
+              ]}
+            />
 
             <div className="space-y-8">
               <section>

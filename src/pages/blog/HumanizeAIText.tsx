@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Calendar, Clock, ArrowLeft, Sparkles, Target, Users } from "lucide-react";
+import { KeyTakeaways } from "@/components/KeyTakeaways";
 import { Helmet } from "react-helmet-async";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -217,6 +218,16 @@ const HumanizeAIText = () => {
               </header>
 
               <div className="prose prose-lg max-w-none">
+              <KeyTakeaways 
+                points={[
+                  "AI writing sounds robotic due to formal language, repetitive structure, and lack of personal experience",
+                  "The 'Edit in Three Passes' technique: structure, voice, then details for best results",
+                  "Use contractions, everyday language, and varied sentence lengths to humanize content",
+                  "Add personal anecdotes, sensory details, and specific examples to bypass AI detection",
+                  "AI humanizer tools like AI Free Text Pro can automatically transform robotic text to natural writing"
+                ]}
+              />
+
                 <h2>The Challenge: Making AI Sound Human</h2>
                 <p>
                   AI writing tools like <a href="/" target="_blank">ChatGPT, Claude, and Gemini</a> are incredible productivity boosters. But there's a problem: the content they produce often sounds... well, robotic. It lacks personality, warmth, and that unmistakable human touch that makes writing resonate.

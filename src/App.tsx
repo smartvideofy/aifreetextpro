@@ -207,6 +207,7 @@ const App = () => (
               <Route path="/blog/ai-detection-patterns-perplexity-burstiness" element={<SEORedirect to="/blog/ai-detection-patterns-explained" />} />
               <Route path="/blog/academic-ai-writing-thesis-essays-safely" element={<SEORedirect to="/blog/academic-ai-writing-safely" />} />
               <Route path="/blog/ai-content-seo-undetectable-articles" element={<SEORedirect to="/blog/ai-content-seo-undetectable" />} />
+              <Route path="/blog/ai-content-seo" element={<SEORedirect to="/blog/ai-content-seo-undetectable" />} />
               <Route path="/blog/gptinf-vs-ai-free-text-pro-comparison" element={<SEORedirect to="/blog/gptinf-vs-ai-free-text-pro" />} />
               <Route path="/blog/originality-ai-review-pricing-bypass" element={<SEORedirect to="/blog/originality-ai-review-how-to-beat" />} />
               <Route path="/blog/paraphrasing-vs-humanizing-ai-text" element={<SEORedirect to="/blog/paraphrasing-vs-humanizing" />} />

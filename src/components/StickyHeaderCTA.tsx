@@ -59,7 +59,7 @@ const StickyHeaderCTA = () => {
             <Button 
               size="sm" 
               variant="secondary" 
-              className="bg-background text-foreground hover:bg-background/90 font-semibold shadow-md text-xs md:text-sm px-3 md:px-4 h-8 min-h-[44px] min-w-[44px]"
+              className="bg-background text-foreground hover:bg-background/90 font-semibold shadow-md text-xs md:text-sm px-3 md:px-4 min-h-[44px] min-w-[44px]"
             >
               <span className="hidden sm:inline">Try Free Now</span>
               <span className="sm:hidden">Try Free</span>

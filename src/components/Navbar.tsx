@@ -27,6 +27,8 @@ const Navbar = () => {
               src={logo} 
               alt="AI Free Text Pro Logo" 
               className="w-10 h-10 md:w-11 md:h-11 transition-transform duration-200 group-hover:scale-105"
+              width={44}
+              height={44}
             />
             <span className="text-lg md:text-xl font-bold text-foreground">
               AI Free Text Pro

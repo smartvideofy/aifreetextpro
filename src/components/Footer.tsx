@@ -158,7 +158,7 @@ const Footer = () => {
           {/* Brand Column */}
           <div className="space-y-4 lg:col-span-1 pb-6 md:pb-0 border-b border-border/20 md:border-b-0">
             <Link to="/" className="flex items-center gap-2">
-              <img src={logo} alt="AI Free Text Pro" className="w-8 h-8" />
+              <img src={logo} alt="AI Free Text Pro" className="w-8 h-8" width={32} height={32} />
               <span className="font-semibold text-base text-foreground">
                 AI Free Text Pro
               </span>

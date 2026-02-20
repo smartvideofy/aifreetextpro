@@ -37,14 +37,14 @@ const Index = () => {
       <HowToSchema />
       <Breadcrumbs items={[{ label: "Home" }]} />
       <Helmet>
-        <title>Free AI Humanizer & Detector Tool - Bypass Turnitin, GPTZero [Jan 2026]</title>
+        <title>Free AI Humanizer & Detector Tool - Bypass Turnitin, GPTZero [Feb 2026]</title>
         <meta name="description" content="Free AI humanizer tool & AI checker. Humanize AI text free online. Bypass Turnitin, GPTZero, Originality.AI with 98% accuracy. 1,000 free words. No signup." />
         <meta name="keywords" content="free ai humanizer, ai humanizer free, ai humanizer tool free, free humanizer, ai checker, free ai detector, detect ai text, bypass turnitin, bypass gptzero, ai detector unlimited words" />
         <link rel="canonical" href="https://aifreetextpro.com/" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-        <meta property="og:title" content="Free AI Humanizer & Detector Tool - Bypass Turnitin, GPTZero [Jan 2026]" />
+        <meta property="og:title" content="Free AI Humanizer & Detector Tool - Bypass Turnitin, GPTZero [Feb 2026]" />
         <meta property="og:description" content="Free AI humanizer tool & AI checker. Humanize AI text free online. Bypass Turnitin, GPTZero, Originality.AI with 98% accuracy." />
         <meta property="og:url" content="https://aifreetextpro.com/" />
         <meta property="og:type" content="website" />
@@ -53,7 +53,7 @@ const Index = () => {
         <meta property="og:locale" content="en_US" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@aifreetextpro" />
-        <meta name="twitter:title" content="Free AI Humanizer & Detector Tool - Bypass Turnitin, GPTZero [Jan 2026]" />
+        <meta name="twitter:title" content="Free AI Humanizer & Detector Tool - Bypass Turnitin, GPTZero [Feb 2026]" />
         <meta name="twitter:description" content="Free AI humanizer tool & AI checker. Humanize AI text free online. Bypass Turnitin, GPTZero, Originality.AI with 98% accuracy." />
         <meta name="twitter:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" />
         
@@ -125,7 +125,7 @@ const Index = () => {
             "@type": "Organization",
             "name": "AI Free Text Pro",
             "url": "https://aifreetextpro.com",
-            "logo": "https://aifreetextpro.com/before-after-demo.png",
+            "logo": "https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/uploads/1759692105576-Logo.PNG",
             "description": "Free AI detector and humanizer tool. Detect ChatGPT and make AI text sound human with 98% accuracy.",
             "sameAs": [
               "https://app.aifreetextpro.com",
@@ -173,7 +173,7 @@ const Index = () => {
                 "name": "Can AI Free Text Pro detect ChatGPT 4 and Claude?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Yes! AI Free Text Pro is specifically designed to detect the latest AI models including ChatGPT-4, GPT-4 Turbo, Claude 3, Gemini, and other leading language models."
+                  "text": "Yes! AI Free Text Pro is specifically designed to detect the latest AI models including ChatGPT-5, GPT-5, Claude 4, Gemini 2, and other leading language models."
                 }
               },
               {
@@ -278,12 +278,12 @@ const Index = () => {
               </h1>
               
               {/* Subheadline - Refined */}
-              <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed animate-fade-in px-4" style={{ animationDelay: "200ms" }}>
+              <p className="hero-description text-base sm:text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed animate-fade-in px-4" style={{ animationDelay: "200ms" }}>
                 Detect AI-generated content with 98% accuracy. Transform robotic text into natural, human writing in seconds.
               </p>
 
               {/* Trust Indicators - Minimal inline */}
-              <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-sm text-muted-foreground pt-2 animate-fade-in" style={{ animationDelay: "300ms" }}>
+              <div className="key-features flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-sm text-muted-foreground pt-2 animate-fade-in" style={{ animationDelay: "300ms" }}>
                 <div className="flex items-center gap-1.5">
                   <CheckCircle className="w-4 h-4 text-primary" />
                   <span>Free forever</span>
@@ -300,7 +300,7 @@ const Index = () => {
               
               {/* CTA Buttons - Premium styling */}
               <div className="flex flex-col sm:flex-row gap-3 justify-center pt-4 animate-fade-in" style={{ animationDelay: "400ms" }}>
-                <a href="https://app.aifreetextpro.com/">
+                <a href="https://app.aifreetextpro.com/" target="_blank" rel="noopener noreferrer">
                   <Button 
                     size="xl" 
                     className="w-full sm:w-auto bg-gradient-to-r from-primary to-secondary hover:opacity-90 shadow-lg hover:shadow-xl shadow-primary/20 group"
@@ -310,7 +310,7 @@ const Index = () => {
                     <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-0.5 transition-transform" />
                   </Button>
                 </a>
-                <a href="https://app.aifreetextpro.com/detector">
+                <a href="https://app.aifreetextpro.com/detector" target="_blank" rel="noopener noreferrer">
                   <Button 
                     size="xl"
                     variant="outline"
@@ -344,8 +344,7 @@ const Index = () => {
                   className="w-full max-w-4xl mx-auto rounded-2xl shadow-xl border border-border/40"
                   width={1200}
                   height={675}
-                  fetchPriority="high"
-                  decoding="async"
+                  loading="lazy"
                 />
               </div>
             </div>
@@ -503,7 +502,7 @@ const Index = () => {
               <Card className="p-6 md:p-8 space-y-5 hover:shadow-lg transition-shadow overflow-hidden">
                 <div className="space-y-4">
                   {/* Feature Image */}
-                  <div className="relative -mx-8 -mt-8 mb-6">
+                  <div className="relative -mx-6 -mt-6 md:-mx-8 md:-mt-8 mb-6">
                     <img 
                       src={aiDetectorFeature} 
                       alt="AI content detection with magnifying glass analyzing text" 
@@ -546,7 +545,7 @@ const Index = () => {
                   </div>
                 </div>
 
-                <a href="https://app.aifreetextpro.com/detector" className="block">
+                <a href="https://app.aifreetextpro.com/detector" target="_blank" rel="noopener noreferrer" className="block">
                   <Button className="w-full group">
                     Try Detector Free
                     <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-0.5 transition-transform" />
@@ -558,7 +557,7 @@ const Index = () => {
               <Card className="p-6 md:p-8 space-y-5 hover:shadow-lg transition-shadow overflow-hidden">
                 <div className="space-y-4">
                   {/* Feature Image */}
-                  <div className="relative -mx-8 -mt-8 mb-6">
+                  <div className="relative -mx-6 -mt-6 md:-mx-8 md:-mt-8 mb-6">
                     <img 
                       src={aiHumanizerFeature} 
                       alt="AI text humanization transforming robotic text to natural writing" 
@@ -601,7 +600,7 @@ const Index = () => {
                   </div>
                 </div>
 
-                <a href="https://app.aifreetextpro.com/humanizer" className="block">
+                <a href="https://app.aifreetextpro.com/humanizer" target="_blank" rel="noopener noreferrer" className="block">
                   <Button variant="secondary" className="w-full group">
                     Try Humanizer Free
                     <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-0.5 transition-transform" />
@@ -810,7 +809,7 @@ const Index = () => {
                     </li>
                   </ul>
                   
-                  <a href="https://app.aifreetextpro.com/" className="block mt-6">
+                  <a href="https://app.aifreetextpro.com/" target="_blank" rel="noopener noreferrer" className="block mt-6">
                     <Button variant="outline" className="w-full">
                       Get Started
                     </Button>
@@ -853,7 +852,7 @@ const Index = () => {
                     </li>
                   </ul>
                   
-                  <a href="https://app.aifreetextpro.com/" className="block mt-6">
+                  <a href="https://app.aifreetextpro.com/" target="_blank" rel="noopener noreferrer" className="block mt-6">
                     <Button className="w-full">
                       Subscribe Now
                     </Button>
@@ -896,7 +895,7 @@ const Index = () => {
                     </li>
                   </ul>
                   
-                  <a href="https://app.aifreetextpro.com/" className="block mt-6">
+                  <a href="https://app.aifreetextpro.com/" target="_blank" rel="noopener noreferrer" className="block mt-6">
                     <Button className="w-full">
                       Subscribe Now
                     </Button>
@@ -948,7 +947,7 @@ const Index = () => {
                     </li>
                   </ul>
                   
-                  <a href="https://app.aifreetextpro.com/" className="block mt-6">
+                  <a href="https://app.aifreetextpro.com/" target="_blank" rel="noopener noreferrer" className="block mt-6">
                     <Button className="w-full bg-gradient-to-r from-primary to-secondary hover:opacity-90">
                       Subscribe Now
                     </Button>
@@ -999,7 +998,7 @@ const Index = () => {
                     </li>
                   </ul>
                   
-                  <a href="https://app.aifreetextpro.com/" className="block mt-6">
+                  <a href="https://app.aifreetextpro.com/" target="_blank" rel="noopener noreferrer" className="block mt-6">
                     <Button variant="outline" className="w-full border-primary text-primary hover:bg-primary/10">
                       Subscribe Now
                     </Button>
@@ -1038,6 +1037,8 @@ const Index = () => {
                   src={studentWriting} 
                   alt="Happy student using laptop for academic writing" 
                   className="w-full h-48 object-cover"
+                  width={600}
+                  height={192}
                   loading="lazy"
                   decoding="async"
                 />
@@ -1071,6 +1072,8 @@ const Index = () => {
                   src={researcherWorking} 
                   alt="Researcher working on academic papers in modern office" 
                   className="w-full h-48 object-cover"
+                  width={600}
+                  height={192}
                   loading="lazy"
                   decoding="async"
                 />
@@ -1104,6 +1107,8 @@ const Index = () => {
                   src={writerProfessional} 
                   alt="Professional content writer working at modern office" 
                   className="w-full h-48 object-cover"
+                  width={600}
+                  height={192}
                   loading="lazy"
                   decoding="async"
                 />
@@ -1134,7 +1139,7 @@ const Index = () => {
             </div>
             
             <div className="text-center pt-12">
-              <a href="https://app.aifreetextpro.com/">
+              <a href="https://app.aifreetextpro.com/" target="_blank" rel="noopener noreferrer">
                 <Button size="lg" className="bg-gradient-to-r from-primary to-secondary text-lg px-12 py-6">
                   Join Free, No Credit Card <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
@@ -1359,13 +1364,13 @@ const Index = () => {
                 Join 50,000+ writers creating authentic, polished content with AI Free Text Pro.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
-                <a href="https://app.aifreetextpro.com/" className="w-full sm:w-auto">
+                <a href="https://app.aifreetextpro.com/" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
                   <Button size="lg" className="text-base sm:text-lg px-8 sm:px-10 py-5 sm:py-6 bg-gradient-to-r from-primary to-secondary hover:opacity-90 shadow-xl hover:shadow-2xl shadow-primary/20 w-full font-bold transition-all group">
                     Start Writing Free
                     <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                   </Button>
                 </a>
-                <a href="https://app.aifreetextpro.com/detector" className="w-full sm:w-auto">
+                <a href="https://app.aifreetextpro.com/detector" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
                   <Button size="lg" variant="outline" className="text-base sm:text-lg px-8 sm:px-10 py-5 sm:py-6 w-full font-bold transition-all group border-2">
                     View Live Demo
                     <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />

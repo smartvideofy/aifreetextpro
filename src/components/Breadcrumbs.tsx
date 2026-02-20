@@ -32,7 +32,7 @@ export const Breadcrumbs = ({ items }: BreadcrumbsProps) => {
         </script>
       </Helmet>
       
-      <nav aria-label="Breadcrumb" className="mb-6">
+      <nav aria-label="Breadcrumb" className={`mb-6${items.length <= 1 ? ' sr-only' : ''}`}>
         <ol className="flex flex-wrap items-center gap-2 text-sm text-muted-foreground">
           {items.map((item, index) => (
             <li key={index} className="flex items-center gap-2">

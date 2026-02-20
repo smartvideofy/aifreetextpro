@@ -7,7 +7,7 @@ const faqs = [
   },
   {
     question: "Can AI Free Text Pro detect ChatGPT 4 and Claude?",
-    answer: "Yes! AI Free Text Pro is specifically designed to detect the latest AI models including ChatGPT-4, GPT-4 Turbo, Claude 3, Gemini, and other leading language models. Our detection algorithms are continuously updated to identify patterns from new AI systems."
+    answer: "Yes! AI Free Text Pro is specifically designed to detect the latest AI models including ChatGPT-5, GPT-5, Claude 4, Gemini 2, and other leading language models. Our detection algorithms are continuously updated to identify patterns from new AI systems."
   },
   {
     question: "Is AI Free Text Pro free forever?",

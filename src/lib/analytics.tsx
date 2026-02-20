@@ -17,20 +17,18 @@ export const GoogleAnalytics = () => {
     script1.src = `https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`;
     document.head.appendChild(script1);
 
-    const script2 = document.createElement('script');
-    script2.innerHTML = `
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', '${GA_MEASUREMENT_ID}', {
-        page_path: window.location.pathname,
-      });
-    `;
-    document.head.appendChild(script2);
+    // Initialize gtag directly instead of using innerHTML to avoid script injection risks
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = function (...args: any[]) {
+      window.dataLayer!.push(args);
+    };
+    window.gtag('js', new Date());
+    window.gtag('config', GA_MEASUREMENT_ID, {
+      page_path: window.location.pathname,
+    });
 
     return () => {
       document.head.removeChild(script1);
-      document.head.removeChild(script2);
     };
   }, []);
 

@@ -28,7 +28,9 @@ export const GoogleAnalytics = () => {
     });
 
     return () => {
-      document.head.removeChild(script1);
+      if (script1.parentNode) {
+        document.head.removeChild(script1);
+      }
     };
   }, []);
 

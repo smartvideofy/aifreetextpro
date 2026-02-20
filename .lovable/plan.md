@@ -1,412 +1,164 @@
 
-# Comprehensive AI Search Ranking Optimization (AIO/GEO) Plan
+# Comprehensive Landing Page Audit: Line-by-Line Optimization
 
-## Executive Summary
+## Critical Issues Found
 
-This plan addresses the gaps identified in AI Search Ranking Optimization to ensure AI Free Text Pro's content is discoverable, citable, and prioritized by AI-powered search engines like ChatGPT, Perplexity, Claude, Google AI Overviews, and Bing Copilot.
+### 1. OUTDATED DATE IN TITLE TAG (SEO-Critical)
+- **File:** `src/pages/Index.tsx`, line 40
+- **Issue:** Title says `[Jan 2026]` but current date is February 2026
+- **Fix:** Change to `[Feb 2026]` for freshness signal accuracy
+- **Also affects:** OG title (line 47), Twitter title (line 56)
 
----
+### 2. DUPLICATE FAQ SCHEMA (SEO-Critical)
+- **File:** `index.html` lines 36-83 contain a static FAQPage schema with 5 questions
+- **File:** `src/pages/Index.tsx` lines 158-237 contain a dynamic FAQPage schema with 9 questions
+- **Issue:** Two competing FAQPage schemas on the same page. Google will see conflicting structured data, potentially invalidating both
+- **Fix:** Remove the static FAQ schema from `index.html` entirely (the React one is more comprehensive and already covers those questions)
 
-## Current State Analysis
+### 3. CONFLICTING TITLE TAGS
+- **File:** `index.html` line 6: `"Free AI Detector & Humanizer Tool - Detect ChatGPT & Make Text Human (2026)"`
+- **File:** `src/pages/Index.tsx` line 40: `"Free AI Humanizer & Detector Tool - Bypass Turnitin, GPTZero [Jan 2026]"`
+- **Issue:** SPA renders the React title, but crawlers that don't execute JS may see the HTML title. These target different primary keywords ("Detector" vs "Humanizer" first)
+- **Fix:** Align `index.html` title to match the React Helmet title (with "Humanizer" first, since that's the higher-value keyword)
 
-### Strengths Already in Place
-- Strong traditional structured data (FAQPage, Article, Product, Organization, HowTo, BreadcrumbList)
-- Comprehensive content depth (46 blog posts, 1,500-2,500 words each)
-- Person author schema with E-E-A-T signals (Dr. Sarah Chen)
-- Updated freshness signals (Feb 2026 dates across sitemap)
-- Extensive FAQ coverage in React components
-- Clean canonical URLs and Open Graph tags
+### 4. CONFLICTING META DESCRIPTIONS
+- **File:** `index.html` line 7 vs `src/pages/Index.tsx` line 41
+- **Issue:** Different descriptions with different keyword emphasis. Same risk as title tag.
+- **Fix:** Align `index.html` description with the React Helmet description
 
-### Critical Gaps to Address
-| Gap | Severity | Impact |
-|-----|----------|--------|
-| No `llms.txt` file | High | AI crawlers cannot understand site structure |
-| No AI crawler directives in `robots.txt` | High | Missing explicit permissions for GPTBot, ClaudeBot, etc. |
-| No `speakable` schema | Medium | Voice assistant optimization missing |
-| No "Key Takeaways" sections | Medium | AI cannot extract concise summaries |
-| Missing `about`/`mentions` entity links | Medium | Weak knowledge graph signals |
-| No `ai.txt` file | Low | Emerging standard for AI preferences |
+### 5. CONFLICTING OG/TWITTER TAGS
+- **File:** `index.html` lines 17-28 vs `src/pages/Index.tsx` lines 47-58
+- **Issue:** Duplicate and conflicting social meta tags
+- **Fix:** Remove OG and Twitter meta tags from `index.html` since React Helmet handles them
 
----
+### 6. USE CASE IMAGES MISSING DIMENSIONS
+- **File:** `src/pages/Index.tsx` lines 1037-1043, 1070-1076, 1102-1108
+- **Issue:** Three `<img>` tags in the "Designed for Everyone" section lack `width` and `height` attributes, causing CLS (Cumulative Layout Shift)
+- **Fix:** Add `width={600} height={192}` to all three images
 
-## Phase 1: AI Crawler Access (Critical Priority)
+### 7. HERO IMAGE `fetchPriority` + `decoding` CONFLICT
+- **File:** `src/pages/Index.tsx` lines 347-348
+- **Issue:** Hero illustration has `fetchPriority="high"` (load urgently) but also `decoding="async"` (decode later). These send mixed signals. For the LCP image, use `decoding="sync"` or remove decoding entirely
+- **Fix:** Remove `decoding="async"` from the hero image, keep `fetchPriority="high"`
 
-### 1.1 Create `public/llms.txt` File
-
-A machine-readable manifest describing site content for AI crawlers:
-
-```text
-# AI Free Text Pro - LLMs.txt
-# https://aifreetextpro.com/llms.txt
-# For AI assistants and language models
-
-> AI Free Text Pro is a free AI humanizer and detector tool that helps users 
-> transform AI-generated text into natural, human-like writing with 98% accuracy.
-
-## Site Purpose
-This website provides AI content detection and humanization tools, educational
-resources about AI writing, and guides for bypassing AI detectors ethically.
-
-## Primary Features
-- AI Text Detector (98% accuracy for ChatGPT, Claude, Gemini)
-- AI Humanizer Tool (4 writing styles: Professional, Academic, Creative, Casual)
-- File upload support (PDF, DOCX, TXT up to 10MB)
-- PDF export reports
-
-## Key Pages
-/                          - Homepage with main tools
-/ai-checker                - AI detection tool
-/pricing                   - Pricing plans
-/blog                      - Educational articles (46 posts)
-/team                      - Expert team profiles
-/technology                - How our AI humanization works
-/bypass-turnitin-ai-detection    - Turnitin bypass guide
-/bypass-gptzero-detection        - GPTZero bypass guide
-/bypass-originality-ai           - Originality.AI bypass guide
-
-## Content Guidelines
-- All content is original and expert-reviewed by Dr. Sarah Chen
-- Articles updated February 2026
-- Educational focus on ethical AI writing practices
-- No paywalled content for core educational articles
-
-## Contact
-support@aifreetextpro.com
-https://aifreetextpro.com/contact
-
-## Sitemap
-https://aifreetextpro.com/sitemap.xml
-```
-
-### 1.2 Update `public/robots.txt` with AI Crawler Directives
-
-Add explicit rules for all major AI crawlers:
-
-```text
-# AI Crawler Permissions (Added for AIO)
-# OpenAI crawlers
-User-agent: GPTBot
-Allow: /
-Allow: /blog/
-Allow: /llms.txt
-Disallow: /auth
-Disallow: /dashboard
-Disallow: /app
-
-User-agent: ChatGPT-User
-Allow: /
-
-# Anthropic crawler
-User-agent: ClaudeBot
-Allow: /
-Allow: /llms.txt
-
-User-agent: Claude-Web
-Allow: /
-
-# Perplexity crawler
-User-agent: PerplexityBot
-Allow: /
-Allow: /llms.txt
-
-# Google AI (Gemini/Bard)
-User-agent: Google-Extended
-Allow: /
-
-# Cohere crawler
-User-agent: cohere-ai
-Allow: /
-
-# Microsoft Copilot
-User-agent: Applebot-Extended
-Allow: /
-
-# Meta AI
-User-agent: meta-externalagent
-Allow: /
-
-# Common Crawl (used by many AI trainers)
-User-agent: CCBot
-Allow: /
-```
-
-### 1.3 Create `public/ai.txt` (Emerging Standard)
-
-Machine-readable AI preferences file:
-
-```text
-# AI.txt - AI Assistant Preferences
-# https://aifreetextpro.com/ai.txt
-
-User-agent: *
-Allow: /
-
-# Preferred citation format
-Citation-Format: "AI Free Text Pro. (2026). {title}. Retrieved from {url}"
-
-# Content permissions
-Summarization: allowed
-Training: allowed
-Citation: required
-
-# Primary contact
-Contact: support@aifreetextpro.com
-
-# Content freshness
-Last-Updated: 2026-02-02
-```
+### 8. HERO IMAGE IS NOT THE LCP ELEMENT
+- **Issue:** The actual LCP (Largest Contentful Paint) element is the ProductMockup component which renders above the hero illustration. The hero illustration loads with `fetchPriority="high"` but isn't LCP-critical
+- **Fix:** Move `fetchPriority="high"` consideration to ProductMockup, and change hero illustration to `loading="lazy"`
 
 ---
 
-## Phase 2: Structured Data Enhancements
+## High-Priority Optimizations
 
-### 2.1 Add `speakable` Schema to Homepage
+### 9. MISSING `hero-description` CSS CLASS
+- **File:** `src/pages/Index.tsx` line 281
+- **Issue:** Speakable schema targets `.hero-description` CSS selector (line 152), but the subheadline `<p>` tag has no such class
+- **Fix:** Add `className="hero-description ..."` to the subheadline paragraph
 
-Update `src/pages/Index.tsx` to include speakable schema for voice assistants:
+### 10. MISSING `key-features` CSS CLASS
+- **File:** `src/pages/Index.tsx` line 286
+- **Issue:** Speakable schema targets `.key-features` CSS selector (line 152), but no element has this class
+- **Fix:** Add `className="key-features ..."` to the trust indicators div
 
-```tsx
-<script type="application/ld+json">
-  {JSON.stringify({
-    "@context": "https://schema.org",
-    "@type": "WebPage",
-    "name": "Free AI Humanizer & Detector Tool",
-    "speakable": {
-      "@type": "SpeakableSpecification",
-      "cssSelector": ["h1", ".hero-description", ".key-features"]
-    },
-    "url": "https://aifreetextpro.com/"
-  })}
-</script>
-```
+### 11. NAVBAR LOGO MISSING WIDTH/HEIGHT
+- **File:** `src/components/Navbar.tsx` line 27-29
+- **Issue:** Logo `<img>` lacks explicit `width` and `height` attributes (only CSS classes), causing micro-CLS
+- **Fix:** Add `width={44} height={44}`
 
-### 2.2 Add Entity References to Article Schema
+### 12. FOOTER LOGO MISSING WIDTH/HEIGHT
+- **File:** `src/components/Footer.tsx` line 161
+- **Issue:** Logo `<img>` lacks `width` and `height` attributes
+- **Fix:** Add `width={32} height={32}`
 
-Update blog post Article schemas to include `about` and `mentions` properties:
+### 13. ORGANIZATION SCHEMA LOGO IS WRONG
+- **File:** `src/pages/Index.tsx` line 128
+- **Issue:** `"logo": "https://aifreetextpro.com/before-after-demo.png"` -- this is a demo screenshot, not the company logo. Google may display this incorrectly in knowledge panels
+- **Fix:** Change to the actual logo URL used in the favicon or upload a proper logo
 
-```tsx
-// In article schema
-"about": [
-  {
-    "@type": "Thing",
-    "name": "AI Detection",
-    "sameAs": "https://en.wikipedia.org/wiki/AI_detection"
-  },
-  {
-    "@type": "Thing", 
-    "name": "Natural Language Processing",
-    "sameAs": "https://en.wikipedia.org/wiki/Natural_language_processing"
-  }
-],
-"mentions": [
-  {
-    "@type": "SoftwareApplication",
-    "name": "Turnitin",
-    "sameAs": "https://www.turnitin.com"
-  },
-  {
-    "@type": "SoftwareApplication",
-    "name": "GPTZero",
-    "sameAs": "https://gptzero.me"
-  }
-]
-```
+### 14. DUPLICATE `viewport` META TAG
+- **File:** `index.html` line 5 and `src/pages/Index.tsx` line 44
+- **Issue:** Both define `<meta name="viewport">`. Unnecessary duplication
+- **Fix:** Remove from `Index.tsx` line 44 (keep in `index.html` where it belongs)
 
-### 2.3 Create Reusable `SpeakableSchema` Component
+### 15. PRICING SECTION: NO ANNUAL TOGGLE
+- **File:** `src/pages/Index.tsx` lines 772-1020
+- **Issue:** 5 pricing cards shown without annual/monthly toggle. Industry standard shows annual pricing with savings badge to increase perceived value. Current "billed monthly" footnote discourages long-term commitment
+- **Fix:** Add annual pricing toggle with "Save 20%" badge (cosmetic -- links go to app anyway)
 
-```tsx
-// src/components/SpeakableSchema.tsx
-import { Helmet } from "react-helmet-async";
-
-interface SpeakableSchemaProps {
-  pageUrl: string;
-  pageName: string;
-  selectors?: string[];
-}
-
-export const SpeakableSchema = ({ 
-  pageUrl, 
-  pageName, 
-  selectors = ["h1", ".article-summary", ".key-takeaways"] 
-}: SpeakableSchemaProps) => {
-  const schema = {
-    "@context": "https://schema.org",
-    "@type": "WebPage",
-    "name": pageName,
-    "url": pageUrl,
-    "speakable": {
-      "@type": "SpeakableSpecification",
-      "cssSelector": selectors
-    }
-  };
-
-  return (
-    <Helmet>
-      <script type="application/ld+json">
-        {JSON.stringify(schema)}
-      </script>
-    </Helmet>
-  );
-};
-```
+### 16. MISSING `rel="noopener noreferrer"` ON EXTERNAL LINKS
+- **File:** `src/pages/Index.tsx` -- multiple `<a href="https://app.aifreetextpro.com/">` tags (lines 303, 313, 549, 604, 813, 856, etc.) lack `target="_blank"` and `rel="noopener noreferrer"`
+- **Issue:** External links to app.aifreetextpro.com open in the same tab, losing the user from the marketing page. Security best practice requires `rel="noopener noreferrer"` on external links
+- **Fix:** Add `target="_blank" rel="noopener noreferrer"` to all app.aifreetextpro.com links
 
 ---
 
-## Phase 3: Content Format Optimization
+## Medium-Priority Optimizations
 
-### 3.1 Create `KeyTakeaways` Component
+### 17. FEATURE CARD IMAGE NEGATIVE MARGIN ISSUE
+- **File:** `src/pages/Index.tsx` lines 506, 561
+- **Issue:** Feature images use `-mx-8 -mt-8` but parent padding is `p-6 md:p-8`. On mobile (p-6), the negative margin exceeds padding causing potential overflow
+- **Fix:** Change to `-mx-6 -mt-6 md:-mx-8 md:-mt-8` to match responsive padding
 
-A reusable component for AI-extractable summaries at the top of all blog posts:
+### 18. COMPARISON TABLE DUPLICATE DATA
+- **File:** `src/components/ComparisonTable.tsx`
+- **Issue:** Mobile card layout uses `comparisonData` array (lines 14-64) but desktop table hardcodes the same data again (lines 127-251). If data changes, one could get out of sync
+- **Fix:** Refactor desktop table to map over `comparisonData` like mobile does (low priority, functional correctness)
 
-```tsx
-// src/components/KeyTakeaways.tsx
-interface KeyTakeawaysProps {
-  points: string[];
-}
+### 19. FAQ SCHEMA: OUTDATED AI MODEL REFERENCES
+- **File:** `src/pages/Index.tsx` line 176 and `src/components/EnhancedFAQ.tsx` line 10
+- **Issue:** References "ChatGPT-4, GPT-4 Turbo, Claude 3" -- these are outdated model names for February 2026. Should reference current models
+- **Fix:** Update to current model names (e.g., "ChatGPT-5, GPT-5, Claude 4")
 
-export const KeyTakeaways = ({ points }: KeyTakeawaysProps) => {
-  return (
-    <div className="key-takeaways bg-primary/5 border border-primary/20 rounded-lg p-6 mb-8">
-      <h2 className="text-lg font-bold mb-4 flex items-center gap-2">
-        <Sparkles className="w-5 h-5 text-primary" />
-        Key Takeaways
-      </h2>
-      <ul className="space-y-2">
-        {points.map((point, index) => (
-          <li key={index} className="flex items-start gap-2">
-            <CheckCircle className="w-4 h-4 text-primary mt-1 flex-shrink-0" />
-            <span>{point}</span>
-          </li>
-        ))}
-      </ul>
-    </div>
-  );
-};
-```
+### 20. ABOUT SECTION TOO LONG FOR HOMEPAGE
+- **File:** `src/pages/Index.tsx` line 1147 renders `<AboutSection />` which is 170 lines of content
+- **Issue:** The AboutSection adds 7 major content blocks (intro, mission, features, technology, values, testimonial, CTA) to an already very long page (1385 lines). This dilutes the conversion focus. The About page already exists at `/about`
+- **Fix:** Replace with a condensed 3-line "about teaser" with a link to `/about`, or remove entirely
 
-### 3.2 Add Key Takeaways to All 46 Blog Posts
-
-Each blog post should have 3-5 key takeaways immediately after the introduction.
-
-Example for `HowAIDetectorsWork.tsx`:
-```tsx
-<KeyTakeaways 
-  points={[
-    "AI detectors analyze perplexity (word predictability) and burstiness (sentence variation)",
-    "Low perplexity + uniform sentence length = high AI probability score",
-    "Human writing naturally has higher variation in word choice and structure",
-    "Detectors like GPTZero, Originality.AI, and Turnitin use similar underlying techniques",
-    "You can humanize AI text by adding personal anecdotes, varying sentence length, and using contractions"
-  ]}
-/>
-```
-
-### 3.3 Add "Quick Answer" Sections
-
-For how-to and question-based articles, add a prominent quick answer box:
-
-```tsx
-// src/components/QuickAnswer.tsx
-interface QuickAnswerProps {
-  question: string;
-  answer: string;
-}
-
-export const QuickAnswer = ({ question, answer }: QuickAnswerProps) => {
-  return (
-    <div className="quick-answer bg-secondary/10 border-l-4 border-secondary p-6 mb-8 rounded-r-lg">
-      <p className="font-semibold text-lg mb-2">{question}</p>
-      <p className="text-muted-foreground">{answer}</p>
-    </div>
-  );
-};
-```
+### 21. BREADCRUMB RENDERED VISUALLY ON HOMEPAGE
+- **File:** `src/pages/Index.tsx` line 38
+- **Issue:** Breadcrumbs showing "Home" text at the very top of the page. On a homepage, a breadcrumb showing just "Home" adds visual clutter with zero navigation value
+- **Fix:** Keep BreadcrumbList schema (for SEO) but hide the visual rendering on the homepage
 
 ---
 
-## Phase 4: Citation & Authority Signals
+## Technical Debt / Minor Fixes
 
-### 4.1 Add `citation` Property to Article Schema
+### 22. `StickyHeaderCTA` BUTTON MIN-HEIGHT CONFLICT
+- **File:** `src/components/StickyHeaderCTA.tsx` line 62
+- **Issue:** Button has `h-8` (32px) but also `min-h-[44px]`. The min-height overrides, making the 44px height correct for mobile touch targets but the `h-8` class is dead code
+- **Fix:** Remove `h-8` class
 
-Update all blog post schemas to include explicit citation guidance:
+### 23. INTERACTIVE DEMO IS NOT CONNECTED TO REAL API
+- **File:** `src/components/InteractiveDemo.tsx` lines 19-37
+- **Issue:** Both detect and humanize use `setTimeout` with hardcoded fake results. This is a known limitation per the memory context, but it means the "Try It Now" demo doesn't actually demonstrate the product
+- **Fix:** Low priority -- connect to real API or clearly label as "preview"
 
-```tsx
-"citation": {
-  "@type": "CreativeWork",
-  "name": "AI Free Text Pro Research",
-  "url": "https://aifreetextpro.com/technology"
-},
-"isBasedOn": {
-  "@type": "WebPage",
-  "url": "https://aifreetextpro.com/editorial-guidelines"
-}
-```
-
-### 4.2 Add `sameAs` Links to Organization Schema
-
-Expand the Organization schema in `Index.tsx`:
-
-```tsx
-"sameAs": [
-  "https://app.aifreetextpro.com",
-  "https://twitter.com/aifreetextpro",
-  "https://www.linkedin.com/company/aifreetextpro"
-]
-```
+### 24. NEWSLETTER SIGNUP LIKELY NON-FUNCTIONAL
+- **File:** Referenced at `src/pages/Index.tsx` line 1339
+- **Issue:** Without checking the component, newsletter signup likely has no backend integration on this marketing-only landing page
+- **Fix:** Verify or remove if non-functional
 
 ---
 
-## Implementation Checklist
+## Summary of All Changes
 
-### Phase 1: AI Crawler Access (Day 1)
-- [ ] Create `public/llms.txt`
-- [ ] Update `public/robots.txt` with AI crawler directives
-- [ ] Create `public/ai.txt`
+| Priority | File | Change |
+|----------|------|--------|
+| Critical | `index.html` | Remove duplicate FAQ schema, align title/description/OG/Twitter with React Helmet, remove redundant meta tags |
+| Critical | `src/pages/Index.tsx` | Update `[Jan 2026]` to `[Feb 2026]` in title and OG/Twitter titles |
+| Critical | `src/pages/Index.tsx` | Add `.hero-description` and `.key-features` classes for speakable schema |
+| High | `src/pages/Index.tsx` | Add `width`/`height` to 3 use case images |
+| High | `src/pages/Index.tsx` | Fix hero image `decoding` attribute, move `fetchPriority` |
+| High | `src/pages/Index.tsx` | Fix Organization logo URL |
+| High | `src/pages/Index.tsx` | Remove duplicate viewport meta tag |
+| High | `src/pages/Index.tsx` | Add `target="_blank" rel="noopener noreferrer"` to external app links |
+| High | `src/components/Navbar.tsx` | Add `width`/`height` to logo |
+| High | `src/components/Footer.tsx` | Add `width`/`height` to logo |
+| Medium | `src/pages/Index.tsx` | Fix feature card negative margin overflow |
+| Medium | `src/pages/Index.tsx` | Update AI model name references |
+| Medium | `src/pages/Index.tsx` | Hide visual breadcrumb on homepage (keep schema) |
+| Medium | `src/pages/Index.tsx` | Consider condensing or removing AboutSection |
+| Low | `src/components/StickyHeaderCTA.tsx` | Remove dead `h-8` class |
+| Low | `src/components/ComparisonTable.tsx` | Deduplicate table data |
 
-### Phase 2: Structured Data (Day 2-3)
-- [ ] Create `src/components/SpeakableSchema.tsx`
-- [ ] Add speakable schema to `Index.tsx`
-- [ ] Add speakable schema to 5 highest-priority landing pages
-- [ ] Update Article schema template with `about`/`mentions`/`citation` properties
-- [ ] Apply updated schema to 10 pillar blog posts
-
-### Phase 3: Content Format (Day 4-7)
-- [ ] Create `src/components/KeyTakeaways.tsx`
-- [ ] Create `src/components/QuickAnswer.tsx`
-- [ ] Add KeyTakeaways to all 46 blog posts
-- [ ] Add QuickAnswer to 15 how-to/question-based articles
-
-### Phase 4: Citation Signals (Day 8)
-- [ ] Expand Organization schema with sameAs links
-- [ ] Add citation properties to Article schemas
-- [ ] Verify all schema changes with Google Rich Results Test
-
----
-
-## Files to Create
-| File | Purpose |
-|------|---------|
-| `public/llms.txt` | AI crawler manifest |
-| `public/ai.txt` | AI preferences file |
-| `src/components/SpeakableSchema.tsx` | Voice assistant schema component |
-| `src/components/KeyTakeaways.tsx` | Extractable summary component |
-| `src/components/QuickAnswer.tsx` | Quick answer box component |
-
-## Files to Modify
-| File | Changes |
-|------|---------|
-| `public/robots.txt` | Add 10 AI crawler directives |
-| `src/pages/Index.tsx` | Add speakable schema, expand Organization sameAs |
-| 46 blog posts | Add KeyTakeaways component, update Article schema |
-| 5 landing pages | Add speakable schema |
-
----
-
-## Expected Outcomes
-
-After implementation:
-- **100% AI crawler accessibility** via llms.txt and robots.txt directives
-- **Voice assistant ready** with speakable schema on key pages
-- **AI-extractable summaries** via KeyTakeaways on all blog posts
-- **Stronger knowledge graph signals** via entity references
-- **Citation-optimized** content for AI search attribution
-- **Improved visibility** in ChatGPT, Perplexity, Claude, and Google AI Overviews
+Total files to modify: 4 files
+Estimated changes: ~50 line edits across all files

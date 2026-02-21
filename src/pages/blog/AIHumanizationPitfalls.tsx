@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { RelatedArticles } from "@/components/RelatedArticles";
 import { Card, CardContent } from "@/components/ui/card";
+import { InternalLinks } from "@/components/InternalLinks";
 import { Badge } from "@/components/ui/badge";
 import { AlertTriangle, XCircle, Repeat, Shuffle, Eye, Lightbulb } from "lucide-react";
 
@@ -529,6 +530,7 @@ const AIHumanizationPitfalls = () => {
           <div className="mt-12">
             <RelatedArticles articles={relatedArticles} />
           </div>
+          <InternalLinks currentPage="/blog/ai-humanization-pitfalls" />
         </main>
 
         <Footer />

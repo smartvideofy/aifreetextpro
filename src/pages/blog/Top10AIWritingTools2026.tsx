@@ -3,6 +3,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { RelatedArticles } from "@/components/RelatedArticles";
+import { InternalLinks } from "@/components/InternalLinks";
 import { FAQSection } from "@/components/FAQSection";
 import { Link } from "react-router-dom";
 import { ArrowRight, Zap, Search, Brain, Star, CheckCircle, Lightbulb, PenTool, Target, BarChart3 } from "lucide-react";
@@ -581,6 +582,7 @@ export default function Top10AIWritingTools2026() {
 
           <FAQSection faqs={faqs} />
           <RelatedArticles articles={relatedArticles} />
+          <InternalLinks currentPage="/blog/top-10-ai-writing-tools-2026" />
         </main>
 
         <Footer />

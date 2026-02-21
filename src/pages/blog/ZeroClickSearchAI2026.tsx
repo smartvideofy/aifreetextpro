@@ -3,6 +3,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { RelatedArticles } from "@/components/RelatedArticles";
+import { InternalLinks } from "@/components/InternalLinks";
 import { FAQSection } from "@/components/FAQSection";
 import { Link } from "react-router-dom";
 import { ArrowRight, Brain, Search, Zap, Target, TrendingUp, BarChart3, Lightbulb, CheckCircle } from "lucide-react";
@@ -595,6 +596,7 @@ export default function ZeroClickSearchAI2026() {
 
           <FAQSection faqs={faqs} />
           <RelatedArticles articles={relatedArticles} />
+          <InternalLinks currentPage="/blog/zero-click-search-ai-2026" />
         </main>
 
         <Footer />

@@ -3,6 +3,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { RelatedArticles } from "@/components/RelatedArticles";
+import { InternalLinks } from "@/components/InternalLinks";
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 
@@ -374,6 +375,7 @@ export default function WhyAIContentFails() {
           </article>
 
           <RelatedArticles articles={relatedArticles} />
+          <InternalLinks currentPage="/blog/why-ai-content-fails-human-review" />
         </main>
 
         <Footer />

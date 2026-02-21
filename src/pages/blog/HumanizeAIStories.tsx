@@ -3,6 +3,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { RelatedArticles } from "@/components/RelatedArticles";
+import { InternalLinks } from "@/components/InternalLinks";
 import { FAQSection } from "@/components/FAQSection";
 import { Link } from "react-router-dom";
 import { ArrowRight, Brain, Search, Zap, Lightbulb, CheckCircle, AlertTriangle, BookOpen, Heart, Users } from "lucide-react";
@@ -491,6 +492,7 @@ She picked up her keys. Set them down. Picked them up again. "No. I guess it's n
 
           <FAQSection faqs={faqs} />
           <RelatedArticles articles={relatedArticles} />
+          <InternalLinks currentPage="/blog/humanize-ai-generated-stories-fiction" />
         </main>
 
         <Footer />

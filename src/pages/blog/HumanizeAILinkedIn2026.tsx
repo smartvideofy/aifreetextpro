@@ -3,6 +3,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { RelatedArticles } from "@/components/RelatedArticles";
+import { InternalLinks } from "@/components/InternalLinks";
 import { FAQSection } from "@/components/FAQSection";
 import { Link } from "react-router-dom";
 import { ArrowRight, Brain, Lightbulb, CheckCircle, AlertTriangle, Users, TrendingUp, MessageSquare } from "lucide-react";
@@ -547,6 +548,7 @@ What's a connection you're glad you didn't give up on? 👇"</p>
 
           <FAQSection faqs={faqs} />
           <RelatedArticles articles={relatedArticles} />
+          <InternalLinks currentPage="/blog/humanize-ai-linkedin-2026" />
         </main>
 
         <Footer />

@@ -3,6 +3,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { RelatedArticles } from "@/components/RelatedArticles";
+import { InternalLinks } from "@/components/InternalLinks";
 import { Link } from "react-router-dom";
 import { ArrowRight, Star, DollarSign, Zap } from "lucide-react";
 import { KeyTakeaways } from "@/components/KeyTakeaways";
@@ -628,6 +629,7 @@ export default function Top10AIHumanizers() {
           </article>
 
           <RelatedArticles articles={relatedArticles} />
+          <InternalLinks currentPage="/blog/top-10-ai-humanizer-tools-2025" />
         </main>
 
         <Footer />

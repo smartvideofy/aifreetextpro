@@ -3,6 +3,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { RelatedArticles } from "@/components/RelatedArticles";
+import { InternalLinks } from "@/components/InternalLinks";
 import { FAQSection } from "@/components/FAQSection";
 import { Link } from "react-router-dom";
 import { ArrowRight, Mail, TrendingUp, Users, Target, CheckCircle, Lightbulb, BarChart } from "lucide-react";
@@ -697,6 +698,7 @@ export default function AIHumanizersForEmailMarketing() {
           <FAQSection faqs={faqs} />
 
           <RelatedArticles articles={relatedArticles} />
+          <InternalLinks currentPage="/blog/ai-humanizers-for-email-marketing" />
         </main>
 
         <Footer />

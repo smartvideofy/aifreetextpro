@@ -53,6 +53,7 @@ const HumanizeAIText = () => {
         <meta property="og:type" content="article" />
         <meta property="og:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" />
         <meta property="og:site_name" content="AI Free Text Pro" />
+        <meta property="og:locale" content="en_US" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@aifreetextpro" />
         <meta name="twitter:title" content="How to Humanize AI-Generated Text Without Losing Your Voice" />
@@ -67,7 +68,7 @@ const HumanizeAIText = () => {
             "description": "Learn proven strategies and tools to make ChatGPT or Gemini text sound naturally human while keeping your tone.",
             "image": {
               "@type": "ImageObject",
-              "url": "https://aifreetextpro.com/before-after-demo.png",
+              "url": "https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG",
               "width": 1200,
               "height": 675
             },
@@ -84,7 +85,7 @@ const HumanizeAIText = () => {
               "name": "AI Free Text Pro",
               "logo": {
                 "@type": "ImageObject",
-                "url": "https://aifreetextpro.com/before-after-demo.png"
+                "url": "https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG"
               }
             },
             "mainEntityOfPage": {

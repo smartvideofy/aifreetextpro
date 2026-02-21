@@ -53,8 +53,10 @@ export default function BypassAIDetectionGuide() {
         <meta property="og:url" content={canonical} />
         <meta property="og:image" content={ogImage} />
         <meta property="og:site_name" content="AI Free Text Pro" />
+        <meta property="og:locale" content="en_US" />
         
         <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@aifreetextpro" />
         <meta name="twitter:title" content="How to Bypass AI Detection: Ethical Strategies for 2026" />
         <meta name="twitter:description" content="Learn ethical methods to bypass AI detection tools while maintaining content quality." />
         <meta name="twitter:image" content={ogImage} />

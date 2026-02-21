@@ -54,6 +54,7 @@ const relatedArticles = [
         <meta property="og:type" content="article" />
         <meta property="og:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" />
         <meta property="og:site_name" content="AI Free Text Pro" />
+        <meta property="og:locale" content="en_US" />
             <meta property="article:published_time" content="2026-02-02" />
             <meta property="article:author" content="Dr. Sarah Chen" />
             <meta name="twitter:card" content="summary_large_image" />
@@ -70,7 +71,7 @@ const relatedArticles = [
             "description": "Learn expert techniques to detect AI-generated text. Discover key linguistic patterns, AI writing markers, and detection tools to identify ChatGPT, GPT-4, and AI-written content with 98% accuracy.",
             "image": {
               "@type": "ImageObject",
-              "url": "https://aifreetextpro.com/before-after-demo.png",
+              "url": "https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG",
               "width": 1200,
               "height": 675
             },
@@ -87,7 +88,7 @@ const relatedArticles = [
               "name": "AI Free Text Pro",
               "logo": {
                 "@type": "ImageObject",
-                "url": "https://aifreetextpro.com/before-after-demo.png"
+                "url": "https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG"
               }
             },
             "mainEntityOfPage": {

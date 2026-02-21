@@ -77,7 +77,9 @@ export default function AIYouTubeScripts() {
         <meta property="og:url" content={canonical} />
         <meta property="og:image" content={ogImage} />
         <meta property="og:site_name" content="AI Free Text Pro" />
+        <meta property="og:locale" content="en_US" />
         <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@aifreetextpro" />
         <meta name="twitter:title" content="AI Content for YouTube Scripts: How to Sound Human in 2026" />
         <meta name="twitter:description" content="Learn to humanize AI-generated scripts for YouTube videos, podcasts, and narration to engage viewers naturally." />
         <meta name="twitter:image" content={ogImage} />
@@ -100,7 +102,7 @@ export default function AIYouTubeScripts() {
             "publisher": {
               "@type": "Organization",
               "name": "AI Free Text Pro",
-              "logo": { "@type": "ImageObject", "url": "https://aifreetextpro.com/before-after-demo.png" }
+              "logo": { "@type": "ImageObject", "url": "https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" }
             },
             "mainEntityOfPage": { "@type": "WebPage", "@id": canonical }
           })}

@@ -4,6 +4,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { RelatedArticles } from "@/components/RelatedArticles";
+import { InternalLinks } from "@/components/InternalLinks";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Radio, Fingerprint, MessageSquare, Sparkles, BookOpen, CheckCircle } from "lucide-react";
@@ -516,6 +517,7 @@ const SignalVsNoiseHumanText = () => {
           <div className="mt-12">
             <RelatedArticles articles={relatedArticles} />
           </div>
+          <InternalLinks currentPage="/blog/signal-vs-noise-human-text" />
         </main>
 
         <Footer />

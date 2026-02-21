@@ -3,6 +3,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { RelatedArticles } from "@/components/RelatedArticles";
+import { InternalLinks } from "@/components/InternalLinks";
 import { FAQSection } from "@/components/FAQSection";
 import { Link } from "react-router-dom";
 import { ArrowRight, Search, TrendingUp, FileText, Target, CheckCircle, Lightbulb, BarChart } from "lucide-react";
@@ -751,6 +752,7 @@ export default function AIPoweredSEOContent2026() {
           <FAQSection faqs={faqs} />
 
           <RelatedArticles articles={relatedArticles} />
+          <InternalLinks currentPage="/blog/ai-powered-seo-content-2026" />
         </main>
 
         <Footer />

@@ -3,6 +3,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { RelatedArticles } from "@/components/RelatedArticles";
+import { InternalLinks } from "@/components/InternalLinks";
 import { Link } from "react-router-dom";
 import { ArrowRight, Brain, Search, Zap } from "lucide-react";
 import { KeyTakeaways } from "@/components/KeyTakeaways";
@@ -392,6 +393,7 @@ export default function HowAIDetectorsWork() {
           </article>
 
           <RelatedArticles articles={relatedArticles} />
+          <InternalLinks currentPage="/blog/how-ai-detectors-work" />
         </main>
 
         <Footer />

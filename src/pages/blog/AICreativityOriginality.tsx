@@ -3,6 +3,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { RelatedArticles } from "@/components/RelatedArticles";
+import { InternalLinks } from "@/components/InternalLinks";
 import { FAQSection } from "@/components/FAQSection";
 import { Link } from "react-router-dom";
 import { ArrowRight, Lightbulb, Brain, Palette, Users, CheckCircle, Sparkles } from "lucide-react";
@@ -536,6 +537,7 @@ export default function AICreativityOriginality() {
           <FAQSection faqs={faqs} />
 
           <RelatedArticles articles={relatedArticles} />
+          <InternalLinks currentPage="/blog/can-ai-writing-be-original" />
         </main>
 
         <Footer />

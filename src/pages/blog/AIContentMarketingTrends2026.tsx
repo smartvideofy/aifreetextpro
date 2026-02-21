@@ -3,6 +3,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { RelatedArticles } from "@/components/RelatedArticles";
+import { InternalLinks } from "@/components/InternalLinks";
 import { FAQSection } from "@/components/FAQSection";
 import { Link } from "react-router-dom";
 import { ArrowRight, Brain, Target, Users, Zap, TrendingUp, BarChart3, Shield, CheckCircle, Lightbulb, Sparkles } from "lucide-react";
@@ -526,6 +527,7 @@ export default function AIContentMarketingTrends2026() {
 
           <FAQSection faqs={faqs} />
           <RelatedArticles articles={relatedArticles} />
+          <InternalLinks currentPage="/blog/ai-content-marketing-trends-2026" />
         </main>
 
         <Footer />

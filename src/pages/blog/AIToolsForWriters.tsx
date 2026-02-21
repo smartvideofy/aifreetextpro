@@ -3,6 +3,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { RelatedArticles } from "@/components/RelatedArticles";
+import { InternalLinks } from "@/components/InternalLinks";
 import { FAQSection } from "@/components/FAQSection";
 import { Link } from "react-router-dom";
 import { ArrowRight, Lightbulb, PenTool, Edit, Search, Shield, CheckCircle, Star } from "lucide-react";
@@ -708,6 +709,7 @@ export default function AIToolsForWriters() {
           <FAQSection faqs={faqs} />
 
           <RelatedArticles articles={relatedArticles} />
+          <InternalLinks currentPage="/blog/ai-tools-for-writers-2025" />
         </main>
 
         <Footer />

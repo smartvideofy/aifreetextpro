@@ -55,7 +55,8 @@ const relatedArticles = [
         <meta property="og:type" content="article" />
         <meta property="og:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" />
         <meta property="og:site_name" content="AI Free Text Pro" />
-        <meta property="article:published_time" content="2026-01-08" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="article:published_time" content="2026-02-02" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@aifreetextpro" />
         <meta name="twitter:title" content="Best Free AI Humanizer Tools in 2026" />
@@ -70,7 +71,7 @@ const relatedArticles = [
             "description": "Compare the top 5 free AI humanizer tools in 2026. Find the best AI text humanizer for converting AI-generated content to natural human writing. Features, pricing, and expert reviews.",
             "image": {
               "@type": "ImageObject",
-              "url": "https://aifreetextpro.com/before-after-demo.png",
+              "url": "https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG",
               "width": 1200,
               "height": 675
             },
@@ -87,7 +88,7 @@ const relatedArticles = [
               "name": "AI Free Text Pro",
               "logo": {
                 "@type": "ImageObject",
-                "url": "https://aifreetextpro.com/before-after-demo.png"
+                "url": "https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG"
               }
             },
             "mainEntityOfPage": {

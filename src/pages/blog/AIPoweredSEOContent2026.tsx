@@ -77,7 +77,9 @@ export default function AIPoweredSEOContent2026() {
         <meta property="og:url" content={canonical} />
         <meta property="og:image" content={ogImage} />
         <meta property="og:site_name" content="AI Free Text Pro" />
+        <meta property="og:locale" content="en_US" />
         <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@aifreetextpro" />
         <meta name="twitter:title" content="AI-Powered SEO Content in 2026" />
         <meta name="twitter:description" content="Learn how to create AI-generated SEO content that reads naturally and ranks high in search results in 2026." />
         <meta name="twitter:image" content={ogImage} />
@@ -107,7 +109,7 @@ export default function AIPoweredSEOContent2026() {
               "name": "AI Free Text Pro",
               "logo": {
                 "@type": "ImageObject",
-                "url": "https://aifreetextpro.com/before-after-demo.png"
+                "url": "https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG"
               }
             },
             "mainEntityOfPage": {

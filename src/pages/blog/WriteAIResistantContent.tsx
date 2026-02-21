@@ -54,7 +54,9 @@ export default function WriteAIResistantContent() {
         <meta property="og:url" content={canonical} />
         <meta property="og:image" content={ogImage} />
         <meta property="og:site_name" content="AI Free Text Pro" />
+        <meta property="og:locale" content="en_US" />
         <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@aifreetextpro" />
         <meta name="twitter:title" content="Write AI-Resistant Content in 2026" />
         <meta name="twitter:description" content="Learn advanced techniques to make your content resistant to AI detection while staying authentic, engaging, and human." />
         <meta name="twitter:image" content={ogImage} />

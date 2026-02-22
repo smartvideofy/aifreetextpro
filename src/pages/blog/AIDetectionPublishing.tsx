@@ -7,6 +7,7 @@ import { InternalLinks } from "@/components/InternalLinks";
 import { FAQSection } from "@/components/FAQSection";
 import { Link } from "react-router-dom";
 import { ArrowRight, BookOpen, Shield, TrendingUp, CheckCircle, Lightbulb, AlertTriangle, FileText, Users } from "lucide-react";
+import { KeyTakeaways } from "@/components/KeyTakeaways";
 
 const relatedArticles = [
   {
@@ -161,31 +162,14 @@ export default function AIDetectionPublishing() {
               </p>
             </header>
 
-            {/* Key Takeaways */}
-            <div className="bg-primary/5 border border-primary/20 rounded-lg p-6 mb-8">
-              <h2 className="text-lg font-semibold mb-3 flex items-center gap-2">
-                <Lightbulb className="h-5 w-5 text-primary" />
-                Key Takeaways
-              </h2>
-              <ul className="space-y-2 text-muted-foreground">
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 text-primary mt-1 flex-shrink-0" />
-                  <span>Major publishers require AI disclosure and substantial human editing, not complete bans on AI assistance</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 text-primary mt-1 flex-shrink-0" />
-                  <span>Publishers use both automated detection and trained editors who spot AI patterns detectors miss</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 text-primary mt-1 flex-shrink-0" />
-                  <span>The key differentiator: original research, unique perspectives, and verifiable expertise that AI cannot replicate</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 text-primary mt-1 flex-shrink-0" />
-                  <span>Transparency builds trust: proactive disclosure of AI assistance is becoming standard practice</span>
-                </li>
-              </ul>
-            </div>
+            <KeyTakeaways
+              points={[
+                "Major publishers require AI disclosure and substantial human editing, not complete bans on AI assistance",
+                "Publishers use both automated detection and trained editors who spot AI patterns detectors miss",
+                "The key differentiator: original research, unique perspectives, and verifiable expertise that AI cannot replicate",
+                "Transparency builds trust: proactive disclosure of AI assistance is becoming standard practice"
+              ]}
+            />
 
             <div className="space-y-8">
               <section>

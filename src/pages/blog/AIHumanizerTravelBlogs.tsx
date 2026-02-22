@@ -7,6 +7,7 @@ import { InternalLinks } from "@/components/InternalLinks";
 import { FAQSection } from "@/components/FAQSection";
 import { Link } from "react-router-dom";
 import { ArrowRight, MapPin, Camera, Compass, AlertTriangle, CheckCircle, Lightbulb } from "lucide-react";
+import { KeyTakeaways } from "@/components/KeyTakeaways";
 
 const relatedArticles = [
   {
@@ -178,31 +179,14 @@ export default function AIHumanizerTravelBlogs() {
               </p>
             </header>
 
-            {/* Key Takeaways Box */}
-            <div className="bg-primary/5 border border-primary/20 rounded-lg p-6 mb-8 not-prose">
-              <h2 className="text-lg font-semibold mb-3 flex items-center gap-2">
-                <Lightbulb className="h-5 w-5 text-primary" />
-                Key Takeaways
-              </h2>
-              <ul className="space-y-2 text-muted-foreground">
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 text-primary mt-1 flex-shrink-0" />
-                  <span>Travel content is especially prone to AI detection due to generic descriptions</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 text-primary mt-1 flex-shrink-0" />
-                  <span>Sensory details, local knowledge, and personal stories are key authenticity markers</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 text-primary mt-1 flex-shrink-0" />
-                  <span>AI humanizers help smooth robotic patterns while you add genuine experiences</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 text-primary mt-1 flex-shrink-0" />
-                  <span>Combining SEO best practices with authentic storytelling drives organic traffic</span>
-                </li>
-              </ul>
-            </div>
+            <KeyTakeaways
+              points={[
+                "Travel content is especially prone to AI detection due to generic descriptions",
+                "Sensory details, local knowledge, and personal stories are key authenticity markers",
+                "AI humanizers help smooth robotic patterns while you add genuine experiences",
+                "Combining SEO best practices with authentic storytelling drives organic traffic"
+              ]}
+            />
 
             <div className="space-y-8">
               <section>

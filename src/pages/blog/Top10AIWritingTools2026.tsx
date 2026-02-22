@@ -7,6 +7,7 @@ import { InternalLinks } from "@/components/InternalLinks";
 import { FAQSection } from "@/components/FAQSection";
 import { Link } from "react-router-dom";
 import { ArrowRight, Zap, Search, Brain, Star, CheckCircle, Lightbulb, PenTool, Target, BarChart3 } from "lucide-react";
+import { KeyTakeaways } from "@/components/KeyTakeaways";
 
 const relatedArticles = [
   {
@@ -188,31 +189,14 @@ export default function Top10AIWritingTools2026() {
               </p>
             </header>
 
-            {/* Key Takeaways */}
-            <div className="bg-primary/5 border border-primary/20 rounded-lg p-6 mb-8">
-              <h2 className="text-lg font-semibold mb-3 flex items-center gap-2">
-                <Lightbulb className="h-5 w-5 text-primary" />
-                Key Takeaways
-              </h2>
-              <ul className="space-y-2 text-muted-foreground">
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 text-primary mt-1 flex-shrink-0" />
-                  <span>2026 AI writing tools now include humanization, SEO optimization, and multi-format generation as standard features</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 text-primary mt-1 flex-shrink-0" />
-                  <span>Pricing ranges from free tiers to $500+/month for enterprise, match your tool to production volume and needs</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 text-primary mt-1 flex-shrink-0" />
-                  <span>Best workflow: use AI for drafting, then humanize with a dedicated tool like AI Free Text Pro before publishing</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 text-primary mt-1 flex-shrink-0" />
-                  <span>Integration capabilities (CMS, workflow tools) are now as important as writing quality for team productivity</span>
-                </li>
-              </ul>
-            </div>
+            <KeyTakeaways
+              points={[
+                "2026 AI writing tools now include humanization, SEO optimization, and multi-format generation as standard features",
+                "Pricing ranges from free tiers to $500+/month for enterprise, match your tool to production volume and needs",
+                "Best workflow: use AI for drafting, then humanize with a dedicated tool like AI Free Text Pro before publishing",
+                "Integration capabilities (CMS, workflow tools) are now as important as writing quality for team productivity"
+              ]}
+            />
 
             <div className="space-y-8">
               <section>

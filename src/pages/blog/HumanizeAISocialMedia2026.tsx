@@ -7,6 +7,7 @@ import { InternalLinks } from "@/components/InternalLinks";
 import { FAQSection } from "@/components/FAQSection";
 import { Link } from "react-router-dom";
 import { ArrowRight, Brain, Lightbulb, CheckCircle, AlertTriangle, Instagram, Twitter, MessageCircle } from "lucide-react";
+import { KeyTakeaways } from "@/components/KeyTakeaways";
 
 const relatedArticles = [
   {
@@ -181,20 +182,15 @@ export default function HumanizeAISocialMedia2026() {
               </p>
             </header>
 
-            {/* Key Takeaways */}
-            <div className="bg-primary/5 border border-primary/20 rounded-lg p-6 mb-8">
-              <h2 className="text-lg font-semibold mb-3 flex items-center gap-2">
-                <Lightbulb className="h-5 w-5 text-primary" />
-                Key Takeaways
-              </h2>
-              <ul className="space-y-2 text-muted-foreground mb-0">
-                <li>• Each platform has different humanization requirements</li>
-                <li>• Real-time trends and cultural references make AI content feel current</li>
-                <li>• Emojis, formatting, and platform-native language improve authenticity</li>
-                <li>• Engagement-first content outperforms perfectly polished AI posts</li>
-                <li>• Personal responses to comments are non-negotiable for authenticity</li>
-              </ul>
-            </div>
+            <KeyTakeaways
+              points={[
+                "Each platform has different humanization requirements",
+                "Real-time trends and cultural references make AI content feel current",
+                "Emojis, formatting, and platform-native language improve authenticity",
+                "Engagement-first content outperforms perfectly polished AI posts",
+                "Personal responses to comments are non-negotiable for authenticity"
+              ]}
+            />
 
             <div className="space-y-8">
               <section>

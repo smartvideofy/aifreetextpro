@@ -7,6 +7,7 @@ import { InternalLinks } from "@/components/InternalLinks";
 import { FAQSection } from "@/components/FAQSection";
 import { Link } from "react-router-dom";
 import { ArrowRight, Search, TrendingUp, FileText, Target, CheckCircle, Lightbulb, BarChart } from "lucide-react";
+import { KeyTakeaways } from "@/components/KeyTakeaways";
 
 const relatedArticles = [
   {
@@ -207,31 +208,14 @@ export default function AIPoweredSEOContent2026() {
               </p>
             </header>
 
-            {/* Key Takeaways Box */}
-            <div className="bg-primary/5 border border-primary/20 rounded-lg p-6 mb-8 not-prose">
-              <h2 className="text-lg font-semibold mb-3 flex items-center gap-2">
-                <Lightbulb className="h-5 w-5 text-primary" />
-                Key Takeaways
-              </h2>
-              <ul className="space-y-2 text-muted-foreground">
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 text-primary mt-1 flex-shrink-0" />
-                  <span>Google rewards helpful content regardless of whether AI was used in creation</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 text-primary mt-1 flex-shrink-0" />
-                  <span>E-E-A-T signals (Experience, Expertise, Authority, Trust) are essential for AI content</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 text-primary mt-1 flex-shrink-0" />
-                  <span>Humanization should consume 30-50% of your total content creation time</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 text-primary mt-1 flex-shrink-0" />
-                  <span>Content clustering with AI accelerates topical authority building</span>
-                </li>
-              </ul>
-            </div>
+            <KeyTakeaways
+              points={[
+                "Google rewards helpful content regardless of whether AI was used in creation",
+                "E-E-A-T signals (Experience, Expertise, Authority, Trust) are essential for AI content",
+                "Humanization should consume 30-50% of your total content creation time",
+                "Content clustering with AI accelerates topical authority building"
+              ]}
+            />
 
             <div className="space-y-8">
               <section>

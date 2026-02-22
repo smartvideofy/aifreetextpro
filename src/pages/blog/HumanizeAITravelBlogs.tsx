@@ -7,6 +7,7 @@ import { InternalLinks } from "@/components/InternalLinks";
 import { FAQSection } from "@/components/FAQSection";
 import { Link } from "react-router-dom";
 import { ArrowRight, Lightbulb, MapPin, Compass, Camera, Globe, Sparkles, CheckCircle } from "lucide-react";
+import { KeyTakeaways } from "@/components/KeyTakeaways";
 
 const relatedArticles = [
   {
@@ -196,31 +197,14 @@ export default function HumanizeAITravelBlogs() {
               </p>
             </header>
 
-            {/* Key Takeaways */}
-            <div className="bg-primary/5 border border-primary/20 rounded-lg p-6 mb-8">
-              <h2 className="text-lg font-semibold mb-3 flex items-center gap-2">
-                <Lightbulb className="h-5 w-5 text-primary" />
-                Key Takeaways
-              </h2>
-              <ul className="space-y-2 text-muted-foreground mb-0">
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 text-primary mt-1 flex-shrink-0" />
-                  <span>Travel content is especially prone to AI detection due to generic "stock photo" descriptions</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 text-primary mt-1 flex-shrink-0" />
-                  <span>Sensory specificity (exact smells, sounds, textures) is the #1 authenticity marker</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 text-primary mt-1 flex-shrink-0" />
-                  <span>Local phrases, unexpected moments, and cultural nuance signal human experience</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 text-primary mt-1 flex-shrink-0" />
-                  <span>The best workflow: AI draft → humanizer tool → personal touches → detection check</span>
-                </li>
-              </ul>
-            </div>
+            <KeyTakeaways
+              points={[
+                "Travel content is especially prone to AI detection due to generic 'stock photo' descriptions",
+                "Sensory specificity (exact smells, sounds, textures) is the #1 authenticity marker",
+                "Local phrases, unexpected moments, and cultural nuance signal human experience",
+                "The best workflow: AI draft, then humanizer tool, then personal touches, then detection check"
+              ]}
+            />
 
             <div className="space-y-8">
               <section>

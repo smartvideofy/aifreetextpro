@@ -7,6 +7,7 @@ import { InternalLinks } from "@/components/InternalLinks";
 import { FAQSection } from "@/components/FAQSection";
 import { Link } from "react-router-dom";
 import { ArrowRight, Brain, Search, Zap, Target, TrendingUp, BarChart3, Lightbulb, CheckCircle } from "lucide-react";
+import { KeyTakeaways } from "@/components/KeyTakeaways";
 
 const relatedArticles = [
   {
@@ -182,31 +183,14 @@ export default function ZeroClickSearchAI2026() {
               </p>
             </header>
 
-            {/* Key Takeaways */}
-            <div className="bg-primary/5 border border-primary/20 rounded-lg p-6 mb-8">
-              <h2 className="text-lg font-semibold mb-3 flex items-center gap-2">
-                <Lightbulb className="h-5 w-5 text-primary" />
-                Key Takeaways
-              </h2>
-              <ul className="space-y-2 text-muted-foreground">
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 text-primary mt-1 flex-shrink-0" />
-                  <span>Over 65% of Google searches now end without a click: AI Overviews, featured snippets, and knowledge panels provide instant answers</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 text-primary mt-1 flex-shrink-0" />
-                  <span>Focus on being cited rather than clicked: becoming a trusted source that AI systems reference builds long-term authority</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 text-primary mt-1 flex-shrink-0" />
-                  <span>Structure content for AI parsing: clear headings, concise answer blocks, and schema markup increase citation chances</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 text-primary mt-1 flex-shrink-0" />
-                  <span>New metrics matter: track AI Overview mentions, branded search growth, and citation frequency alongside traditional CTR</span>
-                </li>
-              </ul>
-            </div>
+            <KeyTakeaways
+              points={[
+                "Over 65% of Google searches now end without a click: AI Overviews, featured snippets, and knowledge panels provide instant answers",
+                "Focus on being cited rather than clicked: becoming a trusted source that AI systems reference builds long-term authority",
+                "Structure content for AI parsing: clear headings, concise answer blocks, and schema markup increase citation chances",
+                "New metrics matter: track AI Overview mentions, branded search growth, and citation frequency alongside traditional CTR"
+              ]}
+            />
 
             <div className="space-y-8">
               <section>

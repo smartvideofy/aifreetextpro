@@ -7,6 +7,7 @@ import { InternalLinks } from "@/components/InternalLinks";
 import { FAQSection } from "@/components/FAQSection";
 import { Link } from "react-router-dom";
 import { ArrowRight, Brain, Search, Zap, Video, Mic, CheckCircle, AlertTriangle, Lightbulb } from "lucide-react";
+import { KeyTakeaways } from "@/components/KeyTakeaways";
 
 const relatedArticles = [
   {
@@ -170,20 +171,15 @@ export default function AIYouTubeScripts() {
               </p>
             </header>
 
-            {/* Key Takeaways */}
-            <div className="bg-primary/5 border border-primary/20 rounded-lg p-6 mb-8">
-              <h2 className="text-lg font-semibold mb-3 flex items-center gap-2">
-                <Lightbulb className="h-5 w-5 text-primary" />
-                Key Takeaways
-              </h2>
-              <ul className="space-y-2 text-muted-foreground mb-0">
-                <li>• AI scripts need humanization for spoken delivery, not just written content</li>
-                <li>• The read-aloud test is essential: if it sounds awkward spoken, rewrite it</li>
-                <li>• Personal anecdotes and specific examples transform generic AI into engaging content</li>
-                <li>• Strategic pauses and timing markers improve delivery performance</li>
-                <li>• Combining AI efficiency with human authenticity creates the best results</li>
-              </ul>
-            </div>
+            <KeyTakeaways
+              points={[
+                "AI scripts need humanization for spoken delivery, not just written content",
+                "The read-aloud test is essential: if it sounds awkward spoken, rewrite it",
+                "Personal anecdotes and specific examples transform generic AI into engaging content",
+                "Strategic pauses and timing markers improve delivery performance",
+                "Combining AI efficiency with human authenticity creates the best results"
+              ]}
+            />
 
             <div className="space-y-8">
               <section>

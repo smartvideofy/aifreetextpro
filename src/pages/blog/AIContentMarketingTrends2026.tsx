@@ -7,6 +7,7 @@ import { InternalLinks } from "@/components/InternalLinks";
 import { FAQSection } from "@/components/FAQSection";
 import { Link } from "react-router-dom";
 import { ArrowRight, Brain, Target, Users, Zap, TrendingUp, BarChart3, Shield, CheckCircle, Lightbulb, Sparkles } from "lucide-react";
+import { KeyTakeaways } from "@/components/KeyTakeaways";
 
 const relatedArticles = [
   {
@@ -153,31 +154,14 @@ export default function AIContentMarketingTrends2026() {
               </p>
             </header>
 
-            {/* Key Takeaways */}
-            <div className="bg-primary/5 border border-primary/20 rounded-lg p-6 mb-8">
-              <h2 className="text-lg font-semibold mb-3 flex items-center gap-2">
-                <Lightbulb className="h-5 w-5 text-primary" />
-                Key Takeaways
-              </h2>
-              <ul className="space-y-2 text-muted-foreground">
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 text-primary mt-1 flex-shrink-0" />
-                  <span>Hyper-personalization has moved from names in emails to real-time content adaptation across all channels based on individual behavior</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 text-primary mt-1 flex-shrink-0" />
-                  <span>Predictive content intelligence now forecasts performance before publication, changing how content calendars are planned</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 text-primary mt-1 flex-shrink-0" />
-                  <span>The Human-in-the-Loop (HITL) workflow, combining AI efficiency with human creativity, is now the industry standard</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 text-primary mt-1 flex-shrink-0" />
-                  <span>Ethical AI use, including disclosure and compliance, has become a competitive differentiator as regulations tighten</span>
-                </li>
-              </ul>
-            </div>
+            <KeyTakeaways
+              points={[
+                "Hyper-personalization has moved from names in emails to real-time content adaptation across all channels based on individual behavior",
+                "Predictive content intelligence now forecasts performance before publication, changing how content calendars are planned",
+                "The Human-in-the-Loop (HITL) workflow, combining AI efficiency with human creativity, is now the industry standard",
+                "Ethical AI use, including disclosure and compliance, has become a competitive differentiator as regulations tighten"
+              ]}
+            />
 
             <div className="space-y-10">
               <section>

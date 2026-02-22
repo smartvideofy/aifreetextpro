@@ -7,6 +7,7 @@ import { InternalLinks } from "@/components/InternalLinks";
 import { FAQSection } from "@/components/FAQSection";
 import { Link } from "react-router-dom";
 import { ArrowRight, Brain, Lightbulb, CheckCircle, AlertTriangle, Users, TrendingUp, MessageSquare } from "lucide-react";
+import { KeyTakeaways } from "@/components/KeyTakeaways";
 
 const relatedArticles = [
   {
@@ -181,20 +182,15 @@ export default function HumanizeAILinkedIn2026() {
               </p>
             </header>
 
-            {/* Key Takeaways */}
-            <div className="bg-primary/5 border border-primary/20 rounded-lg p-6 mb-8">
-              <h2 className="text-lg font-semibold mb-3 flex items-center gap-2">
-                <Lightbulb className="h-5 w-5 text-primary" />
-                Key Takeaways
-              </h2>
-              <ul className="space-y-2 text-muted-foreground mb-0">
-                <li>• LinkedIn's professional audience demands authenticity over polish</li>
-                <li>• Personal career stories outperform generic advice by 4x in engagement</li>
-                <li>• The hook-story-insight framework works best for humanized posts</li>
-                <li>• Formatting and white space dramatically improve readability</li>
-                <li>• Engagement-first content (questions, polls) builds genuine connections</li>
-              </ul>
-            </div>
+            <KeyTakeaways
+              points={[
+                "LinkedIn's professional audience demands authenticity over polish",
+                "Personal career stories outperform generic advice by 4x in engagement",
+                "The hook-story-insight framework works best for humanized posts",
+                "Formatting and white space dramatically improve readability",
+                "Engagement-first content (questions, polls) builds genuine connections"
+              ]}
+            />
 
             <div className="space-y-8">
               <section>

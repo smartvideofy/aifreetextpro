@@ -7,6 +7,7 @@ import { InternalLinks } from "@/components/InternalLinks";
 import { FAQSection } from "@/components/FAQSection";
 import { Link } from "react-router-dom";
 import { ArrowRight, GraduationCap, Shield, AlertTriangle, CheckCircle, Lightbulb, BookOpen, Scale } from "lucide-react";
+import { KeyTakeaways } from "@/components/KeyTakeaways";
 
 const relatedArticles = [
   {
@@ -158,31 +159,14 @@ export default function AIWritingAcademia() {
               </p>
             </header>
 
-            {/* Key Takeaways Box */}
-            <div className="bg-primary/5 border border-primary/20 rounded-lg p-6 mb-8 not-prose">
-              <h2 className="text-lg font-semibold mb-3 flex items-center gap-2">
-                <Lightbulb className="h-5 w-5 text-primary" />
-                Key Takeaways
-              </h2>
-              <ul className="space-y-2 text-muted-foreground">
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 text-primary mt-1 flex-shrink-0" />
-                  <span>Most universities allow AI for research and editing, but prohibit submitting AI content as your own</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 text-primary mt-1 flex-shrink-0" />
-                  <span>Detection tools like Turnitin now include AI detection in standard checks</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 text-primary mt-1 flex-shrink-0" />
-                  <span>Ethical AI use focuses on learning enhancement, not work replacement</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 text-primary mt-1 flex-shrink-0" />
-                  <span>Always verify your work passes detection before submission</span>
-                </li>
-              </ul>
-            </div>
+            <KeyTakeaways
+              points={[
+                "Most universities allow AI for research and editing, but prohibit submitting AI content as your own",
+                "Detection tools like Turnitin now include AI detection in standard checks",
+                "Ethical AI use focuses on learning enhancement, not work replacement",
+                "Always verify your work passes detection before submission"
+              ]}
+            />
 
             <div className="space-y-8">
               <section>

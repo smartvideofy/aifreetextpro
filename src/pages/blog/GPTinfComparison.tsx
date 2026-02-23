@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Calendar, Clock, ArrowLeft, Trophy, Shield, Zap, DollarSign, Check, X } from "lucide-react";
+import { KeyTakeaways } from "@/components/KeyTakeaways";
 import { Helmet } from "react-helmet-async";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -149,6 +150,15 @@ const GPTinfComparison = () => {
                   A head-to-head comparison of two popular AI humanizers with real test results, pricing analysis, and feature breakdown.
                 </p>
               </header>
+
+              <KeyTakeaways
+                points={[
+                  "AI Free Text Pro achieves 98% bypass rate vs GPTinf's 78% across major detectors",
+                  "AI Free Text Pro includes built-in detection and multiple writing styles; GPTinf is simpler but less effective",
+                  "GPTinf costs $12/mo for 10,000 words; AI Free Text Pro offers free unlimited use",
+                  "For modern AI detectors like Turnitin and Originality.AI, AI Free Text Pro is the clear winner"
+                ]}
+              />
 
               <div className="prose prose-lg max-w-none">
                 <p>

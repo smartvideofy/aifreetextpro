@@ -7,6 +7,7 @@ import { InternalLinks } from "@/components/InternalLinks";
 import { FAQSection } from "@/components/FAQSection";
 import { Link } from "react-router-dom";
 import { ArrowRight, Lightbulb, Brain, Palette, Users, CheckCircle, Sparkles } from "lucide-react";
+import { KeyTakeaways } from "@/components/KeyTakeaways";
 
 const relatedArticles = [
   {
@@ -171,31 +172,14 @@ export default function AICreativityOriginality() {
               </h1>
             </header>
 
-            {/* Key Takeaways Box */}
-            <div className="bg-primary/5 border border-primary/20 rounded-lg p-6 mb-8 not-prose">
-              <h2 className="text-lg font-semibold mb-3 flex items-center gap-2">
-                <Lightbulb className="h-5 w-5 text-primary" />
-                Key Takeaways
-              </h2>
-              <ul className="space-y-2 text-muted-foreground">
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 text-primary mt-1 flex-shrink-0" />
-                  <span>AI creates novel combinations from existing patterns, but genuine insight remains human</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 text-primary mt-1 flex-shrink-0" />
-                  <span>Human creativity draws from lived experience, emotional depth, and cultural context</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 text-primary mt-1 flex-shrink-0" />
-                  <span>The most powerful approach combines AI efficiency with human vision and voice</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 text-primary mt-1 flex-shrink-0" />
-                  <span>Creative industries are actively developing policies for AI-assisted work</span>
-                </li>
-              </ul>
-            </div>
+            <KeyTakeaways
+              points={[
+                "AI creates novel combinations from existing patterns, but genuine insight remains human",
+                "Human creativity draws from lived experience, emotional depth, and cultural context",
+                "The most powerful approach combines AI efficiency with human vision and voice",
+                "Creative industries are actively developing policies for AI-assisted work"
+              ]}
+            />
 
             <div className="space-y-8">
               <section>

@@ -8,6 +8,7 @@ import { InternalLinks } from "@/components/InternalLinks";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Radio, Fingerprint, MessageSquare, Sparkles, BookOpen, CheckCircle } from "lucide-react";
+import { KeyTakeaways } from "@/components/KeyTakeaways";
 
 const SignalVsNoiseHumanText = () => {
   const breadcrumbItems = [
@@ -130,18 +131,14 @@ const SignalVsNoiseHumanText = () => {
               </div>
             </header>
 
-            <div className="bg-primary/5 border border-primary/20 rounded-lg p-6 mb-8">
-              <h2 className="text-lg font-semibold text-foreground mb-2 flex items-center gap-2">
-                <Radio className="h-5 w-5 text-primary" />
-                What You'll Learn
-              </h2>
-              <ul className="space-y-2 text-muted-foreground">
-                <li>• The 6 key signals that distinguish human from AI text</li>
-                <li>• Concrete before/after examples for each pattern</li>
-                <li>• Why these patterns matter to detection algorithms</li>
-                <li>• How to incorporate natural variation into your writing</li>
-              </ul>
-            </div>
+            <KeyTakeaways
+              points={[
+                "Six key signals distinguish human from AI text in modern detection systems",
+                "Idiosyncratic word choice and emotional variability are the strongest human markers",
+                "AI text has uniform sentence patterns while human writing naturally varies in structure",
+                "Incorporating natural variation into your writing makes content resistant to detection"
+              ]}
+            />
 
             <section className="mb-12">
               <h2 className="text-2xl font-bold text-foreground mb-4">The Detection Landscape Has Changed</h2>

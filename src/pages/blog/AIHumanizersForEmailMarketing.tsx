@@ -7,6 +7,7 @@ import { InternalLinks } from "@/components/InternalLinks";
 import { FAQSection } from "@/components/FAQSection";
 import { Link } from "react-router-dom";
 import { ArrowRight, Mail, TrendingUp, Users, Target, CheckCircle, Lightbulb, BarChart } from "lucide-react";
+import { KeyTakeaways } from "@/components/KeyTakeaways";
 
 const relatedArticles = [
   {
@@ -164,31 +165,14 @@ export default function AIHumanizersForEmailMarketing() {
               </p>
             </header>
 
-            {/* Key Takeaways Box */}
-            <div className="bg-primary/5 border border-primary/20 rounded-lg p-6 mb-8 not-prose">
-              <h2 className="text-lg font-semibold mb-3 flex items-center gap-2">
-                <Lightbulb className="h-5 w-5 text-primary" />
-                Key Takeaways
-              </h2>
-              <ul className="space-y-2 text-muted-foreground">
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 text-primary mt-1 flex-shrink-0" />
-                  <span>Humanized emails achieve 23% higher open rates and 47% higher reply rates</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 text-primary mt-1 flex-shrink-0" />
-                  <span>Subject lines and opening sentences need the most humanization effort</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 text-primary mt-1 flex-shrink-0" />
-                  <span>Cold outreach and newsletters require different humanization approaches</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 text-primary mt-1 flex-shrink-0" />
-                  <span>Modern spam filters increasingly detect and penalize AI-generated content</span>
-                </li>
-              </ul>
-            </div>
+            <KeyTakeaways
+              points={[
+                "Humanized emails achieve 23% higher open rates and 47% higher reply rates",
+                "Subject lines and opening sentences need the most humanization effort",
+                "Cold outreach and newsletters require different humanization approaches",
+                "Modern spam filters increasingly detect and penalize AI-generated content"
+              ]}
+            />
 
             <div className="space-y-8">
               <section>

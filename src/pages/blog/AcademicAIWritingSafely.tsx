@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Calendar, Clock, ArrowLeft, GraduationCap, Scale, Shield, AlertTriangle, CheckCircle } from "lucide-react";
+import { KeyTakeaways } from "@/components/KeyTakeaways";
 import { Helmet } from "react-helmet-async";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -148,6 +149,15 @@ const AcademicAIWritingSafely = () => {
                   A thoughtful guide to leveraging AI writing tools responsibly while preserving the principles of academic integrity.
                 </p>
               </header>
+
+              <KeyTakeaways
+                points={[
+                  "AI is a legitimate academic tool when used for research, brainstorming, and editing, not content replacement",
+                  "Transparency with instructors about AI use is the foundation of academic integrity",
+                  "Most universities now have explicit AI policies, so check before using any AI tools",
+                  "Always verify AI-assisted work passes detection tools before submission"
+                ]}
+              />
 
               <div className="prose prose-lg max-w-none">
                 <div className="bg-gradient-to-r from-primary/10 to-secondary/10 p-6 rounded-lg my-6 border border-primary/20">

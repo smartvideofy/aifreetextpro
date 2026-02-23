@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Calendar, Clock, ArrowLeft, Shield, AlertTriangle, Target, CheckCircle } from "lucide-react";
+import { KeyTakeaways } from "@/components/KeyTakeaways";
 import { Helmet } from "react-helmet-async";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -191,6 +192,15 @@ const OriginalityAIReview = () => {
                   Everything you need to know about one of the most aggressive AI detectors, and how to reliably bypass it.
                 </p>
               </header>
+
+              <KeyTakeaways
+                points={[
+                  "Originality.AI is one of the most aggressive AI detectors, marketed to publishers and content agencies",
+                  "Its detection accuracy is high but prone to false positives on formal or structured human writing",
+                  "AI Free Text Pro achieves a 96% bypass rate against Originality.AI with a money-back guarantee",
+                  "Pricing starts at $14.95/month for 2,000 credits, making it expensive for high-volume users"
+                ]}
+              />
 
               <div className="prose prose-lg max-w-none">
                 <p>

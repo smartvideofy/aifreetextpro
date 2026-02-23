@@ -7,6 +7,7 @@ import { InternalLinks } from "@/components/InternalLinks";
 import { FAQSection } from "@/components/FAQSection";
 import { Link } from "react-router-dom";
 import { ArrowRight, Lightbulb, PenTool, Edit, Search, Shield, CheckCircle, Star } from "lucide-react";
+import { KeyTakeaways } from "@/components/KeyTakeaways";
 
 const relatedArticles = [
   {
@@ -211,31 +212,14 @@ export default function AIToolsForWriters() {
               </h1>
             </header>
 
-            {/* Key Takeaways Box */}
-            <div className="bg-primary/5 border border-primary/20 rounded-lg p-6 mb-8 not-prose">
-              <h2 className="text-lg font-semibold mb-3 flex items-center gap-2">
-                <Lightbulb className="h-5 w-5 text-primary" />
-                Key Takeaways
-              </h2>
-              <ul className="space-y-2 text-muted-foreground">
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 text-primary mt-1 flex-shrink-0" />
-                  <span>AI tools reduce first draft time by 60-80% when used strategically</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 text-primary mt-1 flex-shrink-0" />
-                  <span>Different tools excel at different stages: ideation, drafting, editing, verification</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 text-primary mt-1 flex-shrink-0" />
-                  <span>Always verify AI output with detection tools before publishing</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 text-primary mt-1 flex-shrink-0" />
-                  <span>The best writers use AI as an assistant, not a replacement</span>
-                </li>
-              </ul>
-            </div>
+            <KeyTakeaways
+              points={[
+                "AI tools reduce first draft time by 60-80% when used strategically",
+                "Different tools excel at different stages: ideation, drafting, editing, verification",
+                "Always verify AI output with detection tools before publishing",
+                "The best writers use AI as an assistant, not a replacement"
+              ]}
+            />
 
             <div className="space-y-8">
               <section>

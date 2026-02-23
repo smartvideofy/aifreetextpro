@@ -5,6 +5,7 @@ import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { RelatedArticles } from "@/components/RelatedArticles";
 import { Link } from "react-router-dom";
 import { ArrowRight, Shield, Target, Brain, CheckCircle, Lightbulb, AlertTriangle, Zap } from "lucide-react";
+import { KeyTakeaways } from "@/components/KeyTakeaways";
 
 const relatedArticles = [
   {
@@ -140,31 +141,14 @@ export default function BypassAIDetectionGuide() {
               </p>
             </header>
 
-            {/* Key Takeaways */}
-            <div className="bg-primary/5 border border-primary/20 rounded-lg p-6 mb-8 not-prose">
-              <h2 className="text-lg font-semibold mb-3 flex items-center gap-2">
-                <Lightbulb className="h-5 w-5 text-primary" />
-                Key Takeaways
-              </h2>
-              <ul className="space-y-2 text-muted-foreground">
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 text-primary mt-1 flex-shrink-0" />
-                  <span>AI detectors analyze perplexity, burstiness, and stylometric patterns to identify machine-generated text</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 text-primary mt-1 flex-shrink-0" />
-                  <span>Ethical bypassing focuses on adding genuine human value rather than tricking systems</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 text-primary mt-1 flex-shrink-0" />
-                  <span>Specialized humanization tools achieve 90%+ bypass rates while preserving content quality</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 text-primary mt-1 flex-shrink-0" />
-                  <span>Manual editing alone achieves only 40-50% bypass success against modern detectors</span>
-                </li>
-              </ul>
-            </div>
+            <KeyTakeaways
+              points={[
+                "AI detectors analyze perplexity, burstiness, and stylometric patterns to identify machine-generated text",
+                "Ethical bypassing focuses on adding genuine human value rather than tricking systems",
+                "Specialized humanization tools achieve 90%+ bypass rates while preserving content quality",
+                "Manual editing alone achieves only 40-50% bypass success against modern detectors"
+              ]}
+            />
 
             <div className="space-y-8">
               <section>

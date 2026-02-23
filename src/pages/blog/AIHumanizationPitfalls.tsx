@@ -8,6 +8,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { InternalLinks } from "@/components/InternalLinks";
 import { Badge } from "@/components/ui/badge";
 import { AlertTriangle, XCircle, Repeat, Shuffle, Eye, Lightbulb } from "lucide-react";
+import { KeyTakeaways } from "@/components/KeyTakeaways";
 
 const AIHumanizationPitfalls = () => {
   const breadcrumbItems = [
@@ -132,6 +133,15 @@ const AIHumanizationPitfalls = () => {
                 <span>11 min read</span>
               </div>
             </header>
+
+            <KeyTakeaways
+              points={[
+                "Random synonym swapping often makes AI content sound worse and more detectable",
+                "Surface-level edits like adding contractions don't fool modern AI detectors",
+                "Effective humanization requires adding genuine personal experience and varied structure",
+                "Focus on making content genuinely better, not just different from the AI original"
+              ]}
+            />
 
             <div className="bg-destructive/10 border border-destructive/20 rounded-lg p-6 mb-8">
               <h2 className="text-lg font-semibold text-foreground mb-2 flex items-center gap-2">

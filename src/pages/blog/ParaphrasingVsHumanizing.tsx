@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Calendar, Clock, ArrowLeft, RefreshCw, Wand2, X, Check } from "lucide-react";
+import { KeyTakeaways } from "@/components/KeyTakeaways";
 import { Helmet } from "react-helmet-async";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -149,6 +150,15 @@ const ParaphrasingVsHumanizing = () => {
                   Not all AI content tools are created equal. Here's why paraphrasers fail and what marketers actually need.
                 </p>
               </header>
+
+              <KeyTakeaways
+                points={[
+                  "Paraphrasers swap words but preserve detectable AI patterns; humanizers restructure content at a deeper level",
+                  "QuillBot-style tools achieve only 15-30% bypass rates vs 90%+ for true humanizers",
+                  "Marketers need humanization, not paraphrasing, to scale AI content without detection flags",
+                  "AI Free Text Pro combines detection and humanization in one tool for the most efficient workflow"
+                ]}
+              />
 
               <div className="prose prose-lg max-w-none">
                 <p>

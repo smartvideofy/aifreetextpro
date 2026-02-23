@@ -1,6 +1,7 @@
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import { ArrowRight, ArrowLeft, Volume2, Fingerprint, Waves, Target } from "lucide-react";
+import { KeyTakeaways } from "@/components/KeyTakeaways";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
@@ -133,6 +134,15 @@ const ToneVoiceFlowAIWriting = () => {
                   Great writing has three invisible threads: tone sets the emotional temperature, voice creates distinctiveness, and flow carries readers effortlessly forward. Here's how to master all three when working with AI.
                 </p>
               </header>
+
+              <KeyTakeaways
+                points={[
+                  "Tone sets the emotional temperature, voice creates distinctiveness, and flow carries readers forward",
+                  "Teaching AI your tone requires providing examples and explicit style instructions",
+                  "Voice is what makes writing recognizable and is the hardest element for AI to replicate",
+                  "Great flow uses varied sentence length, strategic transitions, and natural rhythm"
+                ]}
+              />
 
               <section className="mb-12">
                 <h2 className="text-2xl font-bold mb-4 flex items-center gap-3">

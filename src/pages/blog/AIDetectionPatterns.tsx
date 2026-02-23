@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Calendar, Clock, ArrowLeft, Brain, BarChart3, AlertTriangle, Lightbulb } from "lucide-react";
+import { KeyTakeaways } from "@/components/KeyTakeaways";
 import { Helmet } from "react-helmet-async";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -149,6 +150,15 @@ const AIDetectionPatterns = () => {
                   A deep dive into the science behind AI detection, and how understanding these patterns helps you write undetectably.
                 </p>
               </header>
+
+              <KeyTakeaways
+                points={[
+                  "AI detectors analyze five key patterns: perplexity, burstiness, vocabulary distribution, coherence, and emotional depth",
+                  "Low perplexity (predictable word choices) is the strongest signal of AI-generated text",
+                  "Human writing naturally varies sentence length and complexity, while AI text stays uniform",
+                  "Understanding these patterns lets you write content that reads authentically human"
+                ]}
+              />
 
               <div className="prose prose-lg max-w-none">
                 <p>

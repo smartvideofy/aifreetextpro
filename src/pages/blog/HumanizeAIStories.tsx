@@ -7,6 +7,7 @@ import { InternalLinks } from "@/components/InternalLinks";
 import { FAQSection } from "@/components/FAQSection";
 import { Link } from "react-router-dom";
 import { ArrowRight, Brain, Search, Zap, Lightbulb, CheckCircle, AlertTriangle, BookOpen, Heart, Users } from "lucide-react";
+import { KeyTakeaways } from "@/components/KeyTakeaways";
 
 const relatedArticles = [
   {
@@ -175,20 +176,15 @@ export default function HumanizeAIStories() {
               </p>
             </header>
 
-            {/* Key Takeaways */}
-            <div className="bg-primary/5 border border-primary/20 rounded-lg p-6 mb-8">
-              <h2 className="text-lg font-semibold mb-3 flex items-center gap-2">
-                <Lightbulb className="h-5 w-5 text-primary" />
-                Key Takeaways
-              </h2>
-              <ul className="space-y-2 text-muted-foreground mb-0">
-                <li>• AI excels at plot structure but struggles with emotional depth</li>
-                <li>• Character psychology and motivation need human injection</li>
-                <li>• Sensory details and specific imagery transform generic prose</li>
-                <li>• Dialogue requires distinct voices, interruptions, and subtext</li>
-                <li>• The "surprise test": if nothing surprises you, humanization is needed</li>
-              </ul>
-            </div>
+            <KeyTakeaways
+              points={[
+                "AI excels at plot structure but struggles with emotional depth",
+                "Character psychology and motivation need human injection",
+                "Sensory details and specific imagery transform generic prose",
+                "Dialogue requires distinct voices, interruptions, and subtext",
+                "The 'surprise test': if nothing surprises you, humanization is needed"
+              ]}
+            />
 
             <div className="space-y-8">
               <section>

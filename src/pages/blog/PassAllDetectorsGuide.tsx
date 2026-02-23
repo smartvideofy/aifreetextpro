@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Calendar, Clock, ArrowLeft, Shield, CheckCircle, Trophy, Zap } from "lucide-react";
+import { KeyTakeaways } from "@/components/KeyTakeaways";
 import { Helmet } from "react-helmet-async";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -149,6 +150,15 @@ const PassAllDetectorsGuide = () => {
                   How to bypass GPTZero, Turnitin, Originality.AI, ZeroGPT, Copyleaks, and every other AI detector, with a money-back guarantee.
                 </p>
               </header>
+
+              <KeyTakeaways
+                points={[
+                  "AI Free Text Pro bypasses all major detectors (GPTZero, Turnitin, Originality.AI, ZeroGPT, Copyleaks) with 96-98% success",
+                  "Each detector has unique strengths and weaknesses that require different bypass strategies",
+                  "The only humanizer offering a 100% money-back guarantee if content is flagged by any detector",
+                  "Understanding how each detector works is key to creating universally undetectable content"
+                ]}
+              />
 
               <div className="prose prose-lg max-w-none">
                 <p>

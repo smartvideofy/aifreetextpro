@@ -6,6 +6,7 @@ import { RelatedArticles } from "@/components/RelatedArticles";
 import { InternalLinks } from "@/components/InternalLinks";
 import { Link } from "react-router-dom";
 import { ArrowRight, CheckCircle2, XCircle } from "lucide-react";
+import { KeyTakeaways } from "@/components/KeyTakeaways";
 
 const relatedArticles = [
   {
@@ -151,6 +152,15 @@ export default function ZeroGPTComparison() {
                 We put both tools through rigorous real-world tests to see which one actually delivers on accuracy.
               </p>
             </header>
+
+            <KeyTakeaways
+              points={[
+                "AI Free Text Pro outperforms ZeroGPT in accuracy across all content types tested",
+                "ZeroGPT has higher false positive rates, especially on formal or academic writing",
+                "AI Free Text Pro offers both detection and humanization in one integrated platform",
+                "For reliable AI detection in 2025, AI Free Text Pro delivers more consistent results"
+              ]}
+            />
 
             <div className="space-y-8">
               <section>

@@ -1,6 +1,7 @@
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import { ArrowRight, ArrowLeft, Edit3, Eye, Scissors, CheckCircle } from "lucide-react";
+import { KeyTakeaways } from "@/components/KeyTakeaways";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
@@ -133,6 +134,15 @@ const EditingAIDraftsHumanEditor = () => {
                   Even the best AI generates drafts that need human refinement. Professional editors have developed specific techniques for transforming AI output into polished, authentic prose. Here's their playbook.
                 </p>
               </header>
+
+              <KeyTakeaways
+                points={[
+                  "Professional editors do a complete first read before making any changes to feel the flow",
+                  "Eliminating 'AI-isms' like filler phrases and uniform structure is the most impactful edit",
+                  "Adding specificity, opinion, and imperfection gives AI drafts genuine human character",
+                  "The read-aloud test catches awkward phrasing that visual editing misses"
+                ]}
+              />
 
               <section className="mb-12">
                 <h2 className="text-2xl font-bold mb-4 flex items-center gap-3">

@@ -7,6 +7,7 @@ import { InternalLinks } from "@/components/InternalLinks";
 import { FAQSection } from "@/components/FAQSection";
 import { Link } from "react-router-dom";
 import { ArrowRight, Zap, Mail, Star, Lightbulb, CheckCircle, AlertTriangle, TrendingUp, Clock, Users } from "lucide-react";
+import { KeyTakeaways } from "@/components/KeyTakeaways";
 
 const relatedArticles = [
   {
@@ -178,20 +179,15 @@ export default function MasteringAIPoweredEmailCampaigns2026() {
               </p>
             </header>
 
-            {/* Key Takeaways */}
-            <div className="bg-primary/5 border border-primary/20 rounded-lg p-6 mb-8">
-              <h2 className="text-lg font-semibold mb-3 flex items-center gap-2">
-                <Lightbulb className="h-5 w-5 text-primary" />
-                Key Takeaways
-              </h2>
-              <ul className="space-y-2 text-muted-foreground mb-0">
-                <li>• AI can personalize emails at scale, but human oversight ensures authenticity</li>
-                <li>• Subject line optimization with AI delivers 15-25% higher open rates</li>
-                <li>• Send-time AI increases engagement by predicting individual optimal times</li>
-                <li>• The best campaigns combine AI efficiency with human storytelling</li>
-                <li>• Test AI copy against human copy to find what works for your audience</li>
-              </ul>
-            </div>
+            <KeyTakeaways
+              points={[
+                "AI can personalize emails at scale, but human oversight ensures authenticity",
+                "Subject line optimization with AI delivers 15-25% higher open rates",
+                "Send-time AI increases engagement by predicting individual optimal times",
+                "The best campaigns combine AI efficiency with human storytelling",
+                "Test AI copy against human copy to find what works for your audience"
+              ]}
+            />
 
             <div className="space-y-8">
               <section>

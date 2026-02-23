@@ -7,6 +7,7 @@ import { InternalLinks } from "@/components/InternalLinks";
 import { FAQSection } from "@/components/FAQSection";
 import { Link } from "react-router-dom";
 import { ArrowRight, ShoppingCart, Star, Zap, CheckCircle, Lightbulb, TrendingUp, Package, BarChart3 } from "lucide-react";
+import { KeyTakeaways } from "@/components/KeyTakeaways";
 
 const relatedArticles = [
   {
@@ -171,31 +172,14 @@ export default function AIProductDescriptions() {
               </p>
             </header>
 
-            {/* Key Takeaways */}
-            <div className="bg-primary/5 border border-primary/20 rounded-lg p-6 mb-8">
-              <h2 className="text-lg font-semibold mb-3 flex items-center gap-2">
-                <Lightbulb className="h-5 w-5 text-primary" />
-                Key Takeaways
-              </h2>
-              <ul className="space-y-2 text-muted-foreground">
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 text-primary mt-1 flex-shrink-0" />
-                  <span>Humanized product descriptions convert 15-35% better than raw AI output by adding emotional appeal and sensory details</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 text-primary mt-1 flex-shrink-0" />
-                  <span>Each platform has optimal formats: Amazon needs bullet-heavy, Etsy wants storytelling, Shopify balances both</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 text-primary mt-1 flex-shrink-0" />
-                  <span>Focus on benefits over features: explain how the product improves the buyer's life, not just what it does</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 text-primary mt-1 flex-shrink-0" />
-                  <span>Bulk humanization is possible: create category templates and use batch processing for large catalogs</span>
-                </li>
-              </ul>
-            </div>
+            <KeyTakeaways
+              points={[
+                "Humanized product descriptions convert 15-35% better than raw AI output by adding emotional appeal and sensory details",
+                "Each platform has optimal formats: Amazon needs bullet-heavy, Etsy wants storytelling, Shopify balances both",
+                "Focus on benefits over features: explain how the product improves the buyer's life, not just what it does",
+                "Bulk humanization is possible: create category templates and use batch processing for large catalogs"
+              ]}
+            />
 
             <div className="space-y-8">
               <section>

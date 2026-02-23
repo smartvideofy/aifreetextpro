@@ -6,6 +6,7 @@ import { RelatedArticles } from "@/components/RelatedArticles";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { BarChart3, Calculator, Target, Layers, TrendingUp, AlertCircle } from "lucide-react";
+import { KeyTakeaways } from "@/components/KeyTakeaways";
 
 const HowAIDetectorsScoreText = () => {
   const breadcrumbItems = [
@@ -128,18 +129,14 @@ const HowAIDetectorsScoreText = () => {
               </div>
             </header>
 
-            <div className="bg-primary/5 border border-primary/20 rounded-lg p-6 mb-8">
-              <h2 className="text-lg font-semibold text-foreground mb-2 flex items-center gap-2">
-                <BarChart3 className="h-5 w-5 text-primary" />
-                Key Takeaways
-              </h2>
-              <ul className="space-y-2 text-muted-foreground">
-                <li>• AI detectors use multiple overlapping metrics, not a single score</li>
-                <li>• Perplexity measures how "surprising" your word choices are</li>
-                <li>• Burstiness tracks variation in sentence complexity</li>
-                <li>• Confidence scores aren't the same as accuracy</li>
-              </ul>
-            </div>
+            <KeyTakeaways
+              points={[
+                "AI detectors use multiple overlapping metrics, not a single score",
+                "Perplexity measures how 'surprising' your word choices are",
+                "Burstiness tracks variation in sentence complexity",
+                "Confidence scores aren't the same as accuracy"
+              ]}
+            />
 
             <section className="mb-12">
               <h2 className="text-2xl font-bold text-foreground mb-4">The Scoring Black Box, Opened</h2>

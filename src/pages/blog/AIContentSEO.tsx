@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Calendar, Clock, ArrowLeft, TrendingUp, Search, Shield, CheckCircle } from "lucide-react";
+import { KeyTakeaways } from "@/components/KeyTakeaways";
 import { Helmet } from "react-helmet-async";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -149,6 +150,15 @@ const AIContentSEO = () => {
                   The complete playbook for SEO professionals who want to scale content production with AI, without sacrificing rankings or authenticity.
                 </p>
               </header>
+
+              <KeyTakeaways
+                points={[
+                  "Google rewards helpful content regardless of AI use, but raw AI text often lacks E-E-A-T signals",
+                  "The best SEO workflow combines AI drafting with human expertise and humanization tools",
+                  "AI-generated content needs structural variation and personal insights to rank competitively",
+                  "Always verify AI content passes detection before publishing to protect domain authority"
+                ]}
+              />
 
               <div className="prose prose-lg max-w-none">
                 <p>

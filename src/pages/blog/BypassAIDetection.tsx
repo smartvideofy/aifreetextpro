@@ -7,6 +7,7 @@ import { InternalLinks } from "@/components/InternalLinks";
 import { FAQSection } from "@/components/FAQSection";
 import { Link } from "react-router-dom";
 import { ArrowRight, Brain, Search, Zap, Lightbulb, CheckCircle, AlertTriangle, Target, Shield } from "lucide-react";
+import { KeyTakeaways } from "@/components/KeyTakeaways";
 
 const relatedArticles = [
   {
@@ -200,31 +201,14 @@ export default function BypassAIDetectionGuide() {
               </p>
             </header>
 
-            {/* Key Takeaways */}
-            <div className="bg-primary/5 border border-primary/20 rounded-lg p-6 mb-8">
-              <h2 className="text-lg font-semibold mb-3 flex items-center gap-2">
-                <Lightbulb className="h-5 w-5 text-primary" />
-                Key Takeaways
-              </h2>
-              <ul className="space-y-2 text-muted-foreground mb-0">
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 text-primary mt-1 flex-shrink-0" />
-                  <span>AI detection relies on perplexity (word predictability) and burstiness (sentence variation)</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 text-primary mt-1 flex-shrink-0" />
-                  <span>The fastest bypass method is using a specialized humanizer tool (95-98% success rate)</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 text-primary mt-1 flex-shrink-0" />
-                  <span>Manual editing works but takes 15-30 minutes per 500 words with lower success rates</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 text-primary mt-1 flex-shrink-0" />
-                  <span>Always verify results with multiple detection tools before publishing</span>
-                </li>
-              </ul>
-            </div>
+            <KeyTakeaways
+              points={[
+                "AI detection relies on perplexity (word predictability) and burstiness (sentence variation)",
+                "The fastest bypass method is using a specialized humanizer tool (95-98% success rate)",
+                "Manual editing works but takes 15-30 minutes per 500 words with lower success rates",
+                "Always verify results with multiple detection tools before publishing"
+              ]}
+            />
 
             <div className="space-y-8">
               <section>

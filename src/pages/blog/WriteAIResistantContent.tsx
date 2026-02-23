@@ -80,7 +80,7 @@ export default function WriteAIResistantContent() {
             "publisher": {
               "@type": "Organization",
               "name": "AI Free Text Pro",
-              "logo": { "@type": "ImageObject", "url": "/images/blog/write-ai-resistant-content.png" }
+              "logo": { "@type": "ImageObject", "url": "https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" }
             },
             "mainEntityOfPage": { "@type": "WebPage", "@id": canonical }
           })}

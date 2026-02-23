@@ -87,7 +87,7 @@ export default function BypassAIDetectionGuide() {
               "name": "AI Free Text Pro",
               "logo": {
                 "@type": "ImageObject",
-                "url": "https://aifreetextpro.com/logo.png"
+                "url": "https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG"
               }
             },
             "mainEntityOfPage": {

@@ -188,7 +188,7 @@ const relatedArticles = [
               <span className="px-3 py-1 rounded-full bg-secondary/10 text-secondary font-medium">
                 AI Tools
               </span>
-              <time dateTime="2026-01-08">January 8, 2026</time>
+              <time dateTime="2026-02-02">February 2, 2026</time>
               <span>10 min read</span>
             </div>
 

@@ -51,6 +51,9 @@ const SignalVsNoiseHumanText = () => {
         <meta name="description" content="Discover the specific patterns that AI detectors look for and what distinguishes human writing from AI-generated content with concrete examples." />
         <meta name="keywords" content="human writing patterns, AI detection signals, text authenticity, writing characteristics, detector patterns 2026" />
         <link rel="canonical" href="https://aifreetextpro.com/blog/signal-vs-noise-human-text" />
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        <meta name="bingbot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta property="og:title" content="Signal vs. Noise: What Makes Text Human in 2026" />
         <meta property="og:description" content="Discover the specific patterns that AI detectors look for and what distinguishes human writing from AI-generated content." />
         <meta property="og:type" content="article" />

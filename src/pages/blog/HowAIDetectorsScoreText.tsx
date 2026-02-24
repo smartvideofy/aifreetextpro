@@ -7,6 +7,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { BarChart3, Calculator, Target, Layers, TrendingUp, AlertCircle } from "lucide-react";
 import { KeyTakeaways } from "@/components/KeyTakeaways";
+import { InternalLinks } from "@/components/InternalLinks";
 
 const HowAIDetectorsScoreText = () => {
   const breadcrumbItems = [
@@ -49,6 +50,9 @@ const HowAIDetectorsScoreText = () => {
         <meta name="description" content="Understand the scoring systems AI detectors use. Learn about perplexity, burstiness, and confidence scores explained in plain language." />
         <meta name="keywords" content="AI detector scoring, perplexity score, burstiness metrics, AI detection confidence, detection algorithms" />
         <link rel="canonical" href="https://aifreetextpro.com/blog/how-ai-detectors-score-text" />
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        <meta name="bingbot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta property="og:title" content="How AI Detectors Score Text: Behind-the-Scenes Metrics" />
         <meta property="og:description" content="Understand the scoring systems AI detectors use. Learn about perplexity, burstiness, and confidence scores explained in plain language." />
         <meta property="og:type" content="article" />
@@ -405,6 +409,7 @@ const HowAIDetectorsScoreText = () => {
           <div className="mt-12">
             <RelatedArticles articles={relatedArticles} />
           </div>
+          <InternalLinks currentPage="/blog/how-ai-detectors-score-text" />
         </main>
 
         <Footer />

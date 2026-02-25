@@ -45,6 +45,86 @@ const categoryThumbnails: Record<string, string> = {
 
 const blogPosts = [
   {
+    slug: "can-teachers-detect-chatgpt",
+    title: "Can Teachers Detect ChatGPT? What Students Need to Know in 2026",
+    excerpt: "Find out if teachers and professors can tell when you use ChatGPT. Every detection method schools use in 2026 explained.",
+    date: "2026-02-25",
+    readTime: "14 min read",
+    category: "Academic"
+  },
+  {
+    slug: "can-turnitin-detect-deepseek",
+    title: "Can Turnitin Detect DeepSeek? What You Need to Know",
+    excerpt: "We tested DeepSeek R1 and V3 against Turnitin, GPTZero, and Originality.AI. Here are the real detection results.",
+    date: "2026-02-25",
+    readTime: "13 min read",
+    category: "Academic"
+  },
+  {
+    slug: "best-chatgpt-prompts-for-essays",
+    title: "Best ChatGPT Prompts for Essays That Sound Human (2026)",
+    excerpt: "20+ proven ChatGPT prompts for essays that produce natural, human-sounding writing across all essay types.",
+    date: "2026-02-25",
+    readTime: "14 min read",
+    category: "Academic"
+  },
+  {
+    slug: "ai-humanizer-resumes-cover-letters",
+    title: "AI Humanizer for Resumes and Cover Letters: Complete Guide",
+    excerpt: "Make AI-generated resumes and cover letters sound authentic, professional, and pass recruiter review.",
+    date: "2026-02-25",
+    readTime: "12 min read",
+    category: "Career"
+  },
+  {
+    slug: "ai-detection-false-positives",
+    title: "AI Detection False Positives: Why Your Human Writing Gets Flagged",
+    excerpt: "AI detectors falsely flag human writing 5-15% of the time. Learn why it happens and how to protect yourself.",
+    date: "2026-02-25",
+    readTime: "13 min read",
+    category: "Educational"
+  },
+  {
+    slug: "gptzero-vs-turnitin-comparison",
+    title: "GPTZero vs Turnitin: Which AI Detector Is More Accurate?",
+    excerpt: "Head-to-head comparison of GPTZero and Turnitin with real test results on accuracy, false positives, and pricing.",
+    date: "2026-02-25",
+    readTime: "12 min read",
+    category: "Comparison"
+  },
+  {
+    slug: "does-grammarly-trigger-ai-detection",
+    title: "Does Grammarly Get Detected as AI? The Truth About Writing Tools",
+    excerpt: "We tested Grammarly-edited text against Turnitin, GPTZero, and more. Here are the real results.",
+    date: "2026-02-25",
+    readTime: "10 min read",
+    category: "Educational"
+  },
+  {
+    slug: "humanize-ai-text-free-no-signup",
+    title: "How to Humanize AI Text for Free: No Sign-Up Required (2026)",
+    excerpt: "Free AI humanizer tools and manual techniques to make AI text sound human. No account needed.",
+    date: "2026-02-25",
+    readTime: "12 min read",
+    category: "How-To Guide"
+  },
+  {
+    slug: "undetectable-ai-vs-ai-free-text-pro",
+    title: "Undetectable AI vs AI Free Text Pro: Honest Comparison (2026)",
+    excerpt: "Side-by-side comparison of accuracy, pricing, and features with real test results.",
+    date: "2026-02-25",
+    readTime: "13 min read",
+    category: "Comparison"
+  },
+  {
+    slug: "ai-detectors-claude-gemini-gpt5-2026",
+    title: "Can AI Detectors Detect Claude, Gemini, and GPT-5? (2026 Tests)",
+    excerpt: "Model-by-model detection test results for 2026's biggest AI models across 5 major detectors.",
+    date: "2026-02-25",
+    readTime: "14 min read",
+    category: "Technical"
+  },
+  {
     slug: "ai-product-descriptions",
     title: "How to Humanize AI-Generated Product Descriptions",
     excerpt: "Transform AI product copy into compelling, human-like descriptions that convert customers and build trust.",

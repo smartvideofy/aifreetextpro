@@ -96,6 +96,16 @@ const AIWritingAcademia = lazy(() => import("./pages/blog/AIWritingAcademia"));
 const HumanizeAIStories = lazy(() => import("./pages/blog/HumanizeAIStories"));
 const AIYouTubeScripts = lazy(() => import("./pages/blog/AIYouTubeScripts"));
 const AIProductDescriptions = lazy(() => import("./pages/blog/AIProductDescriptions"));
+const CanTeachersDetectChatGPT = lazy(() => import("./pages/blog/CanTeachersDetectChatGPT"));
+const CanTurnitinDetectDeepSeek = lazy(() => import("./pages/blog/CanTurnitinDetectDeepSeek"));
+const BestChatGPTPromptsForEssays = lazy(() => import("./pages/blog/BestChatGPTPromptsForEssays"));
+const AIHumanizerResumes = lazy(() => import("./pages/blog/AIHumanizerResumes"));
+const AIDetectionFalsePositives = lazy(() => import("./pages/blog/AIDetectionFalsePositives"));
+const GPTZeroVsTurnitin = lazy(() => import("./pages/blog/GPTZeroVsTurnitin"));
+const DoesGrammarlyTriggerAIDetection = lazy(() => import("./pages/blog/DoesGrammarlyTriggerAIDetection"));
+const HumanizeAITextFreeNoSignup = lazy(() => import("./pages/blog/HumanizeAITextFreeNoSignup"));
+const UndetectableAIvsAIFreeTextPro = lazy(() => import("./pages/blog/UndetectableAIvsAIFreeTextPro"));
+const AIDetectorsClaudeGeminiGPT5 = lazy(() => import("./pages/blog/AIDetectorsClaudeGeminiGPT5"));
 
 const queryClient = new QueryClient();
 
@@ -177,6 +187,16 @@ const App = () => (
               <Route path="/blog/humanize-ai-generated-stories-fiction" element={<HumanizeAIStories />} />
               <Route path="/blog/ai-youtube-scripts" element={<AIYouTubeScripts />} />
               <Route path="/blog/ai-product-descriptions" element={<AIProductDescriptions />} />
+              <Route path="/blog/can-teachers-detect-chatgpt" element={<CanTeachersDetectChatGPT />} />
+              <Route path="/blog/can-turnitin-detect-deepseek" element={<CanTurnitinDetectDeepSeek />} />
+              <Route path="/blog/best-chatgpt-prompts-for-essays" element={<BestChatGPTPromptsForEssays />} />
+              <Route path="/blog/ai-humanizer-resumes-cover-letters" element={<AIHumanizerResumes />} />
+              <Route path="/blog/ai-detection-false-positives" element={<AIDetectionFalsePositives />} />
+              <Route path="/blog/gptzero-vs-turnitin-comparison" element={<GPTZeroVsTurnitin />} />
+              <Route path="/blog/does-grammarly-trigger-ai-detection" element={<DoesGrammarlyTriggerAIDetection />} />
+              <Route path="/blog/humanize-ai-text-free-no-signup" element={<HumanizeAITextFreeNoSignup />} />
+              <Route path="/blog/undetectable-ai-vs-ai-free-text-pro" element={<UndetectableAIvsAIFreeTextPro />} />
+              <Route path="/blog/ai-detectors-claude-gemini-gpt5-2026" element={<AIDetectorsClaudeGeminiGPT5 />} />
               <Route path="/bypass-turnitin-ai-detection" element={<BypassTurnitin />} />
               <Route path="/bypass-gptzero-detection" element={<BypassGPTZero />} />
               <Route path="/bypass-originality-ai" element={<BypassOriginality />} />

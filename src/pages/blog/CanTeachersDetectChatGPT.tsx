@@ -154,7 +154,7 @@ const CanTeachersDetectChatGPT = () => {
             <h2 className="text-2xl font-bold mt-10 mb-4 text-foreground">The False Positive Problem</h2>
             <p className="text-muted-foreground leading-relaxed">One of the most concerning aspects of AI detection in education is the false positive rate. Studies from Stanford and the University of Maryland have found that AI detectors incorrectly flag human-written text as AI-generated 5-15% of the time. This means that even if you wrote every word yourself, there is a chance your work could be flagged.</p>
             <p className="text-muted-foreground leading-relaxed">Non-native English speakers are disproportionately affected. Research shows that AI detectors flag essays written by non-native speakers at significantly higher rates because their writing patterns (simpler vocabulary, more uniform sentence structures) can resemble AI output. This has led to serious equity concerns at universities worldwide.</p>
-            <p className="text-muted-foreground leading-relaxed">If you are concerned about false positives, you can use tools like <a href="https://app.aifreetextpro.com" className="text-primary hover:text-primary/80 underline">AI Free Text Pro's detector</a> to check your own writing before submission. This gives you a heads-up if any sections might be flagged, allowing you to revise them proactively.</p>
+            <p className="text-muted-foreground leading-relaxed">If you are concerned about false positives, you can use tools like <a href="https://app.aifreetextpro.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary/80 underline">AI Free Text Pro's detector</a> to check your own writing before submission. This gives you a heads-up if any sections might be flagged, allowing you to revise them proactively.</p>
 
             <h2 className="text-2xl font-bold mt-10 mb-4 text-foreground">How to Use AI Responsibly in Schoolwork</h2>
             <p className="text-muted-foreground leading-relaxed">The goal should not be to "beat" AI detectors. Instead, think of AI as a powerful learning assistant. Here are ethical ways to incorporate ChatGPT into your academic workflow:</p>
@@ -192,12 +192,12 @@ const CanTeachersDetectChatGPT = () => {
 
             <h2 className="text-2xl font-bold mt-10 mb-4 text-foreground">The Bottom Line</h2>
             <p className="text-muted-foreground leading-relaxed">Yes, teachers can detect ChatGPT in 2026 using a combination of AI detection software, writing style analysis, and verification methods. However, no detection method is perfect, and false positives remain a real concern. The smartest approach is to use AI as a learning tool rather than a ghostwriter, always following your institution's guidelines.</p>
-            <p className="text-muted-foreground leading-relaxed">If you are worried about false positives on your own writing, <a href="https://app.aifreetextpro.com" className="text-primary hover:text-primary/80 underline">try AI Free Text Pro's free detector</a> to check your work before submitting it.</p>
+            <p className="text-muted-foreground leading-relaxed">If you are worried about false positives on your own writing, <a href="https://app.aifreetextpro.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary/80 underline">try AI Free Text Pro's free detector</a> to check your work before submitting it.</p>
 
             <div className="bg-primary/5 border border-primary/20 rounded-xl p-8 text-center my-12 not-prose">
               <h3 className="text-2xl font-bold mb-3 text-foreground">Check Your Essay Before Submitting</h3>
               <p className="text-muted-foreground mb-6">Use AI Free Text Pro's free detector to see if your writing might trigger AI detection flags.</p>
-              <a href="https://app.aifreetextpro.com" className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg font-medium hover:bg-primary/90 transition-colors">
+              <a href="https://app.aifreetextpro.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg font-medium hover:bg-primary/90 transition-colors">
                 Try Free AI Detector <ArrowLeft className="w-4 h-4 rotate-180" />
               </a>
             </div>

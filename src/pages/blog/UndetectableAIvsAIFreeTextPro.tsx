@@ -136,7 +136,7 @@ const UndetectableAIvsAIFreeTextPro = () => {
             <div className="bg-primary/5 border border-primary/20 rounded-xl p-8 text-center my-12 not-prose">
               <h3 className="text-2xl font-bold mb-3 text-foreground">Try AI Free Text Pro for Free</h3>
               <p className="text-muted-foreground mb-6">No sign-up required. See the difference for yourself.</p>
-              <a href="https://app.aifreetextpro.com" className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg font-medium hover:bg-primary/90 transition-colors">Try Free Humanizer <ArrowLeft className="w-4 h-4 rotate-180" /></a>
+              <a href="https://app.aifreetextpro.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg font-medium hover:bg-primary/90 transition-colors">Try Free Humanizer <ArrowLeft className="w-4 h-4 rotate-180" /></a>
             </div>
           </article>
 

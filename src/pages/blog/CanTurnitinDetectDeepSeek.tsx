@@ -156,12 +156,12 @@ const CanTurnitinDetectDeepSeek = () => {
             </div>
 
             <h2 className="text-2xl font-bold mt-10 mb-4 text-foreground">The Bottom Line</h2>
-            <p className="text-muted-foreground leading-relaxed">Yes, Turnitin and other major AI detectors can detect DeepSeek-generated text. While detection rates are slightly lower than for ChatGPT, they are still high enough that submitting raw DeepSeek output as your own work carries significant risk. Use DeepSeek as a learning tool, write in your own words, and check your work with <a href="https://app.aifreetextpro.com" className="text-primary hover:text-primary/80 underline">AI Free Text Pro's free detector</a> before submission.</p>
+            <p className="text-muted-foreground leading-relaxed">Yes, Turnitin and other major AI detectors can detect DeepSeek-generated text. While detection rates are slightly lower than for ChatGPT, they are still high enough that submitting raw DeepSeek output as your own work carries significant risk. Use DeepSeek as a learning tool, write in your own words, and check your work with <a href="https://app.aifreetextpro.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary/80 underline">AI Free Text Pro's free detector</a> before submission.</p>
 
             <div className="bg-primary/5 border border-primary/20 rounded-xl p-8 text-center my-12 not-prose">
               <h3 className="text-2xl font-bold mb-3 text-foreground">Check Your Writing for Free</h3>
               <p className="text-muted-foreground mb-6">Verify your essay will not trigger AI detection before you submit it.</p>
-              <a href="https://app.aifreetextpro.com" className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg font-medium hover:bg-primary/90 transition-colors">Try Free AI Detector <ArrowLeft className="w-4 h-4 rotate-180" /></a>
+              <a href="https://app.aifreetextpro.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg font-medium hover:bg-primary/90 transition-colors">Try Free AI Detector <ArrowLeft className="w-4 h-4 rotate-180" /></a>
             </div>
           </article>
 

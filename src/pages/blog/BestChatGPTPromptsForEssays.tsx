@@ -151,7 +151,7 @@ const BestChatGPTPromptsForEssays = () => {
             <ol className="list-decimal pl-6 space-y-2 text-muted-foreground">
               <li><strong>Smart prompting:</strong> Use the prompts above to get a strong draft with natural-sounding structure.</li>
               <li><strong>Personal editing:</strong> Rewrite sections in your own voice, add your own examples, and inject real opinions.</li>
-              <li><strong>Verification:</strong> Run the final draft through <a href="https://app.aifreetextpro.com" className="text-primary hover:text-primary/80 underline">AI Free Text Pro's detector</a> to check for any sections that might still read as AI-generated. Use the humanizer on flagged sections if needed.</li>
+              <li><strong>Verification:</strong> Run the final draft through <a href="https://app.aifreetextpro.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary/80 underline">AI Free Text Pro's detector</a> to check for any sections that might still read as AI-generated. Use the humanizer on flagged sections if needed.</li>
             </ol>
 
             <h2 className="text-2xl font-bold mt-10 mb-4 text-foreground">What NOT to Do</h2>
@@ -163,7 +163,7 @@ const BestChatGPTPromptsForEssays = () => {
             <div className="bg-primary/5 border border-primary/20 rounded-xl p-8 text-center my-12 not-prose">
               <h3 className="text-2xl font-bold mb-3 text-foreground">Verify Your Essay Sounds Human</h3>
               <p className="text-muted-foreground mb-6">Check your AI-assisted essay against multiple detectors with one click.</p>
-              <a href="https://app.aifreetextpro.com" className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg font-medium hover:bg-primary/90 transition-colors">Try Free AI Detector <ArrowLeft className="w-4 h-4 rotate-180" /></a>
+              <a href="https://app.aifreetextpro.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg font-medium hover:bg-primary/90 transition-colors">Try Free AI Detector <ArrowLeft className="w-4 h-4 rotate-180" /></a>
             </div>
           </article>
 

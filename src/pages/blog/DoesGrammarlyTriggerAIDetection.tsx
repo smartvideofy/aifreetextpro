@@ -144,7 +144,7 @@ const DoesGrammarlyTriggerAIDetection = () => {
             </div>
 
             <h2 className="text-2xl font-bold mt-10 mb-4 text-foreground">Best Practices</h2>
-            <p className="text-muted-foreground leading-relaxed">Use Grammarly freely for grammar, spelling, and punctuation. Be cautious with AI rewrite features. If you have used AI features on several paragraphs and are worried, scan your text with <a href="https://app.aifreetextpro.com" className="text-primary hover:text-primary/80 underline">AI Free Text Pro's free detector</a> to see if anything was flagged. If sections score high, consider reverting to your original phrasing or humanizing the text.</p>
+            <p className="text-muted-foreground leading-relaxed">Use Grammarly freely for grammar, spelling, and punctuation. Be cautious with AI rewrite features. If you have used AI features on several paragraphs and are worried, scan your text with <a href="https://app.aifreetextpro.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary/80 underline">AI Free Text Pro's free detector</a> to see if anything was flagged. If sections score high, consider reverting to your original phrasing or humanizing the text.</p>
 
             <h2 className="text-2xl font-bold mt-10 mb-4 text-foreground">The Bottom Line</h2>
             <p className="text-muted-foreground leading-relaxed">Standard Grammarly use is completely safe for academic submissions. AI detectors are designed to catch AI-generated content, not grammar-checked human writing. Just be mindful of the line between editing tools and content generation tools, and you will be fine.</p>
@@ -152,7 +152,7 @@ const DoesGrammarlyTriggerAIDetection = () => {
             <div className="bg-primary/5 border border-primary/20 rounded-xl p-8 text-center my-12 not-prose">
               <h3 className="text-2xl font-bold mb-3 text-foreground">Not Sure If Your Text Will Get Flagged?</h3>
               <p className="text-muted-foreground mb-6">Check your essay with AI Free Text Pro's free detector before submission.</p>
-              <a href="https://app.aifreetextpro.com" className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg font-medium hover:bg-primary/90 transition-colors">Try Free AI Detector <ArrowLeft className="w-4 h-4 rotate-180" /></a>
+              <a href="https://app.aifreetextpro.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg font-medium hover:bg-primary/90 transition-colors">Try Free AI Detector <ArrowLeft className="w-4 h-4 rotate-180" /></a>
             </div>
           </article>
 

@@ -122,7 +122,7 @@ const AIDetectionFalsePositives = () => {
             <ol className="list-decimal pl-6 space-y-3 text-muted-foreground">
               <li><strong>Write in Google Docs:</strong> The version history provides timestamped evidence of your writing process.</li>
               <li><strong>Save your research:</strong> Keep notes, bookmarks, and drafts that show how you developed your arguments.</li>
-              <li><strong>Pre-scan your work:</strong> Run your essay through <a href="https://app.aifreetextpro.com" className="text-primary hover:text-primary/80 underline">AI Free Text Pro's detector</a> before submission. If any sections are flagged, you can revise the language to reduce AI-like patterns.</li>
+              <li><strong>Pre-scan your work:</strong> Run your essay through <a href="https://app.aifreetextpro.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary/80 underline">AI Free Text Pro's detector</a> before submission. If any sections are flagged, you can revise the language to reduce AI-like patterns.</li>
               <li><strong>Add personal voice:</strong> Include specific examples from your experience, opinions, and moments of uncertainty. These are the strongest "human signals."</li>
               <li><strong>Vary your writing style:</strong> Mix short sentences with longer ones. Use occasional informal language alongside academic tone. This increases burstiness, which detectors read as human.</li>
             </ol>
@@ -146,12 +146,12 @@ const AIDetectionFalsePositives = () => {
             <p className="text-muted-foreground leading-relaxed">The false positive problem reveals a fundamental limitation of AI detection technology. These tools are making probabilistic guesses based on statistical patterns, not definitive determinations. No AI detector can say with certainty whether a specific piece of text was written by a human or machine. Educators, students, and institutions need to treat detection results as one data point in a broader assessment, not as conclusive proof.</p>
 
             <h2 className="text-2xl font-bold mt-10 mb-4 text-foreground">The Bottom Line</h2>
-            <p className="text-muted-foreground leading-relaxed">AI detection false positives are a real and growing problem. The best defense is documentation: keep records of your writing process, pre-scan your work, and know your rights as a student. If you are concerned about your writing triggering a false positive, <a href="https://app.aifreetextpro.com" className="text-primary hover:text-primary/80 underline">check it with AI Free Text Pro</a> before you turn it in.</p>
+            <p className="text-muted-foreground leading-relaxed">AI detection false positives are a real and growing problem. The best defense is documentation: keep records of your writing process, pre-scan your work, and know your rights as a student. If you are concerned about your writing triggering a false positive, <a href="https://app.aifreetextpro.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary/80 underline">check it with AI Free Text Pro</a> before you turn it in.</p>
 
             <div className="bg-primary/5 border border-primary/20 rounded-xl p-8 text-center my-12 not-prose">
               <h3 className="text-2xl font-bold mb-3 text-foreground">Pre-Scan Your Essay for Free</h3>
               <p className="text-muted-foreground mb-6">Identify sections that might trigger false positives before submitting your work.</p>
-              <a href="https://app.aifreetextpro.com" className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg font-medium hover:bg-primary/90 transition-colors">Try Free AI Detector <ArrowLeft className="w-4 h-4 rotate-180" /></a>
+              <a href="https://app.aifreetextpro.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg font-medium hover:bg-primary/90 transition-colors">Try Free AI Detector <ArrowLeft className="w-4 h-4 rotate-180" /></a>
             </div>
           </article>
 

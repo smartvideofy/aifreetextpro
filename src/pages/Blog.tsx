@@ -41,6 +41,7 @@ const categoryThumbnails: Record<string, string> = {
   "Detector Review": categoryComparison,
   "Travel Writing": categoryWriting,
   "eCommerce": categoryMarketing,
+  "Career": categoryWriting,
 };
 
 const blogPosts = [

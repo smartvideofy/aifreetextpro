@@ -103,7 +103,7 @@ const HumanizeAITextFreeNoSignup = () => {
                   <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-green-500" /> Built-in AI detection checker</li>
                   <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-green-500" /> Bypasses Turnitin, GPTZero, Originality.AI</li>
                 </ul>
-                <a href="https://app.aifreetextpro.com" className="inline-flex items-center gap-2 mt-4 text-primary hover:text-primary/80 font-medium text-sm">Try it free <ArrowLeft className="w-3 h-3 rotate-180" /></a>
+                <a href="https://app.aifreetextpro.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 mt-4 text-primary hover:text-primary/80 font-medium text-sm">Try it free <ArrowLeft className="w-3 h-3 rotate-180" /></a>
               </div>
 
               <div className="border border-border rounded-lg p-6">
@@ -146,7 +146,7 @@ const HumanizeAITextFreeNoSignup = () => {
             <p className="text-muted-foreground leading-relaxed">AI defaults to the most statistically common word for each context. Surprise the detector by choosing a slightly unexpected synonym. Instead of "important," try "pivotal" or even "non-negotiable."</p>
 
             <h2 className="text-2xl font-bold mt-10 mb-4 text-foreground">Combining Tools and Techniques</h2>
-            <p className="text-muted-foreground leading-relaxed">The most effective approach combines automated humanization with manual editing. Start with <a href="https://app.aifreetextpro.com" className="text-primary hover:text-primary/80 underline">AI Free Text Pro</a> to handle the statistical heavy lifting (adjusting perplexity and burstiness), then apply the manual techniques above to add genuine personal voice. This two-step process consistently produces text that scores under 5% on all major AI detectors.</p>
+            <p className="text-muted-foreground leading-relaxed">The most effective approach combines automated humanization with manual editing. Start with <a href="https://app.aifreetextpro.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary/80 underline">AI Free Text Pro</a> to handle the statistical heavy lifting (adjusting perplexity and burstiness), then apply the manual techniques above to add genuine personal voice. This two-step process consistently produces text that scores under 5% on all major AI detectors.</p>
 
             <h2 className="text-2xl font-bold mt-10 mb-4 text-foreground">The Bottom Line</h2>
             <p className="text-muted-foreground leading-relaxed">You do not need to pay for expensive subscriptions or create accounts to humanize AI text. Free tools like AI Free Text Pro combined with the manual techniques in this guide can transform robotic AI output into natural-sounding writing. The key is addressing both the statistical patterns (with tools) and the voice and personality (with your own edits).</p>
@@ -154,7 +154,7 @@ const HumanizeAITextFreeNoSignup = () => {
             <div className="bg-primary/5 border border-primary/20 rounded-xl p-8 text-center my-12 not-prose">
               <h3 className="text-2xl font-bold mb-3 text-foreground">Humanize Your AI Text for Free</h3>
               <p className="text-muted-foreground mb-6">No sign-up. No credit card. Just paste your text and get natural-sounding results.</p>
-              <a href="https://app.aifreetextpro.com" className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg font-medium hover:bg-primary/90 transition-colors">Try Free Humanizer <ArrowLeft className="w-4 h-4 rotate-180" /></a>
+              <a href="https://app.aifreetextpro.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg font-medium hover:bg-primary/90 transition-colors">Try Free Humanizer <ArrowLeft className="w-4 h-4 rotate-180" /></a>
             </div>
           </article>
 

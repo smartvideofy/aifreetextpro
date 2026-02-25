@@ -121,7 +121,7 @@ const GPTZeroVsTurnitin = () => {
             <p className="text-muted-foreground leading-relaxed">This is where GPTZero has a significant advantage. In our tests, GPTZero incorrectly flagged 4% of human-written essays as AI-generated, compared to 8% for Turnitin. For non-native English speakers, Turnitin's false positive rate jumped to 14%, while GPTZero's rose to 7%. If your priority is avoiding wrongful accusations, GPTZero is the safer bet.</p>
 
             <h2 className="text-2xl font-bold mt-10 mb-4 text-foreground">Which Is Better for Students?</h2>
-            <p className="text-muted-foreground leading-relaxed">If you want to check your own work before submission, GPTZero is more accessible because of its free tier. However, keep in mind that your university likely uses Turnitin, so the results may differ. For the most comprehensive pre-submission check, we recommend using <a href="https://app.aifreetextpro.com" className="text-primary hover:text-primary/80 underline">AI Free Text Pro's detector</a>, which aggregates insights from multiple detection approaches.</p>
+            <p className="text-muted-foreground leading-relaxed">If you want to check your own work before submission, GPTZero is more accessible because of its free tier. However, keep in mind that your university likely uses Turnitin, so the results may differ. For the most comprehensive pre-submission check, we recommend using <a href="https://app.aifreetextpro.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary/80 underline">AI Free Text Pro's detector</a>, which aggregates insights from multiple detection approaches.</p>
 
             <h2 className="text-2xl font-bold mt-10 mb-4 text-foreground">Which Is Better for Educators?</h2>
             <p className="text-muted-foreground leading-relaxed">Turnitin wins for institutional use due to its LMS integration, combined plagiarism and AI detection, and established reporting workflow. GPTZero is better for individual educators or smaller institutions that cannot afford Turnitin's licensing fees.</p>
@@ -132,7 +132,7 @@ const GPTZeroVsTurnitin = () => {
             <div className="bg-primary/5 border border-primary/20 rounded-xl p-8 text-center my-12 not-prose">
               <h3 className="text-2xl font-bold mb-3 text-foreground">Check Your Writing Against Multiple Detectors</h3>
               <p className="text-muted-foreground mb-6">AI Free Text Pro scans your text and provides a comprehensive detection analysis.</p>
-              <a href="https://app.aifreetextpro.com" className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg font-medium hover:bg-primary/90 transition-colors">Try Free AI Detector <ArrowLeft className="w-4 h-4 rotate-180" /></a>
+              <a href="https://app.aifreetextpro.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg font-medium hover:bg-primary/90 transition-colors">Try Free AI Detector <ArrowLeft className="w-4 h-4 rotate-180" /></a>
             </div>
           </article>
 

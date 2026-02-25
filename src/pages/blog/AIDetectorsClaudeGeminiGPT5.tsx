@@ -135,12 +135,12 @@ const AIDetectorsClaudeGeminiGPT5 = () => {
             <p className="text-muted-foreground leading-relaxed">We ran each model's output through <Link to="/" className="text-primary hover:text-primary/80">AI Free Text Pro's humanizer</Link> and rescanned. The results were dramatic: detection rates dropped to 2-5% across all models and all detectors. This confirms that the source model matters far less than the post-processing. A well-humanized GPT-5 essay is just as undetectable as a well-humanized Claude essay.</p>
 
             <h2 className="text-2xl font-bold mt-10 mb-4 text-foreground">The Bottom Line</h2>
-            <p className="text-muted-foreground leading-relaxed">No AI model is undetectable in 2026. Claude comes closest, but even its output gets caught 72-84% of the time. If you need text that passes AI detection, the model you choose matters less than what you do after generating it. Use AI as a starting point, add your own voice, and verify with <a href="https://app.aifreetextpro.com" className="text-primary hover:text-primary/80 underline">AI Free Text Pro's detector</a>.</p>
+            <p className="text-muted-foreground leading-relaxed">No AI model is undetectable in 2026. Claude comes closest, but even its output gets caught 72-84% of the time. If you need text that passes AI detection, the model you choose matters less than what you do after generating it. Use AI as a starting point, add your own voice, and verify with <a href="https://app.aifreetextpro.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary/80 underline">AI Free Text Pro's detector</a>.</p>
 
             <div className="bg-primary/5 border border-primary/20 rounded-xl p-8 text-center my-12 not-prose">
               <h3 className="text-2xl font-bold mb-3 text-foreground">Check Any AI Model's Output</h3>
               <p className="text-muted-foreground mb-6">Detect and humanize text from GPT-5, Claude, Gemini, DeepSeek, and more.</p>
-              <a href="https://app.aifreetextpro.com" className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg font-medium hover:bg-primary/90 transition-colors">Try Free Detector <ArrowLeft className="w-4 h-4 rotate-180" /></a>
+              <a href="https://app.aifreetextpro.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg font-medium hover:bg-primary/90 transition-colors">Try Free Detector <ArrowLeft className="w-4 h-4 rotate-180" /></a>
             </div>
           </article>
 

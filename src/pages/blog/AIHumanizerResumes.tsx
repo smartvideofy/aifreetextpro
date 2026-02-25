@@ -111,7 +111,7 @@ const AIHumanizerResumes = () => {
             <p className="text-muted-foreground leading-relaxed">Go through every bullet point and ask: "Could another person write this exact sentence?" If yes, it needs to be more specific. Replace "Managed a team of developers" with "Led a 6-person frontend team that shipped the company's first mobile app, growing DAU from 0 to 12,000 in three months."</p>
 
             <h3 className="text-xl font-semibold mt-6 mb-3 text-foreground">Step 3: Run Through a Humanizer</h3>
-            <p className="text-muted-foreground leading-relaxed">After adding your personal details, run the text through <a href="https://app.aifreetextpro.com" className="text-primary hover:text-primary/80 underline">AI Free Text Pro's humanizer</a> to smooth out any remaining AI-sounding patterns. The tool adjusts vocabulary, sentence rhythm, and tone while preserving the professional formatting and keywords that ATS systems need.</p>
+            <p className="text-muted-foreground leading-relaxed">After adding your personal details, run the text through <a href="https://app.aifreetextpro.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary/80 underline">AI Free Text Pro's humanizer</a> to smooth out any remaining AI-sounding patterns. The tool adjusts vocabulary, sentence rhythm, and tone while preserving the professional formatting and keywords that ATS systems need.</p>
 
             <h2 className="text-2xl font-bold mt-10 mb-4 text-foreground">Cover Letter Humanization: Before and After</h2>
             <div className="grid md:grid-cols-2 gap-4 my-6 not-prose">
@@ -144,7 +144,7 @@ const AIHumanizerResumes = () => {
             <div className="bg-primary/5 border border-primary/20 rounded-xl p-8 text-center my-12 not-prose">
               <h3 className="text-2xl font-bold mb-3 text-foreground">Humanize Your Resume Today</h3>
               <p className="text-muted-foreground mb-6">Make your AI-assisted application materials sound authentically professional.</p>
-              <a href="https://app.aifreetextpro.com" className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg font-medium hover:bg-primary/90 transition-colors">Try Free Humanizer <ArrowLeft className="w-4 h-4 rotate-180" /></a>
+              <a href="https://app.aifreetextpro.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg font-medium hover:bg-primary/90 transition-colors">Try Free Humanizer <ArrowLeft className="w-4 h-4 rotate-180" /></a>
             </div>
           </article>
 

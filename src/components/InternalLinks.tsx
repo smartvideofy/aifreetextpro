@@ -113,6 +113,12 @@ const blogPosts = [
   { title: "Write Naturally with AI", href: "/blog/how-to-write-naturally-with-ai" },
   { title: "Best Free AI Humanizers", href: "/blog/best-free-ai-humanizer-tools-2025" },
   { title: "ZeroGPT Comparison", href: "/blog/zerogpt-vs-ai-free-text-pro-2025" },
+  { title: "Can Teachers Detect ChatGPT?", href: "/blog/can-teachers-detect-chatgpt" },
+  { title: "Can Turnitin Detect DeepSeek?", href: "/blog/can-turnitin-detect-deepseek" },
+  { title: "ChatGPT Prompts for Essays", href: "/blog/best-chatgpt-prompts-for-essays" },
+  { title: "AI Detection False Positives", href: "/blog/ai-detection-false-positives" },
+  { title: "Humanize AI Text Free", href: "/blog/humanize-ai-text-free-no-signup" },
+  { title: "GPTZero vs Turnitin", href: "/blog/gptzero-vs-turnitin-comparison" },
 ];
 
 export const InternalLinks = ({ currentPage, showTitle = true, variant = "compact" }: InternalLinksProps) => {

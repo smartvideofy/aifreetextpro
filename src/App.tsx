@@ -106,6 +106,7 @@ const DoesGrammarlyTriggerAIDetection = lazy(() => import("./pages/blog/DoesGram
 const HumanizeAITextFreeNoSignup = lazy(() => import("./pages/blog/HumanizeAITextFreeNoSignup"));
 const UndetectableAIvsAIFreeTextPro = lazy(() => import("./pages/blog/UndetectableAIvsAIFreeTextPro"));
 const AIDetectorsClaudeGeminiGPT5 = lazy(() => import("./pages/blog/AIDetectorsClaudeGeminiGPT5"));
+const IsItIllegalToUseAIForSchool = lazy(() => import("./pages/blog/IsItIllegalToUseAIForSchool"));
 
 const queryClient = new QueryClient();
 
@@ -197,6 +198,7 @@ const App = () => (
               <Route path="/blog/humanize-ai-text-free-no-signup" element={<HumanizeAITextFreeNoSignup />} />
               <Route path="/blog/undetectable-ai-vs-ai-free-text-pro" element={<UndetectableAIvsAIFreeTextPro />} />
               <Route path="/blog/ai-detectors-claude-gemini-gpt5-2026" element={<AIDetectorsClaudeGeminiGPT5 />} />
+              <Route path="/blog/is-it-illegal-to-use-ai-for-school" element={<IsItIllegalToUseAIForSchool />} />
               <Route path="/bypass-turnitin-ai-detection" element={<BypassTurnitin />} />
               <Route path="/bypass-gptzero-detection" element={<BypassGPTZero />} />
               <Route path="/bypass-originality-ai" element={<BypassOriginality />} />

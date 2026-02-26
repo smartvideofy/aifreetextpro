@@ -46,6 +46,14 @@ const categoryThumbnails: Record<string, string> = {
 
 const blogPosts = [
   {
+    slug: "is-it-illegal-to-use-ai-for-school",
+    title: "Is It Illegal to Use AI for School? Academic AI Policies Explained (2026)",
+    excerpt: "Using AI for school is not illegal, but it can violate academic integrity policies. We break down university AI rules, real consequences, and how to use AI responsibly.",
+    date: "2026-02-26",
+    readTime: "15 min read",
+    category: "Academic"
+  },
+  {
     slug: "can-teachers-detect-chatgpt",
     title: "Can Teachers Detect ChatGPT? What Students Need to Know in 2026",
     excerpt: "Find out if teachers and professors can tell when you use ChatGPT. Every detection method schools use in 2026 explained.",

@@ -119,6 +119,7 @@ const blogPosts = [
   { title: "AI Detection False Positives", href: "/blog/ai-detection-false-positives" },
   { title: "Humanize AI Text Free", href: "/blog/humanize-ai-text-free-no-signup" },
   { title: "GPTZero vs Turnitin", href: "/blog/gptzero-vs-turnitin-comparison" },
+  { title: "Is AI for School Illegal?", href: "/blog/is-it-illegal-to-use-ai-for-school" },
 ];
 
 export const InternalLinks = ({ currentPage, showTitle = true, variant = "compact" }: InternalLinksProps) => {

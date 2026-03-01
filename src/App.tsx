@@ -107,6 +107,16 @@ const HumanizeAITextFreeNoSignup = lazy(() => import("./pages/blog/HumanizeAITex
 const UndetectableAIvsAIFreeTextPro = lazy(() => import("./pages/blog/UndetectableAIvsAIFreeTextPro"));
 const AIDetectorsClaudeGeminiGPT5 = lazy(() => import("./pages/blog/AIDetectorsClaudeGeminiGPT5"));
 const IsItIllegalToUseAIForSchool = lazy(() => import("./pages/blog/IsItIllegalToUseAIForSchool"));
+const HowToCiteAIGeneratedContent = lazy(() => import("./pages/blog/HowToCiteAIGeneratedContent"));
+const ChatGPTvsClaudevsGeminiDetection = lazy(() => import("./pages/blog/ChatGPTvsClaudevsGeminiDetection"));
+const AIWritingHighSchoolStudents = lazy(() => import("./pages/blog/AIWritingHighSchoolStudents"));
+const HowToCheckIfWrittenByAI = lazy(() => import("./pages/blog/HowToCheckIfWrittenByAI"));
+const QuillbotVsAIFreeTextPro = lazy(() => import("./pages/blog/QuillbotVsAIFreeTextPro"));
+const AIDisclosurePolicies2026 = lazy(() => import("./pages/blog/AIDisclosurePolicies2026"));
+const TurnitinAIDetectionAccuracy = lazy(() => import("./pages/blog/TurnitinAIDetectionAccuracy"));
+const AIWritingForFreelancers = lazy(() => import("./pages/blog/AIWritingForFreelancers"));
+const AIHumanizerForBlogPosts = lazy(() => import("./pages/blog/AIHumanizerForBlogPosts"));
+const OriginalityAIAccuracyFalsePositives = lazy(() => import("./pages/blog/OriginalityAIAccuracyFalsePositives"));
 
 const queryClient = new QueryClient();
 
@@ -199,6 +209,16 @@ const App = () => (
               <Route path="/blog/undetectable-ai-vs-ai-free-text-pro" element={<UndetectableAIvsAIFreeTextPro />} />
               <Route path="/blog/ai-detectors-claude-gemini-gpt5-2026" element={<AIDetectorsClaudeGeminiGPT5 />} />
               <Route path="/blog/is-it-illegal-to-use-ai-for-school" element={<IsItIllegalToUseAIForSchool />} />
+              <Route path="/blog/how-to-cite-ai-generated-content" element={<HowToCiteAIGeneratedContent />} />
+              <Route path="/blog/chatgpt-vs-claude-vs-gemini-detection" element={<ChatGPTvsClaudevsGeminiDetection />} />
+              <Route path="/blog/ai-writing-high-school-students" element={<AIWritingHighSchoolStudents />} />
+              <Route path="/blog/how-to-check-if-written-by-ai" element={<HowToCheckIfWrittenByAI />} />
+              <Route path="/blog/quillbot-vs-ai-free-text-pro" element={<QuillbotVsAIFreeTextPro />} />
+              <Route path="/blog/ai-disclosure-policies-2026" element={<AIDisclosurePolicies2026 />} />
+              <Route path="/blog/turnitin-ai-detection-accuracy" element={<TurnitinAIDetectionAccuracy />} />
+              <Route path="/blog/ai-writing-for-freelancers" element={<AIWritingForFreelancers />} />
+              <Route path="/blog/ai-humanizer-for-blog-posts" element={<AIHumanizerForBlogPosts />} />
+              <Route path="/blog/originality-ai-accuracy-false-positives" element={<OriginalityAIAccuracyFalsePositives />} />
               <Route path="/bypass-turnitin-ai-detection" element={<BypassTurnitin />} />
               <Route path="/bypass-gptzero-detection" element={<BypassGPTZero />} />
               <Route path="/bypass-originality-ai" element={<BypassOriginality />} />

@@ -120,6 +120,14 @@ const blogPosts = [
   { title: "Humanize AI Text Free", href: "/blog/humanize-ai-text-free-no-signup" },
   { title: "GPTZero vs Turnitin", href: "/blog/gptzero-vs-turnitin-comparison" },
   { title: "Is AI for School Illegal?", href: "/blog/is-it-illegal-to-use-ai-for-school" },
+  { title: "How to Cite AI Content", href: "/blog/how-to-cite-ai-generated-content" },
+  { title: "ChatGPT vs Claude vs Gemini", href: "/blog/chatgpt-vs-claude-vs-gemini-detection" },
+  { title: "AI for High School Students", href: "/blog/ai-writing-high-school-students" },
+  { title: "Check If Written by AI", href: "/blog/how-to-check-if-written-by-ai" },
+  { title: "Quillbot vs AI Free Text Pro", href: "/blog/quillbot-vs-ai-free-text-pro" },
+  { title: "Turnitin AI Detection Accuracy", href: "/blog/turnitin-ai-detection-accuracy" },
+  { title: "AI Humanizer for Blog Posts", href: "/blog/ai-humanizer-for-blog-posts" },
+  { title: "Originality.AI Accuracy", href: "/blog/originality-ai-accuracy-false-positives" },
 ];
 
 export const InternalLinks = ({ currentPage, showTitle = true, variant = "compact" }: InternalLinksProps) => {

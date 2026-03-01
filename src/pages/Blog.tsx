@@ -46,6 +46,86 @@ const categoryThumbnails: Record<string, string> = {
 
 const blogPosts = [
   {
+    slug: "how-to-cite-ai-generated-content",
+    title: "How to Cite AI-Generated Content: APA, MLA, Chicago & Harvard (2026)",
+    excerpt: "Complete guide to citing ChatGPT, Claude, and Gemini in APA, MLA, Chicago, and Harvard formats with copy-paste templates.",
+    date: "2026-02-28",
+    readTime: "15 min read",
+    category: "Academic"
+  },
+  {
+    slug: "chatgpt-vs-claude-vs-gemini-detection",
+    title: "ChatGPT vs Claude vs Gemini: Which AI Writer Is Hardest to Detect? (2026)",
+    excerpt: "We tested GPT-5, Claude 3.5, and Gemini 2.5 Pro against 5 major AI detectors. See which model is hardest to detect.",
+    date: "2026-02-28",
+    readTime: "14 min read",
+    category: "Comparison"
+  },
+  {
+    slug: "ai-writing-high-school-students",
+    title: "AI Writing for High School Students: A Parent and Student Guide (2026)",
+    excerpt: "School policies, what's allowed, consequences of getting caught, and how to use AI responsibly in high school.",
+    date: "2026-02-28",
+    readTime: "14 min read",
+    category: "Academic"
+  },
+  {
+    slug: "how-to-check-if-written-by-ai",
+    title: "How to Check If Something Was Written by AI (Free Methods)",
+    excerpt: "Free tools and manual techniques for teachers, editors, and employers to identify AI-generated text.",
+    date: "2026-02-28",
+    readTime: "13 min read",
+    category: "How-To Guide"
+  },
+  {
+    slug: "quillbot-vs-ai-free-text-pro",
+    title: "Quillbot vs AI Free Text Pro: Paraphraser vs Humanizer Compared (2026)",
+    excerpt: "Quillbot paraphrases. AI Free Text Pro humanizes. We tested both against 5 AI detectors to show why the distinction matters.",
+    date: "2026-02-28",
+    readTime: "12 min read",
+    category: "Comparison"
+  },
+  {
+    slug: "ai-disclosure-policies-2026",
+    title: "AI Disclosure Policies: What You Must Know Before Submitting AI Content (2026)",
+    excerpt: "From the EU AI Act to university honor codes, here's what you need to disclose about AI use in 2026.",
+    date: "2026-02-28",
+    readTime: "14 min read",
+    category: "Educational"
+  },
+  {
+    slug: "turnitin-ai-detection-accuracy",
+    title: "Turnitin AI Detection: How It Works and How Accurate It Really Is (2026)",
+    excerpt: "Deep dive into Turnitin's AI detection: real accuracy rates, false positive data, and what scores actually mean.",
+    date: "2026-02-28",
+    readTime: "15 min read",
+    category: "Technical"
+  },
+  {
+    slug: "ai-writing-for-freelancers",
+    title: "AI Writing for Freelancers: How to Use AI Without Losing Clients (2026)",
+    excerpt: "Practical guide for freelance writers using AI. How to integrate AI, handle client expectations, and protect your reputation.",
+    date: "2026-02-28",
+    readTime: "13 min read",
+    category: "Career"
+  },
+  {
+    slug: "ai-humanizer-for-blog-posts",
+    title: "AI Humanizer for Blog Posts: Write Faster Without Sounding Like a Robot",
+    excerpt: "How to use AI humanizer tools to create blog content that reads naturally, ranks on Google, and engages readers.",
+    date: "2026-02-28",
+    readTime: "12 min read",
+    category: "Marketing"
+  },
+  {
+    slug: "originality-ai-accuracy-false-positives",
+    title: "Can Originality.AI Be Wrong? False Positives and Accuracy Explained",
+    excerpt: "Independent analysis of Originality.AI accuracy. Real false positive rates and how to handle being incorrectly flagged.",
+    date: "2026-02-28",
+    readTime: "14 min read",
+    category: "Detector Review"
+  },
+  {
     slug: "is-it-illegal-to-use-ai-for-school",
     title: "Is It Illegal to Use AI for School? Academic AI Policies Explained (2026)",
     excerpt: "Using AI for school is not illegal, but it can violate academic integrity policies. We break down university AI rules, real consequences, and how to use AI responsibly.",

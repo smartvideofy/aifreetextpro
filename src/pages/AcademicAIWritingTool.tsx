@@ -6,6 +6,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { RelatedArticles } from "@/components/RelatedArticles";
+import { HubBackLink } from "@/components/PillarHubLinks";
 
 const AcademicAIWritingTool = () => {
   return (
@@ -46,6 +47,7 @@ const AcademicAIWritingTool = () => {
             { label: "Home", href: "/" },
             { label: "Academic AI Writing Tool" }
           ]} />
+          <HubBackLink currentPath="/academic-ai-writing-tool" />
         </div>
 
         {/* Hero Section */}

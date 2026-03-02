@@ -7,6 +7,7 @@ import Footer from "@/components/Footer";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { RelatedArticles } from "@/components/RelatedArticles";
 import { Link } from "react-router-dom";
+import { HubBackLink } from "@/components/PillarHubLinks";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
 // Import testimonial profile images
@@ -146,6 +147,7 @@ const AIHumanizerForStudents = () => {
             { label: "Home", href: "/" },
             { label: "AI Humanizer for Students" }
           ]} />
+          <HubBackLink currentPath="/ai-humanizer-for-students" />
         </div>
 
         {/* Hero Section */}

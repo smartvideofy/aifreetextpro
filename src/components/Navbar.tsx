@@ -118,6 +118,10 @@ const Navbar = () => {
                 <DropdownMenuItem asChild>
                   <Link to="/academic-ai-writing-tool" className="w-full cursor-pointer">Academic Writing</Link>
                 </DropdownMenuItem>
+                <DropdownMenuSeparator />
+                <DropdownMenuItem asChild>
+                  <Link to="/compare-ai-humanizers" className="w-full cursor-pointer font-medium text-primary">Compare Tools</Link>
+                </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
 

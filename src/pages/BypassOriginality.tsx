@@ -8,6 +8,7 @@ import { RelatedArticles } from "@/components/RelatedArticles";
 import ReviewedBy from "@/components/ReviewedBy";
 import KeyTakeaways from "@/components/KeyTakeaways";
 import InternalLinks from "@/components/InternalLinks";
+import { HubBackLink } from "@/components/PillarHubLinks";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import { CheckCircle, X, ArrowRight, Shield, Target, FileCheck, Star, Users, Award, Clock } from "lucide-react";
 
@@ -215,6 +216,7 @@ const BypassOriginality = () => {
             { label: "Home", href: "/" },
             { label: "Bypass Originality.AI" }
           ]} />
+          <HubBackLink currentPath="/bypass-originality-ai" />
         </div>
         <div className="container mx-auto px-4 py-8">
           

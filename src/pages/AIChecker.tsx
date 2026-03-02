@@ -7,6 +7,7 @@ import Footer from "@/components/Footer";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { RelatedArticles } from "@/components/RelatedArticles";
 import { CheckCircle, ArrowRight, Zap, Shield, Eye, FileText, Clock, Target } from "lucide-react";
+import { PillarHubLinks, CrossHubNav } from "@/components/PillarHubLinks";
 
 const AIChecker = () => {
   const features = [
@@ -303,6 +304,12 @@ const AIChecker = () => {
             </div>
           </div>
         </section>
+
+        {/* AI Detection Hub Spokes */}
+        <div className="container mx-auto px-4">
+          <PillarHubLinks hub="detection" currentPage="/ai-checker" title="AI Detection Resources" />
+          <CrossHubNav currentHub="detection" />
+        </div>
 
         {/* Related Articles */}
         <div className="container mx-auto px-4">

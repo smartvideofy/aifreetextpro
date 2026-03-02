@@ -8,6 +8,7 @@ import { RelatedArticles } from "@/components/RelatedArticles";
 import ReviewedBy from "@/components/ReviewedBy";
 import KeyTakeaways from "@/components/KeyTakeaways";
 import InternalLinks from "@/components/InternalLinks";
+import { PillarHubLinks, CrossHubNav } from "@/components/PillarHubLinks";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import { CheckCircle, X, ArrowRight, Shield, Zap, TrendingUp, Star, Users, Clock, Award } from "lucide-react";
 
@@ -568,27 +569,9 @@ const BypassTurnitin = () => {
             </div>
           </section>
 
-          {/* Cross-Links to Other Bypass Pages */}
-          <section className="py-8 mb-8">
-            <h2 className="text-2xl font-bold mb-6">Bypass Other AI Detectors</h2>
-            <div className="grid md:grid-cols-2 gap-4">
-              <Link to="/bypass-gptzero-detection" className="group">
-                <div className="p-4 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                  <h3 className="font-semibold group-hover:text-primary transition-colors">Bypass GPTZero Detection</h3>
-                  <p className="text-sm text-muted-foreground">98.9% success rate against GPTZero's perplexity analysis</p>
-                </div>
-              </Link>
-              <Link to="/bypass-originality-ai" className="group">
-                <div className="p-4 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                  <h3 className="font-semibold group-hover:text-primary transition-colors">Bypass Originality.AI</h3>
-                  <p className="text-sm text-muted-foreground">97.5% success rate for content marketing professionals</p>
-                </div>
-              </Link>
-            </div>
-            <div className="mt-4 text-center">
-              <Link to="/technology" className="text-sm text-primary hover:underline">Learn how our technology works →</Link>
-            </div>
-          </section>
+          {/* Turnitin Bypass Hub Spokes */}
+          <PillarHubLinks hub="bypass" currentPage="/bypass-turnitin-ai-detection" title="Bypass All AI Detectors" />
+          <CrossHubNav currentHub="bypass" />
 
           <RelatedArticles articles={[
             {

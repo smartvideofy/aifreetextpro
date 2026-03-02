@@ -148,7 +148,7 @@ const AIDetectionComparison = () => {
                   </span>
                   <div className="flex items-center gap-2">
                     <Calendar className="w-4 h-4" />
-                    October 19, 2025
+                    February 25, 2026
                   </div>
                   <div className="flex items-center gap-2">
                     <Clock className="w-4 h-4" />

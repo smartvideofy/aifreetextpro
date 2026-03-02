@@ -201,7 +201,7 @@ const HumanizeAIText = () => {
                   </span>
                   <div className="flex items-center gap-2">
                     <Calendar className="w-4 h-4" />
-                    October 19, 2025
+                    February 25, 2026
                   </div>
                   <div className="flex items-center gap-2">
                     <Clock className="w-4 h-4" />
@@ -405,7 +405,7 @@ const HumanizeAIText = () => {
                   <a href="/">AI writing tools</a> aren't meant to replace you. They're meant to amplify your voice and save you time. Use them for the heavy lifting (structure, research, drafts), then add the magic ingredient: your unique perspective and personality.
                 </p>
                 <p>
-                  The writers who win in 2025 aren't those who reject AI or use it blindly. They're the ones who blend AI efficiency with human authenticity. Whether you're a <Link to="/blog/ai-writing-students-avoid-plagiarism" className="text-primary hover:text-primary/80">student</Link>, content creator, or professional writer, mastering the art of humanizing AI text is your competitive advantage.
+                  The writers who win in 2026 aren't those who reject AI or use it blindly. They're the ones who blend AI efficiency with human authenticity. Whether you're a <Link to="/blog/ai-writing-students-avoid-plagiarism" className="text-primary hover:text-primary/80">student</Link>, content creator, or professional writer, mastering the art of humanizing AI text is your competitive advantage.
                 </p>
                 <p>
                   Ready to transform your AI-generated content? Try our <a href="/">free AI humanizer tool</a> and see the difference authentic, natural writing makes.

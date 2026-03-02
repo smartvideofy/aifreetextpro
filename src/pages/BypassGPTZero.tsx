@@ -8,6 +8,7 @@ import { RelatedArticles } from "@/components/RelatedArticles";
 import ReviewedBy from "@/components/ReviewedBy";
 import KeyTakeaways from "@/components/KeyTakeaways";
 import InternalLinks from "@/components/InternalLinks";
+import { HubBackLink } from "@/components/PillarHubLinks";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import { CheckCircle, X, ArrowRight, Shield, Zap, Lock, Star, Users, Award, Clock } from "lucide-react";
 
@@ -215,6 +216,7 @@ const BypassGPTZero = () => {
             { label: "Home", href: "/" },
             { label: "Bypass GPTZero Detection" }
           ]} />
+          <HubBackLink currentPath="/bypass-gptzero-detection" />
         </div>
         <div className="container mx-auto px-4 py-8">
           

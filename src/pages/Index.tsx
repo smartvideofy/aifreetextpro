@@ -16,6 +16,7 @@ import TestimonialCarousel from "@/components/TestimonialCarousel";
 import AnimatedStats from "@/components/AnimatedStats";
 import ScrollToTopButton from "@/components/ScrollToTopButton";
 import StickyHeaderCTA from "@/components/StickyHeaderCTA";
+import { PillarHubLinks, CrossHubNav } from "@/components/PillarHubLinks";
 import TrustBadges from "@/components/TrustBadges";
 import NewsletterSignup from "@/components/NewsletterSignup";
 import ExitIntentPopup from "@/components/ExitIntentPopup";
@@ -1337,6 +1338,14 @@ const Index = () => {
                 </div>
               </Card>
             </div>
+          </div>
+        </section>
+
+        {/* Pillar Hub: AI Humanizer Spokes */}
+        <section className="py-4">
+          <div className="container mx-auto px-4">
+            <PillarHubLinks hub="humanizer" currentPage="/" limit={6} title="AI Humanizer Resources" />
+            <CrossHubNav currentHub="humanizer" />
           </div>
         </section>
 

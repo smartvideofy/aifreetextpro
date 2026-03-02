@@ -8,6 +8,7 @@ import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { RelatedArticles } from "@/components/RelatedArticles";
 import { Link } from "react-router-dom";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
+import { HubBackLink } from "@/components/PillarHubLinks";
 import jamesChen from "@/assets/testimonials/james-chen.jpg";
 import lisaMartinez from "@/assets/testimonials/lisa-martinez.jpg";
 
@@ -149,6 +150,7 @@ const VsHumanizeAIPro = () => {
             { label: "Home", href: "/" },
             { label: "vs HumanizeAI.pro" }
           ]} />
+          <HubBackLink currentPath="/vs-humanizeai-pro" />
         </div>
 
         {/* Hero Section */}

@@ -7,6 +7,7 @@ import Footer from "@/components/Footer";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { RelatedArticles } from "@/components/RelatedArticles";
 import { Link } from "react-router-dom";
+import { HubBackLink } from "@/components/PillarHubLinks";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 
 const AIHumanizerForWriters = () => {
@@ -179,6 +180,7 @@ const AIHumanizerForWriters = () => {
             { label: "Home", href: "/" },
             { label: "AI Humanizer for Content Writers" }
           ]} />
+          <HubBackLink currentPath="/ai-humanizer-for-writers" />
         </div>
 
         {/* Hero Section */}

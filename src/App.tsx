@@ -43,6 +43,7 @@ const BypassOriginality = lazy(() => import("./pages/BypassOriginality"));
 const VsWriteHuman = lazy(() => import("./pages/VsWriteHuman"));
 const VsUndetectable = lazy(() => import("./pages/VsUndetectable"));
 const VsHumanizeAIPro = lazy(() => import("./pages/VsHumanizeAIPro"));
+const CompareAIHumanizers = lazy(() => import("./pages/CompareAIHumanizers"));
 
 // Use case pages
 const AIHumanizerForStudents = lazy(() => import("./pages/AIHumanizerForStudents"));
@@ -225,6 +226,7 @@ const App = () => (
               <Route path="/vs-writehuman" element={<VsWriteHuman />} />
               <Route path="/vs-undetectable-ai" element={<VsUndetectable />} />
               <Route path="/vs-humanizeai-pro" element={<VsHumanizeAIPro />} />
+              <Route path="/compare-ai-humanizers" element={<CompareAIHumanizers />} />
               <Route path="/ai-humanizer-for-students" element={<AIHumanizerForStudents />} />
               <Route path="/ai-humanizer-for-writers" element={<AIHumanizerForWriters />} />
               <Route path="/academic-ai-writing-tool" element={<AcademicAIWritingTool />} />

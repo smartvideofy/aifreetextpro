@@ -8,6 +8,7 @@ import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { RelatedArticles } from "@/components/RelatedArticles";
 import { Link } from "react-router-dom";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
+import { HubBackLink } from "@/components/PillarHubLinks";
 import michaelRodriguez from "@/assets/testimonials/michael-rodriguez.jpg";
 import emilyWatson from "@/assets/testimonials/emily-watson.jpg";
 
@@ -150,6 +151,7 @@ const VsUndetectable = () => {
             { label: "Home", href: "/" },
             { label: "vs Undetectable AI" }
           ]} />
+          <HubBackLink currentPath="/vs-undetectable-ai" />
         </div>
 
         {/* Hero Section */}

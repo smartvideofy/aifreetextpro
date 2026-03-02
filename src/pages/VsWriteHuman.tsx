@@ -8,6 +8,7 @@ import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { RelatedArticles } from "@/components/RelatedArticles";
 import { Link } from "react-router-dom";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { HubBackLink } from "@/components/PillarHubLinks";
 
 // Import testimonial profile images
 import michaelRodriguez from "@/assets/testimonials/michael-rodriguez.jpg";
@@ -175,6 +176,7 @@ const VsWriteHuman = () => {
             { label: "Home", href: "/" },
             { label: "vs WriteHuman" }
           ]} />
+          <HubBackLink currentPath="/vs-writehuman" />
         </div>
 
         {/* Hero Section */}

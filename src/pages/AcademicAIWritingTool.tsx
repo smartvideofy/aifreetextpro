@@ -37,6 +37,46 @@ const AcademicAIWritingTool = () => {
             ]
           })}
         </script>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "What is the best AI writing tool for academic papers?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "AI Free Text Pro is the best academic AI writing tool with a 97% Turnitin bypass rate, citation preservation (APA, MLA, Chicago, Harvard), and a dedicated Academic writing mode designed for scholarly content."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Does AI Free Text Pro preserve citations in academic papers?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. The Academic mode specifically preserves in-text citations, footnotes, endnotes, and reference lists in APA, MLA, Chicago, and Harvard formats while humanizing the surrounding text."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Can I use AI Free Text Pro for my thesis or dissertation?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. AI Free Text Pro supports large document uploads (PDF, DOCX up to 10MB) and provides consistent humanization across long-form academic writing including theses, dissertations, and research papers."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How does the Academic writing mode differ from other modes?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Academic mode preserves formal tone, scholarly vocabulary, proper citations, and section structure (abstract, methodology, results, discussion) while adding natural variation to bypass AI detectors like Turnitin."
+                }
+              }
+            ]
+          })}
+        </script>
       </Helmet>
       
       <Navbar />

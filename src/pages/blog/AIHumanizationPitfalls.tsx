@@ -128,7 +128,7 @@ const AIHumanizationPitfalls = () => {
                 What to avoid when refining AI text, and what to do instead.
               </p>
               <div className="flex items-center gap-4 text-sm text-muted-foreground">
-                <span>January 15, 2025</span>
+                <span>February 25, 2026</span>
                 <span>•</span>
                 <span>11 min read</span>
               </div>

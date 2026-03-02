@@ -20,7 +20,7 @@ const Guarantee = () => {
       role: "Graduate Student",
       rating: 5,
       text: "I was skeptical at first, but when Turnitin flagged my humanized content, I reached out for a refund. The team processed it within 24 hours - no questions asked. They even helped me understand what went wrong. Incredible customer service!",
-      date: "January 2025",
+      date: "February 2026",
       avatar: sarahPatel
     },
     {

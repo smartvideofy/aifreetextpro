@@ -66,14 +66,14 @@ export default function MasteringAIPoweredEmailCampaigns2026() {
   return (
     <>
       <Helmet>
-        <title>Mastering AI-Powered Email Campaigns in 2026 | AI Free Text Pro</title>
-        <meta name="description" content="Learn how to use AI tools to craft engaging, high-converting email campaigns in 2026 with practical strategies and tool recommendations." />
+        <title>AI Email Campaigns: Higher Conversions [2026]</title>
+        <meta name="description" content="Craft high-converting email campaigns with AI in 2026. Practical strategies, tool recommendations, and tested templates that drive results." />
         <meta name="keywords" content="AI email marketing, AI-powered email campaigns, email automation, AI writing tools" />
         <link rel="canonical" href={canonical} />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="bingbot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-        <meta property="og:title" content="Mastering AI-Powered Email Campaigns in 2026" />
+        <meta property="og:title" content="AI Email Campaigns: Higher Conversions [2026]" />
         <meta property="og:description" content="Learn how to use AI tools to craft engaging, high-converting email campaigns in 2026 with practical strategies and tool recommendations." />
         <meta property="og:type" content="article" />
         <meta property="og:url" content={canonical} />
@@ -82,7 +82,7 @@ export default function MasteringAIPoweredEmailCampaigns2026() {
         <meta property="og:locale" content="en_US" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@aifreetextpro" />
-        <meta name="twitter:title" content="Mastering AI-Powered Email Campaigns in 2026" />
+        <meta name="twitter:title" content="AI Email Campaigns: Higher Conversions [2026]" />
         <meta name="twitter:description" content="Learn how to use AI tools to craft engaging, high-converting email campaigns in 2026 with practical strategies and tool recommendations." />
         <meta name="twitter:image" content={ogImage} />
 

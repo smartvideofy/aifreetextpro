@@ -66,14 +66,14 @@ export default function HumanizeAISocialMedia2026() {
   return (
     <>
       <Helmet>
-        <title>How to Humanize AI Content for Social Media in 2026 | AI Free Text Pro</title>
-        <meta name="description" content="Learn how to turn AI-generated content into human-like social media posts that engage readers and avoid robotic tone." />
+        <title>Humanize AI for Social Media [2026 Tips]</title>
+        <meta name="description" content="Turn AI posts into engaging social media content. Platform-specific tips for LinkedIn, Instagram, TikTok, and X that boost engagement." />
         <meta name="keywords" content="AI social media content, humanize AI posts, AI writing tips, social media engagement" />
         <link rel="canonical" href={canonical} />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="bingbot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-        <meta property="og:title" content="How to Humanize AI Content for Social Media in 2026" />
+        <meta property="og:title" content="Humanize AI for Social Media [2026 Tips]" />
         <meta property="og:description" content="Practical tips and examples to make AI-generated posts feel authentic and engaging." />
         <meta property="og:type" content="article" />
         <meta property="og:url" content={canonical} />
@@ -82,7 +82,7 @@ export default function HumanizeAISocialMedia2026() {
         <meta property="og:locale" content="en_US" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@aifreetextpro" />
-        <meta name="twitter:title" content="How to Humanize AI Content for Social Media in 2026" />
+        <meta name="twitter:title" content="Humanize AI for Social Media [2026 Tips]" />
         <meta name="twitter:description" content="Practical tips and examples to make AI-generated posts feel authentic and engaging." />
         <meta name="twitter:image" content={ogImage} />
 

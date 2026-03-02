@@ -40,14 +40,14 @@ const ToneVoiceFlowAIWriting = () => {
   return (
     <>
       <Helmet>
-        <title>Tone, Voice, and Flow in AI-Assisted Writing | AI Free Text Pro</title>
-        <meta name="description" content="Master the three pillars of great writing: tone, voice, and flow. Learn how to maintain these elements when working with AI writing tools." />
+        <title>Tone, Voice & Flow in AI Writing [2026 Guide]</title>
+        <meta name="description" content="Master the 3 pillars of great writing with AI tools. Keep your tone, voice, and flow natural even when using ChatGPT or other AI assistants." />
         <meta name="keywords" content="writing tone, writing voice, content flow, AI writing style, natural writing rhythm" />
         <link rel="canonical" href="https://aifreetextpro.com/blog/tone-voice-flow-ai-writing" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="bingbot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-        <meta property="og:title" content="Tone, Voice, and Flow in AI-Assisted Writing" />
+        <meta property="og:title" content="Tone, Voice & Flow in AI Writing [2026 Guide]" />
         <meta property="og:description" content="Master the three pillars of great writing when working with AI tools." />
         <meta property="og:type" content="article" />
         <meta property="og:url" content="https://aifreetextpro.com/blog/tone-voice-flow-ai-writing" />
@@ -56,7 +56,7 @@ const ToneVoiceFlowAIWriting = () => {
         <meta property="og:locale" content="en_US" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@aifreetextpro" />
-        <meta name="twitter:title" content="Tone, Voice, and Flow in AI-Assisted Writing" />
+        <meta name="twitter:title" content="Tone, Voice & Flow in AI Writing [2026 Guide]" />
         <meta name="twitter:description" content="Master the three pillars of great writing when working with AI tools." />
         <meta name="twitter:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" />
         <script type="application/ld+json">

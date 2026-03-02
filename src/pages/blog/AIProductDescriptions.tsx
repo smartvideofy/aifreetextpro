@@ -66,14 +66,14 @@ export default function AIProductDescriptions() {
   return (
     <>
       <Helmet>
-        <title>How to Humanize AI Content for eCommerce Product Descriptions | AI Free Text Pro</title>
-        <meta name="description" content="Learn to make AI-generated eCommerce product descriptions sound authentic, engaging, and optimized for conversions." />
+        <title>AI Product Descriptions That Convert [2026]</title>
+        <meta name="description" content="Make AI-generated product descriptions sound authentic and boost conversions 15-35%. Proven eCommerce copywriting techniques that sell." />
         <meta name="keywords" content="AI product descriptions, humanize AI content, eCommerce copywriting, AI writing tools, product page optimization, conversion copywriting" />
         <link rel="canonical" href={canonical} />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="bingbot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-        <meta property="og:title" content="How to Humanize AI Content for eCommerce Product Descriptions" />
+        <meta property="og:title" content="AI Product Descriptions That Convert [2026]" />
         <meta property="og:description" content="Learn to make AI-generated eCommerce product descriptions sound authentic, engaging, and optimized for conversions." />
         <meta property="og:type" content="article" />
         <meta property="og:url" content={canonical} />
@@ -82,7 +82,7 @@ export default function AIProductDescriptions() {
         <meta property="og:locale" content="en_US" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@aifreetextpro" />
-        <meta name="twitter:title" content="How to Humanize AI Content for eCommerce Product Descriptions" />
+        <meta name="twitter:title" content="AI Product Descriptions That Convert [2026]" />
         <meta name="twitter:description" content="Learn to make AI-generated eCommerce product descriptions sound authentic, engaging, and optimized for conversions." />
         <meta name="twitter:image" content={ogImage} />
 

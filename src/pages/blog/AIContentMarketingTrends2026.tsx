@@ -66,14 +66,14 @@ export default function AIContentMarketingTrends2026() {
   return (
     <>
       <Helmet>
-        <title>AI Content Marketing Trends to Watch in 2026 | AI Free Text Pro</title>
-        <meta name="description" content="Explore how AI is reshaping marketing strategies in 2026, from hyper-personalization to predictive analytics and ethical considerations." />
+        <title>AI Marketing Trends You Can't Ignore [2026]</title>
+        <meta name="description" content="How AI is reshaping marketing in 2026: hyper-personalization, predictive analytics, and ethical content strategies that drive real results." />
         <meta name="keywords" content="AI content marketing 2026, AI marketing trends, hyper-personalization, predictive analytics marketing, content automation, ai marketing strategy" />
         <link rel="canonical" href={canonical} />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="bingbot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-        <meta property="og:title" content="AI Content Marketing Trends to Watch in 2026" />
+        <meta property="og:title" content="AI Marketing Trends You Can't Ignore [2026]" />
         <meta property="og:description" content="Explore how AI is reshaping marketing strategies in 2026, from hyper-personalization to predictive analytics." />
         <meta property="og:type" content="article" />
         <meta property="og:url" content={canonical} />
@@ -82,7 +82,7 @@ export default function AIContentMarketingTrends2026() {
         <meta property="og:locale" content="en_US" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@aifreetextpro" />
-        <meta name="twitter:title" content="AI Content Marketing Trends to Watch in 2026" />
+        <meta name="twitter:title" content="AI Marketing Trends You Can't Ignore [2026]" />
         <meta name="twitter:description" content="Explore how AI is reshaping marketing strategies in 2026." />
         <meta name="twitter:image" content={ogImage} />
 

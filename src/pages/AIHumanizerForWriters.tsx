@@ -170,6 +170,46 @@ const AIHumanizerForWriters = () => {
             ]
           })}
         </script>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Can content writers use AI humanizers without losing clients?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. AI Free Text Pro achieves 96% bypass on Originality.AI, the most common detector used by content agencies. Humanized content passes human review and ranks on Google without AI penalties."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How much faster can writers produce content with AI Free Text Pro?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Writers report 5x faster content production. AI Free Text Pro cuts editing time by 80%, allowing you to process 50 articles per week instead of 10 without sacrificing quality."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Does AI Free Text Pro support different brand voices?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes, AI Free Text Pro offers 4 writing styles: Professional, Academic, Creative, and Casual. Each adapts to your client's brand voice and niche requirements."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Will Google penalize humanized AI content?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "No. Google's guidelines focus on content quality, not whether AI was used. AI Free Text Pro improves readability and naturalness, which aligns with Google's E-E-A-T quality standards."
+                }
+              }
+            ]
+          })}
+        </script>
       </Helmet>
       
       <Navbar />

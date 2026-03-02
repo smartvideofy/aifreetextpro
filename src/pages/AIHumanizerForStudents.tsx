@@ -137,6 +137,46 @@ const AIHumanizerForStudents = () => {
             ]
           })}
         </script>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Can AI Free Text Pro bypass Turnitin for students?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes, AI Free Text Pro achieves a 97% bypass rate on Turnitin using academic mode, which preserves citations, formal tone, and scholarly language while humanizing AI-generated text."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Is it safe to use an AI humanizer for school work?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "AI Free Text Pro is designed to refine AI-assisted drafts and improve writing quality. We encourage ethical use and recommend following your institution's AI usage policies. Our tool helps improve readability and naturalness."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How many free words do students get?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Students get 1,000 free words per month with no sign-up required. This is 2-4x more than competitors like Undetectable AI (375 words) and WriteHuman (500 words)."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Does the AI humanizer preserve citations and references?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes, our Academic writing mode specifically preserves APA, MLA, Chicago, and Harvard citations, footnotes, and references while humanizing the surrounding text."
+                }
+              }
+            ]
+          })}
+        </script>
       </Helmet>
       
       <Navbar />

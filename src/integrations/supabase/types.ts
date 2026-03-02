@@ -100,7 +100,6 @@ export type Database = {
           action_type: string
           created_at: string
           id: string
-          ip_address: string | null
           user_id: string | null
           word_count: number
         }
@@ -108,7 +107,6 @@ export type Database = {
           action_type: string
           created_at?: string
           id?: string
-          ip_address?: string | null
           user_id?: string | null
           word_count?: number
         }
@@ -116,7 +114,6 @@ export type Database = {
           action_type?: string
           created_at?: string
           id?: string
-          ip_address?: string | null
           user_id?: string | null
           word_count?: number
         }

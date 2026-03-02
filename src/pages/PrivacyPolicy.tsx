@@ -8,8 +8,8 @@ const PrivacyPolicy = () => {
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-br from-background via-background to-primary/5">
       <Helmet>
-        <title>Privacy Policy - AI Free Text Pro | Your Data Privacy & Security</title>
-        <meta name="description" content="Read AI Free Text Pro's privacy policy to understand how we protect your data. We do not store or share your text submissions. Your privacy is our priority." />
+        <title>Privacy Policy | AI Free Text Pro</title>
+        <meta name="description" content="Your text is never stored or shared. Read how AI Free Text Pro protects your data with zero-retention processing and full encryption." />
         <meta name="keywords" content="privacy policy, data protection, user privacy, secure ai detector" />
         <link rel="canonical" href="https://aifreetextpro.com/privacy-policy" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />

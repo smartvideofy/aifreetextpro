@@ -40,8 +40,8 @@ const AIWritingStudents = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <Helmet>
-        <title>AI Writing for Students: How to Avoid Plagiarism and AI Detection Ethically | AI Free Text Pro</title>
-        <meta name="description" content="Discover safe ways to use AI writing assistants in academia without triggering AI detectors or plagiarism checks." />
+        <title>AI Writing for Students: Stay Ethical (2026)</title>
+        <meta name="description" content="Use AI writing assistants safely in academia. Avoid plagiarism flags and AI detection while maintaining academic integrity." />
         <meta name="keywords" content="ai writing for students 2026, avoid plagiarism ai tools, ethical ai writing, student ai tools, academic integrity, ai in education, turnitin bypass, safe ai use students, academic ai guidelines, ai study tools" />
         <link rel="canonical" href="https://aifreetextpro.com/blog/ai-writing-students-avoid-plagiarism" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />

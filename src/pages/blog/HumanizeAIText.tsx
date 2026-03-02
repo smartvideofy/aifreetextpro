@@ -40,8 +40,8 @@ const HumanizeAIText = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <Helmet>
-        <title>How to Humanize AI-Generated Text Without Losing Your Voice | AI Free Text Pro</title>
-        <meta name="description" content="Learn proven strategies and tools to make ChatGPT or Gemini text sound naturally human while keeping your tone." />
+        <title>Humanize AI Text Without Losing Your Voice</title>
+        <meta name="description" content="Make ChatGPT or Gemini text sound naturally human while keeping your unique tone. Proven strategies and tools tested in 2026." />
         <meta name="keywords" content="humanize ai text, make ai writing sound human, ai humanizer, chatgpt humanizer, keep writing voice, ai text converter, natural ai writing, ai to human text, bypass ai detection, human-like ai content 2026" />
         <link rel="canonical" href="https://aifreetextpro.com/blog/humanize-ai-text-without-losing-voice" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />

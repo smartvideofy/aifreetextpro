@@ -12,23 +12,23 @@ const About = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <Helmet>
-        <title>About Us - AI Free Text Pro | Free AI Detection & Humanization Tools</title>
-        <meta name="description" content="Learn about AI Free Text Pro, the leading free AI detector and humanizer. Discover our mission to provide accurate AI detection and text humanization tools for students, writers, and professionals." />
+        <title>About AI Free Text Pro - 50K+ Writers Trust Us</title>
+        <meta name="description" content="Meet the team behind AI Free Text Pro. 50,000+ writers use our free AI humanizer and detector to create authentic content with 98% accuracy." />
         <meta name="keywords" content="about ai detector, ai text tools, free ai detection, ai humanizer company, text analysis tools" />
         <link rel="canonical" href="https://aifreetextpro.com/about" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-        <meta property="og:title" content="About Us - AI Free Text Pro" />
-        <meta property="og:description" content="Learn about AI Free Text Pro and our mission to provide accurate AI detection and text humanization tools." />
+        <meta property="og:title" content="About AI Free Text Pro - 50K+ Writers Trust Us" />
+        <meta property="og:description" content="Meet the team behind AI Free Text Pro. 50,000+ writers use our free AI humanizer and detector." />
         <meta property="og:url" content="https://aifreetextpro.com/about" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" />
         <meta property="og:site_name" content="AI Free Text Pro" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@aifreetextpro" />
-        <meta name="twitter:title" content="About Us - AI Free Text Pro" />
-        <meta name="twitter:description" content="Learn about AI Free Text Pro and our mission to provide accurate AI detection and text humanization tools." />
+        <meta name="twitter:title" content="About AI Free Text Pro - 50K+ Writers Trust Us" />
+        <meta name="twitter:description" content="Meet the team behind AI Free Text Pro. 50,000+ writers use our free AI humanizer and detector." />
         <meta name="twitter:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" />
       </Helmet>
       <Navbar />

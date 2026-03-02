@@ -68,14 +68,14 @@ const AIChecker = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <Helmet>
-        <title>Free AI Detector & AI Checker - 98% Accuracy | AI Free Text Pro</title>
-        <meta name="description" content="Free AI detector and AI checker to detect AI-generated content with 98% accuracy. Check text against GPTZero, Turnitin, Originality.AI & 15+ detectors. AI detector unlimited words on Pro plan." />
+        <title>Free AI Detector - Check Any Text, 98% Accurate</title>
+        <meta name="description" content="Detect AI-generated text instantly with 98% accuracy. Check against GPTZero, Turnitin, Originality.AI and 15+ detectors. Free, fast, private." />
         <meta name="keywords" content="free ai detector, ai checker, ai detector unlimited words, free ai detector unlimited words, ai content detector, check ai text, detect ai writing, ai detection tool, free ai checker" />
         <link rel="canonical" href="https://aifreetextpro.com/ai-checker" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-        <meta property="og:title" content="Free AI Checker - Detect AI Content with 98% Accuracy" />
-        <meta property="og:description" content="Check if text is AI-generated with 98% accuracy. Multi-detector analysis against GPTZero, Turnitin, Originality.AI & more. Free, fast, private." />
+        <meta property="og:title" content="Free AI Detector - Check Any Text, 98% Accurate" />
+        <meta property="og:description" content="Detect AI-generated text instantly with 98% accuracy. Free, fast, private." />
         <meta property="og:url" content="https://aifreetextpro.com/ai-checker" />
         <meta property="og:type" content="website" />
         

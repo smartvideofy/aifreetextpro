@@ -121,8 +121,8 @@ const HelpCenter = () => {
   return (
     <>
       <Helmet>
-        <title>Help Center - AI Free Text Pro Support & Guides</title>
-        <meta name="description" content="Browse help articles, guides, and FAQs for AI Free Text Pro. Get support for AI humanization, billing, account issues, and troubleshooting." />
+        <title>Help Center | AI Free Text Pro Support</title>
+        <meta name="description" content="Find answers fast. Guides for AI humanization, billing, account setup, and troubleshooting. Step-by-step tutorials included." />
         <meta name="keywords" content="ai free text pro help, support, faq, guides, troubleshooting, ai humanizer help" />
         <link rel="canonical" href="https://aifreetextpro.com/help-center" />
         <meta name="robots" content="index, follow, max-image-preview:large" />

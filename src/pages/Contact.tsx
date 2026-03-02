@@ -11,24 +11,24 @@ const Contact = () => {
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-br from-background via-background to-primary/5">
       <Helmet>
-        <title>Contact Us - AI Free Text Pro | Get Help with AI Detection & Humanization</title>
-        <meta name="description" content="Contact AI Free Text Pro for support, questions, or feedback about our free AI detector and humanizer tools. We're here to help with AI text detection and humanization." />
+        <title>Contact Us - AI Free Text Pro Support</title>
+        <meta name="description" content="Get help with AI detection and humanization. Our support team responds within 24 hours. Email, FAQs, and troubleshooting guides available." />
         <meta name="keywords" content="contact ai detector, ai tool support, ai humanizer help, customer service, technical support" />
         <link rel="canonical" href="https://aifreetextpro.com/contact" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="bingbot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-        <meta property="og:title" content="Contact Us - AI Free Text Pro" />
-        <meta property="og:description" content="Contact AI Free Text Pro for support and questions about our free AI detection and humanization tools." />
+        <meta property="og:title" content="Contact Us - AI Free Text Pro Support" />
+        <meta property="og:description" content="Get help with AI detection and humanization. We respond within 24 hours." />
         <meta property="og:url" content="https://aifreetextpro.com/contact" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" />
         <meta property="og:site_name" content="AI Free Text Pro" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@aifreetextpro" />
-        <meta name="twitter:title" content="Contact Us - AI Free Text Pro" />
-        <meta name="twitter:description" content="Contact AI Free Text Pro for support and questions about our free AI detection and humanization tools." />
+        <meta name="twitter:title" content="Contact Us - AI Free Text Pro Support" />
+        <meta name="twitter:description" content="Get help with AI detection and humanization. We respond within 24 hours." />
         <meta name="twitter:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" />
         
         {/* FAQ Schema */}

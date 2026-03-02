@@ -11,8 +11,8 @@ const AcademicAIWritingTool = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <Helmet>
-        <title>Academic AI Writing Tool - Research Papers & Essays (Pass Turnitin 2025)</title>
-        <meta name="description" content="Academic AI writing tool for research papers, essays, and thesis work. 97% Turnitin bypass rate. Academic writing mode preserves scholarly tone. Citations support. Used by 20,000+ students and researchers." />
+        <title>Academic AI Writing Tool - Pass Turnitin 97%</title>
+        <meta name="description" content="Write research papers and essays with AI, then humanize to pass Turnitin with 97% success. Academic mode preserves citations and scholarly tone." />
         <meta name="keywords" content="academic ai writing tool, research paper ai, thesis writing ai, turnitin bypass, scholarly writing ai" />
         <link rel="canonical" href="https://aifreetextpro.com/academic-ai-writing-tool" />
         

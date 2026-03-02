@@ -40,8 +40,8 @@ const relatedArticles = [
   return (
     <div className="min-h-screen flex flex-col">
       <Helmet>
-        <title>How to Detect AI-Generated Text: Complete Guide 2026 | AI Free Text Pro</title>
-        <meta name="description" content="Learn expert techniques to detect AI-generated text. Discover key linguistic patterns, AI writing markers, and detection tools to identify ChatGPT, GPT-4, and AI-written content with 98% accuracy." />
+        <title>How to Detect AI Text: Expert Guide (2026)</title>
+        <meta name="description" content="Spot AI-generated content with 98% accuracy. Learn key linguistic patterns, detection tools, and expert strategies for identifying ChatGPT and GPT-5 writing." />
         <meta name="keywords" content="detect ai text, identify ai writing, chatgpt detection, ai generated content, spot ai writing, ai detection methods, gpt detector" />
         <link rel="canonical" href="https://aifreetextpro.com/blog/how-to-detect-ai-generated-text" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />

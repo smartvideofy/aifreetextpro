@@ -39,8 +39,8 @@ export default function HowAIDetectorsWork() {
   return (
     <>
       <Helmet>
-        <title>How AI Detectors Work: Inside the Science of AI Text Analysis | AI Free Text Pro</title>
-        <meta name="description" content="Understand the machine-learning and linguistic patterns behind AI detectors and how to write authentically human content." />
+        <title>How AI Detectors Work: The Science Explained</title>
+        <meta name="description" content="Understand perplexity, burstiness, and the ML models powering AI detection. Learn how to write authentically human content." />
         <meta name="keywords" content="how ai detectors work, ai content analysis, gpt detection algorithm, ai detection science, perplexity detection, burstiness analysis, ai text patterns, machine learning detection, ai writing markers 2026" />
         <link rel="canonical" href="https://aifreetextpro.com/blog/how-ai-detectors-work" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />

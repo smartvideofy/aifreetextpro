@@ -62,8 +62,8 @@ const Guarantee = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <Helmet>
-        <title>100% Money-Back Guarantee - AI Free Text Pro | No Questions Asked Refund Policy</title>
-        <meta name="description" content="Our guarantee: If our humanizer is flagged by ANY AI detector, we refund 100% - no questions asked. Fast 24-hour claim processing. Read our transparent refund policy and customer success stories." />
+        <title>100% Money-Back Guarantee | AI Free Text Pro</title>
+        <meta name="description" content="Flagged by any AI detector? Get a full refund, no questions asked. 24-hour claim processing. See real refund stories from students and writers." />
         <meta name="keywords" content="ai humanizer guarantee, money back guarantee, refund policy, ai detector bypass guarantee, risk-free ai humanizer" />
         <link rel="canonical" href="https://aifreetextpro.com/guarantee" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />

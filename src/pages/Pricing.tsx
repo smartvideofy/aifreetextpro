@@ -107,23 +107,23 @@ const Pricing = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <Helmet>
-        <title>Pricing Plans - AI Free Text Pro | Free AI Detector & Humanizer</title>
-        <meta name="description" content="Choose the perfect plan for your needs. Start free with 1,000 words/month. Plans from $4.99 to $59.99/month. Pro Writer at $24.99/mo with 50,000 words. Unlimited Creator at $59.99/mo." />
+        <title>Pricing - AI Humanizer From $0/mo | AI Free Text Pro</title>
+        <meta name="description" content="Start free with 1,000 words/month. Upgrade from $4.99/mo for advanced AI detection and humanization. 100% money-back guarantee on all paid plans." />
         <meta name="keywords" content="ai detector pricing, ai humanizer pricing, free ai detector, ai text humanizer cost, chatgpt detector price" />
         <link rel="canonical" href="https://aifreetextpro.com/pricing" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="bingbot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-        <meta property="og:title" content="Pricing Plans - AI Free Text Pro" />
-        <meta property="og:description" content="Start free with 1,000 words/month. Plans from $4.99 to $59.99. Pro Writer at $24.99/mo with 50,000 words." />
+        <meta property="og:title" content="Pricing - AI Humanizer From $0/mo" />
+        <meta property="og:description" content="Start free with 1,000 words/month. Upgrade from $4.99/mo. 100% money-back guarantee." />
         <meta property="og:url" content="https://aifreetextpro.com/pricing" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" />
         <meta property="og:site_name" content="AI Free Text Pro" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@aifreetextpro" />
-        <meta name="twitter:title" content="Pricing Plans - AI Free Text Pro" />
-        <meta name="twitter:description" content="Start free with 1,000 words/month. Plans from $4.99 to $59.99. Pro Writer at $24.99/mo with 50,000 words." />
+        <meta name="twitter:title" content="Pricing - AI Humanizer From $0/mo" />
+        <meta name="twitter:description" content="Start free with 1,000 words/month. Upgrade from $4.99/mo. 100% money-back guarantee." />
         <meta name="twitter:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" />
         
         <script type="application/ld+json">

@@ -145,8 +145,8 @@ const Team = () => {
   return (
     <div className="min-h-screen flex flex-col bg-background">
       <Helmet>
-        <title>Our Team - Meet the Experts Behind AI Free Text Pro</title>
-        <meta name="description" content="Meet the team of AI researchers, linguists, and content experts building AI Free Text Pro. Our experts bring decades of experience in NLP, machine learning, and digital publishing." />
+        <title>Our Team - AI & NLP Experts | AI Free Text Pro</title>
+        <meta name="description" content="Meet our team of MIT and Stanford-trained AI researchers, linguists, and content experts building the most accurate AI humanizer and detector." />
         <meta name="keywords" content="AI Free Text Pro team, AI experts, NLP researchers, content strategists, AI humanizer developers" />
         <link rel="canonical" href="https://aifreetextpro.com/team" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />

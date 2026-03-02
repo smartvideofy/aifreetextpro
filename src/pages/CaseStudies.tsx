@@ -107,8 +107,8 @@ const CaseStudies = () => {
   return (
     <div className="min-h-screen flex flex-col bg-background">
       <Helmet>
-        <title>Case Studies - Real Results from AI Free Text Pro Users</title>
-        <meta name="description" content="See real-world examples of how students, businesses, and freelancers use AI Free Text Pro to pass AI detection checks while maintaining content quality. Before/after comparisons included." />
+        <title>Case Studies - Real AI Humanizer Results</title>
+        <meta name="description" content="See how students reduced Turnitin scores from 78% to 3%, and agencies scaled content 5x. Real before/after comparisons with verified results." />
         <meta name="keywords" content="AI humanizer case studies, bypass AI detection examples, Turnitin bypass results, AI content success stories" />
         <link rel="canonical" href="https://aifreetextpro.com/case-studies" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />

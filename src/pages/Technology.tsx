@@ -30,22 +30,22 @@ const Technology = () => {
   return (
     <div className="min-h-screen flex flex-col bg-background">
       <Helmet>
-        <title>Our Technology - How AI Free Text Pro Works | Advanced AI Humanization</title>
-        <meta name="description" content="Discover how AI Free Text Pro's proprietary technology transforms AI-generated text into natural, human-like writing. Learn about our stylometric analysis, contextual rewriting, and zero-knowledge architecture." />
+        <title>How Our AI Humanizer Works | AI Free Text Pro</title>
+        <meta name="description" content="See how our proprietary NLP transforms robotic AI text into natural writing. Stylometric analysis, contextual rewriting, and zero-knowledge privacy architecture." />
         <meta name="keywords" content="AI humanization technology, NLP algorithms, stylometric analysis, AI detection bypass, text transformation technology" />
         <link rel="canonical" href="https://aifreetextpro.com/technology" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-        <meta property="og:title" content="Our Technology - How AI Free Text Pro Works" />
-        <meta property="og:description" content="Deep dive into our proprietary AI humanization technology and how it transforms robotic text into natural writing." />
+        <meta property="og:title" content="How Our AI Humanizer Works" />
+        <meta property="og:description" content="See how our proprietary NLP transforms robotic AI text into natural writing." />
         <meta property="og:url" content="https://aifreetextpro.com/technology" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" />
         <meta property="og:site_name" content="AI Free Text Pro" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@aifreetextpro" />
-        <meta name="twitter:title" content="Our Technology - How AI Free Text Pro Works" />
-        <meta name="twitter:description" content="Deep dive into our proprietary AI humanization technology and how it transforms robotic text into natural writing." />
+        <meta name="twitter:title" content="How Our AI Humanizer Works" />
+        <meta name="twitter:description" content="See how our proprietary NLP transforms robotic AI text into natural writing." />
         <meta name="twitter:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" />
         <script type="application/ld+json">
           {JSON.stringify(technologySchema)}

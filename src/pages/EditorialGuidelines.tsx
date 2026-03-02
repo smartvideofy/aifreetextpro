@@ -12,8 +12,8 @@ const EditorialGuidelines = () => {
   return (
     <div className="min-h-screen flex flex-col bg-background">
       <Helmet>
-        <title>Editorial Guidelines - AI Free Text Pro Content Standards</title>
-        <meta name="description" content="Learn about AI Free Text Pro's editorial standards, fact-checking process, and commitment to accurate, trustworthy content. Our content is reviewed by experts and regularly updated." />
+        <title>Editorial Guidelines | AI Free Text Pro</title>
+        <meta name="description" content="How we ensure content accuracy: expert review, fact-checking, and regular updates. Every article is reviewed by AI researchers and content professionals." />
         <meta name="keywords" content="editorial guidelines, content standards, fact-checking, AI content quality, trusted content" />
         <link rel="canonical" href="https://aifreetextpro.com/editorial-guidelines" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />

@@ -66,14 +66,14 @@ export default function AIYouTubeScripts() {
   return (
     <>
       <Helmet>
-        <title>AI Content for YouTube Scripts: How to Sound Human in 2026 | AI Free Text Pro</title>
-        <meta name="description" content="Learn to humanize AI-generated scripts for YouTube videos, podcasts, and narration to engage viewers naturally." />
+        <title>AI YouTube Scripts That Sound Human [2026]</title>
+        <meta name="description" content="Humanize AI scripts for YouTube, podcasts, and narration. Engage viewers with natural-sounding content that keeps them watching." />
         <meta name="keywords" content="AI YouTube scripts, humanize AI content, AI video scripts, natural AI voice" />
         <link rel="canonical" href={canonical} />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="bingbot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-        <meta property="og:title" content="AI Content for YouTube Scripts: How to Sound Human in 2026" />
+        <meta property="og:title" content="AI YouTube Scripts That Sound Human [2026]" />
         <meta property="og:description" content="Learn to humanize AI-generated scripts for YouTube videos, podcasts, and narration to engage viewers naturally." />
         <meta property="og:type" content="article" />
         <meta property="og:url" content={canonical} />
@@ -82,7 +82,7 @@ export default function AIYouTubeScripts() {
         <meta property="og:locale" content="en_US" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@aifreetextpro" />
-        <meta name="twitter:title" content="AI Content for YouTube Scripts: How to Sound Human in 2026" />
+        <meta name="twitter:title" content="AI YouTube Scripts That Sound Human [2026]" />
         <meta name="twitter:description" content="Learn to humanize AI-generated scripts for YouTube videos, podcasts, and narration to engage viewers naturally." />
         <meta name="twitter:image" content={ogImage} />
 

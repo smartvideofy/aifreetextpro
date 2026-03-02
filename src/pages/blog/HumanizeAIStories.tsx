@@ -66,14 +66,14 @@ export default function HumanizeAIStories() {
   return (
     <>
       <Helmet>
-        <title>How to Humanize AI-Generated Stories & Fiction | AI Free Text Pro</title>
-        <meta name="description" content="Learn to transform AI-generated stories and fiction into human-like narratives that captivate readers." />
+        <title>Humanize AI Stories & Fiction [2026 Guide]</title>
+        <meta name="description" content="Transform AI-generated stories into human-like narratives readers love. Add emotional depth, dialogue, and sensory details that captivate." />
         <meta name="keywords" content="AI storytelling, humanize AI fiction, AI creative writing, AI-generated stories" />
         <link rel="canonical" href={canonical} />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="bingbot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-        <meta property="og:title" content="How to Humanize AI-Generated Stories & Fiction" />
+        <meta property="og:title" content="Humanize AI Stories & Fiction [2026 Guide]" />
         <meta property="og:description" content="Learn to transform AI-generated stories and fiction into human-like narratives that captivate readers." />
         <meta property="og:type" content="article" />
         <meta property="og:url" content={canonical} />
@@ -82,7 +82,7 @@ export default function HumanizeAIStories() {
         <meta property="og:locale" content="en_US" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@aifreetextpro" />
-        <meta name="twitter:title" content="How to Humanize AI-Generated Stories & Fiction" />
+        <meta name="twitter:title" content="Humanize AI Stories & Fiction [2026 Guide]" />
         <meta name="twitter:description" content="Learn to transform AI-generated stories and fiction into human-like narratives that captivate readers." />
         <meta name="twitter:image" content={ogImage} />
 

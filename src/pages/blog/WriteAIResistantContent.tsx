@@ -42,8 +42,8 @@ export default function WriteAIResistantContent() {
   return (
     <>
       <Helmet>
-        <title>Write AI-Resistant Content in 2026 | AI Free Text Pro</title>
-        <meta name="description" content="Learn advanced techniques to make your content resistant to AI detection while staying authentic, engaging, and human." />
+        <title>Write AI-Resistant Content: 6-Step Method [2026]</title>
+        <meta name="description" content="Advanced techniques to make content AI-resistant while staying authentic and engaging. 6-step humanization workflow with real examples." />
         <meta name="keywords" content="ai resistant content, humanized writing, content tips 2026, avoid ai detection" />
         <link rel="canonical" href={canonical} />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />

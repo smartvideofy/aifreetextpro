@@ -40,14 +40,14 @@ const PassAllDetectorsGuide = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <Helmet>
-        <title>The Definitive Guide to Writing Human-Like Content (2026) | AI Free Text Pro</title>
-        <meta name="description" content="Complete guide to creating natural, human-like content that reads authentically across GPTZero, Turnitin, Originality.AI, ZeroGPT, and Copyleaks." />
+        <title>Write Human-Like Content: Definitive Guide [2026]</title>
+        <meta name="description" content="Create natural content that reads authentically. Tested across GPTZero, Turnitin, Originality.AI, ZeroGPT, and Copyleaks with proven results." />
         <meta name="keywords" content="humanize AI writing, improve AI content, natural AI writing, human-like AI content, AI writing guide 2026" />
         <link rel="canonical" href="https://aifreetextpro.com/blog/pass-all-ai-detectors-guide" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="bingbot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-        <meta property="og:title" content="The Definitive Guide to Writing Human-Like Content (2026)" />
+        <meta property="og:title" content="Write Human-Like Content: Definitive Guide [2026]" />
         <meta property="og:description" content="How to create natural human-like content that reads authentically" />
         <meta property="og:url" content="https://aifreetextpro.com/blog/pass-all-ai-detectors-guide" />
         <meta property="og:type" content="article" />
@@ -56,7 +56,7 @@ const PassAllDetectorsGuide = () => {
         <meta property="og:locale" content="en_US" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@aifreetextpro" />
-        <meta name="twitter:title" content="The Definitive Guide to Writing Human-Like Content (2026)" />
+        <meta name="twitter:title" content="Write Human-Like Content: Definitive Guide [2026]" />
         <meta name="twitter:description" content="How to create natural human-like content that reads authentically." />
         <meta name="twitter:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" />
         

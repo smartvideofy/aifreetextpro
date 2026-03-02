@@ -40,14 +40,14 @@ const OriginalityAIReview = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <Helmet>
-        <title>Originality.AI Detector Review: Accuracy, Pricing, and How It Works | AI Free Text Pro</title>
-        <meta name="description" content="Complete Originality.AI review covering accuracy, pricing, and detection capabilities. Learn what makes content appear more human-like." />
+        <title>Originality.AI Review: Accuracy & Pricing [2026]</title>
+        <meta name="description" content="Honest Originality.AI review: real accuracy rates, pricing breakdown, and detection capabilities tested with 50+ samples. See how it stacks up." />
         <meta name="keywords" content="Originality.AI pricing, Originality AI humanizer, Originality.AI review 2026, AI detection accuracy, humanize AI content, bypass Originality AI, Originality detector test, AI content detection, Originality false positives" />
         <link rel="canonical" href="https://aifreetextpro.com/blog/originality-ai-review-how-to-beat" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="bingbot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-        <meta property="og:title" content="Originality.AI Detector Review: Accuracy, Pricing, and How It Works" />
+        <meta property="og:title" content="Originality.AI Review: Accuracy & Pricing [2026]" />
         <meta property="og:description" content="Complete Originality.AI review with writing improvement strategies" />
         <meta property="og:url" content="https://aifreetextpro.com/blog/originality-ai-review-how-to-beat" />
         <meta property="og:type" content="article" />
@@ -56,7 +56,7 @@ const OriginalityAIReview = () => {
         <meta property="og:locale" content="en_US" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@aifreetextpro" />
-        <meta name="twitter:title" content="Originality.AI Review: Accuracy, Pricing & How It Works" />
+        <meta name="twitter:title" content="Originality.AI Review: Accuracy & Pricing [2026]" />
         <meta name="twitter:description" content="Complete Originality.AI review with writing improvement strategies." />
         <meta name="twitter:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" />
         

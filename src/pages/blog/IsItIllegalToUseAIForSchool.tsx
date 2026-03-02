@@ -71,8 +71,8 @@ const IsItIllegalToUseAIForSchool = () => {
   return (
     <>
       <Helmet>
-        <title>Is It Illegal to Use AI for School? Academic AI Policies Explained (2026)</title>
-        <meta name="description" content="Is using ChatGPT for school illegal? We break down academic AI policies at major universities, real consequences for getting caught, and how to use AI without breaking the rules." />
+        <title>Is Using AI for School Illegal? [2026 Answer]</title>
+        <meta name="description" content="Is using ChatGPT for school illegal? Academic AI policies at major universities, real consequences, and how to use AI without breaking any rules." />
         <meta name="keywords" content="is it illegal to use ai for school, is using chatgpt cheating, ai academic policy 2026, can you get expelled for using chatgpt, university ai policy, ai school rules, chatgpt homework legal" />
         <link rel="canonical" href={canonicalUrl} />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
@@ -80,7 +80,7 @@ const IsItIllegalToUseAIForSchool = () => {
         <meta name="bingbot" content="index, follow" />
         <meta property="og:locale" content="en_US" />
         <meta property="og:type" content="article" />
-        <meta property="og:title" content="Is It Illegal to Use AI for School? Academic AI Policies Explained (2026)" />
+        <meta property="og:title" content="Is Using AI for School Illegal? [2026 Answer]" />
         <meta property="og:description" content="Is using ChatGPT for school illegal? We break down academic AI policies at major universities, real consequences, and how to use AI without breaking the rules." />
         <meta property="og:url" content={canonicalUrl} />
         <meta property="og:site_name" content="AI Free Text Pro" />
@@ -94,7 +94,7 @@ const IsItIllegalToUseAIForSchool = () => {
         <meta property="article:tag" content="University AI Rules" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@aifreetextpro" />
-        <meta name="twitter:title" content="Is It Illegal to Use AI for School? Academic AI Policies Explained (2026)" />
+        <meta name="twitter:title" content="Is Using AI for School Illegal? [2026 Answer]" />
         <meta name="twitter:description" content="Is using ChatGPT for school illegal? Academic AI policies at major universities explained." />
         <meta name="twitter:image" content={ogImage} />
 

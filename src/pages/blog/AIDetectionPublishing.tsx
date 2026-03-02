@@ -63,14 +63,14 @@ export default function AIDetectionPublishing() {
   return (
     <>
       <Helmet>
-        <title>AI Detection in Publishing: How Editors and Writers Can Adapt in 2026 | AI Free Text Pro</title>
-        <meta name="description" content="How editors and publishers are adapting to AI-generated content in 2026, with practical strategies for writers navigating AI policies." />
+        <title>AI Detection in Publishing: Writer's Guide [2026]</title>
+        <meta name="description" content="How editors and publishers handle AI content in 2026. Practical strategies for writers navigating disclosure policies and AI guidelines." />
         <meta name="keywords" content="ai detection in publishing, ai editing tools, publishing industry ai 2026, writer ai guidelines, editorial ai policy" />
         <link rel="canonical" href="https://aifreetextpro.com/blog/ai-detection-in-publishing-2025" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="bingbot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-        <meta property="og:title" content="AI Detection in Publishing: How Editors and Writers Can Adapt in 2026" />
+        <meta property="og:title" content="AI Detection in Publishing: Writer's Guide [2026]" />
         <meta property="og:description" content="The publishing industry's response to AI-generated content and practical strategies for adaptation." />
         <meta property="og:type" content="article" />
         <meta property="og:url" content="https://aifreetextpro.com/blog/ai-detection-in-publishing-2025" />
@@ -79,7 +79,7 @@ export default function AIDetectionPublishing() {
         <meta property="og:locale" content="en_US" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@aifreetextpro" />
-        <meta name="twitter:title" content="AI Detection in Publishing: How to Adapt in 2026" />
+        <meta name="twitter:title" content="AI Detection in Publishing: Writer's Guide [2026]" />
         <meta name="twitter:description" content="How publishers adapt to AI content and strategies for writers." />
         <meta name="twitter:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" />
         

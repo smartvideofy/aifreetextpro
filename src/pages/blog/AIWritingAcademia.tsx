@@ -66,14 +66,14 @@ export default function AIWritingAcademia() {
   return (
     <>
       <Helmet>
-        <title>AI Writing in Academia: Staying Undetected Without Losing Integrity | AI Free Text Pro</title>
-        <meta name="description" content="Learn how to use AI responsibly for research papers, essays, and thesis writing while avoiding detection flags." />
+        <title>AI Writing in Academia: Use It Responsibly [2026]</title>
+        <meta name="description" content="Use AI for research papers, essays, and thesis writing without risking academic integrity. Responsible strategies that keep your work authentic." />
         <meta name="keywords" content="AI writing academia, AI humanizer for students, undetectable AI academic content, academic integrity" />
         <link rel="canonical" href={canonical} />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="bingbot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-        <meta property="og:title" content="AI Writing in Academia: Staying Undetected Without Losing Integrity" />
+        <meta property="og:title" content="AI Writing in Academia: Use It Responsibly [2026]" />
         <meta property="og:description" content="Learn how to use AI responsibly for research papers, essays, and thesis writing while avoiding detection flags." />
         <meta property="og:type" content="article" />
         <meta property="og:url" content={canonical} />
@@ -82,7 +82,7 @@ export default function AIWritingAcademia() {
         <meta property="og:locale" content="en_US" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@aifreetextpro" />
-        <meta name="twitter:title" content="AI Writing in Academia: Staying Undetected Without Losing Integrity" />
+        <meta name="twitter:title" content="AI Writing in Academia: Use It Responsibly [2026]" />
         <meta name="twitter:description" content="Learn how to use AI responsibly for research papers, essays, and thesis writing while avoiding detection flags." />
         <meta name="twitter:image" content={ogImage} />
 

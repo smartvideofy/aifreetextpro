@@ -46,14 +46,14 @@ const HowAIDetectorsScoreText = () => {
   return (
     <>
       <Helmet>
-        <title>How AI Detectors Score Text: Behind-the-Scenes Metrics | AI Free Text Pro</title>
-        <meta name="description" content="Understand the scoring systems AI detectors use. Learn about perplexity, burstiness, and confidence scores explained in plain language." />
+        <title>How AI Detectors Score Your Text [Explained]</title>
+        <meta name="description" content="Perplexity, burstiness, and confidence scores explained in plain language. Understand exactly how AI detectors grade your writing." />
         <meta name="keywords" content="AI detector scoring, perplexity score, burstiness metrics, AI detection confidence, detection algorithms" />
         <link rel="canonical" href="https://aifreetextpro.com/blog/how-ai-detectors-score-text" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="bingbot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-        <meta property="og:title" content="How AI Detectors Score Text: Behind-the-Scenes Metrics" />
+        <meta property="og:title" content="How AI Detectors Score Your Text [Explained]" />
         <meta property="og:description" content="Understand the scoring systems AI detectors use. Learn about perplexity, burstiness, and confidence scores explained in plain language." />
         <meta property="og:type" content="article" />
         <meta property="og:url" content="https://aifreetextpro.com/blog/how-ai-detectors-score-text" />

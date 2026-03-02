@@ -20,8 +20,8 @@ const AIHumanizerResumes = () => {
   return (
     <>
       <Helmet>
-        <title>AI Humanizer for Resumes and Cover Letters: Complete Guide (2026)</title>
-        <meta name="description" content="Learn how to humanize AI-generated resumes and cover letters. Make your job application materials sound authentic, professional, and pass ATS and recruiter review." />
+        <title>AI Resume Humanizer: Land More Interviews [2026]</title>
+        <meta name="description" content="Humanize AI resumes and cover letters to sound authentic. Pass ATS screening and recruiter review with professional, natural-sounding applications." />
         <meta name="keywords" content="ai humanizer for resume, humanize ai cover letter, ai resume detector, ai cover letter humanizer, resume ai detection" />
         <link rel="canonical" href="https://aifreetextpro.com/blog/ai-humanizer-resumes-cover-letters" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
@@ -30,7 +30,7 @@ const AIHumanizerResumes = () => {
         <meta name="author" content="Emily Rodriguez" />
         <meta property="og:type" content="article" />
         <meta property="og:url" content="https://aifreetextpro.com/blog/ai-humanizer-resumes-cover-letters" />
-        <meta property="og:title" content="AI Humanizer for Resumes and Cover Letters: Complete Guide" />
+        <meta property="og:title" content="AI Resume Humanizer: Land More Interviews [2026]" />
         <meta property="og:description" content="Make AI-generated resumes and cover letters sound authentic and professional." />
         <meta property="og:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" />
         <meta property="og:image:width" content="1200" />
@@ -41,7 +41,7 @@ const AIHumanizerResumes = () => {
         <meta property="article:modified_time" content="2026-02-25T08:00:00Z" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@aifreetextpro" />
-        <meta name="twitter:title" content="AI Humanizer for Resumes and Cover Letters: Complete Guide" />
+        <meta name="twitter:title" content="AI Resume Humanizer: Land More Interviews [2026]" />
         <meta name="twitter:description" content="Humanize AI resumes and cover letters for better job outcomes." />
         <meta name="twitter:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" />
         <script type="application/ld+json">{JSON.stringify({

@@ -63,14 +63,14 @@ export default function AIToolsForWriters() {
   return (
     <>
       <Helmet>
-        <title>AI Tools for Writers: Boost Creativity and Productivity in 2026 | AI Free Text Pro</title>
-        <meta name="description" content="The best AI writing tools to plan, edit, and refine your stories and essays, including AI Free Text Pro for authenticity checks." />
+        <title>Best AI Tools for Writers: Tested & Ranked [2026]</title>
+        <meta name="description" content="We tested 15+ AI writing tools for creativity, speed, and quality. See which ones help writers plan, draft, and refine content fastest." />
         <meta name="keywords" content="ai tools for writers, writing apps 2026, ai writing assistant, creative writing ai" />
         <link rel="canonical" href="https://aifreetextpro.com/blog/ai-tools-for-writers-2025" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="bingbot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-        <meta property="og:title" content="AI Tools for Writers: Boost Creativity and Productivity in 2026" />
+        <meta property="og:title" content="Best AI Tools for Writers: Tested & Ranked [2026]" />
         <meta property="og:description" content="The best AI writing tools to plan, edit, and refine your stories and essays." />
         <meta property="og:url" content="https://aifreetextpro.com/blog/ai-tools-for-writers-2025" />
         <meta property="og:type" content="article" />
@@ -79,7 +79,7 @@ export default function AIToolsForWriters() {
         <meta property="og:locale" content="en_US" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@aifreetextpro" />
-        <meta name="twitter:title" content="AI Tools for Writers 2026: Boost Creativity & Productivity" />
+        <meta name="twitter:title" content="Best AI Tools for Writers: Tested & Ranked [2026]" />
         <meta name="twitter:description" content="The best AI writing tools to plan, edit, and refine your stories." />
         <meta name="twitter:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" />
         <script type="application/ld+json">

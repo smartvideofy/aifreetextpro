@@ -66,14 +66,14 @@ export default function AIHumanizerTravelBlogs() {
   return (
     <>
       <Helmet>
-        <title>How to Write Travel Blogs Using an AI Humanizer Tool | AI Free Text Pro</title>
-        <meta name="description" content="Learn to craft travel blogs with AI tools while keeping your unique voice and engaging readers authentically." />
+        <title>Write Travel Blogs with AI: Keep Your Voice</title>
+        <meta name="description" content="Craft travel blogs with AI tools while keeping your authentic voice. Real workflows for engaging travel content that feels personal, not robotic." />
         <meta name="keywords" content="ai humanizer travel blog, ai travel writing, humanize ai content, travel blogging 2026" />
         <link rel="canonical" href={canonical} />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="bingbot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-        <meta property="og:title" content="How to Write Travel Blogs Using an AI Humanizer Tool" />
+        <meta property="og:title" content="Write Travel Blogs with AI: Keep Your Voice" />
         <meta property="og:description" content="Learn to craft travel blogs with AI tools while keeping your unique voice and engaging readers authentically." />
         <meta property="og:type" content="article" />
         <meta property="og:url" content={canonical} />
@@ -82,7 +82,7 @@ export default function AIHumanizerTravelBlogs() {
         <meta property="og:locale" content="en_US" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@aifreetextpro" />
-        <meta name="twitter:title" content="How to Write Travel Blogs Using an AI Humanizer Tool" />
+        <meta name="twitter:title" content="Write Travel Blogs with AI: Keep Your Voice" />
         <meta name="twitter:description" content="Learn to craft travel blogs with AI tools while keeping your unique voice and engaging readers authentically." />
         <meta name="twitter:image" content={ogImage} />
 

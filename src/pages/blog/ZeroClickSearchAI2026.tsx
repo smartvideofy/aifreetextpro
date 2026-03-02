@@ -66,14 +66,14 @@ export default function ZeroClickSearchAI2026() {
   return (
     <>
       <Helmet>
-        <title>Zero-Click Searches in 2026: Win Traffic in the AI Era | AI Free Text Pro</title>
-        <meta name="description" content="Learn strategies to capture traffic and authority in zero-click search results using AI-optimized content in 2026." />
+        <title>Zero-Click SEO: Win Traffic in 2026</title>
+        <meta name="description" content="65% of searches end without a click. Learn strategies to capture traffic and authority from AI Overviews, featured snippets, and knowledge panels." />
         <meta name="keywords" content="zero click search 2026, ai seo, ai traffic strategies, featured snippets, ai overviews, knowledge panels, search optimization" />
         <link rel="canonical" href={canonical} />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="bingbot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-        <meta property="og:title" content="Zero-Click Searches in 2026: Win Traffic in the AI Era" />
+        <meta property="og:title" content="Zero-Click SEO: Win Traffic in 2026" />
         <meta property="og:description" content="Learn strategies to capture traffic and authority in zero-click search results using AI-optimized content in 2026." />
         <meta property="og:type" content="article" />
         <meta property="og:url" content={canonical} />
@@ -82,7 +82,7 @@ export default function ZeroClickSearchAI2026() {
         <meta property="og:locale" content="en_US" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@aifreetextpro" />
-        <meta name="twitter:title" content="Zero-Click Searches in 2026: Win Traffic in the AI Era" />
+        <meta name="twitter:title" content="Zero-Click SEO: Win Traffic in 2026" />
         <meta name="twitter:description" content="Learn strategies to capture traffic and authority in zero-click search results using AI-optimized content in 2026." />
         <meta name="twitter:image" content={ogImage} />
 

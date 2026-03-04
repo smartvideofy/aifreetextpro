@@ -75,7 +75,8 @@ const Pricing = () => {
         "Premium humanization",
         "Priority support",
         "Export reports (PDF)",
-        "Advanced analytics"
+        "Advanced analytics",
+        "REST API access"
       ],
       cta: "Subscribe Now",
       ctaLink: "https://app.aifreetextpro.com/",
@@ -96,7 +97,8 @@ const Pricing = () => {
         "24/7 Priority support",
         "Export reports (PDF)",
         "Advanced analytics",
-        "Dedicated account manager"
+        "Dedicated account manager",
+        "REST API access (higher limits)"
       ],
       cta: "Subscribe Now",
       ctaLink: "https://app.aifreetextpro.com/",

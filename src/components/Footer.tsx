@@ -19,6 +19,7 @@ const footerSections: FooterSection[] = [
       { href: "https://app.aifreetextpro.com/plagiarism", label: "Plagiarism Checker", external: true },
       { href: "https://app.getstudily.com", label: "Create Flashcard", external: true },
       { href: "https://getstudily.com", label: "AI Study Notes", external: true },
+      { href: "/api", label: "API" },
     ],
   },
   {

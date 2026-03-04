@@ -30,6 +30,7 @@ const MobileNav = () => {
     { to: "/bypass-turnitin-ai-detection", label: "Bypass Turnitin", icon: Shield },
     { to: "/bypass-gptzero-detection", label: "Bypass GPTZero", icon: Shield },
     { to: "/bypass-originality-ai", label: "Bypass Originality.AI", icon: Shield },
+    { to: "/api", label: "API for Developers", icon: FileText },
   ];
   
   return (

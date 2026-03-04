@@ -122,6 +122,12 @@ const Navbar = () => {
                 <DropdownMenuItem asChild>
                   <Link to="/compare-ai-humanizers" className="w-full cursor-pointer font-medium text-primary">Compare Tools</Link>
                 </DropdownMenuItem>
+                <DropdownMenuSeparator />
+                <DropdownMenuItem asChild>
+                  <Link to="/api" className="w-full cursor-pointer font-medium">
+                    <span className="flex items-center gap-2">🔗 API for Developers</span>
+                  </Link>
+                </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
 

@@ -42,9 +42,34 @@ const categoryThumbnails: Record<string, string> = {
   "Travel Writing": categoryWriting,
   "eCommerce": categoryMarketing,
   "Career": categoryWriting,
+  "Professional": categoryTools,
 };
 
 const blogPosts = [
+  {
+    slug: "ai-for-research-papers",
+    title: "AI for Research Papers: Use AI Without Consequences",
+    excerpt: "How graduate students and researchers can use AI tools ethically for thesis writing, literature reviews, and journal submissions.",
+    date: "2026-03-04",
+    readTime: "15 min read",
+    category: "Academic"
+  },
+  {
+    slug: "ai-writing-business-reports-emails",
+    title: "AI Writing for Business Reports & Emails (2026)",
+    excerpt: "Professional guide to using AI for business reports, client emails, and proposals. Match brand voice and pass compliance checks.",
+    date: "2026-03-04",
+    readTime: "13 min read",
+    category: "Professional"
+  },
+  {
+    slug: "best-ai-detector-for-teachers",
+    title: "Best AI Detector for Teachers & Professors (2026)",
+    excerpt: "Top 5 AI detectors ranked for classroom use. Accuracy rates, false positives, pricing, and practical advice for educators.",
+    date: "2026-03-04",
+    readTime: "14 min read",
+    category: "Detector Review"
+  },
   {
     slug: "how-to-cite-ai-generated-content",
     title: "How to Cite AI-Generated Content: APA, MLA, Chicago & Harvard (2026)",

@@ -1,70 +1,51 @@
 
 
-# Plan: Three New High-Impact Blog Posts
+# Plan: Showcase API Capability on Marketing Pages
 
-## Gap Analysis
+## What to build
 
-The current 67-post library is strong on academic integrity, bypass guides, tool comparisons, and marketing. Three clear gaps with high search volume and commercial intent:
-
----
-
-## Blog 1: "How to Use AI for Research Papers (Without Academic Consequences)"
-**Target keywords:** "AI for research papers", "use AI for thesis", "AI academic writing graduate"
-**Category:** Academic | ~2,500 words | 15 min read
-
-**Why high-impact:** Graduate/thesis writing is a distinct, high-intent cluster not covered by existing undergraduate-focused posts. Targets Master's and PhD students -- a segment willing to pay for tools.
-
-**Sections:**
-- Where AI fits in the research workflow (literature review, drafting, editing)
-- University-specific policies for graduate research (MIT, Stanford, Oxford examples)
-- Using AI for literature synthesis without plagiarism
-- Formatting AI-assisted content for journal submission standards
-- Advisor transparency strategies
-- CTA to AI Free Text Pro for polishing drafts
+Three touchpoints to promote the new API across the marketing site, targeting developers and SaaS teams.
 
 ---
 
-## Blog 2: "AI Writing for Business Reports and Emails: A Professional Guide (2026)"
-**Target keywords:** "AI business writing", "AI for professional emails", "AI report writing tool"
-**Category:** Professional | ~2,000 words | 13 min read
+## 1. New Dedicated `/api` Landing Page
 
-**Why high-impact:** The B2B/corporate use case is completely absent from the library. Professionals using AI for internal reports, client emails, and proposals represent a large, high-LTV audience.
+A developer-focused marketing page (`src/pages/Api.tsx`) with:
 
-**Sections:**
-- Why corporate AI writing gets flagged (compliance teams, brand voice)
-- Email templates: cold outreach, follow-ups, internal comms
-- Board reports and executive summaries with AI
-- Matching company tone and brand guidelines
-- When AI disclosure is required in business contexts
-- CTA to humanize professional documents
+- **Hero section**: Headline like "Build with AI Free Text Pro API", subheadline about programmatic access to humanization and detection, CTA button to the API Developer Portal
+- **Code snippet showcase**: Tabbed code examples (cURL, Python, JavaScript) showing a simple `POST /api-humanize` request and response -- static/hardcoded, not live
+- **Key benefits cards**: Rate limits, 98% accuracy, simple REST interface, API key management
+- **Use cases for developers**: Content platforms, CMS plugins, writing tools, agency automation
+- **Pricing/tier reference**: Which plans include API access, link to `/pricing`
+- **FAQ section** (4-5 developer-focused FAQs) with JSON-LD schema
+- **CTA**: Link to `https://api.aifreetextpro.com/` (or wherever the portal lives)
+
+Full SEO treatment: Helmet meta tags, BreadcrumbList JSON-LD, SoftwareApplication schema. Route added to `App.tsx`, sitemap entry.
+
+## 2. Homepage API Section
+
+Add a new section on `Index.tsx` (between the Use Cases and Blog Links sections, around line 1150) with:
+
+- Headline: "Powerful API for Developers"
+- Short description (2-3 sentences) about programmatic access
+- A minimal code snippet preview (single cURL example in a dark code block)
+- CTA button: "Explore the API" linking to `/api`
+- Developer-oriented trust signals (e.g., "RESTful", "99.9% uptime", "Simple authentication")
+
+## 3. Navigation, Pricing, and Footer Updates
+
+- **Navbar**: Add "API" link under the Tools dropdown menu (with a separator + "For Developers" label)
+- **MobileNav**: Add corresponding API link
+- **Footer**: Add "API" link to the "Product" section in footer
+- **Pricing page**: Add an "API Access" feature line to Pro Writer and Unlimited Creator plans (the tiers that include API access), with a note like "API access included" or "REST API"
+- **Sitemap**: Add `/api` URL entry
 
 ---
 
-## Blog 3: "Best AI Detector for Teachers and Professors (2026 Review)"
-**Target keywords:** "best AI detector for teachers", "AI detection tool for professors", "how to detect AI student papers"
-**Category:** Detector Review | ~2,200 words | 14 min read
+## Technical Notes
 
-**Why high-impact:** Captures the educator side of the market -- teachers searching for detection tools discover AI Free Text Pro. This is a proven SEO strategy: rank for the buyer's counter-party searches. Also strengthens E-E-A-T by demonstrating balanced, expert perspective.
-
-**Sections:**
-- Top 5 AI detectors ranked for classroom use (Turnitin, GPTZero, Originality.AI, Copyleaks, Winston AI)
-- Accuracy comparison table with false positive rates
-- Pricing for institutional vs individual use
-- How to handle false positives fairly (links to existing false positives post)
-- What teachers should know about AI humanizers
-- CTA: test your own writing with our free detector
-
----
-
-## Implementation per post
-
-Each post will follow the established 10/10 production standard:
-- Helmet meta tags (title <60 chars, description <160 chars, og:locale, twitter:site, bingbot)
-- Article JSON-LD with author schema (Dr. Sarah Chen), brand logo, datePublished/dateModified
-- FAQPage JSON-LD (4-5 FAQs per post)
-- BreadcrumbList JSON-LD
-- KeyTakeaways, ReviewedBy, RelatedArticles (4 each), InternalLinks components
-- Route added in App.tsx, entry in Blog.tsx blogPosts array, URL added to sitemap.xml
-- All CTAs pointing to `https://app.aifreetextpro.com` with `target="_blank" rel="noopener noreferrer"`
-- 3-5 contextual internal links within prose
+- The `/api` page follows the same component pattern as other marketing pages: `Navbar`, `Footer`, `Breadcrumbs`, `Helmet`, `Card` components
+- All CTAs point to the external API portal URL (to be confirmed -- likely `https://api.aifreetextpro.com/` or `https://app.aifreetextpro.com/api`)
+- Code snippets are static JSX with syntax-highlighted `<pre>` blocks styled with Tailwind (monospace, dark background, rounded corners)
+- No backend changes needed -- this is purely marketing content
 

@@ -49,6 +49,7 @@ const CompareAIHumanizers = lazy(() => import("./pages/CompareAIHumanizers"));
 const AIHumanizerForStudents = lazy(() => import("./pages/AIHumanizerForStudents"));
 const AIHumanizerForWriters = lazy(() => import("./pages/AIHumanizerForWriters"));
 const AcademicAIWritingTool = lazy(() => import("./pages/AcademicAIWritingTool"));
+const Api = lazy(() => import("./pages/Api"));
 
 // Blog posts - all lazy loaded
 const HowToDetectAI = lazy(() => import("./pages/blog/HowToDetectAI"));
@@ -149,6 +150,7 @@ const App = () => (
           <Suspense fallback={<PageLoader />}>
             <Routes>
               <Route path="/" element={<Index />} />
+              <Route path="/api" element={<Api />} />
               <Route path="/pricing" element={<Pricing />} />
               <Route path="/guarantee" element={<Guarantee />} />
               <Route path="/privacy-policy" element={<PrivacyPolicy />} />

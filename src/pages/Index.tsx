@@ -1149,6 +1149,53 @@ const Index = () => {
           </div>
         </section>
 
+        {/* API for Developers Section */}
+        <section className="py-20 md:py-28 bg-muted/30">
+          <div className="container mx-auto px-4">
+            <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+              <div>
+                <div className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/5 px-4 py-1.5 text-sm text-primary mb-6">
+                  <Zap className="h-4 w-4" />
+                  Developer API
+                </div>
+                <h2 className="text-3xl md:text-4xl font-bold mb-4">Powerful API for Developers</h2>
+                <p className="text-muted-foreground text-lg mb-6">
+                  Integrate AI humanization and detection directly into your product with our REST API. Simple authentication, real-time analytics, and 98% bypass accuracy — all programmatically.
+                </p>
+                <div className="flex flex-wrap gap-4 mb-8 text-sm text-muted-foreground">
+                  <span className="flex items-center gap-1.5"><CheckCircle className="h-4 w-4 text-primary" /> RESTful</span>
+                  <span className="flex items-center gap-1.5"><CheckCircle className="h-4 w-4 text-primary" /> 99.9% Uptime</span>
+                  <span className="flex items-center gap-1.5"><CheckCircle className="h-4 w-4 text-primary" /> Simple Auth</span>
+                </div>
+                <Link to="/api">
+                  <Button size="lg" className="bg-gradient-to-r from-primary to-secondary text-lg px-8">
+                    Explore the API <ArrowRight className="ml-2 h-5 w-5" />
+                  </Button>
+                </Link>
+              </div>
+              <div>
+                <pre className="bg-card border border-border rounded-lg p-6 overflow-x-auto text-sm font-mono text-foreground leading-relaxed">
+                  <code>{`curl -X POST /v1/humanize \\
+  -H "Authorization: Bearer sk_live_..." \\
+  -H "Content-Type: application/json" \\
+  -d '{
+    "text": "Your AI text here...",
+    "style": "academic",
+    "strength": "balanced"
+  }'
+
+# Response
+{
+  "humanized_text": "Natural text...",
+  "confidence_score": 0.97,
+  "detection_risk": "low"
+}`}</code>
+                </pre>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* About Section */}
         <AboutSection />
 

@@ -122,6 +122,9 @@ const OriginalityAIAccuracyFalsePositives = lazy(() => import("./pages/blog/Orig
 const AIForResearchPapers = lazy(() => import("./pages/blog/AIForResearchPapers"));
 const AIWritingBusinessReports = lazy(() => import("./pages/blog/AIWritingBusinessReports"));
 const BestAIDetectorForTeachers = lazy(() => import("./pages/blog/BestAIDetectorForTeachers"));
+const RemoveAIDetection = lazy(() => import("./pages/blog/RemoveAIDetection"));
+const UndetectableAIEssayWriter = lazy(() => import("./pages/blog/UndetectableAIEssayWriter"));
+const AIParaphrasingToolPlagiarism = lazy(() => import("./pages/blog/AIParaphrasingToolPlagiarism"));
 
 const queryClient = new QueryClient();
 

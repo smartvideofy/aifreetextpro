@@ -47,6 +47,30 @@ const categoryThumbnails: Record<string, string> = {
 
 const blogPosts = [
   {
+    slug: "remove-ai-detection-from-text",
+    title: "How to Remove AI Detection from Text (Free Methods)",
+    excerpt: "5 proven methods to remove AI detection signals from your text. Free manual techniques plus instant tools that work on Turnitin, GPTZero, and more.",
+    date: "2026-03-05",
+    readTime: "13 min read",
+    category: "How-To Guide"
+  },
+  {
+    slug: "best-ai-essay-writer-undetectable",
+    title: "Best AI Essay Writer That Can't Be Detected (2026)",
+    excerpt: "Discover the top AI essay writing workflows that pass Turnitin, GPTZero, and Originality.AI. Real test results and step-by-step guide.",
+    date: "2026-03-05",
+    readTime: "14 min read",
+    category: "Academic"
+  },
+  {
+    slug: "ai-paraphrasing-tool-avoid-plagiarism",
+    title: "AI Paraphrasing Tool to Avoid Plagiarism (2026)",
+    excerpt: "Compare AI paraphrasing tools for plagiarism avoidance. See which tools pass AI detection and which fail with real test results.",
+    date: "2026-03-05",
+    readTime: "12 min read",
+    category: "Tools"
+  },
+  {
     slug: "ai-for-research-papers",
     title: "AI for Research Papers: Use AI Without Consequences",
     excerpt: "How graduate students and researchers can use AI tools ethically for thesis writing, literature reviews, and journal submissions.",

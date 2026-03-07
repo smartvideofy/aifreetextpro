@@ -122,6 +122,9 @@ const OriginalityAIAccuracyFalsePositives = lazy(() => import("./pages/blog/Orig
 const AIForResearchPapers = lazy(() => import("./pages/blog/AIForResearchPapers"));
 const AIWritingBusinessReports = lazy(() => import("./pages/blog/AIWritingBusinessReports"));
 const BestAIDetectorForTeachers = lazy(() => import("./pages/blog/BestAIDetectorForTeachers"));
+const RemoveAIDetection = lazy(() => import("./pages/blog/RemoveAIDetection"));
+const UndetectableAIEssayWriter = lazy(() => import("./pages/blog/UndetectableAIEssayWriter"));
+const AIParaphrasingToolPlagiarism = lazy(() => import("./pages/blog/AIParaphrasingToolPlagiarism"));
 
 const queryClient = new QueryClient();
 
@@ -228,6 +231,9 @@ const App = () => (
               <Route path="/blog/ai-for-research-papers" element={<AIForResearchPapers />} />
               <Route path="/blog/ai-writing-business-reports-emails" element={<AIWritingBusinessReports />} />
               <Route path="/blog/best-ai-detector-for-teachers" element={<BestAIDetectorForTeachers />} />
+              <Route path="/blog/remove-ai-detection-from-text" element={<RemoveAIDetection />} />
+              <Route path="/blog/best-ai-essay-writer-undetectable" element={<UndetectableAIEssayWriter />} />
+              <Route path="/blog/ai-paraphrasing-tool-avoid-plagiarism" element={<AIParaphrasingToolPlagiarism />} />
               <Route path="/bypass-turnitin-ai-detection" element={<BypassTurnitin />} />
               <Route path="/bypass-gptzero-detection" element={<BypassGPTZero />} />
               <Route path="/bypass-originality-ai" element={<BypassOriginality />} />

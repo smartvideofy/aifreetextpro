@@ -1082,7 +1082,7 @@ const Blog = () => {
             {filteredPosts.length > 0 ? (
               <div className="grid md:grid-cols-2 gap-6">
                 {filteredPosts.map((post) => {
-                  const thumbnail = categoryThumbnails[post.category] || categoryHowto;
+                  const thumbnail = thumbnailMap[post.slug] || categoryThumbnails[post.category] || categoryHowto;
                   return (
                     <Card key={post.slug} className="overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col">
                       {/* Thumbnail Image */}

@@ -128,6 +128,19 @@ const blogPosts = [
   { title: "Turnitin AI Detection Accuracy", href: "/blog/turnitin-ai-detection-accuracy" },
   { title: "AI Humanizer for Blog Posts", href: "/blog/ai-humanizer-for-blog-posts" },
   { title: "Originality.AI Accuracy", href: "/blog/originality-ai-accuracy-false-positives" },
+  { title: "Remove AI Detection", href: "/blog/remove-ai-detection-from-text" },
+  { title: "Undetectable AI Essay Writer", href: "/blog/best-ai-essay-writer-undetectable" },
+  { title: "AI Paraphrasing Tool", href: "/blog/ai-paraphrasing-tool-avoid-plagiarism" },
+  { title: "AI Homework Helper", href: "/blog/ai-homework-helper-undetectable" },
+  { title: "Rewrite AI Text", href: "/blog/rewrite-ai-text-sound-human" },
+  { title: "Appeal Turnitin Results", href: "/blog/turnitin-appeal-ai-detection" },
+  { title: "Free AI Content Detector", href: "/blog/free-ai-content-detector" },
+  { title: "ChatGPT for College Essays", href: "/blog/chatgpt-college-essays-detection" },
+  { title: "AI Text Converter", href: "/blog/ai-text-converter-human" },
+  { title: "Does Turnitin Detect Gemini?", href: "/blog/does-turnitin-detect-gemini" },
+  { title: "AI Detector for Employers", href: "/blog/ai-writing-detector-employers" },
+  { title: "Undetectable AI Alternatives", href: "/blog/undetectable-ai-alternatives" },
+  { title: "Claude Academic Writing", href: "/blog/claude-academic-writing-undetectable" },
 ];
 
 export const InternalLinks = ({ currentPage, showTitle = true, variant = "compact" }: InternalLinksProps) => {

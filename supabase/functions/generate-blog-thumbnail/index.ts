@@ -45,52 +45,82 @@ serve(async (req) => {
       );
     }
 
-    // Generate image via Lovable AI
-    const prompt = `Create a modern, professional blog header illustration for an article titled "${title}". Style: abstract, minimalist digital art with soft gradients. Use a 16:9 landscape composition. Do NOT include any text, letters, words, or typography in the image. Focus on abstract shapes, flowing lines, and a cohesive color palette that evokes the topic. Professional and clean aesthetic suitable for a tech blog. On a clean background.`;
+    // Generate image via Lovable AI with retry logic
+    const prompt = `Generate an image: a modern, professional blog header illustration for an article titled "${title}". Style: abstract, minimalist digital art with soft gradients. 16:9 landscape composition. No text, letters, words, or typography. Focus on abstract shapes, flowing lines, and a cohesive color palette. Professional and clean aesthetic suitable for a tech blog. On a clean background.`;
 
     console.log(`Generating thumbnail for: ${slug}`);
 
-    const aiResponse = await fetch(
-      "https://ai.gateway.lovable.dev/v1/chat/completions",
-      {
-        method: "POST",
-        headers: {
-          Authorization: `Bearer ${LOVABLE_API_KEY}`,
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          model: "google/gemini-2.5-flash-image",
-          messages: [{ role: "user", content: prompt }],
-          modalities: ["image", "text"],
-        }),
-      }
-    );
+    const models = ["google/gemini-2.5-flash-image", "google/gemini-3-pro-image-preview"];
+    let imageData: string | undefined;
 
-    if (!aiResponse.ok) {
-      const errorText = await aiResponse.text();
-      console.error("AI gateway error:", aiResponse.status, errorText);
-      
-      if (aiResponse.status === 429) {
-        return new Response(
-          JSON.stringify({ error: "Rate limited. Please try again later." }),
-          { status: 429, headers: { ...corsHeaders, "Content-Type": "application/json" } }
+    for (const model of models) {
+      for (let attempt = 0; attempt < 2; attempt++) {
+        console.log(`Trying model ${model}, attempt ${attempt + 1}`);
+        
+        const aiResponse = await fetch(
+          "https://ai.gateway.lovable.dev/v1/chat/completions",
+          {
+            method: "POST",
+            headers: {
+              Authorization: `Bearer ${LOVABLE_API_KEY}`,
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+              model,
+              messages: [{ role: "user", content: prompt }],
+              modalities: ["image", "text"],
+            }),
+          }
         );
+
+        if (aiResponse.status === 429) {
+          const errorText = await aiResponse.text();
+          console.error("Rate limited:", errorText);
+          if (attempt === 0) {
+            // Wait 15s and retry same model
+            await new Promise(r => setTimeout(r, 15000));
+            continue;
+          }
+          return new Response(
+            JSON.stringify({ error: "Rate limited. Please try again later." }),
+            { status: 429, headers: { ...corsHeaders, "Content-Type": "application/json" } }
+          );
+        }
+
+        if (aiResponse.status === 402) {
+          await aiResponse.text();
+          return new Response(
+            JSON.stringify({ error: "AI credits exhausted. Please add credits." }),
+            { status: 402, headers: { ...corsHeaders, "Content-Type": "application/json" } }
+          );
+        }
+
+        if (!aiResponse.ok) {
+          const errorText = await aiResponse.text();
+          console.error("AI gateway error:", aiResponse.status, errorText);
+          if (attempt === 0) {
+            await new Promise(r => setTimeout(r, 5000));
+            continue;
+          }
+          break; // Try next model
+        }
+
+        const aiData = await aiResponse.json();
+        imageData = aiData.choices?.[0]?.message?.images?.[0]?.image_url?.url;
+
+        if (imageData) break;
+        
+        console.error("No image in response from", model, "- response:", JSON.stringify(aiData).slice(0, 300));
+        // No image returned, try again or next model
+        if (attempt === 0) {
+          await new Promise(r => setTimeout(r, 3000));
+        }
       }
-      if (aiResponse.status === 402) {
-        return new Response(
-          JSON.stringify({ error: "AI credits exhausted. Please add credits." }),
-          { status: 402, headers: { ...corsHeaders, "Content-Type": "application/json" } }
-        );
-      }
-      throw new Error(`AI gateway error: ${aiResponse.status}`);
+      if (imageData) break;
     }
 
-    const aiData = await aiResponse.json();
-    const imageData = aiData.choices?.[0]?.message?.images?.[0]?.image_url?.url;
-
     if (!imageData) {
-      console.error("No image in AI response:", JSON.stringify(aiData).slice(0, 500));
-      throw new Error("No image generated by AI model");
+      throw new Error("No image generated after all retries");
     }
 
     // Extract base64 data

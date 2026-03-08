@@ -200,12 +200,12 @@ const AdminThumbnails = () => {
               : t
           )
         );
-        // Add delay after error (rate limit)
-        await new Promise((r) => setTimeout(r, 5000));
+        // Longer delay after error (rate limit recovery)
+        await new Promise((r) => setTimeout(r, 20000));
       }
 
-      // Delay between generations to avoid rate limits
-      await new Promise((r) => setTimeout(r, 3000));
+      // Longer delay between generations to avoid rate limits
+      await new Promise((r) => setTimeout(r, 15000));
     }
 
     setIsRunning(false);

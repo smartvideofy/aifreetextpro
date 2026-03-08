@@ -9,6 +9,7 @@ import { RelatedArticles } from "@/components/RelatedArticles";
 import InternalLinks from "@/components/InternalLinks";
 import ReviewedBy from "@/components/ReviewedBy";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
+import { FAQSection } from "@/components/FAQSection";
 
 const relatedArticles = [
   { title: "How AI Detectors Work", description: "The science behind AI text analysis.", href: "/blog/how-ai-detectors-work", category: "Educational" },

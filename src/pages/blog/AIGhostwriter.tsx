@@ -87,7 +87,7 @@ const AIGhostwriter = () => {
               <p className="text-xl text-muted-foreground">Executives and thought leaders need content that sounds like them, not like a robot. Here is how to build an AI ghostwriting workflow that delivers voice-matched, detection-proof content at scale.</p>
             </header>
 
-            <ReviewedBy reviewerName="Dr. Sarah Chen" reviewerTitle="Founder & CEO" reviewerLink="/team#sarah-chen" />
+            <ReviewedBy name="Dr. Sarah Chen" role="Founder & CEO" slug="sarah-chen" />
 
             <KeyTakeaways points={[
               "AI ghostwriting combines AI drafting with humanization to produce professional content that matches a client's voice and passes all AI detectors",

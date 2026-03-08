@@ -47,6 +47,86 @@ const categoryThumbnails: Record<string, string> = {
 
 const blogPosts = [
   {
+    slug: "humanize-chatgpt-text",
+    title: "How to Humanize ChatGPT Text (Step-by-Step 2026)",
+    excerpt: "Make ChatGPT text sound human in 6 steps. Reduce AI detection scores on Turnitin, GPTZero, and Originality.AI with proven humanization techniques.",
+    date: "2026-03-08",
+    readTime: "13 min read",
+    category: "How-To Guide"
+  },
+  {
+    slug: "best-ai-tools-for-students",
+    title: "Best AI Writing Tools for Students (Free & Paid 2026)",
+    excerpt: "10 best AI writing tools for students ranked by quality, detection risk, and price. ChatGPT, Claude, Gemini, and more compared.",
+    date: "2026-03-08",
+    readTime: "14 min read",
+    category: "Academic"
+  },
+  {
+    slug: "can-turnitin-detect-perplexity",
+    title: "Can Turnitin Detect Perplexity AI? (2026 Test Results)",
+    excerpt: "We tested Perplexity AI against Turnitin, GPTZero, and Originality.AI. Real 2026 detection results inside.",
+    date: "2026-03-08",
+    readTime: "12 min read",
+    category: "Technical"
+  },
+  {
+    slug: "turnitin-similarity-vs-ai-score",
+    title: "Turnitin Similarity Score vs AI Score: What's the Difference?",
+    excerpt: "Understand Turnitin's two scores: what each measures, what professors see, and what thresholds trigger review.",
+    date: "2026-03-08",
+    readTime: "12 min read",
+    category: "Educational"
+  },
+  {
+    slug: "gptzero-accuracy-review",
+    title: "Does GPTZero Actually Work? Accuracy Review (2026)",
+    excerpt: "Independent GPTZero accuracy review with real test data. Detection rates by AI model, false positive rates, and pricing.",
+    date: "2026-03-08",
+    readTime: "13 min read",
+    category: "Detector Review"
+  },
+  {
+    slug: "ai-ghostwriter",
+    title: "AI Ghostwriter: Professional Content Without Detection",
+    excerpt: "Build an AI ghostwriting workflow that delivers voice-matched, detection-proof content at scale for executives and thought leaders.",
+    date: "2026-03-08",
+    readTime: "13 min read",
+    category: "Professional"
+  },
+  {
+    slug: "ai-dissertation-thesis",
+    title: "AI Writing for Dissertation & Thesis (2026 Guide)",
+    excerpt: "Chapter-by-chapter guide for PhD and Masters students on where AI helps, where it hurts, and how to integrate it responsibly.",
+    date: "2026-03-08",
+    readTime: "15 min read",
+    category: "Academic"
+  },
+  {
+    slug: "copyleaks-vs-turnitin",
+    title: "Copyleaks vs Turnitin: Which AI Detector Is Better? (2026)",
+    excerpt: "Head-to-head comparison with real accuracy data across 5 AI models. Detection rates, false positives, and pricing compared.",
+    date: "2026-03-08",
+    readTime: "12 min read",
+    category: "Comparison"
+  },
+  {
+    slug: "ai-instagram-captions",
+    title: "AI Instagram Captions: Engaging Posts That Don't Sound AI",
+    excerpt: "20 prompt templates and a humanization workflow that produces Instagram captions your audience actually wants to read.",
+    date: "2026-03-08",
+    readTime: "11 min read",
+    category: "Social Media"
+  },
+  {
+    slug: "ai-cover-letter-generator",
+    title: "AI Cover Letter Generator That Sounds Human (2026)",
+    excerpt: "5 AI cover letter generators compared with humanization workflow and industry-specific templates that land interviews.",
+    date: "2026-03-08",
+    readTime: "12 min read",
+    category: "Career"
+  },
+  {
     slug: "ai-homework-helper-undetectable",
     title: "AI Homework Helper That Won't Get Caught (2026)",
     excerpt: "The complete guide to using AI for homework without triggering detection tools. Workflows, subject-specific tips, and real test results.",

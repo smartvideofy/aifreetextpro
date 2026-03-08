@@ -109,7 +109,7 @@ const HumanizeChatGPTText = () => {
               <p className="text-xl text-muted-foreground">ChatGPT is the most widely used AI writing tool, and also the most easily detected. This guide shows you exactly how to transform ChatGPT output into natural, human-sounding text that passes every major AI detector.</p>
             </header>
 
-            <ReviewedBy reviewerName="Dr. Sarah Chen" reviewerTitle="Founder & CEO" reviewerLink="/team#sarah-chen" />
+            <ReviewedBy name="Dr. Sarah Chen" role="Founder & CEO" slug="sarah-chen" />
 
             <KeyTakeaways points={[
               "ChatGPT text gets flagged due to low perplexity and uniform sentence structure that detectors recognize instantly",

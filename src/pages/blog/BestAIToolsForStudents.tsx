@@ -90,7 +90,7 @@ const BestAIToolsForStudents = () => {
               <p className="text-xl text-muted-foreground">A no-nonsense ranking of the 10 best AI writing tools for students, including which ones get detected, which are free, and how to use them responsibly in an academic setting.</p>
             </header>
 
-            <ReviewedBy reviewerName="Dr. Sarah Chen" reviewerTitle="Founder & CEO" reviewerLink="/team#sarah-chen" />
+            <ReviewedBy name="Dr. Sarah Chen" role="Founder & CEO" slug="sarah-chen" />
 
             <KeyTakeaways points={[
               "ChatGPT remains the most versatile student AI tool, but its output is detected 94%+ of the time by Turnitin",

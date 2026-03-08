@@ -87,7 +87,7 @@ const AIDissertationThesis = () => {
               <p className="text-xl text-muted-foreground">A chapter-by-chapter guide for PhD and Masters students on where AI helps, where it hurts, and how to integrate it responsibly into the most important document of your academic career.</p>
             </header>
 
-            <ReviewedBy reviewerName="Dr. Sarah Chen" reviewerTitle="Founder & CEO" reviewerLink="/team#sarah-chen" />
+            <ReviewedBy name="Dr. Sarah Chen" role="Founder & CEO" slug="sarah-chen" />
 
             <KeyTakeaways points={[
               "AI is most valuable for literature reviews, methodology descriptions, and first drafts of introductions. It should never replace your original analysis or theoretical contributions.",

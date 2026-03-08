@@ -88,7 +88,7 @@ const TurnitinSimilarityVsAIScore = () => {
               <p className="text-xl text-muted-foreground">Students see two scores on every Turnitin report. One measures plagiarism. The other measures AI. Understanding the difference could save your grade.</p>
             </header>
 
-            <ReviewedBy reviewerName="Dr. Sarah Chen" reviewerTitle="Founder & CEO" reviewerLink="/team#sarah-chen" />
+            <ReviewedBy name="Dr. Sarah Chen" role="Founder & CEO" slug="sarah-chen" />
 
             <KeyTakeaways points={[
               "Turnitin's similarity score measures text matching against published sources (plagiarism). The AI score measures statistical patterns associated with AI generation. They are calculated independently.",

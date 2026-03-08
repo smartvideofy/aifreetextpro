@@ -9,6 +9,7 @@ import { RelatedArticles } from "@/components/RelatedArticles";
 import InternalLinks from "@/components/InternalLinks";
 import ReviewedBy from "@/components/ReviewedBy";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
+import { FAQSection } from "@/components/FAQSection";
 
 const relatedArticles = [
   { title: "Can Turnitin Detect DeepSeek?", description: "Testing DeepSeek against Turnitin's detector.", href: "/blog/can-turnitin-detect-deepseek", category: "Academic" },

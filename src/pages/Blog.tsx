@@ -47,6 +47,86 @@ const categoryThumbnails: Record<string, string> = {
 
 const blogPosts = [
   {
+    slug: "ai-homework-helper-undetectable",
+    title: "AI Homework Helper That Won't Get Caught (2026)",
+    excerpt: "The complete guide to using AI for homework without triggering detection tools. Workflows, subject-specific tips, and real test results.",
+    date: "2026-03-08",
+    readTime: "13 min read",
+    category: "Academic"
+  },
+  {
+    slug: "rewrite-ai-text-sound-human",
+    title: "How to Rewrite AI Text to Sound Human (2026)",
+    excerpt: "7 proven techniques to transform robotic AI output into natural human-sounding prose. Before/after examples and detection results.",
+    date: "2026-03-08",
+    readTime: "12 min read",
+    category: "How-To Guide"
+  },
+  {
+    slug: "turnitin-appeal-ai-detection",
+    title: "Is Turnitin Wrong? How to Appeal AI Detection",
+    excerpt: "Step-by-step guide to appealing Turnitin AI detection false positives. Email templates, evidence gathering, and how to prove your writing is human.",
+    date: "2026-03-08",
+    readTime: "14 min read",
+    category: "Academic"
+  },
+  {
+    slug: "free-ai-content-detector",
+    title: "Free AI Content Detector: Check Text Online (2026)",
+    excerpt: "Compare the best free AI content detectors with accuracy data for ChatGPT, Claude, and Gemini. Find out which tools actually work.",
+    date: "2026-03-08",
+    readTime: "11 min read",
+    category: "Tools"
+  },
+  {
+    slug: "chatgpt-college-essays",
+    title: "ChatGPT for College Essays: What Professors Detect",
+    excerpt: "What college professors actually use to detect ChatGPT essays. University policies, detection scores, and responsible AI use in 2026.",
+    date: "2026-03-08",
+    readTime: "13 min read",
+    category: "Academic"
+  },
+  {
+    slug: "ai-text-converter",
+    title: "AI Text Converter: AI to Human Writing Instantly",
+    excerpt: "Turn AI-generated writing into human writing instantly. Top 5 converters compared with detection test results and step-by-step guide.",
+    date: "2026-03-08",
+    readTime: "11 min read",
+    category: "Tools"
+  },
+  {
+    slug: "does-turnitin-detect-gemini",
+    title: "Does Turnitin Detect Gemini? (2026 Test Results)",
+    excerpt: "We tested Gemini 2.5 Pro and Flash against Turnitin, GPTZero, and Originality.AI. Complete 2026 detection results inside.",
+    date: "2026-03-08",
+    readTime: "12 min read",
+    category: "Technical"
+  },
+  {
+    slug: "ai-detector-employers",
+    title: "AI Writing Detector for Employers (2026)",
+    excerpt: "How employers can use AI detectors to screen job applications. Top tools, legal considerations, and recommended HR workflows.",
+    date: "2026-03-08",
+    readTime: "12 min read",
+    category: "Professional"
+  },
+  {
+    slug: "undetectable-ai-alternatives",
+    title: "Undetectable AI Alternatives: 5 Better Tools (2026)",
+    excerpt: "5 better alternatives to Undetectable AI ranked by bypass rates, pricing, and detection test results. Find the right tool for you.",
+    date: "2026-03-08",
+    readTime: "13 min read",
+    category: "Comparison"
+  },
+  {
+    slug: "claude-academic-writing",
+    title: "Claude for Academic Writing Without Getting Caught",
+    excerpt: "How to use Claude AI for essays without detection. Detection profile, best prompts, and the humanization workflow for students.",
+    date: "2026-03-08",
+    readTime: "13 min read",
+    category: "Academic"
+  },
+  {
     slug: "remove-ai-detection-from-text",
     title: "How to Remove AI Detection from Text (Free Methods)",
     excerpt: "5 proven methods to remove AI detection signals from your text. Free manual techniques plus instant tools that work on Turnitin, GPTZero, and more.",

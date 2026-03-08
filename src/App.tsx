@@ -125,6 +125,16 @@ const BestAIDetectorForTeachers = lazy(() => import("./pages/blog/BestAIDetector
 const RemoveAIDetection = lazy(() => import("./pages/blog/RemoveAIDetection"));
 const UndetectableAIEssayWriter = lazy(() => import("./pages/blog/UndetectableAIEssayWriter"));
 const AIParaphrasingToolPlagiarism = lazy(() => import("./pages/blog/AIParaphrasingToolPlagiarism"));
+const AIHomeworkHelper = lazy(() => import("./pages/blog/AIHomeworkHelper"));
+const RewriteAIText = lazy(() => import("./pages/blog/RewriteAIText"));
+const TurnitinAppeal = lazy(() => import("./pages/blog/TurnitinAppeal"));
+const FreeAIContentDetector = lazy(() => import("./pages/blog/FreeAIContentDetector"));
+const ChatGPTCollegeEssays = lazy(() => import("./pages/blog/ChatGPTCollegeEssays"));
+const AITextConverter = lazy(() => import("./pages/blog/AITextConverter"));
+const DoesTurnitinDetectGemini = lazy(() => import("./pages/blog/DoesTurnitinDetectGemini"));
+const AIDetectorEmployers = lazy(() => import("./pages/blog/AIDetectorEmployers"));
+const UndetectableAIAlternatives = lazy(() => import("./pages/blog/UndetectableAIAlternatives"));
+const ClaudeAcademicWriting = lazy(() => import("./pages/blog/ClaudeAcademicWriting"));
 
 const queryClient = new QueryClient();
 
@@ -234,6 +244,16 @@ const App = () => (
               <Route path="/blog/remove-ai-detection-from-text" element={<RemoveAIDetection />} />
               <Route path="/blog/best-ai-essay-writer-undetectable" element={<UndetectableAIEssayWriter />} />
               <Route path="/blog/ai-paraphrasing-tool-avoid-plagiarism" element={<AIParaphrasingToolPlagiarism />} />
+              <Route path="/blog/ai-homework-helper-undetectable" element={<AIHomeworkHelper />} />
+              <Route path="/blog/rewrite-ai-text-sound-human" element={<RewriteAIText />} />
+              <Route path="/blog/turnitin-appeal-ai-detection" element={<TurnitinAppeal />} />
+              <Route path="/blog/free-ai-content-detector" element={<FreeAIContentDetector />} />
+              <Route path="/blog/chatgpt-college-essays" element={<ChatGPTCollegeEssays />} />
+              <Route path="/blog/ai-text-converter" element={<AITextConverter />} />
+              <Route path="/blog/does-turnitin-detect-gemini" element={<DoesTurnitinDetectGemini />} />
+              <Route path="/blog/ai-detector-employers" element={<AIDetectorEmployers />} />
+              <Route path="/blog/undetectable-ai-alternatives" element={<UndetectableAIAlternatives />} />
+              <Route path="/blog/claude-academic-writing" element={<ClaudeAcademicWriting />} />
               <Route path="/bypass-turnitin-ai-detection" element={<BypassTurnitin />} />
               <Route path="/bypass-gptzero-detection" element={<BypassGPTZero />} />
               <Route path="/bypass-originality-ai" element={<BypassOriginality />} />

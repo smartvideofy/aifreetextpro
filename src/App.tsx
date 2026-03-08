@@ -50,7 +50,7 @@ const AIHumanizerForStudents = lazy(() => import("./pages/AIHumanizerForStudents
 const AIHumanizerForWriters = lazy(() => import("./pages/AIHumanizerForWriters"));
 const AcademicAIWritingTool = lazy(() => import("./pages/AcademicAIWritingTool"));
 const Api = lazy(() => import("./pages/Api"));
-const AdminThumbnails = lazy(() => import("./pages/AdminThumbnails"));
+
 
 // Blog posts - all lazy loaded
 const HowToDetectAI = lazy(() => import("./pages/blog/HowToDetectAI"));

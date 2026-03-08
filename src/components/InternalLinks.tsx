@@ -162,6 +162,16 @@ const blogPosts = [
   { title: "AI Detector for Employers", href: "/blog/ai-writing-detector-employers" },
   { title: "Undetectable AI Alternatives", href: "/blog/undetectable-ai-alternatives" },
   { title: "Claude Academic Writing", href: "/blog/claude-academic-writing-undetectable" },
+  { title: "Humanize ChatGPT Text", href: "/blog/humanize-chatgpt-text" },
+  { title: "Best AI Tools for Students", href: "/blog/best-ai-tools-for-students" },
+  { title: "Turnitin Detect Perplexity?", href: "/blog/can-turnitin-detect-perplexity" },
+  { title: "Turnitin Similarity vs AI Score", href: "/blog/turnitin-similarity-vs-ai-score" },
+  { title: "GPTZero Accuracy Review", href: "/blog/gptzero-accuracy-review" },
+  { title: "AI Ghostwriter Guide", href: "/blog/ai-ghostwriter" },
+  { title: "AI for Dissertation & Thesis", href: "/blog/ai-dissertation-thesis" },
+  { title: "Copyleaks vs Turnitin", href: "/blog/copyleaks-vs-turnitin" },
+  { title: "AI Instagram Captions", href: "/blog/ai-instagram-captions" },
+  { title: "AI Cover Letter Generator", href: "/blog/ai-cover-letter-generator" },
 ];
 
 export const InternalLinks = ({ currentPage, showTitle = true, variant = "compact" }: InternalLinksProps) => {

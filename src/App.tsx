@@ -264,6 +264,16 @@ const App = () => (
               <Route path="/blog/ai-detector-employers" element={<AIDetectorEmployers />} />
               <Route path="/blog/undetectable-ai-alternatives" element={<UndetectableAIAlternatives />} />
               <Route path="/blog/claude-academic-writing" element={<ClaudeAcademicWriting />} />
+              <Route path="/blog/humanize-chatgpt-text" element={<HumanizeChatGPTText />} />
+              <Route path="/blog/best-ai-tools-for-students" element={<BestAIToolsForStudents />} />
+              <Route path="/blog/can-turnitin-detect-perplexity" element={<CanTurnitinDetectPerplexity />} />
+              <Route path="/blog/turnitin-similarity-vs-ai-score" element={<TurnitinSimilarityVsAIScore />} />
+              <Route path="/blog/gptzero-accuracy-review" element={<GPTZeroAccuracyReview />} />
+              <Route path="/blog/ai-ghostwriter" element={<AIGhostwriter />} />
+              <Route path="/blog/ai-dissertation-thesis" element={<AIDissertationThesis />} />
+              <Route path="/blog/copyleaks-vs-turnitin" element={<CopyleaksVsTurnitin />} />
+              <Route path="/blog/ai-instagram-captions" element={<AIInstagramCaptions />} />
+              <Route path="/blog/ai-cover-letter-generator" element={<AICoverLetterGenerator />} />
               <Route path="/bypass-turnitin-ai-detection" element={<BypassTurnitin />} />
               <Route path="/bypass-gptzero-detection" element={<BypassGPTZero />} />
               <Route path="/bypass-originality-ai" element={<BypassOriginality />} />

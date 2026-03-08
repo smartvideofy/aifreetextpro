@@ -123,6 +123,7 @@ type ThumbnailStatus = {
 const AdminThumbnails = () => {
   const [thumbnails, setThumbnails] = useState<ThumbnailStatus[]>([]);
   const [isRunning, setIsRunning] = useState(false);
+  const isRunningRef = useRef(false);
   const [currentIndex, setCurrentIndex] = useState(0);
 
   // Load existing thumbnails on mount

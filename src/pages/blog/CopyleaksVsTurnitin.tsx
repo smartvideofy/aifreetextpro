@@ -5,7 +5,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { KeyTakeaways } from "@/components/KeyTakeaways";
-import { ReviewedBy } from "@/components/ReviewedBy";
+import ReviewedBy from "@/components/ReviewedBy";
 import { RelatedArticles } from "@/components/RelatedArticles";
 import { InternalLinks } from "@/components/InternalLinks";
 
@@ -87,7 +87,7 @@ const CopyleaksVsTurnitin = () => {
               <p className="text-xl text-muted-foreground">Copyleaks is gaining institutional adoption fast. But is it actually better than Turnitin? We tested both with real data across 5 AI models to find out.</p>
             </header>
 
-            <ReviewedBy reviewerName="Dr. Sarah Chen" reviewerTitle="Founder & CEO" reviewerLink="/team#sarah-chen" />
+            <ReviewedBy name="Dr. Sarah Chen" role="Founder & CEO" slug="sarah-chen" />
 
             <KeyTakeaways points={[
               "Turnitin is more accurate overall (92% vs 87%) and has a lower false positive rate (4% vs 6%)",

@@ -5,7 +5,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { KeyTakeaways } from "@/components/KeyTakeaways";
-import { ReviewedBy } from "@/components/ReviewedBy";
+import ReviewedBy from "@/components/ReviewedBy";
 import { RelatedArticles } from "@/components/RelatedArticles";
 import { InternalLinks } from "@/components/InternalLinks";
 
@@ -88,7 +88,7 @@ const AICoverLetterGenerator = () => {
               <p className="text-xl text-muted-foreground">Most AI cover letters get rejected because they sound like AI. Here is how to use AI generators effectively, which tools actually work, and the humanization step that makes the difference between rejection and an interview.</p>
             </header>
 
-            <ReviewedBy reviewerName="Dr. Sarah Chen" reviewerTitle="Founder & CEO" reviewerLink="/team#sarah-chen" />
+            <ReviewedBy name="Dr. Sarah Chen" role="Founder & CEO" slug="sarah-chen" />
 
             <KeyTakeaways points={[
               "62% of hiring managers say they can identify AI-generated cover letters, and most view them negatively",

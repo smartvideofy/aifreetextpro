@@ -5,7 +5,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { KeyTakeaways } from "@/components/KeyTakeaways";
-import { ReviewedBy } from "@/components/ReviewedBy";
+import ReviewedBy from "@/components/ReviewedBy";
 import { RelatedArticles } from "@/components/RelatedArticles";
 import { InternalLinks } from "@/components/InternalLinks";
 
@@ -87,7 +87,7 @@ const AIInstagramCaptions = () => {
               <p className="text-xl text-muted-foreground">Your followers can tell when captions are written by AI. Here are 20 prompt templates and a humanization workflow that produces Instagram captions your audience actually wants to read.</p>
             </header>
 
-            <ReviewedBy reviewerName="Dr. Sarah Chen" reviewerTitle="Founder & CEO" reviewerLink="/team#sarah-chen" />
+            <ReviewedBy name="Dr. Sarah Chen" role="Founder & CEO" slug="sarah-chen" />
 
             <KeyTakeaways points={[
               "Generic AI captions reduce engagement by 23% on average compared to humanized AI captions, according to our analysis of 1,000+ Instagram posts",

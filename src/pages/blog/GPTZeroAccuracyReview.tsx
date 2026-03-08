@@ -5,7 +5,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { KeyTakeaways } from "@/components/KeyTakeaways";
-import { ReviewedBy } from "@/components/ReviewedBy";
+import ReviewedBy from "@/components/ReviewedBy";
 import { RelatedArticles } from "@/components/RelatedArticles";
 import { InternalLinks } from "@/components/InternalLinks";
 
@@ -88,7 +88,7 @@ const GPTZeroAccuracyReview = () => {
               <p className="text-xl text-muted-foreground">GPTZero is the second most popular AI detector after Turnitin. We tested it against 250 samples across 5 AI models to find out how accurate it really is, where it fails, and whether it is worth paying for.</p>
             </header>
 
-            <ReviewedBy reviewerName="Dr. Sarah Chen" reviewerTitle="Founder & CEO" reviewerLink="/team#sarah-chen" />
+            <ReviewedBy name="Dr. Sarah Chen" role="Founder & CEO" slug="sarah-chen" />
 
             <KeyTakeaways points={[
               "GPTZero has an overall accuracy of approximately 88%: it correctly identifies AI text 85% of the time and human text 91% of the time",

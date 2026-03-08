@@ -5,7 +5,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { KeyTakeaways } from "@/components/KeyTakeaways";
-import { ReviewedBy } from "@/components/ReviewedBy";
+import ReviewedBy from "@/components/ReviewedBy";
 import { RelatedArticles } from "@/components/RelatedArticles";
 import { InternalLinks } from "@/components/InternalLinks";
 
@@ -87,7 +87,7 @@ const CanTurnitinDetectPerplexity = () => {
               <p className="text-xl text-muted-foreground">Perplexity AI is the fastest-growing research tool among students. We tested its output against Turnitin, GPTZero, Originality.AI, and Copyleaks to find out exactly how detectable it is.</p>
             </header>
 
-            <ReviewedBy reviewerName="Dr. Sarah Chen" reviewerTitle="Founder & CEO" reviewerLink="/team#sarah-chen" />
+            <ReviewedBy name="Dr. Sarah Chen" role="Founder & CEO" slug="sarah-chen" />
 
             <KeyTakeaways points={[
               "Turnitin detects Perplexity AI output at an average rate of 82%, lower than ChatGPT (94%) but still high enough to trigger review",

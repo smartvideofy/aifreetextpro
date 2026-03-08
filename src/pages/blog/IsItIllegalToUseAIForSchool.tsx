@@ -8,6 +8,7 @@ import KeyTakeaways from "@/components/KeyTakeaways";
 import { RelatedArticles } from "@/components/RelatedArticles";
 import { InternalLinks } from "@/components/InternalLinks";
 import ReviewedBy from "@/components/ReviewedBy";
+import { FAQSection } from "@/components/FAQSection";
 import {
   Table,
   TableBody,

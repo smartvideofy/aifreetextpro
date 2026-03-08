@@ -8,6 +8,7 @@ import { KeyTakeaways } from "@/components/KeyTakeaways";
 import { RelatedArticles } from "@/components/RelatedArticles";
 import InternalLinks from "@/components/InternalLinks";
 import ReviewedBy from "@/components/ReviewedBy";
+import { FAQSection } from "@/components/FAQSection";
 
 const relatedArticles = [
   { title: "Can Teachers Detect ChatGPT?", description: "Every detection method schools use in 2026.", href: "/blog/can-teachers-detect-chatgpt", category: "Academic" },

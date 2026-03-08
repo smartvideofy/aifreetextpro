@@ -213,6 +213,7 @@ const AdminThumbnails = () => {
   };
 
   const stopGeneration = () => {
+    isRunningRef.current = false;
     setIsRunning(false);
   };
 

@@ -73,6 +73,27 @@ const keyPages = [
     category: "compare"
   },
   {
+    title: "vs HumanizeAI Pro",
+    href: "/vs-humanizeai-pro",
+    description: "AI Free Text Pro vs HumanizeAI.pro comparison",
+    icon: Sparkles,
+    category: "compare"
+  },
+  {
+    title: "Compare All Humanizers",
+    href: "/compare-ai-humanizers",
+    description: "Side-by-side AI humanizer comparison",
+    icon: Sparkles,
+    category: "compare"
+  },
+  {
+    title: "Free AI Detector",
+    href: "/ai-checker",
+    description: "Free online AI content detection tool",
+    icon: Shield,
+    category: "tool"
+  },
+  {
     title: "Pricing",
     href: "/pricing",
     description: "View plans and pricing",

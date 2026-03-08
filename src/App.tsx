@@ -125,6 +125,16 @@ const BestAIDetectorForTeachers = lazy(() => import("./pages/blog/BestAIDetector
 const RemoveAIDetection = lazy(() => import("./pages/blog/RemoveAIDetection"));
 const UndetectableAIEssayWriter = lazy(() => import("./pages/blog/UndetectableAIEssayWriter"));
 const AIParaphrasingToolPlagiarism = lazy(() => import("./pages/blog/AIParaphrasingToolPlagiarism"));
+const AIHomeworkHelper = lazy(() => import("./pages/blog/AIHomeworkHelper"));
+const RewriteAIText = lazy(() => import("./pages/blog/RewriteAIText"));
+const TurnitinAppeal = lazy(() => import("./pages/blog/TurnitinAppeal"));
+const FreeAIContentDetector = lazy(() => import("./pages/blog/FreeAIContentDetector"));
+const ChatGPTCollegeEssays = lazy(() => import("./pages/blog/ChatGPTCollegeEssays"));
+const AITextConverter = lazy(() => import("./pages/blog/AITextConverter"));
+const DoesTurnitinDetectGemini = lazy(() => import("./pages/blog/DoesTurnitinDetectGemini"));
+const AIDetectorEmployers = lazy(() => import("./pages/blog/AIDetectorEmployers"));
+const UndetectableAIAlternatives = lazy(() => import("./pages/blog/UndetectableAIAlternatives"));
+const ClaudeAcademicWriting = lazy(() => import("./pages/blog/ClaudeAcademicWriting"));
 
 const queryClient = new QueryClient();
 

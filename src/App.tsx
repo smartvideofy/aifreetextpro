@@ -145,6 +145,16 @@ const AIDissertationThesis = lazy(() => import("./pages/blog/AIDissertationThesi
 const CopyleaksVsTurnitin = lazy(() => import("./pages/blog/CopyleaksVsTurnitin"));
 const AIInstagramCaptions = lazy(() => import("./pages/blog/AIInstagramCaptions"));
 const AICoverLetterGenerator = lazy(() => import("./pages/blog/AICoverLetterGenerator"));
+const ChatGPTAlternativesEssays = lazy(() => import("./pages/blog/ChatGPTAlternativesEssays"));
+const AIBlogPostGenerator = lazy(() => import("./pages/blog/AIBlogPostGenerator"));
+const AIEssayChecker = lazy(() => import("./pages/blog/AIEssayChecker"));
+const MakeAIWritingCreative = lazy(() => import("./pages/blog/MakeAIWritingCreative"));
+const AIContentAtScale = lazy(() => import("./pages/blog/AIContentAtScale"));
+const AIGrantWriting = lazy(() => import("./pages/blog/AIGrantWriting"));
+const WordtuneComparison = lazy(() => import("./pages/blog/WordtuneComparison"));
+const AIPressReleases = lazy(() => import("./pages/blog/AIPressReleases"));
+const ChatGPTPlusDetection = lazy(() => import("./pages/blog/ChatGPTPlusDetection"));
+const AIMedicalScientificWriting = lazy(() => import("./pages/blog/AIMedicalScientificWriting"));
 
 const queryClient = new QueryClient();
 

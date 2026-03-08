@@ -8,6 +8,7 @@ import { KeyTakeaways } from "@/components/KeyTakeaways";
 import { RelatedArticles } from "@/components/RelatedArticles";
 import InternalLinks from "@/components/InternalLinks";
 import ReviewedBy from "@/components/ReviewedBy";
+import { FAQSection } from "@/components/FAQSection";
 
 const relatedArticles = [
   { title: "AI Humanizer for Resumes", description: "Make AI-generated professional documents sound authentic.", href: "/blog/ai-humanizer-resumes-cover-letters", category: "Career" },

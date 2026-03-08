@@ -9,6 +9,7 @@ import { RelatedArticles } from "@/components/RelatedArticles";
 import InternalLinks from "@/components/InternalLinks";
 import ReviewedBy from "@/components/ReviewedBy";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
+import { FAQSection } from "@/components/FAQSection";
 
 const relatedArticles = [
   { title: "Can AI Detectors Detect Claude, Gemini, and GPT-5?", description: "Detector-side analysis of modern AI models.", href: "/blog/ai-detectors-claude-gemini-gpt5-2026", category: "Technical" },

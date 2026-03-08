@@ -9,6 +9,7 @@ import { RelatedArticles } from "@/components/RelatedArticles";
 import InternalLinks from "@/components/InternalLinks";
 import ReviewedBy from "@/components/ReviewedBy";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
+import { FAQSection } from "@/components/FAQSection";
 
 const relatedArticles = [
   { title: "Can AI Detectors Detect Claude, Gemini, and GPT-5?", description: "Detector-side analysis of modern AI models.", href: "/blog/ai-detectors-claude-gemini-gpt5-2026", category: "Technical" },
@@ -184,17 +185,7 @@ const ChatGPTvsClaudevsGeminiDetection = () => {
               </a>
             </div>
 
-            <section className="not-prose">
-              <h2 className="text-2xl font-bold mb-4">Frequently Asked Questions</h2>
-              <div className="space-y-6">
-                {faqs.map((faq, i) => (
-                  <div key={i} className="border border-border rounded-lg p-6">
-                    <h3 className="font-semibold mb-2">{faq.question}</h3>
-                    <p className="text-muted-foreground">{faq.answer}</p>
-                  </div>
-                ))}
-              </div>
-            </section>
+            <FAQSection faqs={faqs} />
           </article>
 
           <RelatedArticles articles={relatedArticles} />

@@ -8,6 +8,7 @@ import KeyTakeaways from "@/components/KeyTakeaways";
 import { RelatedArticles } from "@/components/RelatedArticles";
 import { InternalLinks } from "@/components/InternalLinks";
 import ReviewedBy from "@/components/ReviewedBy";
+import { FAQSection } from "@/components/FAQSection";
 import {
   Table,
   TableBody,
@@ -551,19 +552,7 @@ const IsItIllegalToUseAIForSchool = () => {
               </div>
             </section>
 
-            {/* FAQ Section */}
-            <section>
-              <h2>Frequently Asked Questions</h2>
-
-              <div className="space-y-6">
-                {faqs.map((faq, index) => (
-                  <div key={index} className="border-b border-border/50 pb-6 last:border-0">
-                    <h3 className="text-lg font-semibold mb-2">{faq.question}</h3>
-                    <p className="text-muted-foreground">{faq.answer}</p>
-                  </div>
-                ))}
-              </div>
-            </section>
+            <FAQSection faqs={faqs} />
 
             {/* Conclusion */}
             <section>

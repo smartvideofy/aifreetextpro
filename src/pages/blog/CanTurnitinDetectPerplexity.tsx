@@ -8,6 +8,7 @@ import { KeyTakeaways } from "@/components/KeyTakeaways";
 import ReviewedBy from "@/components/ReviewedBy";
 import { RelatedArticles } from "@/components/RelatedArticles";
 import { InternalLinks } from "@/components/InternalLinks";
+import { FAQSection } from "@/components/FAQSection";
 
 const relatedArticles = [
   { title: "Can Turnitin Detect DeepSeek?", description: "Test results for DeepSeek R1 and V3 against Turnitin and other detectors.", href: "/blog/can-turnitin-detect-deepseek", category: "Technical" },
@@ -157,15 +158,7 @@ const CanTurnitinDetectPerplexity = () => {
               </a>
             </div>
 
-            <h2 className="text-2xl font-bold mt-10 mb-4">Frequently Asked Questions</h2>
-            <div className="space-y-6 my-6">
-              {faqs.map((faq, index) => (
-                <div key={index} className="border border-border rounded-lg p-5">
-                  <h3 className="font-semibold mb-2">{faq.question}</h3>
-                  <p className="text-muted-foreground">{faq.answer}</p>
-                </div>
-              ))}
-            </div>
+            <FAQSection faqs={faqs} />
 
             <RelatedArticles articles={relatedArticles} />
           </article>

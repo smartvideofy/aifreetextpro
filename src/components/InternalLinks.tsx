@@ -172,6 +172,16 @@ const blogPosts = [
   { title: "Copyleaks vs Turnitin", href: "/blog/copyleaks-vs-turnitin" },
   { title: "AI Instagram Captions", href: "/blog/ai-instagram-captions" },
   { title: "AI Cover Letter Generator", href: "/blog/ai-cover-letter-generator" },
+  { title: "ChatGPT Alternatives for Essays", href: "/blog/chatgpt-alternatives-essays" },
+  { title: "AI Blog Post Generator", href: "/blog/ai-blog-post-generator" },
+  { title: "AI Essay Checker", href: "/blog/ai-essay-checker" },
+  { title: "Make AI Writing Creative", href: "/blog/make-ai-writing-creative" },
+  { title: "AI Content at Scale", href: "/blog/ai-content-at-scale" },
+  { title: "AI for Grant Writing", href: "/blog/ai-grant-writing" },
+  { title: "Wordtune vs AI Free Text Pro", href: "/blog/wordtune-vs-ai-free-text-pro" },
+  { title: "AI for Press Releases", href: "/blog/ai-press-releases" },
+  { title: "ChatGPT Plus Detection", href: "/blog/chatgpt-plus-detection" },
+  { title: "AI Medical & Scientific Writing", href: "/blog/ai-medical-scientific-writing" },
 ];
 
 export const InternalLinks = ({ currentPage, showTitle = true, variant = "compact" }: InternalLinksProps) => {

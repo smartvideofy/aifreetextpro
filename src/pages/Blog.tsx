@@ -47,6 +47,86 @@ const categoryThumbnails: Record<string, string> = {
 
 const blogPosts = [
   {
+    slug: "chatgpt-alternatives-essays",
+    title: "ChatGPT Alternatives for Essay Writing (2026)",
+    excerpt: "10 best ChatGPT alternatives for essay writing. Compare Claude, Gemini, Perplexity, and more for academic quality and detection rates.",
+    date: "2026-03-08",
+    readTime: "13 min read",
+    category: "Academic"
+  },
+  {
+    slug: "ai-blog-post-generator",
+    title: "AI Blog Post Generator That Passes AI Detection (2026)",
+    excerpt: "Best AI blog generators compared. Learn the workflow for producing undetectable blog content at scale.",
+    date: "2026-03-08",
+    readTime: "12 min read",
+    category: "Marketing"
+  },
+  {
+    slug: "ai-essay-checker",
+    title: "Best AI Essay Checker: Self-Check Before You Submit (2026)",
+    excerpt: "Free AI essay checkers compared. Self-check your essay before your professor does with these 7 tools.",
+    date: "2026-03-08",
+    readTime: "11 min read",
+    category: "Tools"
+  },
+  {
+    slug: "make-ai-writing-creative",
+    title: "How to Make AI Writing More Creative and Original",
+    excerpt: "12 techniques to transform generic AI text into creative, distinctive writing that surprises and engages readers.",
+    date: "2026-03-08",
+    readTime: "13 min read",
+    category: "Writing Craft"
+  },
+  {
+    slug: "ai-content-at-scale",
+    title: "AI Content at Scale: 100+ Articles Without Getting Flagged",
+    excerpt: "Production workflow for 100+ humanized AI articles per month. Complete guide for agencies and content teams.",
+    date: "2026-03-08",
+    readTime: "13 min read",
+    category: "Marketing"
+  },
+  {
+    slug: "ai-grant-writing",
+    title: "AI for Grant Writing: Win Funding Without Detection (2026)",
+    excerpt: "Section-by-section AI workflow for competitive grant proposals. NIH, NSF, and foundation grant writing guide.",
+    date: "2026-03-08",
+    readTime: "12 min read",
+    category: "Professional"
+  },
+  {
+    slug: "wordtune-vs-ai-free-text-pro",
+    title: "Wordtune vs AI Free Text Pro: Rewriter vs Humanizer (2026)",
+    excerpt: "Rewriter vs humanizer: which do you need? Side-by-side comparison with detection test results.",
+    date: "2026-03-08",
+    readTime: "12 min read",
+    category: "Comparison"
+  },
+  {
+    slug: "ai-press-releases",
+    title: "AI for Press Releases: PR Content That Sounds Human (2026)",
+    excerpt: "Write press releases with AI that journalists actually use. Templates, workflow, and humanization strategies.",
+    date: "2026-03-08",
+    readTime: "11 min read",
+    category: "Professional"
+  },
+  {
+    slug: "chatgpt-plus-detection",
+    title: "Does ChatGPT Plus Bypass AI Detection? (2026 Test Results)",
+    excerpt: "We tested every ChatGPT tier against 5 detectors. Paying for Plus does not make text less detectable.",
+    date: "2026-03-08",
+    readTime: "12 min read",
+    category: "Technical"
+  },
+  {
+    slug: "ai-medical-scientific-writing",
+    title: "AI for Medical & Scientific Writing: A Researcher's Guide",
+    excerpt: "Use AI for medical and scientific writing without compromising journal acceptance. Section-by-section guide.",
+    date: "2026-03-08",
+    readTime: "14 min read",
+    category: "Professional"
+  },
+  {
     slug: "humanize-chatgpt-text",
     title: "How to Humanize ChatGPT Text (Step-by-Step 2026)",
     excerpt: "Make ChatGPT text sound human in 6 steps. Reduce AI detection scores on Turnitin, GPTZero, and Originality.AI with proven humanization techniques.",

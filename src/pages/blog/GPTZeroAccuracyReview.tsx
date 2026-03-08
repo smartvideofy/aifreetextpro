@@ -8,6 +8,7 @@ import { KeyTakeaways } from "@/components/KeyTakeaways";
 import ReviewedBy from "@/components/ReviewedBy";
 import { RelatedArticles } from "@/components/RelatedArticles";
 import { InternalLinks } from "@/components/InternalLinks";
+import { FAQSection } from "@/components/FAQSection";
 
 const relatedArticles = [
   { title: "GPTZero vs Turnitin Comparison", description: "Head-to-head comparison of the two most popular AI detectors.", href: "/blog/gptzero-vs-turnitin-comparison", category: "Comparison" },

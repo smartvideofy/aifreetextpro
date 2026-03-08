@@ -185,7 +185,7 @@ const App = () => (
             <Routes>
               <Route path="/" element={<Index />} />
               <Route path="/api" element={<Api />} />
-              <Route path="/admin/thumbnails" element={<AdminThumbnails />} />
+              
               <Route path="/pricing" element={<Pricing />} />
               <Route path="/guarantee" element={<Guarantee />} />
               <Route path="/privacy-policy" element={<PrivacyPolicy />} />

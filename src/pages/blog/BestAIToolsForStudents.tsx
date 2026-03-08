@@ -8,6 +8,7 @@ import { KeyTakeaways } from "@/components/KeyTakeaways";
 import ReviewedBy from "@/components/ReviewedBy";
 import { RelatedArticles } from "@/components/RelatedArticles";
 import { InternalLinks } from "@/components/InternalLinks";
+import { FAQSection } from "@/components/FAQSection";
 
 const relatedArticles = [
   { title: "AI Writing for Students: Avoid Detection", description: "Student-specific strategies for using AI writing tools responsibly.", href: "/blog/ai-writing-students-avoid-plagiarism", category: "Academic" },

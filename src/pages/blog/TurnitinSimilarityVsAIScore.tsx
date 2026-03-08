@@ -8,6 +8,7 @@ import { KeyTakeaways } from "@/components/KeyTakeaways";
 import ReviewedBy from "@/components/ReviewedBy";
 import { RelatedArticles } from "@/components/RelatedArticles";
 import { InternalLinks } from "@/components/InternalLinks";
+import { FAQSection } from "@/components/FAQSection";
 
 const relatedArticles = [
   { title: "Turnitin AI Detection Accuracy", description: "How accurate is Turnitin's AI detection in 2026? Real data and analysis.", href: "/blog/turnitin-ai-detection-accuracy", category: "Technical" },

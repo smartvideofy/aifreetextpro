@@ -8,6 +8,7 @@ import { KeyTakeaways } from "@/components/KeyTakeaways";
 import { RelatedArticles } from "@/components/RelatedArticles";
 import InternalLinks from "@/components/InternalLinks";
 import ReviewedBy from "@/components/ReviewedBy";
+import { FAQSection } from "@/components/FAQSection";
 
 const relatedArticles = [
   { title: "AI Content for SEO", description: "Generate natural articles that rank in search.", href: "/blog/ai-content-seo-undetectable", category: "SEO" },

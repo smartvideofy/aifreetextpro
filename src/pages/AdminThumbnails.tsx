@@ -167,13 +167,14 @@ const AdminThumbnails = () => {
   };
 
   const startBatchGeneration = async () => {
+    isRunningRef.current = true;
     setIsRunning(true);
     const pending = thumbnails
       .map((t, i) => ({ ...t, index: i }))
       .filter((t) => t.status === "pending");
 
     for (const item of pending) {
-      if (!isRunning) break; // allow stopping
+      if (!isRunningRef.current) break;
 
       setThumbnails((prev) =>
         prev.map((t, i) =>

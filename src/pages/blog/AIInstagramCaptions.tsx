@@ -8,6 +8,7 @@ import { KeyTakeaways } from "@/components/KeyTakeaways";
 import ReviewedBy from "@/components/ReviewedBy";
 import { RelatedArticles } from "@/components/RelatedArticles";
 import { InternalLinks } from "@/components/InternalLinks";
+import { FAQSection } from "@/components/FAQSection";
 
 const relatedArticles = [
   { title: "Humanize AI for Social Media", description: "Transform AI social media content into authentic, engaging posts.", href: "/blog/humanize-ai-social-media-2026", category: "Social Media" },

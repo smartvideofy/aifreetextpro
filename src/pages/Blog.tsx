@@ -879,6 +879,22 @@ const allCategories = [...new Set(blogPosts.map(post => post.category))].sort();
 const Blog = () => {
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
+  const [thumbnailMap, setThumbnailMap] = useState<Record<string, string>>({});
+
+  // Fetch generated thumbnails from database
+  useEffect(() => {
+    const fetchThumbnails = async () => {
+      const { data } = await supabase
+        .from("blog_thumbnails")
+        .select("slug, image_url");
+      if (data) {
+        const map: Record<string, string> = {};
+        data.forEach((t: any) => { map[t.slug] = t.image_url; });
+        setThumbnailMap(map);
+      }
+    };
+    fetchThumbnails();
+  }, []);
 
   // Filter posts based on search and category
   const filteredPosts = useMemo(() => {

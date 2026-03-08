@@ -6,7 +6,7 @@ import Footer from "@/components/Footer";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import ReviewedBy from "@/components/ReviewedBy";
 import KeyTakeaways from "@/components/KeyTakeaways";
-import RelatedArticles from "@/components/RelatedArticles";
+import { RelatedArticles } from "@/components/RelatedArticles";
 import InternalLinks from "@/components/InternalLinks";
 import { FAQSection } from "@/components/FAQSection";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";

@@ -9,6 +9,7 @@ import { RelatedArticles } from "@/components/RelatedArticles";
 import InternalLinks from "@/components/InternalLinks";
 import ReviewedBy from "@/components/ReviewedBy";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
+import { FAQSection } from "@/components/FAQSection";
 
 const relatedArticles = [
   { title: "Is It Illegal to Use AI for School?", description: "Legal and policy landscape for academic AI use.", href: "/blog/is-it-illegal-to-use-ai-for-school", category: "Academic" },

@@ -1,6 +1,7 @@
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Card } from "@/components/ui/card";
+import { supabase } from "@/integrations/supabase/client";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Calendar, Clock, ArrowRight, BookOpen, Search, X, Filter } from "lucide-react";
@@ -878,6 +879,22 @@ const allCategories = [...new Set(blogPosts.map(post => post.category))].sort();
 const Blog = () => {
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
+  const [thumbnailMap, setThumbnailMap] = useState<Record<string, string>>({});
+
+  // Fetch generated thumbnails from database
+  useEffect(() => {
+    const fetchThumbnails = async () => {
+      const { data } = await supabase
+        .from("blog_thumbnails")
+        .select("slug, image_url");
+      if (data) {
+        const map: Record<string, string> = {};
+        data.forEach((t: any) => { map[t.slug] = t.image_url; });
+        setThumbnailMap(map);
+      }
+    };
+    fetchThumbnails();
+  }, []);
 
   // Filter posts based on search and category
   const filteredPosts = useMemo(() => {
@@ -1065,7 +1082,7 @@ const Blog = () => {
             {filteredPosts.length > 0 ? (
               <div className="grid md:grid-cols-2 gap-6">
                 {filteredPosts.map((post) => {
-                  const thumbnail = categoryThumbnails[post.category] || categoryHowto;
+                  const thumbnail = thumbnailMap[post.slug] || categoryThumbnails[post.category] || categoryHowto;
                   return (
                     <Card key={post.slug} className="overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col">
                       {/* Thumbnail Image */}

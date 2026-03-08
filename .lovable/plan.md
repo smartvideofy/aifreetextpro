@@ -1,50 +1,51 @@
 
 
-# Plan: AI-Generated Unique Blog Thumbnails
+# Plan: Showcase API Capability on Marketing Pages
 
-## Approach
+## What to build
 
-Use an AI image generation model (available via Lovable AI — `google/gemini-3-pro-image-preview`) to generate a unique thumbnail for each blog post, stored in file storage for reuse.
+Three touchpoints to promote the new API across the marketing site, targeting developers and SaaS teams.
 
-## How it works
+---
 
-### 1. Create edge function `generate-blog-thumbnail`
-- Accepts `slug` and `title` as input
-- Generates a prompt like: "Modern minimalist blog header illustration for an article titled '{title}', abstract tech/writing theme, gradient background, no text, 16:9 aspect ratio"
-- Calls the Gemini image generation model
-- Uploads the resulting image to a `blog-thumbnails` storage bucket
-- Returns the public URL
+## 1. New Dedicated `/api` Landing Page
 
-### 2. Create `blog_thumbnails` database table
-- `slug` (text, primary key), `image_url` (text), `created_at` (timestamp)
-- No RLS needed — public read access for blog images
+A developer-focused marketing page (`src/pages/Api.tsx`) with:
 
-### 3. Create storage bucket `blog-thumbnails`
-- Public bucket for serving images
+- **Hero section**: Headline like "Build with AI Free Text Pro API", subheadline about programmatic access to humanization and detection, CTA button to the API Developer Portal
+- **Code snippet showcase**: Tabbed code examples (cURL, Python, JavaScript) showing a simple `POST /api-humanize` request and response -- static/hardcoded, not live
+- **Key benefits cards**: Rate limits, 98% accuracy, simple REST interface, API key management
+- **Use cases for developers**: Content platforms, CMS plugins, writing tools, agency automation
+- **Pricing/tier reference**: Which plans include API access, link to `/pricing`
+- **FAQ section** (4-5 developer-focused FAQs) with JSON-LD schema
+- **CTA**: Link to `https://api.aifreetextpro.com/` (or wherever the portal lives)
 
-### 4. Create admin/utility page or script to batch-generate
-- Loops through all 100 slugs, calls the edge function, stores results
-- Can be triggered manually; skips slugs that already have thumbnails
+Full SEO treatment: Helmet meta tags, BreadcrumbList JSON-LD, SoftwareApplication schema. Route added to `App.tsx`, sitemap entry.
 
-### 5. Update `Blog.tsx`
-- Fetch thumbnail URLs from the database table
-- Fall back to the existing category thumbnails if no generated image exists yet
-- Use the real image URL for the card display
+## 2. Homepage API Section
 
-### 6. Update SEO `<Helmet>` in each blog post
-- Add `og:image` meta tag pointing to the generated thumbnail URL
-- This enables rich social sharing previews
+Add a new section on `Index.tsx` (between the Use Cases and Blog Links sections, around line 1150) with:
 
-## Alternative: Simpler approach
+- Headline: "Powerful API for Developers"
+- Short description (2-3 sentences) about programmatic access
+- A minimal code snippet preview (single cURL example in a dark code block)
+- CTA button: "Explore the API" linking to `/api`
+- Developer-oriented trust signals (e.g., "RESTful", "99.9% uptime", "Simple authentication")
 
-If AI generation feels over-engineered for now, we could instead:
-- Create 25-30 unique illustrations manually (or generate them once outside the app)
-- Place them in `src/assets/blog/` as static files
-- Map each post to a specific image in `Blog.tsx`
+## 3. Navigation, Pricing, and Footer Updates
 
-This is simpler but requires manual curation. The AI approach scales automatically as new posts are added.
+- **Navbar**: Add "API" link under the Tools dropdown menu (with a separator + "For Developers" label)
+- **MobileNav**: Add corresponding API link
+- **Footer**: Add "API" link to the "Product" section in footer
+- **Pricing page**: Add an "API Access" feature line to Pro Writer and Unlimited Creator plans (the tiers that include API access), with a note like "API access included" or "REST API"
+- **Sitemap**: Add `/api` URL entry
 
-## Recommendation
+---
 
-Start with the AI generation approach — it scales to any number of posts and produces unique visuals. The edge function + storage pattern is reusable for future content.
+## Technical Notes
+
+- The `/api` page follows the same component pattern as other marketing pages: `Navbar`, `Footer`, `Breadcrumbs`, `Helmet`, `Card` components
+- All CTAs point to the external API portal URL (to be confirmed -- likely `https://api.aifreetextpro.com/` or `https://app.aifreetextpro.com/api`)
+- Code snippets are static JSX with syntax-highlighted `<pre>` blocks styled with Tailwind (monospace, dark background, rounded corners)
+- No backend changes needed -- this is purely marketing content
 

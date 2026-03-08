@@ -41,6 +41,24 @@ export type Database = {
         }
         Relationships: []
       }
+      blog_thumbnails: {
+        Row: {
+          created_at: string
+          image_url: string
+          slug: string
+        }
+        Insert: {
+          created_at?: string
+          image_url: string
+          slug: string
+        }
+        Update: {
+          created_at?: string
+          image_url?: string
+          slug?: string
+        }
+        Relationships: []
+      }
       humanization_history: {
         Row: {
           created_at: string

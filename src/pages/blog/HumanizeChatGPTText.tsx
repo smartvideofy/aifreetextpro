@@ -8,6 +8,7 @@ import { KeyTakeaways } from "@/components/KeyTakeaways";
 import ReviewedBy from "@/components/ReviewedBy";
 import { RelatedArticles } from "@/components/RelatedArticles";
 import { InternalLinks } from "@/components/InternalLinks";
+import { FAQSection } from "@/components/FAQSection";
 
 const relatedArticles = [
   { title: "Humanize AI Text Without Losing Your Voice", description: "Strategies for maintaining authentic voice while using AI writing tools.", href: "/blog/humanize-ai-text-without-losing-voice", category: "How-To Guide" },

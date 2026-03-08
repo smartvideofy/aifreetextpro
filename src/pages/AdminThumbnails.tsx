@@ -150,20 +150,45 @@ const AdminThumbnails = () => {
     );
   };
 
-  const generateOne = async (slug: string, title: string): Promise<{ image_url: string } | null> => {
-    try {
-      const { data, error } = await supabase.functions.invoke(
-        "generate-blog-thumbnail",
-        { body: { slug, title } }
-      );
+  const generateOne = async (slug: string, title: string, retries = 3): Promise<{ image_url: string } | null> => {
+    for (let attempt = 0; attempt < retries; attempt++) {
+      try {
+        const { data, error } = await supabase.functions.invoke(
+          "generate-blog-thumbnail",
+          { body: { slug, title } }
+        );
 
-      if (error) throw new Error(error.message);
-      if (data?.error) throw new Error(data.error);
-      return data;
-    } catch (err: any) {
-      console.error(`Failed for ${slug}:`, err);
-      throw err;
+        if (error) {
+          const errMsg = error.message || "";
+          if ((errMsg.includes("non-2xx") || errMsg.includes("429")) && attempt < retries - 1) {
+            const wait = 30000 + attempt * 15000;
+            console.log(`Rate limited for ${slug}, retrying in ${wait / 1000}s (attempt ${attempt + 1}/${retries})`);
+            await new Promise((r) => setTimeout(r, wait));
+            continue;
+          }
+          throw new Error(errMsg);
+        }
+        if (data?.error) {
+          if (data.error.includes("Rate limited") && attempt < retries - 1) {
+            const wait = 30000 + attempt * 15000;
+            console.log(`Rate limited for ${slug}, retrying in ${wait / 1000}s`);
+            await new Promise((r) => setTimeout(r, wait));
+            continue;
+          }
+          throw new Error(data.error);
+        }
+        return data;
+      } catch (err: any) {
+        if (attempt === retries - 1) {
+          console.error(`Failed for ${slug} after ${retries} attempts:`, err);
+          throw err;
+        }
+        const wait = 30000 + attempt * 15000;
+        console.log(`Error for ${slug}, retrying in ${wait / 1000}s`);
+        await new Promise((r) => setTimeout(r, wait));
+      }
     }
+    return null;
   };
 
   const startBatchGeneration = async () => {

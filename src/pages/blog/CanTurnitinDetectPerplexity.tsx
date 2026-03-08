@@ -8,6 +8,7 @@ import { KeyTakeaways } from "@/components/KeyTakeaways";
 import ReviewedBy from "@/components/ReviewedBy";
 import { RelatedArticles } from "@/components/RelatedArticles";
 import { InternalLinks } from "@/components/InternalLinks";
+import { FAQSection } from "@/components/FAQSection";
 
 const relatedArticles = [
   { title: "Can Turnitin Detect DeepSeek?", description: "Test results for DeepSeek R1 and V3 against Turnitin and other detectors.", href: "/blog/can-turnitin-detect-deepseek", category: "Technical" },

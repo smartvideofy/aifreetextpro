@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { supabase } from "@/integrations/supabase/client";
@@ -123,6 +123,7 @@ type ThumbnailStatus = {
 const AdminThumbnails = () => {
   const [thumbnails, setThumbnails] = useState<ThumbnailStatus[]>([]);
   const [isRunning, setIsRunning] = useState(false);
+  const isRunningRef = useRef(false);
   const [currentIndex, setCurrentIndex] = useState(0);
 
   // Load existing thumbnails on mount
@@ -166,13 +167,14 @@ const AdminThumbnails = () => {
   };
 
   const startBatchGeneration = async () => {
+    isRunningRef.current = true;
     setIsRunning(true);
     const pending = thumbnails
       .map((t, i) => ({ ...t, index: i }))
       .filter((t) => t.status === "pending");
 
     for (const item of pending) {
-      if (!isRunning) break; // allow stopping
+      if (!isRunningRef.current) break;
 
       setThumbnails((prev) =>
         prev.map((t, i) =>
@@ -211,6 +213,7 @@ const AdminThumbnails = () => {
   };
 
   const stopGeneration = () => {
+    isRunningRef.current = false;
     setIsRunning(false);
   };
 

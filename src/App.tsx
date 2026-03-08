@@ -135,6 +135,16 @@ const DoesTurnitinDetectGemini = lazy(() => import("./pages/blog/DoesTurnitinDet
 const AIDetectorEmployers = lazy(() => import("./pages/blog/AIDetectorEmployers"));
 const UndetectableAIAlternatives = lazy(() => import("./pages/blog/UndetectableAIAlternatives"));
 const ClaudeAcademicWriting = lazy(() => import("./pages/blog/ClaudeAcademicWriting"));
+const HumanizeChatGPTText = lazy(() => import("./pages/blog/HumanizeChatGPTText"));
+const BestAIToolsForStudents = lazy(() => import("./pages/blog/BestAIToolsForStudents"));
+const CanTurnitinDetectPerplexity = lazy(() => import("./pages/blog/CanTurnitinDetectPerplexity"));
+const TurnitinSimilarityVsAIScore = lazy(() => import("./pages/blog/TurnitinSimilarityVsAIScore"));
+const GPTZeroAccuracyReview = lazy(() => import("./pages/blog/GPTZeroAccuracyReview"));
+const AIGhostwriter = lazy(() => import("./pages/blog/AIGhostwriter"));
+const AIDissertationThesis = lazy(() => import("./pages/blog/AIDissertationThesis"));
+const CopyleaksVsTurnitin = lazy(() => import("./pages/blog/CopyleaksVsTurnitin"));
+const AIInstagramCaptions = lazy(() => import("./pages/blog/AIInstagramCaptions"));
+const AICoverLetterGenerator = lazy(() => import("./pages/blog/AICoverLetterGenerator"));
 
 const queryClient = new QueryClient();
 

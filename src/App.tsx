@@ -156,6 +156,9 @@ const WordtuneComparison = lazy(() => import("./pages/blog/WordtuneComparison"))
 const AIPressReleases = lazy(() => import("./pages/blog/AIPressReleases"));
 const ChatGPTPlusDetection = lazy(() => import("./pages/blog/ChatGPTPlusDetection"));
 const AIMedicalScientificWriting = lazy(() => import("./pages/blog/AIMedicalScientificWriting"));
+const DoesTurnitinDetectChatGPT = lazy(() => import("./pages/blog/DoesTurnitinDetectChatGPT"));
+const CheckMyEssayForAI = lazy(() => import("./pages/blog/CheckMyEssayForAI"));
+const BestFreeAIHumanizer2026 = lazy(() => import("./pages/blog/BestFreeAIHumanizer2026"));
 
 const queryClient = new QueryClient();
 

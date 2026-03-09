@@ -48,6 +48,30 @@ const categoryThumbnails: Record<string, string> = {
 
 const blogPosts = [
   {
+    slug: "does-turnitin-detect-chatgpt",
+    title: "Does Turnitin Detect ChatGPT? (2026 Real Test Results)",
+    excerpt: "We submitted 150+ ChatGPT documents to Turnitin. Real detection rates by model (GPT-4o, GPT-4, GPT-3.5), content type, and editing level.",
+    date: "2026-03-09",
+    readTime: "14 min read",
+    category: "Academic"
+  },
+  {
+    slug: "check-my-essay-for-ai",
+    title: "Check My Essay for AI: 7 Free Tools Before You Submit",
+    excerpt: "Self-check your essay before your professor does. Compare 7 free AI detectors with accuracy rates and step-by-step instructions.",
+    date: "2026-03-09",
+    readTime: "12 min read",
+    category: "How-To Guide"
+  },
+  {
+    slug: "best-free-ai-humanizer-2026",
+    title: "Best Free AI Humanizer 2026: No Signup, No Limit",
+    excerpt: "We tested every major free AI humanizer with identical ChatGPT content. Real bypass rates, word limits, and quality scores compared.",
+    date: "2026-03-09",
+    readTime: "15 min read",
+    category: "Comparison"
+  },
+  {
     slug: "chatgpt-alternatives-essays",
     title: "ChatGPT Alternatives for Essay Writing (2026)",
     excerpt: "10 best ChatGPT alternatives for essay writing. Compare Claude, Gemini, Perplexity, and more for academic quality and detection rates.",

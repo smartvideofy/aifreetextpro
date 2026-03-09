@@ -336,6 +336,10 @@ const App = () => (
               <Route path="/blog/paraphrasing-vs-humanizing-ai-text" element={<SEORedirect to="/blog/paraphrasing-vs-humanizing" />} />
               <Route path="/bypass-turnitin" element={<SEORedirect to="/bypass-turnitin-ai-detection" />} />
               
+              <Route path="/blog/does-turnitin-detect-chatgpt" element={<DoesTurnitinDetectChatGPT />} />
+              <Route path="/blog/check-my-essay-for-ai" element={<CheckMyEssayForAI />} />
+              <Route path="/blog/best-free-ai-humanizer-2026" element={<BestFreeAIHumanizer2026 />} />
+              
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>

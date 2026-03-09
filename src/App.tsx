@@ -156,6 +156,9 @@ const WordtuneComparison = lazy(() => import("./pages/blog/WordtuneComparison"))
 const AIPressReleases = lazy(() => import("./pages/blog/AIPressReleases"));
 const ChatGPTPlusDetection = lazy(() => import("./pages/blog/ChatGPTPlusDetection"));
 const AIMedicalScientificWriting = lazy(() => import("./pages/blog/AIMedicalScientificWriting"));
+const DoesTurnitinDetectChatGPT = lazy(() => import("./pages/blog/DoesTurnitinDetectChatGPT"));
+const CheckMyEssayForAI = lazy(() => import("./pages/blog/CheckMyEssayForAI"));
+const BestFreeAIHumanizer2026 = lazy(() => import("./pages/blog/BestFreeAIHumanizer2026"));
 
 const queryClient = new QueryClient();
 
@@ -332,6 +335,10 @@ const App = () => (
               <Route path="/blog/originality-ai-review-pricing-bypass" element={<SEORedirect to="/blog/originality-ai-review-how-to-beat" />} />
               <Route path="/blog/paraphrasing-vs-humanizing-ai-text" element={<SEORedirect to="/blog/paraphrasing-vs-humanizing" />} />
               <Route path="/bypass-turnitin" element={<SEORedirect to="/bypass-turnitin-ai-detection" />} />
+              
+              <Route path="/blog/does-turnitin-detect-chatgpt" element={<DoesTurnitinDetectChatGPT />} />
+              <Route path="/blog/check-my-essay-for-ai" element={<CheckMyEssayForAI />} />
+              <Route path="/blog/best-free-ai-humanizer-2026" element={<BestFreeAIHumanizer2026 />} />
               
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />

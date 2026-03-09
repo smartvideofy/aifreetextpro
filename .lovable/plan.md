@@ -1,37 +1,51 @@
 
-## Plan: Add 3 High-Volume Blog Posts
 
-### Research: Keyword gaps not yet covered
+# Plan: Showcase API Capability on Marketing Pages
 
-Scanning all existing slugs, the following high-volume topics are missing:
+## What to build
 
-1. **"turnitin detect chat gpt"** / **"does turnitin detect chatgpt"** — ~12,000+ monthly searches. We have Turnitin pages for DeepSeek, Gemini, Perplexity — but NOT a direct "Does Turnitin Detect ChatGPT" page. This is the #1 gap.
+Three touchpoints to promote the new API across the marketing site, targeting developers and SaaS teams.
 
-2. **"ai writing detector free"** / **"check ai writing"** — high-volume informational query. Existing posts cover free detectors generally but not a dedicated "check my writing for AI" how-to guide targeting that exact search intent: **"Check My Essay for AI Before Submitting"**
+---
 
-3. **"ai humanizer free"** / **"free ai humanizer no sign up"** — we have `humanize-ai-text-free-no-signup` but NOT a dedicated landing-blog hybrid for **"Best Free AI Humanizer Tools [2026]"** (the 2025 version exists at a different slug). A fresh 2026 comparison post targeting this high-volume query.
+## 1. New Dedicated `/api` Landing Page
 
-### 3 Posts to Create
+A developer-focused marketing page (`src/pages/Api.tsx`) with:
 
-| # | Title | Slug | Target Keyword | Est. Volume |
-|---|-------|------|----------------|-------------|
-| 1 | Does Turnitin Detect ChatGPT? (2026 Real Test Results) | `/blog/does-turnitin-detect-chatgpt` | "does turnitin detect chatgpt" | ~12,000/mo |
-| 2 | Check My Essay for AI: 7 Free Tools Before You Submit | `/blog/check-my-essay-for-ai` | "check essay for ai" / "check my writing for ai" | ~6,500/mo |
-| 3 | Best Free AI Humanizer 2026: No Signup, No Limit | `/blog/best-free-ai-humanizer-2026` | "free ai humanizer" / "ai humanizer free" | ~8,000/mo |
+- **Hero section**: Headline like "Build with AI Free Text Pro API", subheadline about programmatic access to humanization and detection, CTA button to the API Developer Portal
+- **Code snippet showcase**: Tabbed code examples (cURL, Python, JavaScript) showing a simple `POST /api-humanize` request and response -- static/hardcoded, not live
+- **Key benefits cards**: Rate limits, 98% accuracy, simple REST interface, API key management
+- **Use cases for developers**: Content platforms, CMS plugins, writing tools, agency automation
+- **Pricing/tier reference**: Which plans include API access, link to `/pricing`
+- **FAQ section** (4-5 developer-focused FAQs) with JSON-LD schema
+- **CTA**: Link to `https://api.aifreetextpro.com/` (or wherever the portal lives)
 
-### Standards Applied to All 3
-- Full content-production standard: 1,500-2,500 words, KeyTakeaways, ReviewedBy, RelatedArticles, InternalLinks, FAQSection
-- Dr. Sarah Chen authorship with Article schema + team anchor link
-- March 2026 datePublished/dateModified
-- Canonical, og:locale, twitter:site, bingbot, robots meta
-- Comparison tables for detection results
-- CTA to app.aifreetextpro.com (target="_blank" rel="noopener noreferrer")
+Full SEO treatment: Helmet meta tags, BreadcrumbList JSON-LD, SoftwareApplication schema. Route added to `App.tsx`, sitemap entry.
 
-### Files to Create
-- `src/pages/blog/DoesTurnitinDetectChatGPT.tsx`
-- `src/pages/blog/CheckMyEssayForAI.tsx`
-- `src/pages/blog/BestFreeAIHumanizer2026.tsx`
+## 2. Homepage API Section
 
-### Files to Update
-- `src/App.tsx` — 3 new lazy imports + 3 new routes
-- `src/pages/Blog.tsx` — 3 new entries in the `blogPosts` array (at the top, dated 2026-03-09)
+Add a new section on `Index.tsx` (between the Use Cases and Blog Links sections, around line 1150) with:
+
+- Headline: "Powerful API for Developers"
+- Short description (2-3 sentences) about programmatic access
+- A minimal code snippet preview (single cURL example in a dark code block)
+- CTA button: "Explore the API" linking to `/api`
+- Developer-oriented trust signals (e.g., "RESTful", "99.9% uptime", "Simple authentication")
+
+## 3. Navigation, Pricing, and Footer Updates
+
+- **Navbar**: Add "API" link under the Tools dropdown menu (with a separator + "For Developers" label)
+- **MobileNav**: Add corresponding API link
+- **Footer**: Add "API" link to the "Product" section in footer
+- **Pricing page**: Add an "API Access" feature line to Pro Writer and Unlimited Creator plans (the tiers that include API access), with a note like "API access included" or "REST API"
+- **Sitemap**: Add `/api` URL entry
+
+---
+
+## Technical Notes
+
+- The `/api` page follows the same component pattern as other marketing pages: `Navbar`, `Footer`, `Breadcrumbs`, `Helmet`, `Card` components
+- All CTAs point to the external API portal URL (to be confirmed -- likely `https://api.aifreetextpro.com/` or `https://app.aifreetextpro.com/api`)
+- Code snippets are static JSX with syntax-highlighted `<pre>` blocks styled with Tailwind (monospace, dark background, rounded corners)
+- No backend changes needed -- this is purely marketing content
+

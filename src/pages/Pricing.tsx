@@ -340,7 +340,7 @@ const Pricing = () => {
               <div className="space-y-6">
                 <Card className="p-6">
                   <h3 className="font-semibold mb-2">Can I change plans anytime?</h3>
-                  <p className="text-muted-foreground text-sm">Yes! You can upgrade, downgrade, or cancel your subscription at any time. Changes take effect at the start of your next billing cycle.</p>
+                  <p className="text-muted-foreground text-sm">Yes! You can upgrade, downgrade, or cancel your subscription at any time. To cancel, go to Settings, then Manage Subscription, and select Cancel Subscription. Changes take effect at the start of your next billing cycle.</p>
                 </Card>
                 <Card className="p-6">
                   <h3 className="font-semibold mb-2">What happens if I exceed my word limit?</h3>

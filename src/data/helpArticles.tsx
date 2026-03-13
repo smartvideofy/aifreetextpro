@@ -1231,83 +1231,49 @@ export const articleContent: Record<string, Record<string, { title: string; cont
       title: "Refund Policy & Cancellations",
       content: (
         <div className="prose prose-invert max-w-none">
-          <p className="lead">We want you to be completely satisfied with AI Free Text Pro. Our refund policy is designed to be fair, simple, and customer-friendly.</p>
+          <p className="lead">This page outlines the refund and cancellation policies for AI Free Text Pro subscriptions.</p>
           
-          <h2>7-Day Money-Back Guarantee</h2>
-          <p>All new Pro subscriptions come with our no-questions-asked 7-day money-back guarantee:</p>
+          <h2>Refund Policy</h2>
+          <p>Refunds are generally not provided. In exceptional circumstances, refunds may be issued at the sole discretion of AI Free Text Pro after an internal review of your specific situation.</p>
+          
+          <h3>When a Refund May Be Considered</h3>
           <ul>
-            <li>If you're not satisfied within 7 days of your <strong>first</strong> payment, you can request a full refund</li>
-            <li>No reasons required – simply email us and we'll process your refund</li>
-            <li>Applies to both monthly and annual subscriptions</li>
-            <li>Refunds are processed within 5-10 business days</li>
+            <li>Billing errors or duplicate charges</li>
+            <li>Technical issues that completely prevented access to the service</li>
+            <li>Other exceptional circumstances as determined by our team</li>
           </ul>
           
-          <div className="bg-muted/50 border border-border rounded-lg p-4 my-4">
-            <p className="text-sm m-0"><strong>Important:</strong> The 7-day guarantee applies only to your first payment. Subsequent billing periods are not eligible for refunds under this guarantee.</p>
-          </div>
-          
-          <h2>How to Request a Refund</h2>
-          
-          <h3>Step 1: Send an Email</h3>
-          <p>Contact us at <strong>support@aifreetextpro.com</strong> with:</p>
+          <h3>When Refunds Are Not Provided</h3>
           <ul>
-            <li>Subject line: "Refund Request"</li>
+            <li>Change of mind</li>
+            <li>Failure to use the service</li>
+            <li>Violations of our Terms of Service</li>
+          </ul>
+          
+          <h3>How to Request a Review</h3>
+          <p>If you believe you have an exceptional circumstance, contact us at <strong>support@aifreetextpro.com</strong> with:</p>
+          <ul>
             <li>Your account email address</li>
-            <li>Brief reason for the refund (optional, helps us improve)</li>
+            <li>A description of the issue you experienced</li>
           </ul>
+          <p>Our team will review your case and respond within 24 hours on business days.</p>
           
-          <h3>Step 2: Confirmation</h3>
-          <p>You'll receive a confirmation email within 24 hours acknowledging your refund request.</p>
+          <h2>How to Cancel Your Subscription</h2>
+          <p>You can cancel your subscription at any time by following these steps:</p>
+          <ol>
+            <li>Go to <strong>Settings</strong></li>
+            <li>Click <strong>Manage Subscription</strong></li>
+            <li>Select <strong>Cancel Subscription</strong></li>
+            <li>Confirm your cancellation</li>
+          </ol>
           
-          <h3>Step 3: Refund Processing</h3>
-          <p>Your refund will be processed to your original payment method:</p>
-          <ul>
-            <li><strong>Credit/Debit Cards:</strong> 5-10 business days</li>
-            <li><strong>PayPal:</strong> 3-5 business days</li>
-          </ul>
-          
-          <h3>Step 4: Account Status</h3>
-          <p>After the refund is processed:</p>
-          <ul>
-            <li>Your account will revert to the Free plan</li>
-            <li>You'll keep your account and history</li>
-            <li>You can re-subscribe anytime in the future</li>
-          </ul>
-          
-          <h2>Cancellation Policy</h2>
-          
-          <h3>How Cancellation Works</h3>
-          <p>When you cancel your Pro subscription:</p>
+          <h3>What Happens After Cancellation</h3>
           <ul>
             <li>You will <strong>not</strong> be charged again</li>
-            <li>You keep Pro access until the end of your current billing period</li>
-            <li>On the last day of your period, you'll automatically move to the Free plan</li>
-            <li>No refund is issued for the remaining time (use it!)</li>
-          </ul>
-          
-          <h3>Canceling Monthly Subscriptions</h3>
-          <p>Example: If you pay on the 15th and cancel on the 20th, you keep Pro access until the 14th of the next month.</p>
-          
-          <h3>Canceling Annual Subscriptions</h3>
-          <p>Example: If your annual renewal is January 15, 2026 and you cancel on March 3, 2026, you keep Pro access until January 14, 2027.</p>
-          
-          <h2>Refunds Beyond 7 Days</h2>
-          <p>While our guarantee covers the first 7 days, we review all refund requests on a case-by-case basis:</p>
-          
-          <h3>Situations Where We May Offer Refunds:</h3>
-          <ul>
-            <li>Technical issues that prevented you from using the service</li>
-            <li>Billing errors or duplicate charges</li>
-            <li>Service outages during a significant portion of your billing period</li>
-            <li>Special circumstances (contact us to discuss)</li>
-          </ul>
-          
-          <h3>Situations Where Refunds Are Not Offered:</h3>
-          <ul>
-            <li>Change of mind after the 7-day window</li>
-            <li>Failure to use the service (we can't refund for unused access)</li>
-            <li>Violations of our Terms of Service</li>
-            <li>Requests made more than 30 days after the charge</li>
+            <li>You keep access to paid features until the end of your current billing period</li>
+            <li>After your billing period ends, your account reverts to the Free plan</li>
+            <li>Your account and history are preserved</li>
+            <li>You can re-subscribe at any time</li>
           </ul>
           
           <h2>Disputed Charges</h2>
@@ -1315,20 +1281,16 @@ export const articleContent: Record<string, Record<string, { title: string; cont
           <ul>
             <li>We can often resolve issues faster than a formal dispute</li>
             <li>Chargebacks may result in account suspension</li>
-            <li>We're committed to fair resolution of all billing concerns</li>
+            <li>We are committed to fair resolution of all billing concerns</li>
           </ul>
           
           <h2>Contact Information</h2>
-          <p>For refund requests or billing questions:</p>
+          <p>For billing questions or to discuss your account:</p>
           <ul>
             <li><strong>Email:</strong> support@aifreetextpro.com</li>
             <li><strong>Contact Form:</strong> <a href="/contact" className="text-primary hover:underline">aifreetextpro.com/contact</a></li>
-            <li><strong>Response Time:</strong> Within 24 hours</li>
+            <li><strong>Response Time:</strong> Within 24 hours on business days</li>
           </ul>
-          
-          <div className="bg-primary/10 border border-primary/20 rounded-lg p-4 mt-6">
-            <p className="text-sm m-0"><strong>💡 Before Canceling:</strong> If you're unhappy with the service, let us know why! We may be able to help resolve your concerns or offer solutions you hadn't considered.</p>
-          </div>
         </div>
       )
     }

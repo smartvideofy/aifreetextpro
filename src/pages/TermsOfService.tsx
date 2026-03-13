@@ -130,6 +130,13 @@ const TermsOfService = () => {
             </section>
 
             <section>
+              <h2 className="text-2xl font-semibold mb-4 text-foreground">Refunds</h2>
+              <p className="text-muted-foreground leading-relaxed">
+                Refunds are generally not provided. In exceptional circumstances, refunds may be issued at the sole discretion of AI Free Text Pro after an internal review. If you believe you have a valid concern, please contact our support team at support@aifreetextpro.com. To cancel your subscription, go to Settings, then Manage Subscription, and select Cancel Subscription.
+              </p>
+            </section>
+
+            <section>
               <h2 className="text-2xl font-semibold mb-4 text-foreground">Governing Law</h2>
               <p className="text-muted-foreground leading-relaxed">
                 These Terms shall be governed by and construed in accordance with applicable laws, without regard to conflict of law provisions.

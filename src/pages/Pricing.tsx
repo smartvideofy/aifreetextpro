@@ -348,7 +348,7 @@ const Pricing = () => {
                 </Card>
                 <Card className="p-6">
                   <h3 className="font-semibold mb-2">Do you offer refunds?</h3>
-                  <p className="text-muted-foreground text-sm">Yes! We offer a 100% money-back guarantee. If our humanizer is flagged by any AI detector, we'll refund you - no questions asked.</p>
+                  <p className="text-muted-foreground text-sm">Refunds are generally not provided. In exceptional circumstances, refunds may be considered at our discretion after review. You can cancel your subscription anytime from Settings &gt; Manage Subscription &gt; Cancel Subscription.</p>
                 </Card>
                 <Card className="p-6">
                   <h3 className="font-semibold mb-2">What payment methods do you accept?</h3>

@@ -159,6 +159,9 @@ const AIMedicalScientificWriting = lazy(() => import("./pages/blog/AIMedicalScie
 const DoesTurnitinDetectChatGPT = lazy(() => import("./pages/blog/DoesTurnitinDetectChatGPT"));
 const CheckMyEssayForAI = lazy(() => import("./pages/blog/CheckMyEssayForAI"));
 const BestFreeAIHumanizer2026 = lazy(() => import("./pages/blog/BestFreeAIHumanizer2026"));
+const AILegalWriting = lazy(() => import("./pages/blog/AILegalWriting"));
+const TurnitinVsGPTZeroVsOriginalityAI = lazy(() => import("./pages/blog/TurnitinVsGPTZeroVsOriginalityAI"));
+const AITwitterThreadGenerator = lazy(() => import("./pages/blog/AITwitterThreadGenerator"));
 
 const queryClient = new QueryClient();
 

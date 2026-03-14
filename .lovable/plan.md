@@ -1,51 +1,44 @@
 
 
-# Plan: Showcase API Capability on Marketing Pages
+## Plan: Add 3 High-Impact Blog Posts
 
-## What to build
+### Gap Analysis
+From the 100 existing posts, these keyword clusters are untapped:
+- **Legal/law writing** -- zero coverage, high-value professional audience
+- **3-way detector comparison** -- individual detector posts exist but no unified comparison intercepting all 3 branded searches simultaneously
+- **Twitter/X content** -- Instagram, LinkedIn, YouTube covered; Twitter/X is missing
 
-Three touchpoints to promote the new API across the marketing site, targeting developers and SaaS teams.
+### 3 New Posts
 
----
+**1. `ai-legal-writing-law-school.tsx`** -- "AI for Legal Writing & Law School Essays (2026)"
+- Category: Professional
+- Targets: "AI legal writing," "AI for law school," "AI brief writing"
+- Content: Legal memo/brief workflow, law school essay strategies, ethical considerations for bar prep, court filing implications, comparison of AI tools for legal research
+- ~2,000 words, 14 min read
 
-## 1. New Dedicated `/api` Landing Page
+**2. `turnitin-vs-gptzero-vs-originality-ai.tsx`** -- "Turnitin vs GPTZero vs Originality AI: Which Detector Is Best? (2026)"
+- Category: Comparison
+- Targets: "turnitin vs gptzero," "best AI detector 2026," "originality ai vs turnitin"
+- Content: Side-by-side accuracy table across 5 AI models, false positive rates, pricing comparison, use-case recommendations (teachers vs students vs publishers), verdict
+- ~2,200 words, 15 min read
 
-A developer-focused marketing page (`src/pages/Api.tsx`) with:
+**3. `ai-twitter-thread-generator.tsx`** -- "AI Twitter Thread Generator That Sounds Human (2026)"
+- Category: Social Media
+- Targets: "AI Twitter thread generator," "AI for X posts," "AI tweets that sound human"
+- Content: Thread structure templates, prompt engineering for X, humanization workflow, engagement metrics comparison (AI vs humanized), platform-specific tone guide
+- ~1,800 words, 12 min read
 
-- **Hero section**: Headline like "Build with AI Free Text Pro API", subheadline about programmatic access to humanization and detection, CTA button to the API Developer Portal
-- **Code snippet showcase**: Tabbed code examples (cURL, Python, JavaScript) showing a simple `POST /api-humanize` request and response -- static/hardcoded, not live
-- **Key benefits cards**: Rate limits, 98% accuracy, simple REST interface, API key management
-- **Use cases for developers**: Content platforms, CMS plugins, writing tools, agency automation
-- **Pricing/tier reference**: Which plans include API access, link to `/pricing`
-- **FAQ section** (4-5 developer-focused FAQs) with JSON-LD schema
-- **CTA**: Link to `https://api.aifreetextpro.com/` (or wherever the portal lives)
+### Files to Create/Update
 
-Full SEO treatment: Helmet meta tags, BreadcrumbList JSON-LD, SoftwareApplication schema. Route added to `App.tsx`, sitemap entry.
+**Create** (3 files):
+- `src/pages/blog/AILegalWriting.tsx`
+- `src/pages/blog/TurnitinVsGPTZeroVsOriginalityAI.tsx`
+- `src/pages/blog/AITwitterThreadGenerator.tsx`
 
-## 2. Homepage API Section
+Each follows the standard template: Helmet with full SEO meta, Article + BreadcrumbList + FAQPage schema, ReviewedBy (Dr. Sarah Chen), KeyTakeaways, FAQSection (4 questions), RelatedArticles (4 links), InternalLinks, CTA to app.aifreetextpro.com.
 
-Add a new section on `Index.tsx` (between the Use Cases and Blog Links sections, around line 1150) with:
-
-- Headline: "Powerful API for Developers"
-- Short description (2-3 sentences) about programmatic access
-- A minimal code snippet preview (single cURL example in a dark code block)
-- CTA button: "Explore the API" linking to `/api`
-- Developer-oriented trust signals (e.g., "RESTful", "99.9% uptime", "Simple authentication")
-
-## 3. Navigation, Pricing, and Footer Updates
-
-- **Navbar**: Add "API" link under the Tools dropdown menu (with a separator + "For Developers" label)
-- **MobileNav**: Add corresponding API link
-- **Footer**: Add "API" link to the "Product" section in footer
-- **Pricing page**: Add an "API Access" feature line to Pro Writer and Unlimited Creator plans (the tiers that include API access), with a note like "API access included" or "REST API"
-- **Sitemap**: Add `/api` URL entry
-
----
-
-## Technical Notes
-
-- The `/api` page follows the same component pattern as other marketing pages: `Navbar`, `Footer`, `Breadcrumbs`, `Helmet`, `Card` components
-- All CTAs point to the external API portal URL (to be confirmed -- likely `https://api.aifreetextpro.com/` or `https://app.aifreetextpro.com/api`)
-- Code snippets are static JSX with syntax-highlighted `<pre>` blocks styled with Tailwind (monospace, dark background, rounded corners)
-- No backend changes needed -- this is purely marketing content
+**Update** (3 files):
+- `src/App.tsx` -- Add 3 lazy imports and 3 routes
+- `src/pages/Blog.tsx` -- Add 3 entries to `blogPosts` array
+- `public/sitemap.xml` -- Add 3 new URLs with lastmod 2026-03-09
 

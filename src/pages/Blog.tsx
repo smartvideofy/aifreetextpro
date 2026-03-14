@@ -48,6 +48,30 @@ const categoryThumbnails: Record<string, string> = {
 
 const blogPosts = [
   {
+    slug: "ai-legal-writing-law-school",
+    title: "AI for Legal Writing & Law School Essays (2026)",
+    excerpt: "Complete guide to using AI for legal memos, briefs, and law school essays. Ethical frameworks, detection avoidance, and workflow templates for legal professionals.",
+    date: "2026-03-09",
+    readTime: "14 min read",
+    category: "Professional"
+  },
+  {
+    slug: "turnitin-vs-gptzero-vs-originality-ai",
+    title: "Turnitin vs GPTZero vs Originality AI: Which Detector Is Best? (2026)",
+    excerpt: "Side-by-side comparison of the three biggest AI detectors across 500+ samples. Accuracy rates, false positives, pricing, and use-case recommendations.",
+    date: "2026-03-09",
+    readTime: "15 min read",
+    category: "Comparison"
+  },
+  {
+    slug: "ai-twitter-thread-generator",
+    title: "AI Twitter Thread Generator That Sounds Human (2026)",
+    excerpt: "Create viral X/Twitter threads using AI without sounding like a bot. Thread templates, prompt engineering, and humanization workflows for creators.",
+    date: "2026-03-09",
+    readTime: "12 min read",
+    category: "Social Media"
+  },
+  {
     slug: "does-turnitin-detect-chatgpt",
     title: "Does Turnitin Detect ChatGPT? (2026 Real Test Results)",
     excerpt: "We submitted 150+ ChatGPT documents to Turnitin. Real detection rates by model (GPT-4o, GPT-4, GPT-3.5), content type, and editing level.",

@@ -342,6 +342,9 @@ const App = () => (
               <Route path="/blog/does-turnitin-detect-chatgpt" element={<DoesTurnitinDetectChatGPT />} />
               <Route path="/blog/check-my-essay-for-ai" element={<CheckMyEssayForAI />} />
               <Route path="/blog/best-free-ai-humanizer-2026" element={<BestFreeAIHumanizer2026 />} />
+              <Route path="/blog/ai-legal-writing-law-school" element={<AILegalWriting />} />
+              <Route path="/blog/turnitin-vs-gptzero-vs-originality-ai" element={<TurnitinVsGPTZeroVsOriginalityAI />} />
+              <Route path="/blog/ai-twitter-thread-generator" element={<AITwitterThreadGenerator />} />
               
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />

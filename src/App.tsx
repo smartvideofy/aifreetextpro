@@ -162,6 +162,9 @@ const BestFreeAIHumanizer2026 = lazy(() => import("./pages/blog/BestFreeAIHumani
 const AILegalWriting = lazy(() => import("./pages/blog/AILegalWriting"));
 const TurnitinVsGPTZeroVsOriginalityAI = lazy(() => import("./pages/blog/TurnitinVsGPTZeroVsOriginalityAI"));
 const AITwitterThreadGenerator = lazy(() => import("./pages/blog/AITwitterThreadGenerator"));
+const AIWritingNursingHealthcare = lazy(() => import("./pages/blog/AIWritingNursingHealthcare"));
+const AIContentGoogleAIOverviews = lazy(() => import("./pages/blog/AIContentGoogleAIOverviews"));
+const AIWritingUpworkFiverr = lazy(() => import("./pages/blog/AIWritingUpworkFiverr"));
 
 const queryClient = new QueryClient();
 

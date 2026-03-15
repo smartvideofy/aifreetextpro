@@ -1,51 +1,44 @@
 
 
-# Plan: Showcase API Capability on Marketing Pages
+## Plan: Add 3 High-Impact Blog Posts
 
-## What to build
+### Gap Analysis
+From 100+ existing posts, these high-value clusters have zero coverage:
+- **Healthcare/nursing students** -- massive academic audience, no post targeting medical/nursing school AI usage
+- **Google AI Overviews optimization** -- the hottest SEO topic in 2026, no dedicated post
+- **Upwork/Fiverr freelancers** -- high commercial intent audience; existing freelancer post is generic, nothing targeting platform-specific workflows
 
-Three touchpoints to promote the new API across the marketing site, targeting developers and SaaS teams.
+### 3 New Posts
 
----
+**1. `ai-writing-nursing-healthcare-students.tsx`** -- "AI Writing for Nursing & Healthcare Students (2026)"
+- Category: Academic
+- Targets: "AI for nursing students," "AI writing healthcare," "nursing essay AI"
+- Content: Care plan generation, clinical reflection writing, SOAP notes, pharmacology essays, nursing school AI policies, detection risks in clinical programs
+- ~2,000 words, 14 min read
 
-## 1. New Dedicated `/api` Landing Page
+**2. `ai-content-google-ai-overviews.tsx`** -- "How to Get Your AI Content Into Google AI Overviews (2026)"
+- Category: SEO
+- Targets: "Google AI overviews optimization," "AI content featured snippets," "AI overviews SEO 2026"
+- Content: How AI Overviews select sources, content structure for citation eligibility, humanization for E-E-A-T signals, KeyTakeaways boxes as extraction targets, case study with traffic data
+- ~2,000 words, 13 min read
 
-A developer-focused marketing page (`src/pages/Api.tsx`) with:
+**3. `ai-writing-upwork-fiverr-freelancers.tsx`** -- "AI Writing for Upwork & Fiverr Freelancers: Scale Without Getting Caught (2026)"
+- Category: Career
+- Targets: "AI writing Upwork," "AI for Fiverr freelancers," "freelance AI writing tools"
+- Content: Platform TOS on AI usage, client delivery workflows, AI detection by clients, pricing strategies when using AI, portfolio building, humanization for client-facing deliverables
+- ~1,800 words, 12 min read
 
-- **Hero section**: Headline like "Build with AI Free Text Pro API", subheadline about programmatic access to humanization and detection, CTA button to the API Developer Portal
-- **Code snippet showcase**: Tabbed code examples (cURL, Python, JavaScript) showing a simple `POST /api-humanize` request and response -- static/hardcoded, not live
-- **Key benefits cards**: Rate limits, 98% accuracy, simple REST interface, API key management
-- **Use cases for developers**: Content platforms, CMS plugins, writing tools, agency automation
-- **Pricing/tier reference**: Which plans include API access, link to `/pricing`
-- **FAQ section** (4-5 developer-focused FAQs) with JSON-LD schema
-- **CTA**: Link to `https://api.aifreetextpro.com/` (or wherever the portal lives)
+### Files to Create/Update
 
-Full SEO treatment: Helmet meta tags, BreadcrumbList JSON-LD, SoftwareApplication schema. Route added to `App.tsx`, sitemap entry.
+**Create** (3 files):
+- `src/pages/blog/AIWritingNursingHealthcare.tsx`
+- `src/pages/blog/AIContentGoogleAIOverviews.tsx`
+- `src/pages/blog/AIWritingUpworkFiverr.tsx`
 
-## 2. Homepage API Section
+Each follows the standard template: Helmet with full SEO meta, Article + BreadcrumbList + FAQPage schema, ReviewedBy (Dr. Sarah Chen), KeyTakeaways, FAQSection (4 questions), RelatedArticles (4 links), InternalLinks, CTA to app.aifreetextpro.com with target="_blank" rel="noopener noreferrer".
 
-Add a new section on `Index.tsx` (between the Use Cases and Blog Links sections, around line 1150) with:
-
-- Headline: "Powerful API for Developers"
-- Short description (2-3 sentences) about programmatic access
-- A minimal code snippet preview (single cURL example in a dark code block)
-- CTA button: "Explore the API" linking to `/api`
-- Developer-oriented trust signals (e.g., "RESTful", "99.9% uptime", "Simple authentication")
-
-## 3. Navigation, Pricing, and Footer Updates
-
-- **Navbar**: Add "API" link under the Tools dropdown menu (with a separator + "For Developers" label)
-- **MobileNav**: Add corresponding API link
-- **Footer**: Add "API" link to the "Product" section in footer
-- **Pricing page**: Add an "API Access" feature line to Pro Writer and Unlimited Creator plans (the tiers that include API access), with a note like "API access included" or "REST API"
-- **Sitemap**: Add `/api` URL entry
-
----
-
-## Technical Notes
-
-- The `/api` page follows the same component pattern as other marketing pages: `Navbar`, `Footer`, `Breadcrumbs`, `Helmet`, `Card` components
-- All CTAs point to the external API portal URL (to be confirmed -- likely `https://api.aifreetextpro.com/` or `https://app.aifreetextpro.com/api`)
-- Code snippets are static JSX with syntax-highlighted `<pre>` blocks styled with Tailwind (monospace, dark background, rounded corners)
-- No backend changes needed -- this is purely marketing content
+**Update** (3 files):
+- `src/App.tsx` -- Add 3 lazy imports and 3 routes
+- `src/pages/Blog.tsx` -- Add 3 entries to top of `blogPosts` array
+- `public/sitemap.xml` -- Add 3 new URLs with lastmod 2026-03-15
 

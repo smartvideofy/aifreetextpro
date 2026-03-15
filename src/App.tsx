@@ -162,6 +162,9 @@ const BestFreeAIHumanizer2026 = lazy(() => import("./pages/blog/BestFreeAIHumani
 const AILegalWriting = lazy(() => import("./pages/blog/AILegalWriting"));
 const TurnitinVsGPTZeroVsOriginalityAI = lazy(() => import("./pages/blog/TurnitinVsGPTZeroVsOriginalityAI"));
 const AITwitterThreadGenerator = lazy(() => import("./pages/blog/AITwitterThreadGenerator"));
+const AIWritingNursingHealthcare = lazy(() => import("./pages/blog/AIWritingNursingHealthcare"));
+const AIContentGoogleAIOverviews = lazy(() => import("./pages/blog/AIContentGoogleAIOverviews"));
+const AIWritingUpworkFiverr = lazy(() => import("./pages/blog/AIWritingUpworkFiverr"));
 
 const queryClient = new QueryClient();
 
@@ -345,6 +348,9 @@ const App = () => (
               <Route path="/blog/ai-legal-writing-law-school" element={<AILegalWriting />} />
               <Route path="/blog/turnitin-vs-gptzero-vs-originality-ai" element={<TurnitinVsGPTZeroVsOriginalityAI />} />
               <Route path="/blog/ai-twitter-thread-generator" element={<AITwitterThreadGenerator />} />
+              <Route path="/blog/ai-writing-nursing-healthcare-students" element={<AIWritingNursingHealthcare />} />
+              <Route path="/blog/ai-content-google-ai-overviews" element={<AIContentGoogleAIOverviews />} />
+              <Route path="/blog/ai-writing-upwork-fiverr-freelancers" element={<AIWritingUpworkFiverr />} />
               
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />

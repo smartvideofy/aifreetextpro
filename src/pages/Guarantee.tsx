@@ -36,8 +36,8 @@ const Guarantee = () => {
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="bingbot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-        <meta property="og:title" content="Satisfaction Guarantee - AI Free Text Pro" />
-        <meta property="og:description" content="We stand behind our AI humanization technology. Learn about our satisfaction guarantee and support options." />
+        <meta property="og:title" content="100% Money-Back Guarantee | AI Free Text Pro" />
+        <meta property="og:description" content="Flagged by AI detector? Full refund. No questions asked." />
         <meta property="og:url" content="https://aifreetextpro.com/guarantee" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" />

@@ -40,8 +40,8 @@ const PassAllDetectorsGuide = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <Helmet>
-        <title>Write Human-Like Content: Definitive Guide [2026]</title>
-        <meta name="description" content="Create natural content that reads authentically. Tested across GPTZero, Turnitin, Originality.AI, ZeroGPT, and Copyleaks with proven results." />
+        <title>Pass All AI Detectors: Step-by-Step Guide [2026]</title>
+        <meta name="description" content="Pass GPTZero, Turnitin, Originality.AI, ZeroGPT, and Copyleaks with one workflow. Step-by-step guide with tested results." />
         <meta name="keywords" content="humanize AI writing, improve AI content, natural AI writing, human-like AI content, AI writing guide 2026" />
         <link rel="canonical" href="https://aifreetextpro.com/blog/pass-all-ai-detectors-guide" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />

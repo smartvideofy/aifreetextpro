@@ -109,8 +109,8 @@ const Pricing = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <Helmet>
-        <title>Pricing - AI Humanizer From $0/mo | AI Free Text Pro</title>
-        <meta name="description" content="Start free with 1,000 words/month. Upgrade from $4.99/mo for advanced AI detection and humanization. 100% money-back guarantee on all paid plans." />
+        <title>AI Humanizer Pricing: Free Plan + Plans From $4.99</title>
+        <meta name="description" content="Start free with 1,000 words/month. Paid plans from $4.99/mo with unlimited AI detection. 100% money-back guarantee. Compare all plans." />
         <meta name="keywords" content="ai detector pricing, ai humanizer pricing, free ai detector, ai text humanizer cost, chatgpt detector price" />
         <link rel="canonical" href="https://aifreetextpro.com/pricing" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />

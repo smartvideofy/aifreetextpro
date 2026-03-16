@@ -47,7 +47,7 @@ const AIDetectionPatterns = () => {
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="bingbot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-        <meta property="og:title" content="5 Patterns AI Detectors Look For [2026 Guide]" />
+        <meta property="og:title" content="5 Patterns AI Detectors Flag [And How to Fix Them]" />
         <meta property="og:description" content="Understand the linguistic patterns that distinguish AI writing from human writing" />
         <meta property="og:url" content="https://aifreetextpro.com/blog/ai-detection-patterns-explained" />
         <meta property="og:type" content="article" />

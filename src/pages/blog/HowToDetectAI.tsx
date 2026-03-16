@@ -59,7 +59,7 @@ const relatedArticles = [
             <meta property="article:author" content="Dr. Sarah Chen" />
             <meta name="twitter:card" content="summary_large_image" />
             <meta name="twitter:site" content="@aifreetextpro" />
-            <meta name="twitter:title" content="How to Detect AI-Generated Text: Complete Guide" />
+            <meta name="twitter:title" content="How to Detect AI Text: 6 Signs + Free Tools [2026]" />
             <meta name="twitter:description" content="Expert techniques to detect AI-generated text with 98% accuracy." />
             <meta name="twitter:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" />
         

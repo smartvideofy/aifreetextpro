@@ -55,7 +55,7 @@ export default function ZeroGPTComparison() {
         <meta property="og:locale" content="en_US" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@aifreetextpro" />
-        <meta name="twitter:title" content="ZeroGPT vs AI Free Text Pro: Which Detects Better in 2025?" />
+        <meta name="twitter:title" content="ZeroGPT vs AI Free Text Pro: 500+ Samples Tested [2026]" />
         <meta name="twitter:description" content="Real-world tests comparing ZeroGPT and AI Free Text Pro accuracy." />
         <meta name="twitter:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" />
         

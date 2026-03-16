@@ -56,7 +56,7 @@ const AIDetectionPatterns = () => {
         <meta property="og:locale" content="en_US" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@aifreetextpro" />
-        <meta name="twitter:title" content="5 Patterns AI Detectors Look For [2026 Guide]" />
+        <meta name="twitter:title" content="5 Patterns AI Detectors Flag [And How to Fix Them]" />
         <meta name="twitter:description" content="Understand perplexity, burstiness, and linguistic patterns in AI detection." />
         <meta name="twitter:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" />
         

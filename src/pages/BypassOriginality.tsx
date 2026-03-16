@@ -37,7 +37,7 @@ const BypassOriginality = () => {
         <meta property="og:site_name" content="AI Free Text Pro" />
         <meta property="og:locale" content="en_US" />
         <meta property="article:published_time" content="2025-01-11T00:00:00Z" />
-        <meta property="article:modified_time" content="2026-02-02T00:00:00Z" />
+        <meta property="article:modified_time" content="2026-03-16T00:00:00Z" />
         <meta property="article:author" content="Dr. Emily Rodriguez" />
         
         {/* Twitter Card */}

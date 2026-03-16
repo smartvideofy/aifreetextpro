@@ -47,8 +47,8 @@ const PassAllDetectorsGuide = () => {
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="bingbot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-        <meta property="og:title" content="Write Human-Like Content: Definitive Guide [2026]" />
-        <meta property="og:description" content="How to create natural human-like content that reads authentically" />
+        <meta property="og:title" content="Pass All AI Detectors: Step-by-Step Guide [2026]" />
+        <meta property="og:description" content="Pass GPTZero, Turnitin, Originality.AI, ZeroGPT in one workflow." />
         <meta property="og:url" content="https://aifreetextpro.com/blog/pass-all-ai-detectors-guide" />
         <meta property="og:type" content="article" />
         <meta property="og:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" />

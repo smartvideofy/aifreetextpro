@@ -47,7 +47,7 @@ export default function HowAIDetectorsWork() {
         <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="bingbot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         
-        <meta property="og:title" content="How AI Detectors Work: Inside the Science" />
+        <meta property="og:title" content="How AI Detectors Work: Perplexity & Burstiness [2026]" />
         <meta property="og:description" content="Deep dive into the technology and algorithms powering AI detection tools." />
         <meta property="og:type" content="article" />
         <meta property="og:url" content="https://aifreetextpro.com/blog/how-ai-detectors-work" />

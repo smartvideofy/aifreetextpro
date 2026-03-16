@@ -69,8 +69,8 @@ const AIChecker = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <Helmet>
-        <title>Free AI Detector - Check Any Text, 98% Accurate</title>
-        <meta name="description" content="Detect AI-generated text instantly with 98% accuracy. Check against GPTZero, Turnitin, Originality.AI and 15+ detectors. Free, fast, private." />
+        <title>Free AI Detector: 98% Accurate, No Signup [2026]</title>
+        <meta name="description" content="Check any text against GPTZero, Turnitin, Originality.AI and 15+ detectors in one click. 98% accuracy, instant results, no signup." />
         <meta name="keywords" content="free ai detector, ai checker, ai detector unlimited words, free ai detector unlimited words, ai content detector, check ai text, detect ai writing, ai detection tool, free ai checker" />
         <link rel="canonical" href="https://aifreetextpro.com/ai-checker" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />

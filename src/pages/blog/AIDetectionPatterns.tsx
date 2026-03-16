@@ -40,14 +40,14 @@ const AIDetectionPatterns = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <Helmet>
-        <title>5 Patterns AI Detectors Look For [2026 Guide]</title>
-        <meta name="description" content="Perplexity, burstiness, and 3 more patterns AI detectors analyze. Understand what makes AI writing different from human writing and how to fix it." />
+        <title>5 Patterns AI Detectors Flag [And How to Fix Them]</title>
+        <meta name="description" content="Perplexity, burstiness, and 3 hidden patterns that get your text flagged. Learn exactly what AI detectors look for and how to fix each one." />
         <meta name="keywords" content="AI detection patterns, perplexity and burstiness explained, is my writing human or AI, AI linguistic patterns, how AI detectors work" />
         <link rel="canonical" href="https://aifreetextpro.com/blog/ai-detection-patterns-explained" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="bingbot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-        <meta property="og:title" content="5 Patterns AI Detectors Look For [2026 Guide]" />
+        <meta property="og:title" content="5 Patterns AI Detectors Flag [And How to Fix Them]" />
         <meta property="og:description" content="Understand the linguistic patterns that distinguish AI writing from human writing" />
         <meta property="og:url" content="https://aifreetextpro.com/blog/ai-detection-patterns-explained" />
         <meta property="og:type" content="article" />
@@ -56,7 +56,7 @@ const AIDetectionPatterns = () => {
         <meta property="og:locale" content="en_US" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@aifreetextpro" />
-        <meta name="twitter:title" content="5 Patterns AI Detectors Look For [2026 Guide]" />
+        <meta name="twitter:title" content="5 Patterns AI Detectors Flag [And How to Fix Them]" />
         <meta name="twitter:description" content="Understand perplexity, burstiness, and linguistic patterns in AI detection." />
         <meta name="twitter:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" />
         

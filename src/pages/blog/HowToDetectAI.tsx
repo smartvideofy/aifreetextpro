@@ -40,15 +40,15 @@ const relatedArticles = [
   return (
     <div className="min-h-screen flex flex-col">
       <Helmet>
-        <title>How to Detect AI Text: Expert Guide (2026)</title>
-        <meta name="description" content="Spot AI-generated content with 98% accuracy. Learn key linguistic patterns, detection tools, and expert strategies for identifying ChatGPT and GPT-5 writing." />
+        <title>How to Detect AI Text: 6 Signs + Free Tools [2026]</title>
+        <meta name="description" content="Spot AI writing instantly with 6 telltale signs and free detection tools. Expert strategies for identifying ChatGPT, GPT-5, and Claude content." />
         <meta name="keywords" content="detect ai text, identify ai writing, chatgpt detection, ai generated content, spot ai writing, ai detection methods, gpt detector" />
         <link rel="canonical" href="https://aifreetextpro.com/blog/how-to-detect-ai-generated-text" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="bingbot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-        <meta property="og:title" content="How to Detect AI-Generated Text: Complete Guide 2026" />
+        <meta property="og:title" content="How to Detect AI Text: 6 Signs + Free Tools [2026]" />
         <meta property="og:description" content="Learn expert techniques to detect AI-generated text with 98% accuracy." />
         <meta property="og:url" content="https://aifreetextpro.com/blog/how-to-detect-ai-generated-text" />
         <meta property="og:type" content="article" />
@@ -59,7 +59,7 @@ const relatedArticles = [
             <meta property="article:author" content="Dr. Sarah Chen" />
             <meta name="twitter:card" content="summary_large_image" />
             <meta name="twitter:site" content="@aifreetextpro" />
-            <meta name="twitter:title" content="How to Detect AI-Generated Text: Complete Guide" />
+            <meta name="twitter:title" content="How to Detect AI Text: 6 Signs + Free Tools [2026]" />
             <meta name="twitter:description" content="Expert techniques to detect AI-generated text with 98% accuracy." />
             <meta name="twitter:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" />
         

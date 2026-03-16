@@ -41,14 +41,14 @@ const relatedArticles = [
   return (
     <div className="min-h-screen flex flex-col">
       <Helmet>
-        <title>5 Best Free AI Humanizer Tools (2026 Tested)</title>
-        <meta name="description" content="We tested 5 free AI humanizers head-to-head. Compare accuracy, speed, and bypass rates to find the best tool for your writing needs." />
+        <title>Best Free AI Humanizer Tools (2025) - See 2026 Update</title>
+        <meta name="description" content="This 2025 comparison is outdated. See our updated 2026 list with new tools, fresh test results, and better recommendations." />
         <meta name="keywords" content="best ai humanizer 2026, free humanizer tools, ai to human text, humanize ai writing, top ai humanizers, ai text converter, undetectable ai, bypass ai detection, ai content transformer, natural ai writing tools" />
         <link rel="canonical" href="https://aifreetextpro.com/blog/best-free-ai-humanizer-tools-2025" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-        <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-        <meta name="bingbot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        <meta name="robots" content="noindex, follow" />
+        <meta name="googlebot" content="noindex, follow" />
+        <meta name="bingbot" content="noindex, follow" />
         <meta property="og:title" content="Best Free AI Humanizer Tools in 2026 - Complete Comparison" />
         <meta property="og:description" content="Compare the top 5 free AI humanizer tools and find the best one for your needs." />
         <meta property="og:url" content="https://aifreetextpro.com/blog/best-free-ai-humanizer-tools-2025" />
@@ -171,10 +171,19 @@ const relatedArticles = [
       
       <article className="flex-1 py-12 md:py-20">
         <div className="container mx-auto px-4 max-w-4xl">
+          {/* Redirect banner to 2026 version */}
+          <div className="mb-8 p-4 rounded-lg bg-primary/10 border border-primary/20">
+            <p className="text-sm font-medium text-foreground">
+              This article is from 2025 and may be outdated.{" "}
+              <Link to="/blog/best-free-ai-humanizer-2026" className="text-primary font-bold underline hover:no-underline">
+                Read the updated 2026 comparison &rarr;
+              </Link>
+            </p>
+          </div>
           <Breadcrumbs items={[
             { label: 'Home', href: '/' },
             { label: 'Blog', href: '/blog' },
-            { label: 'Best AI Humanizers 2026' }
+            { label: 'Best AI Humanizers 2025' }
           ]} />
           <Link to="/blog">
             <Button variant="ghost" className="mb-8">

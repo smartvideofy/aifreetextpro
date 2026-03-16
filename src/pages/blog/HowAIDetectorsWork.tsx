@@ -39,15 +39,15 @@ export default function HowAIDetectorsWork() {
   return (
     <>
       <Helmet>
-        <title>How AI Detectors Work: The Science Explained</title>
-        <meta name="description" content="Understand perplexity, burstiness, and the ML models powering AI detection. Learn how to write authentically human content." />
+        <title>How AI Detectors Work: Perplexity & Burstiness [2026]</title>
+        <meta name="description" content="Understand exactly how perplexity, burstiness, and ML models power AI detection. Learn the science to write authentically human content." />
         <meta name="keywords" content="how ai detectors work, ai content analysis, gpt detection algorithm, ai detection science, perplexity detection, burstiness analysis, ai text patterns, machine learning detection, ai writing markers 2026" />
         <link rel="canonical" href="https://aifreetextpro.com/blog/how-ai-detectors-work" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="bingbot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         
-        <meta property="og:title" content="How AI Detectors Work: Inside the Science" />
+        <meta property="og:title" content="How AI Detectors Work: Perplexity & Burstiness [2026]" />
         <meta property="og:description" content="Deep dive into the technology and algorithms powering AI detection tools." />
         <meta property="og:type" content="article" />
         <meta property="og:url" content="https://aifreetextpro.com/blog/how-ai-detectors-work" />
@@ -56,7 +56,7 @@ export default function HowAIDetectorsWork() {
         <meta property="og:locale" content="en_US" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@aifreetextpro" />
-        <meta name="twitter:title" content="How AI Detectors Work: Inside the Science" />
+        <meta name="twitter:title" content="How AI Detectors Work: Perplexity & Burstiness [2026]" />
         <meta name="twitter:description" content="Deep dive into the technology and algorithms powering AI detection tools." />
         <meta name="twitter:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" />
         

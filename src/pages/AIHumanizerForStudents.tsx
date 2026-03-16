@@ -118,14 +118,14 @@ const AIHumanizerForStudents = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <Helmet>
-        <title>AI Humanizer for Students - Pass Turnitin 97%</title>
-        <meta name="description" content="Transform AI essays to human writing in seconds. 97% Turnitin bypass rate. Academic mode preserves citations. Free tier for students. 25,000+ users." />
+        <title>AI Humanizer for Students: Pass Turnitin 97% [2026]</title>
+        <meta name="description" content="Transform AI essays to human writing in 3 seconds. 97% Turnitin bypass rate. Academic mode preserves citations. Free for students. 25,000+ users trust us." />
         <meta name="keywords" content="ai humanizer for students, bypass turnitin, student ai writing tool, academic ai humanizer, pass turnitin ai detection" />
         <link rel="canonical" href="https://aifreetextpro.com/ai-humanizer-for-students" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-        <meta property="og:title" content="AI Humanizer for Students [Dec 2025] - Pass Turnitin 97%" />
-        <meta property="og:description" content="97% bypass rate on Turnitin. Transform AI essays to human writing. Academic mode. PDF upload. 25,000+ students." />
+        <meta property="og:title" content="AI Humanizer for Students: Pass Turnitin 97% [Mar 2026]" />
+        <meta property="og:description" content="97% Turnitin bypass. Transform AI essays to human writing in seconds. Free for students." />
         <meta property="og:url" content="https://aifreetextpro.com/ai-humanizer-for-students" />
         <script type="application/ld+json">
           {JSON.stringify({

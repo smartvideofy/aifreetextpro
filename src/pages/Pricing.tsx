@@ -116,8 +116,8 @@ const Pricing = () => {
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="bingbot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-        <meta property="og:title" content="Pricing - AI Humanizer From $0/mo" />
-        <meta property="og:description" content="Start free with 1,000 words/month. Upgrade from $4.99/mo. 100% money-back guarantee." />
+        <meta property="og:title" content="AI Humanizer Pricing: Free Plan + Plans From $4.99" />
+        <meta property="og:description" content="Free plan with 1,000 words/month. Paid from $4.99. Money-back guarantee." />
         <meta property="og:url" content="https://aifreetextpro.com/pricing" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" />

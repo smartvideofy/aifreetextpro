@@ -48,7 +48,7 @@ const relatedArticles = [
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="bingbot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-        <meta property="og:title" content="How to Detect AI-Generated Text: Complete Guide 2026" />
+        <meta property="og:title" content="How to Detect AI Text: 6 Signs + Free Tools [2026]" />
         <meta property="og:description" content="Learn expert techniques to detect AI-generated text with 98% accuracy." />
         <meta property="og:url" content="https://aifreetextpro.com/blog/how-to-detect-ai-generated-text" />
         <meta property="og:type" content="article" />

@@ -27,8 +27,8 @@ const Contact = () => {
         <meta property="og:site_name" content="AI Free Text Pro" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@aifreetextpro" />
-        <meta name="twitter:title" content="Contact Us - AI Free Text Pro Support" />
-        <meta name="twitter:description" content="Get help with AI detection and humanization. We respond within 24 hours." />
+        <meta name="twitter:title" content="Contact Us - AI Free Text Pro | 24h Response" />
+        <meta name="twitter:description" content="Need help? Our team responds within 24 hours. Email, FAQs, and troubleshooting." />
         <meta name="twitter:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" />
         
         {/* FAQ Schema */}

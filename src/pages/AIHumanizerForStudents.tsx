@@ -124,8 +124,8 @@ const AIHumanizerForStudents = () => {
         <link rel="canonical" href="https://aifreetextpro.com/ai-humanizer-for-students" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-        <meta property="og:title" content="AI Humanizer for Students [Dec 2025] - Pass Turnitin 97%" />
-        <meta property="og:description" content="97% bypass rate on Turnitin. Transform AI essays to human writing. Academic mode. PDF upload. 25,000+ students." />
+        <meta property="og:title" content="AI Humanizer for Students: Pass Turnitin 97% [Mar 2026]" />
+        <meta property="og:description" content="97% Turnitin bypass. Transform AI essays to human writing in seconds. Free for students." />
         <meta property="og:url" content="https://aifreetextpro.com/ai-humanizer-for-students" />
         <script type="application/ld+json">
           {JSON.stringify({

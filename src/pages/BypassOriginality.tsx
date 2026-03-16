@@ -43,8 +43,8 @@ const BypassOriginality = () => {
         {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@aifreetextpro" />
-        <meta name="twitter:title" content="Bypass Originality.AI [97.5% Success Rate]" />
-        <meta name="twitter:description" content="Beat Originality.AI detection in seconds. Free tool makes AI content undetectable." />
+        <meta name="twitter:title" content="Bypass Originality.AI: 97.5% Pass Rate [Mar 2026]" />
+        <meta name="twitter:description" content="Beat Originality.AI in seconds. 97.5% success rate. Free tool, no signup." />
         <meta name="twitter:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" />
         
         {/* BreadcrumbList Schema */}

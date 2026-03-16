@@ -56,8 +56,8 @@ const PassAllDetectorsGuide = () => {
         <meta property="og:locale" content="en_US" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@aifreetextpro" />
-        <meta name="twitter:title" content="Write Human-Like Content: Definitive Guide [2026]" />
-        <meta name="twitter:description" content="How to create natural human-like content that reads authentically." />
+        <meta name="twitter:title" content="Pass All AI Detectors: Step-by-Step Guide [2026]" />
+        <meta name="twitter:description" content="Pass GPTZero, Turnitin, Originality.AI, ZeroGPT in one workflow." />
         <meta name="twitter:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" />
         
         <script type="application/ld+json">

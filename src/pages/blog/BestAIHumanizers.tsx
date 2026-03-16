@@ -46,9 +46,9 @@ const relatedArticles = [
         <meta name="keywords" content="best ai humanizer 2026, free humanizer tools, ai to human text, humanize ai writing, top ai humanizers, ai text converter, undetectable ai, bypass ai detection, ai content transformer, natural ai writing tools" />
         <link rel="canonical" href="https://aifreetextpro.com/blog/best-free-ai-humanizer-tools-2025" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-        <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-        <meta name="bingbot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        <meta name="robots" content="noindex, follow" />
+        <meta name="googlebot" content="noindex, follow" />
+        <meta name="bingbot" content="noindex, follow" />
         <meta property="og:title" content="Best Free AI Humanizer Tools in 2026 - Complete Comparison" />
         <meta property="og:description" content="Compare the top 5 free AI humanizer tools and find the best one for your needs." />
         <meta property="og:url" content="https://aifreetextpro.com/blog/best-free-ai-humanizer-tools-2025" />

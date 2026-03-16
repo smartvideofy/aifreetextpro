@@ -124,8 +124,8 @@ const Pricing = () => {
         <meta property="og:site_name" content="AI Free Text Pro" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@aifreetextpro" />
-        <meta name="twitter:title" content="Pricing - AI Humanizer From $0/mo" />
-        <meta name="twitter:description" content="Start free with 1,000 words/month. Upgrade from $4.99/mo. 100% money-back guarantee." />
+        <meta name="twitter:title" content="AI Humanizer Pricing: Free Plan + Plans From $4.99" />
+        <meta name="twitter:description" content="Free plan with 1,000 words/month. Paid from $4.99. Money-back guarantee." />
         <meta name="twitter:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" />
         
         <script type="application/ld+json">

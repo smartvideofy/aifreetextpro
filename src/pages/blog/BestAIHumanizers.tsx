@@ -171,10 +171,19 @@ const relatedArticles = [
       
       <article className="flex-1 py-12 md:py-20">
         <div className="container mx-auto px-4 max-w-4xl">
+          {/* Redirect banner to 2026 version */}
+          <div className="mb-8 p-4 rounded-lg bg-primary/10 border border-primary/20">
+            <p className="text-sm font-medium text-foreground">
+              This article is from 2025 and may be outdated.{" "}
+              <Link to="/blog/best-free-ai-humanizer-2026" className="text-primary font-bold underline hover:no-underline">
+                Read the updated 2026 comparison &rarr;
+              </Link>
+            </p>
+          </div>
           <Breadcrumbs items={[
             { label: 'Home', href: '/' },
             { label: 'Blog', href: '/blog' },
-            { label: 'Best AI Humanizers 2026' }
+            { label: 'Best AI Humanizers 2025' }
           ]} />
           <Link to="/blog">
             <Button variant="ghost" className="mb-8">

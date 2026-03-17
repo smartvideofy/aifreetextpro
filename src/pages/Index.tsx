@@ -363,7 +363,7 @@ const Index = () => {
         </section>
 
         {/* Trust Badges */}
-        <TrustBadges />
+        <LazySection><TrustBadges /></LazySection>
 
         {/* Problem-Solution Section */}
         <section className="py-16 md:py-24">

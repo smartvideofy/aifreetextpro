@@ -1410,7 +1410,7 @@ const Index = () => {
         <LazySection><NewsletterSignup /></LazySection>
 
         {/* Enhanced FAQ Section */}
-        <EnhancedFAQ />
+        <LazySection><EnhancedFAQ /></LazySection>
 
         {/* Final CTA */}
         <section className="py-20 md:py-28">

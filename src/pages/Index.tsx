@@ -1030,7 +1030,7 @@ const Index = () => {
         </section>
 
         {/* Enhanced Comparison Table */}
-        <ComparisonTable />
+        <LazySection><ComparisonTable /></LazySection>
 
         {/* Use Cases Section */}
         <section className="py-16 md:py-24 bg-muted/30">

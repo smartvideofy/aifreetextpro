@@ -723,7 +723,7 @@ const Index = () => {
         </section>
 
         {/* Testimonial Carousel */}
-        <TestimonialCarousel />
+        <LazySection><TestimonialCarousel /></LazySection>
 
         {/* Why Choose AI Free Text Pro */}
         <section className="py-20 md:py-28 bg-card/20">

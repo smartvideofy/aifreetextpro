@@ -777,7 +777,7 @@ const Index = () => {
         </section>
 
         {/* Animated Stats Section */}
-        <AnimatedStats />
+        <LazySection><AnimatedStats /></LazySection>
 
         {/* Pricing Preview Section */}
         <section className="py-16 md:py-24">

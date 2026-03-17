@@ -1401,8 +1401,8 @@ const Index = () => {
         {/* Pillar Hub: AI Humanizer Spokes */}
         <section className="py-4">
           <div className="container mx-auto px-4">
-            <PillarHubLinks hub="humanizer" currentPage="/" limit={6} title="AI Humanizer Resources" />
-            <CrossHubNav currentHub="humanizer" />
+            <LazySection><PillarHubLinksModule hub="humanizer" currentPage="/" limit={6} title="AI Humanizer Resources" /></LazySection>
+            <LazySection><CrossHubNavModule currentHub="humanizer" /></LazySection>
           </div>
         </section>
 

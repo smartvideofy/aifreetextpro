@@ -1207,7 +1207,7 @@ const Index = () => {
         </section>
 
         {/* About Section */}
-        <AboutSection />
+        <LazySection><AboutSection /></LazySection>
 
         {/* Blog Links Section - Internal Linking */}
         <section className="py-20 md:py-28 bg-gradient-to-b from-background to-card/20">

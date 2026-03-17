@@ -1,3 +1,4 @@
+import { lazy, Suspense } from "react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { ArrowRight, CheckCircle, Shield, FileText, Sparkles, Brain, Star, Pen, BookOpen, Target, Zap, Lock, Crown, GraduationCap, TrendingUp } from "lucide-react";
@@ -5,22 +6,11 @@ import { Helmet } from "react-helmet-async";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import AnimatedBackground from "@/components/AnimatedBackground";
-import AboutSection from "@/components/AboutSection";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
-import ComparisonTable from "@/components/ComparisonTable";
-import EnhancedFAQ from "@/components/EnhancedFAQ";
 import { Link } from "react-router-dom";
 import HowToSchema from "@/components/HowToSchema";
-import InteractiveDemo from "@/components/InteractiveDemo";
-import TestimonialCarousel from "@/components/TestimonialCarousel";
-import AnimatedStats from "@/components/AnimatedStats";
-import ScrollToTopButton from "@/components/ScrollToTopButton";
-import StickyHeaderCTA from "@/components/StickyHeaderCTA";
-import { PillarHubLinks, CrossHubNav } from "@/components/PillarHubLinks";
-import TrustBadges from "@/components/TrustBadges";
-import NewsletterSignup from "@/components/NewsletterSignup";
-import ExitIntentPopup from "@/components/ExitIntentPopup";
 import ProductMockup from "@/components/ProductMockup";
+import StickyHeaderCTA from "@/components/StickyHeaderCTA";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import heroIllustration from "@/assets/hero-illustration.png";
 import aiDetectorFeature from "@/assets/ai-detector-feature.png";
@@ -31,6 +21,26 @@ import researcherWorking from "@/assets/researcher-working.png";
 import jamesChen from "@/assets/testimonials/james-chen.jpg";
 import sarahPatel from "@/assets/testimonials/sarah-patel.jpg";
 import lisaMartinez from "@/assets/testimonials/lisa-martinez.jpg";
+
+// Lazy load below-fold heavy components for mobile LCP optimization
+const AboutSection = lazy(() => import("@/components/AboutSection"));
+const ComparisonTable = lazy(() => import("@/components/ComparisonTable"));
+const EnhancedFAQ = lazy(() => import("@/components/EnhancedFAQ"));
+const InteractiveDemo = lazy(() => import("@/components/InteractiveDemo"));
+const TestimonialCarousel = lazy(() => import("@/components/TestimonialCarousel"));
+const AnimatedStats = lazy(() => import("@/components/AnimatedStats"));
+const ScrollToTopButton = lazy(() => import("@/components/ScrollToTopButton"));
+const TrustBadges = lazy(() => import("@/components/TrustBadges"));
+const NewsletterSignup = lazy(() => import("@/components/NewsletterSignup"));
+const ExitIntentPopup = lazy(() => import("@/components/ExitIntentPopup"));
+const PillarHubLinksModule = lazy(() => import("@/components/PillarHubLinks").then(m => ({ default: m.PillarHubLinks })));
+const CrossHubNavModule = lazy(() => import("@/components/PillarHubLinks").then(m => ({ default: m.CrossHubNav })));
+
+const LazySection = ({ children }: { children: React.ReactNode }) => (
+  <Suspense fallback={<div className="min-h-[200px]" />}>
+    {children}
+  </Suspense>
+);
 
 const Index = () => {
   return (

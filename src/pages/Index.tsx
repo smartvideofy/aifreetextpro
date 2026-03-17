@@ -1407,7 +1407,7 @@ const Index = () => {
         </section>
 
         {/* Newsletter Signup */}
-        <NewsletterSignup />
+        <LazySection><NewsletterSignup /></LazySection>
 
         {/* Enhanced FAQ Section */}
         <EnhancedFAQ />

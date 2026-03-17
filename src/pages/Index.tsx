@@ -446,7 +446,7 @@ const Index = () => {
         </section>
 
         {/* Interactive Demo Section */}
-        <InteractiveDemo />
+        <LazySection><InteractiveDemo /></LazySection>
 
         {/* How It Works */}
         <section className="py-16 md:py-24 bg-muted/30">

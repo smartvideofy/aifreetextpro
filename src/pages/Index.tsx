@@ -249,8 +249,8 @@ const Index = () => {
       </Helmet>
       <Navbar />
       <StickyHeaderCTA />
-      <ScrollToTopButton />
-      <ExitIntentPopup />
+      <LazySection><ScrollToTopButton /></LazySection>
+      <LazySection><ExitIntentPopup /></LazySection>
       
       <main className="flex-1">
         {/* Hero Section - Premium Minimalist */}

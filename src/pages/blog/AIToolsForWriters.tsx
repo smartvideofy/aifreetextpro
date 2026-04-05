@@ -95,7 +95,7 @@ export default function AIToolsForWriters() {
               "height": 675
             },
             "datePublished": "2026-02-02",
-            "dateModified": "2026-02-02",
+            "dateModified": "2026-04-05",
             "author": {
               "@type": "Person",
               "name": "Dr. Sarah Chen",

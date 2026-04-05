@@ -73,7 +73,7 @@ const EditingAIDraftsHumanEditor = () => {
             },
             "publisher": { "@type": "Organization", "name": "AI Free Text Pro" },
             "datePublished": "2026-02-02",
-            "dateModified": "2026-02-02"
+            "dateModified": "2026-04-05"
           })}
         </script>
         

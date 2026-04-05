@@ -52,7 +52,7 @@ const TurnitinAIDetectionAccuracy = () => {
             "headline": "Turnitin AI Detection: How It Works and How Accurate It Really Is (2026)",
             "author": { "@type": "Person", "name": "Dr. Sarah Chen", "url": "https://aifreetextpro.com/team#sarah-chen" },
             "publisher": { "@type": "Organization", "name": "AI Free Text Pro", "logo": { "@type": "ImageObject", "url": "https://aifreetextpro.com/favicon.ico" } },
-            "datePublished": "2026-02-28", "dateModified": "2026-02-28",
+            "datePublished": "2026-02-28", "dateModified": "2026-04-05",
             "mainEntityOfPage": "https://aifreetextpro.com/blog/turnitin-ai-detection-accuracy", "wordCount": 2200
           })}
         </script>

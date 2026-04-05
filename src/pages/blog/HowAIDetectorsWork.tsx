@@ -40,7 +40,7 @@ export default function HowAIDetectorsWork() {
     <>
       <Helmet>
         <title>How AI Detectors Work: Perplexity & Burstiness [2026]</title>
-        <meta name="description" content="Understand exactly how perplexity, burstiness, and ML models power AI detection. Learn the science to write authentically human content." />
+        <meta name="description" content="How perplexity, burstiness, and ML classifiers actually score your text -- explained simply with diagrams. Write content that passes every detector." />
         <meta name="keywords" content="how ai detectors work, ai content analysis, gpt detection algorithm, ai detection science, perplexity detection, burstiness analysis, ai text patterns, machine learning detection, ai writing markers 2026" />
         <link rel="canonical" href="https://aifreetextpro.com/blog/how-ai-detectors-work" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
@@ -73,7 +73,7 @@ export default function HowAIDetectorsWork() {
               "height": 675
             },
             "datePublished": "2026-02-02",
-            "dateModified": "2026-02-02",
+            "dateModified": "2026-04-05",
             "author": {
               "@type": "Person",
               "name": "Dr. Sarah Chen",

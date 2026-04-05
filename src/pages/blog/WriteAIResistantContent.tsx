@@ -70,7 +70,7 @@ export default function WriteAIResistantContent() {
             "description": "Learn advanced techniques to make your content resistant to AI detection while staying authentic, engaging, and human.",
             "image": { "@type": "ImageObject", "url": ogImage, "width": 1200, "height": 675 },
             "datePublished": "2026-02-02",
-            "dateModified": "2026-02-02",
+            "dateModified": "2026-04-05",
             "author": {
               "@type": "Person",
               "name": "Dr. Sarah Chen",

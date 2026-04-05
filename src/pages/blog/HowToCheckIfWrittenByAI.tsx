@@ -52,7 +52,7 @@ const HowToCheckIfWrittenByAI = () => {
             "headline": "How to Check If Something Was Written by AI (Free Methods)",
             "author": { "@type": "Person", "name": "Dr. Sarah Chen", "url": "https://aifreetextpro.com/team#sarah-chen" },
             "publisher": { "@type": "Organization", "name": "AI Free Text Pro", "logo": { "@type": "ImageObject", "url": "https://aifreetextpro.com/favicon.ico" } },
-            "datePublished": "2026-02-28", "dateModified": "2026-02-28",
+            "datePublished": "2026-02-28", "dateModified": "2026-04-05",
             "mainEntityOfPage": "https://aifreetextpro.com/blog/how-to-check-if-written-by-ai", "wordCount": 2100
           })}
         </script>

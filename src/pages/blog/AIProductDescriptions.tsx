@@ -94,7 +94,7 @@ export default function AIProductDescriptions() {
             "description": "Learn to make AI-generated eCommerce product descriptions sound authentic, engaging, and optimized for conversions.",
             "image": { "@type": "ImageObject", "url": ogImage, "width": 1200, "height": 675 },
             "datePublished": "2026-02-02",
-            "dateModified": "2026-02-02",
+            "dateModified": "2026-04-05",
             "author": {
               "@type": "Person",
               "name": "Dr. Sarah Chen",

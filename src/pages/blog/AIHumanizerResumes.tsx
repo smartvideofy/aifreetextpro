@@ -49,7 +49,7 @@ const AIHumanizerResumes = () => {
           "headline": "AI Humanizer for Resumes and Cover Letters: Complete Guide (2026)",
           "author": { "@type": "Person", "name": "Emily Rodriguez", "url": "https://aifreetextpro.com/team#emily-rodriguez" },
           "publisher": { "@type": "Organization", "name": "AI Free Text Pro", "logo": { "@type": "ImageObject", "url": "https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" } },
-          "datePublished": "2026-02-25T08:00:00Z", "dateModified": "2026-02-25T08:00:00Z",
+          "datePublished": "2026-02-25T08:00:00Z", "dateModified": "2026-04-05",
           "mainEntityOfPage": "https://aifreetextpro.com/blog/ai-humanizer-resumes-cover-letters", "wordCount": 2000
         })}</script>
         <script type="application/ld+json">{JSON.stringify({

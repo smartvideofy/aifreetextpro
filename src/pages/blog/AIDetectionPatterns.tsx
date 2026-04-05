@@ -41,7 +41,7 @@ const AIDetectionPatterns = () => {
     <div className="min-h-screen flex flex-col">
       <Helmet>
         <title>5 Patterns AI Detectors Flag [And How to Fix Them]</title>
-        <meta name="description" content="Perplexity, burstiness, and 3 hidden patterns that get your text flagged. Learn exactly what AI detectors look for and how to fix each one." />
+        <meta name="description" content="5 exact patterns AI detectors check (with examples). Fix each one in under 5 minutes. Tested on Turnitin, GPTZero, and Originality.AI." />
         <meta name="keywords" content="AI detection patterns, perplexity and burstiness explained, is my writing human or AI, AI linguistic patterns, how AI detectors work" />
         <link rel="canonical" href="https://aifreetextpro.com/blog/ai-detection-patterns-explained" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
@@ -67,7 +67,7 @@ const AIDetectionPatterns = () => {
             "headline": "AI vs. Human: 5 Subtle Linguistic Patterns AI Detectors Look For",
             "description": "Discover the 5 linguistic patterns AI detectors analyze to distinguish AI writing from human writing.",
             "datePublished": "2026-02-02",
-            "dateModified": "2026-02-02",
+            "dateModified": "2026-04-05",
             "author": {
               "@type": "Person",
               "name": "Dr. Sarah Chen",
@@ -76,7 +76,15 @@ const AIDetectionPatterns = () => {
             },
             "publisher": {
               "@type": "Organization",
-              "name": "AI Free Text Pro"
+              "name": "AI Free Text Pro",
+              "logo": {
+                "@type": "ImageObject",
+                "url": "https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG"
+              }
+            },
+            "mainEntityOfPage": {
+              "@type": "WebPage",
+              "@id": "https://aifreetextpro.com/blog/ai-detection-patterns-explained"
             }
           })}
         </script>

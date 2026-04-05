@@ -67,7 +67,7 @@ const AIContentSEO = () => {
             "headline": "AI Content for SEO: How to Generate Undetectable Articles That Rank",
             "description": "How to use AI for SEO content at scale while ensuring articles pass detection.",
             "datePublished": "2026-02-02",
-            "dateModified": "2026-02-02",
+            "dateModified": "2026-04-05",
             "author": {
               "@type": "Person",
               "name": "Dr. Sarah Chen",

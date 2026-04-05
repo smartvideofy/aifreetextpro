@@ -355,7 +355,8 @@ const Index = () => {
                   className="w-full max-w-4xl mx-auto rounded-2xl shadow-xl border border-border/40"
                   width={1200}
                   height={675}
-                  loading="lazy"
+                  fetchPriority="high"
+                  decoding="sync"
                 />
               </div>
             </div>

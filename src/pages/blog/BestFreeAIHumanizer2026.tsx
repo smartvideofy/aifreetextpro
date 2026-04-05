@@ -119,7 +119,7 @@ const BestFreeAIHumanizer2026 = () => {
               }
             },
             "datePublished": "2026-03-09",
-            "dateModified": "2026-03-09",
+            "dateModified": "2026-04-05",
             "mainEntityOfPage": {
               "@type": "WebPage",
               "@id": "https://aifreetextpro.com/blog/best-free-ai-humanizer-2026"

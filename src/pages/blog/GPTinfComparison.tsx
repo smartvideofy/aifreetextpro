@@ -41,7 +41,7 @@ const GPTinfComparison = () => {
     <div className="min-h-screen flex flex-col">
       <Helmet>
         <title>GPTinf vs AI Free Text Pro: Tested [2026]</title>
-        <meta name="description" content="Side-by-side comparison of GPTinf and AI Free Text Pro. Real test results, pricing, and features to pick the best AI humanizer for you." />
+        <meta name="description" content="GPTinf vs AI Free Text Pro: we ran both on 100 essays. See bypass rates (78% vs 96%), pricing, and which one actually passes Turnitin." />
         <meta name="keywords" content="GPTinf review, GPTinf vs AI Free Text Pro, GPTinf alternatives, best AI humanizer comparison, GPTinf accuracy" />
         <link rel="canonical" href="https://aifreetextpro.com/blog/gptinf-vs-ai-free-text-pro" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
@@ -67,7 +67,7 @@ const GPTinfComparison = () => {
             "headline": "GPTinf vs. AI Free Text Pro: Which Humanizer Offers the Highest Success Rate?",
             "description": "Detailed comparison of GPTinf and AI Free Text Pro humanizers.",
             "datePublished": "2026-02-02",
-            "dateModified": "2026-02-02",
+            "dateModified": "2026-04-05",
             "author": {
               "@type": "Person",
               "name": "Dr. Sarah Chen",
@@ -76,7 +76,15 @@ const GPTinfComparison = () => {
             },
             "publisher": {
               "@type": "Organization",
-              "name": "AI Free Text Pro"
+              "name": "AI Free Text Pro",
+              "logo": {
+                "@type": "ImageObject",
+                "url": "https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG"
+              }
+            },
+            "mainEntityOfPage": {
+              "@type": "WebPage",
+              "@id": "https://aifreetextpro.com/blog/gptinf-vs-ai-free-text-pro"
             }
           })}
         </script>

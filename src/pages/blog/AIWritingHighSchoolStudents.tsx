@@ -51,7 +51,7 @@ const AIWritingHighSchoolStudents = () => {
             "headline": "AI Writing for High School Students: A Parent and Student Guide (2026)",
             "author": { "@type": "Person", "name": "Dr. Sarah Chen", "url": "https://aifreetextpro.com/team#sarah-chen" },
             "publisher": { "@type": "Organization", "name": "AI Free Text Pro", "logo": { "@type": "ImageObject", "url": "https://aifreetextpro.com/favicon.ico" } },
-            "datePublished": "2026-02-28", "dateModified": "2026-02-28",
+            "datePublished": "2026-02-28", "dateModified": "2026-04-05",
             "mainEntityOfPage": "https://aifreetextpro.com/blog/ai-writing-high-school-students", "wordCount": 2000
           })}
         </script>

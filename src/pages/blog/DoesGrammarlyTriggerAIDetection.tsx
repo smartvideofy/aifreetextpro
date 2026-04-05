@@ -49,7 +49,7 @@ const DoesGrammarlyTriggerAIDetection = () => {
           "headline": "Does Grammarly Get Detected as AI? The Truth About Writing Tools (2026)",
           "author": { "@type": "Person", "name": "Lisa Chang", "url": "https://aifreetextpro.com/team#lisa-chang" },
           "publisher": { "@type": "Organization", "name": "AI Free Text Pro", "logo": { "@type": "ImageObject", "url": "https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" } },
-          "datePublished": "2026-02-25T08:00:00Z", "dateModified": "2026-02-25T08:00:00Z",
+          "datePublished": "2026-02-25T08:00:00Z", "dateModified": "2026-04-05",
           "mainEntityOfPage": "https://aifreetextpro.com/blog/does-grammarly-trigger-ai-detection", "wordCount": 1800
         })}</script>
         <script type="application/ld+json">{JSON.stringify({

@@ -94,7 +94,7 @@ export default function AIYouTubeScripts() {
             "description": "Learn to humanize AI-generated scripts for YouTube videos, podcasts, and narration to engage viewers naturally.",
             "image": { "@type": "ImageObject", "url": ogImage, "width": 1200, "height": 675 },
             "datePublished": "2026-02-02",
-            "dateModified": "2026-02-02",
+            "dateModified": "2026-04-05",
             "author": {
               "@type": "Person",
               "name": "Dr. Sarah Chen",

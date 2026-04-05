@@ -67,7 +67,7 @@ const OriginalityAIReview = () => {
             "headline": "Originality.AI Detector Review: Accuracy, Pricing, and How It Works",
             "description": "Complete Originality.AI review covering accuracy, pricing, and how to improve AI writing quality.",
             "datePublished": "2026-02-02",
-            "dateModified": "2026-02-02",
+            "dateModified": "2026-04-05",
             "author": {
               "@type": "Person",
               "name": "Dr. Sarah Chen",

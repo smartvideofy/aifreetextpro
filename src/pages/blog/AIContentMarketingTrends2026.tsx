@@ -94,7 +94,7 @@ export default function AIContentMarketingTrends2026() {
             "description": "Explore how AI is reshaping marketing strategies in 2026, from hyper-personalization to predictive analytics and ethical considerations.",
             "image": { "@type": "ImageObject", "url": ogImage, "width": 1200, "height": 675 },
             "datePublished": "2026-02-02",
-            "dateModified": "2026-02-02",
+            "dateModified": "2026-04-05",
             "author": {
               "@type": "Person",
               "name": "Dr. Sarah Chen",

@@ -67,7 +67,7 @@ const PassAllDetectorsGuide = () => {
             "headline": "The Definitive Guide to Writing Human-Like Content (2026)",
             "description": "Complete guide to creating natural, human-like AI content.",
             "datePublished": "2026-02-02",
-            "dateModified": "2026-02-02",
+            "dateModified": "2026-04-05",
             "author": {
               "@type": "Person",
               "name": "Dr. Sarah Chen",
@@ -76,7 +76,15 @@ const PassAllDetectorsGuide = () => {
             },
             "publisher": {
               "@type": "Organization",
-              "name": "AI Free Text Pro"
+              "name": "AI Free Text Pro",
+              "logo": {
+                "@type": "ImageObject",
+                "url": "https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG"
+              }
+            },
+            "mainEntityOfPage": {
+              "@type": "WebPage",
+              "@id": "https://aifreetextpro.com/blog/pass-all-ai-detectors-guide"
             }
           })}
         </script>

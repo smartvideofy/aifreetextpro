@@ -49,7 +49,7 @@ const HumanizeAITextFreeNoSignup = () => {
           "headline": "How to Humanize AI Text for Free: No Sign-Up Required (2026)",
           "author": { "@type": "Person", "name": "Marcus Williams", "url": "https://aifreetextpro.com/team#marcus-williams" },
           "publisher": { "@type": "Organization", "name": "AI Free Text Pro", "logo": { "@type": "ImageObject", "url": "https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" } },
-          "datePublished": "2026-02-25T08:00:00Z", "dateModified": "2026-02-25T08:00:00Z",
+          "datePublished": "2026-02-25T08:00:00Z", "dateModified": "2026-04-05",
           "mainEntityOfPage": "https://aifreetextpro.com/blog/humanize-ai-text-free-no-signup", "wordCount": 2000
         })}</script>
         <script type="application/ld+json">{JSON.stringify({

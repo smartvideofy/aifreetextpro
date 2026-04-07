@@ -355,7 +355,7 @@ const Index = () => {
                   className="w-full max-w-4xl mx-auto rounded-2xl shadow-xl border border-border/40"
                   width={1200}
                   height={675}
-                  fetchPriority="high"
+                  ref={(el) => { if (el) el.setAttribute('fetchpriority', 'high'); }}
                   decoding="sync"
                 />
               </div>

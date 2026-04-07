@@ -133,6 +133,39 @@ const AIChecker = () => {
             "embedUrl": "https://www.youtube.com/embed/placeholder"
           })}
         </script>
+
+        {/* HowTo Schema for AI Checker */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "HowTo",
+            "name": "How to Check Text for AI Detection",
+            "description": "Use AI Free Text Pro to check any text against 15+ AI detectors in one click.",
+            "totalTime": "PT1M",
+            "estimatedCost": { "@type": "MonetaryAmount", "currency": "USD", "value": "0" },
+            "tool": [{ "@type": "HowToTool", "name": "AI Free Text Pro AI Checker" }],
+            "step": [
+              {
+                "@type": "HowToStep",
+                "position": 1,
+                "name": "Paste or Upload Your Text",
+                "text": "Copy and paste your text into the checker, or upload a PDF, DOCX, or TXT file up to 10MB."
+              },
+              {
+                "@type": "HowToStep",
+                "position": 2,
+                "name": "Run Multi-Detector Analysis",
+                "text": "Click 'Check for AI' to analyze against GPTZero, Turnitin, Originality.AI, and 15+ other detectors simultaneously."
+              },
+              {
+                "@type": "HowToStep",
+                "position": 3,
+                "name": "Review Results & Humanize",
+                "text": "View detailed probability scores with highlighted AI sections. One-click humanize any flagged content."
+              }
+            ]
+          })}
+        </script>
       </Helmet>
 
       <Navbar />

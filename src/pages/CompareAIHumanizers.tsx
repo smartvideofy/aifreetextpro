@@ -57,6 +57,36 @@ const CompareAIHumanizers = () => {
             ]
           })}
         </script>
+        {/* Product Comparison Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Product",
+            "name": "AI Free Text Pro",
+            "description": "Best AI humanizer alternative in 2026 with 98% bypass rate.",
+            "brand": { "@type": "Brand", "name": "AI Free Text Pro" },
+            "url": "https://aifreetextpro.com/compare-ai-humanizers",
+            "offers": {
+              "@type": "AggregateOffer",
+              "lowPrice": "0",
+              "highPrice": "59.99",
+              "priceCurrency": "USD",
+              "offerCount": "5"
+            },
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "4.8",
+              "reviewCount": "1247",
+              "bestRating": "5"
+            },
+            "isSimilarTo": comparisons.map(c => ({
+              "@type": "Product",
+              "name": c.competitor,
+              "url": `https://aifreetextpro.com${c.href}`
+            }))
+          })}
+        </script>
+
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",

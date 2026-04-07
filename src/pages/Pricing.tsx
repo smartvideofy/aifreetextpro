@@ -160,6 +160,76 @@ const Pricing = () => {
             ]
           })}
         </script>
+
+        {/* Product Schema with pricing tiers */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Product",
+            "name": "AI Free Text Pro",
+            "description": "AI detection and humanization tool with plans from free to unlimited.",
+            "brand": { "@type": "Brand", "name": "AI Free Text Pro" },
+            "url": "https://aifreetextpro.com/pricing",
+            "image": "https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG",
+            "offers": [
+              {
+                "@type": "Offer",
+                "name": "Free Plan",
+                "price": "0",
+                "priceCurrency": "USD",
+                "availability": "https://schema.org/InStock",
+                "description": "1,000 words/month with basic AI detection and humanization",
+                "url": "https://app.aifreetextpro.com/"
+              },
+              {
+                "@type": "Offer",
+                "name": "Starter Plan",
+                "price": "4.99",
+                "priceCurrency": "USD",
+                "priceValidUntil": "2026-12-31",
+                "availability": "https://schema.org/InStock",
+                "description": "5,000 words/month with advanced features and PDF export",
+                "url": "https://app.aifreetextpro.com/"
+              },
+              {
+                "@type": "Offer",
+                "name": "Lite Plan",
+                "price": "9.99",
+                "priceCurrency": "USD",
+                "priceValidUntil": "2026-12-31",
+                "availability": "https://schema.org/InStock",
+                "description": "10,000 words/month with advanced detection and humanization",
+                "url": "https://app.aifreetextpro.com/"
+              },
+              {
+                "@type": "Offer",
+                "name": "Pro Writer",
+                "price": "24.99",
+                "priceCurrency": "USD",
+                "priceValidUntil": "2026-12-31",
+                "availability": "https://schema.org/InStock",
+                "description": "50,000 words/month with premium features and API access",
+                "url": "https://app.aifreetextpro.com/"
+              },
+              {
+                "@type": "Offer",
+                "name": "Unlimited Creator",
+                "price": "59.99",
+                "priceCurrency": "USD",
+                "priceValidUntil": "2026-12-31",
+                "availability": "https://schema.org/InStock",
+                "description": "Unlimited words with dedicated account manager and full API access",
+                "url": "https://app.aifreetextpro.com/"
+              }
+            ],
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "4.8",
+              "reviewCount": "1247",
+              "bestRating": "5"
+            }
+          })}
+        </script>
       </Helmet>
       
       <Navbar />

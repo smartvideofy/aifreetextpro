@@ -138,8 +138,37 @@ const Team = () => {
     "employee": teamMembers.map(member => ({
       "@type": "Person",
       "name": member.name,
-      "jobTitle": member.role
+      "jobTitle": member.role,
+      "url": `https://aifreetextpro.com/team#${member.slug}`,
+      "worksFor": { "@type": "Organization", "name": "AI Free Text Pro" },
+      ...(member.credentials && {
+        "knowsAbout": member.specialties,
+        "alumniOf": member.credentials.filter(c => c.includes("Ph.D.") || c.includes("M.S.") || c.includes("M.A.")).map(c => ({
+          "@type": "EducationalOrganization",
+          "name": c.split(", ").pop()
+        }))
+      })
     }))
+  };
+
+  const profilePageSchema = {
+    "@context": "https://schema.org",
+    "@type": "ProfilePage",
+    "name": "AI Free Text Pro Team",
+    "url": "https://aifreetextpro.com/team",
+    "mainEntity": {
+      "@type": "Organization",
+      "name": "AI Free Text Pro",
+      "url": "https://aifreetextpro.com",
+      "numberOfEmployees": { "@type": "QuantitativeValue", "value": teamMembers.length },
+      "foundingDate": "2023",
+      "founder": {
+        "@type": "Person",
+        "name": "Dr. Sarah Chen",
+        "jobTitle": "Founder & CEO",
+        "url": "https://aifreetextpro.com/team#sarah-chen"
+      }
+    }
   };
 
   return (
@@ -164,6 +193,9 @@ const Team = () => {
         <meta name="twitter:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" />
         <script type="application/ld+json">
           {JSON.stringify(teamSchema)}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify(profilePageSchema)}
         </script>
       </Helmet>
 

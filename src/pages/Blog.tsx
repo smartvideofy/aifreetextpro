@@ -1028,14 +1028,34 @@ const Blog = () => {
             "name": "AI Writing Blog",
             "description": "Expert guides on AI detection, humanization tools, and writing tips",
             "url": "https://aifreetextpro.com/blog",
+            "publisher": {
+              "@type": "Organization",
+              "name": "AI Free Text Pro",
+              "logo": {
+                "@type": "ImageObject",
+                "url": "https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/uploads/1759692105576-Logo.PNG"
+              }
+            },
             "mainEntity": {
               "@type": "ItemList",
               "numberOfItems": blogPosts.length,
-              "itemListElement": blogPosts.slice(0, 10).map((post, index) => ({
+              "itemListElement": blogPosts.slice(0, 20).map((post, index) => ({
                 "@type": "ListItem",
                 "position": index + 1,
                 "url": `https://aifreetextpro.com/blog/${post.slug}`,
-                "name": post.title
+                "name": post.title,
+                "item": {
+                  "@type": "BlogPosting",
+                  "headline": post.title,
+                  "description": post.excerpt,
+                  "datePublished": post.date,
+                  "url": `https://aifreetextpro.com/blog/${post.slug}`,
+                  "author": {
+                    "@type": "Person",
+                    "name": "Dr. Sarah Chen",
+                    "url": "https://aifreetextpro.com/team#sarah-chen"
+                  }
+                }
               }))
             }
           })}

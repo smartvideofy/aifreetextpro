@@ -165,6 +165,9 @@ const AITwitterThreadGenerator = lazy(() => import("./pages/blog/AITwitterThread
 const AIWritingNursingHealthcare = lazy(() => import("./pages/blog/AIWritingNursingHealthcare"));
 const AIContentGoogleAIOverviews = lazy(() => import("./pages/blog/AIContentGoogleAIOverviews"));
 const AIWritingUpworkFiverr = lazy(() => import("./pages/blog/AIWritingUpworkFiverr"));
+const AICollegeAdmissionsEssays = lazy(() => import("./pages/blog/AICollegeAdmissionsEssays"));
+const AIWritingNonNativeEnglish = lazy(() => import("./pages/blog/AIWritingNonNativeEnglish"));
+const CanDetectorsDetectGPT5 = lazy(() => import("./pages/blog/CanDetectorsDetectGPT5"));
 
 const queryClient = new QueryClient();
 
@@ -351,6 +354,9 @@ const App = () => (
               <Route path="/blog/ai-writing-nursing-healthcare-students" element={<AIWritingNursingHealthcare />} />
               <Route path="/blog/ai-content-google-ai-overviews" element={<AIContentGoogleAIOverviews />} />
               <Route path="/blog/ai-writing-upwork-fiverr-freelancers" element={<AIWritingUpworkFiverr />} />
+              <Route path="/blog/ai-college-admissions-essays-personal-statements" element={<AICollegeAdmissionsEssays />} />
+              <Route path="/blog/ai-writing-non-native-english-speakers" element={<AIWritingNonNativeEnglish />} />
+              <Route path="/blog/can-ai-detectors-detect-gpt5" element={<CanDetectorsDetectGPT5 />} />
               
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />

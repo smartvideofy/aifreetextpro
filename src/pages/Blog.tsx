@@ -48,6 +48,30 @@ const categoryThumbnails: Record<string, string> = {
 
 const blogPosts = [
   {
+    slug: "ai-college-admissions-essays-personal-statements",
+    title: "AI for College Admissions Essays & Personal Statements (2026)",
+    excerpt: "Complete guide to using AI for college admissions essays. Which universities use AI detectors, safe brainstorming workflows, Common App strategies, and how to maintain authentic voice.",
+    date: "2026-04-08",
+    readTime: "14 min read",
+    category: "Academic"
+  },
+  {
+    slug: "ai-writing-non-native-english-speakers",
+    title: "AI Writing for Non-Native English Speakers: Avoid False AI Flags (2026)",
+    excerpt: "Why non-native English writing triggers false AI detection flags. Detector accuracy comparison for ESL writers, grammar tool risks, and strategies to protect yourself from false accusations.",
+    date: "2026-04-08",
+    readTime: "15 min read",
+    category: "Academic"
+  },
+  {
+    slug: "can-ai-detectors-detect-gpt5",
+    title: "Can AI Detectors Detect GPT-5? (2026 Real Test Results)",
+    excerpt: "500+ samples tested across GPT-5, GPT-5-mini, and GPT-5-nano. Complete detection rates for Turnitin, GPTZero, Originality.AI, and Copyleaks with humanization results.",
+    date: "2026-04-08",
+    readTime: "14 min read",
+    category: "Technical"
+  },
+  {
     slug: "ai-writing-nursing-healthcare-students",
     title: "AI Writing for Nursing & Healthcare Students (2026)",
     excerpt: "Complete guide to using AI for care plans, SOAP notes, clinical reflections, and nursing essays. Detection risks, ethical frameworks, and safe workflows for healthcare students.",

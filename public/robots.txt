@@ -4,55 +4,32 @@
 # Default rules for all crawlers
 User-agent: *
 Allow: /
-Allow: /blog/
-Allow: /blog/*
-Allow: /vs-*
-Allow: /bypass-*
-Allow: /ai-humanizer-*
-Allow: /academic-*
-Allow: /ai-checker
-Allow: /pricing
-Allow: /about
-Allow: /contact
-Allow: /guarantee
-Allow: /team
-Allow: /technology
-Allow: /case-studies
-Allow: /editorial-guidelines
-Allow: /help-center
-Allow: /help-center/*
-Allow: /assets/
-Allow: /images/
-Allow: /llms.txt
-Allow: /ai.txt
 Disallow: /auth
 Disallow: /dashboard
 Disallow: /app
-Crawl-delay: 1
 
-# Google bot - priority crawler
+# Major search engines - no crawl-delay (allow full crawl budget)
 User-agent: Googlebot
 Allow: /
-Crawl-delay: 0
 
-# Bing bot
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Googlebot-Mobile
+Allow: /
+
 User-agent: Bingbot
 Allow: /
-Crawl-delay: 1
 
-# Yahoo bot
 User-agent: Slurp
 Allow: /
 
-# DuckDuckGo bot
 User-agent: DuckDuckBot
 Allow: /
 
-# Baidu spider
 User-agent: Baiduspider
 Allow: /
 
-# Yandex bot
 User-agent: YandexBot
 Allow: /
 
@@ -60,12 +37,8 @@ Allow: /
 # AI Crawler Permissions (AIO/GEO Optimization)
 # ========================================
 
-# OpenAI crawlers
 User-agent: GPTBot
 Allow: /
-Allow: /blog/
-Allow: /llms.txt
-Allow: /ai.txt
 Disallow: /auth
 Disallow: /dashboard
 Disallow: /app
@@ -73,38 +46,27 @@ Disallow: /app
 User-agent: ChatGPT-User
 Allow: /
 
-# Anthropic crawlers
 User-agent: ClaudeBot
 Allow: /
-Allow: /llms.txt
-Allow: /ai.txt
 
 User-agent: Claude-Web
 Allow: /
 
-# Perplexity crawler
 User-agent: PerplexityBot
 Allow: /
-Allow: /llms.txt
-Allow: /ai.txt
 
-# Google AI (Gemini/Bard)
 User-agent: Google-Extended
 Allow: /
 
-# Cohere crawler
 User-agent: cohere-ai
 Allow: /
 
-# Microsoft Copilot / Bing AI
 User-agent: Applebot-Extended
 Allow: /
 
-# Meta AI
 User-agent: meta-externalagent
 Allow: /
 
-# Common Crawl (used by many AI trainers)
 User-agent: CCBot
 Allow: /
 

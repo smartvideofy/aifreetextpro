@@ -30,8 +30,8 @@ const Technology = () => {
   return (
     <div className="min-h-screen flex flex-col bg-background">
       <Helmet>
-        <title>How Our AI Humanizer Works | AI Free Text Pro</title>
-        <meta name="description" content="See how our proprietary NLP transforms robotic AI text into natural writing. Stylometric analysis, contextual rewriting, and zero-knowledge privacy architecture." />
+        <title>How Our AI Humanizer Works — NLP Tech That Beats Detectors</title>
+        <meta name="description" content="See the stylometric analysis, contextual rewriting & adaptive learning behind 98% undetectable output. Built to bypass GPTZero, Turnitin & Originality.AI." />
         <meta name="keywords" content="AI humanization technology, NLP algorithms, stylometric analysis, AI detection bypass, text transformation technology" />
         <link rel="canonical" href="https://aifreetextpro.com/technology" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />

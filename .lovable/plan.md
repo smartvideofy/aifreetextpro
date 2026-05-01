@@ -1,125 +1,84 @@
-## GSC Performance Audit — 28 Days Ending May 1, 2026
+# Plan: Mobile Rendering Parity Audit
 
-### Headline Numbers
-- **Clicks: 1,559** | **Impressions: 35,994** | **CTR: 4.33%** | **Avg Pos: 9.65**
-- vs. April audit (12,642 clicks / 56,134 impr / 22.5% CTR): **clicks down ~88%, CTR down ~80%.** This is a serious regression.
+## Goal
 
-### Critical Issues Found
+Verify that for the top 15 pages (homepage, key SEO pages, top blog posts), the **raw HTML response** delivered to a mobile crawler contains:
 
-**1. Catastrophic 4-week trend collapse**
-- Week 1: 1,309 clicks / 12,341 impressions / avg pos 7.59
-- Week 4: **58 clicks / 4,902 impressions / avg pos 10.36**
-- Clicks fell 95% week-over-week-of-month while impressions fell 60%. Positions slipped ~3 spots. Something broke around mid-April — likely a deployment, canonical, or robots/sitemap regression, or branded query loss.
+1. A non-default `<title>` matching the route
+2. A non-default `<meta name="description">` matching the route
+3. The page-specific canonical URL
+4. The required JSON-LD blocks (Article / FAQPage / BreadcrumbList / etc.)
 
-**2. Mobile indexing is effectively broken**
-- Desktop: 1,046 clicks / 34,219 impressions (CTR 3.06%, pos 9.30)
-- Mobile: **478 clicks / 1,707 impressions** — only 4.7% of total impressions
-- Tablet: 35 / 68
-- Google indexes mobile-first. Receiving 20× more desktop than mobile impressions means the mobile rendering is failing crawl/index parity. This aligns with the prior memory about mobile pos 25 vs desktop 6.8 — but now it's worse: mobile is barely served at all.
+This site is a Vite SPA. Only `index.html` ships static SEO tags — every other route relies on `react-helmet-async` injected after JS runs. Googlebot-Mobile's two-pass indexer often delays the JS render pass for days/weeks, which directly explains the 4.7% mobile-impression share in GSC.
 
-**3. CTR catastrophes on huge-impression pages (massive lost clicks)**
+## What the audit will produce
 
-| Page | Impr | CTR | Pos |
-|---|---|---|---|
-| /blog/how-ai-detectors-work | 9,391 | **0.00%** | 6.88 |
-| /blog/best-free-ai-humanizer-2026 | 5,881 | 0.12% | 9.63 |
-| /blog/ai-detection-patterns-explained | 3,016 | 0.03% | 7.85 |
-| /ai-checker | 2,532 | 1.03% | 2.03 |
-| /blog/bypass-zerogpt-ai-detection | 2,416 | 0.04% | 7.96 |
-| /bypass-turnitin-ai-detection | 2,274 | 0.31% | 5.94 |
-| /pricing | 1,507 | 0.07% | 2.41 |
-| /technology | 850 | 0.00% | 1.17 |
-| /about | 563 | 0.18% | 1.63 |
+A standalone Node script (`scripts/seo/mobile-parity-audit.mjs`) plus a Markdown report (`/mnt/documents/mobile-parity-report.md`).
 
-A page at position 1.17 with 850 impressions and 0 clicks is broken — title/description not rendering for crawlers, or showing wrong snippet. Same for /pricing at pos 2.41 with 0.07% CTR.
+For each URL the script will:
+- `fetch()` the published URL with `User-Agent: Googlebot-Mobile` and `Accept-Language: en-US`
+- Parse the returned HTML **without executing JS** (using `node-html-parser` or a regex pass — no Puppeteer)
+- Extract `<title>`, `<meta name="description">`, `<link rel="canonical">`, all `<script type="application/ld+json">` blocks
+- Diff each value against the expected value declared in a per-route expectations table
+- Flag any route whose raw HTML returns the generic homepage title/description (the smoking gun for the SPA-parity issue)
 
-**4. "Striking distance" non-brand queries at pos 1–10 with ZERO clicks**
-All of these have 30–91 impressions, position 2–11, and 0 clicks — meaning the SERP snippet is unappealing or wrong:
-- "how ai detectors work perplexity burstiness" — pos **2.16**, 74 impr, 0 clicks
-- "how ai text detectors work perplexity burstiness" — pos 3.00, 53 impr, 0 clicks
-- "best free ai text humanizer no signup 2026" — pos 4.00, 40 impr, 0 clicks
-- "humanize ai pricing plans free tier" — pos 5.86, 70 impr, 0 clicks
-- "best free ai humanizer tools 2026" — pos 10.80, 91 impr, 0 clicks
-- "how to make ai generated text undetectable by zerogpt" — pos 10.58, 77 impr, 0 clicks
+The report groups results into:
+- PASS (route-specific metadata present in raw HTML)
+- FAIL — generic fallback (homepage title/description served instead)
+- FAIL — missing JSON-LD
+- WARN — JSON-LD present but missing required `@type` (Article, FAQPage, BreadcrumbList)
 
-A page ranking #2 with 0 CTR is the strongest possible signal of a broken/missing snippet.
+## Routes audited (15)
 
-**5. US performance is dramatically underperforming**
-- US: 19,500 impressions, **CTR 1.42%, pos 9.93**
-- Philippines: 634 impressions, CTR 41.17%, pos 3.78
-- South Africa: 302 impressions, CTR 39.74%, pos 5.61
-- US is 54% of all impressions but only 18% of clicks. Positions ~10 in US suggest competitive SERPs eating snippets (AI Overviews, People Also Ask, featured snippets from competitors). No US-specific structured data wins.
+```
+/                                                  homepage
+/ai-checker
+/pricing
+/technology
+/about
+/bypass-turnitin
+/bypass-gptzero
+/bypass-originality
+/compare-ai-humanizers
+/blog
+/blog/how-ai-detectors-work          (9,391 imp, zero CTR)
+/blog/best-free-ai-humanizer-2026
+/blog/bypass-zerogpt-detection
+/blog/can-detectors-detect-gpt-5
+/blog/ai-college-admissions-essays-personal-statements
+```
 
-**6. Branded vs non-branded imbalance**
-- Branded: 1,189 clicks from 2,506 impressions (47% CTR) — only 12 distinct branded queries
-- Non-branded: 222 clicks from 5,434 impressions (4.09% CTR) across 988 queries
-- 76% of clicks come from brand searches. Non-brand discovery is weak relative to impression volume.
+## Files
 
-**7. Pages ranking deep (pos 15–32) burning impressions**
-- /blog/ai-essay-checker — pos 31.34, 175 impr
-- /blog/originality-ai-review-how-to-beat — pos 31.35, 157 impr
-- /api — pos 17.31, 190 impr
-- /compare-ai-humanizers — pos 18.70, 105 impr
+**Create**
+- `scripts/seo/mobile-parity-audit.mjs` — fetches each URL with Googlebot-Mobile UA, parses raw HTML, validates expectations, writes Markdown report
+- `scripts/seo/route-expectations.json` — expected title prefix, description keyword, required JSON-LD `@type` array per route
 
-**8. /blog/how-ai-detectors-work is the single biggest miss**
-9,391 impressions at position 6.88 with **literally zero clicks**. Multiple "perplexity & burstiness" queries hit this page at pos 2–3 with 0 CTR. The snippet is broken or being suppressed (likely truncated title, duplicate H1, or AI Overview cannibalization). Fixing just this page could recover hundreds of clicks/month.
+**Run**
+- Execute against the published URL (`https://aifreetextpro.com`) via `code--exec`
+- Output report to `/mnt/documents/mobile-parity-report.md` and emit a `<lov-artifact>` so the user can open it
 
----
+**No application code changes in this step.** The audit is diagnostic. Once we have hard data on which routes fail, the follow-up plan will be a remediation choice between:
+1. SSG via `vite-plugin-ssr` / `react-snap` (prerender at build time)
+2. Per-route static HTML stubs in `public/` with baked-in meta + JSON-LD
+3. Cloudflare Worker / edge function that injects route-specific meta into `index.html`
 
-### Remediation Plan (Priority Order)
+We pick the remediation only after seeing the audit numbers.
 
-**P0 — Diagnose the trend collapse (do this first, before any rewrites)**
-- Pull GSC URL Inspection results for the homepage and `/blog/how-ai-detectors-work` to confirm indexing status, last crawl date, and rendered HTML
-- Check `public/robots.txt`, `public/sitemap.xml`, and any recent canonical changes
-- Compare deployed `index.html` and prerendered metadata vs. April baseline
-- Verify `/api`, `/contact`, `/technology`, and pricing pages are returning 200 with full HTML to Googlebot (not blank SPA shells)
+## Technical Detail
 
-**P1 — Fix mobile indexing parity**
-- Audit mobile rendering of the LCP image, hero, and below-fold lazy components — ensure `<title>`, meta description, and JSON-LD are present in initial mobile HTML payload
-- Add mobile-specific viewport and touch-icon checks
-- Verify lazy-loaded routes don't strip critical SEO tags before hydration on mobile bots
-- Consider adding prerendered HTML snapshots for the top 20 traffic pages
+- Use Node's built-in `fetch` (Node 20+) — no extra deps needed if we parse with regex; otherwise add `node-html-parser` as a devDependency
+- Headers sent:
+  ```
+  User-Agent: Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/W.X.Y.Z Mobile Safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)
+  Accept: text/html,application/xhtml+xml
+  ```
+- Repeat every fetch with desktop Googlebot UA to confirm parity (or lack thereof) between the two
+- Score each route 0–4 (title, description, canonical, JSON-LD) and surface a summary table at the top of the report
+- Exit non-zero if any route scores < 3, so the script is CI-friendly later
 
-**P2 — Rewrite snippets for the 9 zero-CTR top pages** (biggest immediate ROI)
-For each, rewrite `<title>` (≤60 chars, front-loaded keyword + benefit + year + brand) and meta description (140–155 chars, hook + specificity + CTA):
-- `/blog/how-ai-detectors-work` — target "perplexity burstiness" queries explicitly in title
-- `/blog/best-free-ai-humanizer-2026`
-- `/blog/ai-detection-patterns-explained`
-- `/ai-checker` (pos 2.03 with 1% CTR is unacceptable)
-- `/blog/bypass-zerogpt-ai-detection`
-- `/bypass-turnitin-ai-detection`
-- `/pricing` (pos 2.41, 0.07% CTR)
-- `/technology` (pos 1.17, 0% CTR — diagnose snippet first)
-- `/about` (pos 1.63, 0.18% CTR)
+## Out of scope (next plan)
 
-**P3 — Add `speakable` + `mainEntity` schema + FAQ rich-result hooks**
-Pages at pos 2–4 with 0 CTR are losing to AI Overviews. Add:
-- Tighter `Article` + `FAQPage` JSON-LD with direct question matches to the actual GSC queries (e.g., "How do AI detectors work using perplexity and burstiness?")
-- `HowTo` schema where applicable on humanizer/bypass guides
-- Verify schemas appear in prerendered HTML (not just runtime Helmet)
-
-**P4 — US-market SERP feature optimization**
-- Add `Review` and `AggregateRating` schema to `/ai-checker`, `/pricing`, comparison pages — US SERPs reward this
-- Add table-of-contents anchors on long blogs to win sitelinks
-- Target "People Also Ask" by adding 2–3 PAA-style H3s near the top of high-impression blog pages
-
-**P5 — Recover deep-ranking pages**
-- Refresh `dateModified`, expand content depth, strengthen internal links from homepage/pillar pages to: `/api`, `/compare-ai-humanizers`, `/blog/ai-essay-checker`, `/blog/originality-ai-review-how-to-beat`
-
-**P6 — Non-branded query expansion**
-- 76% of clicks are branded. Build dedicated landing pages or H2s for the top non-brand zero-CTR queries: "best free AI humanizer tools 2026", "humanize AI pricing free tier", "how to make AI undetectable by ZeroGPT"
-
-**P7 — Monitoring**
-- Set up weekly automated GSC export + diff so a future collapse is caught within days, not a month
-
----
-
-### Suggested Execution Order
-1. (Diagnosis-only, no code) Inspect index.html, robots.txt, sitemap, and recent commits for what changed mid-April
-2. Fix `/blog/how-ai-detectors-work` snippet + schema (single biggest unlock — 9,391 impressions)
-3. Batch rewrite the other 8 zero/low-CTR top pages
-4. Mobile indexing parity audit + fix
-5. US SERP feature schema rollout
-6. Deep-ranking page refreshes
-
-Approving this plan switches to default mode where I'll start with step 1: inspecting `index.html`, recent metadata changes, and the actual rendered HTML of `/blog/how-ai-detectors-work` before touching code.
+- Actually fixing the parity gap (prerender / SSG / edge injection)
+- Lighthouse/CWV mobile checks
+- Re-submitting sitemap to GSC

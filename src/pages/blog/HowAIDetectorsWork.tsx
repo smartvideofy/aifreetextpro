@@ -159,6 +159,30 @@ export default function HowAIDetectorsWork() {
                   "@type": "Answer",
                   "text": "AI detection tools vary in accuracy, typically ranging from 70-95%. They use machine learning models trained on millions of texts, but can produce false positives on human content and false negatives on well-humanized AI content."
                 }
+              },
+              {
+                "@type": "Question",
+                "name": "How do AI detectors work using perplexity and burstiness?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "AI detectors run your text through a reference language model (often a GPT-2 derivative) and score two signals. Perplexity measures token-by-token predictability — low perplexity means the next word was easy to guess, a hallmark of AI. Burstiness measures variance in sentence-level perplexity — humans spike high then low; AI stays flat. A classifier combines both scores to produce the final AI probability."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How does GPTZero use perplexity and burstiness officially?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "GPTZero officially documents perplexity (overall predictability) and burstiness (sentence-level variation) as its two foundational metrics. Each sentence gets a perplexity score; the spread of those scores becomes the burstiness signal. Low perplexity plus low burstiness flags text as AI. GPTZero combines this with a transformer classifier trained on millions of labeled samples."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How is perplexity and burstiness used in AI text detection, explained simply?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Imagine a model trying to guess every next word in your text. If it guesses easily, perplexity is low — that screams AI. Now look at how that score changes across sentences: humans bounce between simple and complex sentences (high burstiness), while AI stays consistent (low burstiness). Detectors flag text that is both predictable AND uniform."
+                }
               }
             ]
           })}

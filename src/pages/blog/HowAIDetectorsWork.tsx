@@ -39,16 +39,16 @@ export default function HowAIDetectorsWork() {
   return (
     <>
       <Helmet>
-        <title>How AI Detectors Work: Perplexity & Burstiness [2026]</title>
-        <meta name="description" content="How perplexity, burstiness, and ML classifiers actually score your text -- explained simply with diagrams. Write content that passes every detector." />
+        <title>How AI Detectors Work: Perplexity & Burstiness Explained (2026)</title>
+        <meta name="description" content="Exactly how GPTZero, Turnitin & Originality.AI use perplexity and burstiness to flag AI text — with examples, math, and what to change to pass." />
         <meta name="keywords" content="how ai detectors work, ai content analysis, gpt detection algorithm, ai detection science, perplexity detection, burstiness analysis, ai text patterns, machine learning detection, ai writing markers 2026" />
         <link rel="canonical" href="https://aifreetextpro.com/blog/how-ai-detectors-work" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="bingbot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         
-        <meta property="og:title" content="How AI Detectors Work: Perplexity & Burstiness [2026]" />
-        <meta property="og:description" content="Deep dive into the technology and algorithms powering AI detection tools." />
+        <meta property="og:title" content="How AI Detectors Work: Perplexity & Burstiness Explained (2026)" />
+        <meta property="og:description" content="Exactly how GPTZero, Turnitin & Originality.AI use perplexity and burstiness to flag AI text — with examples and fixes." />
         <meta property="og:type" content="article" />
         <meta property="og:url" content="https://aifreetextpro.com/blog/how-ai-detectors-work" />
         <meta property="og:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" />
@@ -56,8 +56,8 @@ export default function HowAIDetectorsWork() {
         <meta property="og:locale" content="en_US" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@aifreetextpro" />
-        <meta name="twitter:title" content="How AI Detectors Work: Perplexity & Burstiness [2026]" />
-        <meta name="twitter:description" content="Deep dive into the technology and algorithms powering AI detection tools." />
+        <meta name="twitter:title" content="How AI Detectors Work: Perplexity & Burstiness Explained (2026)" />
+        <meta name="twitter:description" content="Exactly how GPTZero, Turnitin & Originality.AI use perplexity and burstiness to flag AI text — with fixes." />
         <meta name="twitter:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" />
         
         <script type="application/ld+json">
@@ -158,6 +158,30 @@ export default function HowAIDetectorsWork() {
                 "acceptedAnswer": {
                   "@type": "Answer",
                   "text": "AI detection tools vary in accuracy, typically ranging from 70-95%. They use machine learning models trained on millions of texts, but can produce false positives on human content and false negatives on well-humanized AI content."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How do AI detectors work using perplexity and burstiness?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "AI detectors run your text through a reference language model (often a GPT-2 derivative) and score two signals. Perplexity measures token-by-token predictability — low perplexity means the next word was easy to guess, a hallmark of AI. Burstiness measures variance in sentence-level perplexity — humans spike high then low; AI stays flat. A classifier combines both scores to produce the final AI probability."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How does GPTZero use perplexity and burstiness officially?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "GPTZero officially documents perplexity (overall predictability) and burstiness (sentence-level variation) as its two foundational metrics. Each sentence gets a perplexity score; the spread of those scores becomes the burstiness signal. Low perplexity plus low burstiness flags text as AI. GPTZero combines this with a transformer classifier trained on millions of labeled samples."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How is perplexity and burstiness used in AI text detection, explained simply?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Imagine a model trying to guess every next word in your text. If it guesses easily, perplexity is low — that screams AI. Now look at how that score changes across sentences: humans bounce between simple and complex sentences (high burstiness), while AI stays consistent (low burstiness). Detectors flag text that is both predictable AND uniform."
                 }
               }
             ]

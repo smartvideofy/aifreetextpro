@@ -39,16 +39,16 @@ export default function HowAIDetectorsWork() {
   return (
     <>
       <Helmet>
-        <title>How AI Detectors Work: Perplexity & Burstiness [2026]</title>
-        <meta name="description" content="How perplexity, burstiness, and ML classifiers actually score your text -- explained simply with diagrams. Write content that passes every detector." />
+        <title>How AI Detectors Work: Perplexity & Burstiness Explained (2026)</title>
+        <meta name="description" content="Exactly how GPTZero, Turnitin & Originality.AI use perplexity and burstiness to flag AI text — with examples, math, and what to change to pass." />
         <meta name="keywords" content="how ai detectors work, ai content analysis, gpt detection algorithm, ai detection science, perplexity detection, burstiness analysis, ai text patterns, machine learning detection, ai writing markers 2026" />
         <link rel="canonical" href="https://aifreetextpro.com/blog/how-ai-detectors-work" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="bingbot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         
-        <meta property="og:title" content="How AI Detectors Work: Perplexity & Burstiness [2026]" />
-        <meta property="og:description" content="Deep dive into the technology and algorithms powering AI detection tools." />
+        <meta property="og:title" content="How AI Detectors Work: Perplexity & Burstiness Explained (2026)" />
+        <meta property="og:description" content="Exactly how GPTZero, Turnitin & Originality.AI use perplexity and burstiness to flag AI text — with examples and fixes." />
         <meta property="og:type" content="article" />
         <meta property="og:url" content="https://aifreetextpro.com/blog/how-ai-detectors-work" />
         <meta property="og:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" />
@@ -56,8 +56,8 @@ export default function HowAIDetectorsWork() {
         <meta property="og:locale" content="en_US" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@aifreetextpro" />
-        <meta name="twitter:title" content="How AI Detectors Work: Perplexity & Burstiness [2026]" />
-        <meta name="twitter:description" content="Deep dive into the technology and algorithms powering AI detection tools." />
+        <meta name="twitter:title" content="How AI Detectors Work: Perplexity & Burstiness Explained (2026)" />
+        <meta name="twitter:description" content="Exactly how GPTZero, Turnitin & Originality.AI use perplexity and burstiness to flag AI text — with fixes." />
         <meta name="twitter:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" />
         
         <script type="application/ld+json">

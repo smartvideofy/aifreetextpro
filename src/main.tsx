@@ -19,7 +19,7 @@ const fireRenderEvent = () => {
     const elapsed = Date.now() - start;
     // Home keeps the fallback (it IS the home title), so signal immediately.
     // For deep routes, wait for Helmet to swap the title or fall back at 4s.
-    if (isHome || titleChanged || elapsed > 4000) {
+    if (isHome || titleChanged || elapsed > 9000) {
       document.dispatchEvent(new Event("render-event"));
       return;
     }

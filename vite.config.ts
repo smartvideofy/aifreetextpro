@@ -22,7 +22,7 @@ export default defineConfig(({ mode }) => ({
         renderer: "@prerenderer/renderer-puppeteer",
         rendererOptions: {
           renderAfterDocumentEvent: "render-event",
-          renderAfterTime: 5000,
+          renderAfterTime: 10000,
           maxConcurrentRoutes: 4,
           headless: true,
           launchOptions: {

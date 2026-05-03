@@ -3,7 +3,7 @@ import react from "@vitejs/plugin-react-swc";
 import path from "path";
 import { componentTagger } from "lovable-tagger";
 import prerender from "@prerenderer/rollup-plugin";
-import { prerenderRoutes } from "./scripts/seo/prerender-routes.mjs";
+import { prerenderRoutes } from "./scripts/seo/prerender-routes";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({

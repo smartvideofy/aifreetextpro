@@ -2,7 +2,6 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react-swc";
 import path from "path";
 import { componentTagger } from "lovable-tagger";
-// @ts-expect-error - plugin ships its own types but they don't always resolve in ESM
 import prerender from "@prerenderer/rollup-plugin";
 import { prerenderRoutes } from "./scripts/seo/prerender-routes.mjs";
 
@@ -29,9 +28,8 @@ export default defineConfig(({ mode }) => ({
             args: ["--no-sandbox", "--disable-setuid-sandbox"],
           },
         },
-        postProcess(renderedRoute: { html: string; route: string }) {
-          // Ensure absolute asset URLs stay absolute; nothing to rewrite by default.
-          return renderedRoute;
+        postProcess(_renderedRoute: { html: string; route: string }) {
+          // No mutation needed; Helmet-injected head tags are preserved as-is.
         },
       }),
   ].filter(Boolean),

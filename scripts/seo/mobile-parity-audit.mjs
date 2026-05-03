@@ -241,14 +241,33 @@ async function main() {
   lines.push(`- **Routes audited:** ${results.length}`);
   lines.push("");
 
-  const fails = results.filter((r) => r.mobile.score < 3);
-  const passes = results.filter((r) => r.mobile.score >= 3.5);
+  // STRICT GATE: any route below 4/4 on either UA fails the build.
+  const fails = results.filter(
+    (r) => r.mobile.score < 4 || r.desktop.score < 4
+  );
+  const passes = results.filter(
+    (r) => r.mobile.score === 4 && r.desktop.score === 4
+  );
   lines.push(`## Summary`);
   lines.push("");
-  lines.push(`- **PASS (mobile score ≥ 3.5/4):** ${passes.length}`);
-  lines.push(`- **FAIL (mobile score < 3/4):** ${fails.length}`);
+  lines.push(`- **PASS (4/4 on both UAs):** ${passes.length}`);
+  lines.push(`- **FAIL (< 4/4 on either UA):** ${fails.length}`);
   lines.push(`- **Parity gaps (mobile < desktop):** ${results.filter((r) => r.parityDelta > 0).length}`);
   lines.push("");
+
+  if (fails.length) {
+    lines.push(`## Failing routes (build gate)`);
+    lines.push("");
+    for (const r of fails) {
+      lines.push(`- \`${r.route}\` — mobile ${r.mobile.score}/4, desktop ${r.desktop.score}/4`);
+      const all = [
+        ...r.mobile.issues.map((i) => `mobile: ${i}`),
+        ...r.desktop.issues.map((i) => `desktop: ${i}`),
+      ];
+      for (const i of all) lines.push(`  - ${i}`);
+    }
+    lines.push("");
+  }
 
   lines.push(`## Score Table`);
   lines.push("");

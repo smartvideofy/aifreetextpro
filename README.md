@@ -71,3 +71,27 @@ Yes, you can!
 To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
 
 Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+
+## Mobile rendering parity audit
+
+The site is a Vite SPA with build-time prerendering for top SEO routes. To
+verify each prerendered route ships route-specific `<title>`, `<meta>`,
+canonical, and JSON-LD in the **raw HTML** (no JS execution):
+
+```bash
+npm run build           # vite build + prerender plugin emits dist/<route>/index.html
+npm run audit:parity    # serves dist/ on a local port and runs the audit
+# or in one go:
+npm run build:verified  # build + audit, exits non-zero if any route < 4/4
+```
+
+Post-deploy smoke test against the live site:
+
+```bash
+npm run audit:parity:live
+```
+
+Output report: `/mnt/documents/mobile-parity-report.md`. The build gate fails
+if any audited route scores below 4/4 on either Googlebot-Mobile or Googlebot
+(desktop) UA. Add new routes by extending both
+`scripts/seo/prerender-routes.ts` and `scripts/seo/route-expectations.json`.

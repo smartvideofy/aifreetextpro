@@ -4,18 +4,31 @@ import "./index.css";
 
 const container = document.getElementById("root")!;
 
-// Signal to the prerenderer (vite-plugin-prerender / Puppeteer) that the
-// app has fully rendered and Helmet has flushed <title>/<meta>/JSON-LD into
-// the DOM. The prerenderer waits for this event before snapshotting HTML.
+// Notify the prerenderer (Puppeteer) that the app + Helmet have committed.
+// We wait for two animation frames AND for any pending Suspense lazy chunks
+// to resolve, then poll until the document <title> changes from the static
+// fallback (homepage <title>) before signaling readiness.
+const STATIC_FALLBACK_TITLE_FRAGMENT = "Free AI Humanizer & Detector Tool";
+
 const fireRenderEvent = () => {
-  // Defer one frame so React commits and Helmet sync-applies head tags first.
-  requestAnimationFrame(() => {
-    document.dispatchEvent(new Event("render-event"));
-  });
+  const start = Date.now();
+  const tick = () => {
+    const titleChanged =
+      document.title && !document.title.includes(STATIC_FALLBACK_TITLE_FRAGMENT);
+    const isHome = window.location.pathname === "/";
+    const elapsed = Date.now() - start;
+    // Home keeps the fallback (it IS the home title), so signal immediately.
+    // For deep routes, wait for Helmet to swap the title or fall back at 4s.
+    if (isHome || titleChanged || elapsed > 4000) {
+      document.dispatchEvent(new Event("render-event"));
+      return;
+    }
+    requestAnimationFrame(tick);
+  };
+  requestAnimationFrame(() => requestAnimationFrame(tick));
 };
 
 if (container.hasChildNodes()) {
-  // Prerendered HTML present -> hydrate.
   hydrateRoot(container, <App />);
   fireRenderEvent();
 } else {

@@ -4,27 +4,47 @@ import "./index.css";
 
 const container = document.getElementById("root")!;
 
-// Notify the prerenderer (Puppeteer) that the app + Helmet have committed.
-// We wait for two animation frames AND for any pending Suspense lazy chunks
-// to resolve, then poll until the document <title> changes from the static
-// fallback (homepage <title>) before signaling readiness.
+// Notify the prerenderer (Puppeteer) that the app + Helmet have flushed
+// <title>/<meta>/JSON-LD into <head>. react-helmet-async writes head changes
+// via setTimeout/requestAnimationFrame inside an effect, so we MUST wait until
+// the document title actually swaps from the static fallback before snapshotting.
 const STATIC_FALLBACK_TITLE_FRAGMENT = "Free AI Humanizer & Detector Tool";
+const MAX_WAIT_MS = 14000;
+const POST_SWAP_DELAY_MS = 250;
 
 const fireRenderEvent = () => {
   const start = Date.now();
+  const isHome = window.location.pathname === "/";
+
+  const dispatch = () => {
+    document.dispatchEvent(new Event("render-event"));
+  };
+
   const tick = () => {
-    const titleChanged =
+    const titleSwapped =
       document.title && !document.title.includes(STATIC_FALLBACK_TITLE_FRAGMENT);
-    const isHome = window.location.pathname === "/";
     const elapsed = Date.now() - start;
-    // Home keeps the fallback (it IS the home title), so signal immediately.
-    // For deep routes, wait for Helmet to swap the title or fall back at 4s.
-    if (isHome || titleChanged || elapsed > 15000) {
-      document.dispatchEvent(new Event("render-event"));
+
+    if (isHome) {
+      // Home keeps the fallback title; small delay then signal.
+      setTimeout(dispatch, POST_SWAP_DELAY_MS);
       return;
     }
-    requestAnimationFrame(tick);
+
+    if (titleSwapped) {
+      // Helmet has committed head changes; allow one more tick for any
+      // straggling JSON-LD scripts then signal.
+      setTimeout(dispatch, POST_SWAP_DELAY_MS);
+      return;
+    }
+
+    if (elapsed > MAX_WAIT_MS) {
+      dispatch();
+      return;
+    }
+    setTimeout(tick, 100);
   };
+
   requestAnimationFrame(() => requestAnimationFrame(tick));
 };
 

@@ -29,8 +29,42 @@ export default defineConfig(({ mode }) => ({
             args: ["--no-sandbox", "--disable-setuid-sandbox"],
           },
         },
-        postProcess(_renderedRoute: { html: string; route: string }) {
-          // No mutation needed; Helmet-injected head tags are preserved as-is.
+        postProcess(rendered: { html: string; route: string }) {
+          // The static index.html template ships fallback <title>, <meta
+          // description>, <meta keywords>, and <link canonical>. After
+          // hydration, react-helmet-async appends route-specific replacements
+          // marked data-rh="true". Crawlers (and our parity audit) read the
+          // FIRST occurrence in <head>, so we must remove the fallbacks
+          // whenever Helmet has supplied a replacement for the same tag.
+          if (rendered.route === "/") return; // Home keeps its baked-in tags.
+          let html = rendered.html;
+          const has = (re: RegExp) => re.test(html);
+          // Title
+          if (has(/<title[^>]*data-rh=["']true["'][^>]*>/i)) {
+            html = html.replace(/<title(?![^>]*data-rh)[^>]*>[\s\S]*?<\/title>\s*/i, "");
+          }
+          // Description
+          if (has(/<meta[^>]+name=["']description["'][^>]+data-rh=["']true["']/i)) {
+            html = html.replace(
+              /<meta(?=[^>]*name=["']description["'])(?![^>]*data-rh)[^>]*>\s*/gi,
+              ""
+            );
+          }
+          // Keywords
+          if (has(/<meta[^>]+name=["']keywords["'][^>]+data-rh=["']true["']/i)) {
+            html = html.replace(
+              /<meta(?=[^>]*name=["']keywords["'])(?![^>]*data-rh)[^>]*>\s*/gi,
+              ""
+            );
+          }
+          // Canonical
+          if (has(/<link[^>]+rel=["']canonical["'][^>]+data-rh=["']true["']/i)) {
+            html = html.replace(
+              /<link(?=[^>]*rel=["']canonical["'])(?![^>]*data-rh)[^>]*>\s*/gi,
+              ""
+            );
+          }
+          rendered.html = html;
         },
       }),
   ].filter(Boolean),

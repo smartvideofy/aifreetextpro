@@ -27,6 +27,7 @@ const TermsOfService = () => {
       </Helmet>
       <main className="flex-1">
         <div className="container mx-auto px-4 py-16 max-w-4xl">
+          <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Terms of Service" }]} />
           <Link to="/">
             <Button variant="ghost" className="mb-8">
               <ArrowLeft className="mr-2 h-4 w-4" />

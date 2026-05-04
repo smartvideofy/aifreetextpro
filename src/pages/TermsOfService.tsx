@@ -3,6 +3,7 @@ import { ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Helmet } from "react-helmet-async";
 import Footer from "@/components/Footer";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
 
 const TermsOfService = () => {
   return (
@@ -26,6 +27,7 @@ const TermsOfService = () => {
       </Helmet>
       <main className="flex-1">
         <div className="container mx-auto px-4 py-16 max-w-4xl">
+          <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Terms of Service" }]} />
           <Link to="/">
             <Button variant="ghost" className="mb-8">
               <ArrowLeft className="mr-2 h-4 w-4" />

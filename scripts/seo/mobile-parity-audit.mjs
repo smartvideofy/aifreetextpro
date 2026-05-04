@@ -152,16 +152,18 @@ function audit(route, html) {
     score += 1;
   }
 
-  // Canonical
+  // Canonical — accept either the audit BASE or the production canonical host.
+  const PROD_BASE = "https://aifreetextpro.com";
   const expectedCanonical = `${BASE}${route.path}`.replace(/\/$/, "") || BASE;
+  const expectedProd = `${PROD_BASE}${route.path}`.replace(/\/$/, "") || PROD_BASE;
   const canonicalNorm = (canonical || "").replace(/\/$/, "");
   if (!canonical) {
     issues.push("FAIL: no <link rel=canonical> found");
   } else if (
     canonicalNorm !== expectedCanonical &&
-    canonicalNorm !== BASE.replace(/\/$/, "") + (route.path === "/" ? "" : route.path)
+    canonicalNorm !== expectedProd
   ) {
-    issues.push(`WARN: canonical "${canonical}" != expected "${expectedCanonical}"`);
+    issues.push(`WARN: canonical "${canonical}" != expected "${expectedCanonical}" or "${expectedProd}"`);
     score += 0.5;
   } else {
     score += 1;

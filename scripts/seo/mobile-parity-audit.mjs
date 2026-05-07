@@ -68,14 +68,80 @@ function extractJsonLd(html) {
   let m;
   while ((m = re.exec(html)) !== null) {
     const raw = m[1].trim();
+    const tagOpen = m[0].slice(0, m[0].indexOf(">") + 1);
+    const rh = /data-rh=["']true["']/i.test(tagOpen);
     try {
       const parsed = JSON.parse(raw);
-      blocks.push(parsed);
+      blocks.push({ ...((parsed && typeof parsed === "object") ? parsed : { value: parsed }), __rh__: rh });
     } catch {
-      blocks.push({ __invalid__: true, raw: raw.slice(0, 200) });
+      blocks.push({ __invalid__: true, __rh__: rh, raw: raw.slice(0, 200) });
     }
   }
   return blocks;
+}
+
+// Extract every <title>, <meta>, <link rel=canonical>, JSON-LD with their
+// data-rh flag and source order. Used for the per-tag debug diff.
+function extractAllSeoTags(html) {
+  const out = { titles: [], metas: [], canonicals: [], jsonLd: [] };
+  const titleRe = /<title([^>]*)>([\s\S]*?)<\/title>/gi;
+  let m;
+  while ((m = titleRe.exec(html)) !== null) {
+    out.titles.push({
+      rh: /data-rh=["']true["']/i.test(m[1]),
+      text: decode(stripTags(m[2])).slice(0, 200),
+    });
+  }
+  const metaRe = /<meta\b([^>]*)>/gi;
+  while ((m = metaRe.exec(html)) !== null) {
+    const attrs = m[1];
+    const nameMatch =
+      attrs.match(/\bname=["']([^"']+)["']/i) ||
+      attrs.match(/\bproperty=["']([^"']+)["']/i);
+    const contentMatch = attrs.match(/\bcontent=["']([^"']*)["']/i);
+    if (!nameMatch) continue;
+    out.metas.push({
+      rh: /data-rh=["']true["']/i.test(attrs),
+      name: nameMatch[1],
+      content: contentMatch ? decode(contentMatch[1]).slice(0, 200) : "",
+    });
+  }
+  const linkRe = /<link\b([^>]*)>/gi;
+  while ((m = linkRe.exec(html)) !== null) {
+    const attrs = m[1];
+    if (!/\brel=["']canonical["']/i.test(attrs)) continue;
+    const href = attrs.match(/\bhref=["']([^"']+)["']/i);
+    out.canonicals.push({
+      rh: /data-rh=["']true["']/i.test(attrs),
+      href: href ? href[1] : "",
+    });
+  }
+  const ldRe =
+    /<script([^>]*type=["']application\/ld\+json["'][^>]*)>([\s\S]*?)<\/script>/gi;
+  while ((m = ldRe.exec(html)) !== null) {
+    const attrs = m[1];
+    let types = [];
+    try {
+      const parsed = JSON.parse(m[2].trim());
+      const walk = (n) => {
+        if (!n || typeof n !== "object") return;
+        if (Array.isArray(n)) return n.forEach(walk);
+        const t = n["@type"];
+        if (typeof t === "string") types.push(t);
+        else if (Array.isArray(t)) t.forEach((x) => typeof x === "string" && types.push(x));
+        for (const k of Object.keys(n)) walk(n[k]);
+      };
+      walk(parsed);
+    } catch {
+      types = ["__INVALID__"];
+    }
+    out.jsonLd.push({
+      rh: /data-rh=["']true["']/i.test(attrs),
+      types,
+      bytes: m[2].length,
+    });
+  }
+  return out;
 }
 function collectTypes(blocks) {
   const types = new Set();
@@ -221,16 +287,40 @@ async function main() {
     const desktopAudit = audit(route, desktop.html || "");
     results.push({
       route: route.path,
-      mobile: { status: mobile.status, ...mobileAudit, error: mobile.error },
-      desktop: { status: desktop.status, ...desktopAudit, error: desktop.error },
+      debug: !!route.debug,
+      expectations: route,
+      mobile: {
+        status: mobile.status,
+        ...mobileAudit,
+        error: mobile.error,
+        rawTags: route.debug ? extractAllSeoTags(mobile.html || "") : null,
+        htmlBytes: (mobile.html || "").length,
+      },
+      desktop: {
+        status: desktop.status,
+        ...desktopAudit,
+        error: desktop.error,
+        rawTags: route.debug ? extractAllSeoTags(desktop.html || "") : null,
+        htmlBytes: (desktop.html || "").length,
+      },
       parityDelta:
         mobileAudit.score === desktopAudit.score
           ? 0
           : desktopAudit.score - mobileAudit.score,
     });
     process.stderr.write(
-      `mobile=${mobileAudit.score}/4 desktop=${desktopAudit.score}/4\n`
+      `mobile=${mobileAudit.score}/4 desktop=${desktopAudit.score}/4${route.debug ? " [DEBUG]" : ""}\n`
     );
+    if (route.debug) {
+      const t = extractAllSeoTags(mobile.html || "");
+      process.stderr.write(
+        `  [debug] titles=${t.titles.length} (rh=${t.titles.filter((x) => x.rh).length}) ` +
+          `metas=${t.metas.length} (rh=${t.metas.filter((x) => x.rh).length}) ` +
+          `canonicals=${t.canonicals.length} (rh=${t.canonicals.filter((x) => x.rh).length}) ` +
+          `jsonld=${t.jsonLd.length} (rh=${t.jsonLd.filter((x) => x.rh).length}) ` +
+          `types=[${t.jsonLd.flatMap((x) => x.types).join(",")}]\n`
+      );
+    }
   }
 
   // --- Build report ---
@@ -281,6 +371,100 @@ async function main() {
     );
   }
   lines.push("");
+
+  // --- Debug routes: tag-by-tag diff ---
+  const debugRoutes = results.filter((r) => r.debug);
+  if (debugRoutes.length) {
+    lines.push(`## Debug: tag-by-tag Helmet flush diff`);
+    lines.push("");
+    lines.push(
+      `These routes were flagged \`debug: true\` in route-expectations.json. The tables below list every <title>, <meta>, <link rel=canonical>, and JSON-LD block in the raw mobile HTML, with their \`data-rh\` flag (Helmet-managed = \`true\`, static fallback = \`—\`). Compare against expected values to pinpoint exactly which Helmet tag failed to flush before snapshot.`
+    );
+    lines.push("");
+    lines.push(
+      `Companion artifacts (when produced by \`npm run audit:debug\`):`
+    );
+    lines.push(`- \`dist/_debug/<slug>.html\` — final prerendered HTML`);
+    lines.push(`- \`dist/_debug/<slug>.log\` — in-browser MutationObserver timeline of <head> changes`);
+    lines.push("");
+    for (const r of debugRoutes) {
+      const exp = r.expectations;
+      const mt = r.mobile.rawTags;
+      const dt = r.desktop.rawTags;
+      lines.push(`### \`${r.route}\` (mobile ${r.mobile.score}/4, desktop ${r.desktop.score}/4)`);
+      lines.push("");
+      lines.push(`**Expected**`);
+      lines.push(`- Title contains one of: ${exp.titleMustInclude.map((s) => `\`${s}\``).join(", ")}`);
+      lines.push(`- Description contains one of: ${exp.descriptionMustInclude.map((s) => `\`${s}\``).join(", ")}`);
+      lines.push(`- JSON-LD must include @type: ${exp.requiredJsonLdTypes.map((s) => `\`${s}\``).join(", ")}`);
+      lines.push("");
+
+      const renderTagTable = (label, tags) => {
+        lines.push(`**${label}** (mobile HTML, ${r.mobile.htmlBytes} bytes total)`);
+        lines.push("");
+        lines.push(`| # | Tag | data-rh | Key | Value |`);
+        lines.push(`|---|---|---|---|---|`);
+        let i = 0;
+        tags.titles.forEach((t) =>
+          lines.push(`| ${++i} | \`<title>\` | ${t.rh ? "✅ true" : "— (FALLBACK)"} | — | \`${t.text.slice(0, 120).replace(/\|/g, "\\|")}\` |`)
+        );
+        tags.canonicals.forEach((t) =>
+          lines.push(`| ${++i} | \`<link rel=canonical>\` | ${t.rh ? "✅ true" : "— (FALLBACK)"} | href | \`${t.href}\` |`)
+        );
+        tags.metas.forEach((t) =>
+          lines.push(`| ${++i} | \`<meta>\` | ${t.rh ? "✅ true" : "— (FALLBACK)"} | ${t.name} | \`${t.content.slice(0, 100).replace(/\|/g, "\\|")}\` |`)
+        );
+        tags.jsonLd.forEach((t, idx) =>
+          lines.push(`| ${++i} | \`<script ld+json #${idx + 1}>\` | ${t.rh ? "✅ true" : "— (FALLBACK)"} | @types | \`${t.types.join(", ") || "(none)"}\` (${t.bytes}B) |`)
+        );
+        lines.push("");
+      };
+
+      renderTagTable("Mobile tags", mt);
+
+      // Mobile vs Desktop diff: which tags exist on desktop but not mobile?
+      const desktopTypes = new Set(dt.jsonLd.flatMap((x) => x.types));
+      const mobileTypes = new Set(mt.jsonLd.flatMap((x) => x.types));
+      const onlyDesktop = [...desktopTypes].filter((t) => !mobileTypes.has(t));
+      const onlyMobile = [...mobileTypes].filter((t) => !desktopTypes.has(t));
+      lines.push(`**Mobile vs Desktop JSON-LD parity**`);
+      lines.push(`- Mobile @types: ${[...mobileTypes].join(", ") || "_(none)_"}`);
+      lines.push(`- Desktop @types: ${[...desktopTypes].join(", ") || "_(none)_"}`);
+      lines.push(`- Only on desktop: ${onlyDesktop.join(", ") || "_(none)_"}`);
+      lines.push(`- Only on mobile: ${onlyMobile.join(", ") || "_(none)_"}`);
+      lines.push("");
+
+      // Verdict per required type
+      lines.push(`**Required JSON-LD verdict (mobile)**`);
+      for (const req of exp.requiredJsonLdTypes) {
+        const present = mobileTypes.has(req);
+        lines.push(`- \`${req}\`: ${present ? "✅ present" : "❌ MISSING (Helmet did not flush this block before snapshot)"}`);
+      }
+      lines.push("");
+
+      // Title/description verdict
+      const titleHelmet = mt.titles.find((t) => t.rh);
+      const titleStatic = mt.titles.find((t) => !t.rh);
+      lines.push(`**Title verdict**`);
+      lines.push(`- Helmet-managed title: ${titleHelmet ? `✅ \`${titleHelmet.text.slice(0, 100)}\`` : "❌ NOT FLUSHED"}`);
+      lines.push(`- Fallback title still present: ${titleStatic ? `⚠ \`${titleStatic.text.slice(0, 100)}\`` : "no"}`);
+      lines.push("");
+
+      const descHelmet = mt.metas.find((m) => m.name === "description" && m.rh);
+      const descStatic = mt.metas.find((m) => m.name === "description" && !m.rh);
+      lines.push(`**Description verdict**`);
+      lines.push(`- Helmet-managed description: ${descHelmet ? `✅ \`${descHelmet.content.slice(0, 120)}\`` : "❌ NOT FLUSHED"}`);
+      lines.push(`- Fallback description still present: ${descStatic ? `⚠ \`${descStatic.content.slice(0, 120)}\`` : "no"}`);
+      lines.push("");
+
+      const canonHelmet = mt.canonicals.find((c) => c.rh);
+      const canonStatic = mt.canonicals.find((c) => !c.rh);
+      lines.push(`**Canonical verdict**`);
+      lines.push(`- Helmet-managed canonical: ${canonHelmet ? `✅ \`${canonHelmet.href}\`` : "❌ NOT FLUSHED"}`);
+      lines.push(`- Fallback canonical still present: ${canonStatic ? `⚠ \`${canonStatic.href}\`` : "no"}`);
+      lines.push("");
+    }
+  }
 
   lines.push(`## Per-route findings`);
   lines.push("");

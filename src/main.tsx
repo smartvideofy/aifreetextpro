@@ -13,14 +13,84 @@ const STATIC_FALLBACK_TITLE_FRAGMENT = "Free AI Humanizer & Detector Tool";
 const MAX_WAIT_MS = 25000;
 const POST_SWAP_QUIET_MS = 600;
 
+declare global {
+  interface Window {
+    __PRERENDER_DEBUG__?: boolean;
+    __PRERENDER_INJECT__?: { __debugRoutes?: string[] };
+  }
+}
+
 const fireRenderEvent = () => {
   const start = Date.now();
   const isHome = window.location.pathname === "/";
+  // Debug is on if explicitly flagged, OR if the prerenderer injected this
+  // route into __debugRoutes.
+  const injectedRoutes = window.__PRERENDER_INJECT__?.__debugRoutes || [];
+  const debug =
+    !!window.__PRERENDER_DEBUG__ ||
+    injectedRoutes.includes(window.location.pathname);
+  const dlog = (...args: unknown[]) => {
+    if (debug) console.log("[helmet-debug]", `+${Date.now() - start}ms`, ...args);
+  };
   let dispatched = false;
+
+  const dumpInventory = (label: string) => {
+    if (!debug) return;
+    const tags = Array.from(document.head.children);
+    const inv = {
+      label,
+      route: window.location.pathname,
+      title: document.title,
+      headChildCount: tags.length,
+      headHtmlLength: document.head.innerHTML.length,
+      titles: tags
+        .filter((t) => t.tagName === "TITLE")
+        .map((t) => ({ rh: t.hasAttribute("data-rh"), text: t.textContent })),
+      metas: tags
+        .filter((t) => t.tagName === "META")
+        .map((t) => ({
+          rh: t.hasAttribute("data-rh"),
+          name: t.getAttribute("name") || t.getAttribute("property"),
+          content: (t.getAttribute("content") || "").slice(0, 160),
+        })),
+      canonicals: tags
+        .filter(
+          (t) => t.tagName === "LINK" && t.getAttribute("rel") === "canonical"
+        )
+        .map((t) => ({ rh: t.hasAttribute("data-rh"), href: t.getAttribute("href") })),
+      jsonLd: tags
+        .filter(
+          (t) =>
+            t.tagName === "SCRIPT" &&
+            t.getAttribute("type") === "application/ld+json"
+        )
+        .map((t) => {
+          let types: string[] = [];
+          try {
+            const parsed = JSON.parse(t.textContent || "");
+            const walk = (n: unknown) => {
+              if (!n || typeof n !== "object") return;
+              if (Array.isArray(n)) return n.forEach(walk);
+              const obj = n as Record<string, unknown>;
+              const ty = obj["@type"];
+              if (typeof ty === "string") types.push(ty);
+              else if (Array.isArray(ty)) ty.forEach((x) => typeof x === "string" && types.push(x));
+              for (const k of Object.keys(obj)) walk(obj[k]);
+            };
+            walk(parsed);
+          } catch {
+            types = ["__INVALID__"];
+          }
+          return { rh: t.hasAttribute("data-rh"), types, bytes: (t.textContent || "").length };
+        }),
+    };
+    console.log("[helmet-debug] INVENTORY", JSON.stringify(inv));
+  };
 
   const dispatch = () => {
     if (dispatched) return;
     dispatched = true;
+    dumpInventory("pre-dispatch");
     document.dispatchEvent(new Event("render-event"));
   };
 
@@ -45,7 +115,26 @@ const fireRenderEvent = () => {
     return titleSwapped || hasHelmetTag;
   };
 
-  const observer = new MutationObserver(() => {
+  const observer = new MutationObserver((records) => {
+    if (debug) {
+      for (const rec of records) {
+        rec.addedNodes.forEach((n) => {
+          if (n.nodeType === 1) {
+            const el = n as Element;
+            dlog("+TAG", el.tagName, el.getAttributeNames().reduce((acc, a) => {
+              acc[a] = el.getAttribute(a) || "";
+              return acc;
+            }, {} as Record<string, string>), (el.textContent || "").slice(0, 80));
+          }
+        });
+        rec.removedNodes.forEach((n) => {
+          if (n.nodeType === 1) {
+            const el = n as Element;
+            dlog("-TAG", el.tagName, el.getAttributeNames().join(","));
+          }
+        });
+      }
+    }
     if (isHelmetReady()) armQuietTimer();
   });
   observer.observe(document.head, {
@@ -57,11 +146,15 @@ const fireRenderEvent = () => {
 
   // Hard timeout fallback so we never hang the prerender.
   setTimeout(() => {
-    if (!dispatched) dispatch();
+    if (!dispatched) {
+      dlog("HARD_TIMEOUT");
+      dispatch();
+    }
   }, MAX_WAIT_MS);
 
   // In case Helmet flushed before the observer attached.
   requestAnimationFrame(() => {
+    dlog("rAF check, helmetReady=", isHelmetReady());
     if (isHelmetReady()) armQuietTimer();
   });
 };

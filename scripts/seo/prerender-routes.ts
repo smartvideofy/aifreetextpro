@@ -55,3 +55,15 @@ export const prerenderRoutes = [
   "/blog/free-ai-content-detector",
   "/blog/humanize-chatgpt-text",
 ];
+
+// Routes that should be prerendered with verbose Helmet flush logging.
+// Override at build time:  PRERENDER_DEBUG_ROUTES=/ai-checker,/pricing
+export const prerenderDebugRoutes: string[] = (() => {
+  const env = (typeof process !== "undefined" && process.env?.PRERENDER_DEBUG_ROUTES) || "";
+  const fromEnv = env
+    .split(",")
+    .map((s) => s.trim())
+    .filter(Boolean);
+  // Always debug /ai-checker by default — that's the route we're chasing.
+  return Array.from(new Set([...fromEnv, "/ai-checker"]));
+})();

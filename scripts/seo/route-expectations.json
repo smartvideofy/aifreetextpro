@@ -7,7 +7,7 @@
       "descriptionMustInclude": ["humanize", "AI"],
       "requiredJsonLdTypes": ["Organization", "SoftwareApplication", "FAQPage", "WebSite"]
     },
-    { "path": "/ai-checker", "titleMustInclude": ["AI Checker", "AI Detector"], "descriptionMustInclude": ["detect"], "requiredJsonLdTypes": ["BreadcrumbList"] },
+    { "path": "/ai-checker", "debug": true, "titleMustInclude": ["AI Checker", "AI Detector"], "descriptionMustInclude": ["detect"], "requiredJsonLdTypes": ["BreadcrumbList"] },
     { "path": "/pricing", "titleMustInclude": ["Pricing"], "descriptionMustInclude": ["plan"], "requiredJsonLdTypes": ["BreadcrumbList"] },
     { "path": "/about", "titleMustInclude": ["About"], "descriptionMustInclude": ["AI"], "requiredJsonLdTypes": ["BreadcrumbList"] },
     { "path": "/technology", "titleMustInclude": ["Technology", "AI Humanizer Works", "NLP"], "descriptionMustInclude": ["AI", "stylometric", "rewriting"], "requiredJsonLdTypes": ["BreadcrumbList"] },

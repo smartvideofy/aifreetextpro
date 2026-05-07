@@ -1,65 +1,62 @@
-# Plan: Post-Prerender Parity Verification + Build Gate
 
-## Goal
-After `vite build` emits per-route static HTML, prove the parity gap is closed by re-running the existing audit against the build output, and fail the build if any audited route scores below 4/4.
+# Plan: Pinpoint Helmet flush failures on /ai-checker
 
-## Steps
+Goal: when `/ai-checker` (or any route in a `DEBUG_ROUTES` list) is prerendered/audited, emit a tag-by-tag diff between what Helmet *should* have produced (the route's React tree) and what actually landed in the prerendered HTML, plus a timeline of when each Helmet tag was flushed during the Puppeteer render.
 
-### 1. Tighten audit thresholds
-Edit `scripts/seo/mobile-parity-audit.mjs`:
-- Replace the current `score < 3` fail threshold with a strict `score < 4` (any FAIL or WARN flips exit code to 1).
-- Add a final summary block listing every route that didn't hit 4/4 on either UA, with its specific issues, so CI logs are actionable.
-- Keep the existing 0.5-credit WARN logic but treat WARNs as failures for gating purposes (report still shows them as WARN for human readability).
+## 1. Prerender-time logging (`src/main.tsx`)
 
-### 2. Add a local-server audit mode
-The audit currently fetches `https://aifreetextpro.com` (live site, pre-prerender). To verify the build artifact before deploy, add support for auditing `dist/`:
-- New script `scripts/seo/serve-and-audit.mjs` that:
-  1. Spawns a static file server (using `sirv` or a tiny built-in `http.createServer` + `fs` — no new heavy dep) rooted at `dist/`, listening on an ephemeral port.
-  2. Sets `AUDIT_BASE_URL=http://127.0.0.1:<port>` and runs `mobile-parity-audit.mjs` as a child process.
-  3. Captures the audit's exit code, shuts the server down, and exits with the same code.
-- This lets the audit run in CI without needing the live domain and confirms the prerendered files themselves are correct.
+Add a debug branch that activates only when `window.__PRERENDER_DEBUG__` is true (set by the Puppeteer page via `pageContext`/`inject` for the routes we care about — initially `/ai-checker`).
 
-### 3. Expand route expectations to match prerender list
-`scripts/seo/route-expectations.json` only covers 15 routes; the prerender list covers ~45. To make the gate meaningful:
-- Extend `route-expectations.json` to include every route in `scripts/seo/prerender-routes.ts` that has distinctive copy.
-- For each new entry: pull `titleMustInclude` / `descriptionMustInclude` keywords from the page's `<SEOHead>` props and the `requiredJsonLdTypes` from any schema components used (BreadcrumbList everywhere; Article + FAQPage on blog posts).
-- Use a small helper section at the top of the JSON (comment-style) so future contributors know the keyword convention.
+For those routes:
+- Log every `MutationRecord` on `<head>` to `console.log("[helmet-debug] +tag", outerHTML)` / `"-tag"` for removals, with `Date.now() - start` ms.
+- Before dispatching `render-event`, dump a final inventory: counts and the full `outerHTML` of every `<title>`, `<meta>`, `<link rel=canonical>`, and `<script type="application/ld+json">` (parsed `@type`s) to console.
+- Also dump `document.head.innerHTML.length` and the list of tags carrying `data-rh="true"` vs not.
 
-### 4. Wire the gate into the build pipeline
-Edit `package.json` scripts:
-- Add `"audit:parity": "node scripts/seo/serve-and-audit.mjs"`.
-- Add `"build:verified": "vite build && npm run audit:parity"`.
-- Do **not** change the existing `"build"` script (Lovable's hosted build invokes `vite build` directly; we don't want to break that pipeline). The verified variant is for CI / manual pre-deploy checks.
+Puppeteer's `console` events are surfaced by `@prerenderer/renderer-puppeteer` only when `consoleHandler` is wired, so:
 
-### 5. Document the workflow
-Append a short section to `README.md`:
-- How to run `npm run build:verified` locally.
-- How to interpret `/mnt/documents/mobile-parity-report.md`.
-- Note that the live-site audit (`AUDIT_BASE_URL=https://aifreetextpro.com node scripts/seo/mobile-parity-audit.mjs`) is the post-deploy smoke test.
+## 2. Prerender plugin config (`vite.config.ts`)
 
-### 6. Run it once and capture results
-After implementation:
-- Run `npm run build` to regenerate `dist/` with the prerender plugin.
-- Run `npm run audit:parity` against `dist/`.
-- Save the resulting `mobile-parity-report.md` as the verification artifact.
-- If any route fails, iterate on `vite.config.ts` / `src/main.tsx` (most likely cause: `render-event` firing before Helmet flushes on slow routes — fix by extending the title-swap poll, or by adding the route to a known-slow list with a longer `renderAfterTime`).
+- Add `inject: { __PRERENDER_DEBUG__: true }` scoped via a per-route override. The plugin supports a `routes` array of strings *or* objects; switch `/ai-checker` (and any path in `process.env.PRERENDER_DEBUG_ROUTES`) to `{ route, inject: { __PRERENDER_DEBUG__: true } }`.
+- Add a `consoleHandler(route, message)` option that prefixes lines starting with `[helmet-debug]` and writes them to `dist/_debug/<slug>.log` (and stderr) so we keep the timeline after the build finishes.
+- In `postProcess`, when the route is in the debug set, also write the final `rendered.html` to `dist/_debug/<slug>.html` for offline inspection.
 
-## Files touched
-- `scripts/seo/mobile-parity-audit.mjs` — strict threshold, failed-routes summary
-- `scripts/seo/serve-and-audit.mjs` — new, serves `dist/` and runs the audit
-- `scripts/seo/route-expectations.json` — expanded to ~45 routes
-- `package.json` — `audit:parity`, `build:verified` scripts
-- `README.md` — usage docs
+## 3. Audit-time tag-by-tag diff (`scripts/seo/mobile-parity-audit.mjs`)
 
-## Out of scope
-- Lighthouse / CWV mobile audit (next plan)
-- GSC sitemap resubmission
-- Adding the remaining ~95 blog posts to the prerender list
-- Edge-side dynamic injection for personalized routes
+For routes flagged in `route-expectations.json` with `"debug": true` (start with `/ai-checker`):
+- Extract every `<title>`, `<meta>` (by `name`/`property`), `<link rel=canonical>`, and JSON-LD `@type` from the raw HTML.
+- Build an `expected` set from `route-expectations.json` (titleMustInclude, descriptionMustInclude, canonical, requiredJsonLdTypes).
+- Emit a per-tag table to the report:
 
-## Deliverables
-- Build that fails fast when any prerendered route regresses on title / description / canonical / JSON-LD
-- A reproducible `npm run build:verified` command
-- A fresh `mobile-parity-report.md` showing 4/4 across all audited routes
+  ```text
+  | Tag | Expected | Found | data-rh | Source |
+  |-----|----------|-------|---------|--------|
+  | <title> | "AI Checker..." | "Free AI Humanizer..." | no | static index.html (FALLBACK) |
+  | meta[name=description] | "Detect AI..." | (missing) | — | NOT FLUSHED |
+  | link[rel=canonical] | /ai-checker | /ai-checker | yes | helmet |
+  | jsonld @type=SoftwareApplication | required | present | — | helmet |
+  | jsonld @type=FAQPage | required | MISSING | — | NOT FLUSHED |
+  ```
 
-Approve to proceed.
+- For every tag, mark whether it has `data-rh="true"` (Helmet-managed) or not (static fallback survived).
+- Log to stderr the same diff for quick CI scanning.
+
+## 4. Optional: capture Helmet's own state
+
+Patch `<SEOHead>` to, when `import.meta.env.PROD && window.__PRERENDER_DEBUG__`, call `Helmet.peek()` after mount inside a `useEffect` and `console.log("[helmet-debug] peek", JSON.stringify(state))`. This tells us what Helmet *thinks* it has, vs what the DOM observer sees — distinguishing "Helmet never ran" from "Helmet ran but didn't flush before snapshot."
+
+## 5. Wiring
+
+- New script: `npm run audit:debug` → `PRERENDER_DEBUG_ROUTES=/ai-checker npm run build && node scripts/seo/serve-and-audit.mjs` (no exit-on-fail; produces the diff section).
+- Add a "Debug routes" section at the top of `mobile-parity-report.md` listing per-tag diffs and pointing to `dist/_debug/*.log` / `*.html`.
+
+## Files to touch
+
+- `src/main.tsx` — gated debug observer + final dump.
+- `src/components/SEOHead.tsx` — optional `Helmet.peek()` log behind the same flag.
+- `vite.config.ts` — per-route inject, `consoleHandler`, debug HTML/log dump in `postProcess`.
+- `scripts/seo/prerender-routes.ts` — allow object-form entries; mark `/ai-checker` as debug when env flag set.
+- `scripts/seo/mobile-parity-audit.mjs` — tag-by-tag diff section for debug routes.
+- `scripts/seo/route-expectations.json` — add `"debug": true` to `/ai-checker`.
+- `package.json` — `audit:debug` script.
+
+No production behavior changes for non-debug routes; the build gate stays as-is.

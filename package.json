@@ -11,7 +11,8 @@
     "preview": "vite preview",
     "audit:parity": "node scripts/seo/serve-and-audit.mjs",
     "audit:parity:live": "AUDIT_BASE_URL=https://aifreetextpro.com node scripts/seo/mobile-parity-audit.mjs",
-    "build:verified": "vite build && node scripts/seo/serve-and-audit.mjs"
+    "build:verified": "vite build && node scripts/seo/serve-and-audit.mjs",
+    "audit:debug": "PRERENDER_DEBUG_ROUTES=/ai-checker vite build && AUDIT_DEBUG=1 node scripts/seo/serve-and-audit.mjs"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",

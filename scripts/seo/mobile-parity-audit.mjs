@@ -68,6 +68,84 @@ function extractJsonLd(html) {
   let m;
   while ((m = re.exec(html)) !== null) {
     const raw = m[1].trim();
+    const tagOpen = m[0].slice(0, m[0].indexOf(">") + 1);
+    const rh = /data-rh=["']true["']/i.test(tagOpen);
+    try {
+      const parsed = JSON.parse(raw);
+      blocks.push({ ...((parsed && typeof parsed === "object") ? parsed : { value: parsed }), __rh__: rh });
+    } catch {
+      blocks.push({ __invalid__: true, __rh__: rh, raw: raw.slice(0, 200) });
+    }
+  }
+  return blocks;
+}
+
+// Extract every <title>, <meta>, <link rel=canonical>, JSON-LD with their
+// data-rh flag and source order. Used for the per-tag debug diff.
+function extractAllSeoTags(html) {
+  const out = { titles: [], metas: [], canonicals: [], jsonLd: [] };
+  const titleRe = /<title([^>]*)>([\s\S]*?)<\/title>/gi;
+  let m;
+  while ((m = titleRe.exec(html)) !== null) {
+    out.titles.push({
+      rh: /data-rh=["']true["']/i.test(m[1]),
+      text: decode(stripTags(m[2])).slice(0, 200),
+    });
+  }
+  const metaRe = /<meta\b([^>]*)>/gi;
+  while ((m = metaRe.exec(html)) !== null) {
+    const attrs = m[1];
+    const nameMatch =
+      attrs.match(/\bname=["']([^"']+)["']/i) ||
+      attrs.match(/\bproperty=["']([^"']+)["']/i);
+    const contentMatch = attrs.match(/\bcontent=["']([^"']*)["']/i);
+    if (!nameMatch) continue;
+    out.metas.push({
+      rh: /data-rh=["']true["']/i.test(attrs),
+      name: nameMatch[1],
+      content: contentMatch ? decode(contentMatch[1]).slice(0, 200) : "",
+    });
+  }
+  const linkRe = /<link\b([^>]*)>/gi;
+  while ((m = linkRe.exec(html)) !== null) {
+    const attrs = m[1];
+    if (!/\brel=["']canonical["']/i.test(attrs)) continue;
+    const href = attrs.match(/\bhref=["']([^"']+)["']/i);
+    out.canonicals.push({
+      rh: /data-rh=["']true["']/i.test(attrs),
+      href: href ? href[1] : "",
+    });
+  }
+  const ldRe =
+    /<script([^>]*type=["']application\/ld\+json["'][^>]*)>([\s\S]*?)<\/script>/gi;
+  while ((m = ldRe.exec(html)) !== null) {
+    const attrs = m[1];
+    let types = [];
+    try {
+      const parsed = JSON.parse(m[2].trim());
+      const walk = (n) => {
+        if (!n || typeof n !== "object") return;
+        if (Array.isArray(n)) return n.forEach(walk);
+        const t = n["@type"];
+        if (typeof t === "string") types.push(t);
+        else if (Array.isArray(t)) t.forEach((x) => typeof x === "string" && types.push(x));
+        for (const k of Object.keys(n)) walk(n[k]);
+      };
+      walk(parsed);
+    } catch {
+      types = ["__INVALID__"];
+    }
+    out.jsonLd.push({
+      rh: /data-rh=["']true["']/i.test(attrs),
+      types,
+      bytes: m[2].length,
+    });
+  }
+  return out;
+}
+  let m;
+  while ((m = re.exec(html)) !== null) {
+    const raw = m[1].trim();
     try {
       const parsed = JSON.parse(raw);
       blocks.push(parsed);

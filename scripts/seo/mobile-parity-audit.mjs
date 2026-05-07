@@ -287,16 +287,40 @@ async function main() {
     const desktopAudit = audit(route, desktop.html || "");
     results.push({
       route: route.path,
-      mobile: { status: mobile.status, ...mobileAudit, error: mobile.error },
-      desktop: { status: desktop.status, ...desktopAudit, error: desktop.error },
+      debug: !!route.debug,
+      expectations: route,
+      mobile: {
+        status: mobile.status,
+        ...mobileAudit,
+        error: mobile.error,
+        rawTags: route.debug ? extractAllSeoTags(mobile.html || "") : null,
+        htmlBytes: (mobile.html || "").length,
+      },
+      desktop: {
+        status: desktop.status,
+        ...desktopAudit,
+        error: desktop.error,
+        rawTags: route.debug ? extractAllSeoTags(desktop.html || "") : null,
+        htmlBytes: (desktop.html || "").length,
+      },
       parityDelta:
         mobileAudit.score === desktopAudit.score
           ? 0
           : desktopAudit.score - mobileAudit.score,
     });
     process.stderr.write(
-      `mobile=${mobileAudit.score}/4 desktop=${desktopAudit.score}/4\n`
+      `mobile=${mobileAudit.score}/4 desktop=${desktopAudit.score}/4${route.debug ? " [DEBUG]" : ""}\n`
     );
+    if (route.debug) {
+      const t = extractAllSeoTags(mobile.html || "");
+      process.stderr.write(
+        `  [debug] titles=${t.titles.length} (rh=${t.titles.filter((x) => x.rh).length}) ` +
+          `metas=${t.metas.length} (rh=${t.metas.filter((x) => x.rh).length}) ` +
+          `canonicals=${t.canonicals.length} (rh=${t.canonicals.filter((x) => x.rh).length}) ` +
+          `jsonld=${t.jsonLd.length} (rh=${t.jsonLd.filter((x) => x.rh).length}) ` +
+          `types=[${t.jsonLd.flatMap((x) => x.types).join(",")}]\n`
+      );
+    }
   }
 
   // --- Build report ---

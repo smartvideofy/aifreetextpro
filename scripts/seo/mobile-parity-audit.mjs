@@ -143,18 +143,6 @@ function extractAllSeoTags(html) {
   }
   return out;
 }
-  let m;
-  while ((m = re.exec(html)) !== null) {
-    const raw = m[1].trim();
-    try {
-      const parsed = JSON.parse(raw);
-      blocks.push(parsed);
-    } catch {
-      blocks.push({ __invalid__: true, raw: raw.slice(0, 200) });
-    }
-  }
-  return blocks;
-}
 function collectTypes(blocks) {
   const types = new Set();
   const walk = (node) => {

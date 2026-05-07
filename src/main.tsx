@@ -16,13 +16,19 @@ const POST_SWAP_QUIET_MS = 600;
 declare global {
   interface Window {
     __PRERENDER_DEBUG__?: boolean;
+    __PRERENDER_INJECT__?: { __debugRoutes?: string[] };
   }
 }
 
 const fireRenderEvent = () => {
   const start = Date.now();
   const isHome = window.location.pathname === "/";
-  const debug = !!window.__PRERENDER_DEBUG__;
+  // Debug is on if explicitly flagged, OR if the prerenderer injected this
+  // route into __debugRoutes.
+  const injectedRoutes = window.__PRERENDER_INJECT__?.__debugRoutes || [];
+  const debug =
+    !!window.__PRERENDER_DEBUG__ ||
+    injectedRoutes.includes(window.location.pathname);
   const dlog = (...args: unknown[]) => {
     if (debug) console.log("[helmet-debug]", `+${Date.now() - start}ms`, ...args);
   };

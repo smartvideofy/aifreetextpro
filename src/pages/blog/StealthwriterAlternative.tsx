@@ -42,7 +42,7 @@ const StealthwriterAlternative = () => {
           "headline": "Best Stealthwriter Alternative 2026: Tested Head-to-Head",
           "author": { "@type": "Person", "name": "James Okonkwo", "url": "https://aifreetextpro.com/team#james-okonkwo" },
           "publisher": { "@type": "Organization", "name": "AI Free Text Pro", "logo": { "@type": "ImageObject", "url": "https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" } },
-          "datePublished": "2026-05-09T08:00:00Z", "dateModified": "2026-05-09",
+          "datePublished": "2026-05-09T08:00:00Z", "dateModified": "2026-05-09T08:00:00Z",
           "mainEntityOfPage": "https://aifreetextpro.com/blog/stealthwriter-alternative", "wordCount": 1900
         })}</script>
         <script type="application/ld+json">{JSON.stringify({

@@ -614,6 +614,7 @@ const blogPosts = [
     date: "2026-05-09",
     readTime: "13 min read",
     category: "How-To Guide"
+  },
   {
     slug: "ai-detectors-claude-gemini-gpt5-2026",
     title: "Can AI Detectors Detect Claude, Gemini, and GPT-5? (2026 Tests)",

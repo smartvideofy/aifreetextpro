@@ -128,6 +128,9 @@ const UndetectableAIEssayWriter = lazy(() => import("./pages/blog/UndetectableAI
 const AIParaphrasingToolPlagiarism = lazy(() => import("./pages/blog/AIParaphrasingToolPlagiarism"));
 const AIHomeworkHelper = lazy(() => import("./pages/blog/AIHomeworkHelper"));
 const RewriteAIText = lazy(() => import("./pages/blog/RewriteAIText"));
+const BestAIDetector2026 = lazy(() => import("./pages/blog/BestAIDetector2026"));
+const StealthwriterAlternative = lazy(() => import("./pages/blog/StealthwriterAlternative"));
+const AIHumanizerForEssays = lazy(() => import("./pages/blog/AIHumanizerForEssays"));
 const TurnitinAppeal = lazy(() => import("./pages/blog/TurnitinAppeal"));
 const FreeAIContentDetector = lazy(() => import("./pages/blog/FreeAIContentDetector"));
 const ChatGPTCollegeEssays = lazy(() => import("./pages/blog/ChatGPTCollegeEssays"));
@@ -280,6 +283,9 @@ const App = () => (
               <Route path="/blog/ai-paraphrasing-tool-avoid-plagiarism" element={<AIParaphrasingToolPlagiarism />} />
               <Route path="/blog/ai-homework-helper-undetectable" element={<AIHomeworkHelper />} />
               <Route path="/blog/rewrite-ai-text-sound-human" element={<RewriteAIText />} />
+              <Route path="/blog/best-ai-detector-2026" element={<BestAIDetector2026 />} />
+              <Route path="/blog/stealthwriter-alternative" element={<StealthwriterAlternative />} />
+              <Route path="/blog/ai-humanizer-for-essays" element={<AIHumanizerForEssays />} />
               <Route path="/blog/turnitin-appeal-ai-detection" element={<TurnitinAppeal />} />
               <Route path="/blog/free-ai-content-detector" element={<FreeAIContentDetector />} />
               <Route path="/blog/chatgpt-college-essays" element={<ChatGPTCollegeEssays />} />

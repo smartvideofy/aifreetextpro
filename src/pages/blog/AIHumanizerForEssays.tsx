@@ -42,7 +42,7 @@ const AIHumanizerForEssays = () => {
           "headline": "AI Humanizer for Essays 2026: Pass Turnitin Without Losing Voice",
           "author": { "@type": "Person", "name": "Dr. Sarah Chen", "url": "https://aifreetextpro.com/team#sarah-chen" },
           "publisher": { "@type": "Organization", "name": "AI Free Text Pro", "logo": { "@type": "ImageObject", "url": "https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" } },
-          "datePublished": "2026-05-09T08:00:00Z", "dateModified": "2026-05-09",
+          "datePublished": "2026-05-09T08:00:00Z", "dateModified": "2026-05-09T08:00:00Z",
           "mainEntityOfPage": "https://aifreetextpro.com/blog/ai-humanizer-for-essays", "wordCount": 2000
         })}</script>
         <script type="application/ld+json">{JSON.stringify({

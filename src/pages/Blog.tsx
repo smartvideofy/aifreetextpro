@@ -1274,10 +1274,10 @@ const Blog = () => {
                               year: 'numeric' 
                             })}
                           </div>
-                          <Link to={`/blog/${post.slug}`}>
+                          <Link to={`/blog/${post.slug}`} aria-label={`Read full article: ${post.title}`}>
                             <Button variant="ghost" size="sm" className="group text-primary hover:text-primary">
-                              Read more
-                              <ArrowRight className="ml-1 h-3.5 w-3.5 group-hover:translate-x-1 transition-transform" />
+                              Read full article
+                              <ArrowRight className="ml-1 h-3.5 w-3.5 group-hover:translate-x-1 transition-transform" aria-hidden="true" />
                             </Button>
                           </Link>
                         </div>

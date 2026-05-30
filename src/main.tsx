@@ -9,7 +9,7 @@ const container = document.getElementById("root")!;
 // setTimeout/requestAnimationFrame inside an effect, so we MUST wait until
 // at least one Helmet-managed tag (data-rh="true") appears in <head> before
 // snapshotting. We also wait briefly for stragglers (extra JSON-LD blocks).
-const STATIC_FALLBACK_TITLE_FRAGMENT = "Free AI Humanizer & Detector Tool";
+const STATIC_FALLBACK_TITLE_FRAGMENT = "AI Humanizer & Detector | Bypass Turnitin";
 const MAX_WAIT_MS = 25000;
 const POST_SWAP_QUIET_MS = 600;
 

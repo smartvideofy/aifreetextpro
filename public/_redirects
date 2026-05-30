@@ -1,0 +1,18 @@
+# Netlify-style routing rules. Lovable publish + Netlify + Cloudflare Pages
+# all honor this file. Order matters: more specific rules first.
+#
+# CRITICAL: We MUST try the prerendered per-route file before falling back to
+# the SPA index.html. Without this, every route gets the homepage HTML and
+# the entire site canonicals to "/" for crawlers (catastrophic SEO).
+#
+# Netlify automatically serves static files in dist/ before applying rewrites,
+# so dist/ai-checker/index.html is served for /ai-checker. The catch-all below
+# is ONLY for client-side routes the prerender list missed (deep blog post
+# URLs not yet in prerender-routes.ts, dynamic /help-article/* slugs, etc.).
+
+# Force https + apex domain (one canonical host)
+https://aifreetextpro.lovable.app/*  https://aifreetextpro.com/:splat  301!
+https://www.aifreetextpro.com/*      https://aifreetextpro.com/:splat  301!
+
+# SPA fallback — runs LAST, only when no static file matched
+/*  /index.html  200

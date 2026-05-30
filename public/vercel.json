@@ -1,0 +1,22 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "rewrites": [
+    { "source": "/((?!api|assets|_debug|.*\\..*).*)", "destination": "/index.html" }
+  ],
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "aifreetextpro.lovable.app" }],
+      "destination": "https://aifreetextpro.com/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "www.aifreetextpro.com" }],
+      "destination": "https://aifreetextpro.com/:path*",
+      "permanent": true
+    }
+  ]
+}

@@ -12,7 +12,7 @@ const About = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <Helmet>
-        <title>About AI Free Text Pro — Trusted by 50,000+ Writers in 2026</title>
+        <title>About AI Free Text Pro - Trusted by 50K+ Writers</title>
         <meta name="description" content="The team building the free AI humanizer & detector trusted by 50,000+ students, writers and professionals. Our mission, story and 98% accuracy promise." />
         <meta name="keywords" content="about ai detector, ai text tools, free ai detection, ai humanizer company, text analysis tools" />
         <link rel="canonical" href="https://aifreetextpro.com/about" />

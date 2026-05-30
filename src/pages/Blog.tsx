@@ -1146,9 +1146,12 @@ const Blog = () => {
           <div className="max-w-5xl mx-auto mb-10">
             {/* Search Bar */}
             <div className="relative mb-6">
-              <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-muted-foreground" />
+              <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-muted-foreground" aria-hidden="true" />
+              <label htmlFor="blog-search" className="sr-only">Search blog articles</label>
               <Input
+                id="blog-search"
                 type="text"
+                aria-label="Search blog articles by title, topic, or keyword"
                 placeholder="Search articles by title, topic, or keyword..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
@@ -1156,10 +1159,12 @@ const Blog = () => {
               />
               {searchQuery && (
                 <button
+                  type="button"
+                  aria-label="Clear search"
                   onClick={() => setSearchQuery("")}
                   className="absolute right-4 top-1/2 -translate-y-1/2 text-muted-foreground hover:text-foreground transition-colors"
                 >
-                  <X className="w-5 h-5" />
+                  <X className="w-5 h-5" aria-hidden="true" />
                 </button>
               )}
             </div>
@@ -1269,10 +1274,10 @@ const Blog = () => {
                               year: 'numeric' 
                             })}
                           </div>
-                          <Link to={`/blog/${post.slug}`}>
+                          <Link to={`/blog/${post.slug}`} aria-label={`Read full article: ${post.title}`}>
                             <Button variant="ghost" size="sm" className="group text-primary hover:text-primary">
-                              Read more
-                              <ArrowRight className="ml-1 h-3.5 w-3.5 group-hover:translate-x-1 transition-transform" />
+                              Read full article
+                              <ArrowRight className="ml-1 h-3.5 w-3.5 group-hover:translate-x-1 transition-transform" aria-hidden="true" />
                             </Button>
                           </Link>
                         </div>

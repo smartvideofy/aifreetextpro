@@ -270,9 +270,10 @@ const Pricing = () => {
                 />
               </div>
             </div>
-
+            <h2 className="text-3xl md:text-4xl font-bold text-center mb-8">Choose Your Plan</h2>
             {/* Pricing Cards */}
             <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-6 max-w-7xl mx-auto">
+
               {plans.map((plan) => {
                 const Icon = plan.icon;
                 return (

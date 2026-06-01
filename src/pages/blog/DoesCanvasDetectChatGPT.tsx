@@ -276,3 +276,7 @@ const DoesCanvasDetectChatGPT = () => {
       <Footer />
     </>
   );
+};
+
+export default DoesCanvasDetectChatGPT;
+

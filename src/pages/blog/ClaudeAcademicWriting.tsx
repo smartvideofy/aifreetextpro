@@ -12,6 +12,7 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@
 import { ArrowLeft, Calendar, Clock, User } from "lucide-react";
 
 const relatedArticles = [
+  { title: "How to Humanize Claude Output (2026)", description: "Make Claude essays undetectable with a 5-step workflow.", href: "/blog/humanize-claude-output", category: "How-To Guide" },
   { title: "ChatGPT vs Claude vs Gemini Detection", description: "Which AI model is hardest to detect? Full comparison.", href: "/blog/chatgpt-vs-claude-vs-gemini-detection", category: "Comparison" },
   { title: "Academic AI Writing Safely", description: "How to use AI for academic work without consequences.", href: "/blog/academic-ai-writing-safely", category: "Academic" },
   { title: "Best ChatGPT Prompts for Essays", description: "Prompts that produce better, less detectable essays.", href: "/blog/best-chatgpt-prompts-for-essays", category: "Academic" },

@@ -15,6 +15,18 @@ import { Button } from "@/components/ui/button";
 
 const relatedArticles = [
   {
+    title: "How to Humanize Claude Output (2026 Guide)",
+    description: "Make Claude 3.5 Sonnet and Claude 4 output undetectable by Canvas-integrated tools.",
+    href: "/blog/humanize-claude-output",
+    category: "How-To Guide"
+  },
+  {
+    title: "How to Humanize Gemini Output (2026 Guide)",
+    description: "Reduce Gemini detection scores before submitting through Canvas LMS.",
+    href: "/blog/humanize-gemini-output",
+    category: "How-To Guide"
+  },
+  {
     title: "Does Turnitin Detect ChatGPT?",
     description: "Real test results showing Turnitin's detection accuracy for ChatGPT output.",
     href: "/blog/does-turnitin-detect-chatgpt",

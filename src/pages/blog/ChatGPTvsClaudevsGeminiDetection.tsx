@@ -12,6 +12,8 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@
 import { FAQSection } from "@/components/FAQSection";
 
 const relatedArticles = [
+  { title: "How to Humanize Claude Output (2026)", description: "Step-by-step workflow to make Claude output undetectable.", href: "/blog/humanize-claude-output", category: "How-To Guide" },
+  { title: "How to Humanize Gemini Output (2026)", description: "Complete guide to reducing Gemini detection scores.", href: "/blog/humanize-gemini-output", category: "How-To Guide" },
   { title: "Can AI Detectors Detect Claude, Gemini, and GPT-5?", description: "Detector-side analysis of modern AI models.", href: "/blog/ai-detectors-claude-gemini-gpt5-2026", category: "Technical" },
   { title: "Top 10 AI Humanizer Tools", description: "Best humanizers for making any AI model undetectable.", href: "/blog/top-10-ai-humanizer-tools-2025", category: "Comparison" },
   { title: "AI Detection Patterns Explained", description: "The linguistic signals detectors analyze.", href: "/blog/ai-detection-patterns-explained", category: "Educational" },

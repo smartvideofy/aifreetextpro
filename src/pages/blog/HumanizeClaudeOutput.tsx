@@ -15,6 +15,18 @@ import { Button } from "@/components/ui/button";
 
 const relatedArticles = [
   {
+    title: "How to Humanize Gemini Output (2026 Guide)",
+    description: "Companion guide for humanizing Gemini 2.5 Pro and 3.1 Pro text.",
+    href: "/blog/humanize-gemini-output",
+    category: "How-To Guide"
+  },
+  {
+    title: "Does Canvas Detect ChatGPT? (2026 Answer)",
+    description: "How Canvas LMS handles AI detection and what students should know.",
+    href: "/blog/does-canvas-detect-chatgpt",
+    category: "Academic"
+  },
+  {
     title: "AI Detectors vs Claude, Gemini & GPT-5 (2026)",
     description: "Complete detection rate comparison across major AI models and detectors.",
     href: "/blog/ai-detectors-claude-gemini-gpt5",

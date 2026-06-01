@@ -48,6 +48,30 @@ const categoryThumbnails: Record<string, string> = {
 
 const blogPosts = [
   {
+    slug: "humanize-claude-output",
+    title: "How to Humanize Claude Output (2026 Guide): Bypass AI Detection",
+    excerpt: "Claude is detected at 74-83% by Turnitin, GPTZero, and Originality.AI. Real test data and a 5-step workflow that drops scores to 4-9% while preserving reasoning.",
+    date: "2026-06-01",
+    readTime: "12 min read",
+    category: "How-To Guide"
+  },
+  {
+    slug: "humanize-gemini-output",
+    title: "How to Humanize Gemini Output (2026 Guide): Bypass AI Detection",
+    excerpt: "Gemini is the most detectable major AI model at 81-89% raw. Complete workflow to reduce Turnitin scores from 84% to 7% across Gemini 2.5 Pro, 3.1 Pro, and 3.5 Flash.",
+    date: "2026-06-01",
+    readTime: "12 min read",
+    category: "How-To Guide"
+  },
+  {
+    slug: "does-canvas-detect-chatgpt",
+    title: "Does Canvas Detect ChatGPT? (2026 Complete Answer)",
+    excerpt: "Canvas has no native AI detector but most institutions enable Turnitin or Copyleaks integrations. Real 2026 detection rates for ChatGPT, Claude, and Gemini on Canvas.",
+    date: "2026-06-01",
+    readTime: "11 min read",
+    category: "Academic"
+  },
+  {
     slug: "ai-college-admissions-essays-personal-statements",
     title: "AI for College Admissions Essays & Personal Statements (2026)",
     excerpt: "Complete guide to using AI for college admissions essays. Which universities use AI detectors, safe brainstorming workflows, Common App strategies, and how to maintain authentic voice.",

@@ -11,6 +11,12 @@ import { InternalLinks } from "@/components/InternalLinks";
 
 const relatedArticles = [
   {
+    title: "Does Canvas Detect ChatGPT? (2026 Answer)",
+    description: "How Canvas LMS handles AI detection and what students should know.",
+    href: "/blog/does-canvas-detect-chatgpt",
+    category: "Academic"
+  },
+  {
     title: "Academic AI Writing Safely: Maintaining Integrity",
     description: "Using AI responsibly for academic writing",
     href: "/blog/academic-ai-writing-safely",

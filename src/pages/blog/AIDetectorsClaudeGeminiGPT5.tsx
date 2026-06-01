@@ -10,7 +10,9 @@ import { InternalLinks } from "@/components/InternalLinks";
 import ReviewedBy from "@/components/ReviewedBy";
 
 const relatedArticles = [
-  { title: "Can Turnitin Detect DeepSeek?", description: "DeepSeek detection test results.", href: "/blog/can-turnitin-detect-deepseek", category: "Academic" },
+  { title: "How to Humanize Claude Output (2026)", description: "Step-by-step workflow to make Claude output undetectable.", href: "/blog/humanize-claude-output", category: "How-To Guide" },
+  { title: "How to Humanize Gemini Output (2026)", description: "Complete guide to reducing Gemini detection scores.", href: "/blog/humanize-gemini-output", category: "How-To Guide" },
+  { title: "Does Canvas Detect ChatGPT?", description: "How Canvas LMS handles AI detection in 2026.", href: "/blog/does-canvas-detect-chatgpt", category: "Academic" },
   { title: "How AI Detectors Work", description: "The science behind AI detection.", href: "/blog/how-ai-detectors-work", category: "Educational" },
   { title: "AI Detection Patterns Explained", description: "5 patterns detectors analyze.", href: "/blog/ai-detection-patterns-explained", category: "Educational" },
   { title: "Pass All AI Detectors Guide", description: "Create human-like content across all detectors.", href: "/blog/pass-all-ai-detectors-guide", category: "How-To Guide" },

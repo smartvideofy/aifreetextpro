@@ -10,6 +10,7 @@ import { InternalLinks } from "@/components/InternalLinks";
 import ReviewedBy from "@/components/ReviewedBy";
 
 const relatedArticles = [
+  { title: "Does Canvas Detect ChatGPT? (2026 Answer)", description: "How Canvas LMS integrates Turnitin and Copyleaks to spot AI writing.", href: "/blog/does-canvas-detect-chatgpt", category: "Academic" },
   { title: "AI Writing for Students: Responsible Use Guide", description: "How to use AI responsibly in academia while maintaining integrity.", href: "/blog/ai-writing-students-avoid-plagiarism", category: "Academic" },
   { title: "Can Turnitin Detect DeepSeek?", description: "Find out if the newest AI model gets flagged by Turnitin.", href: "/blog/can-turnitin-detect-deepseek", category: "Academic" },
   { title: "AI Detection False Positives Explained", description: "Why your human writing sometimes gets flagged as AI.", href: "/blog/ai-detection-false-positives", category: "Educational" },

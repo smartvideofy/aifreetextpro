@@ -171,6 +171,10 @@ const AIWritingUpworkFiverr = lazy(() => import("./pages/blog/AIWritingUpworkFiv
 const AICollegeAdmissionsEssays = lazy(() => import("./pages/blog/AICollegeAdmissionsEssays"));
 const AIWritingNonNativeEnglish = lazy(() => import("./pages/blog/AIWritingNonNativeEnglish"));
 const CanDetectorsDetectGPT5 = lazy(() => import("./pages/blog/CanDetectorsDetectGPT5"));
+const HumanizeClaudeOutput = lazy(() => import("./pages/blog/HumanizeClaudeOutput"));
+const HumanizeGeminiOutput = lazy(() => import("./pages/blog/HumanizeGeminiOutput"));
+const DoesCanvasDetectChatGPT = lazy(() => import("./pages/blog/DoesCanvasDetectChatGPT"));
+
 
 const queryClient = new QueryClient();
 
@@ -363,6 +367,10 @@ const App = () => (
               <Route path="/blog/ai-college-admissions-essays-personal-statements" element={<AICollegeAdmissionsEssays />} />
               <Route path="/blog/ai-writing-non-native-english-speakers" element={<AIWritingNonNativeEnglish />} />
               <Route path="/blog/can-ai-detectors-detect-gpt5" element={<CanDetectorsDetectGPT5 />} />
+              <Route path="/blog/humanize-claude-output" element={<HumanizeClaudeOutput />} />
+              <Route path="/blog/humanize-gemini-output" element={<HumanizeGeminiOutput />} />
+              <Route path="/blog/does-canvas-detect-chatgpt" element={<DoesCanvasDetectChatGPT />} />
+
               
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />

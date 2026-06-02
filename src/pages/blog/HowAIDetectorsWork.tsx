@@ -48,7 +48,7 @@ export default function HowAIDetectorsWork() {
         <meta name="bingbot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         
         <meta property="og:title" content="How AI Detectors Work: Perplexity & Burstiness Explained (2026)" />
-        <meta property="og:description" content="Exactly how GPTZero, Turnitin & Originality.AI use perplexity and burstiness to flag AI text — with examples and fixes." />
+        <meta property="og:description" content="How GPTZero, Turnitin and Originality.AI use perplexity and burstiness to flag AI text, with examples and fixes." />
         <meta property="og:type" content="article" />
         <meta property="og:url" content="https://aifreetextpro.com/blog/how-ai-detectors-work" />
         <meta property="og:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" />
@@ -57,14 +57,14 @@ export default function HowAIDetectorsWork() {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@aifreetextpro" />
         <meta name="twitter:title" content="How AI Detectors Work: Perplexity & Burstiness Explained (2026)" />
-        <meta name="twitter:description" content="Exactly how GPTZero, Turnitin & Originality.AI use perplexity and burstiness to flag AI text — with fixes." />
+        <meta name="twitter:description" content="How GPTZero, Turnitin and Originality.AI use perplexity and burstiness to flag AI text, with fixes." />
         <meta name="twitter:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" />
         
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Article",
-            "headline": "How AI Detectors Work: Inside the Science of AI Text Analysis",
+            "headline": "How AI Detectors Work: Perplexity and Burstiness Explained (2026)",
             "description": "Understand the machine-learning and linguistic patterns behind AI detectors and how to write authentically human content.",
             "image": {
               "@type": "ImageObject",
@@ -73,7 +73,7 @@ export default function HowAIDetectorsWork() {
               "height": 675
             },
             "datePublished": "2026-02-02",
-            "dateModified": "2026-04-05",
+            "dateModified": "2026-06-02",
             "author": {
               "@type": "Person",
               "name": "Dr. Sarah Chen",

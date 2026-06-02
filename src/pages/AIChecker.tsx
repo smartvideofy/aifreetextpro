@@ -69,14 +69,14 @@ const AIChecker = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <Helmet>
-        <title>Free AI Detector — 98% Accurate, Unlimited Words, No Signup</title>
-        <meta name="description" content="Catch ChatGPT, Claude & Gemini text in 30 seconds. Free AI detector tested against GPTZero, Turnitin & Originality.AI. Unlimited words. Try it free →" />
+        <title>Free AI Detector 2026: Unlimited Words, No Signup</title>
+        <meta name="description" content="Catch ChatGPT, Claude and Gemini text in 30 seconds. Free AI detector tested against GPTZero, Turnitin and Originality.AI. Unlimited words, no signup. Try it free." />
         <meta name="keywords" content="free ai detector, ai checker, ai detector unlimited words, free ai detector unlimited words, ai content detector, check ai text, detect ai writing, ai detection tool, free ai checker" />
         <link rel="canonical" href="https://aifreetextpro.com/ai-checker" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-        <meta property="og:title" content="Free AI Detector: 98% Accurate, No Signup [2026]" />
-        <meta property="og:description" content="Check text against 15+ AI detectors in one click. Free, instant, private." />
+        <meta property="og:title" content="Free AI Detector 2026: Unlimited Words, No Signup" />
+        <meta property="og:description" content="Check text against 15+ AI detectors in one click. Free, instant, private. Unlimited words, no account required." />
         <meta property="og:url" content="https://aifreetextpro.com/ai-checker" />
         <meta property="og:type" content="website" />
         

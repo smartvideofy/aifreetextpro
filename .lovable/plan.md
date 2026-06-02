@@ -1,80 +1,119 @@
-# Live Verification + Phases 3–8 Execution
+# GSC Audit (Oct 2025 – Jun 2026) + Fix Plan
 
-## Step 1 — Live verification (no code changes)
+## What the data shows
 
-Run curl-based smoke tests against the live domain to confirm Phases 0–2 actually shipped:
+**Volume is there. Clicks aren't.** 157K impressions → 24.5K clicks, but ~78% of clicks come from brand searches (`aifreetextpro` and misspellings). Non-brand traffic is being wasted at the SERP.
 
-- `curl -sI https://aifreetextpro.lovable.app/` → expect `301` to `https://aifreetextpro.com/`
-- `curl -s https://aifreetextpro.com/ai-checker | grep -E '<title>|canonical'` → expect AI Checker title + `canonical = /ai-checker`
-- `curl -s https://aifreetextpro.com/pricing | grep -E '<title>|canonical'` → expect Pricing-specific title
-- Diff homepage HTML byte size vs `/ai-checker` HTML byte size → must differ
+### Critical CTR collapses (rank well, no one clicks)
 
-If still identical, Phase 0 needs a deeper fix (host config) before continuing. If unique, proceed.
+| Page | Impr | Clicks | CTR | Avg Pos |
+|---|---|---|---|---|
+| `/ai-checker` | 32,072 | 237 | **0.74%** | 1.9 |
+| `/ai-humanizer-for-students` | 26,107 | 187 | **0.72%** | 1.1 |
+| `/blog/how-ai-detectors-work` | 29,536 | 4 | **0.01%** | 8.5 |
+| `/bypass-turnitin-ai-detection` | 15,860 | 36 | **0.23%** | 5.5 |
+| `/contact` | 14,054 | 19 | **0.14%** | 1.2 |
+| `/pricing` | 10,416 | 12 | **0.12%** | 1.6 |
+| `/about` | 6,814 | 24 | **0.35%** | 1.6 |
+| `/technology` | 5,273 | 1 | **0.02%** | 1.1 |
+| `/bypass-originality-ai` | 6,126 | 5 | **0.08%** | 1.6 |
+| `/blog/ai-detection-patterns-explained` | 8,685 | 3 | **0.03%** | 8.8 |
 
-## Step 2 — Phase 3: Schema upgrades (P1)
+A page ranking #1–2 with sub-1% CTR almost always means the title/description shown in Google does not match query intent (or has been rewritten by Google). `/contact` and `/technology` at pos ~1 with 0.14% / 0.02% CTR means they're ranking for brand variants where users want the app, not those pages — internal cannibalization.
 
-- `src/pages/Pricing.tsx` — add JSON-LD with `Product` + 5 `Offer` entries (Free, Starter, Pro, Business, Enterprise) + `AggregateRating` (real review counts only).
-- `src/pages/Team.tsx` — add `Person` schema for Dr. Sarah Chen (`jobTitle`, `knowsAbout`, `alumniOf`, `sameAs` linking to author profiles).
-- `src/pages/VsUndetectable.tsx`, `VsHumanizeAIPro.tsx`, `VsWriteHuman.tsx` — add `Review` schema (`itemReviewed` = competitor `SoftwareApplication`, `reviewRating`, `author` = Dr. Sarah Chen).
-- `public/sitemap.xml` — remove any `llms.txt` entry if present.
+### Striking-distance non-brand queries (pos 5–15, 0 clicks)
 
-## Step 3 — Phase 4: Performance (P2)
+- `best free ai humanizer tools 2026` — 618 imp, pos 9.7, 0 clk
+- `best free ai text humanizer tools 2026` — 464 imp, pos 11.8, 0 clk
+- `zerogpt free limits 2025` — 282 imp, pos 8.8
+- All `how (ai|content) detectors work perplexity burstiness` variants — ~1,200 imp combined, pos 3–9, 0 clk
+- `best free ai text humanizer no signup 2026` — 118 imp, pos 4.5, 0 clk
+- `ai detector unlimited words` — 251 imp, pos 9.3, CTR 7.6% (working — pattern to copy)
 
-- `vite.config.ts` — add `build.modulePreload.resolveDependencies` returning `[]` for non-critical chunks to cut modulepreload bloat in initial HTML.
-- `index.html` — add `defer` attribute to GTM `<script>`.
-- `src/components/AnimatedBackground.tsx` — verify `contain: paint`, `content-visibility: auto`, `will-change` rules are present per CLS memory; add if missing.
+### Device gap
 
-## Step 4 — Phase 5: E-E-A-T (P2)
+Desktop avg pos 9.5 / CTR 12.7%. Mobile pos 16.4 / CTR 24.2%. Mobile users convert better but rank worse — mobile CWV or mobile-specific layout is dragging rankings.
 
-- Create `src/components/ArticleByline.tsx` rendering `Updated on <time datetime="…"> · Reviewed by Dr. Sarah Chen` with link to `/team`.
-- Create `src/components/ArticleFooter.tsx` with author bio card + sameAs links.
-- Wire both into the 10 highest-traffic blog posts (top bypass + detector guides). Bulk-rollout to remaining posts deferred.
+### Other findings
 
-## Step 5 — Phase 6: 8 new blog posts (P2)
+- 4,483 impressions for `seotop` at pos 93 — likely scraper noise, ignore.
+- `allintitle:turnitin bypass` 339 imp at pos 120 — SEO researcher queries, ignore.
+- Several URLs in GSC don't exist in the current router (`/blog/best-free-ai-humanizer-tools-2025`, `/blog/bypass-ai-detection-ethical-tips`, `/blog/how-to-detect-ai-generated-text`, `/blog/zerogpt-vs-ai-free-text-pro-2025`, `/blog/gptinf-vs-ai-free-text-pro`, `/blog/ai-paraphrasing-tool-avoid-plagiarism`). They are ranking and getting impressions — they need 301s to the canonical equivalents or they'll continue to bleed equity.
 
-Create under `src/pages/blog/`:
+---
 
-1. `PhraslyAlternative.tsx`
-2. `HixBypassReview.tsx`
-3. `WinstonAIBypassGuide.tsx`
-4. `SmodinVsQuillbotHumanizer.tsx`
-5. `DoesCanvasDetectChatGPT.tsx`
-6. `HumanizeClaudeOutputGuide.tsx`
-7. `HumanizeGeminiOutputGuide.tsx`
-8. `AIHumanizerFreeUnlimited.tsx` (new landing/SEO page)
+## Plan
 
-Each: 1,500+ words, `SEOHead` + `QuickAnswer` + `KeyTakeaways` + `FAQSection` + `SpeakableSchema` + `ArticleByline` + `RelatedArticles`. Register routes in `src/App.tsx`, add to `Blog.tsx` index, add to `public/sitemap.xml` and `scripts/seo/prerender-routes.ts`.
+### Phase 1 — Rewrite titles & meta descriptions on the 8 CTR-collapse pages
 
-## Step 6 — Phase 7: Internal linking + sitemap freshness (P3)
+For each, match the dominant query intent shown in GSC. Front-load benefit, add the year, add a numeric promise, keep under 60 chars title / 155 chars description.
 
-- `src/components/RelatedArticles.tsx` — surface the 8 new posts in matching topic clusters.
-- `src/pages/Index.tsx` — add trust-section link to `/ai-checker`.
-- Create `scripts/generate-sitemap.ts` driven by `prerender-routes.ts`; update `package.json` `prebuild` to regenerate `public/sitemap.xml` with today's `<lastmod>`.
+| Page | New `<title>` (draft) | New description angle |
+|---|---|---|
+| `/ai-checker` | "Free AI Detector 2026 — Unlimited Words, No Signup" | Lead with "unlimited words" (7.6% CTR query proves intent) |
+| `/ai-humanizer-for-students` | "AI Humanizer for Students — Bypass Turnitin in 2026" | Add Turnitin keyword + safety framing |
+| `/blog/how-ai-detectors-work` | "How AI Detectors Work: Perplexity & Burstiness Explained (2026)" | Exact-match the ~1,200 imp query cluster |
+| `/bypass-turnitin-ai-detection` | "Bypass Turnitin AI Detection 2026 — Free Tool, No Signup" | Add "free" + "no signup" |
+| `/bypass-originality-ai` | "Bypass Originality.ai 2026 — Free Humanizer Tested" | Currently no compelling promise |
+| `/pricing` | "Pricing — Free Forever Plan, 1,000 Words/Month" | Lead with free tier |
+| `/about`, `/contact`, `/technology` | Add `noindex` OR rewrite to deflect brand searches to homepage | These rank #1 for brand but steal homepage clicks |
+| `/blog/ai-detection-patterns-explained` | "12 AI Detection Patterns Every Writer Should Know (2026)" | Numeric listicle hook |
 
-## Step 7 — Phase 8 (out of scope for this PR)
+### Phase 2 — Capture the "2026 best free humanizer" cluster
 
-Authority building (directory submissions, guest posts) is operational, not code. Documented as a follow-up task only.
+`best-free-ai-humanizer-2026` ranks pos 8.3 with 15,782 impressions and 0.58% CTR. The title needs the exact query plus an in-SERP differentiator. Refresh:
+- Title to "Best Free AI Humanizer 2026 — 8 Tools Tested (No Signup)"
+- H1, intro paragraph, and FAQ to match the long-tail variants ("tools", "text humanizer", "no signup")
+- Add fresh `dateModified` so Google re-crawls
+
+### Phase 3 — Add 301 redirects for the 6 ranking ghost URLs
+
+These exist in Google's index and pull impressions but 404 on the live site, killing equity. Add a `legacyRedirects` map in `src/App.tsx` (using existing `SEORedirect` pattern):
+
+```
+/blog/best-free-ai-humanizer-tools-2025  → /blog/best-free-ai-humanizer-2026
+/blog/bypass-ai-detection-ethical-tips   → /blog/bypass-ai-detection-guide
+/blog/how-to-detect-ai-generated-text    → /blog/how-to-check-if-written-by-ai
+/blog/zerogpt-vs-ai-free-text-pro-2025   → /blog/zerogpt-comparison
+/blog/gptinf-vs-ai-free-text-pro         → /blog/gptinf-comparison
+/blog/ai-paraphrasing-tool-avoid-plagiarism → /blog/ai-paraphrasing-tool-plagiarism
+```
+(I'll verify each destination exists before wiring.)
+
+### Phase 4 — Refresh `how-ai-detectors-work` for the perplexity/burstiness cluster
+
+29,536 impressions and 4 clicks is the single biggest leak. Rewrite the H1, first 200 words, and FAQ schema to exact-match "perplexity and burstiness" phrasing. Add a `QuickAnswer` block that directly answers "How do AI detectors work?" — built for featured snippet capture.
+
+### Phase 5 — Mobile ranking gap
+
+Mobile rank avg is 16.4 vs desktop 9.5. Quick wins:
+- Audit LCP image on `/` and key landing pages — ensure `fetchpriority="high"` and proper `width`/`height` (CLS).
+- Verify hero CTAs are above the fold on a 360px viewport.
+- Run a Lighthouse mobile pass post-Phase 1 to quantify.
+
+### Phase 6 — Add the 3 new striking-distance topics as articles
+
+Short blog posts targeting queries already at pos 8–12 with no dedicated page:
+1. "ZeroGPT Free Limits 2026 — What's Actually Free" (282 imp, pos 8.8)
+2. "AI Detector Free No Sign Up — 5 Real Options" (86 imp at 8% CTR proves intent)
+3. "Best Free AI Text Humanizer No Signup 2026" (118 imp, pos 4.5)
+
+---
 
 ## Technical notes
 
-- All new schema injected via `react-helmet-async` `<script type="application/ld+json">` inside the existing `SEOHead` pattern (not raw `index.html`).
-- All new blog routes use `React.lazy` per route-code-splitting memory.
-- Author identity uses the canonical Dr. Sarah Chen profile (no new author personas).
-- New posts frame messaging as "improve quality / reduce false flags" — never "beat detectors".
-- No em dashes in any new copy.
-- All CTAs link to `app.aifreetextpro.com` with `target="_blank" rel="noopener noreferrer"`.
-
-## Acceptance criteria
-
-- Live curl returns unique titles + canonicals for sampled routes.
-- `npm run inspect:dist` exits 0 after build.
-- 8 new blog routes render with full schema stack and appear in sitemap.
-- Pricing page Rich Results test shows `Product` + `Offer` + `AggregateRating` valid.
-- VS pages show `Review` schema valid.
+- All title/meta edits go in each page's `<SEOHead>` / `<Helmet>` block. No schema changes.
+- Redirects use the existing `SEORedirect` component (`src/components/SEORedirect.tsx`) — adds meta-refresh + canonical so crawlers consolidate equity.
+- Sitemap `lastmod` for refreshed pages must update to today's date so Google re-crawls fast (per `mem://seo/sitemap-freshness-standard`).
+- Year-slug rule (`mem://seo/url-slug-permanency-constraint`) is respected — we redirect the legacy slug, not rename anything.
+- No backend, no DB, no auth changes.
 
 ## Out of scope
 
-- Full SSR migration
-- New visual design directions
-- Backlink outreach execution
-- Bulk byline rollout to all 100+ existing posts (only top 10 in this PR)
+- Google Search Console reverification / sitemap resubmit — manual user step.
+- Backlink acquisition — content-only plan.
+- Paid search — organic only.
+
+## Expected impact
+
+Conservatively recovering CTR to 2% on just `/ai-checker`, `/ai-humanizer-for-students`, and `/how-ai-detectors-work` (currently 0.01–0.74%) yields **~1,400 additional monthly clicks** at current impression volume — roughly +25% non-brand traffic without ranking improvements.

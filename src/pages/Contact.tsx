@@ -12,7 +12,7 @@ const Contact = () => {
     <div className="min-h-screen flex flex-col bg-gradient-to-br from-background via-background to-primary/5">
       <Helmet>
         <title>Contact AI Free Text Pro: Support & 24h Response</title>
-        <meta name="description" content="Looking for the free AI humanizer and detector? Try the tool on our homepage. Or contact our team for support — we respond within 24 hours on all plans." />
+        <meta name="description" content="Looking for the free AI humanizer and detector? Try the tool on our homepage. Or contact our team for support: we respond within 24 hours on all plans." />
         <meta name="keywords" content="contact ai detector, ai tool support, ai humanizer help, customer service, technical support" />
         <link rel="canonical" href="https://aifreetextpro.com/contact" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />

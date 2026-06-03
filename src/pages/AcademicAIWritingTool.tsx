@@ -16,6 +16,11 @@ const AcademicAIWritingTool = () => {
         <meta name="description" content="Write research papers and essays with AI, then humanize to pass Turnitin with 97% success. Academic mode preserves citations and scholarly tone." />
         <meta name="keywords" content="academic ai writing tool, research paper ai, thesis writing ai, turnitin bypass, scholarly writing ai" />
         <link rel="canonical" href="https://aifreetextpro.com/academic-ai-writing-tool" />
+        <meta property="og:title" content="Academic AI Writing Tool - Pass Turnitin 97%" />
+        <meta property="og:description" content="Write research papers and essays with AI, then humanize to pass Turnitin with 97% success. Academic mode preserves citations and scholarly tone." />
+        <meta property="og:url" content="https://aifreetextpro.com/academic-ai-writing-tool" />
+        <meta property="og:type" content="website" />
+        
         
         {/* BreadcrumbList Schema */}
         <script type="application/ld+json">

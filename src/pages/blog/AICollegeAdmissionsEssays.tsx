@@ -104,7 +104,7 @@ const AICollegeAdmissionsEssays = () => {
         <link rel="canonical" href="https://aifreetextpro.com/blog/ai-college-admissions-essays-personal-statements" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta property="og:type" content="article" />
-        <meta property="og:title" content="AI for College Admissions Essays & Personal Statements (2026)" />
+        <meta property="og:title" content="AI for College Admissions Essays & Statements (2026)" />
         <meta property="og:description" content="How to safely use AI for college admissions essays without getting flagged." />
         <meta property="og:url" content="https://aifreetextpro.com/blog/ai-college-admissions-essays-personal-statements" />
         <meta property="og:site_name" content="AI Free Text Pro" />

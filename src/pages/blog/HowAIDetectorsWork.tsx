@@ -39,7 +39,7 @@ export default function HowAIDetectorsWork() {
   return (
     <>
       <Helmet>
-        <title>How AI Detectors Work: Perplexity & Burstiness Explained (2026)</title>
+        <title>How AI Detectors Work: Perplexity & Burstiness 2026</title>
         <meta name="description" content="Exactly how GPTZero, Turnitin and Originality.AI use perplexity and burstiness to flag AI text. Plain-English math, real examples, and what to change to pass." />
         <meta name="keywords" content="how ai detectors work, ai content analysis, gpt detection algorithm, ai detection science, perplexity detection, burstiness analysis, ai text patterns, machine learning detection, ai writing markers 2026" />
         <link rel="canonical" href="https://aifreetextpro.com/blog/how-ai-detectors-work" />

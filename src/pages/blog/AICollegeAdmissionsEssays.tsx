@@ -98,7 +98,7 @@ const AICollegeAdmissionsEssays = () => {
   return (
     <>
       <Helmet>
-        <title>AI for College Admissions Essays & Personal Statements (2026)</title>
+        <title>AI for College Admissions Essays & Statements (2026)</title>
         <meta name="description" content="How to safely use AI for college admissions essays without getting flagged. Which universities use AI detectors, safe workflows, and authentic voice strategies." />
         <meta name="keywords" content="ai college essay, ai personal statement, chatgpt admissions essay, ai common app essay, college essay ai detector, personal statement ai help" />
         <link rel="canonical" href="https://aifreetextpro.com/blog/ai-college-admissions-essays-personal-statements" />

@@ -197,6 +197,26 @@ const Team = () => {
         <script type="application/ld+json">
           {JSON.stringify(profilePageSchema)}
         </script>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://aifreetextpro.com/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Team",
+                "item": "https://aifreetextpro.com/team"
+              }
+            ]
+          })}
+        </script>
       </Helmet>
 
       <Navbar />

@@ -153,7 +153,7 @@ const Api = () => {
         <meta name="keywords" content="AI humanizer API, AI detection API, text humanization API, REST API, developer API, AI writing API" />
         <link rel="canonical" href="https://aifreetextpro.com/api" />
         <meta name="robots" content="index, follow" />
-        <meta property="og:title" content="AI Free Text Pro API – Build with Humanization & Detection" />
+        <meta property="og:title" content="AI Free Text Pro API: Humanize & Detect AI Text" />
         <meta property="og:description" content="RESTful API for AI text humanization and detection. Integrate 98% bypass accuracy into your product." />
         <meta property="og:url" content="https://aifreetextpro.com/api" />
         <meta property="og:type" content="website" />

@@ -104,7 +104,7 @@ const AIWritingNonNativeEnglish = () => {
         <link rel="canonical" href="https://aifreetextpro.com/blog/ai-writing-non-native-english-speakers" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta property="og:type" content="article" />
-        <meta property="og:title" content="AI Writing for Non-Native English Speakers: Avoid False AI Flags (2026)" />
+        <meta property="og:title" content="AI Writing for Non-Native English Speakers (2026)" />
         <meta property="og:description" content="Why non-native English writing triggers false AI detection flags and how to protect yourself." />
         <meta property="og:url" content="https://aifreetextpro.com/blog/ai-writing-non-native-english-speakers" />
         <meta property="og:site_name" content="AI Free Text Pro" />

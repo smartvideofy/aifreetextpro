@@ -98,7 +98,7 @@ const AIWritingNonNativeEnglish = () => {
   return (
     <>
       <Helmet>
-        <title>AI Writing for Non-Native English Speakers: Avoid False AI Flags (2026)</title>
+        <title>AI Writing for Non-Native English Speakers (2026)</title>
         <meta name="description" content="Why non-native English writing triggers false AI detection flags and how to protect yourself. Detector accuracy data, grammar tool risks, and strategies for ESL writers." />
         <meta name="keywords" content="ai detector false positive ESL, non-native english ai detection, ai writing help ESL, grammarly triggers ai detection, esl ai detector, false positive ai detection" />
         <link rel="canonical" href="https://aifreetextpro.com/blog/ai-writing-non-native-english-speakers" />

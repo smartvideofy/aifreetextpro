@@ -2,6 +2,7 @@ import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { InternalLinks } from "@/components/InternalLinks";
 import { Card } from "@/components/ui/card";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
@@ -406,6 +407,7 @@ const Team = () => {
         </section>
       </main>
 
+      <InternalLinks variant="full" currentPage="/team" />
       <Footer />
     </div>
   );

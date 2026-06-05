@@ -1,6 +1,7 @@
 import { Helmet } from "react-helmet-async";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { InternalLinks } from "@/components/InternalLinks";
 import { Card } from "@/components/ui/card";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
@@ -301,6 +302,7 @@ const CaseStudies = () => {
         </section>
       </main>
 
+      <InternalLinks variant="full" currentPage="/case-studies" />
       <Footer />
     </div>
   );

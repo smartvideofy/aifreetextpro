@@ -4,6 +4,7 @@ import { CheckCircle, ArrowRight, Crown, Zap, Sparkles } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { InternalLinks } from "@/components/InternalLinks";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import pricingHero from "@/assets/pricing-hero.png";
 
@@ -431,6 +432,7 @@ const Pricing = () => {
         </section>
       </main>
       
+      <InternalLinks variant="full" currentPage="/pricing" />
       <Footer />
     </div>
   );

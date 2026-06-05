@@ -5,6 +5,7 @@ import { ArrowRight, Code2, Zap, Shield, Key, Globe, Layers, Terminal, BarChart3
 import { Helmet } from "react-helmet-async";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { InternalLinks } from "@/components/InternalLinks";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { FAQSection } from "@/components/FAQSection";
 import { Link } from "react-router-dom";
@@ -402,6 +403,7 @@ const Api = () => {
           </div>
         </section>
       </main>
+      <InternalLinks variant="full" currentPage="/api" />
       <Footer />
     </>
   );

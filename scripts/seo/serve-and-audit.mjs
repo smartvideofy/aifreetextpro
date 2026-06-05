@@ -18,6 +18,17 @@ import { fileURLToPath } from "node:url";
 const __dirname = fileURLToPath(new URL(".", import.meta.url));
 const ROOT = resolve(__dirname, "../../dist");
 
+// Static link-integrity check (fails fast before serving anything).
+const linkCheck = spawn(
+  process.execPath,
+  [join(__dirname, "check-internal-links.mjs")],
+  { stdio: "inherit" }
+);
+await new Promise((r) => linkCheck.on("exit", (code) => {
+  if (code !== 0) process.exit(code ?? 1);
+  r();
+}));
+
 if (!existsSync(ROOT)) {
   console.error(`[audit] dist/ not found at ${ROOT}. Run 'vite build' first.`);
   process.exit(2);

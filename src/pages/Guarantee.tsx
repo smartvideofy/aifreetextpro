@@ -4,6 +4,7 @@ import { Shield, CheckCircle, ArrowRight, Settings, Mail, HelpCircle } from "luc
 import { Helmet } from "react-helmet-async";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { InternalLinks } from "@/components/InternalLinks";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { Link } from "react-router-dom";
 
@@ -348,6 +349,7 @@ const Guarantee = () => {
         </section>
       </main>
       
+      <InternalLinks variant="full" currentPage="/guarantee" />
       <Footer />
     </div>
   );

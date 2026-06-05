@@ -1,6 +1,7 @@
 import { Helmet } from "react-helmet-async";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { InternalLinks } from "@/components/InternalLinks";
 import { Card } from "@/components/ui/card";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { 
@@ -281,6 +282,7 @@ const EditorialGuidelines = () => {
         </section>
       </main>
 
+      <InternalLinks variant="full" currentPage="/editorial-guidelines" />
       <Footer />
     </div>
   );

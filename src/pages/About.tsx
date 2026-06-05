@@ -2,6 +2,7 @@ import { Target, Zap, Shield, Users, Heart, Cpu, Globe, Star, CheckCircle, Trend
 import { Helmet } from "react-helmet-async";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { InternalLinks } from "@/components/InternalLinks";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
@@ -363,6 +364,7 @@ const About = () => {
         </section>
       </main>
       
+      <InternalLinks variant="full" currentPage="/about" />
       <Footer />
     </div>
   );

@@ -58,8 +58,11 @@ const About = () => {
               </div>
               
               <h1 className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-primary via-secondary to-primary bg-clip-text text-transparent leading-tight">
-                Human Words in an AI World
+                About AI Free Text Pro
               </h1>
+              <p className="text-2xl md:text-3xl font-semibold text-foreground/80">
+                Human Words in an AI World
+              </p>
               
               <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
                 We empower creators, students, and professionals to transform AI-generated text into authentic, natural writing that preserves your unique voice.

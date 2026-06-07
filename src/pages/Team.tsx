@@ -242,8 +242,11 @@ const Team = () => {
                 <span className="text-sm font-medium">Expert Team</span>
               </div>
               <h1 className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-primary via-secondary to-primary bg-clip-text text-transparent">
-                Built by Experts, For Everyone
+                Meet the AI Free Text Pro Team
               </h1>
+              <p className="text-2xl md:text-3xl font-semibold text-foreground/80">
+                Built by Experts, For Everyone
+              </p>
               <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
                 Our team combines decades of experience in AI research, computational linguistics, and professional content creation to build the most effective humanization tools available.
               </p>
@@ -308,11 +311,11 @@ const Team = () => {
                   </div>
 
                   <div className="flex gap-3 pt-3 border-t border-border/50">
-                    <a href={member.linkedin} className="text-muted-foreground hover:text-primary transition-colors">
-                      <Linkedin className="w-4 h-4" />
+                    <a href={member.linkedin} aria-label={`${member.name} on LinkedIn`} className="text-muted-foreground hover:text-primary transition-colors">
+                      <Linkedin className="w-4 h-4" aria-hidden="true" />
                     </a>
-                    <a href={member.twitter} className="text-muted-foreground hover:text-primary transition-colors">
-                      <Twitter className="w-4 h-4" />
+                    <a href={member.twitter} aria-label={`${member.name} on Twitter`} className="text-muted-foreground hover:text-primary transition-colors">
+                      <Twitter className="w-4 h-4" aria-hidden="true" />
                     </a>
                   </div>
                 </Card>

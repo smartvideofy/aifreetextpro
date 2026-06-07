@@ -66,7 +66,7 @@ export const articleContent: Record<string, Record<string, { title: string; cont
           <h2>Before You Begin</h2>
           <p>Make sure you have:</p>
           <ul>
-            <li>An AI Free Text Pro account (if not, <a href="/help-center/getting-started/create-account" className="text-primary hover:underline">create one here</a>)</li>
+            <li>An AI Free Text Pro account (if not, <a href="/help-center/getting-started/create-account" className="text-primary hover:underline">create an account on our signup page</a>)</li>
             <li>Some AI-generated text ready to humanize (from ChatGPT, Claude, Gemini, etc.)</li>
             <li>A clear idea of your target audience (academic, professional, creative, or casual)</li>
           </ul>

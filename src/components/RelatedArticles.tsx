@@ -37,7 +37,7 @@ export const RelatedArticles = ({ articles }: RelatedArticlesProps) => {
                   {article.description}
                 </p>
                 <div className="flex items-center text-primary text-sm font-medium group-hover:gap-2 transition-all">
-                  Read more
+                  Read the full article
                   <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
                 </div>
               </div>

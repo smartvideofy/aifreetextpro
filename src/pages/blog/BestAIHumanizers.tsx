@@ -329,7 +329,7 @@ const relatedArticles = [
                         {[1, 2, 3, 4].map((star) => (
                           <Star key={star} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
                         ))}
-                        <Star className="w-5 h-5 text-gray-300" />
+                        <Star className="w-5 h-5 text-muted-foreground/40" />
                         <span className="ml-2 text-sm text-muted-foreground">4.0/5.0</span>
                       </div>
                     </div>
@@ -351,7 +351,7 @@ const relatedArticles = [
                           <Star key={star} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
                         ))}
                         <Star className="w-5 h-5 fill-yellow-400 text-yellow-400 opacity-50" />
-                        <Star className="w-5 h-5 text-gray-300" />
+                        <Star className="w-5 h-5 text-muted-foreground/40" />
                         <span className="ml-2 text-sm text-muted-foreground">3.8/5.0</span>
                       </div>
                     </div>
@@ -373,7 +373,7 @@ const relatedArticles = [
                           <Star key={star} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
                         ))}
                         {[4, 5].map((star) => (
-                          <Star key={star} className="w-5 h-5 text-gray-300" />
+                          <Star key={star} className="w-5 h-5 text-muted-foreground/40" />
                         ))}
                         <span className="ml-2 text-sm text-muted-foreground">3.5/5.0</span>
                       </div>

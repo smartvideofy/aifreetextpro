@@ -1162,6 +1162,10 @@ const Blog = () => {
                 src={blogHero} 
                 alt="Open book with floating pages representing knowledge and content" 
                 className="w-full max-w-2xl mx-auto rounded-xl shadow-lg"
+                width={1024}
+                height={576}
+                loading="eager"
+                decoding="async"
               />
             </div>
           </div>

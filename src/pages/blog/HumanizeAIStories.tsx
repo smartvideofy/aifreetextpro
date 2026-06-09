@@ -8,6 +8,7 @@ import { FAQSection } from "@/components/FAQSection";
 import { Link } from "react-router-dom";
 import { ArrowRight, Brain, Search, Zap, Lightbulb, CheckCircle, AlertTriangle, BookOpen, Heart, Users } from "lucide-react";
 import { KeyTakeaways } from "@/components/KeyTakeaways";
+import { AuthorSchema } from "@/components/AuthorSchema";
 
 const relatedArticles = [
   {
@@ -144,6 +145,13 @@ export default function HumanizeAIStories() {
           })}
         </script>
       </Helmet>
+      <AuthorSchema
+        articleUrl="https://aifreetextpro.com/blog/humanize-ai-generated-stories-fiction"
+        headline="Humanize AI Stories & Fiction [2026 Guide]"
+        description="Transform AI-generated stories into human-like narratives readers love. Add emotional depth, dialogue, and sensory details that captivate."
+        datePublished="2026-02-02"
+      />
+
 
       <div className="min-h-screen bg-background">
         <Navbar />

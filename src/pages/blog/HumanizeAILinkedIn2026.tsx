@@ -8,6 +8,7 @@ import { FAQSection } from "@/components/FAQSection";
 import { Link } from "react-router-dom";
 import { ArrowRight, Brain, Lightbulb, CheckCircle, AlertTriangle, Users, TrendingUp, MessageSquare } from "lucide-react";
 import { KeyTakeaways } from "@/components/KeyTakeaways";
+import { AuthorSchema } from "@/components/AuthorSchema";
 
 const relatedArticles = [
   {
@@ -150,6 +151,13 @@ export default function HumanizeAILinkedIn2026() {
           })}
         </script>
       </Helmet>
+      <AuthorSchema
+        articleUrl="https://aifreetextpro.com/blog/humanize-ai-linkedin-2026"
+        headline="AI LinkedIn Posts That Sound Authentic [2026]"
+        description="Transform AI-generated LinkedIn posts into authentic content that drives engagement. Grow your professional brand without sounding robotic."
+        datePublished="2026-02-02"
+      />
+
 
       <div className="min-h-screen bg-background">
         <Navbar />

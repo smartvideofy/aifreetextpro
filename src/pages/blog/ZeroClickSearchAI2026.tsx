@@ -8,6 +8,7 @@ import { FAQSection } from "@/components/FAQSection";
 import { Link } from "react-router-dom";
 import { ArrowRight, Brain, Search, Zap, Target, TrendingUp, BarChart3, Lightbulb, CheckCircle } from "lucide-react";
 import { KeyTakeaways } from "@/components/KeyTakeaways";
+import { AuthorSchema } from "@/components/AuthorSchema";
 
 const relatedArticles = [
   {
@@ -151,6 +152,13 @@ export default function ZeroClickSearchAI2026() {
           })}
         </script>
       </Helmet>
+      <AuthorSchema
+        articleUrl="https://aifreetextpro.com/blog/zero-click-search-ai-2026"
+        headline="Zero-Click SEO: Win Traffic in 2026"
+        description="65% of searches end without a click. Learn strategies to capture traffic and authority from AI Overviews, featured snippets, and knowledge panels."
+        datePublished="2026-02-02"
+      />
+
 
       <div className="min-h-screen bg-background">
         <Navbar />

@@ -8,6 +8,7 @@ import { FAQSection } from "@/components/FAQSection";
 import { Link } from "react-router-dom";
 import { ArrowRight, Search, TrendingUp, FileText, Target, CheckCircle, Lightbulb, BarChart } from "lucide-react";
 import { KeyTakeaways } from "@/components/KeyTakeaways";
+import { AuthorSchema } from "@/components/AuthorSchema";
 
 const relatedArticles = [
   {
@@ -176,6 +177,13 @@ export default function AIPoweredSEOContent2026() {
           })}
         </script>
       </Helmet>
+      <AuthorSchema
+        articleUrl="https://aifreetextpro.com/blog/ai-powered-seo-content-2026"
+        headline="AI SEO Content That Ranks Naturally [2026]"
+        description="Create AI-generated SEO content that reads naturally and ranks on page 1. E-E-A-T strategies, workflows, and real ranking examples."
+        datePublished="2026-02-02"
+      />
+
 
       <div className="min-h-screen bg-background">
         <Navbar />

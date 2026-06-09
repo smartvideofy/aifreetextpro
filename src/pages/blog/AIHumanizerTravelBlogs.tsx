@@ -8,6 +8,7 @@ import { FAQSection } from "@/components/FAQSection";
 import { Link } from "react-router-dom";
 import { ArrowRight, MapPin, Camera, Compass, AlertTriangle, CheckCircle, Lightbulb } from "lucide-react";
 import { KeyTakeaways } from "@/components/KeyTakeaways";
+import { AuthorSchema } from "@/components/AuthorSchema";
 
 const relatedArticles = [
   {
@@ -147,6 +148,13 @@ export default function AIHumanizerTravelBlogs() {
           })}
         </script>
       </Helmet>
+      <AuthorSchema
+        articleUrl="https://aifreetextpro.com/blog/ai-humanizer-travel-blogs"
+        headline="Write Travel Blogs with AI: Keep Your Voice"
+        description="Craft travel blogs with AI tools while keeping your authentic voice. Real workflows for engaging travel content that feels personal, not robotic."
+        datePublished="2026-02-02"
+      />
+
 
       <div className="min-h-screen bg-background">
         <Navbar />

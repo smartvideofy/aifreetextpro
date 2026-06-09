@@ -24,6 +24,7 @@ const TermsOfService = lazy(() => import("./pages/TermsOfService"));
 const Contact = lazy(() => import("./pages/Contact"));
 const About = lazy(() => import("./pages/About"));
 const Blog = lazy(() => import("./pages/Blog"));
+const BlogCategory = lazy(() => import("./pages/BlogCategory"));
 const AIChecker = lazy(() => import("./pages/AIChecker"));
 const Team = lazy(() => import("./pages/Team"));
 const Technology = lazy(() => import("./pages/Technology"));

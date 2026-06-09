@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Helmet } from "react-helmet-async";
+import { SoftwareApplicationSchema } from "@/components/SoftwareApplicationSchema";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
@@ -207,6 +208,12 @@ const BypassGPTZero = () => {
           })}
         </script>
       </Helmet>
+      <SoftwareApplicationSchema
+        name="GPTZero Bypass Tool"
+        description="Humanize ChatGPT and Claude output to lower GPTZero AI probability scores while keeping your voice and meaning intact."
+        url="https://aifreetextpro.com/bypass-gptzero-detection"
+        category="UtilityApplication"
+      />
 
       <Navbar />
       

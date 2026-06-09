@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Helmet } from "react-helmet-async";
+import { SoftwareApplicationSchema } from "@/components/SoftwareApplicationSchema";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
@@ -167,6 +168,12 @@ const AIChecker = () => {
           })}
         </script>
       </Helmet>
+      <SoftwareApplicationSchema
+        name="Free AI Detector"
+        description="Free AI content detector. Check essays, blog posts and marketing copy for AI patterns before you publish. No signup, instant results."
+        url="https://aifreetextpro.com/ai-checker"
+        category="UtilityApplication"
+      />
 
       <Navbar />
 

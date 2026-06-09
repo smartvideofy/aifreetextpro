@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { CheckCircle, X, ArrowRight, Zap, Star } from "lucide-react";
 import { Helmet } from "react-helmet-async";
+import { SoftwareApplicationSchema } from "@/components/SoftwareApplicationSchema";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
@@ -141,6 +142,12 @@ const VsHumanizeAIPro = () => {
           })}
         </script>
       </Helmet>
+      <SoftwareApplicationSchema
+        name="AI Free Text Pro"
+        description="HumanizeAI Pro alternative starting at $4.99. Higher bypass rate against Turnitin, GPTZero and Originality.AI."
+        url="https://aifreetextpro.com/vs-humanizeai-pro"
+        category="UtilityApplication"
+      />
       
       <Navbar />
       

@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { CheckCircle, X, ArrowRight, Zap, Shield, DollarSign, TrendingUp } from "lucide-react";
 import { Helmet } from "react-helmet-async";
+import { SoftwareApplicationSchema } from "@/components/SoftwareApplicationSchema";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
@@ -175,6 +176,12 @@ const VsWriteHuman = () => {
           })}
         </script>
       </Helmet>
+      <SoftwareApplicationSchema
+        name="AI Free Text Pro"
+        description="WriteHuman alternative with higher bypass rate, lower pricing and a real free tier of 1,000 words per month."
+        url="https://aifreetextpro.com/vs-writehuman"
+        category="UtilityApplication"
+      />
       
       <Navbar />
       

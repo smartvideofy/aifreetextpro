@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { CheckCircle, X, ArrowRight, Zap, Shield, Star } from "lucide-react";
 import { Helmet } from "react-helmet-async";
+import { SoftwareApplicationSchema } from "@/components/SoftwareApplicationSchema";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
@@ -150,6 +151,12 @@ const VsUndetectable = () => {
           })}
         </script>
       </Helmet>
+      <SoftwareApplicationSchema
+        name="AI Free Text Pro"
+        description="Undetectable.AI alternative built for students and writers. Cleaner output, faster runs, transparent pricing."
+        url="https://aifreetextpro.com/vs-undetectable-ai"
+        category="UtilityApplication"
+      />
       
       <Navbar />
       

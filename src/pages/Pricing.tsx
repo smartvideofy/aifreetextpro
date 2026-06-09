@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { CheckCircle, ArrowRight, Crown, Zap, Sparkles } from "lucide-react";
 import { Helmet } from "react-helmet-async";
+import { SoftwareApplicationSchema } from "@/components/SoftwareApplicationSchema";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { InternalLinks } from "@/components/InternalLinks";
@@ -232,6 +233,12 @@ const Pricing = () => {
           })}
         </script>
       </Helmet>
+      <SoftwareApplicationSchema
+        name="AI Free Text Pro"
+        description="Five flexible plans for students, writers and teams. Start free with 1,000 words, upgrade for unlimited humanizing and detection."
+        url="https://aifreetextpro.com/pricing"
+        category="BusinessApplication"
+      />
       
       <Navbar />
       

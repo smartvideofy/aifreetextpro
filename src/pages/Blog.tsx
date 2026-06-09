@@ -1226,6 +1226,32 @@ const Blog = () => {
               </div>
             </div>
 
+            {/* Category Hub Links */}
+            <nav aria-label="Blog category hubs" className="mb-8">
+              <div className="text-sm text-muted-foreground mb-3 flex items-center gap-2">
+                <BookOpen className="w-4 h-4" />
+                <span>Browse category hubs:</span>
+              </div>
+              <div className="flex flex-wrap gap-2">
+                {[
+                  { slug: "detection", label: "Detection" },
+                  { slug: "humanizer", label: "Humanizer" },
+                  { slug: "bypass", label: "Bypass" },
+                  { slug: "comparison", label: "Comparison" },
+                  { slug: "use-cases", label: "Use Cases" },
+                ].map((c) => (
+                  <Link
+                    key={c.slug}
+                    to={`/blog/category/${c.slug}`}
+                    className="px-4 py-2 rounded-full text-sm font-medium border border-border hover:border-primary hover:text-primary transition-colors"
+                  >
+                    {c.label}
+                  </Link>
+                ))}
+              </div>
+            </nav>
+
+
             {/* Active Filters & Results Count */}
             {hasActiveFilters && (
               <div className="mt-6 flex items-center justify-between">

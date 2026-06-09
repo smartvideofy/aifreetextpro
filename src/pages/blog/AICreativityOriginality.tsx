@@ -8,6 +8,7 @@ import { FAQSection } from "@/components/FAQSection";
 import { Link } from "react-router-dom";
 import { ArrowRight, Lightbulb, Brain, Palette, Users, CheckCircle, Sparkles } from "lucide-react";
 import { KeyTakeaways } from "@/components/KeyTakeaways";
+import { AuthorSchema } from "@/components/AuthorSchema";
 
 const relatedArticles = [
   {
@@ -144,6 +145,13 @@ export default function AICreativityOriginality() {
           })}
         </script>
       </Helmet>
+      <AuthorSchema
+        articleUrl="https://aifreetextpro.com/blog/can-ai-writing-be-original"
+        headline="Can AI Writing Be Truly Original? [2026 Analysis]"
+        description="How AI assists creativity without replacing it. What 'original' really means in the era of ChatGPT, and how to keep your work unique."
+        datePublished="2026-02-02"
+      />
+
 
       <div className="min-h-screen bg-background">
         <Navbar />

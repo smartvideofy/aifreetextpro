@@ -8,6 +8,7 @@ import { KeyTakeaways } from "@/components/KeyTakeaways";
 import { RelatedArticles } from "@/components/RelatedArticles";
 import { InternalLinks } from "@/components/InternalLinks";
 import ReviewedBy from "@/components/ReviewedBy";
+import { AuthorSchema } from "@/components/AuthorSchema";
 
 const relatedArticles = [
   { title: "AI Detection Tools Compared", description: "GPTZero vs AI Free Text Pro vs Rewritify.", href: "/blog/ai-detection-tools-compared-2025", category: "Comparison" },
@@ -61,6 +62,13 @@ const GPTZeroVsTurnitin = () => {
           ]
         })}</script>
       </Helmet>
+      <AuthorSchema
+        articleUrl="https://aifreetextpro.com/blog/gptzero-vs-turnitin-comparison"
+        headline="GPTZero vs Turnitin: Which AI Detector Is More Accurate? (2026)"
+        description="Head-to-head comparison of GPTZero and Turnitin AI detection. We test accuracy, false positive rates, pricing, and features to find the best AI detector."
+        datePublished="2026-02-25"
+      />
+
 
       <Navbar />
       <main className="min-h-screen pt-20">

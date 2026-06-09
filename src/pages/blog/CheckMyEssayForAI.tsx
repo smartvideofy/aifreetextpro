@@ -11,6 +11,7 @@ import { FAQSection } from "@/components/FAQSection";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, Calendar, Clock, User, CheckCircle, Star, ExternalLink, Shield, Zap } from "lucide-react";
+import { AuthorSchema } from "@/components/AuthorSchema";
 
 const relatedArticles = [
   {
@@ -173,6 +174,13 @@ const CheckMyEssayForAI = () => {
           })}
         </script>
       </Helmet>
+      <AuthorSchema
+        articleUrl="https://aifreetextpro.com/blog/check-my-essay-for-ai"
+        headline="Check My Essay for AI: 7 Free Tools Before You Submit (2026)"
+        description="Self-check your essay for AI before your professor does. Compare 7 free AI detectors with accuracy rates, step-by-step instructions, and what to do if flagged."
+        datePublished="2026-03-09"
+      />
+
       
       <Navbar />
       

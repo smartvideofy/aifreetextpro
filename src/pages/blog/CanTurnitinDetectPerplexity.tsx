@@ -9,6 +9,7 @@ import ReviewedBy from "@/components/ReviewedBy";
 import { RelatedArticles } from "@/components/RelatedArticles";
 import { InternalLinks } from "@/components/InternalLinks";
 import { FAQSection } from "@/components/FAQSection";
+import { AuthorSchema } from "@/components/AuthorSchema";
 
 const relatedArticles = [
   { title: "Can Turnitin Detect DeepSeek?", description: "Test results for DeepSeek R1 and V3 against Turnitin and other detectors.", href: "/blog/can-turnitin-detect-deepseek", category: "Technical" },
@@ -70,6 +71,13 @@ const CanTurnitinDetectPerplexity = () => {
           "mainEntity": faqs.map(faq => ({ "@type": "Question", "name": faq.question, "acceptedAnswer": { "@type": "Answer", "text": faq.answer } }))
         })}</script>
       </Helmet>
+      <AuthorSchema
+        articleUrl="https://aifreetextpro.com/blog/can-turnitin-detect-perplexity"
+        headline="Can Turnitin Detect Perplexity AI? (2026 Test Results)"
+        description="We tested Perplexity AI against Turnitin, GPTZero, and Originality.AI. See the real 2026 detection results and how to reduce your score."
+        datePublished="2026-03-08"
+      />
+
 
       <Navbar />
       <main className="min-h-screen pt-20">

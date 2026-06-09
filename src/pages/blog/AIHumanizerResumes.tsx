@@ -8,6 +8,7 @@ import { KeyTakeaways } from "@/components/KeyTakeaways";
 import { RelatedArticles } from "@/components/RelatedArticles";
 import { InternalLinks } from "@/components/InternalLinks";
 import ReviewedBy from "@/components/ReviewedBy";
+import { AuthorSchema } from "@/components/AuthorSchema";
 
 const relatedArticles = [
   { title: "How to Humanize AI Text Without Losing Your Voice", description: "Proven strategies for natural-sounding AI text.", href: "/blog/humanize-ai-text-without-losing-voice", category: "How-To Guide" },
@@ -61,6 +62,13 @@ const AIHumanizerResumes = () => {
           ]
         })}</script>
       </Helmet>
+      <AuthorSchema
+        articleUrl="https://aifreetextpro.com/blog/ai-humanizer-resumes-cover-letters"
+        headline="AI Resume Humanizer: Land More Interviews [2026]"
+        description="Humanize AI resumes and cover letters to sound authentic. Pass ATS screening and recruiter review with professional, natural-sounding applications."
+        datePublished="2026-02-25"
+      />
+
 
       <Navbar />
       <main className="min-h-screen pt-20">

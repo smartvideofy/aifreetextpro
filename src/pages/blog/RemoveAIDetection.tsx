@@ -12,6 +12,7 @@ import { FAQSection } from "@/components/FAQSection";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import { AuthorSchema } from "@/components/AuthorSchema";
 
 const relatedArticles = [
   {
@@ -137,6 +138,13 @@ export default function RemoveAIDetection() {
           })}
         </script>
       </Helmet>
+      <AuthorSchema
+        articleUrl="https://aifreetextpro.com/blog/remove-ai-detection-from-text"
+        headline="Remove AI Detection from Text (Free Methods) | 2026"
+        description="Learn 5 proven methods to remove AI detection from text. Free manual techniques plus instant tools that reduce AI flags on Turnitin, GPTZero, and more."
+        datePublished="2026-03-05"
+      />
+
 
       <Navbar />
       

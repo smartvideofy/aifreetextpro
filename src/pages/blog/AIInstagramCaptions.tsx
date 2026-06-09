@@ -9,6 +9,7 @@ import ReviewedBy from "@/components/ReviewedBy";
 import { RelatedArticles } from "@/components/RelatedArticles";
 import { InternalLinks } from "@/components/InternalLinks";
 import { FAQSection } from "@/components/FAQSection";
+import { AuthorSchema } from "@/components/AuthorSchema";
 
 const relatedArticles = [
   { title: "Humanize AI for Social Media", description: "Transform AI social media content into authentic, engaging posts.", href: "/blog/humanize-ai-social-media-2026", category: "Social Media" },
@@ -70,6 +71,13 @@ const AIInstagramCaptions = () => {
           "mainEntity": faqs.map(faq => ({ "@type": "Question", "name": faq.question, "acceptedAnswer": { "@type": "Answer", "text": faq.answer } }))
         })}</script>
       </Helmet>
+      <AuthorSchema
+        articleUrl="https://aifreetextpro.com/blog/ai-instagram-captions"
+        headline="AI Instagram Captions: Engaging Posts That Sound Human"
+        description="Write Instagram captions with AI that actually sound like you. 20 prompt templates, humanization tips, and before/after engagement data for every niche."
+        datePublished="2026-03-08"
+      />
+
 
       <Navbar />
       <main className="min-h-screen pt-20">

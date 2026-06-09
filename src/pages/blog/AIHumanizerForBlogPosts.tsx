@@ -9,6 +9,7 @@ import { RelatedArticles } from "@/components/RelatedArticles";
 import InternalLinks from "@/components/InternalLinks";
 import ReviewedBy from "@/components/ReviewedBy";
 import { FAQSection } from "@/components/FAQSection";
+import { AuthorSchema } from "@/components/AuthorSchema";
 
 const relatedArticles = [
   { title: "AI Content for SEO", description: "Generate natural articles that rank in search.", href: "/blog/ai-content-seo-undetectable", category: "SEO" },
@@ -59,6 +60,13 @@ const AIHumanizerForBlogPosts = () => {
           {JSON.stringify({ "@context": "https://schema.org", "@type": "FAQPage", "mainEntity": faqs.map(f => ({ "@type": "Question", "name": f.question, "acceptedAnswer": { "@type": "Answer", "text": f.answer } })) })}
         </script>
       </Helmet>
+      <AuthorSchema
+        articleUrl="https://aifreetextpro.com/blog/ai-humanizer-for-blog-posts"
+        headline="AI Humanizer for Blog Posts: Write Faster Without Sounding Like a Robot"
+        description="How to use AI humanizer tools to create blog content that reads naturally, ranks on Google, and engages readers. Complete workflow guide for content marketers."
+        datePublished="2026-02-28"
+      />
+
 
       <Navbar />
       <main className="min-h-screen pt-24 pb-16">

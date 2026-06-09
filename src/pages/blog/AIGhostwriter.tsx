@@ -9,6 +9,7 @@ import ReviewedBy from "@/components/ReviewedBy";
 import { RelatedArticles } from "@/components/RelatedArticles";
 import { InternalLinks } from "@/components/InternalLinks";
 import { FAQSection } from "@/components/FAQSection";
+import { AuthorSchema } from "@/components/AuthorSchema";
 
 const relatedArticles = [
   { title: "AI Writing for Freelancers", description: "How freelance writers can integrate AI without losing clients.", href: "/blog/ai-writing-for-freelancers", category: "Career" },
@@ -70,6 +71,13 @@ const AIGhostwriter = () => {
           "mainEntity": faqs.map(faq => ({ "@type": "Question", "name": faq.question, "acceptedAnswer": { "@type": "Answer", "text": faq.answer } }))
         })}</script>
       </Helmet>
+      <AuthorSchema
+        articleUrl="https://aifreetextpro.com/blog/ai-ghostwriter"
+        headline="AI Ghostwriter: Professional Content Without Detection"
+        description="Build an AI ghostwriting business that delivers undetectable, voice-matched content. Workflow, pricing strategy, and detection-proof process for professionals."
+        datePublished="2026-03-08"
+      />
+
 
       <Navbar />
       <main className="min-h-screen pt-20">

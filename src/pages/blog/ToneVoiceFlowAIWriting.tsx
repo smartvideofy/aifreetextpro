@@ -8,6 +8,7 @@ import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { RelatedArticles } from "@/components/RelatedArticles";
 import { Button } from "@/components/ui/button";
 import { InternalLinks } from "@/components/InternalLinks";
+import { AuthorSchema } from "@/components/AuthorSchema";
 
 const relatedArticles = [
   {
@@ -104,6 +105,13 @@ const ToneVoiceFlowAIWriting = () => {
           })}
         </script>
       </Helmet>
+      <AuthorSchema
+        articleUrl="https://aifreetextpro.com/blog/tone-voice-flow-ai-writing"
+        headline="Tone, Voice & Flow in AI Writing [2026 Guide]"
+        description="Master the 3 pillars of great writing with AI tools. Keep your tone, voice, and flow natural even when using ChatGPT or other AI assistants."
+        datePublished="2026-02-02"
+      />
+
 
       <div className="min-h-screen bg-gradient-to-b from-background via-background to-card/20">
         <Navbar />

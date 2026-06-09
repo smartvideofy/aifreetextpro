@@ -10,6 +10,7 @@ import { InternalLinks } from "@/components/InternalLinks";
 import { FAQSection } from "@/components/FAQSection";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { ArrowLeft, Calendar, Clock, User } from "lucide-react";
+import { AuthorSchema } from "@/components/AuthorSchema";
 
 const relatedArticles = [
   { title: "Can Teachers Detect ChatGPT?", description: "What tools educators actually use to catch AI writing.", href: "/blog/can-teachers-detect-chatgpt", category: "Academic" },
@@ -65,6 +66,13 @@ const ChatGPTCollegeEssays = () => {
           })}
         </script>
       </Helmet>
+      <AuthorSchema
+        articleUrl="https://aifreetextpro.com/blog/chatgpt-college-essays"
+        headline="ChatGPT for College Essays: What Professors Detect"
+        description="What college professors actually use to detect ChatGPT essays. University policies, detection scores, and how to use AI responsibly in 2026."
+        datePublished="2026-03-08"
+      />
+
 
       <Navbar />
       <main className="pt-24 pb-16">

@@ -8,6 +8,7 @@ import { Badge } from "@/components/ui/badge";
 import { BarChart3, Calculator, Target, Layers, TrendingUp, AlertCircle } from "lucide-react";
 import { KeyTakeaways } from "@/components/KeyTakeaways";
 import { InternalLinks } from "@/components/InternalLinks";
+import { AuthorSchema } from "@/components/AuthorSchema";
 
 const HowAIDetectorsScoreText = () => {
   const breadcrumbItems = [
@@ -110,6 +111,13 @@ const HowAIDetectorsScoreText = () => {
           })}
         </script>
       </Helmet>
+      <AuthorSchema
+        articleUrl="https://aifreetextpro.com/blog/how-ai-detectors-score-text"
+        headline="How AI Detectors Score Your Text [Explained]"
+        description="Perplexity, burstiness, and confidence scores explained in plain language. Understand exactly how AI detectors grade your writing."
+        datePublished="2026-02-02"
+      />
+
 
       <div className="min-h-screen bg-background">
         <Navbar />

@@ -9,6 +9,7 @@ import { RelatedArticles } from "@/components/RelatedArticles";
 import { InternalLinks } from "@/components/InternalLinks";
 import { FAQSection } from "@/components/FAQSection";
 import { ArrowLeft, Calendar, Clock, User, AlertTriangle } from "lucide-react";
+import { AuthorSchema } from "@/components/AuthorSchema";
 
 const relatedArticles = [
   { title: "Turnitin AI Detection Accuracy (2026 Analysis)", description: "How accurate is Turnitin really? Data from 10,000+ scans.", href: "/blog/turnitin-ai-detection-accuracy", category: "Technical" },
@@ -64,6 +65,13 @@ const TurnitinAppeal = () => {
           })}
         </script>
       </Helmet>
+      <AuthorSchema
+        articleUrl="https://aifreetextpro.com/blog/turnitin-appeal-ai-detection"
+        headline="Is Turnitin Wrong? How to Appeal AI Detection (2026)"
+        description="Step-by-step guide to appealing Turnitin AI detection false positives. Email templates, evidence gathering, and how to prove your writing is human."
+        datePublished="2026-03-08"
+      />
+
 
       <Navbar />
       <main className="pt-24 pb-16">

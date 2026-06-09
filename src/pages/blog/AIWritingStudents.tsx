@@ -8,6 +8,7 @@ import Footer from "@/components/Footer";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { RelatedArticles } from "@/components/RelatedArticles";
 import { InternalLinks } from "@/components/InternalLinks";
+import { AuthorSchema } from "@/components/AuthorSchema";
 
 const relatedArticles = [
   {
@@ -170,6 +171,13 @@ const AIWritingStudents = () => {
           })}
         </script>
       </Helmet>
+      <AuthorSchema
+        articleUrl="https://aifreetextpro.com/blog/ai-writing-students-avoid-plagiarism"
+        headline="AI Writing for Students: Stay Ethical (2026)"
+        description="Use AI writing assistants safely in academia. Avoid plagiarism flags and AI detection while maintaining academic integrity."
+        datePublished="2026-02-02"
+      />
+
       <Navbar />
       
       <main className="flex-1 py-20 md:py-28">

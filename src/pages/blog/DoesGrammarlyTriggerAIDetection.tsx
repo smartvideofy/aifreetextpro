@@ -8,6 +8,7 @@ import { KeyTakeaways } from "@/components/KeyTakeaways";
 import { RelatedArticles } from "@/components/RelatedArticles";
 import { InternalLinks } from "@/components/InternalLinks";
 import ReviewedBy from "@/components/ReviewedBy";
+import { AuthorSchema } from "@/components/AuthorSchema";
 
 const relatedArticles = [
   { title: "AI Detection False Positives", description: "Why human writing gets wrongly flagged.", href: "/blog/ai-detection-false-positives", category: "Educational" },
@@ -69,6 +70,13 @@ const DoesGrammarlyTriggerAIDetection = () => {
           ]
         })}</script>
       </Helmet>
+      <AuthorSchema
+        articleUrl="https://aifreetextpro.com/blog/does-grammarly-trigger-ai-detection"
+        headline="Does Grammarly Get Detected as AI? The Truth About Writing Tools (2026)"
+        description="Does using Grammarly trigger AI detection? We tested Grammarly-edited text against Turnitin, GPTZero, and Originality.AI. Here are the real results."
+        datePublished="2026-02-25"
+      />
+
 
       <Navbar />
       <main className="min-h-screen pt-20">

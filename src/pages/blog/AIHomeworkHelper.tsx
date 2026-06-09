@@ -10,6 +10,7 @@ import { InternalLinks } from "@/components/InternalLinks";
 import { FAQSection } from "@/components/FAQSection";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { ArrowLeft, Calendar, Clock, User, BookOpen, AlertTriangle, CheckCircle } from "lucide-react";
+import { AuthorSchema } from "@/components/AuthorSchema";
 
 const relatedArticles = [
   { title: "Best AI Essay Writer That Can't Be Detected (2026)", description: "Top AI essay writing workflows that pass all detectors.", href: "/blog/best-ai-essay-writer-undetectable", category: "Academic" },
@@ -65,6 +66,13 @@ const AIHomeworkHelper = () => {
           })}
         </script>
       </Helmet>
+      <AuthorSchema
+        articleUrl="https://aifreetextpro.com/blog/ai-homework-helper-undetectable"
+        headline="AI Homework Helper That Won't Get Caught (2026)"
+        description="Use AI for homework without getting caught. Top workflows, humanization tips, and detection test results for students in 2026."
+        datePublished="2026-03-08"
+      />
+
 
       <Navbar />
       <main className="pt-24 pb-16">

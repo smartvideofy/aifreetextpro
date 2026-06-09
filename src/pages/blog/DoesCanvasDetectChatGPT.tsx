@@ -12,6 +12,7 @@ import InternalLinks from "@/components/InternalLinks";
 import ReviewedBy from "@/components/ReviewedBy";
 import { ArrowLeft, Calendar, Clock, User, GraduationCap, AlertCircle, Shield, BookOpen } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { AuthorSchema } from "@/components/AuthorSchema";
 
 const relatedArticles = [
   {
@@ -124,6 +125,13 @@ const DoesCanvasDetectChatGPT = () => {
         <script type="application/ld+json">{JSON.stringify(articleSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
       </Helmet>
+      <AuthorSchema
+        articleUrl="https://aifreetextpro.com/blog/does-canvas-detect-chatgpt"
+        headline="Does Canvas Detect ChatGPT? (2026 Complete Answer)"
+        description="Canvas has no native AI detector but integrates with Turnitin & Copyleaks. Real 2026 detection rates for ChatGPT, Claude, and Gemini on Canvas submissions."
+        datePublished="2026-06-01"
+      />
+
       <SpeakableSchema pageUrl="https://aifreetextpro.com/blog/does-canvas-detect-chatgpt" pageName="Does Canvas Detect ChatGPT?" />
 
       <Navbar />

@@ -9,6 +9,7 @@ import { InternalLinks } from "@/components/InternalLinks";
 import { Badge } from "@/components/ui/badge";
 import { AlertTriangle, XCircle, Repeat, Shuffle, Eye, Lightbulb } from "lucide-react";
 import { KeyTakeaways } from "@/components/KeyTakeaways";
+import { AuthorSchema } from "@/components/AuthorSchema";
 
 const AIHumanizationPitfalls = () => {
   const breadcrumbItems = [
@@ -111,6 +112,13 @@ const AIHumanizationPitfalls = () => {
           })}
         </script>
       </Helmet>
+      <AuthorSchema
+        articleUrl="https://aifreetextpro.com/blog/ai-humanization-pitfalls"
+        headline="7 AI Humanization Mistakes to Avoid [2026]"
+        description="Most writers make these 7 humanization mistakes. Learn what kills AI content quality and how to fix each one with expert-tested techniques."
+        datePublished="2026-02-02"
+      />
+
 
       <div className="min-h-screen bg-background">
         <Navbar />

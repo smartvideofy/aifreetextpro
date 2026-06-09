@@ -10,6 +10,7 @@ import InternalLinks from "@/components/InternalLinks";
 import ReviewedBy from "@/components/ReviewedBy";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { FAQSection } from "@/components/FAQSection";
+import { AuthorSchema } from "@/components/AuthorSchema";
 
 const relatedArticles = [
   { title: "How to Humanize Claude Output (2026)", description: "Step-by-step workflow to make Claude output undetectable.", href: "/blog/humanize-claude-output", category: "How-To Guide" },
@@ -63,6 +64,13 @@ const ChatGPTvsClaudevsGeminiDetection = () => {
           {JSON.stringify({ "@context": "https://schema.org", "@type": "FAQPage", "mainEntity": faqs.map(f => ({ "@type": "Question", "name": f.question, "acceptedAnswer": { "@type": "Answer", "text": f.answer } })) })}
         </script>
       </Helmet>
+      <AuthorSchema
+        articleUrl="https://aifreetextpro.com/blog/chatgpt-vs-claude-vs-gemini-detection"
+        headline="ChatGPT vs Claude vs Gemini: Which AI Writer Is Hardest to Detect? (2026)"
+        description="We tested ChatGPT GPT-5, Claude 3.5, and Gemini 2.5 Pro against 5 major AI detectors. See which model produces the most human-like writing in 2026."
+        datePublished="2026-02-28"
+      />
+
 
       <Navbar />
       <main className="min-h-screen pt-24 pb-16">

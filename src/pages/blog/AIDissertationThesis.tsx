@@ -9,6 +9,7 @@ import ReviewedBy from "@/components/ReviewedBy";
 import { RelatedArticles } from "@/components/RelatedArticles";
 import { InternalLinks } from "@/components/InternalLinks";
 import { FAQSection } from "@/components/FAQSection";
+import { AuthorSchema } from "@/components/AuthorSchema";
 
 const relatedArticles = [
   { title: "AI for Research Papers", description: "How to use AI ethically for thesis writing and journal submissions.", href: "/blog/ai-for-research-papers", category: "Academic" },
@@ -70,6 +71,13 @@ const AIDissertationThesis = () => {
           "mainEntity": faqs.map(faq => ({ "@type": "Question", "name": faq.question, "acceptedAnswer": { "@type": "Answer", "text": faq.answer } }))
         })}</script>
       </Helmet>
+      <AuthorSchema
+        articleUrl="https://aifreetextpro.com/blog/ai-dissertation-thesis"
+        headline="AI for Dissertation & Thesis Writing (2026 Guide)"
+        description="How PhD and Masters students can use AI for dissertations. Chapter-by-chapter integration guide, detection risks, citation requirements, and advisor conversations."
+        datePublished="2026-03-08"
+      />
+
 
       <Navbar />
       <main className="min-h-screen pt-20">

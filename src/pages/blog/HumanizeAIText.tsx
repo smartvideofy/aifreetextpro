@@ -8,6 +8,7 @@ import Footer from "@/components/Footer";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { RelatedArticles } from "@/components/RelatedArticles";
 import { InternalLinks } from "@/components/InternalLinks";
+import { AuthorSchema } from "@/components/AuthorSchema";
 
 const relatedArticles = [
   {
@@ -175,6 +176,13 @@ const HumanizeAIText = () => {
           })}
         </script>
       </Helmet>
+      <AuthorSchema
+        articleUrl="https://aifreetextpro.com/blog/humanize-ai-text-without-losing-voice"
+        headline="Humanize AI Text Without Losing Your Voice"
+        description="Make ChatGPT or Gemini text sound naturally human while keeping your unique tone. Proven strategies and tools tested in 2026."
+        datePublished="2026-02-02"
+      />
+
       <Navbar />
       
       <main className="flex-1 py-20 md:py-28">

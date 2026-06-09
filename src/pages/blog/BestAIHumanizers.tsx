@@ -9,6 +9,7 @@ import Footer from "@/components/Footer";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { RelatedArticles } from "@/components/RelatedArticles";
 import { InternalLinks } from "@/components/InternalLinks";
+import { AuthorSchema } from "@/components/AuthorSchema";
 
 const BestAIHumanizers = () => {
 const relatedArticles = [
@@ -167,6 +168,13 @@ const relatedArticles = [
           })}
         </script>
       </Helmet>
+      <AuthorSchema
+        articleUrl="https://aifreetextpro.com/blog/best-free-ai-humanizer-tools-2025"
+        headline="Best Free AI Humanizer Tools (2025) - See 2026 Update"
+        description="This 2025 comparison is outdated. See our updated 2026 list with new tools, fresh test results, and better recommendations."
+        datePublished="2026-02-02"
+      />
+
       <Navbar />
       
       <article className="flex-1 py-12 md:py-20">

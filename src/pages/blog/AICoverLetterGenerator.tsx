@@ -9,6 +9,7 @@ import ReviewedBy from "@/components/ReviewedBy";
 import { RelatedArticles } from "@/components/RelatedArticles";
 import { InternalLinks } from "@/components/InternalLinks";
 import { FAQSection } from "@/components/FAQSection";
+import { AuthorSchema } from "@/components/AuthorSchema";
 
 const relatedArticles = [
   { title: "AI Humanizer for Resumes", description: "Make AI-generated resumes sound authentic and professional.", href: "/blog/ai-humanizer-resumes-cover-letters", category: "Career" },
@@ -71,6 +72,13 @@ const AICoverLetterGenerator = () => {
           "mainEntity": faqs.map(faq => ({ "@type": "Question", "name": faq.question, "acceptedAnswer": { "@type": "Answer", "text": faq.answer } }))
         })}</script>
       </Helmet>
+      <AuthorSchema
+        articleUrl="https://aifreetextpro.com/blog/ai-cover-letter-generator"
+        headline="AI Cover Letter Generator That Sounds Human (2026)"
+        description="Generate cover letters with AI that sound authentically human. 5 generators compared, humanization workflow, and industry-specific templates that land interviews."
+        datePublished="2026-03-08"
+      />
+
 
       <Navbar />
       <main className="min-h-screen pt-20">

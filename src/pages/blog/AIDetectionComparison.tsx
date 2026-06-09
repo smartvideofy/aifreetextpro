@@ -8,6 +8,7 @@ import Footer from "@/components/Footer";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { RelatedArticles } from "@/components/RelatedArticles";
 import { InternalLinks } from "@/components/InternalLinks";
+import { AuthorSchema } from "@/components/AuthorSchema";
 
 const relatedArticles = [
   {
@@ -122,6 +123,13 @@ const AIDetectionComparison = () => {
           })}
         </script>
       </Helmet>
+      <AuthorSchema
+        articleUrl="https://aifreetextpro.com/blog/ai-detection-tools-compared-2025"
+        headline="AI Detectors Compared: GPTZero vs AFTP (2026)"
+        description="Real-world accuracy test: GPTZero vs AI Free Text Pro vs Rewritify. See which AI detector wins on accuracy, speed, and false positive rates."
+        datePublished="2026-02-02"
+      />
+
       <Navbar />
       
       <main className="flex-1 py-20 md:py-28">

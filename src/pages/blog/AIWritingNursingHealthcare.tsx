@@ -9,6 +9,7 @@ import { FAQSection } from "@/components/FAQSection";
 import { RelatedArticles } from "@/components/RelatedArticles";
 import InternalLinks from "@/components/InternalLinks";
 import { ArrowLeft, Calendar, Clock, Tag, Stethoscope, AlertTriangle, FileText, CheckCircle } from "lucide-react";
+import { AuthorSchema } from "@/components/AuthorSchema";
 
 const relatedArticles = [
   { title: "AI Writing for Students: How to Avoid Plagiarism Ethically", description: "Comprehensive guide to using AI responsibly in academic settings while maintaining integrity.", href: "/blog/ai-writing-students-avoid-plagiarism", category: "Academic" },
@@ -76,6 +77,13 @@ const AIWritingNursingHealthcare = () => {
         <script type="application/ld+json">{JSON.stringify(articleSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
       </Helmet>
+      <AuthorSchema
+        articleUrl="https://aifreetextpro.com/blog/ai-writing-nursing-healthcare-students"
+        headline="AI Writing for Nursing & Healthcare Students (2026) | AI Free Text Pro"
+        description="Complete guide to using AI for care plans, SOAP notes, clinical reflections, and nursing essays. Detection risks, ethical frameworks, and safe workflows for healthcare students."
+        datePublished="2026-03-15"
+      />
+
 
       <Navbar />
       <main className="min-h-screen bg-background pt-24 pb-16">

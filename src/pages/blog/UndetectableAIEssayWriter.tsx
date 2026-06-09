@@ -12,6 +12,7 @@ import { FAQSection } from "@/components/FAQSection";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import { AuthorSchema } from "@/components/AuthorSchema";
 
 const relatedArticles = [
   {
@@ -138,6 +139,13 @@ export default function UndetectableAIEssayWriter() {
           })}
         </script>
       </Helmet>
+      <AuthorSchema
+        articleUrl="https://aifreetextpro.com/blog/best-ai-essay-writer-undetectable"
+        headline="Best AI Essay Writer That Can't Be Detected | 2026"
+        description="Discover the best AI essay writing workflows that pass Turnitin, GPTZero, and Originality.AI. Real test results and step-by-step guide for 2026."
+        datePublished="2026-03-05"
+      />
+
 
       <Navbar />
       

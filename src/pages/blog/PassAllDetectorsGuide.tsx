@@ -8,6 +8,7 @@ import Footer from "@/components/Footer";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { RelatedArticles } from "@/components/RelatedArticles";
 import { InternalLinks } from "@/components/InternalLinks";
+import { AuthorSchema } from "@/components/AuthorSchema";
 
 const relatedArticles = [
   {
@@ -116,6 +117,13 @@ const PassAllDetectorsGuide = () => {
           })}
         </script>
       </Helmet>
+      <AuthorSchema
+        articleUrl="https://aifreetextpro.com/blog/pass-all-ai-detectors-guide"
+        headline="Pass All AI Detectors: Step-by-Step Guide [2026]"
+        description="Pass GPTZero, Turnitin, Originality.AI, ZeroGPT, and Copyleaks with one workflow. Step-by-step guide with tested results."
+        datePublished="2026-02-02"
+      />
+
       <Navbar />
       
       <main className="flex-1 py-20 md:py-28">

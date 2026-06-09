@@ -10,6 +10,7 @@ import { RelatedArticles } from "@/components/RelatedArticles";
 import InternalLinks from "@/components/InternalLinks";
 import { FAQSection } from "@/components/FAQSection";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
+import { AuthorSchema } from "@/components/AuthorSchema";
 
 const relatedArticles = [
   { title: "AI Blog Post Generator", description: "Best generators for content at scale", href: "/blog/ai-blog-post-generator", category: "Marketing" },
@@ -66,6 +67,13 @@ const AIContentAtScale = () => {
           })}
         </script>
       </Helmet>
+      <AuthorSchema
+        articleUrl="https://aifreetextpro.com/blog/ai-content-at-scale"
+        headline="AI Content at Scale: 100+ Articles Without Getting Flagged | AI Free Text Pro"
+        description="Build a content operation that produces 100+ AI-assisted articles monthly without triggering AI detection. Complete workflow for agencies and content teams."
+        datePublished="2026-03-08"
+      />
+
 
       <Navbar />
       <main className="pt-20 pb-16">

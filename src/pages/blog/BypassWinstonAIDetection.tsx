@@ -7,6 +7,7 @@ import { RelatedArticles } from "@/components/RelatedArticles";
 import { InternalLinks } from "@/components/InternalLinks";
 import { CheckCircle, X, ArrowRight, AlertTriangle, BookOpen, Lightbulb, Target, Sparkles } from "lucide-react";
 import { KeyTakeaways } from "@/components/KeyTakeaways";
+import { AuthorSchema } from "@/components/AuthorSchema";
 
 const BypassWinstonAIDetection = () => {
   const relatedArticles = [
@@ -95,6 +96,13 @@ const BypassWinstonAIDetection = () => {
           })}
         </script>
       </Helmet>
+      <AuthorSchema
+        articleUrl="https://aifreetextpro.com/blog/bypass-winston-ai-detection"
+        headline="Reduce Winston AI Scores: Proven Methods [2026]"
+        description="Lower Winston AI detection scores with expert humanization strategies. Maintain readability while making AI text sound naturally human."
+        datePublished="2026-02-02"
+      />
+
 
       <Navbar />
       

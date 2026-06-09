@@ -10,6 +10,7 @@ import InternalLinks from "@/components/InternalLinks";
 import ReviewedBy from "@/components/ReviewedBy";
 import { ArrowLeft, Calendar, Clock, User, GraduationCap, AlertTriangle, CheckCircle, Shield } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { AuthorSchema } from "@/components/AuthorSchema";
 
 const relatedArticles = [
   {
@@ -116,6 +117,13 @@ const AICollegeAdmissionsEssays = () => {
         <script type="application/ld+json">{JSON.stringify(articleSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
       </Helmet>
+      <AuthorSchema
+        articleUrl="https://aifreetextpro.com/blog/ai-college-admissions-essays-personal-statements"
+        headline="AI for College Admissions Essays & Statements (2026)"
+        description="How to safely use AI for college admissions essays without getting flagged. Which universities use AI detectors, safe workflows, and authentic voice strategies."
+        datePublished="2026-04-08"
+      />
+
 
       <Navbar />
       <main className="min-h-screen bg-background">

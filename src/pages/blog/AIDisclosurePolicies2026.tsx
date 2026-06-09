@@ -10,6 +10,7 @@ import InternalLinks from "@/components/InternalLinks";
 import ReviewedBy from "@/components/ReviewedBy";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { FAQSection } from "@/components/FAQSection";
+import { AuthorSchema } from "@/components/AuthorSchema";
 
 const relatedArticles = [
   { title: "Is It Illegal to Use AI for School?", description: "Legal and policy landscape for academic AI use.", href: "/blog/is-it-illegal-to-use-ai-for-school", category: "Academic" },
@@ -60,6 +61,13 @@ const AIDisclosurePolicies2026 = () => {
           {JSON.stringify({ "@context": "https://schema.org", "@type": "FAQPage", "mainEntity": faqs.map(f => ({ "@type": "Question", "name": f.question, "acceptedAnswer": { "@type": "Answer", "text": f.answer } })) })}
         </script>
       </Helmet>
+      <AuthorSchema
+        articleUrl="https://aifreetextpro.com/blog/ai-disclosure-policies-2026"
+        headline="AI Disclosure Policies: What You Must Know Before Submitting AI Content (2026)"
+        description="Complete guide to AI disclosure requirements in academia, publishing, and business. Includes templates, regulations, and best practices for 2026."
+        datePublished="2026-02-28"
+      />
+
 
       <Navbar />
       <main className="min-h-screen pt-24 pb-16">

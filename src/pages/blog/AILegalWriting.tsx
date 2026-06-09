@@ -10,6 +10,7 @@ import { FAQSection } from "@/components/FAQSection";
 import InternalLinks from "@/components/InternalLinks";
 import ReviewedBy from "@/components/ReviewedBy";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
+import { AuthorSchema } from "@/components/AuthorSchema";
 
 const relatedArticles = [
   { title: "AI for Research Papers: Complete Guide", description: "Step-by-step workflow for using AI in academic research without detection.", href: "/blog/ai-for-research-papers", category: "Academic" },
@@ -78,6 +79,13 @@ const AILegalWriting = () => {
           })}
         </script>
       </Helmet>
+      <AuthorSchema
+        articleUrl="https://aifreetextpro.com/blog/ai-legal-writing-law-school"
+        headline="AI for Legal Writing & Law School Essays (2026) | AI Free Text Pro"
+        description="Complete guide to using AI for legal memos, briefs, and law school essays in 2026. Ethical frameworks, detection avoidance, and workflow templates for legal professionals and students."
+        datePublished="2026-03-09"
+      />
+
 
       <Navbar />
       <main className="min-h-screen bg-background pt-24 pb-16">

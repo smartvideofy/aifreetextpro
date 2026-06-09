@@ -8,6 +8,7 @@ import { FAQSection } from "@/components/FAQSection";
 import { Link } from "react-router-dom";
 import { ArrowRight, Lightbulb, PenTool, Edit, Search, Shield, CheckCircle, Star } from "lucide-react";
 import { KeyTakeaways } from "@/components/KeyTakeaways";
+import { AuthorSchema } from "@/components/AuthorSchema";
 
 const relatedArticles = [
   {
@@ -184,6 +185,13 @@ export default function AIToolsForWriters() {
           })}
         </script>
       </Helmet>
+      <AuthorSchema
+        articleUrl="https://aifreetextpro.com/blog/ai-tools-for-writers-2025"
+        headline="Best AI Tools for Writers: Tested & Ranked [2026]"
+        description="We tested 15+ AI writing tools for creativity, speed, and quality. See which ones help writers plan, draft, and refine content fastest."
+        datePublished="2026-02-02"
+      />
+
 
       <div className="min-h-screen bg-background">
         <Navbar />

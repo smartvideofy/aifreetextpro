@@ -10,6 +10,7 @@ import { InternalLinks } from "@/components/InternalLinks";
 import { FAQSection } from "@/components/FAQSection";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { ArrowLeft, Calendar, Clock, User } from "lucide-react";
+import { AuthorSchema } from "@/components/AuthorSchema";
 
 const relatedArticles = [
   { title: "Can Turnitin Detect DeepSeek?", description: "Test results for DeepSeek AI detection across major tools.", href: "/blog/can-turnitin-detect-deepseek", category: "Technical" },
@@ -65,6 +66,13 @@ const DoesTurnitinDetectGemini = () => {
           })}
         </script>
       </Helmet>
+      <AuthorSchema
+        articleUrl="https://aifreetextpro.com/blog/does-turnitin-detect-gemini"
+        headline="Does Turnitin Detect Gemini? 2026 Test Results"
+        description="Can Turnitin detect Google Gemini AI? We tested Gemini 2.5 Pro and Flash across Turnitin, GPTZero, and Originality.AI. Full 2026 results."
+        datePublished="2026-03-08"
+      />
+
 
       <Navbar />
       <main className="pt-24 pb-16">

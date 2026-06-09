@@ -8,6 +8,8 @@ import { KeyTakeaways } from "@/components/KeyTakeaways";
 import { RelatedArticles } from "@/components/RelatedArticles";
 import { InternalLinks } from "@/components/InternalLinks";
 import ReviewedBy from "@/components/ReviewedBy";
+import { AuthorSchema } from "@/components/AuthorSchema";
+import { ReviewSchema } from "@/components/ReviewSchema";
 
 const relatedArticles = [
   { title: "GPTinf vs AI Free Text Pro", description: "Detailed comparison with test results.", href: "/blog/gptinf-vs-ai-free-text-pro", category: "Comparison" },
@@ -61,6 +63,23 @@ const UndetectableAIvsAIFreeTextPro = () => {
           ]
         })}</script>
       </Helmet>
+      <AuthorSchema
+        articleUrl="https://aifreetextpro.com/blog/undetectable-ai-vs-ai-free-text-pro"
+        headline="Undetectable AI vs AI Free Text Pro (2026)"
+        description="Side-by-side comparison of Undetectable AI and AI Free Text Pro on pricing, bypass rate, and quality."
+        datePublished="2026-05-20"
+      />
+      <ReviewSchema
+        itemName="Undetectable AI"
+        reviewUrl="https://aifreetextpro.com/blog/undetectable-ai-vs-ai-free-text-pro"
+        itemUrl="https://undetectable.ai"
+        ratingValue={3.9}
+        ratingCount={250}
+        reviewHeadline="Undetectable AI vs AI Free Text Pro (2026)"
+        reviewBody="Side-by-side comparison of Undetectable AI and AI Free Text Pro on pricing, bypass rate, and quality."
+        datePublished="2026-05-20"
+      />
+
 
       <Navbar />
       <main className="min-h-screen pt-20">

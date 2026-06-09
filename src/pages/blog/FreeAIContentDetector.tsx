@@ -11,6 +11,7 @@ import { InternalLinks } from "@/components/InternalLinks";
 import { FAQSection } from "@/components/FAQSection";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { ArrowLeft, Calendar, Clock, User } from "lucide-react";
+import { AuthorSchema } from "@/components/AuthorSchema";
 
 const relatedArticles = [
   { title: "How to Check If Something Was Written by AI", description: "Free methods for verifying AI-generated text.", href: "/blog/how-to-check-if-written-by-ai", category: "How-To Guide" },
@@ -66,6 +67,13 @@ const FreeAIContentDetector = () => {
           })}
         </script>
       </Helmet>
+      <AuthorSchema
+        articleUrl="https://aifreetextpro.com/blog/free-ai-content-detector"
+        headline="Free AI Content Detector (2026)"
+        description="The best free AI content detectors of 2026, accuracy benchmarks, and when paid tools are worth it."
+        datePublished="2026-05-12"
+      />
+
 
       <Navbar />
       <main className="pt-24 pb-16">

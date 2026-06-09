@@ -13,6 +13,7 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { ArrowLeft, Calendar, Clock, User, CheckCircle, XCircle, Star, ExternalLink, Trophy, Zap, Shield } from "lucide-react";
+import { AuthorSchema } from "@/components/AuthorSchema";
 
 const relatedArticles = [
   {
@@ -140,6 +141,13 @@ const BestFreeAIHumanizer2026 = () => {
           })}
         </script>
       </Helmet>
+      <AuthorSchema
+        articleUrl="https://aifreetextpro.com/blog/best-free-ai-humanizer-2026"
+        headline="Best Free AI Humanizer 2026"
+        description="The best free AI humanizer tools of 2026 ranked by bypass rate, quality, and ease of use."
+        datePublished="2026-05-01"
+      />
+
       
       <Navbar />
       

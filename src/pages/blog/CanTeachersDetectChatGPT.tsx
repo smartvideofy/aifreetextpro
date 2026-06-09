@@ -9,6 +9,7 @@ import { KeyTakeaways } from "@/components/KeyTakeaways";
 import { RelatedArticles } from "@/components/RelatedArticles";
 import { InternalLinks } from "@/components/InternalLinks";
 import ReviewedBy from "@/components/ReviewedBy";
+import { AuthorSchema } from "@/components/AuthorSchema";
 
 const relatedArticles = [
   { title: "Does Canvas Detect ChatGPT? (2026 Answer)", description: "How Canvas LMS integrates Turnitin and Copyleaks to spot AI writing.", href: "/blog/does-canvas-detect-chatgpt", category: "Academic" },
@@ -84,6 +85,13 @@ const CanTeachersDetectChatGPT = () => {
           ]
         })}</script>
       </Helmet>
+      <AuthorSchema
+        articleUrl="https://aifreetextpro.com/blog/can-teachers-detect-chatgpt"
+        headline="Can Teachers Detect ChatGPT? (2026)"
+        description="How teachers actually detect ChatGPT essays in 2026: detector accuracy, manual review signals, and policy trends."
+        datePublished="2026-05-12"
+      />
+
 
       <Navbar />
       <main className="min-h-screen pt-20">

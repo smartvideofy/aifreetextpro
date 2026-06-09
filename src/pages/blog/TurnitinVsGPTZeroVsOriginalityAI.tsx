@@ -11,6 +11,7 @@ import { FAQSection } from "@/components/FAQSection";
 import InternalLinks from "@/components/InternalLinks";
 import ReviewedBy from "@/components/ReviewedBy";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
+import { AuthorSchema } from "@/components/AuthorSchema";
 
 const relatedArticles = [
   { title: "GPTZero vs Turnitin: Head-to-Head Comparison", description: "Detailed two-way comparison of the most popular AI detectors.", href: "/blog/gptzero-vs-turnitin", category: "Comparison" },
@@ -79,6 +80,13 @@ const TurnitinVsGPTZeroVsOriginalityAI = () => {
           })}
         </script>
       </Helmet>
+      <AuthorSchema
+        articleUrl="https://aifreetextpro.com/blog/turnitin-vs-gptzero-vs-originality-ai"
+        headline="Turnitin vs GPTZero vs Originality.AI (2026)"
+        description="Head-to-head accuracy comparison of Turnitin, GPTZero, and Originality.AI on real 2026 AI content."
+        datePublished="2026-05-10"
+      />
+
 
       <Navbar />
       <main className="min-h-screen bg-background pt-24 pb-16">

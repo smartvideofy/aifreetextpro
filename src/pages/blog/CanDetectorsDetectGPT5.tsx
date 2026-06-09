@@ -11,6 +11,7 @@ import InternalLinks from "@/components/InternalLinks";
 import ReviewedBy from "@/components/ReviewedBy";
 import { ArrowLeft, Calendar, Clock, User, Cpu, BarChart, Shield, Zap } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { AuthorSchema } from "@/components/AuthorSchema";
 
 const relatedArticles = [
   {
@@ -117,6 +118,13 @@ const CanDetectorsDetectGPT5 = () => {
         <script type="application/ld+json">{JSON.stringify(articleSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
       </Helmet>
+      <AuthorSchema
+        articleUrl="https://aifreetextpro.com/blog/can-ai-detectors-detect-gpt5"
+        headline="Can AI Detectors Detect GPT-5? (2026 Test Results)"
+        description="500+ samples tested across GPT-5, GPT-5-mini, and GPT-5-nano with full detection rates for major AI detectors."
+        datePublished="2026-04-08"
+      />
+
 
       <Navbar />
       <main className="min-h-screen bg-background">

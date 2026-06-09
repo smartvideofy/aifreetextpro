@@ -114,6 +114,7 @@ const AIContentSEO = () => {
         headline="AI Content for SEO: Rank Higher Naturally [2026]"
         description="Scale SEO content with AI while ranking on page 1. Write naturally, pass quality checks, and grow organic traffic with proven workflows."
         datePublished="2026-02-02"
+        dateModified="2026-06-09"
       />
 
       <Navbar />

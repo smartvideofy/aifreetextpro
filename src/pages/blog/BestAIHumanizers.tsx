@@ -10,6 +10,7 @@ import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { RelatedArticles } from "@/components/RelatedArticles";
 import { InternalLinks } from "@/components/InternalLinks";
 import { AuthorSchema } from "@/components/AuthorSchema";
+import { SpeakableSchema } from "@/components/SpeakableSchema";
 
 const BestAIHumanizers = () => {
 const relatedArticles = [
@@ -173,6 +174,11 @@ const relatedArticles = [
         headline="Best Free AI Humanizer Tools (2025) - See 2026 Update"
         description="This 2025 comparison is outdated. See our updated 2026 list with new tools, fresh test results, and better recommendations."
         datePublished="2026-02-02"
+        dateModified="2026-06-09"
+      />
+      <SpeakableSchema
+        pageUrl="https://aifreetextpro.com/blog/best-free-ai-humanizer-tools-2025"
+        pageName="Best Free AI Humanizer Tools (2025) - See 2026 Update"
       />
 
       <Navbar />

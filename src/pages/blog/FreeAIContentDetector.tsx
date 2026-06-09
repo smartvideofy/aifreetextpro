@@ -72,6 +72,7 @@ const FreeAIContentDetector = () => {
         headline="Free AI Content Detector (2026)"
         description="The best free AI content detectors of 2026, accuracy benchmarks, and when paid tools are worth it."
         datePublished="2026-05-12"
+        dateModified="2026-06-09"
       />
 
 

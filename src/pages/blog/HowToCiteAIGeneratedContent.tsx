@@ -11,6 +11,7 @@ import ReviewedBy from "@/components/ReviewedBy";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { FAQSection } from "@/components/FAQSection";
 import { AuthorSchema } from "@/components/AuthorSchema";
+import { SpeakableSchema } from "@/components/SpeakableSchema";
 
 const relatedArticles = [
   {
@@ -113,6 +114,11 @@ const HowToCiteAIGeneratedContent = () => {
         headline="How to Cite AI-Generated Content: APA, MLA, Chicago & Harvard (2026)"
         description="Complete guide to citing ChatGPT, Claude, and Gemini in APA, MLA, Chicago, and Harvard formats. Includes templates, examples, and 2026 updates."
         datePublished="2026-02-28"
+        dateModified="2026-06-09"
+      />
+      <SpeakableSchema
+        pageUrl="https://aifreetextpro.com/blog/how-to-cite-ai-generated-content"
+        pageName="How to Cite AI-Generated Content: APA, MLA, Chicago & Harvard (2026)"
       />
 
 

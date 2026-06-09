@@ -71,6 +71,7 @@ const AIDetectorEmployers = () => {
         headline="AI Writing Detector for Employers: Screen in 2026"
         description="How employers can use AI writing detectors to screen job applications. Top tools, legal considerations, and recommended workflows for HR teams."
         datePublished="2026-03-08"
+        dateModified="2026-06-09"
       />
 
 

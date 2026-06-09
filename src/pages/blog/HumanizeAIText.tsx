@@ -9,6 +9,7 @@ import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { RelatedArticles } from "@/components/RelatedArticles";
 import { InternalLinks } from "@/components/InternalLinks";
 import { AuthorSchema } from "@/components/AuthorSchema";
+import { SpeakableSchema } from "@/components/SpeakableSchema";
 import { PostHowToSchema } from "@/components/PostHowToSchema";
 
 const relatedArticles = [
@@ -189,6 +190,11 @@ const HumanizeAIText = () => {
         headline="Humanize AI Text Without Losing Your Voice"
         description="Make ChatGPT or Gemini text sound naturally human while keeping your unique tone. Proven strategies and tools tested in 2026."
         datePublished="2026-02-02"
+        dateModified="2026-06-09"
+      />
+      <SpeakableSchema
+        pageUrl="https://aifreetextpro.com/blog/humanize-ai-text-without-losing-voice"
+        pageName="Humanize AI Text Without Losing Your Voice"
       />
 
       <Navbar />

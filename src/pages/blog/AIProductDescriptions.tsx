@@ -146,6 +146,7 @@ export default function AIProductDescriptions() {
         headline="AI Product Descriptions That Convert [2026]"
         description="Make AI-generated product descriptions sound authentic and boost conversions 15-35%. Proven eCommerce copywriting techniques that sell."
         datePublished="2026-02-02"
+        dateModified="2026-06-09"
       />
 
 

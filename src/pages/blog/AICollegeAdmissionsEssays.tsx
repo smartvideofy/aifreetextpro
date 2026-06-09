@@ -122,6 +122,7 @@ const AICollegeAdmissionsEssays = () => {
         headline="AI for College Admissions Essays & Statements (2026)"
         description="How to safely use AI for college admissions essays without getting flagged. Which universities use AI detectors, safe workflows, and authentic voice strategies."
         datePublished="2026-04-08"
+        dateModified="2026-06-09"
       />
 
 

@@ -72,6 +72,7 @@ const ClaudeAcademicWriting = () => {
         headline="Claude for Academic Writing Without Getting Caught"
         description="How to use Claude AI for academic essays without detection. Claude's detection profile, best prompts, and humanization workflow for students."
         datePublished="2026-03-08"
+        dateModified="2026-06-09"
       />
 
 

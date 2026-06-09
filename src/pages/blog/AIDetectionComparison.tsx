@@ -128,6 +128,7 @@ const AIDetectionComparison = () => {
         headline="AI Detectors Compared: GPTZero vs AFTP (2026)"
         description="Real-world accuracy test: GPTZero vs AI Free Text Pro vs Rewritify. See which AI detector wins on accuracy, speed, and false positive rates."
         datePublished="2026-02-02"
+        dateModified="2026-06-09"
       />
 
       <Navbar />

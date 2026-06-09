@@ -77,6 +77,7 @@ const AIDetectorsClaudeGeminiGPT5 = () => {
         headline="Can AI Detectors Detect Claude, Gemini, and GPT-5? (2026 Tests)"
         description="We tested Claude 4, Gemini 2.5, and GPT-5 against Turnitin, GPTZero, Originality.AI, and more. Find out which AI models are hardest to detect in 2026."
         datePublished="2026-02-25"
+        dateModified="2026-06-09"
       />
 
 

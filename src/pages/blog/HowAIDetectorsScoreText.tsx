@@ -9,6 +9,7 @@ import { BarChart3, Calculator, Target, Layers, TrendingUp, AlertCircle } from "
 import { KeyTakeaways } from "@/components/KeyTakeaways";
 import { InternalLinks } from "@/components/InternalLinks";
 import { AuthorSchema } from "@/components/AuthorSchema";
+import { SpeakableSchema } from "@/components/SpeakableSchema";
 
 const HowAIDetectorsScoreText = () => {
   const breadcrumbItems = [
@@ -116,6 +117,11 @@ const HowAIDetectorsScoreText = () => {
         headline="How AI Detectors Score Your Text [Explained]"
         description="Perplexity, burstiness, and confidence scores explained in plain language. Understand exactly how AI detectors grade your writing."
         datePublished="2026-02-02"
+        dateModified="2026-06-09"
+      />
+      <SpeakableSchema
+        pageUrl="https://aifreetextpro.com/blog/how-ai-detectors-score-text"
+        pageName="How AI Detectors Score Your Text [Explained]"
       />
 
 

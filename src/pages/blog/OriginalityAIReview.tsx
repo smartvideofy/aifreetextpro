@@ -157,6 +157,7 @@ const OriginalityAIReview = () => {
         headline="Originality.AI Review (2026)"
         description="Full Originality.AI review covering accuracy, pricing, and how to reduce false flags ethically in 2026."
         datePublished="2026-05-15"
+        dateModified="2026-06-09"
       />
       <ReviewSchema
         itemName="Originality.AI"

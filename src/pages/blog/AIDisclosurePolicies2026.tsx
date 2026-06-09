@@ -66,6 +66,7 @@ const AIDisclosurePolicies2026 = () => {
         headline="AI Disclosure Policies: What You Must Know Before Submitting AI Content (2026)"
         description="Complete guide to AI disclosure requirements in academia, publishing, and business. Includes templates, regulations, and best practices for 2026."
         datePublished="2026-02-28"
+        dateModified="2026-06-09"
       />
 
 

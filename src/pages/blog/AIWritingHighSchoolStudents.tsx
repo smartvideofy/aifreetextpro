@@ -65,6 +65,7 @@ const AIWritingHighSchoolStudents = () => {
         headline="AI Writing for High School Students: A Parent and Student Guide (2026)"
         description="Complete guide to AI writing tools for high school students. School policies, what's allowed, consequences of getting caught, and how to use AI responsibly."
         datePublished="2026-02-28"
+        dateModified="2026-06-09"
       />
 
 

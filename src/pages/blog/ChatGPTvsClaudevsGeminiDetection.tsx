@@ -69,6 +69,7 @@ const ChatGPTvsClaudevsGeminiDetection = () => {
         headline="ChatGPT vs Claude vs Gemini: Which AI Writer Is Hardest to Detect? (2026)"
         description="We tested ChatGPT GPT-5, Claude 3.5, and Gemini 2.5 Pro against 5 major AI detectors. See which model produces the most human-like writing in 2026."
         datePublished="2026-02-28"
+        dateModified="2026-06-09"
       />
 
 

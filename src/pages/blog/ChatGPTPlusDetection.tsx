@@ -72,6 +72,7 @@ const ChatGPTPlusDetection = () => {
         headline="Does ChatGPT Plus Bypass AI Detection? (2026 Test Results) | AI Free Text Pro"
         description="We tested ChatGPT Plus, Pro, and free tier against 5 AI detectors. Paying for ChatGPT does not make your text less detectable. Real 2026 test data inside."
         datePublished="2026-03-08"
+        dateModified="2026-06-09"
       />
 
 

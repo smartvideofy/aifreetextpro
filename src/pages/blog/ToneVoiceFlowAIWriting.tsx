@@ -110,6 +110,7 @@ const ToneVoiceFlowAIWriting = () => {
         headline="Tone, Voice & Flow in AI Writing [2026 Guide]"
         description="Master the 3 pillars of great writing with AI tools. Keep your tone, voice, and flow natural even when using ChatGPT or other AI assistants."
         datePublished="2026-02-02"
+        dateModified="2026-06-09"
       />
 
 

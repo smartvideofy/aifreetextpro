@@ -67,6 +67,7 @@ const TurnitinAIDetectionAccuracy = () => {
         headline="Turnitin AI Detection Accuracy (2026)"
         description="Real-world Turnitin AI detection accuracy across GPT-5, Claude, and Gemini with false-positive benchmarks."
         datePublished="2026-05-15"
+        dateModified="2026-06-09"
       />
       <ReviewSchema
         itemName="Turnitin AI Detector"

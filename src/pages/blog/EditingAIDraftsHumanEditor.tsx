@@ -118,6 +118,7 @@ const EditingAIDraftsHumanEditor = () => {
         headline="Edit AI Drafts Like a Pro Editor [2026 Tips]"
         description="Professional editing techniques to transform AI drafts into polished, publication-ready content. Make every piece read authentically human."
         datePublished="2026-02-02"
+        dateModified="2026-06-09"
       />
 
 

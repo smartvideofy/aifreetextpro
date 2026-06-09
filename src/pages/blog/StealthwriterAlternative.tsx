@@ -72,6 +72,7 @@ const StealthwriterAlternative = () => {
         headline="Best Stealthwriter Alternative 2026: 95% vs 86% Tested"
         description="Best Stealthwriter alternative tested: AI Free Text Pro hits 95% bypass vs Stealthwriter's 86%, with better readability and a free tier (no sign-up)."
         datePublished="2026-05-09"
+        dateModified="2026-06-09"
       />
 
 

@@ -68,6 +68,7 @@ const UndetectableAIvsAIFreeTextPro = () => {
         headline="Undetectable AI vs AI Free Text Pro (2026)"
         description="Side-by-side comparison of Undetectable AI and AI Free Text Pro on pricing, bypass rate, and quality."
         datePublished="2026-05-20"
+        dateModified="2026-06-09"
       />
       <ReviewSchema
         itemName="Undetectable AI"

@@ -72,6 +72,7 @@ const AIGrantWriting = () => {
         headline="AI for Grant Writing: Win Funding Without Detection (2026) | AI Free Text Pro"
         description="Use AI to write stronger grant proposals without triggering reviewer AI detection. Section-by-section workflow for NIH, NSF, and foundation grants."
         datePublished="2026-03-08"
+        dateModified="2026-06-09"
       />
 
 

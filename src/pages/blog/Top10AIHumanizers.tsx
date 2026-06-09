@@ -8,6 +8,7 @@ import { Link } from "react-router-dom";
 import { ArrowRight, Star, DollarSign, Zap } from "lucide-react";
 import { KeyTakeaways } from "@/components/KeyTakeaways";
 import { AuthorSchema } from "@/components/AuthorSchema";
+import { SpeakableSchema } from "@/components/SpeakableSchema";
 
 const relatedArticles = [
   {
@@ -170,6 +171,11 @@ export default function Top10AIHumanizers() {
         headline="Top 10 AI Humanizers (Free & Paid) 2026"
         description="Curated ranking of the 10 best AI humanizer tools with accuracy rates, pricing, and real bypass test results. Updated March 2026."
         datePublished="2026-02-02"
+        dateModified="2026-06-09"
+      />
+      <SpeakableSchema
+        pageUrl="https://aifreetextpro.com/blog/top-10-ai-humanizer-tools-2025"
+        pageName="Top 10 AI Humanizers (Free & Paid) 2026"
       />
 
 

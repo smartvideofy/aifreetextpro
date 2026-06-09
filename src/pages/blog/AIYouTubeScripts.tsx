@@ -145,6 +145,7 @@ export default function AIYouTubeScripts() {
         headline="AI YouTube Scripts That Sound Human [2026]"
         description="Humanize AI scripts for YouTube, podcasts, and narration. Engage viewers with natural-sounding content that keeps them watching."
         datePublished="2026-02-02"
+        dateModified="2026-06-09"
       />
 
 

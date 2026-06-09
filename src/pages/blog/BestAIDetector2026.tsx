@@ -10,6 +10,7 @@ import { RelatedArticles } from "@/components/RelatedArticles";
 import { InternalLinks } from "@/components/InternalLinks";
 import ReviewedBy from "@/components/ReviewedBy";
 import { AuthorSchema } from "@/components/AuthorSchema";
+import { SpeakableSchema } from "@/components/SpeakableSchema";
 
 const relatedArticles = [
   { title: "GPTZero Accuracy Review", description: "How accurate is GPTZero in 2026?", href: "/blog/gptzero-accuracy-review", category: "Review" },
@@ -60,6 +61,11 @@ const BestAIDetector2026 = () => {
         headline="Best AI Detector 2026: Top 10 Tools Tested & Ranked"
         description="Best AI detector 2026 tested across 200 samples. See accuracy, false positives, and pricing for Turnitin, GPTZero, Originality.AI, Copyleaks, Winston AI and more."
         datePublished="2026-05-09"
+        dateModified="2026-06-09"
+      />
+      <SpeakableSchema
+        pageUrl="https://aifreetextpro.com/blog/best-ai-detector-2026"
+        pageName="Best AI Detector 2026: Top 10 Tools Tested & Ranked"
       />
 
 

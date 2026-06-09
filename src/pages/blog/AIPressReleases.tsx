@@ -72,6 +72,7 @@ const AIPressReleases = () => {
         headline="AI for Press Releases: PR Content That Sounds Human (2026) | AI Free Text Pro"
         description="Write press releases with AI that journalists actually use. Templates, humanization workflow, and strategies for media-ready AI-assisted PR content in 2026."
         datePublished="2026-03-08"
+        dateModified="2026-06-09"
       />
 
 

@@ -8,6 +8,7 @@ import { InternalLinks } from "@/components/InternalLinks";
 import { CheckCircle, X, ArrowRight, AlertTriangle, BookOpen, Lightbulb, Target, Sparkles } from "lucide-react";
 import { KeyTakeaways } from "@/components/KeyTakeaways";
 import { AuthorSchema } from "@/components/AuthorSchema";
+import { SpeakableSchema } from "@/components/SpeakableSchema";
 import { ReviewSchema } from "@/components/ReviewSchema";
 import { PostHowToSchema } from "@/components/PostHowToSchema";
 
@@ -121,6 +122,11 @@ const BypassZeroGPTDetection = () => {
         headline="How to Bypass ZeroGPT in 2026: Drop AI Score Below 5%"
         description="Make ChatGPT text undetectable by ZeroGPT in 4 steps. Tested workflow drops AI scores from 100% to under 5%, with free limits and pricing comparison inside."
         datePublished="2026-02-02"
+        dateModified="2026-06-09"
+      />
+      <SpeakableSchema
+        pageUrl="https://aifreetextpro.com/blog/bypass-zerogpt-ai-detection"
+        pageName="How to Bypass ZeroGPT in 2026: Drop AI Score Below 5%"
       />
 
 

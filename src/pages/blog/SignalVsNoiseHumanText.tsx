@@ -117,6 +117,7 @@ const SignalVsNoiseHumanText = () => {
         headline={`What Makes Text "Human"? Signal vs Noise [2026]`}
         description="The specific patterns AI detectors look for, with concrete examples. Understand what distinguishes human writing from AI-generated content."
         datePublished="2026-02-02"
+        dateModified="2026-06-09"
       />
 
 

@@ -72,6 +72,7 @@ const AIMedicalScientificWriting = () => {
         headline="AI for Medical & Scientific Writing: A Researcher's Guide (2026) | AI Free Text Pro"
         description="Use AI for medical and scientific writing without compromising journal acceptance. Section-by-section guide with journal policies, detection risks, and ethical frameworks."
         datePublished="2026-03-08"
+        dateModified="2026-06-09"
       />
 
 

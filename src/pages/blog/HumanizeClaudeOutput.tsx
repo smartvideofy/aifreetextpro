@@ -138,6 +138,7 @@ const HumanizeClaudeOutput = () => {
         headline="How to Humanize Claude Output (2026): Bypass AI Detection"
         description="Humanize Claude 3.5 Sonnet and Claude 4 output to reduce false AI flags. Real test data: Turnitin scores drop from 78% to 6% with our 5-step workflow."
         datePublished="2026-06-01"
+        dateModified="2026-06-09"
       />
 
       <SpeakableSchema pageUrl="https://aifreetextpro.com/blog/humanize-claude-output" pageName="How to Humanize Claude Output" />

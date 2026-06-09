@@ -72,6 +72,7 @@ const AIEssayChecker = () => {
         headline="Best AI Essay Checker: Self-Check Before You Submit (2026) | AI Free Text Pro"
         description="Check your essay for AI detection before submitting. Compare 7 free AI essay checkers, learn what scores mean, and understand how to revise flagged content."
         datePublished="2026-03-08"
+        dateModified="2026-06-09"
       />
 
 

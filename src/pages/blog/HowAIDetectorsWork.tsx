@@ -9,6 +9,7 @@ import { ArrowRight, Brain, Search, Zap } from "lucide-react";
 import { KeyTakeaways } from "@/components/KeyTakeaways";
 import { QuickAnswer } from "@/components/QuickAnswer";
 import { AuthorSchema } from "@/components/AuthorSchema";
+import { SpeakableSchema } from "@/components/SpeakableSchema";
 
 const relatedArticles = [
   {
@@ -195,6 +196,11 @@ export default function HowAIDetectorsWork() {
         headline="How AI Detectors Work: Perplexity & Burstiness 2026"
         description="Exactly how GPTZero, Turnitin and Originality.AI use perplexity and burstiness to flag AI text. Plain-English math, real examples, and what to change to pass."
         datePublished="2026-02-02"
+        dateModified="2026-06-09"
+      />
+      <SpeakableSchema
+        pageUrl="https://aifreetextpro.com/blog/how-ai-detectors-work"
+        pageName="How AI Detectors Work: Perplexity & Burstiness 2026"
       />
 
 

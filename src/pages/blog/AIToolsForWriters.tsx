@@ -190,6 +190,7 @@ export default function AIToolsForWriters() {
         headline="Best AI Tools for Writers: Tested & Ranked [2026]"
         description="We tested 15+ AI writing tools for creativity, speed, and quality. See which ones help writers plan, draft, and refine content fastest."
         datePublished="2026-02-02"
+        dateModified="2026-06-09"
       />
 
 

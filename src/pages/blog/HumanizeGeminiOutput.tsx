@@ -126,6 +126,7 @@ const HumanizeGeminiOutput = () => {
         headline="How to Humanize Gemini Output (2026): Bypass AI Detection"
         description="Humanize Gemini 2.5 Pro and 3.1 Pro output to reduce false AI flags. Real test data: Turnitin scores drop from 84% to 7% with our 5-step workflow."
         datePublished="2026-06-01"
+        dateModified="2026-06-09"
       />
 
       <SpeakableSchema pageUrl="https://aifreetextpro.com/blog/humanize-gemini-output" pageName="How to Humanize Gemini Output" />

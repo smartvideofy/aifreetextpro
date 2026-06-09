@@ -128,6 +128,7 @@ export default function AIContentMarketingTrends2026() {
         headline="AI Marketing Trends You Can't Ignore [2026]"
         description="How AI is reshaping marketing in 2026: hyper-personalization, predictive analytics, and ethical content strategies that drive real results."
         datePublished="2026-02-02"
+        dateModified="2026-06-09"
       />
 
 

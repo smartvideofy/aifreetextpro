@@ -84,6 +84,7 @@ const WordtuneComparison = () => {
         headline="Wordtune vs AI Free Text Pro: Rewriter vs Humanizer (2026) | AI Free Text Pro"
         description="Wordtune rewrites text for clarity. AI Free Text Pro humanizes it for detection. Compare features, test results, and learn when to use each tool in 2026."
         datePublished="2026-03-08"
+        dateModified="2026-06-09"
       />
 
 

@@ -156,6 +156,7 @@ export default function HumanizeAISocialMedia2026() {
         headline="Humanize AI for Social Media [2026 Tips]"
         description="Turn AI posts into engaging social media content. Platform-specific tips for LinkedIn, Instagram, TikTok, and X that boost engagement."
         datePublished="2026-02-02"
+        dateModified="2026-06-09"
       />
 
 

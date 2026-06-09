@@ -84,6 +84,7 @@ const AILegalWriting = () => {
         headline="AI for Legal Writing & Law School Essays (2026) | AI Free Text Pro"
         description="Complete guide to using AI for legal memos, briefs, and law school essays in 2026. Ethical frameworks, detection avoidance, and workflow templates for legal professionals and students."
         datePublished="2026-03-09"
+        dateModified="2026-06-09"
       />
 
 

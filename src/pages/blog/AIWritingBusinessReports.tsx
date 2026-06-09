@@ -129,6 +129,7 @@ const AIWritingBusinessReports = () => {
         headline="AI Writing for Business Reports & Emails (2026)"
         description="Professional guide to using AI for business reports, client emails, and proposals. Match brand voice, pass compliance checks, and write faster."
         datePublished="2026-03-04"
+        dateModified="2026-06-09"
       />
 
 

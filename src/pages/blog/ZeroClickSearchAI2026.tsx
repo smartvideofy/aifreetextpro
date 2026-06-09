@@ -157,6 +157,7 @@ export default function ZeroClickSearchAI2026() {
         headline="Zero-Click SEO: Win Traffic in 2026"
         description="65% of searches end without a click. Learn strategies to capture traffic and authority from AI Overviews, featured snippets, and knowledge panels."
         datePublished="2026-02-02"
+        dateModified="2026-06-09"
       />
 
 

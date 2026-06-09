@@ -134,6 +134,7 @@ const GPTinfComparison = () => {
         headline="GPTinf vs AI Free Text Pro: Tested [2026]"
         description="GPTinf vs AI Free Text Pro: we ran both on 100 essays. See bypass rates (78% vs 96%), pricing, and which one actually passes Turnitin."
         datePublished="2026-02-02"
+        dateModified="2026-06-09"
       />
 
       <Navbar />

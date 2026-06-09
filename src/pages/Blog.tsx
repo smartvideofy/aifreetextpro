@@ -46,7 +46,7 @@ const categoryThumbnails: Record<string, string> = {
   "Professional": categoryTools,
 };
 
-const blogPosts = [
+export const blogPosts = [
   {
     slug: "humanize-claude-output",
     title: "How to Humanize Claude Output (2026 Guide): Bypass AI Detection",

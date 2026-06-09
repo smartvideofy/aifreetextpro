@@ -10,6 +10,7 @@ import { RelatedArticles } from "@/components/RelatedArticles";
 import { InternalLinks } from "@/components/InternalLinks";
 import { FAQSection } from "@/components/FAQSection";
 import { AuthorSchema } from "@/components/AuthorSchema";
+import { PostHowToSchema } from "@/components/PostHowToSchema";
 
 const relatedArticles = [
   { title: "Humanize AI Text Without Losing Your Voice", description: "Strategies for maintaining authentic voice while using AI writing tools.", href: "/blog/humanize-ai-text-without-losing-voice", category: "How-To Guide" },
@@ -86,6 +87,13 @@ const HumanizeChatGPTText = () => {
           }))
         })}</script>
       </Helmet>
+      <PostHowToSchema
+        url="https://aifreetextpro.com/blog/humanize-chatgpt-text"
+        name="How to Humanize ChatGPT Text"
+        description="Make ChatGPT text sound human in 6 steps. Reduce AI detection scores on Turnitin, GPTZero, and Originality.AI with proven humanization techniques."
+        steps={[{"name":"Run an initial AI detection check","text":"Paste your draft into a trusted AI detector to baseline its current AI-probability score before editing."},{"name":"Identify high-flag passages","text":"Use the detector's per-sentence highlights to find the spans most likely to trigger detection."},{"name":"Restructure sentence rhythm and burstiness","text":"Vary sentence length and structure so the text alternates between short, punchy sentences and longer, complex ones."},{"name":"Inject voice, perspective, and specificity","text":"Replace generic phrasing with first-person reasoning, concrete examples, and domain-specific vocabulary that reflects a human author."},{"name":"Re-check and iterate","text":"Run the detector again and repeat the targeted edits until the AI score falls below your safety threshold."}]}
+      />
+
       <AuthorSchema
         articleUrl="https://aifreetextpro.com/blog/humanize-chatgpt-text"
         headline="How to Humanize ChatGPT Text (Step-by-Step 2026)"

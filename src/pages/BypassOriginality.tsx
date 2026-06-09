@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Helmet } from "react-helmet-async";
+import { SoftwareApplicationSchema } from "@/components/SoftwareApplicationSchema";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
@@ -207,6 +208,12 @@ const BypassOriginality = () => {
           })}
         </script>
       </Helmet>
+      <SoftwareApplicationSchema
+        name="Originality.AI Bypass Tool"
+        description="Reduce Originality.AI false-positive flags on AI-assisted drafts. Built for marketers, publishers and SEO writers."
+        url="https://aifreetextpro.com/bypass-originality-ai"
+        category="UtilityApplication"
+      />
 
       <Navbar />
       

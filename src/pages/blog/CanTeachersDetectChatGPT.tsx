@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
+import { QuickAnswer } from "@/components/QuickAnswer";
 import { Calendar, Clock, ArrowLeft, BookOpen, AlertTriangle, Shield, CheckCircle, Users } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -101,6 +102,11 @@ const CanTeachersDetectChatGPT = () => {
             <header className="mb-8 not-prose">
               <span className="inline-block px-3 py-1 text-sm font-medium bg-primary/10 text-primary rounded-full mb-4">Academic</span>
               <h1 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">Can Teachers Detect ChatGPT? What Students Need to Know in 2026</h1>
+
+            <QuickAnswer
+              question="Can teachers actually detect ChatGPT?"
+              answer="Yes, in most cases. Teachers combine three signals: detector software (Turnitin AI flag, GPTZero) which catches unmodified ChatGPT at 94-98%, manual review for unusual vocabulary or perfect grammar that breaks a student's baseline, and version-history checks in Google Docs or Word. A single signal can be wrong, but two or more together rarely is."
+            />
               <div className="flex flex-wrap items-center gap-4 text-sm text-muted-foreground">
                 <span className="flex items-center gap-1"><Calendar className="w-4 h-4" /> February 25, 2026</span>
                 <span className="flex items-center gap-1"><Clock className="w-4 h-4" /> 14 min read</span>

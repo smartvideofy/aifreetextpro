@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Helmet } from "react-helmet-async";
+import { SoftwareApplicationSchema } from "@/components/SoftwareApplicationSchema";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
@@ -193,6 +194,12 @@ const BypassTurnitin = () => {
           })}
         </script>
       </Helmet>
+      <SoftwareApplicationSchema
+        name="Turnitin AI Bypass Tool"
+        description="Rewrite AI drafts so Turnitin reads them as natural human writing. Reduce false flags on essays, theses and assignments."
+        url="https://aifreetextpro.com/bypass-turnitin-ai-detection"
+        category="UtilityApplication"
+      />
 
       <Navbar />
       

@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { ArrowRight, CheckCircle, Shield, FileText, Sparkles, Brain, Star, Pen, BookOpen, Target, Zap, Lock, Crown, GraduationCap, TrendingUp } from "lucide-react";
 import { Helmet } from "react-helmet-async";
+import { SoftwareApplicationSchema } from "@/components/SoftwareApplicationSchema";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import AnimatedBackground from "@/components/AnimatedBackground";
@@ -247,6 +248,12 @@ const Index = () => {
           })}
         </script>
       </Helmet>
+      <SoftwareApplicationSchema
+        name="AI Free Text Pro"
+        description="Free AI humanizer and AI detector. Rewrite ChatGPT, Claude and Gemini output to read naturally and reduce false flags from Turnitin, GPTZero and Originality.AI."
+        url="https://aifreetextpro.com/"
+        category="UtilityApplication"
+      />
       <Navbar />
       <StickyHeaderCTA />
       <LazySection><ScrollToTopButton /></LazySection>

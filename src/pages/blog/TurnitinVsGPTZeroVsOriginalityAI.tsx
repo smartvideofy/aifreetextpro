@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
+import { QuickAnswer } from "@/components/QuickAnswer";
 import { Calendar, Clock, ArrowLeft, Shield, Target, DollarSign } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -100,6 +101,11 @@ const TurnitinVsGPTZeroVsOriginalityAI = () => {
                 <span className="bg-primary/10 text-primary px-2 py-1 rounded text-xs font-medium">Comparison</span>
               </div>
               <h1 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">Turnitin vs GPTZero vs Originality AI: Which Detector Is Best? (2026)</h1>
+
+            <QuickAnswer
+              question="Which AI detector is most accurate in 2026?"
+              answer="Originality.AI wins on raw accuracy (98.2% on unmodified ChatGPT), Turnitin wins for institutional trust and integrates directly with LMS grading, and GPTZero has the lowest false-positive rate on human writing (1.1%). For students checking their own work, GPTZero is safest. For publishers, Originality.AI. For schools, Turnitin is still the default."
+            />
               <p className="text-xl text-muted-foreground">We tested all three detectors with 500+ AI-generated samples across five models. Here is exactly how they compare on accuracy, false positives, speed, and price.</p>
             </header>
 

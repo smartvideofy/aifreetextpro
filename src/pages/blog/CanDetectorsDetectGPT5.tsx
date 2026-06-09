@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
+import { QuickAnswer } from "@/components/QuickAnswer";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
@@ -139,6 +140,11 @@ const CanDetectorsDetectGPT5 = () => {
               <h1 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
                 Can AI Detectors Detect GPT-5? (2026 Real Test Results)
               </h1>
+
+            <QuickAnswer
+              question="Can AI detectors actually detect GPT-5 in 2026?"
+              answer="Yes, but with reduced reliability. In tests of 500+ GPT-5 samples, Turnitin caught 76%, GPTZero 71%, and Originality.AI 82%, roughly 12 to 18 points lower than GPT-4o detection rates. GPT-5 uses more varied sentence structure and a wider vocabulary, which lowers perplexity-and-burstiness signals. Lightly humanized GPT-5 output passes most detectors over 90% of the time."
+            />
               <p className="text-xl text-muted-foreground mb-4">
                 We tested 500+ GPT-5 samples across four major AI detectors. Here are the complete results, including how GPT-5 compares to GPT-4o and what happens after humanization.
               </p>

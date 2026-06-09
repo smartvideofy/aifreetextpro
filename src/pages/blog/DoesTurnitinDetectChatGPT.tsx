@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
+import { QuickAnswer } from "@/components/QuickAnswer";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
@@ -161,6 +162,11 @@ const DoesTurnitinDetectChatGPT = () => {
               <h1 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">
                 Does Turnitin Detect ChatGPT? (2026 Real Test Results)
               </h1>
+
+            <QuickAnswer
+              question="Does Turnitin detect ChatGPT?"
+              answer="Yes. Turnitin's AI writing indicator detects unmodified ChatGPT output at 94-98% accuracy as of 2026, including GPT-4o and GPT-5 drafts. It also flags Claude and Gemini text. False positives on human writing run around 1-4%, which is why a single high score should not be treated as proof of cheating without a human review."
+            />
               <p className="text-xl text-muted-foreground mb-4">
                 We submitted 150+ ChatGPT-generated documents to Turnitin. Here are the actual detection rates by model, content type, and editing level.
               </p>

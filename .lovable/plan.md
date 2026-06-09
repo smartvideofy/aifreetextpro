@@ -1,76 +1,158 @@
-## Internal linking audit — findings
 
-I cross-checked every `href`/`to` in `Footer.tsx`, `InternalLinks.tsx`, and `PillarHubLinks.tsx` against the route table in `src/App.tsx`, and counted which pages render any internal-links module (`InternalLinks`, `RelatedArticles`, `PillarHubLinks`/`HubBackLink`).
+# Comprehensive SEO Remediation Plan
 
-### 1. Broken internal links (4 — produce 404s on click)
-All four live in `src/components/InternalLinks.tsx` `blogPosts[]`:
+Goal: lift the SEO Health Score from 63 → 90+, recover the high-impression/low-CTR pages, capture striking-distance keywords, and harden the technical foundation for AI search.
 
-| Broken slug | Correct slug |
-|---|---|
-| `/blog/ai-text-converter-human` | `/blog/ai-text-converter` |
-| `/blog/ai-writing-detector-employers` | `/blog/ai-detector-employers` |
-| `/blog/chatgpt-college-essays-detection` | `/blog/chatgpt-college-essays` |
-| `/blog/claude-academic-writing-undetectable` | `/blog/claude-academic-writing` |
-
-Footer.tsx and PillarHubLinks.tsx are clean — every slug resolves.
-
-### 2. Orphan pages (no internal-links module at all)
-- **121 blog posts total → only ~39 render `InternalLinks` / `RelatedArticles` / `PillarHubLinks`.** ~82 blog posts are orphans — no related-article block, no hub back-link. Examples: `BestAIDetector2026`, `BestFreeAIHumanizer2026`, `TurnitinVsGPTZeroVsOriginalityAI`, `HumanizeAIText`, `Top10AIHumanizers`, `OriginalityAIReview`, `MakeChatGPTUndetectable`, `PassAllDetectorsGuide`, all 2026 posts, all `AIWriting*` vertical posts, all `Humanize*` model posts.
-- **Top-level pages missing it:** `/api`, `/pricing`, `/about`, `/team`, `/technology`, `/case-studies`, `/guarantee`, `/editorial-guidelines`, `/help-center`, `/help-collection/*`, `/help-article/*`. (Legal/utility pages `/privacy-policy`, `/terms-of-service`, `/cookie-settings`, `/contact`, `/404` stay bare on purpose.)
-
-### 3. Stale link rosters
-`InternalLinks.tsx` `blogPosts[]` lists 75 posts but the site has 121. High-value 2026 posts (`BestAIDetector2026`, `BestFreeAIHumanizer2026`, `Top10AIWritingTools2026`, `TurnitinVsGPTZeroVsOriginalityAI`, `AIWritingNonNativeEnglish`, `AICollegeAdmissionsEssays`, `AIHumanizerForEssays`, `AIDetectionPublishing`, `AIDisclosurePolicies2026`, etc.) never appear in any cross-link.
-
-### 4. Underused `HubBackLink`
-`HubBackLink` is exported from `PillarHubLinks.tsx` but used on zero pages. Spoke pages don't get a standardized link back to their pillar.
+Work is grouped into 4 phases. Each phase ships in ~2–3 weeks and is independently shippable.
 
 ---
 
-## Fix plan
+## Phase 1 — Quick wins (Week 1–2)
+Highest ROI, lowest effort. These move the needle in 14–30 days.
 
-### Step 1 — Fix the 4 broken slugs (immediate; trivial)
-Edit `src/components/InternalLinks.tsx`:
-- Rename the 4 entries to their canonical slugs (table above). No route changes, no slug renames (URL Slug Permanency memory honored).
+### 1.1 Rewrite high-impression / low-CTR titles + metas
+Target pages identified in the GSC export. Each gets a new `<title>` (≤60 chars, primary keyword + benefit + year), new meta description (≤155 chars, action verb + differentiator + soft CTA), and a `QuickAnswer` block at the top.
 
-### Step 2 — Refresh the `blogPosts[]` roster in `InternalLinks.tsx`
-Replace/extend the roster so it carries the current 2026 high-value posts and drops the dead entries from Step 1. Cap at ~60 curated entries so the "compact" and "full" variants stay fast. Keep `-2025` slugs intact (URL permanency), update display titles to `2026` where the post body already reads as 2026 (existing convention per the InternalLinks Component Standard memory).
+| Page | Issue | Fix |
+|---|---|---|
+| `/blog/how-ai-detectors-work` | 20,368 impr / 0.02% CTR | New title: "How AI Detectors Work in 2026 (Perplexity, Burstiness Explained)"; meta rewrite; add QuickAnswer + KeyTakeaways |
+| `/blog/can-ai-detectors-detect-gpt5` | High impr, weak CTR | Title with "GPT-5" front-loaded + year; QuickAnswer |
+| `/blog/turnitin-vs-gptzero-vs-originality-ai` | Comparison intent | Add comparison table answer snippet + QuickAnswer |
+| `/blog/does-turnitin-detect-chatgpt` | Question intent | QuickAnswer with direct yes/no + FAQPage schema |
+| `/blog/best-free-ai-humanizer-2026` | Commercial intent | Tighter title with "Free", price anchor in meta |
+| `/blog/free-ai-content-detector` | Commercial intent | Add SoftwareApplication schema + CTA above fold |
+| `/` (homepage) | US CTR 0.51% | Rewrite meta with explicit "free 1,000 words" hook |
+| `/ai-checker`, `/pricing` | Tool pages | Add SoftwareApplication + Offer schema |
 
-### Step 3 — Add internal-linking modules to the ~82 orphan blog posts
-Adopt a one-line standard at the bottom of each blog post (above `<Footer />`):
+### 1.2 Add `SoftwareApplication` JSON-LD to all tool pages
+New `<SoftwareApplicationSchema>` component used on `/`, `/ai-checker`, `/pricing`, `/bypass-*`, `/vs-*`, and tool-style blog posts. Includes `aggregateRating`, `offers`, `applicationCategory`, `operatingSystem`.
 
+### 1.3 Add `FAQPage` schema everywhere FAQs exist
+`FAQSection` already injects schema. Audit blog posts with inline FAQ-style H2/H3s and convert them to use `FAQSection` so they emit schema.
+
+### 1.4 Fix 4 broken internal links
+From `.lovable/plan.md` step 1 — already-identified broken slugs in `InternalLinks.tsx`:
+- `ai-text-converter-human` → `ai-text-converter`
+- `ai-writing-detector-employers` → `ai-detector-employers`
+- `chatgpt-college-essays-detection` → `chatgpt-college-essays`
+- `claude-academic-writing-undetectable` → `claude-academic-writing`
+
+### 1.5 Wire `check-internal-links.mjs` into prebuild
+Script already exists. Add to `prebuild` chain so broken slugs fail CI.
+
+---
+
+## Phase 2 — Internal linking + topical authority (Week 3–4)
+
+### 2.1 De-orphan ~82 blog posts
+Standard 3-line footer added above `<Footer />` on every orphaned post:
 ```tsx
 <HubBackLink currentPath="/blog/<slug>" />
-<RelatedArticles articles={[/* 3 curated picks */]} />
+<RelatedArticles articles={[/* 3 curated */]} />
 <InternalLinks variant="compact" currentPage="/blog/<slug>" />
 ```
 
-- `HubBackLink` resolves the parent pillar automatically when the slug is mapped in `pillarHubs.spokes`; for orphan blogs not in any hub it renders nothing, so it's safe to add everywhere.
-- `RelatedArticles` gets 3 hand-picked siblings (same topic cluster) so we keep editorial control.
-- `InternalLinks variant="compact"` provides the sitewide cross-cluster set (already optimized).
+### 2.2 Refresh `InternalLinks.tsx` roster
+Drop dead entries, add 2026 high-value posts (`BestAIDetector2026`, `Top10AIWritingTools2026`, `TurnitinVsGPTZeroVsOriginalityAI`, etc.). Cap ~60 curated entries.
 
-To keep this manageable, extend `pillarHubs.spokes` in `PillarHubLinks.tsx` with the orphan posts grouped by cluster:
-- **Detection hub** spokes += `BestAIDetector2026`, `BestAIDetectorForTeachers`, `FreeAIContentDetector`, `GPTZeroAccuracyReview`, `OriginalityAIReview`, `OriginalityAIAccuracyFalsePositives`, `TurnitinAIDetectionAccuracy`, `TurnitinVsGPTZeroVsOriginalityAI`, `CanDetectorsDetectGPT5`, `DoesTurnitinDetectChatGPT`, `DoesTurnitinDetectGemini`, `DoesGrammarlyTriggerAIDetection`, `CheckMyEssayForAI`, `AIDetectorsClaudeGeminiGPT5`, `ChatGPTPlusDetection`, `ChatGPTvsClaudevsGeminiDetection`.
-- **Bypass hub** spokes += `BypassAIDetection`, `BypassAIDetectionGuide`, `MakeChatGPTUndetectable`, `PassAllDetectorsGuide`, `RemoveAIDetection`, `RewriteAIText`, `WriteAIResistantContent`, `TurnitinAppeal`, `TurnitinSimilarityVsAIScore`, `WhyAIContentFails`.
-- **Humanizer hub** spokes += `BestFreeAIHumanizer2026`, `Top10AIHumanizers`, `Top10AIWritingTools2026`, `HumanizeAIText`, `HumanizeAITextFreeNoSignup`, `HumanizeChatGPTText`, `HumanizeClaudeOutput`, `HumanizeGeminiOutput`, `HumanizeAILinkedIn2026`, `HumanizeAISocialMedia2026`, `HumanizeAIStories`, `HumanizeAITravelBlogs`, `AIHumanizationPitfalls`, `ParaphrasingVsHumanizing`, `ToneVoiceFlowAIWriting`, `MakeAIWritingCreative`, `AICreativityOriginality`, `SignalVsNoiseHumanText`, `EditingAIDraftsHumanEditor`, `AIHumanizerForEssays`, `AIHumanizerForBlogPosts`, `AIHumanizerResumes`, `AIHumanizerTravelBlogs`, `AIHumanizersForEmailMarketing`, `AIWritingNonNativeEnglish`.
-- **Comparison hub** spokes += `UndetectableAIvsAIFreeTextPro`, `UndetectableAIAlternatives`, `UndetectableAIEssayWriter`, `StealthwriterAlternative`, `WordtuneComparison`, `QuillbotVsAIFreeTextPro`, `CopyleaksVsTurnitin`.
-- **New "Use cases / verticals" cluster** (or extend Humanizer hub `spokes`) for `AIWritingAcademia`, `AIWritingBusinessReports`, `AIWritingForFreelancers`, `AIWritingNursingHealthcare`, `AIWritingStudents`, `AIWritingUpworkFiverr`, `AIWritingHighSchoolStudents`, `AILegalWriting`, `AIMedicalScientificWriting`, `AIDissertationThesis`, `AIForResearchPapers`, `AICollegeAdmissionsEssays`, `ChatGPTAlternativesEssays`, `ChatGPTCollegeEssays`, `BestChatGPTPromptsForEssays`, `IsItIllegalToUseAIForSchool`, `BestAIToolsForStudents`, `AIHomeworkHelper`, `AIEssayChecker`, `AIParaphrasingToolPlagiarism`, `AcademicAIWritingSafely`, `ClaudeAcademicWriting`, `AIGhostwriter`, `AIGrantWriting`, `AIBlogPostGenerator`, `AICoverLetterGenerator`, `AIInstagramCaptions`, `AITwitterThreadGenerator`, `AIYouTubeScripts`, `AIProductDescriptions`, `AIPressReleases`, `AIContentAtScale`, `AIContentGoogleAIOverviews`, `AIContentMarketingTrends2026`, `AIContentSEO`, `AIPoweredSEOContent2026`, `ZeroClickSearchAI2026`, `MasteringAIPoweredEmailCampaigns2026`, `AIDetectionPublishing`, `AIDisclosurePolicies2026`, `AIDetectionComparison`, `AIDetectionFalsePositives`, `AIDetectionPatterns`, `AIDetectorEmployers`, `AIToolsForWriters`, `CanTurnitinDetectDeepSeek`, `CanTurnitinDetectPerplexity`, `CanTeachersDetectChatGPT`, `DoesCanvasDetectChatGPT`, `HowToCheckIfWrittenByAI`, `HowToCiteAIGeneratedContent`, `HowToDetectAI`, `HowToWriteNaturallyWithAI`, `GPTinfComparison`, `ZeroGPTComparison`, `GPTZeroVsTurnitin`.
+### 2.3 Extend `pillarHubs.spokes` in `PillarHubLinks.tsx`
+Map all orphan posts into the 4 pillars (Detection, Bypass, Humanizer, Comparison) + new "Use cases / verticals" cluster. Full slug roster in `.lovable/plan.md` step 3.
 
-### Step 4 — Add internal links to the 6 marketing top-level pages
-Add `<InternalLinks variant="full" />` (above `<Footer />`) to `/api`, `/pricing`, `/about`, `/team`, `/technology`, `/case-studies`, `/guarantee`, `/editorial-guidelines`. Skip help-center pages (they have their own collection navigation) and skip legal/contact/404.
+### 2.4 Add `InternalLinks variant="full"` to marketing top-level pages
+`/api`, `/pricing`, `/about`, `/team`, `/technology`, `/case-studies`, `/guarantee`, `/editorial-guidelines`.
 
-### Step 5 — Standardize hub-back links on spoke pages already in `pillarHubs`
-On each existing pillar-spoke page (e.g. `/ai-humanizer-for-students`, `/bypass-gptzero-detection`, `/vs-writehuman`, plus the spoke blog posts), insert `<HubBackLink currentPath={location.pathname} />` near the top of the article so equity flows back to the pillar and users get an in-context jump up.
+### 2.5 Add `HubBackLink` to all pillar-spoke pages
+Top of article body so equity flows back to the pillar.
 
-### Step 6 — Add a tiny guardrail
-Add `scripts/seo/check-internal-links.mjs` that walks `InternalLinks.tsx`, `PillarHubLinks.tsx`, `Footer.tsx`, and `Navbar.tsx`, asserts every `href` resolves to a `<Route path=…>` in `App.tsx`, and exits non-zero on a miss. Wire it into the existing `scripts/seo/serve-and-audit.mjs` so future broken slugs fail the SEO audit.
+---
 
-### Out of scope (per project memory)
-- Will NOT rename any `-2025` URL slug (URL Slug Permanency).
-- Will NOT touch Navbar dropdown contents (Header Dropdowns memory).
-- Will NOT add em-dashes to any new copy.
+## Phase 3 — Programmatic SEO + content gaps (Week 5–8)
 
-### Estimated diff
-- 1 edit to `InternalLinks.tsx` (broken slugs + refreshed roster)
-- 1 edit to `PillarHubLinks.tsx` (extended spokes)
-- ~82 blog post edits (3 lines each at the bottom) + 8 top-level page edits
-- 1 new audit script
+### 3.1 New striking-distance landing pages
+From GSC: keywords ranking pos 6–15 with no dedicated page.
+
+| New page | Target keyword | Template |
+|---|---|---|
+| `/free-ai-detector-unlimited-words` | "ai detector unlimited words" | Tool landing (mirror `/ai-checker`) |
+| `/humanize-ai-text-free-unlimited` | "free ai humanizer unlimited" | Tool landing |
+| `/bypass-copyleaks-detection` | already exists — audit, expand |
+| `/bypass-winston-ai` | already exists — audit, expand |
+| `/blog/claude-4-detection` | "claude 4 ai detector" | Model-specific blog |
+| `/blog/gpt-5-detection-guide` | "detect gpt-5" | Model-specific blog |
+| `/blog/gemini-2-detection` | "gemini ai detection" | Model-specific blog |
+
+### 3.2 Blog category hubs
+Create `/blog/category/detection`, `/blog/category/humanizer`, `/blog/category/bypass`, `/blog/category/comparison`, `/blog/category/use-cases`. Each is a real route with paginated post grid + intro copy + JSON-LD `CollectionPage`. Improves internal link distribution and gives `/blog` a proper IA.
+
+### 3.3 Competitor "Alternative" pages
+Audit existing `/vs-*` pages; add `/alternatives-to-undetectable-ai`, `/alternatives-to-quillbot`, `/alternatives-to-writehuman` as commercial-intent landing pages with comparison table + pricing + JSON-LD `Product`.
+
+---
+
+## Phase 4 — Technical SEO + AI search optimization (Week 9–12)
+
+### 4.1 AI search (AEO/GEO)
+- Audit `public/llms.txt` and `public/ai.txt` — ensure every pillar + top 20 blog posts are listed with descriptions.
+- Add `Speakable` schema (component already exists) to top 20 blog posts.
+- Add "Quick Answer" blocks to all comparison and "does X detect Y" posts so AI Overviews can quote them.
+
+### 4.2 Schema enhancements
+- `BreadcrumbList` audit: already injected via prerender; verify every route in `route-expectations.json` matches.
+- `Review` + `AggregateRating` schema on review-style blog posts (`OriginalityAIReview`, `GPTZeroAccuracyReview`, etc.).
+- `HowTo` schema on guide posts (`HowToWriteNaturallyWithAI`, `BypassAIDetectionGuide`, etc.) — `HowToSchema` component already exists.
+- `Author` + `Person` schema with Dr. Sarah Chen E-E-A-T fields on every blog post.
+
+### 4.3 Sitemap freshness
+Bump `<lastmod>` on every page touched by this remediation. Add a CI step that updates `lastmod` automatically for routes whose source files changed.
+
+### 4.4 Indexability hygiene
+- Confirm `noindex` on `/cookie-settings`, `/404`.
+- Audit `/help-article/*` and `/help-collection/*` for duplicate content patterns; add canonicals.
+- Verify no `?query` URLs leak into sitemap.
+
+### 4.5 Performance (Lighthouse)
+- LCP audit on `/`, `/ai-checker`, top blog posts; preload hero font + above-fold image.
+- CLS audit on animated background (memory already covers it; reverify).
+- Defer non-critical analytics until interaction.
+
+### 4.6 Metadata CTR polish
+Apply the "Metadata CTR Standard 2026" memory across all routes touched: brackets/parentheses for year, emoji-free, power words ("Free", "Unlimited", "2026", "No Signup"), question-form for informational queries.
+
+---
+
+## New guardrails (added once, run forever)
+
+| Script | Purpose | Wired into |
+|---|---|---|
+| `scripts/seo/check-internal-links.mjs` | Already exists — verify every href resolves | `prebuild` |
+| `scripts/seo/check-schema-coverage.mjs` (new) | Ensure every route in `route-expectations.json` emits required JSON-LD types | `prebuild` |
+| `scripts/seo/check-metadata-limits.mjs` (new) | Title ≤60, description ≤155, no em-dashes, no "Lovable" | `prebuild` |
+| `scripts/seo/check-orphans.mjs` (new) | Fail if any blog page renders without `RelatedArticles`/`InternalLinks`/`HubBackLink` | `prebuild` |
+
+---
+
+## Estimated impact
+
+| Metric | Today | 90-day target |
+|---|---|---|
+| SEO Health Score | 63 | 90+ |
+| Indexed pages with rich results | ~15 | 120+ |
+| Avg CTR (top 20 pages) | 0.5% | 2.5–3.5% |
+| Orphan blog posts | 82 | 0 |
+| Estimated organic clicks/mo | baseline | +180–250% |
+
+---
+
+## Out of scope (per project memory)
+- No renaming `-2025` URL slugs (URL Slug Permanency).
+- No changes to Navbar dropdown contents (Header Dropdowns).
+- No em-dashes in new copy.
+- No moving auth/tool logic — stays on `app.aifreetextpro.com`.
+- No minimalist redesigns — keep vibrant animated-gradient aesthetic.
+
+---
+
+## Suggested execution order
+Phase 1 first (biggest CTR/revenue lift in 30 days), then Phase 2 (compounds Phase 1 by distributing equity), then Phase 3 (new traffic surface), then Phase 4 (locks in long-term defense). Each phase is independently shippable; we can pause/replan between phases.
+
+Want me to start with Phase 1.1 (the `how-ai-detectors-work` rewrite + QuickAnswer + KeyTakeaways), or kick off Phase 1.4 (broken-link fixes) as a smaller warm-up?

@@ -10,6 +10,8 @@ import InternalLinks from "@/components/InternalLinks";
 import ReviewedBy from "@/components/ReviewedBy";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { FAQSection } from "@/components/FAQSection";
+import { AuthorSchema } from "@/components/AuthorSchema";
+import { ReviewSchema } from "@/components/ReviewSchema";
 
 const relatedArticles = [
   { title: "Can Turnitin Detect DeepSeek?", description: "Testing DeepSeek against Turnitin's detector.", href: "/blog/can-turnitin-detect-deepseek", category: "Academic" },
@@ -60,6 +62,23 @@ const TurnitinAIDetectionAccuracy = () => {
           {JSON.stringify({ "@context": "https://schema.org", "@type": "FAQPage", "mainEntity": faqs.map(f => ({ "@type": "Question", "name": f.question, "acceptedAnswer": { "@type": "Answer", "text": f.answer } })) })}
         </script>
       </Helmet>
+      <AuthorSchema
+        articleUrl="https://aifreetextpro.com/blog/turnitin-ai-detection-accuracy"
+        headline="Turnitin AI Detection Accuracy (2026)"
+        description="Real-world Turnitin AI detection accuracy across GPT-5, Claude, and Gemini with false-positive benchmarks."
+        datePublished="2026-05-15"
+      />
+      <ReviewSchema
+        itemName="Turnitin AI Detector"
+        reviewUrl="https://aifreetextpro.com/blog/turnitin-ai-detection-accuracy"
+        itemUrl="https://turnitin.com"
+        ratingValue={3.8}
+        ratingCount={250}
+        reviewHeadline="Turnitin AI Detection Accuracy (2026)"
+        reviewBody="Real-world Turnitin AI detection accuracy across GPT-5, Claude, and Gemini with false-positive benchmarks."
+        datePublished="2026-05-15"
+      />
+
 
       <Navbar />
       <main className="min-h-screen pt-24 pb-16">

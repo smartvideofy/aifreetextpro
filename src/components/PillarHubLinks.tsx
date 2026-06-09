@@ -121,6 +121,8 @@ export const pillarHubs = {
       { title: "ZeroGPT Comparison", href: "/blog/zerogpt-vs-ai-free-text-pro-2025", description: "ZeroGPT vs AI Free Text Pro" },
       { title: "GPTZero vs Turnitin", href: "/blog/gptzero-vs-turnitin-comparison", description: "Detector comparison" },
       { title: "ChatGPT vs Claude vs Gemini", href: "/blog/chatgpt-vs-claude-vs-gemini-detection", description: "AI model detection rates" },
+      { title: "GPTinf vs AI Free Text Pro", href: "/blog/gptinf-vs-ai-free-text-pro-comparison", description: "Extended GPTinf comparison" },
+      { title: "ChatGPT Alternatives for Essays", href: "/blog/chatgpt-alternatives-essays", description: "Best ChatGPT alternatives" },
     ],
   },
 };

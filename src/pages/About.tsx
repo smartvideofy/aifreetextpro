@@ -74,6 +74,10 @@ const About = () => {
                   src={aboutTeam} 
                   alt="AI Free Text Pro team collaborating in modern office" 
                   className="w-full max-w-3xl mx-auto rounded-2xl shadow-2xl shadow-primary/10 border border-border/50"
+                  width={1024}
+                  height={576}
+                  loading="lazy"
+                  decoding="async"
                 />
               </div>
             </div>

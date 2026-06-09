@@ -213,6 +213,7 @@ const App = () => (
               <Route path="/contact" element={<Contact />} />
               <Route path="/about" element={<About />} />
               <Route path="/blog" element={<Blog />} />
+              <Route path="/blog/category/:slug" element={<BlogCategory />} />
               <Route path="/blog/ai-detection-tools-compared-2025" element={<AIDetectionComparison />} />
               <Route path="/blog/humanize-ai-text-without-losing-voice" element={<HumanizeAIText />} />
               <Route path="/blog/ai-writing-students-avoid-plagiarism" element={<AIWritingStudents />} />

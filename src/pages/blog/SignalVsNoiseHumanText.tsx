@@ -114,7 +114,7 @@ const SignalVsNoiseHumanText = () => {
       </Helmet>
       <AuthorSchema
         articleUrl="https://aifreetextpro.com/blog/signal-vs-noise-human-text"
-        headline="What Makes Text \"Human\"? Signal vs Noise [2026]"
+        headline={`What Makes Text "Human"? Signal vs Noise [2026]`}
         description="The specific patterns AI detectors look for, with concrete examples. Understand what distinguishes human writing from AI-generated content."
         datePublished="2026-02-02"
       />

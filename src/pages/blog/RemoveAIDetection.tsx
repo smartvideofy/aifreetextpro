@@ -13,6 +13,7 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { AuthorSchema } from "@/components/AuthorSchema";
+import { PostHowToSchema } from "@/components/PostHowToSchema";
 
 const relatedArticles = [
   {
@@ -138,6 +139,13 @@ export default function RemoveAIDetection() {
           })}
         </script>
       </Helmet>
+      <PostHowToSchema
+        url="https://aifreetextpro.com/blog/remove-ai-detection-from-text"
+        name="How to Remove AI Detection From Text"
+        description="Learn 5 proven methods to remove AI detection from text. Free manual techniques plus instant tools that reduce AI flags on Turnitin, GPTZero, and more."
+        steps={[{"name":"Run an initial AI detection check","text":"Paste your draft into a trusted AI detector to baseline its current AI-probability score before editing."},{"name":"Identify high-flag passages","text":"Use the detector's per-sentence highlights to find the spans most likely to trigger detection."},{"name":"Restructure sentence rhythm and burstiness","text":"Vary sentence length and structure so the text alternates between short, punchy sentences and longer, complex ones."},{"name":"Inject voice, perspective, and specificity","text":"Replace generic phrasing with first-person reasoning, concrete examples, and domain-specific vocabulary that reflects a human author."},{"name":"Re-check and iterate","text":"Run the detector again and repeat the targeted edits until the AI score falls below your safety threshold."}]}
+      />
+
       <AuthorSchema
         articleUrl="https://aifreetextpro.com/blog/remove-ai-detection-from-text"
         headline="Remove AI Detection from Text (Free Methods) | 2026"

@@ -9,6 +9,7 @@ import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { RelatedArticles } from "@/components/RelatedArticles";
 import { InternalLinks } from "@/components/InternalLinks";
 import { AuthorSchema } from "@/components/AuthorSchema";
+import { PostHowToSchema } from "@/components/PostHowToSchema";
 
 const HowToDetectAI = () => {
 const relatedArticles = [
@@ -146,6 +147,13 @@ const relatedArticles = [
           })}
         </script>
       </Helmet>
+      <PostHowToSchema
+        url="https://aifreetextpro.com/blog/how-to-detect-ai-generated-text"
+        name="How to Detect AI-Generated Text"
+        description="6 dead giveaways that text is AI-written (with side-by-side examples). Free tools to detect ChatGPT, GPT-5, Claude, and Gemini in seconds."
+        steps={[{"name":"Run an initial AI detection check","text":"Paste your draft into a trusted AI detector to baseline its current AI-probability score before editing."},{"name":"Identify high-flag passages","text":"Use the detector's per-sentence highlights to find the spans most likely to trigger detection."},{"name":"Restructure sentence rhythm and burstiness","text":"Vary sentence length and structure so the text alternates between short, punchy sentences and longer, complex ones."},{"name":"Inject voice, perspective, and specificity","text":"Replace generic phrasing with first-person reasoning, concrete examples, and domain-specific vocabulary that reflects a human author."},{"name":"Re-check and iterate","text":"Run the detector again and repeat the targeted edits until the AI score falls below your safety threshold."}]}
+      />
+
       <AuthorSchema
         articleUrl="https://aifreetextpro.com/blog/how-to-detect-ai-generated-text"
         headline="How to Detect AI Text: 6 Signs + Free Tools [2026]"

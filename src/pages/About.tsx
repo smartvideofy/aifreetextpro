@@ -275,6 +275,10 @@ const About = () => {
                   src={technologyAbstract} 
                   alt="Neural network and AI technology visualization" 
                   className="w-full rounded-2xl shadow-xl"
+                  width={1024}
+                  height={576}
+                  loading="lazy"
+                  decoding="async"
                 />
               </div>
               

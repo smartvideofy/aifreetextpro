@@ -8,6 +8,7 @@ import { FAQSection } from "@/components/FAQSection";
 import { Link } from "react-router-dom";
 import { ArrowRight, Zap, Search, Brain, Star, CheckCircle, Lightbulb, PenTool, Target, BarChart3 } from "lucide-react";
 import { KeyTakeaways } from "@/components/KeyTakeaways";
+import { AuthorSchema } from "@/components/AuthorSchema";
 
 const relatedArticles = [
   {
@@ -157,6 +158,13 @@ export default function Top10AIWritingTools2026() {
           })}
         </script>
       </Helmet>
+      <AuthorSchema
+        articleUrl="https://aifreetextpro.com/blog/top-10-ai-writing-tools-2026"
+        headline="10 Best AI Writing Tools: Ranked & Tested [2026]"
+        description="We tested every major AI writing tool in 2026. See rankings, pricing, and real output comparisons to pick the best one for your workflow."
+        datePublished="2026-02-02"
+      />
+
 
       <div className="min-h-screen bg-background">
         <Navbar />

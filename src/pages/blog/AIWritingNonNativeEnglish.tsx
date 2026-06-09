@@ -10,6 +10,7 @@ import InternalLinks from "@/components/InternalLinks";
 import ReviewedBy from "@/components/ReviewedBy";
 import { ArrowLeft, Calendar, Clock, User, Globe, AlertTriangle, CheckCircle, BarChart } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { AuthorSchema } from "@/components/AuthorSchema";
 
 const relatedArticles = [
   {
@@ -116,6 +117,13 @@ const AIWritingNonNativeEnglish = () => {
         <script type="application/ld+json">{JSON.stringify(articleSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
       </Helmet>
+      <AuthorSchema
+        articleUrl="https://aifreetextpro.com/blog/ai-writing-non-native-english-speakers"
+        headline="AI Writing for Non-Native English Speakers (2026)"
+        description="Why non-native English writing triggers false AI detection flags and how to protect yourself. Detector accuracy data, grammar tool risks, and strategies for ESL writers."
+        datePublished="2026-04-08"
+      />
+
 
       <Navbar />
       <main className="min-h-screen bg-background">

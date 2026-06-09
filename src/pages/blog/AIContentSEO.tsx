@@ -8,6 +8,7 @@ import Footer from "@/components/Footer";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { RelatedArticles } from "@/components/RelatedArticles";
 import { InternalLinks } from "@/components/InternalLinks";
+import { AuthorSchema } from "@/components/AuthorSchema";
 
 const relatedArticles = [
   {
@@ -108,6 +109,13 @@ const AIContentSEO = () => {
           })}
         </script>
       </Helmet>
+      <AuthorSchema
+        articleUrl="https://aifreetextpro.com/blog/ai-content-seo-undetectable"
+        headline="AI Content for SEO: Rank Higher Naturally [2026]"
+        description="Scale SEO content with AI while ranking on page 1. Write naturally, pass quality checks, and grow organic traffic with proven workflows."
+        datePublished="2026-02-02"
+      />
+
       <Navbar />
       
       <main className="flex-1 py-20 md:py-28">

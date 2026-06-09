@@ -9,6 +9,7 @@ import { RelatedArticles } from "@/components/RelatedArticles";
 import { InternalLinks } from "@/components/InternalLinks";
 import ReviewedBy from "@/components/ReviewedBy";
 import { FAQSection } from "@/components/FAQSection";
+import { AuthorSchema } from "@/components/AuthorSchema";
 
 const relatedArticles = [
   {
@@ -123,6 +124,13 @@ const BestAIDetectorForTeachers = () => {
           })}
         </script>
       </Helmet>
+      <AuthorSchema
+        articleUrl="https://aifreetextpro.com/blog/best-ai-detector-for-teachers"
+        headline="Best AI Detector for Teachers & Professors (2026)"
+        description="Top 5 AI detectors ranked for classroom use. Accuracy rates, false positives, pricing, and practical advice for educators handling AI-written student papers."
+        datePublished="2026-03-04"
+      />
+
 
       <Navbar />
 

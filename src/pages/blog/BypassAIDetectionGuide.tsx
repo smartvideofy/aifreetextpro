@@ -6,6 +6,7 @@ import { RelatedArticles } from "@/components/RelatedArticles";
 import { Link } from "react-router-dom";
 import { ArrowRight, Shield, Target, Brain, CheckCircle, Lightbulb, AlertTriangle, Zap } from "lucide-react";
 import { KeyTakeaways } from "@/components/KeyTakeaways";
+import { AuthorSchema } from "@/components/AuthorSchema";
 
 const relatedArticles = [
   {
@@ -109,6 +110,13 @@ export default function BypassAIDetectionGuide() {
           })}
         </script>
       </Helmet>
+      <AuthorSchema
+        articleUrl="https://aifreetextpro.com/blog/bypass-ai-detection-guide"
+        headline="How to Bypass AI Detection: 7 Methods That Work [2026]"
+        description="7 tested methods to pass AI detection on Turnitin, GPTZero, and Originality.AI. Step-by-step with before/after scores. Updated April 2026."
+        datePublished="2026-02-02"
+      />
+
 
       <div className="min-h-screen bg-background">
         <Navbar />

@@ -7,6 +7,7 @@ import { RelatedArticles } from "@/components/RelatedArticles";
 import { InternalLinks } from "@/components/InternalLinks";
 import { CheckCircle, X, ArrowRight, AlertTriangle, BookOpen, Lightbulb, Target, Sparkles } from "lucide-react";
 import { KeyTakeaways } from "@/components/KeyTakeaways";
+import { AuthorSchema } from "@/components/AuthorSchema";
 
 const BypassCopyleaksDetection = () => {
   const relatedArticles = [
@@ -95,6 +96,13 @@ const BypassCopyleaksDetection = () => {
           })}
         </script>
       </Helmet>
+      <AuthorSchema
+        articleUrl="https://aifreetextpro.com/blog/bypass-copyleaks-ai-detection"
+        headline="Reduce Copyleaks AI Flags: Tested Tips [2026]"
+        description="Lower Copyleaks AI detection scores safely. Expert strategies to humanize AI text, maintain readability, and preserve content integrity."
+        datePublished="2026-02-02"
+      />
+
 
       <Navbar />
       

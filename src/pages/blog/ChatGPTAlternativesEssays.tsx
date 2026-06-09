@@ -10,6 +10,7 @@ import { RelatedArticles } from "@/components/RelatedArticles";
 import InternalLinks from "@/components/InternalLinks";
 import { FAQSection } from "@/components/FAQSection";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
+import { AuthorSchema } from "@/components/AuthorSchema";
 
 const relatedArticles = [
   { title: "Best AI Writing Tools for Students", description: "Top 10 AI tools ranked for academic use", href: "/blog/best-ai-tools-for-students", category: "Academic" },
@@ -69,6 +70,13 @@ const ChatGPTAlternativesEssays = () => {
           })}
         </script>
       </Helmet>
+      <AuthorSchema
+        articleUrl="https://aifreetextpro.com/blog/chatgpt-alternatives-essays"
+        headline="ChatGPT Alternatives for Essay Writing (2026) | AI Free Text Pro"
+        description="10 best ChatGPT alternatives for essay writing in 2026. Compare Claude, Gemini, Perplexity, and more for academic quality, detection rates, and pricing."
+        datePublished="2026-03-08"
+      />
+
 
       <Navbar />
       <main className="pt-20 pb-16">

@@ -9,6 +9,7 @@ import { QuickAnswer } from "@/components/QuickAnswer";
 import { RelatedArticles } from "@/components/RelatedArticles";
 import { InternalLinks } from "@/components/InternalLinks";
 import ReviewedBy from "@/components/ReviewedBy";
+import { AuthorSchema } from "@/components/AuthorSchema";
 
 const relatedArticles = [
   { title: "Undetectable AI Alternative", description: "96% vs 89% bypass test results.", href: "/blog/undetectable-ai-vs-ai-free-text-pro", category: "Comparison" },
@@ -54,6 +55,13 @@ const StealthwriterAlternative = () => {
           ]
         })}</script>
       </Helmet>
+      <AuthorSchema
+        articleUrl="https://aifreetextpro.com/blog/stealthwriter-alternative"
+        headline="Best Stealthwriter Alternative 2026: 95% vs 86% Tested"
+        description="Best Stealthwriter alternative tested: AI Free Text Pro hits 95% bypass vs Stealthwriter's 86%, with better readability and a free tier (no sign-up)."
+        datePublished="2026-05-09"
+      />
+
 
       <Navbar />
       <main className="min-h-screen pt-20">

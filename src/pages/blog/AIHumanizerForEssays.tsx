@@ -9,6 +9,7 @@ import { QuickAnswer } from "@/components/QuickAnswer";
 import { RelatedArticles } from "@/components/RelatedArticles";
 import { InternalLinks } from "@/components/InternalLinks";
 import ReviewedBy from "@/components/ReviewedBy";
+import { AuthorSchema } from "@/components/AuthorSchema";
 
 const relatedArticles = [
   { title: "AI Humanizer for Students", description: "Student-focused humanizer guide.", href: "/ai-humanizer-for-students", category: "Use Case" },
@@ -54,6 +55,13 @@ const AIHumanizerForEssays = () => {
           ]
         })}</script>
       </Helmet>
+      <AuthorSchema
+        articleUrl="https://aifreetextpro.com/blog/ai-humanizer-for-essays"
+        headline="AI Humanizer for Essays 2026: Pass Turnitin Easily"
+        description="AI humanizer for essays that reduces false flags on Turnitin and GPTZero while preserving meaning. Step-by-step workflow, free tier, no sign-up needed."
+        datePublished="2026-05-09"
+      />
+
 
       <Navbar />
       <main className="min-h-screen pt-20">

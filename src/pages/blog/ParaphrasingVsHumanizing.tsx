@@ -8,6 +8,7 @@ import Footer from "@/components/Footer";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { RelatedArticles } from "@/components/RelatedArticles";
 import { InternalLinks } from "@/components/InternalLinks";
+import { AuthorSchema } from "@/components/AuthorSchema";
 
 const relatedArticles = [
   {
@@ -108,6 +109,13 @@ const ParaphrasingVsHumanizing = () => {
           })}
         </script>
       </Helmet>
+      <AuthorSchema
+        articleUrl="https://aifreetextpro.com/blog/paraphrasing-vs-humanizing"
+        headline="Paraphrasing vs Humanizing: Key Differences [2026]"
+        description="Why simple paraphrasers fail against AI detectors. Learn the critical difference between paraphrasing and true humanization for better results."
+        datePublished="2026-02-02"
+      />
+
       <Navbar />
       
       <main className="flex-1 py-20 md:py-28">

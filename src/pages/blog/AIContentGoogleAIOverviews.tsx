@@ -9,6 +9,7 @@ import { FAQSection } from "@/components/FAQSection";
 import { RelatedArticles } from "@/components/RelatedArticles";
 import InternalLinks from "@/components/InternalLinks";
 import { ArrowLeft, Calendar, Clock, Tag, Search, TrendingUp, Target, BarChart3, CheckCircle } from "lucide-react";
+import { AuthorSchema } from "@/components/AuthorSchema";
 
 const relatedArticles = [
   { title: "AI-Powered SEO Content That Ranks (2026)", description: "Complete workflow for creating AI content optimized for search engines.", href: "/blog/ai-powered-seo-content-2026", category: "SEO" },
@@ -76,6 +77,13 @@ const AIContentGoogleAIOverviews = () => {
         <script type="application/ld+json">{JSON.stringify(articleSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
       </Helmet>
+      <AuthorSchema
+        articleUrl="https://aifreetextpro.com/blog/ai-content-google-ai-overviews"
+        headline="How to Get AI Content Into Google AI Overviews (2026) | AI Free Text Pro"
+        description="Step-by-step guide to optimizing AI content for citation in Google AI Overviews. Content structure, E-E-A-T signals, humanization strategies, and tracking methods."
+        datePublished="2026-03-15"
+      />
+
 
       <Navbar />
       <main className="min-h-screen bg-background pt-24 pb-16">

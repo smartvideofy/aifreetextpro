@@ -8,6 +8,7 @@ import { FAQSection } from "@/components/FAQSection";
 import { Link } from "react-router-dom";
 import { ArrowRight, ShoppingCart, Star, Zap, CheckCircle, Lightbulb, TrendingUp, Package, BarChart3 } from "lucide-react";
 import { KeyTakeaways } from "@/components/KeyTakeaways";
+import { AuthorSchema } from "@/components/AuthorSchema";
 
 const relatedArticles = [
   {
@@ -140,6 +141,13 @@ export default function AIProductDescriptions() {
           })}
         </script>
       </Helmet>
+      <AuthorSchema
+        articleUrl="https://aifreetextpro.com/blog/humanize-ai-product-descriptions-2026"
+        headline="AI Product Descriptions That Convert [2026]"
+        description="Make AI-generated product descriptions sound authentic and boost conversions 15-35%. Proven eCommerce copywriting techniques that sell."
+        datePublished="2026-02-02"
+      />
+
 
       <div className="min-h-screen bg-background">
         <Navbar />

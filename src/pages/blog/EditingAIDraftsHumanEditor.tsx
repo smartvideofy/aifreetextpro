@@ -8,6 +8,7 @@ import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { RelatedArticles } from "@/components/RelatedArticles";
 import { Button } from "@/components/ui/button";
 import { InternalLinks } from "@/components/InternalLinks";
+import { AuthorSchema } from "@/components/AuthorSchema";
 
 const relatedArticles = [
   {
@@ -104,6 +105,13 @@ const EditingAIDraftsHumanEditor = () => {
           })}
         </script>
       </Helmet>
+      <AuthorSchema
+        articleUrl="https://aifreetextpro.com/blog/editing-ai-drafts-human-editor"
+        headline="Edit AI Drafts Like a Pro Editor [2026 Tips]"
+        description="Professional editing techniques to transform AI drafts into polished, publication-ready content. Make every piece read authentically human."
+        datePublished="2026-02-02"
+      />
+
 
       <div className="min-h-screen bg-gradient-to-b from-background via-background to-card/20">
         <Navbar />

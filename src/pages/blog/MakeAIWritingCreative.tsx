@@ -9,6 +9,7 @@ import KeyTakeaways from "@/components/KeyTakeaways";
 import { RelatedArticles } from "@/components/RelatedArticles";
 import InternalLinks from "@/components/InternalLinks";
 import { FAQSection } from "@/components/FAQSection";
+import { AuthorSchema } from "@/components/AuthorSchema";
 
 const relatedArticles = [
   { title: "AI Creativity & Originality", description: "Can AI writing be truly original?", href: "/blog/can-ai-writing-be-original", category: "Educational" },
@@ -65,6 +66,13 @@ const MakeAIWritingCreative = () => {
           })}
         </script>
       </Helmet>
+      <AuthorSchema
+        articleUrl="https://aifreetextpro.com/blog/make-ai-writing-creative"
+        headline="How to Make AI Writing More Creative and Original | AI Free Text Pro"
+        description="Transform generic AI text into creative, original writing. 12 techniques for adding voice, style, and originality to AI-generated content in 2026."
+        datePublished="2026-03-08"
+      />
+
 
       <Navbar />
       <main className="pt-20 pb-16">

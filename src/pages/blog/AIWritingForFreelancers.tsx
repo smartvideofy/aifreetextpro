@@ -9,6 +9,7 @@ import { RelatedArticles } from "@/components/RelatedArticles";
 import InternalLinks from "@/components/InternalLinks";
 import ReviewedBy from "@/components/ReviewedBy";
 import { FAQSection } from "@/components/FAQSection";
+import { AuthorSchema } from "@/components/AuthorSchema";
 
 const relatedArticles = [
   { title: "AI Humanizer for Resumes", description: "Make AI-generated professional documents sound authentic.", href: "/blog/ai-humanizer-resumes-cover-letters", category: "Career" },
@@ -59,6 +60,13 @@ const AIWritingForFreelancers = () => {
           {JSON.stringify({ "@context": "https://schema.org", "@type": "FAQPage", "mainEntity": faqs.map(f => ({ "@type": "Question", "name": f.question, "acceptedAnswer": { "@type": "Answer", "text": f.answer } })) })}
         </script>
       </Helmet>
+      <AuthorSchema
+        articleUrl="https://aifreetextpro.com/blog/ai-writing-for-freelancers"
+        headline="AI Writing for Freelancers: How to Use AI Without Losing Clients (2026)"
+        description="Practical guide for freelance writers using AI. How to integrate AI into your workflow, handle client expectations, and protect your reputation."
+        datePublished="2026-02-28"
+      />
+
 
       <Navbar />
       <main className="min-h-screen pt-24 pb-16">

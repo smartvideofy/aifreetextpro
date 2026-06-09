@@ -7,6 +7,7 @@ import { InternalLinks } from "@/components/InternalLinks";
 import { Link } from "react-router-dom";
 import { ArrowRight, Brain, Search, Zap } from "lucide-react";
 import { KeyTakeaways } from "@/components/KeyTakeaways";
+import { AuthorSchema } from "@/components/AuthorSchema";
 
 const relatedArticles = [
   {
@@ -116,6 +117,13 @@ export default function WriteAIResistantContent() {
           })}
         </script>
       </Helmet>
+      <AuthorSchema
+        articleUrl="https://aifreetextpro.com/blog/write-ai-resistant-content"
+        headline="Write AI-Resistant Content: 6-Step Method [2026]"
+        description="Advanced techniques to make content AI-resistant while staying authentic and engaging. 6-step humanization workflow with real examples."
+        datePublished="2026-02-02"
+      />
+
 
       <div className="min-h-screen bg-background">
         <Navbar />

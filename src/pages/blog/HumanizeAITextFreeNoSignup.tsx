@@ -8,6 +8,7 @@ import { KeyTakeaways } from "@/components/KeyTakeaways";
 import { RelatedArticles } from "@/components/RelatedArticles";
 import { InternalLinks } from "@/components/InternalLinks";
 import ReviewedBy from "@/components/ReviewedBy";
+import { AuthorSchema } from "@/components/AuthorSchema";
 
 const relatedArticles = [
   { title: "Best Free AI Humanizers (2026)", description: "Compare the top free AI humanizer tools.", href: "/blog/best-free-ai-humanizer-tools-2025", category: "Tools" },
@@ -61,6 +62,13 @@ const HumanizeAITextFreeNoSignup = () => {
           ]
         })}</script>
       </Helmet>
+      <AuthorSchema
+        articleUrl="https://aifreetextpro.com/blog/humanize-ai-text-free-no-signup"
+        headline="Humanize AI Text Free: No Sign-Up [2026]"
+        description="Humanize AI text for free with no sign-up needed. Compare the best free AI humanizer tools and manual techniques that actually work."
+        datePublished="2026-02-25"
+      />
+
 
       <Navbar />
       <main className="min-h-screen pt-20">

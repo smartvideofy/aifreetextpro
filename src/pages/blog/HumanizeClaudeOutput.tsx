@@ -12,6 +12,7 @@ import InternalLinks from "@/components/InternalLinks";
 import ReviewedBy from "@/components/ReviewedBy";
 import { ArrowLeft, Calendar, Clock, User, Sparkles, BarChart, Shield, Zap } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { AuthorSchema } from "@/components/AuthorSchema";
 
 const relatedArticles = [
   {
@@ -124,6 +125,13 @@ const HumanizeClaudeOutput = () => {
         <script type="application/ld+json">{JSON.stringify(articleSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
       </Helmet>
+      <AuthorSchema
+        articleUrl="https://aifreetextpro.com/blog/humanize-claude-output"
+        headline="How to Humanize Claude Output (2026): Bypass AI Detection"
+        description="Humanize Claude 3.5 Sonnet and Claude 4 output to reduce false AI flags. Real test data: Turnitin scores drop from 78% to 6% with our 5-step workflow."
+        datePublished="2026-06-01"
+      />
+
       <SpeakableSchema pageUrl="https://aifreetextpro.com/blog/humanize-claude-output" pageName="How to Humanize Claude Output" />
 
       <Navbar />

@@ -8,6 +8,7 @@ import Footer from "@/components/Footer";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { RelatedArticles } from "@/components/RelatedArticles";
 import { InternalLinks } from "@/components/InternalLinks";
+import { AuthorSchema } from "@/components/AuthorSchema";
 
 const relatedArticles = [
   {
@@ -116,6 +117,13 @@ const AIDetectionPatterns = () => {
           })}
         </script>
       </Helmet>
+      <AuthorSchema
+        articleUrl="https://aifreetextpro.com/blog/ai-detection-patterns-explained"
+        headline="5 Patterns AI Detectors Flag [And How to Fix Them]"
+        description="5 exact patterns AI detectors check (with examples). Fix each one in under 5 minutes. Tested on Turnitin, GPTZero, and Originality.AI."
+        datePublished="2026-02-02"
+      />
+
       <Navbar />
       
       <main className="flex-1 py-20 md:py-28">

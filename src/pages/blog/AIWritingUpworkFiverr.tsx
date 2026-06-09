@@ -9,6 +9,7 @@ import { FAQSection } from "@/components/FAQSection";
 import { RelatedArticles } from "@/components/RelatedArticles";
 import InternalLinks from "@/components/InternalLinks";
 import { ArrowLeft, Calendar, Clock, Tag, Briefcase, AlertTriangle, DollarSign, Shield, CheckCircle } from "lucide-react";
+import { AuthorSchema } from "@/components/AuthorSchema";
 
 const relatedArticles = [
   { title: "AI Writing for Freelancers", description: "How freelancers can use AI tools while maintaining client trust and professional integrity.", href: "/blog/ai-writing-for-freelancers", category: "Career" },
@@ -76,6 +77,13 @@ const AIWritingUpworkFiverr = () => {
         <script type="application/ld+json">{JSON.stringify(articleSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
       </Helmet>
+      <AuthorSchema
+        articleUrl="https://aifreetextpro.com/blog/ai-writing-upwork-fiverr-freelancers"
+        headline="AI Writing for Upwork & Fiverr Freelancers (2026) | AI Free Text Pro"
+        description="Platform-specific strategies for freelancers using AI on Upwork and Fiverr. TOS compliance, client detection avoidance, pricing, and humanization workflows."
+        datePublished="2026-03-15"
+      />
+
 
       <Navbar />
       <main className="min-h-screen bg-background pt-24 pb-16">

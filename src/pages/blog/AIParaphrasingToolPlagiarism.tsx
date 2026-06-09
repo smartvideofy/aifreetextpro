@@ -12,6 +12,7 @@ import { FAQSection } from "@/components/FAQSection";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import { AuthorSchema } from "@/components/AuthorSchema";
 
 const relatedArticles = [
   {
@@ -137,6 +138,13 @@ export default function AIParaphrasingToolPlagiarism() {
           })}
         </script>
       </Helmet>
+      <AuthorSchema
+        articleUrl="https://aifreetextpro.com/blog/ai-paraphrasing-tool-avoid-plagiarism"
+        headline="AI Paraphrasing Tool to Avoid Plagiarism | 2026"
+        description="Compare AI paraphrasing tools for plagiarism avoidance. See which tools actually pass AI detection and which don't. Real test results for 2026."
+        datePublished="2026-03-05"
+      />
+
 
       <Navbar />
       

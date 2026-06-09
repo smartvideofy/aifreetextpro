@@ -8,6 +8,7 @@ import { FAQSection } from "@/components/FAQSection";
 import { Link } from "react-router-dom";
 import { ArrowRight, Brain, Search, Zap, Video, Mic, CheckCircle, AlertTriangle, Lightbulb } from "lucide-react";
 import { KeyTakeaways } from "@/components/KeyTakeaways";
+import { AuthorSchema } from "@/components/AuthorSchema";
 
 const relatedArticles = [
   {
@@ -139,6 +140,13 @@ export default function AIYouTubeScripts() {
           })}
         </script>
       </Helmet>
+      <AuthorSchema
+        articleUrl="https://aifreetextpro.com/blog/ai-content-youtube-scripts-2026"
+        headline="AI YouTube Scripts That Sound Human [2026]"
+        description="Humanize AI scripts for YouTube, podcasts, and narration. Engage viewers with natural-sounding content that keeps them watching."
+        datePublished="2026-02-02"
+      />
+
 
       <div className="min-h-screen bg-background">
         <Navbar />

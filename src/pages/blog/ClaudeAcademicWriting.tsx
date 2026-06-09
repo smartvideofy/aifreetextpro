@@ -10,6 +10,7 @@ import { InternalLinks } from "@/components/InternalLinks";
 import { FAQSection } from "@/components/FAQSection";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { ArrowLeft, Calendar, Clock, User } from "lucide-react";
+import { AuthorSchema } from "@/components/AuthorSchema";
 
 const relatedArticles = [
   { title: "How to Humanize Claude Output (2026)", description: "Make Claude essays undetectable with a 5-step workflow.", href: "/blog/humanize-claude-output", category: "How-To Guide" },
@@ -66,6 +67,13 @@ const ClaudeAcademicWriting = () => {
           })}
         </script>
       </Helmet>
+      <AuthorSchema
+        articleUrl="https://aifreetextpro.com/blog/claude-academic-writing"
+        headline="Claude for Academic Writing Without Getting Caught"
+        description="How to use Claude AI for academic essays without detection. Claude's detection profile, best prompts, and humanization workflow for students."
+        datePublished="2026-03-08"
+      />
+
 
       <Navbar />
       <main className="pt-24 pb-16">

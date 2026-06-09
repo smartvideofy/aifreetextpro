@@ -10,6 +10,7 @@ import { RelatedArticles } from "@/components/RelatedArticles";
 import InternalLinks from "@/components/InternalLinks";
 import { FAQSection } from "@/components/FAQSection";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
+import { AuthorSchema } from "@/components/AuthorSchema";
 
 const relatedArticles = [
   { title: "Free AI Content Detector", description: "Check any text for AI patterns", href: "/blog/free-ai-content-detector", category: "Tools" },
@@ -66,6 +67,13 @@ const AIEssayChecker = () => {
           })}
         </script>
       </Helmet>
+      <AuthorSchema
+        articleUrl="https://aifreetextpro.com/blog/ai-essay-checker"
+        headline="Best AI Essay Checker: Self-Check Before You Submit (2026) | AI Free Text Pro"
+        description="Check your essay for AI detection before submitting. Compare 7 free AI essay checkers, learn what scores mean, and understand how to revise flagged content."
+        datePublished="2026-03-08"
+      />
+
 
       <Navbar />
       <main className="pt-20 pb-16">

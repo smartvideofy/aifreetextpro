@@ -8,6 +8,7 @@ import Footer from "@/components/Footer";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { RelatedArticles } from "@/components/RelatedArticles";
 import { InternalLinks } from "@/components/InternalLinks";
+import { AuthorSchema } from "@/components/AuthorSchema";
 
 const relatedArticles = [
   {
@@ -113,6 +114,13 @@ const AcademicAIWritingSafely = () => {
           })}
         </script>
       </Helmet>
+      <AuthorSchema
+        articleUrl="https://aifreetextpro.com/blog/academic-ai-writing-safely"
+        headline="Use AI for Thesis & Essays Safely [2026 Guide]"
+        description="Use AI responsibly for academic writing without risking integrity. Ethical boundaries, safe workflows, and expert tips for thesis and essays."
+        datePublished="2026-02-02"
+      />
+
       <Navbar />
       
       <main className="flex-1 py-20 md:py-28">

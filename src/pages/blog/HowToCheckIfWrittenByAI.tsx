@@ -10,6 +10,7 @@ import InternalLinks from "@/components/InternalLinks";
 import ReviewedBy from "@/components/ReviewedBy";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { FAQSection } from "@/components/FAQSection";
+import { AuthorSchema } from "@/components/AuthorSchema";
 
 const relatedArticles = [
   { title: "How AI Detectors Work", description: "The science behind AI text analysis.", href: "/blog/how-ai-detectors-work", category: "Educational" },
@@ -60,6 +61,13 @@ const HowToCheckIfWrittenByAI = () => {
           {JSON.stringify({ "@context": "https://schema.org", "@type": "FAQPage", "mainEntity": faqs.map(f => ({ "@type": "Question", "name": f.question, "acceptedAnswer": { "@type": "Answer", "text": f.answer } })) })}
         </script>
       </Helmet>
+      <AuthorSchema
+        articleUrl="https://aifreetextpro.com/blog/how-to-check-if-written-by-ai"
+        headline="How to Check If Something Was Written by AI (Free Methods) | 2026"
+        description="Free methods and tools to check if text was written by AI. Step-by-step guide for teachers, editors, and employers with accuracy comparisons."
+        datePublished="2026-02-28"
+      />
+
 
       <Navbar />
       <main className="min-h-screen pt-24 pb-16">

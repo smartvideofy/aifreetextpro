@@ -10,6 +10,7 @@ import { RelatedArticles } from "@/components/RelatedArticles";
 import InternalLinks from "@/components/InternalLinks";
 import { FAQSection } from "@/components/FAQSection";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
+import { AuthorSchema } from "@/components/AuthorSchema";
 
 const relatedArticles = [
   { title: "AI for Research Papers", description: "Using AI in academic research writing", href: "/blog/ai-for-research-papers", category: "Academic" },
@@ -66,6 +67,13 @@ const AIGrantWriting = () => {
           })}
         </script>
       </Helmet>
+      <AuthorSchema
+        articleUrl="https://aifreetextpro.com/blog/ai-grant-writing"
+        headline="AI for Grant Writing: Win Funding Without Detection (2026) | AI Free Text Pro"
+        description="Use AI to write stronger grant proposals without triggering reviewer AI detection. Section-by-section workflow for NIH, NSF, and foundation grants."
+        datePublished="2026-03-08"
+      />
+
 
       <Navbar />
       <main className="pt-20 pb-16">

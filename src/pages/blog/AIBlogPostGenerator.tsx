@@ -10,6 +10,7 @@ import { RelatedArticles } from "@/components/RelatedArticles";
 import InternalLinks from "@/components/InternalLinks";
 import { FAQSection } from "@/components/FAQSection";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
+import { AuthorSchema } from "@/components/AuthorSchema";
 
 const relatedArticles = [
   { title: "AI Content for SEO", description: "Rank higher with AI-assisted content", href: "/blog/ai-content-seo-undetectable", category: "SEO" },
@@ -67,6 +68,13 @@ const AIBlogPostGenerator = () => {
           })}
         </script>
       </Helmet>
+      <AuthorSchema
+        articleUrl="https://aifreetextpro.com/blog/ai-blog-post-generator"
+        headline="AI Blog Post Generator That Passes AI Detection (2026) | AI Free Text Pro"
+        description="Find the best AI blog post generator that creates undetectable content. Compare 8 tools, learn the humanization workflow, and produce blog posts that read naturally."
+        datePublished="2026-03-08"
+      />
+
 
       <Navbar />
       <main className="pt-20 pb-16">

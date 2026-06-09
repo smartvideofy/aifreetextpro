@@ -8,6 +8,7 @@ import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { RelatedArticles } from "@/components/RelatedArticles";
 import { Button } from "@/components/ui/button";
 import { InternalLinks } from "@/components/InternalLinks";
+import { AuthorSchema } from "@/components/AuthorSchema";
 
 const relatedArticles = [
   {
@@ -123,6 +124,13 @@ const HowToWriteNaturallyWithAI = () => {
           })}
         </script>
       </Helmet>
+      <AuthorSchema
+        articleUrl="https://aifreetextpro.com/blog/how-to-write-naturally-with-ai"
+        headline="Write Naturally with AI: Complete Guide [2026]"
+        description="Craft natural, engaging content with AI assistance. Proven techniques for prompting, structuring, and refining AI text that readers love."
+        datePublished="2026-02-02"
+      />
+
 
       <div className="min-h-screen bg-gradient-to-b from-background via-background to-card/20">
         <Navbar />

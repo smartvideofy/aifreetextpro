@@ -9,6 +9,7 @@ import { RelatedArticles } from "@/components/RelatedArticles";
 import InternalLinks from "@/components/InternalLinks";
 import ReviewedBy from "@/components/ReviewedBy";
 import { FAQSection } from "@/components/FAQSection";
+import { AuthorSchema } from "@/components/AuthorSchema";
 
 const relatedArticles = [
   { title: "Can Teachers Detect ChatGPT?", description: "Every detection method schools use in 2026.", href: "/blog/can-teachers-detect-chatgpt", category: "Academic" },
@@ -59,6 +60,13 @@ const AIWritingHighSchoolStudents = () => {
           {JSON.stringify({ "@context": "https://schema.org", "@type": "FAQPage", "mainEntity": faqs.map(f => ({ "@type": "Question", "name": f.question, "acceptedAnswer": { "@type": "Answer", "text": f.answer } })) })}
         </script>
       </Helmet>
+      <AuthorSchema
+        articleUrl="https://aifreetextpro.com/blog/ai-writing-high-school-students"
+        headline="AI Writing for High School Students: A Parent and Student Guide (2026)"
+        description="Complete guide to AI writing tools for high school students. School policies, what's allowed, consequences of getting caught, and how to use AI responsibly."
+        datePublished="2026-02-28"
+      />
+
 
       <Navbar />
       <main className="min-h-screen pt-24 pb-16">

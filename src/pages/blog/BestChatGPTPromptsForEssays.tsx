@@ -8,6 +8,7 @@ import { KeyTakeaways } from "@/components/KeyTakeaways";
 import { RelatedArticles } from "@/components/RelatedArticles";
 import { InternalLinks } from "@/components/InternalLinks";
 import ReviewedBy from "@/components/ReviewedBy";
+import { AuthorSchema } from "@/components/AuthorSchema";
 
 const relatedArticles = [
   { title: "Can Teachers Detect ChatGPT?", description: "Find out how schools detect AI-generated work.", href: "/blog/can-teachers-detect-chatgpt", category: "Academic" },
@@ -61,6 +62,13 @@ const BestChatGPTPromptsForEssays = () => {
           ]
         })}</script>
       </Helmet>
+      <AuthorSchema
+        articleUrl="https://aifreetextpro.com/blog/best-chatgpt-prompts-for-essays"
+        headline="Best ChatGPT Prompts for Essays That Sound Human (2026)"
+        description="20+ proven ChatGPT prompts for essays that produce natural, human-sounding writing. Prompts for argumentative, analytical, narrative, and research essays."
+        datePublished="2026-02-25"
+      />
+
 
       <Navbar />
       <main className="min-h-screen pt-20">

@@ -10,6 +10,7 @@ import { InternalLinks } from "@/components/InternalLinks";
 import { FAQSection } from "@/components/FAQSection";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { ArrowLeft, Calendar, Clock, User } from "lucide-react";
+import { AuthorSchema } from "@/components/AuthorSchema";
 
 const relatedArticles = [
   { title: "Best AI Detector for Teachers", description: "Top detection tools for educators ranked by accuracy.", href: "/blog/best-ai-detector-for-teachers", category: "Tools" },
@@ -65,6 +66,13 @@ const AIDetectorEmployers = () => {
           })}
         </script>
       </Helmet>
+      <AuthorSchema
+        articleUrl="https://aifreetextpro.com/blog/ai-detector-employers"
+        headline="AI Writing Detector for Employers: Screen in 2026"
+        description="How employers can use AI writing detectors to screen job applications. Top tools, legal considerations, and recommended workflows for HR teams."
+        datePublished="2026-03-08"
+      />
+
 
       <Navbar />
       <main className="pt-24 pb-16">

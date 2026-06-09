@@ -10,6 +10,7 @@ import { RelatedArticles } from "@/components/RelatedArticles";
 import InternalLinks from "@/components/InternalLinks";
 import { FAQSection } from "@/components/FAQSection";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
+import { AuthorSchema } from "@/components/AuthorSchema";
 
 const relatedArticles = [
   { title: "AI Ghostwriter Guide", description: "Professional AI content without detection", href: "/blog/ai-ghostwriter", category: "Professional" },
@@ -66,6 +67,13 @@ const AIPressReleases = () => {
           })}
         </script>
       </Helmet>
+      <AuthorSchema
+        articleUrl="https://aifreetextpro.com/blog/ai-press-releases"
+        headline="AI for Press Releases: PR Content That Sounds Human (2026) | AI Free Text Pro"
+        description="Write press releases with AI that journalists actually use. Templates, humanization workflow, and strategies for media-ready AI-assisted PR content in 2026."
+        datePublished="2026-03-08"
+      />
+
 
       <Navbar />
       <main className="pt-20 pb-16">

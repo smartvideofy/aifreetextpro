@@ -10,6 +10,7 @@ import { RelatedArticles } from "@/components/RelatedArticles";
 import InternalLinks from "@/components/InternalLinks";
 import { FAQSection } from "@/components/FAQSection";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
+import { AuthorSchema } from "@/components/AuthorSchema";
 
 const relatedArticles = [
   { title: "Humanize ChatGPT Text", description: "Step-by-step ChatGPT humanization", href: "/blog/humanize-chatgpt-text", category: "How-To Guide" },
@@ -66,6 +67,13 @@ const ChatGPTPlusDetection = () => {
           })}
         </script>
       </Helmet>
+      <AuthorSchema
+        articleUrl="https://aifreetextpro.com/blog/chatgpt-plus-detection"
+        headline="Does ChatGPT Plus Bypass AI Detection? (2026 Test Results) | AI Free Text Pro"
+        description="We tested ChatGPT Plus, Pro, and free tier against 5 AI detectors. Paying for ChatGPT does not make your text less detectable. Real 2026 test data inside."
+        datePublished="2026-03-08"
+      />
+
 
       <Navbar />
       <main className="pt-20 pb-16">

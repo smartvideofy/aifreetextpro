@@ -8,6 +8,7 @@ import { KeyTakeaways } from "@/components/KeyTakeaways";
 import { RelatedArticles } from "@/components/RelatedArticles";
 import { InternalLinks } from "@/components/InternalLinks";
 import ReviewedBy from "@/components/ReviewedBy";
+import { AuthorSchema } from "@/components/AuthorSchema";
 
 const relatedArticles = [
   { title: "How to Humanize Claude Output (2026)", description: "Step-by-step workflow to make Claude output undetectable.", href: "/blog/humanize-claude-output", category: "How-To Guide" },
@@ -71,6 +72,13 @@ const AIDetectorsClaudeGeminiGPT5 = () => {
           ]
         })}</script>
       </Helmet>
+      <AuthorSchema
+        articleUrl="https://aifreetextpro.com/blog/ai-detectors-claude-gemini-gpt5-2026"
+        headline="Can AI Detectors Detect Claude, Gemini, and GPT-5? (2026 Tests)"
+        description="We tested Claude 4, Gemini 2.5, and GPT-5 against Turnitin, GPTZero, Originality.AI, and more. Find out which AI models are hardest to detect in 2026."
+        datePublished="2026-02-25"
+      />
+
 
       <Navbar />
       <main className="min-h-screen pt-20">

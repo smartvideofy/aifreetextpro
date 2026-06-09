@@ -9,6 +9,7 @@ import { RelatedArticles } from "@/components/RelatedArticles";
 import { InternalLinks } from "@/components/InternalLinks";
 import ReviewedBy from "@/components/ReviewedBy";
 import { FAQSection } from "@/components/FAQSection";
+import { AuthorSchema } from "@/components/AuthorSchema";
 
 const relatedArticles = [
   {
@@ -123,6 +124,13 @@ const AIWritingBusinessReports = () => {
           })}
         </script>
       </Helmet>
+      <AuthorSchema
+        articleUrl="https://aifreetextpro.com/blog/ai-writing-business-reports-emails"
+        headline="AI Writing for Business Reports & Emails (2026)"
+        description="Professional guide to using AI for business reports, client emails, and proposals. Match brand voice, pass compliance checks, and write faster."
+        datePublished="2026-03-04"
+      />
+
 
       <Navbar />
 

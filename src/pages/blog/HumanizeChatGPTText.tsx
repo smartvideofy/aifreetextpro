@@ -9,6 +9,7 @@ import ReviewedBy from "@/components/ReviewedBy";
 import { RelatedArticles } from "@/components/RelatedArticles";
 import { InternalLinks } from "@/components/InternalLinks";
 import { FAQSection } from "@/components/FAQSection";
+import { AuthorSchema } from "@/components/AuthorSchema";
 
 const relatedArticles = [
   { title: "Humanize AI Text Without Losing Your Voice", description: "Strategies for maintaining authentic voice while using AI writing tools.", href: "/blog/humanize-ai-text-without-losing-voice", category: "How-To Guide" },
@@ -85,6 +86,13 @@ const HumanizeChatGPTText = () => {
           }))
         })}</script>
       </Helmet>
+      <AuthorSchema
+        articleUrl="https://aifreetextpro.com/blog/humanize-chatgpt-text"
+        headline="How to Humanize ChatGPT Text (Step-by-Step 2026)"
+        description="Make ChatGPT text sound human in 6 steps. Reduce AI detection scores on Turnitin, GPTZero, and Originality.AI with proven humanization techniques."
+        datePublished="2026-03-08"
+      />
+
 
       <Navbar />
       <main className="min-h-screen pt-20">

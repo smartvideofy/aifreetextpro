@@ -8,6 +8,7 @@ import { FAQSection } from "@/components/FAQSection";
 import { Link } from "react-router-dom";
 import { ArrowRight, Mail, TrendingUp, Users, Target, CheckCircle, Lightbulb, BarChart } from "lucide-react";
 import { KeyTakeaways } from "@/components/KeyTakeaways";
+import { AuthorSchema } from "@/components/AuthorSchema";
 
 const relatedArticles = [
   {
@@ -133,6 +134,13 @@ export default function AIHumanizersForEmailMarketing() {
           })}
         </script>
       </Helmet>
+      <AuthorSchema
+        articleUrl="https://aifreetextpro.com/blog/ai-humanizers-for-email-marketing"
+        headline="AI Email Marketing: Boost Open Rates 23% [2026]"
+        description="Humanized AI emails get 23% higher open rates and 47% more replies. Learn to make AI-generated emails sound personal and drive conversions."
+        datePublished="2026-02-02"
+      />
+
 
       <div className="min-h-screen bg-background">
         <Navbar />

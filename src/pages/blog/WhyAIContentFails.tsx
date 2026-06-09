@@ -7,6 +7,7 @@ import { InternalLinks } from "@/components/InternalLinks";
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import { KeyTakeaways } from "@/components/KeyTakeaways";
+import { AuthorSchema } from "@/components/AuthorSchema";
 
 const relatedArticles = [
   {
@@ -162,6 +163,13 @@ export default function WhyAIContentFails() {
           })}
         </script>
       </Helmet>
+      <AuthorSchema
+        articleUrl="https://aifreetextpro.com/blog/why-ai-content-fails-human-review"
+        headline="Why AI Content Gets Flagged (And How to Fix It)"
+        description="5 reasons AI-generated content fails human review and the practical steps to make your writing sound natural and pass any detector."
+        datePublished="2026-02-02"
+      />
+
 
       <div className="min-h-screen bg-background">
         <Navbar />

@@ -10,6 +10,7 @@ import { RelatedArticles } from "@/components/RelatedArticles";
 import InternalLinks from "@/components/InternalLinks";
 import { FAQSection } from "@/components/FAQSection";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
+import { AuthorSchema } from "@/components/AuthorSchema";
 
 const relatedArticles = [
   { title: "AI for Research Papers", description: "Using AI in academic research writing", href: "/blog/ai-for-research-papers", category: "Academic" },
@@ -66,6 +67,13 @@ const AIMedicalScientificWriting = () => {
           })}
         </script>
       </Helmet>
+      <AuthorSchema
+        articleUrl="https://aifreetextpro.com/blog/ai-medical-scientific-writing"
+        headline="AI for Medical & Scientific Writing: A Researcher's Guide (2026) | AI Free Text Pro"
+        description="Use AI for medical and scientific writing without compromising journal acceptance. Section-by-section guide with journal policies, detection risks, and ethical frameworks."
+        datePublished="2026-03-08"
+      />
+
 
       <Navbar />
       <main className="pt-20 pb-16">

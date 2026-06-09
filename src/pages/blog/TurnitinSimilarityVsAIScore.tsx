@@ -9,6 +9,7 @@ import ReviewedBy from "@/components/ReviewedBy";
 import { RelatedArticles } from "@/components/RelatedArticles";
 import { InternalLinks } from "@/components/InternalLinks";
 import { FAQSection } from "@/components/FAQSection";
+import { AuthorSchema } from "@/components/AuthorSchema";
 
 const relatedArticles = [
   { title: "Turnitin AI Detection Accuracy", description: "How accurate is Turnitin's AI detection in 2026? Real data and analysis.", href: "/blog/turnitin-ai-detection-accuracy", category: "Technical" },
@@ -71,6 +72,13 @@ const TurnitinSimilarityVsAIScore = () => {
           "mainEntity": faqs.map(faq => ({ "@type": "Question", "name": faq.question, "acceptedAnswer": { "@type": "Answer", "text": faq.answer } }))
         })}</script>
       </Helmet>
+      <AuthorSchema
+        articleUrl="https://aifreetextpro.com/blog/turnitin-similarity-vs-ai-score"
+        headline="Turnitin Similarity vs AI Score: What's the Difference?"
+        description="Understand the difference between Turnitin's similarity score and AI score. What each measures, what professors see, and what thresholds trigger review."
+        datePublished="2026-03-08"
+      />
+
 
       <Navbar />
       <main className="min-h-screen pt-20">

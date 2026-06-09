@@ -10,6 +10,7 @@ import { RelatedArticles } from "@/components/RelatedArticles";
 import InternalLinks from "@/components/InternalLinks";
 import { FAQSection } from "@/components/FAQSection";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
+import { AuthorSchema } from "@/components/AuthorSchema";
 
 const relatedArticles = [
   { title: "Quillbot vs AI Free Text Pro", description: "Another rewriter vs humanizer comparison", href: "/blog/quillbot-vs-ai-free-text-pro", category: "Comparison" },
@@ -66,6 +67,13 @@ const WordtuneComparison = () => {
           })}
         </script>
       </Helmet>
+      <AuthorSchema
+        articleUrl="https://aifreetextpro.com/blog/wordtune-vs-ai-free-text-pro"
+        headline="Wordtune vs AI Free Text Pro: Rewriter vs Humanizer (2026) | AI Free Text Pro"
+        description="Wordtune rewrites text for clarity. AI Free Text Pro humanizes it for detection. Compare features, test results, and learn when to use each tool in 2026."
+        datePublished="2026-03-08"
+      />
+
 
       <Navbar />
       <main className="pt-20 pb-16">

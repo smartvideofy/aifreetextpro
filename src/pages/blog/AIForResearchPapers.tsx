@@ -9,6 +9,7 @@ import { RelatedArticles } from "@/components/RelatedArticles";
 import { InternalLinks } from "@/components/InternalLinks";
 import ReviewedBy from "@/components/ReviewedBy";
 import { FAQSection } from "@/components/FAQSection";
+import { AuthorSchema } from "@/components/AuthorSchema";
 
 const relatedArticles = [
   {
@@ -126,6 +127,13 @@ const AIForResearchPapers = () => {
           })}
         </script>
       </Helmet>
+      <AuthorSchema
+        articleUrl="https://aifreetextpro.com/blog/ai-for-research-papers"
+        headline="AI for Research Papers: Use AI Without Consequences"
+        description="How graduate students and researchers can use AI tools ethically for thesis writing, literature reviews, and journal submissions without academic consequences."
+        datePublished="2026-03-04"
+      />
+
 
       <Navbar />
 

@@ -8,6 +8,7 @@ import { FAQSection } from "@/components/FAQSection";
 import { Link } from "react-router-dom";
 import { ArrowRight, BookOpen, Shield, TrendingUp, CheckCircle, Lightbulb, AlertTriangle, FileText, Users } from "lucide-react";
 import { KeyTakeaways } from "@/components/KeyTakeaways";
+import { AuthorSchema } from "@/components/AuthorSchema";
 
 const relatedArticles = [
   {
@@ -130,6 +131,13 @@ export default function AIDetectionPublishing() {
           })}
         </script>
       </Helmet>
+      <AuthorSchema
+        articleUrl="https://aifreetextpro.com/blog/ai-detection-in-publishing-2025"
+        headline="AI Detection in Publishing: Writer's Guide [2026]"
+        description="How editors and publishers handle AI content in 2026. Practical strategies for writers navigating disclosure policies and AI guidelines."
+        datePublished="2026-02-02"
+      />
+
 
       <div className="min-h-screen bg-background">
         <Navbar />

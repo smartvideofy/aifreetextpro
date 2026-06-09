@@ -8,6 +8,7 @@ import Footer from "@/components/Footer";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { RelatedArticles } from "@/components/RelatedArticles";
 import { InternalLinks } from "@/components/InternalLinks";
+import { AuthorSchema } from "@/components/AuthorSchema";
 
 const relatedArticles = [
   {
@@ -159,6 +160,13 @@ const MakeChatGPTUndetectable = () => {
           })}
         </script>
       </Helmet>
+      <AuthorSchema
+        articleUrl="https://aifreetextpro.com/blog/make-chatgpt-undetectable-2025"
+        headline="Make AI Writing Sound Human: Full Guide [2026]"
+        description="Fastest methods to make ChatGPT writing sound natural and human-like. Create authentic, high-quality AI-assisted content that readers trust."
+        datePublished="2026-02-02"
+      />
+
       <Navbar />
       
       <main className="flex-1 py-20 md:py-28">

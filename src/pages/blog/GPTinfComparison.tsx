@@ -8,6 +8,7 @@ import Footer from "@/components/Footer";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { RelatedArticles } from "@/components/RelatedArticles";
 import { InternalLinks } from "@/components/InternalLinks";
+import { AuthorSchema } from "@/components/AuthorSchema";
 
 const relatedArticles = [
   {
@@ -116,6 +117,13 @@ const GPTinfComparison = () => {
           })}
         </script>
       </Helmet>
+      <AuthorSchema
+        articleUrl="https://aifreetextpro.com/blog/gptinf-vs-ai-free-text-pro"
+        headline="GPTinf vs AI Free Text Pro: Tested [2026]"
+        description="GPTinf vs AI Free Text Pro: we ran both on 100 essays. See bypass rates (78% vs 96%), pricing, and which one actually passes Turnitin."
+        datePublished="2026-02-02"
+      />
+
       <Navbar />
       
       <main className="flex-1 py-20 md:py-28">

@@ -10,6 +10,7 @@ import { InternalLinks } from "@/components/InternalLinks";
 import { FAQSection } from "@/components/FAQSection";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { ArrowLeft, Calendar, Clock, User } from "lucide-react";
+import { AuthorSchema } from "@/components/AuthorSchema";
 
 const relatedArticles = [
   { title: "How to Remove AI Detection from Text", description: "5 proven methods to remove AI detection signals from your text.", href: "/blog/remove-ai-detection-from-text", category: "How-To Guide" },
@@ -65,6 +66,13 @@ const RewriteAIText = () => {
           })}
         </script>
       </Helmet>
+      <AuthorSchema
+        articleUrl="https://aifreetextpro.com/blog/rewrite-ai-text-sound-human"
+        headline="How to Rewrite AI Text to Sound Human (2026)"
+        description="Step-by-step guide to rewriting AI text so it sounds human. 7 techniques, before/after examples, and tools that work in 2026."
+        datePublished="2026-03-08"
+      />
+
 
       <Navbar />
       <main className="pt-24 pb-16">

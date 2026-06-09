@@ -10,6 +10,7 @@ import { InternalLinks } from "@/components/InternalLinks";
 import ReviewedBy from "@/components/ReviewedBy";
 import { FAQSection } from "@/components/FAQSection";
 import {
+import { AuthorSchema } from "@/components/AuthorSchema";
   Table,
   TableBody,
   TableCell,
@@ -176,6 +177,13 @@ const IsItIllegalToUseAIForSchool = () => {
           })}
         </script>
       </Helmet>
+      <AuthorSchema
+        articleUrl="https://aifreetextpro.com/blog/is-it-illegal-to-use-ai-for-school"
+        headline="Is Using AI for School Illegal? [2026 Answer]"
+        description="Is using ChatGPT for school illegal? Academic AI policies at major universities, real consequences, and how to use AI without breaking any rules."
+        datePublished="2026-05-01"
+      />
+
 
       <Navbar />
 

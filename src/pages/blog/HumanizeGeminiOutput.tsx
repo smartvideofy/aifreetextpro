@@ -12,6 +12,7 @@ import InternalLinks from "@/components/InternalLinks";
 import ReviewedBy from "@/components/ReviewedBy";
 import { ArrowLeft, Calendar, Clock, User, Sparkles, BarChart, Shield, Zap } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { AuthorSchema } from "@/components/AuthorSchema";
 
 const relatedArticles = [
   {
@@ -112,6 +113,13 @@ const HumanizeGeminiOutput = () => {
         <script type="application/ld+json">{JSON.stringify(articleSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
       </Helmet>
+      <AuthorSchema
+        articleUrl="https://aifreetextpro.com/blog/humanize-gemini-output"
+        headline="How to Humanize Gemini Output (2026): Bypass AI Detection"
+        description="Humanize Gemini 2.5 Pro and 3.1 Pro output to reduce false AI flags. Real test data: Turnitin scores drop from 84% to 7% with our 5-step workflow."
+        datePublished="2026-06-01"
+      />
+
       <SpeakableSchema pageUrl="https://aifreetextpro.com/blog/humanize-gemini-output" pageName="How to Humanize Gemini Output" />
 
       <Navbar />

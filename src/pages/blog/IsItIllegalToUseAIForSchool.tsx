@@ -10,7 +10,6 @@ import { InternalLinks } from "@/components/InternalLinks";
 import ReviewedBy from "@/components/ReviewedBy";
 import { FAQSection } from "@/components/FAQSection";
 import {
-import { AuthorSchema } from "@/components/AuthorSchema";
   Table,
   TableBody,
   TableCell,
@@ -18,6 +17,7 @@ import { AuthorSchema } from "@/components/AuthorSchema";
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
+import { AuthorSchema } from "@/components/AuthorSchema";
 
 const relatedArticles = [
   {

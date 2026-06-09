@@ -10,6 +10,7 @@ import { RelatedArticles } from "@/components/RelatedArticles";
 import { InternalLinks } from "@/components/InternalLinks";
 import { FAQSection } from "@/components/FAQSection";
 import { AuthorSchema } from "@/components/AuthorSchema";
+import { SpeakableSchema } from "@/components/SpeakableSchema";
 import { PostHowToSchema } from "@/components/PostHowToSchema";
 
 const relatedArticles = [
@@ -99,6 +100,11 @@ const HumanizeChatGPTText = () => {
         headline="How to Humanize ChatGPT Text (Step-by-Step 2026)"
         description="Make ChatGPT text sound human in 6 steps. Reduce AI detection scores on Turnitin, GPTZero, and Originality.AI with proven humanization techniques."
         datePublished="2026-03-08"
+        dateModified="2026-06-09"
+      />
+      <SpeakableSchema
+        pageUrl="https://aifreetextpro.com/blog/humanize-chatgpt-text"
+        pageName="How to Humanize ChatGPT Text (Step-by-Step 2026)"
       />
 
 

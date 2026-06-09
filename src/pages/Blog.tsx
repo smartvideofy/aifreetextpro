@@ -1162,6 +1162,10 @@ const Blog = () => {
                 src={blogHero} 
                 alt="Open book with floating pages representing knowledge and content" 
                 className="w-full max-w-2xl mx-auto rounded-xl shadow-lg"
+                width={1024}
+                height={576}
+                loading="eager"
+                decoding="async"
               />
             </div>
           </div>
@@ -1287,6 +1291,10 @@ const Blog = () => {
                             src={thumbnail} 
                             alt={post.title}
                             className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+                            loading="lazy"
+                            decoding="async"
+                            width={400}
+                            height={225}
                           />
                           <div className="absolute inset-0 bg-gradient-to-t from-card/80 to-transparent" />
                           <span className="absolute bottom-3 left-3 px-3 py-1 rounded-full bg-primary/90 text-primary-foreground font-medium text-xs">

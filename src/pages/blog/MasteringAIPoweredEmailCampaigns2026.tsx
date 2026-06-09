@@ -156,6 +156,7 @@ export default function MasteringAIPoweredEmailCampaigns2026() {
         headline="AI Email Campaigns: Higher Conversions [2026]"
         description="Craft high-converting email campaigns with AI in 2026. Practical strategies, tool recommendations, and tested templates that drive results."
         datePublished="2026-02-02"
+        dateModified="2026-06-09"
       />
 
 

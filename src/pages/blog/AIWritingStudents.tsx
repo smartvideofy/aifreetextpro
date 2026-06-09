@@ -176,6 +176,7 @@ const AIWritingStudents = () => {
         headline="AI Writing for Students: Stay Ethical (2026)"
         description="Use AI writing assistants safely in academia. Avoid plagiarism flags and AI detection while maintaining academic integrity."
         datePublished="2026-02-02"
+        dateModified="2026-06-09"
       />
 
       <Navbar />

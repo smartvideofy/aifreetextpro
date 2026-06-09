@@ -130,6 +130,7 @@ const PassAllDetectorsGuide = () => {
         headline="Pass All AI Detectors: Step-by-Step Guide [2026]"
         description="Pass GPTZero, Turnitin, Originality.AI, ZeroGPT, and Copyleaks with one workflow. Step-by-step guide with tested results."
         datePublished="2026-02-02"
+        dateModified="2026-06-09"
       />
 
       <Navbar />

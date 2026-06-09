@@ -77,6 +77,7 @@ const OriginalityAIAccuracyFalsePositives = () => {
         headline="Can Originality.AI Be Wrong? False Positives and Accuracy Explained (2026)"
         description="Independent analysis of Originality.AI accuracy. Real false positive rates, what causes wrong results, and how to handle being incorrectly flagged."
         datePublished="2026-02-28"
+        dateModified="2026-06-09"
       />
 
 

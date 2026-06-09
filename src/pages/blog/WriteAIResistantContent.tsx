@@ -130,6 +130,7 @@ export default function WriteAIResistantContent() {
         headline="Write AI-Resistant Content: 6-Step Method [2026]"
         description="Advanced techniques to make content AI-resistant while staying authentic and engaging. 6-step humanization workflow with real examples."
         datePublished="2026-02-02"
+        dateModified="2026-06-09"
       />
 
 

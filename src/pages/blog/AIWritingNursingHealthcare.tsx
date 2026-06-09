@@ -82,6 +82,7 @@ const AIWritingNursingHealthcare = () => {
         headline="AI Writing for Nursing & Healthcare Students (2026) | AI Free Text Pro"
         description="Complete guide to using AI for care plans, SOAP notes, clinical reflections, and nursing essays. Detection risks, ethical frameworks, and safe workflows for healthcare students."
         datePublished="2026-03-15"
+        dateModified="2026-06-09"
       />
 
 

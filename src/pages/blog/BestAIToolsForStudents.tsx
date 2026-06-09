@@ -10,6 +10,7 @@ import { RelatedArticles } from "@/components/RelatedArticles";
 import { InternalLinks } from "@/components/InternalLinks";
 import { FAQSection } from "@/components/FAQSection";
 import { AuthorSchema } from "@/components/AuthorSchema";
+import { SpeakableSchema } from "@/components/SpeakableSchema";
 
 const relatedArticles = [
   { title: "AI Writing for Students: Avoid Detection", description: "Student-specific strategies for using AI writing tools responsibly.", href: "/blog/ai-writing-students-avoid-plagiarism", category: "Academic" },
@@ -79,6 +80,11 @@ const BestAIToolsForStudents = () => {
         headline="Best AI Writing Tools for Students [Free & Paid 2026]"
         description="10 best AI writing tools for students ranked by quality, detection risk, and price. ChatGPT, Claude, Gemini, and more compared for academic use."
         datePublished="2026-03-08"
+        dateModified="2026-06-09"
+      />
+      <SpeakableSchema
+        pageUrl="https://aifreetextpro.com/blog/best-ai-tools-for-students"
+        pageName="Best AI Writing Tools for Students [Free & Paid 2026]"
       />
 
 

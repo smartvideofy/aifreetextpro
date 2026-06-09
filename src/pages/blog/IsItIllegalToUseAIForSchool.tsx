@@ -18,6 +18,7 @@ import {
   TableRow,
 } from "@/components/ui/table";
 import { AuthorSchema } from "@/components/AuthorSchema";
+import { SpeakableSchema } from "@/components/SpeakableSchema";
 
 const relatedArticles = [
   {
@@ -182,6 +183,11 @@ const IsItIllegalToUseAIForSchool = () => {
         headline="Is Using AI for School Illegal? [2026 Answer]"
         description="Is using ChatGPT for school illegal? Academic AI policies at major universities, real consequences, and how to use AI without breaking any rules."
         datePublished="2026-05-01"
+        dateModified="2026-06-09"
+      />
+      <SpeakableSchema
+        pageUrl="https://aifreetextpro.com/blog/is-it-illegal-to-use-ai-for-school"
+        pageName="Is Using AI for School Illegal? [2026 Answer]"
       />
 
 

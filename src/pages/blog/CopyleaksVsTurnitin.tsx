@@ -88,6 +88,7 @@ const CopyleaksVsTurnitin = () => {
         headline="Copyleaks vs Turnitin: Which AI Detector Is Better? [2026]"
         description="Copyleaks vs Turnitin compared with real test data. Accuracy rates, false positives, pricing, and which detector catches which AI models in 2026."
         datePublished="2026-03-08"
+        dateModified="2026-06-09"
       />
 
 

@@ -119,6 +119,7 @@ const AcademicAIWritingSafely = () => {
         headline="Use AI for Thesis & Essays Safely [2026 Guide]"
         description="Use AI responsibly for academic writing without risking integrity. Ethical boundaries, safe workflows, and expert tips for thesis and essays."
         datePublished="2026-02-02"
+        dateModified="2026-06-09"
       />
 
       <Navbar />

@@ -78,6 +78,7 @@ const GPTZeroAccuracyReview = () => {
         headline="GPTZero Accuracy Review (2026)"
         description="In-depth review of GPTZero accuracy, false-positive rates, and how it compares to Turnitin and Originality.AI in 2026."
         datePublished="2026-05-15"
+        dateModified="2026-06-09"
       />
       <ReviewSchema
         itemName="GPTZero"

@@ -67,6 +67,7 @@ const AIHumanizerResumes = () => {
         headline="AI Resume Humanizer: Land More Interviews [2026]"
         description="Humanize AI resumes and cover letters to sound authentic. Pass ATS screening and recruiter review with professional, natural-sounding applications."
         datePublished="2026-02-25"
+        dateModified="2026-06-09"
       />
 
 

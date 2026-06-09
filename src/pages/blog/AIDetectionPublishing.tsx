@@ -136,6 +136,7 @@ export default function AIDetectionPublishing() {
         headline="AI Detection in Publishing: Writer's Guide [2026]"
         description="How editors and publishers handle AI content in 2026. Practical strategies for writers navigating disclosure policies and AI guidelines."
         datePublished="2026-02-02"
+        dateModified="2026-06-09"
       />
 
 

@@ -9,6 +9,7 @@ import { RelatedArticles } from "@/components/RelatedArticles";
 import { Button } from "@/components/ui/button";
 import { InternalLinks } from "@/components/InternalLinks";
 import { AuthorSchema } from "@/components/AuthorSchema";
+import { SpeakableSchema } from "@/components/SpeakableSchema";
 import { PostHowToSchema } from "@/components/PostHowToSchema";
 
 const relatedArticles = [
@@ -137,6 +138,11 @@ const HowToWriteNaturallyWithAI = () => {
         headline="Write Naturally with AI: Complete Guide [2026]"
         description="Craft natural, engaging content with AI assistance. Proven techniques for prompting, structuring, and refining AI text that readers love."
         datePublished="2026-02-02"
+        dateModified="2026-06-09"
+      />
+      <SpeakableSchema
+        pageUrl="https://aifreetextpro.com/blog/how-to-write-naturally-with-ai"
+        pageName="Write Naturally with AI: Complete Guide [2026]"
       />
 
 

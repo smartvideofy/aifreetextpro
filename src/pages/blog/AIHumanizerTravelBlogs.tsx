@@ -153,6 +153,7 @@ export default function AIHumanizerTravelBlogs() {
         headline="Write Travel Blogs with AI: Keep Your Voice"
         description="Craft travel blogs with AI tools while keeping your authentic voice. Real workflows for engaging travel content that feels personal, not robotic."
         datePublished="2026-02-02"
+        dateModified="2026-06-09"
       />
 
 

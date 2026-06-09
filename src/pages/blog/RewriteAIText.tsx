@@ -79,6 +79,7 @@ const RewriteAIText = () => {
         headline="How to Rewrite AI Text to Sound Human (2026)"
         description="Step-by-step guide to rewriting AI text so it sounds human. 7 techniques, before/after examples, and tools that work in 2026."
         datePublished="2026-03-08"
+        dateModified="2026-06-09"
       />
 
 

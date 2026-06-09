@@ -122,6 +122,7 @@ const AIDetectionPatterns = () => {
         headline="5 Patterns AI Detectors Flag [And How to Fix Them]"
         description="5 exact patterns AI detectors check (with examples). Fix each one in under 5 minutes. Tested on Turnitin, GPTZero, and Originality.AI."
         datePublished="2026-02-02"
+        dateModified="2026-06-09"
       />
 
       <Navbar />

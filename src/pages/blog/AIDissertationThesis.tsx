@@ -76,6 +76,7 @@ const AIDissertationThesis = () => {
         headline="AI for Dissertation & Thesis Writing (2026 Guide)"
         description="How PhD and Masters students can use AI for dissertations. Chapter-by-chapter integration guide, detection risks, citation requirements, and advisor conversations."
         datePublished="2026-03-08"
+        dateModified="2026-06-09"
       />
 
 

@@ -130,6 +130,7 @@ const DoesCanvasDetectChatGPT = () => {
         headline="Does Canvas Detect ChatGPT? (2026 Complete Answer)"
         description="Canvas has no native AI detector but integrates with Turnitin & Copyleaks. Real 2026 detection rates for ChatGPT, Claude, and Gemini on Canvas submissions."
         datePublished="2026-06-01"
+        dateModified="2026-06-09"
       />
 
       <SpeakableSchema pageUrl="https://aifreetextpro.com/blog/does-canvas-detect-chatgpt" pageName="Does Canvas Detect ChatGPT?" />

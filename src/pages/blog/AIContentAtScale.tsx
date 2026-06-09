@@ -72,6 +72,7 @@ const AIContentAtScale = () => {
         headline="AI Content at Scale: 100+ Articles Without Getting Flagged | AI Free Text Pro"
         description="Build a content operation that produces 100+ AI-assisted articles monthly without triggering AI detection. Complete workflow for agencies and content teams."
         datePublished="2026-03-08"
+        dateModified="2026-06-09"
       />
 
 

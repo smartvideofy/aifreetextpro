@@ -9,6 +9,7 @@ import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { RelatedArticles } from "@/components/RelatedArticles";
 import { InternalLinks } from "@/components/InternalLinks";
 import { AuthorSchema } from "@/components/AuthorSchema";
+import { SpeakableSchema } from "@/components/SpeakableSchema";
 import { PostHowToSchema } from "@/components/PostHowToSchema";
 
 const HowToDetectAI = () => {
@@ -159,6 +160,11 @@ const relatedArticles = [
         headline="How to Detect AI Text: 6 Signs + Free Tools [2026]"
         description="6 dead giveaways that text is AI-written (with side-by-side examples). Free tools to detect ChatGPT, GPT-5, Claude, and Gemini in seconds."
         datePublished="2026-02-02"
+        dateModified="2026-06-09"
+      />
+      <SpeakableSchema
+        pageUrl="https://aifreetextpro.com/blog/how-to-detect-ai-generated-text"
+        pageName="How to Detect AI Text: 6 Signs + Free Tools [2026]"
       />
 
       <Navbar />

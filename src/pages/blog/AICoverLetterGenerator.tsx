@@ -77,6 +77,7 @@ const AICoverLetterGenerator = () => {
         headline="AI Cover Letter Generator That Sounds Human (2026)"
         description="Generate cover letters with AI that sound authentically human. 5 generators compared, humanization workflow, and industry-specific templates that land interviews."
         datePublished="2026-03-08"
+        dateModified="2026-06-09"
       />
 
 

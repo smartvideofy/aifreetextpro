@@ -71,6 +71,7 @@ const AIHomeworkHelper = () => {
         headline="AI Homework Helper That Won't Get Caught (2026)"
         description="Use AI for homework without getting caught. Top workflows, humanization tips, and detection test results for students in 2026."
         datePublished="2026-03-08"
+        dateModified="2026-06-09"
       />
 
 

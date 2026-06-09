@@ -11,6 +11,7 @@ import ReviewedBy from "@/components/ReviewedBy";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { FAQSection } from "@/components/FAQSection";
 import { AuthorSchema } from "@/components/AuthorSchema";
+import { SpeakableSchema } from "@/components/SpeakableSchema";
 import { PostHowToSchema } from "@/components/PostHowToSchema";
 
 const relatedArticles = [
@@ -74,6 +75,11 @@ const HowToCheckIfWrittenByAI = () => {
         headline="How to Check If Something Was Written by AI (Free Methods) | 2026"
         description="Free methods and tools to check if text was written by AI. Step-by-step guide for teachers, editors, and employers with accuracy comparisons."
         datePublished="2026-02-28"
+        dateModified="2026-06-09"
+      />
+      <SpeakableSchema
+        pageUrl="https://aifreetextpro.com/blog/how-to-check-if-written-by-ai"
+        pageName="How to Check If Something Was Written by AI (Free Methods) | 2026"
       />
 
 

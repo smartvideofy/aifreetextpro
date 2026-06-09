@@ -122,6 +122,7 @@ const AIWritingNonNativeEnglish = () => {
         headline="AI Writing for Non-Native English Speakers (2026)"
         description="Why non-native English writing triggers false AI detection flags and how to protect yourself. Detector accuracy data, grammar tool risks, and strategies for ESL writers."
         datePublished="2026-04-08"
+        dateModified="2026-06-09"
       />
 
 

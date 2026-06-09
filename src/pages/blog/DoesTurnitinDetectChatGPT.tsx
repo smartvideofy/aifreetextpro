@@ -13,6 +13,7 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, Calendar, Clock, User, CheckCircle, XCircle, AlertTriangle, ExternalLink } from "lucide-react";
 import { AuthorSchema } from "@/components/AuthorSchema";
+import { SpeakableSchema } from "@/components/SpeakableSchema";
 
 const relatedArticles = [
   {
@@ -145,6 +146,11 @@ const DoesTurnitinDetectChatGPT = () => {
         headline="Does Turnitin Detect ChatGPT? (2026)"
         description="Real Turnitin detection rates for ChatGPT, including GPT-4, GPT-5, and humanized output in 2026."
         datePublished="2026-05-10"
+        dateModified="2026-06-09"
+      />
+      <SpeakableSchema
+        pageUrl="https://aifreetextpro.com/blog/does-turnitin-detect-chatgpt"
+        pageName="Does Turnitin Detect ChatGPT? (2026)"
       />
 
       

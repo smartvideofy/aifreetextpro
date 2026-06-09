@@ -133,6 +133,7 @@ export default function AIWritingAcademia() {
         headline="AI Writing in Academia: Use It Responsibly [2026]"
         description="Use AI for research papers, essays, and thesis writing without risking academic integrity. Responsible strategies that keep your work authentic."
         datePublished="2026-02-02"
+        dateModified="2026-06-09"
       />
 
 

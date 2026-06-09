@@ -71,6 +71,7 @@ const ChatGPTCollegeEssays = () => {
         headline="ChatGPT for College Essays: What Professors Detect"
         description="What college professors actually use to detect ChatGPT essays. University policies, detection scores, and how to use AI responsibly in 2026."
         datePublished="2026-03-08"
+        dateModified="2026-06-09"
       />
 
 

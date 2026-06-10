@@ -186,6 +186,10 @@ export const PillarHubLinks = ({ hub, currentPage, limit, title }: PillarHubLink
           </Link>
         ))}
       </div>
+      <ItemListSchema
+        name={title || hubData.name}
+        items={displaySpokes.map(s => ({ name: s.title, url: s.href }))}
+      />
     </section>
   );
 };

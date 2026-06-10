@@ -46,6 +46,10 @@ const VsUndetectable = lazy(() => import("./pages/VsUndetectable"));
 const VsHumanizeAIPro = lazy(() => import("./pages/VsHumanizeAIPro"));
 const CompareAIHumanizers = lazy(() => import("./pages/CompareAIHumanizers"));
 
+// Programmatic templates (dynamic routes)
+const VsTemplate = lazy(() => import("./pages/programmatic/VsTemplate"));
+const DetectorTemplate = lazy(() => import("./pages/programmatic/DetectorTemplate"));
+
 // Use case pages
 const AIHumanizerForStudents = lazy(() => import("./pages/AIHumanizerForStudents"));
 const AIHumanizerForWriters = lazy(() => import("./pages/AIHumanizerForWriters"));
@@ -374,6 +378,11 @@ const App = () => (
               <Route path="/blog/does-canvas-detect-chatgpt" element={<DoesCanvasDetectChatGPT />} />
 
               
+
+              {/* Programmatic SEO routes */}
+              <Route path="/vs/:slug" element={<VsTemplate />} />
+              <Route path="/detector/:slug" element={<DetectorTemplate />} />
+
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>

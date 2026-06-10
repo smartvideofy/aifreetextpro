@@ -41,8 +41,22 @@ const footerSections: FooterSection[] = [
       { href: "/vs-writehuman", label: "vs WriteHuman" },
       { href: "/vs-undetectable-ai", label: "vs Undetectable AI" },
       { href: "/vs-humanizeai-pro", label: "vs HumanizeAI.pro" },
-      { href: "/blog/gptinf-vs-ai-free-text-pro", label: "vs GPTinf" },
-      { href: "/blog/zerogpt-vs-ai-free-text-pro-2025", label: "vs ZeroGPT" },
+      { href: "/vs/stealthwriter", label: "vs StealthWriter" },
+      { href: "/vs/phrasly", label: "vs Phrasly" },
+      { href: "/vs/bypassgpt", label: "vs BypassGPT" },
+      { href: "/vs/humbot", label: "vs Humbot" },
+      { href: "/compare-ai-humanizers", label: "All comparisons" },
+    ],
+  },
+  {
+    title: "AI Detectors",
+    icon: <Shield className="w-4 h-4" />,
+    links: [
+      { href: "/detector/turnitin", label: "Turnitin" },
+      { href: "/detector/gptzero", label: "GPTZero" },
+      { href: "/detector/originality", label: "Originality.AI" },
+      { href: "/detector/copyleaks", label: "Copyleaks" },
+      { href: "/detector/winston", label: "Winston AI" },
     ],
   },
   {
@@ -155,7 +169,7 @@ const Footer = () => {
   return (
     <footer className="border-t bg-gradient-to-b from-background to-muted/50">
       <div className="container mx-auto px-4 py-12 md:py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-7 gap-0 md:gap-8 mb-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-8 gap-0 md:gap-8 mb-10">
           {/* Brand Column */}
           <div className="space-y-4 lg:col-span-1 pb-6 md:pb-0 border-b border-border/20 md:border-b-0">
             <Link to="/" className="flex items-center gap-2">

@@ -1,51 +1,69 @@
+# P2 — Hub Depth & Crawl Reach
 
-# Phase 1.1 + 1.2: Tool-page schema + CTR rewrites
+Goal: turn shallow hub/tool pages into dense, internally-linked content hubs so Googlebot (and AI crawlers) can reach every one of the 121 blog posts in ≤2 clicks from the homepage, and create new programmatic pages to capture long-tail comparison + detector queries.
 
-Focused execution chunk. ~10 files touched, ships in one pass.
+## Scope (in order)
 
-## Part A — New reusable schema component
+### 1. Hub-page depth (4 pillar hubs + Blog index)
+Pages: `src/pages/Index.tsx` (Humanizer hub), `src/pages/AIChecker.tsx` (Detection hub), `src/pages/BypassTurnitin.tsx` (Bypass hub), `src/pages/CompareAIHumanizers.tsx` (Comparison hub), `src/pages/Blog.tsx`.
 
-Create `src/components/SoftwareApplicationSchema.tsx`: drops a `SoftwareApplication` JSON-LD block via `Helmet`. Props: `name`, `description`, `url`, `category` (default `UtilityApplication`), `price` (default `"0"`), `priceCurrency` (default `"USD"`), `ratingValue` (default `4.8`), `ratingCount` (default `2847`), `screenshot?`. Emits `applicationCategory`, `operatingSystem: "Web"`, `offers`, `aggregateRating`, `featureList?`.
+For each hub add (where missing):
+- Full `PillarHubLinks` section rendering ALL spokes (remove any `limit`), grouped by sub-topic with H2/H3 headings.
+- 600–900 words of hub-level intro + "What's inside" copy targeting the hub's head keyword.
+- "Latest from the blog" strip (6 most-recent spokes with date + 1-line excerpt).
+- `CrossHubNav` at the bottom linking to the other 3 hubs.
+- `ItemList` JSON-LD listing every spoke URL (improves crawl + AI-search discovery).
 
-## Part B — Mount the schema on tool/conversion pages
+### 2. Category hub pages (`/blog/category/:slug`)
+`src/pages/BlogCategory.tsx` already exists but only a few categories are wired. Expand to 8 categories matching the blog taxonomy: humanizer, detection, bypass, comparison, academic, marketing, models, tools. Each category page:
+- H1 + 150-word category intro
+- Full list of posts in that category with thumbnail + excerpt
+- `CollectionPage` + `ItemList` JSON-LD
+- Breadcrumbs, SEOHead, canonical
+- Link entries from `Blog.tsx` and footer
 
-Add `<SoftwareApplicationSchema …>` to each of:
+### 3. Programmatic comparison pages (long-tail capture)
+Create `src/pages/programmatic/VsX.tsx` template + 6 new routes:
+`/vs/stealthwriter`, `/vs/phrasly`, `/vs/bypassgpt`, `/vs/netus-ai`, `/vs/twixify`, `/vs/humbot`.
+Each ≈1,200 words: feature table, pricing table, verdict, FAQ, ReviewSchema, SoftwareApplicationSchema, CTA to app.
 
-| Page | Name | Category |
-|---|---|---|
-| `src/pages/Index.tsx` | "AI Free Text Pro" | UtilityApplication |
-| `src/pages/AIChecker.tsx` | "Free AI Detector" | UtilityApplication |
-| `src/pages/Pricing.tsx` | "AI Free Text Pro" + add `Product`/`Offer` list for 5 tiers | BusinessApplication |
-| `src/pages/BypassTurnitin.tsx` | "Turnitin AI Bypass Tool" | UtilityApplication |
-| `src/pages/BypassGPTZero.tsx` | "GPTZero Bypass Tool" | UtilityApplication |
-| `src/pages/BypassOriginality.tsx` | "Originality.AI Bypass Tool" | UtilityApplication |
-| `src/pages/VsWriteHuman.tsx` | "AI Free Text Pro" | UtilityApplication |
-| `src/pages/VsUndetectable.tsx` | same | same |
-| `src/pages/VsHumanizeAIPro.tsx` | same | same |
+### 4. Programmatic detector pages
+Create `/detector/:tool` template + 5 routes:
+`/detector/turnitin`, `/detector/gptzero`, `/detector/originality`, `/detector/copyleaks`, `/detector/winston`.
+Each ≈1,000 words: how it works, accuracy, how to bypass (link to bypass hub), FAQ, schema.
 
-For `Pricing.tsx`, also emit an `ItemList` of `Product` nodes (one per tier) so each plan is eligible for product rich results.
+### 5. AI-search & crawler files
+- Refresh `public/llms.txt` and `public/ai.txt` with the new 121-post index, hub URLs, and new programmatic pages.
+- Add `<lastmod>` + new URLs to `public/sitemap.xml` (via existing `refresh-sitemap-lastmod.mjs`; extend `prerender-routes.ts` with the new programmatic routes).
+- Update `public/robots.txt` only if new directories need explicit allow.
 
-## Part C — CTR rewrites + QuickAnswer on top low-CTR blog posts
+### 6. Footer + Navbar crawl boosts
+- Add a "Resources" mega-list to `Footer.tsx` (Top 10 highest-traffic posts + 4 hub links + 8 category links).
+- Add "Compare" and "Detectors" dropdowns to `Navbar.tsx` desktop nav (mirror in `MobileNav.tsx`).
 
-Use the existing `QuickAnswer` component already in the codebase. For each post: tighten `<title>` to ≤60 chars front-loading the keyword + year, tighten meta description to ≤155 chars with a benefit + soft CTA, and inject a `<QuickAnswer>` block immediately after the article header.
+### 7. Guardrails + validation
+- Extend `scripts/seo/check-internal-links.mjs` to fail if any blog spoke lacks ≥3 inbound links.
+- Run `check-sitemap-sync.mjs` after route additions.
+- Re-run prerender list.
 
-| File | New title | QuickAnswer Q |
-|---|---|---|
-| `blog/CanDetectorsDetectGPT5.tsx` | "Can AI Detectors Detect GPT-5? (Tested 2026)" | "Can AI detectors actually detect GPT-5 in 2026?" |
-| `blog/TurnitinVsGPTZeroVsOriginalityAI.tsx` | "Turnitin vs GPTZero vs Originality.AI (2026)" | "Which AI detector is most accurate in 2026?" |
-| `blog/DoesTurnitinDetectChatGPT.tsx` | "Does Turnitin Detect ChatGPT in 2026? (Yes — Here's How)" | "Does Turnitin detect ChatGPT?" |
-| `blog/BestFreeAIHumanizer2026.tsx` | "Best Free AI Humanizer 2026 (No Signup, 1,000 Words)" | "What is the best free AI humanizer in 2026?" |
-| `blog/FreeAIContentDetector.tsx` | "Free AI Content Detector (No Signup, Unlimited Checks)" | "What is the best free AI content detector?" |
-| `blog/CanTeachersDetectChatGPT.tsx` | "Can Teachers Detect ChatGPT in 2026? (Honest Answer)" | "Can teachers actually detect ChatGPT?" |
+## Out of scope (deferred to P3)
+- GSC ingest / analytics dashboards
+- Author bio pages with personal schema
+- Multi-language hreflang
+- Programmatic "X for Y" pages (e.g., "humanizer for nursing students")
 
-All copy follows project memory: no em-dashes, frames as "reduce false flags / improve quality", never "beat detectors".
+## Technical notes
+- Reuse: `PillarHubLinks`, `SoftwareApplicationSchema`, `ReviewSchema`, `SpeakableSchema`, `AuthorSchema`, `Breadcrumbs`, `SEOHead`, `FAQSection`.
+- New components: `ItemListSchema.tsx`, `programmatic/VsTemplate.tsx`, `programmatic/DetectorTemplate.tsx`, data files `src/data/competitors.ts` + `src/data/detectors.ts`.
+- All new routes added to `src/App.tsx` (lazy) + `scripts/seo/prerender-routes.ts` + `public/sitemap.xml`.
+- All external app CTAs → `https://app.aifreetextpro.com` with `target="_blank" rel="noopener noreferrer"` (per project memory).
 
-## Out of scope this chunk
-- Homepage `<title>`/meta rewrite — touches `index.html` and risks brand-positioning regression; do separately.
-- Sitemap `<lastmod>` bumps — happens in Phase 4.3.
-- No content body rewrites beyond the QuickAnswer block.
+## Deliverables
+- 5 hub pages deepened (Index, AIChecker, BypassTurnitin, CompareAIHumanizers, Blog)
+- 8 category hub pages live
+- 6 new `/vs/*` + 5 new `/detector/*` programmatic pages (11 total)
+- Refreshed `llms.txt`, `ai.txt`, `sitemap.xml`, `prerender-routes.ts`
+- Footer + Navbar updated
+- Guardrail script extended and passing
 
-## Verification
-After edits: run `node scripts/seo/check-internal-links.mjs` and `node scripts/seo/check-sitemap-sync.mjs` to confirm no regressions, then mark relevant SEO findings fixed.
-
-Estimated diff: 1 new component + 9 page edits + 6 blog edits = 16 files.
+Estimated effort: ~1 day end-to-end.

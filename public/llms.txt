@@ -16,7 +16,18 @@ AI Free Text Pro offers free, no-signup tools for AI content detection and human
 - [vs Undetectable.ai](https://aifreetextpro.com/vs-undetectable-ai): Side-by-side comparison.
 - [vs WriteHuman](https://aifreetextpro.com/vs-writehuman): Side-by-side comparison.
 - [vs HumanizeAI Pro](https://aifreetextpro.com/vs-humanizeai-pro): Side-by-side comparison.
+- [vs StealthWriter](https://aifreetextpro.com/vs/stealthwriter): StealthWriter alternative comparison.
+- [vs Phrasly](https://aifreetextpro.com/vs/phrasly): Phrasly alternative comparison.
+- [vs BypassGPT](https://aifreetextpro.com/vs/bypassgpt): BypassGPT alternative comparison.
+- [vs Netus AI](https://aifreetextpro.com/vs/netus-ai): Netus AI alternative comparison.
+- [vs Twixify](https://aifreetextpro.com/vs/twixify): Twixify alternative comparison.
+- [vs Humbot](https://aifreetextpro.com/vs/humbot): Humbot alternative comparison.
 - [Compare AI Humanizers](https://aifreetextpro.com/compare-ai-humanizers): Multi-tool humanizer comparison.
+- [Detector: Turnitin](https://aifreetextpro.com/detector/turnitin): How Turnitin AI detection works.
+- [Detector: GPTZero](https://aifreetextpro.com/detector/gptzero): How GPTZero works.
+- [Detector: Originality.AI](https://aifreetextpro.com/detector/originality): How Originality.AI works.
+- [Detector: Copyleaks](https://aifreetextpro.com/detector/copyleaks): How Copyleaks AI detection works.
+- [Detector: Winston AI](https://aifreetextpro.com/detector/winston): How Winston AI works.
 - [About](https://aifreetextpro.com/about): Company mission and history.
 - [Team](https://aifreetextpro.com/team): Expert team led by Dr. Sarah Chen.
 - [Technology](https://aifreetextpro.com/technology): How our NLP humanization works.

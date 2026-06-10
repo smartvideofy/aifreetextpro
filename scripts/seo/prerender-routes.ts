@@ -28,6 +28,21 @@ export const prerenderRoutes = [
   "/vs-undetectable-ai",
   "/vs-humanizeai-pro",
 
+  // Programmatic /vs/ comparison pages
+  "/vs/stealthwriter",
+  "/vs/phrasly",
+  "/vs/bypassgpt",
+  "/vs/netus-ai",
+  "/vs/twixify",
+  "/vs/humbot",
+
+  // Programmatic /detector/ pages
+  "/detector/turnitin",
+  "/detector/gptzero",
+  "/detector/originality",
+  "/detector/copyleaks",
+  "/detector/winston",
+
   // Use case pages
   "/ai-humanizer-for-students",
   "/ai-humanizer-for-writers",

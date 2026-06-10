@@ -169,7 +169,7 @@ const Footer = () => {
   return (
     <footer className="border-t bg-gradient-to-b from-background to-muted/50">
       <div className="container mx-auto px-4 py-12 md:py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-7 gap-0 md:gap-8 mb-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-8 gap-0 md:gap-8 mb-10">
           {/* Brand Column */}
           <div className="space-y-4 lg:col-span-1 pb-6 md:pb-0 border-b border-border/20 md:border-b-0">
             <Link to="/" className="flex items-center gap-2">

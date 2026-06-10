@@ -31,10 +31,11 @@ const DetectorTemplate = () => {
         modifiedTime="2026-06-09"
       />
       <AuthorSchema
-        articleTitle={title}
-        articleDescription={data.metaDescription}
+        headline={title}
+        description={data.metaDescription}
         articleUrl={`https://aifreetextpro.com${canonical}`}
         datePublished="2026-06-10"
+        dateModified="2026-06-09"
       />
 
       <Navbar />
@@ -106,7 +107,7 @@ const DetectorTemplate = () => {
 
         <FAQSection
           title={`${data.name} FAQ`}
-          faqs={data.faq}
+          faqs={data.faq.map(f => ({ question: f.q, answer: f.a }))}
         />
 
         <PillarHubLinks hub="detection" currentPage={canonical} limit={9} title="More on AI detection" />

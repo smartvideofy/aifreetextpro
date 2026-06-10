@@ -33,16 +33,21 @@ const VsTemplate = () => {
         modifiedTime="2026-06-09"
       />
       <AuthorSchema
-        articleTitle={title}
-        articleDescription={data.metaDescription}
+        headline={title}
+        description={data.metaDescription}
         articleUrl={`https://aifreetextpro.com${canonical}`}
         datePublished="2026-06-10"
+        dateModified="2026-06-09"
       />
       <ReviewSchema
         itemName={`AI Free Text Pro vs ${data.name}`}
+        reviewUrl={`https://aifreetextpro.com${canonical}`}
         ratingValue={4.8}
-        reviewCount={1247}
+        ratingCount={1247}
         bestRating={5}
+        reviewHeadline={`AI Free Text Pro outperforms ${data.name} on value and bypass rate`}
+        reviewBody={data.verdict}
+        datePublished="2026-06-10"
       />
       <Helmet>
         <script type="application/ld+json">{JSON.stringify({
@@ -120,7 +125,7 @@ const VsTemplate = () => {
 
         <FAQSection
           title={`${data.name} alternative FAQ`}
-          faqs={data.faq}
+          faqs={data.faq.map(f => ({ question: f.q, answer: f.a }))}
         />
 
         <section className="my-12 text-center bg-gradient-to-br from-primary/10 to-accent/10 rounded-2xl p-10">

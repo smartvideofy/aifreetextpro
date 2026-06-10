@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { ArrowRight, Shield, Target, Sparkles, Pen, BookOpen, Users, GraduationCap } from "lucide-react";
+import { ItemListSchema } from "@/components/ItemListSchema";
 
 // Define the 4 pillar hubs and their spoke pages
 export const pillarHubs = {

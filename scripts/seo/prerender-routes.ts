@@ -72,6 +72,8 @@ export const prerenderRoutes = [
   "/blog/best-ai-detector-2026",
   "/blog/stealthwriter-alternative",
   "/blog/ai-humanizer-for-essays",
+  "/blog/humanize-gpt5-output",
+  "/blog/ai-detector-for-students-2026",
 ];
 
 // Routes that should be prerendered with verbose Helmet flush logging.

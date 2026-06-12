@@ -48,6 +48,22 @@ const categoryThumbnails: Record<string, string> = {
 
 export const blogPosts = [
   {
+    slug: "humanize-gpt5-output",
+    title: "How to Humanize GPT-5 Output (2026 Guide): Bypass AI Detection",
+    excerpt: "Raw GPT-5 is flagged at 71-86% by Turnitin and 78-91% by GPTZero. A 6-step workflow that drops scores to 4-8% without losing reasoning quality.",
+    date: "2026-06-12",
+    readTime: "11 min read",
+    category: "How-To Guide"
+  },
+  {
+    slug: "ai-detector-for-students-2026",
+    title: "Best AI Detector for Students 2026 (Free Tools That Actually Work)",
+    excerpt: "We tested 8 free AI detectors on 200 real student essays. Best accuracy 94%, lowest false-positive rate 2%. Full ranking and self-checking workflow.",
+    date: "2026-06-12",
+    readTime: "12 min read",
+    category: "Academic"
+  },
+  {
     slug: "humanize-claude-output",
     title: "How to Humanize Claude Output (2026 Guide): Bypass AI Detection",
     excerpt: "Claude is detected at 74-83% by Turnitin, GPTZero, and Originality.AI. Real test data and a 5-step workflow that drops scores to 4-9% while preserving reasoning.",

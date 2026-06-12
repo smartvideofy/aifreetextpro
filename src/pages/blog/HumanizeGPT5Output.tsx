@@ -75,6 +75,7 @@ const HumanizeGPT5Output = () => {
         pageName="Humanize GPT-5 Output"
       />
       <PostHowToSchema
+        url="https://aifreetextpro.com/blog/humanize-gpt5-output"
         name="How to Humanize GPT-5 Output"
         description="A 6-step workflow to humanize GPT-5 output so it bypasses Turnitin, GPTZero, and Originality.AI."
         steps={[

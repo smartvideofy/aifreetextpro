@@ -16,17 +16,21 @@
  */
 import { readFileSync, existsSync, statSync } from "node:fs";
 import { resolve } from "node:path";
-import { fileURLToPath } from "node:url";
+import { fileURLToPath, pathToFileURL } from "node:url";
 
 const __dirname = fileURLToPath(new URL(".", import.meta.url));
 const ROOT = resolve(__dirname, "../..");
 const DIST = resolve(ROOT, "dist");
 
-const FALLBACK_TITLE_FRAGMENT = "AI Humanizer & Detector | Bypass Turnitin";
+// Must match the static homepage <title> in index.html. If an inner route
+// shows this, the prerender captured the fallback head instead of the
+// route's Helmet head.
+const FALLBACK_TITLE_FRAGMENT = "1,000 Words Free, No Signup";
 
 async function loadRoutes() {
-  // dynamic import so this script stays plain ESM
-  const mod = await import(resolve(ROOT, "scripts/seo/prerender-routes.ts").replace(/\\/g, "/"));
+  // dynamic import; pathToFileURL is required on Windows, where a raw
+  // "C:\..." path is rejected by the ESM loader (ERR_UNSUPPORTED_ESM_URL_SCHEME).
+  const mod = await import(pathToFileURL(resolve(ROOT, "scripts/seo/prerender-routes.ts")).href);
   return mod.prerenderRoutes;
 }
 

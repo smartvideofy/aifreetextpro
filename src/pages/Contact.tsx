@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+﻿import { Link } from "react-router-dom";
 import { ArrowLeft, ArrowRight, Mail, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
@@ -23,13 +23,13 @@ const Contact = () => {
         <meta property="og:description" content="Need help? Our team responds within 24 hours. Email, FAQs, and troubleshooting." />
         <meta property="og:url" content="https://aifreetextpro.com/contact" />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" />
+        <meta property="og:image" content="https://aifreetextpro.com/og-image.png" />
         <meta property="og:site_name" content="AI Free Text Pro" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@aifreetextpro" />
         <meta name="twitter:title" content="Contact Us - AI Free Text Pro | 24h Response" />
         <meta name="twitter:description" content="Need help? Our team responds within 24 hours. Email, FAQs, and troubleshooting." />
-        <meta name="twitter:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" />
+        <meta name="twitter:image" content="https://aifreetextpro.com/og-image.png" />
         
         {/* FAQ Schema */}
         <script type="application/ld+json">

@@ -1,4 +1,4 @@
-import { useState, useMemo, useEffect } from "react";
+﻿import { useState, useMemo, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Card } from "@/components/ui/card";
 import { supabase } from "@/integrations/supabase/client";
@@ -793,7 +793,7 @@ export const blogPosts = [
   },
   {
     slug: "bypass-copyleaks-ai-detection",
-    title: "Bypass Copyleaks AI Detection – Proven Techniques for 2026",
+    title: "Bypass Copyleaks AI Detection â€“ Proven Techniques for 2026",
     excerpt: "Learn expert strategies to humanize AI-generated text, lower Copyleaks detection scores, and maintain readability while preserving integrity.",
     date: "2026-01-20",
     readTime: "12 min read",
@@ -801,7 +801,7 @@ export const blogPosts = [
   },
   {
     slug: "bypass-winston-ai-detection",
-    title: "Bypass Winston AI Detection – Reduce AI Scores & Humanize Text",
+    title: "Bypass Winston AI Detection â€“ Reduce AI Scores & Humanize Text",
     excerpt: "Discover how to bypass Winston AI detection safely. Expert strategies to humanize AI-generated text and lower detection scores.",
     date: "2026-01-20",
     readTime: "11 min read",
@@ -809,7 +809,7 @@ export const blogPosts = [
   },
   {
     slug: "bypass-zerogpt-ai-detection",
-    title: "Bypass ZeroGPT AI Detection – Humanize AI Content & Reduce Scores",
+    title: "Bypass ZeroGPT AI Detection â€“ Humanize AI Content & Reduce Scores",
     excerpt: "Learn how to bypass ZeroGPT AI detection effectively. Strategies to humanize AI-generated content and reduce detection scores.",
     date: "2026-01-20",
     readTime: "10 min read",
@@ -1100,13 +1100,13 @@ const Blog = () => {
         <meta property="og:description" content="Expert guides on AI detection, humanization, and writing quality." />
         <meta property="og:url" content="https://aifreetextpro.com/blog" />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" />
+        <meta property="og:image" content="https://aifreetextpro.com/og-image.png" />
         <meta property="og:site_name" content="AI Free Text Pro" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@aifreetextpro" />
         <meta name="twitter:title" content="AI Writing Blog - Guides & Tools" />
         <meta name="twitter:description" content="Expert guides on AI detection, humanization, and writing quality." />
-        <meta name="twitter:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" />
+        <meta name="twitter:image" content="https://aifreetextpro.com/og-image.png" />
         
         {/* Blog CollectionPage Schema */}
         <script type="application/ld+json">

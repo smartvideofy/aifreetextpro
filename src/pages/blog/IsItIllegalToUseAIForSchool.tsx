@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+﻿import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { Calendar, Clock, ArrowLeft, ExternalLink, Scale, AlertTriangle, BookOpen, CheckCircle, ShieldAlert, GraduationCap } from "lucide-react";
 import Navbar from "@/components/Navbar";
@@ -68,7 +68,7 @@ const faqs = [
 
 const IsItIllegalToUseAIForSchool = () => {
   const canonicalUrl = "https://aifreetextpro.com/blog/is-it-illegal-to-use-ai-for-school";
-  const ogImage = "https://aifreetextpro.com/social-images/social-1759692115249-Logo.PNG";
+  const ogImage = "https://aifreetextpro.com/og-image.png";
   const publishDate = "2026-02-26T08:00:00+00:00";
 
   return (

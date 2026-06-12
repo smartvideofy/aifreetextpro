@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet-async";
+﻿import { Helmet } from "react-helmet-async";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
@@ -62,7 +62,7 @@ const faqs = [
 
 export default function HumanizeAITravelBlogs() {
   const canonical = "https://aifreetextpro.com/blog/humanize-ai-travel-blogs";
-  const ogImage = "https://aifreetextpro.com/public/images/blog/humanize-ai-travel-blogs.png";
+  const ogImage = "https://aifreetextpro.com/og-image.png";
 
   return (
     <>
@@ -191,9 +191,9 @@ export default function HumanizeAITravelBlogs() {
             <header className="mb-8">
               <div className="flex items-center gap-2 text-sm text-muted-foreground mb-4">
                 <span className="px-3 py-1 bg-primary/10 text-primary rounded-full">Humanize</span>
-                <span>•</span>
+                <span>â€¢</span>
                 <time dateTime="2026-02-02">February 2, 2026</time>
-                <span>•</span>
+                <span>â€¢</span>
                 <span>14 min read</span>
               </div>
               
@@ -317,7 +317,7 @@ export default function HumanizeAITravelBlogs() {
                       </div>
                       <div className="border-l-4 border-primary pl-4">
                         <p className="font-medium text-primary mb-1">Humanized:</p>
-                        <p className="italic text-muted-foreground">"Order the cacio e pepe at Trattoria da Enzo, but don't ask for modifications. The owner, Enzo (yes, that's really him), will refuse and honestly, he's right. €12 for the best pasta I've eaten, cash only, and they close randomly on Wednesdays, 'for family.' Reservations are a myth; just show up at 8pm and wait the 20 minutes."</p>
+                        <p className="italic text-muted-foreground">"Order the cacio e pepe at Trattoria da Enzo, but don't ask for modifications. The owner, Enzo (yes, that's really him), will refuse and honestly, he's right. â‚¬12 for the best pasta I've eaten, cash only, and they close randomly on Wednesdays, 'for family.' Reservations are a myth; just show up at 8pm and wait the 20 minutes."</p>
                       </div>
                     </div>
                   </div>
@@ -417,7 +417,7 @@ export default function HumanizeAITravelBlogs() {
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle className="w-4 h-4 text-primary mt-1 flex-shrink-0" />
-                    <span>Including exact prices and currency (€12, not "affordable")</span>
+                    <span>Including exact prices and currency (â‚¬12, not "affordable")</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <CheckCircle className="w-4 h-4 text-primary mt-1 flex-shrink-0" />
@@ -441,11 +441,11 @@ export default function HumanizeAITravelBlogs() {
                 <div className="bg-primary/5 border border-primary/20 rounded-lg p-6 my-6">
                   <h4 className="font-semibold mb-3">Enrichment Checklist</h4>
                   <ul className="space-y-2 text-muted-foreground mb-0">
-                    <li>☑️ All business hours and prices verified (they change!)</li>
-                    <li>☑️ Transportation details include alternatives</li>
-                    <li>☑️ Cultural customs explained with context</li>
-                    <li>☑️ Seasonal considerations noted</li>
-                    <li>☑️ Links to official sources where helpful</li>
+                    <li>â˜‘ï¸ All business hours and prices verified (they change!)</li>
+                    <li>â˜‘ï¸ Transportation details include alternatives</li>
+                    <li>â˜‘ï¸ Cultural customs explained with context</li>
+                    <li>â˜‘ï¸ Seasonal considerations noted</li>
+                    <li>â˜‘ï¸ Links to official sources where helpful</li>
                   </ul>
                 </div>
               </section>

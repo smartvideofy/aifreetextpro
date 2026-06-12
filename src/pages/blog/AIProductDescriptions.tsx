@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet-async";
+﻿import { Helmet } from "react-helmet-async";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
@@ -61,8 +61,8 @@ const faqs = [
 ];
 
 export default function AIProductDescriptions() {
-  const canonical = "https://aifreetextpro.com/blog/humanize-ai-product-descriptions-2026";
-  const ogImage = "https://aifreetextpro.com/public/images/blog/ai-product-descriptions.png";
+  const canonical = "https://aifreetextpro.com/blog/ai-product-descriptions";
+  const ogImage = "https://aifreetextpro.com/og-image.png";
 
   return (
     <>
@@ -166,9 +166,9 @@ export default function AIProductDescriptions() {
             <header className="mb-8">
               <div className="flex items-center gap-2 text-sm text-muted-foreground mb-4">
                 <span className="px-3 py-1 bg-primary/10 text-primary rounded-full">eCommerce</span>
-                <span>•</span>
+                <span>â€¢</span>
                 <time dateTime="2026-02-02">February 2, 2026</time>
-                <span>•</span>
+                <span>â€¢</span>
                 <span>18 min read</span>
               </div>
               
@@ -372,10 +372,10 @@ export default function AIProductDescriptions() {
                     </h3>
                     <p className="mb-3">Amazon shoppers scan quickly. Optimize for bullets and A+ content:</p>
                     <ul className="text-sm space-y-1">
-                      <li>• <strong>Title:</strong> Front-load key features and keywords (200 chars max)</li>
-                      <li>• <strong>Bullets:</strong> 5 benefit-focused points starting with caps (500 chars each)</li>
-                      <li>• <strong>Description:</strong> Expand on bullets with storytelling (2,000 chars)</li>
-                      <li>• <strong>A+ Content:</strong> Use comparison charts and lifestyle imagery</li>
+                      <li>â€¢ <strong>Title:</strong> Front-load key features and keywords (200 chars max)</li>
+                      <li>â€¢ <strong>Bullets:</strong> 5 benefit-focused points starting with caps (500 chars each)</li>
+                      <li>â€¢ <strong>Description:</strong> Expand on bullets with storytelling (2,000 chars)</li>
+                      <li>â€¢ <strong>A+ Content:</strong> Use comparison charts and lifestyle imagery</li>
                     </ul>
                   </div>
 
@@ -386,10 +386,10 @@ export default function AIProductDescriptions() {
                     </h3>
                     <p className="mb-3">More creative freedom. Balance storytelling with scannability:</p>
                     <ul className="text-sm space-y-1">
-                      <li>• <strong>Opening:</strong> Hook with benefit or story (2-3 sentences)</li>
-                      <li>• <strong>Body:</strong> Mix paragraphs and bullets (150-200 words)</li>
-                      <li>• <strong>Features:</strong> Use icons or visual breakouts</li>
-                      <li>• <strong>Close:</strong> Clear CTA with urgency when appropriate</li>
+                      <li>â€¢ <strong>Opening:</strong> Hook with benefit or story (2-3 sentences)</li>
+                      <li>â€¢ <strong>Body:</strong> Mix paragraphs and bullets (150-200 words)</li>
+                      <li>â€¢ <strong>Features:</strong> Use icons or visual breakouts</li>
+                      <li>â€¢ <strong>Close:</strong> Clear CTA with urgency when appropriate</li>
                     </ul>
                   </div>
 
@@ -400,10 +400,10 @@ export default function AIProductDescriptions() {
                     </h3>
                     <p className="mb-3">Etsy buyers value handmade, unique, and story-driven products:</p>
                     <ul className="text-sm space-y-1">
-                      <li>• <strong>Story First:</strong> Lead with maker story and inspiration</li>
-                      <li>• <strong>Materials:</strong> Detail sourcing and craftsmanship</li>
-                      <li>• <strong>Personalization:</strong> Explain customization options clearly</li>
-                      <li>• <strong>Care Instructions:</strong> Show expertise and longevity</li>
+                      <li>â€¢ <strong>Story First:</strong> Lead with maker story and inspiration</li>
+                      <li>â€¢ <strong>Materials:</strong> Detail sourcing and craftsmanship</li>
+                      <li>â€¢ <strong>Personalization:</strong> Explain customization options clearly</li>
+                      <li>â€¢ <strong>Care Instructions:</strong> Show expertise and longevity</li>
                     </ul>
                   </div>
 
@@ -414,10 +414,10 @@ export default function AIProductDescriptions() {
                     </h3>
                     <p className="mb-3">eBay buyers are detail-oriented and comparison-shopping:</p>
                     <ul className="text-sm space-y-1">
-                      <li>• <strong>Specs First:</strong> Detailed item specifics are essential</li>
-                      <li>• <strong>Condition:</strong> Be extremely clear about product condition</li>
-                      <li>• <strong>Shipping:</strong> Include dimensions and shipping details</li>
-                      <li>• <strong>Returns:</strong> Clear return policy builds confidence</li>
+                      <li>â€¢ <strong>Specs First:</strong> Detailed item specifics are essential</li>
+                      <li>â€¢ <strong>Condition:</strong> Be extremely clear about product condition</li>
+                      <li>â€¢ <strong>Shipping:</strong> Include dimensions and shipping details</li>
+                      <li>â€¢ <strong>Returns:</strong> Clear return policy builds confidence</li>
                     </ul>
                   </div>
                 </div>
@@ -431,11 +431,11 @@ export default function AIProductDescriptions() {
                   <h3 className="font-semibold mb-4">Electronics: Wireless Earbuds</h3>
                   <div className="space-y-4">
                     <div className="border-l-4 border-destructive/50 pl-4">
-                      <p className="font-medium mb-1">❌ AI Draft:</p>
+                      <p className="font-medium mb-1">âŒ AI Draft:</p>
                       <p className="italic text-muted-foreground">"These wireless earbuds feature Bluetooth 5.3 connectivity, 40-hour battery life with the charging case, active noise cancellation, and IPX5 water resistance. The earbuds are lightweight at 5g per earbud and come with three sizes of silicone ear tips for a comfortable fit."</p>
                     </div>
                     <div className="border-l-4 border-primary pl-4">
-                      <p className="font-medium mb-1">✅ Humanized:</p>
+                      <p className="font-medium mb-1">âœ… Humanized:</p>
                       <p className="italic text-muted-foreground">"Block out the subway, the chatter, the chaos. With ANC that actually works, you'll finally hear every note, every word, every beat the way the artist intended. The 40-hour battery means you'll charge these about as often as you do laundry (weekly, right?). At just 5g per earbud, you'll forget you're wearing them. Until your favorite song comes on."</p>
                     </div>
                   </div>
@@ -446,12 +446,12 @@ export default function AIProductDescriptions() {
                   <h3 className="font-semibold mb-4">Fashion: Cashmere Sweater</h3>
                   <div className="space-y-4">
                     <div className="border-l-4 border-destructive/50 pl-4">
-                      <p className="font-medium mb-1">❌ AI Draft:</p>
+                      <p className="font-medium mb-1">âŒ AI Draft:</p>
                       <p className="italic text-muted-foreground">"This cashmere sweater is made from 100% Grade A Mongolian cashmere. It features a classic crew neck design, ribbed cuffs and hem, and is available in 12 colors. The sweater is dry clean only and comes in sizes XS-XXL."</p>
                     </div>
                     <div className="border-l-4 border-primary pl-4">
-                      <p className="font-medium mb-1">✅ Humanized:</p>
-                      <p className="italic text-muted-foreground">"That moment when you slip on real cashmere: the softness against your skin, the perfect weight for crisp autumn mornings and overheated offices alike. Sourced from the Gobi Desert where temperatures swing 40°C daily, these fibers know how to regulate. This isn't the cashmere that pills after two washes. Grade A Mongolian means the finest, longest fibers. Invest once, layer for decades."</p>
+                      <p className="font-medium mb-1">âœ… Humanized:</p>
+                      <p className="italic text-muted-foreground">"That moment when you slip on real cashmere: the softness against your skin, the perfect weight for crisp autumn mornings and overheated offices alike. Sourced from the Gobi Desert where temperatures swing 40Â°C daily, these fibers know how to regulate. This isn't the cashmere that pills after two washes. Grade A Mongolian means the finest, longest fibers. Invest once, layer for decades."</p>
                     </div>
                   </div>
                 </div>
@@ -461,11 +461,11 @@ export default function AIProductDescriptions() {
                   <h3 className="font-semibold mb-4">Home Goods: Dutch Oven</h3>
                   <div className="space-y-4">
                     <div className="border-l-4 border-destructive/50 pl-4">
-                      <p className="font-medium mb-1">❌ AI Draft:</p>
-                      <p className="italic text-muted-foreground">"This 6-quart enameled cast iron Dutch oven features heat-resistant handles, a self-basting lid, and works on all cooktops including induction. It is oven safe to 500°F and available in 8 colors. The enamel interior does not require seasoning."</p>
+                      <p className="font-medium mb-1">âŒ AI Draft:</p>
+                      <p className="italic text-muted-foreground">"This 6-quart enameled cast iron Dutch oven features heat-resistant handles, a self-basting lid, and works on all cooktops including induction. It is oven safe to 500Â°F and available in 8 colors. The enamel interior does not require seasoning."</p>
                     </div>
                     <div className="border-l-4 border-primary pl-4">
-                      <p className="font-medium mb-1">✅ Humanized:</p>
+                      <p className="font-medium mb-1">âœ… Humanized:</p>
                       <p className="italic text-muted-foreground">"Sunday dinner smells start here: beef bourguignon bubbling low and slow, crusty bread with that satisfying crack, soups that taste like your grandmother made them (even if she didn't cook). Six quarts feeds your family now and leftovers for Monday. The self-basting lid means moist results without constant monitoring. Stovetop to oven to table: one pot, fewer dishes, more time with your people."</p>
                     </div>
                   </div>
@@ -477,27 +477,27 @@ export default function AIProductDescriptions() {
                 
                 <div className="space-y-4">
                   <div className="bg-card border border-border rounded-lg p-4">
-                    <h4 className="font-semibold mb-2">❌ Generic Superlatives</h4>
+                    <h4 className="font-semibold mb-2">âŒ Generic Superlatives</h4>
                     <p className="text-sm text-muted-foreground mb-2">"The best quality" / "Premium materials" / "Superior craftsmanship"</p>
                     <p className="text-sm"><strong>Fix:</strong> Replace with specifics. "Japanese 440C stainless steel" beats "premium blade." Show, don't tell.</p>
                   </div>
                   <div className="bg-card border border-border rounded-lg p-4">
-                    <h4 className="font-semibold mb-2">❌ Feature Lists Without Benefits</h4>
+                    <h4 className="font-semibold mb-2">âŒ Feature Lists Without Benefits</h4>
                     <p className="text-sm text-muted-foreground mb-2">"Features Bluetooth 5.3, 40-hour battery, ANC"</p>
                     <p className="text-sm"><strong>Fix:</strong> Translate each feature into a benefit. Bluetooth 5.3 = "rock-solid connection up to 30 feet away."</p>
                   </div>
                   <div className="bg-card border border-border rounded-lg p-4">
-                    <h4 className="font-semibold mb-2">❌ Passive Voice</h4>
+                    <h4 className="font-semibold mb-2">âŒ Passive Voice</h4>
                     <p className="text-sm text-muted-foreground mb-2">"The product can be used to..." / "It is designed to..."</p>
                     <p className="text-sm"><strong>Fix:</strong> Use active, direct language. "You'll..." or "Slice through..." or imperatives like "Experience..."</p>
                   </div>
                   <div className="bg-card border border-border rounded-lg p-4">
-                    <h4 className="font-semibold mb-2">❌ Repetitive Sentence Structure</h4>
+                    <h4 className="font-semibold mb-2">âŒ Repetitive Sentence Structure</h4>
                     <p className="text-sm text-muted-foreground mb-2">"This product offers... This product features... This product includes..."</p>
                     <p className="text-sm"><strong>Fix:</strong> Vary sentence length and structure. Mix short punchy sentences with longer flowing ones.</p>
                   </div>
                   <div className="bg-card border border-border rounded-lg p-4">
-                    <h4 className="font-semibold mb-2">❌ Missing Sensory Details</h4>
+                    <h4 className="font-semibold mb-2">âŒ Missing Sensory Details</h4>
                     <p className="text-sm text-muted-foreground mb-2">"Comfortable fabric" / "Pleasant scent"</p>
                     <p className="text-sm"><strong>Fix:</strong> Be specific. "Cloud-soft modal that breathes on humid days" or "Notes of bergamot and sandalwood."</p>
                   </div>

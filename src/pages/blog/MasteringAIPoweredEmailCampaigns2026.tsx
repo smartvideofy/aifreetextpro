@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet-async";
+﻿import { Helmet } from "react-helmet-async";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
@@ -62,7 +62,7 @@ const faqs = [
 
 export default function MasteringAIPoweredEmailCampaigns2026() {
   const canonical = "https://aifreetextpro.com/blog/mastering-ai-powered-email-campaigns-2026";
-  const ogImage = "https://aifreetextpro.com/public/images/blog/mastering-ai-email-2026.png";
+  const ogImage = "https://aifreetextpro.com/og-image.png";
 
   return (
     <>
@@ -173,9 +173,9 @@ export default function MasteringAIPoweredEmailCampaigns2026() {
             <header className="mb-8">
               <div className="flex items-center gap-2 text-sm text-muted-foreground mb-4">
                 <span className="px-3 py-1 bg-primary/10 text-primary rounded-full">Marketing</span>
-                <span>•</span>
+                <span>â€¢</span>
                 <time dateTime="2026-02-02">February 2, 2026</time>
-                <span>•</span>
+                <span>â€¢</span>
                 <span>14 min read</span>
               </div>
 
@@ -310,10 +310,10 @@ export default function MasteringAIPoweredEmailCampaigns2026() {
                     <div className="bg-muted/50 rounded p-4">
                       <p className="text-sm font-medium mb-2">AI Segmentation Examples:</p>
                       <ul className="text-sm text-muted-foreground space-y-1 mb-0">
-                        <li>• "Likely to purchase in next 7 days" based on browse behavior</li>
-                        <li>• "At risk of unsubscribing" based on declining engagement</li>
-                        <li>• "Prefers educational content" based on click patterns</li>
-                        <li>• "Best responds to urgency messaging" based on conversion data</li>
+                        <li>â€¢ "Likely to purchase in next 7 days" based on browse behavior</li>
+                        <li>â€¢ "At risk of unsubscribing" based on declining engagement</li>
+                        <li>â€¢ "Prefers educational content" based on click patterns</li>
+                        <li>â€¢ "Best responds to urgency messaging" based on conversion data</li>
                       </ul>
                     </div>
                   </div>
@@ -411,10 +411,10 @@ export default function MasteringAIPoweredEmailCampaigns2026() {
                     <div className="bg-muted/50 rounded p-4">
                       <p className="text-sm font-medium mb-2">AI Analysis Questions:</p>
                       <ul className="text-sm text-muted-foreground space-y-1 mb-0">
-                        <li>• Which subject line patterns perform best for which segments?</li>
-                        <li>• What content types drive clicks vs. conversions?</li>
-                        <li>• Which subscribers are disengaging, and why?</li>
-                        <li>• What's the optimal email frequency for different segments?</li>
+                        <li>â€¢ Which subject line patterns perform best for which segments?</li>
+                        <li>â€¢ What content types drive clicks vs. conversions?</li>
+                        <li>â€¢ Which subscribers are disengaging, and why?</li>
+                        <li>â€¢ What's the optimal email frequency for different segments?</li>
                       </ul>
                     </div>
                   </div>
@@ -434,12 +434,12 @@ export default function MasteringAIPoweredEmailCampaigns2026() {
                       AI Email Red Flags
                     </h3>
                     <ul className="space-y-2 text-sm text-muted-foreground mb-0">
-                      <li>• Generic greetings ("Dear Valued Customer")</li>
-                      <li>• Overly perfect, formal language</li>
-                      <li>• Missing brand personality and voice</li>
-                      <li>• Hollow calls-to-action</li>
-                      <li>• No storytelling or emotional hooks</li>
-                      <li>• Predictable structure in every email</li>
+                      <li>â€¢ Generic greetings ("Dear Valued Customer")</li>
+                      <li>â€¢ Overly perfect, formal language</li>
+                      <li>â€¢ Missing brand personality and voice</li>
+                      <li>â€¢ Hollow calls-to-action</li>
+                      <li>â€¢ No storytelling or emotional hooks</li>
+                      <li>â€¢ Predictable structure in every email</li>
                     </ul>
                   </div>
                   <div className="bg-primary/10 border border-primary/20 rounded-lg p-5">
@@ -448,12 +448,12 @@ export default function MasteringAIPoweredEmailCampaigns2026() {
                       Humanized AI Email Traits
                     </h3>
                     <ul className="space-y-2 text-sm text-muted-foreground mb-0">
-                      <li>• Casual, conversational tone</li>
-                      <li>• Brand-specific vocabulary and personality</li>
-                      <li>• Personal stories and specific examples</li>
-                      <li>• Varied sentence structure and length</li>
-                      <li>• Authentic calls-to-action</li>
-                      <li>• Creative subject lines with personality</li>
+                      <li>â€¢ Casual, conversational tone</li>
+                      <li>â€¢ Brand-specific vocabulary and personality</li>
+                      <li>â€¢ Personal stories and specific examples</li>
+                      <li>â€¢ Varied sentence structure and length</li>
+                      <li>â€¢ Authentic calls-to-action</li>
+                      <li>â€¢ Creative subject lines with personality</li>
                     </ul>
                   </div>
                 </div>

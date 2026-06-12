@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet-async";
+﻿import { Helmet } from "react-helmet-async";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
@@ -62,7 +62,7 @@ const faqs = [
 
 export default function HumanizeAIStories() {
   const canonical = "https://aifreetextpro.com/blog/humanize-ai-generated-stories-fiction";
-  const ogImage = "https://aifreetextpro.com/public/images/blog/humanize-ai-stories.png";
+  const ogImage = "https://aifreetextpro.com/og-image.png";
 
   return (
     <>
@@ -170,9 +170,9 @@ export default function HumanizeAIStories() {
             <header className="mb-8">
               <div className="flex items-center gap-2 text-sm text-muted-foreground mb-4">
                 <span className="px-3 py-1 bg-primary/10 text-primary rounded-full">Writing Craft</span>
-                <span>•</span>
+                <span>â€¢</span>
                 <time dateTime="2026-02-02">February 2, 2026</time>
-                <span>•</span>
+                <span>â€¢</span>
                 <span>14 min read</span>
               </div>
               
@@ -238,12 +238,12 @@ export default function HumanizeAIStories() {
                       AI Fiction Weaknesses
                     </h3>
                     <ul className="space-y-2 text-sm text-muted-foreground mb-0">
-                      <li>• <strong>Flat emotional arcs:</strong> Characters don't grow authentically</li>
-                      <li>• <strong>Generic sensory details:</strong> "Beautiful sunset" instead of specific imagery</li>
-                      <li>• <strong>Predictable plot beats:</strong> Follows tropes too closely</li>
-                      <li>• <strong>Uniform dialogue:</strong> All characters sound the same</li>
-                      <li>• <strong>Telling not showing:</strong> States emotions instead of demonstrating</li>
-                      <li>• <strong>Missing subtext:</strong> Everything is surface-level</li>
+                      <li>â€¢ <strong>Flat emotional arcs:</strong> Characters don't grow authentically</li>
+                      <li>â€¢ <strong>Generic sensory details:</strong> "Beautiful sunset" instead of specific imagery</li>
+                      <li>â€¢ <strong>Predictable plot beats:</strong> Follows tropes too closely</li>
+                      <li>â€¢ <strong>Uniform dialogue:</strong> All characters sound the same</li>
+                      <li>â€¢ <strong>Telling not showing:</strong> States emotions instead of demonstrating</li>
+                      <li>â€¢ <strong>Missing subtext:</strong> Everything is surface-level</li>
                     </ul>
                   </div>
                   <div className="bg-primary/10 border border-primary/20 rounded-lg p-5">
@@ -252,12 +252,12 @@ export default function HumanizeAIStories() {
                       AI Fiction Strengths
                     </h3>
                     <ul className="space-y-2 text-sm text-muted-foreground mb-0">
-                      <li>• <strong>Plot structure:</strong> Solid three-act frameworks</li>
-                      <li>• <strong>World-building basics:</strong> Consistent setting details</li>
-                      <li>• <strong>Scene sequencing:</strong> Logical story progression</li>
-                      <li>• <strong>Genre conventions:</strong> Understands reader expectations</li>
-                      <li>• <strong>Draft volume:</strong> Generates options quickly</li>
-                      <li>• <strong>Research integration:</strong> Incorporates factual details</li>
+                      <li>â€¢ <strong>Plot structure:</strong> Solid three-act frameworks</li>
+                      <li>â€¢ <strong>World-building basics:</strong> Consistent setting details</li>
+                      <li>â€¢ <strong>Scene sequencing:</strong> Logical story progression</li>
+                      <li>â€¢ <strong>Genre conventions:</strong> Understands reader expectations</li>
+                      <li>â€¢ <strong>Draft volume:</strong> Generates options quickly</li>
+                      <li>â€¢ <strong>Research integration:</strong> Incorporates factual details</li>
                     </ul>
                   </div>
                 </div>
@@ -278,10 +278,10 @@ export default function HumanizeAIStories() {
                     <div className="bg-muted/50 rounded p-4">
                       <p className="text-sm font-medium mb-2">Best Prompts for Fiction Drafts:</p>
                       <ul className="text-sm text-muted-foreground space-y-1 mb-0">
-                        <li>• "Write a scene outline for [character] discovering [plot point]"</li>
-                        <li>• "Generate 3 different ways this conflict could escalate"</li>
-                        <li>• "Draft dialogue between [character A] and [character B] about [topic]"</li>
-                        <li>• "Create a character profile with contradictory traits"</li>
+                        <li>â€¢ "Write a scene outline for [character] discovering [plot point]"</li>
+                        <li>â€¢ "Generate 3 different ways this conflict could escalate"</li>
+                        <li>â€¢ "Draft dialogue between [character A] and [character B] about [topic]"</li>
+                        <li>â€¢ "Create a character profile with contradictory traits"</li>
                       </ul>
                     </div>
                   </div>
@@ -365,11 +365,11 @@ export default function HumanizeAIStories() {
                     <div className="bg-muted/50 rounded p-4">
                       <p className="text-sm font-medium mb-2">Dialogue Humanization Checklist:</p>
                       <ul className="text-sm text-muted-foreground space-y-1 mb-0">
-                        <li>• Can you identify who's speaking without dialogue tags?</li>
-                        <li>• Do characters interrupt each other?</li>
-                        <li>• Is there subtext (what's NOT being said)?</li>
-                        <li>• Do characters have unique verbal tics or phrases?</li>
-                        <li>• Does the dialogue reveal character, not just convey information?</li>
+                        <li>â€¢ Can you identify who's speaking without dialogue tags?</li>
+                        <li>â€¢ Do characters interrupt each other?</li>
+                        <li>â€¢ Is there subtext (what's NOT being said)?</li>
+                        <li>â€¢ Do characters have unique verbal tics or phrases?</li>
+                        <li>â€¢ Does the dialogue reveal character, not just convey information?</li>
                       </ul>
                     </div>
                   </div>
@@ -407,7 +407,7 @@ The armchair groaned when he finally lowered himself into it. The same sound it 
                       </div>
                       <div className="border-l-4 border-primary pl-4">
                         <p className="font-medium text-primary mb-1">Humanized:</p>
-                        <p className="text-muted-foreground italic">"I need to—" She stopped. Started again. "There's something."
+                        <p className="text-muted-foreground italic">"I need toâ€”" She stopped. Started again. "There's something."
 
 He didn't look up from his phone. "Mm."
 
@@ -423,7 +423,7 @@ The silence stretched. He set the phone down, carefully, like it might shatter.
 
 "I don't know how long."
 
-"That's not—" He laughed, but there was no humor in it. "That's not really an answer, is it."
+"That's notâ€”" He laughed, but there was no humor in it. "That's not really an answer, is it."
 
 She picked up her keys. Set them down. Picked them up again. "No. I guess it's not."</p>
                       </div>

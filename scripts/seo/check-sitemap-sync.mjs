@@ -37,6 +37,11 @@ const EXCLUDED_ROUTES = new Set([
   "/terms-of-service",
   "/editorial-guidelines",
   "/cookie-settings",
+  // Thin legacy article intentionally consolidated into the comprehensive
+  // /blog/bypass-ai-detection-guide: the page self-declares a canonical to the
+  // guide, so it must NOT be listed in the sitemap (don't advertise a URL that
+  // canonicalizes elsewhere). Route is kept so existing inbound links resolve.
+  "/blog/bypass-ai-detection-ethical-tips",
 ]);
 
 if (!existsSync(APP)) {

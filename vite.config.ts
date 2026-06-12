@@ -27,8 +27,15 @@ export default defineConfig(({ mode }) => ({
         renderer: "@prerenderer/renderer-puppeteer",
         rendererOptions: {
           renderAfterDocumentEvent: "render-event",
-          renderAfterTime: 20000,
-          maxConcurrentRoutes: 4,
+          // Ceiling the renderer waits for our "render-event" before snapshotting.
+          // MUST exceed main.tsx's MAX_WAIT_MS (25s) hard-timeout dispatch, or a
+          // slow route's Helmet-ready signal arrives after the renderer has
+          // already given up and captured the static fallback <head>.
+          renderAfterTime: 30000,
+          // Lower concurrency: under heavy parallelism the per-route Helmet flush
+          // was occasionally not landing within the window, yielding fallback
+          // <head> on a handful of routes. 2 trades build time for reliability.
+          maxConcurrentRoutes: 2,
           headless: true,
           // Inject a global flag for routes we want detailed Helmet flush
           // logs from. The renderer evaluates this in the page before nav.
@@ -89,7 +96,66 @@ export default defineConfig(({ mode }) => ({
                 ""
               );
             }
+            // Static og:*/twitter:* fallbacks — strip PER PROPERTY, and only
+            // when Helmet supplied a replacement for that exact property.
+            // A blanket strip would delete the static og:image fallback on the
+            // 120+ pages whose inline <Helmet> sets og:title but NOT og:image,
+            // leaving them with no social image at all. So: collect every
+            // property/name that appears on a data-rh meta tag, then remove the
+            // matching static (non-data-rh) tag one property at a time.
+            const rhProps = new Set<string>();
+            const rhMetaRe =
+              /<meta[^>]*\bdata-rh=["']true["'][^>]*\b(?:property|name)=["']([^"']+)["']|<meta[^>]*\b(?:property|name)=["']([^"']+)["'][^>]*\bdata-rh=["']true["']/gi;
+            let rhMatch: RegExpExecArray | null;
+            while ((rhMatch = rhMetaRe.exec(html))) {
+              const prop = rhMatch[1] || rhMatch[2];
+              if (prop && (prop.startsWith("og:") || prop.startsWith("twitter:"))) {
+                rhProps.add(prop);
+              }
+            }
+            for (const prop of rhProps) {
+              const esc = prop.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+              html = html.replace(
+                new RegExp(
+                  `<meta(?=[^>]*(?:property|name)=["']${esc}["'])(?![^>]*data-rh)[^>]*>\\s*`,
+                  "gi"
+                ),
+                ""
+              );
+            }
+            // Homepage JSON-LD fallbacks (Organization, SoftwareApplication,
+            // FAQPage, WebSite) must not ship on inner routes: FAQPage markup
+            // for FAQs not visible on the page risks a structured-data manual
+            // action, and per-route schemas already come from Helmet.
+            html = html.replace(
+              /<script(?=[^>]*type=["']application\/ld\+json["'])(?![^>]*data-rh)[^>]*>[\s\S]*?<\/script>\s*/gi,
+              ""
+            );
             rendered.html = html;
+          }
+
+          // On every route (including "/"): drop malformed canonicals that
+          // carry no href — hosts/tools can inject these and crawlers treat
+          // an empty canonical as a conflicting signal.
+          rendered.html = rendered.html.replace(
+            /<link(?=[^>]*rel=["']canonical["'])(?![^>]*href=)[^>]*>\s*/gi,
+            ""
+          );
+
+          // The homepage intentionally keeps the (more SEO-optimized) static
+          // <head> from index.html, which carries no canonical — so unlike
+          // inner routes it never receives a Helmet self-canonical. Inject one
+          // here rather than in index.html: a static canonical in the template
+          // would collapse any inner route that fails to emit its own Helmet
+          // canonical back to "/". This injection is scoped to "/" only.
+          if (
+            rendered.route === "/" &&
+            !/<link[^>]*rel=["']canonical["'][^>]*href=/i.test(rendered.html)
+          ) {
+            rendered.html = rendered.html.replace(
+              /<\/head>/i,
+              '  <link rel="canonical" href="https://aifreetextpro.com/" />\n</head>'
+            );
           }
 
           // For debug routes, also write the final HTML to disk so we can

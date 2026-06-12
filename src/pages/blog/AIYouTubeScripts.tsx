@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet-async";
+﻿import { Helmet } from "react-helmet-async";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
@@ -61,8 +61,8 @@ const faqs = [
 ];
 
 export default function AIYouTubeScripts() {
-  const canonical = "https://aifreetextpro.com/blog/ai-content-youtube-scripts-2026";
-  const ogImage = "https://aifreetextpro.com/public/images/blog/ai-youtube-scripts.png";
+  const canonical = "https://aifreetextpro.com/blog/ai-youtube-scripts";
+  const ogImage = "https://aifreetextpro.com/og-image.png";
 
   return (
     <>
@@ -165,9 +165,9 @@ export default function AIYouTubeScripts() {
             <header className="mb-8">
               <div className="flex items-center gap-2 text-sm text-muted-foreground mb-4">
                 <span className="px-3 py-1 bg-primary/10 text-primary rounded-full">Video Content</span>
-                <span>•</span>
+                <span>â€¢</span>
                 <time dateTime="2026-02-02">February 2, 2026</time>
-                <span>•</span>
+                <span>â€¢</span>
                 <span>14 min read</span>
               </div>
               
@@ -230,12 +230,12 @@ export default function AIYouTubeScripts() {
                       AI Script Patterns to Avoid
                     </h3>
                     <ul className="space-y-2 text-sm text-muted-foreground mb-0">
-                      <li>• Overly formal language ("It is important to note...")</li>
-                      <li>• Perfect grammar that sounds unnatural when spoken</li>
-                      <li>• Uniform sentence length throughout</li>
-                      <li>• Generic transitions ("Furthermore," "Additionally")</li>
-                      <li>• Lack of breathing room and natural pauses</li>
-                      <li>• Missing emotional cues and emphasis markers</li>
+                      <li>â€¢ Overly formal language ("It is important to note...")</li>
+                      <li>â€¢ Perfect grammar that sounds unnatural when spoken</li>
+                      <li>â€¢ Uniform sentence length throughout</li>
+                      <li>â€¢ Generic transitions ("Furthermore," "Additionally")</li>
+                      <li>â€¢ Lack of breathing room and natural pauses</li>
+                      <li>â€¢ Missing emotional cues and emphasis markers</li>
                     </ul>
                   </div>
                   <div className="bg-primary/10 border border-primary/20 rounded-lg p-5">
@@ -244,12 +244,12 @@ export default function AIYouTubeScripts() {
                       Human Script Elements
                     </h3>
                     <ul className="space-y-2 text-sm text-muted-foreground mb-0">
-                      <li>• Contractions and casual language ("you'll," "let's")</li>
-                      <li>• Varied sentence rhythm (short punchy + longer flowing)</li>
-                      <li>• Direct address to the viewer ("you," "your")</li>
-                      <li>• Natural transitions ("So here's the thing...")</li>
-                      <li>• Built-in pauses and emphasis markers</li>
-                      <li>• Personal stories and specific examples</li>
+                      <li>â€¢ Contractions and casual language ("you'll," "let's")</li>
+                      <li>â€¢ Varied sentence rhythm (short punchy + longer flowing)</li>
+                      <li>â€¢ Direct address to the viewer ("you," "your")</li>
+                      <li>â€¢ Natural transitions ("So here's the thing...")</li>
+                      <li>â€¢ Built-in pauses and emphasis markers</li>
+                      <li>â€¢ Personal stories and specific examples</li>
                     </ul>
                   </div>
                 </div>
@@ -302,10 +302,10 @@ export default function AIYouTubeScripts() {
                     <div className="bg-muted/50 rounded p-4">
                       <p className="text-sm font-medium mb-2">Timing Notation Examples:</p>
                       <ul className="text-sm text-muted-foreground space-y-1 mb-0">
-                        <li>• [PAUSE] for dramatic effect or topic transitions</li>
-                        <li>• [EMPHASIS] for key points to stress vocally</li>
-                        <li>• [SLOW] for important information</li>
-                        <li>• [B-ROLL] for visual cutaway moments</li>
+                        <li>â€¢ [PAUSE] for dramatic effect or topic transitions</li>
+                        <li>â€¢ [EMPHASIS] for key points to stress vocally</li>
+                        <li>â€¢ [SLOW] for important information</li>
+                        <li>â€¢ [B-ROLL] for visual cutaway moments</li>
                       </ul>
                     </div>
                   </div>
@@ -349,10 +349,10 @@ export default function AIYouTubeScripts() {
                     <div className="bg-muted/50 rounded p-4">
                       <p className="text-sm font-medium mb-2">What to Listen For:</p>
                       <ul className="text-sm text-muted-foreground space-y-1 mb-0">
-                        <li>• Tongue twisters or difficult word combinations</li>
-                        <li>• Sentences that leave you breathless</li>
-                        <li>• Phrases that sound stilted or unnatural</li>
-                        <li>• Missing beats where you'd naturally pause</li>
+                        <li>â€¢ Tongue twisters or difficult word combinations</li>
+                        <li>â€¢ Sentences that leave you breathless</li>
+                        <li>â€¢ Phrases that sound stilted or unnatural</li>
+                        <li>â€¢ Missing beats where you'd naturally pause</li>
                       </ul>
                     </div>
                   </div>

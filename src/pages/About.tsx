@@ -1,4 +1,4 @@
-import { Target, Zap, Shield, Users, Heart, Cpu, Globe, Star, CheckCircle, TrendingUp, Award, Lock } from "lucide-react";
+﻿import { Target, Zap, Shield, Users, Heart, Cpu, Globe, Star, CheckCircle, TrendingUp, Award, Lock } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -24,13 +24,13 @@ const About = () => {
         <meta property="og:description" content="Meet the team behind AI Free Text Pro. 50,000+ writers use our free AI humanizer and detector." />
         <meta property="og:url" content="https://aifreetextpro.com/about" />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" />
+        <meta property="og:image" content="https://aifreetextpro.com/og-image.png" />
         <meta property="og:site_name" content="AI Free Text Pro" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@aifreetextpro" />
         <meta name="twitter:title" content="About AI Free Text Pro - 50K+ Writers Trust Us" />
         <meta name="twitter:description" content="Meet the team behind AI Free Text Pro. 50,000+ writers use our free AI humanizer and detector." />
-        <meta name="twitter:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" />
+        <meta name="twitter:image" content="https://aifreetextpro.com/og-image.png" />
       </Helmet>
       <Navbar />
       
@@ -174,7 +174,7 @@ const About = () => {
                   </div>
                   <h3 className="text-2xl font-bold mb-4">Innovation</h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    We constantly refine our models to stay ahead of AI detection systems—ensuring you always lead the curve, not follow it.
+                    We constantly refine our models to stay ahead of AI detection systemsâ€”ensuring you always lead the curve, not follow it.
                   </p>
                 </Card>
               </div>
@@ -240,7 +240,7 @@ const About = () => {
                   </div>
                   <h3 className="text-xl font-bold mb-3">Global-Ready</h3>
                   <p className="text-muted-foreground">
-                    Built to understand diverse linguistic cues and writing standards—perfect for international users.
+                    Built to understand diverse linguistic cues and writing standardsâ€”perfect for international users.
                   </p>
                 </Card>
                 

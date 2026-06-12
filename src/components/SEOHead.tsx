@@ -13,7 +13,7 @@ interface SEOHeadProps {
   noindex?: boolean;
 }
 
-const DEFAULT_OG_IMAGE = "https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG";
+const DEFAULT_OG_IMAGE = "https://aifreetextpro.com/og-image.png";
 const SITE_NAME = "AI Free Text Pro";
 const TWITTER_HANDLE = "@aifreetextpro";
 

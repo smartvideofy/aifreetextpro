@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet-async";
+﻿import { Helmet } from "react-helmet-async";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
@@ -62,7 +62,7 @@ const faqs = [
 
 export default function AIContentMarketingTrends2026() {
   const canonical = "https://aifreetextpro.com/blog/ai-content-marketing-trends-2026";
-  const ogImage = "https://aifreetextpro.com/public/images/blog/ai-content-marketing-trends-2026.png";
+  const ogImage = "https://aifreetextpro.com/og-image.png";
 
   return (
     <>
@@ -148,9 +148,9 @@ export default function AIContentMarketingTrends2026() {
             <header className="mb-8">
               <div className="flex items-center gap-2 text-sm text-muted-foreground mb-4">
                 <span className="px-3 py-1 bg-primary/10 text-primary rounded-full">Marketing</span>
-                <span>•</span>
+                <span>â€¢</span>
                 <time dateTime="2026-02-02">February 2, 2026</time>
-                <span>•</span>
+                <span>â€¢</span>
                 <span>20 min read</span>
               </div>
 

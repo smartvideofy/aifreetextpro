@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet-async";
+﻿import { Helmet } from "react-helmet-async";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
@@ -63,7 +63,7 @@ const faqs = [
 
 export default function BypassAIDetectionGuide() {
   const canonical = "https://aifreetextpro.com/blog/bypass-ai-detection-guide";
-  const ogImage = "https://aifreetextpro.com/public/images/blog/bypass-ai-detection-guide.png";
+  const ogImage = "https://aifreetextpro.com/og-image.png";
 
   return (
     <>
@@ -199,9 +199,9 @@ export default function BypassAIDetectionGuide() {
             <header className="mb-8">
               <div className="flex items-center gap-2 text-sm text-muted-foreground mb-4">
                 <span className="px-3 py-1 bg-primary/10 text-primary rounded-full">Guides</span>
-                <span>•</span>
+                <span>â€¢</span>
                 <time dateTime="2026-02-02">February 2, 2026</time>
-                <span>•</span>
+                <span>â€¢</span>
                 <span>16 min read</span>
               </div>
 
@@ -370,20 +370,20 @@ export default function BypassAIDetectionGuide() {
                     <div>
                       <p className="font-medium text-primary mb-2">What They Change:</p>
                       <ul className="space-y-1 text-sm text-muted-foreground">
-                        <li>• Restructure sentence patterns</li>
-                        <li>• Adjust perplexity scores</li>
-                        <li>• Vary burstiness levels</li>
-                        <li>• Replace AI-typical phrases</li>
-                        <li>• Add natural language markers</li>
+                        <li>â€¢ Restructure sentence patterns</li>
+                        <li>â€¢ Adjust perplexity scores</li>
+                        <li>â€¢ Vary burstiness levels</li>
+                        <li>â€¢ Replace AI-typical phrases</li>
+                        <li>â€¢ Add natural language markers</li>
                       </ul>
                     </div>
                     <div>
                       <p className="font-medium text-primary mb-2">Performance Metrics:</p>
                       <ul className="space-y-1 text-sm text-muted-foreground">
-                        <li>• <strong>Time required:</strong> Seconds</li>
-                        <li>• <strong>Success rate:</strong> 95-98%</li>
-                        <li>• <strong>Meaning preserved:</strong> 99%+</li>
-                        <li>• <strong>Detectors bypassed:</strong> 15+</li>
+                        <li>â€¢ <strong>Time required:</strong> Seconds</li>
+                        <li>â€¢ <strong>Success rate:</strong> 95-98%</li>
+                        <li>â€¢ <strong>Meaning preserved:</strong> 99%+</li>
+                        <li>â€¢ <strong>Detectors bypassed:</strong> 15+</li>
                       </ul>
                     </div>
                   </div>
@@ -455,7 +455,7 @@ export default function BypassAIDetectionGuide() {
                   </div>
                   <div className="p-4 border-l-4 border-destructive/50 bg-destructive/5 rounded-r-lg">
                     <h4 className="font-semibold">Mistake 2: Using Generic Phrases</h4>
-                    <p className="text-muted-foreground mb-0">Stock content and clichéd phrases get flagged easily. Be specific, not generic.</p>
+                    <p className="text-muted-foreground mb-0">Stock content and clichÃ©d phrases get flagged easily. Be specific, not generic.</p>
                   </div>
                   <div className="p-4 border-l-4 border-destructive/50 bg-destructive/5 rounded-r-lg">
                     <h4 className="font-semibold">Mistake 3: Uniform Sentence Structure</h4>

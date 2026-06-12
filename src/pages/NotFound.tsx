@@ -46,7 +46,6 @@ const NotFound = () => {
         <title>Page Not Found - AI Free Text Pro</title>
         <meta name="description" content="The page you're looking for doesn't exist. Browse our AI detection and humanization tools, blog, or contact support." />
         <meta name="robots" content="noindex, nofollow" />
-        <link rel="canonical" href="https://aifreetextpro.com/" />
       </Helmet>
 
       <main className="flex-1 flex items-center justify-center py-16">

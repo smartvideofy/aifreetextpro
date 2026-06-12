@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet-async";
+﻿import { Helmet } from "react-helmet-async";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
@@ -62,7 +62,7 @@ const faqs = [
 
 export default function ZeroClickSearchAI2026() {
   const canonical = "https://aifreetextpro.com/blog/zero-click-search-ai-2026";
-  const ogImage = "https://aifreetextpro.com/public/images/blog/zero-click-search-ai-2026.png";
+  const ogImage = "https://aifreetextpro.com/og-image.png";
 
   return (
     <>
@@ -177,9 +177,9 @@ export default function ZeroClickSearchAI2026() {
             <header className="mb-8">
               <div className="flex items-center gap-2 text-sm text-muted-foreground mb-4">
                 <span className="px-3 py-1 bg-primary/10 text-primary rounded-full">SEO</span>
-                <span>•</span>
+                <span>â€¢</span>
                 <time dateTime="2026-02-02">February 2, 2026</time>
-                <span>•</span>
+                <span>â€¢</span>
                 <span>18 min read</span>
               </div>
               
@@ -260,26 +260,26 @@ export default function ZeroClickSearchAI2026() {
                     <div className="border-l-4 border-destructive/50 pl-4">
                       <p className="font-medium mb-2">Old Approach (Pre-2024)</p>
                       <ul className="text-sm space-y-1 text-muted-foreground">
-                        <li>• Optimize for click-through rate</li>
-                        <li>• Write long-form content to increase time on page</li>
-                        <li>• Bury answers to force page visits</li>
-                        <li>• Measure success by organic traffic volume</li>
+                        <li>â€¢ Optimize for click-through rate</li>
+                        <li>â€¢ Write long-form content to increase time on page</li>
+                        <li>â€¢ Bury answers to force page visits</li>
+                        <li>â€¢ Measure success by organic traffic volume</li>
                       </ul>
                     </div>
                     <div className="border-l-4 border-primary pl-4">
                       <p className="font-medium mb-2">New Approach (2026)</p>
                       <ul className="text-sm space-y-1 text-muted-foreground">
-                        <li>• Optimize for AI citation and attribution</li>
-                        <li>• Provide concise, authoritative answer blocks</li>
-                        <li>• Lead with value to earn source trust</li>
-                        <li>• Measure success by brand mentions and authority signals</li>
+                        <li>â€¢ Optimize for AI citation and attribution</li>
+                        <li>â€¢ Provide concise, authoritative answer blocks</li>
+                        <li>â€¢ Lead with value to earn source trust</li>
+                        <li>â€¢ Measure success by brand mentions and authority signals</li>
                       </ul>
                     </div>
                   </div>
                 </div>
 
                 <p>
-                  The websites that thrive in 2026 understand that a mention in an AI Overview—even without a click—builds brand awareness that compounds over time. When users see your brand repeatedly cited as an authority, they're more likely to search for your brand directly, subscribe to your newsletter, or remember you when making purchase decisions.
+                  The websites that thrive in 2026 understand that a mention in an AI Overviewâ€”even without a clickâ€”builds brand awareness that compounds over time. When users see your brand repeatedly cited as an authority, they're more likely to search for your brand directly, subscribe to your newsletter, or remember you when making purchase decisions.
                 </p>
               </section>
 
@@ -501,19 +501,19 @@ export default function ZeroClickSearchAI2026() {
                   <div className="bg-muted/50 rounded-lg p-4">
                     <h4 className="font-semibold mb-2">Citation Metrics</h4>
                     <ul className="text-sm space-y-1">
-                      <li>• AI Overview mention frequency</li>
-                      <li>• Featured snippet ownership rate</li>
-                      <li>• Knowledge panel appearances</li>
-                      <li>• People Also Ask inclusions</li>
+                      <li>â€¢ AI Overview mention frequency</li>
+                      <li>â€¢ Featured snippet ownership rate</li>
+                      <li>â€¢ Knowledge panel appearances</li>
+                      <li>â€¢ People Also Ask inclusions</li>
                     </ul>
                   </div>
                   <div className="bg-muted/50 rounded-lg p-4">
                     <h4 className="font-semibold mb-2">Brand Metrics</h4>
                     <ul className="text-sm space-y-1">
-                      <li>• Branded search volume growth</li>
-                      <li>• Direct traffic percentage</li>
-                      <li>• Brand mention sentiment</li>
-                      <li>• Share of voice in SERP features</li>
+                      <li>â€¢ Branded search volume growth</li>
+                      <li>â€¢ Direct traffic percentage</li>
+                      <li>â€¢ Brand mention sentiment</li>
+                      <li>â€¢ Share of voice in SERP features</li>
                     </ul>
                   </div>
                 </div>
@@ -547,11 +547,11 @@ export default function ZeroClickSearchAI2026() {
 
                   <h3 className="font-semibold mt-4 mb-3">The Results (12 Months)</h3>
                   <ul className="space-y-2">
-                    <li>• <strong>300% increase</strong> in AI Overview citations</li>
-                    <li>• <strong>45% growth</strong> in branded searches</li>
-                    <li>• <strong>25% recovery</strong> in organic traffic (now higher quality)</li>
-                    <li>• <strong>60% improvement</strong> in conversion rate from organic visitors</li>
-                    <li>• Featured snippets for 40% of target keywords</li>
+                    <li>â€¢ <strong>300% increase</strong> in AI Overview citations</li>
+                    <li>â€¢ <strong>45% growth</strong> in branded searches</li>
+                    <li>â€¢ <strong>25% recovery</strong> in organic traffic (now higher quality)</li>
+                    <li>â€¢ <strong>60% improvement</strong> in conversion rate from organic visitors</li>
+                    <li>â€¢ Featured snippets for 40% of target keywords</li>
                   </ul>
                 </div>
               </section>

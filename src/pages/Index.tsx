@@ -1,4 +1,4 @@
-import { lazy, Suspense } from "react";
+﻿import { lazy, Suspense } from "react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { ArrowRight, CheckCircle, Shield, FileText, Sparkles, Brain, Star, Pen, BookOpen, Target, Zap, Lock, Crown, GraduationCap, TrendingUp } from "lucide-react";
@@ -60,14 +60,14 @@ const Index = () => {
         <meta property="og:description" content="Humanize AI text in seconds and bypass Turnitin, GPTZero, Originality.AI with 98% accuracy. 1,000 free words, no signup." />
         <meta property="og:url" content="https://aifreetextpro.com/" />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" />
+        <meta property="og:image" content="https://aifreetextpro.com/og-image.png" />
         <meta property="og:site_name" content="AI Free Text Pro" />
         <meta property="og:locale" content="en_US" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@aifreetextpro" />
         <meta name="twitter:title" content="Free AI Humanizer & Detector - 98% Accuracy [2026]" />
         <meta name="twitter:description" content="Humanize AI text in seconds and bypass Turnitin, GPTZero, Originality.AI with 98% accuracy. 1,000 free words, no signup." />
-        <meta name="twitter:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" />
+        <meta name="twitter:image" content="https://aifreetextpro.com/og-image.png" />
         
         {/* Enhanced Schema Markup */}
         <script type="application/ld+json">
@@ -388,25 +388,25 @@ const Index = () => {
                   <div className="space-y-3 md:space-y-4">
                     <div className="flex items-start gap-2 md:gap-3">
                       <div className="w-5 h-5 md:w-6 md:h-6 rounded-full bg-destructive/20 flex items-center justify-center flex-shrink-0 mt-0.5">
-                        <span className="text-destructive text-xs md:text-sm">✗</span>
+                        <span className="text-destructive text-xs md:text-sm">âœ—</span>
                       </div>
                       <p className="text-sm md:text-base text-muted-foreground">AI detectors flagging legitimate content</p>
                     </div>
                     <div className="flex items-start gap-2 md:gap-3">
                       <div className="w-5 h-5 md:w-6 md:h-6 rounded-full bg-destructive/20 flex items-center justify-center flex-shrink-0 mt-0.5">
-                        <span className="text-destructive text-xs md:text-sm">✗</span>
+                        <span className="text-destructive text-xs md:text-sm">âœ—</span>
                       </div>
                       <p className="text-sm md:text-base text-muted-foreground">Robotic, unnatural AI-generated text</p>
                     </div>
                     <div className="flex items-start gap-2 md:gap-3">
                       <div className="w-5 h-5 md:w-6 md:h-6 rounded-full bg-destructive/20 flex items-center justify-center flex-shrink-0 mt-0.5">
-                        <span className="text-destructive text-xs md:text-sm">✗</span>
+                        <span className="text-destructive text-xs md:text-sm">âœ—</span>
                       </div>
                       <p className="text-sm md:text-base text-muted-foreground">Risk of academic or professional consequences</p>
                     </div>
                     <div className="flex items-start gap-2 md:gap-3">
                       <div className="w-5 h-5 md:w-6 md:h-6 rounded-full bg-destructive/20 flex items-center justify-center flex-shrink-0 mt-0.5">
-                        <span className="text-destructive text-xs md:text-sm">✗</span>
+                        <span className="text-destructive text-xs md:text-sm">âœ—</span>
                       </div>
                       <p className="text-sm md:text-base text-muted-foreground">Time-consuming manual editing</p>
                     </div>
@@ -662,7 +662,7 @@ const Index = () => {
           <div className="container mx-auto px-4">
             <div className="text-center mb-12">
               <p className="text-lg md:text-xl text-muted-foreground font-medium">
-                <span className="text-primary font-bold">98% accuracy</span> tested on thousands of samples • Trusted by writers, students, and professionals
+                <span className="text-primary font-bold">98% accuracy</span> tested on thousands of samples â€¢ Trusted by writers, students, and professionals
               </p>
             </div>
             
@@ -1178,7 +1178,7 @@ const Index = () => {
                 </div>
                 <h2 className="text-3xl md:text-4xl font-bold mb-4">Powerful API for Developers</h2>
                 <p className="text-muted-foreground text-lg mb-6">
-                  Integrate AI humanization and detection directly into your product with our REST API. Simple authentication, real-time analytics, and 98% bypass accuracy — all programmatically.
+                  Integrate AI humanization and detection directly into your product with our REST API. Simple authentication, real-time analytics, and 98% bypass accuracy â€” all programmatically.
                 </p>
                 <div className="flex flex-wrap gap-4 mb-8 text-sm text-muted-foreground">
                   <span className="flex items-center gap-1.5"><CheckCircle className="h-4 w-4 text-primary" /> RESTful</span>

@@ -14,5 +14,25 @@
 https://aifreetextpro.lovable.app/*  https://aifreetextpro.com/:splat  301!
 https://www.aifreetextpro.com/*      https://aifreetextpro.com/:splat  301!
 
+# Tool pages live on the app subdomain — real 301s (the client-side
+# ExternalSEORedirect components in App.tsx remain only as a fallback for
+# hosts that ignore this file).
+/humanizer   https://app.aifreetextpro.com/humanizer   301
+/detector    https://app.aifreetextpro.com/detector    301
+/auth        https://app.aifreetextpro.com/auth        301
+/plagiarism  https://app.aifreetextpro.com/plagiarism  301
+
+# Legacy blog slugs — real 301s (client-side SEORedirect components remain
+# as fallback). Meta-refresh stubs pass less link equity than true 301s.
+/blog/make-chatgpt-undetectable-guide-2025         /blog/make-chatgpt-undetectable-2025       301
+/blog/ai-detection-patterns-perplexity-burstiness  /blog/ai-detection-patterns-explained      301
+/blog/academic-ai-writing-thesis-essays-safely     /blog/academic-ai-writing-safely           301
+/blog/ai-content-seo-undetectable-articles         /blog/ai-content-seo-undetectable          301
+/blog/ai-content-seo                               /blog/ai-content-seo-undetectable          301
+/blog/gptinf-vs-ai-free-text-pro-comparison        /blog/gptinf-vs-ai-free-text-pro           301
+/blog/originality-ai-review-pricing-bypass         /blog/originality-ai-review-how-to-beat    301
+/blog/paraphrasing-vs-humanizing-ai-text           /blog/paraphrasing-vs-humanizing           301
+/bypass-turnitin                                   /bypass-turnitin-ai-detection              301
+
 # SPA fallback — runs LAST, only when no static file matched
 /*  /index.html  200

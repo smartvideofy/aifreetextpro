@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+﻿import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Helmet } from "react-helmet-async";
 import { SoftwareApplicationSchema } from "@/components/SoftwareApplicationSchema";
@@ -32,14 +32,14 @@ const BypassTurnitin = () => {
         <meta property="og:description" content="Reduce Turnitin AI detection flags in 30 seconds. 99.8% success rate tested Feb 2026. Free tool with live before/after results." />
         <meta property="og:url" content="https://aifreetextpro.com/bypass-turnitin-ai-detection" />
         <meta property="og:type" content="article" />
-        <meta property="og:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" />
+        <meta property="og:image" content="https://aifreetextpro.com/og-image.png" />
         <meta property="og:site_name" content="AI Free Text Pro" />
         <meta property="og:locale" content="en_US" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@aifreetextpro" />
         <meta name="twitter:title" content="Bypass Turnitin AI Detection [Feb 2026] - 99.8% Success Rate" />
         <meta name="twitter:description" content="Reduce Turnitin AI detection flags in 30 seconds. 99.8% success rate. Free tool with live test results." />
-        <meta name="twitter:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" />
+        <meta name="twitter:image" content="https://aifreetextpro.com/og-image.png" />
         <meta name="author" content="Dr. Sarah Chen, AI Free Text Pro" />
         <meta name="article:published_time" content="2025-01-11T00:00:00Z" />
         <meta name="article:modified_time" content="2026-02-02T00:00:00Z" />
@@ -270,7 +270,7 @@ const BypassTurnitin = () => {
 
           {/* Key Takeaways */}
           <KeyTakeaways points={[
-            "99.8% success rate against Turnitin AI detection — tested February 2026",
+            "99.8% success rate against Turnitin AI detection â€” tested February 2026",
             "Reduces AI scores from 87% to under 2% in under 30 seconds",
             "Preserves academic citations (APA, MLA, Chicago) and scholarly tone",
             "Free tier available with no credit card required",
@@ -298,7 +298,7 @@ const BypassTurnitin = () => {
               <div className="bg-card border border-primary/20 rounded-lg p-6 text-center">
                 <div className="text-4xl font-bold text-primary mb-2">2%</div>
                 <div className="text-sm text-muted-foreground mb-4">After AI Free Text Pro</div>
-                <div className="text-xs text-primary">Passes Turnitin Checks ✓</div>
+                <div className="text-xs text-primary">Passes Turnitin Checks âœ“</div>
               </div>
             </div>
 
@@ -329,7 +329,7 @@ const BypassTurnitin = () => {
                     </p>
                   </div>
                   <div className="text-sm text-primary font-medium">
-                    Turnitin AI Score: 2% - Passes as Human ✓
+                    Turnitin AI Score: 2% - Passes as Human âœ“
                   </div>
                 </div>
               </div>
@@ -366,10 +366,10 @@ const BypassTurnitin = () => {
                   </tr>
                   <tr>
                     <td className="p-4 font-medium">Avg. AI Score Reduction</td>
-                    <td className="text-center p-4 bg-primary/5"><span className="text-primary font-bold">85% → 2%</span></td>
-                    <td className="text-center p-4">85% → 13%</td>
-                    <td className="text-center p-4">85% → 8%</td>
-                    <td className="text-center p-4">85% → 22%</td>
+                    <td className="text-center p-4 bg-primary/5"><span className="text-primary font-bold">85% â†’ 2%</span></td>
+                    <td className="text-center p-4">85% â†’ 13%</td>
+                    <td className="text-center p-4">85% â†’ 8%</td>
+                    <td className="text-center p-4">85% â†’ 22%</td>
                   </tr>
                   <tr>
                     <td className="p-4 font-medium">Processing Speed</td>

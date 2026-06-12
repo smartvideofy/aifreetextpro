@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+﻿import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Helmet } from "react-helmet-async";
 import { SoftwareApplicationSchema } from "@/components/SoftwareApplicationSchema";
@@ -34,7 +34,7 @@ const BypassOriginality = () => {
         <meta property="og:description" content="Beat Originality.AI in seconds. 97.5% success rate. Free tool, no signup." />
         <meta property="og:url" content="https://aifreetextpro.com/bypass-originality-ai" />
         <meta property="og:type" content="article" />
-        <meta property="og:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" />
+        <meta property="og:image" content="https://aifreetextpro.com/og-image.png" />
         <meta property="og:site_name" content="AI Free Text Pro" />
         <meta property="og:locale" content="en_US" />
         <meta property="article:published_time" content="2025-01-11T00:00:00Z" />
@@ -46,7 +46,7 @@ const BypassOriginality = () => {
         <meta name="twitter:site" content="@aifreetextpro" />
         <meta name="twitter:title" content="Bypass Originality.AI: 97.5% Pass Rate [Mar 2026]" />
         <meta name="twitter:description" content="Beat Originality.AI in seconds. 97.5% success rate. Free tool, no signup." />
-        <meta name="twitter:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" />
+        <meta name="twitter:image" content="https://aifreetextpro.com/og-image.png" />
         
         {/* BreadcrumbList Schema */}
         <script type="application/ld+json">
@@ -283,11 +283,11 @@ const BypassOriginality = () => {
 
           {/* Key Takeaways */}
           <KeyTakeaways points={[
-            "97.5% success rate against Originality.AI detection — tested February 2026",
+            "97.5% success rate against Originality.AI detection â€” tested February 2026",
             "Reduces AI scores from 92% to under 3% while preserving SEO value",
             "Bypasses all Originality.AI detection models (GPT-3/4/5, Claude, Gemini)",
             "Free tier available with SEO-safe output in under 30 seconds",
-            "100% money-back guarantee — also passes plagiarism checks"
+            "100% money-back guarantee â€” also passes plagiarism checks"
           ]} />
 
           {/* Live Test Results */}
@@ -315,7 +315,7 @@ const BypassOriginality = () => {
               <div className="bg-card border border-primary/20 rounded-lg p-6 text-center">
                 <div className="text-4xl font-bold text-primary mb-2">3%</div>
                 <div className="text-sm text-muted-foreground mb-4">After AI Free Text Pro</div>
-                <div className="text-xs text-primary">Passes as Original Content ✓</div>
+                <div className="text-xs text-primary">Passes as Original Content âœ“</div>
               </div>
             </div>
 
@@ -346,7 +346,7 @@ const BypassOriginality = () => {
                     </p>
                   </div>
                   <div className="text-sm text-primary font-medium">
-                    Originality.AI Score: 3% AI - Passes as Human ✓
+                    Originality.AI Score: 3% AI - Passes as Human âœ“
                   </div>
                 </div>
               </div>
@@ -383,10 +383,10 @@ const BypassOriginality = () => {
                   </tr>
                   <tr>
                     <td className="p-4 font-medium">Avg. AI Score Reduction</td>
-                    <td className="text-center p-4 bg-primary/5"><span className="text-primary font-bold">92% → 3%</span></td>
-                    <td className="text-center p-4">92% → 11%</td>
-                    <td className="text-center p-4">92% → 16%</td>
-                    <td className="text-center p-4">92% → 24%</td>
+                    <td className="text-center p-4 bg-primary/5"><span className="text-primary font-bold">92% â†’ 3%</span></td>
+                    <td className="text-center p-4">92% â†’ 11%</td>
+                    <td className="text-center p-4">92% â†’ 16%</td>
+                    <td className="text-center p-4">92% â†’ 24%</td>
                   </tr>
                   <tr>
                     <td className="p-4 font-medium">Processing Speed</td>
@@ -616,17 +616,17 @@ const BypassOriginality = () => {
               <Link to="/bypass-turnitin-ai-detection" className="bg-card border border-border rounded-lg p-6 hover:border-primary/50 transition-colors group">
                 <h3 className="text-lg font-semibold mb-2 group-hover:text-primary transition-colors">Bypass Turnitin</h3>
                 <p className="text-sm text-muted-foreground mb-4">99.8% success rate against Turnitin's AI detection</p>
-                <span className="text-primary text-sm font-medium">Learn more →</span>
+                <span className="text-primary text-sm font-medium">Learn more â†’</span>
               </Link>
               <Link to="/bypass-gptzero-detection" className="bg-card border border-border rounded-lg p-6 hover:border-primary/50 transition-colors group">
                 <h3 className="text-lg font-semibold mb-2 group-hover:text-primary transition-colors">Bypass GPTZero</h3>
                 <p className="text-sm text-muted-foreground mb-4">98.9% success rate against GPTZero's detection</p>
-                <span className="text-primary text-sm font-medium">Learn more →</span>
+                <span className="text-primary text-sm font-medium">Learn more â†’</span>
               </Link>
               <Link to="/technology" className="bg-card border border-border rounded-lg p-6 hover:border-primary/50 transition-colors group">
                 <h3 className="text-lg font-semibold mb-2 group-hover:text-primary transition-colors">Our Technology</h3>
                 <p className="text-sm text-muted-foreground mb-4">Learn how our AI humanization engine works</p>
-                <span className="text-primary text-sm font-medium">Learn more →</span>
+                <span className="text-primary text-sm font-medium">Learn more â†’</span>
               </Link>
             </div>
           </section>

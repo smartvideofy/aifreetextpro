@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet-async";
+﻿import { Helmet } from "react-helmet-async";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
@@ -62,7 +62,7 @@ const faqs = [
 
 export default function HumanizeAILinkedIn2026() {
   const canonical = "https://aifreetextpro.com/blog/humanize-ai-linkedin-2026";
-  const ogImage = "https://aifreetextpro.com/public/images/blog/humanize-ai-linkedin-2026.png";
+  const ogImage = "https://aifreetextpro.com/og-image.png";
 
   return (
     <>
@@ -176,9 +176,9 @@ export default function HumanizeAILinkedIn2026() {
             <header className="mb-8">
               <div className="flex items-center gap-2 text-sm text-muted-foreground mb-4">
                 <span className="px-3 py-1 bg-primary/10 text-primary rounded-full">Professional</span>
-                <span>•</span>
+                <span>â€¢</span>
                 <time dateTime="2026-02-02">February 2, 2026</time>
-                <span>•</span>
+                <span>â€¢</span>
                 <span>14 min read</span>
               </div>
               
@@ -383,10 +383,10 @@ export default function HumanizeAILinkedIn2026() {
                     <div className="bg-muted/50 rounded p-4">
                       <p className="text-sm font-medium mb-2">Effective engagement endings:</p>
                       <ul className="text-sm text-muted-foreground space-y-1 mb-0">
-                        <li>• "What's been your experience with this? Drop a comment below."</li>
-                        <li>• "Agree or disagree? I'm curious to hear your take."</li>
-                        <li>• "Tag someone who needs to see this."</li>
-                        <li>• "Poll: How many hours do you spend on [topic]?"</li>
+                        <li>â€¢ "What's been your experience with this? Drop a comment below."</li>
+                        <li>â€¢ "Agree or disagree? I'm curious to hear your take."</li>
+                        <li>â€¢ "Tag someone who needs to see this."</li>
+                        <li>â€¢ "Poll: How many hours do you spend on [topic]?"</li>
                       </ul>
                     </div>
                   </div>
@@ -416,7 +416,7 @@ Then our junior developer asked a question we'd all been too proud to ask.
 
 The lesson? Expertise isn't about having answers. It's about being brave enough to admit you don't.
 
-Feeling proud of what we achieved together! 🚀"</p>
+Feeling proud of what we achieved together! ðŸš€"</p>
                       </div>
                     </div>
                   </div>
@@ -448,7 +448,7 @@ The networking advice nobody gives you: persistence beats perfection. Most peopl
 
 Don't be most people.
 
-What's a connection you're glad you didn't give up on? 👇"</p>
+What's a connection you're glad you didn't give up on? ðŸ‘‡"</p>
                       </div>
                     </div>
                   </div>
@@ -508,12 +508,12 @@ What's a connection you're glad you didn't give up on? 👇"</p>
                       Mistakes to Avoid
                     </h3>
                     <ul className="space-y-2 text-sm text-muted-foreground mb-0">
-                      <li>• Starting with "I'm excited to announce..."</li>
-                      <li>• Using buzzwords like "leverage," "synergy," "ecosystem"</li>
-                      <li>• Generic motivational quotes without personal context</li>
-                      <li>• Humble-bragging without substance</li>
-                      <li>• Posting at AI-suggested "optimal times" without testing</li>
-                      <li>• Copy-pasting AI output without heavy editing</li>
+                      <li>â€¢ Starting with "I'm excited to announce..."</li>
+                      <li>â€¢ Using buzzwords like "leverage," "synergy," "ecosystem"</li>
+                      <li>â€¢ Generic motivational quotes without personal context</li>
+                      <li>â€¢ Humble-bragging without substance</li>
+                      <li>â€¢ Posting at AI-suggested "optimal times" without testing</li>
+                      <li>â€¢ Copy-pasting AI output without heavy editing</li>
                     </ul>
                   </div>
                   <div className="bg-primary/10 border border-primary/20 rounded-lg p-5">
@@ -522,12 +522,12 @@ What's a connection you're glad you didn't give up on? 👇"</p>
                       Best Practices
                     </h3>
                     <ul className="space-y-2 text-sm text-muted-foreground mb-0">
-                      <li>• Start with a surprising statement or question</li>
-                      <li>• Use plain language your team would actually use</li>
-                      <li>• Share specific stories with lessons learned</li>
-                      <li>• Celebrate others more than yourself</li>
-                      <li>• Post when YOUR audience is active (check analytics)</li>
-                      <li>• Spend 2x as much time editing as generating</li>
+                      <li>â€¢ Start with a surprising statement or question</li>
+                      <li>â€¢ Use plain language your team would actually use</li>
+                      <li>â€¢ Share specific stories with lessons learned</li>
+                      <li>â€¢ Celebrate others more than yourself</li>
+                      <li>â€¢ Post when YOUR audience is active (check analytics)</li>
+                      <li>â€¢ Spend 2x as much time editing as generating</li>
                     </ul>
                   </div>
                 </div>

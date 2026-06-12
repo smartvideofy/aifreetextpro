@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet-async";
+﻿import { Helmet } from "react-helmet-async";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
@@ -39,7 +39,7 @@ const relatedArticles = [
 
 export default function BypassAIDetectionGuide() {
   const canonical = "https://aifreetextpro.com/blog/bypass-ai-detection-guide";
-  const ogImage = "https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG";
+  const ogImage = "https://aifreetextpro.com/og-image.png";
 
   return (
     <>
@@ -148,9 +148,9 @@ export default function BypassAIDetectionGuide() {
             <header className="mb-8">
               <div className="flex items-center gap-2 text-sm text-muted-foreground mb-4">
                 <span className="px-3 py-1 bg-primary/10 text-primary rounded-full">Guide</span>
-                <span>•</span>
+                <span>â€¢</span>
                 <time dateTime="2026-02-02">February 2, 2026</time>
-                <span>•</span>
+                <span>â€¢</span>
                 <span>12 min read</span>
               </div>
               
@@ -229,10 +229,10 @@ export default function BypassAIDetectionGuide() {
                     <div>
                       <h3 className="font-semibold text-foreground mb-2">Important Ethical Guidelines</h3>
                       <ul className="space-y-2 text-muted-foreground">
-                        <li>• Never use bypassing techniques to submit AI work as fully original in academic settings</li>
-                        <li>• Always disclose AI assistance when required by institutional or publication policies</li>
-                        <li>• Focus on adding genuine human value, insight, and expertise to AI-drafted content</li>
-                        <li>• Use these techniques to avoid false positives on legitimately human-edited work</li>
+                        <li>â€¢ Never use bypassing techniques to submit AI work as fully original in academic settings</li>
+                        <li>â€¢ Always disclose AI assistance when required by institutional or publication policies</li>
+                        <li>â€¢ Focus on adding genuine human value, insight, and expertise to AI-drafted content</li>
+                        <li>â€¢ Use these techniques to avoid false positives on legitimately human-edited work</li>
                       </ul>
                     </div>
                   </div>
@@ -257,9 +257,9 @@ export default function BypassAIDetectionGuide() {
                     <div className="bg-muted/50 rounded-lg p-4">
                       <p className="text-sm font-medium mb-2">Success Rates by Method:</p>
                       <ul className="text-sm text-muted-foreground space-y-1">
-                        <li>• Manual editing only: 40-50% bypass rate</li>
-                        <li>• Simple paraphrasers: 30-40% bypass rate</li>
-                        <li>• Specialized humanizers: 90-96% bypass rate</li>
+                        <li>â€¢ Manual editing only: 40-50% bypass rate</li>
+                        <li>â€¢ Simple paraphrasers: 30-40% bypass rate</li>
+                        <li>â€¢ Specialized humanizers: 90-96% bypass rate</li>
                       </ul>
                     </div>
                   </div>

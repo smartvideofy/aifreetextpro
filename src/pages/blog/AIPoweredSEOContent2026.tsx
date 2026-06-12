@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet-async";
+﻿import { Helmet } from "react-helmet-async";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
@@ -62,7 +62,7 @@ const faqs = [
 
 export default function AIPoweredSEOContent2026() {
   const canonical = "https://aifreetextpro.com/blog/ai-powered-seo-content-2026";
-  const ogImage = "https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG";
+  const ogImage = "https://aifreetextpro.com/og-image.png";
 
   return (
     <>
@@ -202,9 +202,9 @@ export default function AIPoweredSEOContent2026() {
             <header className="mb-8">
               <div className="flex items-center gap-2 text-sm text-muted-foreground mb-4">
                 <span className="px-3 py-1 bg-primary/10 text-primary rounded-full">SEO & AI</span>
-                <span>•</span>
+                <span>â€¢</span>
                 <time dateTime="2026-02-02">February 2, 2026</time>
-                <span>•</span>
+                <span>â€¢</span>
                 <span>15 min read</span>
               </div>
               
@@ -429,19 +429,19 @@ export default function AIPoweredSEOContent2026() {
                       <div className="bg-background rounded-lg p-4">
                         <p className="font-medium mb-2">Supporting Articles:</p>
                         <ul className="text-sm text-muted-foreground space-y-1">
-                          <li>• How AI Detectors Work</li>
-                          <li>• Bypass Turnitin Detection</li>
-                          <li>• GPTZero vs. Originality AI</li>
-                          <li>• AI Humanizer Tools Comparison</li>
+                          <li>â€¢ How AI Detectors Work</li>
+                          <li>â€¢ Bypass Turnitin Detection</li>
+                          <li>â€¢ GPTZero vs. Originality AI</li>
+                          <li>â€¢ AI Humanizer Tools Comparison</li>
                         </ul>
                       </div>
                       <div className="bg-background rounded-lg p-4">
                         <p className="font-medium mb-2">Long-Tail Content:</p>
                         <ul className="text-sm text-muted-foreground space-y-1">
-                          <li>• "Can professors detect ChatGPT?"</li>
-                          <li>• "Why my AI content was flagged"</li>
-                          <li>• "Free AI detection tools 2026"</li>
-                          <li>• "Academic AI writing policies"</li>
+                          <li>â€¢ "Can professors detect ChatGPT?"</li>
+                          <li>â€¢ "Why my AI content was flagged"</li>
+                          <li>â€¢ "Free AI detection tools 2026"</li>
+                          <li>â€¢ "Academic AI writing policies"</li>
                         </ul>
                       </div>
                     </div>

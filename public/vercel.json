@@ -17,6 +17,19 @@
       "has": [{ "type": "host", "value": "www.aifreetextpro.com" }],
       "destination": "https://aifreetextpro.com/:path*",
       "permanent": true
-    }
+    },
+    { "source": "/humanizer", "destination": "https://app.aifreetextpro.com/humanizer", "permanent": true },
+    { "source": "/detector", "destination": "https://app.aifreetextpro.com/detector", "permanent": true },
+    { "source": "/auth", "destination": "https://app.aifreetextpro.com/auth", "permanent": true },
+    { "source": "/plagiarism", "destination": "https://app.aifreetextpro.com/plagiarism", "permanent": true },
+    { "source": "/blog/make-chatgpt-undetectable-guide-2025", "destination": "/blog/make-chatgpt-undetectable-2025", "permanent": true },
+    { "source": "/blog/ai-detection-patterns-perplexity-burstiness", "destination": "/blog/ai-detection-patterns-explained", "permanent": true },
+    { "source": "/blog/academic-ai-writing-thesis-essays-safely", "destination": "/blog/academic-ai-writing-safely", "permanent": true },
+    { "source": "/blog/ai-content-seo-undetectable-articles", "destination": "/blog/ai-content-seo-undetectable", "permanent": true },
+    { "source": "/blog/ai-content-seo", "destination": "/blog/ai-content-seo-undetectable", "permanent": true },
+    { "source": "/blog/gptinf-vs-ai-free-text-pro-comparison", "destination": "/blog/gptinf-vs-ai-free-text-pro", "permanent": true },
+    { "source": "/blog/originality-ai-review-pricing-bypass", "destination": "/blog/originality-ai-review-how-to-beat", "permanent": true },
+    { "source": "/blog/paraphrasing-vs-humanizing-ai-text", "destination": "/blog/paraphrasing-vs-humanizing", "permanent": true },
+    { "source": "/bypass-turnitin", "destination": "/bypass-turnitin-ai-detection", "permanent": true }
   ]
 }

@@ -283,7 +283,7 @@ const BypassGPTZero = () => {
 
           {/* Key Takeaways */}
           <KeyTakeaways points={[
-            "98.9% success rate against GPTZero AI detection â€” tested February 2026",
+            "98.9% success rate against GPTZero AI detection — tested February 2026",
             "Reduces AI probability from 94% to under 1% using perplexity and burstiness optimization",
             "Works against both free and premium GPTZero versions",
             "Free tier available with instant results in under 30 seconds",
@@ -315,7 +315,7 @@ const BypassGPTZero = () => {
               <div className="bg-card border border-primary/20 rounded-lg p-6 text-center">
                 <div className="text-4xl font-bold text-primary mb-2">1%</div>
                 <div className="text-sm text-muted-foreground mb-4">After AI Free Text Pro</div>
-                <div className="text-xs text-primary">Passes as Human Writing âœ“</div>
+                <div className="text-xs text-primary">Passes as Human Writing ✓</div>
               </div>
             </div>
 
@@ -346,7 +346,7 @@ const BypassGPTZero = () => {
                     </p>
                   </div>
                   <div className="text-sm text-primary font-medium">
-                    GPTZero Score: 1% AI - Passes as Human âœ“
+                    GPTZero Score: 1% AI - Passes as Human ✓
                   </div>
                 </div>
               </div>
@@ -383,10 +383,10 @@ const BypassGPTZero = () => {
                   </tr>
                   <tr>
                     <td className="p-4 font-medium">Avg. AI Score Reduction</td>
-                    <td className="text-center p-4 bg-primary/5"><span className="text-primary font-bold">94% â†’ 1%</span></td>
-                    <td className="text-center p-4">94% â†’ 9%</td>
-                    <td className="text-center p-4">94% â†’ 15%</td>
-                    <td className="text-center p-4">94% â†’ 18%</td>
+                    <td className="text-center p-4 bg-primary/5"><span className="text-primary font-bold">94% → 1%</span></td>
+                    <td className="text-center p-4">94% → 9%</td>
+                    <td className="text-center p-4">94% → 15%</td>
+                    <td className="text-center p-4">94% → 18%</td>
                   </tr>
                   <tr>
                     <td className="p-4 font-medium">Processing Speed</td>
@@ -616,17 +616,17 @@ const BypassGPTZero = () => {
               <Link to="/bypass-turnitin-ai-detection" className="bg-card border border-border rounded-lg p-6 hover:border-primary/50 transition-colors group">
                 <h3 className="text-lg font-semibold mb-2 group-hover:text-primary transition-colors">Bypass Turnitin</h3>
                 <p className="text-sm text-muted-foreground mb-4">99.8% success rate against Turnitin's AI detection</p>
-                <span className="text-primary text-sm font-medium">Learn more â†’</span>
+                <span className="text-primary text-sm font-medium">Learn more →</span>
               </Link>
               <Link to="/bypass-originality-ai" className="bg-card border border-border rounded-lg p-6 hover:border-primary/50 transition-colors group">
                 <h3 className="text-lg font-semibold mb-2 group-hover:text-primary transition-colors">Bypass Originality.AI</h3>
                 <p className="text-sm text-muted-foreground mb-4">97.5% success rate against Originality.AI checks</p>
-                <span className="text-primary text-sm font-medium">Learn more â†’</span>
+                <span className="text-primary text-sm font-medium">Learn more →</span>
               </Link>
               <Link to="/technology" className="bg-card border border-border rounded-lg p-6 hover:border-primary/50 transition-colors group">
                 <h3 className="text-lg font-semibold mb-2 group-hover:text-primary transition-colors">Our Technology</h3>
                 <p className="text-sm text-muted-foreground mb-4">Learn how our AI humanization engine works</p>
-                <span className="text-primary text-sm font-medium">Learn more â†’</span>
+                <span className="text-primary text-sm font-medium">Learn more →</span>
               </Link>
             </div>
           </section>

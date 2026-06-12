@@ -153,9 +153,9 @@ export default function AIWritingAcademia() {
             <header className="mb-8">
               <div className="flex items-center gap-2 text-sm text-muted-foreground mb-4">
                 <span className="px-3 py-1 bg-primary/10 text-primary rounded-full">Academic</span>
-                <span>â€¢</span>
+                <span>•</span>
                 <time dateTime="2026-02-02">February 2, 2026</time>
-                <span>â€¢</span>
+                <span>•</span>
                 <span>14 min read</span>
               </div>
               
@@ -324,10 +324,10 @@ export default function AIWritingAcademia() {
                       Automated Detection (Turnitin AI Detection)
                     </h3>
                     <ul className="space-y-2 text-muted-foreground">
-                      <li>â€¢ Analyzes writing patterns for AI signatures</li>
-                      <li>â€¢ Flags perplexity and burstiness anomalies</li>
-                      <li>â€¢ Provides percentage likelihood of AI generation</li>
-                      <li>â€¢ Integrated into standard plagiarism checks</li>
+                      <li>• Analyzes writing patterns for AI signatures</li>
+                      <li>• Flags perplexity and burstiness anomalies</li>
+                      <li>• Provides percentage likelihood of AI generation</li>
+                      <li>• Integrated into standard plagiarism checks</li>
                     </ul>
                   </div>
                   
@@ -337,10 +337,10 @@ export default function AIWritingAcademia() {
                       Manual Detection (Professor Review)
                     </h3>
                     <ul className="space-y-2 text-muted-foreground">
-                      <li>â€¢ Comparison to your previous writing samples</li>
-                      <li>â€¢ Analysis of argument sophistication and personal insight</li>
-                      <li>â€¢ Checking cited sources actually exist and say what you claim</li>
-                      <li>â€¢ Oral examination on your paper's content</li>
+                      <li>• Comparison to your previous writing samples</li>
+                      <li>• Analysis of argument sophistication and personal insight</li>
+                      <li>• Checking cited sources actually exist and say what you claim</li>
+                      <li>• Oral examination on your paper's content</li>
                     </ul>
                   </div>
                   
@@ -350,11 +350,11 @@ export default function AIWritingAcademia() {
                       Red Flags Professors Notice
                     </h3>
                     <ul className="space-y-2 text-muted-foreground">
-                      <li>â€¢ Sudden improvement in writing quality</li>
-                      <li>â€¢ Generic examples instead of personal observations</li>
-                      <li>â€¢ Perfect grammar but shallow analysis</li>
-                      <li>â€¢ Inconsistency between written work and in-class participation</li>
-                      <li>â€¢ Citations that don't match source content</li>
+                      <li>• Sudden improvement in writing quality</li>
+                      <li>• Generic examples instead of personal observations</li>
+                      <li>• Perfect grammar but shallow analysis</li>
+                      <li>• Inconsistency between written work and in-class participation</li>
+                      <li>• Citations that don't match source content</li>
                     </ul>
                   </div>
                 </div>

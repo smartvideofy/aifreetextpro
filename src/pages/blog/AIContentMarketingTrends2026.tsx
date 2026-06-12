@@ -148,9 +148,9 @@ export default function AIContentMarketingTrends2026() {
             <header className="mb-8">
               <div className="flex items-center gap-2 text-sm text-muted-foreground mb-4">
                 <span className="px-3 py-1 bg-primary/10 text-primary rounded-full">Marketing</span>
-                <span>â€¢</span>
+                <span>•</span>
                 <time dateTime="2026-02-02">February 2, 2026</time>
-                <span>â€¢</span>
+                <span>•</span>
                 <span>20 min read</span>
               </div>
 

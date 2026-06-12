@@ -20,8 +20,8 @@ export const SoftwareApplicationSchema = ({
   category = "UtilityApplication",
   price = "0",
   priceCurrency = "USD",
-  ratingValue = 4.8,
-  ratingCount = 2847,
+  ratingValue,
+  ratingCount,
   screenshot,
   featureList,
 }: SoftwareApplicationSchemaProps) => {
@@ -39,14 +39,19 @@ export const SoftwareApplicationSchema = ({
       priceCurrency,
       availability: "https://schema.org/InStock",
     },
-    aggregateRating: {
+  };
+  // Only emit aggregateRating when real, page-specific values are supplied.
+  // Never fabricate a default rating — unverifiable review snippets are a
+  // Google manual-action risk.
+  if (ratingValue && ratingCount) {
+    schema.aggregateRating = {
       "@type": "AggregateRating",
       ratingValue,
       ratingCount,
       bestRating: 5,
       worstRating: 1,
-    },
-  };
+    };
+  }
   if (screenshot) schema.screenshot = screenshot;
   if (featureList?.length) schema.featureList = featureList;
 

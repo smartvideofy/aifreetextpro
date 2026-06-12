@@ -40,12 +40,12 @@ const CookieConsent = () => {
   if (!isVisible) return null;
 
   return (
-    <div className="fixed bottom-0 left-0 right-0 z-50 p-4 animate-fade-in">
-      <div className="max-w-4xl mx-auto bg-card border border-border rounded-xl shadow-2xl p-4 md:p-6">
-        <div className="flex flex-col md:flex-row items-start md:items-center gap-4">
+    <div className="fixed bottom-0 left-0 right-0 z-50 p-3 animate-fade-in">
+      <div className="max-w-4xl mx-auto bg-card border border-border rounded-xl shadow-2xl px-4 py-3">
+        <div className="flex flex-col md:flex-row items-start md:items-center gap-3">
           {/* Icon */}
-          <div className="hidden md:flex items-center justify-center w-12 h-12 rounded-full bg-primary/10 flex-shrink-0">
-            <Cookie className="w-6 h-6 text-primary" />
+          <div className="hidden md:flex items-center justify-center w-9 h-9 rounded-full bg-primary/10 flex-shrink-0">
+            <Cookie className="w-5 h-5 text-primary" />
           </div>
 
           {/* Content */}

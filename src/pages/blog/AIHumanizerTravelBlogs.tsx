@@ -173,9 +173,9 @@ export default function AIHumanizerTravelBlogs() {
             <header className="mb-8">
               <div className="flex items-center gap-2 text-sm text-muted-foreground mb-4">
                 <span className="px-3 py-1 bg-primary/10 text-primary rounded-full">Humanize</span>
-                <span>â€¢</span>
+                <span>•</span>
                 <time dateTime="2026-02-02">February 2, 2026</time>
-                <span>â€¢</span>
+                <span>•</span>
                 <span>14 min read</span>
               </div>
               
@@ -241,7 +241,7 @@ export default function AIHumanizerTravelBlogs() {
                       Missing Local Knowledge
                     </h3>
                     <p className="text-muted-foreground">
-                      Authentic travel writers know the hidden cafÃ© that only locals visit, the unwritten etiquette rules, the seasonal changes that affect experiences. AI content lacks these insider details that signal genuine expertise.
+                      Authentic travel writers know the hidden café that only locals visit, the unwritten etiquette rules, the seasonal changes that affect experiences. AI content lacks these insider details that signal genuine expertise.
                     </p>
                   </div>
                   
@@ -296,7 +296,7 @@ export default function AIHumanizerTravelBlogs() {
                     <div className="border-l-4 border-primary pl-4">
                       <p className="font-medium mb-1 text-primary">Humanized Version:</p>
                       <p className="italic text-muted-foreground">
-                        "Getting lost in Tokyo became my preferred activity. Down a Shimokitazawa alley so narrow my shoulders nearly touched both walls, I found a record store run by a man who communicated entirely through enthusiastic pointing at vinyl covers. The Â¥100 coffee from the corner Family Mart became my ritual before each metro journey, always with the same tiny packet of crackers the cashier insisted I take."
+                        "Getting lost in Tokyo became my preferred activity. Down a Shimokitazawa alley so narrow my shoulders nearly touched both walls, I found a record store run by a man who communicated entirely through enthusiastic pointing at vinyl covers. The ¥100 coffee from the corner Family Mart became my ritual before each metro journey, always with the same tiny packet of crackers the cashier insisted I take."
                       </p>
                     </div>
                   </div>

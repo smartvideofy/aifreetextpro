@@ -793,7 +793,7 @@ export const blogPosts = [
   },
   {
     slug: "bypass-copyleaks-ai-detection",
-    title: "Bypass Copyleaks AI Detection â€“ Proven Techniques for 2026",
+    title: "Bypass Copyleaks AI Detection – Proven Techniques for 2026",
     excerpt: "Learn expert strategies to humanize AI-generated text, lower Copyleaks detection scores, and maintain readability while preserving integrity.",
     date: "2026-01-20",
     readTime: "12 min read",
@@ -801,7 +801,7 @@ export const blogPosts = [
   },
   {
     slug: "bypass-winston-ai-detection",
-    title: "Bypass Winston AI Detection â€“ Reduce AI Scores & Humanize Text",
+    title: "Bypass Winston AI Detection – Reduce AI Scores & Humanize Text",
     excerpt: "Discover how to bypass Winston AI detection safely. Expert strategies to humanize AI-generated text and lower detection scores.",
     date: "2026-01-20",
     readTime: "11 min read",
@@ -809,7 +809,7 @@ export const blogPosts = [
   },
   {
     slug: "bypass-zerogpt-ai-detection",
-    title: "Bypass ZeroGPT AI Detection â€“ Humanize AI Content & Reduce Scores",
+    title: "Bypass ZeroGPT AI Detection – Humanize AI Content & Reduce Scores",
     excerpt: "Learn how to bypass ZeroGPT AI detection effectively. Strategies to humanize AI-generated content and reduce detection scores.",
     date: "2026-01-20",
     readTime: "10 min read",

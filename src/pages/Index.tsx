@@ -13,7 +13,6 @@ import HowToSchema from "@/components/HowToSchema";
 import ProductMockup from "@/components/ProductMockup";
 import StickyHeaderCTA from "@/components/StickyHeaderCTA";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
-import heroIllustration from "@/assets/hero-illustration.png";
 import aiDetectorFeature from "@/assets/ai-detector-feature.png";
 import aiHumanizerFeature from "@/assets/ai-humanizer-feature.png";
 import studentWriting from "@/assets/student-writing.png";
@@ -21,7 +20,7 @@ import writerProfessional from "@/assets/writer-professional.png";
 import researcherWorking from "@/assets/researcher-working.png";
 import jamesChen from "@/assets/testimonials/james-chen.jpg";
 import sarahPatel from "@/assets/testimonials/sarah-patel.jpg";
-import lisaMartinez from "@/assets/testimonials/lisa-martinez.jpg";
+import michaelRodriguez from "@/assets/testimonials/michael-rodriguez.jpg";
 
 // Lazy load below-fold heavy components for mobile LCP optimization
 const AboutSection = lazy(() => import("@/components/AboutSection"));
@@ -51,7 +50,6 @@ const Index = () => {
       <Helmet>
         <title>Free AI Humanizer & Detector - 98% Accuracy [2026]</title>
         <meta name="description" content="Humanize AI text in seconds and bypass Turnitin, GPTZero, Originality.AI with 98% accuracy. 1,000 free words, no signup. Trusted by 50,000+ writers." />
-        <meta name="keywords" content="free ai humanizer, ai humanizer free, ai humanizer tool free, free humanizer, ai checker, free ai detector, detect ai text, bypass turnitin, bypass gptzero, ai detector unlimited words" />
         <link rel="canonical" href="https://aifreetextpro.com/" />
         
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
@@ -81,13 +79,6 @@ const Index = () => {
               "@type": "Offer",
               "price": "0",
               "priceCurrency": "USD"
-            },
-            "aggregateRating": {
-              "@type": "AggregateRating",
-              "ratingValue": "4.8",
-              "ratingCount": "1247",
-              "bestRating": "5",
-              "worstRating": "1"
             },
             "operatingSystem": "Web Browser",
             "applicationSubCategory": "AI Text Analysis Tool",
@@ -122,11 +113,6 @@ const Index = () => {
               "price": "0",
               "priceCurrency": "USD",
               "availability": "https://schema.org/InStock"
-            },
-            "aggregateRating": {
-              "@type": "AggregateRating",
-              "ratingValue": "4.8",
-              "reviewCount": "1247"
             }
           })}
         </script>
@@ -353,19 +339,6 @@ const Index = () => {
               <div className="mt-12 md:mt-20 animate-fade-in" style={{ animationDelay: "600ms" }}>
                 <ProductMockup />
               </div>
-
-              {/* Hero Illustration */}
-              <div className="mt-10 md:mt-16 animate-fade-in" style={{ animationDelay: "700ms" }}>
-                <img 
-                  src={heroIllustration} 
-                  alt="AI text analysis and detection visualization showing documents being scanned" 
-                  className="w-full max-w-4xl mx-auto rounded-2xl shadow-xl border border-border/40"
-                  width={1200}
-                  height={675}
-                  ref={(el) => { if (el) el.setAttribute('fetchpriority', 'high'); }}
-                  decoding="sync"
-                />
-              </div>
             </div>
           </div>
         </section>
@@ -388,25 +361,25 @@ const Index = () => {
                   <div className="space-y-3 md:space-y-4">
                     <div className="flex items-start gap-2 md:gap-3">
                       <div className="w-5 h-5 md:w-6 md:h-6 rounded-full bg-destructive/20 flex items-center justify-center flex-shrink-0 mt-0.5">
-                        <span className="text-destructive text-xs md:text-sm">âœ—</span>
+                        <span className="text-destructive text-xs md:text-sm">✗</span>
                       </div>
                       <p className="text-sm md:text-base text-muted-foreground">AI detectors flagging legitimate content</p>
                     </div>
                     <div className="flex items-start gap-2 md:gap-3">
                       <div className="w-5 h-5 md:w-6 md:h-6 rounded-full bg-destructive/20 flex items-center justify-center flex-shrink-0 mt-0.5">
-                        <span className="text-destructive text-xs md:text-sm">âœ—</span>
+                        <span className="text-destructive text-xs md:text-sm">✗</span>
                       </div>
                       <p className="text-sm md:text-base text-muted-foreground">Robotic, unnatural AI-generated text</p>
                     </div>
                     <div className="flex items-start gap-2 md:gap-3">
                       <div className="w-5 h-5 md:w-6 md:h-6 rounded-full bg-destructive/20 flex items-center justify-center flex-shrink-0 mt-0.5">
-                        <span className="text-destructive text-xs md:text-sm">âœ—</span>
+                        <span className="text-destructive text-xs md:text-sm">✗</span>
                       </div>
                       <p className="text-sm md:text-base text-muted-foreground">Risk of academic or professional consequences</p>
                     </div>
                     <div className="flex items-start gap-2 md:gap-3">
                       <div className="w-5 h-5 md:w-6 md:h-6 rounded-full bg-destructive/20 flex items-center justify-center flex-shrink-0 mt-0.5">
-                        <span className="text-destructive text-xs md:text-sm">âœ—</span>
+                        <span className="text-destructive text-xs md:text-sm">✗</span>
                       </div>
                       <p className="text-sm md:text-base text-muted-foreground">Time-consuming manual editing</p>
                     </div>
@@ -662,7 +635,7 @@ const Index = () => {
           <div className="container mx-auto px-4">
             <div className="text-center mb-12">
               <p className="text-lg md:text-xl text-muted-foreground font-medium">
-                <span className="text-primary font-bold">98% accuracy</span> tested on thousands of samples â€¢ Trusted by writers, students, and professionals
+                <span className="text-primary font-bold">98% accuracy</span> tested on thousands of samples • Trusted by writers, students, and professionals
               </p>
             </div>
             
@@ -671,14 +644,14 @@ const Index = () => {
                 <div className="space-y-4">
                   <div className="flex items-center gap-3">
                     <Avatar className="w-12 h-12 border-2 border-primary/20">
-                      <AvatarImage src={lisaMartinez} alt="Maria Rodriguez" className="object-cover" />
+                      <AvatarImage src={michaelRodriguez} alt="Michael Rodriguez" className="object-cover" />
                       <AvatarFallback className="bg-gradient-to-br from-primary/20 to-secondary/20 text-primary font-bold">
                         MR
                       </AvatarFallback>
                     </Avatar>
                     <div>
-                      <p className="font-semibold">Maria Rodriguez</p>
-                      <p className="text-sm text-muted-foreground">Content Writer</p>
+                      <p className="font-semibold">Michael Rodriguez</p>
+                      <p className="text-sm text-muted-foreground">Content Creator</p>
                     </div>
                   </div>
                   <p className="text-muted-foreground italic">
@@ -797,7 +770,7 @@ const Index = () => {
               </p>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4 md:gap-6 max-w-7xl mx-auto overflow-hidden">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto items-stretch">
               {/* Free Plan */}
               <Card className="relative hover:shadow-lg transition-shadow flex flex-col">
                 <div className="p-6 flex-1 flex flex-col">
@@ -836,94 +809,8 @@ const Index = () => {
                 </div>
               </Card>
 
-              {/* Starter Plan */}
-              <Card className="relative hover:shadow-lg transition-shadow flex flex-col">
-                <div className="p-6 flex-1 flex flex-col">
-                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
-                    <Zap className="h-6 w-6 text-primary" />
-                  </div>
-                  <h3 className="text-2xl font-bold mb-2">Starter</h3>
-                  <div className="mb-6">
-                    <span className="text-4xl font-bold">$4.99</span>
-                    <span className="text-muted-foreground">/month</span>
-                  </div>
-                  
-                  <ul className="space-y-3 flex-1">
-                    <li className="flex items-start gap-2">
-                      <CheckCircle className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                      <span className="text-sm">5,000 words per month</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <CheckCircle className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                      <span className="text-sm">Advanced AI detection</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <CheckCircle className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                      <span className="text-sm">Advanced humanization</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <CheckCircle className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                      <span className="text-sm">Priority email support</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <CheckCircle className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                      <span className="text-sm">Export reports (PDF)</span>
-                    </li>
-                  </ul>
-                  
-                  <a href="https://app.aifreetextpro.com/" target="_blank" rel="noopener noreferrer" className="block mt-6">
-                    <Button className="w-full">
-                      Subscribe Now
-                    </Button>
-                  </a>
-                </div>
-              </Card>
-
-              {/* Lite Plan */}
-              <Card className="relative hover:shadow-lg transition-shadow flex flex-col">
-                <div className="p-6 flex-1 flex flex-col">
-                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
-                    <Zap className="h-6 w-6 text-primary" />
-                  </div>
-                  <h3 className="text-2xl font-bold mb-2">Lite</h3>
-                  <div className="mb-6">
-                    <span className="text-4xl font-bold">$9.99</span>
-                    <span className="text-muted-foreground">/month</span>
-                  </div>
-                  
-                  <ul className="space-y-3 flex-1">
-                    <li className="flex items-start gap-2">
-                      <CheckCircle className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                      <span className="text-sm">10,000 words per month</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <CheckCircle className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                      <span className="text-sm">Advanced AI detection</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <CheckCircle className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                      <span className="text-sm">Advanced humanization</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <CheckCircle className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                      <span className="text-sm">Priority email support</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <CheckCircle className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                      <span className="text-sm">Export reports (PDF)</span>
-                    </li>
-                  </ul>
-                  
-                  <a href="https://app.aifreetextpro.com/" target="_blank" rel="noopener noreferrer" className="block mt-6">
-                    <Button className="w-full">
-                      Subscribe Now
-                    </Button>
-                  </a>
-                </div>
-              </Card>
-
               {/* Pro Writer Plan - Most Popular */}
-              <Card className="relative border-primary shadow-lg md:scale-[1.02] flex flex-col sm:col-span-2 lg:col-span-1">
+              <Card className="relative border-primary shadow-lg md:scale-[1.02] flex flex-col">
                 <div className="absolute -top-3 left-1/2 -translate-x-1/2">
                   <span className="bg-foreground text-background px-4 py-1.5 rounded-full text-xs font-semibold whitespace-nowrap">
                     Most Popular
@@ -1027,7 +914,13 @@ const Index = () => {
             </div>
 
             <div className="text-center mt-12">
-              <p className="text-sm text-muted-foreground">
+              <Link to="/pricing">
+                <Button variant="outline" size="lg" className="group">
+                  Compare all 5 plans
+                  <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                </Button>
+              </Link>
+              <p className="text-sm text-muted-foreground mt-6">
                 All plans are billed monthly. Cancel anytime with no questions asked.
               </p>
               <p className="text-sm text-muted-foreground mt-2">
@@ -1178,7 +1071,7 @@ const Index = () => {
                 </div>
                 <h2 className="text-3xl md:text-4xl font-bold mb-4">Powerful API for Developers</h2>
                 <p className="text-muted-foreground text-lg mb-6">
-                  Integrate AI humanization and detection directly into your product with our REST API. Simple authentication, real-time analytics, and 98% bypass accuracy â€” all programmatically.
+                  Integrate AI humanization and detection directly into your product with our REST API. Simple authentication, real-time analytics, and 98% bypass accuracy — all programmatically.
                 </p>
                 <div className="flex flex-wrap gap-4 mb-8 text-sm text-muted-foreground">
                   <span className="flex items-center gap-1.5"><CheckCircle className="h-4 w-4 text-primary" /> RESTful</span>

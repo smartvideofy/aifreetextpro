@@ -149,9 +149,9 @@ export default function WriteAIResistantContent() {
             <header className="mb-8">
               <div className="flex items-center gap-2 text-sm text-muted-foreground mb-4">
                 <span className="px-3 py-1 bg-primary/10 text-primary rounded-full">Tips</span>
-                <span>â€¢</span>
+                <span>•</span>
                 <time dateTime="2026-02-02">February 2, 2026</time>
-                <span>â€¢</span>
+                <span>•</span>
                 <span>12 min read</span>
               </div>
               

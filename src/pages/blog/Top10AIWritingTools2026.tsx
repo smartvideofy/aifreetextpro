@@ -188,9 +188,9 @@ export default function Top10AIWritingTools2026() {
             <header className="mb-8">
               <div className="flex items-center gap-2 text-sm text-muted-foreground mb-4">
                 <span className="px-3 py-1 bg-primary/10 text-primary rounded-full">Tools</span>
-                <span>â€¢</span>
+                <span>•</span>
                 <time dateTime="2026-02-02">February 2, 2026</time>
-                <span>â€¢</span>
+                <span>•</span>
                 <span>18 min read</span>
               </div>
               
@@ -255,70 +255,70 @@ export default function Top10AIWritingTools2026() {
                         <td className="border border-border p-3">All-purpose writing</td>
                         <td className="border border-border p-3">$29-199/mo</td>
                         <td className="border border-border p-3">Built-in</td>
-                        <td className="border border-border p-3 text-center">â­ 4.8</td>
+                        <td className="border border-border p-3 text-center">⭐ 4.8</td>
                       </tr>
                       <tr className="bg-muted/30">
                         <td className="border border-border p-3 font-medium">ContentForge</td>
                         <td className="border border-border p-3">SEO content</td>
                         <td className="border border-border p-3">$49-299/mo</td>
                         <td className="border border-border p-3">Built-in</td>
-                        <td className="border border-border p-3 text-center">â­ 4.7</td>
+                        <td className="border border-border p-3 text-center">⭐ 4.7</td>
                       </tr>
                       <tr>
                         <td className="border border-border p-3 font-medium">IdeaSpark</td>
                         <td className="border border-border p-3">Creative brainstorming</td>
                         <td className="border border-border p-3">$19-99/mo</td>
                         <td className="border border-border p-3">Partial</td>
-                        <td className="border border-border p-3 text-center">â­ 4.5</td>
+                        <td className="border border-border p-3 text-center">⭐ 4.5</td>
                       </tr>
                       <tr className="bg-muted/30">
                         <td className="border border-border p-3 font-medium">GrammarGuard AI</td>
                         <td className="border border-border p-3">Editing & polish</td>
                         <td className="border border-border p-3">$12-45/mo</td>
                         <td className="border border-border p-3">Yes</td>
-                        <td className="border border-border p-3 text-center">â­ 4.6</td>
+                        <td className="border border-border p-3 text-center">⭐ 4.6</td>
                       </tr>
                       <tr>
                         <td className="border border-border p-3 font-medium">SEOWriter 2026</td>
                         <td className="border border-border p-3">Search optimization</td>
                         <td className="border border-border p-3">$59-349/mo</td>
                         <td className="border border-border p-3">Built-in</td>
-                        <td className="border border-border p-3 text-center">â­ 4.7</td>
+                        <td className="border border-border p-3 text-center">⭐ 4.7</td>
                       </tr>
                       <tr className="bg-muted/30">
                         <td className="border border-border p-3 font-medium">StoryCrafter</td>
                         <td className="border border-border p-3">Fiction & narrative</td>
                         <td className="border border-border p-3">$25-149/mo</td>
                         <td className="border border-border p-3">Partial</td>
-                        <td className="border border-border p-3 text-center">â­ 4.4</td>
+                        <td className="border border-border p-3 text-center">⭐ 4.4</td>
                       </tr>
                       <tr>
                         <td className="border border-border p-3 font-medium">BlogBoost</td>
                         <td className="border border-border p-3">Blog publishing</td>
                         <td className="border border-border p-3">$15-79/mo</td>
                         <td className="border border-border p-3">Yes</td>
-                        <td className="border border-border p-3 text-center">â­ 4.5</td>
+                        <td className="border border-border p-3 text-center">⭐ 4.5</td>
                       </tr>
                       <tr className="bg-muted/30">
                         <td className="border border-border p-3 font-medium">AIEditor X</td>
                         <td className="border border-border p-3">Real-time editing</td>
                         <td className="border border-border p-3">$35-175/mo</td>
                         <td className="border border-border p-3">Built-in</td>
-                        <td className="border border-border p-3 text-center">â­ 4.6</td>
+                        <td className="border border-border p-3 text-center">⭐ 4.6</td>
                       </tr>
                       <tr>
                         <td className="border border-border p-3 font-medium">TextAnalyzer Pro</td>
                         <td className="border border-border p-3">Content analytics</td>
                         <td className="border border-border p-3">$29-129/mo</td>
                         <td className="border border-border p-3">Partial</td>
-                        <td className="border border-border p-3 text-center">â­ 4.3</td>
+                        <td className="border border-border p-3 text-center">⭐ 4.3</td>
                       </tr>
                       <tr className="bg-muted/30">
                         <td className="border border-border p-3 font-medium">PromptPilot</td>
                         <td className="border border-border p-3">Prompt engineering</td>
                         <td className="border border-border p-3">$9-49/mo</td>
                         <td className="border border-border p-3">No</td>
-                        <td className="border border-border p-3 text-center">â­ 4.2</td>
+                        <td className="border border-border p-3 text-center">⭐ 4.2</td>
                       </tr>
                     </tbody>
                   </table>
@@ -344,20 +344,20 @@ export default function Top10AIWritingTools2026() {
                     <div>
                       <h4 className="font-medium mb-2">Key Features</h4>
                       <ul className="text-sm space-y-1">
-                        <li>â€¢ Adaptive style and tone customization</li>
-                        <li>â€¢ Built-in humanization engine</li>
-                        <li>â€¢ 50+ content templates</li>
-                        <li>â€¢ Real-time collaboration for teams</li>
-                        <li>â€¢ Integrations with WordPress, HubSpot, Notion</li>
+                        <li>• Adaptive style and tone customization</li>
+                        <li>• Built-in humanization engine</li>
+                        <li>• 50+ content templates</li>
+                        <li>• Real-time collaboration for teams</li>
+                        <li>• Integrations with WordPress, HubSpot, Notion</li>
                       </ul>
                     </div>
                     <div>
                       <h4 className="font-medium mb-2">Pricing</h4>
                       <ul className="text-sm space-y-1">
-                        <li>â€¢ Starter: $29/month (50K words)</li>
-                        <li>â€¢ Professional: $79/month (unlimited)</li>
-                        <li>â€¢ Team: $199/month (5 seats)</li>
-                        <li>â€¢ Enterprise: Custom pricing</li>
+                        <li>• Starter: $29/month (50K words)</li>
+                        <li>• Professional: $79/month (unlimited)</li>
+                        <li>• Team: $199/month (5 seats)</li>
+                        <li>• Enterprise: Custom pricing</li>
                       </ul>
                     </div>
                   </div>
@@ -382,20 +382,20 @@ export default function Top10AIWritingTools2026() {
                     <div>
                       <h4 className="font-medium mb-2">Key Features</h4>
                       <ul className="text-sm space-y-1">
-                        <li>â€¢ SERP analysis and content scoring</li>
-                        <li>â€¢ AI Overview optimization tools</li>
-                        <li>â€¢ Semantic keyword integration</li>
-                        <li>â€¢ Competitor content gap analysis</li>
-                        <li>â€¢ Direct publishing to WordPress/Webflow</li>
+                        <li>• SERP analysis and content scoring</li>
+                        <li>• AI Overview optimization tools</li>
+                        <li>• Semantic keyword integration</li>
+                        <li>• Competitor content gap analysis</li>
+                        <li>• Direct publishing to WordPress/Webflow</li>
                       </ul>
                     </div>
                     <div>
                       <h4 className="font-medium mb-2">Pricing</h4>
                       <ul className="text-sm space-y-1">
-                        <li>â€¢ Growth: $49/month (20 articles)</li>
-                        <li>â€¢ Scale: $149/month (100 articles)</li>
-                        <li>â€¢ Agency: $299/month (unlimited)</li>
-                        <li>â€¢ 14-day free trial available</li>
+                        <li>• Growth: $49/month (20 articles)</li>
+                        <li>• Scale: $149/month (100 articles)</li>
+                        <li>• Agency: $299/month (unlimited)</li>
+                        <li>• 14-day free trial available</li>
                       </ul>
                     </div>
                   </div>
@@ -417,10 +417,10 @@ export default function Top10AIWritingTools2026() {
                     When writer's block strikes, IdeaSpark delivers. This tool specializes in creative ideation, generating unique angles, headlines, and content frameworks. It's particularly powerful for content strategists who need fresh perspectives on competitive topics. The "Unexpected Connections" feature links disparate concepts to generate truly original content ideas.
                   </p>
                   <ul className="text-sm space-y-1 mb-4">
-                    <li>â€¢ Trend-based topic generation using real-time data</li>
-                    <li>â€¢ Headline A/B testing with engagement predictions</li>
-                    <li>â€¢ Content calendar integration and planning</li>
-                    <li>â€¢ <strong>Pricing:</strong> $19-99/month | <strong>Rating:</strong> â­ 4.5</li>
+                    <li>• Trend-based topic generation using real-time data</li>
+                    <li>• Headline A/B testing with engagement predictions</li>
+                    <li>• Content calendar integration and planning</li>
+                    <li>• <strong>Pricing:</strong> $19-99/month | <strong>Rating:</strong> ⭐ 4.5</li>
                   </ul>
                 </div>
 
@@ -436,10 +436,10 @@ export default function Top10AIWritingTools2026() {
                     GrammarGuard AI goes beyond basic grammar checking to offer comprehensive content polish. Its AI understands context, detects tone inconsistencies, and suggests rephrasing that improves readability without losing meaning. The plagiarism detection is among the most accurate we tested, catching paraphrased content that other tools miss.
                   </p>
                   <ul className="text-sm space-y-1 mb-4">
-                    <li>â€¢ Context-aware grammar and style suggestions</li>
-                    <li>â€¢ Plagiarism detection with source identification</li>
-                    <li>â€¢ Readability scoring and improvement recommendations</li>
-                    <li>â€¢ <strong>Pricing:</strong> $12-45/month | <strong>Rating:</strong> â­ 4.6</li>
+                    <li>• Context-aware grammar and style suggestions</li>
+                    <li>• Plagiarism detection with source identification</li>
+                    <li>• Readability scoring and improvement recommendations</li>
+                    <li>• <strong>Pricing:</strong> $12-45/month | <strong>Rating:</strong> ⭐ 4.6</li>
                   </ul>
                 </div>
 
@@ -455,10 +455,10 @@ export default function Top10AIWritingTools2026() {
                     SEOWriter 2026 is the power tool for SEO professionals. It integrates directly with Ahrefs, SEMrush, and Google Search Console to pull keyword data, analyze SERP intent, and generate content briefs. The "Entity Optimization" feature ensures your content covers related topics that Google expects to see for comprehensive coverage.
                   </p>
                   <ul className="text-sm space-y-1 mb-4">
-                    <li>â€¢ Direct API integrations with major SEO tools</li>
-                    <li>â€¢ Entity and topic cluster optimization</li>
-                    <li>â€¢ Schema markup generation for structured data</li>
-                    <li>â€¢ <strong>Pricing:</strong> $59-349/month | <strong>Rating:</strong> â­ 4.7</li>
+                    <li>• Direct API integrations with major SEO tools</li>
+                    <li>• Entity and topic cluster optimization</li>
+                    <li>• Schema markup generation for structured data</li>
+                    <li>• <strong>Pricing:</strong> $59-349/month | <strong>Rating:</strong> ⭐ 4.7</li>
                   </ul>
                 </div>
 
@@ -468,31 +468,31 @@ export default function Top10AIWritingTools2026() {
                     <h3 className="font-semibold mb-2">6. StoryCrafter</h3>
                     <p className="text-sm text-muted-foreground mb-2">Best for Fiction & Storytelling</p>
                     <p className="text-sm">AI-assisted narrative development with character consistency tracking, plot arc suggestions, and genre-specific templates. Ideal for authors and screenwriters.</p>
-                    <p className="text-sm mt-2"><strong>$25-149/mo</strong> | â­ 4.4</p>
+                    <p className="text-sm mt-2"><strong>$25-149/mo</strong> | ⭐ 4.4</p>
                   </div>
                   <div className="bg-card border border-border rounded-lg p-4">
                     <h3 className="font-semibold mb-2">7. BlogBoost</h3>
                     <p className="text-sm text-muted-foreground mb-2">Best for Consistent Blog Publishing</p>
                     <p className="text-sm">Templates, outlines, and scheduling for bloggers. The fastest path from idea to published post with built-in SEO checks.</p>
-                    <p className="text-sm mt-2"><strong>$15-79/mo</strong> | â­ 4.5</p>
+                    <p className="text-sm mt-2"><strong>$15-79/mo</strong> | ⭐ 4.5</p>
                   </div>
                   <div className="bg-card border border-border rounded-lg p-4">
                     <h3 className="font-semibold mb-2">8. AIEditor X</h3>
                     <p className="text-sm text-muted-foreground mb-2">Best for Real-Time AI Editing</p>
                     <p className="text-sm">Works alongside your writing with inline suggestions, humanization on-the-fly, and context-aware improvements.</p>
-                    <p className="text-sm mt-2"><strong>$35-175/mo</strong> | â­ 4.6</p>
+                    <p className="text-sm mt-2"><strong>$35-175/mo</strong> | ⭐ 4.6</p>
                   </div>
                   <div className="bg-card border border-border rounded-lg p-4">
                     <h3 className="font-semibold mb-2">9. TextAnalyzer Pro</h3>
                     <p className="text-sm text-muted-foreground mb-2">Best for Content Analytics</p>
                     <p className="text-sm">Measures readability, perplexity, burstiness, and engagement predictions. Essential for content optimization and A/B testing.</p>
-                    <p className="text-sm mt-2"><strong>$29-129/mo</strong> | â­ 4.3</p>
+                    <p className="text-sm mt-2"><strong>$29-129/mo</strong> | ⭐ 4.3</p>
                   </div>
                   <div className="bg-card border border-border rounded-lg p-4 md:col-span-2">
                     <h3 className="font-semibold mb-2">10. PromptPilot</h3>
                     <p className="text-sm text-muted-foreground mb-2">Best for Prompt Engineering</p>
                     <p className="text-sm">Helps you craft and refine prompts for any AI system. Library of proven prompt templates with A/B testing to optimize output quality. The meta-tool for getting more from other AI writing tools.</p>
-                    <p className="text-sm mt-2"><strong>$9-49/mo</strong> | â­ 4.2</p>
+                    <p className="text-sm mt-2"><strong>$9-49/mo</strong> | ⭐ 4.2</p>
                   </div>
                 </div>
               </section>

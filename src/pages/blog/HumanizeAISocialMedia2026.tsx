@@ -176,9 +176,9 @@ export default function HumanizeAISocialMedia2026() {
             <header className="mb-8">
               <div className="flex items-center gap-2 text-sm text-muted-foreground mb-4">
                 <span className="px-3 py-1 bg-primary/10 text-primary rounded-full">Social Media</span>
-                <span>â€¢</span>
+                <span>•</span>
                 <time dateTime="2026-02-02">February 2, 2026</time>
-                <span>â€¢</span>
+                <span>•</span>
                 <span>14 min read</span>
               </div>
 
@@ -244,21 +244,21 @@ export default function HumanizeAISocialMedia2026() {
                       <div>
                         <p className="font-medium mb-2">Do:</p>
                         <ul className="text-sm text-muted-foreground space-y-1">
-                          <li>â€¢ Use line breaks for readability</li>
-                          <li>â€¢ Add emojis naturally throughout</li>
-                          <li>â€¢ Reference current trends/memes</li>
-                          <li>â€¢ Ask questions in captions</li>
-                          <li>â€¢ Share behind-the-scenes moments</li>
+                          <li>• Use line breaks for readability</li>
+                          <li>• Add emojis naturally throughout</li>
+                          <li>• Reference current trends/memes</li>
+                          <li>• Ask questions in captions</li>
+                          <li>• Share behind-the-scenes moments</li>
                         </ul>
                       </div>
                       <div>
                         <p className="font-medium mb-2">Avoid:</p>
                         <ul className="text-sm text-muted-foreground space-y-1">
-                          <li>â€¢ Dense paragraph blocks</li>
-                          <li>â€¢ Formal marketing language</li>
-                          <li>â€¢ Generic motivational quotes</li>
-                          <li>â€¢ Excessive hashtag dumps</li>
-                          <li>â€¢ Cookie-cutter CTAs</li>
+                          <li>• Dense paragraph blocks</li>
+                          <li>• Formal marketing language</li>
+                          <li>• Generic motivational quotes</li>
+                          <li>• Excessive hashtag dumps</li>
+                          <li>• Cookie-cutter CTAs</li>
                         </ul>
                       </div>
                     </div>
@@ -266,13 +266,13 @@ export default function HumanizeAISocialMedia2026() {
                       <p className="text-sm font-medium mb-2">Before (AI):</p>
                       <p className="text-sm text-muted-foreground italic mb-3">"Experience the ultimate in skincare technology with our revolutionary new product line, designed to transform your daily routine."</p>
                       <p className="text-sm font-medium mb-2">After (Humanized):</p>
-                      <p className="text-sm text-muted-foreground italic">"okay so this might sound dramatic but... my skin has literally never looked like this before ðŸ˜­âœ¨
+                      <p className="text-sm text-muted-foreground italic">"okay so this might sound dramatic but... my skin has literally never looked like this before 😭✨
 
 tried the new serum for 3 weeks and I'm lowkey obsessed
 
 anyone else have that moment where you catch yourself in the mirror and actually smile?
 
-drop a ðŸ’« if you want the routine breakdown ðŸ‘‡"</p>
+drop a 💫 if you want the routine breakdown 👇"</p>
                     </div>
                   </div>
 
@@ -288,21 +288,21 @@ drop a ðŸ’« if you want the routine breakdown ðŸ‘‡"</p>
                       <div>
                         <p className="font-medium mb-2">Do:</p>
                         <ul className="text-sm text-muted-foreground space-y-1">
-                          <li>â€¢ Use sentence fragments freely</li>
-                          <li>â€¢ Take bold stances on topics</li>
-                          <li>â€¢ Reference trending conversations</li>
-                          <li>â€¢ Thread complex thoughts</li>
-                          <li>â€¢ Reply authentically to others</li>
+                          <li>• Use sentence fragments freely</li>
+                          <li>• Take bold stances on topics</li>
+                          <li>• Reference trending conversations</li>
+                          <li>• Thread complex thoughts</li>
+                          <li>• Reply authentically to others</li>
                         </ul>
                       </div>
                       <div>
                         <p className="font-medium mb-2">Avoid:</p>
                         <ul className="text-sm text-muted-foreground space-y-1">
-                          <li>â€¢ Perfect grammar always</li>
-                          <li>â€¢ Neutral, balanced takes</li>
-                          <li>â€¢ Obvious promotional content</li>
-                          <li>â€¢ Long, formal sentences</li>
-                          <li>â€¢ Ignoring replies and QTs</li>
+                          <li>• Perfect grammar always</li>
+                          <li>• Neutral, balanced takes</li>
+                          <li>• Obvious promotional content</li>
+                          <li>• Long, formal sentences</li>
+                          <li>• Ignoring replies and QTs</li>
                         </ul>
                       </div>
                     </div>
@@ -316,7 +316,7 @@ took us 6 months longer than expected
 
 worth it though
 
-(thread incoming with the full story of how we almost gave up three times) ðŸ§µ"</p>
+(thread incoming with the full story of how we almost gave up three times) 🧵"</p>
                     </div>
                   </div>
 
@@ -332,21 +332,21 @@ worth it though
                       <div>
                         <p className="font-medium mb-2">Do:</p>
                         <ul className="text-sm text-muted-foreground space-y-1">
-                          <li>â€¢ Reference current sounds/trends</li>
-                          <li>â€¢ Use casual, conversational tone</li>
-                          <li>â€¢ Include self-deprecating humor</li>
-                          <li>â€¢ Hook in first 2 seconds</li>
-                          <li>â€¢ Respond to comments with videos</li>
+                          <li>• Reference current sounds/trends</li>
+                          <li>• Use casual, conversational tone</li>
+                          <li>• Include self-deprecating humor</li>
+                          <li>• Hook in first 2 seconds</li>
+                          <li>• Respond to comments with videos</li>
                         </ul>
                       </div>
                       <div>
                         <p className="font-medium mb-2">Avoid:</p>
                         <ul className="text-sm text-muted-foreground space-y-1">
-                          <li>â€¢ Scripted, stiff delivery</li>
-                          <li>â€¢ Outdated trend references</li>
-                          <li>â€¢ Corporate speak</li>
-                          <li>â€¢ Perfect production value</li>
-                          <li>â€¢ Ignoring community comments</li>
+                          <li>• Scripted, stiff delivery</li>
+                          <li>• Outdated trend references</li>
+                          <li>• Corporate speak</li>
+                          <li>• Perfect production value</li>
+                          <li>• Ignoring community comments</li>
                         </ul>
                       </div>
                     </div>
@@ -463,13 +463,13 @@ worth it though
                       Red Flags in AI Social Content
                     </h3>
                     <ul className="space-y-2 text-sm text-muted-foreground mb-0">
-                      <li>â€¢ Starting every post the same way</li>
-                      <li>â€¢ Perfect grammar that feels unnatural</li>
-                      <li>â€¢ Generic motivational language</li>
-                      <li>â€¢ Missing emojis on emoji-heavy platforms</li>
-                      <li>â€¢ Robotic responses to comments</li>
-                      <li>â€¢ No reference to current events or trends</li>
-                      <li>â€¢ Uniform posting times and frequencies</li>
+                      <li>• Starting every post the same way</li>
+                      <li>• Perfect grammar that feels unnatural</li>
+                      <li>• Generic motivational language</li>
+                      <li>• Missing emojis on emoji-heavy platforms</li>
+                      <li>• Robotic responses to comments</li>
+                      <li>• No reference to current events or trends</li>
+                      <li>• Uniform posting times and frequencies</li>
                     </ul>
                   </div>
                   <div className="bg-primary/10 border border-primary/20 rounded-lg p-5">
@@ -478,13 +478,13 @@ worth it though
                       Signs of Good Humanization
                     </h3>
                     <ul className="space-y-2 text-sm text-muted-foreground mb-0">
-                      <li>â€¢ Varied opening hooks</li>
-                      <li>â€¢ Platform-appropriate language style</li>
-                      <li>â€¢ Personal stories and specific details</li>
-                      <li>â€¢ Natural emoji and formatting use</li>
-                      <li>â€¢ Genuine comment engagement</li>
-                      <li>â€¢ Timely trend references</li>
-                      <li>â€¢ Authentic posting rhythm</li>
+                      <li>• Varied opening hooks</li>
+                      <li>• Platform-appropriate language style</li>
+                      <li>• Personal stories and specific details</li>
+                      <li>• Natural emoji and formatting use</li>
+                      <li>• Genuine comment engagement</li>
+                      <li>• Timely trend references</li>
+                      <li>• Authentic posting rhythm</li>
                     </ul>
                   </div>
                 </div>
@@ -518,7 +518,7 @@ worth it though
                       Reference previous posts, past community discussions, or running jokes that only your audience would understand.
                     </p>
                     <p className="text-sm italic text-muted-foreground">
-                      "remember when you all roasted us for that terrible color choice? yeah... you were right ðŸ˜…"
+                      "remember when you all roasted us for that terrible color choice? yeah... you were right 😅"
                     </p>
                   </div>
                   <div className="bg-card border border-border rounded-lg p-5">

@@ -83,7 +83,7 @@ const teamMembers = [
     twitter: "#"
   },
   {
-    name: "Thomas MÃ¼ller",
+    name: "Thomas Müller",
     role: "Head of Customer Success",
     slug: "thomas-mueller",
     initials: "TM",
@@ -291,7 +291,7 @@ const Team = () => {
                       </h4>
                       <ul className="text-xs space-y-1">
                         {member.credentials.map((cred, i) => (
-                          <li key={i} className="text-muted-foreground">â€¢ {cred}</li>
+                          <li key={i} className="text-muted-foreground">• {cred}</li>
                         ))}
                       </ul>
                     </div>

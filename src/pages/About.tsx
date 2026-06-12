@@ -174,7 +174,7 @@ const About = () => {
                   </div>
                   <h3 className="text-2xl font-bold mb-4">Innovation</h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    We constantly refine our models to stay ahead of AI detection systemsâ€”ensuring you always lead the curve, not follow it.
+                    We constantly refine our models to stay ahead of AI detection systems—ensuring you always lead the curve, not follow it.
                   </p>
                 </Card>
               </div>
@@ -240,7 +240,7 @@ const About = () => {
                   </div>
                   <h3 className="text-xl font-bold mb-3">Global-Ready</h3>
                   <p className="text-muted-foreground">
-                    Built to understand diverse linguistic cues and writing standardsâ€”perfect for international users.
+                    Built to understand diverse linguistic cues and writing standards—perfect for international users.
                   </p>
                 </Card>
                 

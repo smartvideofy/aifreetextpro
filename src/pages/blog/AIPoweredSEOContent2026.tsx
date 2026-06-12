@@ -202,9 +202,9 @@ export default function AIPoweredSEOContent2026() {
             <header className="mb-8">
               <div className="flex items-center gap-2 text-sm text-muted-foreground mb-4">
                 <span className="px-3 py-1 bg-primary/10 text-primary rounded-full">SEO & AI</span>
-                <span>â€¢</span>
+                <span>•</span>
                 <time dateTime="2026-02-02">February 2, 2026</time>
-                <span>â€¢</span>
+                <span>•</span>
                 <span>15 min read</span>
               </div>
               
@@ -429,19 +429,19 @@ export default function AIPoweredSEOContent2026() {
                       <div className="bg-background rounded-lg p-4">
                         <p className="font-medium mb-2">Supporting Articles:</p>
                         <ul className="text-sm text-muted-foreground space-y-1">
-                          <li>â€¢ How AI Detectors Work</li>
-                          <li>â€¢ Bypass Turnitin Detection</li>
-                          <li>â€¢ GPTZero vs. Originality AI</li>
-                          <li>â€¢ AI Humanizer Tools Comparison</li>
+                          <li>• How AI Detectors Work</li>
+                          <li>• Bypass Turnitin Detection</li>
+                          <li>• GPTZero vs. Originality AI</li>
+                          <li>• AI Humanizer Tools Comparison</li>
                         </ul>
                       </div>
                       <div className="bg-background rounded-lg p-4">
                         <p className="font-medium mb-2">Long-Tail Content:</p>
                         <ul className="text-sm text-muted-foreground space-y-1">
-                          <li>â€¢ "Can professors detect ChatGPT?"</li>
-                          <li>â€¢ "Why my AI content was flagged"</li>
-                          <li>â€¢ "Free AI detection tools 2026"</li>
-                          <li>â€¢ "Academic AI writing policies"</li>
+                          <li>• "Can professors detect ChatGPT?"</li>
+                          <li>• "Why my AI content was flagged"</li>
+                          <li>• "Free AI detection tools 2026"</li>
+                          <li>• "Academic AI writing policies"</li>
                         </ul>
                       </div>
                     </div>

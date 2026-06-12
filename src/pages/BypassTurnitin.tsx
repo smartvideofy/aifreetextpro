@@ -270,7 +270,7 @@ const BypassTurnitin = () => {
 
           {/* Key Takeaways */}
           <KeyTakeaways points={[
-            "99.8% success rate against Turnitin AI detection â€” tested February 2026",
+            "99.8% success rate against Turnitin AI detection — tested February 2026",
             "Reduces AI scores from 87% to under 2% in under 30 seconds",
             "Preserves academic citations (APA, MLA, Chicago) and scholarly tone",
             "Free tier available with no credit card required",
@@ -298,7 +298,7 @@ const BypassTurnitin = () => {
               <div className="bg-card border border-primary/20 rounded-lg p-6 text-center">
                 <div className="text-4xl font-bold text-primary mb-2">2%</div>
                 <div className="text-sm text-muted-foreground mb-4">After AI Free Text Pro</div>
-                <div className="text-xs text-primary">Passes Turnitin Checks âœ“</div>
+                <div className="text-xs text-primary">Passes Turnitin Checks ✓</div>
               </div>
             </div>
 
@@ -329,7 +329,7 @@ const BypassTurnitin = () => {
                     </p>
                   </div>
                   <div className="text-sm text-primary font-medium">
-                    Turnitin AI Score: 2% - Passes as Human âœ“
+                    Turnitin AI Score: 2% - Passes as Human ✓
                   </div>
                 </div>
               </div>
@@ -366,10 +366,10 @@ const BypassTurnitin = () => {
                   </tr>
                   <tr>
                     <td className="p-4 font-medium">Avg. AI Score Reduction</td>
-                    <td className="text-center p-4 bg-primary/5"><span className="text-primary font-bold">85% â†’ 2%</span></td>
-                    <td className="text-center p-4">85% â†’ 13%</td>
-                    <td className="text-center p-4">85% â†’ 8%</td>
-                    <td className="text-center p-4">85% â†’ 22%</td>
+                    <td className="text-center p-4 bg-primary/5"><span className="text-primary font-bold">85% → 2%</span></td>
+                    <td className="text-center p-4">85% → 13%</td>
+                    <td className="text-center p-4">85% → 8%</td>
+                    <td className="text-center p-4">85% → 22%</td>
                   </tr>
                   <tr>
                     <td className="p-4 font-medium">Processing Speed</td>

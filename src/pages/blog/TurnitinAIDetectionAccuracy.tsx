@@ -11,7 +11,6 @@ import ReviewedBy from "@/components/ReviewedBy";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { FAQSection } from "@/components/FAQSection";
 import { AuthorSchema } from "@/components/AuthorSchema";
-import { ReviewSchema } from "@/components/ReviewSchema";
 
 const relatedArticles = [
   { title: "Can Turnitin Detect DeepSeek?", description: "Testing DeepSeek against Turnitin's detector.", href: "/blog/can-turnitin-detect-deepseek", category: "Academic" },
@@ -31,7 +30,7 @@ const TurnitinAIDetectionAccuracy = () => {
   return (
     <>
       <Helmet>
-        <title>Turnitin AI Detection: How It Works and How Accurate It Really Is (2026)</title>
+        <title>Turnitin AI Detection: How It Works & How Accurate (2026)</title>
         <meta name="description" content="Deep dive into Turnitin's AI detection: how it works, real accuracy rates, false positive data, and what scores actually mean for students and educators." />
         <meta name="keywords" content="turnitin ai detection accuracy, how does turnitin detect ai, turnitin ai detection percentage, turnitin false positive rate, turnitin ai score meaning" />
         <link rel="canonical" href="https://aifreetextpro.com/blog/turnitin-ai-detection-accuracy" />
@@ -68,16 +67,6 @@ const TurnitinAIDetectionAccuracy = () => {
         description="Real-world Turnitin AI detection accuracy across GPT-5, Claude, and Gemini with false-positive benchmarks."
         datePublished="2026-05-15"
         dateModified="2026-06-09"
-      />
-      <ReviewSchema
-        itemName="Turnitin AI Detector"
-        reviewUrl="https://aifreetextpro.com/blog/turnitin-ai-detection-accuracy"
-        itemUrl="https://turnitin.com"
-        ratingValue={3.8}
-        ratingCount={250}
-        reviewHeadline="Turnitin AI Detection Accuracy (2026)"
-        reviewBody="Real-world Turnitin AI detection accuracy across GPT-5, Claude, and Gemini with false-positive benchmarks."
-        datePublished="2026-05-15"
       />
 
 

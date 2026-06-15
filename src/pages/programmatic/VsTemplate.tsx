@@ -7,7 +7,6 @@ import Footer from "@/components/Footer";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { SEOHead } from "@/components/SEOHead";
 import { AuthorSchema } from "@/components/AuthorSchema";
-import { ReviewSchema } from "@/components/ReviewSchema";
 import { FAQSection } from "@/components/FAQSection";
 import { PillarHubLinks } from "@/components/PillarHubLinks";
 import { competitors } from "@/data/competitors";
@@ -38,16 +37,6 @@ const VsTemplate = () => {
         articleUrl={`https://aifreetextpro.com${canonical}`}
         datePublished="2026-06-10"
         dateModified="2026-06-09"
-      />
-      <ReviewSchema
-        itemName={`AI Free Text Pro vs ${data.name}`}
-        reviewUrl={`https://aifreetextpro.com${canonical}`}
-        ratingValue={4.8}
-        ratingCount={1247}
-        bestRating={5}
-        reviewHeadline={`AI Free Text Pro outperforms ${data.name} on value and bypass rate`}
-        reviewBody={data.verdict}
-        datePublished="2026-06-10"
       />
       <Helmet>
         <script type="application/ld+json">{JSON.stringify({

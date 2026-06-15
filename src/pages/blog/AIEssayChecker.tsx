@@ -30,7 +30,7 @@ const AIEssayChecker = () => {
   return (
     <>
       <Helmet>
-        <title>Best AI Essay Checker: Self-Check Before You Submit (2026) | AI Free Text Pro</title>
+        <title>Best AI Essay Checker: Self-Check Before You Submit (2026)</title>
         <meta name="description" content="Check your essay for AI detection before submitting. Compare 7 free AI essay checkers, learn what scores mean, and understand how to revise flagged content." />
         <meta name="keywords" content="AI essay checker, check my essay for AI, AI detection checker free, essay AI detector, self-check AI essay 2026" />
         <link rel="canonical" href="https://aifreetextpro.com/blog/ai-essay-checker" />

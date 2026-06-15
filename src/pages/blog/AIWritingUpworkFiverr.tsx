@@ -53,7 +53,7 @@ const AIWritingUpworkFiverr = () => {
   return (
     <>
       <Helmet>
-        <title>AI Writing for Upwork & Fiverr Freelancers (2026) | AI Free Text Pro</title>
+        <title>AI Writing for Upwork & Fiverr Freelancers (2026)</title>
         <meta name="description" content="Platform-specific strategies for freelancers using AI on Upwork and Fiverr. TOS compliance, client detection avoidance, pricing, and humanization workflows." />
         <meta name="keywords" content="AI writing Upwork, AI for Fiverr freelancers, freelance AI writing tools, Upwork AI policy, Fiverr AI detection, freelance writing AI 2026" />
         <link rel="canonical" href="https://aifreetextpro.com/blog/ai-writing-upwork-fiverr-freelancers" />

@@ -100,7 +100,7 @@ const AIWritingNonNativeEnglish = () => {
     <>
       <Helmet>
         <title>AI Writing for Non-Native English Speakers (2026)</title>
-        <meta name="description" content="Why non-native English writing triggers false AI detection flags and how to protect yourself. Detector accuracy data, grammar tool risks, and strategies for ESL writers." />
+        <meta name="description" content="Why non-native English writing triggers false AI flags, and how to protect yourself: detector accuracy data, grammar-tool risks, and ESL strategies." />
         <meta name="keywords" content="ai detector false positive ESL, non-native english ai detection, ai writing help ESL, grammarly triggers ai detection, esl ai detector, false positive ai detection" />
         <link rel="canonical" href="https://aifreetextpro.com/blog/ai-writing-non-native-english-speakers" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
@@ -120,7 +120,7 @@ const AIWritingNonNativeEnglish = () => {
       <AuthorSchema
         articleUrl="https://aifreetextpro.com/blog/ai-writing-non-native-english-speakers"
         headline="AI Writing for Non-Native English Speakers (2026)"
-        description="Why non-native English writing triggers false AI detection flags and how to protect yourself. Detector accuracy data, grammar tool risks, and strategies for ESL writers."
+        description="Why non-native English writing triggers false AI flags, and how to protect yourself: detector accuracy data, grammar-tool risks, and ESL strategies."
         datePublished="2026-04-08"
         dateModified="2026-06-09"
       />

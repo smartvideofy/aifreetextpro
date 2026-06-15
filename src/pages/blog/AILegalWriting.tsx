@@ -30,8 +30,8 @@ const AILegalWriting = () => {
   return (
     <>
       <Helmet>
-        <title>AI for Legal Writing & Law School Essays (2026) | AI Free Text Pro</title>
-        <meta name="description" content="Complete guide to using AI for legal memos, briefs, and law school essays in 2026. Ethical frameworks, detection avoidance, and workflow templates for legal professionals and students." />
+        <title>AI for Legal Writing & Law School Essays (2026)</title>
+        <meta name="description" content="Use AI for legal memos, briefs, and law school essays in 2026. Ethical frameworks, detection tips, and workflow templates for legal pros and students." />
         <meta name="keywords" content="AI legal writing, AI for law school, AI brief writing, AI legal memo, law school AI tools, AI bar exam prep, legal writing AI detector" />
         <link rel="canonical" href="https://aifreetextpro.com/blog/ai-legal-writing-law-school" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
@@ -82,7 +82,7 @@ const AILegalWriting = () => {
       <AuthorSchema
         articleUrl="https://aifreetextpro.com/blog/ai-legal-writing-law-school"
         headline="AI for Legal Writing & Law School Essays (2026) | AI Free Text Pro"
-        description="Complete guide to using AI for legal memos, briefs, and law school essays in 2026. Ethical frameworks, detection avoidance, and workflow templates for legal professionals and students."
+        description="Use AI for legal memos, briefs, and law school essays in 2026. Ethical frameworks, detection tips, and workflow templates for legal pros and students."
         datePublished="2026-03-09"
         dateModified="2026-06-09"
       />

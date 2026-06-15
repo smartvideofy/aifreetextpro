@@ -11,7 +11,6 @@ import ReviewedBy from "@/components/ReviewedBy";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { FAQSection } from "@/components/FAQSection";
 import { AuthorSchema } from "@/components/AuthorSchema";
-import { ReviewSchema } from "@/components/ReviewSchema";
 
 const relatedArticles = [
   { title: "Paraphrasing vs Humanizing", description: "The critical difference marketers need to know.", href: "/blog/paraphrasing-vs-humanizing", category: "Marketing" },
@@ -31,7 +30,7 @@ const QuillbotVsAIFreeTextPro = () => {
   return (
     <>
       <Helmet>
-        <title>Quillbot vs AI Free Text Pro: Paraphraser vs Humanizer Compared (2026)</title>
+        <title>Quillbot vs AI Free Text Pro: Paraphraser vs Humanizer</title>
         <meta name="description" content="Quillbot is a paraphraser. AI Free Text Pro is a humanizer. We tested both against 5 AI detectors to show why that distinction matters." />
         <meta name="keywords" content="quillbot vs ai humanizer, quillbot alternative, is quillbot detectable by turnitin, quillbot vs ai free text pro, best paraphrasing tool 2026" />
         <link rel="canonical" href="https://aifreetextpro.com/blog/quillbot-vs-ai-free-text-pro" />
@@ -62,16 +61,6 @@ const QuillbotVsAIFreeTextPro = () => {
           {JSON.stringify({ "@context": "https://schema.org", "@type": "FAQPage", "mainEntity": faqs.map(f => ({ "@type": "Question", "name": f.question, "acceptedAnswer": { "@type": "Answer", "text": f.answer } })) })}
         </script>
       </Helmet>
-      <ReviewSchema
-        itemName="QuillBot"
-        reviewUrl="https://aifreetextpro.com/blog/quillbot-vs-ai-free-text-pro"
-        itemUrl="https://quillbot.com"
-        ratingValue={4}
-        ratingCount={250}
-        reviewHeadline="Quillbot vs AI Free Text Pro: Paraphraser vs Humanizer Compared (2026)"
-        reviewBody="Quillbot is a paraphraser. AI Free Text Pro is a humanizer. We tested both against 5 AI detectors to show why that distinction matters."
-        datePublished="2026-02-28"
-      />
 
       <AuthorSchema
         articleUrl="https://aifreetextpro.com/blog/quillbot-vs-ai-free-text-pro"

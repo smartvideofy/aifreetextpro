@@ -63,7 +63,7 @@ const HowToCiteAIGeneratedContent = () => {
   return (
     <>
       <Helmet>
-        <title>How to Cite AI-Generated Content: APA, MLA, Chicago & Harvard (2026)</title>
+        <title>How to Cite AI Content: APA, MLA, Chicago & Harvard</title>
         <meta name="description" content="Complete guide to citing ChatGPT, Claude, and Gemini in APA, MLA, Chicago, and Harvard formats. Includes templates, examples, and 2026 updates." />
         <meta name="keywords" content="how to cite chatgpt, cite ai apa, mla citation for ai, how to cite ai writing, cite ai generated content, chatgpt citation format, ai citation guide 2026" />
         <link rel="canonical" href="https://aifreetextpro.com/blog/how-to-cite-ai-generated-content" />

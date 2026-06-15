@@ -8,7 +8,6 @@ import { Link } from "react-router-dom";
 import { ArrowRight, CheckCircle2, XCircle } from "lucide-react";
 import { KeyTakeaways } from "@/components/KeyTakeaways";
 import { AuthorSchema } from "@/components/AuthorSchema";
-import { ReviewSchema } from "@/components/ReviewSchema";
 
 const relatedArticles = [
   {
@@ -123,16 +122,6 @@ export default function ZeroGPTComparison() {
           })}
         </script>
       </Helmet>
-      <ReviewSchema
-        itemName="ZeroGPT"
-        reviewUrl="https://aifreetextpro.com/blog/zerogpt-vs-ai-free-text-pro-2025"
-        itemUrl="https://zerogpt.com"
-        ratingValue={3.4}
-        ratingCount={250}
-        reviewHeadline="ZeroGPT vs AI Free Text Pro: 500+ Samples Tested [2026]"
-        reviewBody="We tested ZeroGPT and AI Free Text Pro on 500+ samples. See accuracy rates, free limits, and which AI detector wins in real-world tests."
-        datePublished="2026-02-02"
-      />
 
       <AuthorSchema
         articleUrl="https://aifreetextpro.com/blog/zerogpt-vs-ai-free-text-pro-2025"

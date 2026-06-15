@@ -53,7 +53,7 @@ const AIContentGoogleAIOverviews = () => {
   return (
     <>
       <Helmet>
-        <title>How to Get AI Content Into Google AI Overviews (2026) | AI Free Text Pro</title>
+        <title>How to Get AI Content Into Google AI Overviews (2026)</title>
         <meta name="description" content="Step-by-step guide to optimizing AI content for citation in Google AI Overviews. Content structure, E-E-A-T signals, humanization strategies, and tracking methods." />
         <meta name="keywords" content="Google AI overviews optimization, AI content featured snippets, AI overviews SEO 2026, AI content Google, get cited in AI overviews, AI overview optimization" />
         <link rel="canonical" href="https://aifreetextpro.com/blog/ai-content-google-ai-overviews" />

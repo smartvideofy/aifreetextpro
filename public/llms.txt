@@ -49,6 +49,24 @@ AI Free Text Pro offers free, no-signup tools for AI content detection and human
 - [Can Teachers Detect ChatGPT](https://aifreetextpro.com/blog/can-teachers-detect-chatgpt): Teacher detection methods explained.
 - [Humanize ChatGPT Text](https://aifreetextpro.com/blog/humanize-chatgpt-text): ChatGPT humanization workflow.
 - [AI Humanizer for Essays](https://aifreetextpro.com/blog/ai-humanizer-for-essays): Essay-specific humanization.
+- [Pass All AI Detectors Guide](https://aifreetextpro.com/blog/pass-all-ai-detectors-guide): Methods to reduce flags across all major detectors.
+- [Bypass AI Detection Guide](https://aifreetextpro.com/blog/bypass-ai-detection-guide): How AI detection works and how to reduce false flags.
+- [Make ChatGPT Undetectable](https://aifreetextpro.com/blog/make-chatgpt-undetectable-2025): Workflow for humanizing ChatGPT output.
+- [Humanize AI Text Without Losing Voice](https://aifreetextpro.com/blog/humanize-ai-text-without-losing-voice): Keep authorial voice while humanizing.
+- [Top 10 AI Humanizer Tools](https://aifreetextpro.com/blog/top-10-ai-humanizer-tools-2025): Ranked humanizer tool comparison.
+- [Top 10 AI Writing Tools 2026](https://aifreetextpro.com/blog/top-10-ai-writing-tools-2026): Ranked AI writing tool comparison.
+- [AI Detection Tools Compared](https://aifreetextpro.com/blog/ai-detection-tools-compared-2025): Detector accuracy comparison data.
+- [Originality.AI Review](https://aifreetextpro.com/blog/originality-ai-review-how-to-beat): Originality.AI accuracy and false-positive data.
+- [Bypass ZeroGPT Detection](https://aifreetextpro.com/blog/bypass-zerogpt-ai-detection): ZeroGPT accuracy and false-flag reduction.
+- [GPTZero vs Turnitin](https://aifreetextpro.com/blog/gptzero-vs-turnitin-comparison): Detector accuracy head-to-head.
+- [ChatGPT vs Claude vs Gemini Detection](https://aifreetextpro.com/blog/chatgpt-vs-claude-vs-gemini-detection): Which model is hardest to detect.
+- [Humanize GPT-5 Output](https://aifreetextpro.com/blog/humanize-gpt5-output): GPT-5-specific humanization workflow.
+- [AI Detector for Students 2026](https://aifreetextpro.com/blog/ai-detector-for-students-2026): Detector accuracy data for students.
+- [AI College Admissions Essays](https://aifreetextpro.com/blog/ai-college-admissions-essays-personal-statements): Using AI for personal statements safely.
+- [AI Writing for Non-Native English Speakers](https://aifreetextpro.com/blog/ai-writing-non-native-english-speakers): Why ESL writing triggers false flags.
+- [AI Detection False Positives](https://aifreetextpro.com/blog/ai-detection-false-positives): Why human writing gets flagged as AI.
+- [How to Cite AI-Generated Content](https://aifreetextpro.com/blog/how-to-cite-ai-generated-content): APA, MLA, Chicago, and Harvard citation formats.
+- [Turnitin AI Detection Accuracy](https://aifreetextpro.com/blog/turnitin-ai-detection-accuracy): How accurate Turnitin's AI indicator really is.
 
 ## Optional
 

@@ -30,7 +30,7 @@ const AIPressReleases = () => {
   return (
     <>
       <Helmet>
-        <title>AI for Press Releases: PR Content That Sounds Human (2026) | AI Free Text Pro</title>
+        <title>AI for Press Releases: PR Content That Sounds Human (2026)</title>
         <meta name="description" content="Write press releases with AI that journalists actually use. Templates, humanization workflow, and strategies for media-ready AI-assisted PR content in 2026." />
         <meta name="keywords" content="AI press release writer, AI for PR, AI press release generator, AI PR content, press release AI tool 2026" />
         <link rel="canonical" href="https://aifreetextpro.com/blog/ai-press-releases" />

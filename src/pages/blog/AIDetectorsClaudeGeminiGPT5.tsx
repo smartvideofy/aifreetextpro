@@ -23,7 +23,7 @@ const AIDetectorsClaudeGeminiGPT5 = () => {
   return (
     <>
       <Helmet>
-        <title>Can AI Detectors Detect Claude, Gemini, and GPT-5? (2026 Tests)</title>
+        <title>Can AI Detectors Detect Claude, Gemini & GPT-5? (2026)</title>
         <meta name="description" content="We tested Claude 4, Gemini 2.5, and GPT-5 against Turnitin, GPTZero, Originality.AI, and more. Find out which AI models are hardest to detect in 2026." />
         <meta name="keywords" content="can ai detectors detect claude, can turnitin detect gemini, gpt-5 ai detection, claude ai detection, gemini ai detection 2026" />
         <link rel="canonical" href="https://aifreetextpro.com/blog/ai-detectors-claude-gemini-gpt5-2026" />

@@ -11,7 +11,6 @@ import { FAQSection } from "@/components/FAQSection";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { ArrowLeft, Calendar, Clock, User, CheckCircle, XCircle } from "lucide-react";
 import { AuthorSchema } from "@/components/AuthorSchema";
-import { ReviewSchema } from "@/components/ReviewSchema";
 
 const relatedArticles = [
   { title: "Undetectable AI vs AI Free Text Pro", description: "Direct head-to-head comparison with test data.", href: "/blog/undetectable-ai-vs-ai-free-text-pro", category: "Comparison" },
@@ -67,16 +66,6 @@ const UndetectableAIAlternatives = () => {
           })}
         </script>
       </Helmet>
-      <ReviewSchema
-        itemName="Undetectable AI"
-        reviewUrl="https://aifreetextpro.com/blog/undetectable-ai-alternatives"
-        itemUrl="https://undetectable.ai"
-        ratingValue={3.9}
-        ratingCount={250}
-        reviewHeadline="Undetectable AI Alternatives: 5 Better Tools (2026)"
-        reviewBody="5 better alternatives to Undetectable AI in 2026. Compare bypass rates, pricing, and features. Ranked by real detection test results."
-        datePublished="2026-03-08"
-      />
 
       <AuthorSchema
         articleUrl="https://aifreetextpro.com/blog/undetectable-ai-alternatives"

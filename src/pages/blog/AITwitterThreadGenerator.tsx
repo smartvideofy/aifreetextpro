@@ -30,8 +30,8 @@ const AITwitterThreadGenerator = () => {
   return (
     <>
       <Helmet>
-        <title>AI Twitter Thread Generator That Sounds Human (2026) | AI Free Text Pro</title>
-        <meta name="description" content="Create engaging X/Twitter threads with AI that sound authentically human. Thread templates, prompt engineering strategies, and humanization workflows for viral content." />
+        <title>AI Twitter Thread Generator That Sounds Human (2026)</title>
+        <meta name="description" content="Create X/Twitter threads with AI that sound authentically human. Thread templates, prompt strategies, and humanization workflows for viral content." />
         <meta name="keywords" content="AI Twitter thread generator, AI for X posts, AI tweets that sound human, Twitter thread writer, AI social media content, X thread generator" />
         <link rel="canonical" href="https://aifreetextpro.com/blog/ai-twitter-thread-generator" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
@@ -82,7 +82,7 @@ const AITwitterThreadGenerator = () => {
       <AuthorSchema
         articleUrl="https://aifreetextpro.com/blog/ai-twitter-thread-generator"
         headline="AI Twitter Thread Generator That Sounds Human (2026) | AI Free Text Pro"
-        description="Create engaging X/Twitter threads with AI that sound authentically human. Thread templates, prompt engineering strategies, and humanization workflows for viral content."
+        description="Create X/Twitter threads with AI that sound authentically human. Thread templates, prompt strategies, and humanization workflows for viral content."
         datePublished="2026-03-09"
         dateModified="2026-06-09"
       />

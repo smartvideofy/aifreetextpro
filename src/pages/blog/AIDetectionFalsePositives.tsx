@@ -21,7 +21,7 @@ const AIDetectionFalsePositives = () => {
   return (
     <>
       <Helmet>
-        <title>AI Detection False Positives: Why Your Human Writing Gets Flagged</title>
+        <title>AI Detection False Positives: Why Human Writing Gets Flagged</title>
         <meta name="description" content="AI detection false positives are flagging human-written text at alarming rates. Learn why it happens, who is most affected, and how to protect yourself." />
         <meta name="keywords" content="ai detection false positive, falsely accused of using ai, turnitin false positive, gptzero false positive, ai detector wrong" />
         <link rel="canonical" href="https://aifreetextpro.com/blog/ai-detection-false-positives" />

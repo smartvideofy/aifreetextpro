@@ -53,8 +53,8 @@ const AIWritingNursingHealthcare = () => {
   return (
     <>
       <Helmet>
-        <title>AI Writing for Nursing & Healthcare Students (2026) | AI Free Text Pro</title>
-        <meta name="description" content="Complete guide to using AI for care plans, SOAP notes, clinical reflections, and nursing essays. Detection risks, ethical frameworks, and safe workflows for healthcare students." />
+        <title>AI Writing for Nursing & Healthcare Students (2026)</title>
+        <meta name="description" content="Use AI for care plans, SOAP notes, clinical reflections, and nursing essays. Detection risks, ethical frameworks, and safe workflows for students." />
         <meta name="keywords" content="AI for nursing students, AI writing healthcare, nursing essay AI, AI care plan generator, SOAP notes AI, nursing school AI detection, clinical reflection AI" />
         <link rel="canonical" href="https://aifreetextpro.com/blog/ai-writing-nursing-healthcare-students" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
@@ -80,7 +80,7 @@ const AIWritingNursingHealthcare = () => {
       <AuthorSchema
         articleUrl="https://aifreetextpro.com/blog/ai-writing-nursing-healthcare-students"
         headline="AI Writing for Nursing & Healthcare Students (2026) | AI Free Text Pro"
-        description="Complete guide to using AI for care plans, SOAP notes, clinical reflections, and nursing essays. Detection risks, ethical frameworks, and safe workflows for healthcare students."
+        description="Use AI for care plans, SOAP notes, clinical reflections, and nursing essays. Detection risks, ethical frameworks, and safe workflows for students."
         datePublished="2026-03-15"
         dateModified="2026-06-09"
       />

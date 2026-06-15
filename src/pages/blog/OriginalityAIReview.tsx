@@ -9,7 +9,6 @@ import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { RelatedArticles } from "@/components/RelatedArticles";
 import { InternalLinks } from "@/components/InternalLinks";
 import { AuthorSchema } from "@/components/AuthorSchema";
-import { ReviewSchema } from "@/components/ReviewSchema";
 
 const relatedArticles = [
   {
@@ -158,16 +157,6 @@ const OriginalityAIReview = () => {
         description="Full Originality.AI review covering accuracy, pricing, and how to reduce false flags ethically in 2026."
         datePublished="2026-05-15"
         dateModified="2026-06-09"
-      />
-      <ReviewSchema
-        itemName="Originality.AI"
-        reviewUrl="https://aifreetextpro.com/blog/originality-ai-review-how-to-beat"
-        itemUrl="https://originality.ai"
-        ratingValue={4}
-        ratingCount={250}
-        reviewHeadline="Originality.AI Review (2026)"
-        reviewBody="Full Originality.AI review covering accuracy, pricing, and how to reduce false flags ethically in 2026."
-        datePublished="2026-05-15"
       />
 
       <Navbar />

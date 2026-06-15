@@ -30,8 +30,8 @@ const AIMedicalScientificWriting = () => {
   return (
     <>
       <Helmet>
-        <title>AI for Medical & Scientific Writing: A Researcher's Guide (2026) | AI Free Text Pro</title>
-        <meta name="description" content="Use AI for medical and scientific writing without compromising journal acceptance. Section-by-section guide with journal policies, detection risks, and ethical frameworks." />
+        <title>AI for Medical & Scientific Writing: A Researcher's Guide</title>
+        <meta name="description" content="Use AI for medical and scientific writing without risking journal acceptance. Journal policies, detection risks, and ethical frameworks explained." />
         <meta name="keywords" content="AI medical writing, AI scientific writing tool, AI for research papers medical, scientific writing AI 2026, medical journal AI policy" />
         <link rel="canonical" href="https://aifreetextpro.com/blog/ai-medical-scientific-writing" />
         <meta property="og:title" content="AI for Medical & Scientific Writing: A Researcher's Guide (2026)" />
@@ -70,7 +70,7 @@ const AIMedicalScientificWriting = () => {
       <AuthorSchema
         articleUrl="https://aifreetextpro.com/blog/ai-medical-scientific-writing"
         headline="AI for Medical & Scientific Writing: A Researcher's Guide (2026) | AI Free Text Pro"
-        description="Use AI for medical and scientific writing without compromising journal acceptance. Section-by-section guide with journal policies, detection risks, and ethical frameworks."
+        description="Use AI for medical and scientific writing without risking journal acceptance. Journal policies, detection risks, and ethical frameworks explained."
         datePublished="2026-03-08"
         dateModified="2026-06-09"
       />

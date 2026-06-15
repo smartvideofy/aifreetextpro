@@ -11,7 +11,6 @@ import InternalLinks from "@/components/InternalLinks";
 import { FAQSection } from "@/components/FAQSection";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { AuthorSchema } from "@/components/AuthorSchema";
-import { ReviewSchema } from "@/components/ReviewSchema";
 
 const relatedArticles = [
   { title: "Quillbot vs AI Free Text Pro", description: "Another rewriter vs humanizer comparison", href: "/blog/quillbot-vs-ai-free-text-pro", category: "Comparison" },
@@ -31,7 +30,7 @@ const WordtuneComparison = () => {
   return (
     <>
       <Helmet>
-        <title>Wordtune vs AI Free Text Pro: Rewriter vs Humanizer (2026) | AI Free Text Pro</title>
+        <title>Wordtune vs AI Free Text Pro: Rewriter vs Humanizer (2026)</title>
         <meta name="description" content="Wordtune rewrites text for clarity. AI Free Text Pro humanizes it for detection. Compare features, test results, and learn when to use each tool in 2026." />
         <meta name="keywords" content="Wordtune alternative, Wordtune vs AI Free Text Pro, Wordtune AI detection, rewriter vs humanizer, Wordtune comparison 2026" />
         <link rel="canonical" href="https://aifreetextpro.com/blog/wordtune-vs-ai-free-text-pro" />
@@ -68,16 +67,6 @@ const WordtuneComparison = () => {
           })}
         </script>
       </Helmet>
-      <ReviewSchema
-        itemName="Wordtune"
-        reviewUrl="https://aifreetextpro.com/blog/wordtune-vs-ai-free-text-pro"
-        itemUrl="https://wordtune.com"
-        ratingValue={3.9}
-        ratingCount={250}
-        reviewHeadline="Wordtune vs AI Free Text Pro: Rewriter vs Humanizer (2026) | AI Free Text Pro"
-        reviewBody="Wordtune rewrites text for clarity. AI Free Text Pro humanizes it for detection. Compare features, test results, and learn when to use each tool in 2026."
-        datePublished="2026-03-08"
-      />
 
       <AuthorSchema
         articleUrl="https://aifreetextpro.com/blog/wordtune-vs-ai-free-text-pro"

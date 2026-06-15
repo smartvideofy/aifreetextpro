@@ -30,7 +30,7 @@ const MakeAIWritingCreative = () => {
   return (
     <>
       <Helmet>
-        <title>How to Make AI Writing More Creative and Original | AI Free Text Pro</title>
+        <title>How to Make AI Writing More Creative and Original</title>
         <meta name="description" content="Transform generic AI text into creative, original writing. 12 techniques for adding voice, style, and originality to AI-generated content in 2026." />
         <meta name="keywords" content="make AI writing creative, AI writing more original, creative AI content, improve AI writing quality, AI writing style 2026" />
         <link rel="canonical" href="https://aifreetextpro.com/blog/make-ai-writing-creative" />

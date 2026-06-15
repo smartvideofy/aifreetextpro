@@ -30,7 +30,7 @@ const AIDisclosurePolicies2026 = () => {
   return (
     <>
       <Helmet>
-        <title>AI Disclosure Policies: What You Must Know Before Submitting AI Content (2026)</title>
+        <title>AI Disclosure Policies: What to Know Before Submitting (2026)</title>
         <meta name="description" content="Complete guide to AI disclosure requirements in academia, publishing, and business. Includes templates, regulations, and best practices for 2026." />
         <meta name="keywords" content="ai disclosure policy, do i have to disclose ai use, ai content disclosure requirements, ai writing disclosure, ai transparency requirements 2026" />
         <link rel="canonical" href="https://aifreetextpro.com/blog/ai-disclosure-policies-2026" />

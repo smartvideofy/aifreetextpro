@@ -31,7 +31,7 @@ const ChatGPTAlternativesEssays = () => {
   return (
     <>
       <Helmet>
-        <title>ChatGPT Alternatives for Essay Writing (2026) | AI Free Text Pro</title>
+        <title>ChatGPT Alternatives for Essay Writing (2026)</title>
         <meta name="description" content="10 best ChatGPT alternatives for essay writing in 2026. Compare Claude, Gemini, Perplexity, and more for academic quality, detection rates, and pricing." />
         <meta name="keywords" content="ChatGPT alternatives for essays, ChatGPT alternative writing, best AI for essays, Claude vs ChatGPT essays, AI essay writing tools 2026" />
         <link rel="canonical" href="https://aifreetextpro.com/blog/chatgpt-alternatives-essays" />

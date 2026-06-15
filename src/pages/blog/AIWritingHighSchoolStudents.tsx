@@ -29,7 +29,7 @@ const AIWritingHighSchoolStudents = () => {
   return (
     <>
       <Helmet>
-        <title>AI Writing for High School Students: A Parent and Student Guide (2026)</title>
+        <title>AI Writing for High School Students: A 2026 Guide</title>
         <meta name="description" content="Complete guide to AI writing tools for high school students. School policies, what's allowed, consequences of getting caught, and how to use AI responsibly." />
         <meta name="keywords" content="ai for high school students, can high school students use chatgpt, ai homework help, high school ai policy, ai writing tools for students" />
         <link rel="canonical" href="https://aifreetextpro.com/blog/ai-writing-high-school-students" />

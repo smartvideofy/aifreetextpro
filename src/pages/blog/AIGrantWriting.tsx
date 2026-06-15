@@ -30,7 +30,7 @@ const AIGrantWriting = () => {
   return (
     <>
       <Helmet>
-        <title>AI for Grant Writing: Win Funding Without Detection (2026) | AI Free Text Pro</title>
+        <title>AI for Grant Writing: Win Funding Without Detection (2026)</title>
         <meta name="description" content="Use AI to write stronger grant proposals without triggering reviewer AI detection. Section-by-section workflow for NIH, NSF, and foundation grants." />
         <meta name="keywords" content="AI grant writing, AI for grant proposals, grant writing tools AI, NIH grant AI assistance, AI grant proposal writing 2026" />
         <link rel="canonical" href="https://aifreetextpro.com/blog/ai-grant-writing" />

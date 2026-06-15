@@ -32,7 +32,7 @@ const HowToCheckIfWrittenByAI = () => {
   return (
     <>
       <Helmet>
-        <title>How to Check If Something Was Written by AI (Free Methods) | 2026</title>
+        <title>How to Check If Something Was Written by AI (2026)</title>
         <meta name="description" content="Free methods and tools to check if text was written by AI. Step-by-step guide for teachers, editors, and employers with accuracy comparisons." />
         <meta name="keywords" content="how to check if something was written by ai, check if text is ai generated, is this ai written, detect ai text free, ai content checker" />
         <link rel="canonical" href="https://aifreetextpro.com/blog/how-to-check-if-written-by-ai" />

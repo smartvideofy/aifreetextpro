@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { QuickAnswer } from "@/components/QuickAnswer";
 import { Helmet } from "react-helmet-async";
 import { Calendar, Clock, ArrowLeft, ExternalLink, CheckCircle, Shield } from "lucide-react";
 import Navbar from "@/components/Navbar";
@@ -97,6 +98,11 @@ const AIEssayChecker = () => {
                 <span className="bg-primary/10 text-primary px-2 py-0.5 rounded text-xs font-medium">Tools</span>
               </div>
               <h1 className="text-3xl md:text-4xl font-bold mb-4">Best AI Essay Checker: Self-Check Before You Submit (2026)</h1>
+                <QuickAnswer
+                  question="What is the best way to check your essay for AI before submitting?"
+                  answer="Run your essay through the same class of detector your professor uses — GPTZero, a Turnitin-style tool, or a free checker — before submitting. It flags sentences likely to read as AI so you can revise them. Treat scores as guidance, and expect some false positives on formal academic writing."
+                />
+
               <p className="text-xl text-muted-foreground">Your professor will run your essay through an AI detector. Should you not check it first? Here are the best free tools to self-check before submission.</p>
             </header>
 

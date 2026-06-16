@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { QuickAnswer } from "@/components/QuickAnswer";
 import { Helmet } from "react-helmet-async";
 import { ArrowLeft, Calendar, Clock, CheckCircle, Zap, Instagram, Sparkles } from "lucide-react";
 import Navbar from "@/components/Navbar";
@@ -94,6 +95,11 @@ const AIInstagramCaptions = () => {
                 <span className="flex items-center gap-1"><Clock className="w-4 h-4" /> 11 min read</span>
               </div>
               <h1 className="text-3xl md:text-4xl font-bold mb-4">AI Instagram Captions: Write Engaging Posts That Don't Sound AI</h1>
+                <QuickAnswer
+                  question="How do you write AI Instagram captions that don't sound AI?"
+                  answer="Use specific, on-brand prompts, then humanize: add personality, a clear hook, natural phrasing, and a call to action. Generic AI captions read flat and followers notice, so edit for voice and specificity. Strong prompt templates plus a quick humanization pass produce captions audiences actually engage with."
+                />
+
               <p className="text-xl text-muted-foreground">Your followers can tell when captions are written by AI. Here are 20 prompt templates and a humanization workflow that produces Instagram captions your audience actually wants to read.</p>
             </header>
 

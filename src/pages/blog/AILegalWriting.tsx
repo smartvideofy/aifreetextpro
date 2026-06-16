@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { QuickAnswer } from "@/components/QuickAnswer";
 import { Helmet } from "react-helmet-async";
 import { Calendar, Clock, ArrowLeft, Scale, BookOpen, AlertTriangle, CheckCircle } from "lucide-react";
 import Navbar from "@/components/Navbar";
@@ -109,6 +110,11 @@ const AILegalWriting = () => {
                 <span className="bg-primary/10 text-primary px-2 py-1 rounded text-xs font-medium">Professional</span>
               </div>
               <h1 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">AI for Legal Writing & Law School Essays (2026)</h1>
+                <QuickAnswer
+                  question="Can lawyers and law students use AI for legal writing?"
+                  answer="Yes, with strict guardrails. AI can draft memos, outline briefs, and polish essays, but you must verify every citation and legal claim — AI fabricates cases — and follow court and school disclosure rules. Used carefully it saves time; used carelessly it risks sanctions or academic penalties."
+                />
+
               <p className="text-xl text-muted-foreground">How attorneys and law students are using AI to draft memos, briefs, and essays -- and the ethical guardrails that separate responsible use from career-ending mistakes.</p>
             </header>
 

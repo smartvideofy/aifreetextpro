@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { QuickAnswer } from "@/components/QuickAnswer";
 import { Helmet } from "react-helmet-async";
 import { Calendar, Clock, ArrowLeft, ExternalLink, CheckCircle } from "lucide-react";
 import Navbar from "@/components/Navbar";
@@ -97,6 +98,11 @@ const AIContentAtScale = () => {
                 <span className="bg-primary/10 text-primary px-2 py-0.5 rounded text-xs font-medium">Marketing</span>
               </div>
               <h1 className="text-3xl md:text-4xl font-bold mb-4">AI Content at Scale: 100+ Articles Without Getting Flagged</h1>
+                <QuickAnswer
+                  question="How do you produce AI content at scale without getting flagged?"
+                  answer="Use a repeatable workflow: AI for first drafts, a humanization pass for natural phrasing, and human review for accuracy and original insight. Teams publishing 100+ articles a month stay quality- and detection-safe by templating this process and never publishing raw, unedited AI output."
+                />
+
               <p className="text-xl text-muted-foreground">Agencies and content teams are using AI to produce hundreds of articles per month. Here is the exact workflow that maintains quality, avoids detection, and actually ranks.</p>
             </header>
 

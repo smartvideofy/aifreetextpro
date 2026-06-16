@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { QuickAnswer } from "@/components/QuickAnswer";
 import { Helmet } from "react-helmet-async";
 import { Calendar, Clock, ArrowLeft, BookOpen, Cpu } from "lucide-react";
 import Navbar from "@/components/Navbar";
@@ -91,6 +92,11 @@ const AIDetectorsClaudeGeminiGPT5 = () => {
             <header className="mb-8 not-prose">
               <span className="inline-block px-3 py-1 text-sm font-medium bg-primary/10 text-primary rounded-full mb-4">Technical</span>
               <h1 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">Can AI Detectors Detect Claude, Gemini, and GPT-5? (2026 Tests)</h1>
+                <QuickAnswer
+                  question="Can AI detectors detect Claude, Gemini, and GPT-5?"
+                  answer="Yes, but accuracy varies by model. In 2026 tests Claude 4 was hardest to detect (72-84% detection rate), followed by Gemini 2.5 (80-88%) and GPT-5 (85-92%). All major detectors catch a majority of unedited output, but newer models lower detection rates and false positives remain a risk."
+                />
+
               <div className="flex flex-wrap items-center gap-4 text-sm text-muted-foreground">
                 <span className="flex items-center gap-1"><Calendar className="w-4 h-4" /> February 25, 2026</span>
                 <span className="flex items-center gap-1"><Clock className="w-4 h-4" /> 14 min read</span>

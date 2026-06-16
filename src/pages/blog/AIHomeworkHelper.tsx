@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { QuickAnswer } from "@/components/QuickAnswer";
 import { Helmet } from "react-helmet-async";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -88,6 +89,11 @@ const AIHomeworkHelper = () => {
             <header className="mb-8 not-prose">
               <span className="inline-block px-3 py-1 bg-primary/10 text-primary text-sm font-medium rounded-full mb-4">Academic</span>
               <h1 className="text-3xl md:text-4xl font-bold mb-4">AI Homework Helper That Won't Get You Caught (2026)</h1>
+                <QuickAnswer
+                  question="Can you use an AI homework helper without getting caught?"
+                  answer="AI is most useful for learning and checking work, not for submitting answers where that is prohibited, which risks detection and integrity penalties. Use it to explain concepts, outline, and review, then produce the work in your own words. Always follow your school's AI policy — detection tools are increasingly common."
+                />
+
               <p className="text-xl text-muted-foreground mb-4">The complete guide to using AI for homework assignments without triggering detection tools. Workflows, subject-specific tips, and real test results.</p>
               <div className="flex flex-wrap items-center gap-4 text-sm text-muted-foreground">
                 <span className="flex items-center gap-1"><Calendar className="w-4 h-4" /> March 8, 2026</span>

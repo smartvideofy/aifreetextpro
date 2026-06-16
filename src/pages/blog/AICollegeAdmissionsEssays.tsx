@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { QuickAnswer } from "@/components/QuickAnswer";
 import { Helmet } from "react-helmet-async";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -148,6 +149,11 @@ const AICollegeAdmissionsEssays = () => {
               <h1 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
                 AI for College Admissions Essays & Personal Statements (2026)
               </h1>
+                <QuickAnswer
+                  question="Can you use AI for college admissions essays?"
+                  answer="Cautiously. AI can help you brainstorm, outline, and edit, but admissions officers and AI detectors can spot generic, AI-written personal statements — and the personal voice is the whole point. Use AI as a thinking aid, keep the story and reflection genuinely yours, and check each school's AI policy."
+                />
+
               <p className="text-xl text-muted-foreground mb-4">
                 The complete guide to using AI responsibly in your college applications without getting flagged by admissions AI detectors.
               </p>

@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet-async";
+import { QuickAnswer } from "@/components/QuickAnswer";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
@@ -165,6 +166,11 @@ export default function AIDetectionPublishing() {
               <h1 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent">
                 AI Detection in Publishing: How Editors and Writers Can Adapt in 2026
               </h1>
+                <QuickAnswer
+                  question="How should publishers and editors handle AI content?"
+                  answer="Adapt with clear policies, not blanket bans. Editors are setting disclosure rules, using detectors as one signal rather than proof, and focusing on quality and originality regardless of how a draft was produced. The practical stance: allow AI assistance, require human editing and accountability, and judge the final work on merit."
+                />
+
               
               <p className="text-xl text-muted-foreground">
                 The publishing industry is at a crossroads. Here's how professionals are navigating the AI content revolution.

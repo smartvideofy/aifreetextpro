@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { QuickAnswer } from "@/components/QuickAnswer";
 import { Helmet } from "react-helmet-async";
 import { ArrowLeft, Calendar, Clock, CheckCircle, Zap, BookOpen, AlertTriangle } from "lucide-react";
 import Navbar from "@/components/Navbar";
@@ -94,6 +95,11 @@ const AIDissertationThesis = () => {
                 <span className="flex items-center gap-1"><Clock className="w-4 h-4" /> 15 min read</span>
               </div>
               <h1 className="text-3xl md:text-4xl font-bold mb-4">AI Writing for Dissertation & Thesis (2026 Guide)</h1>
+                <QuickAnswer
+                  question="Can you use AI to write a dissertation or thesis?"
+                  answer="For support, yes — for the core scholarship, no. AI helps with literature summaries, outlining, editing, and formatting, but the original research, analysis, and argument must be yours. Most universities run dissertations through AI detection, so use AI responsibly, disclose where required, and keep authorship genuinely your own."
+                />
+
               <p className="text-xl text-muted-foreground">A chapter-by-chapter guide for PhD and Masters students on where AI helps, where it hurts, and how to integrate it responsibly into the most important document of your academic career.</p>
             </header>
 

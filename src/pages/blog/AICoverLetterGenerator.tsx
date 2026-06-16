@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { QuickAnswer } from "@/components/QuickAnswer";
 import { Helmet } from "react-helmet-async";
 import { ArrowLeft, Calendar, Clock, CheckCircle, Zap, Briefcase, AlertTriangle, Star } from "lucide-react";
 import Navbar from "@/components/Navbar";
@@ -95,6 +96,11 @@ const AICoverLetterGenerator = () => {
                 <span className="flex items-center gap-1"><Clock className="w-4 h-4" /> 12 min read</span>
               </div>
               <h1 className="text-3xl md:text-4xl font-bold mb-4">AI Cover Letter Generator That Sounds Human (2026)</h1>
+                <QuickAnswer
+                  question="Can an AI cover letter generator get you an interview?"
+                  answer="Only if you humanize it. Most AI cover letters get rejected for sounding templated and generic. Use AI to draft structure and ideas, then personalize with specifics about the company and role and your own voice — that humanization step is what separates a rejection from an interview."
+                />
+
               <p className="text-xl text-muted-foreground">Most AI cover letters get rejected because they sound like AI. Here is how to use AI generators effectively, which tools actually work, and the humanization step that makes the difference between rejection and an interview.</p>
             </header>
 

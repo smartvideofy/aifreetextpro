@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { QuickAnswer } from "@/components/QuickAnswer";
 import { Helmet } from "react-helmet-async";
 import { Calendar, Clock, User, ArrowLeft, BookOpen, GraduationCap, FileText, Shield, Users, Lightbulb } from "lucide-react";
 import Navbar from "@/components/Navbar";
@@ -159,6 +160,11 @@ const AIForResearchPapers = () => {
                 <span className="bg-primary/10 text-primary px-3 py-1 rounded-full text-xs font-medium">Academic</span>
               </div>
               <h1 className="text-3xl md:text-4xl font-bold mb-4">How to Use AI for Research Papers (Without Academic Consequences)</h1>
+                <QuickAnswer
+                  question="How can you use AI for research papers without academic consequences?"
+                  answer="Use AI for support tasks — summarizing sources, outlining, editing, and clarifying — not for generating the analysis or claims. Verify every AI-stated fact, disclose AI use where required, and keep the original thinking yours. Used this way, AI speeds up research without risking integrity violations."
+                />
+
               <p className="text-lg text-muted-foreground">A practical guide for graduate students, thesis writers, and researchers who want to use AI tools responsibly while protecting their academic standing.</p>
               <div className="flex items-center gap-2 mt-4 text-sm text-muted-foreground">
                 <User className="w-4 h-4" />

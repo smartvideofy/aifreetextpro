@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { QuickAnswer } from "@/components/QuickAnswer";
 import { Helmet } from "react-helmet-async";
 import { Calendar, Clock, ArrowLeft, ExternalLink, CheckCircle, AlertTriangle } from "lucide-react";
 import Navbar from "@/components/Navbar";
@@ -97,6 +98,11 @@ const AIMedicalScientificWriting = () => {
                 <span className="bg-primary/10 text-primary px-2 py-0.5 rounded text-xs font-medium">Professional</span>
               </div>
               <h1 className="text-3xl md:text-4xl font-bold mb-4">AI for Medical & Scientific Writing: A Researcher's Guide (2026)</h1>
+                <QuickAnswer
+                  question="Can you use AI for medical and scientific writing?"
+                  answer="Only within strict journal rules. Medical and scientific publishers have the toughest AI policies, often barring AI as an author and requiring disclosure. AI can help with language, structure, and summaries, but every fact and citation must be verified and the science must be yours, or you risk rejection or retraction."
+                />
+
               <p className="text-xl text-muted-foreground">Medical and scientific journals have the strictest AI policies of any publishing domain. Here is how researchers can use AI responsibly without risking rejection, retraction, or career damage.</p>
             </header>
 

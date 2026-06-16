@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { QuickAnswer } from "@/components/QuickAnswer";
 import { Helmet } from "react-helmet-async";
 import { Calendar, Clock, ArrowLeft, ExternalLink, CheckCircle, AlertTriangle } from "lucide-react";
 import Navbar from "@/components/Navbar";
@@ -97,6 +98,11 @@ const AIGrantWriting = () => {
                 <span className="bg-primary/10 text-primary px-2 py-0.5 rounded text-xs font-medium">Professional</span>
               </div>
               <h1 className="text-3xl md:text-4xl font-bold mb-4">AI for Grant Writing: Win Funding Without Detection (2026)</h1>
+                <QuickAnswer
+                  question="Can you use AI to write grant proposals?"
+                  answer="Yes, as a drafting aid. AI helps structure proposals, clarify aims, and tighten prose, but reviewers increasingly screen for generic AI text. Keep your project's specifics, data, and voice central, humanize the phrasing, and verify every claim — AI should strengthen a proposal, not write it wholesale."
+                />
+
               <p className="text-xl text-muted-foreground">Grant reviewers are starting to screen for AI-generated text. Here is how to use AI to write stronger proposals while keeping your voice authentic and undetectable.</p>
             </header>
 

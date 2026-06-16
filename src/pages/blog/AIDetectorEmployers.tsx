@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { QuickAnswer } from "@/components/QuickAnswer";
 import { Helmet } from "react-helmet-async";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -85,6 +86,11 @@ const AIDetectorEmployers = () => {
             <header className="mb-8 not-prose">
               <span className="inline-block px-3 py-1 bg-primary/10 text-primary text-sm font-medium rounded-full mb-4">Professional</span>
               <h1 className="text-3xl md:text-4xl font-bold mb-4">AI Writing Detector for Employers: Screen Candidates in 2026</h1>
+                <QuickAnswer
+                  question="Can employers use AI detectors to screen candidates?"
+                  answer="They can, but cautiously. AI detectors flag likely-AI application text, yet false positives and fairness risks mean a score should never be the sole basis for rejection. Best practice is to use detection as one signal, focus on role-relevant assessment, and disclose your policy to candidates."
+                />
+
               <p className="text-xl text-muted-foreground mb-4">A practical guide for HR teams on using AI detection tools to evaluate job applications, with legal considerations and recommended workflows.</p>
               <div className="flex flex-wrap items-center gap-4 text-sm text-muted-foreground">
                 <span className="flex items-center gap-1"><Calendar className="w-4 h-4" /> March 8, 2026</span>

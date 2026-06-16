@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet-async";
+import { QuickAnswer } from "@/components/QuickAnswer";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
@@ -179,6 +180,11 @@ export default function AICreativityOriginality() {
               <h1 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent">
                 Can AI Writing Be Truly Original? Exploring Creativity in the Age of GPT
               </h1>
+                <QuickAnswer
+                  question="Can AI writing be truly original?"
+                  answer="Partly. AI generates novel combinations of existing patterns, but genuine insight, lived experience, and emotional depth remain human. The most original work uses AI for efficiency and ideation while a human supplies the perspective, judgment, and voice that make writing distinctive."
+                />
+
             </header>
 
             <KeyTakeaways

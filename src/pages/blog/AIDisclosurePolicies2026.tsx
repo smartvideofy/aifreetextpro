@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { QuickAnswer } from "@/components/QuickAnswer";
 import { Helmet } from "react-helmet-async";
 import { Calendar, Clock, ArrowLeft } from "lucide-react";
 import Navbar from "@/components/Navbar";
@@ -84,6 +85,11 @@ const AIDisclosurePolicies2026 = () => {
                 <span className="bg-primary/10 text-primary px-2 py-1 rounded text-xs font-medium">Educational</span>
               </div>
               <h1 className="text-4xl md:text-5xl font-bold mb-4 leading-tight">AI Disclosure Policies: What You Must Know Before Submitting AI Content (2026)</h1>
+                <QuickAnswer
+                  question="When do you have to disclose AI-generated content?"
+                  answer="It depends on the context, and rules are tightening. Universities, publishers, employers, and regulations like the EU AI Act increasingly require disclosure of AI use. The safe default: disclose AI assistance wherever a policy applies, follow the specific format each institution requires, and keep your own analysis central."
+                />
+
               <p className="text-xl text-muted-foreground">From the EU AI Act to university honor codes, disclosure requirements are evolving fast. This guide covers what you need to disclose, where, and how to do it properly.</p>
               <ReviewedBy name="Dr. Sarah Chen" role="AI Ethics Researcher" slug="sarah-chen" />
             </header>

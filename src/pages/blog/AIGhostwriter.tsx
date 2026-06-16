@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { QuickAnswer } from "@/components/QuickAnswer";
 import { Helmet } from "react-helmet-async";
 import { ArrowLeft, Calendar, Clock, CheckCircle, Zap, Briefcase, DollarSign } from "lucide-react";
 import Navbar from "@/components/Navbar";
@@ -94,6 +95,11 @@ const AIGhostwriter = () => {
                 <span className="flex items-center gap-1"><Clock className="w-4 h-4" /> 13 min read</span>
               </div>
               <h1 className="text-3xl md:text-4xl font-bold mb-4">AI Ghostwriter: Professional Content Without Detection</h1>
+                <QuickAnswer
+                  question="Can AI ghostwriting sound like a specific person?"
+                  answer="Yes, with a voice-matching workflow. Feed the AI samples of the person's writing, draft with detailed prompts, then humanize and edit so the output matches their tone and perspective. Done well, AI ghostwriting produces voice-consistent, detection-resistant content at scale — but a human must own the final review."
+                />
+
               <p className="text-xl text-muted-foreground">Executives and thought leaders need content that sounds like them, not like a robot. Here is how to build an AI ghostwriting workflow that delivers voice-matched, detection-proof content at scale.</p>
             </header>
 

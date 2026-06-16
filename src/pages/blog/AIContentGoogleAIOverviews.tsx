@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { QuickAnswer } from "@/components/QuickAnswer";
 import { Helmet } from "react-helmet-async";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -107,6 +108,11 @@ const AIContentGoogleAIOverviews = () => {
                 <span className="flex items-center gap-1"><Tag className="w-4 h-4" /> SEO</span>
               </div>
               <h1 className="text-3xl sm:text-4xl font-bold mb-4">How to Get Your AI Content Into Google AI Overviews (2026)</h1>
+                <QuickAnswer
+                  question="How do you get AI content into Google AI Overviews?"
+                  answer="Structure content to be extractable: lead with a direct answer, use clear question-based headings, add specific data and sources, and keep the writing genuinely helpful and human. AI Overviews cite concise, authoritative, well-structured pages, so a strong answer near the top with supporting detail below earns citations."
+                />
+
               <p className="text-xl text-muted-foreground">Google's AI Overviews now appear on 40% of search queries. Here's how to structure, humanize, and optimize your AI-generated content to earn citations in this critical new traffic source.</p>
             </header>
 

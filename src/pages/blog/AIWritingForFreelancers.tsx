@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { QuickAnswer } from "@/components/QuickAnswer";
 import { Helmet } from "react-helmet-async";
 import { Calendar, Clock, ArrowLeft } from "lucide-react";
 import Navbar from "@/components/Navbar";
@@ -83,6 +84,11 @@ const AIWritingForFreelancers = () => {
                 <span className="bg-primary/10 text-primary px-2 py-1 rounded text-xs font-medium">Career</span>
               </div>
               <h1 className="text-4xl md:text-5xl font-bold mb-4 leading-tight">AI Writing for Freelancers: How to Use AI Without Losing Clients (2026)</h1>
+                <QuickAnswer
+                  question="Can freelancers use AI without losing clients?"
+                  answer="Yes, if you use it transparently and keep quality high. AI speeds up research and drafting, but clients notice generic, unedited output. Add your expertise and voice, verify facts, and be clear about your process where it matters. Used well, AI raises your output without risking your reputation."
+                />
+
               <p className="text-xl text-muted-foreground">AI is transforming freelance writing. The question is not whether to use it, but how to use it without compromising your reputation or client relationships.</p>
               <ReviewedBy name="Dr. Sarah Chen" role="AI Ethics Researcher" slug="sarah-chen" />
             </header>

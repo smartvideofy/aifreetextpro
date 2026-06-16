@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { QuickAnswer } from "@/components/QuickAnswer";
 import { Helmet } from "react-helmet-async";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -85,6 +86,11 @@ const ChatGPTCollegeEssays = () => {
             <header className="mb-8 not-prose">
               <span className="inline-block px-3 py-1 bg-primary/10 text-primary text-sm font-medium rounded-full mb-4">Academic</span>
               <h1 className="text-3xl md:text-4xl font-bold mb-4">ChatGPT for College Essays: What Professors Actually Detect (2026)</h1>
+                <QuickAnswer
+                  question="Can professors detect ChatGPT in college essays?"
+                  answer="Often yes. Professors use AI detectors, notice generic phrasing and tone shifts, and compare work against your known writing. Detection isn't perfect, but the risk is real and most universities prohibit submitting AI-written essays. Use AI to support your own work and disclose it where required."
+                />
+
               <p className="text-xl text-muted-foreground mb-4">A comprehensive look at how college professors detect ChatGPT use, university AI policies, and how to use AI responsibly for academic work.</p>
               <div className="flex flex-wrap items-center gap-4 text-sm text-muted-foreground">
                 <span className="flex items-center gap-1"><Calendar className="w-4 h-4" /> March 8, 2026</span>

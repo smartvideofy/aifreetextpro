@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { QuickAnswer } from "@/components/QuickAnswer";
 import { Helmet } from "react-helmet-async";
 import { Calendar, Clock, User, ArrowLeft, Briefcase, Mail, FileText, Palette, Scale, Zap } from "lucide-react";
 import Navbar from "@/components/Navbar";
@@ -156,6 +157,11 @@ const AIWritingBusinessReports = () => {
                 <span className="bg-primary/10 text-primary px-3 py-1 rounded-full text-xs font-medium">Professional</span>
               </div>
               <h1 className="text-3xl md:text-4xl font-bold mb-4">AI Writing for Business Reports and Emails: A Professional Guide (2026)</h1>
+                <QuickAnswer
+                  question="Can you use AI to write business reports and emails?"
+                  answer="Yes, and it's one of the safest professional uses of AI. AI drafts reports, emails, and proposals fast; you then tailor them to your brand voice, verify the facts, and ensure they pass any compliance review. Keep sensitive data out of public tools and treat AI output as a first draft."
+                />
+
               <p className="text-lg text-muted-foreground">How professionals use AI to draft reports, emails, and proposals faster while maintaining brand voice and passing compliance reviews.</p>
               <div className="flex items-center gap-2 mt-4 text-sm text-muted-foreground">
                 <User className="w-4 h-4" />

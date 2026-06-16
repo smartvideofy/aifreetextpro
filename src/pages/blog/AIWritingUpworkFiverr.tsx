@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { QuickAnswer } from "@/components/QuickAnswer";
 import { Helmet } from "react-helmet-async";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -107,6 +108,11 @@ const AIWritingUpworkFiverr = () => {
                 <span className="flex items-center gap-1"><Tag className="w-4 h-4" /> Career</span>
               </div>
               <h1 className="text-3xl sm:text-4xl font-bold mb-4">AI Writing for Upwork & Fiverr Freelancers: Scale Without Getting Caught (2026)</h1>
+                <QuickAnswer
+                  question="Can you use AI for Upwork and Fiverr writing gigs?"
+                  answer="Yes, to boost output, but quality and client expectations come first. Many clients accept AI-assisted work if it's well-edited and meets the brief; others require original writing. Always edit AI drafts for voice and accuracy, follow each platform's and client's rules, and be transparent when asked."
+                />
+
               <p className="text-xl text-muted-foreground">Platform-specific strategies for using AI to increase your output, maintain quality, and avoid client detection on the two biggest freelancing platforms.</p>
             </header>
 

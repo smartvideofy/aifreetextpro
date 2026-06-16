@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { QuickAnswer } from "@/components/QuickAnswer";
 import { Helmet } from "react-helmet-async";
 import { Calendar, Clock, ArrowLeft, BookOpen, Shield, CheckCircle } from "lucide-react";
 import Navbar from "@/components/Navbar";
@@ -97,6 +98,11 @@ const CanTurnitinDetectDeepSeek = () => {
             <header className="mb-8 not-prose">
               <span className="inline-block px-3 py-1 text-sm font-medium bg-primary/10 text-primary rounded-full mb-4">Academic</span>
               <h1 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">Can Turnitin Detect DeepSeek? What You Need to Know</h1>
+                <QuickAnswer
+                  question="Can Turnitin detect DeepSeek?"
+                  answer="Yes. In our tests across 50+ essays, Turnitin flagged DeepSeek R1 output with 82-88% accuracy, slightly lower than for ChatGPT but still high. DeepSeek is marginally harder to detect, not undetectable, so unedited output remains risky for academic submission."
+                />
+
               <div className="flex flex-wrap items-center gap-4 text-sm text-muted-foreground">
                 <span className="flex items-center gap-1"><Calendar className="w-4 h-4" /> February 25, 2026</span>
                 <span className="flex items-center gap-1"><Clock className="w-4 h-4" /> 13 min read</span>

@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { QuickAnswer } from "@/components/QuickAnswer";
 import { Helmet } from "react-helmet-async";
 import { Calendar, Clock, ArrowLeft, Twitter, MessageSquare, TrendingUp } from "lucide-react";
 import Navbar from "@/components/Navbar";
@@ -109,6 +110,11 @@ const AITwitterThreadGenerator = () => {
                 <span className="bg-primary/10 text-primary px-2 py-1 rounded text-xs font-medium">Social Media</span>
               </div>
               <h1 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">AI Twitter Thread Generator That Sounds Human (2026)</h1>
+                <QuickAnswer
+                  question="How do you write AI Twitter threads that don't sound like a bot?"
+                  answer="Start with a strong hook, use a clear thread structure, and humanize the draft: vary sentence length, add personality and specifics, and cut generic phrasing. AI is great for speed and structure, but the edit that adds voice and a real point of view is what makes threads land and get shared."
+                />
+
               <p className="text-xl text-muted-foreground">How to create viral X/Twitter threads using AI without sounding like a bot. Prompt templates, thread structures, and the humanization workflow that top creators use.</p>
             </header>
 

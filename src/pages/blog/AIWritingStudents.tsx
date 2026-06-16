@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { QuickAnswer } from "@/components/QuickAnswer";
 import { Button } from "@/components/ui/button";
 import { Calendar, Clock, ArrowLeft, GraduationCap, Shield, CheckCircle2 } from "lucide-react";
 import { KeyTakeaways } from "@/components/KeyTakeaways";
@@ -216,6 +217,11 @@ const AIWritingStudents = () => {
                 <h1 className="text-4xl md:text-5xl font-bold leading-tight">
                   AI Writing for Students: How to Avoid Plagiarism and AI Detection Ethically
                 </h1>
+                <QuickAnswer
+                  question="How can students use AI without plagiarism or detection issues?"
+                  answer="Use AI ethically: for research, brainstorming, grammar, and study aids, not for submitting AI-written essays as your own. Write in your own words with contractions, varied sentences, and specific detail, disclose AI use where required, and follow your institution's policy. That keeps work both original and authentic."
+                />
+
 
                 <p className="text-xl text-muted-foreground">
                   Navigate the AI revolution in education without compromising academic integrity.

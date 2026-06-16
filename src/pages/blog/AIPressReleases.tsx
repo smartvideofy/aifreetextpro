@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { QuickAnswer } from "@/components/QuickAnswer";
 import { Helmet } from "react-helmet-async";
 import { Calendar, Clock, ArrowLeft, ExternalLink, CheckCircle } from "lucide-react";
 import Navbar from "@/components/Navbar";
@@ -97,6 +98,11 @@ const AIPressReleases = () => {
                 <span className="bg-primary/10 text-primary px-2 py-0.5 rounded text-xs font-medium">Professional</span>
               </div>
               <h1 className="text-3xl md:text-4xl font-bold mb-4">AI for Press Releases: PR Content That Sounds Human (2026)</h1>
+                <QuickAnswer
+                  question="Can you use AI to write press releases?"
+                  answer="Yes, but humanize them. Journalists bin generic, AI-sounding releases instantly. Use AI to draft structure and boilerplate, then add a genuine news angle, specific quotes and data, and a natural voice. The humanization step is what keeps a release out of the trash and earns coverage."
+                />
+
               <p className="text-xl text-muted-foreground">Journalists receive hundreds of press releases daily. AI-generated ones go straight to the trash. Here is how to use AI for PR writing while maintaining the authentic, newsworthy voice that earns coverage.</p>
             </header>
 

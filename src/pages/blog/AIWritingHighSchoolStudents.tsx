@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { QuickAnswer } from "@/components/QuickAnswer";
 import { Helmet } from "react-helmet-async";
 import { Calendar, Clock, ArrowLeft } from "lucide-react";
 import Navbar from "@/components/Navbar";
@@ -83,6 +84,11 @@ const AIWritingHighSchoolStudents = () => {
                 <span className="bg-primary/10 text-primary px-2 py-1 rounded text-xs font-medium">Academic</span>
               </div>
               <h1 className="text-4xl md:text-5xl font-bold mb-4 leading-tight">AI Writing for High School Students: A Parent and Student Guide (2026)</h1>
+                <QuickAnswer
+                  question="Can high school students use AI for writing?"
+                  answer="Within limits, and with guidance. AI can help high schoolers brainstorm, understand topics, and check grammar, but submitting AI-written work is usually prohibited and increasingly detectable. The healthiest approach is using AI as a tutor and study aid while students do the actual writing, and following school policy."
+                />
+
               <p className="text-xl text-muted-foreground">Most guides focus on university students, but high schoolers face unique challenges. Here is what students and parents need to know about AI in secondary education.</p>
               <ReviewedBy name="Dr. Sarah Chen" role="AI Ethics Researcher" slug="sarah-chen" />
             </header>

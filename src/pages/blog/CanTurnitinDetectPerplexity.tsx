@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { QuickAnswer } from "@/components/QuickAnswer";
 import { Helmet } from "react-helmet-async";
 import { ArrowLeft, Calendar, Clock, CheckCircle, Zap, AlertTriangle, Search } from "lucide-react";
 import Navbar from "@/components/Navbar";
@@ -99,6 +100,11 @@ const CanTurnitinDetectPerplexity = () => {
                 <span className="flex items-center gap-1"><Clock className="w-4 h-4" /> 12 min read</span>
               </div>
               <h1 className="text-3xl md:text-4xl font-bold mb-4">Can Turnitin Detect Perplexity AI? (2026 Test Results)</h1>
+                <QuickAnswer
+                  question="Can Turnitin detect Perplexity AI?"
+                  answer="Yes. We tested Perplexity AI output against Turnitin, GPTZero, Originality.AI, and Copyleaks; Turnitin and the others flagged it at high rates because Perplexity still produces AI-typical patterns. Its cited, research-style output isn't meaningfully less detectable, so submitting it unedited is risky."
+                />
+
               <p className="text-xl text-muted-foreground">Perplexity AI is the fastest-growing research tool among students. We tested its output against Turnitin, GPTZero, Originality.AI, and Copyleaks to find out exactly how detectable it is.</p>
             </header>
 

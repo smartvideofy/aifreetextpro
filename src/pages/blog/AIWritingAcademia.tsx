@@ -1,4 +1,5 @@
 ﻿import { Helmet } from "react-helmet-async";
+import { QuickAnswer } from "@/components/QuickAnswer";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
@@ -162,6 +163,11 @@ export default function AIWritingAcademia() {
               <h1 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent">
                 AI Writing in Academia: Staying Undetected Without Losing Integrity
               </h1>
+                <QuickAnswer
+                  question="Can you use AI in academic writing without losing integrity?"
+                  answer="Yes, if it supports rather than replaces your work. Use AI for research, brainstorming, and editing, keep the analysis and arguments yours, and disclose AI use where required. Writing naturally, with varied sentences and specific detail, also reduces false detector flags on legitimate work."
+                />
+
               
               <p className="text-xl text-muted-foreground">
                 Ethical strategies to leverage AI for essays, research papers, and thesis writing while avoiding detection flags and maintaining academic standards.

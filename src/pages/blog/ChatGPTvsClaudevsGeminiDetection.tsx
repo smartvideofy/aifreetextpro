@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { QuickAnswer } from "@/components/QuickAnswer";
 import { Helmet } from "react-helmet-async";
 import { Calendar, Clock, ArrowLeft } from "lucide-react";
 import Navbar from "@/components/Navbar";
@@ -87,6 +88,11 @@ const ChatGPTvsClaudevsGeminiDetection = () => {
                 <span className="bg-primary/10 text-primary px-2 py-1 rounded text-xs font-medium">Comparison</span>
               </div>
               <h1 className="text-4xl md:text-5xl font-bold mb-4 leading-tight">ChatGPT vs Claude vs Gemini: Which AI Writer Is Hardest to Detect? (2026)</h1>
+                <QuickAnswer
+                  question="Which AI writer is hardest to detect: ChatGPT, Claude, or Gemini?"
+                  answer="In our tests with identical prompts across five detectors, the three differ measurably, with Claude and Gemini often scoring slightly less detectable than GPT-5, but all are caught at high rates when unedited. No model reliably beats detection, so humanizing and editing matter more than which model you pick."
+                />
+
               <p className="text-xl text-muted-foreground">We ran identical prompts through GPT-5, Claude 3.5 Opus, and Gemini 2.5 Pro, then tested every output against five major AI detectors. The results reveal clear differences in detectability.</p>
               <ReviewedBy name="Dr. Sarah Chen" role="AI Ethics Researcher" slug="sarah-chen" />
             </header>

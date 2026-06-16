@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { QuickAnswer } from "@/components/QuickAnswer";
 import { Helmet } from "react-helmet-async";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -107,6 +108,11 @@ const AIWritingNursingHealthcare = () => {
                 <span className="flex items-center gap-1"><Tag className="w-4 h-4" /> Academic</span>
               </div>
               <h1 className="text-3xl sm:text-4xl font-bold mb-4">AI Writing for Nursing & Healthcare Students (2026)</h1>
+                <QuickAnswer
+                  question="Can nursing and healthcare students use AI?"
+                  answer="For learning support, yes; for clinical work and graded writing, with caution. AI can help with study notes, structure, and editing of care plans, SOAP notes, and essays, but you must verify all clinical accuracy, protect patient privacy, and follow program policy. The clinical judgment must be yours."
+                />
+
               <p className="text-xl text-muted-foreground">How to use AI tools responsibly for care plans, SOAP notes, clinical reflections, and pharmacology essays without risking your nursing career.</p>
             </header>
 

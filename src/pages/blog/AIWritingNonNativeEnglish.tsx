@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { QuickAnswer } from "@/components/QuickAnswer";
 import { Helmet } from "react-helmet-async";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -148,6 +149,11 @@ const AIWritingNonNativeEnglish = () => {
               <h1 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
                 AI Writing for Non-Native English Speakers: Avoid False AI Flags (2026)
               </h1>
+                <QuickAnswer
+                  question="Why do AI detectors flag non-native English writing?"
+                  answer="Because ESL writing often uses simpler, more predictable sentence patterns, the same low-perplexity, uniform structure detectors associate with AI, so genuine work gets falsely flagged. Protect yourself by keeping drafts, varying sentence structure, and asking for human review rather than relying on a detector's score."
+                />
+
               <p className="text-xl text-muted-foreground mb-4">
                 If you write in English as a second language, AI detectors may flag your work as machine-generated even when every word is yours. Here is why it happens and how to protect yourself.
               </p>

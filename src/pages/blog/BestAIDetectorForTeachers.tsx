@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { QuickAnswer } from "@/components/QuickAnswer";
 import { Helmet } from "react-helmet-async";
 import { Calendar, Clock, User, ArrowLeft, GraduationCap, Shield, DollarSign, AlertTriangle, Eye, Zap } from "lucide-react";
 import Navbar from "@/components/Navbar";
@@ -161,6 +162,11 @@ const BestAIDetectorForTeachers = () => {
                 <span className="bg-primary/10 text-primary px-3 py-1 rounded-full text-xs font-medium">Detector Review</span>
               </div>
               <h1 className="text-3xl md:text-4xl font-bold mb-4">Best AI Detector for Teachers and Professors (2026 Review)</h1>
+                <QuickAnswer
+                  question="What is the best AI detector for teachers?"
+                  answer="Turnitin is the most common in schools because it's built into submission systems; GPTZero and Originality.AI are strong standalone options. No detector is fully reliable, and all produce false positives, so the best practice is to use a detector as one signal alongside conversation and process evidence, not as proof."
+                />
+
               <p className="text-lg text-muted-foreground">An honest, balanced review of the top 5 AI detection tools for classroom use, including accuracy data, false positive rates, pricing, and practical recommendations.</p>
               <div className="flex items-center gap-2 mt-4 text-sm text-muted-foreground">
                 <User className="w-4 h-4" />

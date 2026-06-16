@@ -9,6 +9,8 @@ import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { RelatedArticles } from "@/components/RelatedArticles";
 import { InternalLinks } from "@/components/InternalLinks";
 import { AuthorSchema } from "@/components/AuthorSchema";
+import { QuickAnswer } from "@/components/QuickAnswer";
+import { FAQSection } from "@/components/FAQSection";
 
 const relatedArticles = [
   {
@@ -162,6 +164,11 @@ const AIDetectionPatterns = () => {
                 <h1 className="text-4xl md:text-5xl font-bold leading-tight">
                   AI vs. Human: 5 Subtle Linguistic Patterns AI Detectors Look For
                 </h1>
+
+                <QuickAnswer
+                  question="What patterns do AI detectors look for?"
+                  answer="AI detectors score five signals: low perplexity (text that is too predictable), low burstiness (uniform sentence length), narrow vocabulary distribution, overly smooth coherence, and a lack of emotional depth or specific detail. Human writing varies across all five; AI writing clusters in the 'too consistent' range, which is what detectors flag."
+                />
 
                 <p className="text-xl text-muted-foreground">
                   A deep dive into the science behind AI detection, and how understanding these patterns helps you write undetectably.
@@ -380,8 +387,15 @@ const AIDetectionPatterns = () => {
                 </a>
               </div>
 
+              <FAQSection faqs={[
+                { question: "What is perplexity in AI detection?", answer: "Perplexity measures how predictable each word is. AI tends to pick the statistically 'safe' next word, producing consistently low perplexity, while human writing is less predictable and scores higher. Detectors treat sustained low perplexity as an AI signal." },
+                { question: "What is burstiness?", answer: "Burstiness is the variation in sentence length and structure. Humans mix short and long sentences; AI tends to produce uniform, similar-length sentences. Low burstiness is one of the strongest AI indicators detectors rely on." },
+                { question: "Can human writing be flagged as AI?", answer: "Yes. Highly uniform, formal, or formulaic writing — common in technical, academic, and non-native English text — can show low perplexity and burstiness and trigger false positives. No detector is 100% accurate, so a score is a signal, not proof." },
+                { question: "How do you write content that doesn't trigger these patterns?", answer: "Vary your sentence length, use specific examples and concrete detail, add genuine perspective, and avoid repetitive transitions. Humanizing tools like AI Free Text Pro restructure AI text to raise perplexity and burstiness while preserving meaning." },
+              ]} />
+
               <RelatedArticles articles={relatedArticles} />
-              
+
               <InternalLinks currentPage="/blog/ai-detection-patterns-perplexity-burstiness" />
             </article>
           </div>

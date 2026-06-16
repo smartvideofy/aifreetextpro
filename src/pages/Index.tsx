@@ -36,8 +36,12 @@ const ExitIntentPopup = lazy(() => import("@/components/ExitIntentPopup"));
 const PillarHubLinksModule = lazy(() => import("@/components/PillarHubLinks").then(m => ({ default: m.PillarHubLinks })));
 const CrossHubNavModule = lazy(() => import("@/components/PillarHubLinks").then(m => ({ default: m.CrossHubNav })));
 
-const LazySection = ({ children }: { children: React.ReactNode }) => (
-  <Suspense fallback={<div className="min-h-[200px]" />}>
+// fallbackClass reserves the section's real height so the lazy chunk loading
+// (and React's Suspense-boundary re-render during hydration) doesn't collapse
+// to a short placeholder and then expand — which was driving CLS. Overlay
+// sections pass nothing (0 height) since they render null until interaction.
+const LazySection = ({ children, fallbackClass = "" }: { children: React.ReactNode; fallbackClass?: string }) => (
+  <Suspense fallback={<div className={fallbackClass} aria-hidden="true" />}>
     {children}
   </Suspense>
 );
@@ -344,7 +348,7 @@ const Index = () => {
         </section>
 
         {/* Trust Badges */}
-        <LazySection><TrustBadges /></LazySection>
+        <LazySection fallbackClass="min-h-[120px]"><TrustBadges /></LazySection>
 
         {/* Problem-Solution Section */}
         <section className="py-16 md:py-24">
@@ -427,7 +431,7 @@ const Index = () => {
         </section>
 
         {/* Interactive Demo Section */}
-        <LazySection><InteractiveDemo /></LazySection>
+        <LazySection fallbackClass="min-h-[700px] md:min-h-[780px]"><InteractiveDemo /></LazySection>
 
         {/* How It Works */}
         <section className="py-16 md:py-24 bg-muted/30">
@@ -704,7 +708,7 @@ const Index = () => {
         </section>
 
         {/* Testimonial Carousel */}
-        <LazySection><TestimonialCarousel /></LazySection>
+        <LazySection fallbackClass="min-h-[690px] md:min-h-[720px]"><TestimonialCarousel /></LazySection>
 
         {/* Why Choose AI Free Text Pro */}
         <section className="py-20 md:py-28 bg-card/20">
@@ -758,7 +762,7 @@ const Index = () => {
         </section>
 
         {/* Animated Stats Section */}
-        <LazySection><AnimatedStats /></LazySection>
+        <LazySection fallbackClass="min-h-[430px] md:min-h-[450px]"><AnimatedStats /></LazySection>
 
         {/* Pricing Preview Section */}
         <section className="py-16 md:py-24">
@@ -931,7 +935,7 @@ const Index = () => {
         </section>
 
         {/* Enhanced Comparison Table */}
-        <LazySection><ComparisonTable /></LazySection>
+        <LazySection fallbackClass="min-h-[1740px] md:min-h-[1280px]"><ComparisonTable /></LazySection>
 
         {/* Use Cases Section */}
         <section className="py-16 md:py-24 bg-muted/30">
@@ -1108,7 +1112,7 @@ const Index = () => {
         </section>
 
         {/* About Section */}
-        <LazySection><AboutSection /></LazySection>
+        <LazySection fallbackClass="min-h-[4640px] md:min-h-[2320px]"><AboutSection /></LazySection>
 
         {/* Blog Links Section - Internal Linking */}
         <section className="py-20 md:py-28 bg-gradient-to-b from-background to-card/20">
@@ -1302,16 +1306,16 @@ const Index = () => {
         {/* Pillar Hub: AI Humanizer Spokes */}
         <section className="py-4">
           <div className="container mx-auto px-4">
-            <LazySection><PillarHubLinksModule hub="humanizer" currentPage="/" limit={6} title="AI Humanizer Resources" /></LazySection>
-            <LazySection><CrossHubNavModule currentHub="humanizer" /></LazySection>
+            <LazySection fallbackClass="min-h-[1300px] md:min-h-[600px]"><PillarHubLinksModule hub="humanizer" currentPage="/" limit={6} title="AI Humanizer Resources" /></LazySection>
+            <LazySection fallbackClass="min-h-[150px]"><CrossHubNavModule currentHub="humanizer" /></LazySection>
           </div>
         </section>
 
         {/* Newsletter Signup */}
-        <LazySection><NewsletterSignup /></LazySection>
+        <LazySection fallbackClass="min-h-[460px] md:min-h-[530px]"><NewsletterSignup /></LazySection>
 
         {/* Enhanced FAQ Section */}
-        <LazySection><EnhancedFAQ /></LazySection>
+        <LazySection fallbackClass="min-h-[1870px] md:min-h-[1680px]"><EnhancedFAQ /></LazySection>
 
         {/* Final CTA */}
         <section className="py-20 md:py-28">

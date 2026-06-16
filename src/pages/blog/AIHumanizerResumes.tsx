@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+import { QuickAnswer } from "@/components/QuickAnswer";
+import { FAQSection } from "@/components/FAQSection";
 import { Helmet } from "react-helmet-async";
 import { Calendar, Clock, ArrowLeft, BookOpen, Briefcase, CheckCircle } from "lucide-react";
 import Navbar from "@/components/Navbar";
@@ -81,6 +83,11 @@ const AIHumanizerResumes = () => {
             <header className="mb-8 not-prose">
               <span className="inline-block px-3 py-1 text-sm font-medium bg-primary/10 text-primary rounded-full mb-4">Career</span>
               <h1 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">AI Humanizer for Resumes and Cover Letters: Complete Guide</h1>
+                <QuickAnswer
+                  question="Should you humanize an AI-written resume?"
+                  answer="Yes. Recruiters and applicant tracking systems increasingly screen for generic AI phrasing, and raw AI resumes get rejected for sounding templated. Humanize by adding specific achievements with numbers, your real voice, and role-specific detail so the resume reads as authentically yours."
+                />
+
               <div className="flex flex-wrap items-center gap-4 text-sm text-muted-foreground">
                 <span className="flex items-center gap-1"><Calendar className="w-4 h-4" /> February 25, 2026</span>
                 <span className="flex items-center gap-1"><Clock className="w-4 h-4" /> 12 min read</span>
@@ -157,7 +164,13 @@ const AIHumanizerResumes = () => {
             </div>
           </article>
 
-          <RelatedArticles articles={relatedArticles} />
+                        <FAQSection faqs={[
+                { question: "Can recruiters tell if a resume is AI-written?", answer: "Often yes: generic phrasing, vague accomplishments, and templated structure are giveaways. Specific, quantified achievements signal a human, tailored resume." },
+                { question: "Which resume sections need the most humanization?", answer: "Summaries and experience bullets, where AI tends to produce vague, interchangeable phrasing. Replace cliches with concrete, measurable results." },
+                { question: "Is it okay to use AI for cover letters?", answer: "Yes, as a starting draft. Personalize it with specifics about the company, the role, and your own voice before sending." },
+              ]} />
+
+              <RelatedArticles articles={relatedArticles} />
           <InternalLinks currentPage="/blog/ai-humanizer-resumes-cover-letters" />
         </div>
       </main>

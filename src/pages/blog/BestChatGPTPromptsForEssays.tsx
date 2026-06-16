@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+import { QuickAnswer } from "@/components/QuickAnswer";
+import { FAQSection } from "@/components/FAQSection";
 import { Helmet } from "react-helmet-async";
 import { Calendar, Clock, ArrowLeft, BookOpen, Lightbulb, Copy } from "lucide-react";
 import Navbar from "@/components/Navbar";
@@ -81,6 +83,11 @@ const BestChatGPTPromptsForEssays = () => {
             <header className="mb-8 not-prose">
               <span className="inline-block px-3 py-1 text-sm font-medium bg-primary/10 text-primary rounded-full mb-4">Academic</span>
               <h1 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">Best ChatGPT Prompts for Essays That Sound Human</h1>
+                <QuickAnswer
+                  question="What are the best ChatGPT prompts for essays?"
+                  answer="The best essay prompts go beyond 'write an essay': they specify a clear thesis, audience, structure, evidence, and a natural, varied writing style. Default prompts produce robotic, easily detected output, while detailed prompts that ask for specific examples and human-like rhythm yield stronger drafts you still need to edit."
+                />
+
               <div className="flex flex-wrap items-center gap-4 text-sm text-muted-foreground">
                 <span className="flex items-center gap-1"><Calendar className="w-4 h-4" /> February 25, 2026</span>
                 <span className="flex items-center gap-1"><Clock className="w-4 h-4" /> 14 min read</span>
@@ -176,7 +183,13 @@ const BestChatGPTPromptsForEssays = () => {
             </div>
           </article>
 
-          <RelatedArticles articles={relatedArticles} />
+                        <FAQSection faqs={[
+                { question: "Why do default ChatGPT essays sound robotic?", answer: "Generic prompts produce predictable structure and phrasing, uniform sentences and stock transitions, which both readers and detectors recognize as AI." },
+                { question: "Can a better prompt reduce AI detection?", answer: "It helps. Prompts that request varied sentence length, specific examples, and a distinct voice lower the AI signal, but a human edit pass is still needed." },
+                { question: "Is using ChatGPT for essays allowed?", answer: "It depends on your institution's policy. Many allow AI for brainstorming and drafting but require your own analysis and disclosure, so always check the rules that apply to you." },
+              ]} />
+
+              <RelatedArticles articles={relatedArticles} />
           <InternalLinks currentPage="/blog/best-chatgpt-prompts-for-essays" />
         </div>
       </main>

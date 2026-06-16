@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+import { QuickAnswer } from "@/components/QuickAnswer";
+import { FAQSection } from "@/components/FAQSection";
 import { Helmet } from "react-helmet-async";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -133,6 +135,11 @@ const SignalVsNoiseHumanText = () => {
               <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
                 Signal vs. Noise: What Makes Text "Human" in 2026
               </h1>
+                <QuickAnswer
+                  question="What signals make writing look human to AI detectors?"
+                  answer="Detectors increasingly key on five human signals: idiosyncratic word choice, conversational asides, varied sentence length, specific over general detail, and imperfect consistency. Writing that includes these reads as human; uniformly polished, generic text reads as AI."
+                />
+
               <p className="text-xl text-muted-foreground mb-6">
                 Current patterns detectors care about, with concrete examples you can learn from.
               </p>
@@ -524,7 +531,13 @@ const SignalVsNoiseHumanText = () => {
           </article>
 
           <div className="mt-12">
-            <RelatedArticles articles={relatedArticles} />
+                          <FAQSection faqs={[
+                { question: "What makes text look AI-generated?", answer: "Uniform sentence length, generic phrasing, perfect consistency, and a lack of specific detail or personal asides." },
+                { question: "Does perfect grammar look like AI?", answer: "Overly uniform, flawless consistency can. Human writing tends to have natural variation and the occasional aside, which signals authenticity." },
+                { question: "How do I add human signals to my writing?", answer: "Use specific examples, vary sentence length, include genuine perspective, and don't over-smooth every sentence." },
+              ]} />
+
+              <RelatedArticles articles={relatedArticles} />
           </div>
           <InternalLinks currentPage="/blog/signal-vs-noise-human-text" />
         </main>

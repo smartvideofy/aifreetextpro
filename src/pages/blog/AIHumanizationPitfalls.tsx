@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+import { QuickAnswer } from "@/components/QuickAnswer";
+import { FAQSection } from "@/components/FAQSection";
 import { Helmet } from "react-helmet-async";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -133,6 +135,11 @@ const AIHumanizationPitfalls = () => {
               <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
                 AI Humanization Pitfalls: Common Mistakes Writers Make
               </h1>
+                <QuickAnswer
+                  question="What are the biggest mistakes when humanizing AI text?"
+                  answer="The common pitfalls are random synonym swapping (which reads awkwardly), running text through multiple humanizers (which garbles meaning), preserving the original AI structure, and ignoring context. Effective humanization restructures sentences and adds specific detail while keeping the meaning intact."
+                />
+
               <p className="text-xl text-muted-foreground mb-6">
                 What to avoid when refining AI text, and what to do instead.
               </p>
@@ -547,7 +554,13 @@ const AIHumanizationPitfalls = () => {
           </article>
 
           <div className="mt-12">
-            <RelatedArticles articles={relatedArticles} />
+                          <FAQSection faqs={[
+                { question: "Why does synonym swapping fail?", answer: "Swapping words without changing structure leaves the AI's predictable rhythm intact and often introduces unnatural phrasing, so detectors still flag it and readers notice." },
+                { question: "Is it bad to run text through multiple humanizers?", answer: "Yes. Stacking tools compounds errors and can garble meaning and tone, often making text read worse and no harder to detect." },
+                { question: "What does good humanization actually change?", answer: "It varies sentence length and structure, adds concrete detail and voice, and breaks predictable patterns, not just vocabulary." },
+              ]} />
+
+              <RelatedArticles articles={relatedArticles} />
           </div>
           <InternalLinks currentPage="/blog/ai-humanization-pitfalls" />
         </main>

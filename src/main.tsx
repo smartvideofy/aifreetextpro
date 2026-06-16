@@ -8,9 +8,18 @@ const container = document.getElementById("root")!;
 // flushed <title>/<meta>/JSON-LD into <head>. Helmet writes head changes via
 // setTimeout/requestAnimationFrame inside an effect, so we MUST wait until
 // at least one Helmet-managed tag (data-rh="true") appears in <head> before
-// snapshotting. We also wait briefly for stragglers (extra JSON-LD blocks).
+// snapshotting. We also wait for stragglers (extra JSON-LD blocks).
+//
+// POST_SWAP_QUIET_MS is the no-head-mutation window we require before
+// snapshotting. On schema-heavy posts (Article + HowTo + Breadcrumb + FAQ +
+// Speakable from separate Helmet instances) the last component's JSON-LD can
+// flush several hundred ms after the first, so a short window non-
+// deterministically dropped a late schema (e.g. FAQPage) on whichever heavy
+// page lost the race that build. 1500ms gives ample margin; the
+// MutationObserver re-arms on every head mutation, so we only snapshot once
+// the head has been genuinely stable.
 const MAX_WAIT_MS = 25000;
-const POST_SWAP_QUIET_MS = 600;
+const POST_SWAP_QUIET_MS = 1500;
 
 declare global {
   interface Window {

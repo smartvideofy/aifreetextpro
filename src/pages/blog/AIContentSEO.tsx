@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+import { QuickAnswer } from "@/components/QuickAnswer";
+import { FAQSection } from "@/components/FAQSection";
 import { Button } from "@/components/ui/button";
 import { Calendar, Clock, ArrowLeft, TrendingUp, Search, Shield, CheckCircle } from "lucide-react";
 import { KeyTakeaways } from "@/components/KeyTakeaways";
@@ -154,6 +156,11 @@ const AIContentSEO = () => {
                 <h1 className="text-4xl md:text-5xl font-bold leading-tight">
                   AI Content for SEO: How to Generate Undetectable Articles That Rank
                 </h1>
+                <QuickAnswer
+                  question="Is AI-generated content bad for SEO?"
+                  answer="Not inherently. Google rewards helpful, high-quality content regardless of how it's produced, but raw, unedited AI content often reads generically and underperforms. The reliable approach is AI for drafting, humanization for natural flow, and human expertise for accuracy, which keeps rankings and authenticity intact."
+                />
+
 
                 <p className="text-xl text-muted-foreground">
                   The complete playbook for SEO professionals who want to scale content production with AI, without sacrificing rankings or authenticity.
@@ -413,6 +420,12 @@ const AIContentSEO = () => {
                   </Button>
                 </a>
               </div>
+
+                            <FAQSection faqs={[
+                { question: "Does Google penalize AI content?", answer: "Google doesn't penalize content for being AI-generated; it targets unhelpful, low-quality content. Well-edited, genuinely useful AI-assisted content can rank well." },
+                { question: "How do you make AI content rank?", answer: "Add original insight, specific data, and a human edit pass; match search intent; and humanize the phrasing so it reads naturally rather than generically." },
+                { question: "Is AI content safe for established sites?", answer: "Yes, when it meets the same quality bar as your other content. Publishing volumes of thin, unedited AI text is the real risk, not AI assistance itself." },
+              ]} />
 
               <RelatedArticles articles={relatedArticles} />
               

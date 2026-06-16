@@ -1,4 +1,6 @@
 import { Helmet } from "react-helmet-async";
+import { QuickAnswer } from "@/components/QuickAnswer";
+import { FAQSection } from "@/components/FAQSection";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
@@ -137,6 +139,11 @@ const HowAIDetectorsScoreText = () => {
               <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
                 How AI Detectors Score Text: A Behind-the-Scenes Look
               </h1>
+                <QuickAnswer
+                  question="How do AI detectors score text?"
+                  answer="Detectors combine several metrics: perplexity (predictability), burstiness (sentence-length variation), token-probability distribution, and stylometric features. They compare your text against patterns of AI versus human writing and output a confidence score, which is a probability estimate, not a definitive verdict."
+                />
+
               <p className="text-xl text-muted-foreground mb-6">
                 Breaking down the metrics in plain language so you understand what's really being measured.
               </p>
@@ -421,7 +428,13 @@ const HowAIDetectorsScoreText = () => {
           </article>
 
           <div className="mt-12">
-            <RelatedArticles articles={relatedArticles} />
+                          <FAQSection faqs={[
+                { question: "What does a confidence score actually mean?", answer: "It's the detector's estimated probability that text is AI-generated, not proof. A high score means the text looks AI-like, which can still be wrong." },
+                { question: "What is perplexity?", answer: "Perplexity measures how predictable the next word is. AI text tends to be more predictable (low perplexity) than human writing." },
+                { question: "Can detectors be fooled?", answer: "Detectors rely on statistical patterns, so writing with genuine variation and specificity scores lower, but no detector is fully reliable in either direction." },
+              ]} />
+
+              <RelatedArticles articles={relatedArticles} />
           </div>
           <InternalLinks currentPage="/blog/how-ai-detectors-score-text" />
         </main>

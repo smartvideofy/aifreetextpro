@@ -1,4 +1,6 @@
 import { Helmet } from "react-helmet-async";
+import { QuickAnswer } from "@/components/QuickAnswer";
+import { FAQSection } from "@/components/FAQSection";
 import { Link } from "react-router-dom";
 import { ArrowRight, ArrowLeft, Volume2, Fingerprint, Waves, Target } from "lucide-react";
 import { KeyTakeaways } from "@/components/KeyTakeaways";
@@ -139,6 +141,11 @@ const ToneVoiceFlowAIWriting = () => {
                 <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 bg-gradient-to-r from-foreground to-foreground/70 bg-clip-text">
                   Tone, Voice, and Flow in AI-Assisted Writing
                 </h1>
+                <QuickAnswer
+                  question="How do you give AI writing tone, voice, and flow?"
+                  answer="Tone sets the emotional temperature, voice makes the writing distinctive, and flow carries the reader. With AI, set tone explicitly in your prompt, inject voice by editing in your own phrasing and perspective, and build flow by varying sentence length and using smooth transitions between ideas."
+                />
+
                 <p className="text-xl text-muted-foreground leading-relaxed">
                   Great writing has three invisible threads: tone sets the emotional temperature, voice creates distinctiveness, and flow carries readers effortlessly forward. Here's how to master all three when working with AI.
                 </p>
@@ -372,7 +379,13 @@ const ToneVoiceFlowAIWriting = () => {
               </section>
             </article>
 
-            <RelatedArticles articles={relatedArticles} />
+                          <FAQSection faqs={[
+                { question: "What's the difference between tone and voice?", answer: "Tone is the emotional attitude of a piece (formal, warm, urgent); voice is the consistent personality and style that makes writing recognizably yours." },
+                { question: "How do I improve flow in AI writing?", answer: "Vary sentence length, connect ideas with natural transitions, and read aloud to catch choppy or repetitive rhythm." },
+                { question: "Can AI match my voice?", answer: "It can approximate it if you give it samples and direction, but matching voice closely still requires editing the output yourself." },
+              ]} />
+
+              <RelatedArticles articles={relatedArticles} />
             
             <InternalLinks currentPage="/blog/tone-voice-flow-ai-writing" />
           </div>

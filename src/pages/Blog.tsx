@@ -1121,7 +1121,7 @@ const Blog = () => {
               "name": "AI Free Text Pro",
               "logo": {
                 "@type": "ImageObject",
-                "url": "https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/uploads/1759692105576-Logo.PNG"
+                "url": "https://aifreetextpro.com/logo.png"
               }
             },
             "mainEntity": {

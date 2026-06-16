@@ -120,20 +120,6 @@ const AIChecker = () => {
           })}
         </script>
 
-        {/* VideoObject Schema Placeholder */}
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "VideoObject",
-            "name": "How to Use AI Free Text Pro AI Checker",
-            "description": "Learn how to detect AI-generated content using AI Free Text Pro's AI Checker tool with step-by-step instructions.",
-            "thumbnailUrl": "https://aifreetextpro.com/images/ai-checker-video-thumbnail.jpg",
-            "uploadDate": "2025-01-15",
-            "duration": "PT3M45S",
-            "contentUrl": "https://aifreetextpro.com/videos/ai-checker-tutorial.mp4",
-            "embedUrl": "https://www.youtube.com/embed/placeholder"
-          })}
-        </script>
 
         {/* HowTo Schema for AI Checker */}
         <script type="application/ld+json">

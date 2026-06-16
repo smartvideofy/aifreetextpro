@@ -34,7 +34,7 @@ const BestAIDetector2026 = () => {
         <meta property="og:url" content="https://aifreetextpro.com/blog/best-ai-detector-2026" />
         <meta property="og:title" content="Best AI Detector 2026: Top 10 Tools Tested & Ranked" />
         <meta property="og:description" content="Tested 10 AI detectors on 200 samples. See full accuracy and false-positive results." />
-        <meta property="og:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" />
+        <meta property="og:image" content="https://aifreetextpro.com/og-image.png" />
         <meta property="article:published_time" content="2026-05-09T08:00:00Z" />
         <meta property="article:modified_time" content="2026-05-09T08:00:00Z" />
         <meta name="twitter:card" content="summary_large_image" />
@@ -44,7 +44,7 @@ const BestAIDetector2026 = () => {
           "@context": "https://schema.org", "@type": "Article",
           "headline": "Best AI Detector 2026: Top 10 Tools Tested & Ranked",
           "author": { "@type": "Person", "name": "Dr. Sarah Chen", "url": "https://aifreetextpro.com/team#sarah-chen" },
-          "publisher": { "@type": "Organization", "name": "AI Free Text Pro", "logo": { "@type": "ImageObject", "url": "https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" } },
+          "publisher": { "@type": "Organization", "name": "AI Free Text Pro", "logo": { "@type": "ImageObject", "url": "https://aifreetextpro.com/logo.png" } },
           "datePublished": "2026-05-09T08:00:00Z", "dateModified": "2026-05-09T08:00:00Z",
           "mainEntityOfPage": "https://aifreetextpro.com/blog/best-ai-detector-2026", "wordCount": 2200
         })}</script>

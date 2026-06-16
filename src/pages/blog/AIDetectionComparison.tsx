@@ -54,14 +54,14 @@ const AIDetectionComparison = () => {
         <meta property="og:description" content="Real-world comparison of leading AI detectors" />
         <meta property="og:url" content="https://aifreetextpro.com/blog/ai-detection-tools-compared-2025" />
         <meta property="og:type" content="article" />
-        <meta property="og:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" />
+        <meta property="og:image" content="https://aifreetextpro.com/og-image.png" />
         <meta property="og:site_name" content="AI Free Text Pro" />
         <meta property="og:locale" content="en_US" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@aifreetextpro" />
         <meta name="twitter:title" content="AI Detection Tools Compared (2026)" />
         <meta name="twitter:description" content="Real-world comparison of GPTZero, AI Free Text Pro, and Rewritify." />
-        <meta name="twitter:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" />
+        <meta name="twitter:image" content="https://aifreetextpro.com/og-image.png" />
         
         <script type="application/ld+json">
           {JSON.stringify({
@@ -71,7 +71,7 @@ const AIDetectionComparison = () => {
             "description": "See which AI detector is most accurate in 2026. We compare GPTZero, Rewritify, and AI Free Text Pro in real-world tests.",
             "image": {
               "@type": "ImageObject",
-              "url": "https://aifreetextpro.com/before-after-demo.png",
+              "url": "https://aifreetextpro.com/og-image.png",
               "width": 1200,
               "height": 675
             },
@@ -88,7 +88,7 @@ const AIDetectionComparison = () => {
               "name": "AI Free Text Pro",
               "logo": {
                 "@type": "ImageObject",
-                "url": "https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG"
+                "url": "https://aifreetextpro.com/logo.png"
               }
             },
             "mainEntityOfPage": {

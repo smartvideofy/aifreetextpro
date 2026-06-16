@@ -33,7 +33,7 @@ const StealthwriterAlternative = () => {
         <meta property="og:url" content="https://aifreetextpro.com/blog/stealthwriter-alternative" />
         <meta property="og:title" content="Best Stealthwriter Alternative 2026: 95% vs 86% Tested" />
         <meta property="og:description" content="AI Free Text Pro beats Stealthwriter on bypass rate, readability, and price." />
-        <meta property="og:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" />
+        <meta property="og:image" content="https://aifreetextpro.com/og-image.png" />
         <meta property="article:published_time" content="2026-05-09T08:00:00Z" />
         <meta property="article:modified_time" content="2026-05-09T08:00:00Z" />
         <meta name="twitter:card" content="summary_large_image" />
@@ -43,7 +43,7 @@ const StealthwriterAlternative = () => {
           "@context": "https://schema.org", "@type": "Article",
           "headline": "Best Stealthwriter Alternative 2026: Tested Head-to-Head",
           "author": { "@type": "Person", "name": "James Okonkwo", "url": "https://aifreetextpro.com/team#james-okonkwo" },
-          "publisher": { "@type": "Organization", "name": "AI Free Text Pro", "logo": { "@type": "ImageObject", "url": "https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" } },
+          "publisher": { "@type": "Organization", "name": "AI Free Text Pro", "logo": { "@type": "ImageObject", "url": "https://aifreetextpro.com/logo.png" } },
           "datePublished": "2026-05-09T08:00:00Z", "dateModified": "2026-05-09T08:00:00Z",
           "mainEntityOfPage": "https://aifreetextpro.com/blog/stealthwriter-alternative", "wordCount": 1900
         })}</script>

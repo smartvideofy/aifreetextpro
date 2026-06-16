@@ -54,14 +54,14 @@ export default function HowAIDetectorsWork() {
         <meta property="og:description" content="How GPTZero, Turnitin and Originality.AI use perplexity and burstiness to flag AI text, with examples and fixes." />
         <meta property="og:type" content="article" />
         <meta property="og:url" content="https://aifreetextpro.com/blog/how-ai-detectors-work" />
-        <meta property="og:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" />
+        <meta property="og:image" content="https://aifreetextpro.com/og-image.png" />
         <meta property="og:site_name" content="AI Free Text Pro" />
         <meta property="og:locale" content="en_US" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@aifreetextpro" />
         <meta name="twitter:title" content="How AI Detectors Work: Perplexity & Burstiness Explained (2026)" />
         <meta name="twitter:description" content="How GPTZero, Turnitin and Originality.AI use perplexity and burstiness to flag AI text, with fixes." />
-        <meta name="twitter:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" />
+        <meta name="twitter:image" content="https://aifreetextpro.com/og-image.png" />
         
         <script type="application/ld+json">
           {JSON.stringify({
@@ -71,7 +71,7 @@ export default function HowAIDetectorsWork() {
             "description": "Understand the machine-learning and linguistic patterns behind AI detectors and how to write authentically human content.",
             "image": {
               "@type": "ImageObject",
-              "url": "https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG",
+              "url": "https://aifreetextpro.com/logo.png",
               "width": 1200,
               "height": 675
             },
@@ -88,7 +88,7 @@ export default function HowAIDetectorsWork() {
               "name": "AI Free Text Pro",
               "logo": {
                 "@type": "ImageObject",
-                "url": "https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG"
+                "url": "https://aifreetextpro.com/logo.png"
               }
             },
             "mainEntityOfPage": {

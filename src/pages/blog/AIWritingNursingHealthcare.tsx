@@ -38,7 +38,7 @@ const AIWritingNursingHealthcare = () => {
     "dateModified": "2026-03-15",
     "mainEntityOfPage": "https://aifreetextpro.com/blog/ai-writing-nursing-healthcare-students",
     "wordCount": 2000,
-    "image": "https://aifreetextpro.com/og-blog-nursing.png"
+    "image": "https://aifreetextpro.com/og-image.png"
   };
 
   const breadcrumbSchema = {

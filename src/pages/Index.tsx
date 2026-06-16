@@ -94,7 +94,7 @@ const Index = () => {
               "File Upload Support (PDF, DOCX, TXT)",
               "Word-by-word Analysis"
             ],
-            "screenshot": "https://aifreetextpro.com/before-after-demo.png"
+            "screenshot": "https://aifreetextpro.com/og-image.png"
           })}
         </script>
         
@@ -123,7 +123,7 @@ const Index = () => {
             "@type": "Organization",
             "name": "AI Free Text Pro",
             "url": "https://aifreetextpro.com",
-            "logo": "https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/uploads/1759692105576-Logo.PNG",
+            "logo": "https://aifreetextpro.com/logo.png",
             "description": "Free AI detector and humanizer tool. Detect ChatGPT and make AI text sound human with 98% accuracy.",
             "sameAs": [
               "https://app.aifreetextpro.com",

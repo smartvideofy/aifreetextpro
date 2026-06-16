@@ -113,7 +113,7 @@ export default function AIPoweredSEOContent2026() {
               "name": "AI Free Text Pro",
               "logo": {
                 "@type": "ImageObject",
-                "url": "https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG"
+                "url": "https://aifreetextpro.com/logo.png"
               }
             },
             "mainEntityOfPage": {

@@ -67,7 +67,7 @@ const BypassGPTZero = () => {
             "@type": "Article",
             "headline": "How to Bypass GPTZero AI Detection in 2026",
             "description": "Comprehensive guide to bypassing GPTZero AI detection with proven strategies and live test results showing 98.9% success rate.",
-            "image": "https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG",
+            "image": "https://aifreetextpro.com/logo.png",
             "author": {
               "@type": "Person",
               "name": "Dr. Marcus Williams",

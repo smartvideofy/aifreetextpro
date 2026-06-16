@@ -43,7 +43,7 @@ const TurnitinVsGPTZeroVsOriginalityAI = () => {
         <meta property="og:url" content="https://aifreetextpro.com/blog/turnitin-vs-gptzero-vs-originality-ai" />
         <meta property="og:title" content="Turnitin vs GPTZero vs Originality AI: 2026 Verdict" />
         <meta property="og:description" content="Side-by-side comparison of the three biggest AI detectors. 500+ sample test results with accuracy, false positives, and pricing." />
-        <meta property="og:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" />
+        <meta property="og:image" content="https://aifreetextpro.com/og-image.png" />
         <meta property="og:site_name" content="AI Free Text Pro" />
         <meta property="og:locale" content="en_US" />
         <meta property="article:published_time" content="2026-03-09T08:00:00Z" />
@@ -53,7 +53,7 @@ const TurnitinVsGPTZeroVsOriginalityAI = () => {
         <meta name="twitter:site" content="@aifreetextpro" />
         <meta name="twitter:title" content="Turnitin vs GPTZero vs Originality AI: Best Detector 2026" />
         <meta name="twitter:description" content="Side-by-side comparison of the three biggest AI detectors. 500+ sample test results." />
-        <meta name="twitter:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" />
+        <meta name="twitter:image" content="https://aifreetextpro.com/og-image.png" />
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",

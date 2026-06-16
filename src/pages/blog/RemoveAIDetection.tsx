@@ -82,7 +82,7 @@ export default function RemoveAIDetection() {
         <meta property="og:url" content="https://aifreetextpro.com/blog/remove-ai-detection-from-text" />
         <meta property="og:title" content="Remove AI Detection from Text (Free Methods) | 2026" />
         <meta property="og:description" content="Learn 5 proven methods to remove AI detection from text. Free manual techniques plus instant tools." />
-        <meta property="og:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" />
+        <meta property="og:image" content="https://aifreetextpro.com/og-image.png" />
         <meta property="og:site_name" content="AI Free Text Pro" />
         <meta property="og:locale" content="en_US" />
         <meta property="article:published_time" content="2026-03-05T08:00:00Z" />
@@ -92,14 +92,14 @@ export default function RemoveAIDetection() {
         <meta name="twitter:site" content="@aifreetextpro" />
         <meta name="twitter:title" content="Remove AI Detection from Text (Free Methods) | 2026" />
         <meta name="twitter:description" content="Learn 5 proven methods to remove AI detection from text. Free manual techniques plus instant tools." />
-        <meta name="twitter:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" />
+        <meta name="twitter:image" content="https://aifreetextpro.com/og-image.png" />
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Article",
             "headline": "How to Remove AI Detection from Text (Free Methods That Work)",
             "description": "Learn 5 proven methods to remove AI detection from text. Free manual techniques plus instant tools that reduce AI flags on Turnitin, GPTZero, and more.",
-            "image": "https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG",
+            "image": "https://aifreetextpro.com/logo.png",
             "author": {
               "@type": "Person",
               "name": "Dr. Sarah Chen",

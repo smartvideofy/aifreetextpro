@@ -172,7 +172,7 @@ const Pricing = () => {
             "description": "AI detection and humanization tool with plans from free to unlimited.",
             "brand": { "@type": "Brand", "name": "AI Free Text Pro" },
             "url": "https://aifreetextpro.com/pricing",
-            "image": "https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG",
+            "image": "https://aifreetextpro.com/logo.png",
             "offers": [
               {
                 "@type": "Offer",

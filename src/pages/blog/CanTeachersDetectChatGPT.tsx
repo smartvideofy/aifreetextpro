@@ -36,7 +36,7 @@ const CanTeachersDetectChatGPT = () => {
         <meta property="og:url" content="https://aifreetextpro.com/blog/can-teachers-detect-chatgpt" />
         <meta property="og:title" content="Can Teachers Detect ChatGPT? [2026 Truth]" />
         <meta property="og:description" content="Find out if teachers and professors can tell when you use ChatGPT. Every detection method schools use in 2026 explained." />
-        <meta property="og:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" />
+        <meta property="og:image" content="https://aifreetextpro.com/og-image.png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:site_name" content="AI Free Text Pro" />
@@ -48,14 +48,14 @@ const CanTeachersDetectChatGPT = () => {
         <meta name="twitter:site" content="@aifreetextpro" />
         <meta name="twitter:title" content="Can Teachers Detect ChatGPT? [2026 Truth]" />
         <meta name="twitter:description" content="Every method teachers use to detect ChatGPT in 2026 - and what you can do about it." />
-        <meta name="twitter:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" />
+        <meta name="twitter:image" content="https://aifreetextpro.com/og-image.png" />
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",
           "@type": "Article",
           "headline": "Can Teachers Detect ChatGPT? What Students Need to Know in 2026",
           "description": "Find out if teachers and professors can tell when you use ChatGPT. We break down every detection method schools use in 2026.",
           "author": { "@type": "Person", "name": "Dr. Sarah Chen", "url": "https://aifreetextpro.com/team#sarah-chen" },
-          "publisher": { "@type": "Organization", "name": "AI Free Text Pro", "logo": { "@type": "ImageObject", "url": "https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" } },
+          "publisher": { "@type": "Organization", "name": "AI Free Text Pro", "logo": { "@type": "ImageObject", "url": "https://aifreetextpro.com/logo.png" } },
           "datePublished": "2026-02-25T08:00:00Z",
           "dateModified": "2026-04-05",
           "mainEntityOfPage": "https://aifreetextpro.com/blog/can-teachers-detect-chatgpt",

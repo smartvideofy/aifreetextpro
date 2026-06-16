@@ -87,7 +87,7 @@ const CheckMyEssayForAI = () => {
         <meta property="og:url" content="https://aifreetextpro.com/blog/check-my-essay-for-ai" />
         <meta property="og:title" content="Check My Essay for AI: 7 Free Tools Before You Submit (2026)" />
         <meta property="og:description" content="Self-check your essay for AI before your professor does. Compare 7 free AI detectors with accuracy rates and step-by-step instructions." />
-        <meta property="og:image" content="https://aifreetextpro.com/og-blog.png" />
+        <meta property="og:image" content="https://aifreetextpro.com/og-image.png" />
         <meta property="og:site_name" content="AI Free Text Pro" />
         <meta property="og:locale" content="en_US" />
         <meta property="article:published_time" content="2026-03-09" />
@@ -98,7 +98,7 @@ const CheckMyEssayForAI = () => {
         <meta name="twitter:site" content="@aifreetextpro" />
         <meta name="twitter:title" content="Check My Essay for AI: 7 Free Tools Before You Submit (2026)" />
         <meta name="twitter:description" content="Self-check your essay for AI before your professor does. Compare 7 free AI detectors." />
-        <meta name="twitter:image" content="https://aifreetextpro.com/og-blog.png" />
+        <meta name="twitter:image" content="https://aifreetextpro.com/og-image.png" />
         
         <script type="application/ld+json">
           {JSON.stringify({
@@ -106,7 +106,7 @@ const CheckMyEssayForAI = () => {
             "@type": "Article",
             "headline": "Check My Essay for AI: 7 Free Tools Before You Submit (2026)",
             "description": "Self-check your essay for AI before your professor does. Compare 7 free AI detectors with accuracy rates, step-by-step instructions, and what to do if flagged.",
-            "image": "https://aifreetextpro.com/og-blog.png",
+            "image": "https://aifreetextpro.com/og-image.png",
             "author": {
               "@type": "Person",
               "name": "Dr. Sarah Chen",

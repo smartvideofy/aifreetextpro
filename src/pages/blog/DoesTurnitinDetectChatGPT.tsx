@@ -87,7 +87,7 @@ const DoesTurnitinDetectChatGPT = () => {
         <meta property="og:url" content="https://aifreetextpro.com/blog/does-turnitin-detect-chatgpt" />
         <meta property="og:title" content="Does Turnitin Detect ChatGPT? (2026 Real Test Results)" />
         <meta property="og:description" content="Real 2026 test results: Turnitin detects ChatGPT at 94-98% accuracy. See detection rates by model, content type, and learn how to reduce false AI flags." />
-        <meta property="og:image" content="https://aifreetextpro.com/og-blog.png" />
+        <meta property="og:image" content="https://aifreetextpro.com/og-image.png" />
         <meta property="og:site_name" content="AI Free Text Pro" />
         <meta property="og:locale" content="en_US" />
         <meta property="article:published_time" content="2026-03-09" />
@@ -98,7 +98,7 @@ const DoesTurnitinDetectChatGPT = () => {
         <meta name="twitter:site" content="@aifreetextpro" />
         <meta name="twitter:title" content="Does Turnitin Detect ChatGPT? (2026 Real Test Results)" />
         <meta name="twitter:description" content="Real 2026 test results: Turnitin detects ChatGPT at 94-98% accuracy. See detection rates by model and content type." />
-        <meta name="twitter:image" content="https://aifreetextpro.com/og-blog.png" />
+        <meta name="twitter:image" content="https://aifreetextpro.com/og-image.png" />
         
         <script type="application/ld+json">
           {JSON.stringify({
@@ -106,7 +106,7 @@ const DoesTurnitinDetectChatGPT = () => {
             "@type": "Article",
             "headline": "Does Turnitin Detect ChatGPT? (2026 Real Test Results)",
             "description": "Real 2026 test results: Turnitin detects ChatGPT at 94-98% accuracy. See detection rates by model, content type, and learn how to reduce false AI flags.",
-            "image": "https://aifreetextpro.com/og-blog.png",
+            "image": "https://aifreetextpro.com/og-image.png",
             "author": {
               "@type": "Person",
               "name": "Dr. Sarah Chen",

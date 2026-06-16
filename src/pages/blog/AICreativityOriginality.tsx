@@ -76,14 +76,14 @@ export default function AICreativityOriginality() {
         <meta property="og:description" content="Explore how AI can assist rather than replace creativity." />
         <meta property="og:url" content="https://aifreetextpro.com/blog/can-ai-writing-be-original" />
         <meta property="og:type" content="article" />
-        <meta property="og:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" />
+        <meta property="og:image" content="https://aifreetextpro.com/og-image.png" />
         <meta property="og:site_name" content="AI Free Text Pro" />
         <meta property="og:locale" content="en_US" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@aifreetextpro" />
         <meta name="twitter:title" content="Can AI Writing Be Truly Original?" />
         <meta name="twitter:description" content="Explore creativity and originality in the age of ChatGPT." />
-        <meta name="twitter:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" />
+        <meta name="twitter:image" content="https://aifreetextpro.com/og-image.png" />
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
@@ -92,7 +92,7 @@ export default function AICreativityOriginality() {
             "description": "Explore how AI can assist rather than replace creativity, what 'original' means in the era of ChatGPT and humanizers.",
             "image": {
               "@type": "ImageObject",
-              "url": "https://aifreetextpro.com/before-after-demo.png",
+              "url": "https://aifreetextpro.com/og-image.png",
               "width": 1200,
               "height": 675
             },
@@ -109,7 +109,7 @@ export default function AICreativityOriginality() {
               "name": "AI Free Text Pro",
               "logo": {
                 "@type": "ImageObject",
-                "url": "https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG"
+                "url": "https://aifreetextpro.com/logo.png"
               }
             },
             "mainEntityOfPage": {

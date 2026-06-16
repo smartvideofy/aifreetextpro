@@ -161,20 +161,6 @@ const VsWriteHuman = () => {
           })}
         </script>
 
-        {/* VideoObject Schema Placeholder */}
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "VideoObject",
-            "name": "AI Free Text Pro vs WriteHuman Comparison",
-            "description": "Side-by-side comparison of AI Free Text Pro and WriteHuman showing features, pricing, and bypass rate test results.",
-            "thumbnailUrl": "https://aifreetextpro.com/images/vs-writehuman-video-thumbnail.jpg",
-            "uploadDate": "2025-01-15",
-            "duration": "PT5M30S",
-            "contentUrl": "https://aifreetextpro.com/videos/vs-writehuman-comparison.mp4",
-            "embedUrl": "https://www.youtube.com/embed/placeholder"
-          })}
-        </script>
       </Helmet>
       <SoftwareApplicationSchema
         name="AI Free Text Pro"

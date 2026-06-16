@@ -76,14 +76,14 @@ export default function AIDetectionPublishing() {
         <meta property="og:description" content="The publishing industry's response to AI-generated content and practical strategies for adaptation." />
         <meta property="og:type" content="article" />
         <meta property="og:url" content="https://aifreetextpro.com/blog/ai-detection-in-publishing-2025" />
-        <meta property="og:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" />
+        <meta property="og:image" content="https://aifreetextpro.com/og-image.png" />
         <meta property="og:site_name" content="AI Free Text Pro" />
         <meta property="og:locale" content="en_US" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@aifreetextpro" />
         <meta name="twitter:title" content="AI Detection in Publishing: Writer's Guide [2026]" />
         <meta name="twitter:description" content="How publishers adapt to AI content and strategies for writers." />
-        <meta name="twitter:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" />
+        <meta name="twitter:image" content="https://aifreetextpro.com/og-image.png" />
         
         <script type="application/ld+json">
           {JSON.stringify({
@@ -93,7 +93,7 @@ export default function AIDetectionPublishing() {
             "description": "How editors and publishers are adapting to AI-generated content, and practical strategies for writers navigating AI policies.",
             "image": {
               "@type": "ImageObject",
-              "url": "https://aifreetextpro.com/before-after-demo.png",
+              "url": "https://aifreetextpro.com/og-image.png",
               "width": 1200,
               "height": 675
             },
@@ -110,7 +110,7 @@ export default function AIDetectionPublishing() {
               "name": "AI Free Text Pro",
               "logo": {
                 "@type": "ImageObject",
-                "url": "https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG"
+                "url": "https://aifreetextpro.com/logo.png"
               }
             },
             "mainEntityOfPage": {

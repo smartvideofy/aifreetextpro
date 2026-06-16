@@ -43,7 +43,7 @@ const AILegalWriting = () => {
         <meta property="og:url" content="https://aifreetextpro.com/blog/ai-legal-writing-law-school" />
         <meta property="og:title" content="AI for Legal Writing & Law School Essays (2026)" />
         <meta property="og:description" content="Complete guide to using AI for legal memos, briefs, and law school essays. Ethical frameworks and detection-proof workflows." />
-        <meta property="og:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" />
+        <meta property="og:image" content="https://aifreetextpro.com/og-image.png" />
         <meta property="og:site_name" content="AI Free Text Pro" />
         <meta property="og:locale" content="en_US" />
         <meta property="article:published_time" content="2026-03-09T08:00:00Z" />
@@ -53,7 +53,7 @@ const AILegalWriting = () => {
         <meta name="twitter:site" content="@aifreetextpro" />
         <meta name="twitter:title" content="AI for Legal Writing & Law School Essays (2026)" />
         <meta name="twitter:description" content="Complete guide to using AI for legal memos, briefs, and law school essays. Ethical frameworks and detection-proof workflows." />
-        <meta name="twitter:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" />
+        <meta name="twitter:image" content="https://aifreetextpro.com/og-image.png" />
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",

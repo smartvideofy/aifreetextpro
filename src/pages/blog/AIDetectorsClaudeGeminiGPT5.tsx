@@ -36,7 +36,7 @@ const AIDetectorsClaudeGeminiGPT5 = () => {
         <meta property="og:url" content="https://aifreetextpro.com/blog/ai-detectors-claude-gemini-gpt5-2026" />
         <meta property="og:title" content="Can AI Detectors Detect Claude, Gemini, and GPT-5? (2026)" />
         <meta property="og:description" content="Model-by-model detection test results for 2026's biggest AI models." />
-        <meta property="og:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" />
+        <meta property="og:image" content="https://aifreetextpro.com/og-image.png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:site_name" content="AI Free Text Pro" />
@@ -47,12 +47,12 @@ const AIDetectorsClaudeGeminiGPT5 = () => {
         <meta name="twitter:site" content="@aifreetextpro" />
         <meta name="twitter:title" content="AI Detection vs Claude, Gemini, GPT-5 (2026 Tests)" />
         <meta name="twitter:description" content="Which AI model is hardest to detect? We tested them all." />
-        <meta name="twitter:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" />
+        <meta name="twitter:image" content="https://aifreetextpro.com/og-image.png" />
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org", "@type": "Article",
           "headline": "Can AI Detectors Detect Claude, Gemini, and GPT-5? (2026 Tests)",
           "author": { "@type": "Person", "name": "Thomas Mueller", "url": "https://aifreetextpro.com/team#thomas-mueller" },
-          "publisher": { "@type": "Organization", "name": "AI Free Text Pro", "logo": { "@type": "ImageObject", "url": "https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" } },
+          "publisher": { "@type": "Organization", "name": "AI Free Text Pro", "logo": { "@type": "ImageObject", "url": "https://aifreetextpro.com/logo.png" } },
           "datePublished": "2026-02-25T08:00:00Z", "dateModified": "2026-04-05",
           "mainEntityOfPage": "https://aifreetextpro.com/blog/ai-detectors-claude-gemini-gpt5-2026", "wordCount": 2100
         })}</script>

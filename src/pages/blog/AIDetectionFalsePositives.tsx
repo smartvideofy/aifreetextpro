@@ -34,7 +34,7 @@ const AIDetectionFalsePositives = () => {
         <meta property="og:url" content="https://aifreetextpro.com/blog/ai-detection-false-positives" />
         <meta property="og:title" content="AI Detection False Positives: Why Your Human Writing Gets Flagged" />
         <meta property="og:description" content="Why AI detectors falsely flag human writing and how to protect yourself." />
-        <meta property="og:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" />
+        <meta property="og:image" content="https://aifreetextpro.com/og-image.png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:site_name" content="AI Free Text Pro" />
@@ -45,12 +45,12 @@ const AIDetectionFalsePositives = () => {
         <meta name="twitter:site" content="@aifreetextpro" />
         <meta name="twitter:title" content="AI Detection False Positives: Why Your Human Writing Gets Flagged" />
         <meta name="twitter:description" content="AI detectors are wrong more often than you think. Here is why." />
-        <meta name="twitter:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" />
+        <meta name="twitter:image" content="https://aifreetextpro.com/og-image.png" />
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org", "@type": "Article",
           "headline": "AI Detection False Positives: Why Your Human Writing Gets Flagged",
           "author": { "@type": "Person", "name": "Dr. Sarah Chen", "url": "https://aifreetextpro.com/team#sarah-chen" },
-          "publisher": { "@type": "Organization", "name": "AI Free Text Pro", "logo": { "@type": "ImageObject", "url": "https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" } },
+          "publisher": { "@type": "Organization", "name": "AI Free Text Pro", "logo": { "@type": "ImageObject", "url": "https://aifreetextpro.com/logo.png" } },
           "datePublished": "2026-02-25T08:00:00Z", "dateModified": "2026-04-05",
           "mainEntityOfPage": "https://aifreetextpro.com/blog/ai-detection-false-positives", "wordCount": 2100
         })}</script>

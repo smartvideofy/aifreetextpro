@@ -53,14 +53,14 @@ export default function WhyAIContentFails() {
         <meta property="og:description" content="Discover why AI-generated content still gets flagged and how to fix it." />
         <meta property="og:url" content="https://aifreetextpro.com/blog/why-ai-content-fails-human-review" />
         <meta property="og:type" content="article" />
-        <meta property="og:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" />
+        <meta property="og:image" content="https://aifreetextpro.com/og-image.png" />
         <meta property="og:site_name" content="AI Free Text Pro" />
         <meta property="og:locale" content="en_US" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@aifreetextpro" />
         <meta name="twitter:title" content="Why Most AI Content Fails Human Review" />
         <meta name="twitter:description" content="Discover why AI content gets flagged and how to fix it." />
-        <meta name="twitter:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" />
+        <meta name="twitter:image" content="https://aifreetextpro.com/og-image.png" />
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
@@ -69,7 +69,7 @@ export default function WhyAIContentFails() {
             "description": "Discover why AI-generated content still gets flagged and the practical steps to make your writing pass any human review.",
             "image": {
               "@type": "ImageObject",
-               "url": "https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG",
+               "url": "https://aifreetextpro.com/logo.png",
               "width": 1200,
               "height": 675
             },
@@ -86,7 +86,7 @@ export default function WhyAIContentFails() {
               "name": "AI Free Text Pro",
               "logo": {
                 "@type": "ImageObject",
-                "url": "https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG"
+                "url": "https://aifreetextpro.com/logo.png"
               }
             },
             "mainEntityOfPage": {

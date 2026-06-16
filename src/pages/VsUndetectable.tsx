@@ -136,20 +136,6 @@ const VsUndetectable = () => {
           })}
         </script>
 
-        {/* VideoObject Schema Placeholder */}
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "VideoObject",
-            "name": "AI Free Text Pro vs Undetectable AI Comparison",
-            "description": "Complete comparison of AI Free Text Pro and Undetectable AI including pricing, features, and bypass rate tests.",
-            "thumbnailUrl": "https://aifreetextpro.com/images/vs-undetectable-video-thumbnail.jpg",
-            "uploadDate": "2025-01-15",
-            "duration": "PT4M45S",
-            "contentUrl": "https://aifreetextpro.com/videos/vs-undetectable-comparison.mp4",
-            "embedUrl": "https://www.youtube.com/embed/placeholder"
-          })}
-        </script>
       </Helmet>
       <SoftwareApplicationSchema
         name="AI Free Text Pro"

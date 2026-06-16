@@ -81,7 +81,7 @@ export default function UndetectableAIEssayWriter() {
         <meta property="og:url" content="https://aifreetextpro.com/blog/best-ai-essay-writer-undetectable" />
         <meta property="og:title" content="Best AI Essay Writer That Can't Be Detected | 2026" />
         <meta property="og:description" content="Discover the best AI essay writing workflows that pass Turnitin, GPTZero, and Originality.AI." />
-        <meta property="og:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" />
+        <meta property="og:image" content="https://aifreetextpro.com/og-image.png" />
         <meta property="og:site_name" content="AI Free Text Pro" />
         <meta property="og:locale" content="en_US" />
         <meta property="article:published_time" content="2026-03-05T08:00:00Z" />
@@ -91,14 +91,14 @@ export default function UndetectableAIEssayWriter() {
         <meta name="twitter:site" content="@aifreetextpro" />
         <meta name="twitter:title" content="Best AI Essay Writer That Can't Be Detected | 2026" />
         <meta name="twitter:description" content="Discover the best AI essay writing workflows that pass Turnitin, GPTZero, and Originality.AI." />
-        <meta name="twitter:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" />
+        <meta name="twitter:image" content="https://aifreetextpro.com/og-image.png" />
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Article",
             "headline": "Best AI Essay Writer That Can't Be Detected (2026)",
             "description": "Discover the best AI essay writing workflows that pass Turnitin, GPTZero, and Originality.AI. Real test results and step-by-step guide.",
-            "image": "https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG",
+            "image": "https://aifreetextpro.com/logo.png",
             "author": {
               "@type": "Person",
               "name": "Dr. Sarah Chen",

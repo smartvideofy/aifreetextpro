@@ -55,14 +55,14 @@ const HumanizeAIText = () => {
         <meta property="og:description" content="Proven strategies to make AI writing sound naturally human" />
         <meta property="og:url" content="https://aifreetextpro.com/blog/humanize-ai-text-without-losing-voice" />
         <meta property="og:type" content="article" />
-        <meta property="og:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" />
+        <meta property="og:image" content="https://aifreetextpro.com/og-image.png" />
         <meta property="og:site_name" content="AI Free Text Pro" />
         <meta property="og:locale" content="en_US" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@aifreetextpro" />
         <meta name="twitter:title" content="How to Humanize AI-Generated Text Without Losing Your Voice" />
         <meta name="twitter:description" content="Proven strategies to make AI writing sound naturally human." />
-        <meta name="twitter:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" />
+        <meta name="twitter:image" content="https://aifreetextpro.com/og-image.png" />
         
         <script type="application/ld+json">
           {JSON.stringify({
@@ -72,7 +72,7 @@ const HumanizeAIText = () => {
             "description": "Learn proven strategies and tools to make ChatGPT or Gemini text sound naturally human while keeping your tone.",
             "image": {
               "@type": "ImageObject",
-              "url": "https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG",
+              "url": "https://aifreetextpro.com/logo.png",
               "width": 1200,
               "height": 675
             },
@@ -89,7 +89,7 @@ const HumanizeAIText = () => {
               "name": "AI Free Text Pro",
               "logo": {
                 "@type": "ImageObject",
-                "url": "https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG"
+                "url": "https://aifreetextpro.com/logo.png"
               }
             },
             "mainEntityOfPage": {

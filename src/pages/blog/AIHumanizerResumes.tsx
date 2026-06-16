@@ -35,7 +35,7 @@ const AIHumanizerResumes = () => {
         <meta property="og:url" content="https://aifreetextpro.com/blog/ai-humanizer-resumes-cover-letters" />
         <meta property="og:title" content="AI Resume Humanizer: Land More Interviews [2026]" />
         <meta property="og:description" content="Make AI-generated resumes and cover letters sound authentic and professional." />
-        <meta property="og:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" />
+        <meta property="og:image" content="https://aifreetextpro.com/og-image.png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:site_name" content="AI Free Text Pro" />
@@ -46,12 +46,12 @@ const AIHumanizerResumes = () => {
         <meta name="twitter:site" content="@aifreetextpro" />
         <meta name="twitter:title" content="AI Resume Humanizer: Land More Interviews [2026]" />
         <meta name="twitter:description" content="Humanize AI resumes and cover letters for better job outcomes." />
-        <meta name="twitter:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" />
+        <meta name="twitter:image" content="https://aifreetextpro.com/og-image.png" />
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org", "@type": "Article",
           "headline": "AI Humanizer for Resumes and Cover Letters: Complete Guide (2026)",
           "author": { "@type": "Person", "name": "Emily Rodriguez", "url": "https://aifreetextpro.com/team#emily-rodriguez" },
-          "publisher": { "@type": "Organization", "name": "AI Free Text Pro", "logo": { "@type": "ImageObject", "url": "https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" } },
+          "publisher": { "@type": "Organization", "name": "AI Free Text Pro", "logo": { "@type": "ImageObject", "url": "https://aifreetextpro.com/logo.png" } },
           "datePublished": "2026-02-25T08:00:00Z", "dateModified": "2026-04-05",
           "mainEntityOfPage": "https://aifreetextpro.com/blog/ai-humanizer-resumes-cover-letters", "wordCount": 2000
         })}</script>

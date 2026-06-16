@@ -127,20 +127,6 @@ const VsHumanizeAIPro = () => {
           })}
         </script>
 
-        {/* VideoObject Schema Placeholder */}
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "VideoObject",
-            "name": "AI Free Text Pro vs HumanizeAI.pro Comparison",
-            "description": "Detailed comparison of AI Free Text Pro and HumanizeAI.pro showing pricing, features, and bypass performance tests.",
-            "thumbnailUrl": "https://aifreetextpro.com/images/vs-humanizeai-video-thumbnail.jpg",
-            "uploadDate": "2025-01-15",
-            "duration": "PT4M15S",
-            "contentUrl": "https://aifreetextpro.com/videos/vs-humanizeai-comparison.mp4",
-            "embedUrl": "https://www.youtube.com/embed/placeholder"
-          })}
-        </script>
       </Helmet>
       <SoftwareApplicationSchema
         name="AI Free Text Pro"

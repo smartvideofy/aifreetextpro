@@ -106,7 +106,7 @@ export default function AIYouTubeScripts() {
             "publisher": {
               "@type": "Organization",
               "name": "AI Free Text Pro",
-              "logo": { "@type": "ImageObject", "url": "https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" }
+              "logo": { "@type": "ImageObject", "url": "https://aifreetextpro.com/logo.png" }
             },
             "mainEntityOfPage": { "@type": "WebPage", "@id": canonical }
           })}

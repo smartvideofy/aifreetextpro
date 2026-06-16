@@ -59,7 +59,7 @@ const BypassTurnitin = () => {
             "@type": "Article",
             "headline": "How to Bypass Turnitin AI Detection in 2026",
             "description": "Comprehensive guide to reducing Turnitin AI detection flags with proven strategies and live test results showing 99.8% success rate.",
-            "image": "https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG",
+            "image": "https://aifreetextpro.com/logo.png",
             "author": {
               "@type": "Person",
               "name": "Dr. Sarah Chen",

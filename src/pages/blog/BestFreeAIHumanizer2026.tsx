@@ -88,7 +88,7 @@ const BestFreeAIHumanizer2026 = () => {
         <meta property="og:url" content="https://aifreetextpro.com/blog/best-free-ai-humanizer-2026" />
         <meta property="og:title" content="7 Best Free AI Humanizer Tools 2026 [Tested & Ranked]" />
         <meta property="og:description" content="Compare the best free AI humanizers in 2026. Real test results showing bypass rates, word limits, and quality scores." />
-        <meta property="og:image" content="https://aifreetextpro.com/og-blog.png" />
+        <meta property="og:image" content="https://aifreetextpro.com/og-image.png" />
         <meta property="og:site_name" content="AI Free Text Pro" />
         <meta property="og:locale" content="en_US" />
         <meta property="article:published_time" content="2026-03-09" />
@@ -99,7 +99,7 @@ const BestFreeAIHumanizer2026 = () => {
         <meta name="twitter:site" content="@aifreetextpro" />
         <meta name="twitter:title" content="7 Best Free AI Humanizer Tools 2026 [Tested & Ranked]" />
         <meta name="twitter:description" content="Compare the best free AI humanizers in 2026. Real test results showing bypass rates and quality scores." />
-        <meta name="twitter:image" content="https://aifreetextpro.com/og-blog.png" />
+        <meta name="twitter:image" content="https://aifreetextpro.com/og-image.png" />
         
         <script type="application/ld+json">
           {JSON.stringify({
@@ -107,7 +107,7 @@ const BestFreeAIHumanizer2026 = () => {
             "@type": "Article",
             "headline": "Best Free AI Humanizer 2026: No Signup, No Limit Comparison",
             "description": "Compare the best free AI humanizers in 2026. Real test results showing bypass rates, word limits, and quality scores. AI Free Text Pro leads with 96% accuracy.",
-            "image": "https://aifreetextpro.com/og-blog.png",
+            "image": "https://aifreetextpro.com/og-image.png",
             "author": {
               "@type": "Person",
               "name": "Dr. Sarah Chen",

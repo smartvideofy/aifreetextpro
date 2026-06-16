@@ -54,14 +54,14 @@ const MakeChatGPTUndetectable = () => {
         <meta property="og:description" content="Complete guide to making AI writing sound natural and human-like in 2026" />
         <meta property="og:url" content="https://aifreetextpro.com/blog/make-chatgpt-undetectable-2025" />
         <meta property="og:type" content="article" />
-        <meta property="og:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" />
+        <meta property="og:image" content="https://aifreetextpro.com/og-image.png" />
         <meta property="og:site_name" content="AI Free Text Pro" />
         <meta property="og:locale" content="en_US" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@aifreetextpro" />
         <meta name="twitter:title" content="Make AI Writing Sound Human: Full Guide [2026]" />
         <meta name="twitter:description" content="Complete guide to making AI writing sound natural and human-like." />
-        <meta name="twitter:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" />
+        <meta name="twitter:image" content="https://aifreetextpro.com/og-image.png" />
         
         <script type="application/ld+json">
           {JSON.stringify({

@@ -38,7 +38,7 @@ const AIContentGoogleAIOverviews = () => {
     "dateModified": "2026-03-15",
     "mainEntityOfPage": "https://aifreetextpro.com/blog/ai-content-google-ai-overviews",
     "wordCount": 2000,
-    "image": "https://aifreetextpro.com/og-blog-ai-overviews.png"
+    "image": "https://aifreetextpro.com/og-image.png"
   };
 
   const breadcrumbSchema = {

@@ -33,7 +33,7 @@ const AIHumanizerForEssays = () => {
         <meta property="og:url" content="https://aifreetextpro.com/blog/ai-humanizer-for-essays" />
         <meta property="og:title" content="AI Humanizer for Essays 2026: Pass Turnitin Easily" />
         <meta property="og:description" content="Step-by-step essay humanizer workflow tested on Turnitin, GPTZero, and Originality.AI." />
-        <meta property="og:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" />
+        <meta property="og:image" content="https://aifreetextpro.com/og-image.png" />
         <meta property="article:published_time" content="2026-05-09T08:00:00Z" />
         <meta property="article:modified_time" content="2026-05-09T08:00:00Z" />
         <meta name="twitter:card" content="summary_large_image" />
@@ -43,7 +43,7 @@ const AIHumanizerForEssays = () => {
           "@context": "https://schema.org", "@type": "Article",
           "headline": "AI Humanizer for Essays 2026: Pass Turnitin Without Losing Voice",
           "author": { "@type": "Person", "name": "Dr. Sarah Chen", "url": "https://aifreetextpro.com/team#sarah-chen" },
-          "publisher": { "@type": "Organization", "name": "AI Free Text Pro", "logo": { "@type": "ImageObject", "url": "https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" } },
+          "publisher": { "@type": "Organization", "name": "AI Free Text Pro", "logo": { "@type": "ImageObject", "url": "https://aifreetextpro.com/logo.png" } },
           "datePublished": "2026-05-09T08:00:00Z", "dateModified": "2026-05-09T08:00:00Z",
           "mainEntityOfPage": "https://aifreetextpro.com/blog/ai-humanizer-for-essays", "wordCount": 2000
         })}</script>

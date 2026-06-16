@@ -81,7 +81,7 @@ export default function AIParaphrasingToolPlagiarism() {
         <meta property="og:url" content="https://aifreetextpro.com/blog/ai-paraphrasing-tool-avoid-plagiarism" />
         <meta property="og:title" content="AI Paraphrasing Tool to Avoid Plagiarism | 2026" />
         <meta property="og:description" content="Compare AI paraphrasing tools for plagiarism avoidance. See which tools actually pass AI detection." />
-        <meta property="og:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" />
+        <meta property="og:image" content="https://aifreetextpro.com/og-image.png" />
         <meta property="og:site_name" content="AI Free Text Pro" />
         <meta property="og:locale" content="en_US" />
         <meta property="article:published_time" content="2026-03-05T08:00:00Z" />
@@ -91,14 +91,14 @@ export default function AIParaphrasingToolPlagiarism() {
         <meta name="twitter:site" content="@aifreetextpro" />
         <meta name="twitter:title" content="AI Paraphrasing Tool to Avoid Plagiarism | 2026" />
         <meta name="twitter:description" content="Compare AI paraphrasing tools for plagiarism avoidance. See which tools actually pass AI detection." />
-        <meta name="twitter:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" />
+        <meta name="twitter:image" content="https://aifreetextpro.com/og-image.png" />
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Article",
             "headline": "AI Paraphrasing Tool to Avoid Plagiarism: What Actually Works (2026)",
             "description": "Compare AI paraphrasing tools for plagiarism avoidance. See which tools actually pass AI detection and which don't.",
-            "image": "https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG",
+            "image": "https://aifreetextpro.com/logo.png",
             "author": {
               "@type": "Person",
               "name": "Dr. Sarah Chen",

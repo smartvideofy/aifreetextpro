@@ -35,7 +35,7 @@ const BestChatGPTPromptsForEssays = () => {
         <meta property="og:url" content="https://aifreetextpro.com/blog/best-chatgpt-prompts-for-essays" />
         <meta property="og:title" content="Best ChatGPT Prompts for Essays That Sound Human (2026)" />
         <meta property="og:description" content="20+ proven ChatGPT prompts for essays that produce natural writing." />
-        <meta property="og:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" />
+        <meta property="og:image" content="https://aifreetextpro.com/og-image.png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:site_name" content="AI Free Text Pro" />
@@ -46,12 +46,12 @@ const BestChatGPTPromptsForEssays = () => {
         <meta name="twitter:site" content="@aifreetextpro" />
         <meta name="twitter:title" content="Best ChatGPT Prompts for Essays That Sound Human (2026)" />
         <meta name="twitter:description" content="20+ ChatGPT prompts for natural-sounding essays." />
-        <meta name="twitter:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" />
+        <meta name="twitter:image" content="https://aifreetextpro.com/og-image.png" />
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org", "@type": "Article",
           "headline": "Best ChatGPT Prompts for Essays That Sound Human (2026)",
           "author": { "@type": "Person", "name": "Marcus Williams", "url": "https://aifreetextpro.com/team#marcus-williams" },
-          "publisher": { "@type": "Organization", "name": "AI Free Text Pro", "logo": { "@type": "ImageObject", "url": "https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" } },
+          "publisher": { "@type": "Organization", "name": "AI Free Text Pro", "logo": { "@type": "ImageObject", "url": "https://aifreetextpro.com/logo.png" } },
           "datePublished": "2026-02-25T08:00:00Z", "dateModified": "2026-04-05",
           "mainEntityOfPage": "https://aifreetextpro.com/blog/best-chatgpt-prompts-for-essays", "wordCount": 2100
         })}</script>

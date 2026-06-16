@@ -38,7 +38,7 @@ const AIWritingUpworkFiverr = () => {
     "dateModified": "2026-03-15",
     "mainEntityOfPage": "https://aifreetextpro.com/blog/ai-writing-upwork-fiverr-freelancers",
     "wordCount": 1800,
-    "image": "https://aifreetextpro.com/og-blog-upwork-fiverr.png"
+    "image": "https://aifreetextpro.com/og-image.png"
   };
 
   const breadcrumbSchema = {

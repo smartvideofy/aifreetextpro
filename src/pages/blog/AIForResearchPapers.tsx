@@ -78,7 +78,7 @@ const AIForResearchPapers = () => {
         <meta property="og:url" content="https://aifreetextpro.com/blog/ai-for-research-papers" />
         <meta property="og:title" content="AI for Research Papers: Use AI Without Consequences" />
         <meta property="og:description" content="How graduate students and researchers can use AI tools ethically for thesis writing, literature reviews, and journal submissions." />
-        <meta property="og:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" />
+        <meta property="og:image" content="https://aifreetextpro.com/og-image.png" />
         <meta property="og:site_name" content="AI Free Text Pro" />
         <meta property="og:locale" content="en_US" />
         <meta property="article:published_time" content="2026-03-04T08:00:00Z" />
@@ -88,7 +88,7 @@ const AIForResearchPapers = () => {
         <meta name="twitter:site" content="@aifreetextpro" />
         <meta name="twitter:title" content="AI for Research Papers: Use AI Without Consequences" />
         <meta name="twitter:description" content="How graduate students and researchers can use AI tools ethically for thesis writing, literature reviews, and journal submissions." />
-        <meta name="twitter:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/pMRdXBn6dLVGnmBuHKJGJfIOYh42/social-images/social-1759692115249-Logo.PNG" />
+        <meta name="twitter:image" content="https://aifreetextpro.com/og-image.png" />
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",

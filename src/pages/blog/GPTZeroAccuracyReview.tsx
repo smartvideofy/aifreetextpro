@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { QuickAnswer } from "@/components/QuickAnswer";
 import { Helmet } from "react-helmet-async";
 import { ArrowLeft, Calendar, Clock, CheckCircle, Zap, AlertTriangle, Star, ThumbsUp, ThumbsDown } from "lucide-react";
 import Navbar from "@/components/Navbar";
@@ -95,6 +96,11 @@ const GPTZeroAccuracyReview = () => {
                 <span className="flex items-center gap-1"><Clock className="w-4 h-4" /> 13 min read</span>
               </div>
               <h1 className="text-3xl md:text-4xl font-bold mb-4">Does GPTZero Actually Work? Accuracy Review (2026)</h1>
+                <QuickAnswer
+                  question="Does GPTZero actually work, and how accurate is it?"
+                  answer="Mostly. In our tests across 250 samples and five models, GPTZero detected AI text accurately in the majority of cases but missed some edited content and produced false positives on formal human writing. It's a useful signal, especially the free tier, but shouldn't be treated as definitive proof."
+                />
+
               <p className="text-xl text-muted-foreground">GPTZero is the second most popular AI detector after Turnitin. We tested it against 250 samples across 5 AI models to find out how accurate it really is, where it fails, and whether it is worth paying for.</p>
             </header>
 

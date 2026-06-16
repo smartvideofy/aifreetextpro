@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { QuickAnswer } from "@/components/QuickAnswer";
 import { Helmet } from "react-helmet-async";
 import { Calendar, Clock, ArrowLeft, ExternalLink, Lightbulb, CheckCircle } from "lucide-react";
 import Navbar from "@/components/Navbar";
@@ -104,6 +105,11 @@ const MakeAIWritingCreative = () => {
                 <span className="bg-primary/10 text-primary px-2 py-0.5 rounded text-xs font-medium">Writing Craft</span>
               </div>
               <h1 className="text-3xl md:text-4xl font-bold mb-4">How to Make AI Writing More Creative and Original</h1>
+                <QuickAnswer
+                  question="How do you make AI writing more creative and original?"
+                  answer="Push past AI's safe defaults: prompt for specific angles, add your own examples and opinions, vary sentence structure, and cut cliches and predictable transitions. AI produces competent but generic prose, so the creativity comes from your direction and editing — using AI as a starting point, not the finished piece."
+                />
+
               <p className="text-xl text-muted-foreground">AI produces competent prose. But competent is not enough. Here are 12 techniques to transform predictable AI output into writing that surprises, engages, and sounds unmistakably like you.</p>
             </header>
 

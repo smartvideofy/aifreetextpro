@@ -1,4 +1,5 @@
 ﻿import { Link } from "react-router-dom";
+import { QuickAnswer } from "@/components/QuickAnswer";
 import { Helmet } from "react-helmet-async";
 import { Calendar, Clock, ArrowLeft, ExternalLink, Scale, AlertTriangle, BookOpen, CheckCircle, ShieldAlert, GraduationCap } from "lucide-react";
 import Navbar from "@/components/Navbar";
@@ -216,6 +217,11 @@ const IsItIllegalToUseAIForSchool = () => {
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 leading-tight">
                 Is It Illegal to Use AI for School? Academic AI Policies Explained (2026)
               </h1>
+                <QuickAnswer
+                  question="Is it illegal to use AI for school?"
+                  answer="It's not illegal, but it can violate your school's academic-integrity rules. Most institutions allow AI for brainstorming, research, and editing while prohibiting submitting AI-written work as your own. Policies vary by school and assignment, so the rule that matters is your institution's — check it and disclose AI use where required."
+                />
+
               <p className="text-xl text-muted-foreground">
                 The complete guide to what is and is not allowed when using ChatGPT, Claude, and other AI tools for schoolwork, from elementary school through graduate programs.
               </p>

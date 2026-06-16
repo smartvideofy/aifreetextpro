@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { QuickAnswer } from "@/components/QuickAnswer";
 import { Helmet } from "react-helmet-async";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -93,6 +94,11 @@ const RewriteAIText = () => {
             <header className="mb-8 not-prose">
               <span className="inline-block px-3 py-1 bg-primary/10 text-primary text-sm font-medium rounded-full mb-4">How-To Guide</span>
               <h1 className="text-3xl md:text-4xl font-bold mb-4">How to Rewrite AI Text to Sound Human (Step-by-Step)</h1>
+                <QuickAnswer
+                  question="How do you rewrite AI text to sound human?"
+                  answer="Apply a few proven moves: vary sentence length, swap generic statements for specific detail, add your own perspective, cut stock transitions, and read it aloud. These break the uniform, predictable patterns detectors flag and make the text read naturally — or use a humanizer for the structural rewrite, then edit."
+                />
+
               <p className="text-xl text-muted-foreground mb-4">7 proven techniques to transform robotic AI output into natural, human-sounding prose that passes every detector.</p>
               <div className="flex flex-wrap items-center gap-4 text-sm text-muted-foreground">
                 <span className="flex items-center gap-1"><Calendar className="w-4 h-4" /> March 8, 2026</span>

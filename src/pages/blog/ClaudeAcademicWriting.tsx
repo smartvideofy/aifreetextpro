@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { QuickAnswer } from "@/components/QuickAnswer";
 import { Helmet } from "react-helmet-async";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -86,6 +87,11 @@ const ClaudeAcademicWriting = () => {
             <header className="mb-8 not-prose">
               <span className="inline-block px-3 py-1 bg-primary/10 text-primary text-sm font-medium rounded-full mb-4">Academic</span>
               <h1 className="text-3xl md:text-4xl font-bold mb-4">How to Use Claude for Academic Writing Without Getting Caught</h1>
+                <QuickAnswer
+                  question="Can Turnitin detect Claude, and can you use it for academic writing?"
+                  answer="Claude is detectable: Turnitin and other tools flag its output at high rates, though it's often slightly harder to catch than ChatGPT. Use Claude to support your work (research, outlining, editing), keep the analysis yours, disclose AI use where required, and follow your institution's policy rather than relying on undetectable claims."
+                />
+
               <p className="text-xl text-muted-foreground mb-4">Claude is the fastest-growing AI for students. Here is its detection profile, the best prompts for essays, and how to make Claude output undetectable.</p>
               <div className="flex flex-wrap items-center gap-4 text-sm text-muted-foreground">
                 <span className="flex items-center gap-1"><Calendar className="w-4 h-4" /> March 8, 2026</span>

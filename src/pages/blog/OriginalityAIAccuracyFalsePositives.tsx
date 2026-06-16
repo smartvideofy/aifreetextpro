@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { QuickAnswer } from "@/components/QuickAnswer";
 import { Helmet } from "react-helmet-async";
 import { Calendar, Clock, ArrowLeft } from "lucide-react";
 import Navbar from "@/components/Navbar";
@@ -84,6 +85,11 @@ const OriginalityAIAccuracyFalsePositives = () => {
                 <span className="bg-primary/10 text-primary px-2 py-1 rounded text-xs font-medium">Detector Review</span>
               </div>
               <h1 className="text-4xl md:text-5xl font-bold mb-4 leading-tight">Can Originality.AI Be Wrong? False Positives and Accuracy Explained</h1>
+                <QuickAnswer
+                  question="Can Originality.AI be wrong?"
+                  answer="Yes. In our testing Originality.AI produced meaningful false-positive rates, wrongly flagging human writing — especially formal or non-native English — as AI. It's one of the more aggressive detectors, which catches more AI but also more genuine work, so its score should be treated as a signal, not proof."
+                />
+
               <p className="text-xl text-muted-foreground">Originality.AI is one of the most popular AI detectors, but how accurate is it really? We tested it extensively and found significant false positive rates that users should know about.</p>
               <ReviewedBy name="Dr. Sarah Chen" role="AI Ethics Researcher" slug="sarah-chen" />
             </header>

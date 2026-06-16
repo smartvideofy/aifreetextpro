@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { QuickAnswer } from "@/components/QuickAnswer";
 import { Helmet } from "react-helmet-async";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -90,6 +91,11 @@ const DoesTurnitinDetectGemini = () => {
             <header className="mb-8 not-prose">
               <span className="inline-block px-3 py-1 bg-primary/10 text-primary text-sm font-medium rounded-full mb-4">Technical</span>
               <h1 className="text-3xl md:text-4xl font-bold mb-4">Does Turnitin Detect Gemini? (2026 Test Results)</h1>
+                <QuickAnswer
+                  question="Does Turnitin detect Gemini?"
+                  answer="Yes. We tested Gemini 2.5 Pro and Flash against Turnitin, GPTZero, and Originality.AI, and Turnitin flagged Gemini output at high rates. Gemini is detectable like other major models, so submitting unedited Gemini text for academic work is risky."
+                />
+
               <p className="text-xl text-muted-foreground mb-4">We tested Google Gemini 2.5 Pro and Flash against Turnitin, GPTZero, and Originality.AI. Here are the complete results.</p>
               <div className="flex flex-wrap items-center gap-4 text-sm text-muted-foreground">
                 <span className="flex items-center gap-1"><Calendar className="w-4 h-4" /> March 8, 2026</span>

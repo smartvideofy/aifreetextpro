@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { QuickAnswer } from "@/components/QuickAnswer";
 import { Helmet } from "react-helmet-async";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -213,6 +214,11 @@ const CheckMyEssayForAI = () => {
               <h1 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">
                 Check My Essay for AI: 7 Free Tools Before You Submit
               </h1>
+                <QuickAnswer
+                  question="How can I check my essay for AI before submitting?"
+                  answer="Run it through the same kind of detector your professor uses — GPTZero, Originality.AI, or a free checker — before you submit. These flag sentences that read as AI so you can revise them. Compare a couple of tools, since scores vary, and expect occasional false positives on formal writing."
+                />
+
               <p className="text-xl text-muted-foreground mb-4">
                 Self-check your essay before your professor does. Here are the best free AI detectors compared with accuracy rates and step-by-step instructions.
               </p>

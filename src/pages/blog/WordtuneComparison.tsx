@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { QuickAnswer } from "@/components/QuickAnswer";
 import { Helmet } from "react-helmet-async";
 import { Calendar, Clock, ArrowLeft, ExternalLink, CheckCircle, X } from "lucide-react";
 import Navbar from "@/components/Navbar";
@@ -98,6 +99,11 @@ const WordtuneComparison = () => {
                 <span className="bg-primary/10 text-primary px-2 py-0.5 rounded text-xs font-medium">Comparison</span>
               </div>
               <h1 className="text-3xl md:text-4xl font-bold mb-4">Wordtune vs AI Free Text Pro: Rewriter vs Humanizer (2026)</h1>
+                <QuickAnswer
+                  question="Wordtune vs AI Free Text Pro: which do you need?"
+                  answer="They solve different problems. Wordtune rewrites for clarity and tone; AI Free Text Pro humanizes to lower AI-detection scores. If your goal is cleaner writing, use Wordtune; if it's passing detectors on your own work, use a humanizer. Most people reach for the one they actually need second."
+                />
+
               <p className="text-xl text-muted-foreground">Wordtune makes your writing clearer. AI Free Text Pro makes it undetectable. They solve different problems. Here is when to use each -- and why most people need the one they are not using.</p>
             </header>
 

@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { QuickAnswer } from "@/components/QuickAnswer";
 import { Helmet } from "react-helmet-async";
 import { Calendar, Clock, ArrowLeft, User, BookOpen, FileText, Quote } from "lucide-react";
 import Navbar from "@/components/Navbar";
@@ -143,6 +144,11 @@ const HowToCiteAIGeneratedContent = () => {
                 <span className="bg-primary/10 text-primary px-2 py-1 rounded text-xs font-medium">Academic</span>
               </div>
               <h1 className="text-4xl md:text-5xl font-bold mb-4 leading-tight">How to Cite AI-Generated Content: APA, MLA, Chicago & Harvard (2026)</h1>
+                <QuickAnswer
+                  question="How do you cite AI-generated content?"
+                  answer="APA, MLA, Chicago, and Harvard now all have official AI-citation formats. Generally you credit the tool as the source, include the version and date, and note the prompt where relevant. Cite AI any time you use its output directly, and check which style and disclosure rules your institution requires."
+                />
+
               <p className="text-xl text-muted-foreground">Every major citation style now has official guidelines for AI-generated content. Here are the exact formats you need, with copy-paste templates for ChatGPT, Claude, and Gemini.</p>
               <ReviewedBy name="Dr. Sarah Chen" role="AI Ethics Researcher" slug="sarah-chen" />
             </header>

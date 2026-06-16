@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { QuickAnswer } from "@/components/QuickAnswer";
 import { Helmet } from "react-helmet-async";
 import { ArrowLeft, Calendar, Clock, CheckCircle, Zap, Shield, ThumbsUp, ThumbsDown } from "lucide-react";
 import Navbar from "@/components/Navbar";
@@ -95,6 +96,11 @@ const CopyleaksVsTurnitin = () => {
                 <span className="flex items-center gap-1"><Clock className="w-4 h-4" /> 12 min read</span>
               </div>
               <h1 className="text-3xl md:text-4xl font-bold mb-4">Copyleaks vs Turnitin: Which AI Detector Is Better? (2026)</h1>
+                <QuickAnswer
+                  question="Copyleaks vs Turnitin: which AI detector is better?"
+                  answer="Both are strong; the right choice depends on use. In our testing across five AI models, Turnitin leads for integrated academic submission, while Copyleaks is competitive and gaining institutional adoption. Neither is perfect — both produce false positives — so treat scores as one signal, not proof."
+                />
+
               <p className="text-xl text-muted-foreground">Copyleaks is gaining institutional adoption fast. But is it actually better than Turnitin? We tested both with real data across 5 AI models to find out.</p>
             </header>
 

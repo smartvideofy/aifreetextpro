@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { QuickAnswer } from "@/components/QuickAnswer";
 import { Helmet } from "react-helmet-async";
 import { Calendar, Clock, ArrowLeft } from "lucide-react";
 import Navbar from "@/components/Navbar";
@@ -97,6 +98,11 @@ const HowToCheckIfWrittenByAI = () => {
                 <span className="bg-primary/10 text-primary px-2 py-1 rounded text-xs font-medium">How-To Guide</span>
               </div>
               <h1 className="text-4xl md:text-5xl font-bold mb-4 leading-tight">How to Check If Something Was Written by AI (Free Methods)</h1>
+                <QuickAnswer
+                  question="How do you check if something was written by AI?"
+                  answer="Combine free detectors like GPTZero with manual review: look for uniform sentence length, generic phrasing, missing specific detail, and no personal voice. Tools estimate probability and can be wrong, so for grading or hiring use them as one input alongside your own judgment, not as proof."
+                />
+
               <p className="text-xl text-muted-foreground">Whether you are a teacher grading papers, an editor reviewing submissions, or an employer screening applications, here is how to identify AI-generated text using free tools and manual techniques.</p>
               <ReviewedBy name="Dr. Sarah Chen" role="AI Ethics Researcher" slug="sarah-chen" />
             </header>

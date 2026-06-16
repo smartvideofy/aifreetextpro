@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { QuickAnswer } from "@/components/QuickAnswer";
 import { Helmet } from "react-helmet-async";
 import { Calendar, Clock, ArrowLeft, BookOpen, HelpCircle, CheckCircle } from "lucide-react";
 import Navbar from "@/components/Navbar";
@@ -94,6 +95,11 @@ const DoesGrammarlyTriggerAIDetection = () => {
             <header className="mb-8 not-prose">
               <span className="inline-block px-3 py-1 text-sm font-medium bg-primary/10 text-primary rounded-full mb-4">Educational</span>
               <h1 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">Does Grammarly Get Detected as AI? The Truth About Writing Tools</h1>
+                <QuickAnswer
+                  question="Does Grammarly get detected as AI?"
+                  answer="Basic Grammarly fixes — grammar, spelling, and punctuation — do not trigger AI detectors. But Grammarly's generative features that rewrite or generate text can raise AI scores, because that output carries AI patterns. Used as a proofreader Grammarly is safe; used to rewrite whole passages, it can flag."
+                />
+
               <div className="flex flex-wrap items-center gap-4 text-sm text-muted-foreground">
                 <span className="flex items-center gap-1"><Calendar className="w-4 h-4" /> February 25, 2026</span>
                 <span className="flex items-center gap-1"><Clock className="w-4 h-4" /> 10 min read</span>

@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { QuickAnswer } from "@/components/QuickAnswer";
 import { Button } from "@/components/ui/button";
 import { Calendar, Clock, ArrowLeft, Sparkles, Target, Users } from "lucide-react";
 import { KeyTakeaways } from "@/components/KeyTakeaways";
@@ -234,6 +235,11 @@ const HumanizeAIText = () => {
                 <h1 className="text-4xl md:text-5xl font-bold leading-tight">
                   How to Humanize AI-Generated Text Without Losing Your Voice
                 </h1>
+                <QuickAnswer
+                  question="How do you humanize AI text without losing your voice?"
+                  answer="Edit for your own phrasing and perspective rather than letting AI's defaults stand: vary sentence length, add specific examples and opinions, and cut generic transitions. Feed the AI samples of your writing, then revise its output so the final piece sounds like you — natural and authentic, not robotic."
+                />
+
 
                 <p className="text-xl text-muted-foreground">
                   Transform robotic AI content into authentic, engaging writing that sounds like you, not a machine.

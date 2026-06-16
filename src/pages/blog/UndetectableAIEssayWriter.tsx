@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { QuickAnswer } from "@/components/QuickAnswer";
 import { Helmet } from "react-helmet-async";
 import { ArrowLeft, Calendar, Clock, User, ExternalLink, Zap, GraduationCap, CheckCircle } from "lucide-react";
 import Navbar from "@/components/Navbar";
@@ -172,6 +173,11 @@ export default function UndetectableAIEssayWriter() {
               <h1 className="text-3xl md:text-4xl font-bold mb-4 leading-tight">
                 Best AI Essay Writer That Can't Be Detected (2026)
               </h1>
+                <QuickAnswer
+                  question="Is there an AI essay writer that can't be detected?"
+                  answer="No single tool reliably writes undetectable essays on its own. The approach that works is a two-step workflow: generate a draft with AI, then humanize it to vary structure and add specificity, and re-check on a detector. Use this for your own work and follow your school's policy — no method guarantees a zero score."
+                />
+
               <p className="text-xl text-muted-foreground leading-relaxed">
                 No single AI tool writes essays that pass detection on their own. The winning strategy is a two-step workflow: generate with AI, then humanize. Here are the top-ranked workflows with real test results.
               </p>

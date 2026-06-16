@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { QuickAnswer } from "@/components/QuickAnswer";
 import { Button } from "@/components/ui/button";
 import { Calendar, Clock, ArrowLeft, Shield, AlertTriangle, Target, CheckCircle } from "lucide-react";
 import { KeyTakeaways } from "@/components/KeyTakeaways";
@@ -196,6 +197,11 @@ const OriginalityAIReview = () => {
                 <h1 className="text-4xl md:text-5xl font-bold leading-tight">
                   Originality.AI Detector Review: Accuracy, Pricing, and How to Beat It
                 </h1>
+                <QuickAnswer
+                  question="How accurate is Originality.AI, and can you beat it?"
+                  answer="Originality.AI is one of the most aggressive detectors: high catch rates but also notable false positives. To reduce flags on your own legitimate work, humanize it — vary sentence structure, add specificity and voice, then re-check. Use this to clear false flags, and follow any AI-use policy that applies to you."
+                />
+
 
                 <p className="text-xl text-muted-foreground">
                   Everything you need to know about one of the most aggressive AI detectors, and how to reliably bypass it.

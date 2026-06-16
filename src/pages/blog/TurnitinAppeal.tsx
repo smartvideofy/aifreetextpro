@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { QuickAnswer } from "@/components/QuickAnswer";
 import { Helmet } from "react-helmet-async";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -84,6 +85,11 @@ const TurnitinAppeal = () => {
             <header className="mb-8 not-prose">
               <span className="inline-block px-3 py-1 bg-primary/10 text-primary text-sm font-medium rounded-full mb-4">Academic</span>
               <h1 className="text-3xl md:text-4xl font-bold mb-4">Is Turnitin Wrong? How to Appeal AI Detection Results</h1>
+                <QuickAnswer
+                  question="How do you appeal a false Turnitin AI flag?"
+                  answer="If Turnitin wrongly flags your work, gather evidence that it's yours — draft history, version timestamps, notes — and request a review, explaining that AI scores are probabilistic and not proof. Stay factual and professional. A single AI score shouldn't determine an outcome without corroborating evidence."
+                />
+
               <p className="text-xl text-muted-foreground mb-4">What to do when Turnitin falsely flags your human-written work as AI-generated. Step-by-step appeal process with email templates.</p>
               <div className="flex flex-wrap items-center gap-4 text-sm text-muted-foreground">
                 <span className="flex items-center gap-1"><Calendar className="w-4 h-4" /> March 8, 2026</span>

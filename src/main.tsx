@@ -19,7 +19,7 @@ const container = document.getElementById("root")!;
 // MutationObserver re-arms on every head mutation, so we only snapshot once
 // the head has been genuinely stable.
 const MAX_WAIT_MS = 25000;
-const POST_SWAP_QUIET_MS = 1500;
+const POST_SWAP_QUIET_MS = 2500;
 
 declare global {
   interface Window {

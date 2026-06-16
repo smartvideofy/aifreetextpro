@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { QuickAnswer } from "@/components/QuickAnswer";
 import { Helmet } from "react-helmet-async";
 import { Calendar, Clock, ArrowLeft } from "lucide-react";
 import Navbar from "@/components/Navbar";
@@ -85,6 +86,11 @@ const QuillbotVsAIFreeTextPro = () => {
                 <span className="bg-primary/10 text-primary px-2 py-1 rounded text-xs font-medium">Comparison</span>
               </div>
               <h1 className="text-4xl md:text-5xl font-bold mb-4 leading-tight">Quillbot vs AI Free Text Pro: Paraphraser vs Humanizer Compared (2026)</h1>
+                <QuickAnswer
+                  question="Quillbot vs AI Free Text Pro: which should you use?"
+                  answer="They do different jobs. Quillbot paraphrases — rewording while keeping structure — which usually still scores as AI. AI Free Text Pro humanizes — restructuring sentences and adding natural variation — which is what actually lowers detection. For passing detectors, a humanizer works where a paraphraser doesn't."
+                />
+
               <p className="text-xl text-muted-foreground">Quillbot paraphrases. AI Free Text Pro humanizes. We tested both against five AI detectors to show why that distinction is the difference between getting caught and passing cleanly.</p>
               <ReviewedBy name="Dr. Sarah Chen" role="AI Ethics Researcher" slug="sarah-chen" />
             </header>

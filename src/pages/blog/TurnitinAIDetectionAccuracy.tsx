@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { QuickAnswer } from "@/components/QuickAnswer";
 import { Helmet } from "react-helmet-async";
 import { Calendar, Clock, ArrowLeft } from "lucide-react";
 import Navbar from "@/components/Navbar";
@@ -84,6 +85,11 @@ const TurnitinAIDetectionAccuracy = () => {
                 <span className="bg-primary/10 text-primary px-2 py-1 rounded text-xs font-medium">Technical</span>
               </div>
               <h1 className="text-4xl md:text-5xl font-bold mb-4 leading-tight">Turnitin AI Detection: How It Works and How Accurate It Really Is (2026)</h1>
+                <QuickAnswer
+                  question="How accurate is Turnitin's AI detection?"
+                  answer="Turnitin reports high accuracy on unmodified AI text and a low stated false-positive rate, but independent testing shows real false positives do occur, especially on formal or non-native English writing. Its percentage estimates likely AI content, not proof — a high score warrants review, not an automatic penalty."
+                />
+
               <p className="text-xl text-muted-foreground">Turnitin is the most widely used AI detector in education. Here is an evidence-based analysis of how its technology works, what its real accuracy rates are, and what those percentage scores actually mean.</p>
               <ReviewedBy name="Dr. Sarah Chen" role="AI Ethics Researcher" slug="sarah-chen" />
             </header>

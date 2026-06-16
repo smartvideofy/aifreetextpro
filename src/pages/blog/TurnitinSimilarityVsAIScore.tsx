@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { QuickAnswer } from "@/components/QuickAnswer";
 import { Helmet } from "react-helmet-async";
 import { ArrowLeft, Calendar, Clock, CheckCircle, Zap, AlertTriangle, HelpCircle } from "lucide-react";
 import Navbar from "@/components/Navbar";
@@ -95,6 +96,11 @@ const TurnitinSimilarityVsAIScore = () => {
                 <span className="flex items-center gap-1"><Clock className="w-4 h-4" /> 12 min read</span>
               </div>
               <h1 className="text-3xl md:text-4xl font-bold mb-4">Turnitin Similarity Score vs AI Score: What's the Difference?</h1>
+                <QuickAnswer
+                  question="What's the difference between Turnitin's similarity score and AI score?"
+                  answer="They measure different things. The similarity score shows how much of your text matches existing sources (potential plagiarism); the AI score estimates how much reads as AI-generated. A high similarity score isn't an AI flag and vice versa — check which one you're looking at before reacting."
+                />
+
               <p className="text-xl text-muted-foreground">Students see two scores on every Turnitin report. One measures plagiarism. The other measures AI. Understanding the difference could save your grade.</p>
             </header>
 

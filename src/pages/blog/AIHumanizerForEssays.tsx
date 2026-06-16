@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { KeyTakeaways } from "@/components/KeyTakeaways";
 import { QuickAnswer } from "@/components/QuickAnswer";
+import { FAQSection } from "@/components/FAQSection";
 import { RelatedArticles } from "@/components/RelatedArticles";
 import { InternalLinks } from "@/components/InternalLinks";
 import ReviewedBy from "@/components/ReviewedBy";
@@ -134,7 +135,13 @@ const AIHumanizerForEssays = () => {
             </div>
           </article>
 
-          <RelatedArticles articles={relatedArticles} />
+                        <FAQSection faqs={[
+                { question: "Why do honestly written essays get flagged as AI?", answer: "Formal, well-structured academic writing can show low perplexity and burstiness — the same patterns detectors associate with AI — leading to false positives even on original work." },
+                { question: "Will humanizing my essay change its meaning?", answer: "A good humanizer preserves your argument and evidence while varying phrasing and rhythm. Always re-read the output to confirm accuracy before submitting." },
+                { question: "Is using an AI humanizer on my essay cheating?", answer: "Using it to refine and de-risk your own writing is generally acceptable; using it to disguise fully AI-written work where that is prohibited is not. Follow your institution's policy." },
+              ]} />
+
+              <RelatedArticles articles={relatedArticles} />
           <InternalLinks currentPage="/blog/ai-humanizer-for-essays" />
         </div>
       </main>

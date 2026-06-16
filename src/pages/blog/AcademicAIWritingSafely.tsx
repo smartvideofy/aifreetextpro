@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { QuickAnswer } from "@/components/QuickAnswer";
 import { Button } from "@/components/ui/button";
 import { Calendar, Clock, ArrowLeft, GraduationCap, Scale, Shield, AlertTriangle, CheckCircle } from "lucide-react";
 import { KeyTakeaways } from "@/components/KeyTakeaways";
@@ -159,6 +160,11 @@ const AcademicAIWritingSafely = () => {
                 <h1 className="text-4xl md:text-5xl font-bold leading-tight">
                   Maintaining Academic Integrity: Using AI to Write Thesis and Essays Safely
                 </h1>
+                <QuickAnswer
+                  question="Can you use AI for academic writing without breaking the rules?"
+                  answer="Yes, if you use it for brainstorming, outlining, research, and editing rather than submitting AI-written work as your own. Disclose AI use where required, keep the core analysis and arguments yours, and check your institution's specific policy before relying on any AI tool."
+                />
+
 
                 <p className="text-xl text-muted-foreground">
                   A thoughtful guide to leveraging AI writing tools responsibly while preserving the principles of academic integrity.

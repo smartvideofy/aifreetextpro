@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+import { QuickAnswer } from "@/components/QuickAnswer";
+import { FAQSection } from "@/components/FAQSection";
 import { Helmet } from "react-helmet-async";
 import { Calendar, Clock, ArrowLeft, BookOpen, CheckCircle, XCircle } from "lucide-react";
 import Navbar from "@/components/Navbar";
@@ -81,6 +83,11 @@ const UndetectableAIvsAIFreeTextPro = () => {
             <header className="mb-8 not-prose">
               <span className="inline-block px-3 py-1 text-sm font-medium bg-primary/10 text-primary rounded-full mb-4">Comparison</span>
               <h1 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">Best Undetectable AI Alternative: Honest Comparison (2026)</h1>
+                <QuickAnswer
+                  question="Undetectable AI vs AI Free Text Pro: which should you choose?"
+                  answer="AI Free Text Pro offers a free tier with no sign-up, while Undetectable AI requires an account and starts at $9.99/month. In our head-to-head tests AI Free Text Pro matched or beat it on detector bypass for most samples, making it the better starting point for most users."
+                />
+
               <div className="flex flex-wrap items-center gap-4 text-sm text-muted-foreground">
                 <span className="flex items-center gap-1"><Calendar className="w-4 h-4" /> February 25, 2026</span>
                 <span className="flex items-center gap-1"><Clock className="w-4 h-4" /> 13 min read</span>
@@ -149,7 +156,13 @@ const UndetectableAIvsAIFreeTextPro = () => {
             </div>
           </article>
 
-          <RelatedArticles articles={relatedArticles} />
+                        <FAQSection faqs={[
+                { question: "Is AI Free Text Pro really free?", answer: "Yes — it has a free, no-sign-up tier for shorter passages, with paid plans for higher word limits." },
+                { question: "How much does Undetectable AI cost?", answer: "Undetectable AI requires an account and starts at $9.99/month, with no comparable no-sign-up free tier." },
+                { question: "Which performs better on AI detectors?", answer: "In our head-to-head tests AI Free Text Pro matched or outperformed Undetectable AI on most samples, though results vary by content type." },
+              ]} />
+
+              <RelatedArticles articles={relatedArticles} />
           <InternalLinks currentPage="/blog/undetectable-ai-vs-ai-free-text-pro" />
         </div>
       </main>

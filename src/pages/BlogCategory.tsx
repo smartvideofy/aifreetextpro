@@ -112,7 +112,7 @@ const BlogCategory = () => {
       const { data } = await supabase.from("blog_thumbnails").select("slug, image_url");
       if (data) {
         const map: Record<string, string> = {};
-        data.forEach((t: any) => {
+        data.forEach((t: { slug: string; image_url: string }) => {
           map[t.slug] = t.image_url;
         });
         setThumbnailMap(map);
@@ -125,12 +125,12 @@ const BlogCategory = () => {
     if (!cat) return [];
     const matchSet = new Set(cat.matches);
     return blogPosts
-      .filter((p: any) => {
+      .filter((p: { category: string; slug: string }) => {
         if (matchSet.has(p.category)) return true;
         if (cat.slugIncludes && cat.slugIncludes.some((s) => p.slug.includes(s))) return true;
         return false;
       })
-      .sort((a: any, b: any) => (a.date < b.date ? 1 : -1));
+      .sort((a: { date: string }, b: { date: string }) => (a.date < b.date ? 1 : -1));
   }, [cat]);
 
   if (!cat) return <Navigate to="/blog" replace />;
@@ -153,7 +153,7 @@ const BlogCategory = () => {
       name: "AI Free Text Pro",
       url: "https://aifreetextpro.com",
     },
-    hasPart: matchedPosts.slice(0, 50).map((p: any) => ({
+    hasPart: matchedPosts.slice(0, 50).map((p: { title: string; slug: string; date: string }) => ({
       "@type": "Article",
       headline: p.title,
       url: `https://aifreetextpro.com/blog/${p.slug}`,
@@ -212,7 +212,7 @@ const BlogCategory = () => {
             <p className="text-muted-foreground">No posts in this category yet.</p>
           ) : (
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-              {pagePosts.map((post: any) => {
+              {pagePosts.map((post: { slug: string; title: string; category: string; excerpt: string; date: string; readTime: string }) => {
                 const thumb = thumbnailMap[post.slug] || categorySeo;
                 return (
                   <Link key={post.slug} to={`/blog/${post.slug}`} className="group">

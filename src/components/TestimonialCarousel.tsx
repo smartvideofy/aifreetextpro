@@ -135,6 +135,7 @@ const TestimonialCarousel = () => {
             variant="outline"
             size="icon"
             onClick={handlePrev}
+            aria-label="Previous testimonials"
             className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 z-10 hidden md:flex shadow-sm"
           >
             <ChevronLeft className="h-5 w-5" />
@@ -143,6 +144,7 @@ const TestimonialCarousel = () => {
             variant="outline"
             size="icon"
             onClick={handleNext}
+            aria-label="Next testimonials"
             className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 z-10 hidden md:flex shadow-sm"
           >
             <ChevronRight className="h-5 w-5" />

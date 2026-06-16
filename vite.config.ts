@@ -53,8 +53,7 @@ export default defineConfig(({ mode }) => ({
                 path.join(DEBUG_DIR, `${slug(route)}.log`),
                 `[${message.type()}] ${text}\n`
               );
-            } catch {}
-            // eslint-disable-next-line no-console
+            } catch { /* best-effort debug logging; ignore failures */ }
             console.log(`[prerender:${route}]`, text);
           },
           launchOptions: {
@@ -168,7 +167,7 @@ export default defineConfig(({ mode }) => ({
                 rendered.html,
                 "utf8"
               );
-            } catch {}
+            } catch { /* best-effort debug logging; ignore failures */ }
           }
         },
       }),

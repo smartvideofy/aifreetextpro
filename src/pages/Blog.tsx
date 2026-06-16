@@ -1049,7 +1049,7 @@ const Blog = () => {
         .select("slug, image_url");
       if (data) {
         const map: Record<string, string> = {};
-        data.forEach((t: any) => { map[t.slug] = t.image_url; });
+        data.forEach((t: { slug: string; image_url: string }) => { map[t.slug] = t.image_url; });
         setThumbnailMap(map);
       }
     };

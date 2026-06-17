@@ -51,7 +51,7 @@ const MobileNav = () => {
           </SheetTitle>
         </SheetHeader>
         
-        <nav className="flex flex-col gap-1 p-4">
+        <nav aria-label="Mobile navigation" className="flex flex-col gap-1 p-4">
           {/* Main Navigation Links */}
           {mainLinks.map((link) => {
             const Icon = link.icon;

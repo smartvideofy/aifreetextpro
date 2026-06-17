@@ -27,7 +27,9 @@
     --accent: 210 40% 96.1%;
     --accent-foreground: 222.2 47.4% 11.2%;
 
-    --destructive: 0 84.2% 60.2%;
+    /* Darkened from 0 84.2% 60.2% so destructive red text meets AA 4.5:1 on
+       white and light-red backgrounds (axe color-contrast). */
+    --destructive: 0 72% 47%;
     --destructive-foreground: 210 40% 98%;
 
     --border: 214.3 31.8% 91.4%;
@@ -93,6 +95,15 @@
 
   body {
     @apply bg-background text-foreground;
+  }
+
+  /* In-paragraph/list links must be distinguishable without relying on color
+     (WCAG 1.4.1 / axe link-in-text-block). Underline links embedded in running
+     text; standalone card/CTA links (not inside <p>/<li>) are unaffected. */
+  main p a:not([class*="button"]),
+  main li a {
+    text-decoration: underline;
+    text-underline-offset: 2px;
   }
 }
 

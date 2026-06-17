@@ -24,8 +24,8 @@ const Navbar = () => {
           {/* Logo & Brand */}
           <Link to="/" className="flex items-center gap-2.5 group">
             <img 
-              src={logo} 
-              alt="AI Free Text Pro Logo" 
+              src={logo}
+              alt=""
               className="w-10 h-10 md:w-11 md:h-11 transition-transform duration-200 group-hover:scale-105"
               width={44}
               height={44}

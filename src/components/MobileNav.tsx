@@ -44,7 +44,7 @@ const MobileNav = () => {
       <SheetContent side="right" className="w-72 p-0">
         <SheetHeader className="p-6 bg-gradient-to-r from-primary/10 to-secondary/10 border-b border-border/50">
           <SheetTitle className="flex items-center gap-2">
-            <img src={logo} alt="AI Free Text Pro" className="w-8 h-8" />
+            <img src={logo} alt="" className="w-8 h-8" />
             <span className="font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
               AI Free Text Pro
             </span>

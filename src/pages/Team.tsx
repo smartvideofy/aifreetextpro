@@ -408,9 +408,9 @@ const Team = () => {
             </Card>
           </div>
         </section>
+              <InternalLinks variant="full" currentPage="/team" />
       </main>
 
-      <InternalLinks variant="full" currentPage="/team" />
       <Footer />
     </div>
   );

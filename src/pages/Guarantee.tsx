@@ -347,9 +347,9 @@ const Guarantee = () => {
             </div>
           </div>
         </section>
+              <InternalLinks variant="full" currentPage="/guarantee" />
       </main>
       
-      <InternalLinks variant="full" currentPage="/guarantee" />
       <Footer />
     </div>
   );

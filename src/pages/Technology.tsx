@@ -401,9 +401,9 @@ const Technology = () => {
             </Card>
           </div>
         </section>
+              <InternalLinks variant="full" currentPage="/technology" />
       </main>
 
-      <InternalLinks variant="full" currentPage="/technology" />
       <Footer />
     </div>
   );

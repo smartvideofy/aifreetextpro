@@ -402,8 +402,8 @@ const Api = () => {
             </a>
           </div>
         </section>
+              <InternalLinks variant="full" currentPage="/api" />
       </main>
-      <InternalLinks variant="full" currentPage="/api" />
       <Footer />
     </>
   );

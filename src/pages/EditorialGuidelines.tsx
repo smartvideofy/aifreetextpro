@@ -280,9 +280,9 @@ const EditorialGuidelines = () => {
             </div>
           </div>
         </section>
+              <InternalLinks variant="full" currentPage="/editorial-guidelines" />
       </main>
 
-      <InternalLinks variant="full" currentPage="/editorial-guidelines" />
       <Footer />
     </div>
   );

@@ -300,9 +300,9 @@ const CaseStudies = () => {
             </Card>
           </div>
         </section>
+              <InternalLinks variant="full" currentPage="/case-studies" />
       </main>
 
-      <InternalLinks variant="full" currentPage="/case-studies" />
       <Footer />
     </div>
   );

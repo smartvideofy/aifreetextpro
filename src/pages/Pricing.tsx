@@ -437,9 +437,10 @@ const Pricing = () => {
             </div>
           </div>
         </section>
+
+        <InternalLinks variant="full" currentPage="/pricing" />
       </main>
-      
-      <InternalLinks variant="full" currentPage="/pricing" />
+
       <Footer />
     </div>
   );

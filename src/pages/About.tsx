@@ -373,9 +373,9 @@ const About = () => {
             </div>
           </div>
         </section>
+              <InternalLinks variant="full" currentPage="/about" />
       </main>
       
-      <InternalLinks variant="full" currentPage="/about" />
       <Footer />
     </div>
   );

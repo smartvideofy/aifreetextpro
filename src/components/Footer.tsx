@@ -120,7 +120,7 @@ const FooterAccordionItem = ({ section, isOpen, onToggle }: { section: FooterSec
       </h3>
       
       {/* Links */}
-      <nav className={`flex flex-col gap-2.5 text-sm overflow-hidden transition-all duration-300 md:overflow-visible ${
+      <nav aria-label={section.title} className={`flex flex-col gap-2.5 text-sm overflow-hidden transition-all duration-300 md:overflow-visible ${
         isOpen ? 'max-h-96 pb-4' : 'max-h-0 md:max-h-none'
       }`}>
         {section.links.map((link, index) => (

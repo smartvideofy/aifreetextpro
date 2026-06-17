@@ -177,4 +177,16 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  build: {
+    rollupOptions: {
+      output: {
+        // Split the React/router runtime into a long-cached vendor chunk so it
+        // isn't re-downloaded on every app-code change and to shrink the main
+        // entry chunk's parse cost.
+        manualChunks: {
+          "react-vendor": ["react", "react-dom", "react-router-dom"],
+        },
+      },
+    },
+  },
 }));

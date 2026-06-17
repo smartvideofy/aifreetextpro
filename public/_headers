@@ -1,0 +1,13 @@
+# Cloudflare Pages headers. Security hardening + long-cache for hashed assets.
+
+/*
+  X-Frame-Options: SAMEORIGIN
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), browsing-topics=()
+  Strict-Transport-Security: max-age=31536000
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self' https://*.supabase.co wss://*.supabase.co https://www.google-analytics.com https://*.google-analytics.com https://analytics.google.com https://www.googletagmanager.com; frame-src 'self' https://app.aifreetextpro.com; frame-ancestors 'self'; base-uri 'self'; form-action 'self' https://app.aifreetextpro.com https://aifreetextpro.com; object-src 'none'; upgrade-insecure-requests
+
+# Content-hashed build assets are immutable — cache for a year.
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable

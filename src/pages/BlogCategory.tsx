@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from "react";
+import { useMemo, useState } from "react";
 import { Link, useParams, Navigate } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { Card } from "@/components/ui/card";
@@ -6,7 +6,6 @@ import { Calendar, Clock, ArrowRight, BookOpen } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
-import { supabase } from "@/integrations/supabase/client";
 import { blogPosts } from "@/pages/Blog";
 import { PillarHubLinks } from "@/components/PillarHubLinks";
 import categorySeo from "@/assets/blog/category-seo.png";
@@ -105,21 +104,6 @@ const BlogCategory = () => {
   const { slug } = useParams<{ slug: string }>();
   const cat = blogCategories.find((c) => c.slug === slug);
   const [page, setPage] = useState(1);
-  const [thumbnailMap, setThumbnailMap] = useState<Record<string, string>>({});
-
-  useEffect(() => {
-    const fetchThumbnails = async () => {
-      const { data } = await supabase.from("blog_thumbnails").select("slug, image_url");
-      if (data) {
-        const map: Record<string, string> = {};
-        data.forEach((t: { slug: string; image_url: string }) => {
-          map[t.slug] = t.image_url;
-        });
-        setThumbnailMap(map);
-      }
-    };
-    fetchThumbnails();
-  }, []);
 
   const matchedPosts = useMemo(() => {
     if (!cat) return [];
@@ -213,7 +197,7 @@ const BlogCategory = () => {
           ) : (
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {pagePosts.map((post: { slug: string; title: string; category: string; excerpt: string; date: string; readTime: string }) => {
-                const thumb = thumbnailMap[post.slug] || categorySeo;
+                const thumb = categorySeo;
                 return (
                   <Link key={post.slug} to={`/blog/${post.slug}`} className="group">
                     <Card className="h-full overflow-hidden hover:shadow-lg hover:-translate-y-1 transition-all bg-card/50 border-border/50">

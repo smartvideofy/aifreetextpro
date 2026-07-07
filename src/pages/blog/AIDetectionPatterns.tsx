@@ -14,28 +14,13 @@ import { FAQSection } from "@/components/FAQSection";
 
 const relatedArticles = [
   {
-    title: "Signal vs. Noise: What Makes Text Human",
-    description: "Deep dive into patterns that distinguish human writing",
-    href: "/blog/signal-vs-noise-human-text",
-    category: "Technical"
-  },
-  {
-    title: "How AI Detectors Score Text",
-    description: "Behind-the-scenes look at detection metrics",
-    href: "/blog/how-ai-detectors-score-text",
-    category: "Technical"
-  },
-  {
-    title: "How AI Detectors Work",
-    description: "Inside the science of AI text analysis",
-    href: "/blog/how-ai-detectors-work",
-    category: "Educational"
-  },
-  {
-    title: "AI Detection Tools Compared (2026 Edition)",
-    description: "Which AI detector is most accurate?",
-    href: "/blog/ai-detection-tools-compared-2025",
-    category: "Comparison"
+    title: "Signal vs. Noise: What Makes Text Human", description: "Deep dive into patterns that distinguish human writing", href: "/blog/signal-vs-noise-human-text", category: "Technical"
+  }, {
+    title: "How AI Detectors Score Text", description: "Behind-the-scenes look at detection metrics", href: "/blog/how-ai-detectors-score-text", category: "Technical"
+  }, {
+    title: "How AI Detectors Work", description: "Inside the science of AI text analysis", href: "/blog/how-ai-detectors-work", category: "Educational"
+  }, {
+    title: "AI Detection Tools Compared (2026 Edition)", description: "Which AI detector is most accurate?", href: "/blog/ai-detection-tools-compared-2025", category: "Comparison"
   }
 ];
 
@@ -65,29 +50,14 @@ const AIDetectionPatterns = () => {
         
         <script type="application/ld+json">
           {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Article",
-            "headline": "AI vs. Human: 5 Subtle Linguistic Patterns AI Detectors Look For",
-            "description": "Discover the 5 linguistic patterns AI detectors analyze to distinguish AI writing from human writing.",
-            "datePublished": "2026-02-02",
-            "dateModified": "2026-04-05",
-            "author": {
-              "@type": "Person",
-              "name": "Dr. Sarah Chen",
-              "url": "https://aifreetextpro.com/team#sarah-chen",
-              "jobTitle": "Founder & CEO"
-            },
-            "publisher": {
-              "@type": "Organization",
-              "name": "AI Free Text Pro",
-              "logo": {
-                "@type": "ImageObject",
-                "url": "https://aifreetextpro.com/logo.png"
+            "@context": "https://schema.org", "@type": "Article", "headline": "AI vs. Human: 5 Subtle Linguistic Patterns AI Detectors Look For", "description": "Discover the 5 linguistic patterns AI detectors analyze to distinguish AI writing from human writing.", "datePublished": "2026-02-02", "dateModified": "2026-04-05", "author": {
+              "@type": "Person", "name": "Dr. Sarah Chen", "url": "https://aifreetextpro.com/team#sarah-chen", "jobTitle": "Founder & CEO"
+            }, "publisher": {
+              "@type": "Organization", "name": "AI Free Text Pro", "logo": {
+                "@type": "ImageObject", "url": "https://aifreetextpro.com/logo.png"
               }
-            },
-            "mainEntityOfPage": {
-              "@type": "WebPage",
-              "@id": "https://aifreetextpro.com/blog/ai-detection-patterns-explained"
+            }, "mainEntityOfPage": {
+              "@type": "WebPage", "@id": "https://aifreetextpro.com/blog/ai-detection-patterns-explained"
             }
           })}
         </script>
@@ -95,25 +65,13 @@ const AIDetectionPatterns = () => {
         {/* BreadcrumbList Schema */}
         <script type="application/ld+json">
           {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            "itemListElement": [
+            "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
               {
-                "@type": "ListItem",
-                "position": 1,
-                "name": "Home",
-                "item": "https://aifreetextpro.com/"
-              },
-              {
-                "@type": "ListItem",
-                "position": 2,
-                "name": "Blog",
-                "item": "https://aifreetextpro.com/blog"
-              },
-              {
-                "@type": "ListItem",
-                "position": 3,
-                "name": "AI Detection Patterns"
+                "@type": "ListItem", "position": 1, "name": "Home", "item": "https://aifreetextpro.com/"
+              }, {
+                "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://aifreetextpro.com/blog"
+              }, {
+                "@type": "ListItem", "position": 3, "name": "AI Detection Patterns"
               }
             ]
           })}
@@ -133,9 +91,7 @@ const AIDetectionPatterns = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <Breadcrumbs items={[
-              { label: "Home", href: "/" },
-              { label: "Blog", href: "/blog" },
-              { label: "AI Detection Patterns" }
+              { label: "Home", href: "/" }, { label: "Blog", href: "/blog" }, { label: "AI Detection Patterns" }
             ]} />
             
             <Link to="/blog">
@@ -177,10 +133,7 @@ const AIDetectionPatterns = () => {
 
               <KeyTakeaways
                 points={[
-                  "AI detectors analyze five key patterns: perplexity, burstiness, vocabulary distribution, coherence, and emotional depth",
-                  "Low perplexity (predictable word choices) is the strongest signal of AI-generated text",
-                  "Human writing naturally varies sentence length and complexity, while AI text stays uniform",
-                  "Understanding these patterns lets you write content that reads authentically human"
+                  "AI detectors analyze five key patterns: perplexity, burstiness, vocabulary distribution, coherence, and emotional depth", "Low perplexity (predictable word choices) is the strongest signal of AI-generated text", "Human writing naturally varies sentence length and complexity, while AI text stays uniform", "Understanding these patterns lets you write content that reads authentically human"
                 ]}
               />
 
@@ -227,7 +180,7 @@ const AIDetectionPatterns = () => {
 
                 <div className="bg-muted p-4 rounded-lg my-6">
                   <p className="font-semibold mb-2">How AI Free Text Pro Fixes This:</p>
-                  <p className="mb-0">Our humanizer deliberately introduces controlled unpredictability — replacing safe word choices with more varied, human-like alternatives while preserving meaning.</p>
+                  <p className="mb-0">Our humanizer deliberately introduces controlled unpredictability, replacing safe word choices with more varied, human-like alternatives while preserving meaning.</p>
                 </div>
 
                 <h2>Pattern #2: Burstiness (Sentence Variation)</h2>
@@ -259,7 +212,7 @@ const AIDetectionPatterns = () => {
                   </p>
                 </div>
                 <p>
-                  See the variation? Short fragments ("True story."), questions, long narrative sentences — this is how humans actually write.
+                  See the variation? Short fragments ("True story."), questions, long narrative sentences, this is how humans actually write.
                 </p>
 
                 <div className="bg-muted p-4 rounded-lg my-6">
@@ -355,7 +308,7 @@ const AIDetectionPatterns = () => {
                 </ol>
 
                 <p>
-                  The result? Content that not only passes AI detection but actually reads better — more engaging, more authentic, more human.
+                  The result? Content that not only passes AI detection but actually reads better, more engaging, more authentic, more human.
                 </p>
 
                 <h2>Test Your Understanding</h2>
@@ -388,15 +341,11 @@ const AIDetectionPatterns = () => {
               </div>
 
               <FAQSection faqs={[
-                { question: "What is perplexity in AI detection?", answer: "Perplexity measures how predictable each word is. AI tends to pick the statistically 'safe' next word, producing consistently low perplexity, while human writing is less predictable and scores higher. Detectors treat sustained low perplexity as an AI signal." },
-                { question: "What is burstiness?", answer: "Burstiness is the variation in sentence length and structure. Humans mix short and long sentences; AI tends to produce uniform, similar-length sentences. Low burstiness is one of the strongest AI indicators detectors rely on." },
-                { question: "Can human writing be flagged as AI?", answer: "Yes. Highly uniform, formal, or formulaic writing — common in technical, academic, and non-native English text — can show low perplexity and burstiness and trigger false positives. No detector is 100% accurate, so a score is a signal, not proof." },
-                { question: "How do you write content that doesn't trigger these patterns?", answer: "Vary your sentence length, use specific examples and concrete detail, add genuine perspective, and avoid repetitive transitions. Humanizing tools like AI Free Text Pro restructure AI text to raise perplexity and burstiness while preserving meaning." },
-              ]} />
+                { question: "What is perplexity in AI detection?", answer: "Perplexity measures how predictable each word is. AI tends to pick the statistically 'safe' next word, producing consistently low perplexity, while human writing is less predictable and scores higher. Detectors treat sustained low perplexity as an AI signal." }, { question: "What is burstiness?", answer: "Burstiness is the variation in sentence length and structure. Humans mix short and long sentences; AI tends to produce uniform, similar-length sentences. Low burstiness is one of the strongest AI indicators detectors rely on." }, { question: "Can human writing be flagged as AI?", answer: "Yes. Highly uniform, formal, or formulaic writing, common in technical, academic, and non-native English text, can show low perplexity and burstiness and trigger false positives. No detector is 100% accurate, so a score is a signal, not proof." }, { question: "How do you write content that doesn't trigger these patterns?", answer: "Vary your sentence length, use specific examples and concrete detail, add genuine perspective, and avoid repetitive transitions. Humanizing tools like AI Free Text Pro restructure AI text to raise perplexity and burstiness while preserving meaning." }, ]} />
 
               <RelatedArticles articles={relatedArticles} />
 
-              <InternalLinks currentPage="/blog/ai-detection-patterns-perplexity-burstiness" />
+              <InternalLinks currentPage="/blog/ai-detection-patterns-explained" />
             </article>
           </div>
         </div>

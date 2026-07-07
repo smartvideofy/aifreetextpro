@@ -13,51 +13,27 @@ import { AuthorSchema } from "@/components/AuthorSchema";
 
 const relatedArticles = [
   {
-    title: "AI Detection Tools Compared (2026 Edition)",
-    description: "See which AI detector is most accurate for publishers",
-    href: "/blog/ai-detection-tools-compared-2025",
-    category: "Comparison"
-  },
-  {
-    title: "How AI Detectors Work",
-    description: "Understand the science behind AI text detection",
-    href: "/blog/how-ai-detectors-work",
-    category: "Educational"
-  },
-  {
-    title: "Editing AI Drafts Like a Human Editor",
-    description: "Professional techniques for refining AI content",
-    href: "/blog/editing-ai-drafts-human-editor",
-    category: "Editing"
-  },
-  {
-    title: "AI Content Marketing Trends 2026",
-    description: "Key trends shaping AI content in publishing",
-    href: "/blog/ai-content-marketing-trends-2026",
-    category: "Trends"
+    title: "AI Detection Tools Compared (2026 Edition)", description: "See which AI detector is most accurate for publishers", href: "/blog/ai-detection-tools-compared-2025", category: "Comparison"
+  }, {
+    title: "How AI Detectors Work", description: "Understand the science behind AI text detection", href: "/blog/how-ai-detectors-work", category: "Educational"
+  }, {
+    title: "Editing AI Drafts Like a Human Editor", description: "Professional techniques for refining AI content", href: "/blog/editing-ai-drafts-human-editor", category: "Editing"
+  }, {
+    title: "AI Content Marketing Trends 2026", description: "Key trends shaping AI content in publishing", href: "/blog/ai-content-marketing-trends-2026", category: "Trends"
   }
 ];
 
 const faqs = [
   {
-    question: "Do major publishers ban AI-assisted writing?",
-    answer: "Most publishers don't ban AI outright. They require disclosure and substantial human editing. The New York Times, Medium, and most academic journals allow AI assistance but mandate that final content reflects human judgment, creativity, and fact-checking. Undisclosed AI use is what gets writers in trouble."
-  },
-  {
-    question: "Can publishers detect AI content reliably?",
-    answer: "Publishers use a combination of automated tools and human review. While no detector is 100% accurate, experienced editors can spot AI patterns even when detectors miss them. The combination of detection tools plus editorial judgment catches most undisclosed AI content."
-  },
-  {
-    question: "What happens if I submit AI-generated content without disclosure?",
-    answer: "Consequences range from rejection to blacklisting. Academic journals may retract published work. Freelancers may lose clients and damage their reputation. Some publishers are adding AI detection clauses to contracts with financial penalties for undisclosed AI use."
-  },
-  {
-    question: "How much editing makes AI content 'mine'?",
-    answer: "There's no universal standard, but industry consensus suggests you should be able to defend every claim and stylistic choice. If you've added original research, personal voice, fact-checking, and substantial restructuring, the content is arguably 'yours.' Light editing of AI output doesn't meet this bar."
-  },
-  {
-    question: "Should I disclose AI use if I heavily edited the output?",
-    answer: "When in doubt, disclose. Transparency builds trust with editors and readers. Many publications appreciate honesty about AI assistance in the drafting process. Frame it positively: 'I used AI to generate an initial outline, then substantially rewrote and fact-checked the content.'"
+    question: "Do major publishers ban AI-assisted writing?", answer: "Most publishers don't ban AI outright. They require disclosure and substantial human editing. The New York Times, Medium, and most academic journals allow AI assistance but mandate that final content reflects human judgment, creativity, and fact-checking. Undisclosed AI use is what gets writers in trouble."
+  }, {
+    question: "Can publishers detect AI content reliably?", answer: "Publishers use a combination of automated tools and human review. While no detector is 100% accurate, experienced editors can spot AI patterns even when detectors miss them. The combination of detection tools plus editorial judgment catches most undisclosed AI content."
+  }, {
+    question: "What happens if I submit AI-generated content without disclosure?", answer: "Consequences range from rejection to blacklisting. Academic journals may retract published work. Freelancers may lose clients and damage their reputation. Some publishers are adding AI detection clauses to contracts with financial penalties for undisclosed AI use."
+  }, {
+    question: "How much editing makes AI content 'mine'?", answer: "There's no universal standard, but industry consensus suggests you should be able to defend every claim and stylistic choice. If you've added original research, personal voice, fact-checking, and substantial restructuring, the content is arguably 'yours.' Light editing of AI output doesn't meet this bar."
+  }, {
+    question: "Should I disclose AI use if I heavily edited the output?", answer: "When in doubt, disclose. Transparency builds trust with editors and readers. Many publications appreciate honesty about AI assistance in the drafting process. Frame it positively: 'I used AI to generate an initial outline, then substantially rewrote and fact-checked the content.'"
   }
 ];
 
@@ -87,47 +63,24 @@ export default function AIDetectionPublishing() {
         
         <script type="application/ld+json">
           {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Article",
-            "headline": "AI Detection in Publishing: How Editors and Writers Can Adapt in 2026",
-            "description": "How editors and publishers are adapting to AI-generated content, and practical strategies for writers navigating AI policies.",
-            "image": {
-              "@type": "ImageObject",
-              "url": "https://aifreetextpro.com/og-image.png",
-              "width": 1200,
-              "height": 675
-            },
-            "datePublished": "2026-02-02",
-            "dateModified": "2026-04-05",
-            "author": {
-              "@type": "Person",
-              "name": "Dr. Sarah Chen",
-              "url": "https://aifreetextpro.com/team#sarah-chen",
-              "jobTitle": "Founder & CEO"
-            },
-            "publisher": {
-              "@type": "Organization",
-              "name": "AI Free Text Pro",
-              "logo": {
-                "@type": "ImageObject",
-                "url": "https://aifreetextpro.com/logo.png"
+            "@context": "https://schema.org", "@type": "Article", "headline": "AI Detection in Publishing: How Editors and Writers Can Adapt in 2026", "description": "How editors and publishers are adapting to AI-generated content, and practical strategies for writers navigating AI policies.", "image": {
+              "@type": "ImageObject", "url": "https://aifreetextpro.com/og-image.png", "width": 1200, "height": 675
+            }, "datePublished": "2026-02-02", "dateModified": "2026-04-05", "author": {
+              "@type": "Person", "name": "Dr. Sarah Chen", "url": "https://aifreetextpro.com/team#sarah-chen", "jobTitle": "Founder & CEO"
+            }, "publisher": {
+              "@type": "Organization", "name": "AI Free Text Pro", "logo": {
+                "@type": "ImageObject", "url": "https://aifreetextpro.com/logo.png"
               }
-            },
-            "mainEntityOfPage": {
-              "@type": "WebPage",
-              "@id": "https://aifreetextpro.com/blog/ai-detection-in-publishing-2025"
+            }, "mainEntityOfPage": {
+              "@type": "WebPage", "@id": "https://aifreetextpro.com/blog/ai-detection-in-publishing-2025"
             }
           })}
         </script>
         
         <script type="application/ld+json">
           {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            "itemListElement": [
-              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://aifreetextpro.com/" },
-              { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://aifreetextpro.com/blog" },
-              { "@type": "ListItem", "position": 3, "name": "AI Detection in Publishing 2026" }
+            "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://aifreetextpro.com/" }, { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://aifreetextpro.com/blog" }, { "@type": "ListItem", "position": 3, "name": "AI Detection in Publishing 2026" }
             ]
           })}
         </script>
@@ -147,9 +100,7 @@ export default function AIDetectionPublishing() {
         <main className="container mx-auto px-4 py-12 max-w-4xl">
           <Breadcrumbs 
             items={[
-              { label: "Home", href: "/" },
-              { label: "Blog", href: "/blog" },
-              { label: "AI Detection in Publishing 2026" }
+              { label: "Home", href: "/" }, { label: "Blog", href: "/blog" }, { label: "AI Detection in Publishing 2026" }
             ]} 
           />
 
@@ -179,10 +130,7 @@ export default function AIDetectionPublishing() {
 
             <KeyTakeaways
               points={[
-                "Major publishers require AI disclosure and substantial human editing, not complete bans on AI assistance",
-                "Publishers use both automated detection and trained editors who spot AI patterns detectors miss",
-                "The key differentiator: original research, unique perspectives, and verifiable expertise that AI cannot replicate",
-                "Transparency builds trust: proactive disclosure of AI assistance is becoming standard practice"
+                "Major publishers require AI disclosure and substantial human editing, not complete bans on AI assistance", "Publishers use both automated detection and trained editors who spot AI patterns detectors miss", "The key differentiator: original research, unique perspectives, and verifiable expertise that AI cannot replicate", "Transparency builds trust: proactive disclosure of AI assistance is becoming standard practice"
               ]}
             />
 
@@ -331,17 +279,17 @@ export default function AIDetectionPublishing() {
                 <div className="space-y-4 mt-4">
                   <blockquote className="border-l-4 border-primary pl-4 italic">
                     "The best AI-assisted pieces are invisible. The writer used AI as a research tool or to overcome blank-page syndrome, then rewrote everything in their voice. The worst ones read like Wikipedia summaries with better grammar."
-                    <footer className="text-sm text-muted-foreground mt-2">— Senior Editor, Major Tech Publication</footer>
+                    <footer className="text-sm text-muted-foreground mt-2">, Senior Editor, Major Tech Publication</footer>
                   </blockquote>
 
                   <blockquote className="border-l-4 border-primary pl-4 italic">
                     "I look for what AI can't do: a surprising connection, a personal stake in the story, an insight that comes from lived experience. If I can't find that, I'm skeptical."
-                    <footer className="text-sm text-muted-foreground mt-2">— Features Editor, National Magazine</footer>
+                    <footer className="text-sm text-muted-foreground mt-2">, Features Editor, National Magazine</footer>
                   </blockquote>
 
                   <blockquote className="border-l-4 border-primary pl-4 italic">
                     "Detection tools give us a starting point, but they're not gospel. I've seen false positives on clearly human work and false negatives on obvious AI. Human judgment is still essential."
-                    <footer className="text-sm text-muted-foreground mt-2">— Managing Editor, Digital Publisher</footer>
+                    <footer className="text-sm text-muted-foreground mt-2">, Managing Editor, Digital Publisher</footer>
                   </blockquote>
                 </div>
               </section>

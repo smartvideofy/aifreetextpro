@@ -72,7 +72,7 @@ export const pillarHubs = {
       { title: "Free AI Content Detector", href: "/blog/free-ai-content-detector", description: "Best free AI detectors" },
       { title: "AI Essay Checker", href: "/blog/ai-essay-checker", description: "Check essays for AI signals" },
       { title: "ChatGPT Plus Detection", href: "/blog/chatgpt-plus-detection", description: "Detection of ChatGPT Plus output" },
-      { title: "Perplexity & Burstiness Patterns", href: "/blog/ai-detection-patterns-perplexity-burstiness", description: "Two core detector metrics" },
+      { title: "Perplexity & Burstiness Patterns", href: "/blog/ai-detection-patterns-explained", description: "Two core detector metrics" },
       { title: "Does Turnitin Detect ChatGPT?", href: "/blog/does-turnitin-detect-chatgpt", description: "Turnitin vs ChatGPT analysis" },
       { title: "Can AI Writing Be Original?", href: "/blog/can-ai-writing-be-original", description: "Originality and AI text" },
     ],

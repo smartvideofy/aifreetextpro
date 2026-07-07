@@ -154,7 +154,7 @@ const GPTinfComparison = () => {
                   </span>
                   <div className="flex items-center gap-2">
                     <Calendar className="w-4 h-4" />
-                    January 20, 2025
+                    January 20, 2026
                   </div>
                   <div className="flex items-center gap-2">
                     <Clock className="w-4 h-4" />

@@ -95,7 +95,7 @@ const HowToCiteAIGeneratedContent = () => {
             "datePublished": "2026-02-28",
             "dateModified": "2026-04-05",
             "mainEntityOfPage": "https://aifreetextpro.com/blog/how-to-cite-ai-generated-content",
-            "wordCount": 2200
+            "wordCount": 1400
           })}
         </script>
         <script type="application/ld+json">

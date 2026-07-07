@@ -15,28 +15,13 @@ import { PostHowToSchema } from "@/components/PostHowToSchema";
 
 const relatedArticles = [
   {
-    title: "Top 10 AI Humanizer Tools for 2026",
-    description: "Compare the top AI humanizer tools and find the perfect one for your needs",
-    href: "/blog/top-10-ai-humanizer-tools-2025",
-    category: "Tools"
-  },
-  {
-    title: "How AI Detectors Work",
-    description: "Understand the technology behind AI detection",
-    href: "/blog/how-ai-detectors-work",
-    category: "Guide"
-  },
-  {
-    title: "AI Humanization Pitfalls to Avoid",
-    description: "Common mistakes when humanizing AI-generated content",
-    href: "/blog/ai-humanization-pitfalls",
-    category: "Best Practices"
-  },
-  {
-    title: "Editing AI Drafts Like a Human Editor",
-    description: "Professional techniques for refining AI content",
-    href: "/blog/editing-ai-drafts-human-editor",
-    category: "Editing"
+    title: "Top 10 AI Humanizer Tools for 2026", description: "Compare the top AI humanizer tools and find the perfect one for your needs", href: "/blog/top-10-ai-humanizer-tools-2025", category: "Tools"
+  }, {
+    title: "How AI Detectors Work", description: "Understand the technology behind AI detection", href: "/blog/how-ai-detectors-work", category: "Guide"
+  }, {
+    title: "AI Humanization Pitfalls to Avoid", description: "Common mistakes when humanizing AI-generated content", href: "/blog/ai-humanization-pitfalls", category: "Best Practices"
+  }, {
+    title: "Editing AI Drafts Like a Human Editor", description: "Professional techniques for refining AI content", href: "/blog/editing-ai-drafts-human-editor", category: "Editing"
   }
 ];
 
@@ -66,35 +51,16 @@ const HumanizeAIText = () => {
         
         <script type="application/ld+json">
           {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Article",
-            "headline": "How to Humanize AI-Generated Text Without Losing Your Voice",
-            "description": "Learn proven strategies and tools to make ChatGPT or Gemini text sound naturally human while keeping your tone.",
-            "image": {
-              "@type": "ImageObject",
-              "url": "https://aifreetextpro.com/logo.png",
-              "width": 1200,
-              "height": 675
-            },
-            "datePublished": "2026-02-02",
-            "dateModified": "2026-04-05",
-            "author": {
-              "@type": "Person",
-              "name": "Dr. Sarah Chen",
-              "url": "https://aifreetextpro.com/team#sarah-chen",
-              "jobTitle": "Founder & CEO"
-            },
-            "publisher": {
-              "@type": "Organization",
-              "name": "AI Free Text Pro",
-              "logo": {
-                "@type": "ImageObject",
-                "url": "https://aifreetextpro.com/logo.png"
+            "@context": "https://schema.org", "@type": "Article", "headline": "How to Humanize AI-Generated Text Without Losing Your Voice", "description": "Learn proven strategies and tools to make ChatGPT or Gemini text sound naturally human while keeping your tone.", "image": {
+              "@type": "ImageObject", "url": "https://aifreetextpro.com/logo.png", "width": 1200, "height": 675
+            }, "datePublished": "2026-02-02", "dateModified": "2026-04-05", "author": {
+              "@type": "Person", "name": "Dr. Sarah Chen", "url": "https://aifreetextpro.com/team#sarah-chen", "jobTitle": "Founder & CEO"
+            }, "publisher": {
+              "@type": "Organization", "name": "AI Free Text Pro", "logo": {
+                "@type": "ImageObject", "url": "https://aifreetextpro.com/logo.png"
               }
-            },
-            "mainEntityOfPage": {
-              "@type": "WebPage",
-              "@id": "https://aifreetextpro.com/blog/humanize-ai-text-without-losing-voice"
+            }, "mainEntityOfPage": {
+              "@type": "WebPage", "@id": "https://aifreetextpro.com/blog/humanize-ai-text-without-losing-voice"
             }
           })}
         </script>
@@ -102,25 +68,13 @@ const HumanizeAIText = () => {
         {/* BreadcrumbList Schema */}
         <script type="application/ld+json">
           {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            "itemListElement": [
+            "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
               {
-                "@type": "ListItem",
-                "position": 1,
-                "name": "Home",
-                "item": "https://aifreetextpro.com/"
-              },
-              {
-                "@type": "ListItem",
-                "position": 2,
-                "name": "Blog",
-                "item": "https://aifreetextpro.com/blog"
-              },
-              {
-                "@type": "ListItem",
-                "position": 3,
-                "name": "How to Humanize AI Text"
+                "@type": "ListItem", "position": 1, "name": "Home", "item": "https://aifreetextpro.com/"
+              }, {
+                "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://aifreetextpro.com/blog"
+              }, {
+                "@type": "ListItem", "position": 3, "name": "How to Humanize AI Text"
               }
             ]
           })}
@@ -129,18 +83,8 @@ const HumanizeAIText = () => {
         {/* HowTo Schema */}
         <script type="application/ld+json">
           {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "HowTo",
-            "name": "How to Humanize AI-Generated Text",
-            "description": "Step-by-step guide to making AI content sound natural and human-like while preserving your unique voice.",
-            "step": [
-              {"@type": "HowToStep", "name": "Define Your Voice", "text": "Before asking AI to write, define your tone (professional, friendly, witty), style (short sentences, long-form, storytelling), and target audience."},
-              {"@type": "HowToStep", "name": "Generate Initial Content", "text": "Use ChatGPT, Claude, or Gemini to create your first draft with specific prompts about tone and style."},
-              {"@type": "HowToStep", "name": "Edit in Three Passes", "text": "Pass 1: Check structure and flow. Pass 2: Adjust voice to sound like you. Pass 3: Add personal examples and personality."},
-              {"@type": "HowToStep", "name": "Replace Formal Language", "text": "Use contractions, everyday words, and conversational phrases instead of corporate jargon."},
-              {"@type": "HowToStep", "name": "Add Sensory Details", "text": "Replace abstract concepts with specific, sensory descriptions that humans naturally use."},
-              {"@type": "HowToStep", "name": "Use an AI Humanizer Tool", "text": "Run your content through AI Free Text Pro to automatically transform robotic text into natural-sounding content."},
-              {"@type": "HowToStep", "name": "Final Review", "text": "Read your content aloud to catch any remaining awkward phrasing or AI patterns."}
+            "@context": "https://schema.org", "@type": "HowTo", "name": "How to Humanize AI-Generated Text", "description": "Step-by-step guide to making AI content sound natural and human-like while preserving your unique voice.", "step": [
+              {"@type": "HowToStep", "name": "Define Your Voice", "text": "Before asking AI to write, define your tone (professional, friendly, witty), style (short sentences, long-form, storytelling), and target audience."}, {"@type": "HowToStep", "name": "Generate Initial Content", "text": "Use ChatGPT, Claude, or Gemini to create your first draft with specific prompts about tone and style."}, {"@type": "HowToStep", "name": "Edit in Three Passes", "text": "Pass 1: Check structure and flow. Pass 2: Adjust voice to sound like you. Pass 3: Add personal examples and personality."}, {"@type": "HowToStep", "name": "Replace Formal Language", "text": "Use contractions, everyday words, and conversational phrases instead of corporate jargon."}, {"@type": "HowToStep", "name": "Add Sensory Details", "text": "Replace abstract concepts with specific, sensory descriptions that humans naturally use."}, {"@type": "HowToStep", "name": "Use an AI Humanizer Tool", "text": "Run your content through AI Free Text Pro to automatically transform robotic text into natural-sounding content."}, {"@type": "HowToStep", "name": "Final Review", "text": "Read your content aloud to catch any remaining awkward phrasing or AI patterns."}
             ]
           })}
         </script>
@@ -148,31 +92,18 @@ const HumanizeAIText = () => {
         {/* FAQPage Schema */}
         <script type="application/ld+json">
           {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": [
+            "@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
               {
-                "@type": "Question",
-                "name": "Why does AI text sound robotic?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "AI text sounds robotic because it uses overly formal language, repetitive sentence structures, lacks personal experience and emotional depth, and follows predictable patterns that lack the natural variation found in human writing."
+                "@type": "Question", "name": "Why does AI text sound robotic?", "acceptedAnswer": {
+                  "@type": "Answer", "text": "AI text sounds robotic because it uses overly formal language, repetitive sentence structures, lacks personal experience and emotional depth, and follows predictable patterns that lack the natural variation found in human writing."
                 }
-              },
-              {
-                "@type": "Question",
-                "name": "What is the best way to humanize AI content?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "The best approach combines using specific prompts, editing in multiple passes, adding personal anecdotes, varying sentence structure, and using an AI humanizer tool like AI Free Text Pro for automated natural language transformation."
+              }, {
+                "@type": "Question", "name": "What is the best way to humanize AI content?", "acceptedAnswer": {
+                  "@type": "Answer", "text": "The best approach combines using specific prompts, editing in multiple passes, adding personal anecdotes, varying sentence structure, and using an AI humanizer tool like AI Free Text Pro for automated natural language transformation."
                 }
-              },
-              {
-                "@type": "Question",
-                "name": "Can I keep my writing voice when using AI?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Yes, by defining your tone and style upfront in prompts, editing AI output to match your voice, adding personal stories and opinions, and using humanizer tools that preserve context while making text sound natural."
+              }, {
+                "@type": "Question", "name": "Can I keep my writing voice when using AI?", "acceptedAnswer": {
+                  "@type": "Answer", "text": "Yes, by defining your tone and style upfront in prompts, editing AI output to match your voice, adding personal stories and opinions, and using humanizer tools that preserve context while making text sound natural."
                 }
               }
             ]
@@ -204,9 +135,7 @@ const HumanizeAIText = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <Breadcrumbs items={[
-              { label: "Home", href: "/" },
-              { label: "Blog", href: "/blog" },
-              { label: "How to Humanize AI Text" }
+              { label: "Home", href: "/" }, { label: "Blog", href: "/blog" }, { label: "How to Humanize AI Text" }
             ]} />
             
             <Link to="/blog">
@@ -237,7 +166,7 @@ const HumanizeAIText = () => {
                 </h1>
                 <QuickAnswer
                   question="How do you humanize AI text without losing your voice?"
-                  answer="Edit for your own phrasing and perspective rather than letting AI's defaults stand: vary sentence length, add specific examples and opinions, and cut generic transitions. Feed the AI samples of your writing, then revise its output so the final piece sounds like you — natural and authentic, not robotic."
+                  answer="Edit for your own phrasing and perspective rather than letting AI's defaults stand: vary sentence length, add specific examples and opinions, and cut generic transitions. Feed the AI samples of your writing, then revise its output so the final piece sounds like you, natural and authentic, not robotic."
                 />
 
 
@@ -249,11 +178,7 @@ const HumanizeAIText = () => {
               <div className="prose prose-lg max-w-none">
               <KeyTakeaways 
                 points={[
-                  "AI writing sounds robotic due to formal language, repetitive structure, and lack of personal experience",
-                  "The 'Edit in Three Passes' technique: structure, voice, then details for best results",
-                  "Use contractions, everyday language, and varied sentence lengths to humanize content",
-                  "Add personal anecdotes, sensory details, and specific examples to bypass AI detection",
-                  "AI humanizer tools like AI Free Text Pro can automatically transform robotic text to natural writing"
+                  "AI writing sounds robotic due to formal language, repetitive structure, and lack of personal experience", "The 'Edit in Three Passes' technique: structure, voice, then details for best results", "Use contractions, everyday language, and varied sentence lengths to humanize content", "Add personal anecdotes, sensory details, and specific examples to bypass AI detection", "AI humanizer tools like AI Free Text Pro can automatically transform robotic text to natural writing"
                 ]}
               />
 
@@ -412,7 +337,7 @@ const HumanizeAIText = () => {
                   <li><strong>Over-editing:</strong> Don't lose the helpful structure AI provides. Maintain the logical flow while adding your voice.</li>
                   <li><strong>Ignoring your audience:</strong> Casual tone works for <Link to="/blog" className="text-primary hover:text-primary/80">blog posts</Link>, not legal documents or <Link to="/blog/ai-writing-students-avoid-plagiarism" className="text-primary hover:text-primary/80">academic papers</Link>.</li>
                   <li><strong>Forgetting to fact-check:</strong> AI can be confident and wrong. Always verify claims with reliable sources.</li>
-                  <li><strong>Using the same AI phrases everyone else uses:</strong> Avoid "game-changer," "unlock," "deep dive," "delve into" — these are <a href="/blog/how-to-detect-ai-generated-text">AI detection red flags</a>.</li>
+                  <li><strong>Using the same AI phrases everyone else uses:</strong> Avoid "game-changer," "unlock," "deep dive," "delve into", these are <a href="/blog/how-to-detect-ai-generated-text">AI detection red flags</a>.</li>
                   <li><strong>Not reading it out loud:</strong> If it sounds weird spoken, it needs work. Natural writing flows conversationally.</li>
                 </ul>
 

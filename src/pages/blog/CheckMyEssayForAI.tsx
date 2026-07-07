@@ -17,55 +17,29 @@ import { PostHowToSchema } from "@/components/PostHowToSchema";
 
 const relatedArticles = [
   {
-    title: "Best AI Essay Checker: Self-Check Before Submitting",
-    description: "Comprehensive comparison of AI essay checkers for students in 2026.",
-    href: "/blog/ai-essay-checker",
-    category: "Tools"
-  },
-  {
-    title: "Free AI Content Detector Comparison",
-    description: "Side-by-side accuracy testing of free AI detection tools.",
-    href: "/blog/free-ai-content-detector",
-    category: "Comparison"
-  },
-  {
-    title: "How to Check If Something Was Written by AI",
-    description: "Manual and automated methods for detecting AI-generated text.",
-    href: "/blog/how-to-check-if-written-by-ai",
-    category: "How-To Guide"
-  },
-  {
-    title: "AI Detection False Positives Explained",
-    description: "Why human writing sometimes gets flagged and how to handle it.",
-    href: "/blog/ai-detection-false-positives",
-    category: "Technical"
+    title: "Best AI Essay Checker: Self-Check Before Submitting", description: "Comprehensive comparison of AI essay checkers for students in 2026.", href: "/blog/ai-essay-checker", category: "Tools"
+  }, {
+    title: "Free AI Content Detector Comparison", description: "Side-by-side accuracy testing of free AI detection tools.", href: "/blog/free-ai-content-detector", category: "Comparison"
+  }, {
+    title: "How to Check If Something Was Written by AI", description: "Manual and automated methods for detecting AI-generated text.", href: "/blog/how-to-check-if-written-by-ai", category: "How-To Guide"
+  }, {
+    title: "AI Detection False Positives Explained", description: "Why human writing sometimes gets flagged and how to handle it.", href: "/blog/ai-detection-false-positives", category: "Technical"
   }
 ];
 
 const faqs = [
   {
-    question: "How do I check my essay for AI before submitting?",
-    answer: "Use a free AI detector like AI Free Text Pro, GPTZero, or ZeroGPT. Copy your essay text, paste it into the detector, and review the AI probability score. If the score is above 20-25%, consider revising flagged sections or using a humanization tool before submission."
-  },
-  {
-    question: "Which free AI checker is most accurate for essays?",
-    answer: "Based on our 2026 testing, AI Free Text Pro and GPTZero offer the best accuracy for academic essays, with 94-96% correct identification rates. ZeroGPT is slightly less accurate (89-92%) but faster. We recommend checking with 2-3 tools for important submissions."
-  },
-  {
-    question: "Can I trust free AI detectors?",
-    answer: "Free AI detectors are useful for preliminary screening but have limitations. Accuracy ranges from 85-96% depending on the tool and content type. False positives occur in 1-5% of cases. For high-stakes submissions, consider using multiple detectors and reviewing flagged sections manually."
-  },
-  {
-    question: "What AI score is safe for Turnitin?",
-    answer: "Most institutions investigate AI scores above 20-25%. Scores under 15% are generally considered safe. However, policies vary by institution, so check your school's specific guidelines. When in doubt, aim for under 10% and be prepared to explain your writing process."
-  },
-  {
-    question: "Do AI checkers work on Grammarly-edited text?",
-    answer: "Yes, AI checkers analyze the text itself, not editing history. Grammarly corrections (grammar, spelling, punctuation) rarely trigger AI detection. However, if you used Grammarly's AI writing suggestions extensively, those sections may be flagged."
-  },
-  {
-    question: "How often should I check my essay for AI?",
-    answer: "Check once after your first complete draft, then again after major revisions. If you used any AI tools during writing (even for research or outlining), check before final submission. For important assignments, check 24 hours before the deadline to allow time for revisions if needed."
+    question: "How do I check my essay for AI before submitting?", answer: "Use a free AI detector like AI Free Text Pro, GPTZero, or ZeroGPT. Copy your essay text, paste it into the detector, and review the AI probability score. If the score is above 20-25%, consider revising flagged sections or using a humanization tool before submission."
+  }, {
+    question: "Which free AI checker is most accurate for essays?", answer: "Based on our 2026 testing, AI Free Text Pro and GPTZero offer the best accuracy for academic essays, with 94-96% correct identification rates. ZeroGPT is slightly less accurate (89-92%) but faster. We recommend checking with 2-3 tools for important submissions."
+  }, {
+    question: "Can I trust free AI detectors?", answer: "Free AI detectors are useful for preliminary screening but have limitations. Accuracy ranges from 85-96% depending on the tool and content type. False positives occur in 1-5% of cases. For high-stakes submissions, consider using multiple detectors and reviewing flagged sections manually."
+  }, {
+    question: "What AI score is safe for Turnitin?", answer: "Most institutions investigate AI scores above 20-25%. Scores under 15% are generally considered safe. However, policies vary by institution, so check your school's specific guidelines. When in doubt, aim for under 10% and be prepared to explain your writing process."
+  }, {
+    question: "Do AI checkers work on Grammarly-edited text?", answer: "Yes, AI checkers analyze the text itself, not editing history. Grammarly corrections (grammar, spelling, punctuation) rarely trigger AI detection. However, if you used Grammarly's AI writing suggestions extensively, those sections may be flagged."
+  }, {
+    question: "How often should I check my essay for AI?", answer: "Check once after your first complete draft, then again after major revisions. If you used any AI tools during writing (even for research or outlining), check before final submission. For important assignments, check 24 hours before the deadline to allow time for revisions if needed."
   }
 ];
 
@@ -102,75 +76,37 @@ const CheckMyEssayForAI = () => {
         
         <script type="application/ld+json">
           {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Article",
-            "headline": "Check My Essay for AI: 7 Free Tools Before You Submit (2026)",
-            "description": "Self-check your essay for AI before your professor does. Compare 7 free AI detectors with accuracy rates, step-by-step instructions, and what to do if flagged.",
-            "image": "https://aifreetextpro.com/og-image.png",
-            "author": {
-              "@type": "Person",
-              "name": "Dr. Sarah Chen",
-              "url": "https://aifreetextpro.com/team#sarah-chen"
-            },
-            "publisher": {
-              "@type": "Organization",
-              "name": "AI Free Text Pro",
-              "logo": {
-                "@type": "ImageObject",
-                "url": "https://aifreetextpro.com/logo.png"
+            "@context": "https://schema.org", "@type": "Article", "headline": "Check My Essay for AI: 7 Free Tools Before You Submit (2026)", "description": "Self-check your essay for AI before your professor does. Compare 7 free AI detectors with accuracy rates, step-by-step instructions, and what to do if flagged.", "image": "https://aifreetextpro.com/og-image.png", "author": {
+              "@type": "Person", "name": "Dr. Sarah Chen", "url": "https://aifreetextpro.com/team#sarah-chen"
+            }, "publisher": {
+              "@type": "Organization", "name": "AI Free Text Pro", "logo": {
+                "@type": "ImageObject", "url": "https://aifreetextpro.com/logo.png"
               }
-            },
-            "datePublished": "2026-03-09",
-            "dateModified": "2026-03-09",
-            "mainEntityOfPage": {
-              "@type": "WebPage",
-              "@id": "https://aifreetextpro.com/blog/check-my-essay-for-ai"
-            },
-            "wordCount": 2100
+            }, "datePublished": "2026-03-09", "dateModified": "2026-03-09", "mainEntityOfPage": {
+              "@type": "WebPage", "@id": "https://aifreetextpro.com/blog/check-my-essay-for-ai"
+            }, "wordCount": 2100
           })}
         </script>
         <script type="application/ld+json">
           {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            "itemListElement": [
-              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://aifreetextpro.com" },
-              { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://aifreetextpro.com/blog" },
-              { "@type": "ListItem", "position": 3, "name": "Check My Essay for AI" }
+            "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://aifreetextpro.com" }, { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://aifreetextpro.com/blog" }, { "@type": "ListItem", "position": 3, "name": "Check My Essay for AI" }
             ]
           })}
         </script>
         <script type="application/ld+json">
           {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "HowTo",
-            "name": "How to Check Your Essay for AI Detection",
-            "description": "Step-by-step guide to self-check your essay for AI before submitting",
-            "step": [
+            "@context": "https://schema.org", "@type": "HowTo", "name": "How to Check Your Essay for AI Detection", "description": "Step-by-step guide to self-check your essay for AI before submitting", "step": [
               {
-                "@type": "HowToStep",
-                "name": "Copy your essay text",
-                "text": "Select all text in your essay document and copy it to your clipboard"
-              },
-              {
-                "@type": "HowToStep",
-                "name": "Choose an AI detector",
-                "text": "Open a free AI detector like AI Free Text Pro, GPTZero, or ZeroGPT"
-              },
-              {
-                "@type": "HowToStep",
-                "name": "Paste and analyze",
-                "text": "Paste your essay into the detector and click analyze/check"
-              },
-              {
-                "@type": "HowToStep",
-                "name": "Review results",
-                "text": "Check the AI probability score and review highlighted sections"
-              },
-              {
-                "@type": "HowToStep",
-                "name": "Revise if needed",
-                "text": "If score is above 20%, revise flagged sections or use humanization"
+                "@type": "HowToStep", "name": "Copy your essay text", "text": "Select all text in your essay document and copy it to your clipboard"
+              }, {
+                "@type": "HowToStep", "name": "Choose an AI detector", "text": "Open a free AI detector like AI Free Text Pro, GPTZero, or ZeroGPT"
+              }, {
+                "@type": "HowToStep", "name": "Paste and analyze", "text": "Paste your essay into the detector and click analyze/check"
+              }, {
+                "@type": "HowToStep", "name": "Review results", "text": "Check the AI probability score and review highlighted sections"
+              }, {
+                "@type": "HowToStep", "name": "Revise if needed", "text": "If score is above 20%, revise flagged sections or use humanization"
               }
             ]
           })}
@@ -198,9 +134,7 @@ const CheckMyEssayForAI = () => {
         <div className="container mx-auto px-4 py-8 max-w-4xl">
           <Breadcrumbs
             items={[
-              { label: "Home", href: "/" },
-              { label: "Blog", href: "/blog" },
-              { label: "Check My Essay for AI" }
+              { label: "Home", href: "/" }, { label: "Blog", href: "/blog" }, { label: "Check My Essay for AI" }
             ]}
           />
           
@@ -216,7 +150,7 @@ const CheckMyEssayForAI = () => {
               </h1>
                 <QuickAnswer
                   question="How can I check my essay for AI before submitting?"
-                  answer="Run it through the same kind of detector your professor uses — GPTZero, Originality.AI, or a free checker — before you submit. These flag sentences that read as AI so you can revise them. Compare a couple of tools, since scores vary, and expect occasional false positives on formal writing."
+                  answer="Run it through the same kind of detector your professor uses, GPTZero, Originality.AI, or a free checker, before you submit. These flag sentences that read as AI so you can revise them. Compare a couple of tools, since scores vary, and expect occasional false positives on formal writing."
                 />
 
               <p className="text-xl text-muted-foreground mb-4">
@@ -247,11 +181,7 @@ const CheckMyEssayForAI = () => {
             
             <KeyTakeaways
               points={[
-                "Always self-check essays before submission, especially if you used any AI tools during writing",
-                "AI Free Text Pro and GPTZero offer the best free accuracy (94-96%) for academic essays",
-                "Scores under 15% are generally safe; above 20-25% typically triggers institutional review",
-                "Check with 2-3 different detectors for important assignments to catch false positives",
-                "If flagged, revise specific sections rather than rewriting the entire essay"
+                "Always self-check essays before submission, especially if you used any AI tools during writing", "AI Free Text Pro and GPTZero offer the best free accuracy (94-96%) for academic essays", "Scores under 15% are generally safe; above 20-25% typically triggers institutional review", "Check with 2-3 different detectors for important assignments to catch false positives", "If flagged, revise specific sections rather than rewriting the entire essay"
               ]}
             />
             

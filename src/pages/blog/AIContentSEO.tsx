@@ -14,28 +14,13 @@ import { AuthorSchema } from "@/components/AuthorSchema";
 
 const relatedArticles = [
   {
-    title: "Paraphrasing vs. Humanizing for Marketers",
-    description: "Why simple paraphrasers don't work for AI content",
-    href: "/blog/paraphrasing-vs-humanizing",
-    category: "Marketing"
-  },
-  {
-    title: "The Definitive Guide to Writing Human-Like Content",
-    description: "How to create natural content that reads authentically",
-    href: "/blog/pass-all-ai-detectors-guide",
-    category: "Guide"
-  },
-  {
-    title: "AI-Powered SEO Content in 2026",
-    description: "How AI is transforming search engine optimization",
-    href: "/blog/ai-powered-seo-content-2026",
-    category: "SEO"
-  },
-  {
-    title: "Zero-Click Search and AI Content",
-    description: "Strategies for visibility in the age of AI search",
-    href: "/blog/zero-click-search-ai-2026",
-    category: "SEO"
+    title: "Paraphrasing vs. Humanizing for Marketers", description: "Why simple paraphrasers don't work for AI content", href: "/blog/paraphrasing-vs-humanizing", category: "Marketing"
+  }, {
+    title: "The Definitive Guide to Writing Human-Like Content", description: "How to create natural content that reads authentically", href: "/blog/pass-all-ai-detectors-guide", category: "Guide"
+  }, {
+    title: "AI-Powered SEO Content in 2026", description: "How AI is transforming search engine optimization", href: "/blog/ai-powered-seo-content-2026", category: "SEO"
+  }, {
+    title: "Zero-Click Search and AI Content", description: "Strategies for visibility in the age of AI search", href: "/blog/zero-click-search-ai-2026", category: "SEO"
   }
 ];
 
@@ -65,21 +50,10 @@ const AIContentSEO = () => {
         
         <script type="application/ld+json">
           {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Article",
-            "headline": "AI Content for SEO: How to Generate Undetectable Articles That Rank",
-            "description": "How to use AI for SEO content at scale while ensuring articles pass detection.",
-            "datePublished": "2026-02-02",
-            "dateModified": "2026-04-05",
-            "author": {
-              "@type": "Person",
-              "name": "Dr. Sarah Chen",
-              "url": "https://aifreetextpro.com/team#sarah-chen",
-              "jobTitle": "Founder & CEO"
-            },
-            "publisher": {
-              "@type": "Organization",
-              "name": "AI Free Text Pro"
+            "@context": "https://schema.org", "@type": "Article", "headline": "AI Content for SEO: How to Generate Undetectable Articles That Rank", "description": "How to use AI for SEO content at scale while ensuring articles pass detection.", "datePublished": "2026-02-02", "dateModified": "2026-04-05", "author": {
+              "@type": "Person", "name": "Dr. Sarah Chen", "url": "https://aifreetextpro.com/team#sarah-chen", "jobTitle": "Founder & CEO"
+            }, "publisher": {
+              "@type": "Organization", "name": "AI Free Text Pro"
             }
           })}
         </script>
@@ -87,25 +61,13 @@ const AIContentSEO = () => {
         {/* BreadcrumbList Schema */}
         <script type="application/ld+json">
           {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            "itemListElement": [
+            "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
               {
-                "@type": "ListItem",
-                "position": 1,
-                "name": "Home",
-                "item": "https://aifreetextpro.com/"
-              },
-              {
-                "@type": "ListItem",
-                "position": 2,
-                "name": "Blog",
-                "item": "https://aifreetextpro.com/blog"
-              },
-              {
-                "@type": "ListItem",
-                "position": 3,
-                "name": "AI Content for SEO"
+                "@type": "ListItem", "position": 1, "name": "Home", "item": "https://aifreetextpro.com/"
+              }, {
+                "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://aifreetextpro.com/blog"
+              }, {
+                "@type": "ListItem", "position": 3, "name": "AI Content for SEO"
               }
             ]
           })}
@@ -125,9 +87,7 @@ const AIContentSEO = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <Breadcrumbs items={[
-              { label: "Home", href: "/" },
-              { label: "Blog", href: "/blog" },
-              { label: "AI Content for SEO" }
+              { label: "Home", href: "/" }, { label: "Blog", href: "/blog" }, { label: "AI Content for SEO" }
             ]} />
             
             <Link to="/blog">
@@ -145,7 +105,7 @@ const AIContentSEO = () => {
                   </span>
                   <div className="flex items-center gap-2">
                     <Calendar className="w-4 h-4" />
-                    January 20, 2025
+                    January 20, 2026
                   </div>
                   <div className="flex items-center gap-2">
                     <Clock className="w-4 h-4" />
@@ -169,10 +129,7 @@ const AIContentSEO = () => {
 
               <KeyTakeaways
                 points={[
-                  "Google rewards helpful content regardless of AI use, but raw AI text often lacks E-E-A-T signals",
-                  "The best SEO workflow combines AI drafting with human expertise and humanization tools",
-                  "AI-generated content needs structural variation and personal insights to rank competitively",
-                  "Always verify AI content passes detection before publishing to protect domain authority"
+                  "Google rewards helpful content regardless of AI use, but raw AI text often lacks E-E-A-T signals", "The best SEO workflow combines AI drafting with human expertise and humanization tools", "AI-generated content needs structural variation and personal insights to rank competitively", "Always verify AI content passes detection before publishing to protect domain authority"
                 ]}
               />
 
@@ -402,7 +359,7 @@ const AIContentSEO = () => {
 
                 <h2>Conclusion: AI Is the Future of SEO Content</h2>
                 <p>
-                  The agencies winning in 2025 aren't choosing between AI and human writers — they're combining both strategically. AI provides scale; humanization provides authenticity; human expertise provides value.
+                  The agencies winning in 2025 aren't choosing between AI and human writers, they're combining both strategically. AI provides scale; humanization provides authenticity; human expertise provides value.
                 </p>
                 <p>
                   The result is more content, better rankings, and lower costs. That's not a compromise; that's a competitive advantage.
@@ -422,10 +379,7 @@ const AIContentSEO = () => {
               </div>
 
                             <FAQSection faqs={[
-                { question: "Does Google penalize AI content?", answer: "Google doesn't penalize content for being AI-generated; it targets unhelpful, low-quality content. Well-edited, genuinely useful AI-assisted content can rank well." },
-                { question: "How do you make AI content rank?", answer: "Add original insight, specific data, and a human edit pass; match search intent; and humanize the phrasing so it reads naturally rather than generically." },
-                { question: "Is AI content safe for established sites?", answer: "Yes, when it meets the same quality bar as your other content. Publishing volumes of thin, unedited AI text is the real risk, not AI assistance itself." },
-              ]} />
+                { question: "Does Google penalize AI content?", answer: "Google doesn't penalize content for being AI-generated; it targets unhelpful, low-quality content. Well-edited, genuinely useful AI-assisted content can rank well." }, { question: "How do you make AI content rank?", answer: "Add original insight, specific data, and a human edit pass; match search intent; and humanize the phrasing so it reads naturally rather than generically." }, { question: "Is AI content safe for established sites?", answer: "Yes, when it meets the same quality bar as your other content. Publishing volumes of thin, unedited AI text is the real risk, not AI assistance itself." }, ]} />
 
               <RelatedArticles articles={relatedArticles} />
               

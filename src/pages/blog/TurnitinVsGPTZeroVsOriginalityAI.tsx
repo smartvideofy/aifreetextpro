@@ -65,7 +65,7 @@ const TurnitinVsGPTZeroVsOriginalityAI = () => {
             "datePublished": "2026-03-09",
             "dateModified": "2026-03-09",
             "mainEntityOfPage": "https://aifreetextpro.com/blog/turnitin-vs-gptzero-vs-originality-ai",
-            "wordCount": 2200
+            "wordCount": 1350
           })}
         </script>
         <script type="application/ld+json">

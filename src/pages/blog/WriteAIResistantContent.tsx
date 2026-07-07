@@ -234,6 +234,16 @@ export default function WriteAIResistantContent() {
               </section>
 
               <section>
+                <h2 className="text-3xl font-bold mb-4">What Burstiness and Perplexity Look Like in Practice</h2>
+                <p>
+                  These two words get thrown around a lot, so here is what they actually mean for your writing. Burstiness is the variation in your sentence lengths. AI tends to write a steady stream of similar, medium-length sentences, which reads as low burstiness. A human paragraph jumps around: a four-word sentence, then a long one that winds through a couple of clauses, then something in between. You raise burstiness simply by refusing to let every sentence be the same size.
+                </p>
+                <p>
+                  Perplexity is about predictability. A line like "In today's fast-paced world, technology plays a crucial role" is low perplexity because every word is the one a model expects next, which is exactly why it reads as machine-made. You raise perplexity by reaching for the specific over the generic: a real number, an unexpected but accurate word, a detail only someone who did the work would include. "Crucial role" is predictable; "it cut our onboarding time from nine days to two" is not. Aim for variation in length and specificity in word choice, and you are addressing both metrics at once without thinking about the math.
+                </p>
+              </section>
+
+              <section>
                 <h2 className="text-3xl font-bold mb-4">Tools to Support Humanization</h2>
                 <ul className="space-y-2">
                   <li><strong>Perplexity Analyzer:</strong> Measure sentence predictability to increase variation.</li>

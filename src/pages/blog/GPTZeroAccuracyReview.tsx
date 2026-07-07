@@ -58,7 +58,7 @@ const GPTZeroAccuracyReview = () => {
           "author": { "@type": "Person", "name": "Dr. Sarah Chen", "url": "https://aifreetextpro.com/team#sarah-chen" },
           "publisher": { "@type": "Organization", "name": "AI Free Text Pro", "logo": { "@type": "ImageObject", "url": "https://aifreetextpro.com/logo.png" } },
           "datePublished": publishDate, "dateModified": modifiedDate,
-          "mainEntityOfPage": "https://aifreetextpro.com/blog/gptzero-accuracy-review", "wordCount": 2200
+          "mainEntityOfPage": "https://aifreetextpro.com/blog/gptzero-accuracy-review", "wordCount": 1150
         })}</script>
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org", "@type": "BreadcrumbList",
@@ -121,6 +121,9 @@ const GPTZeroAccuracyReview = () => {
               <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-primary mt-1" /><span><strong>Burstiness:</strong> Measures variation in sentence complexity. Humans naturally alternate between simple and complex sentences, while AI maintains more uniform complexity</span></li>
             </ul>
             <p>GPTZero analyzes text at both the sentence and document level, providing a probability score for each. It then classifies the text as "Human," "Mixed," or "AI" based on these probabilities. For a deeper technical explanation, see our guide on <Link to="/blog/how-ai-detectors-score-text" className="text-primary hover:underline">how AI detectors score text</Link>.</p>
+
+            <h2 className="text-2xl font-bold mt-10 mb-4">How to Read a GPTZero Result</h2>
+            <p>GPTZero does not just hand you a single number, and misreading its output is where a lot of confusion starts. It sorts text into one of three labels, Human, Mixed, or AI, and it highlights individual sentences it considers machine-written. The label most people misunderstand is "Mixed." It does not mean the tool is unsure; it means GPTZero flagged some passages but not others, which is exactly what you would expect from text that is part human and part AI, or human writing that was heavily edited by a tool. The per-sentence highlighting is the part actually worth your attention, because it shows you which lines tripped the score rather than leaving you to guess. Two things are worth remembering as you read it. The percentage is a probability estimate, not a confession, and short selections produce shakier results than long ones, so a single highlighted sentence in an otherwise clean essay is weak evidence on its own.</p>
 
             <h2 className="text-2xl font-bold mt-10 mb-4">Our Test Methodology</h2>
             <p>We generated 250 text samples: 50 from each of five AI models (ChatGPT, Claude, Gemini, Perplexity, DeepSeek) plus 50 human-written samples as a control group. Each sample was 800-1,500 words covering academic, professional, and creative topics.</p>

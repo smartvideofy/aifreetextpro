@@ -13,28 +13,13 @@ import { AuthorSchema } from "@/components/AuthorSchema";
 
 const relatedArticles = [
   {
-    title: "The Definitive Guide to Writing Human-Like Content",
-    description: "How to create natural content for GPTZero, Turnitin, Copyleaks, and more",
-    href: "/blog/pass-all-ai-detectors-guide",
-    category: "Guide"
-  },
-  {
-    title: "How AI Detectors Work",
-    description: "The science behind AI text analysis",
-    href: "/blog/how-ai-detectors-work",
-    category: "Educational"
-  },
-  {
-    title: "Bypass Originality AI Detection",
-    description: "Strategies to pass Originality.AI detection",
-    href: "/bypass-originality-ai",
-    category: "Guide"
-  },
-  {
-    title: "AI Detection Tools Compared (2026 Edition)",
-    description: "See which AI detector is most accurate",
-    href: "/blog/ai-detection-tools-compared-2025",
-    category: "Comparison"
+    title: "The Definitive Guide to Writing Human-Like Content", description: "How to create natural content for GPTZero, Turnitin, Copyleaks, and more", href: "/blog/pass-all-ai-detectors-guide", category: "Guide"
+  }, {
+    title: "How AI Detectors Work", description: "The science behind AI text analysis", href: "/blog/how-ai-detectors-work", category: "Educational"
+  }, {
+    title: "Bypass Originality AI Detection", description: "Strategies to pass Originality.AI detection", href: "/bypass-originality-ai", category: "Guide"
+  }, {
+    title: "AI Detection Tools Compared (2026 Edition)", description: "See which AI detector is most accurate", href: "/blog/ai-detection-tools-compared-2025", category: "Comparison"
   }
 ];
 
@@ -64,21 +49,10 @@ const OriginalityAIReview = () => {
         
         <script type="application/ld+json">
           {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Article",
-            "headline": "Originality.AI Detector Review: Accuracy, Pricing, and How It Works",
-            "description": "Complete Originality.AI review covering accuracy, pricing, and how to improve AI writing quality.",
-            "datePublished": "2026-02-02",
-            "dateModified": "2026-04-05",
-            "author": {
-              "@type": "Person",
-              "name": "Dr. Sarah Chen",
-              "url": "https://aifreetextpro.com/team#sarah-chen",
-              "jobTitle": "Founder & CEO"
-            },
-            "publisher": {
-              "@type": "Organization",
-              "name": "AI Free Text Pro"
+            "@context": "https://schema.org", "@type": "Article", "headline": "Originality.AI Detector Review: Accuracy, Pricing, and How It Works", "description": "Complete Originality.AI review covering accuracy, pricing, and how to improve AI writing quality.", "datePublished": "2026-02-02", "dateModified": "2026-04-05", "author": {
+              "@type": "Person", "name": "Dr. Sarah Chen", "url": "https://aifreetextpro.com/team#sarah-chen", "jobTitle": "Founder & CEO"
+            }, "publisher": {
+              "@type": "Organization", "name": "AI Free Text Pro"
             }
           })}
         </script>
@@ -86,25 +60,13 @@ const OriginalityAIReview = () => {
         {/* BreadcrumbList Schema */}
         <script type="application/ld+json">
           {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            "itemListElement": [
+            "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
               {
-                "@type": "ListItem",
-                "position": 1,
-                "name": "Home",
-                "item": "https://aifreetextpro.com/"
-              },
-              {
-                "@type": "ListItem",
-                "position": 2,
-                "name": "Blog",
-                "item": "https://aifreetextpro.com/blog"
-              },
-              {
-                "@type": "ListItem",
-                "position": 3,
-                "name": "Originality.AI Review"
+                "@type": "ListItem", "position": 1, "name": "Home", "item": "https://aifreetextpro.com/"
+              }, {
+                "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://aifreetextpro.com/blog"
+              }, {
+                "@type": "ListItem", "position": 3, "name": "Originality.AI Review"
               }
             ]
           })}
@@ -113,39 +75,22 @@ const OriginalityAIReview = () => {
         {/* FAQPage Schema */}
         <script type="application/ld+json">
           {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": [
+            "@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
               {
-                "@type": "Question",
-                "name": "How accurate is Originality.AI at detecting AI content?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "In our testing, Originality.AI correctly identified 94% of AI-generated content. However, it has an 18% false positive rate, meaning nearly 1 in 5 human-written pieces may be wrongly flagged."
+                "@type": "Question", "name": "How accurate is Originality.AI at detecting AI content?", "acceptedAnswer": {
+                  "@type": "Answer", "text": "In our testing, Originality.AI correctly identified 94% of AI-generated content. However, it has an 18% false positive rate, meaning nearly 1 in 5 human-written pieces may be wrongly flagged."
                 }
-              },
-              {
-                "@type": "Question",
-                "name": "How much does Originality.AI cost?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Originality.AI uses credit-based pricing. Pay As You Go costs $30 for 3,000 credits (~300,000 words), while the Base Plan costs $14.95/month for 2,000 credits (~200,000 words)."
+              }, {
+                "@type": "Question", "name": "How much does Originality.AI cost?", "acceptedAnswer": {
+                  "@type": "Answer", "text": "Originality.AI uses credit-based pricing. Pay As You Go costs $30 for 3,000 credits (~300,000 words), while the Base Plan costs $14.95/month for 2,000 credits (~200,000 words)."
                 }
-              },
-              {
-                "@type": "Question",
-                "name": "Can you bypass Originality.AI detection?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Yes, specialized AI humanizers like AI Free Text Pro achieve a 96% bypass success rate against Originality.AI by restructuring content to match human writing patterns."
+              }, {
+                "@type": "Question", "name": "Can you bypass Originality.AI detection?", "acceptedAnswer": {
+                  "@type": "Answer", "text": "Yes, specialized AI humanizers like AI Free Text Pro achieve a 96% bypass success rate against Originality.AI by restructuring content to match human writing patterns."
                 }
-              },
-              {
-                "@type": "Question",
-                "name": "Why does Originality.AI have false positives?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Originality.AI's aggressive detection can flag human content that uses formal, structured writing styles. Writers with technical or academic styles are especially vulnerable to false accusations."
+              }, {
+                "@type": "Question", "name": "Why does Originality.AI have false positives?", "acceptedAnswer": {
+                  "@type": "Answer", "text": "Originality.AI's aggressive detection can flag human content that uses formal, structured writing styles. Writers with technical or academic styles are especially vulnerable to false accusations."
                 }
               }
             ]
@@ -166,9 +111,7 @@ const OriginalityAIReview = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <Breadcrumbs items={[
-              { label: "Home", href: "/" },
-              { label: "Blog", href: "/blog" },
-              { label: "Originality.AI Review" }
+              { label: "Home", href: "/" }, { label: "Blog", href: "/blog" }, { label: "Originality.AI Review" }
             ]} />
             
             <Link to="/blog">
@@ -186,7 +129,7 @@ const OriginalityAIReview = () => {
                   </span>
                   <div className="flex items-center gap-2">
                     <Calendar className="w-4 h-4" />
-                    January 20, 2025
+                    January 20, 2026
                   </div>
                   <div className="flex items-center gap-2">
                     <Clock className="w-4 h-4" />
@@ -199,7 +142,7 @@ const OriginalityAIReview = () => {
                 </h1>
                 <QuickAnswer
                   question="How accurate is Originality.AI, and can you beat it?"
-                  answer="Originality.AI is one of the most aggressive detectors: high catch rates but also notable false positives. To reduce flags on your own legitimate work, humanize it — vary sentence structure, add specificity and voice, then re-check. Use this to clear false flags, and follow any AI-use policy that applies to you."
+                  answer="Originality.AI is one of the most aggressive detectors: high catch rates but also notable false positives. To reduce flags on your own legitimate work, humanize it, vary sentence structure, add specificity and voice, then re-check. Use this to clear false flags, and follow any AI-use policy that applies to you."
                 />
 
 
@@ -210,10 +153,7 @@ const OriginalityAIReview = () => {
 
               <KeyTakeaways
                 points={[
-                  "Originality.AI is one of the most aggressive AI detectors, marketed to publishers and content agencies",
-                  "Its detection accuracy is high but prone to false positives on formal or structured human writing",
-                  "AI Free Text Pro achieves a 96% bypass rate against Originality.AI with a money-back guarantee",
-                  "Pricing starts at $14.95/month for 2,000 credits, making it expensive for high-volume users"
+                  "Originality.AI is one of the most aggressive AI detectors, marketed to publishers and content agencies", "Its detection accuracy is high but prone to false positives on formal or structured human writing", "AI Free Text Pro achieves a 96% bypass rate against Originality.AI with a money-back guarantee", "Pricing starts at $14.95/month for 2,000 credits, making it expensive for high-volume users"
                 ]}
               />
 

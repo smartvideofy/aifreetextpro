@@ -14,17 +14,11 @@ import { AuthorSchema } from "@/components/AuthorSchema";
 import { PostHowToSchema } from "@/components/PostHowToSchema";
 
 const relatedArticles = [
-  { title: "AI Creativity & Originality", description: "Can AI writing be truly original?", href: "/blog/can-ai-writing-be-original", category: "Educational" },
-  { title: "Tone, Voice & Flow in AI Writing", description: "Master the art of natural AI prose", href: "/blog/tone-voice-flow-ai-writing", category: "Writing Craft" },
-  { title: "Editing AI Drafts Like a Pro", description: "Professional editing techniques", href: "/blog/editing-ai-drafts-human-editor", category: "Writing Craft" },
-  { title: "Humanize AI Text Guide", description: "Complete humanization walkthrough", href: "/blog/humanize-ai-text-without-losing-voice", category: "How-To Guide" },
+  { title: "AI Creativity & Originality", description: "Can AI writing be truly original?", href: "/blog/can-ai-writing-be-original", category: "Educational" }, { title: "Tone, Voice & Flow in AI Writing", description: "Master the art of natural AI prose", href: "/blog/tone-voice-flow-ai-writing", category: "Writing Craft" }, { title: "Editing AI Drafts Like a Pro", description: "Professional editing techniques", href: "/blog/editing-ai-drafts-human-editor", category: "Writing Craft" }, { title: "Humanize AI Text Guide", description: "Complete humanization walkthrough", href: "/blog/humanize-ai-text-without-losing-voice", category: "How-To Guide" },
 ];
 
 const faqs = [
-  { question: "Why does AI writing sound so generic?", answer: "AI models generate text by predicting the most statistically likely next word. This produces safe, average prose that avoids risk. Creativity requires the opposite: unexpected word choices, unconventional structures, and surprising perspectives. You need to actively prompt for and edit toward these qualities." },
-  { question: "Can AI actually be creative?", answer: "AI can produce novel combinations of existing ideas, which is one form of creativity. However, it cannot draw from personal experience, genuine emotion, or original insight. The most creative AI-assisted writing uses AI for ideation and drafting while the human writer provides the creative spark." },
-  { question: "What prompts make AI write more creatively?", answer: "Specify a distinctive voice (e.g., 'write like a cynical food critic'), provide unusual constraints ('explain this using only nautical metaphors'), or ask for multiple angles on the same topic. The more specific and unusual your prompt, the more creative the output." },
-  { question: "Does humanization make AI writing more creative?", answer: "Humanization primarily adjusts linguistic patterns to read more naturally. For creativity specifically, you need to combine humanization with deliberate creative editing: adding metaphors, personal anecdotes, unexpected transitions, and a distinctive point of view." },
+  { question: "Why does AI writing sound so generic?", answer: "AI models generate text by predicting the most statistically likely next word. This produces safe, average prose that avoids risk. Creativity requires the opposite: unexpected word choices, unconventional structures, and surprising perspectives. You need to actively prompt for and edit toward these qualities." }, { question: "Can AI actually be creative?", answer: "AI can produce novel combinations of existing ideas, which is one form of creativity. However, it cannot draw from personal experience, genuine emotion, or original insight. The most creative AI-assisted writing uses AI for ideation and drafting while the human writer provides the creative spark." }, { question: "What prompts make AI write more creatively?", answer: "Specify a distinctive voice (e.g., 'write like a cynical food critic'), provide unusual constraints ('explain this using only nautical metaphors'), or ask for multiple angles on the same topic. The more specific and unusual your prompt, the more creative the output." }, { question: "Does humanization make AI writing more creative?", answer: "Humanization primarily adjusts linguistic patterns to read more naturally. For creativity specifically, you need to combine humanization with deliberate creative editing: adding metaphors, personal anecdotes, unexpected transitions, and a distinctive point of view." },
 ];
 
 const MakeAIWritingCreative = () => {
@@ -46,24 +40,13 @@ const MakeAIWritingCreative = () => {
         <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
         <script type="application/ld+json">
           {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Article",
-            "headline": "How to Make AI Writing More Creative and Original",
-            "author": { "@type": "Person", "name": "Dr. Sarah Chen", "url": "https://aifreetextpro.com/team#sarah-chen" },
-            "publisher": { "@type": "Organization", "name": "AI Free Text Pro", "logo": { "@type": "ImageObject", "url": "https://aifreetextpro.com/logo.png" } },
-            "datePublished": "2026-03-08",
-            "dateModified": "2026-03-08",
-            "wordCount": 2100
+            "@context": "https://schema.org", "@type": "Article", "headline": "How to Make AI Writing More Creative and Original", "author": { "@type": "Person", "name": "Dr. Sarah Chen", "url": "https://aifreetextpro.com/team#sarah-chen" }, "publisher": { "@type": "Organization", "name": "AI Free Text Pro", "logo": { "@type": "ImageObject", "url": "https://aifreetextpro.com/logo.png" } }, "datePublished": "2026-03-08", "dateModified": "2026-03-08", "wordCount": 1100
           })}
         </script>
         <script type="application/ld+json">
           {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            "itemListElement": [
-              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://aifreetextpro.com" },
-              { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://aifreetextpro.com/blog" },
-              { "@type": "ListItem", "position": 3, "name": "Make AI Writing Creative" }
+            "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://aifreetextpro.com" }, { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://aifreetextpro.com/blog" }, { "@type": "ListItem", "position": 3, "name": "Make AI Writing Creative" }
             ]
           })}
         </script>
@@ -88,9 +71,7 @@ const MakeAIWritingCreative = () => {
       <main className="pt-20 pb-16">
         <div className="container mx-auto px-4 max-w-4xl">
           <Breadcrumbs items={[
-            { label: "Home", href: "/" },
-            { label: "Blog", href: "/blog" },
-            { label: "Make AI Writing Creative" }
+            { label: "Home", href: "/" }, { label: "Blog", href: "/blog" }, { label: "Make AI Writing Creative" }
           ]} />
 
           <Link to="/blog" className="inline-flex items-center text-primary hover:underline mb-6 text-sm">
@@ -107,7 +88,7 @@ const MakeAIWritingCreative = () => {
               <h1 className="text-3xl md:text-4xl font-bold mb-4">How to Make AI Writing More Creative and Original</h1>
                 <QuickAnswer
                   question="How do you make AI writing more creative and original?"
-                  answer="Push past AI's safe defaults: prompt for specific angles, add your own examples and opinions, vary sentence structure, and cut cliches and predictable transitions. AI produces competent but generic prose, so the creativity comes from your direction and editing — using AI as a starting point, not the finished piece."
+                  answer="Push past AI's safe defaults: prompt for specific angles, add your own examples and opinions, vary sentence structure, and cut cliches and predictable transitions. AI produces competent but generic prose, so the creativity comes from your direction and editing, using AI as a starting point, not the finished piece."
                 />
 
               <p className="text-xl text-muted-foreground">AI produces competent prose. But competent is not enough. Here are 12 techniques to transform predictable AI output into writing that surprises, engages, and sounds unmistakably like you.</p>
@@ -116,11 +97,7 @@ const MakeAIWritingCreative = () => {
             <ReviewedBy name="Dr. Sarah Chen" role="Founder & CEO" slug="sarah-chen" />
 
             <KeyTakeaways points={[
-              "AI defaults to safe, average prose -- creativity requires deliberate intervention",
-              "Better prompts are the single most impactful change for creative output",
-              "Adding personal anecdotes and real experiences creates authenticity no AI can replicate",
-              "Structural creativity (non-linear narratives, unexpected formats) differentiates your content",
-              "The best creative AI writing combines AI efficiency with human imagination"
+              "AI defaults to safe, average prose, and creativity requires deliberate intervention", "Better prompts are the single most impactful change for creative output", "Adding personal anecdotes and real experiences creates authenticity no AI can replicate", "Structural creativity (non-linear narratives, unexpected formats) differentiates your content", "The best creative AI writing combines AI efficiency with human imagination"
             ]} />
 
             <h2>Why AI Writing Sounds the Same</h2>

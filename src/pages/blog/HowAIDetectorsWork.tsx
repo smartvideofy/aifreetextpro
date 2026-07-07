@@ -13,28 +13,13 @@ import { SpeakableSchema } from "@/components/SpeakableSchema";
 
 const relatedArticles = [
   {
-    title: "How AI Detectors Score Text",
-    description: "Behind-the-scenes look at detection metrics and scoring",
-    href: "/blog/how-ai-detectors-score-text",
-    category: "Technical"
-  },
-  {
-    title: "Signal vs. Noise: What Makes Text Human",
-    description: "Current patterns detectors care about with examples",
-    href: "/blog/signal-vs-noise-human-text",
-    category: "Technical"
-  },
-  {
-    title: "AI Detection Tools Compared (2026 Edition)",
-    description: "See which AI detector is most accurate in real-world tests",
-    href: "/blog/ai-detection-tools-compared-2025",
-    category: "Comparison"
-  },
-  {
-    title: "How to Detect AI-Generated Text",
-    description: "Expert techniques to spot AI writing patterns",
-    href: "/blog/how-to-detect-ai-generated-text",
-    category: "Guide"
+    title: "How AI Detectors Score Text", description: "Behind-the-scenes look at detection metrics and scoring", href: "/blog/how-ai-detectors-score-text", category: "Technical"
+  }, {
+    title: "Signal vs. Noise: What Makes Text Human", description: "Current patterns detectors care about with examples", href: "/blog/signal-vs-noise-human-text", category: "Technical"
+  }, {
+    title: "AI Detection Tools Compared (2026 Edition)", description: "See which AI detector is most accurate in real-world tests", href: "/blog/ai-detection-tools-compared-2025", category: "Comparison"
+  }, {
+    title: "How to Detect AI-Generated Text", description: "Expert techniques to spot AI writing patterns", href: "/blog/how-to-detect-ai-generated-text", category: "Guide"
   }
 ];
 
@@ -65,35 +50,16 @@ export default function HowAIDetectorsWork() {
         
         <script type="application/ld+json">
           {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Article",
-            "headline": "How AI Detectors Work: Perplexity and Burstiness Explained (2026)",
-            "description": "Understand the machine-learning and linguistic patterns behind AI detectors and how to write authentically human content.",
-            "image": {
-              "@type": "ImageObject",
-              "url": "https://aifreetextpro.com/logo.png",
-              "width": 1200,
-              "height": 675
-            },
-            "datePublished": "2026-02-02",
-            "dateModified": "2026-06-02",
-            "author": {
-              "@type": "Person",
-              "name": "Dr. Sarah Chen",
-              "url": "https://aifreetextpro.com/team#sarah-chen",
-              "jobTitle": "Founder & CEO"
-            },
-            "publisher": {
-              "@type": "Organization",
-              "name": "AI Free Text Pro",
-              "logo": {
-                "@type": "ImageObject",
-                "url": "https://aifreetextpro.com/logo.png"
+            "@context": "https://schema.org", "@type": "Article", "headline": "How AI Detectors Work: Perplexity and Burstiness Explained (2026)", "description": "Understand the machine-learning and linguistic patterns behind AI detectors and how to write authentically human content.", "image": {
+              "@type": "ImageObject", "url": "https://aifreetextpro.com/logo.png", "width": 1200, "height": 675
+            }, "datePublished": "2026-02-02", "dateModified": "2026-06-02", "author": {
+              "@type": "Person", "name": "Dr. Sarah Chen", "url": "https://aifreetextpro.com/team#sarah-chen", "jobTitle": "Founder & CEO"
+            }, "publisher": {
+              "@type": "Organization", "name": "AI Free Text Pro", "logo": {
+                "@type": "ImageObject", "url": "https://aifreetextpro.com/logo.png"
               }
-            },
-            "mainEntityOfPage": {
-              "@type": "WebPage",
-              "@id": "https://aifreetextpro.com/blog/how-ai-detectors-work"
+            }, "mainEntityOfPage": {
+              "@type": "WebPage", "@id": "https://aifreetextpro.com/blog/how-ai-detectors-work"
             }
           })}
         </script>
@@ -101,25 +67,13 @@ export default function HowAIDetectorsWork() {
         {/* BreadcrumbList Schema */}
         <script type="application/ld+json">
           {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            "itemListElement": [
+            "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
               {
-                "@type": "ListItem",
-                "position": 1,
-                "name": "Home",
-                "item": "https://aifreetextpro.com/"
-              },
-              {
-                "@type": "ListItem",
-                "position": 2,
-                "name": "Blog",
-                "item": "https://aifreetextpro.com/blog"
-              },
-              {
-                "@type": "ListItem",
-                "position": 3,
-                "name": "How AI Detectors Work"
+                "@type": "ListItem", "position": 1, "name": "Home", "item": "https://aifreetextpro.com/"
+              }, {
+                "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://aifreetextpro.com/blog"
+              }, {
+                "@type": "ListItem", "position": 3, "name": "How AI Detectors Work"
               }
             ]
           })}
@@ -128,63 +82,34 @@ export default function HowAIDetectorsWork() {
         {/* FAQPage Schema */}
         <script type="application/ld+json">
           {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": [
+            "@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
               {
-                "@type": "Question",
-                "name": "What is perplexity in AI detection?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Perplexity measures how 'surprised' a language model is by text. AI-generated content typically has low perplexity because it chooses predictable words, while human writing has higher perplexity due to creative and varied word choices."
+                "@type": "Question", "name": "What is perplexity in AI detection?", "acceptedAnswer": {
+                  "@type": "Answer", "text": "Perplexity measures how 'surprised' a language model is by text. AI-generated content typically has low perplexity because it chooses predictable words, while human writing has higher perplexity due to creative and varied word choices."
                 }
-              },
-              {
-                "@type": "Question",
-                "name": "What is burstiness in AI detection?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Burstiness measures variation in sentence structure. Humans naturally write with variation, mixing short, punchy sentences with longer, complex ones, while AI tends to generate uniform sentence lengths and structures."
+              }, {
+                "@type": "Question", "name": "What is burstiness in AI detection?", "acceptedAnswer": {
+                  "@type": "Answer", "text": "Burstiness measures variation in sentence structure. Humans naturally write with variation, mixing short, punchy sentences with longer, complex ones, while AI tends to generate uniform sentence lengths and structures."
                 }
-              },
-              {
-                "@type": "Question",
-                "name": "What patterns do AI detectors look for?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "AI detectors look for overuse of transition phrases, repetitive sentence structures, lack of contractions, overly formal language, perfect grammar with no quirks, and balanced methodical organization."
+              }, {
+                "@type": "Question", "name": "What patterns do AI detectors look for?", "acceptedAnswer": {
+                  "@type": "Answer", "text": "AI detectors look for overuse of transition phrases, repetitive sentence structures, lack of contractions, overly formal language, perfect grammar with no quirks, and balanced methodical organization."
                 }
-              },
-              {
-                "@type": "Question",
-                "name": "How accurate are AI detection tools?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "AI detection tools vary in accuracy, typically ranging from 70-95%. They use machine learning models trained on millions of texts, but can produce false positives on human content and false negatives on well-humanized AI content."
+              }, {
+                "@type": "Question", "name": "How accurate are AI detection tools?", "acceptedAnswer": {
+                  "@type": "Answer", "text": "AI detection tools vary in accuracy, typically ranging from 70-95%. They use machine learning models trained on millions of texts, but can produce false positives on human content and false negatives on well-humanized AI content."
                 }
-              },
-              {
-                "@type": "Question",
-                "name": "How do AI detectors work using perplexity and burstiness?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "AI detectors run your text through a reference language model (often a GPT-2 derivative) and score two signals. Perplexity measures token-by-token predictability — low perplexity means the next word was easy to guess, a hallmark of AI. Burstiness measures variance in sentence-level perplexity — humans spike high then low; AI stays flat. A classifier combines both scores to produce the final AI probability."
+              }, {
+                "@type": "Question", "name": "How do AI detectors work using perplexity and burstiness?", "acceptedAnswer": {
+                  "@type": "Answer", "text": "AI detectors run your text through a reference language model (often a GPT-2 derivative) and score two signals. Perplexity measures token-by-token predictability, low perplexity means the next word was easy to guess, a hallmark of AI. Burstiness measures variance in sentence-level perplexity, humans spike high then low; AI stays flat. A classifier combines both scores to produce the final AI probability."
                 }
-              },
-              {
-                "@type": "Question",
-                "name": "How does GPTZero use perplexity and burstiness officially?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "GPTZero officially documents perplexity (overall predictability) and burstiness (sentence-level variation) as its two foundational metrics. Each sentence gets a perplexity score; the spread of those scores becomes the burstiness signal. Low perplexity plus low burstiness flags text as AI. GPTZero combines this with a transformer classifier trained on millions of labeled samples."
+              }, {
+                "@type": "Question", "name": "How does GPTZero use perplexity and burstiness officially?", "acceptedAnswer": {
+                  "@type": "Answer", "text": "GPTZero officially documents perplexity (overall predictability) and burstiness (sentence-level variation) as its two foundational metrics. Each sentence gets a perplexity score; the spread of those scores becomes the burstiness signal. Low perplexity plus low burstiness flags text as AI. GPTZero combines this with a transformer classifier trained on millions of labeled samples."
                 }
-              },
-              {
-                "@type": "Question",
-                "name": "How is perplexity and burstiness used in AI text detection, explained simply?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Imagine a model trying to guess every next word in your text. If it guesses easily, perplexity is low — that screams AI. Now look at how that score changes across sentences: humans bounce between simple and complex sentences (high burstiness), while AI stays consistent (low burstiness). Detectors flag text that is both predictable AND uniform."
+              }, {
+                "@type": "Question", "name": "How is perplexity and burstiness used in AI text detection, explained simply?", "acceptedAnswer": {
+                  "@type": "Answer", "text": "Imagine a model trying to guess every next word in your text. If it guesses easily, perplexity is low, that screams AI. Now look at how that score changes across sentences: humans bounce between simple and complex sentences (high burstiness), while AI stays consistent (low burstiness). Detectors flag text that is both predictable AND uniform."
                 }
               }
             ]
@@ -210,9 +135,7 @@ export default function HowAIDetectorsWork() {
         <main className="container mx-auto px-4 py-12 max-w-4xl">
           <Breadcrumbs 
             items={[
-              { label: "Home", href: "/" },
-              { label: "Blog", href: "/blog" },
-              { label: "How AI Detectors Work" }
+              { label: "Home", href: "/" }, { label: "Blog", href: "/blog" }, { label: "How AI Detectors Work" }
             ]} 
           />
 
@@ -242,11 +165,7 @@ export default function HowAIDetectorsWork() {
 
             <KeyTakeaways 
               points={[
-                "AI detectors analyze perplexity (word predictability) and burstiness (sentence variation) to identify AI text",
-                "Low perplexity + uniform sentence length = high AI probability score",
-                "Human writing naturally has higher variation in word choice and structure",
-                "Detectors like GPTZero, Originality.AI, and Turnitin use similar underlying ML techniques",
-                "You can humanize AI text by adding personal anecdotes, varying sentence length, and using contractions"
+                "AI detectors analyze perplexity (word predictability) and burstiness (sentence variation) to identify AI text", "Low perplexity + uniform sentence length = high AI probability score", "Human writing naturally has higher variation in word choice and structure", "Detectors like GPTZero, Originality.AI, and Turnitin use similar underlying ML techniques", "You can humanize AI text by adding personal anecdotes, varying sentence length, and using contractions"
               ]}
             />
 

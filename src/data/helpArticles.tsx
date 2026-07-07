@@ -3,8 +3,7 @@ import React from "react";
 export const articleContent: Record<string, Record<string, { title: string; content: React.ReactNode }>> = {
   "getting-started": {
     "create-account": {
-      title: "How to Create an Account",
-      content: (
+      title: "How to Create an Account", content: (
         <div className="prose prose-invert max-w-none">
           <p className="lead">Creating an account with AI Free Text Pro is quick, free, and takes less than 60 seconds. Follow this step-by-step guide to get started with the most powerful AI humanization tool available.</p>
           
@@ -56,10 +55,8 @@ export const articleContent: Record<string, Record<string, { title: string; cont
           </ol>
         </div>
       )
-    },
-    "first-humanization": {
-      title: "Your First AI Humanization",
-      content: (
+    }, "first-humanization": {
+      title: "Your First AI Humanization", content: (
         <div className="prose prose-invert max-w-none">
           <p className="lead">Ready to transform your AI-generated text into natural, human-sounding content? This guide will walk you through your first humanization in under 30 seconds.</p>
           
@@ -157,10 +154,8 @@ export const articleContent: Record<string, Record<string, { title: string; cont
           </div>
         </div>
       )
-    },
-    "understanding-dashboard": {
-      title: "Understanding Your Dashboard",
-      content: (
+    }, "understanding-dashboard": {
+      title: "Understanding Your Dashboard", content: (
         <div className="prose prose-invert max-w-none">
           <p className="lead">Your AI Free Text Pro dashboard is your command center for all AI humanization activities. This guide explains every feature and metric available to help you make the most of your account.</p>
           
@@ -241,10 +236,8 @@ export const articleContent: Record<string, Record<string, { title: string; cont
           </div>
         </div>
       )
-    },
-    "choosing-writing-style": {
-      title: "Choosing the Right Writing Style",
-      content: (
+    }, "choosing-writing-style": {
+      title: "Choosing the Right Writing Style", content: (
         <div className="prose prose-invert max-w-none">
           <p className="lead">Selecting the correct writing style is one of the most important decisions for achieving natural-sounding, detection-proof results. This comprehensive guide will help you choose the perfect style for any situation.</p>
           
@@ -370,11 +363,9 @@ export const articleContent: Record<string, Record<string, { title: string; cont
         </div>
       )
     }
-  },
-  "ai-humanizer-guide": {
+  }, "ai-humanizer-guide": {
     "how-humanization-works": {
-      title: "How AI Humanization Works",
-      content: (
+      title: "How AI Humanization Works", content: (
         <div className="prose prose-invert max-w-none">
           <p className="lead">Understanding the science behind AI humanization helps you achieve better results and appreciate why AI Free Text Pro achieves industry-leading detection bypass rates.</p>
           
@@ -384,7 +375,7 @@ export const articleContent: Record<string, Record<string, { title: string; cont
             <li><strong>Uniform Sentence Length:</strong> AI tends to produce sentences of similar length throughout</li>
             <li><strong>Predictable Vocabulary:</strong> AI uses statistically "safe" word choices consistently</li>
             <li><strong>Even Paragraph Structure:</strong> AI creates paragraphs with similar structure and flow</li>
-            <li><strong>Low Perplexity:</strong> AI text is too "expected" – lacking surprising word choices</li>
+            <li><strong>Low Perplexity:</strong> AI text is too "expected" - lacking surprising word choices</li>
             <li><strong>Consistent Tone:</strong> AI maintains an unnaturally steady tone throughout</li>
           </ul>
           
@@ -481,10 +472,8 @@ export const articleContent: Record<string, Record<string, { title: string; cont
           </div>
         </div>
       )
-    },
-    "writing-style-modes": {
-      title: "Writing Style Modes Explained",
-      content: (
+    }, "writing-style-modes": {
+      title: "Writing Style Modes Explained", content: (
         <div className="prose prose-invert max-w-none">
           <p className="lead">Each writing style mode applies a unique set of transformation rules designed to match specific contexts and audiences. This deep dive explains exactly what each mode does and when to use it.</p>
           
@@ -615,10 +604,8 @@ export const articleContent: Record<string, Record<string, { title: string; cont
           </div>
         </div>
       )
-    },
-    "tips-best-results": {
-      title: "Tips for Best Results",
-      content: (
+    }, "tips-best-results": {
+      title: "Tips for Best Results", content: (
         <div className="prose prose-invert max-w-none">
           <p className="lead">Maximize your humanization success rate with these expert tips and best practices developed from analyzing millions of successful transformations.</p>
           
@@ -638,7 +625,7 @@ export const articleContent: Record<string, Record<string, { title: string; cont
           <ul>
             <li>Remove any AI system prompts or instructions that got included</li>
             <li>Keep formatting simple (headings, paragraphs, bullet points)</li>
-            <li>Ensure the text is complete – partial sentences may not humanize well</li>
+            <li>Ensure the text is complete - partial sentences may not humanize well</li>
             <li>Check for any obvious AI artifacts like "As an AI language model..."</li>
           </ul>
           
@@ -724,10 +711,8 @@ export const articleContent: Record<string, Record<string, { title: string; cont
           </div>
         </div>
       )
-    },
-    "bypassing-detectors": {
-      title: "Passing AI Detectors",
-      content: (
+    }, "bypassing-detectors": {
+      title: "Passing AI Detectors", content: (
         <div className="prose prose-invert max-w-none">
           <p className="lead">AI Free Text Pro is specifically engineered to help your content pass all major AI detection tools. Here's everything you need to know about our detection bypass capabilities.</p>
           
@@ -836,10 +821,8 @@ export const articleContent: Record<string, Record<string, { title: string; cont
           </div>
         </div>
       )
-    },
-    "advanced-settings": {
-      title: "Advanced Settings & Options",
-      content: (
+    }, "advanced-settings": {
+      title: "Advanced Settings & Options", content: (
         <div className="prose prose-invert max-w-none">
           <p className="lead">Power users can fine-tune their humanization results using advanced settings. This guide explains each option and when to use it for optimal results.</p>
           
@@ -877,7 +860,7 @@ export const articleContent: Record<string, Record<string, { title: string; cont
           <h3>Maximum Intensity (85-100%)</h3>
           <ul>
             <li><strong>Best for:</strong> Extreme cases where other settings fail</li>
-            <li><strong>Changes:</strong> Extensive rewriting – text may differ significantly</li>
+            <li><strong>Changes:</strong> Extensive rewriting - text may differ significantly</li>
             <li><strong>Meaning Preservation:</strong> 95% semantic accuracy (review carefully)</li>
             <li><strong>Detection Bypass:</strong> Highest possible bypass rate</li>
           </ul>
@@ -904,7 +887,7 @@ export const articleContent: Record<string, Record<string, { title: string; cont
           
           <h3>Best Practices:</h3>
           <ul>
-            <li>Don't over-preserve – too many protected terms reduce humanization effectiveness</li>
+            <li>Don't over-preserve - too many protected terms reduce humanization effectiveness</li>
             <li>Focus on words that absolutely must remain unchanged</li>
             <li>Include both singular and plural forms if needed</li>
           </ul>
@@ -969,11 +952,9 @@ export const articleContent: Record<string, Record<string, { title: string; cont
         </div>
       )
     }
-  },
-  "billing-payments": {
+  }, "billing-payments": {
     "subscription-plans": {
-      title: "Subscription Plans Explained",
-      content: (
+      title: "Subscription Plans Explained", content: (
         <div className="prose prose-invert max-w-none">
           <p className="lead">AI Free Text Pro offers flexible subscription plans to match your humanization needs, from casual users to power users processing thousands of words daily.</p>
           
@@ -1011,7 +992,7 @@ export const articleContent: Record<string, Record<string, { title: string; cont
           
           <h3>What's Included:</h3>
           <ul>
-            <li><strong>Unlimited words</strong> – humanize as much as you need</li>
+            <li><strong>Unlimited words</strong> - humanize as much as you need</li>
             <li>All 4 writing styles with enhanced performance</li>
             <li>Unlimited AI detection scans</li>
             <li>Advanced settings (intensity, keyword preservation, tone)</li>
@@ -1025,7 +1006,7 @@ export const articleContent: Record<string, Record<string, { title: string; cont
           <h3>Billing Options:</h3>
           <ul>
             <li><strong>Monthly:</strong> $19/month, billed monthly</li>
-            <li><strong>Annual:</strong> $152/year ($12.67/month – save 33%)</li>
+            <li><strong>Annual:</strong> $152/year ($12.67/month - save 33%)</li>
           </ul>
           
           <h3>Ideal For:</h3>
@@ -1123,10 +1104,8 @@ export const articleContent: Record<string, Record<string, { title: string; cont
           </div>
         </div>
       )
-    },
-    "upgrade-downgrade": {
-      title: "How to Upgrade or Downgrade",
-      content: (
+    }, "upgrade-downgrade": {
+      title: "How to Upgrade or Downgrade", content: (
         <div className="prose prose-invert max-w-none">
           <p className="lead">Changing your AI Free Text Pro subscription is quick and easy. You can upgrade instantly or schedule a downgrade for the end of your billing period.</p>
           
@@ -1142,7 +1121,7 @@ export const articleContent: Record<string, Record<string, { title: string; cont
           <p>Choose between:</p>
           <ul>
             <li><strong>Monthly:</strong> $19/month, billed monthly</li>
-            <li><strong>Annual:</strong> $152/year ($12.67/month – save 33%)</li>
+            <li><strong>Annual:</strong> $152/year ($12.67/month - save 33%)</li>
           </ul>
           
           <h3>Step 4: Enter Payment Details</h3>
@@ -1201,7 +1180,7 @@ export const articleContent: Record<string, Record<string, { title: string; cont
           <p>When switching between monthly and annual plans:</p>
           <ul>
             <li><strong>Monthly to Annual:</strong> You'll be credited for unused days of your current month</li>
-            <li><strong>Annual to Monthly:</strong> Not recommended – downgrade to Free first, then re-subscribe monthly</li>
+            <li><strong>Annual to Monthly:</strong> Not recommended - downgrade to Free first, then re-subscribe monthly</li>
           </ul>
           
           <h2>Pausing Your Subscription</h2>
@@ -1226,10 +1205,8 @@ export const articleContent: Record<string, Record<string, { title: string; cont
           </div>
         </div>
       )
-    },
-    "refund-policy": {
-      title: "Refund Policy & Cancellations",
-      content: (
+    }, "refund-policy": {
+      title: "Refund Policy & Cancellations", content: (
         <div className="prose prose-invert max-w-none">
           <p className="lead">This page outlines the refund and cancellation policies for AI Free Text Pro subscriptions.</p>
           
@@ -1294,11 +1271,9 @@ export const articleContent: Record<string, Record<string, { title: string; cont
         </div>
       )
     }
-  },
-  "privacy-security": {
+  }, "privacy-security": {
     "data-protection": {
-      title: "How We Protect Your Data",
-      content: (
+      title: "How We Protect Your Data", content: (
         <div className="prose prose-invert max-w-none">
           <p className="lead">Your privacy and data security are our top priorities. This guide explains exactly how we handle, protect, and secure your information at AI Free Text Pro.</p>
           
@@ -1329,7 +1304,7 @@ export const articleContent: Record<string, Record<string, { title: string; cont
           </ul>
           
           <div className="bg-muted/50 border border-border rounded-lg p-4 my-4">
-            <p className="text-sm m-0"><strong>Technical Note:</strong> The "history" feature in your dashboard stores only metadata (date, word count, style used) – not the actual text content. You can disable history tracking in settings.</p>
+            <p className="text-sm m-0"><strong>Technical Note:</strong> The "history" feature in your dashboard stores only metadata (date, word count, style used) - not the actual text content. You can disable history tracking in settings.</p>
           </div>
           
           <h2>Data Encryption</h2>
@@ -1409,14 +1384,12 @@ export const articleContent: Record<string, Record<string, { title: string; cont
           <p>For complete details, read our full <a href="/privacy-policy" className="text-primary hover:underline">Privacy Policy</a>.</p>
           
           <div className="bg-primary/10 border border-primary/20 rounded-lg p-4 mt-6">
-            <p className="text-sm m-0"><strong>💡 Privacy Tip:</strong> For maximum privacy, you can use AI Free Text Pro without creating an account – just visit the tool directly. However, you won't have access to history or personalized settings.</p>
+            <p className="text-sm m-0"><strong>💡 Privacy Tip:</strong> For maximum privacy, you can use AI Free Text Pro without creating an account - just visit the tool directly. However, you won't have access to history or personalized settings.</p>
           </div>
         </div>
       )
-    },
-    "account-security": {
-      title: "Account Security Best Practices",
-      content: (
+    }, "account-security": {
+      title: "Account Security Best Practices", content: (
         <div className="prose prose-invert max-w-none">
           <p className="lead">Protect your AI Free Text Pro account with these security best practices. A secure account ensures your data, history, and subscription remain safe.</p>
           
@@ -1439,7 +1412,7 @@ export const articleContent: Record<string, Record<string, { title: string; cont
           </ul>
           
           <div className="bg-muted/50 border border-border rounded-lg p-4 my-4">
-            <p className="text-sm m-0"><strong>Never share your password</strong> – AI Free Text Pro staff will never ask for your password. If someone claims to be from our team and asks for your password, it's a scam.</p>
+            <p className="text-sm m-0"><strong>Never share your password</strong> - AI Free Text Pro staff will never ask for your password. If someone claims to be from our team and asks for your password, it's a scam.</p>
           </div>
           
           <h2>Account Sharing Policy</h2>
@@ -1531,11 +1504,9 @@ export const articleContent: Record<string, Record<string, { title: string; cont
         </div>
       )
     }
-  },
-  "troubleshooting": {
+  }, "troubleshooting": {
     "text-not-humanized": {
-      title: "Why Isn't My Text Being Humanized?",
-      content: (
+      title: "Why Isn't My Text Being Humanized?", content: (
         <div className="prose prose-invert max-w-none">
           <p className="lead">If your text isn't being transformed or you're seeing unexpected results, this guide will help you identify and fix the issue quickly.</p>
           
@@ -1615,10 +1586,8 @@ export const articleContent: Record<string, Record<string, { title: string; cont
           </div>
         </div>
       )
-    },
-    "login-issues": {
-      title: "Login & Account Issues",
-      content: (
+    }, "login-issues": {
+      title: "Login & Account Issues", content: (
         <div className="prose prose-invert max-w-none">
           <p className="lead">Having trouble accessing your account? This guide covers the most common login issues and how to resolve them.</p>
           
@@ -1648,7 +1617,7 @@ export const articleContent: Record<string, Record<string, { title: string; cont
             <li>Check your inbox for a verification email from AI Free Text Pro</li>
             <li>Check your spam/junk folder</li>
             <li>Click the verification link in the email</li>
-            <li>If the link expired, try logging in – you'll get an option to resend</li>
+            <li>If the link expired, try logging in - you'll get an option to resend</li>
           </ol>
           
           <h2>Password Reset Issues</h2>
@@ -1656,11 +1625,11 @@ export const articleContent: Record<string, Record<string, { title: string; cont
           <h3>Not Receiving Reset Email</h3>
           <p>If the password reset email isn't arriving:</p>
           <ol>
-            <li><strong>Wait 5 minutes</strong> – emails can sometimes be delayed</li>
-            <li><strong>Check spam/junk folder</strong> – add @aifreetextpro.com to your contacts</li>
-            <li><strong>Verify the email address</strong> – make sure you're using the right one</li>
-            <li><strong>Check email filters</strong> – some email systems filter automated messages</li>
-            <li><strong>Try again</strong> – request a new reset email after waiting a few minutes</li>
+            <li><strong>Wait 5 minutes</strong> - emails can sometimes be delayed</li>
+            <li><strong>Check spam/junk folder</strong> - add @aifreetextpro.com to your contacts</li>
+            <li><strong>Verify the email address</strong> - make sure you're using the right one</li>
+            <li><strong>Check email filters</strong> - some email systems filter automated messages</li>
+            <li><strong>Try again</strong> - request a new reset email after waiting a few minutes</li>
           </ol>
           
           <h3>Reset Link Not Working</h3>
@@ -1719,10 +1688,8 @@ export const articleContent: Record<string, Record<string, { title: string; cont
           </div>
         </div>
       )
-    },
-    "payment-failed": {
-      title: "Payment Failed - What To Do",
-      content: (
+    }, "payment-failed": {
+      title: "Payment Failed - What To Do", content: (
         <div className="prose prose-invert max-w-none">
           <p className="lead">Payment failures are frustrating, but they're usually easy to fix. This guide explains common causes and how to resolve them quickly.</p>
           
@@ -1843,10 +1810,8 @@ export const articleContent: Record<string, Record<string, { title: string; cont
           </div>
         </div>
       )
-    },
-    "browser-compatibility": {
-      title: "Browser Compatibility Issues",
-      content: (
+    }, "browser-compatibility": {
+      title: "Browser Compatibility Issues", content: (
         <div className="prose prose-invert max-w-none">
           <p className="lead">AI Free Text Pro works best on modern, updated browsers. If you're experiencing display issues, errors, or features not working, this guide will help you troubleshoot.</p>
           
@@ -1997,10 +1962,8 @@ export const articleContent: Record<string, Record<string, { title: string; cont
           </div>
         </div>
       )
-    },
-    "word-count-issues": {
-      title: "Word Count Not Updating",
-      content: (
+    }, "word-count-issues": {
+      title: "Word Count Not Updating", content: (
         <div className="prose prose-invert max-w-none">
           <p className="lead">Your word count tracker shows how many words you've used and have remaining. If it seems incorrect, here's how to troubleshoot and fix the issue.</p>
           
@@ -2117,10 +2080,8 @@ export const articleContent: Record<string, Record<string, { title: string; cont
           </div>
         </div>
       )
-    },
-    "contact-support": {
-      title: "Contact Support",
-      content: (
+    }, "contact-support": {
+      title: "Contact Support", content: (
         <div className="prose prose-invert max-w-none">
           <p className="lead">Can't find the answer you're looking for? Our support team is here to help. Here's how to get in touch and what to include for the fastest resolution.</p>
           
@@ -2196,16 +2157,16 @@ export const articleContent: Record<string, Record<string, { title: string; cont
           <h2>Specialized Support Emails</h2>
           <p>For specific issues, you can also use:</p>
           <ul>
-            <li><strong>billing@aifreetextpro.com</strong> – Payment and subscription issues</li>
-            <li><strong>security@aifreetextpro.com</strong> – Security concerns or vulnerability reports</li>
-            <li><strong>privacy@aifreetextpro.com</strong> – Privacy and data-related requests</li>
+            <li><strong>billing@aifreetextpro.com</strong> - Payment and subscription issues</li>
+            <li><strong>security@aifreetextpro.com</strong> - Security concerns or vulnerability reports</li>
+            <li><strong>privacy@aifreetextpro.com</strong> - Privacy and data-related requests</li>
           </ul>
           
           <h2>Support Hours</h2>
           <p>Our support team is available:</p>
           <ul>
-            <li><strong>Monday–Friday:</strong> 9:00 AM – 6:00 PM EST</li>
-            <li><strong>Saturday–Sunday:</strong> Limited support (urgent issues only)</li>
+            <li><strong>Monday-Friday:</strong> 9:00 AM - 6:00 PM EST</li>
+            <li><strong>Saturday-Sunday:</strong> Limited support (urgent issues only)</li>
           </ul>
           <p>Emails received outside these hours will be addressed the next business day.</p>
           
@@ -2227,9 +2188,5 @@ export const articleContent: Record<string, Record<string, { title: string; cont
 };
 
 export const collectionNames: Record<string, string> = {
-  "getting-started": "Getting Started",
-  "ai-humanizer-guide": "AI Humanizer Guide",
-  "billing-payments": "Billing & Payments",
-  "privacy-security": "Privacy & Security",
-  "troubleshooting": "Troubleshooting"
+  "getting-started": "Getting Started", "ai-humanizer-guide": "AI Humanizer Guide", "billing-payments": "Billing & Payments", "privacy-security": "Privacy & Security", "troubleshooting": "Troubleshooting"
 };

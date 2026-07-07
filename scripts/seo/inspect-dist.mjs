@@ -36,7 +36,12 @@ async function loadRoutes() {
 
 function routeToFile(route) {
   if (route === "/") return resolve(DIST, "index.html");
-  return resolve(DIST, route.replace(/^\//, ""), "index.html");
+  const rel = route.replace(/^\//, "");
+  // After flatten-dist.mjs the route lives at dist/<route>.html; before flatten
+  // (or in CI that skips it) it's dist/<route>/index.html. Accept either.
+  const flat = resolve(DIST, `${rel}.html`);
+  if (existsSync(flat)) return flat;
+  return resolve(DIST, rel, "index.html");
 }
 
 function extractTitle(html) {

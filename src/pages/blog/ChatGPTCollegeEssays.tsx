@@ -63,7 +63,7 @@ const ChatGPTCollegeEssays = () => {
             "datePublished": "2026-03-08",
             "dateModified": "2026-03-08",
             "mainEntityOfPage": "https://aifreetextpro.com/blog/chatgpt-college-essays",
-            "wordCount": 2200
+            "wordCount": 1150
           })}
         </script>
       </Helmet>
@@ -152,6 +152,11 @@ const ChatGPTCollegeEssays = () => {
                 <li>A conspicuous absence of first-person perspective and lived experience</li>
               </ul>
               <p>These patterns create a statistical fingerprint that is remarkably consistent across different ChatGPT essays, making detection straightforward for trained systems.</p>
+            </section>
+
+            <section>
+              <h2>How Professors Catch AI Without Any Detector</h2>
+              <p>Software is only half the story. Plenty of professors flag AI essays before a detector ever runs, simply by reading closely, and these tells are harder to beat than a perplexity score. The biggest one is fabricated sources. ChatGPT routinely invents citations that look real, complete with plausible authors, journals, and page numbers, and a professor who checks a single reference and finds it does not exist has all the evidence they need. Voice mismatch is the next giveaway: if your discussion posts read one way all semester and a polished essay suddenly arrives in a different register, that gap stands out to someone who has read your work for months. They also notice essays that answer a slightly different, more generic question than the one assigned, and examples that stay abstract where a student who did the reading would name the specific case from week six. None of this requires a tool, which is exactly why leaning on AI for the whole draft is riskier than the detection numbers alone suggest.</p>
             </section>
 
             <section>

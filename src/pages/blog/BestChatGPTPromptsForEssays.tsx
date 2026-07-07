@@ -53,7 +53,7 @@ const BestChatGPTPromptsForEssays = () => {
           "author": { "@type": "Person", "name": "Marcus Williams", "url": "https://aifreetextpro.com/team#marcus-williams" },
           "publisher": { "@type": "Organization", "name": "AI Free Text Pro", "logo": { "@type": "ImageObject", "url": "https://aifreetextpro.com/logo.png" } },
           "datePublished": "2026-02-25T08:00:00Z", "dateModified": "2026-04-05",
-          "mainEntityOfPage": "https://aifreetextpro.com/blog/best-chatgpt-prompts-for-essays", "wordCount": 2100
+          "mainEntityOfPage": "https://aifreetextpro.com/blog/best-chatgpt-prompts-for-essays", "wordCount": 1100
         })}</script>
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org", "@type": "BreadcrumbList",
@@ -115,6 +115,9 @@ const BestChatGPTPromptsForEssays = () => {
             </div>
             <p className="text-muted-foreground leading-relaxed">This foundation prompt addresses the three biggest giveaways of AI writing: uniform sentence length, predictable transitions, and excessive confidence. You can prepend it to any essay topic to immediately improve naturalness.</p>
 
+            <h2 className="text-2xl font-bold mt-10 mb-4 text-foreground">Make the Prompts Yours: Feed It Your Voice</h2>
+            <p className="text-muted-foreground leading-relaxed">The single biggest upgrade to any prompt on this page is not a clever phrasing trick; it is context only you can supply. Before you ask for a draft, paste in a paragraph or two of your own past writing and tell it: "Match this voice, vocabulary, and sentence rhythm." A model that has seen how you actually write produces something far closer to you than a generic "thoughtful student" persona ever will. Then give it the real assignment details: the rubric, the prompt's exact wording, and the specific sources you have already read. This does two things at once. It grounds the output in your material instead of generic filler, so you get something you can genuinely build on, and it makes the result read as yours because it is shaped by your style and your evidence. A prompt that says "write an essay about climate change" gets you a template. A prompt that includes your voice sample, your rubric, and the three articles you annotated gets you a starting draft that already sounds like you and already engages your sources.</p>
+
             <h2 className="text-2xl font-bold mt-10 mb-4 text-foreground">Argumentative Essay Prompts</h2>
             <div className="space-y-4 my-6 not-prose">
               <div className="bg-muted/50 border border-border rounded-lg p-4">
@@ -135,7 +138,7 @@ const BestChatGPTPromptsForEssays = () => {
               </div>
               <div className="bg-muted/50 border border-border rounded-lg p-4">
                 <p className="font-semibold text-foreground text-sm mb-2">Prompt 4: The Contextualizer</p>
-                <p className="text-sm text-muted-foreground italic">"Analyze [topic] by connecting it to a broader historical or cultural context. Write as a student who did extra research beyond the assigned readings. Reference one source your classmates probably did not find. Use a slightly informal academic voice -- smart but not stiff."</p>
+                <p className="text-sm text-muted-foreground italic">"Analyze [topic] by connecting it to a broader historical or cultural context. Write as a student who did extra research beyond the assigned readings. Reference one source your classmates probably did not find. Use a slightly informal academic voice, smart but not stiff."</p>
               </div>
             </div>
 

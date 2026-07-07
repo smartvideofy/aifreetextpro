@@ -54,7 +54,7 @@ const CanTurnitinDetectDeepSeek = () => {
           "author": { "@type": "Person", "name": "Dr. Sarah Chen", "url": "https://aifreetextpro.com/team#sarah-chen" },
           "publisher": { "@type": "Organization", "name": "AI Free Text Pro", "logo": { "@type": "ImageObject", "url": "https://aifreetextpro.com/logo.png" } },
           "datePublished": "2026-02-25T08:00:00Z", "dateModified": "2026-04-05",
-          "mainEntityOfPage": "https://aifreetextpro.com/blog/can-turnitin-detect-deepseek", "wordCount": 2000,
+          "mainEntityOfPage": "https://aifreetextpro.com/blog/can-turnitin-detect-deepseek", "wordCount": 1050,
           "about": { "@type": "Thing", "name": "DeepSeek AI Detection" },
           "mentions": [{ "@type": "Thing", "name": "DeepSeek" }, { "@type": "Thing", "name": "Turnitin" }]
         })}</script>
@@ -147,6 +147,9 @@ const CanTurnitinDetectDeepSeek = () => {
 
             <h2 className="text-2xl font-bold mt-10 mb-4 text-foreground">What About DeepSeek's "Thinking" Output?</h2>
             <p className="text-muted-foreground leading-relaxed">One unique aspect of DeepSeek R1 is its visible chain-of-thought reasoning. Some students have tried submitting the "thinking" portion of DeepSeek's output, hoping it looks more human because it contains self-corrections and deliberation. Our tests show this approach actually increases detection rates because the thinking format creates highly predictable structural patterns that detectors quickly learn to flag.</p>
+
+            <h2 className="text-2xl font-bold mt-10 mb-4 text-foreground">A Privacy Note Most Students Overlook</h2>
+            <p className="text-muted-foreground leading-relaxed">Detection is not the only reason to be careful with DeepSeek for schoolwork. Because the model is run by a China-based company, its handling of user data drew scrutiny soon after launch, and in early 2025 several governments and institutions restricted or banned the official app on government devices over privacy concerns. For you, the practical point is simple: anything you paste into the consumer app, including drafts of unpublished assignments or personal details, may be processed and stored on servers outside your country under different privacy rules. That is worth weighing before you hand it an essay you have not submitted yet. If you do use it, treat it like a public tool: share ideas and questions, not your full private draft.</p>
 
             <h2 className="text-2xl font-bold mt-10 mb-4 text-foreground">How to Use DeepSeek Responsibly for Academics</h2>
             <div className="bg-muted/50 border border-border rounded-lg p-6 my-6 not-prose">

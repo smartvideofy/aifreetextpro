@@ -13,28 +13,13 @@ import { SpeakableSchema } from "@/components/SpeakableSchema";
 
 const relatedArticles = [
   {
-    title: "How to Humanize AI-Generated Text",
-    description: "Make AI writing sound naturally human",
-    href: "/blog/humanize-ai-text-without-losing-voice",
-    category: "Guide"
-  },
-  {
-    title: "Top 10 AI Humanizer Tools for 2026",
-    description: "Best tools to improve AI-generated content",
-    href: "/blog/top-10-ai-humanizer-tools-2025",
-    category: "Tools"
-  },
-  {
-    title: "Editing AI Drafts Like a Human Editor",
-    description: "Professional techniques for refining AI content",
-    href: "/blog/editing-ai-drafts-human-editor",
-    category: "Editing"
-  },
-  {
-    title: "AI Humanization Pitfalls to Avoid",
-    description: "Common mistakes writers make when humanizing AI text",
-    href: "/blog/ai-humanization-pitfalls",
-    category: "Best Practices"
+    title: "How to Humanize AI-Generated Text", description: "Make AI writing sound naturally human", href: "/blog/humanize-ai-text-without-losing-voice", category: "Guide"
+  }, {
+    title: "Top 10 AI Humanizer Tools for 2026", description: "Best tools to improve AI-generated content", href: "/blog/top-10-ai-humanizer-tools-2025", category: "Tools"
+  }, {
+    title: "Editing AI Drafts Like a Human Editor", description: "Professional techniques for refining AI content", href: "/blog/editing-ai-drafts-human-editor", category: "Editing"
+  }, {
+    title: "AI Humanization Pitfalls to Avoid", description: "Common mistakes writers make when humanizing AI text", href: "/blog/ai-humanization-pitfalls", category: "Best Practices"
   }
 ];
 
@@ -63,35 +48,16 @@ export default function WhyAIContentFails() {
         <meta name="twitter:image" content="https://aifreetextpro.com/og-image.png" />
         <script type="application/ld+json">
           {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Article",
-            "headline": "Why Most AI Content Fails Human Review (and How to Fix It)",
-            "description": "Discover why AI-generated content still gets flagged and the practical steps to make your writing pass any human review.",
-            "image": {
-              "@type": "ImageObject",
-               "url": "https://aifreetextpro.com/logo.png",
-              "width": 1200,
-              "height": 675
-            },
-            "datePublished": "2026-02-02",
-            "dateModified": "2026-04-05",
-            "author": {
-              "@type": "Person",
-              "name": "Dr. Sarah Chen",
-              "url": "https://aifreetextpro.com/team#sarah-chen",
-              "jobTitle": "Founder & CEO"
-            },
-            "publisher": {
-              "@type": "Organization",
-              "name": "AI Free Text Pro",
-              "logo": {
-                "@type": "ImageObject",
-                "url": "https://aifreetextpro.com/logo.png"
+            "@context": "https://schema.org", "@type": "Article", "headline": "Why Most AI Content Fails Human Review (and How to Fix It)", "description": "Discover why AI-generated content still gets flagged and the practical steps to make your writing pass any human review.", "image": {
+              "@type": "ImageObject", "url": "https://aifreetextpro.com/logo.png", "width": 1200, "height": 675
+            }, "datePublished": "2026-02-02", "dateModified": "2026-04-05", "author": {
+              "@type": "Person", "name": "Dr. Sarah Chen", "url": "https://aifreetextpro.com/team#sarah-chen", "jobTitle": "Founder & CEO"
+            }, "publisher": {
+              "@type": "Organization", "name": "AI Free Text Pro", "logo": {
+                "@type": "ImageObject", "url": "https://aifreetextpro.com/logo.png"
               }
-            },
-            "mainEntityOfPage": {
-              "@type": "WebPage",
-              "@id": "https://aifreetextpro.com/blog/why-ai-content-fails-human-review"
+            }, "mainEntityOfPage": {
+              "@type": "WebPage", "@id": "https://aifreetextpro.com/blog/why-ai-content-fails-human-review"
             }
           })}
         </script>
@@ -99,25 +65,13 @@ export default function WhyAIContentFails() {
         {/* BreadcrumbList Schema */}
         <script type="application/ld+json">
           {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            "itemListElement": [
+            "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
               {
-                "@type": "ListItem",
-                "position": 1,
-                "name": "Home",
-                "item": "https://aifreetextpro.com/"
-              },
-              {
-                "@type": "ListItem",
-                "position": 2,
-                "name": "Blog",
-                "item": "https://aifreetextpro.com/blog"
-              },
-              {
-                "@type": "ListItem",
-                "position": 3,
-                "name": "Why AI Content Fails Human Review"
+                "@type": "ListItem", "position": 1, "name": "Home", "item": "https://aifreetextpro.com/"
+              }, {
+                "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://aifreetextpro.com/blog"
+              }, {
+                "@type": "ListItem", "position": 3, "name": "Why AI Content Fails Human Review"
               }
             ]
           })}
@@ -126,39 +80,22 @@ export default function WhyAIContentFails() {
         {/* FAQPage Schema */}
         <script type="application/ld+json">
           {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": [
+            "@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
               {
-                "@type": "Question",
-                "name": "Why does AI content fail human review?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "AI content often fails because it uses generic, template-like structure, lacks personal experience and emotional depth, provides surface-level analysis, has overly perfect grammar, and misses the nuanced human touch that readers and reviewers expect."
+                "@type": "Question", "name": "Why does AI content fail human review?", "acceptedAnswer": {
+                  "@type": "Answer", "text": "AI content often fails because it uses generic, template-like structure, lacks personal experience and emotional depth, provides surface-level analysis, has overly perfect grammar, and misses the nuanced human touch that readers and reviewers expect."
                 }
-              },
-              {
-                "@type": "Question",
-                "name": "How can I make my AI writing sound more human?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Add personal anecdotes and real examples, vary your sentence structure, use conversational language with contractions, include specific details instead of generic statements, show your personality, and read your content aloud to catch awkward phrasing."
+              }, {
+                "@type": "Question", "name": "How can I make my AI writing sound more human?", "acceptedAnswer": {
+                  "@type": "Answer", "text": "Add personal anecdotes and real examples, vary your sentence structure, use conversational language with contractions, include specific details instead of generic statements, show your personality, and read your content aloud to catch awkward phrasing."
                 }
-              },
-              {
-                "@type": "Question",
-                "name": "What are the biggest AI writing tells?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "The biggest AI writing tells include repetitive sentence patterns, overuse of transition phrases like 'furthermore' and 'moreover', lack of personal stories, perfect grammar with no quirks, and generic or template-like content structure."
+              }, {
+                "@type": "Question", "name": "What are the biggest AI writing tells?", "acceptedAnswer": {
+                  "@type": "Answer", "text": "The biggest AI writing tells include repetitive sentence patterns, overuse of transition phrases like 'furthermore' and 'moreover', lack of personal stories, perfect grammar with no quirks, and generic or template-like content structure."
                 }
-              },
-              {
-                "@type": "Question",
-                "name": "Can AI humanizer tools help fix AI content?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Yes, AI humanizer tools like AI Free Text Pro can automatically restructure AI content to match human writing patterns, add natural variations, and remove common AI markers while preserving the original meaning and intent."
+              }, {
+                "@type": "Question", "name": "Can AI humanizer tools help fix AI content?", "acceptedAnswer": {
+                  "@type": "Answer", "text": "Yes, AI humanizer tools like AI Free Text Pro can automatically restructure AI content to match human writing patterns, add natural variations, and remove common AI markers while preserving the original meaning and intent."
                 }
               }
             ]
@@ -184,9 +121,7 @@ export default function WhyAIContentFails() {
         <main className="container mx-auto px-4 py-12 max-w-4xl">
           <Breadcrumbs 
             items={[
-              { label: "Home", href: "/" },
-              { label: "Blog", href: "/blog" },
-              { label: "Why AI Content Fails" }
+              { label: "Home", href: "/" }, { label: "Blog", href: "/blog" }, { label: "Why AI Content Fails" }
             ]} 
           />
 
@@ -205,17 +140,14 @@ export default function WhyAIContentFails() {
               </h1>
                 <QuickAnswer
                   question="Why does AI content fail human review?"
-                  answer="It fails on five flaws: template structure, no personal anecdotes, surface-level analysis, robotic phrasing, and overly perfect consistency. AI is fluent but generic. The fix is human input — specific examples, genuine perspective, varied rhythm, and original analysis — which is also what makes content read authentically."
+                  answer="It fails on five flaws: template structure, no personal anecdotes, surface-level analysis, robotic phrasing, and overly perfect consistency. AI is fluent but generic. The fix is human input, specific examples, genuine perspective, varied rhythm, and original analysis, which is also what makes content read authentically."
                 />
 
             </header>
 
             <KeyTakeaways
               points={[
-                "AI content fails because of generic structure, lack of personal experience, and overly perfect grammar",
-                "The five fatal flaws: template structure, missing anecdotes, surface-level analysis, robotic tone, predictable transitions",
-                "Adding specific details, personal stories, and natural imperfections makes AI content pass human review",
-                "AI humanizer tools can automatically fix these patterns while preserving the original meaning"
+                "AI content fails because of generic structure, lack of personal experience, and overly perfect grammar", "The five fatal flaws: template structure, missing anecdotes, surface-level analysis, robotic tone, predictable transitions", "Adding specific details, personal stories, and natural imperfections makes AI content pass human review", "AI humanizer tools can automatically fix these patterns while preserving the original meaning"
               ]}
             />
 

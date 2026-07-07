@@ -14,51 +14,27 @@ import { AuthorSchema } from "@/components/AuthorSchema";
 
 const relatedArticles = [
   {
-    title: "Academic AI Writing: How to Use AI Safely in School",
-    description: "Practical strategies for students navigating AI policies in academic settings.",
-    href: "/blog/academic-ai-writing-safely",
-    category: "Academic"
-  },
-  {
-    title: "How to Cite AI-Generated Content: APA, MLA, Chicago & Harvard",
-    description: "Complete citation templates for every major academic format.",
-    href: "/blog/how-to-cite-ai-generated-content",
-    category: "Academic"
-  },
-  {
-    title: "Can Teachers Detect ChatGPT? What Students Need to Know",
-    description: "How educators identify AI writing and what detection tools they use.",
-    href: "/blog/can-teachers-detect-chatgpt",
-    category: "Academic"
-  },
-  {
-    title: "AI Detection False Positives: What to Do When You're Wrongly Flagged",
-    description: "How to respond when your original work is incorrectly identified as AI-generated.",
-    href: "/blog/ai-detection-false-positives",
-    category: "Educational"
+    title: "Academic AI Writing: How to Use AI Safely in School", description: "Practical strategies for students navigating AI policies in academic settings.", href: "/blog/academic-ai-writing-safely", category: "Academic"
+  }, {
+    title: "How to Cite AI-Generated Content: APA, MLA, Chicago & Harvard", description: "Complete citation templates for every major academic format.", href: "/blog/how-to-cite-ai-generated-content", category: "Academic"
+  }, {
+    title: "Can Teachers Detect ChatGPT? What Students Need to Know", description: "How educators identify AI writing and what detection tools they use.", href: "/blog/can-teachers-detect-chatgpt", category: "Academic"
+  }, {
+    title: "AI Detection False Positives: What to Do When You're Wrongly Flagged", description: "How to respond when your original work is incorrectly identified as AI-generated.", href: "/blog/ai-detection-false-positives", category: "Educational"
   }
 ];
 
 const faqs = [
   {
-    question: "Can I use AI to help write my thesis or dissertation?",
-    answer: "Most universities allow AI as a drafting and editing aid for graduate research, provided you disclose its use and the final intellectual contribution is your own. Always check your program's specific policy, as requirements vary between departments and institutions."
-  },
-  {
-    question: "Will Turnitin flag my research paper if I used AI for parts of it?",
-    answer: "Turnitin's AI detection can flag text that retains typical AI patterns. If you use AI for initial drafts but substantially revise, restructure, and add your own analysis, the final text is much less likely to trigger detection. Tools like AI Free Text Pro can help ensure your revised drafts read naturally."
-  },
-  {
-    question: "How should I cite AI tools in my research paper?",
-    answer: "APA 7th edition treats AI as a software tool: list the AI name, version, developer, and date. MLA recommends describing the prompt used. Chicago style is still evolving but generally follows the software citation model. Always check your journal's or department's specific requirements."
-  },
-  {
-    question: "Is using AI for literature review considered academic dishonesty?",
-    answer: "Using AI to locate, summarize, or organize sources is generally accepted as a research aid, similar to using a reference manager. The key distinction is that you must read and verify every source yourself, since AI can hallucinate citations. Presenting AI-generated summaries as your own critical analysis would be dishonest."
-  },
-  {
-    question: "What parts of a research paper can AI help with ethically?",
-    answer: "AI is most ethically useful for brainstorming research questions, organizing literature, drafting methodology descriptions, improving grammar and clarity, and formatting references. It should not replace your original data analysis, theoretical contributions, or critical argumentation."
+    question: "Can I use AI to help write my thesis or dissertation?", answer: "Most universities allow AI as a drafting and editing aid for graduate research, provided you disclose its use and the final intellectual contribution is your own. Always check your program's specific policy, as requirements vary between departments and institutions."
+  }, {
+    question: "Will Turnitin flag my research paper if I used AI for parts of it?", answer: "Turnitin's AI detection can flag text that retains typical AI patterns. If you use AI for initial drafts but substantially revise, restructure, and add your own analysis, the final text is much less likely to trigger detection. Tools like AI Free Text Pro can help ensure your revised drafts read naturally."
+  }, {
+    question: "How should I cite AI tools in my research paper?", answer: "APA 7th edition treats AI as a software tool: list the AI name, version, developer, and date. MLA recommends describing the prompt used. Chicago style is still evolving but generally follows the software citation model. Always check your journal's or department's specific requirements."
+  }, {
+    question: "Is using AI for literature review considered academic dishonesty?", answer: "Using AI to locate, summarize, or organize sources is generally accepted as a research aid, similar to using a reference manager. The key distinction is that you must read and verify every source yourself, since AI can hallucinate citations. Presenting AI-generated summaries as your own critical analysis would be dishonest."
+  }, {
+    question: "What parts of a research paper can AI help with ethically?", answer: "AI is most ethically useful for brainstorming research questions, organizing literature, drafting methodology descriptions, improving grammar and clarity, and formatting references. It should not replace your original data analysis, theoretical contributions, or critical argumentation."
   }
 ];
 
@@ -91,39 +67,19 @@ const AIForResearchPapers = () => {
         <meta name="twitter:image" content="https://aifreetextpro.com/og-image.png" />
         <script type="application/ld+json">
           {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Article",
-            "headline": "How to Use AI for Research Papers (Without Academic Consequences)",
-            "description": "How graduate students and researchers can use AI tools ethically for thesis writing, literature reviews, and journal submissions without academic consequences.",
-            "author": {
-              "@type": "Person",
-              "name": "Dr. Sarah Chen",
-              "url": "https://aifreetextpro.com/team#sarah-chen"
-            },
-            "publisher": {
-              "@type": "Organization",
-              "name": "AI Free Text Pro",
-              "logo": {
-                "@type": "ImageObject",
-                "url": "https://aifreetextpro.com/logo.png"
+            "@context": "https://schema.org", "@type": "Article", "headline": "How to Use AI for Research Papers (Without Academic Consequences)", "description": "How graduate students and researchers can use AI tools ethically for thesis writing, literature reviews, and journal submissions without academic consequences.", "author": {
+              "@type": "Person", "name": "Dr. Sarah Chen", "url": "https://aifreetextpro.com/team#sarah-chen"
+            }, "publisher": {
+              "@type": "Organization", "name": "AI Free Text Pro", "logo": {
+                "@type": "ImageObject", "url": "https://aifreetextpro.com/logo.png"
               }
-            },
-            "datePublished": "2026-03-04T08:00:00Z",
-            "dateModified": "2026-03-04T08:00:00Z",
-            "mainEntityOfPage": "https://aifreetextpro.com/blog/ai-for-research-papers",
-            "wordCount": 2500,
-            "about": "AI in academic research",
-            "mentions": ["Turnitin", "GPTZero", "ChatGPT", "Claude", "Gemini"]
+            }, "datePublished": "2026-03-04T08:00:00Z", "dateModified": "2026-03-04T08:00:00Z", "mainEntityOfPage": "https://aifreetextpro.com/blog/ai-for-research-papers", "wordCount": 2500, "about": "AI in academic research", "mentions": ["Turnitin", "GPTZero", "ChatGPT", "Claude", "Gemini"]
           })}
         </script>
         <script type="application/ld+json">
           {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            "itemListElement": [
-              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://aifreetextpro.com" },
-              { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://aifreetextpro.com/blog" },
-              { "@type": "ListItem", "position": 3, "name": "AI for Research Papers" }
+            "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://aifreetextpro.com" }, { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://aifreetextpro.com/blog" }, { "@type": "ListItem", "position": 3, "name": "AI for Research Papers" }
             ]
           })}
         </script>
@@ -142,9 +98,7 @@ const AIForResearchPapers = () => {
       <main className="min-h-screen pt-24 pb-16">
         <div className="container mx-auto px-4 max-w-4xl">
           <Breadcrumbs items={[
-            { label: "Home", href: "/" },
-            { label: "Blog", href: "/blog" },
-            { label: "AI for Research Papers" }
+            { label: "Home", href: "/" }, { label: "Blog", href: "/blog" }, { label: "AI for Research Papers" }
           ]} />
 
           <Link to="/blog" className="inline-flex items-center text-primary hover:underline mb-6">
@@ -162,7 +116,7 @@ const AIForResearchPapers = () => {
               <h1 className="text-3xl md:text-4xl font-bold mb-4">How to Use AI for Research Papers (Without Academic Consequences)</h1>
                 <QuickAnswer
                   question="How can you use AI for research papers without academic consequences?"
-                  answer="Use AI for support tasks — summarizing sources, outlining, editing, and clarifying — not for generating the analysis or claims. Verify every AI-stated fact, disclose AI use where required, and keep the original thinking yours. Used this way, AI speeds up research without risking integrity violations."
+                  answer="Use AI for support tasks, summarizing sources, outlining, editing, and clarifying, not for generating the analysis or claims. Verify every AI-stated fact, disclose AI use where required, and keep the original thinking yours. Used this way, AI speeds up research without risking integrity violations."
                 />
 
               <p className="text-lg text-muted-foreground">A practical guide for graduate students, thesis writers, and researchers who want to use AI tools responsibly while protecting their academic standing.</p>
@@ -173,11 +127,7 @@ const AIForResearchPapers = () => {
             </header>
 
             <KeyTakeaways points={[
-              "AI is a legitimate research aid when used for drafting, editing, and organizing -- not for replacing original analysis.",
-              "Most universities now have explicit AI policies for graduate research; check yours before submitting.",
-              "Literature synthesis with AI requires manual verification of every cited source to avoid hallucinated references.",
-              "Advisor transparency about AI use strengthens your credibility rather than undermining it.",
-              "Tools like AI Free Text Pro help ensure AI-assisted drafts read naturally without triggering detection flags."
+              "AI is a legitimate research aid when used for drafting, editing, and organizing, not for replacing original analysis.", "Most universities now have explicit AI policies for graduate research; check yours before submitting.", "Literature synthesis with AI requires manual verification of every cited source to avoid hallucinated references.", "Advisor transparency about AI use strengthens your credibility rather than undermining it.", "Tools like AI Free Text Pro help ensure AI-assisted drafts read naturally without triggering detection flags."
             ]} />
 
             <ReviewedBy name="Dr. Sarah Chen" role="AI Research Specialist" slug="sarah-chen" />

@@ -17,28 +17,13 @@ import { PostHowToSchema } from "@/components/PostHowToSchema";
 const HowToDetectAI = () => {
 const relatedArticles = [
     {
-      title: "Top 10 AI Humanizer Tools for 2026",
-      description: "Complete comparison of the best AI humanizers available",
-      href: "/blog/top-10-ai-humanizer-tools-2025",
-      category: "Tools & Reviews"
-    },
-    {
-      title: "How AI Detectors Work",
-      description: "Understand the technology behind AI detection algorithms",
-      href: "/blog/how-ai-detectors-work",
-      category: "Guides"
-    },
-    {
-      title: "AI Detection Patterns Explained",
-      description: "Learn the patterns AI detectors analyze in your writing",
-      href: "/blog/ai-detection-patterns-explained",
-      category: "Technical"
-    },
-    {
-      title: "Signal vs. Noise: What Makes Text Human",
-      description: "Deep dive into patterns that distinguish human writing",
-      href: "/blog/signal-vs-noise-human-text",
-      category: "Technical"
+      title: "Top 10 AI Humanizer Tools for 2026", description: "Complete comparison of the best AI humanizers available", href: "/blog/top-10-ai-humanizer-tools-2025", category: "Tools & Reviews"
+    }, {
+      title: "How AI Detectors Work", description: "Understand the technology behind AI detection algorithms", href: "/blog/how-ai-detectors-work", category: "Guides"
+    }, {
+      title: "AI Detection Patterns Explained", description: "Learn the patterns AI detectors analyze in your writing", href: "/blog/ai-detection-patterns-explained", category: "Technical"
+    }, {
+      title: "Signal vs. Noise: What Makes Text Human", description: "Deep dive into patterns that distinguish human writing", href: "/blog/signal-vs-noise-human-text", category: "Technical"
     }
   ];
 
@@ -70,35 +55,16 @@ const relatedArticles = [
         
         <script type="application/ld+json">
           {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Article",
-            "headline": "How to Detect AI-Generated Text: Complete Guide 2026",
-            "description": "Learn expert techniques to detect AI-generated text. Discover key linguistic patterns, AI writing markers, and detection tools to identify ChatGPT, GPT-4, and AI-written content with 98% accuracy.",
-            "image": {
-              "@type": "ImageObject",
-              "url": "https://aifreetextpro.com/logo.png",
-              "width": 1200,
-              "height": 675
-            },
-            "datePublished": "2026-02-02",
-            "dateModified": "2026-04-05",
-            "author": {
-              "@type": "Person",
-              "name": "Dr. Sarah Chen",
-              "url": "https://aifreetextpro.com/team#sarah-chen",
-              "jobTitle": "Founder & CEO"
-            },
-            "publisher": {
-              "@type": "Organization",
-              "name": "AI Free Text Pro",
-              "logo": {
-                "@type": "ImageObject",
-                "url": "https://aifreetextpro.com/logo.png"
+            "@context": "https://schema.org", "@type": "Article", "headline": "How to Detect AI-Generated Text: Complete Guide 2026", "description": "Learn expert techniques to detect AI-generated text. Discover key linguistic patterns, AI writing markers, and detection tools to identify ChatGPT, GPT-4, and AI-written content with 98% accuracy.", "image": {
+              "@type": "ImageObject", "url": "https://aifreetextpro.com/logo.png", "width": 1200, "height": 675
+            }, "datePublished": "2026-02-02", "dateModified": "2026-04-05", "author": {
+              "@type": "Person", "name": "Dr. Sarah Chen", "url": "https://aifreetextpro.com/team#sarah-chen", "jobTitle": "Founder & CEO"
+            }, "publisher": {
+              "@type": "Organization", "name": "AI Free Text Pro", "logo": {
+                "@type": "ImageObject", "url": "https://aifreetextpro.com/logo.png"
               }
-            },
-            "mainEntityOfPage": {
-              "@type": "WebPage",
-              "@id": "https://aifreetextpro.com/blog/how-to-detect-ai-generated-text"
+            }, "mainEntityOfPage": {
+              "@type": "WebPage", "@id": "https://aifreetextpro.com/blog/how-to-detect-ai-generated-text"
             }
           })}
         </script>
@@ -106,25 +72,13 @@ const relatedArticles = [
         {/* BreadcrumbList Schema */}
         <script type="application/ld+json">
           {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            "itemListElement": [
+            "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
               {
-                "@type": "ListItem",
-                "position": 1,
-                "name": "Home",
-                "item": "https://aifreetextpro.com/"
-              },
-              {
-                "@type": "ListItem",
-                "position": 2,
-                "name": "Blog",
-                "item": "https://aifreetextpro.com/blog"
-              },
-              {
-                "@type": "ListItem",
-                "position": 3,
-                "name": "How to Detect AI-Generated Text"
+                "@type": "ListItem", "position": 1, "name": "Home", "item": "https://aifreetextpro.com/"
+              }, {
+                "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://aifreetextpro.com/blog"
+              }, {
+                "@type": "ListItem", "position": 3, "name": "How to Detect AI-Generated Text"
               }
             ]
           })}
@@ -133,19 +87,8 @@ const relatedArticles = [
         {/* HowTo Schema */}
         <script type="application/ld+json">
           {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "HowTo",
-            "name": "How to Detect AI-Generated Text",
-            "description": "Learn expert techniques to detect AI-generated text with key linguistic patterns and detection methods.",
-            "totalTime": "PT10M",
-            "step": [
-              { "@type": "HowToStep", "position": 1, "name": "Check for Perfect Structure", "text": "AI-generated text often maintains unnaturally consistent quality with perfect grammar throughout." },
-              { "@type": "HowToStep", "position": 2, "name": "Look for Repetitive Phrases", "text": "Watch for phrases like 'it's important to note,' 'however,' and 'furthermore' appearing frequently." },
-              { "@type": "HowToStep", "position": 3, "name": "Identify Lack of Personal Voice", "text": "AI cannot draw from personal experiences or unique perspectives. Look for missing anecdotes." },
-              { "@type": "HowToStep", "position": 4, "name": "Spot Generic Statements", "text": "AI tends to make safe, general statements rather than diving into specific details." },
-              { "@type": "HowToStep", "position": 5, "name": "Check Emotional Depth", "text": "AI struggles with authentic emotional expression and nuanced feelings." },
-              { "@type": "HowToStep", "position": 6, "name": "Analyze Sentence Variety", "text": "AI often produces similar sentence lengths and structures. Human writing varies naturally." },
-              { "@type": "HowToStep", "position": 7, "name": "Use AI Detection Tools", "text": "Combine automated detection with human judgment for best results." }
+            "@context": "https://schema.org", "@type": "HowTo", "name": "How to Detect AI-Generated Text", "description": "Learn expert techniques to detect AI-generated text with key linguistic patterns and detection methods.", "totalTime": "PT10M", "step": [
+              { "@type": "HowToStep", "position": 1, "name": "Check for Perfect Structure", "text": "AI-generated text often maintains unnaturally consistent quality with perfect grammar throughout." }, { "@type": "HowToStep", "position": 2, "name": "Look for Repetitive Phrases", "text": "Watch for phrases like 'it's important to note,' 'however,' and 'furthermore' appearing frequently." }, { "@type": "HowToStep", "position": 3, "name": "Identify Lack of Personal Voice", "text": "AI cannot draw from personal experiences or unique perspectives. Look for missing anecdotes." }, { "@type": "HowToStep", "position": 4, "name": "Spot Generic Statements", "text": "AI tends to make safe, general statements rather than diving into specific details." }, { "@type": "HowToStep", "position": 5, "name": "Check Emotional Depth", "text": "AI struggles with authentic emotional expression and nuanced feelings." }, { "@type": "HowToStep", "position": 6, "name": "Analyze Sentence Variety", "text": "AI often produces similar sentence lengths and structures. Human writing varies naturally." }, { "@type": "HowToStep", "position": 7, "name": "Use AI Detection Tools", "text": "Combine automated detection with human judgment for best results." }
             ]
           })}
         </script>
@@ -177,9 +120,7 @@ const relatedArticles = [
             {/* Main Content */}
             <div>
               <Breadcrumbs items={[
-                { label: 'Home', href: '/' },
-                { label: 'Blog', href: '/blog' },
-                { label: 'How to Detect AI-Generated Text' }
+                { label: 'Home', href: '/' }, { label: 'Blog', href: '/blog' }, { label: 'How to Detect AI-Generated Text' }
               ]} />
               <Link to="/blog">
                 <Button variant="ghost" className="mb-8">
@@ -202,7 +143,7 @@ const relatedArticles = [
                 </h1>
                 <QuickAnswer
                   question="How can you tell if text was generated by AI?"
-                  answer="Look for the signals detectors use: unusually uniform sentence length, predictable phrasing, generic examples, repetitive transitions, and little specific detail or personal voice. Combine a careful read with an AI detection tool — neither is conclusive alone, so use them together."
+                  answer="Look for the signals detectors use: unusually uniform sentence length, predictable phrasing, generic examples, repetitive transitions, and little specific detail or personal voice. Combine a careful read with an AI detection tool, neither is conclusive alone, so use them together."
                 />
 
 
@@ -213,11 +154,7 @@ const relatedArticles = [
 
               <KeyTakeaways 
                 points={[
-                  "AI text is overly formal with perfect structure, lacking natural human imperfections",
-                  "Watch for repetitive phrases: 'it's important to note,' 'delve into,' 'furthermore'",
-                  "AI lacks personal voice, anecdotes, and genuine emotional authenticity",
-                  "Uniform sentence length is a key tell; humans naturally vary between short and long",
-                  "Combine automated detection tools with human judgment for best accuracy"
+                  "AI text is overly formal with perfect structure, lacking natural human imperfections", "Watch for repetitive phrases: 'it's important to note,' 'delve into,' 'furthermore'", "AI lacks personal voice, anecdotes, and genuine emotional authenticity", "Uniform sentence length is a key tell; humans naturally vary between short and long", "Combine automated detection tools with human judgment for best accuracy"
                 ]}
               />
 
@@ -457,10 +394,7 @@ const relatedArticles = [
                 </div>
 
                               <FAQSection faqs={[
-                { question: "What are the signs of AI-generated text?", answer: "Common signs include uniform sentence structure, overly smooth or generic phrasing, repeated transition words, absence of concrete detail, and no genuine personal perspective." },
-                { question: "Are AI detection tools reliable?", answer: "They are useful but not definitive. Detectors estimate probability and can be wrong in both directions, so use them alongside human judgment rather than as proof." },
-                { question: "Can you detect AI text without a tool?", answer: "Often yes — read for specificity, voice, and variation. AI text tends to be fluent but generic, while human writing includes concrete examples and uneven rhythm." },
-              ]} />
+                { question: "What are the signs of AI-generated text?", answer: "Common signs include uniform sentence structure, overly smooth or generic phrasing, repeated transition words, absence of concrete detail, and no genuine personal perspective." }, { question: "Are AI detection tools reliable?", answer: "They are useful but not definitive. Detectors estimate probability and can be wrong in both directions, so use them alongside human judgment rather than as proof." }, { question: "Can you detect AI text without a tool?", answer: "Often yes, read for specificity, voice, and variation. AI text tends to be fluent but generic, while human writing includes concrete examples and uneven rhythm." }, ]} />
 
               <RelatedArticles articles={relatedArticles} />
                 

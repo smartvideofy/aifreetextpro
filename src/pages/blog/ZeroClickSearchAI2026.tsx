@@ -13,51 +13,27 @@ import { AuthorSchema } from "@/components/AuthorSchema";
 
 const relatedArticles = [
   {
-    title: "How AI Detectors Work",
-    description: "Next-generation detection trends for writers",
-    href: "/blog/how-ai-detectors-work",
-    category: "Analysis"
-  },
-  {
-    title: "AI-Powered SEO Content in 2026",
-    description: "Tips for authentic blog posts with AI humanizer tools",
-    href: "/blog/ai-powered-seo-content-2026",
-    category: "SEO"
-  },
-  {
-    title: "How to Humanize AI Text for Travel Blogs",
-    description: "Make your travel content feel authentic",
-    href: "/blog/humanize-ai-travel-blogs",
-    category: "Humanize"
-  },
-  {
-    title: "AI Content Marketing Trends 2026",
-    description: "Key trends shaping content marketing strategies",
-    href: "/blog/ai-content-marketing-trends-2026",
-    category: "Trends"
+    title: "How AI Detectors Work", description: "Next-generation detection trends for writers", href: "/blog/how-ai-detectors-work", category: "Analysis"
+  }, {
+    title: "AI-Powered SEO Content in 2026", description: "Tips for authentic blog posts with AI humanizer tools", href: "/blog/ai-powered-seo-content-2026", category: "SEO"
+  }, {
+    title: "How to Humanize AI Text for Travel Blogs", description: "Make your travel content feel authentic", href: "/blog/humanize-ai-travel-blogs", category: "Humanize"
+  }, {
+    title: "AI Content Marketing Trends 2026", description: "Key trends shaping content marketing strategies", href: "/blog/ai-content-marketing-trends-2026", category: "Trends"
   }
 ];
 
 const faqs = [
   {
-    question: "What percentage of searches are zero-click in 2026?",
-    answer: "Research indicates that over 65% of Google searches now end without a click to an external website. This includes AI Overviews, featured snippets, knowledge panels, and direct answers. For mobile searches, this percentage is even higher at approximately 77%."
-  },
-  {
-    question: "How do AI Overviews differ from featured snippets?",
-    answer: "Featured snippets extract a specific passage from a single source to answer a query. AI Overviews synthesize information from multiple sources, providing a comprehensive answer with citations to several websites. AI Overviews are generated using large language models and appear for more complex queries."
-  },
-  {
-    question: "Can you still get traffic from zero-click searches?",
-    answer: "Yes, through brand building and citation strategies. When your brand is mentioned in AI Overviews or featured snippets, users often search for your brand directly afterward. Focus on becoming the authoritative source that AI systems cite, even if users don't click immediately."
-  },
-  {
-    question: "What schema markup helps with zero-click visibility?",
-    answer: "FAQPage, HowTo, and Article schema are most effective for zero-click visibility. These structured data formats help search engines understand your content and increase chances of being featured. Additionally, Organization, LocalBusiness, and Product schema can trigger rich results."
-  },
-  {
-    question: "How do you measure success in zero-click SEO?",
-    answer: "Track brand mentions in AI Overviews using tools like SEMrush's AI Overview tracking. Monitor branded search volume growth, featured snippet ownership rates, and knowledge panel appearances. Also measure citation frequency in AI assistants and indirect traffic from brand searches."
+    question: "What percentage of searches are zero-click in 2026?", answer: "Research indicates that over 65% of Google searches now end without a click to an external website. This includes AI Overviews, featured snippets, knowledge panels, and direct answers. For mobile searches, this percentage is even higher at approximately 77%."
+  }, {
+    question: "How do AI Overviews differ from featured snippets?", answer: "Featured snippets extract a specific passage from a single source to answer a query. AI Overviews synthesize information from multiple sources, providing a comprehensive answer with citations to several websites. AI Overviews are generated using large language models and appear for more complex queries."
+  }, {
+    question: "Can you still get traffic from zero-click searches?", answer: "Yes, through brand building and citation strategies. When your brand is mentioned in AI Overviews or featured snippets, users often search for your brand directly afterward. Focus on becoming the authoritative source that AI systems cite, even if users don't click immediately."
+  }, {
+    question: "What schema markup helps with zero-click visibility?", answer: "FAQPage, HowTo, and Article schema are most effective for zero-click visibility. These structured data formats help search engines understand your content and increase chances of being featured. Additionally, Organization, LocalBusiness, and Product schema can trigger rich results."
+  }, {
+    question: "How do you measure success in zero-click SEO?", answer: "Track brand mentions in AI Overviews using tools like SEMrush's AI Overview tracking. Monitor branded search volume growth, featured snippet ownership rates, and knowledge panel appearances. Also measure citation frequency in AI assistants and indirect traffic from brand searches."
   }
 ];
 
@@ -90,65 +66,32 @@ export default function ZeroClickSearchAI2026() {
 
         <script type="application/ld+json">
           {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Article",
-            "headline": "Zero-Click Searches in 2026: Win Traffic in the AI Era",
-            "description": "Learn strategies to capture traffic and authority in zero-click search results using AI-optimized content in 2026.",
-            "image": {
-              "@type": "ImageObject",
-              "url": ogImage,
-              "width": 1200,
-              "height": 675
-            },
-            "datePublished": "2026-02-02",
-            "dateModified": "2026-04-05",
-            "author": {
-              "@type": "Person",
-              "name": "Dr. Sarah Chen",
-              "url": "https://aifreetextpro.com/team#sarah-chen",
-              "jobTitle": "Founder & CEO"
-            },
-            "publisher": {
-              "@type": "Organization",
-              "name": "AI Free Text Pro",
-              "logo": {
-                "@type": "ImageObject",
-                "url": "https://aifreetextpro.com/logo.png"
+            "@context": "https://schema.org", "@type": "Article", "headline": "Zero-Click Searches in 2026: Win Traffic in the AI Era", "description": "Learn strategies to capture traffic and authority in zero-click search results using AI-optimized content in 2026.", "image": {
+              "@type": "ImageObject", "url": ogImage, "width": 1200, "height": 675
+            }, "datePublished": "2026-02-02", "dateModified": "2026-04-05", "author": {
+              "@type": "Person", "name": "Dr. Sarah Chen", "url": "https://aifreetextpro.com/team#sarah-chen", "jobTitle": "Founder & CEO"
+            }, "publisher": {
+              "@type": "Organization", "name": "AI Free Text Pro", "logo": {
+                "@type": "ImageObject", "url": "https://aifreetextpro.com/logo.png"
               }
-            },
-            "mainEntityOfPage": {
-              "@type": "WebPage",
-              "@id": canonical
+            }, "mainEntityOfPage": {
+              "@type": "WebPage", "@id": canonical
             }
           })}
         </script>
 
         <script type="application/ld+json">
           {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "HowTo",
-            "name": "How to Optimize Content for Zero-Click Searches",
-            "description": "Step-by-step guide to creating content that gets cited in AI Overviews and featured snippets.",
-            "totalTime": "PT30M",
-            "step": [
-              { "@type": "HowToStep", "position": 1, "name": "Research Zero-Click Opportunities", "text": "Identify queries where AI Overviews and featured snippets appear. Use SEMrush or Ahrefs to find snippet opportunities in your niche." },
-              { "@type": "HowToStep", "position": 2, "name": "Structure Content for AI Parsing", "text": "Use clear headings, bullet points, and concise answer paragraphs. Format content so AI can easily extract key information." },
-              { "@type": "HowToStep", "position": 3, "name": "Implement Schema Markup", "text": "Add FAQPage, HowTo, or Article schema to help search engines understand your content structure." },
-              { "@type": "HowToStep", "position": 4, "name": "Create Authoritative Answer Blocks", "text": "Write 40-60 word answer paragraphs that directly address common questions. These are ideal for featured snippet extraction." },
-              { "@type": "HowToStep", "position": 5, "name": "Build Citation-Worthy Content", "text": "Include original data, expert quotes, and unique insights that AI systems will want to cite as sources." },
-              { "@type": "HowToStep", "position": 6, "name": "Monitor and Optimize", "text": "Track AI Overview mentions, snippet appearances, and branded search growth. Iterate based on performance data." }
+            "@context": "https://schema.org", "@type": "HowTo", "name": "How to Optimize Content for Zero-Click Searches", "description": "Step-by-step guide to creating content that gets cited in AI Overviews and featured snippets.", "totalTime": "PT30M", "step": [
+              { "@type": "HowToStep", "position": 1, "name": "Research Zero-Click Opportunities", "text": "Identify queries where AI Overviews and featured snippets appear. Use SEMrush or Ahrefs to find snippet opportunities in your niche." }, { "@type": "HowToStep", "position": 2, "name": "Structure Content for AI Parsing", "text": "Use clear headings, bullet points, and concise answer paragraphs. Format content so AI can easily extract key information." }, { "@type": "HowToStep", "position": 3, "name": "Implement Schema Markup", "text": "Add FAQPage, HowTo, or Article schema to help search engines understand your content structure." }, { "@type": "HowToStep", "position": 4, "name": "Create Authoritative Answer Blocks", "text": "Write 40-60 word answer paragraphs that directly address common questions. These are ideal for featured snippet extraction." }, { "@type": "HowToStep", "position": 5, "name": "Build Citation-Worthy Content", "text": "Include original data, expert quotes, and unique insights that AI systems will want to cite as sources." }, { "@type": "HowToStep", "position": 6, "name": "Monitor and Optimize", "text": "Track AI Overview mentions, snippet appearances, and branded search growth. Iterate based on performance data." }
             ]
           })}
         </script>
 
         <script type="application/ld+json">
           {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            "itemListElement": [
-              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://aifreetextpro.com/" },
-              { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://aifreetextpro.com/blog" },
-              { "@type": "ListItem", "position": 3, "name": "Zero-Click Searches in 2026" }
+            "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://aifreetextpro.com/" }, { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://aifreetextpro.com/blog" }, { "@type": "ListItem", "position": 3, "name": "Zero-Click Searches in 2026" }
             ]
           })}
         </script>
@@ -168,9 +111,7 @@ export default function ZeroClickSearchAI2026() {
         <main className="container mx-auto px-4 py-12 max-w-4xl">
           <Breadcrumbs 
             items={[
-              { label: "Home", href: "/" },
-              { label: "Blog", href: "/blog" },
-              { label: "Zero-Click Searches in 2026" }
+              { label: "Home", href: "/" }, { label: "Blog", href: "/blog" }, { label: "Zero-Click Searches in 2026" }
             ]} 
           />
 
@@ -189,7 +130,7 @@ export default function ZeroClickSearchAI2026() {
               </h1>
                 <QuickAnswer
                   question="How do you win traffic from zero-click searches in 2026?"
-                  answer="Optimize to be cited, not just clicked: answer the query directly and early, use clear question-based headings, add specific data and sources, and structure content so AI Overviews and chat answers can extract it. Build authority so AI engines quote you — visibility now comes from citations, not only clicks."
+                  answer="Optimize to be cited, not just clicked: answer the query directly and early, use clear question-based headings, add specific data and sources, and structure content so AI Overviews and chat answers can extract it. Build authority so AI engines quote you, visibility now comes from citations, not only clicks."
                 />
 
               
@@ -200,10 +141,7 @@ export default function ZeroClickSearchAI2026() {
 
             <KeyTakeaways
               points={[
-                "Over 65% of Google searches now end without a click: AI Overviews, featured snippets, and knowledge panels provide instant answers",
-                "Focus on being cited rather than clicked: becoming a trusted source that AI systems reference builds long-term authority",
-                "Structure content for AI parsing: clear headings, concise answer blocks, and schema markup increase citation chances",
-                "New metrics matter: track AI Overview mentions, branded search growth, and citation frequency alongside traditional CTR"
+                "Over 65% of Google searches now end without a click: AI Overviews, featured snippets, and knowledge panels provide instant answers", "Focus on being cited rather than clicked: becoming a trusted source that AI systems reference builds long-term authority", "Structure content for AI parsing: clear headings, concise answer blocks, and schema markup increase citation chances", "New metrics matter: track AI Overview mentions, branded search growth, and citation frequency alongside traditional CTR"
               ]}
             />
 
@@ -285,7 +223,7 @@ export default function ZeroClickSearchAI2026() {
                 </div>
 
                 <p>
-                  The websites that thrive in 2026 understand that a mention in an AI Overview—even without a click—builds brand awareness that compounds over time. When users see your brand repeatedly cited as an authority, they're more likely to search for your brand directly, subscribe to your newsletter, or remember you when making purchase decisions.
+                  The websites that thrive in 2026 understand that a mention in an AI Overview, even without a click, builds brand awareness that compounds over time. When users see your brand repeatedly cited as an authority, they're more likely to search for your brand directly, subscribe to your newsletter, or remember you when making purchase decisions.
                 </p>
               </section>
 

@@ -8,6 +8,7 @@
     "prebuild": "node scripts/seo/refresh-sitemap-lastmod.mjs && node scripts/seo/check-sitemap-sync.mjs && node scripts/seo/check-internal-links.mjs",
     "predev": "node scripts/seo/refresh-sitemap-lastmod.mjs",
     "build": "vite build",
+    "postbuild": "node scripts/seo/flatten-dist.mjs",
     "build:dev": "vite build --mode development",
     "lint": "eslint .",
     "preview": "vite preview",
@@ -15,7 +16,7 @@
     "audit:parity": "node scripts/seo/serve-and-audit.mjs",
     "audit:parity:live": "AUDIT_BASE_URL=https://aifreetextpro.com node scripts/seo/mobile-parity-audit.mjs",
     "inspect:dist": "node scripts/seo/inspect-dist.mjs",
-    "build:verified": "node scripts/seo/check-sitemap-sync.mjs && vite build && node scripts/seo/inspect-dist.mjs && node scripts/seo/serve-and-audit.mjs",
+    "build:verified": "node scripts/seo/check-sitemap-sync.mjs && vite build && node scripts/seo/flatten-dist.mjs && node scripts/seo/inspect-dist.mjs && node scripts/seo/serve-and-audit.mjs",
     "audit:debug": "PRERENDER_DEBUG_ROUTES=/ai-checker vite build && node scripts/seo/inspect-dist.mjs && AUDIT_DEBUG=1 node scripts/seo/serve-and-audit.mjs"
   },
   "dependencies": {

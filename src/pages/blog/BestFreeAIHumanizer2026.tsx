@@ -127,7 +127,7 @@ const BestFreeAIHumanizer2026 = () => {
               "@type": "WebPage",
               "@id": "https://aifreetextpro.com/blog/best-free-ai-humanizer-2026"
             },
-            "wordCount": 2300
+            "wordCount": 1450
           })}
         </script>
         <script type="application/ld+json">

@@ -13,18 +13,11 @@ import { FAQSection } from "@/components/FAQSection";
 import { AuthorSchema } from "@/components/AuthorSchema";
 
 const relatedArticles = [
-  { title: "Turnitin AI Detection Accuracy", description: "How accurate is Turnitin's AI detection in 2026? Real data and analysis.", href: "/blog/turnitin-ai-detection-accuracy", category: "Technical" },
-  { title: "How to Appeal Turnitin AI Detection", description: "Step-by-step guide to appealing false AI detection results.", href: "/blog/turnitin-appeal-ai-detection", category: "Academic" },
-  { title: "AI Detection False Positives", description: "Why human writing gets flagged and how to protect yourself.", href: "/blog/ai-detection-false-positives", category: "Educational" },
-  { title: "GPTZero vs Turnitin Comparison", description: "Which AI detector is more accurate for academic use?", href: "/blog/gptzero-vs-turnitin-comparison", category: "Comparison" },
+  { title: "Turnitin AI Detection Accuracy", description: "How accurate is Turnitin's AI detection in 2026? Real data and analysis.", href: "/blog/turnitin-ai-detection-accuracy", category: "Technical" }, { title: "How to Appeal Turnitin AI Detection", description: "Step-by-step guide to appealing false AI detection results.", href: "/blog/turnitin-appeal-ai-detection", category: "Academic" }, { title: "AI Detection False Positives", description: "Why human writing gets flagged and how to protect yourself.", href: "/blog/ai-detection-false-positives", category: "Educational" }, { title: "GPTZero vs Turnitin Comparison", description: "Which AI detector is more accurate for academic use?", href: "/blog/gptzero-vs-turnitin-comparison", category: "Comparison" },
 ];
 
 const faqs = [
-  { question: "What is a good Turnitin similarity score?", answer: "Most universities consider a similarity score under 20-25% acceptable. However, this varies by institution and assignment type. A 15% similarity score with properly cited quotes is perfectly normal, while a 15% score from uncited paraphrasing could be problematic." },
-  { question: "What Turnitin AI score triggers a review?", answer: "Turnitin flags submissions with an AI score of 20% or higher. However, Turnitin recommends that instructors investigate any score above 0% rather than relying on a fixed threshold, as the tool is meant to inform human judgment, not replace it." },
-  { question: "Can you have a high similarity score and low AI score?", answer: "Yes, absolutely. A student who copies and pastes from published sources (high similarity) while writing their own original text for the rest (low AI) would see this pattern. The two scores measure completely different things." },
-  { question: "Can you have a low similarity score and high AI score?", answer: "Yes. AI-generated text is original (not copied from existing sources), so it typically has a very low similarity score. But it will score high on AI detection. This is actually the most common pattern for AI-generated submissions." },
-  { question: "Does Turnitin show professors the AI score automatically?", answer: "Yes. Since 2024, Turnitin's AI detection is enabled by default for most institutional accounts. Professors see both the similarity score and the AI score in the Turnitin report unless their institution has specifically disabled AI detection." },
+  { question: "What is a good Turnitin similarity score?", answer: "Most universities consider a similarity score under 20-25% acceptable. However, this varies by institution and assignment type. A 15% similarity score with properly cited quotes is perfectly normal, while a 15% score from uncited paraphrasing could be problematic." }, { question: "What Turnitin AI score triggers a review?", answer: "Turnitin flags submissions with an AI score of 20% or higher. However, Turnitin recommends that instructors investigate any score above 0% rather than relying on a fixed threshold, as the tool is meant to inform human judgment, not replace it." }, { question: "Can you have a high similarity score and low AI score?", answer: "Yes, absolutely. A student who copies and pastes from published sources (high similarity) while writing their own original text for the rest (low AI) would see this pattern. The two scores measure completely different things." }, { question: "Can you have a low similarity score and high AI score?", answer: "Yes. AI-generated text is original (not copied from existing sources), so it typically has a very low similarity score. But it will score high on AI detection. This is actually the most common pattern for AI-generated submissions." }, { question: "Does Turnitin show professors the AI score automatically?", answer: "Yes. Since 2024, Turnitin's AI detection is enabled by default for most institutional accounts. Professors see both the similarity score and the AI score in the Turnitin report unless their institution has specifically disabled AI detection." },
 ];
 
 const TurnitinSimilarityVsAIScore = () => {
@@ -53,24 +46,15 @@ const TurnitinSimilarityVsAIScore = () => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@aifreetextpro" />
         <script type="application/ld+json">{JSON.stringify({
-          "@context": "https://schema.org", "@type": "Article",
-          "headline": "Turnitin Similarity Score vs AI Score: What's the Difference?",
-          "author": { "@type": "Person", "name": "Dr. Sarah Chen", "url": "https://aifreetextpro.com/team#sarah-chen" },
-          "publisher": { "@type": "Organization", "name": "AI Free Text Pro", "logo": { "@type": "ImageObject", "url": "https://aifreetextpro.com/logo.png" } },
-          "datePublished": publishDate, "dateModified": modifiedDate,
-          "mainEntityOfPage": "https://aifreetextpro.com/blog/turnitin-similarity-vs-ai-score", "wordCount": 2000
+          "@context": "https://schema.org", "@type": "Article", "headline": "Turnitin Similarity Score vs AI Score: What's the Difference?", "author": { "@type": "Person", "name": "Dr. Sarah Chen", "url": "https://aifreetextpro.com/team#sarah-chen" }, "publisher": { "@type": "Organization", "name": "AI Free Text Pro", "logo": { "@type": "ImageObject", "url": "https://aifreetextpro.com/logo.png" } }, "datePublished": publishDate, "dateModified": modifiedDate, "mainEntityOfPage": "https://aifreetextpro.com/blog/turnitin-similarity-vs-ai-score", "wordCount": 1050
         })}</script>
         <script type="application/ld+json">{JSON.stringify({
-          "@context": "https://schema.org", "@type": "BreadcrumbList",
-          "itemListElement": [
-            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://aifreetextpro.com" },
-            { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://aifreetextpro.com/blog" },
-            { "@type": "ListItem", "position": 3, "name": "Turnitin Similarity vs AI Score" }
+          "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://aifreetextpro.com" }, { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://aifreetextpro.com/blog" }, { "@type": "ListItem", "position": 3, "name": "Turnitin Similarity vs AI Score" }
           ]
         })}</script>
         <script type="application/ld+json">{JSON.stringify({
-          "@context": "https://schema.org", "@type": "FAQPage",
-          "mainEntity": faqs.map(faq => ({ "@type": "Question", "name": faq.question, "acceptedAnswer": { "@type": "Answer", "text": faq.answer } }))
+          "@context": "https://schema.org", "@type": "FAQPage", "mainEntity": faqs.map(faq => ({ "@type": "Question", "name": faq.question, "acceptedAnswer": { "@type": "Answer", "text": faq.answer } }))
         })}</script>
       </Helmet>
       <AuthorSchema
@@ -98,7 +82,7 @@ const TurnitinSimilarityVsAIScore = () => {
               <h1 className="text-3xl md:text-4xl font-bold mb-4">Turnitin Similarity Score vs AI Score: What's the Difference?</h1>
                 <QuickAnswer
                   question="What's the difference between Turnitin's similarity score and AI score?"
-                  answer="They measure different things. The similarity score shows how much of your text matches existing sources (potential plagiarism); the AI score estimates how much reads as AI-generated. A high similarity score isn't an AI flag and vice versa — check which one you're looking at before reacting."
+                  answer="They measure different things. The similarity score shows how much of your text matches existing sources (potential plagiarism); the AI score estimates how much reads as AI-generated. A high similarity score isn't an AI flag and vice versa, check which one you're looking at before reacting."
                 />
 
               <p className="text-xl text-muted-foreground">Students see two scores on every Turnitin report. One measures plagiarism. The other measures AI. Understanding the difference could save your grade.</p>
@@ -107,11 +91,7 @@ const TurnitinSimilarityVsAIScore = () => {
             <ReviewedBy name="Dr. Sarah Chen" role="Founder & CEO" slug="sarah-chen" />
 
             <KeyTakeaways points={[
-              "Turnitin's similarity score measures text matching against published sources (plagiarism). The AI score measures statistical patterns associated with AI generation. They are calculated independently.",
-              "A similarity score under 20-25% is generally acceptable. AI scores above 20% typically trigger an instructor review.",
-              "You can have a high similarity score with a low AI score (copied from sources) or a low similarity score with a high AI score (AI-generated original text).",
-              "Professors see both scores by default since 2024. The AI score includes a sentence-by-sentence highlight showing which parts were flagged.",
-              "To reduce your AI score without affecting content quality, use an AI humanizer to address the statistical patterns detectors measure."
+              "Turnitin's similarity score measures text matching against published sources (plagiarism). The AI score measures statistical patterns associated with AI generation. They are calculated independently.", "A similarity score under 20-25% is generally acceptable. AI scores above 20% typically trigger an instructor review.", "You can have a high similarity score with a low AI score (copied from sources) or a low similarity score with a high AI score (AI-generated original text).", "Professors see both scores by default since 2024. The AI score includes a sentence-by-sentence highlight showing which parts were flagged.", "To reduce your AI score without affecting content quality, use an AI humanizer to address the statistical patterns detectors measure."
             ]} />
 
             <h2 className="text-2xl font-bold mt-10 mb-4">The Two Scores Explained</h2>

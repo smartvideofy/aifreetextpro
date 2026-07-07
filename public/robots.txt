@@ -7,10 +7,14 @@ Allow: /
 Disallow: /auth
 Disallow: /dashboard
 Disallow: /app
+Disallow: /humanizer
+Disallow: /detector
 
 # Major search engines - no crawl-delay (allow full crawl budget)
 User-agent: Googlebot
 Allow: /
+Disallow: /humanizer
+Disallow: /detector
 
 User-agent: Googlebot-Image
 Allow: /

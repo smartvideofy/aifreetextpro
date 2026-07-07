@@ -13,17 +13,11 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@
 import { AuthorSchema } from "@/components/AuthorSchema";
 
 const relatedArticles = [
-  { title: "Originality.AI Review", description: "Full review of accuracy, pricing, and features.", href: "/blog/originality-ai-review-how-to-beat", category: "Detector Review" },
-  { title: "AI Detection False Positives", description: "Why human writing gets incorrectly flagged.", href: "/blog/ai-detection-false-positives", category: "Educational" },
-  { title: "Pass All AI Detectors Guide", description: "The definitive guide to human-like content.", href: "/blog/pass-all-ai-detectors-guide", category: "How-To Guide" },
-  { title: "Bypass Originality.AI", description: "Strategies for Originality.AI detection.", href: "/bypass-originality-ai", category: "How-To Guide" }
+  { title: "Originality.AI Review", description: "Full review of accuracy, pricing, and features.", href: "/blog/originality-ai-review-how-to-beat", category: "Detector Review" }, { title: "AI Detection False Positives", description: "Why human writing gets incorrectly flagged.", href: "/blog/ai-detection-false-positives", category: "Educational" }, { title: "Pass All AI Detectors Guide", description: "The definitive guide to human-like content.", href: "/blog/pass-all-ai-detectors-guide", category: "How-To Guide" }, { title: "Bypass Originality.AI", description: "Strategies for Originality.AI detection.", href: "/bypass-originality-ai", category: "How-To Guide" }
 ];
 
 const faqs = [
-  { question: "How often is Originality.AI wrong?", answer: "Based on independent testing, Originality.AI produces false positives on approximately 8-12% of human-written content, depending on writing style. Technical, formal, and non-native English writing see higher false positive rates (up to 18%)." },
-  { question: "Can I appeal an Originality.AI result?", answer: "Originality.AI does not have a formal appeals process since it is a tool, not an institution. However, you can provide evidence to whoever used the tool (employer, client, publisher) showing your writing process, multiple detector results, and original drafts." },
-  { question: "Is Originality.AI more accurate than Turnitin?", answer: "They have different strengths. Originality.AI tends to be more aggressive (higher detection rates but also higher false positive rates). Turnitin is more conservative (fewer false positives but also misses more edited AI content). Neither is definitively 'more accurate.'" },
-  { question: "Why does Originality.AI flag my human writing?", answer: "Common reasons include: formal or technical writing style, consistent sentence structure, limited vocabulary diversity, non-native English patterns, and use of grammar-correction tools that smooth out natural language variations." }
+  { question: "How often is Originality.AI wrong?", answer: "Based on independent testing, Originality.AI produces false positives on approximately 8-12% of human-written content, depending on writing style. Technical, formal, and non-native English writing see higher false positive rates (up to 18%)." }, { question: "Can I appeal an Originality.AI result?", answer: "Originality.AI does not have a formal appeals process since it is a tool, not an institution. However, you can provide evidence to whoever used the tool (employer, client, publisher) showing your writing process, multiple detector results, and original drafts." }, { question: "Is Originality.AI more accurate than Turnitin?", answer: "They have different strengths. Originality.AI tends to be more aggressive (higher detection rates but also higher false positive rates). Turnitin is more conservative (fewer false positives but also misses more edited AI content). Neither is definitively 'more accurate.'" }, { question: "Why does Originality.AI flag my human writing?", answer: "Common reasons include: formal or technical writing style, consistent sentence structure, limited vocabulary diversity, non-native English patterns, and use of grammar-correction tools that smooth out natural language variations." }
 ];
 
 const OriginalityAIAccuracyFalsePositives = () => {
@@ -49,12 +43,7 @@ const OriginalityAIAccuracyFalsePositives = () => {
         <meta name="twitter:site" content="@aifreetextpro" />
         <script type="application/ld+json">
           {JSON.stringify({
-            "@context": "https://schema.org", "@type": "Article",
-            "headline": "Can Originality.AI Be Wrong? False Positives and Accuracy Explained",
-            "author": { "@type": "Person", "name": "Dr. Sarah Chen", "url": "https://aifreetextpro.com/team#sarah-chen" },
-            "publisher": { "@type": "Organization", "name": "AI Free Text Pro", "logo": { "@type": "ImageObject", "url": "https://aifreetextpro.com/favicon.ico" } },
-            "datePublished": "2026-02-28", "dateModified": "2026-04-05",
-            "mainEntityOfPage": "https://aifreetextpro.com/blog/originality-ai-accuracy-false-positives", "wordCount": 2100
+            "@context": "https://schema.org", "@type": "Article", "headline": "Can Originality.AI Be Wrong? False Positives and Accuracy Explained", "author": { "@type": "Person", "name": "Dr. Sarah Chen", "url": "https://aifreetextpro.com/team#sarah-chen" }, "publisher": { "@type": "Organization", "name": "AI Free Text Pro", "logo": { "@type": "ImageObject", "url": "https://aifreetextpro.com/favicon.ico" } }, "datePublished": "2026-02-28", "dateModified": "2026-04-05", "mainEntityOfPage": "https://aifreetextpro.com/blog/originality-ai-accuracy-false-positives", "wordCount": 1100
           })}
         </script>
         <script type="application/ld+json">
@@ -87,7 +76,7 @@ const OriginalityAIAccuracyFalsePositives = () => {
               <h1 className="text-4xl md:text-5xl font-bold mb-4 leading-tight">Can Originality.AI Be Wrong? False Positives and Accuracy Explained</h1>
                 <QuickAnswer
                   question="Can Originality.AI be wrong?"
-                  answer="Yes. In our testing Originality.AI produced meaningful false-positive rates, wrongly flagging human writing — especially formal or non-native English — as AI. It's one of the more aggressive detectors, which catches more AI but also more genuine work, so its score should be treated as a signal, not proof."
+                  answer="Yes. In our testing Originality.AI produced meaningful false-positive rates, wrongly flagging human writing, especially formal or non-native English, as AI. It's one of the more aggressive detectors, which catches more AI but also more genuine work, so its score should be treated as a signal, not proof."
                 />
 
               <p className="text-xl text-muted-foreground">Originality.AI is one of the most popular AI detectors, but how accurate is it really? We tested it extensively and found significant false positive rates that users should know about.</p>
@@ -95,11 +84,7 @@ const OriginalityAIAccuracyFalsePositives = () => {
             </header>
 
             <KeyTakeaways points={[
-              "Originality.AI produces false positives on 8-12% of human-written content in independent testing",
-              "False positive rates rise to 15-18% for non-native English writers and technical/formal content",
-              "The tool is most accurate on raw, unedited GPT output (92-96% accuracy) but struggles with edited content",
-              "No AI detector, including Originality.AI, should be used as the sole basis for accusations of AI use",
-              "Running content through multiple detectors significantly reduces the risk of acting on a false positive"
+              "Originality.AI produces false positives on 8-12% of human-written content in independent testing", "False positive rates rise to 15-18% for non-native English writers and technical/formal content", "The tool is most accurate on raw, unedited GPT output (92-96% accuracy) but struggles with edited content", "No AI detector, including Originality.AI, should be used as the sole basis for accusations of AI use", "Running content through multiple detectors significantly reduces the risk of acting on a false positive"
             ]} />
 
             <section>

@@ -16,19 +16,11 @@ import { SpeakableSchema } from "@/components/SpeakableSchema";
 import { PostHowToSchema } from "@/components/PostHowToSchema";
 
 const relatedArticles = [
-  { title: "How to Humanize Claude Output", description: "5-step workflow that drops Claude detection scores to 4-9%.", href: "/blog/humanize-claude-output", category: "How-To Guide" },
-  { title: "How to Humanize Gemini Output", description: "Workflow to reduce Gemini Turnitin scores from 84% to 7%.", href: "/blog/humanize-gemini-output", category: "How-To Guide" },
-  { title: "Can AI Detectors Detect GPT-5?", description: "Real 2026 detection rates for GPT-5 across every major detector.", href: "/blog/can-ai-detectors-detect-gpt5", category: "Detector Review" },
-  { title: "Make ChatGPT Undetectable", description: "Complete workflow for ChatGPT 4.5 and 5.0.", href: "/blog/make-chatgpt-undetectable", category: "How-To Guide" },
+  { title: "How to Humanize Claude Output", description: "5-step workflow that drops Claude detection scores to 4-9%.", href: "/blog/humanize-claude-output", category: "How-To Guide" }, { title: "How to Humanize Gemini Output", description: "Workflow to reduce Gemini Turnitin scores from 84% to 7%.", href: "/blog/humanize-gemini-output", category: "How-To Guide" }, { title: "Can AI Detectors Detect GPT-5?", description: "Real 2026 detection rates for GPT-5 across every major detector.", href: "/blog/can-ai-detectors-detect-gpt5", category: "Detector Review" }, { title: "Make ChatGPT Undetectable", description: "Complete workflow for ChatGPT 4.5 and 5.0.", href: "/blog/make-chatgpt-undetectable", category: "How-To Guide" },
 ];
 
 const faqs = [
-  { question: "Is GPT-5 output detectable in 2026?", answer: "Yes. In our June 2026 testing, raw GPT-5 output is flagged at 71-86% by Turnitin, 78-91% by GPTZero, and 74-88% by Originality.AI. The 'reasoning' mode is the most detectable variant because its long, structured chains-of-thought produce uniform perplexity. Humanization is required for academic or publishing use." },
-  { question: "Does GPT-5 produce more 'human' text than GPT-4?", answer: "Slightly, but not enough to matter. GPT-5 reduced average detection scores by 6-9 percentage points versus GPT-4o on the same prompts, but every major detector still flags it above 70% without humanization. The improvement is in reasoning quality, not stylistic randomness." },
-  { question: "Which humanizer works best on GPT-5 reasoning chains?", answer: "Tools that restructure sentence boundaries (not just swap synonyms) perform best. AI Free Text Pro reduced GPT-5 Turnitin scores from 82% to 6% in our 50-sample test, versus 18-23% for synonym-only rewriters like QuillBot. The key is breaking the uniform burstiness of reasoning output." },
-  { question: "Can I humanize GPT-5 text without losing the reasoning quality?", answer: "Yes, if you humanize in 200-400 word chunks and review each pass. Long single-shot humanization on full essays sometimes drops technical precision in math and code blocks. Process those sections manually or skip them." },
-  { question: "Does Turnitin's 2026 update catch GPT-5 better than ChatGPT-4?", answer: "Turnitin's April 2026 model update specifically targeted GPT-5 stylistic signatures. Raw GPT-5 detection accuracy climbed from 68% to 84% post-update. Humanized GPT-5 output remained at 4-8% — the update did not meaningfully affect post-humanization scores." },
-  { question: "Is humanizing GPT-5 output against OpenAI's terms?", answer: "No. OpenAI's terms permit editing, rewriting, and republishing model output. Humanization is a form of editing. The ethical question is whether you are passing AI-assisted work off as fully human in a context that forbids it — that depends on your institution or publisher's policy, not the tool." },
+  { question: "Is GPT-5 output detectable in 2026?", answer: "Yes. In our June 2026 testing, raw GPT-5 output is flagged at 71-86% by Turnitin, 78-91% by GPTZero, and 74-88% by Originality.AI. The 'reasoning' mode is the most detectable variant because its long, structured chains-of-thought produce uniform perplexity. Humanization is required for academic or publishing use." }, { question: "Does GPT-5 produce more 'human' text than GPT-4?", answer: "Slightly, but not enough to matter. GPT-5 reduced average detection scores by 6-9 percentage points versus GPT-4o on the same prompts, but every major detector still flags it above 70% without humanization. The improvement is in reasoning quality, not stylistic randomness." }, { question: "Which humanizer works best on GPT-5 reasoning chains?", answer: "Tools that restructure sentence boundaries (not just swap synonyms) perform best. AI Free Text Pro reduced GPT-5 Turnitin scores from 82% to 6% in our 50-sample test, versus 18-23% for synonym-only rewriters like QuillBot. The key is breaking the uniform burstiness of reasoning output." }, { question: "Can I humanize GPT-5 text without losing the reasoning quality?", answer: "Yes, if you humanize in 200-400 word chunks and review each pass. Long single-shot humanization on full essays sometimes drops technical precision in math and code blocks. Process those sections manually or skip them." }, { question: "Does Turnitin's 2026 update catch GPT-5 better than ChatGPT-4?", answer: "Turnitin's April 2026 model update specifically targeted GPT-5 stylistic signatures. Raw GPT-5 detection accuracy climbed from 68% to 84% post-update. Humanized GPT-5 output remained at 4-8%, the update did not meaningfully affect post-humanization scores." }, { question: "Is humanizing GPT-5 output against OpenAI's terms?", answer: "No. OpenAI's terms permit editing, rewriting, and republishing model output. Humanization is a form of editing. The ethical question is whether you are passing AI-assisted work off as fully human in a context that forbids it, that depends on your institution or publisher's policy, not the tool." },
 ];
 
 const HumanizeGPT5Output = () => {
@@ -53,12 +45,8 @@ const HumanizeGPT5Output = () => {
         <meta name="twitter:site" content="@aifreetextpro" />
         <script type="application/ld+json">
           {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            "itemListElement": [
-              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://aifreetextpro.com" },
-              { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://aifreetextpro.com/blog" },
-              { "@type": "ListItem", "position": 3, "name": "Humanize GPT-5 Output" }
+            "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://aifreetextpro.com" }, { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://aifreetextpro.com/blog" }, { "@type": "ListItem", "position": 3, "name": "Humanize GPT-5 Output" }
             ]
           })}
         </script>
@@ -79,22 +67,14 @@ const HumanizeGPT5Output = () => {
         name="How to Humanize GPT-5 Output"
         description="A 6-step workflow to humanize GPT-5 output so it bypasses Turnitin, GPTZero, and Originality.AI."
         steps={[
-          { name: "Generate in segments", text: "Prompt GPT-5 to write in 300-500 word sections rather than full essays in one shot." },
-          { name: "Strip transitional scaffolding", text: "Delete uniform connectors like 'Furthermore,' 'Moreover,' and 'In conclusion' that GPT-5 over-uses." },
-          { name: "Humanize per section", text: "Run each 300-500 word section through AI Free Text Pro on the 'Academic' or 'Natural' setting." },
-          { name: "Verify with a detector", text: "Test each section in GPTZero. Re-humanize anything scoring above 15%." },
-          { name: "Restore precision", text: "Manually re-insert any numbers, citations, or technical terms the humanizer reworded." },
-          { name: "Final consolidation pass", text: "Read the full document aloud. Fix any sentences that lost meaning or rhythm." },
-        ]}
+          { name: "Generate in segments", text: "Prompt GPT-5 to write in 300-500 word sections rather than full essays in one shot." }, { name: "Strip transitional scaffolding", text: "Delete uniform connectors like 'Furthermore,' 'Moreover,' and 'In conclusion' that GPT-5 over-uses." }, { name: "Humanize per section", text: "Run each 300-500 word section through AI Free Text Pro on the 'Academic' or 'Natural' setting." }, { name: "Verify with a detector", text: "Test each section in GPTZero. Re-humanize anything scoring above 15%." }, { name: "Restore precision", text: "Manually re-insert any numbers, citations, or technical terms the humanizer reworded." }, { name: "Final consolidation pass", text: "Read the full document aloud. Fix any sentences that lost meaning or rhythm." }, ]}
       />
 
       <Navbar />
       <main className="pt-20 pb-16">
         <div className="container mx-auto px-4 max-w-4xl">
           <Breadcrumbs items={[
-            { label: "Home", href: "/" },
-            { label: "Blog", href: "/blog" },
-            { label: "Humanize GPT-5 Output" }
+            { label: "Home", href: "/" }, { label: "Blog", href: "/blog" }, { label: "Humanize GPT-5 Output" }
           ]} />
 
           <Link to="/blog" className="inline-flex items-center text-primary hover:underline mb-6 text-sm">
@@ -122,16 +102,12 @@ const HumanizeGPT5Output = () => {
             <ReviewedBy name="Dr. Sarah Chen" role="Head of AI Research" slug="sarah-chen" />
 
             <KeyTakeaways points={[
-              "Raw GPT-5 is flagged at 71-86% by Turnitin and 78-91% by GPTZero in June 2026 testing",
-              "GPT-5's 'reasoning' mode is the most detectable variant due to uniform chain-of-thought structure",
-              "Sentence-restructuring humanizers outperform synonym swappers by 12-17 percentage points on GPT-5",
-              "Segment-then-humanize beats single-shot humanization by ~3x on long documents",
-              "Post-humanization scores stay at 4-8% even against Turnitin's April 2026 model update"
+              "Raw GPT-5 is flagged at 71-86% by Turnitin and 78-91% by GPTZero in June 2026 testing", "GPT-5's 'reasoning' mode is the most detectable variant due to uniform chain-of-thought structure", "Sentence-restructuring humanizers outperform synonym swappers by 12-17 percentage points on GPT-5", "Segment-then-humanize beats single-shot humanization by ~3x on long documents", "Post-humanization scores stay at 4-8% even against Turnitin's April 2026 model update"
             ]} />
 
             <h2>Why GPT-5 Is Still Highly Detectable</h2>
             <p>
-              GPT-5 launched in late 2025 with measurably better reasoning, longer context, and reduced hallucination. What it did <em>not</em> change is the underlying statistical signature that detectors look for. AI text — including GPT-5 text — shows uniform perplexity, predictable sentence-length distributions, and a narrow vocabulary range relative to human writing.
+              GPT-5 launched in late 2025 with measurably better reasoning, longer context, and reduced hallucination. What it did <em>not</em> change is the underlying statistical signature that detectors look for. AI text, including GPT-5 text, shows uniform perplexity, predictable sentence-length distributions, and a narrow vocabulary range relative to human writing.
             </p>
             <p>
               Our June 2026 detection sweep across 50 GPT-5 essays (mixed academic, marketing, and technical prompts) showed the following raw scores:
@@ -164,12 +140,12 @@ const HumanizeGPT5Output = () => {
             <h2>The 6-Step Workflow</h2>
             <div className="bg-muted/50 p-6 rounded-lg my-6 not-prose">
               <ol className="space-y-3">
-                <li className="flex items-start gap-2"><CheckCircle className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" /><span><strong>Step 1 — Generate in segments.</strong> Prompt GPT-5 for 300-500 word sections rather than a complete 2,000-word essay. Long single-shot output has the most uniform burstiness signature.</span></li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" /><span><strong>Step 2 — Strip transitional scaffolding.</strong> Delete or replace GPT-5's signature connectors: "Furthermore," "Moreover," "In conclusion," "It is important to note that," "delve into," and "navigate the complexities of." These phrases are the strongest single AI-detection signal.</span></li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" /><span><strong>Step 3 — Humanize per section.</strong> Run each segment through <Link to="/" className="text-primary hover:underline">AI Free Text Pro</Link> on the "Academic" or "Natural" setting. Segment-level humanization preserves more original meaning than full-document passes.</span></li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" /><span><strong>Step 4 — Verify with a detector.</strong> Test each humanized segment in <Link to="/ai-checker" className="text-primary hover:underline">our free AI checker</Link> or GPTZero. Any segment above 15% gets a second humanization pass.</span></li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" /><span><strong>Step 5 — Restore precision.</strong> Humanizers occasionally reword numbers, dates, citations, or technical terms. Diff each segment against the original and manually restore anything that lost factual precision.</span></li>
-                <li className="flex items-start gap-2"><CheckCircle className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" /><span><strong>Step 6 — Final consolidation pass.</strong> Read the full document aloud. Fix sentences that lost rhythm at segment boundaries. This 5-minute step accounts for most of the readability gap between "good enough" and "publishable."</span></li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" /><span><strong>Step 1, Generate in segments.</strong> Prompt GPT-5 for 300-500 word sections rather than a complete 2,000-word essay. Long single-shot output has the most uniform burstiness signature.</span></li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" /><span><strong>Step 2, Strip transitional scaffolding.</strong> Delete or replace GPT-5's signature connectors: "Furthermore," "Moreover," "In conclusion," "It is important to note that," "delve into," and "navigate the complexities of." These phrases are the strongest single AI-detection signal.</span></li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" /><span><strong>Step 3, Humanize per section.</strong> Run each segment through <Link to="/" className="text-primary hover:underline">AI Free Text Pro</Link> on the "Academic" or "Natural" setting. Segment-level humanization preserves more original meaning than full-document passes.</span></li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" /><span><strong>Step 4, Verify with a detector.</strong> Test each humanized segment in <Link to="/ai-checker" className="text-primary hover:underline">our free AI checker</Link> or GPTZero. Any segment above 15% gets a second humanization pass.</span></li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" /><span><strong>Step 5, Restore precision.</strong> Humanizers occasionally reword numbers, dates, citations, or technical terms. Diff each segment against the original and manually restore anything that lost factual precision.</span></li>
+                <li className="flex items-start gap-2"><CheckCircle className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" /><span><strong>Step 6, Final consolidation pass.</strong> Read the full document aloud. Fix sentences that lost rhythm at segment boundaries. This 5-minute step accounts for most of the readability gap between "good enough" and "publishable."</span></li>
               </ol>
             </div>
 

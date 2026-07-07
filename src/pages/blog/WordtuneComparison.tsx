@@ -53,7 +53,7 @@ const WordtuneComparison = () => {
             "publisher": { "@type": "Organization", "name": "AI Free Text Pro", "logo": { "@type": "ImageObject", "url": "https://aifreetextpro.com/logo.png" } },
             "datePublished": "2026-03-08",
             "dateModified": "2026-03-08",
-            "wordCount": 2000
+            "wordCount": 1050
           })}
         </script>
         <script type="application/ld+json">
@@ -104,13 +104,13 @@ const WordtuneComparison = () => {
                   answer="They solve different problems. Wordtune rewrites for clarity and tone; AI Free Text Pro humanizes to lower AI-detection scores. If your goal is cleaner writing, use Wordtune; if it's passing detectors on your own work, use a humanizer. Most people reach for the one they actually need second."
                 />
 
-              <p className="text-xl text-muted-foreground">Wordtune makes your writing clearer. AI Free Text Pro makes it undetectable. They solve different problems. Here is when to use each -- and why most people need the one they are not using.</p>
+              <p className="text-xl text-muted-foreground">Wordtune makes your writing clearer. AI Free Text Pro makes it undetectable. They solve different problems. Here is when to use each, and why most people need the one they are not using.</p>
             </header>
 
             <ReviewedBy name="Dr. Sarah Chen" role="Founder & CEO" slug="sarah-chen" />
 
             <KeyTakeaways points={[
-              "Wordtune is a rewriter/paraphraser; AI Free Text Pro is a humanizer -- fundamentally different tools",
+              "Wordtune is a rewriter/paraphraser; AI Free Text Pro is a humanizer, fundamentally different tools",
               "Wordtune-processed AI text still scores 78-85% on AI detectors",
               "AI Free Text Pro reduces detection scores to under 10% on average",
               "For best results, use Wordtune for clarity first, then AI Free Text Pro for humanization",
@@ -118,9 +118,12 @@ const WordtuneComparison = () => {
             ]} />
 
             <h2>Rewriting vs Humanizing: The Core Difference</h2>
-            <p>This comparison is not about which tool is "better" -- it is about understanding that they solve entirely different problems. <Link to="/blog/paraphrasing-vs-humanizing" className="text-primary hover:underline">Rewriting and humanizing</Link> are as different as a spell checker and a plagiarism checker. Both work with text, but they target completely different issues.</p>
+            <p>This comparison is not about which tool is "better", it is about understanding that they solve entirely different problems. <Link to="/blog/paraphrasing-vs-humanizing" className="text-primary hover:underline">Rewriting and humanizing</Link> are as different as a spell checker and a plagiarism checker. Both work with text, but they target completely different issues.</p>
             <p><strong>Wordtune rewrites</strong> for clarity, conciseness, and tone. It makes awkward sentences smooth, verbose paragraphs tight, and casual text professional (or vice versa). It does not care about AI detection.</p>
-            <p><strong>AI Free Text Pro humanizes</strong> by adjusting the statistical patterns that AI detectors measure. It modifies perplexity, burstiness, and token probability distributions -- the invisible fingerprints that distinguish AI text from human writing.</p>
+            <p><strong>AI Free Text Pro humanizes</strong> by adjusting the statistical patterns that AI detectors measure. It modifies perplexity, burstiness, and token probability distributions, the invisible fingerprints that distinguish AI text from human writing.</p>
+
+            <h2>What Wordtune Is Genuinely Good At</h2>
+            <p>It is worth being fair to Wordtune, because it is a strong tool at the job it was built for. Its rewrite suggestions are some of the most natural in the category, offering several alternative phrasings for a sentence rather than a single robotic swap, and its tone controls genuinely help you shift a paragraph from casual to formal without rewriting it yourself. It works inline as you type across email, documents, and the browser, which makes it a real day-to-day writing aid rather than a one-off tool. If your problem is that your own writing is wordy, stiff, or unclear, Wordtune solves that well. The catch is only that clarity and AI-detection are different problems, so a cleaner sentence is not automatically a less detectable one, which is exactly what the test below shows.</p>
 
             <h2>Detection Test Results</h2>
             <p>We ran 500 words of ChatGPT-generated text through both tools, then tested the output against five major AI detectors:</p>
@@ -143,7 +146,7 @@ const WordtuneComparison = () => {
                 </TableBody>
               </Table>
             </div>
-            <p>Wordtune reduces detection scores by 10-20 percentage points -- noticeable but not enough to avoid flags. AI Free Text Pro reduces scores by 85-93 percentage points, bringing text into the safe range.</p>
+            <p>Wordtune reduces detection scores by 10-20 percentage points, noticeable but not enough to avoid flags. AI Free Text Pro reduces scores by 85-93 percentage points, bringing text into the safe range.</p>
 
             <h2>Feature Comparison</h2>
             <div className="overflow-x-auto my-6">
@@ -193,7 +196,7 @@ const WordtuneComparison = () => {
             </ul>
 
             <h2>The Verdict</h2>
-            <p>Wordtune and AI Free Text Pro are complementary tools, not competitors. If your primary concern is AI detection -- whether for academic submissions, client deliverables, or professional credibility -- AI Free Text Pro is the tool you need. If you simply want to improve your writing's clarity and style, Wordtune is excellent. For the best results, use both in sequence.</p>
+            <p>Wordtune and AI Free Text Pro are complementary tools, not competitors. If your primary concern is AI detection, whether for academic submissions, client deliverables, or professional credibility, AI Free Text Pro is the tool you need. If you simply want to improve your writing's clarity and style, Wordtune is excellent. For the best results, use both in sequence.</p>
 
             <div className="bg-primary/5 border border-primary/20 rounded-lg p-8 my-8 text-center">
               <h3 className="text-xl font-bold mb-2">Need Humanization, Not Just Rewriting?</h3>

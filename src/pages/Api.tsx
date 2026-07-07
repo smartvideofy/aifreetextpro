@@ -17,39 +17,24 @@ const codeExamples = {
   -H "Authorization: Bearer sk_live_your_api_key" \\
   -H "Content-Type: application/json" \\
   -d '{
-    "text": "AI-generated text to humanize...",
-    "style": "academic",
-    "strength": "balanced"
-  }'`,
-  python: `import requests
+    "text": "AI-generated text to humanize...", "style": "academic", "strength": "balanced"
+  }'`, python: `import requests
 
 response = requests.post(
-    "https://api.aifreetextpro.com/v1/humanize",
-    headers={
-        "Authorization": "Bearer sk_live_your_api_key",
-        "Content-Type": "application/json"
-    },
-    json={
-        "text": "AI-generated text to humanize...",
-        "style": "academic",
-        "strength": "balanced"
+    "https://api.aifreetextpro.com/v1/humanize", headers={
+        "Authorization": "Bearer sk_live_your_api_key", "Content-Type": "application/json"
+    }, json={
+        "text": "AI-generated text to humanize...", "style": "academic", "strength": "balanced"
     }
 )
 
 result = response.json()
-print(result["humanized_text"])`,
-  javascript: `const response = await fetch(
-  "https://api.aifreetextpro.com/v1/humanize",
-  {
-    method: "POST",
-    headers: {
-      "Authorization": "Bearer sk_live_your_api_key",
-      "Content-Type": "application/json"
-    },
-    body: JSON.stringify({
-      text: "AI-generated text to humanize...",
-      style: "academic",
-      strength: "balanced"
+print(result["humanized_text"])`, javascript: `const response = await fetch(
+  "https://api.aifreetextpro.com/v1/humanize", {
+    method: "POST", headers: {
+      "Authorization": "Bearer sk_live_your_api_key", "Content-Type": "application/json"
+    }, body: JSON.stringify({
+      text: "AI-generated text to humanize...", style: "academic", strength: "balanced"
     })
   }
 );
@@ -59,90 +44,34 @@ console.log(result.humanized_text);`,
 };
 
 const responseExample = `{
-  "humanized_text": "Your naturally rewritten text...",
-  "confidence_score": 0.97,
-  "word_count": 142,
-  "detection_risk": "low",
-  "credits_remaining": 48500
+  "humanized_text": "Your naturally rewritten text...", "confidence_score": 0.97, "word_count": 142, "detection_risk": "low", "credits_remaining": 48500
 }`;
 
 const benefits = [
   {
-    icon: Zap,
-    title: "Lightning Fast",
-    description: "Average response time under 2 seconds. Process thousands of words in a single request.",
-  },
-  {
-    icon: Shield,
-    title: "98% Bypass Rate",
-    description: "Same industry-leading accuracy as our web app, now available programmatically.",
-  },
-  {
-    icon: Key,
-    title: "Simple Auth",
-    description: "Bearer token authentication. Generate and manage API keys from your developer portal.",
-  },
-  {
-    icon: Globe,
-    title: "RESTful Design",
-    description: "Standard REST API with JSON payloads. Integrate with any language or framework.",
-  },
-  {
-    icon: BarChart3,
-    title: "Usage Analytics",
-    description: "Real-time dashboard tracking requests, word counts, and error rates per key.",
-  },
-  {
-    icon: Layers,
-    title: "Multiple Styles",
-    description: "Academic, casual, professional, and creative humanization modes via a single parameter.",
-  },
+    icon: Zap, title: "Lightning Fast", description: "Average response time under 2 seconds. Process thousands of words in a single request.", }, {
+    icon: Shield, title: "98% Bypass Rate", description: "Same industry-leading accuracy as our web app, now available programmatically.", }, {
+    icon: Key, title: "Simple Auth", description: "Bearer token authentication. Generate and manage API keys from your developer portal.", }, {
+    icon: Globe, title: "RESTful Design", description: "Standard REST API with JSON payloads. Integrate with any language or framework.", }, {
+    icon: BarChart3, title: "Usage Analytics", description: "Real-time dashboard tracking requests, word counts, and error rates per key.", }, {
+    icon: Layers, title: "Multiple Styles", description: "Academic, casual, professional, and creative humanization modes via a single parameter.", },
 ];
 
 const useCases = [
   {
-    title: "Content Platforms",
-    description: "Integrate humanization directly into your CMS or publishing workflow. Auto-process drafts before publication.",
-    icon: Globe,
-  },
-  {
-    title: "Writing Tools & Plugins",
-    description: "Build browser extensions, Google Docs add-ons, or VS Code plugins powered by our API.",
-    icon: Code2,
-  },
-  {
-    title: "Agency Automation",
-    description: "Process client content at scale. Batch humanize hundreds of articles through your existing pipeline.",
-    icon: Layers,
-  },
-  {
-    title: "EdTech Products",
-    description: "Help students improve AI-assisted writing while maintaining academic integrity standards.",
-    icon: Terminal,
-  },
+    title: "Content Platforms", description: "Integrate humanization directly into your CMS or publishing workflow. Auto-process drafts before publication.", icon: Globe, }, {
+    title: "Writing Tools & Plugins", description: "Build browser extensions, Google Docs add-ons, or VS Code plugins powered by our API.", icon: Code2, }, {
+    title: "Agency Automation", description: "Process client content at scale. Batch humanize hundreds of articles through your existing pipeline.", icon: Layers, }, {
+    title: "EdTech Products", description: "Help students improve AI-assisted writing while maintaining academic integrity standards.", icon: Terminal, },
 ];
 
 const faqs = [
   {
-    question: "What are the API rate limits?",
-    answer: "Pro Writer plans include 1,000 API requests per day with up to 5,000 words per request. Unlimited Creator plans have 10,000 requests per day. Need higher limits? Contact us for enterprise plans.",
-  },
-  {
-    question: "Which plans include API access?",
-    answer: "API access is available on Pro Writer ($24.99/mo) and Unlimited Creator ($59.99/mo) plans. Free and Starter plans do not include API access. Visit our pricing page for full plan details.",
-  },
-  {
-    question: "How do I authenticate API requests?",
-    answer: "Generate an API key from the developer portal. Include it as a Bearer token in the Authorization header of every request. Keys can be revoked and regenerated at any time.",
-  },
-  {
-    question: "What endpoints are available?",
-    answer: "Currently we offer POST /v1/humanize for text humanization and POST /v1/detect for AI detection. Both accept JSON payloads with configurable style and strength parameters.",
-  },
-  {
-    question: "Is there a sandbox or test environment?",
-    answer: "Yes. Your API key works in both test and production modes. Test requests are free and don't count against your quota — just prefix your key with sk_test_ instead of sk_live_.",
-  },
+    question: "What are the API rate limits?", answer: "Pro Writer plans include 1,000 API requests per day with up to 5,000 words per request. Unlimited Creator plans have 10,000 requests per day. Need higher limits? Contact us for enterprise plans.", }, {
+    question: "Which plans include API access?", answer: "API access is available on Pro Writer ($24.99/mo) and Unlimited Creator ($59.99/mo) plans. Free and Starter plans do not include API access. Visit our pricing page for full plan details.", }, {
+    question: "How do I authenticate API requests?", answer: "Generate an API key from the developer portal. Include it as a Bearer token in the Authorization header of every request. Keys can be revoked and regenerated at any time.", }, {
+    question: "What endpoints are available?", answer: "Currently we offer POST /v1/humanize for text humanization and POST /v1/detect for AI detection. Both accept JSON payloads with configurable style and strength parameters.", }, {
+    question: "Is there a sandbox or test environment?", answer: "Yes. Your API key works in both test and production modes. Test requests are free and don't count against your quota, just prefix your key with sk_test_ instead of sk_live_.", },
 ];
 
 const Api = () => {
@@ -159,48 +88,28 @@ const Api = () => {
         <meta property="og:url" content="https://aifreetextpro.com/api" />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="AI Free Text Pro API – Developer Documentation" />
+        <meta name="twitter:title" content="AI Free Text Pro API - Developer Documentation" />
         <meta name="twitter:description" content="Programmatic access to AI text humanization and detection. REST API with simple auth." />
         <script type="application/ld+json">
           {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "SoftwareApplication",
-            "name": "AI Free Text Pro API",
-            "applicationCategory": "DeveloperApplication",
-            "operatingSystem": "Web",
-            "description": "REST API for AI text humanization and detection with 98% accuracy",
-            "url": "https://aifreetextpro.com/api",
-            "offers": {
-              "@type": "Offer",
-              "price": "24.99",
-              "priceCurrency": "USD",
-              "description": "API access included with Pro Writer plan"
-            },
-            "provider": {
-              "@type": "Organization",
-              "name": "AI Free Text Pro",
-              "url": "https://aifreetextpro.com"
+            "@context": "https://schema.org", "@type": "SoftwareApplication", "name": "AI Free Text Pro API", "applicationCategory": "DeveloperApplication", "operatingSystem": "Web", "description": "REST API for AI text humanization and detection with 98% accuracy", "url": "https://aifreetextpro.com/api", "offers": {
+              "@type": "Offer", "price": "24.99", "priceCurrency": "USD", "description": "API access included with Pro Writer plan"
+            }, "provider": {
+              "@type": "Organization", "name": "AI Free Text Pro", "url": "https://aifreetextpro.com"
             }
           })}
         </script>
         <script type="application/ld+json">
           {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            "itemListElement": [
-              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://aifreetextpro.com/" },
-              { "@type": "ListItem", "position": 2, "name": "API", "item": "https://aifreetextpro.com/api" }
+            "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://aifreetextpro.com/" }, { "@type": "ListItem", "position": 2, "name": "API", "item": "https://aifreetextpro.com/api" }
             ]
           })}
         </script>
         <script type="application/ld+json">
           {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": faqs.map(f => ({
-              "@type": "Question",
-              "name": f.question,
-              "acceptedAnswer": { "@type": "Answer", "text": f.answer }
+            "@context": "https://schema.org", "@type": "FAQPage", "mainEntity": faqs.map(f => ({
+              "@type": "Question", "name": f.question, "acceptedAnswer": { "@type": "Answer", "text": f.answer }
             }))
           })}
         </script>
@@ -288,7 +197,7 @@ const Api = () => {
               <div>
                 <div className="flex items-center gap-2 mb-3 h-10 px-1">
                   <span className="inline-block w-2.5 h-2.5 rounded-full bg-primary" />
-                  <span className="text-sm font-medium text-muted-foreground">200 OK — Response</span>
+                  <span className="text-sm font-medium text-muted-foreground">200 OK, Response</span>
                 </div>
                 <pre className="bg-card border border-border rounded-lg p-5 overflow-x-auto text-sm font-mono text-foreground leading-relaxed">
                   <code>{responseExample}</code>
@@ -332,7 +241,7 @@ const Api = () => {
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">What Can You Build?</h2>
               <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-                From CMS plugins to full SaaS products — our API powers the next generation of writing tools.
+                From CMS plugins to full SaaS products, our API powers the next generation of writing tools.
               </p>
             </div>
             <div className="grid sm:grid-cols-2 gap-6 max-w-4xl mx-auto">
@@ -393,7 +302,7 @@ const Api = () => {
           <div className="container mx-auto px-4 text-center max-w-3xl">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Ready to Integrate?</h2>
             <p className="text-muted-foreground text-lg mb-8">
-              Get your API key in under 60 seconds. Start with the free sandbox — no credit card required.
+              Get your API key in under 60 seconds. Start with the free sandbox, no credit card required.
             </p>
             <a href={API_PORTAL_URL} target="_blank" rel="noopener noreferrer">
               <Button size="lg" className="bg-gradient-to-r from-primary to-secondary text-lg px-12 py-6">

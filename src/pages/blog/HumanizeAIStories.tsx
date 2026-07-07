@@ -13,51 +13,27 @@ import { AuthorSchema } from "@/components/AuthorSchema";
 
 const relatedArticles = [
   {
-    title: "How to Humanize AI Content for Social Media in 2026",
-    description: "Step-by-step tips for humanizing AI content on LinkedIn, Instagram, TikTok",
-    href: "/blog/humanize-ai-social-media-2026",
-    category: "Marketing"
-  },
-  {
-    title: "How to Humanize AI Content for eCommerce Product Descriptions",
-    description: "Make AI-generated product copy sound authentic for better conversions",
-    href: "/blog/ai-product-descriptions",
-    category: "eCommerce"
-  },
-  {
-    title: "How to Write Naturally with AI",
-    description: "Craft natural, engaging AI-generated content for all types of writing",
-    href: "/blog/how-to-write-naturally-with-ai",
-    category: "Writing Craft"
-  },
-  {
-    title: "Tone, Voice, and Flow in AI Writing",
-    description: "Master the elements that make AI content feel authentically human",
-    href: "/blog/tone-voice-flow-ai-writing",
-    category: "Writing Craft"
+    title: "How to Humanize AI Content for Social Media in 2026", description: "Step-by-step tips for humanizing AI content on LinkedIn, Instagram, TikTok", href: "/blog/humanize-ai-social-media-2026", category: "Marketing"
+  }, {
+    title: "How to Humanize AI Content for eCommerce Product Descriptions", description: "Make AI-generated product copy sound authentic for better conversions", href: "/blog/ai-product-descriptions", category: "eCommerce"
+  }, {
+    title: "How to Write Naturally with AI", description: "Craft natural, engaging AI-generated content for all types of writing", href: "/blog/how-to-write-naturally-with-ai", category: "Writing Craft"
+  }, {
+    title: "Tone, Voice, and Flow in AI Writing", description: "Master the elements that make AI content feel authentically human", href: "/blog/tone-voice-flow-ai-writing", category: "Writing Craft"
   }
 ];
 
 const faqs = [
   {
-    question: "Can AI-generated fiction pass as human-written?",
-    answer: "With proper humanization, yes. Raw AI fiction lacks emotional depth and sensory details, but adding character psychology, unexpected plot developments, and specific sensory language can make AI-assisted stories feel genuinely human."
-  },
-  {
-    question: "What genres work best with AI story assistance?",
-    answer: "Genre fiction (mystery, romance, sci-fi) with established conventions works well because AI understands tropes. Literary fiction requiring unique voice and experimental structure needs heavier humanization. Non-fiction narratives benefit most from AI structure with human experiences."
-  },
-  {
-    question: "How do I make AI dialogue sound natural?",
-    answer: "Give each character a distinct vocabulary, add interruptions and incomplete sentences, include subtext (what's not said), add physical actions between dialogue lines, and read conversations aloud to catch stiff phrasing."
-  },
-  {
-    question: "Should I disclose AI use in creative writing?",
-    answer: "For personal projects, it's your choice. For publication, check submission guidelines. For commercial work, transparency builds trust. Many writers describe it as 'AI-assisted' when AI provided structure but human creativity drove the story."
-  },
-  {
-    question: "How do I maintain a consistent narrative voice with AI?",
-    answer: "Create a character voice document with vocabulary lists, speech patterns, and thought processes. Feed this to AI prompts and compare every generated section against your voice guide. Consistency comes from clear guidelines applied scene by scene."
+    question: "Can AI-generated fiction pass as human-written?", answer: "With proper humanization, yes. Raw AI fiction lacks emotional depth and sensory details, but adding character psychology, unexpected plot developments, and specific sensory language can make AI-assisted stories feel genuinely human."
+  }, {
+    question: "What genres work best with AI story assistance?", answer: "Genre fiction (mystery, romance, sci-fi) with established conventions works well because AI understands tropes. Literary fiction requiring unique voice and experimental structure needs heavier humanization. Non-fiction narratives benefit most from AI structure with human experiences."
+  }, {
+    question: "How do I make AI dialogue sound natural?", answer: "Give each character a distinct vocabulary, add interruptions and incomplete sentences, include subtext (what's not said), add physical actions between dialogue lines, and read conversations aloud to catch stiff phrasing."
+  }, {
+    question: "Should I disclose AI use in creative writing?", answer: "For personal projects, it's your choice. For publication, check submission guidelines. For commercial work, transparency builds trust. Many writers describe it as 'AI-assisted' when AI provided structure but human creativity drove the story."
+  }, {
+    question: "How do I maintain a consistent narrative voice with AI?", answer: "Create a character voice document with vocabulary lists, speech patterns, and thought processes. Feed this to AI prompts and compare every generated section against your voice guide. Consistency comes from clear guidelines applied scene by scene."
   }
 ];
 
@@ -90,58 +66,28 @@ export default function HumanizeAIStories() {
 
         <script type="application/ld+json">
           {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Article",
-            "headline": "How to Humanize AI-Generated Stories & Fiction",
-            "description": "Learn to transform AI-generated stories and fiction into human-like narratives that captivate readers.",
-            "image": {
-              "@type": "ImageObject",
-              "url": ogImage,
-              "width": 1200,
-              "height": 675
-            },
-            "datePublished": "2026-02-02",
-            "dateModified": "2026-04-05",
-            "author": {
-              "@type": "Person",
-              "name": "Dr. Sarah Chen",
-              "url": "https://aifreetextpro.com/team#sarah-chen",
-              "jobTitle": "Founder & CEO"
-            },
-            "publisher": {
-              "@type": "Organization",
-              "name": "AI Free Text Pro",
-              "logo": { "@type": "ImageObject", "url": "https://aifreetextpro.com/logo.png" }
-            },
-            "mainEntityOfPage": { "@type": "WebPage", "@id": canonical }
+            "@context": "https://schema.org", "@type": "Article", "headline": "How to Humanize AI-Generated Stories & Fiction", "description": "Learn to transform AI-generated stories and fiction into human-like narratives that captivate readers.", "image": {
+              "@type": "ImageObject", "url": ogImage, "width": 1200, "height": 675
+            }, "datePublished": "2026-02-02", "dateModified": "2026-04-05", "author": {
+              "@type": "Person", "name": "Dr. Sarah Chen", "url": "https://aifreetextpro.com/team#sarah-chen", "jobTitle": "Founder & CEO"
+            }, "publisher": {
+              "@type": "Organization", "name": "AI Free Text Pro", "logo": { "@type": "ImageObject", "url": "https://aifreetextpro.com/logo.png" }
+            }, "mainEntityOfPage": { "@type": "WebPage", "@id": canonical }
           })}
         </script>
 
         <script type="application/ld+json">
           {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            "itemListElement": [
-              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://aifreetextpro.com/" },
-              { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://aifreetextpro.com/blog" },
-              { "@type": "ListItem", "position": 3, "name": "How to Humanize AI-Generated Stories & Fiction" }
+            "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://aifreetextpro.com/" }, { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://aifreetextpro.com/blog" }, { "@type": "ListItem", "position": 3, "name": "How to Humanize AI-Generated Stories & Fiction" }
             ]
           })}
         </script>
 
         <script type="application/ld+json">
           {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "HowTo",
-            "name": "How to Humanize AI-Generated Stories & Fiction",
-            "description": "Transform AI-generated stories into human-like narratives that captivate readers.",
-            "totalTime": "PT20M",
-            "step": [
-              { "@type": "HowToStep", "position": 1, "name": "Generate AI Draft", "text": "Use AI to outline plots, dialogues, and characters." },
-              { "@type": "HowToStep", "position": 2, "name": "Adjust Tone and Voice", "text": "Refine dialogue, internal thoughts, and narrative voice for emotional authenticity." },
-              { "@type": "HowToStep", "position": 3, "name": "Enhance Characters", "text": "Add quirks, motivations, and backstory to make them relatable." },
-              { "@type": "HowToStep", "position": 4, "name": "Refine Plot Flow", "text": "Smooth transitions, pacing, and dramatic tension for engaging reading." },
-              { "@type": "HowToStep", "position": 5, "name": "Edit and Proofread", "text": "Ensure readability, consistency, and human-like style." }
+            "@context": "https://schema.org", "@type": "HowTo", "name": "How to Humanize AI-Generated Stories & Fiction", "description": "Transform AI-generated stories into human-like narratives that captivate readers.", "totalTime": "PT20M", "step": [
+              { "@type": "HowToStep", "position": 1, "name": "Generate AI Draft", "text": "Use AI to outline plots, dialogues, and characters." }, { "@type": "HowToStep", "position": 2, "name": "Adjust Tone and Voice", "text": "Refine dialogue, internal thoughts, and narrative voice for emotional authenticity." }, { "@type": "HowToStep", "position": 3, "name": "Enhance Characters", "text": "Add quirks, motivations, and backstory to make them relatable." }, { "@type": "HowToStep", "position": 4, "name": "Refine Plot Flow", "text": "Smooth transitions, pacing, and dramatic tension for engaging reading." }, { "@type": "HowToStep", "position": 5, "name": "Edit and Proofread", "text": "Ensure readability, consistency, and human-like style." }
             ]
           })}
         </script>
@@ -161,9 +107,7 @@ export default function HumanizeAIStories() {
         <main className="container mx-auto px-4 py-12 max-w-4xl">
           <Breadcrumbs 
             items={[
-              { label: "Home", href: "/" },
-              { label: "Blog", href: "/blog" },
-              { label: "How to Humanize AI-Generated Stories & Fiction" }
+              { label: "Home", href: "/" }, { label: "Blog", href: "/blog" }, { label: "How to Humanize AI-Generated Stories & Fiction" }
             ]} 
           />
 
@@ -193,11 +137,7 @@ export default function HumanizeAIStories() {
 
             <KeyTakeaways
               points={[
-                "AI excels at plot structure but struggles with emotional depth",
-                "Character psychology and motivation need human injection",
-                "Sensory details and specific imagery transform generic prose",
-                "Dialogue requires distinct voices, interruptions, and subtext",
-                "The 'surprise test': if nothing surprises you, humanization is needed"
+                "AI excels at plot structure but struggles with emotional depth", "Character psychology and motivation need human injection", "Sensory details and specific imagery transform generic prose", "Dialogue requires distinct voices, interruptions, and subtext", "The 'surprise test': if nothing surprises you, humanization is needed"
               ]}
             />
 
@@ -413,7 +353,7 @@ The armchair groaned when he finally lowered himself into it. The same sound it 
                       </div>
                       <div className="border-l-4 border-primary pl-4">
                         <p className="font-medium text-primary mb-1">Humanized:</p>
-                        <p className="text-muted-foreground italic">"I need to—" She stopped. Started again. "There's something."
+                        <p className="text-muted-foreground italic">"I need to, " She stopped. Started again. "There's something."
 
 He didn't look up from his phone. "Mm."
 
@@ -429,7 +369,7 @@ The silence stretched. He set the phone down, carefully, like it might shatter.
 
 "I don't know how long."
 
-"That's not—" He laughed, but there was no humor in it. "That's not really an answer, is it."
+"That's not, " He laughed, but there was no humor in it. "That's not really an answer, is it."
 
 She picked up her keys. Set them down. Picked them up again. "No. I guess it's not."</p>
                       </div>

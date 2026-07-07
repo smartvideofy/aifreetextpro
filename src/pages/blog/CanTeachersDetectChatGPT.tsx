@@ -59,7 +59,7 @@ const CanTeachersDetectChatGPT = () => {
           "datePublished": "2026-02-25T08:00:00Z",
           "dateModified": "2026-04-05",
           "mainEntityOfPage": "https://aifreetextpro.com/blog/can-teachers-detect-chatgpt",
-          "wordCount": 2200,
+          "wordCount": 1350,
           "about": { "@type": "Thing", "name": "AI Detection in Education" },
           "mentions": [
             { "@type": "Thing", "name": "ChatGPT" },

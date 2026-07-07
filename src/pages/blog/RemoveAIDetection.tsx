@@ -18,51 +18,27 @@ import { PostHowToSchema } from "@/components/PostHowToSchema";
 
 const relatedArticles = [
   {
-    title: "How AI Detectors Work: The Science Behind Detection",
-    description: "Understand the patterns AI detectors analyze so you can address them effectively.",
-    href: "/blog/how-ai-detectors-work",
-    category: "Technical"
-  },
-  {
-    title: "Paraphrasing vs Humanizing: Why It Matters",
-    description: "Learn why simple paraphrasing fails and how true humanization removes AI signals.",
-    href: "/blog/paraphrasing-vs-humanizing",
-    category: "How-To Guide"
-  },
-  {
-    title: "AI Detection Patterns: Perplexity and Burstiness Explained",
-    description: "Deep dive into the two core metrics that flag your content as AI-generated.",
-    href: "/blog/ai-detection-patterns-explained",
-    category: "Technical"
-  },
-  {
-    title: "Improve AI Writing Quality: Complete Guide",
-    description: "Step-by-step methods to make AI-assisted content sound naturally human.",
-    href: "/blog/make-chatgpt-undetectable-2025",
-    category: "How-To Guide"
+    title: "How AI Detectors Work: The Science Behind Detection", description: "Understand the patterns AI detectors analyze so you can address them effectively.", href: "/blog/how-ai-detectors-work", category: "Technical"
+  }, {
+    title: "Paraphrasing vs Humanizing: Why It Matters", description: "Learn why simple paraphrasing fails and how true humanization removes AI signals.", href: "/blog/paraphrasing-vs-humanizing", category: "How-To Guide"
+  }, {
+    title: "AI Detection Patterns: Perplexity and Burstiness Explained", description: "Deep dive into the two core metrics that flag your content as AI-generated.", href: "/blog/ai-detection-patterns-explained", category: "Technical"
+  }, {
+    title: "Improve AI Writing Quality: Complete Guide", description: "Step-by-step methods to make AI-assisted content sound naturally human.", href: "/blog/make-chatgpt-undetectable-2025", category: "How-To Guide"
   }
 ];
 
 const faqs = [
   {
-    question: "Can I remove AI detection from any text?",
-    answer: "Yes. AI detection signals exist in the statistical patterns of text, not in the content itself. By adjusting sentence structure, vocabulary distribution, and tonal variation, you can reduce or eliminate AI detection flags from any piece of writing regardless of which AI model generated it."
-  },
-  {
-    question: "Will removing AI detection change the meaning of my text?",
-    answer: "A good humanization process preserves your original meaning, arguments, and key points. The changes target statistical patterns like uniform sentence length and predictable word choices, not your core message. AI Free Text Pro is specifically designed to maintain semantic accuracy while transforming the writing style."
-  },
-  {
-    question: "How long does it take to remove AI detection?",
-    answer: "Manual editing typically takes 20 to 40 minutes per 1,000 words. Using AI Free Text Pro, the process takes under 30 seconds for the same length. The tool handles all five detection pattern categories simultaneously."
-  },
-  {
-    question: "Which AI detectors can be addressed with these methods?",
-    answer: "These methods work across all major AI detectors including Turnitin, GPTZero, Originality.AI, Copyleaks, Winston AI, and ZeroGPT. Each detector analyzes similar statistical patterns, so addressing the core signals reduces flags across all platforms."
-  },
-  {
-    question: "Is removing AI detection from text ethical?",
-    answer: "When used responsibly, improving AI-assisted writing quality is perfectly ethical. Many professionals use AI as a drafting tool and then refine the output. The key is ensuring the final content represents your own ideas and meets the standards of your institution or publication. Always check your organization's AI usage policies."
+    question: "Can I remove AI detection from any text?", answer: "Yes. AI detection signals exist in the statistical patterns of text, not in the content itself. By adjusting sentence structure, vocabulary distribution, and tonal variation, you can reduce or eliminate AI detection flags from any piece of writing regardless of which AI model generated it."
+  }, {
+    question: "Will removing AI detection change the meaning of my text?", answer: "A good humanization process preserves your original meaning, arguments, and key points. The changes target statistical patterns like uniform sentence length and predictable word choices, not your core message. AI Free Text Pro is specifically designed to maintain semantic accuracy while transforming the writing style."
+  }, {
+    question: "How long does it take to remove AI detection?", answer: "Manual editing typically takes 20 to 40 minutes per 1,000 words. Using AI Free Text Pro, the process takes under 30 seconds for the same length. The tool handles all five detection pattern categories simultaneously."
+  }, {
+    question: "Which AI detectors can be addressed with these methods?", answer: "These methods work across all major AI detectors including Turnitin, GPTZero, Originality.AI, Copyleaks, Winston AI, and ZeroGPT. Each detector analyzes similar statistical patterns, so addressing the core signals reduces flags across all platforms."
+  }, {
+    question: "Is removing AI detection from text ethical?", answer: "When used responsibly, improving AI-assisted writing quality is perfectly ethical. Many professionals use AI as a drafting tool and then refine the output. The key is ensuring the final content represents your own ideas and meets the standards of your institution or publication. Always check your organization's AI usage policies."
   }
 ];
 
@@ -95,47 +71,23 @@ export default function RemoveAIDetection() {
         <meta name="twitter:image" content="https://aifreetextpro.com/og-image.png" />
         <script type="application/ld+json">
           {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Article",
-            "headline": "How to Remove AI Detection from Text (Free Methods That Work)",
-            "description": "Learn 5 proven methods to remove AI detection from text. Free manual techniques plus instant tools that reduce AI flags on Turnitin, GPTZero, and more.",
-            "image": "https://aifreetextpro.com/logo.png",
-            "author": {
-              "@type": "Person",
-              "name": "Dr. Sarah Chen",
-              "url": "https://aifreetextpro.com/team#sarah-chen"
-            },
-            "publisher": {
-              "@type": "Organization",
-              "name": "AI Free Text Pro",
-              "logo": {
-                "@type": "ImageObject",
-                "url": "https://aifreetextpro.com/logo.png"
+            "@context": "https://schema.org", "@type": "Article", "headline": "How to Remove AI Detection from Text (Free Methods That Work)", "description": "Learn 5 proven methods to remove AI detection from text. Free manual techniques plus instant tools that reduce AI flags on Turnitin, GPTZero, and more.", "image": "https://aifreetextpro.com/logo.png", "author": {
+              "@type": "Person", "name": "Dr. Sarah Chen", "url": "https://aifreetextpro.com/team#sarah-chen"
+            }, "publisher": {
+              "@type": "Organization", "name": "AI Free Text Pro", "logo": {
+                "@type": "ImageObject", "url": "https://aifreetextpro.com/logo.png"
               }
-            },
-            "datePublished": "2026-03-05T08:00:00Z",
-            "dateModified": "2026-03-07T08:00:00Z",
-            "mainEntityOfPage": "https://aifreetextpro.com/blog/remove-ai-detection-from-text",
-            "wordCount": 2200,
-            "about": {
-              "@type": "Thing",
-              "name": "AI Detection Removal"
-            },
-            "mentions": [
-              { "@type": "SoftwareApplication", "name": "Turnitin" },
-              { "@type": "SoftwareApplication", "name": "GPTZero" },
-              { "@type": "SoftwareApplication", "name": "Originality.AI" }
+            }, "datePublished": "2026-03-05T08:00:00Z", "dateModified": "2026-03-07T08:00:00Z", "mainEntityOfPage": "https://aifreetextpro.com/blog/remove-ai-detection-from-text", "wordCount": 2200, "about": {
+              "@type": "Thing", "name": "AI Detection Removal"
+            }, "mentions": [
+              { "@type": "SoftwareApplication", "name": "Turnitin" }, { "@type": "SoftwareApplication", "name": "GPTZero" }, { "@type": "SoftwareApplication", "name": "Originality.AI" }
             ]
           })}
         </script>
         <script type="application/ld+json">
           {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            "itemListElement": [
-              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://aifreetextpro.com" },
-              { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://aifreetextpro.com/blog" },
-              { "@type": "ListItem", "position": 3, "name": "Remove AI Detection from Text" }
+            "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://aifreetextpro.com" }, { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://aifreetextpro.com/blog" }, { "@type": "ListItem", "position": 3, "name": "Remove AI Detection from Text" }
             ]
           })}
         </script>
@@ -161,9 +113,7 @@ export default function RemoveAIDetection() {
       <main className="min-h-screen pt-24 pb-16">
         <div className="container mx-auto px-4 max-w-4xl">
           <Breadcrumbs items={[
-            { label: "Home", href: "/" },
-            { label: "Blog", href: "/blog" },
-            { label: "Remove AI Detection from Text" }
+            { label: "Home", href: "/" }, { label: "Blog", href: "/blog" }, { label: "Remove AI Detection from Text" }
           ]} />
 
           <Link to="/blog" className="inline-flex items-center text-sm text-muted-foreground hover:text-primary mb-6 transition-colors">
@@ -182,7 +132,7 @@ export default function RemoveAIDetection() {
               </h1>
                 <QuickAnswer
                   question="How do you remove AI detection flags from your text?"
-                  answer="Rewrite for the patterns detectors measure: vary sentence length, add specific detail and personal voice, break up repetitive phrasing, and read aloud to catch robotic rhythm — or run it through a humanizer and re-check. This clears false flags on genuinely your own work; always follow the AI policy that applies to you."
+                  answer="Rewrite for the patterns detectors measure: vary sentence length, add specific detail and personal voice, break up repetitive phrasing, and read aloud to catch robotic rhythm, or run it through a humanizer and re-check. This clears false flags on genuinely your own work; always follow the AI policy that applies to you."
                 />
 
               <p className="text-xl text-muted-foreground leading-relaxed">
@@ -200,11 +150,7 @@ export default function RemoveAIDetection() {
             </header>
 
             <KeyTakeaways points={[
-              "AI detection flags statistical patterns in text, not whether a human actually wrote it",
-              "Five free manual methods can reduce detection scores: varying sentence length, adding personal voice, diversifying vocabulary, restructuring paragraphs, and inserting domain-specific references",
-              "AI Free Text Pro addresses all five detection pattern categories simultaneously in under 30 seconds",
-              "Combining manual editing with an AI humanizer produces the most reliable results across all major detectors",
-              "These methods work for Turnitin, GPTZero, Originality.AI, Copyleaks, Winston AI, and ZeroGPT"
+              "AI detection flags statistical patterns in text, not whether a human actually wrote it", "Five free manual methods can reduce detection scores: varying sentence length, adding personal voice, diversifying vocabulary, restructuring paragraphs, and inserting domain-specific references", "AI Free Text Pro addresses all five detection pattern categories simultaneously in under 30 seconds", "Combining manual editing with an AI humanizer produces the most reliable results across all major detectors", "These methods work for Turnitin, GPTZero, Originality.AI, Copyleaks, Winston AI, and ZeroGPT"
             ]} />
 
             <ReviewedBy name="Dr. Sarah Chen" role="Founder & CEO" slug="sarah-chen" />

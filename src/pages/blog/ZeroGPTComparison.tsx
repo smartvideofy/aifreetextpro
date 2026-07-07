@@ -13,28 +13,13 @@ import { AuthorSchema } from "@/components/AuthorSchema";
 
 const relatedArticles = [
   {
-    title: "AI Detection Tools Compared (2026 Edition)",
-    description: "Comprehensive comparison of the top AI detection tools in 2026",
-    href: "/blog/ai-detection-tools-compared-2025",
-    category: "Comparison"
-  },
-  {
-    title: "How AI Detectors Work: Inside the Science",
-    description: "Understand the technology behind AI text detection algorithms",
-    href: "/blog/how-ai-detectors-work",
-    category: "Educational"
-  },
-  {
-    title: "GPTinf vs AI Free Text Pro",
-    description: "Head-to-head comparison of two popular AI humanizers",
-    href: "/blog/gptinf-vs-ai-free-text-pro",
-    category: "Comparison"
-  },
-  {
-    title: "Originality.AI Review",
-    description: "Accuracy, pricing, and how to improve your writing",
-    href: "/blog/originality-ai-review-how-to-beat",
-    category: "Review"
+    title: "AI Detection Tools Compared (2026 Edition)", description: "Comprehensive comparison of the top AI detection tools in 2026", href: "/blog/ai-detection-tools-compared-2025", category: "Comparison"
+  }, {
+    title: "How AI Detectors Work: Inside the Science", description: "Understand the technology behind AI text detection algorithms", href: "/blog/how-ai-detectors-work", category: "Educational"
+  }, {
+    title: "GPTinf vs AI Free Text Pro", description: "Head-to-head comparison of two popular AI humanizers", href: "/blog/gptinf-vs-ai-free-text-pro", category: "Comparison"
+  }, {
+    title: "Originality.AI Review", description: "Accuracy, pricing, and how to improve your writing", href: "/blog/originality-ai-review-how-to-beat", category: "Review"
   }
 ];
 
@@ -64,35 +49,16 @@ export default function ZeroGPTComparison() {
         
         <script type="application/ld+json">
           {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Article",
-            "headline": "ZeroGPT vs AI Free Text Pro: Which Detects Better in 2025?",
-            "description": "We test ZeroGPT and AI Free Text Pro on different writing samples, see which tool spots AI content more accurately in 2025.",
-            "image": {
-              "@type": "ImageObject",
-              "url": "https://aifreetextpro.com/logo.png",
-              "width": 1200,
-              "height": 675
-            },
-            "datePublished": "2026-02-02",
-            "dateModified": "2026-04-05",
-            "author": {
-              "@type": "Person",
-              "name": "Dr. Sarah Chen",
-              "url": "https://aifreetextpro.com/team#sarah-chen",
-              "jobTitle": "Founder & CEO"
-            },
-            "publisher": {
-              "@type": "Organization",
-              "name": "AI Free Text Pro",
-              "logo": {
-                "@type": "ImageObject",
-                "url": "https://aifreetextpro.com/logo.png"
+            "@context": "https://schema.org", "@type": "Article", "headline": "ZeroGPT vs AI Free Text Pro: Which Detects Better in 2025?", "description": "We test ZeroGPT and AI Free Text Pro on different writing samples, see which tool spots AI content more accurately in 2025.", "image": {
+              "@type": "ImageObject", "url": "https://aifreetextpro.com/logo.png", "width": 1200, "height": 675
+            }, "datePublished": "2026-02-02", "dateModified": "2026-04-05", "author": {
+              "@type": "Person", "name": "Dr. Sarah Chen", "url": "https://aifreetextpro.com/team#sarah-chen", "jobTitle": "Founder & CEO"
+            }, "publisher": {
+              "@type": "Organization", "name": "AI Free Text Pro", "logo": {
+                "@type": "ImageObject", "url": "https://aifreetextpro.com/logo.png"
               }
-            },
-            "mainEntityOfPage": {
-              "@type": "WebPage",
-              "@id": "https://aifreetextpro.com/blog/zerogpt-vs-ai-free-text-pro-2025"
+            }, "mainEntityOfPage": {
+              "@type": "WebPage", "@id": "https://aifreetextpro.com/blog/zerogpt-vs-ai-free-text-pro-2025"
             }
           })}
         </script>
@@ -100,25 +66,13 @@ export default function ZeroGPTComparison() {
         {/* BreadcrumbList Schema */}
         <script type="application/ld+json">
           {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            "itemListElement": [
+            "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
               {
-                "@type": "ListItem",
-                "position": 1,
-                "name": "Home",
-                "item": "https://aifreetextpro.com/"
-              },
-              {
-                "@type": "ListItem",
-                "position": 2,
-                "name": "Blog",
-                "item": "https://aifreetextpro.com/blog"
-              },
-              {
-                "@type": "ListItem",
-                "position": 3,
-                "name": "ZeroGPT vs AI Free Text Pro"
+                "@type": "ListItem", "position": 1, "name": "Home", "item": "https://aifreetextpro.com/"
+              }, {
+                "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://aifreetextpro.com/blog"
+              }, {
+                "@type": "ListItem", "position": 3, "name": "ZeroGPT vs AI Free Text Pro"
               }
             ]
           })}
@@ -140,9 +94,7 @@ export default function ZeroGPTComparison() {
         <main className="container mx-auto px-4 py-12 max-w-4xl">
           <Breadcrumbs 
             items={[
-              { label: "Home", href: "/" },
-              { label: "Blog", href: "/blog" },
-              { label: "ZeroGPT vs AI Free Text Pro" }
+              { label: "Home", href: "/" }, { label: "Blog", href: "/blog" }, { label: "ZeroGPT vs AI Free Text Pro" }
             ]} 
           />
 
@@ -151,7 +103,7 @@ export default function ZeroGPTComparison() {
               <div className="flex items-center gap-2 text-sm text-muted-foreground mb-4">
                 <span className="px-3 py-1 bg-primary/10 text-primary rounded-full">Comparison</span>
                 <span>•</span>
-                <time dateTime="2025-01-19">January 19, 2025</time>
+                <time dateTime="2025-01-19">January 19, 2026</time>
                 <span>•</span>
                 <span>8 min read</span>
               </div>
@@ -172,10 +124,7 @@ export default function ZeroGPTComparison() {
 
             <KeyTakeaways
               points={[
-                "AI Free Text Pro outperforms ZeroGPT in accuracy across all content types tested",
-                "ZeroGPT has higher false positive rates, especially on formal or academic writing",
-                "AI Free Text Pro offers both detection and humanization in one integrated platform",
-                "For reliable AI detection in 2025, AI Free Text Pro delivers more consistent results"
+                "AI Free Text Pro outperforms ZeroGPT in accuracy across all content types tested", "ZeroGPT has higher false positive rates, especially on formal or academic writing", "AI Free Text Pro offers both detection and humanization in one integrated platform", "For reliable AI detection in 2025, AI Free Text Pro delivers more consistent results"
               ]}
             />
 
@@ -395,10 +344,7 @@ export default function ZeroGPTComparison() {
           </article>
 
                         <FAQSection faqs={[
-                { question: "Is ZeroGPT accurate?", answer: "ZeroGPT is reasonably accurate on raw AI text but, like all detectors, produces false positives and negatives, especially on edited or formal writing." },
-                { question: "What does AI Free Text Pro do that ZeroGPT does not?", answer: "AI Free Text Pro adds humanization — it can rewrite flagged text to read more naturally — whereas ZeroGPT only scores content." },
-                { question: "Which should I use?", answer: "Use ZeroGPT for a quick free check; use AI Free Text Pro when you also want to reduce detection flags on your own work." },
-              ]} />
+                { question: "Is ZeroGPT accurate?", answer: "ZeroGPT is reasonably accurate on raw AI text but, like all detectors, produces false positives and negatives, especially on edited or formal writing." }, { question: "What does AI Free Text Pro do that ZeroGPT does not?", answer: "AI Free Text Pro adds humanization, it can rewrite flagged text to read more naturally, whereas ZeroGPT only scores content." }, { question: "Which should I use?", answer: "Use ZeroGPT for a quick free check; use AI Free Text Pro when you also want to reduce detection flags on your own work." }, ]} />
 
               <RelatedArticles articles={relatedArticles} />
           <InternalLinks currentPage="/blog/zerogpt-vs-ai-free-text-pro-2025" />

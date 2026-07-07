@@ -24,78 +24,22 @@ type CategoryDef = {
 
 export const blogCategories: CategoryDef[] = [
   {
-    slug: "detection",
-    title: "AI Detection Guides",
-    metaTitle: "AI Detection Guides — How Detectors Work & Score Text",
-    metaDescription:
-      "Free guides on how AI detectors work, score text, and produce false positives. Reviews of Turnitin, GPTZero, Originality.AI, Copyleaks and more.",
-    description:
-      "Everything you need to understand AI detection: how detectors score text, why false positives happen, and which tools are actually accurate.",
-    matches: ["Detector Review", "Technical"],
-    slugIncludes: ["detector", "detection", "gptzero", "turnitin", "originality", "copyleaks", "winston"],
-    pillarHub: "detection",
-  },
-  {
-    slug: "humanizer",
-    title: "AI Humanizer Guides",
-    metaTitle: "AI Humanizer Guides — Make AI Text Sound Human",
-    metaDescription:
-      "Step-by-step humanizer workflows for ChatGPT, Claude, Gemini and more. Tone, voice, and flow techniques that reduce AI flags without losing meaning.",
-    description:
-      "Workflows, tone-and-voice frameworks, and humanizer comparisons to make AI writing read naturally.",
-    matches: ["How-To Guide", "Writing Craft", "Creative Writing", "Professional Editing"],
-    slugIncludes: ["humaniz", "rewrite", "tone-voice", "make-ai-writing"],
-    pillarHub: "humanizer",
-  },
-  {
-    slug: "bypass",
-    title: "Bypass AI Detection Guides",
-    metaTitle: "Bypass AI Detection Guides — Reduce False Flags Ethically",
-    metaDescription:
-      "Ethical guides to reduce AI-detection false flags on Turnitin, GPTZero, Originality.AI, Copyleaks, ZeroGPT and Winston AI.",
-    description:
-      "Reduce false flags and pass AI detectors ethically. Tool-by-tool bypass guides and editing workflows.",
-    matches: ["Best Practices"],
-    slugIncludes: ["bypass", "undetectable", "pass-all", "remove-ai-detection"],
-    pillarHub: "bypass",
-  },
-  {
-    slug: "comparison",
-    title: "AI Tool Comparisons",
-    metaTitle: "AI Humanizer & Detector Comparisons (2026)",
-    metaDescription:
-      "Side-by-side comparisons of AI humanizers and detectors. Pricing, accuracy, and feature breakdowns for the top tools in 2026.",
-    description:
-      "Compare AI humanizers and detectors side-by-side. Pricing, bypass rates, and real-world accuracy benchmarks.",
-    matches: ["Comparison"],
-    slugIncludes: ["vs-", "comparison", "alternatives"],
-    pillarHub: "comparison",
-  },
-  {
-    slug: "use-cases",
-    title: "AI Writing Use Cases",
-    metaTitle: "AI Writing Use Cases — Students, Writers, Marketers & More",
-    metaDescription:
-      "Use-case guides for AI writing across academics, marketing, social media, and professional content. Industry-specific playbooks and best practices.",
-    description:
-      "Industry-specific AI writing playbooks for students, freelancers, marketers, and professionals.",
-    matches: [
-      "Academic",
-      "Marketing",
-      "Email Marketing",
-      "Social Media",
-      "Content Creation",
-      "Career",
-      "Professional",
-      "Travel Writing",
-      "Tools",
-      "eCommerce",
-      "Industry",
-      "Educational",
-      "SEO",
-    ],
-    pillarHub: "humanizer",
-  },
+    slug: "detection", title: "AI Detection Guides", metaTitle: "AI Detection Guides, How Detectors Work & Score Text", metaDescription:
+      "Free guides on how AI detectors work, score text, and produce false positives. Reviews of Turnitin, GPTZero, Originality.AI, Copyleaks and more.", description:
+      "Everything you need to understand AI detection: how detectors score text, why false positives happen, and which tools are actually accurate.", matches: ["Detector Review", "Technical"], slugIncludes: ["detector", "detection", "gptzero", "turnitin", "originality", "copyleaks", "winston"], pillarHub: "detection", }, {
+    slug: "humanizer", title: "AI Humanizer Guides", metaTitle: "AI Humanizer Guides, Make AI Text Sound Human", metaDescription:
+      "Step-by-step humanizer workflows for ChatGPT, Claude, Gemini and more. Tone, voice, and flow techniques that reduce AI flags without losing meaning.", description:
+      "Workflows, tone-and-voice frameworks, and humanizer comparisons to make AI writing read naturally.", matches: ["How-To Guide", "Writing Craft", "Creative Writing", "Professional Editing"], slugIncludes: ["humaniz", "rewrite", "tone-voice", "make-ai-writing"], pillarHub: "humanizer", }, {
+    slug: "bypass", title: "Bypass AI Detection Guides", metaTitle: "Bypass AI Detection Guides, Reduce False Flags Ethically", metaDescription:
+      "Ethical guides to reduce AI-detection false flags on Turnitin, GPTZero, Originality.AI, Copyleaks, ZeroGPT and Winston AI.", description:
+      "Reduce false flags and pass AI detectors ethically. Tool-by-tool bypass guides and editing workflows.", matches: ["Best Practices"], slugIncludes: ["bypass", "undetectable", "pass-all", "remove-ai-detection"], pillarHub: "bypass", }, {
+    slug: "comparison", title: "AI Tool Comparisons", metaTitle: "AI Humanizer & Detector Comparisons (2026)", metaDescription:
+      "Side-by-side comparisons of AI humanizers and detectors. Pricing, accuracy, and feature breakdowns for the top tools in 2026.", description:
+      "Compare AI humanizers and detectors side-by-side. Pricing, bypass rates, and real-world accuracy benchmarks.", matches: ["Comparison"], slugIncludes: ["vs-", "comparison", "alternatives"], pillarHub: "comparison", }, {
+    slug: "use-cases", title: "AI Writing Use Cases", metaTitle: "AI Writing Use Cases, Students, Writers, Marketers & More", metaDescription:
+      "Use-case guides for AI writing across academics, marketing, social media, and professional content. Industry-specific playbooks and best practices.", description:
+      "Industry-specific AI writing playbooks for students, freelancers, marketers, and professionals.", matches: [
+      "Academic", "Marketing", "Email Marketing", "Social Media", "Content Creation", "Career", "Professional", "Travel Writing", "Tools", "eCommerce", "Industry", "Educational", "SEO", ], pillarHub: "humanizer", },
 ];
 
 const POSTS_PER_PAGE = 24;
@@ -127,33 +71,13 @@ const BlogCategory = () => {
   const canonical = `https://aifreetextpro.com/blog/category/${cat.slug}`;
 
   const collectionLd = {
-    "@context": "https://schema.org",
-    "@type": "CollectionPage",
-    name: cat.title,
-    description: cat.metaDescription,
-    url: canonical,
-    isPartOf: {
-      "@type": "WebSite",
-      name: "AI Free Text Pro",
-      url: "https://aifreetextpro.com",
-    },
-    hasPart: matchedPosts.slice(0, 50).map((p: { title: string; slug: string; date: string }) => ({
-      "@type": "Article",
-      headline: p.title,
-      url: `https://aifreetextpro.com/blog/${p.slug}`,
-      datePublished: p.date,
-    })),
-  };
+    "@context": "https://schema.org", "@type": "CollectionPage", name: cat.title, description: cat.metaDescription, url: canonical, isPartOf: {
+      "@type": "WebSite", name: "AI Free Text Pro", url: "https://aifreetextpro.com", }, hasPart: matchedPosts.slice(0, 50).map((p: { title: string; slug: string; date: string }) => ({
+      "@type": "Article", headline: p.title, url: `https://aifreetextpro.com/blog/${p.slug}`, datePublished: p.date, })), };
 
   const breadcrumbLd = {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: "https://aifreetextpro.com/" },
-      { "@type": "ListItem", position: 2, name: "Blog", item: "https://aifreetextpro.com/blog" },
-      { "@type": "ListItem", position: 3, name: cat.title, item: canonical },
-    ],
-  };
+    "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://aifreetextpro.com/" }, { "@type": "ListItem", position: 2, name: "Blog", item: "https://aifreetextpro.com/blog" }, { "@type": "ListItem", position: 3, name: cat.title, item: canonical }, ], };
 
   return (
     <div className="min-h-screen bg-background">
@@ -174,9 +98,7 @@ const BlogCategory = () => {
       <main className="container mx-auto px-4 py-12 max-w-6xl">
         <Breadcrumbs
           items={[
-            { label: "Blog", href: "/blog" },
-            { label: cat.title },
-          ]}
+            { label: "Blog", href: "/blog" }, { label: cat.title }, ]}
         />
 
         <header className="mt-6 mb-10">

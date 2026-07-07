@@ -119,10 +119,10 @@ const AIWritingUpworkFiverr = () => {
             <ReviewedBy name="Dr. Sarah Chen" role="AI Research Lead" slug="sarah-chen" />
 
             <KeyTakeaways points={[
-              "Upwork and Fiverr have different AI policies -- Upwork requires disclosure on request, Fiverr is stricter on misrepresentation",
+              "Upwork and Fiverr have different AI policies, Upwork requires disclosure on request, Fiverr is stricter on misrepresentation",
               "34% of writing clients on Fiverr now check deliverables with AI detectors before accepting",
               "Humanized AI content passes client scrutiny 96% of the time vs. 23% for raw AI output",
-              "Price based on value delivered, not time saved -- AI is a productivity tool, not a reason to undercharge",
+              "Price based on value delivered, not time saved, AI is a productivity tool, not a reason to undercharge",
               "Building a portfolio with AI-assisted samples is fine, but always humanize and add your expertise"
             ]} />
 

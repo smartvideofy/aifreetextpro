@@ -63,7 +63,7 @@ const FreeAIContentDetector = () => {
             "datePublished": "2026-03-08",
             "dateModified": "2026-03-08",
             "mainEntityOfPage": "https://aifreetextpro.com/blog/free-ai-content-detector",
-            "wordCount": 1800
+            "wordCount": 1100
           })}
         </script>
       </Helmet>
@@ -105,7 +105,7 @@ const FreeAIContentDetector = () => {
               "AI Free Text Pro offers the highest free-tier accuracy at 98% detection rate.",
               "Free detectors vary wildly in accuracy: from 62% (ZeroGPT) to 98% (AI Free Text Pro).",
               "False positive rates range from 1% to 15% depending on the tool.",
-              "Most free tools limit word count per check -- AI Free Text Pro allows 1,000 words free.",
+              "Most free tools cap the word count per check; AI Free Text Pro allows 1,000 words free.",
               "Always cross-check with 2-3 detectors for the most reliable results."
             ]} />
 
@@ -157,6 +157,11 @@ const FreeAIContentDetector = () => {
               <p><strong>10-30% AI probability:</strong> Borderline. May contain some AI-assisted sections or naturally formulaic writing. Consider minor edits.</p>
               <p><strong>30-70% AI probability:</strong> Likely contains significant AI-generated content. Needs humanization or rewriting.</p>
               <p><strong>70-100% AI probability:</strong> Almost certainly AI-generated. Will be flagged by institutional detectors.</p>
+            </section>
+
+            <section>
+              <h2>When a Free Detector Is Enough (and When It Isn't)</h2>
+              <p>A free detector is the right tool for a quick gut-check: you wrote something, you want a rough read on whether it looks machine-made, and nothing serious rides on the answer. For that, any of the tools above will do. The picture changes when the stakes go up. Free tools are least reliable on short passages, where there simply is not enough text to measure perplexity and burstiness with confidence, so a one-paragraph sample can swing wildly between scans. They are also the most prone to false positives on formal or non-native English writing. If a grade, a job, or a published byline depends on the result, treat a free check as a first pass only: run the same text through a second tool, weigh the scores against what you know about who wrote it, and remember that no detector, free or paid, produces proof. The number is a prompt to look closer, not a verdict.</p>
             </section>
 
             <section>

@@ -53,7 +53,7 @@ const AIMedicalScientificWriting = () => {
             "publisher": { "@type": "Organization", "name": "AI Free Text Pro", "logo": { "@type": "ImageObject", "url": "https://aifreetextpro.com/logo.png" } },
             "datePublished": "2026-03-08",
             "dateModified": "2026-03-08",
-            "wordCount": 2300
+            "wordCount": 1200
           })}
         </script>
         <script type="application/ld+json">
@@ -109,7 +109,7 @@ const AIMedicalScientificWriting = () => {
             <ReviewedBy name="Dr. Sarah Chen" role="Founder & CEO" slug="sarah-chen" />
 
             <KeyTakeaways points={[
-              "Major journals (Nature, Lancet, JAMA) require AI use disclosure -- non-disclosure risks retraction",
+              "Major journals (Nature, Lancet, JAMA) require AI use disclosure, and non-disclosure risks retraction",
               "AI excels at literature reviews, methods sections, and manuscript polishing",
               "Never input patient data or unpublished findings into AI tools",
               "Humanization is critical: peer reviewers increasingly flag AI-characteristic prose",
@@ -118,7 +118,10 @@ const AIMedicalScientificWriting = () => {
 
             <h2>The Stakes Are Higher in Medical Writing</h2>
             <p>In most writing domains, being flagged for AI use is embarrassing. In medical and scientific publishing, it can end careers. A retracted paper due to undisclosed AI use damages your publication record permanently. Grant funding agencies may question your integrity. Collaborators may distance themselves. The scientific community has long memories.</p>
-            <p>Yet the pressure to publish is intense. Researchers worldwide are using AI to keep up with publication demands. The question is not whether to use AI -- it is how to use it in a way that is both ethical and undetectable when you have legitimate reasons to keep your workflow private.</p>
+            <p>Yet the pressure to publish is intense. Researchers worldwide are using AI to keep up with publication demands. The question is not whether to use AI; it is how to use it in a way that is both ethical and undetectable when you have legitimate reasons to keep your workflow private.</p>
+
+            <h2>The One Risk That Should Scare You: Fabricated References</h2>
+            <p>Of everything that can go wrong with AI in a manuscript, this is the one that ends papers. Language models generate citations that look completely real, with plausible authors, a real-sounding journal, a volume and page range, and a DOI that may or may not resolve, and some of those references do not exist or do not say what the text claims. In a blog post that is sloppy; in a clinical or scientific paper it is potentially a retraction, because a single fabricated reference calls the integrity of the whole work into question. The same applies to factual claims, where a model can state a dosage, a statistic, or a mechanism with total confidence and be subtly wrong. The rule that protects you is simple and non-negotiable: every reference and every fact that AI touched gets checked against the primary source before it goes anywhere near submission. Pull the actual paper, confirm it exists, confirm it says what you claim. AI can help you write the sentence around a citation, but it can never be trusted to supply the citation itself.</p>
 
             <h2>Journal AI Policies: The Current Landscape</h2>
             <div className="overflow-x-auto my-6">
@@ -152,10 +155,10 @@ const AIMedicalScientificWriting = () => {
             <p>Methods sections are highly formulaic, making them a good fit for AI drafting. Describe your protocol, and AI can format it into standard scientific prose. However, the precision of methods descriptions is critical in medicine. Every dosage, timepoint, and measurement must be exact. AI-drafted methods require meticulous verification.</p>
 
             <h3>Results Narrative</h3>
-            <p>AI can help translate statistical output into readable prose. "The treatment group showed a statistically significant improvement (p = 0.003, 95% CI: 2.1-7.8)" -- this kind of standardized reporting is straightforward for AI. But interpretation and context must come from the researcher.</p>
+            <p>AI can help translate statistical output into readable prose. "The treatment group showed a statistically significant improvement (p = 0.003, 95% CI: 2.1-7.8)", this kind of standardized reporting is straightforward for AI. But interpretation and context must come from the researcher.</p>
 
             <h3>Discussion Section</h3>
-            <p>Use AI to structure your discussion and identify relevant comparisons to existing literature. But the intellectual contribution -- your interpretation of what the findings mean for clinical practice or future research -- must be genuinely yours.</p>
+            <p>Use AI to structure your discussion and identify relevant comparisons to existing literature. But the intellectual contribution, your interpretation of what the findings mean for clinical practice or future research, must be genuinely yours.</p>
 
             <h2>Critical Safety Rules</h2>
             <div className="bg-primary/5 border border-primary/20 rounded-lg p-6 my-6">

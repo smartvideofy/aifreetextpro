@@ -80,7 +80,7 @@ const HumanizeGeminiOutput = () => {
     "datePublished": "2026-06-01",
     "dateModified": "2026-06-01",
     "mainEntityOfPage": { "@type": "WebPage", "@id": "https://aifreetextpro.com/blog/humanize-gemini-output" },
-    "wordCount": 1820
+    "wordCount": 1000
   };
 
   const breadcrumbSchema = {

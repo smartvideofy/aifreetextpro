@@ -14,17 +14,11 @@ import { FAQSection } from "@/components/FAQSection";
 import { AuthorSchema } from "@/components/AuthorSchema";
 
 const relatedArticles = [
-  { title: "Can Turnitin Detect DeepSeek?", description: "Testing DeepSeek against Turnitin's detector.", href: "/blog/can-turnitin-detect-deepseek", category: "Academic" },
-  { title: "Bypass Turnitin AI Detection", description: "Strategies for Turnitin's AI detection.", href: "/bypass-turnitin-ai-detection", category: "How-To Guide" },
-  { title: "GPTZero vs Turnitin", description: "Head-to-head detector comparison.", href: "/blog/gptzero-vs-turnitin-comparison", category: "Comparison" },
-  { title: "AI Detection False Positives", description: "When human writing gets incorrectly flagged.", href: "/blog/ai-detection-false-positives", category: "Educational" }
+  { title: "Can Turnitin Detect DeepSeek?", description: "Testing DeepSeek against Turnitin's detector.", href: "/blog/can-turnitin-detect-deepseek", category: "Academic" }, { title: "Bypass Turnitin AI Detection", description: "Strategies for Turnitin's AI detection.", href: "/bypass-turnitin-ai-detection", category: "How-To Guide" }, { title: "GPTZero vs Turnitin", description: "Head-to-head detector comparison.", href: "/blog/gptzero-vs-turnitin-comparison", category: "Comparison" }, { title: "AI Detection False Positives", description: "When human writing gets incorrectly flagged.", href: "/blog/ai-detection-false-positives", category: "Educational" }
 ];
 
 const faqs = [
-  { question: "What is Turnitin's AI detection accuracy rate?", answer: "Turnitin claims 98% accuracy with less than 1% false positive rate. Independent testing shows accuracy closer to 85-92% on unedited AI text, with false positive rates of 3-8% depending on the writing style and language." },
-  { question: "Can Turnitin detect AI content that has been edited?", answer: "Turnitin's accuracy drops significantly when AI text is substantially edited. Light editing (fixing typos) barely affects detection. Moderate editing (restructuring sentences) reduces detection by 20-30%. Heavy editing or humanization can reduce detection to under 10%." },
-  { question: "Does Turnitin detect all AI models equally?", answer: "No. Turnitin detects GPT-family models most reliably (90%+) because its training data is heavily weighted toward GPT outputs. Claude detection is lower (75-80%), and newer models like Llama and Mistral are detected less consistently (60-70%)." },
-  { question: "What percentage does Turnitin flag as AI before it matters?", answer: "Turnitin uses a threshold system. Scores below 20% are generally not flagged. Scores of 20-50% appear as 'some AI-generated content.' Scores above 50% are flagged as 'significant AI-generated content.' However, institutional responses vary; some investigate any score above 25%." }
+  { question: "What is Turnitin's AI detection accuracy rate?", answer: "Turnitin claims 98% accuracy with less than 1% false positive rate. Independent testing shows accuracy closer to 85-92% on unedited AI text, with false positive rates of 3-8% depending on the writing style and language." }, { question: "Can Turnitin detect AI content that has been edited?", answer: "Turnitin's accuracy drops significantly when AI text is substantially edited. Light editing (fixing typos) barely affects detection. Moderate editing (restructuring sentences) reduces detection by 20-30%. Heavy editing or humanization can reduce detection to under 10%." }, { question: "Does Turnitin detect all AI models equally?", answer: "No. Turnitin detects GPT-family models most reliably (90%+) because its training data is heavily weighted toward GPT outputs. Claude detection is lower (75-80%), and newer models like Llama and Mistral are detected less consistently (60-70%)." }, { question: "What percentage does Turnitin flag as AI before it matters?", answer: "Turnitin uses a threshold system. Scores below 20% are generally not flagged. Scores of 20-50% appear as 'some AI-generated content.' Scores above 50% are flagged as 'significant AI-generated content.' However, institutional responses vary; some investigate any score above 25%." }
 ];
 
 const TurnitinAIDetectionAccuracy = () => {
@@ -50,12 +44,7 @@ const TurnitinAIDetectionAccuracy = () => {
         <meta name="twitter:site" content="@aifreetextpro" />
         <script type="application/ld+json">
           {JSON.stringify({
-            "@context": "https://schema.org", "@type": "Article",
-            "headline": "Turnitin AI Detection: How It Works and How Accurate It Really Is (2026)",
-            "author": { "@type": "Person", "name": "Dr. Sarah Chen", "url": "https://aifreetextpro.com/team#sarah-chen" },
-            "publisher": { "@type": "Organization", "name": "AI Free Text Pro", "logo": { "@type": "ImageObject", "url": "https://aifreetextpro.com/favicon.ico" } },
-            "datePublished": "2026-02-28", "dateModified": "2026-04-05",
-            "mainEntityOfPage": "https://aifreetextpro.com/blog/turnitin-ai-detection-accuracy", "wordCount": 2200
+            "@context": "https://schema.org", "@type": "Article", "headline": "Turnitin AI Detection: How It Works and How Accurate It Really Is (2026)", "author": { "@type": "Person", "name": "Dr. Sarah Chen", "url": "https://aifreetextpro.com/team#sarah-chen" }, "publisher": { "@type": "Organization", "name": "AI Free Text Pro", "logo": { "@type": "ImageObject", "url": "https://aifreetextpro.com/favicon.ico" } }, "datePublished": "2026-02-28", "dateModified": "2026-04-05", "mainEntityOfPage": "https://aifreetextpro.com/blog/turnitin-ai-detection-accuracy", "wordCount": 1150
           })}
         </script>
         <script type="application/ld+json">
@@ -87,7 +76,7 @@ const TurnitinAIDetectionAccuracy = () => {
               <h1 className="text-4xl md:text-5xl font-bold mb-4 leading-tight">Turnitin AI Detection: How It Works and How Accurate It Really Is (2026)</h1>
                 <QuickAnswer
                   question="How accurate is Turnitin's AI detection?"
-                  answer="Turnitin reports high accuracy on unmodified AI text and a low stated false-positive rate, but independent testing shows real false positives do occur, especially on formal or non-native English writing. Its percentage estimates likely AI content, not proof — a high score warrants review, not an automatic penalty."
+                  answer="Turnitin reports high accuracy on unmodified AI text and a low stated false-positive rate, but independent testing shows real false positives do occur, especially on formal or non-native English writing. Its percentage estimates likely AI content, not proof, a high score warrants review, not an automatic penalty."
                 />
 
               <p className="text-xl text-muted-foreground">Turnitin is the most widely used AI detector in education. Here is an evidence-based analysis of how its technology works, what its real accuracy rates are, and what those percentage scores actually mean.</p>
@@ -95,11 +84,7 @@ const TurnitinAIDetectionAccuracy = () => {
             </header>
 
             <KeyTakeaways points={[
-              "Turnitin's AI detection analyzes text at the sentence level, scoring each sentence individually before generating an overall percentage",
-              "Independent testing shows 85-92% accuracy on raw AI text, lower than Turnitin's claimed 98%",
-              "False positive rates range from 3-8%, meaning human writing is incorrectly flagged thousands of times daily",
-              "Detection accuracy drops significantly for non-English text, edited AI content, and shorter submissions",
-              "Turnitin scores are probability estimates, not definitive proof; a 60% score does not mean 60% of the text is AI-generated"
+              "Turnitin's AI detection analyzes text at the sentence level, scoring each sentence individually before generating an overall percentage", "Independent testing shows 85-92% accuracy on raw AI text, lower than Turnitin's claimed 98%", "False positive rates range from 3-8%, meaning human writing is incorrectly flagged thousands of times daily", "Detection accuracy drops significantly for non-English text, edited AI content, and shorter submissions", "Turnitin scores are probability estimates, not definitive proof; a 60% score does not mean 60% of the text is AI-generated"
             ]} />
 
             <section>
@@ -112,6 +97,11 @@ const TurnitinAIDetectionAccuracy = () => {
                 <li><strong>Token probability distribution:</strong> The statistical likelihood of specific word choices at each position. AI models consistently choose high-probability tokens, while humans make more varied, sometimes suboptimal choices.</li>
               </ul>
               <p>The overall document score is a weighted average of individual sentence scores, with longer sentences weighted more heavily. This sentence-level approach is why Turnitin can sometimes highlight specific sentences as AI-generated within an otherwise human document. For a broader look at these techniques, see our explainer on <Link to="/blog/how-ai-detectors-work" className="text-primary hover:underline">how AI detectors work</Link>.</p>
+            </section>
+
+            <section>
+              <h2>What Turnitin Can't See</h2>
+              <p>Accuracy figures only describe the cases Turnitin actually evaluates, and it is just as useful to know where it is blind. It reads submitted text, so anything that is not machine-readable prose falls outside it entirely: AI used to generate an image, a diagram, an equation, or handwriting it never analyzes. Its confidence drops sharply on the things people most want to slip through, namely short passages, heavily edited or humanized text, and writing in languages other than English, all of which give it too little or too noisy a signal. It also cannot tell you the things teachers most want to know. It does not identify which model produced the text, and it cannot distinguish a student who used AI to brainstorm and then wrote the essay themselves from one who pasted output wholesale. One more limit is practical rather than technical: Turnitin is sold to institutions, so a student cannot run their own draft through the real thing beforehand, which is why a free checker is only ever an approximation of the score that will actually count. Knowing these gaps is what keeps a Turnitin percentage in its proper place, as one piece of evidence rather than a verdict.</p>
             </section>
 
             <section>

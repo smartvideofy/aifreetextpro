@@ -58,7 +58,7 @@ const CanTurnitinDetectPerplexity = () => {
           "author": { "@type": "Person", "name": "Dr. Sarah Chen", "url": "https://aifreetextpro.com/team#sarah-chen" },
           "publisher": { "@type": "Organization", "name": "AI Free Text Pro", "logo": { "@type": "ImageObject", "url": "https://aifreetextpro.com/logo.png" } },
           "datePublished": publishDate, "dateModified": modifiedDate,
-          "mainEntityOfPage": "https://aifreetextpro.com/blog/can-turnitin-detect-perplexity", "wordCount": 2000
+          "mainEntityOfPage": "https://aifreetextpro.com/blog/can-turnitin-detect-perplexity", "wordCount": 1050
         })}</script>
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org", "@type": "BreadcrumbList",
@@ -142,6 +142,9 @@ const CanTurnitinDetectPerplexity = () => {
               <li className="flex items-start gap-2"><Search className="w-4 h-4 text-primary mt-1" /><span><strong>More varied vocabulary:</strong> Synthesizing from multiple sources introduces vocabulary variation that pure language models lack</span></li>
             </ul>
             <p>However, the underlying prose structure still exhibits <Link to="/blog/ai-detection-patterns-explained" className="text-primary hover:underline">AI-characteristic patterns</Link> like uniform sentence length and predictable paragraph structure. This is why detection rates remain above 74% across all detectors.</p>
+
+            <h2 className="text-2xl font-bold mt-10 mb-4">How to Actually Use Perplexity's Citations</h2>
+            <p>Perplexity's real advantage over a plain chatbot is not lower detection, it is that it shows its sources, and using that properly is what keeps you safe on both fronts. The mistake is treating the cited summary as your finished paragraph. The smarter move is to treat Perplexity like a search engine with a head start: read its answer to get oriented, then click through to the actual sources it links and read the originals. Write your section from those primary sources in your own words, and cite them directly. This does three things at once. It sidesteps detection, because the prose is genuinely yours rather than a model's. It protects you from Perplexity's occasional misattribution, since you have confirmed the source actually says what the summary claims. And it produces stronger work, because you are engaging with the evidence instead of a secondhand digest of it. The citations are a research shortcut, not a writing one.</p>
 
             <h2 className="text-2xl font-bold mt-10 mb-4">Do Perplexity's Citations Help Avoid Detection?</h2>
             <p>Short answer: no. A common misconception is that Perplexity's inline citations make its output look more "human" or "academic." But AI detectors do not evaluate citations or references. They analyze the statistical patterns of the prose itself.</p>

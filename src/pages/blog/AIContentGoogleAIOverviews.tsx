@@ -132,7 +132,7 @@ const AIContentGoogleAIOverviews = () => {
               </h2>
               <p>Google's AI Overviews have fundamentally changed how search works. Instead of ten blue links, users now see AI-synthesized answers that cite specific sources. For content creators, this means a new competitive battlefield: getting your content cited in the Overview is becoming as important as ranking in position one.</p>
               <p>The data tells a clear story. Pages cited in AI Overviews see an average 28% increase in click-through rates compared to pages that rank organically but aren't cited. However, the bar for citation is high. Google's AI selects sources based on content quality, authority signals, and critically, how easily the content can be extracted and summarized.</p>
-              <p>This is where AI-generated content faces a paradox. Content created by AI is structurally well-suited for extraction (it's organized, clear, and comprehensive), but it often lacks the E-E-A-T signals that Google requires for citation eligibility. The solution isn't to avoid AI -- it's to humanize and optimize your AI content specifically for this new format.</p>
+              <p>This is where AI-generated content faces a paradox. Content created by AI is structurally well-suited for extraction (it's organized, clear, and comprehensive), but it often lacks the E-E-A-T signals that Google requires for citation eligibility. The solution isn't to avoid AI, it's to humanize and optimize your AI content specifically for this new format.</p>
             </section>
 
             <section className="mb-8">
@@ -163,7 +163,7 @@ const AIContentGoogleAIOverviews = () => {
 
             <section className="mb-8">
               <h2 className="text-2xl font-bold mb-4">Content Structure for Maximum Extraction</h2>
-              <p>AI Overviews don't just cite sources -- they extract specific passages. Understanding which content formats get extracted most frequently allows you to engineer your content for citation:</p>
+              <p>AI Overviews don't just cite sources, they extract specific passages. Understanding which content formats get extracted most frequently allows you to engineer your content for citation:</p>
               <h3 className="text-xl font-semibold mt-6 mb-3">1. Key Takeaways / Summary Boxes</h3>
               <p>Summary boxes at the top of articles are the single most extracted content format. Google's AI treats these as pre-summarized, authoritative statements. The <Link to="/blog/zero-click-search-ai-2026" className="text-primary hover:underline">KeyTakeaways pattern</Link> we use on this blog is specifically designed for this purpose.</p>
               <h3 className="text-xl font-semibold mt-6 mb-3">2. Comparison Tables</h3>

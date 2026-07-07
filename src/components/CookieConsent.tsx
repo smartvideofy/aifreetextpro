@@ -9,7 +9,7 @@ const CookieConsent = () => {
   useEffect(() => {
     // Never render during the Puppeteer prerender snapshot. The 1.5s timer
     // would otherwise bake the banner into the static HTML, and the client's
-    // first (hydration) render shows nothing — a hydration mismatch that makes
+    // first (hydration) render shows nothing, a hydration mismatch that makes
     // React re-render the whole root (visible jank + layout shift). The
     // prerenderer injects window.__PRERENDER_INJECT__; the real client never has it.
     if (typeof window !== "undefined" && (window as Window & { __PRERENDER_INJECT__?: unknown }).__PRERENDER_INJECT__) return;
@@ -24,22 +24,14 @@ const CookieConsent = () => {
   const handleAccept = () => {
     localStorage.setItem("cookie-consent", "accepted");
     localStorage.setItem("cookie-preferences", JSON.stringify({
-      essential: true,
-      analytics: true,
-      marketing: true,
-      functional: true,
-    }));
+      essential: true, analytics: true, marketing: true, functional: true, }));
     setIsVisible(false);
   };
 
   const handleDecline = () => {
     localStorage.setItem("cookie-consent", "declined");
     localStorage.setItem("cookie-preferences", JSON.stringify({
-      essential: true,
-      analytics: false,
-      marketing: false,
-      functional: false,
-    }));
+      essential: true, analytics: false, marketing: false, functional: false, }));
     setIsVisible(false);
   };
 

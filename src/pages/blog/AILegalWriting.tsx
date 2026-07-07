@@ -14,17 +14,11 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@
 import { AuthorSchema } from "@/components/AuthorSchema";
 
 const relatedArticles = [
-  { title: "AI for Research Papers: Complete Guide", description: "Step-by-step workflow for using AI in academic research without detection.", href: "/blog/ai-for-research-papers", category: "Academic" },
-  { title: "AI Dissertation & Thesis Writing Guide", description: "How to use AI responsibly for graduate-level writing projects.", href: "/blog/ai-dissertation-thesis", category: "Academic" },
-  { title: "AI Writing for Business Reports", description: "Professional AI writing workflows for corporate documents.", href: "/blog/ai-writing-business-reports", category: "Professional" },
-  { title: "Best AI Tools for Students (2026)", description: "Comprehensive comparison of AI writing tools for academic use.", href: "/blog/best-ai-tools-for-students", category: "Tools" },
+  { title: "AI for Research Papers: Complete Guide", description: "Step-by-step workflow for using AI in academic research without detection.", href: "/blog/ai-for-research-papers", category: "Academic" }, { title: "AI Dissertation & Thesis Writing Guide", description: "How to use AI responsibly for graduate-level writing projects.", href: "/blog/ai-dissertation-thesis", category: "Academic" }, { title: "AI Writing for Business Reports", description: "Professional AI writing workflows for corporate documents.", href: "/blog/ai-writing-business-reports", category: "Professional" }, { title: "Best AI Tools for Students (2026)", description: "Comprehensive comparison of AI writing tools for academic use.", href: "/blog/best-ai-tools-for-students", category: "Tools" },
 ];
 
 const faqs = [
-  { question: "Can I use AI to draft legal briefs?", answer: "Yes, AI can help draft initial outlines, research summaries, and argument structures for legal briefs. However, all AI-generated content must be thoroughly reviewed, verified for legal accuracy, and humanized before submission. Courts have sanctioned attorneys for citing AI-fabricated case law, so independent verification is essential." },
-  { question: "Will law school professors detect AI in my essays?", answer: "Most law schools use Turnitin or similar AI detectors. Raw AI output from ChatGPT or Claude is detected at rates above 90%. Humanizing your drafts with a tool like AI Free Text Pro and adding personal legal analysis significantly reduces detection risk while maintaining academic integrity." },
-  { question: "Is it ethical to use AI for legal writing?", answer: "The ethics depend on context and disclosure. Many bar associations now permit AI as a drafting aid, similar to legal research databases, provided attorneys verify all citations and maintain responsibility for the final work product. Law students should follow their institution's specific AI policies." },
-  { question: "Which AI model is best for legal writing?", answer: "GPT-5 and Claude excel at legal reasoning and memo structure. Gemini 2.5 Pro handles large document analysis well. However, no AI model should be trusted for case citations without independent verification, as hallucinated citations remain a significant risk across all models." },
+  { question: "Can I use AI to draft legal briefs?", answer: "Yes, AI can help draft initial outlines, research summaries, and argument structures for legal briefs. However, all AI-generated content must be thoroughly reviewed, verified for legal accuracy, and humanized before submission. Courts have sanctioned attorneys for citing AI-fabricated case law, so independent verification is essential." }, { question: "Will law school professors detect AI in my essays?", answer: "Most law schools use Turnitin or similar AI detectors. Raw AI output from ChatGPT or Claude is detected at rates above 90%. Humanizing your drafts with a tool like AI Free Text Pro and adding personal legal analysis significantly reduces detection risk while maintaining academic integrity." }, { question: "Is it ethical to use AI for legal writing?", answer: "The ethics depend on context and disclosure. Many bar associations now permit AI as a drafting aid, similar to legal research databases, provided attorneys verify all citations and maintain responsibility for the final work product. Law students should follow their institution's specific AI policies." }, { question: "Which AI model is best for legal writing?", answer: "GPT-5 and Claude excel at legal reasoning and memo structure. Gemini 2.5 Pro handles large document analysis well. However, no AI model should be trusted for case citations without independent verification, as hallucinated citations remain a significant risk across all models." },
 ];
 
 const AILegalWriting = () => {
@@ -56,26 +50,13 @@ const AILegalWriting = () => {
         <meta name="twitter:image" content="https://aifreetextpro.com/og-image.png" />
         <script type="application/ld+json">
           {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Article",
-            "headline": "AI for Legal Writing & Law School Essays (2026)",
-            "description": "Complete guide to using AI for legal memos, briefs, and law school essays in 2026.",
-            "author": { "@type": "Person", "name": "Dr. Sarah Chen", "url": "https://aifreetextpro.com/team#sarah-chen" },
-            "publisher": { "@type": "Organization", "name": "AI Free Text Pro", "logo": { "@type": "ImageObject", "url": "https://aifreetextpro.com/logo.png" } },
-            "datePublished": "2026-03-09",
-            "dateModified": "2026-03-09",
-            "mainEntityOfPage": "https://aifreetextpro.com/blog/ai-legal-writing-law-school",
-            "wordCount": 2000
+            "@context": "https://schema.org", "@type": "Article", "headline": "AI for Legal Writing & Law School Essays (2026)", "description": "Complete guide to using AI for legal memos, briefs, and law school essays in 2026.", "author": { "@type": "Person", "name": "Dr. Sarah Chen", "url": "https://aifreetextpro.com/team#sarah-chen" }, "publisher": { "@type": "Organization", "name": "AI Free Text Pro", "logo": { "@type": "ImageObject", "url": "https://aifreetextpro.com/logo.png" } }, "datePublished": "2026-03-09", "dateModified": "2026-03-09", "mainEntityOfPage": "https://aifreetextpro.com/blog/ai-legal-writing-law-school", "wordCount": 2000
           })}
         </script>
         <script type="application/ld+json">
           {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            "itemListElement": [
-              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://aifreetextpro.com" },
-              { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://aifreetextpro.com/blog" },
-              { "@type": "ListItem", "position": 3, "name": "AI for Legal Writing & Law School Essays" }
+            "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://aifreetextpro.com" }, { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://aifreetextpro.com/blog" }, { "@type": "ListItem", "position": 3, "name": "AI for Legal Writing & Law School Essays" }
             ]
           })}
         </script>
@@ -93,9 +74,7 @@ const AILegalWriting = () => {
       <main className="min-h-screen bg-background pt-24 pb-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <Breadcrumbs items={[
-            { label: "Home", href: "/" },
-            { label: "Blog", href: "/blog" },
-            { label: "AI for Legal Writing & Law School Essays" }
+            { label: "Home", href: "/" }, { label: "Blog", href: "/blog" }, { label: "AI for Legal Writing & Law School Essays" }
           ]} />
 
           <Link to="/blog" className="inline-flex items-center text-primary hover:underline mb-6">
@@ -112,20 +91,16 @@ const AILegalWriting = () => {
               <h1 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">AI for Legal Writing & Law School Essays (2026)</h1>
                 <QuickAnswer
                   question="Can lawyers and law students use AI for legal writing?"
-                  answer="Yes, with strict guardrails. AI can draft memos, outline briefs, and polish essays, but you must verify every citation and legal claim — AI fabricates cases — and follow court and school disclosure rules. Used carefully it saves time; used carelessly it risks sanctions or academic penalties."
+                  answer="Yes, with strict guardrails. AI can draft memos, outline briefs, and polish essays, but you must verify every citation and legal claim, AI fabricates cases, and follow court and school disclosure rules. Used carefully it saves time; used carelessly it risks sanctions or academic penalties."
                 />
 
-              <p className="text-xl text-muted-foreground">How attorneys and law students are using AI to draft memos, briefs, and essays -- and the ethical guardrails that separate responsible use from career-ending mistakes.</p>
+              <p className="text-xl text-muted-foreground">How attorneys and law students are using AI to draft memos, briefs, and essays, and the ethical guardrails that separate responsible use from career-ending mistakes.</p>
             </header>
 
             <ReviewedBy name="Dr. Sarah Chen" role="AI Research Director" slug="sarah-chen" />
 
             <KeyTakeaways points={[
-              "AI can accelerate legal drafting by 40-60%, but every citation must be independently verified to avoid sanctions",
-              "Law schools detect raw AI output at 90%+ rates using Turnitin; humanization is essential for undetectable submissions",
-              "Bar associations increasingly permit AI as a drafting aid when attorneys maintain full responsibility for work product",
-              "The IRAC framework (Issue, Rule, Application, Conclusion) produces the best results when prompting AI for legal analysis",
-              "Combining AI drafting with humanization tools like AI Free Text Pro creates professional-quality legal documents that pass detection"
+              "AI can accelerate legal drafting by 40-60%, but every citation must be independently verified to avoid sanctions", "Law schools detect raw AI output at 90%+ rates using Turnitin; humanization is essential for undetectable submissions", "Bar associations increasingly permit AI as a drafting aid when attorneys maintain full responsibility for work product", "The IRAC framework (Issue, Rule, Application, Conclusion) produces the best results when prompting AI for legal analysis", "Combining AI drafting with humanization tools like AI Free Text Pro creates professional-quality legal documents that pass detection"
             ]} />
 
             <h2>Why Legal Professionals Are Turning to AI</h2>

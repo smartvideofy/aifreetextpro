@@ -13,10 +13,7 @@ import ReviewedBy from "@/components/ReviewedBy";
 import { AuthorSchema } from "@/components/AuthorSchema";
 
 const relatedArticles = [
-  { title: "AI Humanizer for Students", description: "Student-focused humanizer guide.", href: "/ai-humanizer-for-students", category: "Use Case" },
-  { title: "Academic AI Writing Tool", description: "Academic-grade humanization workflow.", href: "/academic-ai-writing-tool", category: "Use Case" },
-  { title: "Bypass Turnitin AI Detection", description: "Reduce false AI flags on essays.", href: "/bypass-turnitin-ai-detection", category: "Detector Guide" },
-  { title: "AI College Admissions Essays", description: "Personal statements and AI ethics.", href: "/blog/ai-college-admissions-essays-personal-statements", category: "Education" },
+  { title: "AI Humanizer for Students", description: "Student-focused humanizer guide.", href: "/ai-humanizer-for-students", category: "Use Case" }, { title: "Academic AI Writing Tool", description: "Academic-grade humanization workflow.", href: "/academic-ai-writing-tool", category: "Use Case" }, { title: "Bypass Turnitin AI Detection", description: "Reduce false AI flags on essays.", href: "/bypass-turnitin-ai-detection", category: "Detector Guide" }, { title: "AI College Admissions Essays", description: "Personal statements and AI ethics.", href: "/blog/ai-college-admissions-essays-personal-statements", category: "Education" },
 ];
 
 const AIHumanizerForEssays = () => {
@@ -40,19 +37,11 @@ const AIHumanizerForEssays = () => {
         <meta name="twitter:title" content="AI Humanizer for Essays 2026: Pass Turnitin Without Losing Voice" />
         <meta name="twitter:description" content="The essay-grade humanization workflow students actually use." />
         <script type="application/ld+json">{JSON.stringify({
-          "@context": "https://schema.org", "@type": "Article",
-          "headline": "AI Humanizer for Essays 2026: Pass Turnitin Without Losing Voice",
-          "author": { "@type": "Person", "name": "Dr. Sarah Chen", "url": "https://aifreetextpro.com/team#sarah-chen" },
-          "publisher": { "@type": "Organization", "name": "AI Free Text Pro", "logo": { "@type": "ImageObject", "url": "https://aifreetextpro.com/logo.png" } },
-          "datePublished": "2026-05-09T08:00:00Z", "dateModified": "2026-05-09T08:00:00Z",
-          "mainEntityOfPage": "https://aifreetextpro.com/blog/ai-humanizer-for-essays", "wordCount": 2000
+          "@context": "https://schema.org", "@type": "Article", "headline": "AI Humanizer for Essays 2026: Pass Turnitin Without Losing Voice", "author": { "@type": "Person", "name": "Dr. Sarah Chen", "url": "https://aifreetextpro.com/team#sarah-chen" }, "publisher": { "@type": "Organization", "name": "AI Free Text Pro", "logo": { "@type": "ImageObject", "url": "https://aifreetextpro.com/logo.png" } }, "datePublished": "2026-05-09T08:00:00Z", "dateModified": "2026-05-09T08:00:00Z", "mainEntityOfPage": "https://aifreetextpro.com/blog/ai-humanizer-for-essays", "wordCount": 1050
         })}</script>
         <script type="application/ld+json">{JSON.stringify({
-          "@context": "https://schema.org", "@type": "BreadcrumbList",
-          "itemListElement": [
-            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://aifreetextpro.com" },
-            { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://aifreetextpro.com/blog" },
-            { "@type": "ListItem", "position": 3, "name": "AI Humanizer for Essays" }
+          "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://aifreetextpro.com" }, { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://aifreetextpro.com/blog" }, { "@type": "ListItem", "position": 3, "name": "AI Humanizer for Essays" }
           ]
         })}</script>
       </Helmet>
@@ -86,11 +75,7 @@ const AIHumanizerForEssays = () => {
             <QuickAnswer question="What is the best AI humanizer for essays?" answer="The best AI humanizer for essays is one that preserves your argument and academic tone while varying sentence structure. Run your draft through AI Free Text Pro on the Academic style, then scan with the built-in detector and revise any sentence still flagged. Most students see Turnitin AI scores drop from 60-90% to under 10% in one pass." />
 
             <KeyTakeaways points={[
-              "Most AI flags on student essays come from uniform sentence length and predictable transitions, not vocabulary.",
-              "Use the Academic writing style when humanizing essays, not Casual or Creative.",
-              "Always review the output. A humanizer reduces false flags, but you stay accountable for meaning, citations, and accuracy.",
-              "Check the result with at least two detectors before submitting. GPTZero and Originality.AI catch different patterns.",
-              "Edit any sentence still flagged by hand. One human-written sentence in a paragraph dramatically lowers AI scores."
+              "Most AI flags on student essays come from uniform sentence length and predictable transitions, not vocabulary.", "Use the Academic writing style when humanizing essays, not Casual or Creative.", "Always review the output. A humanizer reduces false flags, but you stay accountable for meaning, citations, and accuracy.", "Check the result with at least two detectors before submitting. GPTZero and Originality.AI catch different patterns.", "Edit any sentence still flagged by hand. One human-written sentence in a paragraph dramatically lowers AI scores."
             ]} />
 
             <h2 className="text-2xl font-bold mt-10 mb-4 text-foreground">Why Honest Essays Get Flagged</h2>
@@ -116,6 +101,9 @@ const AIHumanizerForEssays = () => {
             <h2 className="text-2xl font-bold mt-10 mb-4 text-foreground">Real Test Results</h2>
             <p className="text-muted-foreground leading-relaxed">We ran 30 student essays (literature, history, psychology, and STEM) through this workflow. Average Turnitin AI score before humanization: 71%. After: 8%. Average GPTZero AI probability before: 84%. After: 11%. Three independent professors scored the humanized essays for clarity and argument quality on a 1-5 scale; all 30 essays kept the same or higher score post-humanization.</p>
 
+            <h2 className="text-2xl font-bold mt-10 mb-4 text-foreground">Hand-Editing Techniques That Actually Lower Scores</h2>
+            <p className="text-muted-foreground leading-relaxed">When a sentence keeps getting flagged after a humanizer pass, the fix is usually to add something only you could have written. A few moves work reliably. Drop in a concrete, specific detail: the actual title of the book you are citing, a date, a figure from your own notes, anything generic phrasing tends to round off. Break the rhythm on purpose by following a long sentence with a short one, or by opening with a subordinate clause instead of the subject. Swap the textbook connectors, since "Furthermore" and "Moreover" are among the strongest AI signals, for the way you would actually say it: "But," "So," or "That is where it gets complicated." And read the paragraph out loud. If a line sounds like it could have come from any student in the class, rewrite it until it sounds like you. One sentence rebuilt this way often pulls the whole paragraph below the detector threshold.</p>
+
             <h2 className="text-2xl font-bold mt-10 mb-4 text-foreground">Common Mistakes to Avoid</h2>
             <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
               <li><strong>Humanizing the whole essay in one click:</strong> You lose visibility into changes. Go section by section.</li>
@@ -136,10 +124,7 @@ const AIHumanizerForEssays = () => {
           </article>
 
                         <FAQSection faqs={[
-                { question: "Why do honestly written essays get flagged as AI?", answer: "Formal, well-structured academic writing can show low perplexity and burstiness — the same patterns detectors associate with AI — leading to false positives even on original work." },
-                { question: "Will humanizing my essay change its meaning?", answer: "A good humanizer preserves your argument and evidence while varying phrasing and rhythm. Always re-read the output to confirm accuracy before submitting." },
-                { question: "Is using an AI humanizer on my essay cheating?", answer: "Using it to refine and de-risk your own writing is generally acceptable; using it to disguise fully AI-written work where that is prohibited is not. Follow your institution's policy." },
-              ]} />
+                { question: "Why do honestly written essays get flagged as AI?", answer: "Formal, well-structured academic writing can show low perplexity and burstiness, the same patterns detectors associate with AI, leading to false positives even on original work." }, { question: "Will humanizing my essay change its meaning?", answer: "A good humanizer preserves your argument and evidence while varying phrasing and rhythm. Always re-read the output to confirm accuracy before submitting." }, { question: "Is using an AI humanizer on my essay cheating?", answer: "Using it to refine and de-risk your own writing is generally acceptable; using it to disguise fully AI-written work where that is prohibited is not. Follow your institution's policy." }, ]} />
 
               <RelatedArticles articles={relatedArticles} />
           <InternalLinks currentPage="/blog/ai-humanizer-for-essays" />

@@ -85,7 +85,7 @@ const CanDetectorsDetectGPT5 = () => {
       "@type": "WebPage",
       "@id": "https://aifreetextpro.com/blog/can-ai-detectors-detect-gpt5"
     },
-    "wordCount": 2300
+    "wordCount": 1200
   };
 
   const breadcrumbSchema = {

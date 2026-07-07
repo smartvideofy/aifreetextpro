@@ -57,7 +57,7 @@ const AIInstagramCaptions = () => {
           "author": { "@type": "Person", "name": "Dr. Sarah Chen", "url": "https://aifreetextpro.com/team#sarah-chen" },
           "publisher": { "@type": "Organization", "name": "AI Free Text Pro", "logo": { "@type": "ImageObject", "url": "https://aifreetextpro.com/logo.png" } },
           "datePublished": publishDate, "dateModified": modifiedDate,
-          "mainEntityOfPage": "https://aifreetextpro.com/blog/ai-instagram-captions", "wordCount": 1800
+          "mainEntityOfPage": "https://aifreetextpro.com/blog/ai-instagram-captions", "wordCount": 1150
         })}</script>
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org", "@type": "BreadcrumbList",

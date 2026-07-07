@@ -115,7 +115,7 @@ export default function AIParaphrasingToolPlagiarism() {
             "datePublished": "2026-03-05T08:00:00Z",
             "dateModified": "2026-03-07T08:00:00Z",
             "mainEntityOfPage": "https://aifreetextpro.com/blog/ai-paraphrasing-tool-avoid-plagiarism",
-            "wordCount": 2000,
+            "wordCount": 1400,
             "about": {
               "@type": "Thing",
               "name": "AI Paraphrasing Tools"

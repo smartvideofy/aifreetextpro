@@ -14,28 +14,13 @@ import { AuthorSchema } from "@/components/AuthorSchema";
 
 const relatedArticles = [
   {
-    title: "Top 10 AI Humanizer Tools for 2026",
-    description: "Complete comparison of the best AI humanizers available",
-    href: "/blog/top-10-ai-humanizer-tools-2025",
-    category: "Comparison"
-  },
-  {
-    title: "How AI Detectors Work: Inside the Science of AI Text Analysis",
-    description: "Understand the technology behind AI detection algorithms",
-    href: "/blog/how-ai-detectors-work",
-    category: "Education"
-  },
-  {
-    title: "GPTinf vs AI Free Text Pro Comparison",
-    description: "Head-to-head comparison of two popular AI humanizers",
-    href: "/blog/gptinf-vs-ai-free-text-pro",
-    category: "Comparison"
-  },
-  {
-    title: "Bypass ZeroGPT AI Detection",
-    description: "Strategies to humanize content for ZeroGPT",
-    href: "/blog/bypass-zerogpt-ai-detection",
-    category: "Guide"
+    title: "Top 10 AI Humanizer Tools for 2026", description: "Complete comparison of the best AI humanizers available", href: "/blog/top-10-ai-humanizer-tools-2025", category: "Comparison"
+  }, {
+    title: "How AI Detectors Work: Inside the Science of AI Text Analysis", description: "Understand the technology behind AI detection algorithms", href: "/blog/how-ai-detectors-work", category: "Education"
+  }, {
+    title: "GPTinf vs AI Free Text Pro Comparison", description: "Head-to-head comparison of two popular AI humanizers", href: "/blog/gptinf-vs-ai-free-text-pro", category: "Comparison"
+  }, {
+    title: "Bypass ZeroGPT AI Detection", description: "Strategies to humanize content for ZeroGPT", href: "/blog/bypass-zerogpt-ai-detection", category: "Guide"
   }
 ];
 
@@ -65,35 +50,16 @@ const AIDetectionComparison = () => {
         
         <script type="application/ld+json">
           {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Article",
-            "headline": "AI Detection Tools Compared (2026): GPTZero vs AI Free Text Pro vs Rewritify",
-            "description": "See which AI detector is most accurate in 2026. We compare GPTZero, Rewritify, and AI Free Text Pro in real-world tests.",
-            "image": {
-              "@type": "ImageObject",
-              "url": "https://aifreetextpro.com/og-image.png",
-              "width": 1200,
-              "height": 675
-            },
-            "datePublished": "2026-02-02",
-            "dateModified": "2026-04-05",
-            "author": {
-              "@type": "Person",
-              "name": "Dr. Sarah Chen",
-              "url": "https://aifreetextpro.com/team#sarah-chen",
-              "jobTitle": "Founder & CEO"
-            },
-            "publisher": {
-              "@type": "Organization",
-              "name": "AI Free Text Pro",
-              "logo": {
-                "@type": "ImageObject",
-                "url": "https://aifreetextpro.com/logo.png"
+            "@context": "https://schema.org", "@type": "Article", "headline": "AI Detection Tools Compared (2026): GPTZero vs AI Free Text Pro vs Rewritify", "description": "See which AI detector is most accurate in 2026. We compare GPTZero, Rewritify, and AI Free Text Pro in real-world tests.", "image": {
+              "@type": "ImageObject", "url": "https://aifreetextpro.com/og-image.png", "width": 1200, "height": 675
+            }, "datePublished": "2026-02-02", "dateModified": "2026-04-05", "author": {
+              "@type": "Person", "name": "Dr. Sarah Chen", "url": "https://aifreetextpro.com/team#sarah-chen", "jobTitle": "Founder & CEO"
+            }, "publisher": {
+              "@type": "Organization", "name": "AI Free Text Pro", "logo": {
+                "@type": "ImageObject", "url": "https://aifreetextpro.com/logo.png"
               }
-            },
-            "mainEntityOfPage": {
-              "@type": "WebPage",
-              "@id": "https://aifreetextpro.com/blog/ai-detection-tools-compared-2025"
+            }, "mainEntityOfPage": {
+              "@type": "WebPage", "@id": "https://aifreetextpro.com/blog/ai-detection-tools-compared-2025"
             }
           })}
         </script>
@@ -101,25 +67,13 @@ const AIDetectionComparison = () => {
         {/* BreadcrumbList Schema */}
         <script type="application/ld+json">
           {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            "itemListElement": [
+            "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
               {
-                "@type": "ListItem",
-                "position": 1,
-                "name": "Home",
-                "item": "https://aifreetextpro.com/"
-              },
-              {
-                "@type": "ListItem",
-                "position": 2,
-                "name": "Blog",
-                "item": "https://aifreetextpro.com/blog"
-              },
-              {
-                "@type": "ListItem",
-                "position": 3,
-                "name": "AI Detection Tools Compared"
+                "@type": "ListItem", "position": 1, "name": "Home", "item": "https://aifreetextpro.com/"
+              }, {
+                "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://aifreetextpro.com/blog"
+              }, {
+                "@type": "ListItem", "position": 3, "name": "AI Detection Tools Compared"
               }
             ]
           })}
@@ -139,9 +93,7 @@ const AIDetectionComparison = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <Breadcrumbs items={[
-              { label: "Home", href: "/" },
-              { label: "Blog", href: "/blog" },
-              { label: "AI Detection Tools Compared (2025)" }
+              { label: "Home", href: "/" }, { label: "Blog", href: "/blog" }, { label: "AI Detection Tools Compared (2025)" }
             ]} />
             
             <Link to="/blog">
@@ -183,11 +135,7 @@ const AIDetectionComparison = () => {
 
               <KeyTakeaways 
                 points={[
-                  "AI Free Text Pro leads with 94% accuracy and dual detection + humanization functionality",
-                  "GPTZero achieves 87% accuracy and is widely adopted in educational institutions",
-                  "Rewritify is fastest (1-2 sec) but has lower 82% accuracy",
-                  "Only AI Free Text Pro offers integrated humanization tool among tested platforms",
-                  "We tested 50 samples: 25 AI-generated (ChatGPT, Claude, Gemini) and 25 human-written"
+                  "AI Free Text Pro leads with 94% accuracy and dual detection + humanization functionality", "GPTZero achieves 87% accuracy and is widely adopted in educational institutions", "Rewritify is fastest (1-2 sec) but has lower 82% accuracy", "Only AI Free Text Pro offers integrated humanization tool among tested platforms", "We tested 50 samples: 25 AI-generated (ChatGPT, Claude, Gemini) and 25 human-written"
                 ]}
               />
 
@@ -426,10 +374,7 @@ const AIDetectionComparison = () => {
               </div>
 
                             <FAQSection faqs={[
-                { question: "How were the detectors tested?", answer: "We ran the same real-world samples — AI-generated, human-written, and edited — through each tool and compared accuracy, false positives, and speed." },
-                { question: "Which detector is best for students?", answer: "GPTZero and Turnitin are the most common in academia. For self-checking before submission, any reputable detector helps, but expect some false positives on formal writing." },
-                { question: "Do free AI detectors work as well as paid ones?", answer: "Free detectors are fine for a quick first pass but are generally less consistent than paid tools on edited or short-form content." },
-              ]} />
+                { question: "How were the detectors tested?", answer: "We ran the same real-world samples, AI-generated, human-written, and edited, through each tool and compared accuracy, false positives, and speed." }, { question: "Which detector is best for students?", answer: "GPTZero and Turnitin are the most common in academia. For self-checking before submission, any reputable detector helps, but expect some false positives on formal writing." }, { question: "Do free AI detectors work as well as paid ones?", answer: "Free detectors are fine for a quick first pass but are generally less consistent than paid tools on edited or short-form content." }, ]} />
 
               <RelatedArticles articles={relatedArticles} />
               

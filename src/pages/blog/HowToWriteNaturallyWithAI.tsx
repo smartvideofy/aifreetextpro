@@ -16,28 +16,13 @@ import { PostHowToSchema } from "@/components/PostHowToSchema";
 
 const relatedArticles = [
   {
-    title: "AI Humanization Pitfalls: Common Mistakes",
-    description: "What to avoid when refining AI text, and what to do instead.",
-    href: "/blog/ai-humanization-pitfalls",
-    category: "Best Practices"
-  },
-  {
-    title: "Editing AI Drafts Like a Human Editor",
-    description: "Professional techniques to polish AI-generated content into publication-ready prose.",
-    href: "/blog/editing-ai-drafts-human-editor",
-    category: "Writing Guide"
-  },
-  {
-    title: "Tone, Voice, and Flow in AI-Assisted Writing",
-    description: "Master the art of maintaining consistent voice and natural rhythm in AI-enhanced content.",
-    href: "/blog/tone-voice-flow-ai-writing",
-    category: "Craft"
-  },
-  {
-    title: "How to Humanize AI-Generated Text",
-    description: "Transform AI content into natural, authentic writing",
-    href: "/blog/humanize-ai-text-without-losing-voice",
-    category: "Guide"
+    title: "AI Humanization Pitfalls: Common Mistakes", description: "What to avoid when refining AI text, and what to do instead.", href: "/blog/ai-humanization-pitfalls", category: "Best Practices"
+  }, {
+    title: "Editing AI Drafts Like a Human Editor", description: "Professional techniques to polish AI-generated content into publication-ready prose.", href: "/blog/editing-ai-drafts-human-editor", category: "Writing Guide"
+  }, {
+    title: "Tone, Voice, and Flow in AI-Assisted Writing", description: "Master the art of maintaining consistent voice and natural rhythm in AI-enhanced content.", href: "/blog/tone-voice-flow-ai-writing", category: "Craft"
+  }, {
+    title: "How to Humanize AI-Generated Text", description: "Transform AI content into natural, authentic writing", href: "/blog/humanize-ai-text-without-losing-voice", category: "Guide"
   }
 ];
 
@@ -66,44 +51,22 @@ const HowToWriteNaturallyWithAI = () => {
         <meta name="twitter:image" content="https://aifreetextpro.com/og-image.png" />
         <script type="application/ld+json">
           {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Article",
-            "headline": "How to Write Naturally with AI: A Complete Guide for 2026",
-            "description": "Learn the art of crafting natural, engaging content with AI assistance.",
-            "author": { 
-              "@type": "Person", 
-              "name": "Dr. Sarah Chen",
-              "url": "https://aifreetextpro.com/team#sarah-chen",
-              "jobTitle": "Founder & CEO"
-            },
-            "publisher": { "@type": "Organization", "name": "AI Free Text Pro" },
-            "datePublished": "2026-02-02",
-            "dateModified": "2026-04-05"
+            "@context": "https://schema.org", "@type": "Article", "headline": "How to Write Naturally with AI: A Complete Guide for 2026", "description": "Learn the art of crafting natural, engaging content with AI assistance.", "author": { 
+              "@type": "Person", "name": "Dr. Sarah Chen", "url": "https://aifreetextpro.com/team#sarah-chen", "jobTitle": "Founder & CEO"
+            }, "publisher": { "@type": "Organization", "name": "AI Free Text Pro" }, "datePublished": "2026-02-02", "dateModified": "2026-04-05"
           })}
         </script>
         
         {/* BreadcrumbList Schema */}
         <script type="application/ld+json">
           {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            "itemListElement": [
+            "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
               {
-                "@type": "ListItem",
-                "position": 1,
-                "name": "Home",
-                "item": "https://aifreetextpro.com/"
-              },
-              {
-                "@type": "ListItem",
-                "position": 2,
-                "name": "Blog",
-                "item": "https://aifreetextpro.com/blog"
-              },
-              {
-                "@type": "ListItem",
-                "position": 3,
-                "name": "How to Write Naturally with AI"
+                "@type": "ListItem", "position": 1, "name": "Home", "item": "https://aifreetextpro.com/"
+              }, {
+                "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://aifreetextpro.com/blog"
+              }, {
+                "@type": "ListItem", "position": 3, "name": "How to Write Naturally with AI"
               }
             ]
           })}
@@ -112,18 +75,8 @@ const HowToWriteNaturallyWithAI = () => {
         {/* HowTo Schema */}
         <script type="application/ld+json">
           {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "HowTo",
-            "name": "How to Write Naturally with AI",
-            "description": "Master the art of crafting natural, engaging content with AI assistance.",
-            "totalTime": "PT15M",
-            "step": [
-              { "@type": "HowToStep", "position": 1, "name": "Adopt AI as Partner Mindset", "text": "Think of AI as a talented but inexperienced collaborator who needs guidance." },
-              { "@type": "HowToStep", "position": 2, "name": "Use Natural Prompts", "text": "Include audience specificity, emotional context, voice guidelines, and unique angles in prompts." },
-              { "@type": "HowToStep", "position": 3, "name": "Build Conversational Flow", "text": "Read output aloud, add human markers like contractions, and vary sentence length." },
-              { "@type": "HowToStep", "position": 4, "name": "Structure Check Pass", "text": "Ensure the piece flows logically with smooth transitions and compelling opening." },
-              { "@type": "HowToStep", "position": 5, "name": "Voice Injection Pass", "text": "Add your personality, replace generic phrases, and insert opinions and experiences." },
-              { "@type": "HowToStep", "position": 6, "name": "Polish Pass", "text": "Tighten sentences, eliminate redundancy, and ensure every word earns its place." }
+            "@context": "https://schema.org", "@type": "HowTo", "name": "How to Write Naturally with AI", "description": "Master the art of crafting natural, engaging content with AI assistance.", "totalTime": "PT15M", "step": [
+              { "@type": "HowToStep", "position": 1, "name": "Adopt AI as Partner Mindset", "text": "Think of AI as a talented but inexperienced collaborator who needs guidance." }, { "@type": "HowToStep", "position": 2, "name": "Use Natural Prompts", "text": "Include audience specificity, emotional context, voice guidelines, and unique angles in prompts." }, { "@type": "HowToStep", "position": 3, "name": "Build Conversational Flow", "text": "Read output aloud, add human markers like contractions, and vary sentence length." }, { "@type": "HowToStep", "position": 4, "name": "Structure Check Pass", "text": "Ensure the piece flows logically with smooth transitions and compelling opening." }, { "@type": "HowToStep", "position": 5, "name": "Voice Injection Pass", "text": "Add your personality, replace generic phrases, and insert opinions and experiences." }, { "@type": "HowToStep", "position": 6, "name": "Polish Pass", "text": "Tighten sentences, eliminate redundancy, and ensure every word earns its place." }
             ]
           })}
         </script>
@@ -154,8 +107,7 @@ const HowToWriteNaturallyWithAI = () => {
         <main className="container mx-auto px-4 py-12 md:py-16">
           <div className="max-w-4xl mx-auto">
             <Breadcrumbs items={[
-              { label: "Blog", href: "/blog" },
-              { label: "How to Write Naturally with AI" }
+              { label: "Blog", href: "/blog" }, { label: "How to Write Naturally with AI" }
             ]} />
 
             <Link to="/blog" className="inline-flex items-center text-primary hover:underline mb-6 group">
@@ -185,10 +137,7 @@ const HowToWriteNaturallyWithAI = () => {
 
               <KeyTakeaways
                 points={[
-                  "Treat AI as a writing partner, not a vending machine, for natural-sounding results",
-                  "The collaboration framework: brainstorm, draft, inject voice, edit iteratively",
-                  "Adding personal anecdotes and varied sentence structure makes AI content feel authentic",
-                  "Professional writers save 15-20 hours per week by integrating AI into their workflow"
+                  "Treat AI as a writing partner, not a vending machine, for natural-sounding results", "The collaboration framework: brainstorm, draft, inject voice, edit iteratively", "Adding personal anecdotes and varied sentence structure makes AI content feel authentic", "Professional writers save 15-20 hours per week by integrating AI into their workflow"
                 ]}
               />
 
@@ -275,7 +224,7 @@ const HowToWriteNaturallyWithAI = () => {
                   The Refinement Process
                 </h2>
                 <p className="text-muted-foreground mb-4">
-                  First drafts—whether from AI or humans—are never final. The magic happens in revision.
+                  First drafts, whether from AI or humans, are never final. The magic happens in revision.
                 </p>
 
                 <div className="bg-card border border-border rounded-lg p-6 my-6">
@@ -334,10 +283,7 @@ const HowToWriteNaturallyWithAI = () => {
             </article>
 
                           <FAQSection faqs={[
-                { question: "How do I make AI writing sound like me?", answer: "Give the AI samples of your writing and clear context, then edit the draft to add your phrasing, perspective, and specific examples." },
-                { question: "Should I use AI's first draft as-is?", answer: "No. First drafts are generic; the natural-sounding result comes from refining structure, detail, and voice." },
-                { question: "What prompts produce more natural writing?", answer: "Conversational prompts that specify audience, tone, and concrete examples outperform generic 'write about X' requests." },
-              ]} />
+                { question: "How do I make AI writing sound like me?", answer: "Give the AI samples of your writing and clear context, then edit the draft to add your phrasing, perspective, and specific examples." }, { question: "Should I use AI's first draft as-is?", answer: "No. First drafts are generic; the natural-sounding result comes from refining structure, detail, and voice." }, { question: "What prompts produce more natural writing?", answer: "Conversational prompts that specify audience, tone, and concrete examples outperform generic 'write about X' requests." }, ]} />
 
               <RelatedArticles articles={relatedArticles} />
             

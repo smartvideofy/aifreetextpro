@@ -10,7 +10,7 @@
 
     <!-- NOTE: per-route canonical, og:title, og:description, og:url, twitter:* are
          emitted by src/components/SEOHead.tsx via react-helmet-async. Do NOT add a
-         static <link rel="canonical"> here — it would create a duplicate canonical
+         static <link rel="canonical"> here, it would create a duplicate canonical
          after Helmet hydrates and collapse every route to "/" for crawlers. -->
 
     <!-- Sitewide OG image (overrides any host-injected preview image).
@@ -18,7 +18,7 @@
     <meta property="og:image" content="https://aifreetextpro.com/og-image.png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="AI Free Text Pro — AI Humanizer & Detector" />
+    <meta property="og:image:alt" content="AI Free Text Pro - AI Humanizer & Detector" />
     <meta property="og:site_name" content="AI Free Text Pro" />
     <meta property="og:type" content="website" />
     <meta name="twitter:card" content="summary_large_image" />
@@ -27,8 +27,13 @@
 
     <!-- Preconnect to critical domains -->
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <!-- Favicons & app icons -->
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="theme-color" content="#6D3FC4" />
 
     <!-- Prerendered JSON-LD schema fallbacks for crawlers that don't execute JS -->
     <script type="application/ld+json">

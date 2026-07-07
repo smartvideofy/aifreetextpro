@@ -38,7 +38,7 @@ const CrossHubNavModule = lazy(() => import("@/components/PillarHubLinks").then(
 
 // fallbackClass reserves the section's real height so the lazy chunk loading
 // (and React's Suspense-boundary re-render during hydration) doesn't collapse
-// to a short placeholder and then expand — which was driving CLS. Overlay
+// to a short placeholder and then expand, which was driving CLS. Overlay
 // sections pass nothing (0 height) since they render null until interaction.
 const LazySection = ({ children, fallbackClass = "" }: { children: React.ReactNode; fallbackClass?: string }) => (
   <Suspense fallback={<div className={fallbackClass} aria-hidden="true" />}>
@@ -74,70 +74,30 @@ const Index = () => {
         {/* Enhanced Schema Markup */}
         <script type="application/ld+json">
           {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "SoftwareApplication",
-            "name": "AI Free Text Pro - Free AI Humanizer Tool",
-            "alternateName": ["Free AI Humanizer", "AI Checker", "AI Detector", "AI Humanizer Tool Free"],
-            "applicationCategory": "UtilitiesApplication",
-            "offers": {
-              "@type": "Offer",
-              "price": "0",
-              "priceCurrency": "USD"
-            },
-            "operatingSystem": "Web Browser",
-            "applicationSubCategory": "AI Text Analysis Tool",
-            "featureList": [
-              "Free AI humanizer tool",
-              "AI checker with 98% accuracy",
-              "Unlimited words on Pro plan",
-              "Turnitin bypass",
-              "Originality.AI bypass",
-              "GPTZero bypass",
-              "PDF Export Reports",
-              "Multiple Writing Styles",
-              "File Upload Support (PDF, DOCX, TXT)",
-              "Word-by-word Analysis"
-            ],
-            "screenshot": "https://aifreetextpro.com/og-image.png"
+            "@context": "https://schema.org", "@type": "SoftwareApplication", "name": "AI Free Text Pro - Free AI Humanizer Tool", "alternateName": ["Free AI Humanizer", "AI Checker", "AI Detector", "AI Humanizer Tool Free"], "applicationCategory": "UtilitiesApplication", "offers": {
+              "@type": "Offer", "price": "0", "priceCurrency": "USD"
+            }, "operatingSystem": "Web Browser", "applicationSubCategory": "AI Text Analysis Tool", "featureList": [
+              "Free AI humanizer tool", "AI checker with 98% accuracy", "Unlimited words on Pro plan", "Turnitin bypass", "Originality.AI bypass", "GPTZero bypass", "PDF Export Reports", "Multiple Writing Styles", "File Upload Support (PDF, DOCX, TXT)", "Word-by-word Analysis"
+            ], "screenshot": "https://aifreetextpro.com/og-image.png"
           })}
         </script>
         
         <script type="application/ld+json">
           {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Product",
-            "name": "AI Free Text Pro - AI Detector & Humanizer",
-            "description": "Free AI detector and humanizer tool. Detect ChatGPT and make AI text sound human with 98% accuracy.",
-            "brand": {
-              "@type": "Brand",
-              "name": "AI Free Text Pro"
-            },
-            "offers": {
-              "@type": "Offer",
-              "price": "0",
-              "priceCurrency": "USD",
-              "availability": "https://schema.org/InStock"
+            "@context": "https://schema.org", "@type": "Product", "name": "AI Free Text Pro - AI Detector & Humanizer", "description": "Free AI detector and humanizer tool. Detect ChatGPT and make AI text sound human with 98% accuracy.", "brand": {
+              "@type": "Brand", "name": "AI Free Text Pro"
+            }, "offers": {
+              "@type": "Offer", "price": "0", "priceCurrency": "USD", "availability": "https://schema.org/InStock"
             }
           })}
         </script>
         
         <script type="application/ld+json">
           {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Organization",
-            "name": "AI Free Text Pro",
-            "url": "https://aifreetextpro.com",
-            "logo": "https://aifreetextpro.com/logo.png",
-            "description": "Free AI detector and humanizer tool. Detect ChatGPT and make AI text sound human with 98% accuracy.",
-            "sameAs": [
-              "https://app.aifreetextpro.com",
-              "https://twitter.com/aifreetextpro",
-              "https://www.linkedin.com/company/aifreetextpro"
-            ],
-            "contactPoint": {
-              "@type": "ContactPoint",
-              "contactType": "Customer Support",
-              "url": "https://aifreetextpro.com/contact"
+            "@context": "https://schema.org", "@type": "Organization", "name": "AI Free Text Pro", "url": "https://aifreetextpro.com", "logo": "https://aifreetextpro.com/logo.png", "description": "Free AI detector and humanizer tool. Detect ChatGPT and make AI text sound human with 98% accuracy.", "sameAs": [
+              "https://app.aifreetextpro.com", "https://twitter.com/aifreetextpro", "https://www.linkedin.com/company/aifreetextpro"
+            ], "contactPoint": {
+              "@type": "ContactPoint", "contactType": "Customer Support", "url": "https://aifreetextpro.com/contact"
             }
           })}
         </script>
@@ -145,13 +105,8 @@ const Index = () => {
         {/* Speakable Schema for Voice Assistants */}
         <script type="application/ld+json">
           {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "WebPage",
-            "name": "Free AI Humanizer & Detector Tool",
-            "url": "https://aifreetextpro.com/",
-            "speakable": {
-              "@type": "SpeakableSpecification",
-              "cssSelector": ["h1", ".hero-description", ".key-features"]
+            "@context": "https://schema.org", "@type": "WebPage", "name": "Free AI Humanizer & Detector Tool", "url": "https://aifreetextpro.com/", "speakable": {
+              "@type": "SpeakableSpecification", "cssSelector": ["h1", ".hero-description", ".key-features"]
             }
           })}
         </script>
@@ -159,79 +114,42 @@ const Index = () => {
         {/* FAQ Schema for Rich Snippets */}
         <script type="application/ld+json">
           {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": [
+            "@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
               {
-                "@type": "Question",
-                "name": "How accurate is AI Free Text Pro compared to GPTZero?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "AI Free Text Pro achieves 98% accuracy using advanced GPT-4o Mini models for text pattern analysis. Our testing shows we outperform GPTZero (90% accuracy) and ZeroGPT (85% accuracy) in detecting ChatGPT, Claude, and other AI-generated content."
+                "@type": "Question", "name": "How accurate is AI Free Text Pro compared to GPTZero?", "acceptedAnswer": {
+                  "@type": "Answer", "text": "AI Free Text Pro achieves 98% accuracy using advanced GPT-4o Mini models for text pattern analysis. Our testing shows we outperform GPTZero (90% accuracy) and ZeroGPT (85% accuracy) in detecting ChatGPT, Claude, and other AI-generated content."
                 }
-              },
-              {
-                "@type": "Question",
-                "name": "Can AI Free Text Pro detect ChatGPT 4 and Claude?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Yes! AI Free Text Pro is specifically designed to detect the latest AI models including ChatGPT-5, GPT-5, Claude 4, Gemini 2, and other leading language models."
+              }, {
+                "@type": "Question", "name": "Can AI Free Text Pro detect ChatGPT 4 and Claude?", "acceptedAnswer": {
+                  "@type": "Answer", "text": "Yes! AI Free Text Pro is specifically designed to detect the latest AI models including ChatGPT-5, GPT-5, Claude 4, Gemini 2, and other leading language models."
                 }
-              },
-              {
-                "@type": "Question",
-                "name": "Is AI Free Text Pro free forever?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Yes, AI Free Text Pro offers a generous free tier with 1,000 words per analysis, double what competitors like ZeroGPT (500 words) and Rewritify (250 words) offer. Our core AI detection and humanization features remain free forever."
+              }, {
+                "@type": "Question", "name": "Is AI Free Text Pro free forever?", "acceptedAnswer": {
+                  "@type": "Answer", "text": "Yes, AI Free Text Pro offers a generous free tier with 1,000 words per analysis, double what competitors like ZeroGPT (500 words) and Rewritify (250 words) offer. Our core AI detection and humanization features remain free forever."
                 }
-              },
-              {
-                "@type": "Question",
-                "name": "How does the AI humanizer work?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Our AI humanizer transforms robotic AI text into natural, human-like writing using advanced language models. You can choose from 4 writing styles (Professional, Academic, Creative, Casual) and customize settings for tone and complexity."
+              }, {
+                "@type": "Question", "name": "How does the AI humanizer work?", "acceptedAnswer": {
+                  "@type": "Answer", "text": "Our AI humanizer transforms robotic AI text into natural, human-like writing using advanced language models. You can choose from 4 writing styles (Professional, Academic, Creative, Casual) and customize settings for tone and complexity."
                 }
-              },
-              {
-                "@type": "Question",
-                "name": "Is my text stored or shared with anyone?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "No, never. Your privacy is our top priority. AI Free Text Pro processes all content in real-time and does not store, log, or share your text with third parties."
+              }, {
+                "@type": "Question", "name": "Is my text stored or shared with anyone?", "acceptedAnswer": {
+                  "@type": "Answer", "text": "No, never. Your privacy is our top priority. AI Free Text Pro processes all content in real-time and does not store, log, or share your text with third parties."
                 }
-              },
-              {
-                "@type": "Question",
-                "name": "What file formats can I upload?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "AI Free Text Pro supports PDF, DOCX (Microsoft Word), and TXT file uploads up to 10MB in size. You can also paste text directly into the editor."
+              }, {
+                "@type": "Question", "name": "What file formats can I upload?", "acceptedAnswer": {
+                  "@type": "Answer", "text": "AI Free Text Pro supports PDF, DOCX (Microsoft Word), and TXT file uploads up to 10MB in size. You can also paste text directly into the editor."
                 }
-              },
-              {
-                "@type": "Question",
-                "name": "Is there a free AI humanizer tool?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Yes! AI Free Text Pro is a free AI humanizer tool that transforms AI-generated text into natural, human-like writing. Get 1,000 free words per month with no credit card required."
+              }, {
+                "@type": "Question", "name": "Is there a free AI humanizer tool?", "acceptedAnswer": {
+                  "@type": "Answer", "text": "Yes! AI Free Text Pro is a free AI humanizer tool that transforms AI-generated text into natural, human-like writing. Get 1,000 free words per month with no credit card required."
                 }
-              },
-              {
-                "@type": "Question",
-                "name": "Is there a free AI detector with unlimited words?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "AI Free Text Pro offers 1,000 free words per month. For unlimited AI detection and humanization, upgrade to our Pro plan with no word limits."
+              }, {
+                "@type": "Question", "name": "Is there a free AI detector with unlimited words?", "acceptedAnswer": {
+                  "@type": "Answer", "text": "AI Free Text Pro offers 1,000 free words per month. For unlimited AI detection and humanization, upgrade to our Pro plan with no word limits."
                 }
-              },
-              {
-                "@type": "Question",
-                "name": "How do I use an AI humanizer for free?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Simply paste your AI-generated text into our free AI humanizer. Select a writing style (Academic, Professional, Creative, or Casual) and click Humanize. Your first 1,000 words each month are completely free."
+              }, {
+                "@type": "Question", "name": "How do I use an AI humanizer for free?", "acceptedAnswer": {
+                  "@type": "Answer", "text": "Simply paste your AI-generated text into our free AI humanizer. Select a writing style (Academic, Professional, Creative, or Casual) and click Humanize. Your first 1,000 words each month are completely free."
                 }
               }
             ]
@@ -1075,7 +993,7 @@ const Index = () => {
                 </div>
                 <h2 className="text-3xl md:text-4xl font-bold mb-4">Powerful API for Developers</h2>
                 <p className="text-muted-foreground text-lg mb-6">
-                  Integrate AI humanization and detection directly into your product with our REST API. Simple authentication, real-time analytics, and 98% bypass accuracy — all programmatically.
+                  Integrate AI humanization and detection directly into your product with our REST API. Simple authentication, real-time analytics, and 98% bypass accuracy, all programmatically.
                 </p>
                 <div className="flex flex-wrap gap-4 mb-8 text-sm text-muted-foreground">
                   <span className="flex items-center gap-1.5"><CheckCircle className="h-4 w-4 text-primary" /> RESTful</span>
@@ -1094,16 +1012,12 @@ const Index = () => {
   -H "Authorization: Bearer sk_live_..." \\
   -H "Content-Type: application/json" \\
   -d '{
-    "text": "Your AI text here...",
-    "style": "academic",
-    "strength": "balanced"
+    "text": "Your AI text here...", "style": "academic", "strength": "balanced"
   }'
 
 # Response
 {
-  "humanized_text": "Natural text...",
-  "confidence_score": 0.97,
-  "detection_risk": "low"
+  "humanized_text": "Natural text...", "confidence_score": 0.97, "detection_risk": "low"
 }`}</code>
                 </pre>
               </div>

@@ -53,7 +53,7 @@ const AIPressReleases = () => {
             "publisher": { "@type": "Organization", "name": "AI Free Text Pro", "logo": { "@type": "ImageObject", "url": "https://aifreetextpro.com/logo.png" } },
             "datePublished": "2026-03-08",
             "dateModified": "2026-03-08",
-            "wordCount": 1900
+            "wordCount": 1050
           })}
         </script>
         <script type="application/ld+json">
@@ -109,7 +109,7 @@ const AIPressReleases = () => {
             <ReviewedBy name="Dr. Sarah Chen" role="Founder & CEO" slug="sarah-chen" />
 
             <KeyTakeaways points={[
-              "Journalists increasingly screen press releases for AI content -- detection damages credibility",
+              "Journalists increasingly screen press releases for AI content; detection damages credibility",
               "AI excels at drafting boilerplate sections but struggles with newsworthy angles",
               "The inverted pyramid structure that press releases require is a natural fit for AI drafting",
               "Humanization is critical: AI press releases sound corporate and generic by default",
@@ -117,8 +117,11 @@ const AIPressReleases = () => {
             ]} />
 
             <h2>Why AI Press Releases Get Ignored</h2>
-            <p>Journalists develop a sixth sense for AI-generated PR content. The telltale signs: every paragraph is the same length, the language is relentlessly positive without substance, quotes sound like no human would ever say them, and the "news" is buried under corporate jargon. An AI-generated press release reads like a template filled in by a robot -- because that is essentially what it is.</p>
+            <p>Journalists develop a sixth sense for AI-generated PR content. The telltale signs: every paragraph is the same length, the language is relentlessly positive without substance, quotes sound like no human would ever say them, and the "news" is buried under corporate jargon. An AI-generated press release reads like a template filled in by a robot, because that is essentially what it is.</p>
             <p>The irony is that press releases are one of the most formulaic forms of writing, making them seem like a natural fit for AI. But the formula is a starting point, not the finished product. What makes a press release effective is the human element: the genuinely interesting angle, the authentic executive voice, the specific detail that makes a journalist stop scrolling.</p>
+
+            <h2>What Actually Makes a Journalist Open It</h2>
+            <p>The part AI cannot do for you is the only part that matters: finding the news. A reporter is not asking "is this well written," they are asking "why would my readers care today," and that hook has to come from you. "Company launches new product" is not news; the trend the product reveals, the surprising number behind it, or the problem it solves for a specific group might be. The strongest releases lead with that angle in the first line and tie it to something already on the journalist's radar, then back it with specifics a template can never invent: real figures, a named customer, a quote that sounds like an actual person talking rather than a mission statement. Let AI handle the inverted-pyramid structure and the boilerplate once you have the angle, but decide the angle first and yourself. A perfectly formatted release with no news is still going in the trash; a slightly rough one with a genuine story gets a reply.</p>
 
             <h2>Where AI Helps in PR Writing</h2>
             <div className="overflow-x-auto my-6">

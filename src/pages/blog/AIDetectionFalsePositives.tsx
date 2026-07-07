@@ -12,10 +12,7 @@ import ReviewedBy from "@/components/ReviewedBy";
 import { AuthorSchema } from "@/components/AuthorSchema";
 
 const relatedArticles = [
-  { title: "Can Teachers Detect ChatGPT?", description: "How schools detect AI-generated work in 2026.", href: "/blog/can-teachers-detect-chatgpt", category: "Academic" },
-  { title: "How AI Detectors Score Text", description: "Understand perplexity, burstiness, and confidence scores.", href: "/blog/how-ai-detectors-score-text", category: "Technical" },
-  { title: "Signal vs. Noise in Human Text", description: "What makes text sound human to detectors.", href: "/blog/signal-vs-noise-human-text", category: "Technical" },
-  { title: "Academic AI Writing Safely", description: "Use AI responsibly in academic settings.", href: "/blog/academic-ai-writing-safely", category: "Academic" },
+  { title: "Can Teachers Detect ChatGPT?", description: "How schools detect AI-generated work in 2026.", href: "/blog/can-teachers-detect-chatgpt", category: "Academic" }, { title: "How AI Detectors Score Text", description: "Understand perplexity, burstiness, and confidence scores.", href: "/blog/how-ai-detectors-score-text", category: "Technical" }, { title: "Signal vs. Noise in Human Text", description: "What makes text sound human to detectors.", href: "/blog/signal-vs-noise-human-text", category: "Technical" }, { title: "Academic AI Writing Safely", description: "Use AI responsibly in academic settings.", href: "/blog/academic-ai-writing-safely", category: "Academic" },
 ];
 
 const AIDetectionFalsePositives = () => {
@@ -47,27 +44,16 @@ const AIDetectionFalsePositives = () => {
         <meta name="twitter:description" content="AI detectors are wrong more often than you think. Here is why." />
         <meta name="twitter:image" content="https://aifreetextpro.com/og-image.png" />
         <script type="application/ld+json">{JSON.stringify({
-          "@context": "https://schema.org", "@type": "Article",
-          "headline": "AI Detection False Positives: Why Your Human Writing Gets Flagged",
-          "author": { "@type": "Person", "name": "Dr. Sarah Chen", "url": "https://aifreetextpro.com/team#sarah-chen" },
-          "publisher": { "@type": "Organization", "name": "AI Free Text Pro", "logo": { "@type": "ImageObject", "url": "https://aifreetextpro.com/logo.png" } },
-          "datePublished": "2026-02-25T08:00:00Z", "dateModified": "2026-04-05",
-          "mainEntityOfPage": "https://aifreetextpro.com/blog/ai-detection-false-positives", "wordCount": 2100
+          "@context": "https://schema.org", "@type": "Article", "headline": "AI Detection False Positives: Why Your Human Writing Gets Flagged", "author": { "@type": "Person", "name": "Dr. Sarah Chen", "url": "https://aifreetextpro.com/team#sarah-chen" }, "publisher": { "@type": "Organization", "name": "AI Free Text Pro", "logo": { "@type": "ImageObject", "url": "https://aifreetextpro.com/logo.png" } }, "datePublished": "2026-02-25T08:00:00Z", "dateModified": "2026-04-05", "mainEntityOfPage": "https://aifreetextpro.com/blog/ai-detection-false-positives", "wordCount": 1100
         })}</script>
         <script type="application/ld+json">{JSON.stringify({
-          "@context": "https://schema.org", "@type": "BreadcrumbList",
-          "itemListElement": [
-            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://aifreetextpro.com" },
-            { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://aifreetextpro.com/blog" },
-            { "@type": "ListItem", "position": 3, "name": "AI Detection False Positives" }
+          "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://aifreetextpro.com" }, { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://aifreetextpro.com/blog" }, { "@type": "ListItem", "position": 3, "name": "AI Detection False Positives" }
           ]
         })}</script>
         <script type="application/ld+json">{JSON.stringify({
-          "@context": "https://schema.org", "@type": "FAQPage",
-          "mainEntity": [
-            { "@type": "Question", "name": "How common are AI detection false positives?", "acceptedAnswer": { "@type": "Answer", "text": "Studies show false positive rates between 5-15% depending on the detector and type of text. Non-native English speakers experience significantly higher false positive rates, sometimes exceeding 20%." } },
-            { "@type": "Question", "name": "What should I do if my essay is falsely flagged as AI?", "acceptedAnswer": { "@type": "Answer", "text": "Request a manual review, provide your drafts and research notes, show your Google Docs version history, and explain your writing process. Pre-scanning your work with AI Free Text Pro can help identify and fix potential flags before submission." } },
-            { "@type": "Question", "name": "Can Turnitin give a false positive?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Turnitin acknowledges that its AI detection feature can produce false positives. They recommend that AI scores be used as one data point alongside other evidence, not as a sole determinant of academic misconduct." } }
+          "@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
+            { "@type": "Question", "name": "How common are AI detection false positives?", "acceptedAnswer": { "@type": "Answer", "text": "Studies show false positive rates between 5-15% depending on the detector and type of text. Non-native English speakers experience significantly higher false positive rates, sometimes exceeding 20%." } }, { "@type": "Question", "name": "What should I do if my essay is falsely flagged as AI?", "acceptedAnswer": { "@type": "Answer", "text": "Request a manual review, provide your drafts and research notes, show your Google Docs version history, and explain your writing process. Pre-scanning your work with AI Free Text Pro can help identify and fix potential flags before submission." } }, { "@type": "Question", "name": "Can Turnitin give a false positive?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Turnitin acknowledges that its AI detection feature can produce false positives. They recommend that AI scores be used as one data point alongside other evidence, not as a sole determinant of academic misconduct." } }
           ]
         })}</script>
       </Helmet>
@@ -92,7 +78,7 @@ const AIDetectionFalsePositives = () => {
               <h1 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">AI Detection False Positives: Why Your Human Writing Gets Flagged</h1>
                 <QuickAnswer
                   question="Why does AI detection flag human writing?"
-                  answer="AI detectors produce false positives 5-15% of the time, wrongly labeling human text as AI. It happens most with formal, formulaic, or non-native English writing, which shows the low perplexity and uniform structure detectors associate with AI. A single flag isn't proof — request a human review."
+                  answer="AI detectors produce false positives 5-15% of the time, wrongly labeling human text as AI. It happens most with formal, formulaic, or non-native English writing, which shows the low perplexity and uniform structure detectors associate with AI. A single flag isn't proof, request a human review."
                 />
 
               <div className="flex flex-wrap items-center gap-4 text-sm text-muted-foreground">
@@ -104,11 +90,7 @@ const AIDetectionFalsePositives = () => {
             </header>
 
             <KeyTakeaways points={[
-              "AI detectors produce false positives 5-15% of the time, incorrectly labeling human-written text as AI-generated.",
-              "Non-native English speakers, technical writers, and highly structured academic writers are disproportionately affected.",
-              "The root cause is that detectors measure statistical patterns (perplexity, burstiness) that overlap between clear human writing and AI output.",
-              "Several universities have rolled back AI detection mandates due to equity concerns over false positives.",
-              "Pre-scanning your work with AI Free Text Pro before submission can identify and help resolve potential false flags."
+              "AI detectors produce false positives 5-15% of the time, incorrectly labeling human-written text as AI-generated.", "Non-native English speakers, technical writers, and highly structured academic writers are disproportionately affected.", "The root cause is that detectors measure statistical patterns (perplexity, burstiness) that overlap between clear human writing and AI output.", "Several universities have rolled back AI detection mandates due to equity concerns over false positives.", "Pre-scanning your work with AI Free Text Pro before submission can identify and help resolve potential false flags."
             ]} />
 
             <h2 className="text-2xl font-bold mt-10 mb-4 text-foreground">The Growing Crisis of False Accusations</h2>

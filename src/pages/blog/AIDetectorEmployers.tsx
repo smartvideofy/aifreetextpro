@@ -63,7 +63,7 @@ const AIDetectorEmployers = () => {
             "datePublished": "2026-03-08",
             "dateModified": "2026-03-08",
             "mainEntityOfPage": "https://aifreetextpro.com/blog/ai-detector-employers",
-            "wordCount": 2000
+            "wordCount": 1050
           })}
         </script>
       </Helmet>
@@ -104,7 +104,7 @@ const AIDetectorEmployers = () => {
             <KeyTakeaways points={[
               "45-60% of job applications in 2026 involve some form of AI assistance.",
               "Cover letters and writing samples are more reliably screened than resumes.",
-              "False positives are a significant concern -- ESL candidates are flagged disproportionately.",
+              "False positives are a significant concern, and ESL candidates are flagged disproportionately.",
               "AI detection should supplement, not replace, human evaluation of candidates.",
               "Legal review is essential before implementing AI screening in hiring workflows."
             ]} />
@@ -140,6 +140,11 @@ const AIDetectorEmployers = () => {
             </section>
 
             <section>
+              <h2>A Fairer Alternative to Screening on Detection Scores</h2>
+              <p>Before you build rejection logic around an AI score, weigh the legal exposure, because this is where HR teams get into trouble. Detectors flag non-native English writing at noticeably higher rates, so a policy that quietly screens out flagged applications can produce a disparate impact on candidates by national origin, and a probabilistic AI score is not the kind of evidence that holds up if that decision is ever challenged. The safer design is to never auto-reject on a number. Treat a high score as a prompt to look more closely, not a verdict, and keep a human in the loop on every adverse decision. Better still, if writing genuinely matters for the role, measure it directly: a short, supervised writing exercise that every candidate completes under the same conditions tells you what you actually want to know about their communication skills, without leaning on a tool that guesses. It is more defensible, more relevant, and fairer than reverse-engineering authorship from a percentage.</p>
+            </section>
+
+            <section>
               <h2>How to Screen Resumes and Cover Letters</h2>
               <h3>What works well for screening</h3>
               <ul>
@@ -167,7 +172,7 @@ const AIDetectorEmployers = () => {
             <section>
               <h2>Recommended HR Workflow</h2>
               <ol>
-                <li><strong>Require a writing component</strong> -- cover letter, written assessment, or sample</li>
+                <li><strong>Require a writing component</strong>, cover letter, written assessment, or sample</li>
                 <li><strong>Screen writing samples with AI detection</strong> using a tool with low false positive rates</li>
                 <li><strong>Flag but do not automatically reject</strong> applications with high AI scores</li>
                 <li><strong>Conduct a writing exercise during interviews</strong> for shortlisted candidates</li>

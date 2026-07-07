@@ -58,7 +58,7 @@ const ChatGPTvsClaudevsGeminiDetection = () => {
             "author": { "@type": "Person", "name": "Dr. Sarah Chen", "url": "https://aifreetextpro.com/team#sarah-chen" },
             "publisher": { "@type": "Organization", "name": "AI Free Text Pro", "logo": { "@type": "ImageObject", "url": "https://aifreetextpro.com/favicon.ico" } },
             "datePublished": "2026-02-28", "dateModified": "2026-04-05",
-            "mainEntityOfPage": "https://aifreetextpro.com/blog/chatgpt-vs-claude-vs-gemini-detection", "wordCount": 2100
+            "mainEntityOfPage": "https://aifreetextpro.com/blog/chatgpt-vs-claude-vs-gemini-detection", "wordCount": 1150
           })}
         </script>
         <script type="application/ld+json">
@@ -144,6 +144,11 @@ const ChatGPTvsClaudevsGeminiDetection = () => {
             <section>
               <h2>Why Claude Is Harder to Detect</h2>
               <p>Claude's lower detection rate comes down to three factors. First, Claude produces more variable sentence lengths, creating higher "burstiness" scores that mimic human writing. Second, Claude uses a broader vocabulary with less predictable word choices, raising perplexity scores. Third, Claude's outputs tend to include more hedging language and qualifications, which are hallmarks of human academic writing.</p>
+            </section>
+
+            <section>
+              <h2>Content Type Matters as Much as the Model</h2>
+              <p>Averages hide an important detail: the same model swings a lot depending on what you ask it to write. Across all three models, rigid, formal genres were the easiest to flag, because a five-paragraph academic essay leans on the predictable structure and safe vocabulary that detectors are built to catch. Looser genres like creative fiction, casual blog posts, and social captions came back with noticeably lower scores, since the natural variation in tone and rhythm reads as human regardless of which model produced it. The practical upshot is that "which model is hardest to detect" is only half the question. A Claude essay can still get flagged while a GPT-5 blog post sails through, so your content type is as much a lever as your model choice. If you have a say in the format, the looser and more voice-driven it is, the easier it is to keep below detection thresholds, before you have humanized anything at all.</p>
               <p>These are exactly the <Link to="/blog/how-ai-detectors-work" className="text-primary hover:underline">signals AI detectors analyze</Link> when scoring text. Claude naturally produces patterns that overlap more with human writing distributions.</p>
             </section>
 

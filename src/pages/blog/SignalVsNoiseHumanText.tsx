@@ -15,35 +15,17 @@ import { AuthorSchema } from "@/components/AuthorSchema";
 
 const SignalVsNoiseHumanText = () => {
   const breadcrumbItems = [
-    { label: "Home", href: "/" },
-    { label: "Blog", href: "/blog" },
-    { label: "Signal vs. Noise: Human Text", href: "/blog/signal-vs-noise-human-text" },
-  ];
+    { label: "Home", href: "/" }, { label: "Blog", href: "/blog" }, { label: "Signal vs. Noise: Human Text", href: "/blog/signal-vs-noise-human-text" }, ];
 
   const relatedArticles = [
     {
-      title: "How AI Detectors Score Text",
-      description: "Behind-the-scenes look at detection metrics",
-      href: "/blog/how-ai-detectors-score-text",
-      category: "Technical"
-    },
-    {
-      title: "Tone, Voice, and Flow in AI Writing",
-      description: "Elements that make content feel authentically human",
-      href: "/blog/tone-voice-flow-ai-writing",
-      category: "Writing Quality"
-    },
-    {
-      title: "AI Humanization Pitfalls",
-      description: "Common mistakes when refining AI text",
-      href: "/blog/ai-humanization-pitfalls",
-      category: "Best Practices"
-    },
-    {
-      title: "How AI Detectors Work",
-      description: "Inside the science of AI text analysis",
-      href: "/blog/how-ai-detectors-work",
-      category: "Educational"
+      title: "How AI Detectors Score Text", description: "Behind-the-scenes look at detection metrics", href: "/blog/how-ai-detectors-score-text", category: "Technical"
+    }, {
+      title: "Tone, Voice, and Flow in AI Writing", description: "Elements that make content feel authentically human", href: "/blog/tone-voice-flow-ai-writing", category: "Writing Quality"
+    }, {
+      title: "AI Humanization Pitfalls", description: "Common mistakes when refining AI text", href: "/blog/ai-humanization-pitfalls", category: "Best Practices"
+    }, {
+      title: "How AI Detectors Work", description: "Inside the science of AI text analysis", href: "/blog/how-ai-detectors-work", category: "Educational"
     }
   ];
 
@@ -71,44 +53,22 @@ const SignalVsNoiseHumanText = () => {
         <meta name="twitter:image" content="https://aifreetextpro.com/og-image.png" />
         <script type="application/ld+json">
           {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Article",
-            "headline": "Signal vs. Noise: What Makes Text Human in 2026",
-            "description": "Current patterns detectors care about with examples",
-            "author": {
-              "@type": "Person",
-              "name": "Dr. Sarah Chen",
-              "url": "https://aifreetextpro.com/team#sarah-chen",
-              "jobTitle": "Founder & CEO"
-            },
-            "publisher": { "@type": "Organization", "name": "AI Free Text Pro" },
-            "datePublished": "2026-02-02",
-            "dateModified": "2026-04-05"
+            "@context": "https://schema.org", "@type": "Article", "headline": "Signal vs. Noise: What Makes Text Human in 2026", "description": "Current patterns detectors care about with examples", "author": {
+              "@type": "Person", "name": "Dr. Sarah Chen", "url": "https://aifreetextpro.com/team#sarah-chen", "jobTitle": "Founder & CEO"
+            }, "publisher": { "@type": "Organization", "name": "AI Free Text Pro" }, "datePublished": "2026-02-02", "dateModified": "2026-04-05"
           })}
         </script>
         
         {/* BreadcrumbList Schema */}
         <script type="application/ld+json">
           {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            "itemListElement": [
+            "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
               {
-                "@type": "ListItem",
-                "position": 1,
-                "name": "Home",
-                "item": "https://aifreetextpro.com/"
-              },
-              {
-                "@type": "ListItem",
-                "position": 2,
-                "name": "Blog",
-                "item": "https://aifreetextpro.com/blog"
-              },
-              {
-                "@type": "ListItem",
-                "position": 3,
-                "name": "Signal vs. Noise: What Makes Text Human"
+                "@type": "ListItem", "position": 1, "name": "Home", "item": "https://aifreetextpro.com/"
+              }, {
+                "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://aifreetextpro.com/blog"
+              }, {
+                "@type": "ListItem", "position": 3, "name": "Signal vs. Noise: What Makes Text Human"
               }
             ]
           })}
@@ -152,10 +112,7 @@ const SignalVsNoiseHumanText = () => {
 
             <KeyTakeaways
               points={[
-                "Six key signals distinguish human from AI text in modern detection systems",
-                "Idiosyncratic word choice and emotional variability are the strongest human markers",
-                "AI text has uniform sentence patterns while human writing naturally varies in structure",
-                "Incorporating natural variation into your writing makes content resistant to detection"
+                "Six key signals distinguish human from AI text in modern detection systems", "Idiosyncratic word choice and emotional variability are the strongest human markers", "AI text has uniform sentence patterns while human writing naturally varies in structure", "Incorporating natural variation into your writing makes content resistant to detection"
               ]}
             />
 
@@ -246,8 +203,7 @@ const SignalVsNoiseHumanText = () => {
                   <div className="border-l-4 border-primary pl-4">
                     <p className="font-medium text-foreground mb-1">Human Pattern:</p>
                     <p className="text-muted-foreground italic">
-                      "Data visualization matters, though honestly most pie charts I see make things worse, 
-                      not better. (Side rant: 3D pie charts should be illegal.) The point is, a good chart 
+                      "Data visualization matters, though honestly most pie charts I see make things worse, not better. (Side rant: 3D pie charts should be illegal.) The point is, a good chart 
                       lets people actually understand what's happening."
                     </p>
                     <p className="text-xs text-primary mt-1">Tangent, opinion, parenthetical, casual tone</p>
@@ -287,7 +243,7 @@ const SignalVsNoiseHumanText = () => {
                 <CardContent className="pt-6">
                   <h3 className="font-semibold text-foreground mb-2">The Pattern</h3>
                   <p className="text-muted-foreground">
-                    Human writing has high burstiness—dramatic variation in sentence length. 
+                    Human writing has high burstiness, dramatic variation in sentence length. 
                     AI produces suspiciously uniform sentence structures throughout a piece.
                   </p>
                 </CardContent>
@@ -325,8 +281,7 @@ const SignalVsNoiseHumanText = () => {
 
               <p className="text-muted-foreground">
                 That short sentence at the end of a complex paragraph? It's doing rhetorical work. 
-                The variety in human text reflects how we actually think, sometimes elaborating, sometimes summarizing, 
-                sometimes just landing a point.
+                The variety in human text reflects how we actually think, sometimes elaborating, sometimes summarizing, sometimes just landing a point.
               </p>
             </section>
 
@@ -373,7 +328,7 @@ const SignalVsNoiseHumanText = () => {
                 <h4 className="font-semibold text-foreground mb-2">Why Specificity Matters</h4>
                 <p className="text-sm text-muted-foreground">
                   Specific details are hard for AI to fabricate accurately without hallucinating. 
-                  They also signal lived experience—you mention the exact feature because you actually used it.
+                  They also signal lived experience, you mention the exact feature because you actually used it.
                 </p>
               </div>
             </section>
@@ -385,7 +340,7 @@ const SignalVsNoiseHumanText = () => {
                 <CardContent className="pt-6">
                   <h3 className="font-semibold text-foreground mb-2">The Pattern</h3>
                   <p className="text-muted-foreground">
-                    Human writers aren't perfectly consistent—they might use "e-mail" in one paragraph and "email" in 
+                    Human writers aren't perfectly consistent, they might use "e-mail" in one paragraph and "email" in 
                     another, or switch between "they" and "the user." AI maintains rigid consistency.
                   </p>
                 </CardContent>
@@ -414,7 +369,7 @@ const SignalVsNoiseHumanText = () => {
 
               <p className="text-muted-foreground">
                 This doesn't mean you should intentionally be sloppy. It means that rigid, editorial-perfect 
-                consistency across a long document is actually a signal—because most humans don't write that way 
+                consistency across a long document is actually a signal, because most humans don't write that way 
                 without heavy editing.
               </p>
             </section>
@@ -426,7 +381,7 @@ const SignalVsNoiseHumanText = () => {
                 <CardContent className="pt-6">
                   <h3 className="font-semibold text-foreground mb-2">The Pattern</h3>
                   <p className="text-muted-foreground">
-                    Human writing carries emotional undertones—frustration, excitement, skepticism, humor. 
+                    Human writing carries emotional undertones, frustration, excitement, skepticism, humor. 
                     AI produces emotionally flat content that reads as neutral even on charged topics.
                   </p>
                 </CardContent>
@@ -463,7 +418,7 @@ const SignalVsNoiseHumanText = () => {
               </h2>
               
               <p className="text-muted-foreground mb-4">
-                Understanding detection signals isn't about gaming the system—it's about recognizing what makes 
+                Understanding detection signals isn't about gaming the system, it's about recognizing what makes 
                 your authentic voice distinct from machine output.
               </p>
 
@@ -475,8 +430,7 @@ const SignalVsNoiseHumanText = () => {
                   <div>
                     <h4 className="font-semibold text-foreground">Read your draft aloud</h4>
                     <p className="text-muted-foreground text-sm">
-                      If everything sounds the same rhythm, add variation. Where would you naturally pause, 
-                      speed up, or add a comment?
+                      If everything sounds the same rhythm, add variation. Where would you naturally pause, speed up, or add a comment?
                     </p>
                   </div>
                 </div>
@@ -499,7 +453,7 @@ const SignalVsNoiseHumanText = () => {
                   <div>
                     <h4 className="font-semibold text-foreground">Let opinions show</h4>
                     <p className="text-muted-foreground text-sm">
-                      If you think something is overrated, frustrating, or surprisingly good—say so. 
+                      If you think something is overrated, frustrating, or surprisingly good, say so. 
                       Qualified opinions read as human.
                     </p>
                   </div>
@@ -523,8 +477,7 @@ const SignalVsNoiseHumanText = () => {
               <h2 className="text-xl font-bold text-foreground mb-4">The Bottom Line</h2>
               <p className="text-muted-foreground">
                 Human writing is messy, opinionated, specific, and rhythmically varied. It reflects a real person 
-                with real experiences and real reactions. The more you lean into these qualities—your vocabulary, 
-                your tangents, your frustrations, your humor—the more your writing naturally separates from AI output. 
+                with real experiences and real reactions. The more you lean into these qualities, your vocabulary, your tangents, your frustrations, your humor, the more your writing naturally separates from AI output. 
                 Not because you're trying to fool detectors, but because you're actually writing like yourself.
               </p>
             </section>
@@ -532,10 +485,7 @@ const SignalVsNoiseHumanText = () => {
 
           <div className="mt-12">
                           <FAQSection faqs={[
-                { question: "What makes text look AI-generated?", answer: "Uniform sentence length, generic phrasing, perfect consistency, and a lack of specific detail or personal asides." },
-                { question: "Does perfect grammar look like AI?", answer: "Overly uniform, flawless consistency can. Human writing tends to have natural variation and the occasional aside, which signals authenticity." },
-                { question: "How do I add human signals to my writing?", answer: "Use specific examples, vary sentence length, include genuine perspective, and don't over-smooth every sentence." },
-              ]} />
+                { question: "What makes text look AI-generated?", answer: "Uniform sentence length, generic phrasing, perfect consistency, and a lack of specific detail or personal asides." }, { question: "Does perfect grammar look like AI?", answer: "Overly uniform, flawless consistency can. Human writing tends to have natural variation and the occasional aside, which signals authenticity." }, { question: "How do I add human signals to my writing?", answer: "Use specific examples, vary sentence length, include genuine perspective, and don't over-smooth every sentence." }, ]} />
 
               <RelatedArticles articles={relatedArticles} />
           </div>

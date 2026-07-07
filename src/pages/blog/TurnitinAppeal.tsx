@@ -13,18 +13,11 @@ import { ArrowLeft, Calendar, Clock, User, AlertTriangle } from "lucide-react";
 import { AuthorSchema } from "@/components/AuthorSchema";
 
 const relatedArticles = [
-  { title: "Turnitin AI Detection Accuracy (2026 Analysis)", description: "How accurate is Turnitin really? Data from 10,000+ scans.", href: "/blog/turnitin-ai-detection-accuracy", category: "Technical" },
-  { title: "AI Detection False Positives Explained", description: "Why your human writing gets flagged and what to do about it.", href: "/blog/ai-detection-false-positives", category: "Technical" },
-  { title: "Can Teachers Detect ChatGPT?", description: "What tools teachers use and how accurate they are.", href: "/blog/can-teachers-detect-chatgpt", category: "Academic" },
-  { title: "How to Check If Text Was Written by AI", description: "Free methods to verify whether content is AI-generated.", href: "/blog/how-to-check-if-written-by-ai", category: "How-To Guide" },
+  { title: "Turnitin AI Detection Accuracy (2026 Analysis)", description: "How accurate is Turnitin really? Data from 10,000+ scans.", href: "/blog/turnitin-ai-detection-accuracy", category: "Technical" }, { title: "AI Detection False Positives Explained", description: "Why your human writing gets flagged and what to do about it.", href: "/blog/ai-detection-false-positives", category: "Technical" }, { title: "Can Teachers Detect ChatGPT?", description: "What tools teachers use and how accurate they are.", href: "/blog/can-teachers-detect-chatgpt", category: "Academic" }, { title: "How to Check If Text Was Written by AI", description: "Free methods to verify whether content is AI-generated.", href: "/blog/how-to-check-if-written-by-ai", category: "How-To Guide" },
 ];
 
 const faqs = [
-  { question: "How often is Turnitin wrong about AI detection?", answer: "Turnitin acknowledges a 1% false positive rate, but independent studies show false positive rates of 5-12% depending on writing style, subject matter, and language. Non-native English speakers and technical writers are flagged most often." },
-  { question: "Can I appeal a Turnitin AI detection score?", answer: "Yes. Most universities have formal appeal processes. You need to provide evidence that the writing is yours, such as drafts, revision history, Google Docs version history, or results from an independent AI detector like AI Free Text Pro." },
-  { question: "What Turnitin AI score means my paper is flagged?", answer: "Turnitin highlights text segments it considers AI-generated. Scores above 20% typically trigger instructor review, though policies vary. Some universities flag anything above 0%, while others set thresholds at 20-40%." },
-  { question: "Does Turnitin AI detection work on non-English text?", answer: "Turnitin's AI detection is significantly less accurate for non-English text. False positive rates increase substantially for ESL writers even when writing in English, which is a known limitation of the system." },
-  { question: "Can I use another AI detector to disprove Turnitin?", answer: "Yes. Running your text through independent detectors like AI Free Text Pro, GPTZero, or Originality.AI and showing low AI scores across multiple tools strengthens your appeal. A single detector disagreeing is less compelling than three or four." },
+  { question: "How often is Turnitin wrong about AI detection?", answer: "Turnitin acknowledges a 1% false positive rate, but independent studies show false positive rates of 5-12% depending on writing style, subject matter, and language. Non-native English speakers and technical writers are flagged most often." }, { question: "Can I appeal a Turnitin AI detection score?", answer: "Yes. Most universities have formal appeal processes. You need to provide evidence that the writing is yours, such as drafts, revision history, Google Docs version history, or results from an independent AI detector like AI Free Text Pro." }, { question: "What Turnitin AI score means my paper is flagged?", answer: "Turnitin highlights text segments it considers AI-generated. Scores above 20% typically trigger instructor review, though policies vary. Some universities flag anything above 0%, while others set thresholds at 20-40%." }, { question: "Does Turnitin AI detection work on non-English text?", answer: "Turnitin's AI detection is significantly less accurate for non-English text. False positive rates increase substantially for ESL writers even when writing in English, which is a known limitation of the system." }, { question: "Can I use another AI detector to disprove Turnitin?", answer: "Yes. Running your text through independent detectors like AI Free Text Pro, GPTZero, or Originality.AI and showing low AI scores across multiple tools strengthens your appeal. A single detector disagreeing is less compelling than three or four." },
 ];
 
 const TurnitinAppeal = () => {
@@ -53,16 +46,7 @@ const TurnitinAppeal = () => {
         <meta name="twitter:description" content="How to appeal Turnitin AI detection false positives with evidence and email templates." />
         <script type="application/ld+json">
           {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Article",
-            "headline": "Is Turnitin Wrong? How to Appeal AI Detection Results",
-            "description": "Step-by-step guide to appealing Turnitin AI detection false positives.",
-            "author": { "@type": "Person", "name": "Dr. Sarah Chen", "url": "https://aifreetextpro.com/team#sarah-chen" },
-            "publisher": { "@type": "Organization", "name": "AI Free Text Pro", "logo": { "@type": "ImageObject", "url": "https://aifreetextpro.com/logo.png" } },
-            "datePublished": "2026-03-08",
-            "dateModified": "2026-03-08",
-            "mainEntityOfPage": "https://aifreetextpro.com/blog/turnitin-appeal-ai-detection",
-            "wordCount": 2300
+            "@context": "https://schema.org", "@type": "Article", "headline": "Is Turnitin Wrong? How to Appeal AI Detection Results", "description": "Step-by-step guide to appealing Turnitin AI detection false positives.", "author": { "@type": "Person", "name": "Dr. Sarah Chen", "url": "https://aifreetextpro.com/team#sarah-chen" }, "publisher": { "@type": "Organization", "name": "AI Free Text Pro", "logo": { "@type": "ImageObject", "url": "https://aifreetextpro.com/logo.png" } }, "datePublished": "2026-03-08", "dateModified": "2026-03-08", "mainEntityOfPage": "https://aifreetextpro.com/blog/turnitin-appeal-ai-detection", "wordCount": 1200
           })}
         </script>
       </Helmet>
@@ -87,7 +71,7 @@ const TurnitinAppeal = () => {
               <h1 className="text-3xl md:text-4xl font-bold mb-4">Is Turnitin Wrong? How to Appeal AI Detection Results</h1>
                 <QuickAnswer
                   question="How do you appeal a false Turnitin AI flag?"
-                  answer="If Turnitin wrongly flags your work, gather evidence that it's yours — draft history, version timestamps, notes — and request a review, explaining that AI scores are probabilistic and not proof. Stay factual and professional. A single AI score shouldn't determine an outcome without corroborating evidence."
+                  answer="If Turnitin wrongly flags your work, gather evidence that it's yours, draft history, version timestamps, notes, and request a review, explaining that AI scores are probabilistic and not proof. Stay factual and professional. A single AI score shouldn't determine an outcome without corroborating evidence."
                 />
 
               <p className="text-xl text-muted-foreground mb-4">What to do when Turnitin falsely flags your human-written work as AI-generated. Step-by-step appeal process with email templates.</p>
@@ -101,11 +85,7 @@ const TurnitinAppeal = () => {
             <ReviewedBy name="Dr. Sarah Chen" role="AI Research Lead" slug="sarah-chen" />
 
             <KeyTakeaways points={[
-              "Turnitin's AI detection has a documented false positive rate of 5-12% in independent studies.",
-              "Non-native English speakers and technical writers are flagged most frequently.",
-              "A successful appeal requires evidence: drafts, revision history, and independent detector results.",
-              "Running your text through 3-4 independent detectors strengthens your case significantly.",
-              "Most universities have formal appeal processes -- know yours before you need it."
+              "Turnitin's AI detection has a documented false positive rate of 5-12% in independent studies.", "Non-native English speakers and technical writers are flagged most frequently.", "A successful appeal requires evidence: drafts, revision history, and independent detector results.", "Running your text through 3-4 independent detectors strengthens your case significantly.", "Most universities have formal appeal processes; know yours before you need it."
             ]} />
 
             <section>
@@ -121,6 +101,11 @@ const TurnitinAppeal = () => {
               <p><strong>Non-native English patterns.</strong> ESL writers often use simpler vocabulary and more predictable sentence structures, which overlap with AI writing patterns. This is a well-documented bias in <Link to="/blog/ai-detection-false-positives" className="text-primary hover:underline">AI detection systems</Link>.</p>
               <p><strong>Technical and scientific writing.</strong> Fields like computer science, engineering, and medicine require precise, standardized language that naturally resembles AI output.</p>
               <p><strong>Using Grammarly or similar tools.</strong> Grammar correction tools can smooth out the natural irregularities in your writing that signal human authorship. <Link to="/blog/does-grammarly-trigger-ai-detection" className="text-primary hover:underline">Grammarly's impact on AI detection</Link> is a real concern for students who use it.</p>
+            </section>
+
+            <section>
+              <h2>What Not to Do When You're Accused</h2>
+              <p>Before the steps below, know the mistakes that sink otherwise winnable appeals. Do not panic and confess to something you did not do just to make the meeting end; an admission is very hard to walk back later. Do not touch the document. Editing, re-saving, or "cleaning up" the file after the accusation can overwrite the timestamped version history that is your single best piece of evidence, so leave it exactly as submitted. Do not fire off an angry or emotional email; the calm, factual tone you take in writing becomes part of the record and a measured message reads far better to a committee than an outraged one. Do not let the deadline pass, because most appeal windows are short and missing one can forfeit your case regardless of the merits. And do not go over your instructor's head to the dean as a first move; start with the person who flagged it, keep it professional, and escalate only if you have to. Handled coolly, a false flag is a problem to document, not a verdict to fight.</p>
             </section>
 
             <section>
@@ -148,10 +133,10 @@ const TurnitinAppeal = () => {
             <section>
               <h2>Email Template for Your Professor</h2>
               <div className="not-prose bg-muted/50 border border-border/50 rounded-lg p-6 my-6">
-                <p className="text-sm italic text-muted-foreground mb-4">Subject: Regarding AI Detection Results -- [Assignment Name]</p>
+                <p className="text-sm italic text-muted-foreground mb-4">Subject: Regarding AI Detection Results, [Assignment Name]</p>
                 <p className="text-sm">Dear Professor [Name],</p>
                 <p className="text-sm mt-2">I am writing regarding the AI detection results for my [assignment name] submitted on [date]. I understand the importance of academic integrity and want to address the Turnitin AI detection score directly.</p>
-                <p className="text-sm mt-2">I wrote this paper entirely myself and have evidence to support this: [list evidence -- drafts, version history, independent detector results]. I have also run my text through three independent AI detectors (AI Free Text Pro, GPTZero, and Originality.AI), all of which scored the text below [X]% AI probability.</p>
+                <p className="text-sm mt-2">I wrote this paper entirely myself and have evidence to support this: [list evidence, drafts, version history, independent detector results]. I have also run my text through three independent AI detectors (AI Free Text Pro, GPTZero, and Originality.AI), all of which scored the text below [X]% AI probability.</p>
                 <p className="text-sm mt-2">I would welcome the opportunity to meet with you to discuss this further and provide any additional evidence you may need.</p>
                 <p className="text-sm mt-2">Thank you for your time,<br />[Your Name]</p>
               </div>

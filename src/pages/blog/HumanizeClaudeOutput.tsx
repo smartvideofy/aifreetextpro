@@ -92,7 +92,7 @@ const HumanizeClaudeOutput = () => {
     "datePublished": "2026-06-01",
     "dateModified": "2026-06-01",
     "mainEntityOfPage": { "@type": "WebPage", "@id": "https://aifreetextpro.com/blog/humanize-claude-output" },
-    "wordCount": 1850
+    "wordCount": 1100
   };
 
   const breadcrumbSchema = {

@@ -145,7 +145,7 @@ const ParaphrasingVsHumanizing = () => {
                   </span>
                   <div className="flex items-center gap-2">
                     <Calendar className="w-4 h-4" />
-                    January 20, 2025
+                    February 2, 2026
                   </div>
                   <div className="flex items-center gap-2">
                     <Clock className="w-4 h-4" />
@@ -411,7 +411,7 @@ const ParaphrasingVsHumanizing = () => {
 
                 <h2>Conclusion: Invest in the Right Tool</h2>
                 <p>
-                  Paraphrasing tools were built for plagiarism, not AI detection. They solve a 2015 problem. In 2025, you need tools built specifically for the AI detection challenge.
+                  Paraphrasing tools were built for plagiarism, not AI detection. They solve a 2015 problem. In 2026, you need tools built specifically for the AI detection challenge.
                 </p>
                 <p>
                   AI Free Text Pro isn't just a better paraphraser, it's a fundamentally different approach. One that actually works.

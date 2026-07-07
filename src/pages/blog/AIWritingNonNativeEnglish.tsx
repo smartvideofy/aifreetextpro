@@ -84,7 +84,7 @@ const AIWritingNonNativeEnglish = () => {
       "@type": "WebPage",
       "@id": "https://aifreetextpro.com/blog/ai-writing-non-native-english-speakers"
     },
-    "wordCount": 2400
+    "wordCount": 1550
   };
 
   const breadcrumbSchema = {

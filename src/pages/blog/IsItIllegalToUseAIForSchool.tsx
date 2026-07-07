@@ -11,59 +11,32 @@ import { InternalLinks } from "@/components/InternalLinks";
 import ReviewedBy from "@/components/ReviewedBy";
 import { FAQSection } from "@/components/FAQSection";
 import {
-  Table,
-  TableBody,
-  TableCell,
-  TableHead,
-  TableHeader,
-  TableRow,
+  Table, TableBody, TableCell, TableHead, TableHeader, TableRow,
 } from "@/components/ui/table";
 import { AuthorSchema } from "@/components/AuthorSchema";
 import { SpeakableSchema } from "@/components/SpeakableSchema";
 
 const relatedArticles = [
   {
-    title: "Can Teachers Detect ChatGPT? What Students Need to Know",
-    description: "Every detection method schools use in 2026, from AI software to manual review techniques.",
-    href: "/blog/can-teachers-detect-chatgpt",
-    category: "Academic"
-  },
-  {
-    title: "AI Writing for Students: How to Use AI Responsibly",
-    description: "Responsible ways to use AI writing assistants while maintaining academic integrity standards.",
-    href: "/blog/ai-writing-students-avoid-plagiarism",
-    category: "Academic"
-  },
-  {
-    title: "AI Detection False Positives: Why Your Human Writing Gets Flagged",
-    description: "Why AI detectors falsely flag human writing 5-15% of the time and how to protect yourself.",
-    href: "/blog/ai-detection-false-positives",
-    category: "Educational"
-  },
-  {
-    title: "Best ChatGPT Prompts for Essays That Sound Human",
-    description: "20+ proven ChatGPT prompts for essays that produce natural, human-sounding writing.",
-    href: "/blog/best-chatgpt-prompts-for-essays",
-    category: "Academic"
+    title: "Can Teachers Detect ChatGPT? What Students Need to Know", description: "Every detection method schools use in 2026, from AI software to manual review techniques.", href: "/blog/can-teachers-detect-chatgpt", category: "Academic"
+  }, {
+    title: "AI Writing for Students: How to Use AI Responsibly", description: "Responsible ways to use AI writing assistants while maintaining academic integrity standards.", href: "/blog/ai-writing-students-avoid-plagiarism", category: "Academic"
+  }, {
+    title: "AI Detection False Positives: Why Your Human Writing Gets Flagged", description: "Why AI detectors falsely flag human writing 5-15% of the time and how to protect yourself.", href: "/blog/ai-detection-false-positives", category: "Educational"
+  }, {
+    title: "Best ChatGPT Prompts for Essays That Sound Human", description: "20+ proven ChatGPT prompts for essays that produce natural, human-sounding writing.", href: "/blog/best-chatgpt-prompts-for-essays", category: "Academic"
   }
 ];
 
 const faqs = [
   {
-    question: "Can you get expelled for using ChatGPT?",
-    answer: "Expulsion is possible but rare for first-time offenses. Most universities follow a tiered disciplinary system: first offense typically results in a failing grade on the assignment, second offense may mean failing the course, and repeated violations can lead to suspension or expulsion. The severity depends on your institution's specific policies and the extent of AI use."
-  },
-  {
-    question: "Is using AI for homework illegal?",
-    answer: "No, using AI for homework is not illegal in a criminal sense. There are no laws in any country that make using ChatGPT or other AI tools a crime. However, it can violate your school's academic integrity policies, which are contractual agreements you accept when enrolling. Violations can result in academic penalties, not legal ones."
-  },
-  {
-    question: "Do universities allow AI tools in 2026?",
-    answer: "Most universities now have nuanced AI policies rather than blanket bans. As of 2026, roughly 72% of U.S. universities allow some form of AI assistance, with policies varying by department and assignment. Common approaches include requiring AI use disclosure, allowing AI for brainstorming but not drafting, and permitting AI with mandatory citation."
-  },
-  {
-    question: "Can Turnitin detect AI writing?",
-    answer: "Yes, Turnitin has an AI detection feature that claims 98% accuracy for fully AI-generated text. However, independent studies show false positive rates of 5-15%, meaning human-written text is sometimes incorrectly flagged. Turnitin's AI detector works best on unedited AI output and becomes less reliable when text has been substantially revised or humanized."
+    question: "Can you get expelled for using ChatGPT?", answer: "Expulsion is possible but rare for first-time offenses. Most universities follow a tiered disciplinary system: first offense typically results in a failing grade on the assignment, second offense may mean failing the course, and repeated violations can lead to suspension or expulsion. The severity depends on your institution's specific policies and the extent of AI use."
+  }, {
+    question: "Is using AI for homework illegal?", answer: "No, using AI for homework is not illegal in a criminal sense. There are no laws in any country that make using ChatGPT or other AI tools a crime. However, it can violate your school's academic integrity policies, which are contractual agreements you accept when enrolling. Violations can result in academic penalties, not legal ones."
+  }, {
+    question: "Do universities allow AI tools in 2026?", answer: "Most universities now have nuanced AI policies rather than blanket bans. As of 2026, roughly 72% of U.S. universities allow some form of AI assistance, with policies varying by department and assignment. Common approaches include requiring AI use disclosure, allowing AI for brainstorming but not drafting, and permitting AI with mandatory citation."
+  }, {
+    question: "Can Turnitin detect AI writing?", answer: "Yes, Turnitin has an AI detection feature that claims 98% accuracy for fully AI-generated text. However, independent studies show false positive rates of 5-15%, meaning human-written text is sometimes incorrectly flagged. Turnitin's AI detector works best on unedited AI output and becomes less reliable when text has been substantially revised or humanized."
   }
 ];
 
@@ -104,49 +77,21 @@ const IsItIllegalToUseAIForSchool = () => {
 
         <script type="application/ld+json">
           {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Article",
-            "headline": "Is It Illegal to Use AI for School? Academic AI Policies Explained (2026)",
-            "description": "Is using ChatGPT for school illegal? We break down academic AI policies at major universities, real consequences for getting caught, and how to use AI without breaking the rules.",
-            "image": ogImage,
-            "datePublished": publishDate,
-            "dateModified": publishDate,
-            "wordCount": 2200,
-            "author": {
-              "@type": "Person",
-              "name": "Dr. Sarah Chen",
-              "url": "https://aifreetextpro.com/team#sarah-chen",
-              "jobTitle": "AI Ethics Researcher"
-            },
-            "publisher": {
-              "@type": "Organization",
-              "name": "AI Free Text Pro",
-              "logo": {
-                "@type": "ImageObject",
-                "url": ogImage
+            "@context": "https://schema.org", "@type": "Article", "headline": "Is It Illegal to Use AI for School? Academic AI Policies Explained (2026)", "description": "Is using ChatGPT for school illegal? We break down academic AI policies at major universities, real consequences for getting caught, and how to use AI without breaking the rules.", "image": ogImage, "datePublished": publishDate, "dateModified": publishDate, "wordCount": 2200, "author": {
+              "@type": "Person", "name": "Dr. Sarah Chen", "url": "https://aifreetextpro.com/team#sarah-chen", "jobTitle": "AI Ethics Researcher"
+            }, "publisher": {
+              "@type": "Organization", "name": "AI Free Text Pro", "logo": {
+                "@type": "ImageObject", "url": ogImage
               }
-            },
-            "mainEntityOfPage": {
-              "@type": "WebPage",
-              "@id": canonicalUrl
-            },
-            "about": {
-              "@type": "Thing",
-              "name": "Academic Integrity and AI Policies"
-            },
-            "mentions": [
-              { "@type": "Thing", "name": "ChatGPT" },
-              { "@type": "Thing", "name": "Turnitin" },
-              { "@type": "Thing", "name": "GPTZero" },
-              { "@type": "Organization", "name": "Harvard University" },
-              { "@type": "Organization", "name": "Stanford University" },
-              { "@type": "Organization", "name": "MIT" }
-            ],
-            "citation": [
+            }, "mainEntityOfPage": {
+              "@type": "WebPage", "@id": canonicalUrl
+            }, "about": {
+              "@type": "Thing", "name": "Academic Integrity and AI Policies"
+            }, "mentions": [
+              { "@type": "Thing", "name": "ChatGPT" }, { "@type": "Thing", "name": "Turnitin" }, { "@type": "Thing", "name": "GPTZero" }, { "@type": "Organization", "name": "Harvard University" }, { "@type": "Organization", "name": "Stanford University" }, { "@type": "Organization", "name": "MIT" }
+            ], "citation": [
               {
-                "@type": "CreativeWork",
-                "name": "UNESCO Guidance on Generative AI in Education",
-                "url": "https://www.unesco.org/en/digital-education/artificial-intelligence"
+                "@type": "CreativeWork", "name": "UNESCO Guidance on Generative AI in Education", "url": "https://www.unesco.org/en/digital-education/artificial-intelligence"
               }
             ]
           })}
@@ -154,26 +99,17 @@ const IsItIllegalToUseAIForSchool = () => {
 
         <script type="application/ld+json">
           {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            "itemListElement": [
-              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://aifreetextpro.com" },
-              { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://aifreetextpro.com/blog" },
-              { "@type": "ListItem", "position": 3, "name": "Is It Illegal to Use AI for School?" }
+            "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://aifreetextpro.com" }, { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://aifreetextpro.com/blog" }, { "@type": "ListItem", "position": 3, "name": "Is It Illegal to Use AI for School?" }
             ]
           })}
         </script>
 
         <script type="application/ld+json">
           {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": faqs.map(faq => ({
-              "@type": "Question",
-              "name": faq.question,
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": faq.answer
+            "@context": "https://schema.org", "@type": "FAQPage", "mainEntity": faqs.map(faq => ({
+              "@type": "Question", "name": faq.question, "acceptedAnswer": {
+                "@type": "Answer", "text": faq.answer
               }
             }))
           })}
@@ -197,9 +133,7 @@ const IsItIllegalToUseAIForSchool = () => {
       <main className="min-h-screen pt-24 pb-16">
         <div className="container mx-auto px-4 max-w-4xl">
           <Breadcrumbs items={[
-            { label: "Home", href: "/" },
-            { label: "Blog", href: "/blog" },
-            { label: "Is It Illegal to Use AI for School?" }
+            { label: "Home", href: "/" }, { label: "Blog", href: "/blog" }, { label: "Is It Illegal to Use AI for School?" }
           ]} />
 
           <Link to="/blog" className="inline-flex items-center text-primary hover:text-primary/80 mb-6 transition-colors">
@@ -219,7 +153,7 @@ const IsItIllegalToUseAIForSchool = () => {
               </h1>
                 <QuickAnswer
                   question="Is it illegal to use AI for school?"
-                  answer="It's not illegal, but it can violate your school's academic-integrity rules. Most institutions allow AI for brainstorming, research, and editing while prohibiting submitting AI-written work as your own. Policies vary by school and assignment, so the rule that matters is your institution's — check it and disclose AI use where required."
+                  answer="It's not illegal, but it can violate your school's academic-integrity rules. Most institutions allow AI for brainstorming, research, and editing while prohibiting submitting AI-written work as your own. Policies vary by school and assignment, so the rule that matters is your institution's, check it and disclose AI use where required."
                 />
 
               <p className="text-xl text-muted-foreground">
@@ -230,11 +164,7 @@ const IsItIllegalToUseAIForSchool = () => {
             </header>
 
             <KeyTakeaways points={[
-              "Using AI for school is NOT illegal - no country has laws criminalizing student AI use",
-              "However, it CAN violate academic integrity policies, which carry serious academic penalties",
-              "72% of U.S. universities now have formal AI use policies, up from 25% in 2024",
-              "Consequences range from a zero on the assignment to expulsion, depending on severity and institution",
-              "The key distinction in 2026 is between 'AI-assisted' work (often allowed) and 'AI-generated' work (usually prohibited)"
+              "Using AI for school is NOT illegal - no country has laws criminalizing student AI use", "However, it CAN violate academic integrity policies, which carry serious academic penalties", "72% of U.S. universities now have formal AI use policies, up from 25% in 2024", "Consequences range from a zero on the assignment to expulsion, depending on severity and institution", "The key distinction in 2026 is between 'AI-assisted' work (often allowed) and 'AI-generated' work (usually prohibited)"
             ]} />
 
             {/* Section 1: The Short Answer */}

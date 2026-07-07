@@ -14,28 +14,13 @@ import { AuthorSchema } from "@/components/AuthorSchema";
 
 const relatedArticles = [
   {
-    title: "Signal vs. Noise: What Makes Text Human",
-    description: "Current patterns that distinguish human writing from AI output.",
-    href: "/blog/signal-vs-noise-human-text",
-    category: "Technical"
-  },
-  {
-    title: "How to Write Naturally with AI",
-    description: "Master the fundamentals of natural AI-assisted content creation.",
-    href: "/blog/how-to-write-naturally-with-ai",
-    category: "Writing Craft"
-  },
-  {
-    title: "Editing AI Drafts Like a Human Editor",
-    description: "Professional techniques to polish AI drafts into publication-ready content.",
-    href: "/blog/editing-ai-drafts-human-editor",
-    category: "Professional Editing"
-  },
-  {
-    title: "AI Humanization Pitfalls",
-    description: "Common mistakes to avoid when refining AI-generated text.",
-    href: "/blog/ai-humanization-pitfalls",
-    category: "Best Practices"
+    title: "Signal vs. Noise: What Makes Text Human", description: "Current patterns that distinguish human writing from AI output.", href: "/blog/signal-vs-noise-human-text", category: "Technical"
+  }, {
+    title: "How to Write Naturally with AI", description: "Master the fundamentals of natural AI-assisted content creation.", href: "/blog/how-to-write-naturally-with-ai", category: "Writing Craft"
+  }, {
+    title: "Editing AI Drafts Like a Human Editor", description: "Professional techniques to polish AI drafts into publication-ready content.", href: "/blog/editing-ai-drafts-human-editor", category: "Professional Editing"
+  }, {
+    title: "AI Humanization Pitfalls", description: "Common mistakes to avoid when refining AI-generated text.", href: "/blog/ai-humanization-pitfalls", category: "Best Practices"
   }
 ];
 
@@ -64,44 +49,22 @@ const ToneVoiceFlowAIWriting = () => {
         <meta name="twitter:image" content="https://aifreetextpro.com/og-image.png" />
         <script type="application/ld+json">
           {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Article",
-            "headline": "Tone, Voice, and Flow in AI-Assisted Writing",
-            "description": "Master the three pillars of great writing: tone, voice, and flow.",
-            "author": {
-              "@type": "Person",
-              "name": "Dr. Sarah Chen",
-              "url": "https://aifreetextpro.com/team#sarah-chen",
-              "jobTitle": "Founder & CEO"
-            },
-            "publisher": { "@type": "Organization", "name": "AI Free Text Pro" },
-            "datePublished": "2026-02-02",
-            "dateModified": "2026-04-05"
+            "@context": "https://schema.org", "@type": "Article", "headline": "Tone, Voice, and Flow in AI-Assisted Writing", "description": "Master the three pillars of great writing: tone, voice, and flow.", "author": {
+              "@type": "Person", "name": "Dr. Sarah Chen", "url": "https://aifreetextpro.com/team#sarah-chen", "jobTitle": "Founder & CEO"
+            }, "publisher": { "@type": "Organization", "name": "AI Free Text Pro" }, "datePublished": "2026-02-02", "dateModified": "2026-04-05"
           })}
         </script>
         
         {/* BreadcrumbList Schema */}
         <script type="application/ld+json">
           {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            "itemListElement": [
+            "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
               {
-                "@type": "ListItem",
-                "position": 1,
-                "name": "Home",
-                "item": "https://aifreetextpro.com/"
-              },
-              {
-                "@type": "ListItem",
-                "position": 2,
-                "name": "Blog",
-                "item": "https://aifreetextpro.com/blog"
-              },
-              {
-                "@type": "ListItem",
-                "position": 3,
-                "name": "Tone, Voice, and Flow in AI-Assisted Writing"
+                "@type": "ListItem", "position": 1, "name": "Home", "item": "https://aifreetextpro.com/"
+              }, {
+                "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://aifreetextpro.com/blog"
+              }, {
+                "@type": "ListItem", "position": 3, "name": "Tone, Voice, and Flow in AI-Assisted Writing"
               }
             ]
           })}
@@ -122,8 +85,7 @@ const ToneVoiceFlowAIWriting = () => {
         <main className="container mx-auto px-4 py-12 md:py-16">
           <div className="max-w-4xl mx-auto">
             <Breadcrumbs items={[
-              { label: "Blog", href: "/blog" },
-              { label: "Tone, Voice, and Flow in AI-Assisted Writing" }
+              { label: "Blog", href: "/blog" }, { label: "Tone, Voice, and Flow in AI-Assisted Writing" }
             ]} />
 
             <Link to="/blog" className="inline-flex items-center text-primary hover:underline mb-6 group">
@@ -153,10 +115,7 @@ const ToneVoiceFlowAIWriting = () => {
 
               <KeyTakeaways
                 points={[
-                  "Tone sets the emotional temperature, voice creates distinctiveness, and flow carries readers forward",
-                  "Teaching AI your tone requires providing examples and explicit style instructions",
-                  "Voice is what makes writing recognizable and is the hardest element for AI to replicate",
-                  "Great flow uses varied sentence length, strategic transitions, and natural rhythm"
+                  "Tone sets the emotional temperature, voice creates distinctiveness, and flow carries readers forward", "Teaching AI your tone requires providing examples and explicit style instructions", "Voice is what makes writing recognizable and is the hardest element for AI to replicate", "Great flow uses varied sentence length, strategic transitions, and natural rhythm"
                 ]}
               />
 
@@ -253,7 +212,7 @@ const ToneVoiceFlowAIWriting = () => {
                   Mastering Flow: The Invisible Current
                 </h2>
                 <p className="text-muted-foreground mb-4">
-                  Flow is the rhythm that pulls readers forward. Good flow is invisible—readers don't notice it. Bad flow creates friction that makes people stop reading.
+                  Flow is the rhythm that pulls readers forward. Good flow is invisible, readers don't notice it. Bad flow creates friction that makes people stop reading.
                 </p>
 
                 <div className="space-y-8 my-8">
@@ -380,10 +339,7 @@ const ToneVoiceFlowAIWriting = () => {
             </article>
 
                           <FAQSection faqs={[
-                { question: "What's the difference between tone and voice?", answer: "Tone is the emotional attitude of a piece (formal, warm, urgent); voice is the consistent personality and style that makes writing recognizably yours." },
-                { question: "How do I improve flow in AI writing?", answer: "Vary sentence length, connect ideas with natural transitions, and read aloud to catch choppy or repetitive rhythm." },
-                { question: "Can AI match my voice?", answer: "It can approximate it if you give it samples and direction, but matching voice closely still requires editing the output yourself." },
-              ]} />
+                { question: "What's the difference between tone and voice?", answer: "Tone is the emotional attitude of a piece (formal, warm, urgent); voice is the consistent personality and style that makes writing recognizably yours." }, { question: "How do I improve flow in AI writing?", answer: "Vary sentence length, connect ideas with natural transitions, and read aloud to catch choppy or repetitive rhythm." }, { question: "Can AI match my voice?", answer: "It can approximate it if you give it samples and direction, but matching voice closely still requires editing the output yourself." }, ]} />
 
               <RelatedArticles articles={relatedArticles} />
             

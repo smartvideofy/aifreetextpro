@@ -14,17 +14,11 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@
 import { AuthorSchema } from "@/components/AuthorSchema";
 
 const relatedArticles = [
-  { title: "AI for Research Papers", description: "Using AI in academic research writing", href: "/blog/ai-for-research-papers", category: "Academic" },
-  { title: "AI for Dissertation & Thesis", description: "PhD-level AI writing integration", href: "/blog/ai-dissertation-thesis", category: "Academic" },
-  { title: "AI Writing for Business Reports", description: "Professional document AI workflow", href: "/blog/ai-writing-business-reports-emails", category: "Professional" },
-  { title: "AI Medical & Scientific Writing", description: "Researcher's guide to AI writing", href: "/blog/ai-medical-scientific-writing", category: "Professional" },
+  { title: "AI for Research Papers", description: "Using AI in academic research writing", href: "/blog/ai-for-research-papers", category: "Academic" }, { title: "AI for Dissertation & Thesis", description: "PhD-level AI writing integration", href: "/blog/ai-dissertation-thesis", category: "Academic" }, { title: "AI Writing for Business Reports", description: "Professional document AI workflow", href: "/blog/ai-writing-business-reports-emails", category: "Professional" }, { title: "AI Medical & Scientific Writing", description: "Researcher's guide to AI writing", href: "/blog/ai-medical-scientific-writing", category: "Professional" },
 ];
 
 const faqs = [
-  { question: "Is it ethical to use AI for grant writing?", answer: "Most funding agencies allow AI as a writing aid but require that the research ideas, methodology, and analysis be genuinely yours. The key is using AI to improve how you communicate your ideas, not to generate the ideas themselves. Always check your specific funder's AI policy." },
-  { question: "Do grant reviewers use AI detection tools?", answer: "Increasingly, yes. NIH, NSF, and EU Horizon have all acknowledged experimenting with AI detection. Private foundations are slower to adopt detection but many reviewers can spot AI prose by its formulaic quality. Humanization protects against both automated and human detection." },
-  { question: "Which sections of a grant proposal benefit most from AI?", answer: "Background/literature review, broader impacts, and budget justifications benefit most from AI assistance. Specific aims, methodology, and preliminary data should be primarily your own work, with AI helping only with clarity and polish." },
-  { question: "Can AI help with grant budget calculations?", answer: "Yes. AI tools can help structure budget tables, calculate indirect costs, and draft budget justification narratives. However, always verify calculations manually and ensure compliance with your institution's cost policies." },
+  { question: "Is it ethical to use AI for grant writing?", answer: "Most funding agencies allow AI as a writing aid but require that the research ideas, methodology, and analysis be genuinely yours. The key is using AI to improve how you communicate your ideas, not to generate the ideas themselves. Always check your specific funder's AI policy." }, { question: "Do grant reviewers use AI detection tools?", answer: "Increasingly, yes. NIH, NSF, and EU Horizon have all acknowledged experimenting with AI detection. Private foundations are slower to adopt detection but many reviewers can spot AI prose by its formulaic quality. Humanization protects against both automated and human detection." }, { question: "Which sections of a grant proposal benefit most from AI?", answer: "Background/literature review, broader impacts, and budget justifications benefit most from AI assistance. Specific aims, methodology, and preliminary data should be primarily your own work, with AI helping only with clarity and polish." }, { question: "Can AI help with grant budget calculations?", answer: "Yes. AI tools can help structure budget tables, calculate indirect costs, and draft budget justification narratives. However, always verify calculations manually and ensure compliance with your institution's cost policies." },
 ];
 
 const AIGrantWriting = () => {
@@ -46,24 +40,13 @@ const AIGrantWriting = () => {
         <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
         <script type="application/ld+json">
           {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Article",
-            "headline": "AI for Grant Writing: Win Funding Without Detection (2026)",
-            "author": { "@type": "Person", "name": "Dr. Sarah Chen", "url": "https://aifreetextpro.com/team#sarah-chen" },
-            "publisher": { "@type": "Organization", "name": "AI Free Text Pro", "logo": { "@type": "ImageObject", "url": "https://aifreetextpro.com/logo.png" } },
-            "datePublished": "2026-03-08",
-            "dateModified": "2026-03-08",
-            "wordCount": 2000
+            "@context": "https://schema.org", "@type": "Article", "headline": "AI for Grant Writing: Win Funding Without Detection (2026)", "author": { "@type": "Person", "name": "Dr. Sarah Chen", "url": "https://aifreetextpro.com/team#sarah-chen" }, "publisher": { "@type": "Organization", "name": "AI Free Text Pro", "logo": { "@type": "ImageObject", "url": "https://aifreetextpro.com/logo.png" } }, "datePublished": "2026-03-08", "dateModified": "2026-03-08", "wordCount": 1050
           })}
         </script>
         <script type="application/ld+json">
           {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            "itemListElement": [
-              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://aifreetextpro.com" },
-              { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://aifreetextpro.com/blog" },
-              { "@type": "ListItem", "position": 3, "name": "AI for Grant Writing" }
+            "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://aifreetextpro.com" }, { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://aifreetextpro.com/blog" }, { "@type": "ListItem", "position": 3, "name": "AI for Grant Writing" }
             ]
           })}
         </script>
@@ -81,9 +64,7 @@ const AIGrantWriting = () => {
       <main className="pt-20 pb-16">
         <div className="container mx-auto px-4 max-w-4xl">
           <Breadcrumbs items={[
-            { label: "Home", href: "/" },
-            { label: "Blog", href: "/blog" },
-            { label: "AI for Grant Writing" }
+            { label: "Home", href: "/" }, { label: "Blog", href: "/blog" }, { label: "AI for Grant Writing" }
           ]} />
 
           <Link to="/blog" className="inline-flex items-center text-primary hover:underline mb-6 text-sm">
@@ -100,7 +81,7 @@ const AIGrantWriting = () => {
               <h1 className="text-3xl md:text-4xl font-bold mb-4">AI for Grant Writing: Win Funding Without Detection (2026)</h1>
                 <QuickAnswer
                   question="Can you use AI to write grant proposals?"
-                  answer="Yes, as a drafting aid. AI helps structure proposals, clarify aims, and tighten prose, but reviewers increasingly screen for generic AI text. Keep your project's specifics, data, and voice central, humanize the phrasing, and verify every claim — AI should strengthen a proposal, not write it wholesale."
+                  answer="Yes, as a drafting aid. AI helps structure proposals, clarify aims, and tighten prose, but reviewers increasingly screen for generic AI text. Keep your project's specifics, data, and voice central, humanize the phrasing, and verify every claim, AI should strengthen a proposal, not write it wholesale."
                 />
 
               <p className="text-xl text-muted-foreground">Grant reviewers are starting to screen for AI-generated text. Here is how to use AI to write stronger proposals while keeping your voice authentic and undetectable.</p>
@@ -109,16 +90,15 @@ const AIGrantWriting = () => {
             <ReviewedBy name="Dr. Sarah Chen" role="Founder & CEO" slug="sarah-chen" />
 
             <KeyTakeaways points={[
-              "Major funding agencies (NIH, NSF, EU Horizon) are experimenting with AI detection on proposals",
-              "AI is most valuable for literature reviews, broader impacts, and budget justifications",
-              "Specific aims and methodology should remain primarily your own work",
-              "Humanization is critical -- reviewers who spot AI prose may question your expertise",
-              "The best approach: use AI as a writing coach, not a ghostwriter"
+              "Major funding agencies (NIH, NSF, EU Horizon) are experimenting with AI detection on proposals", "AI is most valuable for literature reviews, broader impacts, and budget justifications", "Specific aims and methodology should remain primarily your own work", "Humanization is critical; reviewers who spot AI prose may question your expertise", "The best approach: use AI as a writing coach, not a ghostwriter"
             ]} />
 
             <h2>The Grant Writing AI Revolution</h2>
             <p>Grant writing is one of the most time-intensive tasks in academia. A typical NIH R01 application takes 200-400 hours to prepare. Researchers are increasingly turning to AI to draft sections, synthesize literature, and polish prose. But the stakes are uniquely high: a grant reviewer who suspects AI involvement may question whether the applicant truly understands their own proposed research.</p>
             <p>The goal is not to have AI write your grant. It is to use AI as a tool that helps you communicate your ideas more clearly, more persuasively, and in less time. Then humanize the output so it reads as authentically yours.</p>
+
+            <h2>The Reviewer's Real Concern Isn't Detection</h2>
+            <p>It is worth being clear about what actually sinks a proposal, because chasing an "undetectable" score misses the point. A study section reviewer is not running your application through GPTZero. They are judging whether you, the person who will spend the next five years on this work, genuinely understand it. Generic AI prose hurts you not because a tool flags it, but because it reads like someone describing a project from the outside: confident, fluent, and strangely empty of the specifics an expert would include. That is the tell that matters. The defense is also the thing that wins funding anyway. Your specific aims and approach should carry the detail only you have, the preliminary data that motivated this direction, why you chose this method over the obvious alternative, the pitfall you already anticipate and how you will handle it. AI can tighten how you say all of that, but it cannot supply it, and a reviewer can feel the difference immediately. Use AI to communicate your expertise more clearly, never to paper over a gap in it.</p>
 
             <h2>Where AI Helps Most in Grant Proposals</h2>
             <div className="overflow-x-auto my-6">
@@ -147,13 +127,13 @@ const AIGrantWriting = () => {
             <h2>The Section-by-Section Workflow</h2>
 
             <h3>Specific Aims Page</h3>
-            <p>This is the most important page of your grant. Reviewers form their opinion here. Write the core content yourself -- your research questions, hypotheses, and aims must reflect your genuine scientific thinking. Use AI only to sharpen the language: tightening sentences, improving transitions, and ensuring the narrative flows logically from gap to hypothesis to approach.</p>
+            <p>This is the most important page of your grant. Reviewers form their opinion here. Write the core content yourself, your research questions, hypotheses, and aims must reflect your genuine scientific thinking. Use AI only to sharpen the language: tightening sentences, improving transitions, and ensuring the narrative flows logically from gap to hypothesis to approach.</p>
 
             <h3>Literature Review / Background</h3>
             <p>This is where AI shines. Feed it your key references and ask it to synthesize the current state of the field. Then verify every citation manually (AI fabricates references regularly), add your own critical analysis, and <Link to="/blog/ai-for-research-papers" className="text-primary hover:underline">humanize the output</Link> so it reads in your voice.</p>
 
             <h3>Broader Impacts</h3>
-            <p>Many researchers struggle with this section because it requires a different kind of writing -- persuasive, public-facing, accessible. AI excels at translating technical work into broader societal context. Draft with AI, then customize with specific examples from your institution and community.</p>
+            <p>Many researchers struggle with this section because it requires a different kind of writing, persuasive, public-facing, accessible. AI excels at translating technical work into broader societal context. Draft with AI, then customize with specific examples from your institution and community.</p>
 
             <h2>Detection Risks in Grant Review</h2>
             <div className="bg-primary/5 border border-primary/20 rounded-lg p-6 my-6">

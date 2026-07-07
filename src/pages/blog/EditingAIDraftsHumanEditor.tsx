@@ -143,7 +143,7 @@ const EditingAIDraftsHumanEditor = () => {
               <header className="mb-8">
                 <div className="flex items-center gap-4 text-sm text-muted-foreground mb-4">
                   <span className="bg-secondary/10 text-secondary px-3 py-1 rounded-full font-medium">Professional Editing</span>
-                  <span>December 18, 2024</span>
+                  <span>February 2, 2026</span>
                   <span>12 min read</span>
                 </div>
                 <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 bg-gradient-to-r from-foreground to-foreground/70 bg-clip-text">

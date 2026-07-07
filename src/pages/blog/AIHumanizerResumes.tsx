@@ -53,7 +53,7 @@ const AIHumanizerResumes = () => {
           "author": { "@type": "Person", "name": "Emily Rodriguez", "url": "https://aifreetextpro.com/team#emily-rodriguez" },
           "publisher": { "@type": "Organization", "name": "AI Free Text Pro", "logo": { "@type": "ImageObject", "url": "https://aifreetextpro.com/logo.png" } },
           "datePublished": "2026-02-25T08:00:00Z", "dateModified": "2026-04-05",
-          "mainEntityOfPage": "https://aifreetextpro.com/blog/ai-humanizer-resumes-cover-letters", "wordCount": 2000
+          "mainEntityOfPage": "https://aifreetextpro.com/blog/ai-humanizer-resumes-cover-letters", "wordCount": 1050
         })}</script>
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org", "@type": "BreadcrumbList",
@@ -107,6 +107,9 @@ const AIHumanizerResumes = () => {
             <h2 className="text-2xl font-bold mt-10 mb-4 text-foreground">The New Reality: Recruiters Are Checking for AI</h2>
             <p className="text-muted-foreground leading-relaxed">A 2026 survey by Resume Genius found that 54% of job seekers have used ChatGPT or similar tools to write at least part of their resume or cover letter. In response, a growing number of recruiters and hiring managers have started running applications through AI detection tools. Some applicant tracking systems (ATS) now include built-in AI content flags.</p>
             <p className="text-muted-foreground leading-relaxed">The problem is not that you used AI. It is that your application sounds like everyone else who used the same AI. When a recruiter reads their 50th cover letter that starts with "I am writing to express my enthusiasm for the [Position] role at [Company]," they know. And AI detectors confirm it.</p>
+
+            <h2 className="text-2xl font-bold mt-10 mb-4 text-foreground">Will an ATS Actually Reject You for Using AI?</h2>
+            <p className="text-muted-foreground leading-relaxed">It helps to be clear about what is really screening your application, because a common fear is misplaced. The vast majority of applicant tracking systems are not AI detectors. They are parsing and keyword-matching engines: they pull your work history into structured fields and check how well your resume aligns with the job description, and that is the stage where a clean, AI-assisted structure genuinely helps you. The far bigger filter is the human who reads what makes it through. A recruiter skimming dozens of letters spots a generic, templated one in seconds, and that is what gets you passed over, not a hidden "AI score." So the goal is not to hide that you used AI. It is to make sure the version a person reads sounds like a specific human with real accomplishments. Optimize the structure and keywords for the machine, and the voice and specifics for the recruiter.</p>
 
             <h2 className="text-2xl font-bold mt-10 mb-4 text-foreground">Why Raw AI Resumes Get Rejected</h2>
             <p className="text-muted-foreground leading-relaxed">AI-generated resumes and cover letters share telltale patterns that both humans and machines catch:</p>

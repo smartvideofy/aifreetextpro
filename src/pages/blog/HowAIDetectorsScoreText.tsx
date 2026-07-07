@@ -15,35 +15,17 @@ import { SpeakableSchema } from "@/components/SpeakableSchema";
 
 const HowAIDetectorsScoreText = () => {
   const breadcrumbItems = [
-    { label: "Home", href: "/" },
-    { label: "Blog", href: "/blog" },
-    { label: "How AI Detectors Score Text", href: "/blog/how-ai-detectors-score-text" },
-  ];
+    { label: "Home", href: "/" }, { label: "Blog", href: "/blog" }, { label: "How AI Detectors Score Text", href: "/blog/how-ai-detectors-score-text" }, ];
 
   const relatedArticles = [
     {
-      title: "Signal vs. Noise: What Makes Text Human",
-      description: "Current patterns detectors care about with examples",
-      href: "/blog/signal-vs-noise-human-text",
-      category: "Technical"
-    },
-    {
-      title: "How AI Detectors Work",
-      description: "Understanding the technology behind detection",
-      href: "/blog/how-ai-detectors-work",
-      category: "Technical"
-    },
-    {
-      title: "AI Detection Patterns Explained",
-      description: "Learn the patterns AI detectors analyze in your writing",
-      href: "/blog/ai-detection-patterns-explained",
-      category: "Technical"
-    },
-    {
-      title: "AI Detection Tools Compared (2026 Edition)",
-      description: "See which AI detector is most accurate",
-      href: "/blog/ai-detection-tools-compared-2025",
-      category: "Comparison"
+      title: "Signal vs. Noise: What Makes Text Human", description: "Current patterns detectors care about with examples", href: "/blog/signal-vs-noise-human-text", category: "Technical"
+    }, {
+      title: "How AI Detectors Work", description: "Understanding the technology behind detection", href: "/blog/how-ai-detectors-work", category: "Technical"
+    }, {
+      title: "AI Detection Patterns Explained", description: "Learn the patterns AI detectors analyze in your writing", href: "/blog/ai-detection-patterns-explained", category: "Technical"
+    }, {
+      title: "AI Detection Tools Compared (2026 Edition)", description: "See which AI detector is most accurate", href: "/blog/ai-detection-tools-compared-2025", category: "Comparison"
     }
   ];
 
@@ -71,44 +53,22 @@ const HowAIDetectorsScoreText = () => {
         <meta name="twitter:image" content="https://aifreetextpro.com/og-image.png" />
         <script type="application/ld+json">
           {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Article",
-            "headline": "How AI Detectors Score Text: A Behind-the-Scenes Look",
-            "description": "Breaking down AI detection metrics in plain language",
-            "author": {
-              "@type": "Person",
-              "name": "Dr. Sarah Chen",
-              "url": "https://aifreetextpro.com/team#sarah-chen",
-              "jobTitle": "Founder & CEO"
-            },
-            "publisher": { "@type": "Organization", "name": "AI Free Text Pro" },
-            "datePublished": "2026-02-02",
-            "dateModified": "2026-04-05"
+            "@context": "https://schema.org", "@type": "Article", "headline": "How AI Detectors Score Text: A Behind-the-Scenes Look", "description": "Breaking down AI detection metrics in plain language", "author": {
+              "@type": "Person", "name": "Dr. Sarah Chen", "url": "https://aifreetextpro.com/team#sarah-chen", "jobTitle": "Founder & CEO"
+            }, "publisher": { "@type": "Organization", "name": "AI Free Text Pro" }, "datePublished": "2026-02-02", "dateModified": "2026-04-05"
           })}
         </script>
         
         {/* BreadcrumbList Schema */}
         <script type="application/ld+json">
           {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            "itemListElement": [
+            "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
               {
-                "@type": "ListItem",
-                "position": 1,
-                "name": "Home",
-                "item": "https://aifreetextpro.com/"
-              },
-              {
-                "@type": "ListItem",
-                "position": 2,
-                "name": "Blog",
-                "item": "https://aifreetextpro.com/blog"
-              },
-              {
-                "@type": "ListItem",
-                "position": 3,
-                "name": "How AI Detectors Score Text"
+                "@type": "ListItem", "position": 1, "name": "Home", "item": "https://aifreetextpro.com/"
+              }, {
+                "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://aifreetextpro.com/blog"
+              }, {
+                "@type": "ListItem", "position": 3, "name": "How AI Detectors Score Text"
               }
             ]
           })}
@@ -156,10 +116,7 @@ const HowAIDetectorsScoreText = () => {
 
             <KeyTakeaways
               points={[
-                "AI detectors use multiple overlapping metrics, not a single score",
-                "Perplexity measures how 'surprising' your word choices are",
-                "Burstiness tracks variation in sentence complexity",
-                "Confidence scores aren't the same as accuracy"
+                "AI detectors use multiple overlapping metrics, not a single score", "Perplexity measures how 'surprising' your word choices are", "Burstiness tracks variation in sentence complexity", "Confidence scores aren't the same as accuracy"
               ]}
             />
 
@@ -170,8 +127,7 @@ const HowAIDetectorsScoreText = () => {
                 But behind that number lies a complex system of measurements, each contributing to the final verdict.
               </p>
               <p className="text-muted-foreground mb-4">
-                Understanding these metrics isn't just academic—it's practical. Once you know what detectors measure, 
-                you can make informed decisions about how to write and edit.
+                Understanding these metrics isn't just academic, it's practical. Once you know what detectors measure, you can make informed decisions about how to write and edit.
               </p>
             </section>
 
@@ -186,7 +142,7 @@ const HowAIDetectorsScoreText = () => {
                   <h3 className="font-semibold text-foreground mb-2">What It Measures</h3>
                   <p className="text-muted-foreground">
                     Perplexity quantifies how "surprising" each word is given the words before it. Low perplexity means 
-                    the text follows predictable patterns—exactly what language models produce.
+                    the text follows predictable patterns, exactly what language models produce.
                   </p>
                 </CardContent>
               </Card>
@@ -213,7 +169,7 @@ const HowAIDetectorsScoreText = () => {
 
               <p className="text-muted-foreground">
                 Human writers naturally introduce surprise through tangents, humor, personal references, and unconventional 
-                word choices. AI tends toward the statistical middle—always picking the "most likely" next word.
+                word choices. AI tends toward the statistical middle, always picking the "most likely" next word.
               </p>
             </section>
 
@@ -227,8 +183,7 @@ const HowAIDetectorsScoreText = () => {
                 <CardContent className="pt-6">
                   <h3 className="font-semibold text-foreground mb-2">What It Measures</h3>
                   <p className="text-muted-foreground">
-                    Burstiness tracks the variance in sentence structure throughout a text. Humans write in "bursts",
-                    mixing long analytical sentences with punchy fragments. AI tends toward uniform complexity.
+                    Burstiness tracks the variance in sentence structure throughout a text. Humans write in "bursts", mixing long analytical sentences with punchy fragments. AI tends toward uniform complexity.
                   </p>
                 </CardContent>
               </Card>
@@ -276,8 +231,7 @@ const HowAIDetectorsScoreText = () => {
               </Card>
 
               <p className="text-muted-foreground">
-                This is why synonym variation matters. If you consistently use the most common word for each concept, 
-                your probability distribution looks machine-generated.
+                This is why synonym variation matters. If you consistently use the most common word for each concept, your probability distribution looks machine-generated.
               </p>
             </section>
 
@@ -301,7 +255,7 @@ const HowAIDetectorsScoreText = () => {
                 <div className="bg-muted/50 rounded-lg p-4">
                   <h4 className="font-semibold text-foreground mb-2">Transitional Patterns</h4>
                   <p className="text-sm text-muted-foreground">
-                    How paragraphs connect. AI loves "Furthermore," "Moreover," and "In conclusion"—humans use these more sparingly.
+                    How paragraphs connect. AI loves "Furthermore," "Moreover," and "In conclusion", humans use these more sparingly.
                   </p>
                 </div>
                 <div className="bg-muted/50 rounded-lg p-4">
@@ -328,7 +282,7 @@ const HowAIDetectorsScoreText = () => {
                   <h3 className="font-semibold text-foreground mb-2">The Confidence Confusion</h3>
                   <p className="text-muted-foreground mb-4">
                     When a detector says "95% confident this is AI-generated," it means the text strongly matches 
-                    AI patterns—not that there's a 95% chance it's correct.
+                    AI patterns, not that there's a 95% chance it's correct.
                   </p>
                   <p className="text-muted-foreground">
                     A human who writes in a very structured, formal style might consistently trigger high AI confidence 
@@ -392,7 +346,7 @@ const HowAIDetectorsScoreText = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold text-foreground">Choose unexpected words sometimes</h4>
-                    <p className="text-muted-foreground text-sm">Not every choice needs to be the "best" word—sometimes the interesting word is better.</p>
+                    <p className="text-muted-foreground text-sm">Not every choice needs to be the "best" word, sometimes the interesting word is better.</p>
                   </div>
                 </div>
                 <div className="flex gap-3">
@@ -421,7 +375,7 @@ const HowAIDetectorsScoreText = () => {
               <p className="text-muted-foreground">
                 AI detectors are sophisticated pattern-matching systems measuring statistical properties of text. 
                 They're not mind-readers, and they're not infallible. Understanding their metrics demystifies the 
-                detection process and helps you write text that genuinely sounds like you—not because you're gaming 
+                detection process and helps you write text that genuinely sounds like you, not because you're gaming 
                 the system, but because you're expressing yourself with the natural variation that makes human writing human.
               </p>
             </section>
@@ -429,10 +383,7 @@ const HowAIDetectorsScoreText = () => {
 
           <div className="mt-12">
                           <FAQSection faqs={[
-                { question: "What does a confidence score actually mean?", answer: "It's the detector's estimated probability that text is AI-generated, not proof. A high score means the text looks AI-like, which can still be wrong." },
-                { question: "What is perplexity?", answer: "Perplexity measures how predictable the next word is. AI text tends to be more predictable (low perplexity) than human writing." },
-                { question: "Can detectors be fooled?", answer: "Detectors rely on statistical patterns, so writing with genuine variation and specificity scores lower, but no detector is fully reliable in either direction." },
-              ]} />
+                { question: "What does a confidence score actually mean?", answer: "It's the detector's estimated probability that text is AI-generated, not proof. A high score means the text looks AI-like, which can still be wrong." }, { question: "What is perplexity?", answer: "Perplexity measures how predictable the next word is. AI text tends to be more predictable (low perplexity) than human writing." }, { question: "Can detectors be fooled?", answer: "Detectors rely on statistical patterns, so writing with genuine variation and specificity scores lower, but no detector is fully reliable in either direction." }, ]} />
 
               <RelatedArticles articles={relatedArticles} />
           </div>

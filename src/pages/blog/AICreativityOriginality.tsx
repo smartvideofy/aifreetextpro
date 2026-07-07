@@ -13,51 +13,27 @@ import { AuthorSchema } from "@/components/AuthorSchema";
 
 const relatedArticles = [
   {
-    title: "AI Tools for Writers",
-    description: "Best AI tools to boost creativity and productivity",
-    href: "/blog/ai-tools-for-writers-2025",
-    category: "Tools"
-  },
-  {
-    title: "How to Humanize AI Text",
-    description: "Maintain your unique voice with AI assistance",
-    href: "/blog/humanize-ai-text-without-losing-voice",
-    category: "Guide"
-  },
-  {
-    title: "Tone, Voice, and Flow in AI Writing",
-    description: "Master the art of natural AI-assisted writing",
-    href: "/blog/tone-voice-flow-ai-writing",
-    category: "Writing Craft"
-  },
-  {
-    title: "How to Write Naturally with AI",
-    description: "Techniques for authentic AI-assisted content",
-    href: "/blog/how-to-write-naturally-with-ai",
-    category: "Guide"
+    title: "AI Tools for Writers", description: "Best AI tools to boost creativity and productivity", href: "/blog/ai-tools-for-writers-2025", category: "Tools"
+  }, {
+    title: "How to Humanize AI Text", description: "Maintain your unique voice with AI assistance", href: "/blog/humanize-ai-text-without-losing-voice", category: "Guide"
+  }, {
+    title: "Tone, Voice, and Flow in AI Writing", description: "Master the art of natural AI-assisted writing", href: "/blog/tone-voice-flow-ai-writing", category: "Writing Craft"
+  }, {
+    title: "How to Write Naturally with AI", description: "Techniques for authentic AI-assisted content", href: "/blog/how-to-write-naturally-with-ai", category: "Guide"
   }
 ];
 
 const faqs = [
   {
-    question: "Can AI truly create original content?",
-    answer: "AI generates novel combinations of patterns learned from training data, which can produce unique outputs. However, true originality involving genuine insight, lived experience, and emotional truth remains distinctly human. AI excels at creative recombination while humans provide the spark of genuine innovation."
-  },
-  {
-    question: "Does using AI for writing make my work less creative?",
-    answer: "Not necessarily. AI can enhance creativity by helping overcome writer's block, exploring unexpected combinations, and handling routine aspects of writing. The key is using AI as a creative partner while maintaining your unique vision, voice, and editorial judgment."
-  },
-  {
-    question: "How do creative industries view AI-generated content?",
-    answer: "Views vary widely. Some industries embrace AI as a productivity tool, while others require full disclosure or prohibit AI use entirely. Publishing, art, and music industries are actively developing policies. Always check specific platform or publisher guidelines."
-  },
-  {
-    question: "What makes human creativity different from AI generation?",
-    answer: "Human creativity draws from lived experience, emotional depth, cultural context, and genuine insight. Humans can imagine entirely new paradigms, connect disparate personal experiences, and infuse work with authentic vulnerability, qualities AI cannot replicate."
-  },
-  {
-    question: "How can I maintain originality when using AI tools?",
-    answer: "Use AI for brainstorming and drafting, but always inject your unique perspective, personal anecdotes, and authentic voice. Edit heavily, add original insights, and run your work through humanization tools to ensure it reflects your genuine creative vision."
+    question: "Can AI truly create original content?", answer: "AI generates novel combinations of patterns learned from training data, which can produce unique outputs. However, true originality involving genuine insight, lived experience, and emotional truth remains distinctly human. AI excels at creative recombination while humans provide the spark of genuine innovation."
+  }, {
+    question: "Does using AI for writing make my work less creative?", answer: "Not necessarily. AI can enhance creativity by helping overcome writer's block, exploring unexpected combinations, and handling routine aspects of writing. The key is using AI as a creative partner while maintaining your unique vision, voice, and editorial judgment."
+  }, {
+    question: "How do creative industries view AI-generated content?", answer: "Views vary widely. Some industries embrace AI as a productivity tool, while others require full disclosure or prohibit AI use entirely. Publishing, art, and music industries are actively developing policies. Always check specific platform or publisher guidelines."
+  }, {
+    question: "What makes human creativity different from AI generation?", answer: "Human creativity draws from lived experience, emotional depth, cultural context, and genuine insight. Humans can imagine entirely new paradigms, connect disparate personal experiences, and infuse work with authentic vulnerability, qualities AI cannot replicate."
+  }, {
+    question: "How can I maintain originality when using AI tools?", answer: "Use AI for brainstorming and drafting, but always inject your unique perspective, personal anecdotes, and authentic voice. Edit heavily, add original insights, and run your work through humanization tools to ensure it reflects your genuine creative vision."
   }
 ];
 
@@ -86,35 +62,16 @@ export default function AICreativityOriginality() {
         <meta name="twitter:image" content="https://aifreetextpro.com/og-image.png" />
         <script type="application/ld+json">
           {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Article",
-            "headline": "Can AI Writing Be Truly Original? Exploring Creativity in the Age of GPT",
-            "description": "Explore how AI can assist rather than replace creativity, what 'original' means in the era of ChatGPT and humanizers.",
-            "image": {
-              "@type": "ImageObject",
-              "url": "https://aifreetextpro.com/og-image.png",
-              "width": 1200,
-              "height": 675
-            },
-            "datePublished": "2026-02-02",
-            "dateModified": "2026-04-05",
-            "author": {
-              "@type": "Person",
-              "name": "Dr. Sarah Chen",
-              "url": "https://aifreetextpro.com/team#sarah-chen",
-              "jobTitle": "Founder & CEO"
-            },
-            "publisher": {
-              "@type": "Organization",
-              "name": "AI Free Text Pro",
-              "logo": {
-                "@type": "ImageObject",
-                "url": "https://aifreetextpro.com/logo.png"
+            "@context": "https://schema.org", "@type": "Article", "headline": "Can AI Writing Be Truly Original? Exploring Creativity in the Age of GPT", "description": "Explore how AI can assist rather than replace creativity, what 'original' means in the era of ChatGPT and humanizers.", "image": {
+              "@type": "ImageObject", "url": "https://aifreetextpro.com/og-image.png", "width": 1200, "height": 675
+            }, "datePublished": "2026-02-02", "dateModified": "2026-04-05", "author": {
+              "@type": "Person", "name": "Dr. Sarah Chen", "url": "https://aifreetextpro.com/team#sarah-chen", "jobTitle": "Founder & CEO"
+            }, "publisher": {
+              "@type": "Organization", "name": "AI Free Text Pro", "logo": {
+                "@type": "ImageObject", "url": "https://aifreetextpro.com/logo.png"
               }
-            },
-            "mainEntityOfPage": {
-              "@type": "WebPage",
-              "@id": "https://aifreetextpro.com/blog/can-ai-writing-be-original"
+            }, "mainEntityOfPage": {
+              "@type": "WebPage", "@id": "https://aifreetextpro.com/blog/can-ai-writing-be-original"
             }
           })}
         </script>
@@ -122,25 +79,13 @@ export default function AICreativityOriginality() {
         {/* BreadcrumbList Schema */}
         <script type="application/ld+json">
           {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            "itemListElement": [
+            "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
               {
-                "@type": "ListItem",
-                "position": 1,
-                "name": "Home",
-                "item": "https://aifreetextpro.com/"
-              },
-              {
-                "@type": "ListItem",
-                "position": 2,
-                "name": "Blog",
-                "item": "https://aifreetextpro.com/blog"
-              },
-              {
-                "@type": "ListItem",
-                "position": 3,
-                "name": "Can AI Writing Be Truly Original?"
+                "@type": "ListItem", "position": 1, "name": "Home", "item": "https://aifreetextpro.com/"
+              }, {
+                "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://aifreetextpro.com/blog"
+              }, {
+                "@type": "ListItem", "position": 3, "name": "Can AI Writing Be Truly Original?"
               }
             ]
           })}
@@ -161,9 +106,7 @@ export default function AICreativityOriginality() {
         <main className="container mx-auto px-4 py-12 max-w-4xl">
           <Breadcrumbs 
             items={[
-              { label: "Home", href: "/" },
-              { label: "Blog", href: "/blog" },
-              { label: "Can AI Writing Be Original?" }
+              { label: "Home", href: "/" }, { label: "Blog", href: "/blog" }, { label: "Can AI Writing Be Original?" }
             ]} 
           />
 
@@ -189,10 +132,7 @@ export default function AICreativityOriginality() {
 
             <KeyTakeaways
               points={[
-                "AI creates novel combinations from existing patterns, but genuine insight remains human",
-                "Human creativity draws from lived experience, emotional depth, and cultural context",
-                "The most powerful approach combines AI efficiency with human vision and voice",
-                "Creative industries are actively developing policies for AI-assisted work"
+                "AI creates novel combinations from existing patterns, but genuine insight remains human", "Human creativity draws from lived experience, emotional depth, and cultural context", "The most powerful approach combines AI efficiency with human vision and voice", "Creative industries are actively developing policies for AI-assisted work"
               ]}
             />
 
@@ -311,7 +251,7 @@ export default function AICreativityOriginality() {
                   </p>
                   <div className="border-l-4 border-primary pl-4">
                     <p className="italic text-muted-foreground">
-                      "I use AI as a creative partner, not a replacement. It shows me possibilities I wouldn't have considered, but I'm the one deciding what resonates." — Digital artist, interviewed for this article
+                      "I use AI as a creative partner, not a replacement. It shows me possibilities I wouldn't have considered, but I'm the one deciding what resonates.", Digital artist, interviewed for this article
                     </p>
                   </div>
                 </div>

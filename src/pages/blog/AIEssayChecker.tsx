@@ -14,17 +14,11 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@
 import { AuthorSchema } from "@/components/AuthorSchema";
 
 const relatedArticles = [
-  { title: "Free AI Content Detector", description: "Check any text for AI patterns", href: "/blog/free-ai-content-detector", category: "Tools" },
-  { title: "Turnitin AI Detection Accuracy", description: "How accurate is Turnitin really?", href: "/blog/turnitin-ai-detection-accuracy", category: "Technical" },
-  { title: "GPTZero Accuracy Review", description: "Independent accuracy analysis", href: "/blog/gptzero-accuracy-review", category: "Detector Review" },
-  { title: "How AI Detectors Score Text", description: "Understanding detection algorithms", href: "/blog/how-ai-detectors-score-text", category: "Technical" },
+  { title: "Free AI Content Detector", description: "Check any text for AI patterns", href: "/blog/free-ai-content-detector", category: "Tools" }, { title: "Turnitin AI Detection Accuracy", description: "How accurate is Turnitin really?", href: "/blog/turnitin-ai-detection-accuracy", category: "Technical" }, { title: "GPTZero Accuracy Review", description: "Independent accuracy analysis", href: "/blog/gptzero-accuracy-review", category: "Detector Review" }, { title: "How AI Detectors Score Text", description: "Understanding detection algorithms", href: "/blog/how-ai-detectors-score-text", category: "Technical" },
 ];
 
 const faqs = [
-  { question: "Can I check my own essay for AI before submitting?", answer: "Yes. Self-checking with a free AI detector like AI Free Text Pro's checker lets you see what your professor's tools might flag. This gives you the opportunity to revise flagged sections before submission." },
-  { question: "What AI detection score is safe to submit?", answer: "Most institutions investigate when Turnitin's AI score exceeds 20-25%. Aim for under 15% to be safe. However, remember that detection scores are probabilistic -- a low score does not guarantee your text will not be questioned, and a moderate score does not prove AI use." },
-  { question: "Do AI essay checkers detect all AI tools?", answer: "Modern detectors can identify text from ChatGPT, Claude, Gemini, and most popular AI tools. However, detection accuracy varies by tool and text length. Shorter texts (under 250 words) are harder to classify accurately." },
-  { question: "Is self-checking my essay before submission dishonest?", answer: "No. Self-checking is a quality assurance step, similar to running a spell checker or grammar tool. It helps you identify sections that may read as formulaic or unnaturally uniform -- which are the same qualities that make writing less engaging regardless of whether AI was involved." },
+  { question: "Can I check my own essay for AI before submitting?", answer: "Yes. Self-checking with a free AI detector like AI Free Text Pro's checker lets you see what your professor's tools might flag. This gives you the opportunity to revise flagged sections before submission." }, { question: "What AI detection score is safe to submit?", answer: "Most institutions investigate when Turnitin's AI score exceeds 20-25%. Aim for under 15% to be safe. However, remember that detection scores are probabilistic, a low score does not guarantee your text will not be questioned, and a moderate score does not prove AI use." }, { question: "Do AI essay checkers detect all AI tools?", answer: "Modern detectors can identify text from ChatGPT, Claude, Gemini, and most popular AI tools. However, detection accuracy varies by tool and text length. Shorter texts (under 250 words) are harder to classify accurately." }, { question: "Is self-checking my essay before submission dishonest?", answer: "No. Self-checking is a quality assurance step, similar to running a spell checker or grammar tool. It helps you identify sections that may read as formulaic or unnaturally uniform, which are the same qualities that make writing less engaging regardless of whether AI was involved." },
 ];
 
 const AIEssayChecker = () => {
@@ -46,24 +40,13 @@ const AIEssayChecker = () => {
         <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
         <script type="application/ld+json">
           {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Article",
-            "headline": "Best AI Essay Checker: Self-Check Before You Submit (2026)",
-            "author": { "@type": "Person", "name": "Dr. Sarah Chen", "url": "https://aifreetextpro.com/team#sarah-chen" },
-            "publisher": { "@type": "Organization", "name": "AI Free Text Pro", "logo": { "@type": "ImageObject", "url": "https://aifreetextpro.com/logo.png" } },
-            "datePublished": "2026-03-08",
-            "dateModified": "2026-03-08",
-            "wordCount": 1800
+            "@context": "https://schema.org", "@type": "Article", "headline": "Best AI Essay Checker: Self-Check Before You Submit (2026)", "author": { "@type": "Person", "name": "Dr. Sarah Chen", "url": "https://aifreetextpro.com/team#sarah-chen" }, "publisher": { "@type": "Organization", "name": "AI Free Text Pro", "logo": { "@type": "ImageObject", "url": "https://aifreetextpro.com/logo.png" } }, "datePublished": "2026-03-08", "dateModified": "2026-03-08", "wordCount": 1050
           })}
         </script>
         <script type="application/ld+json">
           {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            "itemListElement": [
-              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://aifreetextpro.com" },
-              { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://aifreetextpro.com/blog" },
-              { "@type": "ListItem", "position": 3, "name": "AI Essay Checker" }
+            "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://aifreetextpro.com" }, { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://aifreetextpro.com/blog" }, { "@type": "ListItem", "position": 3, "name": "AI Essay Checker" }
             ]
           })}
         </script>
@@ -81,9 +64,7 @@ const AIEssayChecker = () => {
       <main className="pt-20 pb-16">
         <div className="container mx-auto px-4 max-w-4xl">
           <Breadcrumbs items={[
-            { label: "Home", href: "/" },
-            { label: "Blog", href: "/blog" },
-            { label: "AI Essay Checker" }
+            { label: "Home", href: "/" }, { label: "Blog", href: "/blog" }, { label: "AI Essay Checker" }
           ]} />
 
           <Link to="/blog" className="inline-flex items-center text-primary hover:underline mb-6 text-sm">
@@ -100,7 +81,7 @@ const AIEssayChecker = () => {
               <h1 className="text-3xl md:text-4xl font-bold mb-4">Best AI Essay Checker: Self-Check Before You Submit (2026)</h1>
                 <QuickAnswer
                   question="What is the best way to check your essay for AI before submitting?"
-                  answer="Run your essay through the same class of detector your professor uses — GPTZero, a Turnitin-style tool, or a free checker — before submitting. It flags sentences likely to read as AI so you can revise them. Treat scores as guidance, and expect some false positives on formal academic writing."
+                  answer="Run your essay through the same class of detector your professor uses, GPTZero, a Turnitin-style tool, or a free checker, before submitting. It flags sentences likely to read as AI so you can revise them. Treat scores as guidance, and expect some false positives on formal academic writing."
                 />
 
               <p className="text-xl text-muted-foreground">Your professor will run your essay through an AI detector. Should you not check it first? Here are the best free tools to self-check before submission.</p>
@@ -109,16 +90,15 @@ const AIEssayChecker = () => {
             <ReviewedBy name="Dr. Sarah Chen" role="Founder & CEO" slug="sarah-chen" />
 
             <KeyTakeaways points={[
-              "Self-checking your essay before submission is the smart move -- not a dishonest one",
-              "Free AI checkers can flag the same patterns your professor's Turnitin will catch",
-              "Scores under 15% are generally considered safe at most institutions",
-              "False positives affect 5-10% of purely human-written text, especially non-native English writers",
-              "The best workflow: write, self-check, revise flagged sections, recheck"
+              "Self-checking your essay before submission is the smart move, not a dishonest one", "Free AI checkers can flag the same patterns your professor's Turnitin will catch", "Scores under 15% are generally considered safe at most institutions", "False positives affect 5-10% of purely human-written text, especially non-native English writers", "The best workflow: write, self-check, revise flagged sections, recheck"
             ]} />
 
             <h2>Why Self-Checking Matters</h2>
             <p>In 2026, most universities run student submissions through AI detection automatically. <Link to="/blog/turnitin-ai-detection-accuracy" className="text-primary hover:underline">Turnitin's AI detector</Link> is integrated into learning management systems at over 10,000 institutions. Students who write entirely by hand sometimes receive false AI flags due to writing patterns that happen to match AI output.</p>
-            <p>Self-checking before submission allows you to identify and revise sections that might trigger a flag -- whether you used AI assistance or not. It is the same principle as running a plagiarism checker on your own work before submitting.</p>
+            <p>Self-checking before submission allows you to identify and revise sections that might trigger a flag, whether you used AI assistance or not. It is the same principle as running a plagiarism checker on your own work before submitting.</p>
+
+            <h2>The Right Way to Fix a Flagged Section</h2>
+            <p>A checker is only useful if you act on it correctly, and the common instinct is the wrong one. When a section gets flagged, do not just keep pushing the whole essay through a paraphraser or humanizer hoping the number drops; that tends to flatten your writing and can introduce its own detectable patterns. Use the highlight instead. Good checkers show you which specific sentences look most machine-like, so go to those exact lines and fix them by hand: add a concrete detail or example, split a long uniform sentence, or rephrase it the way you would actually say it out loud. Re-check, and move on. The other half of doing this right is knowing when to stop. A score in the safe range is the goal, not zero. Chasing 0% means over-editing genuinely human writing until it sounds strange, and since no two detectors agree perfectly, you could never satisfy all of them anyway. Fix the flagged lines, get comfortably under your school's threshold, and trust your own work for the rest.</p>
 
             <h2>Top Free AI Essay Checkers</h2>
             <div className="overflow-x-auto my-6">

@@ -54,7 +54,7 @@ const AIDetectorsClaudeGeminiGPT5 = () => {
           "author": { "@type": "Person", "name": "Thomas Mueller", "url": "https://aifreetextpro.com/team#thomas-mueller" },
           "publisher": { "@type": "Organization", "name": "AI Free Text Pro", "logo": { "@type": "ImageObject", "url": "https://aifreetextpro.com/logo.png" } },
           "datePublished": "2026-02-25T08:00:00Z", "dateModified": "2026-04-05",
-          "mainEntityOfPage": "https://aifreetextpro.com/blog/ai-detectors-claude-gemini-gpt5-2026", "wordCount": 2100
+          "mainEntityOfPage": "https://aifreetextpro.com/blog/ai-detectors-claude-gemini-gpt5-2026", "wordCount": 1000
         })}</script>
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org", "@type": "BreadcrumbList",
@@ -150,6 +150,9 @@ const AIDetectorsClaudeGeminiGPT5 = () => {
 
             <h2 className="text-2xl font-bold mt-10 mb-4 text-foreground">After Humanization: All Models Pass</h2>
             <p className="text-muted-foreground leading-relaxed">We ran each model's output through <Link to="/" className="text-primary hover:text-primary/80">AI Free Text Pro's humanizer</Link> and rescanned. The results were dramatic: detection rates dropped to 2-5% across all models and all detectors. This confirms that the source model matters far less than the post-processing. A well-humanized GPT-5 essay is just as undetectable as a well-humanized Claude essay.</p>
+
+            <h2 className="text-2xl font-bold mt-10 mb-4 text-foreground">Why These Detection Rates Will Shift</h2>
+            <p className="text-muted-foreground leading-relaxed">Treat every number above as a snapshot, not a fixed property of the model. Detection is a cat-and-mouse game: the moment a new model like Claude 4 gains a following, detector vendors start feeding its output into their training sets, and the gap that made it "hardest to detect" begins to close. A model that slips through at a 72% catch rate this quarter can be sitting at 85% a few months later without anything about the model changing, simply because the detectors learned its fingerprint. That is the real reason chasing the "most undetectable model" is a losing strategy. The model's freshness buys you a temporary edge that erodes on its own, while the thing you control, how much you revise and add your own voice afterward, holds up regardless of which model you started from.</p>
 
             <h2 className="text-2xl font-bold mt-10 mb-4 text-foreground">The Bottom Line</h2>
             <p className="text-muted-foreground leading-relaxed">No AI model is undetectable in 2026. Claude comes closest, but even its output gets caught 72-84% of the time. If you need text that passes AI detection, the model you choose matters less than what you do after generating it. Use AI as a starting point, add your own voice, and verify with <a href="https://app.aifreetextpro.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary/80 underline">AI Free Text Pro's detector</a>.</p>

@@ -64,7 +64,7 @@ const ClaudeAcademicWriting = () => {
             "datePublished": "2026-03-08",
             "dateModified": "2026-03-08",
             "mainEntityOfPage": "https://aifreetextpro.com/blog/claude-academic-writing",
-            "wordCount": 2100
+            "wordCount": 1150
           })}
         </script>
       </Helmet>
@@ -103,7 +103,7 @@ const ClaudeAcademicWriting = () => {
             <ReviewedBy name="Dr. Sarah Chen" role="AI Research Lead" slug="sarah-chen" />
 
             <KeyTakeaways points={[
-              "Claude is detected at 85% by Turnitin -- lower than ChatGPT (93%) but still reliably caught.",
+              "Claude is detected at 85% by Turnitin, lower than ChatGPT (93%) but still reliably caught.",
               "Students prefer Claude for its more natural, less formulaic writing style.",
               "The Claude + humanizer workflow reduces detection to under 5% across all detectors.",
               "Claude's strength is nuanced argumentation; use it for complex analytical essays.",
@@ -116,6 +116,11 @@ const ClaudeAcademicWriting = () => {
               <p><strong>More natural prose.</strong> Claude produces writing that sounds less robotic than ChatGPT. It uses more varied sentence structures, fewer formulaic transitions, and a more conversational tone. This makes the raw output closer to human writing before any editing.</p>
               <p><strong>Better nuance.</strong> For complex argumentative essays, Claude handles counterarguments and qualifying statements more effectively. It is less likely to produce the simplistic "on one hand, on the other hand" structure that detectors flag.</p>
               <p><strong>Perceived safety.</strong> Many students believe Claude is "harder to detect" and therefore safer. While this is partially true (detection rates are 5-8% lower), Claude is still caught reliably by all major detectors without humanization.</p>
+            </section>
+
+            <section>
+              <h2>Use Claude for the Argument, Not the Prose</h2>
+              <p>Here is the move that gets you the most out of Claude with none of the risk: point its strength at your thinking instead of your final text. The same nuance that makes Claude good at argumentation makes it an excellent sparring partner. Hand it your thesis and ask it to steelman the opposing position, and you will find the holes in your case before your professor does. Paste your outline and ask where the logic is thin, which claims need evidence, or what a skeptical reviewer would push on. Have it play devil's advocate against your strongest paragraph. None of this touches the words you submit, so there is nothing to detect, and you end up with a sharper argument than you started with. That is the difference worth internalizing: using Claude to generate the essay is the risky, low-value path, while using it to pressure-test the essay is the safe, high-value one. Claude is better as a critic than a ghostwriter.</p>
             </section>
 
             <section>
@@ -160,7 +165,7 @@ const ClaudeAcademicWriting = () => {
                 <li><strong>Draft with Claude</strong> using a specific, detailed prompt that includes your assignment requirements and preferred argument</li>
                 <li><strong>Review the draft</strong> for accuracy, ensuring all cited sources exist and arguments are sound</li>
                 <li><strong>Humanize</strong> with <a href="https://app.aifreetextpro.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">AI Free Text Pro</a> in Academic mode</li>
-                <li><strong>Add personal touches</strong> -- references to lectures, class discussions, or personal observations</li>
+                <li><strong>Add personal touches</strong>, references to lectures, class discussions, or personal observations</li>
                 <li><strong>Verify</strong> with the <Link to="/ai-checker" className="text-primary hover:underline">AI detector</Link> to confirm a score under 5%</li>
               </ol>
               <p>This workflow consistently produces essays that score under 5% on Turnitin while maintaining the high-quality argumentation that Claude is known for.</p>

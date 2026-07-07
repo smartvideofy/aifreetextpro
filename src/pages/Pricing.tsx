@@ -1,5 +1,7 @@
-﻿import { Button } from "@/components/ui/button";
+﻿import { useState } from "react";
+import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import { Switch } from "@/components/ui/switch";
 import { CheckCircle, ArrowRight, Crown, Zap, Sparkles } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 import { SoftwareApplicationSchema } from "@/components/SoftwareApplicationSchema";
@@ -10,11 +12,13 @@ import { Breadcrumbs } from "@/components/Breadcrumbs";
 import pricingHero from "@/assets/pricing-hero.png";
 
 const Pricing = () => {
+  const [yearly, setYearly] = useState(false);
+
   const plans = [
     {
       name: "Free",
-      price: "0",
-      period: "forever",
+      monthly: { price: "0", period: "forever" },
+      yearly: { price: "0", period: "forever" },
       description: "Perfect for trying out AI Free Text Pro",
       icon: Zap,
       iconColor: "text-primary",
@@ -30,8 +34,8 @@ const Pricing = () => {
     },
     {
       name: "Starter",
-      price: "4.99",
-      period: "month",
+      monthly: { price: "4.99", period: "month" },
+      yearly: { price: "47.90", period: "year", perMonth: "4", save: "12" },
       description: "Great for occasional users",
       icon: Zap,
       iconColor: "text-primary",
@@ -48,8 +52,8 @@ const Pricing = () => {
     },
     {
       name: "Lite",
-      price: "9.99",
-      period: "month",
+      monthly: { price: "9.99", period: "month" },
+      yearly: { price: "95.90", period: "year", perMonth: "8", save: "24" },
       description: "Perfect for regular content creators",
       icon: Zap,
       iconColor: "text-primary",
@@ -66,8 +70,8 @@ const Pricing = () => {
     },
     {
       name: "Pro Writer",
-      price: "24.99",
-      period: "month",
+      monthly: { price: "24.99", period: "month" },
+      yearly: { price: "239.90", period: "year", perMonth: "20", save: "60" },
       description: "Best for students, writers & professionals",
       icon: Sparkles,
       iconColor: "text-primary",
@@ -77,8 +81,7 @@ const Pricing = () => {
         "Premium humanization",
         "Priority support",
         "Export reports (PDF)",
-        "Advanced analytics",
-        "REST API access"
+        "Advanced analytics"
       ],
       cta: "Subscribe Now",
       ctaLink: "https://app.aifreetextpro.com/",
@@ -87,8 +90,8 @@ const Pricing = () => {
     },
     {
       name: "Unlimited Creator",
-      price: "59.99",
-      period: "month",
+      monthly: { price: "59.99", period: "month" },
+      yearly: { price: "575.90", period: "year", perMonth: "48", save: "144" },
       description: "For high-volume users and teams",
       icon: Crown,
       iconColor: "text-primary",
@@ -99,8 +102,7 @@ const Pricing = () => {
         "24/7 Priority support",
         "Export reports (PDF)",
         "Advanced analytics",
-        "Dedicated account manager",
-        "REST API access (higher limits)"
+        "Dedicated account manager"
       ],
       cta: "Subscribe Now",
       ctaLink: "https://app.aifreetextpro.com/",
@@ -262,7 +264,7 @@ const Pricing = () => {
               </p>
               <div className="mt-6 inline-flex items-center gap-2 px-4 py-2 bg-primary/10 rounded-full">
                 <CheckCircle className="w-5 h-5 text-primary" />
-                <span className="text-sm font-medium">All plans billed monthly. Cancel anytime.</span>
+                <span className="text-sm font-medium">Monthly or yearly billing. Cancel anytime.</span>
               </div>
               
               {/* Pricing Hero Image */}
@@ -278,12 +280,34 @@ const Pricing = () => {
                 />
               </div>
             </div>
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-8">Choose Your Plan</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-center mb-6">Choose Your Plan</h2>
+
+            {/* Billing period toggle */}
+            <div className="flex items-center justify-center gap-3 mb-10">
+              <span className={`text-sm font-medium ${!yearly ? "text-foreground" : "text-muted-foreground"}`}>
+                Monthly
+              </span>
+              <Switch
+                checked={yearly}
+                onCheckedChange={setYearly}
+                aria-label="Toggle yearly billing"
+              />
+              <span className={`text-sm font-medium ${yearly ? "text-foreground" : "text-muted-foreground"}`}>
+                Yearly
+              </span>
+              <span className="ml-1 inline-flex items-center rounded-full bg-green-600/15 px-2.5 py-1 text-xs font-semibold text-green-600">
+                2 months free
+              </span>
+            </div>
+
             {/* Pricing Cards */}
             <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-6 max-w-7xl mx-auto">
 
               {plans.map((plan) => {
                 const Icon = plan.icon;
+                const p = yearly ? plan.yearly : plan.monthly;
+                const savings = yearly ? (plan.yearly as { save?: string }).save : undefined;
+                const perMonth = yearly ? (plan.yearly as { perMonth?: string }).perMonth : undefined;
                 return (
                   <Card 
                     key={plan.name}
@@ -300,7 +324,15 @@ const Pricing = () => {
                         </span>
                       </div>
                     )}
-                    
+
+                    {savings && (
+                      <div className="absolute -top-3 right-4">
+                        <span className="bg-green-600 text-white text-xs font-bold px-2.5 py-1 rounded-full shadow-lg">
+                          Save ${savings}
+                        </span>
+                      </div>
+                    )}
+
                     <div className="text-center mb-6">
                       <div className={`w-16 h-16 rounded-2xl bg-gradient-to-br ${
                         plan.highlighted ? 'from-primary to-secondary' : 'from-muted to-muted/50'
@@ -310,10 +342,13 @@ const Pricing = () => {
                       <h3 className="text-2xl font-bold mb-2">{plan.name}</h3>
                       <p className="text-sm text-muted-foreground mb-4">{plan.description}</p>
                       
-                      <div className="mb-2">
-                        <span className="text-5xl font-bold">${plan.price}</span>
-                        <span className="text-muted-foreground">/{plan.period}</span>
+                      <div className="mb-1">
+                        <span className="text-5xl font-bold">${p.price}</span>
+                        <span className="text-muted-foreground">/{p.period}</span>
                       </div>
+                      {perMonth && (
+                        <p className="text-sm text-muted-foreground mb-2">~${perMonth}/mo</p>
+                      )}
                     </div>
 
                     <ul className="space-y-3 mb-8">

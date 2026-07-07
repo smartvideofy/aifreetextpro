@@ -13,51 +13,27 @@ import { AuthorSchema } from "@/components/AuthorSchema";
 
 const relatedArticles = [
   {
-    title: "How to Humanize AI Text",
-    description: "Maintain authenticity and search ranking with AI humanization",
-    href: "/blog/humanize-ai-text-without-losing-voice",
-    category: "Humanize"
-  },
-  {
-    title: "AI-Powered SEO Content in 2026",
-    description: "Tips for developing authentic blog posts using AI tools",
-    href: "/blog/ai-powered-seo-content-2026",
-    category: "SEO"
-  },
-  {
-    title: "How to Write Naturally With AI",
-    description: "Professional strategies for natural, engaging AI content",
-    href: "/blog/how-to-write-naturally-with-ai",
-    category: "Writing Craft"
-  },
-  {
-    title: "How to Write Travel Blogs Using an AI Humanizer Tool",
-    description: "Turn travel notes into engaging stories with AI assistance",
-    href: "/blog/ai-humanizer-travel-blogs",
-    category: "Humanize"
+    title: "How to Humanize AI Text", description: "Maintain authenticity and search ranking with AI humanization", href: "/blog/humanize-ai-text-without-losing-voice", category: "Humanize"
+  }, {
+    title: "AI-Powered SEO Content in 2026", description: "Tips for developing authentic blog posts using AI tools", href: "/blog/ai-powered-seo-content-2026", category: "SEO"
+  }, {
+    title: "How to Write Naturally With AI", description: "Professional strategies for natural, engaging AI content", href: "/blog/how-to-write-naturally-with-ai", category: "Writing Craft"
+  }, {
+    title: "How to Write Travel Blogs Using an AI Humanizer Tool", description: "Turn travel notes into engaging stories with AI assistance", href: "/blog/ai-humanizer-travel-blogs", category: "Humanize"
   }
 ];
 
 const faqs = [
   {
-    question: "Why does AI-generated travel content often sound generic?",
-    answer: "AI generates 'average' descriptions based on training data, producing generic phrases like 'breathtaking views' and 'rich cultural heritage' that lack the specific sensory details, personal moments, and authentic voice that make travel writing compelling and unique."
-  },
-  {
-    question: "What are the key elements of authentic travel writing?",
-    answer: "Authentic travel writing includes sensory specificity (exact smells, sounds, textures), personal anecdotes and unexpected moments, cultural nuance from real interactions, emotional honesty about both highs and lows, and a distinctive narrative voice that reflects the writer's personality."
-  },
-  {
-    question: "Can AI help with travel blog research without detection issues?",
-    answer: "Yes, AI is excellent for initial research: gathering destination facts, creating itinerary outlines, identifying points of interest, and structuring posts. The key is using AI as a starting point, then layering in your personal experiences and voice during editing."
-  },
-  {
-    question: "How do I add authenticity markers to AI travel drafts?",
-    answer: "Add local dialect words and phrases, specific restaurant or shop names, exact prices and times, weather details from your visit, personal interactions with locals, unexpected discoveries or mishaps, and sensory details only someone who was there would know."
-  },
-  {
-    question: "What's the best workflow for creating undetectable travel content?",
-    answer: "Start with AI for structure and basic information, then humanize using a tool like AI Free Text Pro, and finally add personal anecdotes, sensory details, and local insights from your actual experience. Always run a final detection check before publishing."
+    question: "Why does AI-generated travel content often sound generic?", answer: "AI generates 'average' descriptions based on training data, producing generic phrases like 'breathtaking views' and 'rich cultural heritage' that lack the specific sensory details, personal moments, and authentic voice that make travel writing compelling and unique."
+  }, {
+    question: "What are the key elements of authentic travel writing?", answer: "Authentic travel writing includes sensory specificity (exact smells, sounds, textures), personal anecdotes and unexpected moments, cultural nuance from real interactions, emotional honesty about both highs and lows, and a distinctive narrative voice that reflects the writer's personality."
+  }, {
+    question: "Can AI help with travel blog research without detection issues?", answer: "Yes, AI is excellent for initial research: gathering destination facts, creating itinerary outlines, identifying points of interest, and structuring posts. The key is using AI as a starting point, then layering in your personal experiences and voice during editing."
+  }, {
+    question: "How do I add authenticity markers to AI travel drafts?", answer: "Add local dialect words and phrases, specific restaurant or shop names, exact prices and times, weather details from your visit, personal interactions with locals, unexpected discoveries or mishaps, and sensory details only someone who was there would know."
+  }, {
+    question: "What's the best workflow for creating undetectable travel content?", answer: "Start with AI for structure and basic information, then humanize using a tool like AI Free Text Pro, and finally add personal anecdotes, sensory details, and local insights from your actual experience. Always run a final detection check before publishing."
   }
 ];
 
@@ -90,60 +66,29 @@ export default function HumanizeAITravelBlogs() {
 
         <script type="application/ld+json">
           {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Article",
-            "headline": "How to Humanize AI Text for Travel Blogs",
-            "description": "Learn step-by-step techniques to humanize AI-generated travel content while keeping your unique voice and storytelling style intact.",
-            "image": {
-              "@type": "ImageObject",
-              "url": ogImage,
-              "width": 1200,
-              "height": 675
-            },
-            "datePublished": "2026-02-02",
-            "dateModified": "2026-04-05",
-            "author": {
-              "@type": "Person",
-              "name": "Dr. Sarah Chen",
-              "url": "https://aifreetextpro.com/team#sarah-chen",
-              "jobTitle": "Founder & CEO"
-            },
-            "publisher": {
-              "@type": "Organization",
-              "name": "AI Free Text Pro",
-              "logo": {
-                "@type": "ImageObject",
-                "url": "https://aifreetextpro.com/logo.png"
+            "@context": "https://schema.org", "@type": "Article", "headline": "How to Humanize AI Text for Travel Blogs", "description": "Learn step-by-step techniques to humanize AI-generated travel content while keeping your unique voice and storytelling style intact.", "image": {
+              "@type": "ImageObject", "url": ogImage, "width": 1200, "height": 675
+            }, "datePublished": "2026-02-02", "dateModified": "2026-04-05", "author": {
+              "@type": "Person", "name": "Dr. Sarah Chen", "url": "https://aifreetextpro.com/team#sarah-chen", "jobTitle": "Founder & CEO"
+            }, "publisher": {
+              "@type": "Organization", "name": "AI Free Text Pro", "logo": {
+                "@type": "ImageObject", "url": "https://aifreetextpro.com/logo.png"
               }
-            },
-            "mainEntityOfPage": {
-              "@type": "WebPage",
-              "@id": canonical
+            }, "mainEntityOfPage": {
+              "@type": "WebPage", "@id": canonical
             }
           })}
         </script>
 
         <script type="application/ld+json">
           {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            "itemListElement": [
+            "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
               {
-                "@type": "ListItem",
-                "position": 1,
-                "name": "Home",
-                "item": "https://aifreetextpro.com/"
-              },
-              {
-                "@type": "ListItem",
-                "position": 2,
-                "name": "Blog",
-                "item": "https://aifreetextpro.com/blog"
-              },
-              {
-                "@type": "ListItem",
-                "position": 3,
-                "name": "How to Humanize AI Text for Travel Blogs"
+                "@type": "ListItem", "position": 1, "name": "Home", "item": "https://aifreetextpro.com/"
+              }, {
+                "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://aifreetextpro.com/blog"
+              }, {
+                "@type": "ListItem", "position": 3, "name": "How to Humanize AI Text for Travel Blogs"
               }
             ]
           })}
@@ -151,18 +96,8 @@ export default function HumanizeAITravelBlogs() {
 
         <script type="application/ld+json">
           {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "HowTo",
-            "name": "How to Humanize AI Text for Travel Blogs",
-            "description": "Step-by-step techniques to humanize AI-generated travel content while keeping your unique voice.",
-            "totalTime": "PT30M",
-            "step": [
-              { "@type": "HowToStep", "position": 1, "name": "Draft with AI, Then Humanize", "text": "Generate a draft with AI focusing on core travel notes, then add personal anecdotes and sensory details." },
-              { "@type": "HowToStep", "position": 2, "name": "Add Sensory Specificity", "text": "Replace generic descriptions with exact smells, sounds, textures, and visual details from your experience." },
-              { "@type": "HowToStep", "position": 3, "name": "Inject Cultural Nuance", "text": "Include local phrases, customs, and interactions that only someone who visited would know." },
-              { "@type": "HowToStep", "position": 4, "name": "Fact-Check and Enrich", "text": "Verify locations and cultural references. Add insider tips and links to authentic sources." },
-              { "@type": "HowToStep", "position": 5, "name": "Optimize for Readability", "text": "Use headings, bullet points, short paragraphs, and include images and travel snapshots." },
-              { "@type": "HowToStep", "position": 6, "name": "Run Detection Check", "text": "Use AI Free Text Pro to verify your content passes AI detection before publishing." }
+            "@context": "https://schema.org", "@type": "HowTo", "name": "How to Humanize AI Text for Travel Blogs", "description": "Step-by-step techniques to humanize AI-generated travel content while keeping your unique voice.", "totalTime": "PT30M", "step": [
+              { "@type": "HowToStep", "position": 1, "name": "Draft with AI, Then Humanize", "text": "Generate a draft with AI focusing on core travel notes, then add personal anecdotes and sensory details." }, { "@type": "HowToStep", "position": 2, "name": "Add Sensory Specificity", "text": "Replace generic descriptions with exact smells, sounds, textures, and visual details from your experience." }, { "@type": "HowToStep", "position": 3, "name": "Inject Cultural Nuance", "text": "Include local phrases, customs, and interactions that only someone who visited would know." }, { "@type": "HowToStep", "position": 4, "name": "Fact-Check and Enrich", "text": "Verify locations and cultural references. Add insider tips and links to authentic sources." }, { "@type": "HowToStep", "position": 5, "name": "Optimize for Readability", "text": "Use headings, bullet points, short paragraphs, and include images and travel snapshots." }, { "@type": "HowToStep", "position": 6, "name": "Run Detection Check", "text": "Use AI Free Text Pro to verify your content passes AI detection before publishing." }
             ]
           })}
         </script>
@@ -182,9 +117,7 @@ export default function HumanizeAITravelBlogs() {
         <main className="container mx-auto px-4 py-12 max-w-4xl">
           <Breadcrumbs 
             items={[
-              { label: "Home", href: "/" },
-              { label: "Blog", href: "/blog" },
-              { label: "How to Humanize AI Text for Travel Blogs" }
+              { label: "Home", href: "/" }, { label: "Blog", href: "/blog" }, { label: "How to Humanize AI Text for Travel Blogs" }
             ]} 
           />
 
@@ -203,7 +136,7 @@ export default function HumanizeAITravelBlogs() {
               </h1>
                 <QuickAnswer
                   question="How do you humanize AI travel blog content?"
-                  answer="Anchor the post in your real trip — specific places, sensory detail, and personal moments — then use AI to help structure and draft. Humanize by adding voice, varied rhythm, and genuine observations. This turns generic AI travel copy into authentic stories that read like a real traveler wrote them."
+                  answer="Anchor the post in your real trip, specific places, sensory detail, and personal moments, then use AI to help structure and draft. Humanize by adding voice, varied rhythm, and genuine observations. This turns generic AI travel copy into authentic stories that read like a real traveler wrote them."
                 />
 
               
@@ -214,10 +147,7 @@ export default function HumanizeAITravelBlogs() {
 
             <KeyTakeaways
               points={[
-                "Travel content is especially prone to AI detection due to generic 'stock photo' descriptions",
-                "Sensory specificity (exact smells, sounds, textures) is the #1 authenticity marker",
-                "Local phrases, unexpected moments, and cultural nuance signal human experience",
-                "The best workflow: AI draft, then humanizer tool, then personal touches, then detection check"
+                "Travel content is especially prone to AI detection due to generic 'stock photo' descriptions", "Sensory specificity (exact smells, sounds, textures) is the #1 authenticity marker", "Local phrases, unexpected moments, and cultural nuance signal human experience", "The best workflow: AI draft, then humanizer tool, then personal touches, then detection check"
               ]}
             />
 

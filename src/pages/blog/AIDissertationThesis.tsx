@@ -13,17 +13,11 @@ import { FAQSection } from "@/components/FAQSection";
 import { AuthorSchema } from "@/components/AuthorSchema";
 
 const relatedArticles = [
-  { title: "AI for Research Papers", description: "How to use AI ethically for thesis writing and journal submissions.", href: "/blog/ai-for-research-papers", category: "Academic" },
-  { title: "Academic AI Writing Safely", description: "A comprehensive guide to using AI writing tools in academia.", href: "/blog/academic-ai-writing-safely", category: "Academic" },
-  { title: "How to Cite AI-Generated Content", description: "APA, MLA, Chicago, and Harvard citation formats for AI.", href: "/blog/how-to-cite-ai-generated-content", category: "Academic" },
-  { title: "AI Disclosure Policies 2026", description: "What you need to know about AI disclosure requirements.", href: "/blog/ai-disclosure-policies-2026", category: "Educational" },
+  { title: "AI for Research Papers", description: "How to use AI ethically for thesis writing and journal submissions.", href: "/blog/ai-for-research-papers", category: "Academic" }, { title: "Academic AI Writing Safely", description: "A comprehensive guide to using AI writing tools in academia.", href: "/blog/academic-ai-writing-safely", category: "Academic" }, { title: "How to Cite AI-Generated Content", description: "APA, MLA, Chicago, and Harvard citation formats for AI.", href: "/blog/how-to-cite-ai-generated-content", category: "Academic" }, { title: "AI Disclosure Policies 2026", description: "What you need to know about AI disclosure requirements.", href: "/blog/ai-disclosure-policies-2026", category: "Educational" },
 ];
 
 const faqs = [
-  { question: "Can I use AI for my dissertation?", answer: "It depends on your institution and advisor. Many graduate programs now allow AI for specific tasks like brainstorming, literature review synthesis, and grammar editing, but prohibit using AI to generate original arguments or analysis. The key is transparency: discuss your AI use with your advisor and follow your program's guidelines." },
-  { question: "Will Turnitin detect AI in my dissertation?", answer: "Yes. Turnitin's AI detection is active for dissertation submissions at most universities. Raw AI output from ChatGPT or Claude will be flagged at rates above 85%. If you use AI as a drafting tool, you need to substantially rewrite the output or use humanization to avoid triggering the detector." },
-  { question: "Which dissertation chapters can AI help with?", answer: "AI is most useful for literature reviews (synthesizing sources), methodology descriptions (structuring standard approaches), and introductions/conclusions (organizing arguments). It is least appropriate for original analysis, interpretation of results, and theoretical contributions, which should reflect your own scholarly thinking." },
-  { question: "How do I cite AI use in my dissertation?", answer: "Follow your citation style's AI guidelines. APA 7th edition treats AI output as a non-recoverable source. Include the AI tool, version, date, and prompt in your citation. Many programs also require a disclosure statement in your methodology chapter explaining how and where you used AI tools." },
+  { question: "Can I use AI for my dissertation?", answer: "It depends on your institution and advisor. Many graduate programs now allow AI for specific tasks like brainstorming, literature review synthesis, and grammar editing, but prohibit using AI to generate original arguments or analysis. The key is transparency: discuss your AI use with your advisor and follow your program's guidelines." }, { question: "Will Turnitin detect AI in my dissertation?", answer: "Yes. Turnitin's AI detection is active for dissertation submissions at most universities. Raw AI output from ChatGPT or Claude will be flagged at rates above 85%. If you use AI as a drafting tool, you need to substantially rewrite the output or use humanization to avoid triggering the detector." }, { question: "Which dissertation chapters can AI help with?", answer: "AI is most useful for literature reviews (synthesizing sources), methodology descriptions (structuring standard approaches), and introductions/conclusions (organizing arguments). It is least appropriate for original analysis, interpretation of results, and theoretical contributions, which should reflect your own scholarly thinking." }, { question: "How do I cite AI use in my dissertation?", answer: "Follow your citation style's AI guidelines. APA 7th edition treats AI output as a non-recoverable source. Include the AI tool, version, date, and prompt in your citation. Many programs also require a disclosure statement in your methodology chapter explaining how and where you used AI tools." },
 ];
 
 const AIDissertationThesis = () => {
@@ -52,24 +46,15 @@ const AIDissertationThesis = () => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@aifreetextpro" />
         <script type="application/ld+json">{JSON.stringify({
-          "@context": "https://schema.org", "@type": "Article",
-          "headline": "AI Writing for Dissertation & Thesis (2026 Guide)",
-          "author": { "@type": "Person", "name": "Dr. Sarah Chen", "url": "https://aifreetextpro.com/team#sarah-chen" },
-          "publisher": { "@type": "Organization", "name": "AI Free Text Pro", "logo": { "@type": "ImageObject", "url": "https://aifreetextpro.com/logo.png" } },
-          "datePublished": publishDate, "dateModified": modifiedDate,
-          "mainEntityOfPage": "https://aifreetextpro.com/blog/ai-dissertation-thesis", "wordCount": 2400
+          "@context": "https://schema.org", "@type": "Article", "headline": "AI Writing for Dissertation & Thesis (2026 Guide)", "author": { "@type": "Person", "name": "Dr. Sarah Chen", "url": "https://aifreetextpro.com/team#sarah-chen" }, "publisher": { "@type": "Organization", "name": "AI Free Text Pro", "logo": { "@type": "ImageObject", "url": "https://aifreetextpro.com/logo.png" } }, "datePublished": publishDate, "dateModified": modifiedDate, "mainEntityOfPage": "https://aifreetextpro.com/blog/ai-dissertation-thesis", "wordCount": 1200
         })}</script>
         <script type="application/ld+json">{JSON.stringify({
-          "@context": "https://schema.org", "@type": "BreadcrumbList",
-          "itemListElement": [
-            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://aifreetextpro.com" },
-            { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://aifreetextpro.com/blog" },
-            { "@type": "ListItem", "position": 3, "name": "AI for Dissertation & Thesis" }
+          "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://aifreetextpro.com" }, { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://aifreetextpro.com/blog" }, { "@type": "ListItem", "position": 3, "name": "AI for Dissertation & Thesis" }
           ]
         })}</script>
         <script type="application/ld+json">{JSON.stringify({
-          "@context": "https://schema.org", "@type": "FAQPage",
-          "mainEntity": faqs.map(faq => ({ "@type": "Question", "name": faq.question, "acceptedAnswer": { "@type": "Answer", "text": faq.answer } }))
+          "@context": "https://schema.org", "@type": "FAQPage", "mainEntity": faqs.map(faq => ({ "@type": "Question", "name": faq.question, "acceptedAnswer": { "@type": "Answer", "text": faq.answer } }))
         })}</script>
       </Helmet>
       <AuthorSchema
@@ -97,7 +82,7 @@ const AIDissertationThesis = () => {
               <h1 className="text-3xl md:text-4xl font-bold mb-4">AI Writing for Dissertation & Thesis (2026 Guide)</h1>
                 <QuickAnswer
                   question="Can you use AI to write a dissertation or thesis?"
-                  answer="For support, yes — for the core scholarship, no. AI helps with literature summaries, outlining, editing, and formatting, but the original research, analysis, and argument must be yours. Most universities run dissertations through AI detection, so use AI responsibly, disclose where required, and keep authorship genuinely your own."
+                  answer="For support, yes, for the core scholarship, no. AI helps with literature summaries, outlining, editing, and formatting, but the original research, analysis, and argument must be yours. Most universities run dissertations through AI detection, so use AI responsibly, disclose where required, and keep authorship genuinely your own."
                 />
 
               <p className="text-xl text-muted-foreground">A chapter-by-chapter guide for PhD and Masters students on where AI helps, where it hurts, and how to integrate it responsibly into the most important document of your academic career.</p>
@@ -106,11 +91,7 @@ const AIDissertationThesis = () => {
             <ReviewedBy name="Dr. Sarah Chen" role="Founder & CEO" slug="sarah-chen" />
 
             <KeyTakeaways points={[
-              "AI is most valuable for literature reviews, methodology descriptions, and first drafts of introductions. It should never replace your original analysis or theoretical contributions.",
-              "67% of graduate programs now have specific AI use policies. Talk to your advisor before using AI tools in any capacity.",
-              "Turnitin detects AI in dissertations at the same rates as other submissions (85-96%). Longer documents are actually easier to flag because they provide more statistical data.",
-              "Proper citation of AI use is now required by APA, MLA, and Chicago styles. Include a methodology disclosure statement.",
-              "AI humanization can help reduce false positive flags on sections where you used AI for drafting but substantially rewrote the content."
+              "AI is most valuable for literature reviews, methodology descriptions, and first drafts of introductions. It should never replace your original analysis or theoretical contributions.", "67% of graduate programs now have specific AI use policies. Talk to your advisor before using AI tools in any capacity.", "Turnitin detects AI in dissertations at the same rates as other submissions (85-96%). Longer documents are actually easier to flag because they provide more statistical data.", "Proper citation of AI use is now required by APA, MLA, and Chicago styles. Include a methodology disclosure statement.", "AI humanization can help reduce false positive flags on sections where you used AI for drafting but substantially rewrote the content."
             ]} />
 
             <h2 className="text-2xl font-bold mt-10 mb-4">The Dissertation AI Landscape in 2026</h2>
@@ -121,6 +102,9 @@ const AIDissertationThesis = () => {
               <h3 className="font-bold mb-3 flex items-center gap-2"><AlertTriangle className="w-5 h-5 text-yellow-600" /> Critical Warning</h3>
               <p className="text-sm">Before using any AI tool for your dissertation, discuss it with your advisor and review your program's AI use policy. Some programs prohibit all AI use in dissertations. Others allow it for specific tasks with proper disclosure. The consequences of unauthorized AI use in a dissertation are severe and can include degree revocation.</p>
             </div>
+
+            <h2 className="text-2xl font-bold mt-10 mb-4">How to Actually Disclose AI Use</h2>
+            <p>Knowing disclosure is required is one thing; knowing what it looks like on the page is another, and this is where most students go quiet because no one shows them. The cleanest approach is a short statement in your methods section or acknowledgments that names the tool and version, the dates, and exactly what it did, for example: "ChatGPT (GPT-4, OpenAI) was used to draft summaries of the literature in Chapter 2 and to suggest edits for clarity; all output was verified and rewritten by the author." The major style guides all point the same way. APA treats a generative-AI tool as software you credit, and suggests describing the prompt and the use in your methods or an appendix; MLA and Chicago likewise ask you to describe the tool and the role it played rather than cite it like a human author. Two habits make this painless. Keep a running log of where and how you used AI as you write, because reconstructing it the night before submission is miserable, and when you are unsure, over-disclose. A transparent methods note reads as scholarly rigor, while undisclosed use discovered after the fact is the exact thing that gets degrees revoked.</p>
 
             <h2 className="text-2xl font-bold mt-10 mb-4">Chapter-by-Chapter AI Integration Guide</h2>
 

@@ -53,7 +53,7 @@ const AIContentAtScale = () => {
             "publisher": { "@type": "Organization", "name": "AI Free Text Pro", "logo": { "@type": "ImageObject", "url": "https://aifreetextpro.com/logo.png" } },
             "datePublished": "2026-03-08",
             "dateModified": "2026-03-08",
-            "wordCount": 2200
+            "wordCount": 1100
           })}
         </script>
         <script type="application/ld+json">
@@ -118,7 +118,10 @@ const AIContentAtScale = () => {
 
             <h2>The Business Case for AI Content at Scale</h2>
             <p>Content marketing in 2026 is a volume game. The top-ranking sites in competitive niches publish 50-200 articles per month. Traditional content production at this scale requires a team of 10-20 writers and a monthly budget of $50,000+. AI changes the economics entirely.</p>
-            <p>But raw AI content at scale is a recipe for disaster. Google's helpful content system evaluates site-wide quality. A flood of generic, obviously-AI-generated articles can tank your entire domain's rankings. The solution is a production workflow that combines AI speed with human quality -- and <Link to="/blog/ai-content-seo-undetectable" className="text-primary hover:underline">humanization that makes each piece read naturally</Link>.</p>
+            <p>But raw AI content at scale is a recipe for disaster. Google's helpful content system evaluates site-wide quality. A flood of generic, obviously-AI-generated articles can tank your entire domain's rankings. The solution is a production workflow that combines AI speed with human quality, and <Link to="/blog/ai-content-seo-undetectable" className="text-primary hover:underline">humanization that makes each piece read naturally</Link>.</p>
+
+            <h2>Where Google Draws the Line on Scaled Content</h2>
+            <p>It is worth being precise about what actually gets penalized, because "AI content at scale" sets off alarm bells for good reason. In its 2024 spam policy update, Google introduced the term "scaled content abuse," and the key detail is that it is method-neutral. The policy does not target volume or AI specifically; it targets content produced mainly to manipulate rankings without adding value for readers, whether a machine or a room full of writers made it. So publishing 150 articles a month is not the violation. Publishing 150 thin, interchangeable pages that each rehash the same advice with no original insight is. The practical test for every piece in your pipeline is simple: does this article answer a distinct search intent and say something a reader could not get from the ten results already ranking? If yes, scale away. If the only thing distinguishing two articles is the keyword swapped into the title, you are building exactly the kind of doorway content the policy was written to catch.</p>
 
             <h2>The Production Pipeline</h2>
             <div className="bg-muted/50 p-6 rounded-lg my-6">

@@ -15,85 +15,44 @@ import { AuthorSchema } from "@/components/AuthorSchema";
 
 const relatedArticles = [
   {
-    title: "ChatGPT for College Essays: Safe Usage Guide (2026)",
-    description: "How to use ChatGPT for college essays without getting caught by AI detectors.",
-    href: "/blog/chatgpt-college-essays",
-    category: "Academic"
-  },
-  {
-    title: "AI Writing for Students: Complete Guide (2026)",
-    description: "Everything students need to know about using AI writing tools ethically and effectively.",
-    href: "/blog/ai-writing-students-guide",
-    category: "Academic"
-  },
-  {
-    title: "Can Teachers Detect ChatGPT? (2026)",
-    description: "What educators actually see when they run your essay through AI detectors.",
-    href: "/blog/can-teachers-detect-chatgpt",
-    category: "Academic"
-  },
-  {
-    title: "How to Humanize AI Text (2026)",
-    description: "Step-by-step guide to making AI-generated content sound authentically human.",
-    href: "/blog/humanize-ai-text",
-    category: "How-To Guide"
+    title: "ChatGPT for College Essays: Safe Usage Guide (2026)", description: "How to use ChatGPT for college essays without getting caught by AI detectors.", href: "/blog/chatgpt-college-essays", category: "Academic"
+  }, {
+    title: "AI Writing for Students: Complete Guide (2026)", description: "Everything students need to know about using AI writing tools ethically and effectively.", href: "/blog/ai-writing-students-guide", category: "Academic"
+  }, {
+    title: "Can Teachers Detect ChatGPT? (2026)", description: "What educators actually see when they run your essay through AI detectors.", href: "/blog/can-teachers-detect-chatgpt", category: "Academic"
+  }, {
+    title: "How to Humanize AI Text (2026)", description: "Step-by-step guide to making AI-generated content sound authentically human.", href: "/blog/humanize-ai-text", category: "How-To Guide"
   }
 ];
 
 const faqs = [
   {
-    question: "Do college admissions offices use AI detectors on application essays?",
-    answer: "Yes. As of 2026, many selective universities run submitted essays through Turnitin's AI detection module or GPTZero. The Common App itself does not scan essays, but individual institutions may scan them after submission. Some admissions consultants estimate that 40-60% of top-50 US universities now use some form of AI screening."
-  },
-  {
-    question: "Can I use ChatGPT to brainstorm ideas for my personal statement?",
-    answer: "Brainstorming with AI is generally considered ethical by most admissions experts. The key distinction is between using AI as a thinking partner (generating topic ideas, asking probing questions) versus having AI write your essay. Use AI to explore angles, then write the actual essay in your own voice with your own specific experiences."
-  },
-  {
-    question: "What happens if my admissions essay is flagged as AI-generated?",
-    answer: "Consequences vary by institution. Some universities will reject the application outright. Others may request a video interview or ask you to write a supervised essay on campus. A few schools issue permanent bans from reapplying. The reputational risk is significant, as admissions offices increasingly share flagged applicant data."
-  },
-  {
-    question: "How can I make my personal statement sound authentic even if I used AI assistance?",
-    answer: "Focus on specificity: include sensory details, specific names, dates, and locations that only you would know. Use your natural vocabulary level, not artificially elevated language. Include genuine emotional reflection and self-awareness. Reference specific moments rather than generalizations. Run your essay through an AI detector before submitting to catch any sections that read as too polished or generic."
+    question: "Do college admissions offices use AI detectors on application essays?", answer: "Yes. As of 2026, many selective universities run submitted essays through Turnitin's AI detection module or GPTZero. The Common App itself does not scan essays, but individual institutions may scan them after submission. Some admissions consultants estimate that 40-60% of top-50 US universities now use some form of AI screening."
+  }, {
+    question: "Can I use ChatGPT to brainstorm ideas for my personal statement?", answer: "Brainstorming with AI is generally considered ethical by most admissions experts. The key distinction is between using AI as a thinking partner (generating topic ideas, asking probing questions) versus having AI write your essay. Use AI to explore angles, then write the actual essay in your own voice with your own specific experiences."
+  }, {
+    question: "What happens if my admissions essay is flagged as AI-generated?", answer: "Consequences vary by institution. Some universities will reject the application outright. Others may request a video interview or ask you to write a supervised essay on campus. A few schools issue permanent bans from reapplying. The reputational risk is significant, as admissions offices increasingly share flagged applicant data."
+  }, {
+    question: "How can I make my personal statement sound authentic even if I used AI assistance?", answer: "Focus on specificity: include sensory details, specific names, dates, and locations that only you would know. Use your natural vocabulary level, not artificially elevated language. Include genuine emotional reflection and self-awareness. Reference specific moments rather than generalizations. Run your essay through an AI detector before submitting to catch any sections that read as too polished or generic."
   }
 ];
 
 const AICollegeAdmissionsEssays = () => {
   const articleSchema = {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "headline": "AI for College Admissions Essays & Personal Statements (2026)",
-    "description": "Complete guide to using AI for college admissions essays and personal statements. Learn which universities use AI detectors, safe brainstorming workflows, and how to maintain authentic voice.",
-    "author": {
-      "@type": "Person",
-      "name": "Dr. Sarah Chen",
-      "url": "https://aifreetextpro.com/team#dr-sarah-chen"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "AI Free Text Pro",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://aifreetextpro.com/favicon.ico"
+    "@context": "https://schema.org", "@type": "Article", "headline": "AI for College Admissions Essays & Personal Statements (2026)", "description": "Complete guide to using AI for college admissions essays and personal statements. Learn which universities use AI detectors, safe brainstorming workflows, and how to maintain authentic voice.", "author": {
+      "@type": "Person", "name": "Dr. Sarah Chen", "url": "https://aifreetextpro.com/team#dr-sarah-chen"
+    }, "publisher": {
+      "@type": "Organization", "name": "AI Free Text Pro", "logo": {
+        "@type": "ImageObject", "url": "https://aifreetextpro.com/favicon.ico"
       }
-    },
-    "datePublished": "2026-04-08",
-    "dateModified": "2026-04-08",
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": "https://aifreetextpro.com/blog/ai-college-admissions-essays-personal-statements"
-    },
-    "wordCount": 2200
+    }, "datePublished": "2026-04-08", "dateModified": "2026-04-08", "mainEntityOfPage": {
+      "@type": "WebPage", "@id": "https://aifreetextpro.com/blog/ai-college-admissions-essays-personal-statements"
+    }, "wordCount": 2200
   };
 
   const breadcrumbSchema = {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://aifreetextpro.com" },
-      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://aifreetextpro.com/blog" },
-      { "@type": "ListItem", "position": 3, "name": "AI for College Admissions Essays" }
+    "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://aifreetextpro.com" }, { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://aifreetextpro.com/blog" }, { "@type": "ListItem", "position": 3, "name": "AI for College Admissions Essays" }
     ]
   };
 
@@ -131,9 +90,7 @@ const AICollegeAdmissionsEssays = () => {
       <main className="min-h-screen bg-background">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
           <Breadcrumbs items={[
-            { label: "Home", href: "/" },
-            { label: "Blog", href: "/blog" },
-            { label: "AI for College Admissions Essays" }
+            { label: "Home", href: "/" }, { label: "Blog", href: "/blog" }, { label: "AI for College Admissions Essays" }
           ]} />
 
           <Link to="/blog" className="inline-flex items-center text-primary hover:underline mb-8">
@@ -151,7 +108,7 @@ const AICollegeAdmissionsEssays = () => {
               </h1>
                 <QuickAnswer
                   question="Can you use AI for college admissions essays?"
-                  answer="Cautiously. AI can help you brainstorm, outline, and edit, but admissions officers and AI detectors can spot generic, AI-written personal statements — and the personal voice is the whole point. Use AI as a thinking aid, keep the story and reflection genuinely yours, and check each school's AI policy."
+                  answer="Cautiously. AI can help you brainstorm, outline, and edit, but admissions officers and AI detectors can spot generic, AI-written personal statements, and the personal voice is the whole point. Use AI as a thinking aid, keep the story and reflection genuinely yours, and check each school's AI policy."
                 />
 
               <p className="text-xl text-muted-foreground mb-4">
@@ -167,11 +124,7 @@ const AICollegeAdmissionsEssays = () => {
             <ReviewedBy name="Dr. Sarah Chen" role="AI & Academic Integrity Researcher" slug="dr-sarah-chen" />
 
             <KeyTakeaways points={[
-              "40-60% of top US universities now scan admissions essays with AI detectors like Turnitin and GPTZero",
-              "Using AI for brainstorming and outlining is generally acceptable, but having AI write your essay is not",
-              "Personal narratives with specific sensory details and genuine emotions are nearly impossible for AI to replicate authentically",
-              "Always run your final essay through an AI detector before submitting to catch any flagged sections",
-              "If falsely flagged, universities may request a supervised writing sample or video interview"
+              "40-60% of top US universities now scan admissions essays with AI detectors like Turnitin and GPTZero", "Using AI for brainstorming and outlining is generally acceptable, but having AI write your essay is not", "Personal narratives with specific sensory details and genuine emotions are nearly impossible for AI to replicate authentically", "Always run your final essay through an AI detector before submitting to catch any flagged sections", "If falsely flagged, universities may request a supervised writing sample or video interview"
             ]} />
 
             <section className="mb-8">

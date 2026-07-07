@@ -1,69 +1,71 @@
-# P2 — Hub Depth & Crawl Reach
+# SEO Audit: Claude Code's Edits
 
-Goal: turn shallow hub/tool pages into dense, internally-linked content hubs so Googlebot (and AI crawlers) can reach every one of the 121 blog posts in ≤2 clicks from the homepage, and create new programmatic pages to capture long-tail comparison + detector queries.
+Ran both guardrails and a coverage scan across all 123 blog posts, 170 routes, sitemap, `llms.txt`, `ai.txt`, and `index.html`.
 
-## Scope (in order)
+## Overall verdict: solid work, ~85% of the way there
 
-### 1. Hub-page depth (4 pillar hubs + Blog index)
-Pages: `src/pages/Index.tsx` (Humanizer hub), `src/pages/AIChecker.tsx` (Detection hub), `src/pages/BypassTurnitin.tsx` (Bypass hub), `src/pages/CompareAIHumanizers.tsx` (Comparison hub), `src/pages/Blog.tsx`.
+Both hard guardrails pass:
 
-For each hub add (where missing):
-- Full `PillarHubLinks` section rendering ALL spokes (remove any `limit`), grouped by sub-topic with H2/H3 headings.
-- 600–900 words of hub-level intro + "What's inside" copy targeting the hub's head keyword.
-- "Latest from the blog" strip (6 most-recent spokes with date + 1-line excerpt).
-- `CrossHubNav` at the bottom linking to the other 3 hubs.
-- `ItemList` JSON-LD listing every spoke URL (improves crawl + AI-search discovery).
+- `check-sitemap-sync.mjs` — 176 `<loc>` entries, all map to canonical routes (149 static + 5 param, 13 redirects correctly excluded).
+- `check-internal-links.mjs` — every nav link and every canonical resolves to a real route, no `:param` leaks, no bad segments.
 
-### 2. Category hub pages (`/blog/category/:slug`)
-`src/pages/BlogCategory.tsx` already exists but only a few categories are wired. Expand to 8 categories matching the blog taxonomy: humanizer, detection, bypass, comparison, academic, marketing, models, tools. Each category page:
-- H1 + 150-word category intro
-- Full list of posts in that category with thumbnail + excerpt
-- `CollectionPage` + `ItemList` JSON-LD
-- Breadcrumbs, SEOHead, canonical
-- Link entries from `Blog.tsx` and footer
+No duplicate canonicals, no `Lovable App` / `Lovable Generated Project` defaults, no drift between `App.tsx` and `sitemap.xml`. All 123 blog posts have `KeyTakeaways`, `AuthorSchema`, `Breadcrumbs`, and canonical tags. Hub schema (`ItemListSchema`) and the programmatic `/vs/*` and `/detector/*` templates are wired end-to-end (routes + sitemap + `llms.txt` + footer).
 
-### 3. Programmatic comparison pages (long-tail capture)
-Create `src/pages/programmatic/VsX.tsx` template + 6 new routes:
-`/vs/stealthwriter`, `/vs/phrasly`, `/vs/bypassgpt`, `/vs/netus-ai`, `/vs/twixify`, `/vs/humbot`.
-Each ≈1,200 words: feature table, pricing table, verdict, FAQ, ReviewSchema, SoftwareApplicationSchema, CTA to app.
+That's a real, well-executed sprint. The rest is polish, not damage control.
 
-### 4. Programmatic detector pages
-Create `/detector/:tool` template + 5 routes:
-`/detector/turnitin`, `/detector/gptzero`, `/detector/originality`, `/detector/copyleaks`, `/detector/winston`.
-Each ≈1,000 words: how it works, accuracy, how to bypass (link to bypass hub), FAQ, schema.
+## What Claude got right
 
-### 5. AI-search & crawler files
-- Refresh `public/llms.txt` and `public/ai.txt` with the new 121-post index, hub URLs, and new programmatic pages.
-- Add `<lastmod>` + new URLs to `public/sitemap.xml` (via existing `refresh-sitemap-lastmod.mjs`; extend `prerender-routes.ts` with the new programmatic routes).
-- Update `public/robots.txt` only if new directories need explicit allow.
+1. **Route ↔ sitemap ↔ prerender is one source of truth.** `prerender-routes.ts` derives from `sitemap.xml`, guardrails enforce parity — no way for them to drift silently.
+2. **Head metadata pattern is disciplined.** Static `index.html` deliberately omits canonical (comment explains why); every route emits its own via Helmet.
+3. **E-E-A-T signals present at scale.** Author schema on every post, breadcrumbs everywhere, `ReviewedBy` on ~63% of posts.
+4. **AI-search surface is real.** `llms.txt` and `ai.txt` list the new programmatic pages so GPTBot/PerplexityBot can find them.
+5. **Programmatic expansion is safe.** 11 new routes (6 `/vs/*`, 5 `/detector/*`) all resolve, all in the sitemap, all reachable from the footer.
 
-### 6. Footer + Navbar crawl boosts
-- Add a "Resources" mega-list to `Footer.tsx` (Top 10 highest-traffic posts + 4 hub links + 8 category links).
-- Add "Compare" and "Detectors" dropdowns to `Navbar.tsx` desktop nav (mirror in `MobileNav.tsx`).
+## What's still missing or off
 
-### 7. Guardrails + validation
-- Extend `scripts/seo/check-internal-links.mjs` to fail if any blog spoke lacks ≥3 inbound links.
-- Run `check-sitemap-sync.mjs` after route additions.
-- Re-run prerender list.
+Ordered by SEO impact:
 
-## Out of scope (deferred to P3)
-- GSC ingest / analytics dashboards
-- Author bio pages with personal schema
-- Multi-language hreflang
-- Programmatic "X for Y" pages (e.g., "humanizer for nursing students")
+1. **`SpeakableSchema` on only 35 of 123 posts (88 missing).** Voice-search / AI-answer schema is one of the P1 items your memory calls out as required. Biggest gap.
+2. **`QuickAnswer` missing on `BypassAIDetection.tsx`** — this is a high-traffic pillar page; a featured-snippet block should exist.
+3. **`FAQSection` component not used on `AcademicAIWritingSafely.tsx` and `PassAllDetectorsGuide.tsx`.** They may have inline FAQ markup, but without the component they lose the FAQPage JSON-LD rich-snippet eligibility.
+4. **`ReviewedBy` missing on 46 posts (37%).** E-E-A-T is uneven — trust signal absent on a third of the corpus.
+5. **`PostHowToSchema` on only 21 posts.** Many "how to" titled posts (e.g. `HowToDetectAI`, `HowToWriteNaturallyWithAI`, `MakeChatGPTUndetectable`, several `Bypass*` guides) qualify for HowTo rich results and don't emit the schema.
+6. **`llms.txt` is stamped `2026-06-10` but sitemap `lastmod` is `2026-07-04`.** Minor freshness drift — AI crawlers may treat the file as stale.
+7. **`llms.txt` doesn't list the two newest blog posts** (`humanize-gpt5-output`, `ai-detector-for-students-2026`) even though they're in the sitemap.
+
+## Proposed follow-up sprint (P3)
+
+Small, focused, one pass. All frontend/presentation — no business-logic changes.
+
+**A. Schema completeness pass (highest ROI)**
+- Add `SpeakableSchema` to the 88 posts missing it (H1 + `.article-summary` + `.key-takeaways` selectors, per your standard).
+- Add `QuickAnswer` block to `BypassAIDetection.tsx`.
+- Swap inline FAQ for `<FAQSection>` on `AcademicAIWritingSafely.tsx` and `PassAllDetectorsGuide.tsx`.
+- Add `ReviewedBy` block to the 46 posts missing it.
+
+**B. HowTo schema pass**
+- Identify posts with true step-by-step structure and emit `PostHowToSchema` (target ~15–20 posts: `HowTo*`, `Bypass*Guide`, `Make*Undetectable`, `RemoveAIDetection`, `PassAllDetectorsGuide`, etc.).
+
+**C. Freshness sync**
+- Update `public/llms.txt` `Last-Updated` and `public/ai.txt` `Last-Updated` to today.
+- Append the two new blog posts to `llms.txt` under the Blog section.
+- Re-run `scripts/seo/refresh-sitemap-lastmod.mjs`.
+
+**D. Verification**
+- `node scripts/seo/check-sitemap-sync.mjs`
+- `node scripts/seo/check-internal-links.mjs`
+- Re-audit: confirm 0 posts missing SpeakableSchema / QuickAnswer / FAQSection / ReviewedBy.
+
+**Out of scope for this sprint** (worth flagging, not doing now):
+- New content (already shipped 2 P2 posts).
+- New programmatic templates.
+- Author bio pages, hreflang, GSC ingest.
 
 ## Technical notes
-- Reuse: `PillarHubLinks`, `SoftwareApplicationSchema`, `ReviewSchema`, `SpeakableSchema`, `AuthorSchema`, `Breadcrumbs`, `SEOHead`, `FAQSection`.
-- New components: `ItemListSchema.tsx`, `programmatic/VsTemplate.tsx`, `programmatic/DetectorTemplate.tsx`, data files `src/data/competitors.ts` + `src/data/detectors.ts`.
-- All new routes added to `src/App.tsx` (lazy) + `scripts/seo/prerender-routes.ts` + `public/sitemap.xml`.
-- All external app CTAs → `https://app.aifreetextpro.com` with `target="_blank" rel="noopener noreferrer"` (per project memory).
 
-## Deliverables
-- 5 hub pages deepened (Index, AIChecker, BypassTurnitin, CompareAIHumanizers, Blog)
-- 8 category hub pages live
-- 6 new `/vs/*` + 5 new `/detector/*` programmatic pages (11 total)
-- Refreshed `llms.txt`, `ai.txt`, `sitemap.xml`, `prerender-routes.ts`
-- Footer + Navbar updated
-- Guardrail script extended and passing
+- `SpeakableSchema` bulk-add can be done via a small codemod script under `scripts/seo/` that appends the import + component next to existing `<Helmet>` blocks; safer than 88 hand-edits.
+- `ReviewedBy` insertion point: after `Breadcrumbs`, before article body — matches the pattern already used on the 77 posts that have it.
+- `HowTo` posts need real `steps[]` data, not template stubs — the audit should pick posts with existing numbered `<h2>`/`<h3>` sections and reuse those.
+- Estimated effort: ~4 hours end-to-end, dominated by the SpeakableSchema codemod + validation.
 
-Estimated effort: ~1 day end-to-end.
+Reply "go" (or edit any part) and I'll ship it.

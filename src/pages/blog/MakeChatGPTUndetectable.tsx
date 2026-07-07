@@ -1,3 +1,4 @@
+import ReviewedBy from "@/components/ReviewedBy";
 import { SpeakableSchema } from "@/components/SpeakableSchema";
 import { Link } from "react-router-dom";
 import { QuickAnswer } from "@/components/QuickAnswer";
@@ -168,6 +169,8 @@ const MakeChatGPTUndetectable = () => {
                   The complete playbook for transforming AI-generated content into natural, human-quality writing that reads authentically.
                 </p>
               </header>
+
+              <ReviewedBy name="Dr. Sarah Chen" role="AI & Academic Integrity Researcher" slug="dr-sarah-chen" />
 
               <KeyTakeaways 
                 points={[

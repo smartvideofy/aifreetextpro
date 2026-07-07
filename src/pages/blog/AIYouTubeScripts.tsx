@@ -11,6 +11,7 @@ import { ArrowRight, Brain, Search, Zap, Video, Mic, CheckCircle, AlertTriangle,
 import { KeyTakeaways } from "@/components/KeyTakeaways";
 import { AuthorSchema } from "@/components/AuthorSchema";
 import { SpeakableSchema } from "@/components/SpeakableSchema";
+import ReviewedBy from "@/components/ReviewedBy";
 
 const relatedArticles = [
   {
@@ -190,6 +191,8 @@ export default function AIYouTubeScripts() {
                 Transform AI-generated scripts into natural, engaging narration that keeps your audience hooked and builds authentic connections with viewers.
               </p>
             </header>
+
+            <ReviewedBy name="Dr. Sarah Chen" role="AI & Academic Integrity Researcher" slug="dr-sarah-chen" />
 
             <KeyTakeaways
               points={[

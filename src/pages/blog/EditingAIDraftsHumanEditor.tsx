@@ -13,6 +13,7 @@ import { InternalLinks } from "@/components/InternalLinks";
 import { AuthorSchema } from "@/components/AuthorSchema";
 import { SpeakableSchema } from "@/components/SpeakableSchema";
 import { PostHowToSchema } from "@/components/PostHowToSchema";
+import ReviewedBy from "@/components/ReviewedBy";
 
 const relatedArticles = [
   {
@@ -163,6 +164,8 @@ const EditingAIDraftsHumanEditor = () => {
                   Even the best AI generates drafts that need human refinement. Professional editors have developed specific techniques for transforming AI output into polished, authentic prose. Here's their playbook.
                 </p>
               </header>
+
+              <ReviewedBy name="Dr. Sarah Chen" role="AI & Academic Integrity Researcher" slug="dr-sarah-chen" />
 
               <KeyTakeaways
                 points={[

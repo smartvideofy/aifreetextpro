@@ -11,6 +11,7 @@ import { ArrowRight, Brain, Target, Users, Zap, TrendingUp, BarChart3, Shield, C
 import { KeyTakeaways } from "@/components/KeyTakeaways";
 import { AuthorSchema } from "@/components/AuthorSchema";
 import { SpeakableSchema } from "@/components/SpeakableSchema";
+import ReviewedBy from "@/components/ReviewedBy";
 
 const relatedArticles = [
   {
@@ -173,6 +174,8 @@ export default function AIContentMarketingTrends2026() {
                 Explore how AI is reshaping marketing strategies, from hyper-personalization to predictive analytics, and what marketers should prepare for in the next evolution of digital engagement.
               </p>
             </header>
+
+            <ReviewedBy name="Dr. Sarah Chen" role="AI & Academic Integrity Researcher" slug="dr-sarah-chen" />
 
             <KeyTakeaways
               points={[

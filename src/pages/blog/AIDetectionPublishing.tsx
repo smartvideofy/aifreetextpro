@@ -1,3 +1,4 @@
+import ReviewedBy from "@/components/ReviewedBy";
 import { SpeakableSchema } from "@/components/SpeakableSchema";
 import { Helmet } from "react-helmet-async";
 import { QuickAnswer } from "@/components/QuickAnswer";
@@ -132,6 +133,8 @@ export default function AIDetectionPublishing() {
                 The publishing industry is at a crossroads. Here's how professionals are navigating the AI content revolution.
               </p>
             </header>
+
+            <ReviewedBy name="Dr. Sarah Chen" role="AI & Academic Integrity Researcher" slug="dr-sarah-chen" />
 
             <KeyTakeaways
               points={[

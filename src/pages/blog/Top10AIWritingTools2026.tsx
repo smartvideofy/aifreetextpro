@@ -1,3 +1,4 @@
+import ReviewedBy from "@/components/ReviewedBy";
 ﻿import { Helmet } from "react-helmet-async";
 import { QuickAnswer } from "@/components/QuickAnswer";
 import Navbar from "@/components/Navbar";
@@ -145,6 +146,8 @@ export default function Top10AIWritingTools2026() {
                 Explore the best AI writing platforms for 2026 that help writers, marketers, and content creators produce high-quality content faster.
               </p>
             </header>
+
+            <ReviewedBy name="Dr. Sarah Chen" role="AI & Academic Integrity Researcher" slug="dr-sarah-chen" />
 
             <KeyTakeaways
               points={[

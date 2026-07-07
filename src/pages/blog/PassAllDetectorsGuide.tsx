@@ -1,3 +1,4 @@
+import ReviewedBy from "@/components/ReviewedBy";
 import { SpeakableSchema } from "@/components/SpeakableSchema";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
@@ -142,6 +143,8 @@ const PassAllDetectorsGuide = () => {
                   How to bypass GPTZero, Turnitin, Originality.AI, ZeroGPT, Copyleaks, and every other AI detector, with a money-back guarantee.
                 </p>
               </header>
+
+              <ReviewedBy name="Dr. Sarah Chen" role="AI & Academic Integrity Researcher" slug="dr-sarah-chen" />
 
               <KeyTakeaways
                 points={[

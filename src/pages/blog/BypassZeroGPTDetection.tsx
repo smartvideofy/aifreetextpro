@@ -1,3 +1,4 @@
+import ReviewedBy from "@/components/ReviewedBy";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import Navbar from "@/components/Navbar";
@@ -120,6 +121,8 @@ const BypassZeroGPTDetection = () => {
               ZeroGPT is one of the most widely used AI detection platforms among students, writers, and professionals. High AI scores can cause flagged content, even if written well. This guide will show you how to humanize AI-generated content and reduce ZeroGPT detection scores safely and effectively.
             </p>
           </header>
+
+          <ReviewedBy name="Dr. Sarah Chen" role="AI & Academic Integrity Researcher" slug="dr-sarah-chen" />
 
           <KeyTakeaways
             points={[

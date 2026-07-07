@@ -1,3 +1,4 @@
+import ReviewedBy from "@/components/ReviewedBy";
 import { SpeakableSchema } from "@/components/SpeakableSchema";
 import { Link } from "react-router-dom";
 import { QuickAnswer } from "@/components/QuickAnswer";
@@ -131,6 +132,8 @@ const AIContentSEO = () => {
                   The complete playbook for SEO professionals who want to scale content production with AI, without sacrificing rankings or authenticity.
                 </p>
               </header>
+
+              <ReviewedBy name="Dr. Sarah Chen" role="AI & Academic Integrity Researcher" slug="dr-sarah-chen" />
 
               <KeyTakeaways
                 points={[

@@ -1,3 +1,4 @@
+import ReviewedBy from "@/components/ReviewedBy";
 import { SpeakableSchema } from "@/components/SpeakableSchema";
 import { Helmet } from "react-helmet-async";
 import { QuickAnswer } from "@/components/QuickAnswer";
@@ -117,6 +118,8 @@ const ToneVoiceFlowAIWriting = () => {
                   Great writing has three invisible threads: tone sets the emotional temperature, voice creates distinctiveness, and flow carries readers effortlessly forward. Here's how to master all three when working with AI.
                 </p>
               </header>
+
+              <ReviewedBy name="Dr. Sarah Chen" role="AI & Academic Integrity Researcher" slug="dr-sarah-chen" />
 
               <KeyTakeaways
                 points={[

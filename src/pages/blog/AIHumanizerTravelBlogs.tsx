@@ -11,6 +11,7 @@ import { ArrowRight, MapPin, Camera, Compass, AlertTriangle, CheckCircle, Lightb
 import { KeyTakeaways } from "@/components/KeyTakeaways";
 import { AuthorSchema } from "@/components/AuthorSchema";
 import { SpeakableSchema } from "@/components/SpeakableSchema";
+import ReviewedBy from "@/components/ReviewedBy";
 
 const relatedArticles = [
   {
@@ -198,6 +199,8 @@ export default function AIHumanizerTravelBlogs() {
                 Turn your travel notes into engaging, authentic blogs with AI assistance, keeping your unique voice intact.
               </p>
             </header>
+
+            <ReviewedBy name="Dr. Sarah Chen" role="AI & Academic Integrity Researcher" slug="dr-sarah-chen" />
 
             <KeyTakeaways
               points={[

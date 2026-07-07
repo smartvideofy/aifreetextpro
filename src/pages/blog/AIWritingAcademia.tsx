@@ -11,6 +11,7 @@ import { ArrowRight, GraduationCap, Shield, AlertTriangle, CheckCircle, Lightbul
 import { KeyTakeaways } from "@/components/KeyTakeaways";
 import { AuthorSchema } from "@/components/AuthorSchema";
 import { SpeakableSchema } from "@/components/SpeakableSchema";
+import ReviewedBy from "@/components/ReviewedBy";
 
 const relatedArticles = [
   {
@@ -178,6 +179,8 @@ export default function AIWritingAcademia() {
                 Ethical strategies to leverage AI for essays, research papers, and thesis writing while avoiding detection flags and maintaining academic standards.
               </p>
             </header>
+
+            <ReviewedBy name="Dr. Sarah Chen" role="AI & Academic Integrity Researcher" slug="dr-sarah-chen" />
 
             <KeyTakeaways
               points={[

@@ -1,3 +1,4 @@
+import ReviewedBy from "@/components/ReviewedBy";
 import { Helmet } from "react-helmet-async";
 import { QuickAnswer } from "@/components/QuickAnswer";
 import Navbar from "@/components/Navbar";
@@ -144,6 +145,8 @@ export default function WhyAIContentFails() {
                 />
 
             </header>
+
+            <ReviewedBy name="Dr. Sarah Chen" role="AI & Academic Integrity Researcher" slug="dr-sarah-chen" />
 
             <KeyTakeaways
               points={[

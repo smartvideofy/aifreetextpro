@@ -1,3 +1,4 @@
+import ReviewedBy from "@/components/ReviewedBy";
 import { SpeakableSchema } from "@/components/SpeakableSchema";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
@@ -135,6 +136,8 @@ const AIDetectionPatterns = () => {
                   A deep dive into the science behind AI detection, and how understanding these patterns helps you write undetectably.
                 </p>
               </header>
+
+              <ReviewedBy name="Dr. Sarah Chen" role="AI & Academic Integrity Researcher" slug="dr-sarah-chen" />
 
               <KeyTakeaways
                 points={[

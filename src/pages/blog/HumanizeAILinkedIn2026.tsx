@@ -11,6 +11,7 @@ import { ArrowRight, Brain, Lightbulb, CheckCircle, AlertTriangle, Users, Trendi
 import { KeyTakeaways } from "@/components/KeyTakeaways";
 import { AuthorSchema } from "@/components/AuthorSchema";
 import { SpeakableSchema } from "@/components/SpeakableSchema";
+import ReviewedBy from "@/components/ReviewedBy";
 
 const relatedArticles = [
   {
@@ -201,6 +202,8 @@ export default function HumanizeAILinkedIn2026() {
                 Transform AI-generated LinkedIn posts into authentic, human-like content that builds trust, engagement, and professional credibility.
               </p>
             </header>
+
+            <ReviewedBy name="Dr. Sarah Chen" role="AI & Academic Integrity Researcher" slug="dr-sarah-chen" />
 
             <KeyTakeaways
               points={[

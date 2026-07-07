@@ -1,3 +1,4 @@
+import { SpeakableSchema } from "@/components/SpeakableSchema";
 import { Link } from "react-router-dom";
 import { QuickAnswer } from "@/components/QuickAnswer";
 import { Helmet } from "react-helmet-async";
@@ -74,6 +75,10 @@ const ClaudeAcademicWriting = () => {
         description="How to use Claude AI for academic essays without detection. Claude's detection profile, best prompts, and humanization workflow for students."
         datePublished="2026-03-08"
         dateModified="2026-06-09"
+      />
+      <SpeakableSchema
+        pageUrl="https://aifreetextpro.com/blog/claude-academic-writing"
+        pageName="Claude for Academic Writing Without Getting Caught"
       />
 
 

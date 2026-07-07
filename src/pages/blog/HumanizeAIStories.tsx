@@ -1,3 +1,5 @@
+import ReviewedBy from "@/components/ReviewedBy";
+import { SpeakableSchema } from "@/components/SpeakableSchema";
 ﻿import { Helmet } from "react-helmet-async";
 import { QuickAnswer } from "@/components/QuickAnswer";
 import Navbar from "@/components/Navbar";
@@ -99,6 +101,10 @@ export default function HumanizeAIStories() {
         datePublished="2026-02-02"
         dateModified="2026-06-09"
       />
+      <SpeakableSchema
+        pageUrl="https://aifreetextpro.com/blog/humanize-ai-generated-stories-fiction"
+        pageName="Humanize AI Stories & Fiction [2026 Guide]"
+      />
 
 
       <div className="min-h-screen bg-background">
@@ -134,6 +140,8 @@ export default function HumanizeAIStories() {
                 Practical techniques to transform AI-generated narratives into engaging, emotionally resonant fiction your readers will love.
               </p>
             </header>
+
+            <ReviewedBy name="Dr. Sarah Chen" role="AI & Academic Integrity Researcher" slug="dr-sarah-chen" />
 
             <KeyTakeaways
               points={[

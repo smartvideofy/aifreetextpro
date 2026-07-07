@@ -1,3 +1,5 @@
+import ReviewedBy from "@/components/ReviewedBy";
+import { SpeakableSchema } from "@/components/SpeakableSchema";
 import { Link } from "react-router-dom";
 import { QuickAnswer } from "@/components/QuickAnswer";
 import { FAQSection } from "@/components/FAQSection";
@@ -80,6 +82,10 @@ const AIContentSEO = () => {
         datePublished="2026-02-02"
         dateModified="2026-06-09"
       />
+      <SpeakableSchema
+        pageUrl="https://aifreetextpro.com/blog/ai-content-seo-undetectable"
+        pageName="AI Content for SEO: Rank Higher Naturally [2026]"
+      />
 
       <Navbar />
       
@@ -126,6 +132,8 @@ const AIContentSEO = () => {
                   The complete playbook for SEO professionals who want to scale content production with AI, without sacrificing rankings or authenticity.
                 </p>
               </header>
+
+              <ReviewedBy name="Dr. Sarah Chen" role="AI & Academic Integrity Researcher" slug="dr-sarah-chen" />
 
               <KeyTakeaways
                 points={[

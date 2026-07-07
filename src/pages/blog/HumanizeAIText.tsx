@@ -1,3 +1,4 @@
+import ReviewedBy from "@/components/ReviewedBy";
 import { Link } from "react-router-dom";
 import { QuickAnswer } from "@/components/QuickAnswer";
 import { Button } from "@/components/ui/button";
@@ -176,6 +177,8 @@ const HumanizeAIText = () => {
               </header>
 
               <div className="prose prose-lg max-w-none">
+              <ReviewedBy name="Dr. Sarah Chen" role="AI & Academic Integrity Researcher" slug="dr-sarah-chen" />
+
               <KeyTakeaways 
                 points={[
                   "AI writing sounds robotic due to formal language, repetitive structure, and lack of personal experience", "The 'Edit in Three Passes' technique: structure, voice, then details for best results", "Use contractions, everyday language, and varied sentence lengths to humanize content", "Add personal anecdotes, sensory details, and specific examples to bypass AI detection", "AI humanizer tools like AI Free Text Pro can automatically transform robotic text to natural writing"

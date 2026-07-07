@@ -1,3 +1,4 @@
+import { SpeakableSchema } from "@/components/SpeakableSchema";
 import { Link } from "react-router-dom";
 import { QuickAnswer } from "@/components/QuickAnswer";
 import { Helmet } from "react-helmet-async";
@@ -67,6 +68,10 @@ const AILegalWriting = () => {
         description="Use AI for legal memos, briefs, and law school essays in 2026. Ethical frameworks, detection tips, and workflow templates for legal pros and students."
         datePublished="2026-03-09"
         dateModified="2026-06-09"
+      />
+      <SpeakableSchema
+        pageUrl="https://aifreetextpro.com/blog/ai-legal-writing-law-school"
+        pageName="AI for Legal Writing & Law School Essays (2026) | AI Free Text Pro"
       />
 
 

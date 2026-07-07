@@ -1,3 +1,4 @@
+import { SpeakableSchema } from "@/components/SpeakableSchema";
 import { Link } from "react-router-dom";
 import { QuickAnswer } from "@/components/QuickAnswer";
 import { Helmet } from "react-helmet-async";
@@ -97,6 +98,10 @@ export default function UndetectableAIEssayWriter() {
         description="Discover the best AI essay writing workflows that pass Turnitin, GPTZero, and Originality.AI. Real test results and step-by-step guide for 2026."
         datePublished="2026-03-05"
         dateModified="2026-06-09"
+      />
+      <SpeakableSchema
+        pageUrl="https://aifreetextpro.com/blog/best-ai-essay-writer-undetectable"
+        pageName="Best AI Essay Writer That Can't Be Detected | 2026"
       />
 
 

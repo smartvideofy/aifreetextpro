@@ -1,3 +1,4 @@
+import { SpeakableSchema } from "@/components/SpeakableSchema";
 import { Link } from "react-router-dom";
 import { QuickAnswer } from "@/components/QuickAnswer";
 import { Helmet } from "react-helmet-async";
@@ -67,6 +68,10 @@ const AIWritingForFreelancers = () => {
         description="Practical guide for freelance writers using AI. How to integrate AI into your workflow, handle client expectations, and protect your reputation."
         datePublished="2026-02-28"
         dateModified="2026-06-09"
+      />
+      <SpeakableSchema
+        pageUrl="https://aifreetextpro.com/blog/ai-writing-for-freelancers"
+        pageName="AI Writing for Freelancers: How to Use AI Without Losing Clients (2026)"
       />
 
 

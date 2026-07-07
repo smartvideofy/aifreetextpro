@@ -1,3 +1,4 @@
+import { SpeakableSchema } from "@/components/SpeakableSchema";
 import { Link } from "react-router-dom";
 import { QuickAnswer } from "@/components/QuickAnswer";
 import { Helmet } from "react-helmet-async";
@@ -56,6 +57,10 @@ const TurnitinAppeal = () => {
         description="Step-by-step guide to appealing Turnitin AI detection false positives. Email templates, evidence gathering, and how to prove your writing is human."
         datePublished="2026-03-08"
         dateModified="2026-06-09"
+      />
+      <SpeakableSchema
+        pageUrl="https://aifreetextpro.com/blog/turnitin-appeal-ai-detection"
+        pageName="Is Turnitin Wrong? How to Appeal AI Detection (2026)"
       />
 
 

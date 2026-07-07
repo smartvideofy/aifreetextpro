@@ -1,3 +1,4 @@
+import { SpeakableSchema } from "@/components/SpeakableSchema";
 import { Link } from "react-router-dom";
 import { QuickAnswer } from "@/components/QuickAnswer";
 import { Helmet } from "react-helmet-async";
@@ -84,6 +85,10 @@ const AIWritingUpworkFiverr = () => {
         description="Platform-specific strategies for freelancers using AI on Upwork and Fiverr. TOS compliance, client detection avoidance, pricing, and humanization workflows."
         datePublished="2026-03-15"
         dateModified="2026-06-09"
+      />
+      <SpeakableSchema
+        pageUrl="https://aifreetextpro.com/blog/ai-writing-upwork-fiverr-freelancers"
+        pageName="AI Writing for Upwork & Fiverr Freelancers (2026) | AI Free Text Pro"
       />
 
 

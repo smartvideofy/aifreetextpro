@@ -1,3 +1,4 @@
+import { SpeakableSchema } from "@/components/SpeakableSchema";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { QuickAnswer } from "@/components/QuickAnswer";
@@ -86,6 +87,10 @@ const TurnitinVsGPTZeroVsOriginalityAI = () => {
         description="Head-to-head accuracy comparison of Turnitin, GPTZero, and Originality.AI on real 2026 AI content."
         datePublished="2026-05-10"
         dateModified="2026-06-09"
+      />
+      <SpeakableSchema
+        pageUrl="https://aifreetextpro.com/blog/turnitin-vs-gptzero-vs-originality-ai"
+        pageName="Turnitin vs GPTZero vs Originality.AI (2026)"
       />
 
 

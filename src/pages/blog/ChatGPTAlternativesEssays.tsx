@@ -1,3 +1,4 @@
+import { SpeakableSchema } from "@/components/SpeakableSchema";
 import { Link } from "react-router-dom";
 import { QuickAnswer } from "@/components/QuickAnswer";
 import { Helmet } from "react-helmet-async";
@@ -77,6 +78,10 @@ const ChatGPTAlternativesEssays = () => {
         description="10 best ChatGPT alternatives for essay writing in 2026. Compare Claude, Gemini, Perplexity, and more for academic quality, detection rates, and pricing."
         datePublished="2026-03-08"
         dateModified="2026-06-09"
+      />
+      <SpeakableSchema
+        pageUrl="https://aifreetextpro.com/blog/chatgpt-alternatives-essays"
+        pageName="ChatGPT Alternatives for Essay Writing (2026) | AI Free Text Pro"
       />
 
 

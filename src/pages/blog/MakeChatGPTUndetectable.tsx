@@ -1,3 +1,5 @@
+import ReviewedBy from "@/components/ReviewedBy";
+import { SpeakableSchema } from "@/components/SpeakableSchema";
 import { Link } from "react-router-dom";
 import { QuickAnswer } from "@/components/QuickAnswer";
 import { Button } from "@/components/ui/button";
@@ -117,6 +119,10 @@ const MakeChatGPTUndetectable = () => {
         datePublished="2026-02-02"
         dateModified="2026-06-09"
       />
+      <SpeakableSchema
+        pageUrl="https://aifreetextpro.com/blog/make-chatgpt-undetectable-2025"
+        pageName="Make AI Writing Sound Human: Full Guide [2026]"
+      />
 
       <Navbar />
       
@@ -163,6 +169,8 @@ const MakeChatGPTUndetectable = () => {
                   The complete playbook for transforming AI-generated content into natural, human-quality writing that reads authentically.
                 </p>
               </header>
+
+              <ReviewedBy name="Dr. Sarah Chen" role="AI & Academic Integrity Researcher" slug="dr-sarah-chen" />
 
               <KeyTakeaways 
                 points={[

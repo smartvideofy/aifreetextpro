@@ -1,3 +1,4 @@
+import { SpeakableSchema } from "@/components/SpeakableSchema";
 import { Link } from "react-router-dom";
 import { QuickAnswer } from "@/components/QuickAnswer";
 import { Helmet } from "react-helmet-async";
@@ -58,6 +59,10 @@ const UndetectableAIAlternatives = () => {
         description="5 better alternatives to Undetectable AI in 2026. Compare bypass rates, pricing, and features. Ranked by real detection test results."
         datePublished="2026-03-08"
         dateModified="2026-06-09"
+      />
+      <SpeakableSchema
+        pageUrl="https://aifreetextpro.com/blog/undetectable-ai-alternatives"
+        pageName="Undetectable AI Alternatives: 5 Better Tools (2026)"
       />
 
 

@@ -1,3 +1,4 @@
+import ReviewedBy from "@/components/ReviewedBy";
 ﻿import { Helmet } from "react-helmet-async";
 import { QuickAnswer } from "@/components/QuickAnswer";
 import { FAQSection } from "@/components/FAQSection";
@@ -129,6 +130,8 @@ export default function BypassAIDetectionGuide() {
                 Understand AI detection systems and learn ethical methods to create content that reads naturally while maintaining quality and authenticity.
               </p>
             </header>
+
+            <ReviewedBy name="Dr. Sarah Chen" role="AI & Academic Integrity Researcher" slug="dr-sarah-chen" />
 
             <KeyTakeaways
               points={[

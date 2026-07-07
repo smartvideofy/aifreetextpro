@@ -1,3 +1,5 @@
+import ReviewedBy from "@/components/ReviewedBy";
+import { SpeakableSchema } from "@/components/SpeakableSchema";
 import { Helmet } from "react-helmet-async";
 import { QuickAnswer } from "@/components/QuickAnswer";
 import { FAQSection } from "@/components/FAQSection";
@@ -86,6 +88,10 @@ export default function ZeroGPTComparison() {
         datePublished="2026-02-02"
         dateModified="2026-06-09"
       />
+      <SpeakableSchema
+        pageUrl="https://aifreetextpro.com/blog/zerogpt-vs-ai-free-text-pro-2025"
+        pageName="ZeroGPT vs AI Free Text Pro: 500+ Samples Tested [2026]"
+      />
 
 
       <div className="min-h-screen bg-background">
@@ -121,6 +127,8 @@ export default function ZeroGPTComparison() {
                 We put both tools through rigorous real-world tests to see which one actually delivers on accuracy.
               </p>
             </header>
+
+            <ReviewedBy name="Dr. Sarah Chen" role="AI & Academic Integrity Researcher" slug="dr-sarah-chen" />
 
             <KeyTakeaways
               points={[

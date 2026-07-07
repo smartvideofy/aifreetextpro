@@ -1,3 +1,5 @@
+import ReviewedBy from "@/components/ReviewedBy";
+import { SpeakableSchema } from "@/components/SpeakableSchema";
 import { Link } from "react-router-dom";
 import { QuickAnswer } from "@/components/QuickAnswer";
 import { FAQSection } from "@/components/FAQSection";
@@ -127,6 +129,10 @@ const GPTinfComparison = () => {
         datePublished="2026-02-02"
         dateModified="2026-06-09"
       />
+      <SpeakableSchema
+        pageUrl="https://aifreetextpro.com/blog/gptinf-vs-ai-free-text-pro"
+        pageName="GPTinf vs AI Free Text Pro: Tested [2026]"
+      />
 
       <Navbar />
       
@@ -175,6 +181,8 @@ const GPTinfComparison = () => {
                   A head-to-head comparison of two popular AI humanizers with real test results, pricing analysis, and feature breakdown.
                 </p>
               </header>
+
+              <ReviewedBy name="Dr. Sarah Chen" role="AI & Academic Integrity Researcher" slug="dr-sarah-chen" />
 
               <KeyTakeaways
                 points={[

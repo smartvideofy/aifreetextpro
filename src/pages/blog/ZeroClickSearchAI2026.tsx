@@ -1,3 +1,5 @@
+import ReviewedBy from "@/components/ReviewedBy";
+import { SpeakableSchema } from "@/components/SpeakableSchema";
 ﻿import { Helmet } from "react-helmet-async";
 import { QuickAnswer } from "@/components/QuickAnswer";
 import Navbar from "@/components/Navbar";
@@ -103,6 +105,10 @@ export default function ZeroClickSearchAI2026() {
         datePublished="2026-02-02"
         dateModified="2026-06-09"
       />
+      <SpeakableSchema
+        pageUrl="https://aifreetextpro.com/blog/zero-click-search-ai-2026"
+        pageName="Zero-Click SEO: Win Traffic in 2026"
+      />
 
 
       <div className="min-h-screen bg-background">
@@ -138,6 +144,8 @@ export default function ZeroClickSearchAI2026() {
                 Master zero-click search strategies to get cited in AI responses and build authority without relying on clicks.
               </p>
             </header>
+
+            <ReviewedBy name="Dr. Sarah Chen" role="AI & Academic Integrity Researcher" slug="dr-sarah-chen" />
 
             <KeyTakeaways
               points={[

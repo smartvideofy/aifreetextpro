@@ -9,7 +9,10 @@ import Footer from "@/components/Footer";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { RelatedArticles } from "@/components/RelatedArticles";
 import { InternalLinks } from "@/components/InternalLinks";
+import { FAQSection } from "@/components/FAQSection";
 import { AuthorSchema } from "@/components/AuthorSchema";
+import { SpeakableSchema } from "@/components/SpeakableSchema";
+import ReviewedBy from "@/components/ReviewedBy";
 
 const relatedArticles = [
   {
@@ -122,6 +125,10 @@ const AcademicAIWritingSafely = () => {
         datePublished="2026-02-02"
         dateModified="2026-06-09"
       />
+      <SpeakableSchema
+        pageUrl="https://aifreetextpro.com/blog/academic-ai-writing-safely"
+        pageName="Use AI for Thesis & Essays Safely [2026 Guide]"
+      />
 
       <Navbar />
       
@@ -170,6 +177,8 @@ const AcademicAIWritingSafely = () => {
                   A thoughtful guide to leveraging AI writing tools responsibly while preserving the principles of academic integrity.
                 </p>
               </header>
+
+              <ReviewedBy name="Dr. Sarah Chen" role="AI & Academic Integrity Researcher" slug="dr-sarah-chen" />
 
               <KeyTakeaways
                 points={[
@@ -412,22 +421,28 @@ const AcademicAIWritingSafely = () => {
                   </table>
                 </div>
 
-                <h2>Common Questions</h2>
+              </div>
 
-                <h3>Is using AI humanizers "cheating"?</h3>
-                <p>
-                  It depends on context and institutional policy. If your institution prohibits AI-generated content and you use AI to write and then humanize that content, that would violate integrity policies. However, using humanizers to refine your own writing or ensure your human-written content doesn't trigger false positives is generally acceptable.
-                </p>
+              <FAQSection
+                title="Common Questions"
+                faqs={[
+                  {
+                    question: 'Is using AI humanizers "cheating"?',
+                    answer: "It depends on context and institutional policy. If your institution prohibits AI-generated content and you use AI to write and then humanize that content, that would violate integrity policies. Using humanizers to refine your own writing or ensure your human-written content doesn't trigger false positives is generally acceptable."
+                  },
+                  {
+                    question: "Can Turnitin detect humanized AI content?",
+                    answer: "Turnitin's AI detection has limitations. Properly humanized content typically passes, but the goal shouldn't be to beat detection. It should be to ensure your legitimate work isn't wrongly flagged."
+                  },
+                  {
+                    question: "Should I tell my professor I used AI?",
+                    answer: "Follow your institution's disclosure requirements. When in doubt, transparency is always the safer choice. Many professors appreciate honesty about AI use, especially when it's used as a learning tool rather than a shortcut."
+                  }
+                ]}
+              />
 
-                <h3>Can Turnitin detect humanized AI content?</h3>
-                <p>
-                  Turnitin's AI detection has limitations. Properly humanized content typically passes, but the goal shouldn't be to "beat" detection. It should be to ensure your legitimate work isn't wrongly flagged. <Link to="/bypass-turnitin-ai-detection" className="text-primary hover:text-primary/80">Learn more about Turnitin AI detection.</Link>
-                </p>
+              <div className="prose prose-lg max-w-none">
 
-                <h3>Should I tell my professor I used AI?</h3>
-                <p>
-                  Follow your institution's disclosure requirements. When in doubt, transparency is always the safer choice. Many professors appreciate honesty about AI use, especially when it's used as a learning tool rather than a shortcut.
-                </p>
 
                 <h2>Conclusion: AI as a Learning Tool</h2>
                 <p>

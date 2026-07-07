@@ -1,3 +1,5 @@
+import ReviewedBy from "@/components/ReviewedBy";
+import { SpeakableSchema } from "@/components/SpeakableSchema";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Calendar, Clock, ArrowLeft, Brain, BarChart3, AlertTriangle, Lightbulb } from "lucide-react";
@@ -84,6 +86,10 @@ const AIDetectionPatterns = () => {
         datePublished="2026-02-02"
         dateModified="2026-06-09"
       />
+      <SpeakableSchema
+        pageUrl="https://aifreetextpro.com/blog/ai-detection-patterns-explained"
+        pageName="5 Patterns AI Detectors Flag [And How to Fix Them]"
+      />
 
       <Navbar />
       
@@ -130,6 +136,8 @@ const AIDetectionPatterns = () => {
                   A deep dive into the science behind AI detection, and how understanding these patterns helps you write undetectably.
                 </p>
               </header>
+
+              <ReviewedBy name="Dr. Sarah Chen" role="AI & Academic Integrity Researcher" slug="dr-sarah-chen" />
 
               <KeyTakeaways
                 points={[

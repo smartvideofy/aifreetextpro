@@ -1,3 +1,4 @@
+import { SpeakableSchema } from "@/components/SpeakableSchema";
 import { Link } from "react-router-dom";
 import { QuickAnswer } from "@/components/QuickAnswer";
 import { Helmet } from "react-helmet-async";
@@ -63,6 +64,10 @@ const TurnitinSimilarityVsAIScore = () => {
         description="Understand the difference between Turnitin's similarity score and AI score. What each measures, what professors see, and what thresholds trigger review."
         datePublished="2026-03-08"
         dateModified="2026-06-09"
+      />
+      <SpeakableSchema
+        pageUrl="https://aifreetextpro.com/blog/turnitin-similarity-vs-ai-score"
+        pageName="Turnitin Similarity vs AI Score: What's the Difference?"
       />
 
 

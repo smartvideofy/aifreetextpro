@@ -1,3 +1,4 @@
+import { SpeakableSchema } from "@/components/SpeakableSchema";
 import { Link } from "react-router-dom";
 import { QuickAnswer } from "@/components/QuickAnswer";
 import { Helmet } from "react-helmet-async";
@@ -57,6 +58,10 @@ const AIHomeworkHelper = () => {
         description="Use AI for homework without getting caught. Top workflows, humanization tips, and detection test results for students in 2026."
         datePublished="2026-03-08"
         dateModified="2026-06-09"
+      />
+      <SpeakableSchema
+        pageUrl="https://aifreetextpro.com/blog/ai-homework-helper-undetectable"
+        pageName="AI Homework Helper That Won't Get Caught (2026)"
       />
 
 

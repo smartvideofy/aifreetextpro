@@ -1,3 +1,4 @@
+import ReviewedBy from "@/components/ReviewedBy";
 import { Link } from "react-router-dom";
 import { QuickAnswer } from "@/components/QuickAnswer";
 import { FAQSection } from "@/components/FAQSection";
@@ -121,6 +122,8 @@ const BypassWinstonAIDetection = () => {
               Winston AI is a widely used AI detection tool for academic, professional, and content verification purposes. Many students, writers, and professionals are searching for ways to reduce Winston AI detection scores without compromising content quality. This guide provides actionable strategies to humanize AI-generated text safely and effectively.
             </p>
           </header>
+
+          <ReviewedBy name="Dr. Sarah Chen" role="AI & Academic Integrity Researcher" slug="dr-sarah-chen" />
 
           <KeyTakeaways
             points={[

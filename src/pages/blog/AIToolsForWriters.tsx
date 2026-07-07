@@ -10,6 +10,8 @@ import { Link } from "react-router-dom";
 import { ArrowRight, Lightbulb, PenTool, Edit, Search, Shield, CheckCircle, Star } from "lucide-react";
 import { KeyTakeaways } from "@/components/KeyTakeaways";
 import { AuthorSchema } from "@/components/AuthorSchema";
+import { SpeakableSchema } from "@/components/SpeakableSchema";
+import ReviewedBy from "@/components/ReviewedBy";
 
 const relatedArticles = [
   {
@@ -193,6 +195,10 @@ export default function AIToolsForWriters() {
         datePublished="2026-02-02"
         dateModified="2026-06-09"
       />
+      <SpeakableSchema
+        pageUrl="https://aifreetextpro.com/blog/ai-tools-for-writers-2025"
+        pageName="Best AI Tools for Writers: Tested & Ranked [2026]"
+      />
 
 
       <div className="min-h-screen bg-background">
@@ -226,6 +232,8 @@ export default function AIToolsForWriters() {
                 />
 
             </header>
+
+            <ReviewedBy name="Dr. Sarah Chen" role="AI & Academic Integrity Researcher" slug="dr-sarah-chen" />
 
             <KeyTakeaways
               points={[

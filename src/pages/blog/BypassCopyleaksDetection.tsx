@@ -1,3 +1,4 @@
+import ReviewedBy from "@/components/ReviewedBy";
 import { Link } from "react-router-dom";
 import { QuickAnswer } from "@/components/QuickAnswer";
 import { FAQSection } from "@/components/FAQSection";
@@ -121,6 +122,8 @@ const BypassCopyleaksDetection = () => {
               AI content is everywhere, but platforms like Copyleaks are getting smarter. Students, writers, and professionals are searching for ways to reduce AI detection scores while maintaining natural, human-like writing. In this guide, we'll cover actionable strategies to bypass Copyleaks AI detection safely and effectively.
             </p>
           </header>
+
+          <ReviewedBy name="Dr. Sarah Chen" role="AI & Academic Integrity Researcher" slug="dr-sarah-chen" />
 
           <KeyTakeaways
             points={[

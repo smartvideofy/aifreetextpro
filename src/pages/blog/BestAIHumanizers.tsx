@@ -12,6 +12,7 @@ import { RelatedArticles } from "@/components/RelatedArticles";
 import { InternalLinks } from "@/components/InternalLinks";
 import { AuthorSchema } from "@/components/AuthorSchema";
 import { SpeakableSchema } from "@/components/SpeakableSchema";
+import ReviewedBy from "@/components/ReviewedBy";
 
 const BestAIHumanizers = () => {
 const relatedArticles = [
@@ -229,6 +230,8 @@ const relatedArticles = [
               We tested the top free AI humanizer tools in 2026 to help you choose the best AI text humanizer for converting robotic AI text into natural, authentic human writing. Here's our comprehensive comparison and expert recommendations.
             </p>
           </header>
+
+          <ReviewedBy name="Dr. Sarah Chen" role="AI & Academic Integrity Researcher" slug="dr-sarah-chen" />
 
           <KeyTakeaways 
             points={[

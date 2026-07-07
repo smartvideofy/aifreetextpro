@@ -1,3 +1,4 @@
+import { SpeakableSchema } from "@/components/SpeakableSchema";
 import { Link } from "react-router-dom";
 import { QuickAnswer } from "@/components/QuickAnswer";
 import { Helmet } from "react-helmet-async";
@@ -57,6 +58,10 @@ const AIGrantWriting = () => {
         description="Use AI to write stronger grant proposals without triggering reviewer AI detection. Section-by-section workflow for NIH, NSF, and foundation grants."
         datePublished="2026-03-08"
         dateModified="2026-06-09"
+      />
+      <SpeakableSchema
+        pageUrl="https://aifreetextpro.com/blog/ai-grant-writing"
+        pageName="AI for Grant Writing: Win Funding Without Detection (2026) | AI Free Text Pro"
       />
 
 

@@ -10,6 +10,8 @@ import { Link } from "react-router-dom";
 import { ArrowRight, Zap, Mail, Star, Lightbulb, CheckCircle, AlertTriangle, TrendingUp, Clock, Users } from "lucide-react";
 import { KeyTakeaways } from "@/components/KeyTakeaways";
 import { AuthorSchema } from "@/components/AuthorSchema";
+import { SpeakableSchema } from "@/components/SpeakableSchema";
+import ReviewedBy from "@/components/ReviewedBy";
 
 const relatedArticles = [
   {
@@ -159,6 +161,10 @@ export default function MasteringAIPoweredEmailCampaigns2026() {
         datePublished="2026-02-02"
         dateModified="2026-06-09"
       />
+      <SpeakableSchema
+        pageUrl="https://aifreetextpro.com/blog/mastering-ai-powered-email-campaigns-2026"
+        pageName="AI Email Campaigns: Higher Conversions [2026]"
+      />
 
 
       <div className="min-h-screen bg-background">
@@ -193,6 +199,8 @@ export default function MasteringAIPoweredEmailCampaigns2026() {
                 Discover practical strategies to leverage AI for creating engaging, high-converting email campaigns that feel personal at scale.
               </p>
             </header>
+
+            <ReviewedBy name="Dr. Sarah Chen" role="AI & Academic Integrity Researcher" slug="dr-sarah-chen" />
 
             <KeyTakeaways
               points={[

@@ -384,27 +384,32 @@ const PassAllDetectorsGuide = () => {
                   </div>
                 </div>
 
-                <h2>Common Questions</h2>
-                
-                <h3>Do I need to use a different tool for each detector?</h3>
-                <p>
-                  No. AI Free Text Pro works against all detectors because it addresses the fundamental patterns they all analyze. One tool, universal protection.
-                </p>
+              </div>
 
-                <h3>What if my content still gets flagged?</h3>
-                <p>
-                  That's what our money-back guarantee is for. If humanized content is flagged by any AI detector, we refund 100%, no questions asked. <Link to="/guarantee" className="text-primary hover:text-primary/80">See our guarantee details.</Link>
-                </p>
+              <FAQSection
+                title="Common Questions"
+                faqs={[
+                  {
+                    question: "Do I need to use a different tool for each detector?",
+                    answer: "No. AI Free Text Pro works against all detectors because it addresses the fundamental patterns they all analyze. One tool, universal protection."
+                  },
+                  {
+                    question: "What if my content still gets flagged?",
+                    answer: "That's what our money-back guarantee is for. If humanized content is flagged by any AI detector, we refund 100%, no questions asked."
+                  },
+                  {
+                    question: "Is this ethical?",
+                    answer: "Using AI as a writing assistant is increasingly normalized. If you're adding value, verifying facts, and not misrepresenting your work, AI assistance is a legitimate productivity tool."
+                  },
+                  {
+                    question: "How often does AI Free Text Pro update?",
+                    answer: "We continuously update our humanization algorithms to stay ahead of detector updates. When GPTZero or Originality.AI releases new models, we adjust within days."
+                  }
+                ]}
+              />
 
-                <h3>Is this ethical?</h3>
-                <p>
-                  Using AI as a writing assistant is increasingly normalized. Our position: if you're adding value, verifying facts, and not misrepresenting your work, AI assistance is a legitimate productivity tool. <Link to="/blog/bypass-ai-detection-ethical-tips" className="text-primary hover:text-primary/80">Read our guide on ethical AI use.</Link>
-                </p>
+              <div className="prose prose-lg max-w-none">
 
-                <h3>How often does AI Free Text Pro update?</h3>
-                <p>
-                  We continuously update our humanization algorithms to stay ahead of detector updates. When GPTZero or Originality.AI releases new models, we adjust within days.
-                </p>
 
                 <h2>Conclusion: Stop Worrying About Detection</h2>
                 <p>

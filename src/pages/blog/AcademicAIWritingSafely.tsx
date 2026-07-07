@@ -9,6 +9,7 @@ import Footer from "@/components/Footer";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { RelatedArticles } from "@/components/RelatedArticles";
 import { InternalLinks } from "@/components/InternalLinks";
+import { FAQSection } from "@/components/FAQSection";
 import { AuthorSchema } from "@/components/AuthorSchema";
 import { SpeakableSchema } from "@/components/SpeakableSchema";
 import ReviewedBy from "@/components/ReviewedBy";

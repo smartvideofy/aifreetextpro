@@ -1,3 +1,4 @@
+import { SpeakableSchema } from "@/components/SpeakableSchema";
 import { Link } from "react-router-dom";
 import { QuickAnswer } from "@/components/QuickAnswer";
 import { FAQSection } from "@/components/FAQSection";
@@ -126,6 +127,10 @@ const GPTinfComparison = () => {
         description="GPTinf vs AI Free Text Pro: we ran both on 100 essays. See bypass rates (78% vs 96%), pricing, and which one actually passes Turnitin."
         datePublished="2026-02-02"
         dateModified="2026-06-09"
+      />
+      <SpeakableSchema
+        pageUrl="https://aifreetextpro.com/blog/gptinf-vs-ai-free-text-pro"
+        pageName="GPTinf vs AI Free Text Pro: Tested [2026]"
       />
 
       <Navbar />

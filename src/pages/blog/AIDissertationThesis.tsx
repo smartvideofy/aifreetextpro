@@ -1,3 +1,4 @@
+import { SpeakableSchema } from "@/components/SpeakableSchema";
 import { Link } from "react-router-dom";
 import { QuickAnswer } from "@/components/QuickAnswer";
 import { Helmet } from "react-helmet-async";
@@ -63,6 +64,10 @@ const AIDissertationThesis = () => {
         description="How PhD and Masters students can use AI for dissertations. Chapter-by-chapter integration guide, detection risks, citation requirements, and advisor conversations."
         datePublished="2026-03-08"
         dateModified="2026-06-09"
+      />
+      <SpeakableSchema
+        pageUrl="https://aifreetextpro.com/blog/ai-dissertation-thesis"
+        pageName="AI for Dissertation & Thesis Writing (2026 Guide)"
       />
 
 

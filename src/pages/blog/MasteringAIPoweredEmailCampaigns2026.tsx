@@ -10,6 +10,7 @@ import { Link } from "react-router-dom";
 import { ArrowRight, Zap, Mail, Star, Lightbulb, CheckCircle, AlertTriangle, TrendingUp, Clock, Users } from "lucide-react";
 import { KeyTakeaways } from "@/components/KeyTakeaways";
 import { AuthorSchema } from "@/components/AuthorSchema";
+import { SpeakableSchema } from "@/components/SpeakableSchema";
 
 const relatedArticles = [
   {
@@ -158,6 +159,10 @@ export default function MasteringAIPoweredEmailCampaigns2026() {
         description="Craft high-converting email campaigns with AI in 2026. Practical strategies, tool recommendations, and tested templates that drive results."
         datePublished="2026-02-02"
         dateModified="2026-06-09"
+      />
+      <SpeakableSchema
+        pageUrl="https://aifreetextpro.com/blog/mastering-ai-powered-email-campaigns-2026"
+        pageName="AI Email Campaigns: Higher Conversions [2026]"
       />
 
 

@@ -1,3 +1,4 @@
+import { SpeakableSchema } from "@/components/SpeakableSchema";
 import { Link } from "react-router-dom";
 import { QuickAnswer } from "@/components/QuickAnswer";
 import { FAQSection } from "@/components/FAQSection";
@@ -59,6 +60,10 @@ const UndetectableAIvsAIFreeTextPro = () => {
         description="Side-by-side comparison of Undetectable AI and AI Free Text Pro on pricing, bypass rate, and quality."
         datePublished="2026-05-20"
         dateModified="2026-06-09"
+      />
+      <SpeakableSchema
+        pageUrl="https://aifreetextpro.com/blog/undetectable-ai-vs-ai-free-text-pro"
+        pageName="Undetectable AI vs AI Free Text Pro (2026)"
       />
 
 

@@ -1,3 +1,4 @@
+import { SpeakableSchema } from "@/components/SpeakableSchema";
 import { Link } from "react-router-dom";
 import { QuickAnswer } from "@/components/QuickAnswer";
 import { Helmet } from "react-helmet-async";
@@ -105,6 +106,10 @@ export default function RemoveAIDetection() {
         description="Learn 5 proven methods to remove AI detection from text. Free manual techniques plus instant tools that reduce AI flags on Turnitin, GPTZero, and more."
         datePublished="2026-03-05"
         dateModified="2026-06-09"
+      />
+      <SpeakableSchema
+        pageUrl="https://aifreetextpro.com/blog/remove-ai-detection-from-text"
+        pageName="Remove AI Detection from Text (Free Methods) | 2026"
       />
 
 

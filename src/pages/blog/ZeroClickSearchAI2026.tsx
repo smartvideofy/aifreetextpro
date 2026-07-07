@@ -1,3 +1,4 @@
+import { SpeakableSchema } from "@/components/SpeakableSchema";
 ﻿import { Helmet } from "react-helmet-async";
 import { QuickAnswer } from "@/components/QuickAnswer";
 import Navbar from "@/components/Navbar";
@@ -102,6 +103,10 @@ export default function ZeroClickSearchAI2026() {
         description="65% of searches end without a click. Learn strategies to capture traffic and authority from AI Overviews, featured snippets, and knowledge panels."
         datePublished="2026-02-02"
         dateModified="2026-06-09"
+      />
+      <SpeakableSchema
+        pageUrl="https://aifreetextpro.com/blog/zero-click-search-ai-2026"
+        pageName="Zero-Click SEO: Win Traffic in 2026"
       />
 
 

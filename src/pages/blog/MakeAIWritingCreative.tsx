@@ -1,3 +1,4 @@
+import { SpeakableSchema } from "@/components/SpeakableSchema";
 import { Link } from "react-router-dom";
 import { QuickAnswer } from "@/components/QuickAnswer";
 import { Helmet } from "react-helmet-async";
@@ -64,6 +65,10 @@ const MakeAIWritingCreative = () => {
         description="Transform generic AI text into creative, original writing. 12 techniques for adding voice, style, and originality to AI-generated content in 2026."
         datePublished="2026-03-08"
         dateModified="2026-06-09"
+      />
+      <SpeakableSchema
+        pageUrl="https://aifreetextpro.com/blog/make-ai-writing-creative"
+        pageName="How to Make AI Writing More Creative and Original | AI Free Text Pro"
       />
 
 

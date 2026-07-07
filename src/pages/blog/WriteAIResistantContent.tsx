@@ -10,6 +10,7 @@ import { Link } from "react-router-dom";
 import { ArrowRight, Brain, Search, Zap } from "lucide-react";
 import { KeyTakeaways } from "@/components/KeyTakeaways";
 import { AuthorSchema } from "@/components/AuthorSchema";
+import { SpeakableSchema } from "@/components/SpeakableSchema";
 import { PostHowToSchema } from "@/components/PostHowToSchema";
 
 const relatedArticles = [
@@ -133,6 +134,10 @@ export default function WriteAIResistantContent() {
         description="Advanced techniques to make content AI-resistant while staying authentic and engaging. 6-step humanization workflow with real examples."
         datePublished="2026-02-02"
         dateModified="2026-06-09"
+      />
+      <SpeakableSchema
+        pageUrl="https://aifreetextpro.com/blog/write-ai-resistant-content"
+        pageName="Write AI-Resistant Content: 6-Step Method [2026]"
       />
 
 

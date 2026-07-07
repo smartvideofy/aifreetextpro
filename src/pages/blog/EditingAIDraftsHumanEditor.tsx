@@ -11,6 +11,7 @@ import { RelatedArticles } from "@/components/RelatedArticles";
 import { Button } from "@/components/ui/button";
 import { InternalLinks } from "@/components/InternalLinks";
 import { AuthorSchema } from "@/components/AuthorSchema";
+import { SpeakableSchema } from "@/components/SpeakableSchema";
 import { PostHowToSchema } from "@/components/PostHowToSchema";
 
 const relatedArticles = [
@@ -121,6 +122,10 @@ const EditingAIDraftsHumanEditor = () => {
         description="Professional editing techniques to transform AI drafts into polished, publication-ready content. Make every piece read authentically human."
         datePublished="2026-02-02"
         dateModified="2026-06-09"
+      />
+      <SpeakableSchema
+        pageUrl="https://aifreetextpro.com/blog/editing-ai-drafts-human-editor"
+        pageName="Edit AI Drafts Like a Pro Editor [2026 Tips]"
       />
 
 

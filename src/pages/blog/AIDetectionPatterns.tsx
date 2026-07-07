@@ -1,3 +1,4 @@
+import { SpeakableSchema } from "@/components/SpeakableSchema";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Calendar, Clock, ArrowLeft, Brain, BarChart3, AlertTriangle, Lightbulb } from "lucide-react";
@@ -83,6 +84,10 @@ const AIDetectionPatterns = () => {
         description="5 exact patterns AI detectors check (with examples). Fix each one in under 5 minutes. Tested on Turnitin, GPTZero, and Originality.AI."
         datePublished="2026-02-02"
         dateModified="2026-06-09"
+      />
+      <SpeakableSchema
+        pageUrl="https://aifreetextpro.com/blog/ai-detection-patterns-explained"
+        pageName="5 Patterns AI Detectors Flag [And How to Fix Them]"
       />
 
       <Navbar />

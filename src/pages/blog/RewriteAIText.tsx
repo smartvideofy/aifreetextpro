@@ -1,3 +1,4 @@
+import { SpeakableSchema } from "@/components/SpeakableSchema";
 import { Link } from "react-router-dom";
 import { QuickAnswer } from "@/components/QuickAnswer";
 import { Helmet } from "react-helmet-async";
@@ -65,6 +66,10 @@ const RewriteAIText = () => {
         description="Step-by-step guide to rewriting AI text so it sounds human. 7 techniques, before/after examples, and tools that work in 2026."
         datePublished="2026-03-08"
         dateModified="2026-06-09"
+      />
+      <SpeakableSchema
+        pageUrl="https://aifreetextpro.com/blog/rewrite-ai-text-sound-human"
+        pageName="How to Rewrite AI Text to Sound Human (2026)"
       />
 
 

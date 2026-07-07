@@ -10,6 +10,7 @@ import { Link } from "react-router-dom";
 import { ArrowRight, Lightbulb, PenTool, Edit, Search, Shield, CheckCircle, Star } from "lucide-react";
 import { KeyTakeaways } from "@/components/KeyTakeaways";
 import { AuthorSchema } from "@/components/AuthorSchema";
+import { SpeakableSchema } from "@/components/SpeakableSchema";
 
 const relatedArticles = [
   {
@@ -192,6 +193,10 @@ export default function AIToolsForWriters() {
         description="We tested 15+ AI writing tools for creativity, speed, and quality. See which ones help writers plan, draft, and refine content fastest."
         datePublished="2026-02-02"
         dateModified="2026-06-09"
+      />
+      <SpeakableSchema
+        pageUrl="https://aifreetextpro.com/blog/ai-tools-for-writers-2025"
+        pageName="Best AI Tools for Writers: Tested & Ranked [2026]"
       />
 
 

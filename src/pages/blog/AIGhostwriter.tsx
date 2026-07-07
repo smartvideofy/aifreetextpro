@@ -1,3 +1,4 @@
+import { SpeakableSchema } from "@/components/SpeakableSchema";
 import { Link } from "react-router-dom";
 import { QuickAnswer } from "@/components/QuickAnswer";
 import { Helmet } from "react-helmet-async";
@@ -63,6 +64,10 @@ const AIGhostwriter = () => {
         description="Build an AI ghostwriting business that delivers undetectable, voice-matched content. Workflow, pricing strategy, and detection-proof process for professionals."
         datePublished="2026-03-08"
         dateModified="2026-06-09"
+      />
+      <SpeakableSchema
+        pageUrl="https://aifreetextpro.com/blog/ai-ghostwriter"
+        pageName="AI Ghostwriter: Professional Content Without Detection"
       />
 
 

@@ -12,6 +12,7 @@ import InternalLinks from "@/components/InternalLinks";
 import ReviewedBy from "@/components/ReviewedBy";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { AuthorSchema } from "@/components/AuthorSchema";
+import { SpeakableSchema } from "@/components/SpeakableSchema";
 
 const relatedArticles = [
   { title: "AI Instagram Captions That Sound Human", description: "Create engaging Instagram captions with AI that bypass detection.", href: "/blog/ai-instagram-captions", category: "Social Media" },
@@ -86,6 +87,10 @@ const AITwitterThreadGenerator = () => {
         description="Create X/Twitter threads with AI that sound authentically human. Thread templates, prompt strategies, and humanization workflows for viral content."
         datePublished="2026-03-09"
         dateModified="2026-06-09"
+      />
+      <SpeakableSchema
+        pageUrl="https://aifreetextpro.com/blog/ai-twitter-thread-generator"
+        pageName="AI Twitter Thread Generator That Sounds Human (2026) | AI Free Text Pro"
       />
 
 

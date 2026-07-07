@@ -1,3 +1,4 @@
+import { SpeakableSchema } from "@/components/SpeakableSchema";
 import { Link } from "react-router-dom";
 import { QuickAnswer } from "@/components/QuickAnswer";
 import { FAQSection } from "@/components/FAQSection";
@@ -80,6 +81,10 @@ const AIHumanizationPitfalls = () => {
         description="Most writers make these 7 humanization mistakes. Learn what kills AI content quality and how to fix each one with expert-tested techniques."
         datePublished="2026-02-02"
         dateModified="2026-06-09"
+      />
+      <SpeakableSchema
+        pageUrl="https://aifreetextpro.com/blog/ai-humanization-pitfalls"
+        pageName="7 AI Humanization Mistakes to Avoid [2026]"
       />
 
 

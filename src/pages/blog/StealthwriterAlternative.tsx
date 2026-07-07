@@ -1,3 +1,4 @@
+import { SpeakableSchema } from "@/components/SpeakableSchema";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { Calendar, Clock, ArrowLeft, BookOpen } from "lucide-react";
@@ -52,6 +53,10 @@ const StealthwriterAlternative = () => {
         description="Best Stealthwriter alternative tested: AI Free Text Pro hits 95% bypass vs Stealthwriter's 86%, with better readability and a free tier (no sign-up)."
         datePublished="2026-05-09"
         dateModified="2026-06-09"
+      />
+      <SpeakableSchema
+        pageUrl="https://aifreetextpro.com/blog/stealthwriter-alternative"
+        pageName="Best Stealthwriter Alternative 2026: 95% vs 86% Tested"
       />
 
 

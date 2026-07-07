@@ -1,3 +1,4 @@
+import { SpeakableSchema } from "@/components/SpeakableSchema";
 import { Link } from "react-router-dom";
 import { QuickAnswer } from "@/components/QuickAnswer";
 import { Helmet } from "react-helmet-async";
@@ -74,6 +75,10 @@ const ChatGPTPlusDetection = () => {
         description="We tested ChatGPT Plus, Pro, and free tier against 5 AI detectors. Paying for ChatGPT does not make your text less detectable. Real 2026 test data inside."
         datePublished="2026-03-08"
         dateModified="2026-06-09"
+      />
+      <SpeakableSchema
+        pageUrl="https://aifreetextpro.com/blog/chatgpt-plus-detection"
+        pageName="Does ChatGPT Plus Bypass AI Detection? (2026 Test Results) | AI Free Text Pro"
       />
 
 

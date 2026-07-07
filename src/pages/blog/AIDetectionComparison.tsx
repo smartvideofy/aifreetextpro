@@ -1,3 +1,4 @@
+import { SpeakableSchema } from "@/components/SpeakableSchema";
 import { Link } from "react-router-dom";
 import { QuickAnswer } from "@/components/QuickAnswer";
 import { FAQSection } from "@/components/FAQSection";
@@ -85,6 +86,10 @@ const AIDetectionComparison = () => {
         description="Real-world accuracy test: GPTZero vs AI Free Text Pro vs Rewritify. See which AI detector wins on accuracy, speed, and false positive rates."
         datePublished="2026-02-02"
         dateModified="2026-06-09"
+      />
+      <SpeakableSchema
+        pageUrl="https://aifreetextpro.com/blog/ai-detection-tools-compared-2025"
+        pageName="AI Detectors Compared: GPTZero vs AFTP (2026)"
       />
 
       <Navbar />

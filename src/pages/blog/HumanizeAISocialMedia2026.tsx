@@ -10,6 +10,7 @@ import { Link } from "react-router-dom";
 import { ArrowRight, Brain, Lightbulb, CheckCircle, AlertTriangle, Instagram, Twitter, MessageCircle } from "lucide-react";
 import { KeyTakeaways } from "@/components/KeyTakeaways";
 import { AuthorSchema } from "@/components/AuthorSchema";
+import { SpeakableSchema } from "@/components/SpeakableSchema";
 
 const relatedArticles = [
   {
@@ -158,6 +159,10 @@ export default function HumanizeAISocialMedia2026() {
         description="Turn AI posts into engaging social media content. Platform-specific tips for LinkedIn, Instagram, TikTok, and X that boost engagement."
         datePublished="2026-02-02"
         dateModified="2026-06-09"
+      />
+      <SpeakableSchema
+        pageUrl="https://aifreetextpro.com/blog/humanize-ai-social-media-2026"
+        pageName="Humanize AI for Social Media [2026 Tips]"
       />
 
 

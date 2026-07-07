@@ -1,3 +1,4 @@
+import { SpeakableSchema } from "@/components/SpeakableSchema";
 import { Link } from "react-router-dom";
 import { QuickAnswer } from "@/components/QuickAnswer";
 import { Helmet } from "react-helmet-async";
@@ -57,6 +58,10 @@ const AIEssayChecker = () => {
         description="Check your essay for AI detection before submitting. Compare 7 free AI essay checkers, learn what scores mean, and understand how to revise flagged content."
         datePublished="2026-03-08"
         dateModified="2026-06-09"
+      />
+      <SpeakableSchema
+        pageUrl="https://aifreetextpro.com/blog/ai-essay-checker"
+        pageName="Best AI Essay Checker: Self-Check Before You Submit (2026) | AI Free Text Pro"
       />
 
 

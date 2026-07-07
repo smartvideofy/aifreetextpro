@@ -10,6 +10,7 @@ import { Link } from "react-router-dom";
 import { ArrowRight, MapPin, Camera, Compass, AlertTriangle, CheckCircle, Lightbulb } from "lucide-react";
 import { KeyTakeaways } from "@/components/KeyTakeaways";
 import { AuthorSchema } from "@/components/AuthorSchema";
+import { SpeakableSchema } from "@/components/SpeakableSchema";
 
 const relatedArticles = [
   {
@@ -155,6 +156,10 @@ export default function AIHumanizerTravelBlogs() {
         description="Craft travel blogs with AI tools while keeping your authentic voice. Real workflows for engaging travel content that feels personal, not robotic."
         datePublished="2026-02-02"
         dateModified="2026-06-09"
+      />
+      <SpeakableSchema
+        pageUrl="https://aifreetextpro.com/blog/ai-humanizer-travel-blogs"
+        pageName="Write Travel Blogs with AI: Keep Your Voice"
       />
 
 

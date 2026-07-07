@@ -1,3 +1,4 @@
+import { SpeakableSchema } from "@/components/SpeakableSchema";
 import { Link } from "react-router-dom";
 import { QuickAnswer } from "@/components/QuickAnswer";
 import { Helmet } from "react-helmet-async";
@@ -57,6 +58,10 @@ const TurnitinAIDetectionAccuracy = () => {
         description="Real-world Turnitin AI detection accuracy across GPT-5, Claude, and Gemini with false-positive benchmarks."
         datePublished="2026-05-15"
         dateModified="2026-06-09"
+      />
+      <SpeakableSchema
+        pageUrl="https://aifreetextpro.com/blog/turnitin-ai-detection-accuracy"
+        pageName="Turnitin AI Detection Accuracy (2026)"
       />
 
 

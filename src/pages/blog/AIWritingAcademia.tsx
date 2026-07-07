@@ -10,6 +10,7 @@ import { Link } from "react-router-dom";
 import { ArrowRight, GraduationCap, Shield, AlertTriangle, CheckCircle, Lightbulb, BookOpen, Scale } from "lucide-react";
 import { KeyTakeaways } from "@/components/KeyTakeaways";
 import { AuthorSchema } from "@/components/AuthorSchema";
+import { SpeakableSchema } from "@/components/SpeakableSchema";
 
 const relatedArticles = [
   {
@@ -135,6 +136,10 @@ export default function AIWritingAcademia() {
         description="Use AI for research papers, essays, and thesis writing without risking academic integrity. Responsible strategies that keep your work authentic."
         datePublished="2026-02-02"
         dateModified="2026-06-09"
+      />
+      <SpeakableSchema
+        pageUrl="https://aifreetextpro.com/blog/ai-writing-in-academia-undetected"
+        pageName="AI Writing in Academia: Use It Responsibly [2026]"
       />
 
 

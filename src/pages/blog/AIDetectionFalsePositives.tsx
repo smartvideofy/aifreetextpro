@@ -1,3 +1,4 @@
+import { SpeakableSchema } from "@/components/SpeakableSchema";
 import { Link } from "react-router-dom";
 import { QuickAnswer } from "@/components/QuickAnswer";
 import { Helmet } from "react-helmet-async";
@@ -63,6 +64,10 @@ const AIDetectionFalsePositives = () => {
         description="AI detection false positives are flagging human-written text at alarming rates. Learn why it happens, who is most affected, and how to protect yourself."
         datePublished="2026-02-25"
         dateModified="2026-06-09"
+      />
+      <SpeakableSchema
+        pageUrl="https://aifreetextpro.com/blog/ai-detection-false-positives"
+        pageName="AI Detection False Positives: Why Your Human Writing Gets Flagged"
       />
 
 

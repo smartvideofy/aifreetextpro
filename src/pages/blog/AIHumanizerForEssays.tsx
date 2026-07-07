@@ -1,3 +1,4 @@
+import { SpeakableSchema } from "@/components/SpeakableSchema";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { Calendar, Clock, ArrowLeft, BookOpen } from "lucide-react";
@@ -51,6 +52,10 @@ const AIHumanizerForEssays = () => {
         description="AI humanizer for essays that reduces false flags on Turnitin and GPTZero while preserving meaning. Step-by-step workflow, free tier, no sign-up needed."
         datePublished="2026-05-09"
         dateModified="2026-06-09"
+      />
+      <SpeakableSchema
+        pageUrl="https://aifreetextpro.com/blog/ai-humanizer-for-essays"
+        pageName="AI Humanizer for Essays 2026: Pass Turnitin Easily"
       />
 
 

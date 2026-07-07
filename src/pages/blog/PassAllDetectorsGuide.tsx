@@ -1,3 +1,4 @@
+import { SpeakableSchema } from "@/components/SpeakableSchema";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Calendar, Clock, ArrowLeft, Shield, CheckCircle, Trophy, Zap } from "lucide-react";
@@ -90,6 +91,10 @@ const PassAllDetectorsGuide = () => {
         description="Pass GPTZero, Turnitin, Originality.AI, ZeroGPT, and Copyleaks with one workflow. Step-by-step guide with tested results."
         datePublished="2026-02-02"
         dateModified="2026-06-09"
+      />
+      <SpeakableSchema
+        pageUrl="https://aifreetextpro.com/blog/pass-all-ai-detectors-guide"
+        pageName="Pass All AI Detectors: Step-by-Step Guide [2026]"
       />
 
       <Navbar />

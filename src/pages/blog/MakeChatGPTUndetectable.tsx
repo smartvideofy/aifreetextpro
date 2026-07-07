@@ -1,3 +1,4 @@
+import { SpeakableSchema } from "@/components/SpeakableSchema";
 import { Link } from "react-router-dom";
 import { QuickAnswer } from "@/components/QuickAnswer";
 import { Button } from "@/components/ui/button";
@@ -116,6 +117,10 @@ const MakeChatGPTUndetectable = () => {
         description="Fastest methods to make ChatGPT writing sound natural and human-like. Create authentic, high-quality AI-assisted content that readers trust."
         datePublished="2026-02-02"
         dateModified="2026-06-09"
+      />
+      <SpeakableSchema
+        pageUrl="https://aifreetextpro.com/blog/make-chatgpt-undetectable-2025"
+        pageName="Make AI Writing Sound Human: Full Guide [2026]"
       />
 
       <Navbar />

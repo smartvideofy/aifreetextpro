@@ -1,3 +1,4 @@
+import { SpeakableSchema } from "@/components/SpeakableSchema";
 import { Link } from "react-router-dom";
 import { QuickAnswer } from "@/components/QuickAnswer";
 import { Helmet } from "react-helmet-async";
@@ -78,6 +79,10 @@ const AIInstagramCaptions = () => {
         description="Write Instagram captions with AI that actually sound like you. 20 prompt templates, humanization tips, and before/after engagement data for every niche."
         datePublished="2026-03-08"
         dateModified="2026-06-09"
+      />
+      <SpeakableSchema
+        pageUrl="https://aifreetextpro.com/blog/ai-instagram-captions"
+        pageName="AI Instagram Captions: Engaging Posts That Sound Human"
       />
 
 

@@ -1,3 +1,4 @@
+import { SpeakableSchema } from "@/components/SpeakableSchema";
 import { Link } from "react-router-dom";
 import { QuickAnswer } from "@/components/QuickAnswer";
 import { Helmet } from "react-helmet-async";
@@ -124,6 +125,10 @@ const AIWritingNonNativeEnglish = () => {
         description="Why non-native English writing triggers false AI flags, and how to protect yourself: detector accuracy data, grammar-tool risks, and ESL strategies."
         datePublished="2026-04-08"
         dateModified="2026-06-09"
+      />
+      <SpeakableSchema
+        pageUrl="https://aifreetextpro.com/blog/ai-writing-non-native-english-speakers"
+        pageName="AI Writing for Non-Native English Speakers (2026)"
       />
 
 

@@ -1,3 +1,4 @@
+import { SpeakableSchema } from "@/components/SpeakableSchema";
 import { Helmet } from "react-helmet-async";
 import { QuickAnswer } from "@/components/QuickAnswer";
 import Navbar from "@/components/Navbar";
@@ -97,6 +98,10 @@ export default function AICreativityOriginality() {
         description="How AI assists creativity without replacing it. What 'original' really means in the era of ChatGPT, and how to keep your work unique."
         datePublished="2026-02-02"
         dateModified="2026-06-09"
+      />
+      <SpeakableSchema
+        pageUrl="https://aifreetextpro.com/blog/can-ai-writing-be-original"
+        pageName="Can AI Writing Be Truly Original? [2026 Analysis]"
       />
 
 

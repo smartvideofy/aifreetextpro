@@ -1,3 +1,4 @@
+import { SpeakableSchema } from "@/components/SpeakableSchema";
 ﻿import { Helmet } from "react-helmet-async";
 import { QuickAnswer } from "@/components/QuickAnswer";
 import Navbar from "@/components/Navbar";
@@ -108,6 +109,10 @@ export default function HumanizeAITravelBlogs() {
         description="Step-by-step techniques to humanize AI travel content. Keep your unique voice and storytelling style while writing faster."
         datePublished="2026-02-02"
         dateModified="2026-06-09"
+      />
+      <SpeakableSchema
+        pageUrl="https://aifreetextpro.com/blog/humanize-ai-travel-blogs"
+        pageName="Humanize AI Travel Blog Content [2026 Guide]"
       />
 
 

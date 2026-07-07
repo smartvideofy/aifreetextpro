@@ -10,6 +10,7 @@ import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { RelatedArticles } from "@/components/RelatedArticles";
 import { InternalLinks } from "@/components/InternalLinks";
 import { AuthorSchema } from "@/components/AuthorSchema";
+import { SpeakableSchema } from "@/components/SpeakableSchema";
 
 const relatedArticles = [
   {
@@ -121,6 +122,10 @@ const AcademicAIWritingSafely = () => {
         description="Use AI responsibly for academic writing without risking integrity. Ethical boundaries, safe workflows, and expert tips for thesis and essays."
         datePublished="2026-02-02"
         dateModified="2026-06-09"
+      />
+      <SpeakableSchema
+        pageUrl="https://aifreetextpro.com/blog/academic-ai-writing-safely"
+        pageName="Use AI for Thesis & Essays Safely [2026 Guide]"
       />
 
       <Navbar />

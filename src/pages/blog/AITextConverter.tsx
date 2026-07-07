@@ -12,6 +12,7 @@ import { FAQSection } from "@/components/FAQSection";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { ArrowLeft, Calendar, Clock, User } from "lucide-react";
 import { AuthorSchema } from "@/components/AuthorSchema";
+import { SpeakableSchema } from "@/components/SpeakableSchema";
 
 const relatedArticles = [
   { title: "Humanize AI Text Without Losing Your Voice", description: "Keep your unique writing style while removing AI signals.", href: "/blog/humanize-ai-text-without-losing-voice", category: "How-To Guide" },
@@ -73,6 +74,10 @@ const AITextConverter = () => {
         description="Convert AI-generated text to human writing instantly. Compare the top 5 AI text converters with detection test results and step-by-step guide."
         datePublished="2026-03-08"
         dateModified="2026-06-09"
+      />
+      <SpeakableSchema
+        pageUrl="https://aifreetextpro.com/blog/ai-text-converter"
+        pageName="AI Text Converter: AI to Human Writing Instantly"
       />
 
 

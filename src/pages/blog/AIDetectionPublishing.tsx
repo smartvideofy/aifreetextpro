@@ -1,3 +1,4 @@
+import { SpeakableSchema } from "@/components/SpeakableSchema";
 import { Helmet } from "react-helmet-async";
 import { QuickAnswer } from "@/components/QuickAnswer";
 import Navbar from "@/components/Navbar";
@@ -91,6 +92,10 @@ export default function AIDetectionPublishing() {
         description="How editors and publishers handle AI content in 2026. Practical strategies for writers navigating disclosure policies and AI guidelines."
         datePublished="2026-02-02"
         dateModified="2026-06-09"
+      />
+      <SpeakableSchema
+        pageUrl="https://aifreetextpro.com/blog/ai-detection-in-publishing-2025"
+        pageName="AI Detection in Publishing: Writer's Guide [2026]"
       />
 
 

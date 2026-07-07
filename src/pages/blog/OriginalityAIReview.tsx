@@ -1,3 +1,4 @@
+import { SpeakableSchema } from "@/components/SpeakableSchema";
 import { Link } from "react-router-dom";
 import { QuickAnswer } from "@/components/QuickAnswer";
 import { Button } from "@/components/ui/button";
@@ -103,6 +104,10 @@ const OriginalityAIReview = () => {
         description="Full Originality.AI review covering accuracy, pricing, and how to reduce false flags ethically in 2026."
         datePublished="2026-05-15"
         dateModified="2026-06-09"
+      />
+      <SpeakableSchema
+        pageUrl="https://aifreetextpro.com/blog/originality-ai-review-how-to-beat"
+        pageName="Originality.AI Review (2026)"
       />
 
       <Navbar />

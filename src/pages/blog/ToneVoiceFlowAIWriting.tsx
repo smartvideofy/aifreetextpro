@@ -1,3 +1,4 @@
+import { SpeakableSchema } from "@/components/SpeakableSchema";
 import { Helmet } from "react-helmet-async";
 import { QuickAnswer } from "@/components/QuickAnswer";
 import { FAQSection } from "@/components/FAQSection";
@@ -76,6 +77,10 @@ const ToneVoiceFlowAIWriting = () => {
         description="Master the 3 pillars of great writing with AI tools. Keep your tone, voice, and flow natural even when using ChatGPT or other AI assistants."
         datePublished="2026-02-02"
         dateModified="2026-06-09"
+      />
+      <SpeakableSchema
+        pageUrl="https://aifreetextpro.com/blog/tone-voice-flow-ai-writing"
+        pageName="Tone, Voice & Flow in AI Writing [2026 Guide]"
       />
 
 

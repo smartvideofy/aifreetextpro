@@ -1,3 +1,4 @@
+import { SpeakableSchema } from "@/components/SpeakableSchema";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { QuickAnswer } from "@/components/QuickAnswer";
@@ -73,6 +74,10 @@ const FreeAIContentDetector = () => {
         description="The best free AI content detectors of 2026, accuracy benchmarks, and when paid tools are worth it."
         datePublished="2026-05-12"
         dateModified="2026-06-09"
+      />
+      <SpeakableSchema
+        pageUrl="https://aifreetextpro.com/blog/free-ai-content-detector"
+        pageName="Free AI Content Detector (2026)"
       />
 
 

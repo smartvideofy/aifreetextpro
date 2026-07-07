@@ -1,3 +1,4 @@
+import { SpeakableSchema } from "@/components/SpeakableSchema";
 import { Link } from "react-router-dom";
 import { QuickAnswer } from "@/components/QuickAnswer";
 import { Helmet } from "react-helmet-async";
@@ -74,6 +75,10 @@ const AIMedicalScientificWriting = () => {
         description="Use AI for medical and scientific writing without risking journal acceptance. Journal policies, detection risks, and ethical frameworks explained."
         datePublished="2026-03-08"
         dateModified="2026-06-09"
+      />
+      <SpeakableSchema
+        pageUrl="https://aifreetextpro.com/blog/ai-medical-scientific-writing"
+        pageName="AI for Medical & Scientific Writing: A Researcher's Guide (2026) | AI Free Text Pro"
       />
 
 

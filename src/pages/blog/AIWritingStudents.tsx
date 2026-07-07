@@ -10,6 +10,7 @@ import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { RelatedArticles } from "@/components/RelatedArticles";
 import { InternalLinks } from "@/components/InternalLinks";
 import { AuthorSchema } from "@/components/AuthorSchema";
+import { SpeakableSchema } from "@/components/SpeakableSchema";
 
 const relatedArticles = [
   {
@@ -178,6 +179,10 @@ const AIWritingStudents = () => {
         description="Use AI writing assistants safely in academia. Avoid plagiarism flags and AI detection while maintaining academic integrity."
         datePublished="2026-02-02"
         dateModified="2026-06-09"
+      />
+      <SpeakableSchema
+        pageUrl="https://aifreetextpro.com/blog/ai-writing-students-avoid-plagiarism"
+        pageName="AI Writing for Students: Stay Ethical (2026)"
       />
 
       <Navbar />

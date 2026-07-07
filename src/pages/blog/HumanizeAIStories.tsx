@@ -1,3 +1,4 @@
+import { SpeakableSchema } from "@/components/SpeakableSchema";
 ﻿import { Helmet } from "react-helmet-async";
 import { QuickAnswer } from "@/components/QuickAnswer";
 import Navbar from "@/components/Navbar";
@@ -98,6 +99,10 @@ export default function HumanizeAIStories() {
         description="Transform AI-generated stories into human-like narratives readers love. Add emotional depth, dialogue, and sensory details that captivate."
         datePublished="2026-02-02"
         dateModified="2026-06-09"
+      />
+      <SpeakableSchema
+        pageUrl="https://aifreetextpro.com/blog/humanize-ai-generated-stories-fiction"
+        pageName="Humanize AI Stories & Fiction [2026 Guide]"
       />
 
 

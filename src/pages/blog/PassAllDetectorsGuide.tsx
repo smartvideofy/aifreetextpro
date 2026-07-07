@@ -13,6 +13,7 @@ import { InternalLinks } from "@/components/InternalLinks";
 import { AuthorSchema } from "@/components/AuthorSchema";
 import { PostHowToSchema } from "@/components/PostHowToSchema";
 import { QuickAnswer } from "@/components/QuickAnswer";
+import { FAQSection } from "@/components/FAQSection";
 
 const relatedArticles = [
   {

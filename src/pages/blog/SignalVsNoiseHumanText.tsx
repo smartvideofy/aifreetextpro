@@ -84,7 +84,7 @@ const SignalVsNoiseHumanText = () => {
       />
       <SpeakableSchema
         pageUrl="https://aifreetextpro.com/blog/signal-vs-noise-human-text"
-        pageName="What Makes Text \"Human\"? Signal vs Noise [2026]"
+        pageName={`What Makes Text "Human"? Signal vs Noise [2026]`}
       />
 
 

@@ -420,22 +420,28 @@ const AcademicAIWritingSafely = () => {
                   </table>
                 </div>
 
-                <h2>Common Questions</h2>
+              </div>
 
-                <h3>Is using AI humanizers "cheating"?</h3>
-                <p>
-                  It depends on context and institutional policy. If your institution prohibits AI-generated content and you use AI to write and then humanize that content, that would violate integrity policies. However, using humanizers to refine your own writing or ensure your human-written content doesn't trigger false positives is generally acceptable.
-                </p>
+              <FAQSection
+                title="Common Questions"
+                faqs={[
+                  {
+                    question: 'Is using AI humanizers "cheating"?',
+                    answer: "It depends on context and institutional policy. If your institution prohibits AI-generated content and you use AI to write and then humanize that content, that would violate integrity policies. Using humanizers to refine your own writing or ensure your human-written content doesn't trigger false positives is generally acceptable."
+                  },
+                  {
+                    question: "Can Turnitin detect humanized AI content?",
+                    answer: "Turnitin's AI detection has limitations. Properly humanized content typically passes, but the goal shouldn't be to beat detection. It should be to ensure your legitimate work isn't wrongly flagged."
+                  },
+                  {
+                    question: "Should I tell my professor I used AI?",
+                    answer: "Follow your institution's disclosure requirements. When in doubt, transparency is always the safer choice. Many professors appreciate honesty about AI use, especially when it's used as a learning tool rather than a shortcut."
+                  }
+                ]}
+              />
 
-                <h3>Can Turnitin detect humanized AI content?</h3>
-                <p>
-                  Turnitin's AI detection has limitations. Properly humanized content typically passes, but the goal shouldn't be to "beat" detection. It should be to ensure your legitimate work isn't wrongly flagged. <Link to="/bypass-turnitin-ai-detection" className="text-primary hover:text-primary/80">Learn more about Turnitin AI detection.</Link>
-                </p>
+              <div className="prose prose-lg max-w-none">
 
-                <h3>Should I tell my professor I used AI?</h3>
-                <p>
-                  Follow your institution's disclosure requirements. When in doubt, transparency is always the safer choice. Many professors appreciate honesty about AI use, especially when it's used as a learning tool rather than a shortcut.
-                </p>
 
                 <h2>Conclusion: AI as a Learning Tool</h2>
                 <p>

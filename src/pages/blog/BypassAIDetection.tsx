@@ -11,6 +11,7 @@ import { KeyTakeaways } from "@/components/KeyTakeaways";
 import { AuthorSchema } from "@/components/AuthorSchema";
 import { SpeakableSchema } from "@/components/SpeakableSchema";
 import ReviewedBy from "@/components/ReviewedBy";
+import { QuickAnswer } from "@/components/QuickAnswer";
 
 const relatedArticles = [
   {

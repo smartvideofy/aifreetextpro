@@ -147,6 +147,8 @@ const ClaudeAcademicWriting = lazy(() => import("./pages/blog/ClaudeAcademicWrit
 const HumanizeChatGPTText = lazy(() => import("./pages/blog/HumanizeChatGPTText"));
 const BestAIToolsForStudents = lazy(() => import("./pages/blog/BestAIToolsForStudents"));
 const CanTurnitinDetectPerplexity = lazy(() => import("./pages/blog/CanTurnitinDetectPerplexity"));
+const WhatIsPerplexityBurstiness = lazy(() => import("./pages/blog/WhatIsPerplexityBurstiness"));
+const AIHumanizerIndianStudents2026 = lazy(() => import("./pages/blog/AIHumanizerIndianStudents2026"));
 const TurnitinSimilarityVsAIScore = lazy(() => import("./pages/blog/TurnitinSimilarityVsAIScore"));
 const GPTZeroAccuracyReview = lazy(() => import("./pages/blog/GPTZeroAccuracyReview"));
 const AIGhostwriter = lazy(() => import("./pages/blog/AIGhostwriter"));
@@ -229,6 +231,7 @@ const App = () => (
               <Route path="/blog/zerogpt-vs-ai-free-text-pro-2025" element={<ZeroGPTComparison />} />
               <Route path="/blog/top-10-ai-humanizer-tools-2025" element={<Top10AIHumanizers />} />
               <Route path="/blog/how-ai-detectors-work" element={<HowAIDetectorsWork />} />
+              <Route path="/blog/what-is-perplexity-burstiness" element={<WhatIsPerplexityBurstiness />} />
               <Route path="/blog/why-ai-content-fails-human-review" element={<WhyAIContentFails />} />
               <Route path="/blog/ai-tools-for-writers-2025" element={<AIToolsForWriters />} />
               <Route path="/blog/can-ai-writing-be-original" element={<AICreativityOriginality />} />
@@ -246,6 +249,7 @@ const App = () => (
               <Route path="/blog/tone-voice-flow-ai-writing" element={<ToneVoiceFlowAIWriting />} />
               <Route path="/blog/how-ai-detectors-score-text" element={<HowAIDetectorsScoreText />} />
               <Route path="/blog/signal-vs-noise-human-text" element={<SignalVsNoiseHumanText />} />
+              <Route path="/blog/ai-humanizer-for-indian-students" element={<AIHumanizerIndianStudents2026 />} />
               <Route path="/blog/ai-humanization-pitfalls" element={<AIHumanizationPitfalls />} />
               <Route path="/blog/bypass-copyleaks-ai-detection" element={<BypassCopyleaksDetection />} />
               <Route path="/blog/bypass-winston-ai-detection" element={<BypassWinstonAIDetection />} />

@@ -27,16 +27,16 @@ export default function HowAIDetectorsWork() {
   return (
     <>
       <Helmet>
-        <title>How AI Detectors Work: Perplexity & Burstiness 2026</title>
-        <meta name="description" content="Exactly how GPTZero, Turnitin and Originality.AI use perplexity and burstiness to flag AI text. Plain-English math, real examples, and what to change to pass." />
+        <title>How AI Detectors Work: Complete Guide to Perplexity & Burstiness</title>
+        <meta name="description" content="Step-by-step guide to how AI detectors work. Learn exactly how GPTZero, Turnitin & Originality.AI detect AI text using perplexity, burstiness & patterns." />
         <meta name="keywords" content="how ai detectors work, ai content analysis, gpt detection algorithm, ai detection science, perplexity detection, burstiness analysis, ai text patterns, machine learning detection, ai writing markers 2026" />
         <link rel="canonical" href="https://aifreetextpro.com/blog/how-ai-detectors-work" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="bingbot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         
-        <meta property="og:title" content="How AI Detectors Work: Perplexity & Burstiness 2026" />
-        <meta property="og:description" content="How GPTZero, Turnitin and Originality.AI use perplexity and burstiness to flag AI text, with examples and fixes." />
+        <meta property="og:title" content="How AI Detectors Work: Complete Guide to Perplexity & Burstiness" />
+        <meta property="og:description" content="Learn how AI detectors use perplexity, burstiness, and text patterns to identify AI-generated content." />
         <meta property="og:type" content="article" />
         <meta property="og:url" content="https://aifreetextpro.com/blog/how-ai-detectors-work" />
         <meta property="og:image" content="https://aifreetextpro.com/og-image.png" />

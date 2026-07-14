@@ -224,26 +224,26 @@ const Index = () => {
                 </div>
               </div>
               
-              {/* CTA Buttons - Premium styling */}
-              <div className="flex flex-col sm:flex-row gap-3 justify-center pt-4 animate-fade-in" style={{ animationDelay: "400ms" }}>
+              {/* CTA Buttons - Desktop-optimized sizing */}
+              <div className="flex flex-col sm:flex-row gap-4 justify-center pt-6 animate-fade-in" style={{ animationDelay: "400ms" }}>
                 <a href="https://app.aifreetextpro.com/" target="_blank" rel="noopener noreferrer">
-                  <Button 
-                    size="xl" 
-                    className="w-full sm:w-auto bg-gradient-to-r from-primary to-secondary hover:opacity-90 shadow-lg hover:shadow-xl shadow-primary/20 group"
+                  <Button
+                    size="xl"
+                    className="w-full sm:w-auto md:px-10 md:py-7 md:text-lg bg-gradient-to-r from-primary to-secondary hover:opacity-85 active:opacity-75 shadow-lg hover:shadow-2xl shadow-primary/30 group transition-all duration-200"
                   >
-                    <Pen className="mr-2 h-5 w-5" />
+                    <Pen className="mr-2 h-5 w-5 md:h-6 md:w-6" />
                     Start Writing Free
-                    <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-0.5 transition-transform" />
+                    <ArrowRight className="ml-2 h-5 w-5 md:h-6 md:w-6 group-hover:translate-x-1 transition-transform" />
                   </Button>
                 </a>
                 <a href="https://app.aifreetextpro.com/detector" target="_blank" rel="noopener noreferrer">
-                  <Button 
+                  <Button
                     size="xl"
                     variant="outline"
-                    className="w-full sm:w-auto"
+                    className="w-full sm:w-auto md:px-8 md:py-7 md:text-lg border-primary/50 hover:bg-primary/5 hover:border-primary transition-all duration-200"
                   >
-                    <BookOpen className="mr-2 h-5 w-5" />
-                    See Live Demo
+                    <BookOpen className="mr-2 h-5 w-5 md:h-6 md:w-6" />
+                    Try Detector
                   </Button>
                 </a>
               </div>

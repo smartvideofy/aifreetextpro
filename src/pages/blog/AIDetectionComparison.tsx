@@ -1,3 +1,5 @@
+import ReviewedBy from "@/components/ReviewedBy";
+import { SpeakableSchema } from "@/components/SpeakableSchema";
 import { Link } from "react-router-dom";
 import { QuickAnswer } from "@/components/QuickAnswer";
 import { FAQSection } from "@/components/FAQSection";
@@ -86,6 +88,10 @@ const AIDetectionComparison = () => {
         datePublished="2026-02-02"
         dateModified="2026-06-09"
       />
+      <SpeakableSchema
+        pageUrl="https://aifreetextpro.com/blog/ai-detection-tools-compared-2025"
+        pageName="AI Detectors Compared: GPTZero vs AFTP (2026)"
+      />
 
       <Navbar />
       
@@ -132,6 +138,8 @@ const AIDetectionComparison = () => {
                   We tested the top AI detectors with real-world samples to find which one delivers the most accurate results in 2025.
                 </p>
               </header>
+
+              <ReviewedBy name="Dr. Sarah Chen" role="AI & Academic Integrity Researcher" slug="dr-sarah-chen" />
 
               <KeyTakeaways 
                 points={[

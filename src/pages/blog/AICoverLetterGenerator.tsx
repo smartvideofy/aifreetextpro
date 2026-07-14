@@ -1,3 +1,4 @@
+import { SpeakableSchema } from "@/components/SpeakableSchema";
 import { Link } from "react-router-dom";
 import { QuickAnswer } from "@/components/QuickAnswer";
 import { Helmet } from "react-helmet-async";
@@ -63,6 +64,10 @@ const AICoverLetterGenerator = () => {
         description="Generate cover letters with AI that sound authentically human. 5 generators compared, humanization workflow, and industry-specific templates that land interviews."
         datePublished="2026-03-08"
         dateModified="2026-06-09"
+      />
+      <SpeakableSchema
+        pageUrl="https://aifreetextpro.com/blog/ai-cover-letter-generator"
+        pageName="AI Cover Letter Generator That Sounds Human (2026)"
       />
 
 

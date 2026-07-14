@@ -1,3 +1,4 @@
+import { SpeakableSchema } from "@/components/SpeakableSchema";
 import { Link } from "react-router-dom";
 import { QuickAnswer } from "@/components/QuickAnswer";
 import { Helmet } from "react-helmet-async";
@@ -57,6 +58,10 @@ const AIBlogPostGenerator = () => {
         description="Find the best AI blog post generator that creates undetectable content. Compare 8 tools, learn the humanization workflow, and produce blog posts that read naturally."
         datePublished="2026-03-08"
         dateModified="2026-06-09"
+      />
+      <SpeakableSchema
+        pageUrl="https://aifreetextpro.com/blog/ai-blog-post-generator"
+        pageName="AI Blog Post Generator That Passes AI Detection (2026) | AI Free Text Pro"
       />
 
 

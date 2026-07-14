@@ -1,3 +1,4 @@
+import { SpeakableSchema } from "@/components/SpeakableSchema";
 import { Link } from "react-router-dom";
 import { QuickAnswer } from "@/components/QuickAnswer";
 import { FAQSection } from "@/components/FAQSection";
@@ -70,6 +71,10 @@ const BestChatGPTPromptsForEssays = () => {
         description="20+ proven ChatGPT prompts for essays that produce natural, human-sounding writing. Prompts for argumentative, analytical, narrative, and research essays."
         datePublished="2026-02-25"
         dateModified="2026-06-09"
+      />
+      <SpeakableSchema
+        pageUrl="https://aifreetextpro.com/blog/best-chatgpt-prompts-for-essays"
+        pageName="Best ChatGPT Prompts for Essays That Sound Human (2026)"
       />
 
 

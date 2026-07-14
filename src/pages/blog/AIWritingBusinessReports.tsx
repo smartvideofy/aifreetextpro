@@ -11,6 +11,7 @@ import { InternalLinks } from "@/components/InternalLinks";
 import ReviewedBy from "@/components/ReviewedBy";
 import { FAQSection } from "@/components/FAQSection";
 import { AuthorSchema } from "@/components/AuthorSchema";
+import { SpeakableSchema } from "@/components/SpeakableSchema";
 
 const relatedArticles = [
   {
@@ -131,6 +132,10 @@ const AIWritingBusinessReports = () => {
         description="Professional guide to using AI for business reports, client emails, and proposals. Match brand voice, pass compliance checks, and write faster."
         datePublished="2026-03-04"
         dateModified="2026-06-09"
+      />
+      <SpeakableSchema
+        pageUrl="https://aifreetextpro.com/blog/ai-writing-business-reports-emails"
+        pageName="AI Writing for Business Reports & Emails (2026)"
       />
 
 

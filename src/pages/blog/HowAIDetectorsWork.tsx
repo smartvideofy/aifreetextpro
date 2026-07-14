@@ -1,3 +1,4 @@
+import ReviewedBy from "@/components/ReviewedBy";
 import { Helmet } from "react-helmet-async";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -162,6 +163,8 @@ export default function HowAIDetectorsWork() {
               question="How do AI detectors actually work?"
               answer="AI detectors score two signals from your text: perplexity (how predictable each word is to a reference language model) and burstiness (how much sentence-level predictability varies). AI writing scores low on both because it picks high-probability words and keeps sentences uniform. Detectors like GPTZero, Turnitin, and Originality.AI feed those two scores into a classifier trained on millions of labeled samples to output an AI probability."
             />
+
+            <ReviewedBy name="Dr. Sarah Chen" role="AI & Academic Integrity Researcher" slug="dr-sarah-chen" />
 
             <KeyTakeaways 
               points={[

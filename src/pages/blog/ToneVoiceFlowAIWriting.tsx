@@ -1,3 +1,5 @@
+import ReviewedBy from "@/components/ReviewedBy";
+import { SpeakableSchema } from "@/components/SpeakableSchema";
 import { Helmet } from "react-helmet-async";
 import { QuickAnswer } from "@/components/QuickAnswer";
 import { FAQSection } from "@/components/FAQSection";
@@ -77,6 +79,10 @@ const ToneVoiceFlowAIWriting = () => {
         datePublished="2026-02-02"
         dateModified="2026-06-09"
       />
+      <SpeakableSchema
+        pageUrl="https://aifreetextpro.com/blog/tone-voice-flow-ai-writing"
+        pageName="Tone, Voice & Flow in AI Writing [2026 Guide]"
+      />
 
 
       <div className="min-h-screen bg-gradient-to-b from-background via-background to-card/20">
@@ -112,6 +118,8 @@ const ToneVoiceFlowAIWriting = () => {
                   Great writing has three invisible threads: tone sets the emotional temperature, voice creates distinctiveness, and flow carries readers effortlessly forward. Here's how to master all three when working with AI.
                 </p>
               </header>
+
+              <ReviewedBy name="Dr. Sarah Chen" role="AI & Academic Integrity Researcher" slug="dr-sarah-chen" />
 
               <KeyTakeaways
                 points={[

@@ -1,3 +1,5 @@
+import ReviewedBy from "@/components/ReviewedBy";
+import { SpeakableSchema } from "@/components/SpeakableSchema";
 import { Link } from "react-router-dom";
 import { QuickAnswer } from "@/components/QuickAnswer";
 import { FAQSection } from "@/components/FAQSection";
@@ -81,6 +83,10 @@ const SignalVsNoiseHumanText = () => {
         datePublished="2026-02-02"
         dateModified="2026-06-09"
       />
+      <SpeakableSchema
+        pageUrl="https://aifreetextpro.com/blog/signal-vs-noise-human-text"
+        pageName={`What Makes Text "Human"? Signal vs Noise [2026]`}
+      />
 
 
       <div className="min-h-screen bg-background">
@@ -109,6 +115,8 @@ const SignalVsNoiseHumanText = () => {
                 <span>14 min read</span>
               </div>
             </header>
+
+            <ReviewedBy name="Dr. Sarah Chen" role="AI & Academic Integrity Researcher" slug="dr-sarah-chen" />
 
             <KeyTakeaways
               points={[

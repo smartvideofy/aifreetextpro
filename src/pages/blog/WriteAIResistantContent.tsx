@@ -10,7 +10,9 @@ import { Link } from "react-router-dom";
 import { ArrowRight, Brain, Search, Zap } from "lucide-react";
 import { KeyTakeaways } from "@/components/KeyTakeaways";
 import { AuthorSchema } from "@/components/AuthorSchema";
+import { SpeakableSchema } from "@/components/SpeakableSchema";
 import { PostHowToSchema } from "@/components/PostHowToSchema";
+import ReviewedBy from "@/components/ReviewedBy";
 
 const relatedArticles = [
   {
@@ -134,6 +136,10 @@ export default function WriteAIResistantContent() {
         datePublished="2026-02-02"
         dateModified="2026-06-09"
       />
+      <SpeakableSchema
+        pageUrl="https://aifreetextpro.com/blog/write-ai-resistant-content"
+        pageName="Write AI-Resistant Content: 6-Step Method [2026]"
+      />
 
 
       <div className="min-h-screen bg-background">
@@ -170,6 +176,8 @@ export default function WriteAIResistantContent() {
                 Advanced strategies to humanize your writing, improve authenticity, and reduce AI detection scores while engaging readers.
               </p>
             </header>
+
+            <ReviewedBy name="Dr. Sarah Chen" role="AI & Academic Integrity Researcher" slug="dr-sarah-chen" />
 
             <KeyTakeaways 
               points={[

@@ -11,6 +11,7 @@ import { RelatedArticles } from "@/components/RelatedArticles";
 import { InternalLinks } from "@/components/InternalLinks";
 import { FAQSection } from "@/components/FAQSection";
 import { AuthorSchema } from "@/components/AuthorSchema";
+import { SpeakableSchema } from "@/components/SpeakableSchema";
 
 const relatedArticles = [
   { title: "GPTZero vs Turnitin Comparison", description: "Head-to-head comparison of the two most popular AI detectors.", href: "/blog/gptzero-vs-turnitin-comparison", category: "Comparison" },
@@ -79,6 +80,10 @@ const GPTZeroAccuracyReview = () => {
         description="In-depth review of GPTZero accuracy, false-positive rates, and how it compares to Turnitin and Originality.AI in 2026."
         datePublished="2026-05-15"
         dateModified="2026-06-09"
+      />
+      <SpeakableSchema
+        pageUrl="https://aifreetextpro.com/blog/gptzero-accuracy-review"
+        pageName="GPTZero Accuracy Review (2026)"
       />
 
 

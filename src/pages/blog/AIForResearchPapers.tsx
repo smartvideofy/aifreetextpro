@@ -1,3 +1,4 @@
+import { SpeakableSchema } from "@/components/SpeakableSchema";
 import { Link } from "react-router-dom";
 import { QuickAnswer } from "@/components/QuickAnswer";
 import { Helmet } from "react-helmet-async";
@@ -90,6 +91,10 @@ const AIForResearchPapers = () => {
         description="How graduate students and researchers can use AI tools ethically for thesis writing, literature reviews, and journal submissions without academic consequences."
         datePublished="2026-03-04"
         dateModified="2026-06-09"
+      />
+      <SpeakableSchema
+        pageUrl="https://aifreetextpro.com/blog/ai-for-research-papers"
+        pageName="AI for Research Papers: Use AI Without Consequences"
       />
 
 

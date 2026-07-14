@@ -1,3 +1,4 @@
+import { SpeakableSchema } from "@/components/SpeakableSchema";
 import { Link } from "react-router-dom";
 import { QuickAnswer } from "@/components/QuickAnswer";
 import { Helmet } from "react-helmet-async";
@@ -84,6 +85,10 @@ const AIContentGoogleAIOverviews = () => {
         description="Step-by-step guide to optimizing AI content for citation in Google AI Overviews. Content structure, E-E-A-T signals, humanization strategies, and tracking methods."
         datePublished="2026-03-15"
         dateModified="2026-06-09"
+      />
+      <SpeakableSchema
+        pageUrl="https://aifreetextpro.com/blog/ai-content-google-ai-overviews"
+        pageName="How to Get AI Content Into Google AI Overviews (2026) | AI Free Text Pro"
       />
 
 

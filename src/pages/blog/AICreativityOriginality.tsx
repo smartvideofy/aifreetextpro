@@ -1,3 +1,5 @@
+import ReviewedBy from "@/components/ReviewedBy";
+import { SpeakableSchema } from "@/components/SpeakableSchema";
 import { Helmet } from "react-helmet-async";
 import { QuickAnswer } from "@/components/QuickAnswer";
 import Navbar from "@/components/Navbar";
@@ -98,6 +100,10 @@ export default function AICreativityOriginality() {
         datePublished="2026-02-02"
         dateModified="2026-06-09"
       />
+      <SpeakableSchema
+        pageUrl="https://aifreetextpro.com/blog/can-ai-writing-be-original"
+        pageName="Can AI Writing Be Truly Original? [2026 Analysis]"
+      />
 
 
       <div className="min-h-screen bg-background">
@@ -129,6 +135,8 @@ export default function AICreativityOriginality() {
                 />
 
             </header>
+
+            <ReviewedBy name="Dr. Sarah Chen" role="AI & Academic Integrity Researcher" slug="dr-sarah-chen" />
 
             <KeyTakeaways
               points={[

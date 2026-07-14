@@ -1,3 +1,4 @@
+import { SpeakableSchema } from "@/components/SpeakableSchema";
 import { Link } from "react-router-dom";
 import { QuickAnswer } from "@/components/QuickAnswer";
 import { Helmet } from "react-helmet-async";
@@ -57,6 +58,10 @@ const OriginalityAIAccuracyFalsePositives = () => {
         description="Independent analysis of Originality.AI accuracy. Real false positive rates, what causes wrong results, and how to handle being incorrectly flagged."
         datePublished="2026-02-28"
         dateModified="2026-06-09"
+      />
+      <SpeakableSchema
+        pageUrl="https://aifreetextpro.com/blog/originality-ai-accuracy-false-positives"
+        pageName="Can Originality.AI Be Wrong? False Positives and Accuracy Explained (2026)"
       />
 
 

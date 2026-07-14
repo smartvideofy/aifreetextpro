@@ -1,3 +1,5 @@
+import ReviewedBy from "@/components/ReviewedBy";
+import { SpeakableSchema } from "@/components/SpeakableSchema";
 import { Helmet } from "react-helmet-async";
 import { QuickAnswer } from "@/components/QuickAnswer";
 import Navbar from "@/components/Navbar";
@@ -92,6 +94,10 @@ export default function AIDetectionPublishing() {
         datePublished="2026-02-02"
         dateModified="2026-06-09"
       />
+      <SpeakableSchema
+        pageUrl="https://aifreetextpro.com/blog/ai-detection-in-publishing-2025"
+        pageName="AI Detection in Publishing: Writer's Guide [2026]"
+      />
 
 
       <div className="min-h-screen bg-background">
@@ -127,6 +133,8 @@ export default function AIDetectionPublishing() {
                 The publishing industry is at a crossroads. Here's how professionals are navigating the AI content revolution.
               </p>
             </header>
+
+            <ReviewedBy name="Dr. Sarah Chen" role="AI & Academic Integrity Researcher" slug="dr-sarah-chen" />
 
             <KeyTakeaways
               points={[

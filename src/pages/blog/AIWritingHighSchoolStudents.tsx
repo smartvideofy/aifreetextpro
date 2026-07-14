@@ -11,6 +11,7 @@ import InternalLinks from "@/components/InternalLinks";
 import ReviewedBy from "@/components/ReviewedBy";
 import { FAQSection } from "@/components/FAQSection";
 import { AuthorSchema } from "@/components/AuthorSchema";
+import { SpeakableSchema } from "@/components/SpeakableSchema";
 
 const relatedArticles = [
   { title: "Can Teachers Detect ChatGPT?", description: "Every detection method schools use in 2026.", href: "/blog/can-teachers-detect-chatgpt", category: "Academic" },
@@ -67,6 +68,10 @@ const AIWritingHighSchoolStudents = () => {
         description="Complete guide to AI writing tools for high school students. School policies, what's allowed, consequences of getting caught, and how to use AI responsibly."
         datePublished="2026-02-28"
         dateModified="2026-06-09"
+      />
+      <SpeakableSchema
+        pageUrl="https://aifreetextpro.com/blog/ai-writing-high-school-students"
+        pageName="AI Writing for High School Students: A Parent and Student Guide (2026)"
       />
 
 

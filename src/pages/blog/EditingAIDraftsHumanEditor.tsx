@@ -11,7 +11,9 @@ import { RelatedArticles } from "@/components/RelatedArticles";
 import { Button } from "@/components/ui/button";
 import { InternalLinks } from "@/components/InternalLinks";
 import { AuthorSchema } from "@/components/AuthorSchema";
+import { SpeakableSchema } from "@/components/SpeakableSchema";
 import { PostHowToSchema } from "@/components/PostHowToSchema";
+import ReviewedBy from "@/components/ReviewedBy";
 
 const relatedArticles = [
   {
@@ -122,6 +124,10 @@ const EditingAIDraftsHumanEditor = () => {
         datePublished="2026-02-02"
         dateModified="2026-06-09"
       />
+      <SpeakableSchema
+        pageUrl="https://aifreetextpro.com/blog/editing-ai-drafts-human-editor"
+        pageName="Edit AI Drafts Like a Pro Editor [2026 Tips]"
+      />
 
 
       <div className="min-h-screen bg-gradient-to-b from-background via-background to-card/20">
@@ -158,6 +164,8 @@ const EditingAIDraftsHumanEditor = () => {
                   Even the best AI generates drafts that need human refinement. Professional editors have developed specific techniques for transforming AI output into polished, authentic prose. Here's their playbook.
                 </p>
               </header>
+
+              <ReviewedBy name="Dr. Sarah Chen" role="AI & Academic Integrity Researcher" slug="dr-sarah-chen" />
 
               <KeyTakeaways
                 points={[

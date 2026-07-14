@@ -1,3 +1,4 @@
+import ReviewedBy from "@/components/ReviewedBy";
 import { Helmet } from "react-helmet-async";
 import { QuickAnswer } from "@/components/QuickAnswer";
 import { FAQSection } from "@/components/FAQSection";
@@ -113,6 +114,8 @@ const HowAIDetectorsScoreText = () => {
                 <span>12 min read</span>
               </div>
             </header>
+
+            <ReviewedBy name="Dr. Sarah Chen" role="AI & Academic Integrity Researcher" slug="dr-sarah-chen" />
 
             <KeyTakeaways
               points={[

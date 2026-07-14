@@ -10,6 +10,8 @@ import { Link } from "react-router-dom";
 import { ArrowRight, Brain, Search, Zap, Video, Mic, CheckCircle, AlertTriangle, Lightbulb } from "lucide-react";
 import { KeyTakeaways } from "@/components/KeyTakeaways";
 import { AuthorSchema } from "@/components/AuthorSchema";
+import { SpeakableSchema } from "@/components/SpeakableSchema";
+import ReviewedBy from "@/components/ReviewedBy";
 
 const relatedArticles = [
   {
@@ -148,6 +150,10 @@ export default function AIYouTubeScripts() {
         datePublished="2026-02-02"
         dateModified="2026-06-09"
       />
+      <SpeakableSchema
+        pageUrl="https://aifreetextpro.com/blog/ai-content-youtube-scripts-2026"
+        pageName="AI YouTube Scripts That Sound Human [2026]"
+      />
 
 
       <div className="min-h-screen bg-background">
@@ -185,6 +191,8 @@ export default function AIYouTubeScripts() {
                 Transform AI-generated scripts into natural, engaging narration that keeps your audience hooked and builds authentic connections with viewers.
               </p>
             </header>
+
+            <ReviewedBy name="Dr. Sarah Chen" role="AI & Academic Integrity Researcher" slug="dr-sarah-chen" />
 
             <KeyTakeaways
               points={[

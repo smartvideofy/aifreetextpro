@@ -1,3 +1,4 @@
+import { SpeakableSchema } from "@/components/SpeakableSchema";
 import { Link } from "react-router-dom";
 import { QuickAnswer } from "@/components/QuickAnswer";
 import { Helmet } from "react-helmet-async";
@@ -68,6 +69,10 @@ const AIDisclosurePolicies2026 = () => {
         description="Complete guide to AI disclosure requirements in academia, publishing, and business. Includes templates, regulations, and best practices for 2026."
         datePublished="2026-02-28"
         dateModified="2026-06-09"
+      />
+      <SpeakableSchema
+        pageUrl="https://aifreetextpro.com/blog/ai-disclosure-policies-2026"
+        pageName="AI Disclosure Policies: What You Must Know Before Submitting AI Content (2026)"
       />
 
 

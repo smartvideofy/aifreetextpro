@@ -1,3 +1,5 @@
+import ReviewedBy from "@/components/ReviewedBy";
+import { SpeakableSchema } from "@/components/SpeakableSchema";
 import { Link } from "react-router-dom";
 import { QuickAnswer } from "@/components/QuickAnswer";
 import { Button } from "@/components/ui/button";
@@ -104,6 +106,10 @@ const OriginalityAIReview = () => {
         datePublished="2026-05-15"
         dateModified="2026-06-09"
       />
+      <SpeakableSchema
+        pageUrl="https://aifreetextpro.com/blog/originality-ai-review-how-to-beat"
+        pageName="Originality.AI Review (2026)"
+      />
 
       <Navbar />
       
@@ -150,6 +156,8 @@ const OriginalityAIReview = () => {
                   Everything you need to know about one of the most aggressive AI detectors, and how to reliably bypass it.
                 </p>
               </header>
+
+              <ReviewedBy name="Dr. Sarah Chen" role="AI & Academic Integrity Researcher" slug="dr-sarah-chen" />
 
               <KeyTakeaways
                 points={[

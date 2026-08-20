@@ -30,8 +30,8 @@ const AIDetectionPatterns = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <Helmet>
-        <title>5 Patterns AI Detectors Flag [And How to Fix Them]</title>
-        <meta name="description" content="5 exact patterns AI detectors check (with examples). Fix each one in under 5 minutes. Tested on Turnitin, GPTZero, and Originality.AI." />
+        <title>7 Patterns That Make AI Text Obvious (2026)</title>
+        <meta name="description" content="The seven statistical and stylistic patterns detectors key on, shown sentence by sentence, plus the specific edit that removes each one from your draft." />
         <meta name="keywords" content="AI detection patterns, perplexity and burstiness explained, is my writing human or AI, AI linguistic patterns, how AI detectors work" />
         <link rel="canonical" href="https://aifreetextpro.com/blog/ai-detection-patterns-explained" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />

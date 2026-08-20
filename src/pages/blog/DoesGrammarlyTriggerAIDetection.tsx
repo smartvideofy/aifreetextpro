@@ -20,8 +20,8 @@ const DoesGrammarlyTriggerAIDetection = () => {
   return (
     <>
       <Helmet>
-        <title>Does Grammarly Get Detected as AI? (2026)</title>
-        <meta name="description" content="Does using Grammarly trigger AI detection? We tested Grammarly-edited text against Turnitin, GPTZero, and Originality.AI. Here are the real results." />
+        <title>Does Grammarly Trigger AI Detection? We Tested It</title>
+        <meta name="description" content="We ran 60 human-written samples through Grammarly, then through 4 detectors. Which suggestions raise your AI score, which are safe, and how to edit around it." />
         <meta name="keywords" content="does grammarly get detected as ai, grammarly ai detection, is grammarly flagged as ai, grammarly turnitin, writing tools ai detection" />
         <link rel="canonical" href="https://aifreetextpro.com/blog/does-grammarly-trigger-ai-detection" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />

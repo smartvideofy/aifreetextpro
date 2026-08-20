@@ -84,6 +84,7 @@ const footerSections: FooterSection[] = [
     title: "Resources",
     links: [
       { href: "/blog", label: "Blog" },
+      { href: "/free-ai-detector-word-limit", label: "Free Word Limits" },
       { href: "/pricing", label: "Pricing" },
       { href: "/guarantee", label: "Money-Back Guarantee" },
       { href: "/help-center", label: "Help Center" },

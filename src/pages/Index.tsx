@@ -268,6 +268,33 @@ const Index = () => {
         {/* Trust Badges */}
         <LazySection fallbackClass="min-h-[120px]"><TrustBadges /></LazySection>
 
+        {/* Free AI detector and humanizer - combined intent */}
+        <section className="py-12 md:py-16">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto text-center">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">
+                Free AI Detector and Humanizer in One Tool
+              </h2>
+              <p className="text-muted-foreground text-base md:text-lg mb-6">
+                Score any text for AI with unlimited free checks, then humanize up to 1,000 words a month free. No
+                credit card, no trial countdown, and both tools live in the same workspace so you can check, rewrite,
+                and re-check without switching tabs.
+              </p>
+              <div className="flex flex-wrap items-center justify-center gap-3 text-sm">
+                <span className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/5 px-4 py-2">
+                  <CheckCircle className="w-4 h-4 text-primary" /> Unlimited free AI detection
+                </span>
+                <span className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/5 px-4 py-2">
+                  <CheckCircle className="w-4 h-4 text-primary" /> 1,000 free humanized words / month
+                </span>
+                <Link to="/free-ai-detector-word-limit" className="inline-flex items-center gap-2 text-primary hover:underline px-2 py-2">
+                  See the exact free limits <ArrowRight className="w-4 h-4" />
+                </Link>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Problem-Solution Section */}
         <section className="py-16 md:py-24">
           <div className="container mx-auto px-4">

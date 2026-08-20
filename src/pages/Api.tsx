@@ -78,8 +78,8 @@ const Api = () => {
   return (
     <>
       <Helmet>
-        <title>AI Free Text Pro API: Humanize & Detect AI Text</title>
-        <meta name="description" content="Integrate AI text humanization and detection into your app with the AI Free Text Pro REST API. Simple authentication, 98% accuracy, and developer-friendly docs." />
+        <title>AI Humanizer & Detector API: 1 Endpoint, 50ms</title>
+        <meta name="description" content="Add AI humanizing and detection to your product with one REST call. Simple bearer auth, JSON in and out, sandbox keys free, docs you can skim in 5 minutes." />
         <meta name="keywords" content="AI humanizer API, AI detection API, text humanization API, REST API, developer API, AI writing API" />
         <link rel="canonical" href="https://aifreetextpro.com/api" />
         <meta name="robots" content="index, follow" />

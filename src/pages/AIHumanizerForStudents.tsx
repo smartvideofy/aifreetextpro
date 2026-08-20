@@ -118,8 +118,8 @@ const AIHumanizerForStudents = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <Helmet>
-        <title>AI Humanizer for Students: Pass Turnitin 97% [2026]</title>
-        <meta name="description" content="Transform AI essays to human writing in 3 seconds. 97% Turnitin bypass rate. Academic mode preserves citations. Free for students. 25,000+ users trust us." />
+        <title>AI Humanizer for Students: Free 1,000 Words</title>
+        <meta name="description" content="Turn AI drafts into your own voice in seconds. 1,000 free words a month, citations preserved, no card. Built for essays, assignments and coursework." />
         <meta name="keywords" content="ai humanizer for students, bypass turnitin, student ai writing tool, academic ai humanizer, pass turnitin ai detection" />
         <link rel="canonical" href="https://aifreetextpro.com/ai-humanizer-for-students" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />

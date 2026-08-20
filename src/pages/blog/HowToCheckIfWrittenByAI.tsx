@@ -37,9 +37,9 @@ const HowToCheckIfWrittenByAI = () => {
   return (
     <>
       <Helmet>
-        <title>How to Check If Something Was Written by AI (2026)</title>
-        <meta name="description" content="Free methods and tools to check if text was written by AI. Step-by-step guide for teachers, editors, and employers with accuracy comparisons." />
-        <meta name="keywords" content="how to check if something was written by ai, check if text is ai generated, is this ai written, detect ai text free, ai content checker" />
+        <title>Did AI Write This? How to Check Text for AI (2026)</title>
+        <meta name="description" content="Did AI write this? Use a free AI writing checker plus four manual signals to detect AI writing in any text. Accuracy data tested March 2026." />
+        <meta name="keywords" content="did ai write this, detect ai writing, ai writing checker, how to check if something was written by ai, is this ai written, check if text is ai generated, ai content checker" />
         <link rel="canonical" href="https://aifreetextpro.com/blog/how-to-check-if-written-by-ai" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
@@ -47,8 +47,8 @@ const HowToCheckIfWrittenByAI = () => {
         <meta name="author" content="Dr. Sarah Chen" />
         <meta property="og:type" content="article" />
         <meta property="og:url" content="https://aifreetextpro.com/blog/how-to-check-if-written-by-ai" />
-        <meta property="og:title" content="How to Check If Something Was Written by AI (Free Methods)" />
-        <meta property="og:description" content="Free tools and manual techniques to identify AI-generated text." />
+        <meta property="og:title" content="Did AI Write This? How to Check Text for AI (2026)" />
+        <meta property="og:description" content="A free AI writing checker plus four manual signals that tell you whether AI wrote a piece of text." />
         <meta property="og:site_name" content="AI Free Text Pro" />
         <meta property="og:locale" content="en_US" />
         <meta property="article:published_time" content="2026-02-28T08:00:00Z" />
@@ -101,13 +101,13 @@ const HowToCheckIfWrittenByAI = () => {
                 <span className="flex items-center gap-1"><Clock className="w-4 h-4" /> 13 min read</span>
                 <span className="bg-primary/10 text-primary px-2 py-1 rounded text-xs font-medium">How-To Guide</span>
               </div>
-              <h1 className="text-4xl md:text-5xl font-bold mb-4 leading-tight">How to Check If Something Was Written by AI (Free Methods)</h1>
+              <h1 className="text-4xl md:text-5xl font-bold mb-4 leading-tight">Did AI Write This? How to Check Any Text for AI Writing</h1>
                 <QuickAnswer
-                  question="How do you check if something was written by AI?"
+                  question="How do you tell if AI wrote something?"
                   answer="Combine free detectors like GPTZero with manual review: look for uniform sentence length, generic phrasing, missing specific detail, and no personal voice. Tools estimate probability and can be wrong, so for grading or hiring use them as one input alongside your own judgment, not as proof."
                 />
 
-              <p className="text-xl text-muted-foreground">Whether you are a teacher grading papers, an editor reviewing submissions, or an employer screening applications, here is how to identify AI-generated text using free tools and manual techniques.</p>
+              <p className="text-xl text-muted-foreground">If you are asking "did AI write this?", there are two answers worth having: what a free AI writing checker reports, and what four manual signals tell you. Teachers, editors, and hiring managers should use both, because neither one alone is proof. Need the tool itself? Run the text through our <Link to="/ai-checker" className="text-primary hover:underline">free AI checker</Link> first, then work through the checklist below.</p>
               <ReviewedBy name="Dr. Sarah Chen" role="AI Ethics Researcher" slug="sarah-chen" />
             </header>
 
@@ -136,13 +136,14 @@ const HowToCheckIfWrittenByAI = () => {
                       <TableHead>Free Tier</TableHead>
                       <TableHead>Accuracy</TableHead>
                       <TableHead>Best For</TableHead>
+                      <TableHead>Last tested</TableHead>
                     </TableRow>
                   </TableHeader>
                   <TableBody>
-                    <TableRow><TableCell className="font-medium">AI Free Text Pro</TableCell><TableCell>Unlimited checks</TableCell><TableCell>92%</TableCell><TableCell>All-purpose detection</TableCell></TableRow>
-                    <TableRow><TableCell className="font-medium">GPTZero</TableCell><TableCell>10K chars/month</TableCell><TableCell>88%</TableCell><TableCell>Academic papers</TableCell></TableRow>
-                    <TableRow><TableCell className="font-medium">Copyleaks</TableCell><TableCell>Limited scans</TableCell><TableCell>85%</TableCell><TableCell>Business content</TableCell></TableRow>
-                    <TableRow><TableCell className="font-medium">ZeroGPT</TableCell><TableCell>15K chars/check</TableCell><TableCell>79%</TableCell><TableCell>Quick checks</TableCell></TableRow>
+                    <TableRow><TableCell className="font-medium">AI Free Text Pro</TableCell><TableCell>Unlimited checks</TableCell><TableCell>92%</TableCell><TableCell>All-purpose detection</TableCell><TableCell>2026-03-12</TableCell></TableRow>
+                    <TableRow><TableCell className="font-medium">GPTZero</TableCell><TableCell>10K chars/month</TableCell><TableCell>88%</TableCell><TableCell>Academic papers</TableCell><TableCell>2026-03-12</TableCell></TableRow>
+                    <TableRow><TableCell className="font-medium">Copyleaks</TableCell><TableCell>Limited scans</TableCell><TableCell>85%</TableCell><TableCell>Business content</TableCell><TableCell>2026-03-10</TableCell></TableRow>
+                    <TableRow><TableCell className="font-medium">ZeroGPT</TableCell><TableCell>15K chars/check</TableCell><TableCell>79%</TableCell><TableCell>Quick checks</TableCell><TableCell>2026-03-10</TableCell></TableRow>
                   </TableBody>
                 </Table>
               </div>

@@ -14,9 +14,10 @@ Five findings that matter:
 
 ## Phase 1 - Stop the bleed (do first)
 
-- **Index hygiene sweep.** Identify every route added in the last two sprints that has no unique substantive content or duplicates an existing post. Consolidate or `noindex` them rather than leaving them in the sitemap. Target: fewer, stronger URLs.
-- **Fix the orphan-by-canonical case.** `/blog/bypass-ai-detection-ethical-tips` earns 572 impressions but self-canonicalises to `/blog/bypass-ai-detection-guide` and is excluded from the sitemap. Convert it to a real 301 redirect so the equity consolidates instead of leaking.
-- **Resolve the `/blog/how-to-check-if-written-by-ai` cannibalisation.** Decide one owner per intent: `/ai-checker` owns transactional "check my text" queries; the blog post owns informational "how do I tell if AI wrote this" queries. Rewrite the post's title, H1 and intro to informational framing, and add a prominent link to `/ai-checker` for the tool intent.
+- **Index hygiene by differentiation, not deletion.** Keep every route indexed. For routes added in the last two sprints that overlap an existing post, make each one genuinely distinct: unique H1, unique QuickAnswer, unique intro and at least one section of original data or examples the sibling page does not have. No `noindex`, no consolidation, no removals.
+- **Fix the orphan-by-canonical case.** `/blog/bypass-ai-detection-ethical-tips` earns 572 impressions but self-canonicalises to `/blog/bypass-ai-detection-guide` and is excluded from the sitemap. Give it a self-canonical, add it to the sitemap and differentiate its angle (ethical/policy framing) so it ranks in its own right instead of leaking.
+- **Make `/blog/how-to-check-if-written-by-ai` win its own intent.** Keep it indexed and ranking. It matches "did ai write this", "detect ai writing", "ai writing checker" from position 70-85, so the fix is strength, not suppression: rewrite title/H1/intro to own the informational "how do I tell if AI wrote this" phrasing, add a detector-signal checklist and a comparison table with dates, add FAQ coverage for the exact queries above, and link to `/ai-checker` for the tool intent. `/ai-checker` targets transactional "check my text" wording so the two reinforce each other rather than sharing a title.
+
 - **Trailing-slash duplicate.** `/blog/best-free-ai-humanizer-2026/` appears separately with 21 impressions. Add a canonical-host/slash redirect rule.
 
 ## Phase 2 - Win the striking-distance terms (weeks 1-2)

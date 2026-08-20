@@ -105,6 +105,19 @@ const DetectorTemplate = () => {
           </div>
         </Card>
 
+        <div className="rounded-xl border border-border bg-muted/30 p-5 my-8 text-sm">
+          <p className="font-semibold mb-2">Understand the mechanics first</p>
+          <p className="text-muted-foreground">
+            Every detector on this site scores the same two properties. Read{" "}
+            <Link to="/blog/how-ai-detectors-work" className="text-primary hover:underline">how AI detectors work</Link>{" "}
+            for the tested methodology, and{" "}
+            <Link to="/blog/what-is-perplexity-burstiness" className="text-primary hover:underline">
+              what perplexity and burstiness mean
+            </Link>{" "}
+            for the definitions behind the numbers.
+          </p>
+        </div>
+
         <FAQSection
           title={`${data.name} FAQ`}
           faqs={data.faq.map(f => ({ question: f.q, answer: f.a }))}

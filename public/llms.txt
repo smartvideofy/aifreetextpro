@@ -8,6 +8,7 @@ AI Free Text Pro offers free, no-signup tools for AI content detection and human
 
 - [Home](https://aifreetextpro.com/): AI humanizer and AI detector overview.
 - [AI Checker](https://aifreetextpro.com/ai-checker): Free AI detection tool with 98% accuracy.
+- [Free word limits](https://aifreetextpro.com/free-ai-detector-word-limit): Exact free allowances: unmetered AI detection, 1,000 humanized words per month.
 - [Pricing](https://aifreetextpro.com/pricing): Five-tier pricing with 1,000 free words per month.
 - [API](https://aifreetextpro.com/api): Developer API for AI humanization.
 - [Bypass Turnitin](https://aifreetextpro.com/bypass-turnitin-ai-detection): Reduce Turnitin AI false flags.

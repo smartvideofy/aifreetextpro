@@ -14,6 +14,11 @@
 https://aifreetextpro.lovable.app/*  https://aifreetextpro.com/:splat  301!
 https://www.aifreetextpro.com/*      https://aifreetextpro.com/:splat  301!
 
+# Collapse trailing-slash duplicates on blog URLs to the canonical no-slash form
+# (GSC showed /blog/best-free-ai-humanizer-2026/ indexed separately).
+/blog/*/  /blog/:splat  301!
+
+
 # Tool pages live on the app subdomain — real 301s (the client-side
 # ExternalSEORedirect components in App.tsx remain only as a fallback for
 # hosts that ignore this file).

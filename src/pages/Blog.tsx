@@ -271,7 +271,7 @@ export const blogPosts = [
   }, {
     slug: "best-free-ai-humanizer-tools-2025", title: "Best Free AI Humanizer Tools in 2026", excerpt: "Compare the top free AI humanizer tools available. Find which works best for academic writing and content creation.", date: "2026-01-01", readTime: "10 min read", category: "Tools"
   }, {
-    slug: "bypass-ai-detection-ethical-tips", title: "Improve AI Writing: Ethical Tips & Practices", excerpt: "Ethical strategies to make AI-assisted content more human-like. Improve writing quality while maintaining authenticity.", date: "2026-01-01", readTime: "7 min read", category: "How-To Guide"
+    slug: "bypass-ai-detection-ethical-tips", title: "Ethical AI Writing: Disclosure Rules & Practices", excerpt: "What the 2026 rules require, when you must disclose AI use, and how to document your process so honest work survives a detector flag.", date: "2026-01-01", readTime: "9 min read", category: "Policy"
   }
 ];
 

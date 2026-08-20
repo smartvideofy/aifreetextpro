@@ -57,10 +57,10 @@ const HowToCheckIfWrittenByAI = () => {
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org", "@type": "Article",
-            "headline": "How to Check If Something Was Written by AI (Free Methods)",
+            "headline": "Did AI Write This? How to Check Text for AI (2026)",
             "author": { "@type": "Person", "name": "Dr. Sarah Chen", "url": "https://aifreetextpro.com/team#sarah-chen" },
             "publisher": { "@type": "Organization", "name": "AI Free Text Pro", "logo": { "@type": "ImageObject", "url": "https://aifreetextpro.com/favicon.ico" } },
-            "datePublished": "2026-02-28", "dateModified": "2026-04-05",
+            "datePublished": "2026-02-28", "dateModified": "2026-08-20",
             "mainEntityOfPage": "https://aifreetextpro.com/blog/how-to-check-if-written-by-ai", "wordCount": 1100
           })}
         </script>
@@ -77,14 +77,14 @@ const HowToCheckIfWrittenByAI = () => {
 
       <AuthorSchema
         articleUrl="https://aifreetextpro.com/blog/how-to-check-if-written-by-ai"
-        headline="How to Check If Something Was Written by AI (Free Methods) | 2026"
+        headline="Did AI Write This? How to Check Text for AI (2026)"
         description="Free methods and tools to check if text was written by AI. Step-by-step guide for teachers, editors, and employers with accuracy comparisons."
         datePublished="2026-02-28"
-        dateModified="2026-06-09"
+        dateModified="2026-08-20"
       />
       <SpeakableSchema
         pageUrl="https://aifreetextpro.com/blog/how-to-check-if-written-by-ai"
-        pageName="How to Check If Something Was Written by AI (Free Methods) | 2026"
+        pageName="Did AI Write This? How to Check Text for AI (2026)"
       />
 
 
@@ -119,6 +119,19 @@ const HowToCheckIfWrittenByAI = () => {
               "No single method is 100% reliable; the best approach combines automated tools with manual review"
             ]} />
 
+
+            <section>
+              <h2>The 60-Second AI Writing Checklist</h2>
+              <p>Before you open any tool, read the passage once against these five signals. Three or more matches in 500 words means AI almost certainly drafted it.</p>
+              <ul>
+                <li><strong>Sentence lengths cluster.</strong> Most sentences land between 15 and 25 words with little variation.</li>
+                <li><strong>No specifics.</strong> Claims are true but unattached: no names, dates, numbers, or places a real author would remember.</li>
+                <li><strong>Symmetrical structure.</strong> Every paragraph opens with a topic sentence and closes with a summary clause.</li>
+                <li><strong>Hedged endings.</strong> Conclusions restate rather than commit: "ultimately, it depends on your needs."</li>
+                <li><strong>No voice.</strong> No contractions where they would be natural, no asides, no opinion stated plainly.</li>
+              </ul>
+              <p>These five map directly onto what detectors measure statistically, which is why the checklist and the score usually agree on unedited text and disagree on edited text.</p>
+            </section>
             <section>
               <h2>Why You Need to Check for AI Content</h2>
               <p>The use cases for AI detection have expanded well beyond academic integrity. In 2026, teachers check student papers, editors verify freelancer submissions, employers screen cover letters, and publishers audit guest posts. The stakes are different in each context, but the core question is the same: is this text authentically human?</p>

@@ -26,6 +26,7 @@ const About = lazy(() => import("./pages/About"));
 const Blog = lazy(() => import("./pages/Blog"));
 const BlogCategory = lazy(() => import("./pages/BlogCategory"));
 const AIChecker = lazy(() => import("./pages/AIChecker"));
+const FreeWordLimit = lazy(() => import("./pages/FreeWordLimit"));
 const Team = lazy(() => import("./pages/Team"));
 const Technology = lazy(() => import("./pages/Technology"));
 const CaseStudies = lazy(() => import("./pages/CaseStudies"));
@@ -341,6 +342,7 @@ const App = () => (
               <Route path="/ai-humanizer-for-writers" element={<AIHumanizerForWriters />} />
               <Route path="/academic-ai-writing-tool" element={<AcademicAIWritingTool />} />
               <Route path="/ai-checker" element={<AIChecker />} />
+              <Route path="/free-ai-detector-word-limit" element={<FreeWordLimit />} />
               <Route path="/team" element={<Team />} />
               <Route path="/technology" element={<Technology />} />
               <Route path="/case-studies" element={<CaseStudies />} />

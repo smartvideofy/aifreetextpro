@@ -41,6 +41,10 @@ const relatedArticles = [
 ];
 
 const faqs = [
+  { question: "Can a teacher rely on an AI detector as proof?", answer: "No. Every major vendor, Turnitin included, describes its AI score as an indicator requiring human review. With false-positive rates of 2-9%, a 150-student course can produce several wrongly flagged papers a term, and formal or non-native English writing is flagged most often. Use the score to decide whether to look closer, never as the finding itself." },
+  { question: "What should I do when a student paper is flagged?", answer: "Start with process evidence rather than the score: ask for drafts, version history, and research notes, then have a short conversation about the argument. A student who wrote the paper can extend it and defend its choices. Document the conversation and the evidence, and follow your institution's integrity procedure rather than resolving it informally." },
+  { question: "Is there a free AI detector good enough for classroom use?", answer: "Yes for spot checks. GPTZero's free tier and our own free checker both score around 88-93% on unedited AI text, which is sufficient to decide whether a paper deserves a closer read. Free tools do not give you the institutional reporting trail, so for formal cases use whatever your school licenses." },
+  { question: "Should I tell students I use an AI detector?", answer: "Yes, and it works better than secrecy. A written policy that states what tools you use, what is allowed AI assistance, and what happens after a flag reduces disputes substantially, and it gives students a clear standard to write to instead of guessing." },
   {
     question: "Which AI detector is most accurate for classroom use in 2026?",
     answer: "Turnitin currently offers the highest accuracy for classroom use with approximately 96% detection rate and a relatively low false positive rate of around 2-4%. Its integration with existing LMS platforms makes it the most practical choice for most institutions. However, no detector is perfect, and results should always be treated as one data point, not definitive proof."
@@ -167,7 +171,7 @@ const BestAIDetectorForTeachers = () => {
                   answer="Turnitin is the most common in schools because it's built into submission systems; GPTZero and Originality.AI are strong standalone options. No detector is fully reliable, and all produce false positives, so the best practice is to use a detector as one signal alongside conversation and process evidence, not as proof."
                 />
 
-              <p className="text-lg text-muted-foreground">An honest, balanced review of the top 5 AI detection tools for classroom use, including accuracy data, false positive rates, pricing, and practical recommendations.</p>
+              <p className="text-lg text-muted-foreground">If you teach and just need the answer: use Turnitin when your institution already provides it, GPTZero when you are paying nothing out of pocket, and Originality.AI when you need exportable reports for an academic-integrity file. Below is the accuracy data behind that ranking, the false-positive rates that matter more than accuracy, and how to handle a flagged paper without accusing a student on the strength of a percentage.</p>
               <div className="flex items-center gap-2 mt-4 text-sm text-muted-foreground">
                 <User className="w-4 h-4" />
                 <span>By <Link to="/team#sarah-chen" className="text-primary hover:underline">Dr. Sarah Chen</Link>, AI Research Specialist</span>

@@ -104,6 +104,24 @@ export default function WhatIsPerplexityBurstiness() {
               ]}
             />
 
+            <section className="mt-12 rounded-xl border border-primary/30 bg-primary/5 p-6">
+              <h2 className="text-2xl font-bold mb-3">Burstiness, defined</h2>
+              <p className="text-muted-foreground mb-4">
+                <strong>Burstiness</strong> is the variation in sentence length and structure across a passage.
+                Measured as the standard deviation of sentence length, human writing typically lands between 8 and 16
+                words of variation, while unedited AI output clusters between 1 and 4. High burstiness means the text
+                alternates between short and long sentences; low burstiness means every sentence is roughly the same
+                size, which is one of the two strongest signals AI detectors use.
+              </p>
+              <h3 className="text-xl font-bold mb-2">Perplexity, defined</h3>
+              <p className="text-muted-foreground">
+                <strong>Perplexity</strong> measures how surprising each word is to a language model. Low perplexity
+                means the model would have predicted those exact words; high perplexity means the word choices were
+                unexpected. AI text has low perplexity by construction, because generation favours high-probability
+                tokens.
+              </p>
+            </section>
+
             <section className="mt-12 space-y-6">
               <h2 className="text-3xl font-bold">Perplexity: Predicting the Next Word</h2>
               <p className="text-muted-foreground">

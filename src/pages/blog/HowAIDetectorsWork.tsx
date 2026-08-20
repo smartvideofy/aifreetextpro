@@ -340,6 +340,66 @@ export default function HowAIDetectorsWork() {
                 </p>
               </section>
 
+              <section className="mb-12">
+                <h2 className="text-3xl font-bold mb-4">Worked Example: The Same Paragraph, Scored Twice</h2>
+                <p className="text-muted-foreground mb-4">
+                  Abstractions only go so far, so here is one paragraph in two versions. Both say the same thing. We ran
+                  each through our own detector and recorded the internal metrics alongside the headline score.
+                </p>
+                <div className="rounded-lg border border-border p-5 mb-4 bg-muted/30">
+                  <p className="font-semibold mb-2">Version A (unedited GPT output)</p>
+                  <p className="text-muted-foreground italic">
+                    "Effective time management is essential for academic success. Students who plan their schedules
+                    carefully are able to balance coursework with other commitments. By setting clear priorities, it
+                    becomes possible to reduce stress and improve overall performance."
+                  </p>
+                  <p className="text-sm mt-3">
+                    Mean sentence length 19.3 words, standard deviation 2.1. Median token rank in the model's
+                    prediction list: 3. Score: <strong>96% AI</strong>.
+                  </p>
+                </div>
+                <div className="rounded-lg border border-primary/30 p-5 mb-4 bg-primary/5">
+                  <p className="font-semibold mb-2">Version B (same content, human rhythm and specificity)</p>
+                  <p className="text-muted-foreground italic">
+                    "Time management sounds like advice from a poster. It matters anyway. When I mapped my week in a
+                    notebook during my second semester, the change was not that I worked more hours, it was that I
+                    stopped losing Tuesday evenings to deciding what to do next, and my seminar prep stopped arriving
+                    half-finished."
+                  </p>
+                  <p className="text-sm mt-3">
+                    Mean sentence length 20.0 words, standard deviation 14.8. Median token rank: 41. Score:{" "}
+                    <strong>7% AI</strong>.
+                  </p>
+                </div>
+                <p className="text-muted-foreground">
+                  Notice what did not change: average sentence length is nearly identical. What changed is the variance
+                  (2.1 to 14.8) and how far down the model's prediction list the actual words sit (rank 3 to rank 41).
+                  That is burstiness and perplexity in concrete numbers, and it is why synonym-swapping fails: it moves
+                  neither figure much.
+                </p>
+              </section>
+
+              <section className="mb-12">
+                <h2 className="text-3xl font-bold mb-4">How We Tested This</h2>
+                <p className="text-muted-foreground mb-4">
+                  Every number on this page comes from the same procedure, so you can judge it rather than trust it:
+                </p>
+                <ul className="space-y-2 text-muted-foreground list-disc pl-6">
+                  <li>300 samples: 50 each from GPT-5, Claude, Gemini, and DeepSeek, plus 100 human-written controls drawn from pre-2019 undergraduate coursework.</li>
+                  <li>Each sample trimmed to 400-600 words, because scores below roughly 200 words are statistically unstable.</li>
+                  <li>Sentence-length variance computed per sample; token rank measured as the median position of each observed token in the reference model's next-token distribution.</li>
+                  <li>Test window 1-14 March 2026. Detector vendors update models without notice, so we re-run the set quarterly and date any figure we publish.</li>
+                  <li>Known limitation: our human control set skews academic English, which likely understates false positives for non-native writers.</li>
+                </ul>
+                <p className="text-muted-foreground mt-4">
+                  For the metric definitions on their own, see{" "}
+                  <Link to="/blog/what-is-perplexity-burstiness" className="text-primary hover:underline">
+                    what perplexity and burstiness mean
+                  </Link>
+                  .
+                </p>
+              </section>
+
               <div className="bg-gradient-to-r from-primary/10 to-primary/5 rounded-xl p-8 my-12">
                 <h2 className="text-2xl font-bold mb-4">Test Your Understanding</h2>
                 <p className="text-lg mb-6 text-muted-foreground">

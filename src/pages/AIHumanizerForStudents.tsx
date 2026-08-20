@@ -447,6 +447,61 @@ const AIHumanizerForStudents = () => {
           </div>
         </section>
 
+        {/* Regional context */}
+        <section className="py-20">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto">
+              <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
+                Built for Students Outside the US Too
+              </h2>
+              <p className="text-muted-foreground text-center mb-10">
+                Most of the students using this tool are not in North America. Detection policy, assessment format, and
+                price sensitivity differ by country, so here is what matters where you are.
+              </p>
+              <div className="grid md:grid-cols-2 gap-6">
+                <div className="rounded-xl border border-border p-6">
+                  <h3 className="font-bold mb-2">Philippines and Indonesia</h3>
+                  <p className="text-sm text-muted-foreground">
+                    Reflection papers and thesis chapters submitted through Google Classroom or Moodle are the common
+                    case. Neither platform detects AI by itself; your instructor pastes text into a separate checker.
+                    Check your own draft first so you are never surprised by a score you have not seen.
+                  </p>
+                </div>
+                <div className="rounded-xl border border-border p-6">
+                  <h3 className="font-bold mb-2">India, Bangladesh and Pakistan</h3>
+                  <p className="text-sm text-muted-foreground">
+                    University assignments and semester projects are frequently graded on formal English, which is
+                    exactly the writing style detectors flag most often. Non-native academic English raises false
+                    positives, so keep drafts and version history alongside anything you submit.
+                  </p>
+                </div>
+                <div className="rounded-xl border border-border p-6">
+                  <h3 className="font-bold mb-2">Nigeria, Kenya and Ghana</h3>
+                  <p className="text-sm text-muted-foreground">
+                    Term papers and project write-ups often go through Turnitin at the department level. The free tier
+                    covers 1,000 words a month with no card, which is enough to clean the sections that actually flag
+                    rather than rewriting a whole chapter.
+                  </p>
+                </div>
+                <div className="rounded-xl border border-border p-6">
+                  <h3 className="font-bold mb-2">Malaysia, Vietnam and the Philippines</h3>
+                  <p className="text-sm text-muted-foreground">
+                    Group coursework in mixed-language programmes tends to be edited by several people, which flattens
+                    sentence rhythm and pushes the AI score up even on human work. Run a check before you merge
+                    sections, not after.
+                  </p>
+                </div>
+              </div>
+              <p className="text-sm text-muted-foreground text-center mt-8">
+                Whatever your institution uses, the honest position is the same one we hold everywhere on this site:
+                the goal is fewer false flags on writing you own, not beating an integrity system. See the{" "}
+                <Link to="/free-ai-detector-word-limit" className="text-primary hover:underline">free word limits</Link>{" "}
+                before you start.
+              </p>
+            </div>
+          </div>
+        </section>
+
         {/* Final CTA */}
         <section className="py-20 bg-gradient-to-br from-primary/10 via-secondary/10 to-primary/10">
           <div className="container mx-auto px-4">

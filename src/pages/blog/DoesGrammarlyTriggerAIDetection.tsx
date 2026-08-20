@@ -30,7 +30,7 @@ const DoesGrammarlyTriggerAIDetection = () => {
         <meta name="author" content="Lisa Chang" />
         <meta property="og:type" content="article" />
         <meta property="og:url" content="https://aifreetextpro.com/blog/does-grammarly-trigger-ai-detection" />
-        <meta property="og:title" content="Does Grammarly Get Detected as AI? The Truth (2026)" />
+        <meta property="og:title" content="Does Grammarly Trigger AI Detection? We Tested It" />
         <meta property="og:description" content="We tested Grammarly-edited text against Turnitin, GPTZero, and more." />
         <meta property="og:image" content="https://aifreetextpro.com/og-image.png" />
         <meta property="og:image:width" content="1200" />
@@ -41,7 +41,7 @@ const DoesGrammarlyTriggerAIDetection = () => {
         <meta property="article:modified_time" content="2026-02-25T08:00:00Z" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@aifreetextpro" />
-        <meta name="twitter:title" content="Does Grammarly Get Detected as AI? The Truth (2026)" />
+        <meta name="twitter:title" content="Does Grammarly Trigger AI Detection? We Tested It" />
         <meta name="twitter:description" content="Real test results: Grammarly-edited text vs AI detectors." />
         <meta name="twitter:image" content="https://aifreetextpro.com/og-image.png" />
         <script type="application/ld+json">{JSON.stringify({

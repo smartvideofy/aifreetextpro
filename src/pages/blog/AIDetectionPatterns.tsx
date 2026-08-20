@@ -30,14 +30,14 @@ const AIDetectionPatterns = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <Helmet>
-        <title>7 Patterns That Make AI Text Obvious (2026)</title>
-        <meta name="description" content="The seven statistical and stylistic patterns detectors key on, shown sentence by sentence, plus the specific edit that removes each one from your draft." />
+        <title>5 Patterns That Make AI Text Obvious (2026)</title>
+        <meta name="description" content="The five statistical and stylistic patterns detectors key on, shown sentence by sentence, plus the specific edit that removes each one from your draft." />
         <meta name="keywords" content="AI detection patterns, perplexity and burstiness explained, is my writing human or AI, AI linguistic patterns, how AI detectors work" />
         <link rel="canonical" href="https://aifreetextpro.com/blog/ai-detection-patterns-explained" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="bingbot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-        <meta property="og:title" content="5 Patterns AI Detectors Flag [And How to Fix Them]" />
+        <meta property="og:title" content="5 Patterns That Make AI Text Obvious (2026)" />
         <meta property="og:description" content="Understand the linguistic patterns that distinguish AI writing from human writing" />
         <meta property="og:url" content="https://aifreetextpro.com/blog/ai-detection-patterns-explained" />
         <meta property="og:type" content="article" />
@@ -46,7 +46,7 @@ const AIDetectionPatterns = () => {
         <meta property="og:locale" content="en_US" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@aifreetextpro" />
-        <meta name="twitter:title" content="5 Patterns AI Detectors Flag [And How to Fix Them]" />
+        <meta name="twitter:title" content="5 Patterns That Make AI Text Obvious (2026)" />
         <meta name="twitter:description" content="Understand perplexity, burstiness, and linguistic patterns in AI detection." />
         <meta name="twitter:image" content="https://aifreetextpro.com/og-image.png" />
         

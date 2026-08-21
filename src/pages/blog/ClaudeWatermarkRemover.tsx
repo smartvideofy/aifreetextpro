@@ -107,15 +107,6 @@ const ClaudeWatermarkRemover = () => {
         <meta name="twitter:description" content={DESCRIPTION} />
         <meta name="twitter:image" content={OG_IMAGE} />
         <meta name="twitter:image:alt" content="Claude Watermark Remover explained" />
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
-              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://aifreetextpro.com" },
-              { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://aifreetextpro.com/blog" },
-              { "@type": "ListItem", "position": 3, "name": "Claude Watermark Remover" },
-            ],
-          })}
-        </script>
       </Helmet>
 
       <AuthorSchema

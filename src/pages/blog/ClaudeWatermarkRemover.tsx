@@ -14,9 +14,11 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@
 import { AuthorSchema } from "@/components/AuthorSchema";
 import { SpeakableSchema } from "@/components/SpeakableSchema";
 import { PostHowToSchema } from "@/components/PostHowToSchema";
+import { trackCTAClick } from "@/lib/analytics";
 
 const URL = "https://aifreetextpro.com/blog/claude-watermark-remover";
 const APP = "https://app.aifreetextpro.com?utm_source=blog&utm_medium=organic&utm_campaign=claude_watermark";
+const OG_IMAGE = "https://aifreetextpro.com/og-claude-watermark-remover.jpg";
 
 const TITLE = "Claude Watermark Remover: How to Remove Claude's AI Text Watermark";
 const DESCRIPTION =
@@ -47,13 +49,33 @@ const faqs = [
   { question: "Is Claude watermark removal legal?", answer: "The answer depends on the jurisdiction, use case, applicable laws, contracts, and platform or institutional policies. Users are responsible for how they use transformed content." },
 ];
 
-const Cta = ({ heading, text, label }: { heading: string; text: string; label: string }) => (
+const src = (url: string, label: string) => (
+  <a href={url} target="_blank" rel="noopener noreferrer nofollow">{label}</a>
+);
+const ANTHROPIC_NEWS = src("https://www.anthropic.com/news/claude-text-watermark", "Anthropic — How Claude's text watermarking works (August 14, 2026)");
+const CLAUDE_HELP = src("https://support.claude.com/en/articles/16266773-how-claude-marks-ai-generated-content", "Anthropic Help Center — How Claude marks AI-generated content");
+const VERGE = src("https://www.theverge.com/ai-artificial-intelligence/980869/anthropic-claude-watermarks-synthid-text-system", "The Verge — Anthropic explains how Claude's invisible text watermarks will work");
+const TECHCRUNCH = src("https://techcrunch.com/2026/08/15/anthropic-shares-more-details-about-how-claudes-new-watermarks-will-work/", "TechCrunch — Anthropic shares more details about how Claude's watermarks will work");
+const SYNTHID = src("https://deepmind.google/science/synthid/", "Google DeepMind — SynthID and SynthID-Text");
+const NATURE = src("https://www.nature.com/articles/s41586-024-08025-4", "Nature — Scalable watermarking for identifying large language model outputs");
+const EU_ACT = src("https://artificialintelligenceact.eu/article/50/", "EU AI Act — Article 50 transparency obligations");
+const C2PA = src("https://c2pa.org/", "C2PA — Coalition for Content Provenance and Authenticity");
+
+const Cta = ({ heading, text, label, position }: { heading: string; text: string; label: string; position: string }) => (
   <div className="bg-primary/5 border border-primary/20 rounded-lg p-8 my-8 text-center not-prose">
-    <h3 className="text-xl font-bold mb-2">{heading}</h3>
-    <p className="text-muted-foreground mb-4">{text}</p>
-    <a href={APP} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg font-medium hover:opacity-90 transition-opacity">
-      {label} <ExternalLink className="w-4 h-4" />
+    <h3 className="text-xl font-bold mb-2 text-foreground">{heading}</h3>
+    <p className="text-muted-foreground mb-5">{text}</p>
+    <a
+      href={APP}
+      target="_blank"
+      rel="noopener noreferrer"
+      onClick={() => trackCTAClick(`claude_watermark_${position}`, "app_humanizer")}
+      className="inline-flex items-center justify-center gap-2 bg-primary !text-primary-foreground px-7 py-3.5 rounded-lg font-semibold no-underline shadow-sm hover:bg-primary/90 hover:shadow-md transition-all"
+    >
+      <span>{label}</span>
+      <ExternalLink className="w-4 h-4" aria-hidden="true" />
     </a>
+    <p className="text-xs text-muted-foreground mt-3">Free tier includes 1,000 words. No credit card needed.</p>
   </div>
 );
 
@@ -72,6 +94,10 @@ const ClaudeWatermarkRemover = () => {
         <meta property="og:description" content={DESCRIPTION} />
         <meta property="og:site_name" content="AI Free Text Pro" />
         <meta property="og:locale" content="en_US" />
+        <meta property="og:image" content={OG_IMAGE} />
+        <meta property="og:image:alt" content="Claude Watermark Remover: how Claude's invisible AI text watermark works" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
         <meta property="article:published_time" content="2026-08-21" />
         <meta property="article:modified_time" content="2026-08-21" />
         <meta property="article:author" content="Dr. Sarah Chen" />
@@ -79,15 +105,8 @@ const ClaudeWatermarkRemover = () => {
         <meta name="twitter:site" content="@aifreetextpro" />
         <meta name="twitter:title" content={TITLE} />
         <meta name="twitter:description" content={DESCRIPTION} />
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
-              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://aifreetextpro.com" },
-              { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://aifreetextpro.com/blog" },
-              { "@type": "ListItem", "position": 3, "name": "Claude Watermark Remover" },
-            ],
-          })}
-        </script>
+        <meta name="twitter:image" content={OG_IMAGE} />
+        <meta name="twitter:image:alt" content="Claude Watermark Remover explained" />
       </Helmet>
 
       <AuthorSchema
@@ -96,7 +115,7 @@ const ClaudeWatermarkRemover = () => {
         description={DESCRIPTION}
         datePublished="2026-08-21"
         dateModified="2026-08-21"
-        image="https://aifreetextpro.com/og-image.png"
+        image={OG_IMAGE}
       />
       <SpeakableSchema pageUrl={URL} pageName="Claude Watermark Remover" />
       <PostHowToSchema
@@ -150,17 +169,17 @@ const ClaudeWatermarkRemover = () => {
               "Removing a watermark never removes disclosure obligations under academic, publisher or workplace policy",
             ]} />
 
-            <p>Anthropic has introduced a major change to Claude: AI-generated text can now contain an invisible, machine-readable watermark designed to indicate that Claude was involved in generating the content.</p>
+            <p>Anthropic has introduced a major change to Claude: AI-generated text can now contain an invisible, machine-readable watermark designed to indicate that Claude was involved in generating the content. Anthropic explained the mechanism in its own announcement, <a href="https://www.anthropic.com/news/claude-text-watermark" target="_blank" rel="noopener noreferrer nofollow">How Claude's text watermarking works</a>, and documents the practical limits in its <a href="https://support.claude.com/en/articles/16266773-how-claude-marks-ai-generated-content" target="_blank" rel="noopener noreferrer nofollow">help center article on marking AI-generated content</a>.</p>
 
             <p>Unlike a traditional watermark, you won't see a logo, symbol, colored background, or hidden line of text. Claude's watermark is embedded statistically through patterns in word selection during generation. Anthropic says the system is designed to preserve the meaning and readability of the generated text while allowing the content to be identified by an appropriate detection system.</p>
 
-            <p>The announcement has quickly triggered interest in Claude watermark removers, AI humanizers, watermark detection, and text rewriting tools. Developers have already published approaches that attempt to disrupt the watermark through substantial rewriting, while Anthropic says it is developing a detection API.</p>
+            <p>Reporting from <a href="https://www.theverge.com/ai-artificial-intelligence/980869/anthropic-claude-watermarks-synthid-text-system" target="_blank" rel="noopener noreferrer nofollow">The Verge</a> and <a href="https://techcrunch.com/2026/08/15/anthropic-shares-more-details-about-how-claudes-new-watermarks-will-work/" target="_blank" rel="noopener noreferrer nofollow">TechCrunch</a> notes that Anthropic is using a version of Google DeepMind's open-source <a href="https://deepmind.google/science/synthid/" target="_blank" rel="noopener noreferrer nofollow">SynthID-Text</a> approach, the same family of methods described in the <a href="https://www.nature.com/articles/s41586-024-08025-4" target="_blank" rel="noopener noreferrer nofollow">Nature paper on scalable watermarking for LLMs</a>. The announcement has quickly triggered interest in Claude watermark removers, AI humanizers, watermark detection, and text rewriting tools. Developers have already published approaches that attempt to disrupt the watermark through substantial rewriting, while Anthropic says it is developing a detection API.</p>
 
             <p>If you have Claude-generated text that you want to substantially rewrite, AI Free Text Pro now includes Claude watermark removal as part of its humanization workflow.</p>
 
             <p>Our approach isn't based on simply deleting invisible characters. Instead, AI Free Text Pro transforms the text itself, rewriting wording, sentence structures, phrasing, rhythm, and other linguistic patterns to create a substantially different version of the original content.</p>
 
-            <p><a href={APP} target="_blank" rel="noopener noreferrer">Try AI Free Text Pro Humanizer →</a></p>
+            <p><a href={APP} target="_blank" rel="noopener noreferrer" onClick={() => trackCTAClick("claude_watermark_intro_link", "app_humanizer")}>Try the AI Free Text Pro humanizer free →</a></p>
 
             <h2>What Is the Claude AI Watermark?</h2>
             <p>The Claude AI watermark is a machine-readable signal embedded into text generated by supported Claude models.</p>
@@ -175,13 +194,13 @@ const ClaudeWatermarkRemover = () => {
               <li>or a simple piece of metadata that can be deleted.</li>
             </ul>
             <p>Instead, Anthropic's system influences certain word choices during text generation. When the model has several reasonable ways to express an idea, the watermarking system can influence those choices according to a statistical pattern. Across enough text, that pattern can potentially be detected by a system with the appropriate detection mechanism.</p>
-            <p>This is why the recent announcement has created so much interest in Claude watermark removal.</p>
+            <p>This is why the recent announcement has created so much interest in Claude watermark removal. If you want the statistical background first, our guide to <Link to="/blog/what-is-perplexity-burstiness">perplexity and burstiness</Link> explains how these token-level probabilities are measured, and <Link to="/blog/how-ai-detectors-work">how AI detectors work</Link> covers how classifiers differ from watermark detection.</p>
             <p>A user cannot simply open a document, search for the watermark, and delete it.</p>
             <p>The text itself has to be transformed.</p>
 
             <h2>Why Did Anthropic Add a Watermark to Claude?</h2>
             <p>Anthropic's move is part of the broader development of AI-content provenance and transparency.</p>
-            <p>The European Union's AI regulatory framework includes transparency requirements concerning synthetic content, and Anthropic has connected its watermarking approach to those requirements. Current reporting says the watermark is intended to make AI-generated content machine-identifiable without adding an obvious visual marker to the text.</p>
+            <p>The European Union's AI regulatory framework includes transparency requirements concerning synthetic content (see <a href="https://artificialintelligenceact.eu/article/50/" target="_blank" rel="noopener noreferrer nofollow">Article 50 of the EU AI Act</a> and the <a href="https://c2pa.org/" target="_blank" rel="noopener noreferrer nofollow">C2PA content provenance standard</a>), and Anthropic has connected its watermarking approach to those requirements. Current reporting says the watermark is intended to make AI-generated content machine-identifiable without adding an obvious visual marker to the text.</p>
             <p>There are legitimate reasons for wanting this capability.</p>
             <p>A reliable provenance signal could potentially help:</p>
             <ul>
@@ -318,7 +337,7 @@ const ClaudeWatermarkRemover = () => {
             </ul>
             <p>The result is intended to preserve the original meaning while producing a substantially different linguistic representation of the content.</p>
 
-            <Cta heading="Try it yourself" text="Remove Claude watermark and humanize your text with AI Free Text Pro." label="Open AI Free Text Pro" />
+            <Cta position="mid_article" heading="Try it yourself" text="Remove Claude watermark and humanize your text with AI Free Text Pro." label="Humanize My Claude Text Free" />
 
             <h2>Why Simple Paraphrasing Isn't the Same as Humanization</h2>
             <p>Consider this example.</p>
@@ -519,7 +538,7 @@ const ClaudeWatermarkRemover = () => {
             <h2>How to Remove a Claude AI Watermark With AI Free Text Pro</h2>
             <p>The process is simple.</p>
             <h3>Step 1: Open AI Free Text Pro</h3>
-            <p>Go directly to the web app: <a href={APP} target="_blank" rel="noopener noreferrer">Open AI Free Text Pro →</a></p>
+            <p>Go directly to the web app: <a href={APP} target="_blank" rel="noopener noreferrer" onClick={() => trackCTAClick("claude_watermark_step_link", "app_humanizer")}>Open AI Free Text Pro →</a></p>
             <h3>Step 2: Paste your Claude-generated text</h3>
             <p>Copy the text you want to transform and place it into the humanizer.</p>
             <h3>Step 3: Start the humanization process</h3>
@@ -541,7 +560,7 @@ const ClaudeWatermarkRemover = () => {
             <h3>Step 5: Use the revised version</h3>
             <p>Once you've reviewed the output, you can copy it into your document, CMS, website, research workflow, or other writing environment.</p>
 
-            <Cta heading="Try AI Free Text Pro now" text="Paste your Claude draft and get a substantially transformed version in seconds. 1,000 words free." label="Try AI Free Text Pro" />
+            <Cta position="after_workflow" heading="Try AI Free Text Pro now" text="Paste your Claude draft and get a substantially transformed version in seconds." label="Rewrite My Claude Draft Now" />
 
             <h2>Does Claude Watermark Removal Work on Short Text?</h2>
             <p>Watermark detection is inherently statistical.</p>
@@ -670,9 +689,9 @@ const ClaudeWatermarkRemover = () => {
               <li>reduce unnecessary verbosity;</li>
               <li>make paragraphs flow more naturally.</li>
             </ul>
-            <p>That's the problem AI Free Text Pro is designed to solve.</p>
+            <p>That's the problem AI Free Text Pro is designed to solve. For model-specific workflows, see <Link to="/blog/humanize-claude-output">how to humanize Claude output</Link>, <Link to="/blog/humanize-gpt5-output">humanizing GPT-5 output</Link>, and <Link to="/blog/paraphrasing-vs-humanizing">paraphrasing versus humanizing</Link>. If you first want to test a draft, use our free <Link to="/ai-checker">AI checker</Link> or read about <Link to="/free-ai-detector-word-limit">free detector word limits</Link>.</p>
 
-            <FAQSection faqs={faqs} title="Frequently Asked Questions About Claude Watermark Removal" />
+            <div className="not-prose"><FAQSection faqs={faqs} title="Frequently Asked Questions About Claude Watermark Removal" /></div>
 
             <h2>Try the Claude Watermark Remover From AI Free Text Pro</h2>
             <p>Claude's move toward machine-readable text watermarking is an important development in the evolution of AI-generated content.</p>
@@ -696,7 +715,7 @@ const ClaudeWatermarkRemover = () => {
             </ul>
             <p>AI Free Text Pro gives you a simple way to transform the text.</p>
 
-            <Cta heading="Ready to try it?" text="Open AI Free Text Pro and humanize your Claude-generated text." label="Open AI Free Text Pro" />
+            <Cta position="conclusion" heading="Ready to try it?" text="Open AI Free Text Pro and humanize your Claude-generated text." label="Start Humanizing Free" />
 
             <h2>Use AI Responsibly</h2>
             <p>AI watermarking is ultimately about transparency and provenance.</p>
@@ -722,7 +741,19 @@ const ClaudeWatermarkRemover = () => {
             <p>Instead, AI Free Text Pro transforms the text itself.</p>
             <p>The result is a more substantially rewritten version of the original content, with different wording, structure, phrasing, rhythm, and linguistic patterns.</p>
             <p>As AI watermarking technology evolves, so will the tools used to understand, detect, transform, and work with AI-generated text.</p>
-            <p>For now, if you have Claude-generated text that you want to transform, you can try AI Free Text Pro directly: <a href={APP} target="_blank" rel="noopener noreferrer">Try AI Free Text Pro Humanizer →</a></p>
+            <p>For now, if you have Claude-generated text that you want to transform, you can try AI Free Text Pro directly: <a href={APP} target="_blank" rel="noopener noreferrer" onClick={() => trackCTAClick("claude_watermark_final_link", "app_humanizer")}>Try the AI Free Text Pro humanizer free →</a></p>
+
+            <h2>Sources and Further Reading</h2>
+            <ul>
+              <li>{ANTHROPIC_NEWS}</li>
+              <li>{CLAUDE_HELP}</li>
+              <li>{VERGE}</li>
+              <li>{TECHCRUNCH}</li>
+              <li>{SYNTHID}</li>
+              <li>{NATURE}</li>
+              <li>{EU_ACT}</li>
+              <li>{C2PA}</li>
+            </ul>
 
             <RelatedArticles articles={relatedArticles} />
             <InternalLinks currentPage="/blog/claude-watermark-remover" />

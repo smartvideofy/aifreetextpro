@@ -36,10 +36,11 @@ export const FAQSection = ({ faqs, title = "Frequently Asked Questions" }: FAQSe
       </Helmet>
       
       <section className="py-12 border-t border-border/50">
-        <div className="flex items-center gap-3 mb-6">
-          <HelpCircle className="w-6 h-6 text-primary" />
-          <h2 className="text-2xl font-bold">{title}</h2>
+        <div className="flex items-start gap-3 mb-6">
+          <HelpCircle className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
+          <h2 className="text-2xl font-bold leading-snug">{title}</h2>
         </div>
+
         <Accordion type="single" collapsible className="space-y-4">
           {faqs.map((faq, index) => (
             <AccordionItem 

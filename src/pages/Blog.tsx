@@ -27,6 +27,8 @@ const categoryThumbnails: Record<string, string> = {
 
 export const blogPosts = [
   {
+    slug: "synthid-watermark-remover", title: "SynthID Watermark Remover: How to Remove Gemini's AI Text Watermark", excerpt: "Gemini text carries an invisible SynthID watermark. How SynthID-Text works, why Unicode cleaners and copy/paste do not remove it, and how substantial rewriting disrupts the signal.", date: "2026-08-26", readTime: "17 min read", category: "Technical"
+  }, {
     slug: "claude-watermark-remover", title: "Claude Watermark Remover: How to Remove Claude's AI Text Watermark", excerpt: "Claude now uses an invisible AI text watermark. How Claude's statistical watermark works, why copy/paste and Unicode cleaners don't remove it, and how substantial rewriting does.", date: "2026-08-21", readTime: "18 min read", category: "Technical"
   }, {
     slug: "humanize-gpt5-output", title: "How to Humanize GPT-5 Output (2026 Guide): Bypass AI Detection", excerpt: "Raw GPT-5 is flagged at 71-86% by Turnitin and 78-91% by GPTZero. A 6-step workflow that drops scores to 4-8% without losing reasoning quality.", date: "2026-06-12", readTime: "11 min read", category: "How-To Guide"

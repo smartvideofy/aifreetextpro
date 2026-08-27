@@ -27,6 +27,8 @@ const categoryThumbnails: Record<string, string> = {
 
 export const blogPosts = [
   {
+    slug: "humanize-deepseek-output", title: "How to Humanize DeepSeek Output (2026 Guide)", excerpt: "DeepSeek drafts get flagged by Turnitin, GPTZero and Originality.AI for predictable reasons. A tested 6-step workflow to rewrite DeepSeek text so it reads as your own writing.", date: "2026-08-27", readTime: "16 min read", category: "How-To Guide"
+  }, {
     slug: "synthid-watermark-remover", title: "SynthID Watermark Remover: How to Remove Gemini's AI Text Watermark", excerpt: "Gemini text carries an invisible SynthID watermark. How SynthID-Text works, why Unicode cleaners and copy/paste do not remove it, and how substantial rewriting disrupts the signal.", date: "2026-08-26", readTime: "17 min read", category: "Technical"
   }, {
     slug: "claude-watermark-remover", title: "Claude Watermark Remover: How to Remove Claude's AI Text Watermark", excerpt: "Claude now uses an invisible AI text watermark. How Claude's statistical watermark works, why copy/paste and Unicode cleaners don't remove it, and how substantial rewriting does.", date: "2026-08-21", readTime: "18 min read", category: "Technical"

@@ -186,6 +186,7 @@ const HumanizeGPT5Output = lazy(() => import("./pages/blog/HumanizeGPT5Output"))
 const ClaudeWatermarkRemover = lazy(() => import("./pages/blog/ClaudeWatermarkRemover"));
 const AIDetectorForStudents2026 = lazy(() => import("./pages/blog/AIDetectorForStudents2026"));
 const SynthIDWatermarkRemover = lazy(() => import("./pages/blog/SynthIDWatermarkRemover"));
+const HumanizeDeepSeekOutput = lazy(() => import("./pages/blog/HumanizeDeepSeekOutput"));
 
 
 const queryClient = new QueryClient();
@@ -389,6 +390,7 @@ const App = () => (
               <Route path="/blog/humanize-gpt5-output" element={<HumanizeGPT5Output />} />
               <Route path="/blog/claude-watermark-remover" element={<ClaudeWatermarkRemover />} />
               <Route path="/blog/synthid-watermark-remover" element={<SynthIDWatermarkRemover />} />
+              <Route path="/blog/humanize-deepseek-output" element={<HumanizeDeepSeekOutput />} />
               <Route path="/blog/ai-detector-for-students-2026" element={<AIDetectorForStudents2026 />} />
 
               

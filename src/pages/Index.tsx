@@ -1244,6 +1244,9 @@ const Index = () => {
           </div>
         </section>
 
+        {/* Search-intent depth + curated internal linking */}
+        <HomeIntentContent />
+
         {/* Pillar Hub: AI Humanizer Spokes */}
         <section className="py-4">
           <div className="container mx-auto px-4">

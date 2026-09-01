@@ -17,7 +17,7 @@ const intents = [
     heading: "AI text humanizer",
     body:
       "Paste ChatGPT, Claude, Gemini or DeepSeek output and rewrite it so sentence length, rhythm and word choice read like a person wrote it. The rewrite keeps your meaning, citations and formatting intact while raising perplexity and burstiness, the two signals detectors lean on hardest.",
-    link: { to: "/blog/humanize-ai-text", label: "How humanizing works" },
+    link: { to: "/blog/humanize-ai-text-without-losing-voice", label: "How humanizing works" },
   },
   {
     icon: Search,

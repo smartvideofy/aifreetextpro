@@ -11,6 +11,7 @@ import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { Link } from "react-router-dom";
 import HowToSchema from "@/components/HowToSchema";
 import ProductMockup from "@/components/ProductMockup";
+import HomeIntentContent from "@/components/HomeIntentContent";
 import StickyHeaderCTA from "@/components/StickyHeaderCTA";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import aiDetectorFeature from "@/assets/ai-detector-feature.png";

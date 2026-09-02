@@ -27,6 +27,12 @@ const categoryThumbnails: Record<string, string> = {
 
 export const blogPosts = [
   {
+    slug: "free-ai-detector", title: "Free AI Detector: How to Check Text and Read the Score (2026)", excerpt: "How free AI detectors work, what the scores really mean, where the free limits sit, and a 4-step checking workflow that avoids the false-positive trap.", date: "2026-09-02", readTime: "15 min read", category: "Tools"
+  }, {
+    slug: "ai-writing-checker", title: "AI Writing Checker: What It Checks and How to Use One (2026)", excerpt: "An AI writing checker flags predictable prose, not plagiarism. What it measures, how it differs from grammar and plagiarism tools, and a review workflow that improves the writing.", date: "2026-09-02", readTime: "14 min read", category: "Tools"
+  }, {
+    slug: "paraphrasing-tool", title: "Paraphrasing Tool Guide 2026: How to Rewrite Text Properly", excerpt: "What a paraphrasing tool actually does, when synonym swapping fails, and a 5-step rewriting workflow that keeps meaning, avoids plagiarism and reads as your own writing.", date: "2026-09-02", readTime: "14 min read", category: "Tools"
+  }, {
     slug: "humanize-deepseek-output", title: "How to Humanize DeepSeek Output (2026 Guide)", excerpt: "DeepSeek drafts get flagged by Turnitin, GPTZero and Originality.AI for predictable reasons. A tested 6-step workflow to rewrite DeepSeek text so it reads as your own writing.", date: "2026-08-27", readTime: "16 min read", category: "How-To Guide"
   }, {
     slug: "synthid-watermark-remover", title: "SynthID Watermark Remover: How to Remove Gemini's AI Text Watermark", excerpt: "Gemini text carries an invisible SynthID watermark. How SynthID-Text works, why Unicode cleaners and copy/paste do not remove it, and how substantial rewriting disrupts the signal.", date: "2026-08-26", readTime: "17 min read", category: "Technical"

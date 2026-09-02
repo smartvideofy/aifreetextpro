@@ -187,6 +187,9 @@ const ClaudeWatermarkRemover = lazy(() => import("./pages/blog/ClaudeWatermarkRe
 const AIDetectorForStudents2026 = lazy(() => import("./pages/blog/AIDetectorForStudents2026"));
 const SynthIDWatermarkRemover = lazy(() => import("./pages/blog/SynthIDWatermarkRemover"));
 const HumanizeDeepSeekOutput = lazy(() => import("./pages/blog/HumanizeDeepSeekOutput"));
+const BestParaphrasingTool = lazy(() => import("./pages/blog/BestParaphrasingTool"));
+const FreeAIDetectorGuide = lazy(() => import("./pages/blog/FreeAIDetectorGuide"));
+const AIWritingCheckerPost = lazy(() => import("./pages/blog/AIWritingChecker"));
 
 
 const queryClient = new QueryClient();
@@ -391,6 +394,9 @@ const App = () => (
               <Route path="/blog/claude-watermark-remover" element={<ClaudeWatermarkRemover />} />
               <Route path="/blog/synthid-watermark-remover" element={<SynthIDWatermarkRemover />} />
               <Route path="/blog/humanize-deepseek-output" element={<HumanizeDeepSeekOutput />} />
+              <Route path="/blog/paraphrasing-tool" element={<BestParaphrasingTool />} />
+              <Route path="/blog/free-ai-detector" element={<FreeAIDetectorGuide />} />
+              <Route path="/blog/ai-writing-checker" element={<AIWritingCheckerPost />} />
               <Route path="/blog/ai-detector-for-students-2026" element={<AIDetectorForStudents2026 />} />
 
               

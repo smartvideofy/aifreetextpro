@@ -12,6 +12,7 @@ import { Link } from "react-router-dom";
 import HowToSchema from "@/components/HowToSchema";
 import ProductMockup from "@/components/ProductMockup";
 import HomeIntentContent from "@/components/HomeIntentContent";
+import HomeToolAnswers from "@/components/HomeToolAnswers";
 import StickyHeaderCTA from "@/components/StickyHeaderCTA";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import aiDetectorFeature from "@/assets/ai-detector-feature.png";
@@ -1247,6 +1248,7 @@ const Index = () => {
 
         {/* Search-intent depth + curated internal linking */}
         <HomeIntentContent />
+        <HomeToolAnswers />
 
         {/* Pillar Hub: AI Humanizer Spokes */}
         <section className="py-4">

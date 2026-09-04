@@ -77,8 +77,9 @@ const AIChecker = () => {
         <link rel="canonical" href="https://aifreetextpro.com/ai-checker" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-        <meta property="og:title" content="Free AI Detector 2026: Unlimited Words, No Signup" />
-        <meta property="og:description" content="Check text against 15+ AI detectors in one click. Free, instant, private. Unlimited words, no account required." />
+        <meta property="og:title" content="Free AI Detector: Check Your Text in 30 Seconds" />
+        <meta property="og:description" content="Check text against the signals 15+ AI detectors use, in one click. Free, instant, private, no account required." />
+
         <meta property="og:url" content="https://aifreetextpro.com/ai-checker" />
         <meta property="og:type" content="website" />
         

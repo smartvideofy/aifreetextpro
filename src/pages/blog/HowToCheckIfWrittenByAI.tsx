@@ -73,10 +73,11 @@ const HowToCheckIfWrittenByAI = () => {
       </Helmet>
       <PostHowToSchema
         url="https://aifreetextpro.com/blog/how-to-check-if-written-by-ai"
-        name="How to Check If Text Was Written by AI"
-        description="Free methods and tools to check if text was written by AI. Step-by-step guide for teachers, editors, and employers with accuracy comparisons."
-        steps={[{"name":"Run an initial AI detection check","text":"Paste your draft into a trusted AI detector to baseline its current AI-probability score before editing."},{"name":"Identify high-flag passages","text":"Use the detector's per-sentence highlights to find the spans most likely to trigger detection."},{"name":"Restructure sentence rhythm and burstiness","text":"Vary sentence length and structure so the text alternates between short, punchy sentences and longer, complex ones."},{"name":"Inject voice, perspective, and specificity","text":"Replace generic phrasing with first-person reasoning, concrete examples, and domain-specific vocabulary that reflects a human author."},{"name":"Re-check and iterate","text":"Run the detector again and repeat the targeted edits until the AI score falls below your safety threshold."}]}
+        name="How to Detect AI Writing in Any Text"
+        description="A five-step method to check whether AI wrote a piece of text: detector baseline, sentence-variance test, specificity test, cross-check, and process verification."
+        steps={[{"name":"Run the text through an AI detector","text":"Paste at least 300 words into a free AI detector to get a baseline AI-probability score. Shorter passages return unreliable results."},{"name":"Measure sentence-length variance","text":"Count the words in ten consecutive sentences. Human writing swings widely; AI output clusters between 15 and 25 words with little variation."},{"name":"Test for specificity","text":"Look for names, dates, prices, and places a real author would remember. Generic but accurate claims with no concrete detail are a strong AI signal."},{"name":"Cross-check with a second detector","text":"Run the same passage through a different detector. Two independent tools agreeing above 80% is far more reliable than one score."},{"name":"Verify the writing process","text":"Ask for drafts, revision history, or an explanation of the reasoning. Absent revision history is often stronger evidence than any detector score."}]}
       />
+
 
       <AuthorSchema
         articleUrl="https://aifreetextpro.com/blog/how-to-check-if-written-by-ai"

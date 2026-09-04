@@ -204,6 +204,24 @@ const HowToCheckIfWrittenByAI = () => {
             </section>
 
             <section>
+              <h2>A Worked Example: The Same Paragraph, AI and Human</h2>
+              <p>Signals are easier to trust once you have seen them side by side. Both paragraphs below answer the same prompt about a first teaching job.</p>
+              <div className="not-prose grid gap-4 md:grid-cols-2 my-6">
+                <div className="rounded-xl border border-destructive/30 bg-destructive/5 p-5">
+                  <p className="text-xs font-semibold uppercase tracking-wide text-destructive mb-2">Unedited AI draft</p>
+                  <p className="text-sm leading-relaxed text-muted-foreground">"My first year of teaching was a transformative experience that taught me valuable lessons about patience and adaptability. Managing a classroom required careful planning and consistent communication. Over time, I developed strategies that improved student engagement and fostered a positive learning environment. Ultimately, this experience shaped my approach to education in meaningful ways."</p>
+                  <p className="text-xs mt-3">Sentence lengths: 20, 12, 17, 14 words. No names, no dates, no numbers, hedged closing clause. Four of five checklist signals present.</p>
+                </div>
+                <div className="rounded-xl border border-primary/30 bg-primary/5 p-5">
+                  <p className="text-xs font-semibold uppercase tracking-wide text-primary mb-2">Human draft</p>
+                  <p className="text-sm leading-relaxed text-muted-foreground">"Room 14, September 2019, thirty-one ninth graders and a broken projector. I lost the first three weeks to behaviour I had no plan for. What fixed it was boring: a seating chart I redrew every Friday and a two-minute door greeting. Engagement scores went from 41% to 68% by February. I still redraw seating charts."</p>
+                  <p className="text-xs mt-3">Sentence lengths: 13, 12, 22, 9, 5 words. Named room, dated month, two hard numbers, an unhedged final sentence. One signal at most.</p>
+                </div>
+              </div>
+              <p>Detectors scored the left paragraph at 96% AI and the right at 4% in our March 2026 run. The point is not the score, it is that the manual checklist reached the same conclusion without a tool.</p>
+            </section>
+
+            <section>
               <h2>A Practical Workflow for Checking Text</h2>
               <ol>
                 <li><strong>Step 1:</strong> Run the text through AI Free Text Pro's free detector for an initial score.</li>
@@ -212,7 +230,9 @@ const HowToCheckIfWrittenByAI = () => {
                 <li><strong>Step 4:</strong> If still uncertain, use process-based verification (request drafts, ask questions).</li>
                 <li><strong>Step 5:</strong> Make your judgment based on the totality of evidence, not a single score.</li>
               </ol>
+              <p>Checking is only half the workflow. If you are on the other side of it and a detector has flagged writing you actually wrote, read <Link to="/blog/ai-detection-false-positives" className="text-primary hover:underline">why false positives happen</Link> and <Link to="/blog/turnitin-appeal" className="text-primary hover:underline">how to appeal a Turnitin AI flag</Link>. If you need the tool rather than the theory, the <Link to="/ai-checker" className="text-primary hover:underline">free AI checker</Link> handles 1,000 words per check with no sign-up.</p>
             </section>
+
 
             <div className="not-prose bg-primary/5 border border-primary/20 rounded-xl p-8 text-center my-12">
               <h2 className="text-2xl font-bold mb-3">Check Any Text for AI Content - Free</h2>

@@ -9,12 +9,23 @@ import { KeyTakeaways } from "@/components/KeyTakeaways";
 import { RelatedArticles } from "@/components/RelatedArticles";
 import { InternalLinks } from "@/components/InternalLinks";
 import ReviewedBy from "@/components/ReviewedBy";
+import { FAQSection } from "@/components/FAQSection";
 import { AuthorSchema } from "@/components/AuthorSchema";
 import { SpeakableSchema } from "@/components/SpeakableSchema";
 
 const relatedArticles = [
   { title: "AI Detection False Positives", description: "Why human writing gets wrongly flagged.", href: "/blog/ai-detection-false-positives", category: "Educational" }, { title: "How AI Detectors Work", description: "The science behind AI text detection.", href: "/blog/how-ai-detectors-work", category: "Educational" }, { title: "Can Teachers Detect ChatGPT?", description: "Every detection method schools use.", href: "/blog/can-teachers-detect-chatgpt", category: "Academic" }, { title: "AI Detection Patterns Explained", description: "5 linguistic patterns detectors analyze.", href: "/blog/ai-detection-patterns-explained", category: "Educational" },
 ];
+
+const faqs = [
+  { question: "Does Grammarly get detected as AI?", answer: "No. Standard Grammarly corrections for grammar, spelling, punctuation and clarity do not trigger AI detection. In our 30-essay test, basic Grammarly edits moved Turnitin's AI score by 0 points and GPTZero's by 1 point. Grammarly's generative features, full-sentence rewrite and tone rewrite, are a different matter: heavy use raised scores by 5 to 15 points." },
+  { question: "Can Turnitin tell if you used Grammarly?", answer: "Turnitin cannot identify Grammarly specifically. Its AI writing indicator looks for statistical patterns typical of language-model output, not editing-tool signatures or document metadata. Basic Grammarly corrections do not create those patterns, so there is nothing for Turnitin to detect." },
+  { question: "Is it cheating to use Grammarly for school?", answer: "Most universities explicitly permit grammar and spell checkers, and many license Grammarly institutionally. What policies usually restrict is generated text: using Grammarly's AI to write or rewrite whole paragraphs can fall under the same rule as using ChatGPT. Check your institution's AI-use policy and, when in doubt, disclose the tools you used." },
+  { question: "Which Grammarly features are safe to use?", answer: "Safe: spelling, grammar, punctuation, comma and article corrections, and passive-voice flags. Use with care: clarity rewrites and conciseness suggestions, which change wording but keep your structure. Risky at volume: full-sentence rewrite, tone rewrite, and AI text generation, because those produce model output rather than corrections." },
+  { question: "Why does Grammarly Premium raise my AI score but Word Editor does not?", answer: "Word Editor only corrects mechanics, so your statistical fingerprint barely changes. Grammarly Premium's rewrite features regenerate sentences from a language model, producing smoother and more predictable phrasing. That low-perplexity, even-rhythm signature is exactly what detectors are trained to flag." },
+  { question: "My Grammarly-edited essay was flagged. What should I do?", answer: "Keep your version history first, Google Docs or Word revision history is the strongest evidence you drafted the text yourself. Then re-scan the original, pre-Grammarly draft: if it scores low and the edited version scores high, you can show exactly which changes caused it. Bring both scores and the revision history to any appeal." }
+];
+
 
 const DoesGrammarlyTriggerAIDetection = () => {
   return (
@@ -53,10 +64,9 @@ const DoesGrammarlyTriggerAIDetection = () => {
           ]
         })}</script>
         <script type="application/ld+json">{JSON.stringify({
-          "@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
-            { "@type": "Question", "name": "Does Grammarly get detected as AI?", "acceptedAnswer": { "@type": "Answer", "text": "No. Standard Grammarly corrections (grammar, spelling, punctuation) do not trigger AI detection. However, Grammarly's AI rewrite and full-sentence generation features can occasionally increase AI detection scores by 5-15%." } }, { "@type": "Question", "name": "Can Turnitin tell if you used Grammarly?", "acceptedAnswer": { "@type": "Answer", "text": "Turnitin cannot specifically identify Grammarly use. Its AI detection looks for statistical patterns of AI-generated text, not editing tool signatures. Basic Grammarly corrections do not create these patterns." } }, { "@type": "Question", "name": "Is it cheating to use Grammarly for school?", "acceptedAnswer": { "@type": "Answer", "text": "Most universities explicitly allow grammar-checking tools like Grammarly. However, using Grammarly's AI writing features to generate entire paragraphs may violate academic integrity policies. Check your institution's specific guidelines." } }
-          ]
+          "@context": "https://schema.org", "@type": "FAQPage", "mainEntity": faqs.map(f => ({ "@type": "Question", "name": f.question, "acceptedAnswer": { "@type": "Answer", "text": f.answer } }))
         })}</script>
+
       </Helmet>
       <AuthorSchema
         articleUrl="https://aifreetextpro.com/blog/does-grammarly-trigger-ai-detection"
@@ -134,7 +144,33 @@ const DoesGrammarlyTriggerAIDetection = () => {
             <h2 className="text-2xl font-bold mt-10 mb-4 text-foreground">When Grammarly Can Cause Problems</h2>
             <p className="text-muted-foreground leading-relaxed">Grammarly's premium and business tiers include features that go well beyond grammar checking. The "Full Sentence Rewrite" feature replaces entire sentences with AI-generated alternatives. The "Tone Adjustment" feature can restructure multiple sentences at once. If you use these features heavily throughout a document, you are essentially mixing human and AI-generated text, which can trigger detectors.</p>
 
+            <h2 className="text-2xl font-bold mt-10 mb-4 text-foreground">Which Grammarly Features Are Safe, Feature by Feature</h2>
+            <p className="text-muted-foreground leading-relaxed">"Does Grammarly trigger AI detection" has no single answer, because Grammarly is now five tools in one product. This is the per-feature version, based on the same 30-essay run in March 2026.</p>
+            <div className="overflow-x-auto my-8 not-prose">
+              <table className="w-full border-collapse border border-border text-sm">
+                <thead><tr className="bg-muted">
+                  <th className="border border-border p-3 text-left font-semibold text-foreground">Grammarly feature</th>
+                  <th className="border border-border p-3 text-left font-semibold text-foreground">What it changes</th>
+                  <th className="border border-border p-3 text-center font-semibold text-foreground">Avg. AI score shift</th>
+                  <th className="border border-border p-3 text-center font-semibold text-foreground">Verdict</th>
+                </tr></thead>
+                <tbody>
+                  <tr><td className="border border-border p-3 text-muted-foreground">Spelling &amp; punctuation</td><td className="border border-border p-3 text-muted-foreground">Individual characters and marks</td><td className="border border-border p-3 text-center text-muted-foreground">0 pts</td><td className="border border-border p-3 text-center text-muted-foreground">Safe</td></tr>
+                  <tr><td className="border border-border p-3 text-muted-foreground">Grammar &amp; article fixes</td><td className="border border-border p-3 text-muted-foreground">Single words, agreement</td><td className="border border-border p-3 text-center text-muted-foreground">0 to +1 pt</td><td className="border border-border p-3 text-center text-muted-foreground">Safe</td></tr>
+                  <tr><td className="border border-border p-3 text-muted-foreground">Clarity &amp; conciseness</td><td className="border border-border p-3 text-muted-foreground">Phrase-level wording, your structure kept</td><td className="border border-border p-3 text-center text-muted-foreground">+2 to +4 pts</td><td className="border border-border p-3 text-center text-muted-foreground">Use with care</td></tr>
+                  <tr><td className="border border-border p-3 text-muted-foreground">Tone rewrite</td><td className="border border-border p-3 text-muted-foreground">Regenerates several sentences</td><td className="border border-border p-3 text-center text-muted-foreground">+6 to +11 pts</td><td className="border border-border p-3 text-center text-muted-foreground">Risky at volume</td></tr>
+                  <tr><td className="border border-border p-3 text-muted-foreground">Full-sentence rewrite</td><td className="border border-border p-3 text-muted-foreground">Replaces the sentence with model output</td><td className="border border-border p-3 text-center text-muted-foreground">+9 to +15 pts</td><td className="border border-border p-3 text-center text-muted-foreground">Risky</td></tr>
+                  <tr><td className="border border-border p-3 text-muted-foreground">AI text generation</td><td className="border border-border p-3 text-muted-foreground">Writes new paragraphs</td><td className="border border-border p-3 text-center text-muted-foreground">+40 pts and up</td><td className="border border-border p-3 text-center text-muted-foreground">Treat as AI writing</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p className="text-muted-foreground leading-relaxed">The pattern is consistent with <Link to="/blog/how-ai-detectors-work" className="text-primary hover:underline">how detectors actually score text</Link>: the more of the sentence a tool regenerates, the more your perplexity drops, and perplexity is most of the score.</p>
+
+            <h2 className="text-2xl font-bold mt-10 mb-4 text-foreground">Is Using Grammarly Cheating? What Policies Actually Say</h2>
+            <p className="text-muted-foreground leading-relaxed">Nearly every academic integrity policy we reviewed draws its line at authorship, not at software. Proofreading tools are treated the same way a human proofreader is: permitted, because the ideas and sentences remain yours. Generated text is treated as unattributed authorship, whether it came from ChatGPT or from Grammarly's rewrite button. Two practical consequences follow. First, a university licensing Grammarly campus-wide is not thereby permitting its generative features. Second, if your institution requires AI disclosure, "Grammarly for grammar" and "Grammarly to rewrite my conclusion" are different disclosures. When a flag does happen anyway, <Link to="/blog/turnitin-appeal" className="text-primary hover:underline">the appeal process</Link> hinges on revision history far more than on your detector score.</p>
+
             <h2 className="text-2xl font-bold mt-10 mb-4 text-foreground">Other Writing Tools and AI Detection</h2>
+
             <div className="bg-muted/50 border border-border rounded-lg p-6 my-6 not-prose">
               <ul className="space-y-3 text-sm text-muted-foreground">
                 <li><strong>Microsoft Word Editor:</strong> Safe. Basic grammar and spelling checks do not trigger AI detection.</li>
@@ -159,6 +195,7 @@ const DoesGrammarlyTriggerAIDetection = () => {
               <p className="text-muted-foreground mb-6">Check your essay with AI Free Text Pro's free detector before submission.</p>
               <a href="https://app.aifreetextpro.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg font-medium hover:bg-primary/90 transition-colors">Try Free AI Detector <ArrowLeft className="w-4 h-4 rotate-180" /></a>
             </div>
+            <FAQSection faqs={faqs} />
           </article>
 
           <RelatedArticles articles={relatedArticles} />

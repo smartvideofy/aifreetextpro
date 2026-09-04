@@ -70,14 +70,16 @@ const AIChecker = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <Helmet>
-        <title>Free AI Detector 2026: Unlimited Words, No Signup</title>
-        <meta name="description" content="Catch ChatGPT, Claude and Gemini text in 30 seconds. Free AI detector tested against GPTZero, Turnitin and Originality.AI. Unlimited words, no signup. Try it free." />
+        <title>Free AI Detector: Check Your Text in 30 Seconds</title>
+        <meta name="description" content="Paste text, get an AI score in 30 seconds. Free AI checker scored against GPTZero, Turnitin and Originality.AI signals. No word meter on detection, no signup." />
+
         <meta name="keywords" content="free ai detector, ai checker, ai detector unlimited words, free ai detector unlimited words, ai content detector, check ai text, detect ai writing, ai detection tool, free ai checker" />
         <link rel="canonical" href="https://aifreetextpro.com/ai-checker" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-        <meta property="og:title" content="Free AI Detector 2026: Unlimited Words, No Signup" />
-        <meta property="og:description" content="Check text against 15+ AI detectors in one click. Free, instant, private. Unlimited words, no account required." />
+        <meta property="og:title" content="Free AI Detector: Check Your Text in 30 Seconds" />
+        <meta property="og:description" content="Check text against the signals 15+ AI detectors use, in one click. Free, instant, private, no account required." />
+
         <meta property="og:url" content="https://aifreetextpro.com/ai-checker" />
         <meta property="og:type" content="website" />
         
@@ -180,16 +182,16 @@ const AIChecker = () => {
                 <span className="text-sm font-medium">98% Detection Accuracy</span>
               </div>
               <h1 className="text-4xl md:text-6xl font-bold mb-6">
-                Free AI Detector & AI Checker
+                Free AI Detector &amp; AI Checker
               </h1>
               <p className="text-xl md:text-2xl text-muted-foreground mb-8">
-                Free AI detector with 98% accuracy. Check against GPTZero, Turnitin, Originality.AI & 15+ detectors. Unlimited words on Pro plan.
+                Paste your text, get an AI score in about 30 seconds. Scored against the signals GPTZero, Turnitin and Originality.AI use, with no word meter on detection and no signup.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
                 <a href="https://app.aifreetextpro.com/detector" className="w-full sm:w-auto">
                   <Button size="lg" className="w-full bg-gradient-to-r from-primary to-secondary text-lg px-8 py-6">
                     <Eye className="mr-2 h-5 w-5" />
-                    Check Text Free
+                    Check My Text Free
                     <ArrowRight className="ml-2 h-5 w-5" />
                   </Button>
                 </a>
@@ -200,8 +202,15 @@ const AIChecker = () => {
                 </Link>
               </div>
               <p className="text-sm text-muted-foreground">
-                1,000 free words/month • No credit card required • Privacy protected
+                Free detection with no word meter • 1,000 free humanized words/month • No credit card required
               </p>
+              <p className="text-sm text-muted-foreground mt-4">
+                Want the method rather than the tool? Read{" "}
+                <Link to="/blog/how-to-check-if-written-by-ai" className="text-primary hover:underline">how to tell if AI wrote something</Link>{" "}
+                or the{" "}
+                <Link to="/free-ai-detector-word-limit" className="text-primary hover:underline">real free word limits</Link>.
+              </p>
+
             </div>
           </div>
         </section>

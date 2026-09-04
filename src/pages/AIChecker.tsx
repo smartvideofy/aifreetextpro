@@ -180,16 +180,16 @@ const AIChecker = () => {
                 <span className="text-sm font-medium">98% Detection Accuracy</span>
               </div>
               <h1 className="text-4xl md:text-6xl font-bold mb-6">
-                Free AI Detector & AI Checker
+                Free AI Detector &amp; AI Checker
               </h1>
               <p className="text-xl md:text-2xl text-muted-foreground mb-8">
-                Free AI detector with 98% accuracy. Check against GPTZero, Turnitin, Originality.AI & 15+ detectors. Unlimited words on Pro plan.
+                Paste your text, get an AI score in about 30 seconds. Scored against the signals GPTZero, Turnitin and Originality.AI use, with no word meter on detection and no signup.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
                 <a href="https://app.aifreetextpro.com/detector" className="w-full sm:w-auto">
                   <Button size="lg" className="w-full bg-gradient-to-r from-primary to-secondary text-lg px-8 py-6">
                     <Eye className="mr-2 h-5 w-5" />
-                    Check Text Free
+                    Check My Text Free
                     <ArrowRight className="ml-2 h-5 w-5" />
                   </Button>
                 </a>
@@ -200,8 +200,15 @@ const AIChecker = () => {
                 </Link>
               </div>
               <p className="text-sm text-muted-foreground">
-                1,000 free words/month • No credit card required • Privacy protected
+                Free detection with no word meter • 1,000 free humanized words/month • No credit card required
               </p>
+              <p className="text-sm text-muted-foreground mt-4">
+                Want the method rather than the tool? Read{" "}
+                <Link to="/blog/how-to-check-if-written-by-ai" className="text-primary hover:underline">how to tell if AI wrote something</Link>{" "}
+                or the{" "}
+                <Link to="/free-ai-detector-word-limit" className="text-primary hover:underline">real free word limits</Link>.
+              </p>
+
             </div>
           </div>
         </section>

@@ -63,10 +63,9 @@ const DoesGrammarlyTriggerAIDetection = () => {
           ]
         })}</script>
         <script type="application/ld+json">{JSON.stringify({
-          "@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
-            { "@type": "Question", "name": "Does Grammarly get detected as AI?", "acceptedAnswer": { "@type": "Answer", "text": "No. Standard Grammarly corrections (grammar, spelling, punctuation) do not trigger AI detection. However, Grammarly's AI rewrite and full-sentence generation features can occasionally increase AI detection scores by 5-15%." } }, { "@type": "Question", "name": "Can Turnitin tell if you used Grammarly?", "acceptedAnswer": { "@type": "Answer", "text": "Turnitin cannot specifically identify Grammarly use. Its AI detection looks for statistical patterns of AI-generated text, not editing tool signatures. Basic Grammarly corrections do not create these patterns." } }, { "@type": "Question", "name": "Is it cheating to use Grammarly for school?", "acceptedAnswer": { "@type": "Answer", "text": "Most universities explicitly allow grammar-checking tools like Grammarly. However, using Grammarly's AI writing features to generate entire paragraphs may violate academic integrity policies. Check your institution's specific guidelines." } }
-          ]
+          "@context": "https://schema.org", "@type": "FAQPage", "mainEntity": faqs.map(f => ({ "@type": "Question", "name": f.question, "acceptedAnswer": { "@type": "Answer", "text": f.answer } }))
         })}</script>
+
       </Helmet>
       <AuthorSchema
         articleUrl="https://aifreetextpro.com/blog/does-grammarly-trigger-ai-detection"

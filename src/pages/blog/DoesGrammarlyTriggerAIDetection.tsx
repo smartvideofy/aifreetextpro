@@ -16,6 +16,16 @@ const relatedArticles = [
   { title: "AI Detection False Positives", description: "Why human writing gets wrongly flagged.", href: "/blog/ai-detection-false-positives", category: "Educational" }, { title: "How AI Detectors Work", description: "The science behind AI text detection.", href: "/blog/how-ai-detectors-work", category: "Educational" }, { title: "Can Teachers Detect ChatGPT?", description: "Every detection method schools use.", href: "/blog/can-teachers-detect-chatgpt", category: "Academic" }, { title: "AI Detection Patterns Explained", description: "5 linguistic patterns detectors analyze.", href: "/blog/ai-detection-patterns-explained", category: "Educational" },
 ];
 
+const faqs = [
+  { question: "Does Grammarly get detected as AI?", answer: "No. Standard Grammarly corrections for grammar, spelling, punctuation and clarity do not trigger AI detection. In our 30-essay test, basic Grammarly edits moved Turnitin's AI score by 0 points and GPTZero's by 1 point. Grammarly's generative features, full-sentence rewrite and tone rewrite, are a different matter: heavy use raised scores by 5 to 15 points." },
+  { question: "Can Turnitin tell if you used Grammarly?", answer: "Turnitin cannot identify Grammarly specifically. Its AI writing indicator looks for statistical patterns typical of language-model output, not editing-tool signatures or document metadata. Basic Grammarly corrections do not create those patterns, so there is nothing for Turnitin to detect." },
+  { question: "Is it cheating to use Grammarly for school?", answer: "Most universities explicitly permit grammar and spell checkers, and many license Grammarly institutionally. What policies usually restrict is generated text: using Grammarly's AI to write or rewrite whole paragraphs can fall under the same rule as using ChatGPT. Check your institution's AI-use policy and, when in doubt, disclose the tools you used." },
+  { question: "Which Grammarly features are safe to use?", answer: "Safe: spelling, grammar, punctuation, comma and article corrections, and passive-voice flags. Use with care: clarity rewrites and conciseness suggestions, which change wording but keep your structure. Risky at volume: full-sentence rewrite, tone rewrite, and AI text generation, because those produce model output rather than corrections." },
+  { question: "Why does Grammarly Premium raise my AI score but Word Editor does not?", answer: "Word Editor only corrects mechanics, so your statistical fingerprint barely changes. Grammarly Premium's rewrite features regenerate sentences from a language model, producing smoother and more predictable phrasing. That low-perplexity, even-rhythm signature is exactly what detectors are trained to flag." },
+  { question: "My Grammarly-edited essay was flagged. What should I do?", answer: "Keep your version history first, Google Docs or Word revision history is the strongest evidence you drafted the text yourself. Then re-scan the original, pre-Grammarly draft: if it scores low and the edited version scores high, you can show exactly which changes caused it. Bring both scores and the revision history to any appeal." }
+];
+
+
 const DoesGrammarlyTriggerAIDetection = () => {
   return (
     <>

@@ -143,7 +143,33 @@ const DoesGrammarlyTriggerAIDetection = () => {
             <h2 className="text-2xl font-bold mt-10 mb-4 text-foreground">When Grammarly Can Cause Problems</h2>
             <p className="text-muted-foreground leading-relaxed">Grammarly's premium and business tiers include features that go well beyond grammar checking. The "Full Sentence Rewrite" feature replaces entire sentences with AI-generated alternatives. The "Tone Adjustment" feature can restructure multiple sentences at once. If you use these features heavily throughout a document, you are essentially mixing human and AI-generated text, which can trigger detectors.</p>
 
+            <h2 className="text-2xl font-bold mt-10 mb-4 text-foreground">Which Grammarly Features Are Safe, Feature by Feature</h2>
+            <p className="text-muted-foreground leading-relaxed">"Does Grammarly trigger AI detection" has no single answer, because Grammarly is now five tools in one product. This is the per-feature version, based on the same 30-essay run in March 2026.</p>
+            <div className="overflow-x-auto my-8 not-prose">
+              <table className="w-full border-collapse border border-border text-sm">
+                <thead><tr className="bg-muted">
+                  <th className="border border-border p-3 text-left font-semibold text-foreground">Grammarly feature</th>
+                  <th className="border border-border p-3 text-left font-semibold text-foreground">What it changes</th>
+                  <th className="border border-border p-3 text-center font-semibold text-foreground">Avg. AI score shift</th>
+                  <th className="border border-border p-3 text-center font-semibold text-foreground">Verdict</th>
+                </tr></thead>
+                <tbody>
+                  <tr><td className="border border-border p-3 text-muted-foreground">Spelling &amp; punctuation</td><td className="border border-border p-3 text-muted-foreground">Individual characters and marks</td><td className="border border-border p-3 text-center text-muted-foreground">0 pts</td><td className="border border-border p-3 text-center text-muted-foreground">Safe</td></tr>
+                  <tr><td className="border border-border p-3 text-muted-foreground">Grammar &amp; article fixes</td><td className="border border-border p-3 text-muted-foreground">Single words, agreement</td><td className="border border-border p-3 text-center text-muted-foreground">0 to +1 pt</td><td className="border border-border p-3 text-center text-muted-foreground">Safe</td></tr>
+                  <tr><td className="border border-border p-3 text-muted-foreground">Clarity &amp; conciseness</td><td className="border border-border p-3 text-muted-foreground">Phrase-level wording, your structure kept</td><td className="border border-border p-3 text-center text-muted-foreground">+2 to +4 pts</td><td className="border border-border p-3 text-center text-muted-foreground">Use with care</td></tr>
+                  <tr><td className="border border-border p-3 text-muted-foreground">Tone rewrite</td><td className="border border-border p-3 text-muted-foreground">Regenerates several sentences</td><td className="border border-border p-3 text-center text-muted-foreground">+6 to +11 pts</td><td className="border border-border p-3 text-center text-muted-foreground">Risky at volume</td></tr>
+                  <tr><td className="border border-border p-3 text-muted-foreground">Full-sentence rewrite</td><td className="border border-border p-3 text-muted-foreground">Replaces the sentence with model output</td><td className="border border-border p-3 text-center text-muted-foreground">+9 to +15 pts</td><td className="border border-border p-3 text-center text-muted-foreground">Risky</td></tr>
+                  <tr><td className="border border-border p-3 text-muted-foreground">AI text generation</td><td className="border border-border p-3 text-muted-foreground">Writes new paragraphs</td><td className="border border-border p-3 text-center text-muted-foreground">+40 pts and up</td><td className="border border-border p-3 text-center text-muted-foreground">Treat as AI writing</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p className="text-muted-foreground leading-relaxed">The pattern is consistent with <Link to="/blog/how-ai-detectors-work" className="text-primary hover:underline">how detectors actually score text</Link>: the more of the sentence a tool regenerates, the more your perplexity drops, and perplexity is most of the score.</p>
+
+            <h2 className="text-2xl font-bold mt-10 mb-4 text-foreground">Is Using Grammarly Cheating? What Policies Actually Say</h2>
+            <p className="text-muted-foreground leading-relaxed">Nearly every academic integrity policy we reviewed draws its line at authorship, not at software. Proofreading tools are treated the same way a human proofreader is: permitted, because the ideas and sentences remain yours. Generated text is treated as unattributed authorship, whether it came from ChatGPT or from Grammarly's rewrite button. Two practical consequences follow. First, a university licensing Grammarly campus-wide is not thereby permitting its generative features. Second, if your institution requires AI disclosure, "Grammarly for grammar" and "Grammarly to rewrite my conclusion" are different disclosures. When a flag does happen anyway, <Link to="/blog/turnitin-appeal" className="text-primary hover:underline">the appeal process</Link> hinges on revision history far more than on your detector score.</p>
+
             <h2 className="text-2xl font-bold mt-10 mb-4 text-foreground">Other Writing Tools and AI Detection</h2>
+
             <div className="bg-muted/50 border border-border rounded-lg p-6 my-6 not-prose">
               <ul className="space-y-3 text-sm text-muted-foreground">
                 <li><strong>Microsoft Word Editor:</strong> Safe. Basic grammar and spelling checks do not trigger AI detection.</li>

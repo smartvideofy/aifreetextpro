@@ -70,8 +70,9 @@ const AIChecker = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <Helmet>
-        <title>Free AI Detector 2026: Unlimited Words, No Signup</title>
-        <meta name="description" content="Catch ChatGPT, Claude and Gemini text in 30 seconds. Free AI detector tested against GPTZero, Turnitin and Originality.AI. Unlimited words, no signup. Try it free." />
+        <title>Free AI Detector: Check Your Text in 30 Seconds</title>
+        <meta name="description" content="Paste text, get an AI score in 30 seconds. Free AI checker scored against GPTZero, Turnitin and Originality.AI signals. No word meter on detection, no signup." />
+
         <meta name="keywords" content="free ai detector, ai checker, ai detector unlimited words, free ai detector unlimited words, ai content detector, check ai text, detect ai writing, ai detection tool, free ai checker" />
         <link rel="canonical" href="https://aifreetextpro.com/ai-checker" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />

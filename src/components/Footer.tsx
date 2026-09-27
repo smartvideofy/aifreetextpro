@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Mail, BookOpen, MessageSquare, Shield, Check, Target, Users, Sparkles, GraduationCap, ChevronDown, HelpCircle } from "lucide-react";
+import { Mail, BookOpen, MessageSquare, Shield, Check, Target, Users, Sparkles, GraduationCap, ChevronDown, HelpCircle, Globe } from "lucide-react";
 import logo from "@/assets/logo.png";
 import { useState } from "react";
 
@@ -196,6 +196,10 @@ const Footer = () => {
               <div className="flex items-center gap-2 text-xs text-muted-foreground">
                 <Check className="w-3.5 h-3.5 text-primary flex-shrink-0" />
                 <span>50,000+ Users</span>
+              </div>
+              <div className="flex items-center gap-2 text-xs text-muted-foreground" title="English, Español, Français, Deutsch, Nederlands">
+                <Globe className="w-3.5 h-3.5 text-primary flex-shrink-0" />
+                <span>Available in 5 Languages</span>
               </div>
             </div>
           </div>

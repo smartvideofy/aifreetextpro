@@ -1537,9 +1537,9 @@ export const articleContent: Record<string, Record<string, { title: string; cont
             <li>Remove emojis if they're causing issues</li>
           </ul>
           
-          <h3>4. Non-English Content</h3>
-          <p><strong>Problem:</strong> AI Free Text Pro is optimized for English text. Other languages may not process correctly.</p>
-          <p><strong>Solution:</strong> Currently, we only fully support English content. Multi-language support is on our roadmap.</p>
+          <h3>4. Non-Supported Language Content</h3>
+          <p><strong>Problem:</strong> AI Free Text Pro fully supports English, Español, Français, Deutsch, and Nederlands. Text in other languages may not process correctly.</p>
+          <p><strong>Solution:</strong> Switch your interface and content language to one of our 5 supported languages in Settings, or translate your text into a supported language first. Support for additional languages is on our roadmap.</p>
           
           <h3>5. Already Human-Like Text</h3>
           <p><strong>Problem:</strong> If your text is already written in a human style, the humanizer may make minimal changes.</p>

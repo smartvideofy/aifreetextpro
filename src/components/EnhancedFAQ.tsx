@@ -60,7 +60,7 @@ const faqs = [
   },
   {
     question: "Does AI Free Text Pro work in languages other than English?",
-    answer: "Currently, AI Free Text Pro is optimized for English text analysis and humanization. We're working on adding support for Spanish, French, German, and other major languages in future updates."
+    answer: "Yes! AI Free Text Pro's interface is available in English, Español, Français, Deutsch, and Nederlands. You can switch languages anytime from Settings in your dashboard."
   },
   {
     question: "Is there a free AI humanizer tool?",

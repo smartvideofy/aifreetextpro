@@ -1,7 +1,7 @@
 ﻿import { lazy, Suspense } from "react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { ArrowRight, CheckCircle, Shield, FileText, Sparkles, Brain, Star, Pen, BookOpen, Target, Zap, Lock, Crown, GraduationCap, TrendingUp } from "lucide-react";
+import { ArrowRight, CheckCircle, Shield, FileText, Sparkles, Brain, Star, Pen, BookOpen, Target, Zap, Lock, Crown, GraduationCap, TrendingUp, Globe } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 import { SoftwareApplicationSchema } from "@/components/SoftwareApplicationSchema";
 import Navbar from "@/components/Navbar";
@@ -223,6 +223,10 @@ const Index = () => {
                 <div className="flex items-center gap-1.5">
                   <CheckCircle className="w-4 h-4 text-primary" />
                   <span>Instant results</span>
+                </div>
+                <div className="flex items-center gap-1.5" title="English, Español, Français, Deutsch, Nederlands">
+                  <Globe className="w-4 h-4 text-primary" />
+                  <span>5 languages supported</span>
                 </div>
               </div>
               

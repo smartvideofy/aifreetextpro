@@ -18,6 +18,7 @@
     { "path": "/editorial-guidelines", "titleMustInclude": ["Editorial"], "descriptionMustInclude": ["editorial", "review", "fact-check"], "requiredJsonLdTypes": ["BreadcrumbList"] },
     { "path": "/privacy-policy", "titleMustInclude": ["Privacy"], "descriptionMustInclude": ["privacy", "stored", "data"], "requiredJsonLdTypes": ["BreadcrumbList"] },
     { "path": "/terms-of-service", "titleMustInclude": ["Terms"], "descriptionMustInclude": ["terms", "service", "use"], "requiredJsonLdTypes": ["BreadcrumbList"] },
+    { "path": "/refund-policy", "titleMustInclude": ["Refund"], "descriptionMustInclude": ["refund", "subscription"], "requiredJsonLdTypes": ["BreadcrumbList"] },
     { "path": "/api", "titleMustInclude": ["API"], "descriptionMustInclude": ["API"], "requiredJsonLdTypes": ["BreadcrumbList"] },
     { "path": "/blog", "titleMustInclude": ["Blog"], "descriptionMustInclude": ["AI"], "requiredJsonLdTypes": ["BreadcrumbList"] },
     { "path": "/help-center", "titleMustInclude": ["Help"], "descriptionMustInclude": ["help", "guide", "answer"], "requiredJsonLdTypes": ["BreadcrumbList"] },

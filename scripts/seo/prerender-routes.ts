@@ -18,6 +18,7 @@ const CANONICAL_ORIGIN = "https://aifreetextpro.com";
 const EXTRA_ROUTES = [
   "/privacy-policy",
   "/terms-of-service",
+  "/refund-policy",
   "/editorial-guidelines",
   "/cookie-settings",
 ];

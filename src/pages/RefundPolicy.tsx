@@ -5,12 +5,20 @@ import { Helmet } from "react-helmet-async";
 import Footer from "@/components/Footer";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 
+const SUPPORT_EMAIL = "support@aifreetextpro.com";
+
+const Email = () => (
+  <a href={`mailto:${SUPPORT_EMAIL}`} className="text-primary hover:underline">
+    {SUPPORT_EMAIL}
+  </a>
+);
+
 const RefundPolicy = () => {
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-br from-background via-background to-primary/5">
       <Helmet>
         <title>Refund Policy | AI Free Text Pro</title>
-        <meta name="description" content="When AI Free Text Pro subscription payments are refundable: a full refund if no features have been used since the payment. How to request a refund." />
+        <meta name="description" content="When AI Free Text Pro subscription payments are refundable: a full refund if no paid features have been used in that subscription period. How to request a refund." />
         <meta name="keywords" content="refund policy, refunds, subscription refund, cancellation" />
         <link rel="canonical" href="https://aifreetextpro.com/refund-policy" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
@@ -18,7 +26,7 @@ const RefundPolicy = () => {
         <meta name="bingbot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta property="og:title" content="Refund Policy - AI Free Text Pro" />
-        <meta property="og:description" content="Full refund of a subscription payment if no features have been used since the payment." />
+        <meta property="og:description" content="Full refund of a subscription payment if no paid features have been used in that subscription period." />
         <meta property="og:url" content="https://aifreetextpro.com/refund-policy" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="AI Free Text Pro" />
@@ -40,76 +48,145 @@ const RefundPolicy = () => {
 
           <div className="prose prose-slate dark:prose-invert max-w-none space-y-6">
             <section>
-              <h2 className="text-2xl font-semibold mb-4 text-foreground">Overview</h2>
               <p className="text-muted-foreground leading-relaxed">
-                This Refund Policy explains when payments for an AI Free Text Pro subscription can be refunded. In short: you can get a full refund of a subscription payment as long as you haven't used any of our features since that payment.
+                At AI Free Text Pro, we aim to provide clear subscription terms and a fair, consistent refund process. This Refund Policy explains when a subscription payment can be refunded, what counts as using a paid feature, and how refund requests are handled.
               </p>
-            </section>
-
-            <section>
-              <h2 className="text-2xl font-semibold mb-4 text-foreground">When You Can Get a Refund</h2>
-              <p className="text-muted-foreground leading-relaxed mb-3">
-                A subscription payment, whether it's your first payment or a renewal, is fully refundable if none of the following features have been used on your account since that payment:
+              <p className="text-muted-foreground leading-relaxed mt-3">
+                By purchasing a paid subscription, you acknowledge that you have read and understood this Refund Policy, subject to any rights that cannot legally be waived or restricted.
               </p>
-              <ul className="list-disc list-inside space-y-2 text-muted-foreground">
-                <li>AI Humanizer</li>
-                <li>AI Detector</li>
-                <li>Plagiarism Checker</li>
-                <li>Sentence rehumanizing</li>
-                <li>File (document) humanizing</li>
-              </ul>
+              <div className="mt-4 rounded-lg border border-border p-4">
+                <p className="font-semibold text-foreground mb-2">In short</p>
+                <ul className="list-disc list-inside space-y-1 text-muted-foreground">
+                  <li>If you haven't used any paid feature since a payment, that payment is refundable in full.</li>
+                  <li>Once a paid feature has been used in a subscription period, the payment for that period is not refundable.</li>
+                  <li>Duplicate charges, billing errors and unauthorized payments are reviewed separately.</li>
+                  <li>Cancelling stops future renewals; it does not by itself refund a past payment.</li>
+                </ul>
+              </div>
             </section>
 
             <section>
-              <h2 className="text-2xl font-semibold mb-4 text-foreground">When Refunds Are Not Available</h2>
-              <ul className="list-disc list-inside space-y-2 text-muted-foreground">
-                <li>Once any of the features above has been used in a billing period, the payment for that period is non-refundable</li>
-                <li>We don't give partial or prorated refunds for unused time or unused words</li>
-                <li>Accounts suspended or terminated for violating our{" "}
-                  <Link to="/terms-of-service" className="text-primary hover:underline">Terms of Service</Link>
-                </li>
-              </ul>
-            </section>
-
-            <section>
-              <h2 className="text-2xl font-semibold mb-4 text-foreground">Billing Errors</h2>
+              <h2 className="text-2xl font-semibold mb-4 text-foreground">1. General Refund Rule</h2>
               <p className="text-muted-foreground leading-relaxed">
-                If you were charged by mistake, for example charged twice for the same subscription, the extra charge is always refunded, whether or not you've used the service.
+                A subscription payment is refundable only if no paid feature included in that subscription has been used during the subscription period the payment covers. Each request is checked against the account's payment and usage records before a decision is made.
               </p>
             </section>
 
             <section>
-              <h2 className="text-2xl font-semibold mb-4 text-foreground">How to Request a Refund</h2>
-              <p className="text-muted-foreground leading-relaxed mb-3">
-                Email <strong>support@aifreetextpro.com</strong> from the email address on your account and include:
-              </p>
+              <h2 className="text-2xl font-semibold mb-4 text-foreground">2. Paid Features Covered by This Policy</h2>
+              <p className="text-muted-foreground leading-relaxed mb-3">For refund eligibility, paid features include, but are not limited to:</p>
               <ul className="list-disc list-inside space-y-2 text-muted-foreground">
-                <li>The date and amount of the payment you'd like refunded</li>
-                <li>The reason for your request (optional, but it helps us improve)</li>
+                <li><strong>AI Humanizer:</strong> submitting text for humanization, rewriting or processing.</li>
+                <li><strong>Sentence rehumanizing:</strong> rehumanizing individual sentences of a result.</li>
+                <li><strong>File humanizing:</strong> uploading a document for humanization.</li>
+                <li><strong>AI Detector:</strong> submitting text for AI-content detection, analysis or probability scoring.</li>
+                <li><strong>Plagiarism Checker:</strong> submitting text for plagiarism or similarity checking.</li>
+                <li><strong>Other paid tools and benefits:</strong> any other premium text-processing, analysis or writing feature, or other paid functionality included in your plan.</li>
               </ul>
               <p className="text-muted-foreground leading-relaxed mt-3">
-                We check your account's usage for that billing period and reply to every request. Approved refunds are sent back to the original payment method; how long they take to appear depends on your bank or card provider.
+                This includes features added to paid plans after this policy takes effect. A paid feature counts as used when you submit content for processing or start a feature operation, even if you don't save, download or keep the result. If a feature failed before delivering its result, we will review the technical records (see section 7).
               </p>
             </section>
 
             <section>
-              <h2 className="text-2xl font-semibold mb-4 text-foreground">Cancelling Your Subscription</h2>
-              <p className="text-muted-foreground leading-relaxed">
-                Cancelling stops future renewals so you won't be charged again. Cancelling does not by itself refund a payment that has already been made; that is covered by the rules above. To cancel, email support@aifreetextpro.com from the email address on your account.
+              <h2 className="text-2xl font-semibold mb-4 text-foreground">3. Eligibility for a Refund</h2>
+              <p className="text-muted-foreground leading-relaxed mb-3">A payment is refunded in full when all of the following are true:</p>
+              <ol className="list-decimal list-inside space-y-2 text-muted-foreground">
+                <li>The request relates to an identifiable AI Free Text Pro subscription payment that we can verify in our billing records.</li>
+                <li>No paid feature has been used during the subscription period that payment covers.</li>
+                <li>The request is made through an official support channel (see section 8).</li>
+                <li>The refund is not prevented by applicable law.</li>
+              </ol>
+            </section>
+
+            <section>
+              <h2 className="text-2xl font-semibold mb-4 text-foreground">4. After Paid Features Have Been Used</h2>
+              <p className="text-muted-foreground leading-relaxed mb-3">
+                Once any paid feature has been used during a subscription period, the payment for that period does not qualify for a refund under this policy. This applies even if:
+              </p>
+              <ul className="list-disc list-inside space-y-2 text-muted-foreground">
+                <li>Only one paid feature was used, or only a small part of the word allowance</li>
+                <li>The service was used for a short time</li>
+                <li>The results were not what you expected</li>
+                <li>You later decided you didn't need the subscription</li>
+                <li>The purchase was accidental but paid features were used after it</li>
+              </ul>
+              <p className="text-muted-foreground leading-relaxed mt-3">
+                Unused time or unused words remaining in a subscription period are not refunded. Duplicate charges, billing errors, unauthorized transactions and verified service failures are handled separately (see section 7).
               </p>
             </section>
 
             <section>
-              <h2 className="text-2xl font-semibold mb-4 text-foreground">Changes to This Policy</h2>
+              <h2 className="text-2xl font-semibold mb-4 text-foreground">5. Accidental Purchases and Renewals</h2>
               <p className="text-muted-foreground leading-relaxed">
-                We may update this Refund Policy from time to time. Changes are posted on this page with a new "Last updated" date and apply to payments made after that date.
+                If you bought a subscription by mistake or chose the wrong plan, contact us. The same rule applies: if no paid features have been used since the payment, it is refundable in full.
+              </p>
+              <p className="text-muted-foreground leading-relaxed mt-3">
+                Renewal payments follow the same rule, assessed against the subscription period the renewal covers. If you don't want to continue, cancel before your next renewal date. If a renewal was charged after you had cancelled, contact us and we will review it.
               </p>
             </section>
 
             <section>
-              <h2 className="text-2xl font-semibold mb-4 text-foreground">Contact Information</h2>
+              <h2 className="text-2xl font-semibold mb-4 text-foreground">6. Cancellation Is Separate From a Refund</h2>
               <p className="text-muted-foreground leading-relaxed">
-                If you have any questions about this Refund Policy, email support@aifreetextpro.com or reach us through our{" "}
+                Cancelling a subscription and requesting a refund are two separate actions. Cancelling stops future renewals; unless required by law or confirmed by us, it does not refund a payment that has already been made. Likewise, an approved refund does not by itself cancel your subscription.
+              </p>
+              <p className="text-muted-foreground leading-relaxed mt-3">
+                To cancel, email <Email /> from the email address on your account. We will confirm by email once the cancellation is complete; please keep that confirmation for your records.
+              </p>
+            </section>
+
+            <section>
+              <h2 className="text-2xl font-semibold mb-4 text-foreground">7. Duplicate Payments, Billing Errors and Service Failures</h2>
+              <p className="text-muted-foreground leading-relaxed">
+                If you were charged more than once for the same subscription, charged the wrong amount, charged after a valid cancellation, charged without your authorization, or charged because of a technical or payment-processing error, contact us promptly. These cases are investigated separately from ordinary change-of-mind requests, and charges made in error are refunded.
+              </p>
+              <p className="text-muted-foreground leading-relaxed mt-3">
+                If you could not use a paid feature because of a verified service failure on our side, we will review the technical records and decide on an appropriate remedy.
+              </p>
+            </section>
+
+            <section>
+              <h2 className="text-2xl font-semibold mb-4 text-foreground">8. How to Request a Refund</h2>
+              <p className="text-muted-foreground leading-relaxed mb-3">
+                Email <Email /> from the email address on your account and include:
+              </p>
+              <ul className="list-disc list-inside space-y-2 text-muted-foreground">
+                <li>The date and amount of the payment</li>
+                <li>The subscription plan purchased</li>
+                <li>The payment reference or transaction ID, if you have it</li>
+                <li>The reason for your request</li>
+              </ul>
+              <p className="text-muted-foreground leading-relaxed mt-3">
+                To decide a request we may review subscription and payment records, feature-usage logs, cancellation history and relevant technical records. We may contact you if we need more information, and we will tell you the outcome once the review is complete.
+              </p>
+            </section>
+
+            <section>
+              <h2 className="text-2xl font-semibold mb-4 text-foreground">9. Refund Processing</h2>
+              <p className="text-muted-foreground leading-relaxed">
+                Approved refunds are returned to the original payment method where the payment provider supports it. How long the funds take to appear depends on your payment provider and bank.
+              </p>
+            </section>
+
+            <section>
+              <h2 className="text-2xl font-semibold mb-4 text-foreground">10. Your Legal Rights</h2>
+              <p className="text-muted-foreground leading-relaxed">
+                Nothing in this Refund Policy excludes, restricts or overrides any consumer rights, statutory refund entitlements or other remedies that cannot legally be excluded or restricted.
+              </p>
+            </section>
+
+            <section>
+              <h2 className="text-2xl font-semibold mb-4 text-foreground">11. Changes to This Policy</h2>
+              <p className="text-muted-foreground leading-relaxed">
+                We may update this Refund Policy from time to time. Changes are published on this page with a new "Last updated" date and do not retroactively remove rights that subscribers have already acquired.
+              </p>
+            </section>
+
+            <section>
+              <h2 className="text-2xl font-semibold mb-4 text-foreground">12. Contact Us</h2>
+              <p className="text-muted-foreground leading-relaxed">
+                For questions about this Refund Policy or to submit a refund request, email <Email /> or use our{" "}
                 <Link to="/contact" className="text-primary hover:underline">
                   contact page
                 </Link>

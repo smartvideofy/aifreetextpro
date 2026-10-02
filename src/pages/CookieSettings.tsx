@@ -8,6 +8,7 @@ import { Link, useNavigate } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { toast } from "@/hooks/use-toast";
+import { clearAttribution } from "@/lib/attribution";
 
 interface CookiePreferences {
   essential: boolean;
@@ -49,6 +50,7 @@ const CookieSettings = () => {
   const handleSave = () => {
     localStorage.setItem("cookie-preferences", JSON.stringify(preferences));
     localStorage.setItem("cookie-consent", "customized");
+    if (!preferences.analytics) clearAttribution();
     toast({
       title: "Preferences Saved",
       description: "Your cookie preferences have been updated successfully.",

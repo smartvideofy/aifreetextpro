@@ -1,6 +1,11 @@
 import { createRoot, hydrateRoot } from "react-dom/client";
 import App from "./App.tsx";
 import "./index.css";
+import { captureAttribution } from "./lib/attribution";
+
+// Remember where this visitor came from (TikTok, Google, a campaign...) so the
+// app can record it if they sign up. Skips itself during prerendering.
+captureAttribution();
 
 const container = document.getElementById("root")!;
 

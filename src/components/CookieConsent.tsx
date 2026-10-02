@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Cookie, X, Settings } from "lucide-react";
 import { Link } from "react-router-dom";
+import { clearAttribution } from "@/lib/attribution";
 
 const CookieConsent = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -32,6 +33,7 @@ const CookieConsent = () => {
     localStorage.setItem("cookie-consent", "declined");
     localStorage.setItem("cookie-preferences", JSON.stringify({
       essential: true, analytics: false, marketing: false, functional: false, }));
+    clearAttribution();
     setIsVisible(false);
   };
 

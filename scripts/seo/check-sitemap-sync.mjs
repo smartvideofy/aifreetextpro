@@ -35,6 +35,7 @@ const CANONICAL_ORIGIN = "https://aifreetextpro.com";
 const EXCLUDED_ROUTES = new Set([
   "/privacy-policy",
   "/terms-of-service",
+  "/refund-policy",
   "/editorial-guidelines",
   "/cookie-settings",
 ]);

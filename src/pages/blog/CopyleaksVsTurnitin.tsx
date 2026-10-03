@@ -88,7 +88,7 @@ const CopyleaksVsTurnitin = () => {
               <h1 className="text-3xl md:text-4xl font-bold mb-4">Copyleaks vs Turnitin: Which AI Detector Is Better? (2026)</h1>
                 <QuickAnswer
                   question="Copyleaks vs Turnitin: which AI detector is better?"
-                  answer="Both are strong; the right choice depends on use. In our testing across five AI models, Turnitin leads for integrated academic submission, while Copyleaks is competitive and gaining institutional adoption. Neither is perfect, both produce false positives, so treat scores as one signal, not proof."
+                  answer="Turnitin is more accurate: in our March 2026 tests it caught more AI text for all five models (ChatGPT 94% vs 89%) and flagged fewer human essays (4% vs 6%), so it is the better choice for schools. Copyleaks is better for individuals: plans from $8.99/month, 30+ languages and AI code detection. Neither is proof on its own; both produce false positives."
                 />
 
               <p className="text-xl text-muted-foreground">Copyleaks is gaining institutional adoption fast. But is it actually better than Turnitin? We tested both with real data across 5 AI models to find out.</p>
@@ -97,7 +97,7 @@ const CopyleaksVsTurnitin = () => {
             <ReviewedBy name="Dr. Sarah Chen" role="Founder & CEO" slug="sarah-chen" />
 
             <KeyTakeaways points={[
-              "Turnitin is more accurate overall (92% vs 87%) and has a lower false positive rate (4% vs 6%)", "Copyleaks offers better individual pricing ($8.99/mo vs institutional-only for Turnitin) and multilingual detection in 30+ languages", "Both detect ChatGPT at high rates (94% and 89%), but struggle with DeepSeek (78% and 73%)", "Turnitin has a larger plagiarism database, while Copyleaks offers real-time web crawling for newer content", "Neither detector can reliably catch properly humanized AI text, with both scoring under 10% after AI Free Text Pro processing"
+              "Turnitin is more accurate overall (86% vs 82% average detection across five AI models) and has a lower false positive rate (4% vs 6%)", "Copyleaks offers better individual pricing ($8.99/mo vs institutional-only for Turnitin) and multilingual detection in 30+ languages", "Both detect ChatGPT at high rates (94% and 89%), but struggle with DeepSeek (78% and 73%)", "Turnitin has a larger plagiarism database, while Copyleaks offers real-time web crawling for newer content", "Neither detector can reliably catch properly humanized AI text, with both scoring under 10% after AI Free Text Pro processing"
             ]} />
 
             <h2 className="text-2xl font-bold mt-10 mb-4">Head-to-Head: Detection Accuracy</h2>

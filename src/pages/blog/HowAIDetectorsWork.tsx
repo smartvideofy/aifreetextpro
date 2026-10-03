@@ -13,6 +13,8 @@ import { AuthorSchema } from "@/components/AuthorSchema";
 import { SpeakableSchema } from "@/components/SpeakableSchema";
 
 const relatedArticles = [
+  { title: "What Is Perplexity and Burstiness?", description: "Plain definitions with AI vs human examples", href: "/blog/what-is-perplexity-burstiness", category: "Technical" },
+  { title: "What Do AI Detectors Look For?", description: "The 5 patterns that give AI text away, and how to fix each", href: "/blog/ai-detection-patterns-explained", category: "Technical" },
   {
     title: "How AI Detectors Score Text", description: "Behind-the-scenes look at detection metrics and scoring", href: "/blog/how-ai-detectors-score-text", category: "Technical"
   }, {
@@ -28,15 +30,15 @@ export default function HowAIDetectorsWork() {
   return (
     <>
       <Helmet>
-        <title>How AI Detectors Work: Perplexity, Explained</title>
-        <meta name="description" content="How AI detectors actually decide: perplexity, burstiness and token probability, with worked examples on real sentences and the numbers behind each score." />
+        <title>How Do AI Detectors Work? GPTZero & Turnitin Explained</title>
+        <meta name="description" content="How do AI detectors work? How GPTZero, Turnitin and Originality.AI turn perplexity, burstiness and token probability into an AI score, with worked examples." />
         <meta name="keywords" content="how ai detectors work, ai content analysis, gpt detection algorithm, ai detection science, perplexity detection, burstiness analysis, ai text patterns, machine learning detection, ai writing markers 2026" />
         <link rel="canonical" href="https://aifreetextpro.com/blog/how-ai-detectors-work" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="bingbot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         
-        <meta property="og:title" content="How AI Detectors Work: Perplexity, Explained" />
+        <meta property="og:title" content="How Do AI Detectors Work? GPTZero & Turnitin Explained" />
         <meta property="og:description" content="Learn how AI detectors use perplexity, burstiness, and text patterns to identify AI-generated content." />
         <meta property="og:type" content="article" />
         <meta property="og:url" content="https://aifreetextpro.com/blog/how-ai-detectors-work" />
@@ -45,13 +47,13 @@ export default function HowAIDetectorsWork() {
         <meta property="og:locale" content="en_US" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@aifreetextpro" />
-        <meta name="twitter:title" content="How AI Detectors Work: Perplexity, Explained" />
+        <meta name="twitter:title" content="How Do AI Detectors Work? GPTZero & Turnitin Explained" />
         <meta name="twitter:description" content="How GPTZero, Turnitin and Originality.AI use perplexity and burstiness to flag AI text, with fixes." />
         <meta name="twitter:image" content="https://aifreetextpro.com/og-image.png" />
         
         <script type="application/ld+json">
           {JSON.stringify({
-            "@context": "https://schema.org", "@type": "Article", "headline": "How AI Detectors Work: Perplexity and Burstiness Explained (2026)", "description": "Understand the machine-learning and linguistic patterns behind AI detectors and how to write authentically human content.", "image": {
+            "@context": "https://schema.org", "@type": "Article", "headline": "How Do AI Detectors Work? GPTZero, Turnitin and Originality.AI Explained (2026)", "description": "Understand the machine-learning and linguistic patterns behind AI detectors and how to write authentically human content.", "image": {
               "@type": "ImageObject", "url": "https://aifreetextpro.com/logo.png", "width": 1200, "height": 675
             }, "datePublished": "2026-02-02", "dateModified": "2026-06-02", "author": {
               "@type": "Person", "name": "Dr. Sarah Chen", "url": "https://aifreetextpro.com/team#sarah-chen", "jobTitle": "Founder & CEO"
@@ -119,14 +121,14 @@ export default function HowAIDetectorsWork() {
       </Helmet>
       <AuthorSchema
         articleUrl="https://aifreetextpro.com/blog/how-ai-detectors-work"
-        headline="How AI Detectors Work: Perplexity & Burstiness 2026"
+        headline="How Do AI Detectors Work? GPTZero & Turnitin Explained (2026)"
         description="Exactly how GPTZero, Turnitin and Originality.AI use perplexity and burstiness to flag AI text. Plain-English math, real examples, and what to change to pass."
         datePublished="2026-02-02"
         dateModified="2026-06-09"
       />
       <SpeakableSchema
         pageUrl="https://aifreetextpro.com/blog/how-ai-detectors-work"
-        pageName="How AI Detectors Work: Perplexity & Burstiness 2026"
+        pageName="How Do AI Detectors Work? GPTZero & Turnitin Explained (2026)"
       />
 
 
@@ -151,11 +153,13 @@ export default function HowAIDetectorsWork() {
               </div>
               
               <h1 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent">
-                How AI Detectors Work: Inside the Science of AI Text Analysis
+                How Do AI Detectors Work? GPTZero, Turnitin and Originality.AI Explained
               </h1>
               
               <p className="text-xl text-muted-foreground">
-                Understanding the technology behind AI detection helps you write better, more authentic content.
+                Understanding the technology behind AI detection helps you write better, more authentic content. New to the terms? Start with{" "}
+                <Link to="/blog/what-is-perplexity-burstiness" className="text-primary hover:underline">what perplexity and burstiness mean</Link>, or jump to{" "}
+                <Link to="/blog/ai-detection-patterns-explained" className="text-primary hover:underline">the 5 patterns AI detectors look for</Link>.
               </p>
             </header>
 

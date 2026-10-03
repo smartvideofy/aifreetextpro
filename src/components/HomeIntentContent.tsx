@@ -52,6 +52,8 @@ const linkGroups = [
       { to: "/detector/copyleaks", label: "Copyleaks AI detection" },
       { to: "/detector/winston", label: "Winston AI detection" },
       { to: "/blog/how-ai-detectors-work", label: "How AI detectors work" },
+      { to: "/blog/what-is-perplexity-burstiness", label: "What is perplexity and burstiness?" },
+      { to: "/blog/ai-detection-patterns-explained", label: "What AI detectors look for" },
     ],
   },
   {
@@ -68,6 +70,7 @@ const linkGroups = [
   {
     title: "Compare the alternatives",
     links: [
+      { to: "/blog/best-free-ai-humanizer-2026", label: "Best free AI humanizers 2026" },
       { to: "/vs/stealthwriter", label: "vs StealthWriter" },
       { to: "/vs/phrasly", label: "vs Phrasly" },
       { to: "/vs/bypassgpt", label: "vs BypassGPT" },

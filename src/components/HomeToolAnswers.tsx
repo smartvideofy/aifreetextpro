@@ -113,7 +113,7 @@ const blocks = [
     links: [
       { to: "/blog/free-ai-detector", label: "Free AI detector guide" },
       { to: "/ai-checker", label: "Run the AI checker" },
-      { to: "/blog/how-ai-detectors-work", label: "How detectors score text" },
+      { to: "/blog/how-ai-detectors-work", label: "How AI detectors work" },
       { to: "/blog/ai-detection-false-positives", label: "Why false positives happen" },
     ],
     cta: { label: "Check your text free", position: "home_detector_block" },

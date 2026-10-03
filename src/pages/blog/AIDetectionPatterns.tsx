@@ -15,12 +15,12 @@ import { QuickAnswer } from "@/components/QuickAnswer";
 import { FAQSection } from "@/components/FAQSection";
 
 const relatedArticles = [
+  { title: "How Do AI Detectors Work?", description: "How GPTZero, Turnitin and Originality.AI decide a text is AI", href: "/blog/how-ai-detectors-work", category: "Technical" },
+  { title: "What Is Perplexity and Burstiness?", description: "Plain definitions with AI vs human examples", href: "/blog/what-is-perplexity-burstiness", category: "Technical" },
   {
     title: "Signal vs. Noise: What Makes Text Human", description: "Deep dive into patterns that distinguish human writing", href: "/blog/signal-vs-noise-human-text", category: "Technical"
   }, {
     title: "How AI Detectors Score Text", description: "Behind-the-scenes look at detection metrics", href: "/blog/how-ai-detectors-score-text", category: "Technical"
-  }, {
-    title: "How AI Detectors Work", description: "Inside the science of AI text analysis", href: "/blog/how-ai-detectors-work", category: "Educational"
   }, {
     title: "AI Detection Tools Compared (2026 Edition)", description: "Which AI detector is most accurate?", href: "/blog/ai-detection-tools-compared-2025", category: "Comparison"
   }
@@ -30,14 +30,14 @@ const AIDetectionPatterns = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <Helmet>
-        <title>5 Patterns That Make AI Text Obvious (2026)</title>
+        <title>What Do AI Detectors Look For? 5 Patterns (2026)</title>
         <meta name="description" content="The five statistical and stylistic patterns detectors key on, shown sentence by sentence, plus the specific edit that removes each one from your draft." />
-        <meta name="keywords" content="AI detection patterns, perplexity and burstiness explained, is my writing human or AI, AI linguistic patterns, how AI detectors work" />
+        <meta name="keywords" content="what do AI detectors look for, AI detection patterns, signs of AI writing, is my writing human or AI, AI linguistic patterns" />
         <link rel="canonical" href="https://aifreetextpro.com/blog/ai-detection-patterns-explained" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="bingbot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-        <meta property="og:title" content="5 Patterns That Make AI Text Obvious (2026)" />
+        <meta property="og:title" content="What Do AI Detectors Look For? 5 Patterns (2026)" />
         <meta property="og:description" content="Understand the linguistic patterns that distinguish AI writing from human writing" />
         <meta property="og:url" content="https://aifreetextpro.com/blog/ai-detection-patterns-explained" />
         <meta property="og:type" content="article" />
@@ -46,13 +46,13 @@ const AIDetectionPatterns = () => {
         <meta property="og:locale" content="en_US" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@aifreetextpro" />
-        <meta name="twitter:title" content="5 Patterns That Make AI Text Obvious (2026)" />
+        <meta name="twitter:title" content="What Do AI Detectors Look For? 5 Patterns (2026)" />
         <meta name="twitter:description" content="Understand perplexity, burstiness, and linguistic patterns in AI detection." />
         <meta name="twitter:image" content="https://aifreetextpro.com/og-image.png" />
         
         <script type="application/ld+json">
           {JSON.stringify({
-            "@context": "https://schema.org", "@type": "Article", "headline": "AI vs. Human: 5 Subtle Linguistic Patterns AI Detectors Look For", "description": "Discover the 5 linguistic patterns AI detectors analyze to distinguish AI writing from human writing.", "datePublished": "2026-02-02", "dateModified": "2026-04-05", "author": {
+            "@context": "https://schema.org", "@type": "Article", "headline": "What Do AI Detectors Look For? 5 Patterns That Give AI Text Away", "description": "Discover the 5 linguistic patterns AI detectors analyze to distinguish AI writing from human writing.", "datePublished": "2026-02-02", "dateModified": "2026-04-05", "author": {
               "@type": "Person", "name": "Dr. Sarah Chen", "url": "https://aifreetextpro.com/team#sarah-chen", "jobTitle": "Founder & CEO"
             }, "publisher": {
               "@type": "Organization", "name": "AI Free Text Pro", "logo": {
@@ -81,14 +81,14 @@ const AIDetectionPatterns = () => {
       </Helmet>
       <AuthorSchema
         articleUrl="https://aifreetextpro.com/blog/ai-detection-patterns-explained"
-        headline="5 Patterns AI Detectors Flag [And How to Fix Them]"
+        headline="What Do AI Detectors Look For? 5 Patterns (2026)"
         description="5 exact patterns AI detectors check (with examples). Fix each one in under 5 minutes. Tested on Turnitin, GPTZero, and Originality.AI."
         datePublished="2026-02-02"
         dateModified="2026-06-09"
       />
       <SpeakableSchema
         pageUrl="https://aifreetextpro.com/blog/ai-detection-patterns-explained"
-        pageName="5 Patterns AI Detectors Flag [And How to Fix Them]"
+        pageName="What Do AI Detectors Look For? 5 Patterns (2026)"
       />
 
       <Navbar />
@@ -124,7 +124,7 @@ const AIDetectionPatterns = () => {
                 </div>
 
                 <h1 className="text-4xl md:text-5xl font-bold leading-tight">
-                  AI vs. Human: 5 Subtle Linguistic Patterns AI Detectors Look For
+                  What Do AI Detectors Look For? 5 Patterns That Give AI Text Away
                 </h1>
 
                 <QuickAnswer
@@ -133,7 +133,9 @@ const AIDetectionPatterns = () => {
                 />
 
                 <p className="text-xl text-muted-foreground">
-                  A deep dive into the science behind AI detection, and how understanding these patterns helps you write undetectably.
+                  The five patterns detectors flag, with the edit that fixes each. For definitions, see{" "}
+                  <Link to="/blog/what-is-perplexity-burstiness" className="text-primary hover:underline">what perplexity and burstiness are</Link>; for the scoring process, see{" "}
+                  <Link to="/blog/how-ai-detectors-work" className="text-primary hover:underline">how AI detectors work</Link>.
                 </p>
               </header>
 

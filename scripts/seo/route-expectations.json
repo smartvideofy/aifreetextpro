@@ -3,7 +3,7 @@
   "routes": [
     {
       "path": "/",
-      "titleMustInclude": ["AI Humanizer", "Detector"],
+      "titleMustInclude": ["AI Detector", "Humanizer"],
       "descriptionMustInclude": ["humanize", "AI"],
       "requiredJsonLdTypes": ["Organization", "SoftwareApplication", "FAQPage", "WebSite"]
     },
@@ -36,7 +36,7 @@
     { "path": "/ai-humanizer-for-writers", "titleMustInclude": ["Writers"], "descriptionMustInclude": ["writer"], "requiredJsonLdTypes": ["BreadcrumbList"] },
     { "path": "/academic-ai-writing-tool", "titleMustInclude": ["Academic"], "descriptionMustInclude": ["academic"], "requiredJsonLdTypes": ["BreadcrumbList"] },
 
-    { "path": "/blog/how-ai-detectors-work", "titleMustInclude": ["Detectors Work", "How AI"], "descriptionMustInclude": ["perplexity", "detector"], "requiredJsonLdTypes": ["Article", "BreadcrumbList"] },
+    { "path": "/blog/how-ai-detectors-work", "titleMustInclude": ["Detectors Work", "How Do AI"], "descriptionMustInclude": ["perplexity", "detector"], "requiredJsonLdTypes": ["Article", "BreadcrumbList"] },
     { "path": "/blog/best-free-ai-humanizer-2026", "titleMustInclude": ["Humanizer", "2026"], "descriptionMustInclude": ["humanizer"], "requiredJsonLdTypes": ["Article", "BreadcrumbList"] },
     { "path": "/blog/bypass-zerogpt-ai-detection", "titleMustInclude": ["ZeroGPT"], "descriptionMustInclude": ["ZeroGPT"], "requiredJsonLdTypes": ["Article", "BreadcrumbList"] },
     { "path": "/blog/can-ai-detectors-detect-gpt5", "titleMustInclude": ["GPT-5", "GPT5"], "descriptionMustInclude": ["GPT-5", "GPT5"], "requiredJsonLdTypes": ["Article", "BreadcrumbList"] },

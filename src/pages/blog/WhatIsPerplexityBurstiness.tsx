@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet-async";
+import { Link } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
@@ -8,7 +9,8 @@ import { KeyTakeaways } from "@/components/KeyTakeaways";
 import { QuickAnswer } from "@/components/QuickAnswer";
 
 const relatedArticles = [
-  { title: "How AI Detectors Work", description: "Complete guide to perplexity & burstiness", href: "/blog/how-ai-detectors-work", category: "Technical" },
+  { title: "How Do AI Detectors Work?", description: "How GPTZero, Turnitin and Originality.AI decide a text is AI", href: "/blog/how-ai-detectors-work", category: "Technical" },
+  { title: "What Do AI Detectors Look For?", description: "The 5 patterns that give AI text away, and how to fix each", href: "/blog/ai-detection-patterns-explained", category: "Technical" },
   { title: "How AI Detectors Score Text", description: "Understanding detection metrics", href: "/blog/how-ai-detectors-score-text", category: "Technical" },
   { title: "Signal vs. Noise: What Makes Text Human", description: "Text patterns that pass detection", href: "/blog/signal-vs-noise-human-text", category: "Technical" },
 ];
@@ -17,13 +19,13 @@ export default function WhatIsPerplexityBurstiness() {
   return (
     <>
       <Helmet>
-        <title>What Is Perplexity and Burstiness? AI Detection Explained</title>
-        <meta name="description" content="Simple explanation of perplexity and burstiness in AI detection. Learn how these metrics detect AI-generated text and how to fix them." />
+        <title>What Is Perplexity and Burstiness? Definitions & Examples</title>
+        <meta name="description" content="What is perplexity and what is burstiness? Plain-English definitions with side-by-side examples of human vs AI writing, and how to raise both." />
         <meta name="keywords" content="what is perplexity, what is burstiness, perplexity definition, burstiness definition, ai detection metrics, text analysis" />
         <link rel="canonical" href="https://aifreetextpro.com/blog/what-is-perplexity-burstiness" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
 
-        <meta property="og:title" content="What Is Perplexity and Burstiness? Simple Guide" />
+        <meta property="og:title" content="What Is Perplexity and Burstiness? Definitions & Examples" />
         <meta property="og:description" content="Learn how perplexity and burstiness metrics work in AI detection tools." />
         <meta property="og:type" content="article" />
         <meta property="og:url" content="https://aifreetextpro.com/blog/what-is-perplexity-burstiness" />
@@ -36,7 +38,7 @@ export default function WhatIsPerplexityBurstiness() {
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org", "@type": "Article",
-            "headline": "What Is Perplexity and Burstiness? AI Detection Explained",
+            "headline": "What Is Perplexity and Burstiness? Definitions and Examples",
             "description": "Simple explanation of perplexity and burstiness metrics used in AI detection.",
             "datePublished": "2026-07-14", "dateModified": "2026-07-14",
             "author": { "@type": "Person", "name": "Dr. Sarah Chen" },
@@ -81,11 +83,13 @@ export default function WhatIsPerplexityBurstiness() {
               </div>
 
               <h1 className="text-4xl md:text-5xl font-bold mb-4">
-                What Is Perplexity and Burstiness? AI Detection Explained
+                What Is Perplexity and Burstiness? Definitions and Examples
               </h1>
 
               <p className="text-xl text-muted-foreground">
-                Two simple metrics that AI detectors use to flag AI-generated text. Understand how they work and how to fix them.
+                Two simple metrics that AI detectors use to flag AI-generated text, defined with human vs AI examples. For the full detection process, see{" "}
+                <Link to="/blog/how-ai-detectors-work" className="text-primary hover:underline">how AI detectors work</Link>; for what to fix, see{" "}
+                <Link to="/blog/ai-detection-patterns-explained" className="text-primary hover:underline">what AI detectors look for</Link>.
               </p>
             </header>
 

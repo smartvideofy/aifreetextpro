@@ -54,13 +54,13 @@ const Index = () => {
       <HowToSchema />
       <Breadcrumbs items={[{ label: "Home" }]} />
       <Helmet>
-        <title>Free AI Humanizer & Detector - 98% Accuracy [2026]</title>
+        <title>Free AI Detector and Humanizer - 98% Accuracy [2026]</title>
         <meta name="description" content="Humanize AI text in seconds and bypass Turnitin, GPTZero, Originality.AI with 98% accuracy. 1,000 free words, no signup. Trusted by 50,000+ writers." />
         <link rel="canonical" href="https://aifreetextpro.com/" />
         
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-        <meta property="og:title" content="Free AI Humanizer & Detector - 98% Accuracy [2026]" />
+        <meta property="og:title" content="Free AI Detector and Humanizer - 98% Accuracy [2026]" />
         <meta property="og:description" content="Humanize AI text in seconds and bypass Turnitin, GPTZero, Originality.AI with 98% accuracy. 1,000 free words, no signup." />
         <meta property="og:url" content="https://aifreetextpro.com/" />
         <meta property="og:type" content="website" />
@@ -69,7 +69,7 @@ const Index = () => {
         <meta property="og:locale" content="en_US" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@aifreetextpro" />
-        <meta name="twitter:title" content="Free AI Humanizer & Detector - 98% Accuracy [2026]" />
+        <meta name="twitter:title" content="Free AI Detector and Humanizer - 98% Accuracy [2026]" />
         <meta name="twitter:description" content="Humanize AI text in seconds and bypass Turnitin, GPTZero, Originality.AI with 98% accuracy. 1,000 free words, no signup." />
         <meta name="twitter:image" content="https://aifreetextpro.com/og-image.png" />
         
@@ -200,9 +200,9 @@ const Index = () => {
 
               {/* Main Headline with Gradient */}
               <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold leading-[1.1] animate-fade-in" style={{ animationDelay: "100ms" }}>
-                Free AI Humanizer Tool
+                Free AI Detector
                 <br />
-                <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">&</span> AI Checker
+                <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">&</span> Humanizer
               </h1>
               
               {/* Subheadline - Refined */}

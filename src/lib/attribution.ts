@@ -6,9 +6,12 @@
  * read it and save it on the profile when the visitor signs up.
  *
  * First touch wins: the first campaign link or external referrer we see is
- * kept for 90 days; later visits don't overwrite it. Most visitors land on
- * the marketing site (aifreetextpro.com), which stores the same data in a
- * cookie on .aifreetextpro.com so the app can read it after the click.
+ * kept for 90 days; later visits don't overwrite it. A visit with neither
+ * (typed address, bookmark) is kept as "direct" with its landing page, so we
+ * still know where the visitor started, but a later real source replaces it.
+ * Most visitors land on the marketing site (aifreetextpro.com), which stores
+ * the same data in a cookie on .aifreetextpro.com so the app can read it
+ * after the click.
  * Only the referring site's host and the landing path are kept, never full
  * URLs (they can contain search terms or personal data).
  */
@@ -145,6 +148,35 @@ function hasCookie(): boolean {
   return document.cookie.split("; ").some((c) => c.startsWith(`${COOKIE}=`));
 }
 
+function readCookie(): Attribution | null {
+  try {
+    const raw = document.cookie.split("; ").find((c) => c.startsWith(`${COOKIE}=`));
+    return raw ? (JSON.parse(decodeURIComponent(raw.slice(COOKIE.length + 1))) as Attribution) : null;
+  } catch {
+    return null;
+  }
+}
+
+/** A visit with no campaign link or outside referrer: only the landing page is known. */
+export function directVisit(href: string): Attribution | null {
+  try {
+    const u = new URL(href);
+    return {
+      channel: "direct",
+      source: null,
+      medium: null,
+      campaign: null,
+      term: null,
+      content: null,
+      referrer: null,
+      landing_page: clean(u.hostname.replace(/^www\./, "") + u.pathname, 200),
+      first_seen: new Date().toISOString(),
+    };
+  } catch {
+    return null;
+  }
+}
+
 export function clearAttribution(): void {
   document.cookie = `${COOKIE}=; max-age=0; path=/${cookieDomain()}`;
 }
@@ -161,9 +193,12 @@ export function captureAttribution(): void {
       if (hasCookie()) clearAttribution();
       return;
     }
-    if (hasCookie()) return;
-    const found = attributionFromLocation(window.location.href, document.referrer);
+    const found =
+      attributionFromLocation(window.location.href, document.referrer) ?? directVisit(window.location.href);
     if (!found) return;
+    // Keep what we have, unless it was only a direct visit and this one has a real source.
+    const existing = hasCookie() ? readCookie() : null;
+    if (existing && (existing.channel !== "direct" || found.channel === "direct")) return;
     document.cookie =
       `${COOKIE}=${encodeURIComponent(JSON.stringify(found))}; max-age=${MAX_AGE_DAYS * 86400}; path=/; SameSite=Lax; Secure${cookieDomain()}`;
   } catch {

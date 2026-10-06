@@ -2,10 +2,13 @@ import { createRoot, hydrateRoot } from "react-dom/client";
 import App from "./App.tsx";
 import "./index.css";
 import { captureAttribution } from "./lib/attribution";
+import { trackVisit } from "./lib/visitTracking";
 
 // Remember where this visitor came from (TikTok, Google, a campaign...) so the
 // app can record it if they sign up. Skips itself during prerendering.
 captureAttribution();
+// Count this visit for the admin panel's Acquisition report (anonymous).
+trackVisit();
 
 const container = document.getElementById("root")!;
 

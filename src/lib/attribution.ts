@@ -26,6 +26,21 @@ export interface Attribution {
   referrer: string | null;
   landing_page: string | null;
   first_seen: string;
+  /** X ad click id; the app sends it to X with sign-up and purchase conversions. */
+  twclid?: string | null;
+  /** Ad click ids from the landing URL (gclid, fbclid, ttclid, msclkid, twclid). */
+  click_ids?: Record<string, string> | null;
+}
+
+export const CLICK_ID_PARAMS = ["gclid", "fbclid", "ttclid", "msclkid", "twclid"] as const;
+
+function clickIdsFrom(params: URLSearchParams): Record<string, string> | null {
+  const ids: Record<string, string> = {};
+  for (const k of CLICK_ID_PARAMS) {
+    const v = clean(params.get(k), 200);
+    if (v) ids[k] = v;
+  }
+  return Object.keys(ids).length ? ids : null;
 }
 
 const COOKIE = "aftp_attr";
@@ -48,7 +63,7 @@ const CHANNELS: [RegExp, string][] = [
   [/tiktok/, "tiktok"],
   [/(^|\.)google\.|^google$|gclid/, "google"],
   [/bing|msclkid/, "bing"],
-  [/facebook|^fb$|fbclid|(^|\.)fb\.com/, "facebook"],
+  [/facebook|^fb$|^meta$|fbclid|(^|\.)fb\.com/, "facebook"],
   [/instagram|^ig$/, "instagram"],
   [/youtube|youtu\.be/, "youtube"],
   [/^t\.co$|twitter|(^|\.)x\.com$|^x$/, "x"],
@@ -111,7 +126,9 @@ export function attributionFromLocation(href: string, referrerUrl: string): Attr
         ? "tiktok"
         : params.get("msclkid")
           ? "bing"
-          : null;
+          : params.get("twclid")
+            ? "twitter"
+            : null;
   const source = clean(params.get("utm_source")) ?? clickSource;
   const medium = clean(params.get("utm_medium")) ?? (clickSource ? "cpc" : null);
   const refHost = referrerUrl ? hostOf(referrerUrl) : null;
@@ -129,10 +146,12 @@ export function attributionFromLocation(href: string, referrerUrl: string): Attr
     referrer,
     landing_page: clean(path, 200),
     first_seen: new Date().toISOString(),
+    twclid: clean(params.get("twclid"), 200),
+    click_ids: clickIdsFrom(params),
   };
 }
 
-const declinedAnalytics = () => {
+export const declinedAnalytics = () => {
   try {
     const prefs = JSON.parse(localStorage.getItem("cookie-preferences") || "null");
     return prefs?.analytics === false;
@@ -179,6 +198,14 @@ export function directVisit(href: string): Attribution | null {
 
 export function clearAttribution(): void {
   document.cookie = `${COOKIE}=; max-age=0; path=/${cookieDomain()}`;
+  // Anonymous visitor and session IDs (see visitTracking.ts).
+  document.cookie = `aftp_vid=; max-age=0; path=/${cookieDomain()}`;
+  document.cookie = `aftp_vs=; max-age=0; path=/${cookieDomain()}`;
+  try {
+    localStorage.removeItem("aftp_vid");
+  } catch {
+    /* storage unavailable */
+  }
 }
 
 /**

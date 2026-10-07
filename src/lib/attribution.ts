@@ -63,7 +63,7 @@ const CHANNELS: [RegExp, string][] = [
   [/tiktok/, "tiktok"],
   [/(^|\.)google\.|^google$|gclid/, "google"],
   [/bing|msclkid/, "bing"],
-  [/facebook|^fb$|fbclid|(^|\.)fb\.com/, "facebook"],
+  [/facebook|^fb$|^meta$|fbclid|(^|\.)fb\.com/, "facebook"],
   [/instagram|^ig$/, "instagram"],
   [/youtube|youtu\.be/, "youtube"],
   [/^t\.co$|twitter|(^|\.)x\.com$|^x$/, "x"],

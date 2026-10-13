@@ -33,8 +33,8 @@ const AITextConverter = () => {
   return (
     <>
       <Helmet>
-        <title>AI Text Converter: AI to Human Writing Instantly</title>
-        <meta name="description" content="Convert AI-generated text to human writing instantly. Compare the top 5 AI text converters with detection test results and step-by-step guide." />
+        <title>Free AI Text Converter: Convert AI Text to Human Writing</title>
+        <meta name="description" content="Free AI text converter: paste ChatGPT, Claude or Gemini text and get natural human writing in seconds. 1,000 free words, no signup. Top 5 converters tested." />
         <meta name="keywords" content="AI to human text converter, convert AI text to human, AI text converter, AI to human converter, turn AI text into human text" />
         <link rel="canonical" href="https://aifreetextpro.com/blog/ai-text-converter" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
@@ -51,7 +51,7 @@ const AITextConverter = () => {
         <meta property="article:modified_time" content="2026-03-08T00:00:00Z" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@aifreetextpro" />
-        <meta name="twitter:title" content="AI Text Converter: AI to Human Writing Instantly" />
+        <meta name="twitter:title" content="Free AI Text Converter: Convert AI Text to Human Writing" />
         <meta name="twitter:description" content="Convert AI text to human writing instantly. Top converters compared." />
         <script type="application/ld+json">
           {JSON.stringify({

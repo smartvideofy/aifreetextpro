@@ -31,8 +31,8 @@ const DoesGrammarlyTriggerAIDetection = () => {
   return (
     <>
       <Helmet>
-        <title>Does Grammarly Trigger AI Detection? We Tested It</title>
-        <meta name="description" content="We ran 60 human-written samples through Grammarly, then through 4 detectors. Which suggestions raise your AI score, which are safe, and how to edit around it." />
+        <title>Does Grammarly Trigger AI Detection? (2026 Test Data and Scores)</title>
+        <meta name="description" content="Spelling fixes add 0 points. Tone rewrites add 6 to 11. Full rewrites add up to 15. Our 60-sample test shows exactly which Grammarly features raise your AI score." />
         <meta name="keywords" content="does grammarly get detected as ai, grammarly ai detection, is grammarly flagged as ai, grammarly turnitin, writing tools ai detection" />
         <link rel="canonical" href="https://aifreetextpro.com/blog/does-grammarly-trigger-ai-detection" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
@@ -41,7 +41,7 @@ const DoesGrammarlyTriggerAIDetection = () => {
         <meta name="author" content="Lisa Chang" />
         <meta property="og:type" content="article" />
         <meta property="og:url" content="https://aifreetextpro.com/blog/does-grammarly-trigger-ai-detection" />
-        <meta property="og:title" content="Does Grammarly Trigger AI Detection? We Tested It" />
+        <meta property="og:title" content="Does Grammarly Trigger AI Detection? (2026 Test Data and Scores)" />
         <meta property="og:description" content="We tested Grammarly-edited text against Turnitin, GPTZero, and more." />
         <meta property="og:image" content="https://aifreetextpro.com/og-image.png" />
         <meta property="og:image:width" content="1200" />
@@ -52,7 +52,7 @@ const DoesGrammarlyTriggerAIDetection = () => {
         <meta property="article:modified_time" content="2026-02-25T08:00:00Z" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@aifreetextpro" />
-        <meta name="twitter:title" content="Does Grammarly Trigger AI Detection? We Tested It" />
+        <meta name="twitter:title" content="Does Grammarly Trigger AI Detection? (2026 Test Data and Scores)" />
         <meta name="twitter:description" content="Real test results: Grammarly-edited text vs AI detectors." />
         <meta name="twitter:image" content="https://aifreetextpro.com/og-image.png" />
         <script type="application/ld+json">{JSON.stringify({

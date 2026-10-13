@@ -1,3 +1,4 @@
+import FeaturedGuides from "@/components/FeaturedGuides";
 ﻿import { lazy, Suspense } from "react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
@@ -54,14 +55,14 @@ const Index = () => {
       <HowToSchema />
       <Breadcrumbs items={[{ label: "Home" }]} />
       <Helmet>
-        <title>Free AI Detector and Humanizer - 98% Accuracy [2026]</title>
-        <meta name="description" content="Humanize AI text in seconds and bypass Turnitin, GPTZero, Originality.AI with 98% accuracy. 1,000 free words, no signup. Trusted by 50,000+ writers." />
+        <title>Free AI Detector and Humanizer (2-in-1) | 1,000 Words Free</title>
+        <meta name="description" content="Free AI detector and humanizer in one tool. Check your AI score, then rewrite flagged lines in your own voice. 1,000 free words a month, no signup, no card." />
         <link rel="canonical" href="https://aifreetextpro.com/" />
         
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-        <meta property="og:title" content="Free AI Detector and Humanizer - 98% Accuracy [2026]" />
-        <meta property="og:description" content="Humanize AI text in seconds and bypass Turnitin, GPTZero, Originality.AI with 98% accuracy. 1,000 free words, no signup." />
+        <meta property="og:title" content="Free AI Detector and Humanizer (2-in-1) | 1,000 Words Free" />
+        <meta property="og:description" content="Free AI detector and humanizer in one tool. Check your AI score, then rewrite flagged lines in your own voice. 1,000 free words a month, no signup, no card." />
         <meta property="og:url" content="https://aifreetextpro.com/" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="https://aifreetextpro.com/og-image.png" />
@@ -69,8 +70,8 @@ const Index = () => {
         <meta property="og:locale" content="en_US" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@aifreetextpro" />
-        <meta name="twitter:title" content="Free AI Detector and Humanizer - 98% Accuracy [2026]" />
-        <meta name="twitter:description" content="Humanize AI text in seconds and bypass Turnitin, GPTZero, Originality.AI with 98% accuracy. 1,000 free words, no signup." />
+        <meta name="twitter:title" content="Free AI Detector and Humanizer (2-in-1) | 1,000 Words Free" />
+        <meta name="twitter:description" content="Free AI detector and humanizer in one tool. Check your AI score, then rewrite flagged lines in your own voice. 1,000 free words a month, no signup, no card." />
         <meta name="twitter:image" content="https://aifreetextpro.com/og-image.png" />
         
         {/* Enhanced Schema Markup */}
@@ -1302,6 +1303,7 @@ const Index = () => {
             </div>
           </div>
         </section>
+        <div className="container mx-auto px-4"><FeaturedGuides currentPage="/" /></div>
       </main>
       
       <Footer />

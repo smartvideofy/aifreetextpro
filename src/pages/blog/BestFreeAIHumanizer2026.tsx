@@ -1,3 +1,4 @@
+import FeaturedGuides from "@/components/FeaturedGuides";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { QuickAnswer } from "@/components/QuickAnswer";
@@ -625,6 +626,7 @@ const BestFreeAIHumanizer2026 = () => {
             
             <RelatedArticles articles={relatedArticles} />
             
+            <FeaturedGuides currentPage="/blog/best-free-ai-humanizer-2026" />
             <InternalLinks currentPage="/blog/best-free-ai-humanizer-2026" />
           </article>
         </div>

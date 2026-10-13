@@ -13,6 +13,8 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@
 const URL = "https://aifreetextpro.com/free-ai-detector-word-limit";
 
 const faqs = [
+  { question: "How do I check essays without word cutoffs?", answer: "Paste the full essay into our free AI checker. Detection has no word cap and no signup, so you can score a 5,000-word paper in one pass. Turnitin requires an institutional login and GPTZero's free plan caps each scan." },
+  { question: "Is there an AI detector with no word limit?", answer: "Yes. AI detection on AI Free Text Pro is unmetered for any length of text. Humanizing is the only metered action, at 1,000 free words per month." },
   {
     question: "How many words can I check for free?",
     answer: "AI detection is free with no word cap on our checker: paste any length of text and get a score. Humanizing is where the limit sits, at 1,000 words per month on the free plan. That is roughly two 500-word essays or four short blog sections.",
@@ -107,6 +109,20 @@ const FreeWordLimit = () => (
               "No credit card, no trial countdown, and hitting the cap never deletes your existing results.",
             ]}
           />
+
+          <h2>AI detector word limits compared (2026)</h2>
+          <div className="not-prose my-6">
+            <Table>
+              <TableHeader><TableRow><TableHead>Tool</TableHead><TableHead>Free detection limit</TableHead><TableHead>Signup</TableHead></TableRow></TableHeader>
+              <TableBody>
+                <TableRow><TableCell className="font-medium">AI Free Text Pro</TableCell><TableCell>No word limit</TableCell><TableCell>No</TableCell></TableRow>
+                <TableRow><TableCell className="font-medium">GPTZero (free)</TableCell><TableCell>Capped per scan and per month</TableCell><TableCell>Yes for longer scans</TableCell></TableRow>
+                <TableRow><TableCell className="font-medium">Turnitin</TableCell><TableCell>No public free access</TableCell><TableCell>Institution account</TableCell></TableRow>
+                <TableRow><TableCell className="font-medium">Originality.AI</TableCell><TableCell>Paid credits only</TableCell><TableCell>Yes</TableCell></TableRow>
+              </TableBody>
+            </Table>
+            <p className="text-xs text-muted-foreground mt-2">Competitor limits checked October 2026 and subject to change.</p>
+          </div>
 
           <h2>What each limit actually covers</h2>
           <div className="not-prose my-6">

@@ -1,3 +1,4 @@
+import FeaturedGuides from "@/components/FeaturedGuides";
 ﻿import { lazy, Suspense } from "react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
@@ -1302,6 +1303,7 @@ const Index = () => {
             </div>
           </div>
         </section>
+        <div className="container mx-auto px-4"><FeaturedGuides currentPage="/" /></div>
       </main>
       
       <Footer />

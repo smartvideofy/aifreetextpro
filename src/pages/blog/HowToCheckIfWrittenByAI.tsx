@@ -111,6 +111,18 @@ const HowToCheckIfWrittenByAI = () => {
                   answer="Combine free detectors like GPTZero with manual review: look for uniform sentence length, generic phrasing, missing specific detail, and no personal voice. Tools estimate probability and can be wrong, so for grading or hiring use them as one input alongside your own judgment, not as proof."
                 />
 
+                <div className="not-prose my-6 rounded-xl border border-secondary/30 bg-secondary/5 p-5">
+                  <p className="font-semibold text-lg mb-3">How to check if AI wrote something: 6-point checklist</p>
+                  <ul className="grid gap-2 sm:grid-cols-2 text-sm text-muted-foreground">
+                    <li>1. Run it through a free AI detector for a baseline score.</li>
+                    <li>2. Check sentence length: AI keeps it uniform.</li>
+                    <li>3. Look for specific names, numbers and lived detail.</li>
+                    <li>4. Spot stock phrases like "delve", "tapestry", "in today's world".</li>
+                    <li>5. Cross-check with a second detector.</li>
+                    <li>6. Ask for drafts or version history before deciding.</li>
+                  </ul>
+                </div>
+
               <p className="text-xl text-muted-foreground">If you are asking "did AI write this?", there are two answers worth having: what a free AI writing checker reports, and what four manual signals tell you. Teachers, editors, and hiring managers should use both, because neither one alone is proof. Need the tool itself? Run the text through our <Link to="/ai-checker" className="text-primary hover:underline">free AI checker</Link> first, then work through the checklist below.</p>
               <ReviewedBy name="Dr. Sarah Chen" role="AI Ethics Researcher" slug="sarah-chen" />
             </header>

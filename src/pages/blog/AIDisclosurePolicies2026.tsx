@@ -12,7 +12,6 @@ import InternalLinks from "@/components/InternalLinks";
 import ReviewedBy from "@/components/ReviewedBy";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { FAQSection } from "@/components/FAQSection";
-import { AuthorSchema } from "@/components/AuthorSchema";
 import { USAcademicGuidance, AcademicComparisonLinks } from '@/components/USAcademicGuidance';
 import { trackCTAClick } from '@/lib/analytics';
 
@@ -58,19 +57,12 @@ const AIDisclosurePolicies2026 = () => {
             "@context": "https://schema.org", "@type": "Article",
             "headline": "AI Disclosure Policies: What You Must Know Before Submitting AI Content (2026)",
             "author": { "@type": "Person", "name": "Dr. Sarah Chen", "url": "https://aifreetextpro.com/team#sarah-chen" },
-            "publisher": { "@type": "Organization", "name": "AI Free Text Pro", "logo": { "@type": "ImageObject", "url": "https://aifreetextpro.com/favicon.ico" } },
+            "publisher": { "@type": "Organization", "name": "AI Free Text Pro", "logo": { "@type": "ImageObject", "url": "https://aifreetextpro.com/logo.png" } },
             "datePublished": "2026-02-28", "dateModified": "2026-10-16",
             "mainEntityOfPage": "https://aifreetextpro.com/blog/ai-disclosure-policies-2026"
           })}
         </script>
       </Helmet>
-      <AuthorSchema
-        articleUrl="https://aifreetextpro.com/blog/ai-disclosure-policies-2026"
-        headline="AI Disclosure Policies: What You Must Know Before Submitting AI Content (2026)"
-        description="Complete guide to AI disclosure requirements in academia, publishing, and business. Includes templates, regulations, and best practices for 2026."
-        datePublished="2026-02-28"
-        dateModified="2026-10-16"
-      />
       <SpeakableSchema
         pageUrl="https://aifreetextpro.com/blog/ai-disclosure-policies-2026"
         pageName="AI Disclosure Policies: What You Must Know Before Submitting AI Content (2026)"

@@ -1,4 +1,6 @@
 import { useEffect } from 'react';
+import { observeConsent, readPreferences } from './consent';
+import { startMarketingTracking, trackMarketingPageView } from './marketingTracking';
 
 declare global {
   interface Window {
@@ -8,30 +10,36 @@ declare global {
 }
 
 const GA_MEASUREMENT_ID = 'G-G1YR6ZJWZE';
+let lastAnalyticsPage = '';
+
+function safeLocation() { return window.location.origin + window.location.pathname; }
+
+function initializeAnalytics() {
+  if (!readPreferences().analytics || window.__PRERENDER_INJECT__) {
+    window[`ga-disable-${GA_MEASUREMENT_ID}` as keyof Window] = true as never;
+    lastAnalyticsPage = '';
+    return;
+  }
+  window[`ga-disable-${GA_MEASUREMENT_ID}` as keyof Window] = false as never;
+  if (!document.getElementById('aftp-ga4')) {
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = function () { window.dataLayer?.push(arguments); };
+    window.gtag('js', new Date());
+    window.gtag('config', GA_MEASUREMENT_ID, { send_page_view: false, page_location: safeLocation(), page_referrer: '' });
+    const script = document.createElement('script');
+    script.id = 'aftp-ga4'; script.async = true;
+    script.src = `https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`;
+    document.head.appendChild(script);
+  }
+  trackPageView(window.location.pathname);
+}
 
 export const GoogleAnalytics = () => {
   useEffect(() => {
-    // Load Google Analytics script
-    const script1 = document.createElement('script');
-    script1.async = true;
-    script1.src = `https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`;
-    document.head.appendChild(script1);
-
-    // Initialize gtag directly instead of using innerHTML to avoid script injection risks
-    window.dataLayer = window.dataLayer || [];
-    window.gtag = function (...args: any[]) {
-      window.dataLayer!.push(args);
-    };
-    window.gtag('js', new Date());
-    window.gtag('config', GA_MEASUREMENT_ID, {
-      page_path: window.location.pathname,
-    });
-
-    return () => {
-      if (script1.parentNode) {
-        document.head.removeChild(script1);
-      }
-    };
+    initializeAnalytics();
+    const stopAnalytics = observeConsent(initializeAnalytics);
+    const stopMarketing = startMarketingTracking();
+    return () => { stopAnalytics(); stopMarketing(); };
   }, []);
 
   return null;
@@ -39,10 +47,11 @@ export const GoogleAnalytics = () => {
 
 // Track page views
 export const trackPageView = (url: string) => {
-  if (typeof window.gtag !== 'undefined') {
-    window.gtag('config', GA_MEASUREMENT_ID, {
-      page_path: url,
-    });
+  trackMarketingPageView(url);
+  const path = url.split(/[?#]/)[0];
+  if (readPreferences().analytics && window.gtag && lastAnalyticsPage !== path) {
+    lastAnalyticsPage = path;
+    window.gtag('event', 'page_view', { page_path: path, page_location: window.location.origin + path, page_referrer: '' });
   }
 };
 
@@ -53,7 +62,7 @@ export const trackEvent = (
   label?: string,
   value?: number
 ) => {
-  if (typeof window.gtag !== 'undefined') {
+  if (readPreferences().analytics && typeof window.gtag !== 'undefined') {
     window.gtag('event', action, {
       event_category: category,
       event_label: label,
@@ -144,7 +153,7 @@ export const trackContactFormSubmit = () => {
 // Error Tracking
 export const trackError = (errorType: string, errorMessage: string) => {
   trackEvent('error_occurred', 'Error', errorType, 0);
-  if (typeof window.gtag !== 'undefined') {
+  if (readPreferences().analytics && typeof window.gtag !== 'undefined') {
     window.gtag('event', 'exception', {
       description: `${errorType}: ${errorMessage}`,
       fatal: false

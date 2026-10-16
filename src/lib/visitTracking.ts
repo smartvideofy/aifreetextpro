@@ -8,6 +8,7 @@
  * linked to its visits. Skipped when the visitor declined analytics cookies.
  */
 import { attributionFromLocation, declinedAnalytics, directVisit, CLICK_ID_PARAMS } from "./attribution";
+import { readPreferences } from './consent';
 
 // The app's database (a different Supabase project from this site's). The
 // publishable key is public by design: it is in every app page as well.
@@ -66,7 +67,7 @@ function deviceType(): "mobile" | "tablet" | "desktop" {
 export function trackVisit(): void {
   try {
     if ((window as Window & { __PRERENDER_INJECT__?: unknown }).__PRERENDER_INJECT__ || navigator.webdriver) return;
-    if (declinedAnalytics()) return;
+    if (declinedAnalytics() || !readPreferences().analytics) return;
     if (readCookie(SESSION_COOKIE)) {
       setCookie(SESSION_COOKIE, "1", SESSION_SECONDS);
       return;
@@ -88,7 +89,7 @@ export function trackVisit(): void {
       term: a.term,
       content: a.content,
       referrer: a.referrer,
-      click_id_type: CLICK_ID_PARAMS.find((k) => params.get(k)) ?? null,
+      click_id_type: readPreferences().marketing ? CLICK_ID_PARAMS.find((k) => params.get(k)) ?? null : null,
       device: deviceType(),
     };
     void fetch(`${APP_SUPABASE_URL}/rest/v1/rpc/record_visit`, {

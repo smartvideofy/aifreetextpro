@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Cookie, X, Settings } from "lucide-react";
 import { Link } from "react-router-dom";
 import { clearAttribution } from "@/lib/attribution";
+import { CONSENT_NOTICE, savePreferences } from "@/lib/consent";
 
 const CookieConsent = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -23,16 +24,12 @@ const CookieConsent = () => {
   }, []);
 
   const handleAccept = () => {
-    localStorage.setItem("cookie-consent", "accepted");
-    localStorage.setItem("cookie-preferences", JSON.stringify({
-      essential: true, analytics: true, marketing: true, functional: true, }));
+    savePreferences({ essential: true, analytics: true, marketing: true, functional: true }, "accepted");
     setIsVisible(false);
   };
 
   const handleDecline = () => {
-    localStorage.setItem("cookie-consent", "declined");
-    localStorage.setItem("cookie-preferences", JSON.stringify({
-      essential: true, analytics: false, marketing: false, functional: false, }));
+    savePreferences({ essential: true, analytics: false, marketing: false, functional: false }, "declined");
     clearAttribution();
     setIsVisible(false);
   };
@@ -52,7 +49,7 @@ const CookieConsent = () => {
           <div className="flex-1">
             <h3 className="font-semibold text-foreground mb-1">We value your privacy</h3>
             <p className="text-sm text-muted-foreground">
-              We use cookies to enhance your browsing experience and analyze site traffic.{" "}
+              {CONSENT_NOTICE}{" "}
               <Link to="/privacy-policy" className="text-primary underline">
                 Privacy Policy
               </Link>

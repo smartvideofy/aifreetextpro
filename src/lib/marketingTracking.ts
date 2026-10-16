@@ -86,6 +86,7 @@ export function trackMarketingPageView(path: string) {
   if (!readPreferences().marketing || window.__PRERENDER_INJECT__) return;
   const cleanPath = path.split(/[?#]/)[0];
   if (lastPage === cleanPath) return;
+  if (!metaInitialized && !xInitialized) return;
   lastPage = cleanPath;
   if (metaInitialized) window.fbq?.('track', 'PageView');
   if (xInitialized && /^tw-[a-z0-9]+-[a-z0-9]+$/i.test(X_PAGE_VIEW)) window.twq?.('event', X_PAGE_VIEW, {});

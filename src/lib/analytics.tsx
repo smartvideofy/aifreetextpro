@@ -6,6 +6,7 @@ declare global {
   interface Window {
     gtag?: (...args: any[]) => void;
     dataLayer?: any[];
+    [key: `ga-disable-${string}`]: boolean;
   }
 }
 
@@ -16,11 +17,11 @@ function safeLocation() { return window.location.origin + window.location.pathna
 
 function initializeAnalytics() {
   if (!readPreferences().analytics || window.__PRERENDER_INJECT__) {
-    window[`ga-disable-${GA_MEASUREMENT_ID}` as keyof Window] = true as never;
+    window[`ga-disable-${GA_MEASUREMENT_ID}`] = true;
     lastAnalyticsPage = '';
     return;
   }
-  window[`ga-disable-${GA_MEASUREMENT_ID}` as keyof Window] = false as never;
+  window[`ga-disable-${GA_MEASUREMENT_ID}`] = false;
   if (!document.getElementById('aftp-ga4')) {
     window.dataLayer = window.dataLayer || [];
     window.gtag = function () { window.dataLayer?.push(arguments); };

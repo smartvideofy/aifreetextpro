@@ -9,6 +9,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { toast } from "@/hooks/use-toast";
 import { clearAttribution } from "@/lib/attribution";
+import { CONSENT_NOTICE, savePreferences } from "@/lib/consent";
 
 interface CookiePreferences {
   essential: boolean;
@@ -48,9 +49,8 @@ const CookieSettings = () => {
   };
 
   const handleSave = () => {
-    localStorage.setItem("cookie-preferences", JSON.stringify(preferences));
-    localStorage.setItem("cookie-consent", "customized");
-    if (!preferences.analytics) clearAttribution();
+    savePreferences(preferences, "customized");
+    if (!preferences.marketing) clearAttribution();
     toast({
       title: "Preferences Saved",
       description: "Your cookie preferences have been updated successfully.",
@@ -65,8 +65,7 @@ const CookieSettings = () => {
       functional: true,
     };
     setPreferences(allAccepted);
-    localStorage.setItem("cookie-preferences", JSON.stringify(allAccepted));
-    localStorage.setItem("cookie-consent", "accepted");
+    savePreferences(allAccepted, "accepted");
     toast({
       title: "All Cookies Accepted",
       description: "You have accepted all cookies.",
@@ -81,8 +80,8 @@ const CookieSettings = () => {
       functional: false,
     };
     setPreferences(allRejected);
-    localStorage.setItem("cookie-preferences", JSON.stringify(allRejected));
-    localStorage.setItem("cookie-consent", "declined");
+    savePreferences(allRejected, "declined");
+    clearAttribution();
     toast({
       title: "Optional Cookies Rejected",
       description: "Only essential cookies will be used.",
@@ -110,7 +109,7 @@ const CookieSettings = () => {
       key: "marketing" as const,
       title: "Marketing Cookies",
       description:
-        "These cookies are used to track visitors across websites. The intention is to display ads that are relevant and engaging for individual users.",
+        "When enabled, Meta and X receive page visits, app-link clicks and advertising identifiers for ad measurement. This does not track completed signups or purchases in the separate app.",
       icon: Target,
       required: false,
     },
@@ -227,6 +226,7 @@ const CookieSettings = () => {
               About Our Cookie Usage
             </h2>
             <div className="text-sm text-muted-foreground space-y-3">
+              <p>{CONSENT_NOTICE}</p>
               <p>
                 Cookies are small text files that are stored on your device when you visit
                 our website. They help us provide you with a better experience by

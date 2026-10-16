@@ -16,6 +16,8 @@
  * URLs (they can contain search terms or personal data).
  */
 
+import { readPreferences } from './consent';
+
 export interface Attribution {
   channel: string;
   source: string | null;
@@ -216,7 +218,7 @@ export function clearAttribution(): void {
 export function captureAttribution(): void {
   try {
     if ((window as Window & { __PRERENDER_INJECT__?: unknown }).__PRERENDER_INJECT__ || navigator.webdriver) return;
-    if (declinedAnalytics()) {
+    if (!readPreferences().marketing) {
       if (hasCookie()) clearAttribution();
       return;
     }

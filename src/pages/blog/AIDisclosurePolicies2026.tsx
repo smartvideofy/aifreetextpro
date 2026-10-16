@@ -12,7 +12,8 @@ import InternalLinks from "@/components/InternalLinks";
 import ReviewedBy from "@/components/ReviewedBy";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { FAQSection } from "@/components/FAQSection";
-import { AuthorSchema } from "@/components/AuthorSchema";
+import { USAcademicGuidance, AcademicComparisonLinks } from '@/components/USAcademicGuidance';
+import { trackCTAClick } from '@/lib/analytics';
 
 const relatedArticles = [
   { title: "Is It Illegal to Use AI for School?", description: "Legal and policy landscape for academic AI use.", href: "/blog/is-it-illegal-to-use-ai-for-school", category: "Academic" },
@@ -25,7 +26,9 @@ const faqs = [
   { question: "Am I legally required to disclose AI use in my writing?", answer: "In most jurisdictions, there is no general legal requirement. However, specific contexts have disclosure requirements: EU AI Act mandates disclosure for AI-generated content in certain commercial contexts, academic institutions have integrity policies, and many publishers include AI disclosure in their submission agreements." },
   { question: "What happens if I don't disclose AI use?", answer: "Consequences depend on context. In academia, non-disclosure can result in failing grades or expulsion. In publishing, it can lead to article retraction and reputational damage. In business, undisclosed AI content may violate client contracts." },
   { question: "How should I word an AI disclosure statement?", answer: "Be specific about what AI did and what you did. Example: 'AI tools (ChatGPT GPT-5) were used for initial research and outline generation. All analysis, arguments, and conclusions are the author's own work. The final text was written and edited by the author.'" },
-  { question: "Do I need to disclose using Grammarly or spell-checkers?", answer: "Generally no. Most policies distinguish between 'generative AI' (which creates content) and 'assistive tools' (which correct or improve existing content). Spell-checkers, grammar tools, and citation managers are typically exempt from disclosure requirements." }
+  { question: "Do I need to disclose using Grammarly or spell-checkers?", answer: "Check the assignment policy and the specific feature used. Spelling correction is different from generating or rewriting paragraphs. An instructor can require disclosure of either; do not assume a tool name grants an exemption." },
+  { question: "Does an APA or MLA citation make AI use allowed?", answer: "No. Citation acknowledges a source, and disclosure explains assistance. Neither overrides an assignment that prohibits that use. Obtain permission first, then follow the required documentation style." },
+  { question: "Is a Turnitin AI score below 20% safe for US college submissions?", answer: "There is no universal safe threshold. Turnitin's reporting boundary concerns detection reliability, not permission. Follow the course policy, verify sources and keep evidence of your writing process." }
 ];
 
 const AIDisclosurePolicies2026 = () => {
@@ -54,22 +57,12 @@ const AIDisclosurePolicies2026 = () => {
             "@context": "https://schema.org", "@type": "Article",
             "headline": "AI Disclosure Policies: What You Must Know Before Submitting AI Content (2026)",
             "author": { "@type": "Person", "name": "Dr. Sarah Chen", "url": "https://aifreetextpro.com/team#sarah-chen" },
-            "publisher": { "@type": "Organization", "name": "AI Free Text Pro", "logo": { "@type": "ImageObject", "url": "https://aifreetextpro.com/favicon.ico" } },
-            "datePublished": "2026-02-28", "dateModified": "2026-04-05",
-            "mainEntityOfPage": "https://aifreetextpro.com/blog/ai-disclosure-policies-2026", "wordCount": 1100
+            "publisher": { "@type": "Organization", "name": "AI Free Text Pro", "logo": { "@type": "ImageObject", "url": "https://aifreetextpro.com/logo.png" } },
+            "datePublished": "2026-02-28", "dateModified": "2026-10-16",
+            "mainEntityOfPage": "https://aifreetextpro.com/blog/ai-disclosure-policies-2026"
           })}
         </script>
-        <script type="application/ld+json">
-          {JSON.stringify({ "@context": "https://schema.org", "@type": "FAQPage", "mainEntity": faqs.map(f => ({ "@type": "Question", "name": f.question, "acceptedAnswer": { "@type": "Answer", "text": f.answer } })) })}
-        </script>
       </Helmet>
-      <AuthorSchema
-        articleUrl="https://aifreetextpro.com/blog/ai-disclosure-policies-2026"
-        headline="AI Disclosure Policies: What You Must Know Before Submitting AI Content (2026)"
-        description="Complete guide to AI disclosure requirements in academia, publishing, and business. Includes templates, regulations, and best practices for 2026."
-        datePublished="2026-02-28"
-        dateModified="2026-06-09"
-      />
       <SpeakableSchema
         pageUrl="https://aifreetextpro.com/blog/ai-disclosure-policies-2026"
         pageName="AI Disclosure Policies: What You Must Know Before Submitting AI Content (2026)"
@@ -101,7 +94,7 @@ const AIDisclosurePolicies2026 = () => {
 
             <KeyTakeaways points={[
               "The EU AI Act now requires disclosure labels on AI-generated commercial content distributed online",
-              "Over 90% of universities have AI disclosure requirements, but policies vary widely in specifics",
+              "US course policies differ: check your syllabus rather than assuming campus-wide permission",
               "Major publishers (Nature, Science, IEEE) prohibit AI as a listed author but allow disclosed AI assistance",
               "A clear disclosure statement protects you legally and professionally, even when not strictly required",
               "Best practice: disclose what AI did, what you did, and which tool/version you used"
@@ -142,15 +135,18 @@ const AIDisclosurePolicies2026 = () => {
                     </TableRow>
                   </TableHeader>
                   <TableBody>
-                    <TableRow><TableCell className="font-medium">Research Universities</TableCell><TableCell>AI allowed with full disclosure</TableCell><TableCell>Methodology section + acknowledgments</TableCell></TableRow>
+                    <TableRow><TableCell className="font-medium">Research Universities</TableCell><TableCell>Instructor and assignment-specific permission</TableCell><TableCell>Follow the course or publication instructions</TableCell></TableRow>
                     <TableRow><TableCell className="font-medium">Liberal Arts Colleges</TableCell><TableCell>Varies by department</TableCell><TableCell>Assignment-specific requirements</TableCell></TableRow>
-                    <TableRow><TableCell className="font-medium">Community Colleges</TableCell><TableCell>Often prohibitive</TableCell><TableCell>No standard format</TableCell></TableRow>
+                    <TableRow><TableCell className="font-medium">Community Colleges</TableCell><TableCell>Check the individual course policy</TableCell><TableCell>Instructor-defined documentation</TableCell></TableRow>
                     <TableRow><TableCell className="font-medium">High Schools</TableCell><TableCell>Evolving rapidly</TableCell><TableCell>Teacher-defined</TableCell></TableRow>
                   </TableBody>
                 </Table>
               </div>
               <p>The most common academic disclosure requires: (1) naming the AI tool and version, (2) describing how it was used, (3) specifying which parts of the work involved AI assistance, and (4) confirming that the final submission represents your own understanding and analysis. Our guide on <Link to="/blog/ai-writing-academia" className="text-primary hover:underline">ethical AI writing in academia</Link> provides specific templates.</p>
             </section>
+
+            <USAcademicGuidance />
+            <AcademicComparisonLinks />
 
             <section>
               <h2>Publishing and Media Disclosure</h2>
@@ -194,8 +190,8 @@ const AIDisclosurePolicies2026 = () => {
 
             <div className="not-prose bg-primary/5 border border-primary/20 rounded-xl p-8 text-center my-12">
               <h2 className="text-2xl font-bold mb-3">Verify Your Content Before Disclosure</h2>
-              <p className="text-muted-foreground mb-6">Check how AI-detectable your content is and decide what level of disclosure is appropriate.</p>
-              <a href="https://app.aifreetextpro.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center px-6 py-3 bg-primary text-primary-foreground rounded-lg font-semibold hover:bg-primary/90 transition-colors">
+              <p className="text-muted-foreground mb-6">Review your writing and sources. Determine disclosure from the actual assistance and applicable policy, never from a detector score.</p>
+              <a href="https://app.aifreetextpro.com" target="_blank" rel="noopener noreferrer" onClick={() => trackCTAClick('disclosure_review', 'app')} className="inline-flex items-center px-6 py-3 bg-primary text-primary-foreground rounded-lg font-semibold hover:bg-primary/90 transition-colors">
                 Try Free AI Detector <ArrowLeft className="w-4 h-4 ml-2 rotate-180" />
               </a>
             </div>

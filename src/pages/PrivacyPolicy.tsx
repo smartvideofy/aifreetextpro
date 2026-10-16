@@ -36,7 +36,7 @@ const PrivacyPolicy = () => {
           </Link>
 
           <h1 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">Privacy Policy</h1>
-          <p className="text-muted-foreground mb-8">Last updated: {new Date().toLocaleDateString()}</p>
+          <p className="text-muted-foreground mb-8">Last updated: October 16, 2026</p>
 
           <div className="prose prose-slate dark:prose-invert max-w-none space-y-6">
             <section>
@@ -58,7 +58,7 @@ const PrivacyPolicy = () => {
               <ul className="list-disc list-inside space-y-2 text-muted-foreground">
                 <li>Device information (browser type, operating system)</li>
                 <li>Usage statistics and analytics</li>
-                <li>IP address and general location data</li>
+                <li>Browser and device information; we do not log visitor IP addresses in our application</li>
               </ul>
             </section>
 
@@ -105,6 +105,12 @@ const PrivacyPolicy = () => {
               </ul>
               
               <h3 className="text-xl font-semibold mb-3 mt-6 text-foreground">Advertising Partners</h3>
+              <p className="text-muted-foreground leading-relaxed mb-3">
+                When you explicitly enable Marketing Cookies and the relevant tracking is configured, this marketing site uses Meta Pixel (Meta Platforms) and X website tracking (X Corp.) for advertising measurement. These providers may receive visited page paths, browser/device information, advertising cookie identifiers and app-link engagement. We do not send submitted writing, email addresses or account details through these pixels. An app-link click is not a completed signup or purchase. Provider requests expose normal connection information to those providers; our application does not log IP addresses.
+              </p>
+              <p className="text-muted-foreground leading-relaxed mb-3">
+                Campaign click identifiers can be retained for up to 90 days in a consented first-party attribution cookie shared with app.aifreetextpro.com. We retain a versioned record of your choices and notice in your browser, including acceptance and later withdrawal. This marketing site's choices do not automatically grant consent to tracking in the separate app. You can refuse or withdraw at any time in <Link to="/cookie-settings" className="text-primary hover:underline">Cookie Settings</Link>; withdrawal stops new optional tracking but does not recall data already received by providers. Contact us for requests concerning existing records or leads. No server-side advertising uploads or customer matching are configured here.
+              </p>
               <p className="text-muted-foreground leading-relaxed mb-3">
                 We may partner with third-party advertising networks (such as Google AdSense) to display advertisements on our website. These advertising partners may use cookies and similar technologies to:
               </p>

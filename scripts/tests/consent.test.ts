@@ -1,5 +1,5 @@
 import { describe, expect, test } from 'bun:test';
-import { parsePreferences } from './consent';
+import { parsePreferences } from '../../src/lib/consent';
 
 describe('optional tracking permissions', () => {
   test('no choice grants no marketing tracking', () => {

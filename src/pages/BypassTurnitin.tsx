@@ -166,10 +166,6 @@ const BypassTurnitin = () => {
                 ))}
                 <span className="ml-1">4.9/5 from 2,847 reviews</span>
               </div>
-              <div className="flex items-center gap-2">
-                <Award className="w-4 h-4 text-primary" />
-                <span>100% Money-Back Guarantee</span>
-              </div>
             </div>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
@@ -192,7 +188,7 @@ const BypassTurnitin = () => {
 
           {/* Key Takeaways */}
           <KeyTakeaways points={[
-            "99.8% success rate against Turnitin AI detection, tested February 2026", "Reduces AI scores from 87% to under 2% in under 30 seconds", "Preserves academic citations (APA, MLA, Chicago) and scholarly tone", "Free tier available with no credit card required", "100% money-back guarantee if content is flagged"
+            "99.8% success rate against Turnitin AI detection, tested February 2026", "Reduces AI scores from 87% to under 2% in under 30 seconds", "Preserves academic citations (APA, MLA, Chicago) and scholarly tone", "Free tier available with no credit card required"
           ]} />
 
           {/* Live Test Results */}
@@ -481,10 +477,6 @@ const BypassTurnitin = () => {
                 <div className="flex items-center gap-2">
                   <CheckCircle className="w-4 h-4 text-primary" />
                   <span>99.8% Success Rate</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <CheckCircle className="w-4 h-4 text-primary" />
-                  <span>Money-Back Guarantee</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <CheckCircle className="w-4 h-4 text-primary" />

@@ -13,19 +13,19 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@
 const URL = "https://aifreetextpro.com/free-ai-detector-word-limit";
 
 const faqs = [
-  { question: "How do I check essays without word cutoffs?", answer: "Paste the full essay into our free AI checker. Detection has no word cap and no signup, so you can score a 5,000-word paper in one pass. Turnitin requires an institutional login and GPTZero's free plan caps each scan." },
-  { question: "Is there an AI detector with no word limit?", answer: "Yes. AI detection on AI Free Text Pro is unmetered for any length of text. Humanizing is the only metered action, at 1,000 free words per month." },
+  { question: "How do I check essays without word cutoffs?", answer: "Create a free account (no card) and paste the essay into the AI checker. The free plan covers 250 words a month across detection and humanizing, so a long paper is best checked a section at a time, or on a paid plan from $4.99/month with 5,000 words and no daily limits. Turnitin requires an institutional login and GPTZero's free plan caps each scan." },
+  { question: "Is there an AI detector with no word limit?", answer: "Not on a free plan. On AI Free Text Pro the free plan gives you 250 words a month, shared by detection and humanizing, with up to 10 checks and 5 humanizations a day. Paid plans remove the daily limits, and Unlimited Creator has no monthly word cap." },
   {
     question: "How many words can I check for free?",
-    answer: "AI detection is free with no word cap on our checker: paste any length of text and get a score. Humanizing is where the limit sits, at 1,000 words per month on the free plan. That is roughly two 500-word essays or four short blog sections.",
+    answer: "250 words a month on the free plan, shared between AI detection and humanizing, with up to 10 checks and 5 humanizations a day. That is enough to check and rewrite a few paragraphs. Paid plans start at 5,000 words a month.",
   },
   {
     question: "Is there an AI detector with unlimited words?",
-    answer: "For detection, yes, our checker does not meter words. Be sceptical of tools advertising unlimited humanizing on a free plan: rewriting costs compute on every request, so the limit is either hidden in a daily cap, a queue, or a quality downgrade. We publish the number instead: 1,000 free humanized words per month.",
+    answer: "Only on a paid plan. Be sceptical of tools advertising unlimited free use: every check and every rewrite costs compute, so the limit is usually hidden in a daily cap, a queue, or a quality downgrade. We publish the number instead: 250 free words a month, and unlimited words on Unlimited Creator.",
   },
   {
-    question: "What happens when I hit the 1,000-word humanizer limit?",
-    answer: "Nothing breaks and nothing is deleted. Detection keeps working, and your existing results stay available. You either wait for the monthly reset or move to a paid tier for a higher allowance.",
+    question: "What happens when I hit the 250-word monthly limit?",
+    answer: "Nothing breaks and nothing is deleted. Your existing results stay available. You either wait for the monthly reset or move to a paid plan for a higher allowance.",
   },
   {
     question: "Do longer texts get worse results?",
@@ -33,7 +33,7 @@ const faqs = [
   },
   {
     question: "Does the free plan require a credit card?",
-    answer: "No. The free tier needs no card and no trial countdown. You create an account so your monthly allowance can be tracked, and detection can be run without signing up at all.",
+    answer: "No. The free plan needs no card and has no trial countdown. You create a free account so your monthly allowance can be tracked.",
   },
 ];
 
@@ -43,7 +43,7 @@ const FreeWordLimit = () => (
       <title>AI Detector Word Limit: How Many Words Are Free?</title>
       <meta
         name="description"
-        content="Straight answer on free AI detector and humanizer word limits: unlimited detection, 1,000 humanized words per month free, no card. Compare the real caps."
+        content="Straight answer on free AI detector and humanizer word limits: 250 free words a month for detection and humanizing, up to 10 checks a day, no card. Compare the real caps."
       />
       <meta
         name="keywords"
@@ -54,7 +54,7 @@ const FreeWordLimit = () => (
       <meta property="og:type" content="website" />
       <meta property="og:url" content={URL} />
       <meta property="og:title" content="AI Detector Word Limit: How Many Words Are Free?" />
-      <meta property="og:description" content="Unlimited free AI detection, 1,000 humanized words a month, and the real caps behind 'unlimited' claims." />
+      <meta property="og:description" content="250 free words a month for AI detection and humanizing, and the real caps behind 'unlimited' claims." />
       <meta property="og:site_name" content="AI Free Text Pro" />
       <meta name="twitter:card" content="summary_large_image" />
       <script type="application/ld+json">
@@ -92,7 +92,7 @@ const FreeWordLimit = () => (
 
           <QuickAnswer
             question="Is there a free AI detector with no word limit?"
-            answer="Yes for detection: our AI checker scores any length of text for free, with no word cap and no signup. Humanizing is capped at 1,000 words per month on the free plan, because rewriting costs compute on every request. Any tool promising unlimited free humanizing is hiding the cap somewhere else."
+            answer="Not on a free plan. Our free plan gives you 250 words a month for AI detection and humanizing, with up to 10 checks a day and no card. Every check and rewrite costs compute, so any tool promising unlimited free use is hiding the cap somewhere else. Paid plans remove the daily limits."
           />
 
           <p className="text-xl text-muted-foreground">
@@ -102,8 +102,8 @@ const FreeWordLimit = () => (
 
           <KeyTakeaways
             points={[
-              "Detection is genuinely unmetered here: any text length, no signup, no daily cap.",
-              "Humanizing is 1,000 words per month on the free plan, and we publish that number rather than calling it unlimited.",
+              "The free plan is 250 words a month, shared by detection and humanizing, with up to 10 checks and 5 humanizations a day.",
+              "We publish that number rather than calling the free plan unlimited. Paid plans start at 5,000 words a month with no daily limits.",
               "Detection scores are unreliable below 200-300 words, so very short passages are the real limit, not the tool.",
               "Splitting long text into 300-600 word sections gives better humanized output than one large paste.",
               "No credit card, no trial countdown, and hitting the cap never deletes your existing results.",
@@ -115,7 +115,7 @@ const FreeWordLimit = () => (
             <Table>
               <TableHeader><TableRow><TableHead>Tool</TableHead><TableHead>Free detection limit</TableHead><TableHead>Signup</TableHead></TableRow></TableHeader>
               <TableBody>
-                <TableRow><TableCell className="font-medium">AI Free Text Pro</TableCell><TableCell>No word limit</TableCell><TableCell>No</TableCell></TableRow>
+                <TableRow><TableCell className="font-medium">AI Free Text Pro</TableCell><TableCell>250 words a month, 10 checks a day</TableCell><TableCell>Free account, no card</TableCell></TableRow>
                 <TableRow><TableCell className="font-medium">GPTZero (free)</TableCell><TableCell>Capped per scan and per month</TableCell><TableCell>Yes for longer scans</TableCell></TableRow>
                 <TableRow><TableCell className="font-medium">Turnitin</TableCell><TableCell>No public free access</TableCell><TableCell>Institution account</TableCell></TableRow>
                 <TableRow><TableCell className="font-medium">Originality.AI</TableCell><TableCell>Paid credits only</TableCell><TableCell>Yes</TableCell></TableRow>
@@ -138,21 +138,21 @@ const FreeWordLimit = () => (
               <TableBody>
                 <TableRow>
                   <TableCell className="font-medium">AI detection</TableCell>
-                  <TableCell>No word cap</TableCell>
-                  <TableCell>No</TableCell>
-                  <TableCell>Check a full dissertation chapter if you want</TableCell>
+                  <TableCell>Up to 10 checks a day, from your 250 monthly words</TableCell>
+                  <TableCell>Free account</TableCell>
+                  <TableCell>Check a few paragraphs at a time</TableCell>
                 </TableRow>
                 <TableRow>
                   <TableCell className="font-medium">Humanizing</TableCell>
-                  <TableCell>1,000 words / month</TableCell>
-                  <TableCell>Yes</TableCell>
-                  <TableCell>About two 500-word essays</TableCell>
+                  <TableCell>Up to 5 a day, from your 250 monthly words</TableCell>
+                  <TableCell>Free account</TableCell>
+                  <TableCell>Rewrite the paragraphs that flag</TableCell>
                 </TableRow>
                 <TableRow>
-                  <TableCell className="font-medium">Re-running a check</TableCell>
-                  <TableCell>Unlimited</TableCell>
-                  <TableCell>No</TableCell>
-                  <TableCell>Edit, re-check, repeat at no cost</TableCell>
+                  <TableCell className="font-medium">Paid plans</TableCell>
+                  <TableCell>5,000 words a month to unlimited</TableCell>
+                  <TableCell>From $4.99/month</TableCell>
+                  <TableCell>No daily limits on checks or humanizing</TableCell>
                 </TableRow>
               </TableBody>
             </Table>
@@ -160,19 +160,19 @@ const FreeWordLimit = () => (
 
           <h2>Why "unlimited free humanizer" is usually not true</h2>
           <p>
-            Detection is cheap: it scores text against a model once. Rewriting is expensive, because every request
+            Every check and every rewrite runs a model, and rewriting costs the most because every request
             generates new text. So when a tool advertises unlimited free humanizing, the cap has moved somewhere less
             visible, normally one of four places: a daily request limit, a per-paste character ceiling, a slower queue
             for free users, or a weaker model that produces output detectors still flag. We would rather publish the
-            number: 1,000 words a month, same model as paid tiers.
+            number: 250 free words a month, same model as paid plans.
           </p>
 
-          <h2>How to get the most out of 1,000 free words</h2>
+          <h2>How to get the most out of 250 free words</h2>
           <ul>
-            <li><strong>Check before you humanize.</strong> Detection is free, so score the draft first and only rewrite the passages that actually flag.</li>
+            <li><strong>Check the passages you're unsure of.</strong> Score the paragraphs most likely to flag first, then rewrite only the ones that do.</li>
             <li><strong>Work in 300-600 word sections.</strong> Shorter passes preserve your argument and let you keep the sentences you like.</li>
             <li><strong>Fix the obvious signals by hand.</strong> Adding a specific example or a first-person aside costs zero words from your allowance and lowers the score on its own.</li>
-            <li><strong>Re-check for free.</strong> Iterating on a check costs nothing, so measure after each edit rather than rewriting blind.</li>
+            <li><strong>Re-check only what you changed.</strong> Each check uses words from your allowance, so check the edited paragraph rather than the whole draft.</li>
           </ul>
 
           <h2>Where to go next</h2>
@@ -180,14 +180,14 @@ const FreeWordLimit = () => (
             Run the text through the <Link to="/ai-checker" className="text-primary hover:underline">free AI checker</Link>{" "}
             first, read <Link to="/blog/how-ai-detectors-work" className="text-primary hover:underline">how AI detectors work</Link>{" "}
             so the score means something, and compare tiers on the{" "}
-            <Link to="/pricing" className="text-primary hover:underline">pricing page</Link> if 1,000 words a month is
+            <Link to="/pricing" className="text-primary hover:underline">pricing page</Link> if 250 words a month is
             not enough for your workload.
           </p>
 
           <div className="not-prose bg-primary/5 border border-primary/20 rounded-xl p-8 text-center my-12">
-            <h2 className="text-2xl font-bold mb-3">Check any length of text, free</h2>
+            <h2 className="text-2xl font-bold mb-3">Try it free: 250 words a month</h2>
             <p className="text-muted-foreground mb-6 flex items-center justify-center gap-2">
-              <Check className="w-4 h-4 text-primary" /> No word cap on detection, no card, no trial timer.
+              <Check className="w-4 h-4 text-primary" /> Free account, no card, no trial timer.
             </p>
             <a
               href="https://app.aifreetextpro.com"

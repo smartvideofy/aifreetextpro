@@ -38,7 +38,7 @@ export const competitors: Record<string, Competitor> = {
       "Limited tone control settings",
     ],
     ourAdvantages: [
-      "1,000 free words per month (4x more)",
+      "250 free words per month, no card",
       "Free AI detector included",
       "Starts at $4.99/mo (3x cheaper)",
       "Multiple humanization modes with tone presets",
@@ -48,8 +48,8 @@ export const competitors: Record<string, Competitor> = {
       { q: "Does AI Free Text Pro work on the same detectors as StealthWriter?", a: "Yes. Both tools are tested against Turnitin, GPTZero, Originality.AI, Copyleaks, and Winston. AI Free Text Pro reaches a 98% pass rate in our internal benchmarks." },
       { q: "Can I migrate from StealthWriter?", a: "Yes. Paste any existing AI draft into the humanizer at app.aifreetextpro.com to produce a rewritten version in under 10 seconds." },
     ],
-    verdict: "AI Free Text Pro is the stronger pick if you want a free detector, more free words, and a lower starting price than StealthWriter.",
-    metaDescription: "StealthWriter alternative comparison: AI Free Text Pro offers 4x more free words, a built-in AI detector, and starts at $4.99/mo. See the full feature comparison.",
+    verdict: "AI Free Text Pro is the stronger pick if you want a free detector and a lower starting price than StealthWriter.",
+    metaDescription: "StealthWriter alternative comparison: AI Free Text Pro offers a free plan, a built-in AI detector, and starts at $4.99/mo. See the full feature comparison.",
   },
   phrasly: {
     slug: "phrasly",
@@ -66,7 +66,7 @@ export const competitors: Record<string, Competitor> = {
       "Higher starting price",
     ],
     ourAdvantages: [
-      "1,000 free words per month",
+      "250 free words per month",
       "Free AI detector with 98% accuracy",
       "Starts at $4.99/mo (66% cheaper)",
       "API access for power users",
@@ -74,10 +74,10 @@ export const competitors: Record<string, Competitor> = {
     faq: [
       { q: "Is AI Free Text Pro better than Phrasly?", a: "On price-per-word, free-tier limits, and the inclusion of a free AI detector, AI Free Text Pro outperforms Phrasly. Bypass quality on Turnitin and GPTZero is similar in our tests." },
       { q: "Does Phrasly work on Turnitin?", a: "Phrasly reduces detection in some cases. AI Free Text Pro produces a 98% Turnitin pass rate in our 2026 benchmark, compared to Phrasly's roughly 90%." },
-      { q: "What is the cheapest Phrasly alternative?", a: "AI Free Text Pro starts at $4.99/mo with 1,000 free words to test before paying." },
+      { q: "What is the cheapest Phrasly alternative?", a: "AI Free Text Pro starts at $4.99/mo with 250 free words to test before paying." },
     ],
-    verdict: "AI Free Text Pro is a stronger Phrasly alternative for students who want a free detector, more free words, and lower monthly cost.",
-    metaDescription: "Phrasly alternative comparison: AI Free Text Pro offers 1,000 free words, a free AI detector, and starts at $4.99/mo. Full Phrasly vs AI Free Text Pro guide.",
+    verdict: "AI Free Text Pro is a stronger Phrasly alternative for students who want a free detector and lower monthly cost.",
+    metaDescription: "Phrasly alternative comparison: AI Free Text Pro offers 250 free words, a free AI detector, and starts at $4.99/mo. Full Phrasly vs AI Free Text Pro guide.",
   },
   bypassgpt: {
     slug: "bypassgpt",
@@ -94,7 +94,7 @@ export const competitors: Record<string, Competitor> = {
       "Higher starting price",
     ],
     ourAdvantages: [
-      "1,000 free words per month (6x more)",
+      "250 free words per month, no card",
       "Multiple humanization modes",
       "Free AI detector included",
       "Starts at $4.99/mo",
@@ -103,8 +103,8 @@ export const competitors: Record<string, Competitor> = {
       { q: "Is AI Free Text Pro a good BypassGPT alternative?", a: "Yes. AI Free Text Pro matches BypassGPT's humanization on detector evasion and adds a free detector plus 6x the free word allowance." },
       { q: "Can BypassGPT bypass Turnitin?", a: "BypassGPT reduces Turnitin AI flags in many cases. AI Free Text Pro hits 98% pass rate against Turnitin's 2026 detector model." },
     ],
-    verdict: "AI Free Text Pro is the better value BypassGPT alternative with a free detector, more free words, and a lower price.",
-    metaDescription: "BypassGPT alternative: AI Free Text Pro offers 6x more free words, a free AI detector, and starts at $4.99/mo. Compare BypassGPT vs AI Free Text Pro.",
+    verdict: "AI Free Text Pro is the better value BypassGPT alternative with a free detector and a lower price.",
+    metaDescription: "BypassGPT alternative: AI Free Text Pro offers a free plan, a free AI detector, and starts at $4.99/mo. Compare BypassGPT vs AI Free Text Pro.",
   },
   "netus-ai": {
     slug: "netus-ai",
@@ -121,7 +121,7 @@ export const competitors: Record<string, Competitor> = {
       "Slower processing on long texts",
     ],
     ourAdvantages: [
-      "1,000 free words per month",
+      "250 free words per month",
       "Real-time AI detector included free",
       "Five tone presets and three humanization modes",
       "Sub-10-second processing",
@@ -131,7 +131,7 @@ export const competitors: Record<string, Competitor> = {
       { q: "Does Netus AI work on Originality.AI?", a: "Netus AI passes Originality.AI roughly 89% of the time. AI Free Text Pro tested at 98% pass rate against Originality.AI in 2026." },
     ],
     verdict: "AI Free Text Pro outperforms Netus AI on bypass rate, free-tier value, and includes a free detector.",
-    metaDescription: "Netus AI alternative: AI Free Text Pro delivers 98% bypass rate, free AI detector, and 1,000 free words per month starting at $4.99.",
+    metaDescription: "Netus AI alternative: AI Free Text Pro delivers 98% bypass rate, free AI detector, and 250 free words per month starting at $4.99.",
   },
   twixify: {
     slug: "twixify",
@@ -148,7 +148,7 @@ export const competitors: Record<string, Competitor> = {
       "Manual paragraph processing",
     ],
     ourAdvantages: [
-      "1,000 free words per month",
+      "250 free words per month",
       "Built-in AI detector with 98% accuracy",
       "Bulk paragraph processing",
       "Five tone presets",
@@ -157,8 +157,8 @@ export const competitors: Record<string, Competitor> = {
       { q: "Is AI Free Text Pro better than Twixify?", a: "Yes. AI Free Text Pro processes longer texts in one pass, includes a free detector, and offers 5x the free word allowance for less monthly cost." },
       { q: "Does Twixify bypass Turnitin AI detection?", a: "Twixify reduces flags in many cases. AI Free Text Pro maintains a 98% pass rate against Turnitin's 2026 detector." },
     ],
-    verdict: "AI Free Text Pro is the more complete Twixify alternative with a free detector, larger free tier, and bulk processing.",
-    metaDescription: "Twixify alternative comparison: AI Free Text Pro offers a free AI detector, 1,000 free words, and bulk processing from $4.99/mo.",
+    verdict: "AI Free Text Pro is the more complete Twixify alternative with a free detector and bulk processing.",
+    metaDescription: "Twixify alternative comparison: AI Free Text Pro offers a free AI detector, 250 free words, and bulk processing from $4.99/mo.",
   },
   humbot: {
     slug: "humbot",
@@ -175,7 +175,7 @@ export const competitors: Record<string, Competitor> = {
       "No API access",
     ],
     ourAdvantages: [
-      "1,000 free words per month",
+      "250 free words per month",
       "Free AI detector",
       "Three humanization modes",
       "Developer API available",
@@ -184,8 +184,8 @@ export const competitors: Record<string, Competitor> = {
       { q: "What is the best Humbot alternative?", a: "AI Free Text Pro is the best Humbot alternative based on free-tier size, bypass rate, included detector, and API access for content teams." },
       { q: "Does Humbot work on Copyleaks?", a: "Humbot passes Copyleaks roughly 90% of the time. AI Free Text Pro tested at 98% against Copyleaks in 2026." },
     ],
-    verdict: "AI Free Text Pro is the stronger Humbot alternative for content teams thanks to API access, a free detector, and a larger free tier.",
-    metaDescription: "Humbot alternative: AI Free Text Pro delivers 98% bypass, free AI detector, 1,000 free words, and an API. Compare Humbot vs AI Free Text Pro.",
+    verdict: "AI Free Text Pro is the stronger Humbot alternative for content teams thanks to API access and a free detector.",
+    metaDescription: "Humbot alternative: AI Free Text Pro delivers 98% bypass, free AI detector, 250 free words, and an API. Compare Humbot vs AI Free Text Pro.",
   },
 };
 

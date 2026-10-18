@@ -12,7 +12,7 @@ const faqs = [
   },
   {
     question: "Is AI Free Text Pro free forever?",
-    answer: "Yes, AI Free Text Pro offers a generous free tier with 1,000 words per month, 4x more than Rewritify (250 words) and double what ZeroGPT offers (500 words). Our core AI detection and humanization features remain free forever. Premium plans with higher limits are available for power users."
+    answer: "Yes, AI Free Text Pro has a free plan with 250 words a month for AI detection and humanization, up to 10 checks and 5 humanizations a day. You need a free account but no credit card. Paid plans with more words start at $4.99/month."
   },
   {
     question: "How does the AI humanizer work?",
@@ -36,7 +36,7 @@ const faqs = [
   },
   {
     question: "How does AI Free Text Pro compare to ZeroGPT?",
-    answer: "AI Free Text Pro offers both AI detection AND humanization in one platform, while ZeroGPT only offers detection. We also provide 98% accuracy vs ZeroGPT's ~85%, double the free word limit (1,000 vs 500 words), and additional features like PDF reports, analytics dashboard, and 4 writing styles for humanization."
+    answer: "AI Free Text Pro offers both AI detection AND humanization in one platform, while ZeroGPT only offers detection. We also provide 98% accuracy vs ZeroGPT's ~85%, and additional features like PDF reports, analytics dashboard, and 4 writing styles for humanization."
   },
   {
     question: "Can I export detection reports?",
@@ -48,11 +48,11 @@ const faqs = [
   },
   {
     question: "How long does analysis take?",
-    answer: "AI detection and humanization both complete in approximately 3-5 seconds for typical text lengths (500-1,000 words). Our optimized processing ensures you get fast, accurate results without long wait times."
+    answer: "AI detection and humanization both complete in approximately 3-5 seconds for typical text lengths (500-250 words). Our optimized processing ensures you get fast, accurate results without long wait times."
   },
   {
     question: "What makes AI Free Text Pro better than Rewritify?",
-    answer: "AI Free Text Pro offers higher detection accuracy (98% vs 88%), more writing styles (4 vs 2), better file support (PDF/DOCX/TXT vs text only), and a 4x larger free tier (1,000 vs 250 words). We also include features like word-by-word analysis, PDF reports, and analytics dashboard that Rewritify lacks."
+    answer: "AI Free Text Pro offers higher detection accuracy (98% vs 88%), more writing styles (4 vs 2), better file support (PDF/DOCX/TXT vs text only). We also include features like word-by-word analysis, PDF reports, and analytics dashboard that Rewritify lacks."
   },
   {
     question: "Can I use AI Free Text Pro for content marketing?",
@@ -64,15 +64,15 @@ const faqs = [
   },
   {
     question: "Is there a free AI humanizer tool?",
-    answer: "Yes! AI Free Text Pro is a free AI humanizer tool that transforms AI-generated text into natural, human-like writing. Get 1,000 free words per month with no credit card required. Our free tier offers 4x more words than competitors like Rewritify (250 words)."
+    answer: "Yes! AI Free Text Pro is a free AI humanizer tool that transforms AI-generated text into natural, human-like writing. Get 250 free words per month with no credit card required."
   },
   {
     question: "Can I use an AI detector with unlimited words?",
-    answer: "Our free tier includes 1,000 words per month for AI detection and humanization. Upgrade to Pro for unlimited AI detection and humanization with no word limits. This makes AI Free Text Pro perfect for high-volume content creators and agencies."
+    answer: "Our free tier includes 250 words per month for AI detection and humanization. Upgrade to Pro for unlimited AI detection and humanization with no word limits. This makes AI Free Text Pro perfect for high-volume content creators and agencies."
   },
   {
     question: "How do I use an AI humanizer for free?",
-    answer: "Simply paste your AI-generated text into our free AI humanizer at app.aifreetextpro.com. Select a writing style (Academic, Professional, Creative, or Casual) and click Humanize. Your first 1,000 words each month are completely free with no signup required."
+    answer: "Simply paste your AI-generated text into our free AI humanizer at app.aifreetextpro.com. Select a writing style (Academic, Professional, Creative, or Casual) and click Humanize. Your first 250 words each month are completely free with no card required."
   }
 ];
 

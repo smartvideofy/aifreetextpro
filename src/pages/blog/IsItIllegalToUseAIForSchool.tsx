@@ -521,7 +521,7 @@ const IsItIllegalToUseAIForSchool = () => {
             <div className="not-prose my-12 p-8 bg-gradient-to-r from-primary/10 to-primary/5 border border-primary/20 rounded-xl text-center">
               <h3 className="text-2xl font-bold mb-3">Check Your Essay Before You Submit</h3>
               <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-                Whether you used AI assistance or wrote everything yourself, it is smart to check how your writing looks to AI detectors. Our free tool gives you instant results with no sign-up required.
+                Whether you used AI assistance or wrote everything yourself, it is smart to check how your writing looks to AI detectors. Our free tool gives you instant results with no card required.
               </p>
               <a
                 href="https://app.aifreetextpro.com"

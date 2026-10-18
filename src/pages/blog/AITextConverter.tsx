@@ -24,7 +24,7 @@ const relatedArticles = [
 const faqs = [
   { question: "What is an AI text converter?", answer: "An AI text converter transforms AI-generated writing into human-sounding text by restructuring sentences, varying vocabulary, and introducing natural writing patterns. Unlike paraphrasing tools, converters address the statistical signatures that AI detectors identify." },
   { question: "Can AI text converters bypass Turnitin?", answer: "The best AI text converters, like AI Free Text Pro, reduce Turnitin AI detection scores from 90%+ to under 5%. Lower-quality converters (simple paraphrasers) typically only reduce scores to 40-60%, which still triggers review." },
-  { question: "Is converting AI text to human text free?", answer: "AI Free Text Pro offers free conversion for up to 300 words per session. For unlimited conversion, paid plans start at $9.99/month. Most other converters either limit free usage severely or require payment upfront." },
+  { question: "Is converting AI text to human text free?", answer: "AI Free Text Pro offers free conversion for up to 250 words a month. For unlimited conversion, paid plans start at $9.99/month. Most other converters either limit free usage severely or require payment upfront." },
   { question: "What is the difference between a converter and a paraphraser?", answer: "A paraphraser replaces words with synonyms while keeping sentence structure. A converter rewrites text at a structural level, changing rhythm, variation patterns, and voice. Paraphrasers get caught by detectors; converters do not." },
   { question: "How fast do AI text converters work?", answer: "AI Free Text Pro converts a 1,000-word text in under 10 seconds. The conversion process is instant compared to manual rewriting, which takes 30-45 minutes for the same length." },
 ];
@@ -34,7 +34,7 @@ const AITextConverter = () => {
     <>
       <Helmet>
         <title>Free AI Text Converter: Convert AI Text to Human Writing</title>
-        <meta name="description" content="Free AI text converter: paste ChatGPT, Claude or Gemini text and get natural human writing in seconds. 1,000 free words, no signup. Top 5 converters tested." />
+        <meta name="description" content="Free AI text converter: paste ChatGPT, Claude or Gemini text and get natural human writing in seconds. 250 free words, no card. Top 5 converters tested." />
         <meta name="keywords" content="AI to human text converter, convert AI text to human, AI text converter, AI to human converter, turn AI text into human text" />
         <link rel="canonical" href="https://aifreetextpro.com/blog/ai-text-converter" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />

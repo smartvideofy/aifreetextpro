@@ -99,7 +99,7 @@ const RewriteAIText = () => {
             <ReviewedBy name="Dr. Sarah Chen" role="AI Research Lead" slug="sarah-chen" />
 
             <KeyTakeaways points={[
-              "AI text sounds robotic due to uniform patterns in sentence length, vocabulary, and structure.", "Manual rewriting takes 30-45 minutes per 1,000 words with inconsistent detection results.", "AI humanizer tools process text in seconds with 95%+ detection bypass rates.", "Combining 2-3 manual techniques before humanizing produces the best results.", "The biggest mistake is only swapping words; you need to change rhythm and structure."
+              "AI text sounds robotic due to uniform patterns in sentence length, vocabulary, and structure.", "Manual rewriting takes 30-45 minutes per 250 words with inconsistent detection results.", "AI humanizer tools process text in seconds with 95%+ detection bypass rates.", "Combining 2-3 manual techniques before humanizing produces the best results.", "The biggest mistake is only swapping words; you need to change rhythm and structure."
             ]} />
 
             <section>

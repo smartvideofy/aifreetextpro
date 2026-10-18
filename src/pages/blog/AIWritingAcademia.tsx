@@ -591,7 +591,7 @@ export default function AIWritingAcademia() {
                   <div className="bg-primary/10 rounded-lg p-6">
                     <p className="font-semibold mb-2">AI Free Text Pro</p>
                     <p className="text-sm text-muted-foreground">
-                      Free, unlimited detection checks. Essential for verifying your work before submission.
+                      Free detection checks, 250 words a month. Essential for verifying your work before submission.
                     </p>
                   </div>
                   <div className="bg-muted/50 rounded-lg p-6">

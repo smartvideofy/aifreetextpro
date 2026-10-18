@@ -55,14 +55,14 @@ const Index = () => {
       <HowToSchema />
       <Breadcrumbs items={[{ label: "Home" }]} />
       <Helmet>
-        <title>Free AI Detector and Humanizer (2-in-1) | 1,000 Words Free</title>
-        <meta name="description" content="Free AI detector and humanizer in one tool. Check your AI score, then rewrite flagged lines in your own voice. 1,000 free words a month, no signup, no card." />
+        <title>Free AI Detector and Humanizer (2-in-1) | 250 words Free</title>
+        <meta name="description" content="Free AI detector and humanizer in one tool. Check your AI score, then rewrite flagged lines in your own voice. 250 free words a month, free account, no card." />
         <link rel="canonical" href="https://aifreetextpro.com/" />
         
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-        <meta property="og:title" content="Free AI Detector and Humanizer (2-in-1) | 1,000 Words Free" />
-        <meta property="og:description" content="Free AI detector and humanizer in one tool. Check your AI score, then rewrite flagged lines in your own voice. 1,000 free words a month, no signup, no card." />
+        <meta property="og:title" content="Free AI Detector and Humanizer (2-in-1) | 250 words Free" />
+        <meta property="og:description" content="Free AI detector and humanizer in one tool. Check your AI score, then rewrite flagged lines in your own voice. 250 free words a month, free account, no card." />
         <meta property="og:url" content="https://aifreetextpro.com/" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="https://aifreetextpro.com/og-image.png" />
@@ -70,8 +70,8 @@ const Index = () => {
         <meta property="og:locale" content="en_US" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@aifreetextpro" />
-        <meta name="twitter:title" content="Free AI Detector and Humanizer (2-in-1) | 1,000 Words Free" />
-        <meta name="twitter:description" content="Free AI detector and humanizer in one tool. Check your AI score, then rewrite flagged lines in your own voice. 1,000 free words a month, no signup, no card." />
+        <meta name="twitter:title" content="Free AI Detector and Humanizer (2-in-1) | 250 words Free" />
+        <meta name="twitter:description" content="Free AI detector and humanizer in one tool. Check your AI score, then rewrite flagged lines in your own voice. 250 free words a month, free account, no card." />
         <meta name="twitter:image" content="https://aifreetextpro.com/og-image.png" />
         
         {/* Enhanced Schema Markup */}
@@ -128,7 +128,7 @@ const Index = () => {
                 }
               }, {
                 "@type": "Question", "name": "Is AI Free Text Pro free forever?", "acceptedAnswer": {
-                  "@type": "Answer", "text": "Yes, AI Free Text Pro offers a generous free tier with 1,000 words per analysis, double what competitors like ZeroGPT (500 words) and Rewritify (250 words) offer. Our core AI detection and humanization features remain free forever."
+                  "@type": "Answer", "text": "Yes, AI Free Text Pro has a free plan with 250 words a month for AI detection and humanization. You need a free account but no credit card."
                 }
               }, {
                 "@type": "Question", "name": "How does the AI humanizer work?", "acceptedAnswer": {
@@ -144,15 +144,15 @@ const Index = () => {
                 }
               }, {
                 "@type": "Question", "name": "Is there a free AI humanizer tool?", "acceptedAnswer": {
-                  "@type": "Answer", "text": "Yes! AI Free Text Pro is a free AI humanizer tool that transforms AI-generated text into natural, human-like writing. Get 1,000 free words per month with no credit card required."
+                  "@type": "Answer", "text": "Yes! AI Free Text Pro is a free AI humanizer tool that transforms AI-generated text into natural, human-like writing. Get 250 free words per month with no credit card required."
                 }
               }, {
                 "@type": "Question", "name": "Is there a free AI detector with unlimited words?", "acceptedAnswer": {
-                  "@type": "Answer", "text": "AI Free Text Pro offers 1,000 free words per month. For unlimited AI detection and humanization, upgrade to our Pro plan with no word limits."
+                  "@type": "Answer", "text": "AI Free Text Pro offers 250 free words per month. For unlimited AI detection and humanization, upgrade to our Pro plan with no word limits."
                 }
               }, {
                 "@type": "Question", "name": "How do I use an AI humanizer for free?", "acceptedAnswer": {
-                  "@type": "Answer", "text": "Simply paste your AI-generated text into our free AI humanizer. Select a writing style (Academic, Professional, Creative, or Casual) and click Humanize. Your first 1,000 words each month are completely free."
+                  "@type": "Answer", "text": "Simply paste your AI-generated text into our free AI humanizer. Select a writing style (Academic, Professional, Creative, or Casual) and click Humanize. Your first 250 words each month are completely free."
                 }
               }
             ]
@@ -255,15 +255,6 @@ const Index = () => {
                 </a>
               </div>
 
-              {/* Money-Back Guarantee - Subtle */}
-              <div className="animate-fade-in pt-2" style={{ animationDelay: "500ms" }}>
-                <Link to="/guarantee" className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors">
-                  <Shield className="w-4 h-4 text-primary" />
-                  <span>100% Money-Back Guarantee</span>
-                  <ArrowRight className="w-3 h-3" />
-                </Link>
-              </div>
-
               {/* Product Mockup Visual */}
               <div className="mt-12 md:mt-20 animate-fade-in" style={{ animationDelay: "600ms" }}>
                 <ProductMockup />
@@ -283,7 +274,7 @@ const Index = () => {
                 Free AI Detector and Humanizer in One Tool
               </h2>
               <p className="text-muted-foreground text-base md:text-lg mb-6">
-                Score any text for AI with unlimited free checks, then humanize up to 1,000 words a month free. No
+                Score any text for AI with unlimited free checks, then humanize up to 250 words a month free. No
                 credit card, no trial countdown, and both tools live in the same workspace so you can check, rewrite,
                 and re-check without switching tabs.
               </p>
@@ -292,7 +283,7 @@ const Index = () => {
                   <CheckCircle className="w-4 h-4 text-primary" /> Unlimited free AI detection
                 </span>
                 <span className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/5 px-4 py-2">
-                  <CheckCircle className="w-4 h-4 text-primary" /> 1,000 free humanized words / month
+                  <CheckCircle className="w-4 h-4 text-primary" /> 250 free words / month
                 </span>
                 <Link to="/free-ai-detector-word-limit" className="inline-flex items-center gap-2 text-primary hover:underline px-2 py-2">
                   See the exact free limits <ArrowRight className="w-4 h-4" />
@@ -741,7 +732,7 @@ const Index = () => {
                   <ul className="space-y-3 flex-1">
                     <li className="flex items-start gap-2">
                       <CheckCircle className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                      <span className="text-sm">1,000 words per month</span>
+                      <span className="text-sm">250 words per month</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <CheckCircle className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />

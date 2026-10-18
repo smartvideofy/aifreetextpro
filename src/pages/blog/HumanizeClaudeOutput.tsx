@@ -61,7 +61,7 @@ const faqs = [
   },
   {
     question: "How do I humanize Claude output for Turnitin?",
-    answer: "Paste your Claude text into AI Free Text Pro's humanizer, select the 'Academic' tone, and process. In our testing this reduced Turnitin AI scores from 78% to 6% on average while preserving Claude's reasoning quality. The free tier covers 1,000 words per month, enough for most assignments."
+    answer: "Paste your Claude text into AI Free Text Pro's humanizer, select the 'Academic' tone, and process. In our testing this reduced Turnitin AI scores from 78% to 6% on average while preserving Claude's reasoning quality. The free tier covers 250 words per month, enough for most assignments."
   },
   {
     question: "Is Claude harder or easier to humanize than ChatGPT?",
@@ -291,7 +291,7 @@ const HumanizeClaudeOutput = () => {
               <Sparkles className="w-12 h-12 text-primary mx-auto mb-4" />
               <h2 className="text-2xl font-bold mb-3">Humanize Your Claude Text Free</h2>
               <p className="text-muted-foreground mb-6">
-                Get 1,000 words per month free with no signup required. Works on Claude 3.5 Sonnet, Claude 4, and every other model.
+                Get 250 words per month free with no card required. Works on Claude 3.5 Sonnet, Claude 4, and every other model.
               </p>
               <a href="https://app.aifreetextpro.com" target="_blank" rel="noopener noreferrer">
                 <Button size="xl" className="font-semibold">Humanize Claude Text Free</Button>

@@ -391,7 +391,7 @@ export default function BypassAIDetectionEthicalTips() {
             <div className="not-prose bg-primary/5 border border-primary/20 rounded-xl p-8 text-center my-12">
               <h2 className="text-2xl font-bold mb-3">Improve readability without changing your argument</h2>
               <p className="text-muted-foreground mb-6">
-                Refine the prose of work you authored. 1,000 words free, no card required.
+                Refine the prose of work you authored. 250 words free, no card required.
               </p>
               <a
                 href="https://app.aifreetextpro.com"

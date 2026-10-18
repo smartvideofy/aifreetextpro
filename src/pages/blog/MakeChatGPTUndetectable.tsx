@@ -329,14 +329,6 @@ const MakeChatGPTUndetectable = () => {
                     </div>
                     <p className="text-sm text-muted-foreground mb-0">Independently verified across GPTZero, Turnitin, Originality.AI, and more.</p>
                   </div>
-                  
-                  <div className="p-4 border rounded-lg">
-                    <div className="flex items-center gap-2 mb-2">
-                      <Shield className="w-5 h-5 text-primary" />
-                      <strong>100% Money-Back Guarantee</strong>
-                    </div>
-                    <p className="text-sm text-muted-foreground mb-0">If our humanizer is flagged by ANY detector, full refund, no questions asked.</p>
-                  </div>
                 </div>
 
                 <h2>Common Mistakes That Get You Caught</h2>
@@ -383,7 +375,7 @@ const MakeChatGPTUndetectable = () => {
                   In 2025, making AI writing undetectable is a solved problem, if you use the right tools. AI Free Text Pro gives you the fastest, most reliable method to transform any AI-generated content into undetectable human writing.
                 </p>
                 <p>
-                  Stop spending hours manually editing. Stop worrying if your content will pass. Start with 1,000 free words and see the difference.
+                  Stop spending hours manually editing. Stop worrying if your content will pass. Start with 250 free words and see the difference.
                 </p>
               </div>
 

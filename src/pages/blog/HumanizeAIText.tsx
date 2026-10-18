@@ -371,7 +371,7 @@ const HumanizeAIText = () => {
               <div className="bg-gradient-to-r from-primary/10 to-secondary/10 p-8 rounded-lg text-center space-y-4 my-12">
                 <h3 className="text-2xl font-bold">Humanize Your AI Text in Seconds</h3>
                 <p className="text-muted-foreground max-w-2xl mx-auto">
-                  Try AI Free Text Pro's humanizer with 4 writing styles and customizable settings. Start free with 1,000 words/month.
+                  Try AI Free Text Pro's humanizer with 4 writing styles and customizable settings. Start free with 250 words/month.
                 </p>
                 <a href="https://app.aifreetextpro.com/" target="_blank" rel="noopener noreferrer">
                   <Button size="lg" className="text-lg px-8">

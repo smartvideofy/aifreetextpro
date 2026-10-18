@@ -27,7 +27,7 @@ const VsHumanizeAIPro = () => {
     {
       category: "Pricing Comparison",
       features: [
-        { name: "Free Tier", aiFreePro: "1,000 words/mo", humanizeAI: "300 words/mo" },
+        { name: "Free Tier", aiFreePro: "250 words/mo", humanizeAI: "300 words/mo" },
         { name: "Entry Plan", aiFreePro: "$4.99/mo", humanizeAI: "$12/mo" },
         { name: "Pro Plan", aiFreePro: "$24.99 (50K words)", humanizeAI: "$39 (40K words)" },
         { name: "Cost per 1000 Words", aiFreePro: "$0.50", humanizeAI: "$0.98" },
@@ -96,7 +96,7 @@ const VsHumanizeAIPro = () => {
                 "name": "Is AI Free Text Pro better than HumanizeAI.pro?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "AI Free Text Pro offers significant advantages: 60% lower cost ($4.99 vs $12/mo), free built-in AI detector (HumanizeAI.pro doesn't include one), 3.3x larger free tier (1,000 vs 300 words), PDF/DOCX upload support, and higher bypass rates (98% vs 93% on GPTZero)."
+                  "text": "AI Free Text Pro offers significant advantages: 60% lower cost ($4.99 vs $12/mo), free built-in AI detector (HumanizeAI.pro doesn't include one), PDF/DOCX upload support, and higher bypass rates (98% vs 93% on GPTZero)."
                 }
               },
               {
@@ -104,7 +104,7 @@ const VsHumanizeAIPro = () => {
                 "name": "How much cheaper is AI Free Text Pro compared to HumanizeAI.pro?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "AI Free Text Pro is 60% cheaper at $4.99/mo vs $12/mo for entry plans. The cost per 1,000 words is $0.50 with AI Free Text Pro vs $0.98 with HumanizeAI.pro. Annual savings exceed $84."
+                  "text": "AI Free Text Pro is 60% cheaper at $4.99/mo vs $12/mo for entry plans. The cost per 250 words is $0.50 with AI Free Text Pro vs $0.98 with HumanizeAI.pro. Annual savings exceed $84."
                 }
               },
               {
@@ -186,13 +186,6 @@ const VsHumanizeAIPro = () => {
                     <li className="flex items-start gap-3">
                       <CheckCircle className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
                       <div>
-                        <p className="font-semibold">3.3x Larger Free Tier</p>
-                        <p className="text-sm text-muted-foreground">1,000 vs 300 words per month</p>
-                      </div>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <CheckCircle className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
-                      <div>
                         <p className="font-semibold">PDF & DOCX Upload</p>
                         <p className="text-sm text-muted-foreground">Upload files up to 10MB</p>
                       </div>
@@ -207,7 +200,7 @@ const VsHumanizeAIPro = () => {
                   </ul>
                   <a href="https://app.aifreetextpro.com/" className="block mt-6">
                     <Button size="lg" className="w-full bg-gradient-to-r from-primary to-secondary">
-                      Try Free, 1,000 Words <ArrowRight className="ml-2 h-4 w-4" />
+                      Try Free, 250 words <ArrowRight className="ml-2 h-4 w-4" />
                     </Button>
                   </a>
                 </Card>

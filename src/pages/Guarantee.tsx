@@ -30,14 +30,14 @@ const Guarantee = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <Helmet>
-        <title>100% Money-Back Guarantee | AI Free Text Pro</title>
+        <title>Billing & Refunds | AI Free Text Pro</title>
         <meta name="description" content="If our AI humanizer gets flagged, you get a full refund. No questions asked. Learn about our guarantee, cancellation, and 24h support." />
         <meta name="keywords" content="satisfaction guarantee, cancellation policy, ai humanizer support, service guarantee" />
         <link rel="canonical" href="https://aifreetextpro.com/guarantee" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="bingbot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-        <meta property="og:title" content="100% Money-Back Guarantee | AI Free Text Pro" />
+        <meta property="og:title" content="Billing & Refunds | AI Free Text Pro" />
         <meta property="og:description" content="Flagged by AI detector? Full refund. No questions asked." />
         <meta property="og:url" content="https://aifreetextpro.com/guarantee" />
         <meta property="og:type" content="website" />
@@ -45,7 +45,7 @@ const Guarantee = () => {
         <meta property="og:site_name" content="AI Free Text Pro" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@aifreetextpro" />
-        <meta name="twitter:title" content="100% Money-Back Guarantee | AI Free Text Pro" />
+        <meta name="twitter:title" content="Billing & Refunds | AI Free Text Pro" />
         <meta name="twitter:description" content="Flagged by AI detector? Full refund. No questions asked." />
         <meta name="twitter:image" content="https://aifreetextpro.com/og-image.png" />
         

@@ -48,7 +48,7 @@ const VsWriteHuman = () => {
     {
       category: "Pricing",
       features: [
-        { name: "Free Plan", aiFreePro: "1,000 words/mo", writeHuman: "500 words/mo" },
+        { name: "Free Plan", aiFreePro: "250 words/mo", writeHuman: "500 words/mo" },
         { name: "Starter Plan", aiFreePro: "$4.99/mo", writeHuman: "$9/mo" },
         { name: "Pro Plan", aiFreePro: "$24.99/mo (50K words)", writeHuman: "$18/mo (30K words)" },
         { name: "Value per Dollar", aiFreePro: "2,000 words/$1", writeHuman: "1,667 words/$1" },
@@ -57,7 +57,6 @@ const VsWriteHuman = () => {
     {
       category: "Support & Guarantees",
       features: [
-        { name: "Money-Back Guarantee", aiFreePro: "✓ 100% Full Refund", writeHuman: "✓ 30-Day Refund" },
         { name: "24/7 Support", aiFreePro: "✓ All Plans", writeHuman: "✗ Pro Only" },
         { name: "Response Time", aiFreePro: "< 24 hours", writeHuman: "48-72 hours" },
       ]
@@ -164,7 +163,7 @@ const VsWriteHuman = () => {
       </Helmet>
       <SoftwareApplicationSchema
         name="AI Free Text Pro"
-        description="WriteHuman alternative with higher bypass rate, lower pricing and a real free tier of 1,000 words per month."
+        description="WriteHuman alternative with higher bypass rate, lower pricing and a real free tier of 250 words per month."
         url="https://aifreetextpro.com/vs-writehuman"
         category="UtilityApplication"
       />
@@ -396,7 +395,7 @@ const VsWriteHuman = () => {
                 </Link>
               </div>
               <p className="mt-6 text-sm text-muted-foreground">
-                Free plan includes 1,000 words/month. No credit card required.
+                Free plan includes 250 words/month. No credit card required.
               </p>
             </div>
           </div>

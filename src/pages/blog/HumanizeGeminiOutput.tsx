@@ -49,7 +49,7 @@ const faqs = [
   },
   {
     question: "How do I humanize Gemini output for school?",
-    answer: "Run your Gemini text through AI Free Text Pro using the Academic tone preset. Detection scores dropped from 84% to 7% on average in our testing across Turnitin, GPTZero, and Originality.AI. The free plan covers 1,000 words per month, sufficient for most essays."
+    answer: "Run your Gemini text through AI Free Text Pro using the Academic tone preset. Detection scores dropped from 84% to 7% on average in our testing across Turnitin, GPTZero, and Originality.AI. The free plan covers 250 words per month, sufficient for most essays."
   },
   {
     question: "Does Gemini 3.1 Pro write more naturally than Gemini 2.5?",
@@ -273,7 +273,7 @@ const HumanizeGeminiOutput = () => {
               <Sparkles className="w-12 h-12 text-primary mx-auto mb-4" />
               <h2 className="text-2xl font-bold mb-3">Humanize Your Gemini Text Free</h2>
               <p className="text-muted-foreground mb-6">
-                Get 1,000 words per month free with no signup. Works on every Gemini version including 3.1 Pro Preview.
+                Get 250 words per month free with no card. Works on every Gemini version including 3.1 Pro Preview.
               </p>
               <a href="https://app.aifreetextpro.com" target="_blank" rel="noopener noreferrer">
                 <Button size="xl" className="font-semibold">Humanize Gemini Text Free</Button>

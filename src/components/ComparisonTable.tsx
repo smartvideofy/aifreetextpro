@@ -49,7 +49,7 @@ const comparisonData: ComparisonItem[] = [
   },
   {
     feature: "Free Tier Words",
-    aiFreeTextPro: <span className="font-bold text-primary">1,000</span>,
+    aiFreeTextPro: <span className="font-bold text-primary">250</span>,
     zeroGPT: <span className="text-muted-foreground">500</span>,
     gptZero: <span className="text-muted-foreground">500</span>,
     rewritify: <span className="text-muted-foreground">250</span>,
@@ -223,7 +223,7 @@ const ComparisonTable = () => {
               <tr className="hover:bg-muted/5 transition-colors">
                 <td className="py-5 px-6 font-semibold">Free Tier Word Limit</td>
                 <td className="text-center py-5 px-6 bg-primary/5">
-                  <span className="font-bold text-primary text-lg">1,000 words</span>
+                  <span className="font-bold text-primary text-lg">250 words</span>
                 </td>
                 <td className="text-center py-5 px-6 text-muted-foreground">500 words</td>
                 <td className="text-center py-5 px-6 text-muted-foreground">500 words</td>

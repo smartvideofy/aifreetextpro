@@ -281,7 +281,7 @@ const DoesCanvasDetectChatGPT = () => {
               <GraduationCap className="w-12 h-12 text-primary mx-auto mb-4" />
               <h2 className="text-2xl font-bold mb-3">Check Your Canvas Submission First</h2>
               <p className="text-muted-foreground mb-6">
-                Test your essay against the same patterns Turnitin and Copyleaks use, before you submit through Canvas. Free, no signup, 1,000 words per month.
+                Test your essay against the same patterns Turnitin and Copyleaks use, before you submit through Canvas. Free, no card, 250 words per month.
               </p>
               <a href="https://app.aifreetextpro.com" target="_blank" rel="noopener noreferrer">
                 <Button size="xl" className="font-semibold">Check My Essay Free</Button>

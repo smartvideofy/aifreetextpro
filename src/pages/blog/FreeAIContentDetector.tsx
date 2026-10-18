@@ -24,7 +24,7 @@ const relatedArticles = [
 const faqs = [
   { question: "What is the most accurate free AI content detector?", answer: "AI Free Text Pro offers the highest accuracy among free AI detectors with 98% detection accuracy for ChatGPT, Claude, and Gemini output. It analyzes perplexity, burstiness, and stylometric patterns to distinguish AI from human writing." },
   { question: "Can free AI detectors detect ChatGPT?", answer: "Yes. The best free detectors identify ChatGPT-4 and GPT-5 output with 90-98% accuracy. However, accuracy varies significantly between tools. Budget detectors like ZeroGPT have higher false positive rates than tools like AI Free Text Pro." },
-  { question: "How many words can I check for free?", answer: "AI Free Text Pro allows free detection checks of up to 1,000 words per session with no signup required. Other free tools vary: GPTZero offers 5,000 characters free, while Originality.AI requires a paid plan for full access." },
+  { question: "How many words can I check for free?", answer: "AI Free Text Pro allows free detection checks of up to 250 words a month with no card required. Other free tools vary: GPTZero offers 5,000 characters free, while Originality.AI requires a paid plan for full access." },
   { question: "Do AI detectors work on all languages?", answer: "Most AI detectors are optimized for English, and accuracy drops significantly for other languages. AI Free Text Pro fully supports English, Español, Français, Deutsch, and Nederlands with high detection accuracy." },
   { question: "Can AI detectors tell which AI model wrote the text?", answer: "Some advanced detectors can estimate which model generated the text. AI Free Text Pro identifies patterns specific to ChatGPT, Claude, Gemini, and other major models with varying confidence levels." },
 ];
@@ -94,7 +94,7 @@ const FreeAIContentDetector = () => {
 
             <QuickAnswer
               question="What is the best free AI content detector?"
-              answer="For unlimited free checks with no signup, AI Free Text Pro's detector returns a per-sentence AI probability and matches Originality.AI within 3 points on 500 test samples. GPTZero's free tier is more accurate on long-form content but caps you at 5,000 words per month. For one-off checks under 1,000 words, either tool works."
+              answer="For unlimited free checks with no card, AI Free Text Pro's detector returns a per-sentence AI probability and matches Originality.AI within 3 points on 500 test samples. GPTZero's free tier is more accurate on long-form content but caps you at 5,000 words per month. For one-off checks under 250 words, either tool works."
             />
               <p className="text-xl text-muted-foreground mb-4">The best free AI detectors compared with real accuracy data. Find out which tools actually work for ChatGPT, Claude, and Gemini content.</p>
               <div className="flex flex-wrap items-center gap-4 text-sm text-muted-foreground">
@@ -110,7 +110,7 @@ const FreeAIContentDetector = () => {
               "AI Free Text Pro offers the highest free-tier accuracy at 98% detection rate.",
               "Free detectors vary wildly in accuracy: from 62% (ZeroGPT) to 98% (AI Free Text Pro).",
               "False positive rates range from 1% to 15% depending on the tool.",
-              "Most free tools cap the word count per check; AI Free Text Pro allows 1,000 words free.",
+              "Most free tools cap the word count per check; AI Free Text Pro allows 250 words free.",
               "Always cross-check with 2-3 detectors for the most reliable results."
             ]} />
 
@@ -133,7 +133,7 @@ const FreeAIContentDetector = () => {
                     </TableRow>
                   </TableHeader>
                   <TableBody>
-                    <TableRow><TableCell className="font-medium">AI Free Text Pro</TableCell><TableCell className="text-green-500">98%</TableCell><TableCell className="text-green-500">1%</TableCell><TableCell>1,000 words</TableCell></TableRow>
+                    <TableRow><TableCell className="font-medium">AI Free Text Pro</TableCell><TableCell className="text-green-500">98%</TableCell><TableCell className="text-green-500">1%</TableCell><TableCell>250 words</TableCell></TableRow>
                     <TableRow><TableCell className="font-medium">GPTZero</TableCell><TableCell>89%</TableCell><TableCell className="text-yellow-500">5%</TableCell><TableCell>5,000 chars</TableCell></TableRow>
                     <TableRow><TableCell className="font-medium">Copyleaks</TableCell><TableCell>85%</TableCell><TableCell className="text-yellow-500">7%</TableCell><TableCell>Limited trial</TableCell></TableRow>
                     <TableRow><TableCell className="font-medium">Writer.com</TableCell><TableCell>78%</TableCell><TableCell className="text-yellow-500">8%</TableCell><TableCell>1,500 chars</TableCell></TableRow>
@@ -149,7 +149,7 @@ const FreeAIContentDetector = () => {
               <p>Using the detector takes under 30 seconds:</p>
               <ol>
                 <li>Visit <a href="https://app.aifreetextpro.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">app.aifreetextpro.com</a></li>
-                <li>Paste your text into the detector input (up to 1,000 words free)</li>
+                <li>Paste your text into the detector input (up to 250 free words a month)</li>
                 <li>Click "Analyze" and wait 5-10 seconds for results</li>
                 <li>Review the AI probability score, highlighted segments, and pattern analysis</li>
               </ol>
@@ -178,7 +178,7 @@ const FreeAIContentDetector = () => {
 
             <section className="not-prose my-12 p-8 bg-primary/5 border border-primary/20 rounded-xl text-center">
               <h2 className="text-2xl font-bold mb-3">Check Your Text for Free Right Now</h2>
-              <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">Instant AI detection with 98% accuracy. No signup, no credit card. Up to 1,000 words free.</p>
+              <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">Instant AI detection with 98% accuracy. free account, no card. Up to 250 free words a month.</p>
               <a href="https://app.aifreetextpro.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center px-6 py-3 bg-primary text-primary-foreground rounded-lg font-medium hover:opacity-90 transition-opacity">
                 Try Free AI Detector <ArrowLeft className="w-4 h-4 ml-2 rotate-180" />
               </a>

@@ -14,19 +14,19 @@ const CompareAIHumanizers = () => {
       competitor: "WriteHuman",
       href: "/vs-writehuman",
       verdict: "AI Free Text Pro wins on value, features, and bypass rate",
-      stats: { bypassRate: "98% vs 92%", price: "$4.99 vs $9/mo", freeWords: "1,000 vs 500" },
+      stats: { bypassRate: "98% vs 92%", price: "$4.99 vs $9/mo", freeWords: "250 vs 500" },
     },
     {
       competitor: "Undetectable AI",
       href: "/vs-undetectable-ai",
-      verdict: "50% cheaper with 2.7x more free words and built-in detector",
-      stats: { bypassRate: "98% vs 95%", price: "$4.99 vs $9.99/mo", freeWords: "1,000 vs 375" },
+      verdict: "50% cheaper with a built-in detector",
+      stats: { bypassRate: "98% vs 95%", price: "$4.99 vs $9.99/mo", freeWords: "250 vs 375" },
     },
     {
       competitor: "HumanizeAI.pro",
       href: "/vs-humanizeai-pro",
       verdict: "60% lower cost with free detector and higher bypass rates",
-      stats: { bypassRate: "98% vs 93%", price: "$4.99 vs $12/mo", freeWords: "1,000 vs 300" },
+      stats: { bypassRate: "98% vs 93%", price: "$4.99 vs $12/mo", freeWords: "250 vs 300" },
     },
   ];
 
@@ -97,7 +97,7 @@ const CompareAIHumanizers = () => {
                 "name": "What is the best Undetectable AI alternative in 2026?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "AI Free Text Pro is the best Undetectable AI alternative in 2026. It offers 98% bypass rates vs 95%, costs $4.99/mo vs $9.99/mo, includes a free built-in AI detector, and provides 1,000 free words vs 375."
+                  "text": "AI Free Text Pro is the best Undetectable AI alternative in 2026. It offers 98% bypass rates vs 95%, costs $4.99/mo vs $9.99/mo, includes a free built-in AI detector, and provides 250 free words vs 375."
                 }
               },
               {
@@ -113,7 +113,7 @@ const CompareAIHumanizers = () => {
                 "name": "What is the best AI humanizer in 2026?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "AI Free Text Pro leads with 98% bypass rates, built-in AI detector, $4.99/mo pricing, and 1,000 free words. It outperforms WriteHuman, Undetectable AI, and HumanizeAI.pro on value and accuracy."
+                  "text": "AI Free Text Pro leads with 98% bypass rates, built-in AI detector, $4.99/mo pricing, and 250 free words. It outperforms WriteHuman, Undetectable AI, and HumanizeAI.pro on value and accuracy."
                 }
               },
               {
@@ -212,7 +212,7 @@ const CompareAIHumanizers = () => {
                   { icon: Shield, label: "98% Bypass Rate", detail: "Highest in industry" },
                   { icon: Zap, label: "Built-In Detector", detail: "No extra tools needed" },
                   { icon: Star, label: "$4.99/mo Starter", detail: "50-60% cheaper" },
-                  { icon: CheckCircle, label: "1,000 Free Words", detail: "Most generous free tier" },
+                  { icon: CheckCircle, label: "250 Free Words", detail: "Every month, no card" },
                 ].map((item, i) => (
                   <div key={i} className="text-center">
                     <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-3">
@@ -236,7 +236,7 @@ const CompareAIHumanizers = () => {
         <section className="py-20 bg-gradient-to-br from-primary/10 via-secondary/10 to-primary/10">
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-3xl md:text-5xl font-bold mb-6">See Why 50,000+ Users Chose Us</h2>
-            <p className="text-xl text-muted-foreground mb-8">Try AI Free Text Pro free. 1,000 words, no credit card.</p>
+            <p className="text-xl text-muted-foreground mb-8">Try AI Free Text Pro free. 250 words, no credit card.</p>
             <a href="https://app.aifreetextpro.com/" target="_blank" rel="noopener noreferrer">
               <Button size="lg" className="bg-gradient-to-r from-primary to-secondary text-lg px-8 py-6">
                 Start Writing Free <ArrowRight className="ml-2 h-5 w-5" />

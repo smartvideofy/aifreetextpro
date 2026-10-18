@@ -22,7 +22,7 @@ const AIHumanizerForEssays = () => {
     <>
       <Helmet>
         <title>AI Humanizer for Essays 2026: Pass Turnitin Easily</title>
-        <meta name="description" content="AI humanizer for essays that reduces false flags on Turnitin and GPTZero while preserving meaning. Step-by-step workflow, free tier, no sign-up needed." />
+        <meta name="description" content="AI humanizer for essays that reduces false flags on Turnitin and GPTZero while preserving meaning. Step-by-step workflow, free tier, no card needed." />
         <meta name="keywords" content="ai humanizer for essays, humanize essay ai, essay humanizer, ai essay humanizer, humanize college essay, humanize academic essay" />
         <link rel="canonical" href="https://aifreetextpro.com/blog/ai-humanizer-for-essays" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
@@ -49,7 +49,7 @@ const AIHumanizerForEssays = () => {
       <AuthorSchema
         articleUrl="https://aifreetextpro.com/blog/ai-humanizer-for-essays"
         headline="AI Humanizer for Essays 2026: Pass Turnitin Easily"
-        description="AI humanizer for essays that reduces false flags on Turnitin and GPTZero while preserving meaning. Step-by-step workflow, free tier, no sign-up needed."
+        description="AI humanizer for essays that reduces false flags on Turnitin and GPTZero while preserving meaning. Step-by-step workflow, free tier, no card needed."
         datePublished="2026-05-09"
         dateModified="2026-06-09"
       />
@@ -123,7 +123,7 @@ const AIHumanizerForEssays = () => {
 
             <div className="bg-primary/5 border border-primary/20 rounded-xl p-8 text-center my-12 not-prose">
               <h3 className="text-2xl font-bold mb-3 text-foreground">Humanize Your Essay Free</h3>
-              <p className="text-muted-foreground mb-6">1,000 words, no sign-up required. Academic style built in.</p>
+              <p className="text-muted-foreground mb-6">250 words, no card required. Academic style built in.</p>
               <a href="https://app.aifreetextpro.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg font-medium hover:bg-primary/90 transition-colors">Try the Essay Humanizer <ArrowLeft className="w-4 h-4 rotate-180" /></a>
             </div>
           </article>

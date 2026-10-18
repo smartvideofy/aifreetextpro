@@ -183,7 +183,7 @@ const HumanizeGPT5Output = () => {
 
             <div className="bg-primary/5 border border-primary/20 rounded-lg p-8 my-8 text-center not-prose">
               <h3 className="text-xl font-bold mb-2">Humanize GPT-5 Output Free</h3>
-              <p className="text-muted-foreground mb-4">1,000 words free, no signup. Drops GPT-5 detection scores from 82% to 6% in seconds.</p>
+              <p className="text-muted-foreground mb-4">250 words free, no card. Drops GPT-5 detection scores from 82% to 6% in seconds.</p>
               <a href="https://app.aifreetextpro.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg font-medium hover:opacity-90 transition-opacity">
                 Try AI Free Text Pro <ExternalLink className="w-4 h-4" />
               </a>

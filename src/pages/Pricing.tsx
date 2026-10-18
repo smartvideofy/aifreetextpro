@@ -23,7 +23,7 @@ const Pricing = () => {
       icon: Zap,
       iconColor: "text-primary",
       features: [
-        "1,000 words per month",
+        "250 words per month",
         "Basic AI detection",
         "Basic humanization",
         "Email support"
@@ -114,14 +114,14 @@ const Pricing = () => {
     <div className="min-h-screen flex flex-col">
       <Helmet>
         <title>Pricing: Free Forever Plan + Paid From $4.99/mo</title>
-        <meta name="description" content="Free forever: 1,000 words/month, no credit card. Paid plans from $4.99/mo with unlimited AI detection and humanization. 100% money-back guarantee." />
+        <meta name="description" content="Free forever: 250 words/month, no credit card. Paid plans from $4.99/mo with no daily limits on AI detection and humanization." />
         <meta name="keywords" content="ai detector pricing, ai humanizer pricing, free ai detector, ai text humanizer cost, chatgpt detector price" />
         <link rel="canonical" href="https://aifreetextpro.com/pricing" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="bingbot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta property="og:title" content="AI Humanizer Pricing: Free Plan + Plans From $4.99" />
-        <meta property="og:description" content="Free plan with 1,000 words/month. Paid from $4.99. Money-back guarantee." />
+        <meta property="og:description" content="Free plan with 250 words/month. Paid from $4.99." />
         <meta property="og:url" content="https://aifreetextpro.com/pricing" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="https://aifreetextpro.com/og-image.png" />
@@ -129,7 +129,7 @@ const Pricing = () => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@aifreetextpro" />
         <meta name="twitter:title" content="AI Humanizer Pricing: Free Plan + Plans From $4.99" />
-        <meta name="twitter:description" content="Free plan with 1,000 words/month. Paid from $4.99. Money-back guarantee." />
+        <meta name="twitter:description" content="Free plan with 250 words/month. Paid from $4.99." />
         <meta name="twitter:image" content="https://aifreetextpro.com/og-image.png" />
         
         <script type="application/ld+json">
@@ -158,7 +158,7 @@ const Pricing = () => {
                 "name": "Do you offer refunds?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Yes! We offer a 100% money-back guarantee. If our humanizer is flagged by any AI detector, we'll refund you - no questions asked."
+                  "text": "Refunds are generally not provided. A payment is refunded in full if no paid feature was used in the period it covers; see our refund policy."
                 }
               }
             ]
@@ -182,7 +182,7 @@ const Pricing = () => {
                 "price": "0",
                 "priceCurrency": "USD",
                 "availability": "https://schema.org/InStock",
-                "description": "1,000 words/month with basic AI detection and humanization",
+                "description": "250 words/month with basic AI detection and humanization",
                 "url": "https://app.aifreetextpro.com/"
               },
               {
@@ -237,7 +237,7 @@ const Pricing = () => {
       </Helmet>
       <SoftwareApplicationSchema
         name="AI Free Text Pro"
-        description="Five flexible plans for students, writers and teams. Start free with 1,000 words, upgrade for unlimited humanizing and detection."
+        description="Five flexible plans for students, writers and teams. Start free with 250 words, upgrade for unlimited humanizing and detection."
         url="https://aifreetextpro.com/pricing"
         category="BusinessApplication"
       />

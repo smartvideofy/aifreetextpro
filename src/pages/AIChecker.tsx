@@ -64,7 +64,7 @@ const AIChecker = () => {
     },
     {
       question: "How many words can I check for free?",
-      answer: "Our free plan includes 1,000 words per month for detection and humanization. Upgrade to a paid plan for higher limits and additional features."
+      answer: "Our free plan includes 250 words per month for detection and humanization. Upgrade to a paid plan for higher limits and additional features."
     }
   ];
 
@@ -203,7 +203,7 @@ const AIChecker = () => {
                 </Link>
               </div>
               <p className="text-sm text-muted-foreground">
-                Free detection with no word meter • 1,000 free humanized words/month • No credit card required
+                Free detection (10 checks a day) • 250 free words/month • No credit card required
               </p>
               <p className="text-sm text-muted-foreground mt-4">
                 Want the method rather than the tool? Read{" "}
@@ -335,7 +335,7 @@ const AIChecker = () => {
                 </Button>
               </a>
               <p className="mt-4 text-sm text-muted-foreground">
-                No credit card required • 1,000 free words/month
+                No credit card required • 250 free words/month
               </p>
             </div>
           </div>

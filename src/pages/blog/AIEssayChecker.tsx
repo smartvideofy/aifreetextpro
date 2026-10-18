@@ -166,7 +166,7 @@ const AIEssayChecker = () => {
 
             <div className="bg-primary/5 border border-primary/20 rounded-lg p-8 my-8 text-center">
               <h3 className="text-xl font-bold mb-2">Check Your Essay Now</h3>
-              <p className="text-muted-foreground mb-4">Free, unlimited AI detection checks. Know your score before your professor does.</p>
+              <p className="text-muted-foreground mb-4">Free AI detection checks, 250 words a month. Know your score before your professor does.</p>
               <a href="https://app.aifreetextpro.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg font-medium hover:opacity-90 transition-opacity">
                 Check My Essay <ExternalLink className="w-4 h-4" />
               </a>

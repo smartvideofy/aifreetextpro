@@ -27,7 +27,7 @@ const VsUndetectable = () => {
     {
       category: "Pricing & Value",
       features: [
-        { name: "Free Plan Words", aiFreePro: "1,000 words/mo", undetectable: "375 words/mo" },
+        { name: "Free Plan Words", aiFreePro: "250 words/mo", undetectable: "375 words/mo" },
         { name: "Starter Price", aiFreePro: "$4.99/mo", undetectable: "$9.99/mo" },
         { name: "Pro Plan Value", aiFreePro: "$24.99 (50K words)", undetectable: "$49.99 (90K words)" },
         { name: "Best Value Ratio", aiFreePro: "2,000 words/$1", undetectable: "1,802 words/$1" },
@@ -45,7 +45,6 @@ const VsUndetectable = () => {
     {
       category: "Support & Reliability",
       features: [
-        { name: "Money-Back Guarantee", aiFreePro: "✓ 100%", undetectable: "✓ 7-Day Only" },
         { name: "Response Time", aiFreePro: "< 24 hours", undetectable: "48 hours" },
         { name: "Uptime SLA", aiFreePro: "99.9%", undetectable: "99.5%" },
       ]
@@ -56,13 +55,13 @@ const VsUndetectable = () => {
     <div className="min-h-screen flex flex-col">
       <Helmet>
         <title>Best Undetectable AI Alternative [2026 Test Data]</title>
-        <meta name="description" content="Looking for an Undetectable AI alternative? AI Free Text Pro beats it: 98% vs 95% bypass, $4.99 vs $9.99/mo, 1,000 vs 375 free words. Real test results." />
+        <meta name="description" content="Looking for an Undetectable AI alternative? AI Free Text Pro beats it: 98% vs 95% bypass, $4.99 vs $9.99/mo, 250 vs 375 free words. Real test results." />
         <meta name="keywords" content="undetectable ai alternative, undetectable ai vs ai free text pro, best undetectable ai alternative, undetectable ai replacement, better than undetectable ai, ai humanizer comparison 2026" />
         <link rel="canonical" href="https://aifreetextpro.com/vs-undetectable-ai" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta property="og:title" content="Best Undetectable AI Alternative [2026 Test Data]" />
-        <meta property="og:description" content="Looking for an Undetectable AI alternative? 98% bypass, $4.99/mo, 1,000 free words. See real test data." />
+        <meta property="og:description" content="Looking for an Undetectable AI alternative? 98% bypass, $4.99/mo, 250 free words. See real test data." />
         <meta property="og:url" content="https://aifreetextpro.com/vs-undetectable-ai" />
         
         {/* BreadcrumbList Schema */}
@@ -97,7 +96,7 @@ const VsUndetectable = () => {
                 "name": "Is AI Free Text Pro the best Undetectable AI alternative?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Yes, AI Free Text Pro is the best Undetectable AI alternative in 2026. It offers 50% lower pricing ($4.99 vs $9.99 starter), 2.7x more free words (1,000 vs 375), a free built-in detector (Undetectable AI charges extra), and higher bypass rates (98% vs 95% on GPTZero)."
+                  "text": "Yes, AI Free Text Pro is the best Undetectable AI alternative in 2026. It offers 50% lower pricing ($4.99 vs $9.99 starter), a free built-in detector (Undetectable AI charges extra), and higher bypass rates (98% vs 95% on GPTZero)."
                 }
               },
               {
@@ -113,7 +112,7 @@ const VsUndetectable = () => {
                 "name": "What is the free plan comparison between AI Free Text Pro and Undetectable AI?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "AI Free Text Pro offers 1,000 free words per month, while Undetectable AI only offers 375 free words. That's 2.7x more free content with AI Free Text Pro."
+                  "text": "AI Free Text Pro offers 250 free words a month, Undetectable AI offers 375. AI Free Text Pro also includes a free AI detector, and paid plans start at $4.99/month."
                 }
               },
               {
@@ -188,13 +187,6 @@ const VsUndetectable = () => {
                     <li className="flex items-start gap-3">
                       <CheckCircle className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
                       <div>
-                        <p className="font-semibold">2.7x More Free Words</p>
-                        <p className="text-sm text-muted-foreground">1,000 vs 375 words per month</p>
-                      </div>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <CheckCircle className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
-                      <div>
                         <p className="font-semibold">Free Built-In Detector</p>
                         <p className="text-sm text-muted-foreground">No extra cost like Undetectable AI</p>
                       </div>
@@ -209,7 +201,7 @@ const VsUndetectable = () => {
                   </ul>
                   <a href="https://app.aifreetextpro.com/" className="block mt-6">
                     <Button size="lg" className="w-full bg-gradient-to-r from-primary to-secondary">
-                      Try Free, 1,000 Words <ArrowRight className="ml-2 h-4 w-4" />
+                      Try Free, 250 words <ArrowRight className="ml-2 h-4 w-4" />
                     </Button>
                   </a>
                 </Card>
@@ -222,13 +214,6 @@ const VsUndetectable = () => {
                       <div>
                         <p className="font-semibold">Higher Starting Cost</p>
                         <p className="text-sm">$9.99/mo minimum (double AI Free Text Pro)</p>
-                      </div>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <X className="w-6 h-6 text-destructive flex-shrink-0 mt-1" />
-                      <div>
-                        <p className="font-semibold">Limited Free Plan</p>
-                        <p className="text-sm">Only 375 words/month (vs 1,000)</p>
                       </div>
                     </li>
                     <li className="flex items-start gap-3">
@@ -366,7 +351,7 @@ const VsUndetectable = () => {
                 <a href="https://app.aifreetextpro.com/" className="w-full sm:w-auto">
                   <Button size="lg" className="w-full bg-gradient-to-r from-primary to-secondary text-lg px-8 py-6">
                     <Zap className="mr-2 h-5 w-5" />
-                    Start Free, 1,000 Words
+                    Start Free, 250 words
                     <ArrowRight className="ml-2 h-5 w-5" />
                   </Button>
                 </a>

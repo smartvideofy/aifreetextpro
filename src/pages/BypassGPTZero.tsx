@@ -123,8 +123,8 @@ const BypassGPTZero = () => {
                   "@type": "Answer", "text": "Absolutely. Our technology preserves the original meaning and context of your content while making it sound more natural and human-written. We don't just scramble words - we intelligently restructure sentences."
                 }
               }, {
-                "@type": "Question", "name": "Is there a money-back guarantee?", "acceptedAnswer": {
-                  "@type": "Answer", "text": "Yes, we offer a 100% money-back guarantee. If your humanized content is flagged by GPTZero after using our tool, we'll refund your payment in full - no questions asked."
+                "@type": "Question", "name": "Do you offer refunds?", "acceptedAnswer": {
+                  "@type": "Answer", "text": "Refunds are generally not provided. A payment is refunded in full if no paid feature was used in the period it covers; see our refund policy."
                 }
               }
             ]
@@ -195,17 +195,11 @@ const BypassGPTZero = () => {
                 <Link to="#live-results">View Live Test Results</Link>
               </Button>
             </div>
-            
-            {/* Guarantee Badge */}
-            <div className="mt-6 inline-flex items-center gap-2 text-sm text-muted-foreground">
-              <Award className="w-4 h-4 text-primary" />
-              <span>100% Money-Back Guarantee if Detected</span>
-            </div>
           </section>
 
           {/* Key Takeaways */}
           <KeyTakeaways points={[
-            "98.9% success rate against GPTZero AI detection, tested February 2026", "Reduces AI probability from 94% to under 1% using perplexity and burstiness optimization", "Works against both free and premium GPTZero versions", "Free tier available with instant results in under 30 seconds", "100% money-back guarantee if your content is flagged"
+            "98.9% success rate against GPTZero AI detection, tested February 2026", "Reduces AI probability from 94% to under 1% using perplexity and burstiness optimization", "Works against both free and premium GPTZero versions", "Free tier available with instant results in under 30 seconds"
           ]} />
 
           {/* Live Test Results */}
@@ -332,13 +326,6 @@ const BypassGPTZero = () => {
                     <td className="text-center p-4 bg-primary/5"><CheckCircle className="w-5 h-5 text-primary mx-auto" /></td>
                     <td className="text-center p-4"><X className="w-5 h-5 text-destructive mx-auto" /></td>
                     <td className="text-center p-4"><X className="w-5 h-5 text-destructive mx-auto" /></td>
-                    <td className="text-center p-4"><X className="w-5 h-5 text-destructive mx-auto" /></td>
-                  </tr>
-                  <tr>
-                    <td className="p-4 font-medium">Money-Back Guarantee</td>
-                    <td className="text-center p-4 bg-primary/5"><CheckCircle className="w-5 h-5 text-primary mx-auto" /></td>
-                    <td className="text-center p-4"><X className="w-5 h-5 text-destructive mx-auto" /></td>
-                    <td className="text-center p-4"><CheckCircle className="w-5 h-5 text-muted-foreground mx-auto" /></td>
                     <td className="text-center p-4"><X className="w-5 h-5 text-destructive mx-auto" /></td>
                   </tr>
                 </tbody>
@@ -508,10 +495,6 @@ const BypassGPTZero = () => {
                 <div className="flex items-center gap-2">
                   <CheckCircle className="w-4 h-4 text-primary" />
                   <span>98.9% Success Rate</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <CheckCircle className="w-4 h-4 text-primary" />
-                  <span>100% Money-Back Guarantee</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <CheckCircle className="w-4 h-4 text-primary" />

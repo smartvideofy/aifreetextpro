@@ -98,7 +98,7 @@ const HumanizeAITextFreeNoSignup = () => {
               <h1 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">How to Humanize AI Text for Free: No Sign-Up Required</h1>
                 <QuickAnswer
                   question="Can you humanize AI text for free without signing up?"
-                  answer="Yes. AI Free Text Pro humanizes up to 500 words per session free with no sign-up. The best free humanizers go beyond synonym swaps to vary sentence structure and add natural voice; you can also humanize manually by editing rhythm, detail, and phrasing."
+                  answer="Yes. AI Free Text Pro humanizes up to 250 words a month free with a free account and no card. The best free humanizers go beyond synonym swaps to vary sentence structure and add natural voice; you can also humanize manually by editing rhythm, detail, and phrasing."
                 />
 
               <div className="flex flex-wrap items-center gap-4 text-sm text-muted-foreground">
@@ -110,7 +110,7 @@ const HumanizeAITextFreeNoSignup = () => {
             </header>
 
             <KeyTakeaways points={[
-              "AI Free Text Pro offers free AI humanization with no sign-up required for up to 500 words per session.",
+              "AI Free Text Pro offers free AI humanization with no card required for up to 250 words a month.",
               "The best free humanizers go beyond paraphrasing, adjusting perplexity, burstiness, and tone for true AI-undetectable output.",
               "Manual humanization techniques (adding personal voice, varying structure) complement automated tools.",
               "Avoid tools that just swap synonyms: they often make text worse and create new detectable patterns.",
@@ -127,7 +127,7 @@ const HumanizeAITextFreeNoSignup = () => {
                 <div className="flex items-center gap-2 mb-2"><Star className="w-5 h-5 text-yellow-500" /><h3 className="font-bold text-foreground text-lg">1. AI Free Text Pro</h3><span className="text-xs bg-primary/20 text-primary px-2 py-0.5 rounded">Top Pick</span></div>
                 <p className="text-sm text-muted-foreground mb-3">The most effective free humanizer we tested. No account required. Paste your text, choose a writing style, and get humanized output in seconds.</p>
                 <ul className="space-y-1 text-sm text-muted-foreground">
-                  <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-green-500" /> Free tier: 500 words per session, unlimited sessions</li>
+                  <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-green-500" /> Free tier: 250 words a month, free account, no card</li>
                   <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-green-500" /> Multiple writing styles (academic, casual, professional)</li>
                   <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-green-500" /> Built-in AI detection checker</li>
                   <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-green-500" /> Bypasses Turnitin, GPTZero, Originality.AI</li>
@@ -185,7 +185,7 @@ const HumanizeAITextFreeNoSignup = () => {
 
             <div className="bg-primary/5 border border-primary/20 rounded-xl p-8 text-center my-12 not-prose">
               <h3 className="text-2xl font-bold mb-3 text-foreground">Humanize Your AI Text for Free</h3>
-              <p className="text-muted-foreground mb-6">No sign-up. No credit card. Just paste your text and get natural-sounding results.</p>
+              <p className="text-muted-foreground mb-6">Free account. No credit card. Just paste your text and get natural-sounding results.</p>
               <a href="https://app.aifreetextpro.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg font-medium hover:bg-primary/90 transition-colors">Try Free Humanizer <ArrowLeft className="w-4 h-4 rotate-180" /></a>
             </div>
           </article>

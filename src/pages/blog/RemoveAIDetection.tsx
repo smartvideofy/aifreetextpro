@@ -35,7 +35,7 @@ const faqs = [
   }, {
     question: "Will removing AI detection change the meaning of my text?", answer: "A good humanization process preserves your original meaning, arguments, and key points. The changes target statistical patterns like uniform sentence length and predictable word choices, not your core message. AI Free Text Pro is specifically designed to maintain semantic accuracy while transforming the writing style."
   }, {
-    question: "How long does it take to remove AI detection?", answer: "Manual editing typically takes 20 to 40 minutes per 1,000 words. Using AI Free Text Pro, the process takes under 30 seconds for the same length. The tool handles all five detection pattern categories simultaneously."
+    question: "How long does it take to remove AI detection?", answer: "Manual editing typically takes 20 to 40 minutes per 250 words. Using AI Free Text Pro, the process takes under 30 seconds for the same length. The tool handles all five detection pattern categories simultaneously."
   }, {
     question: "Which AI detectors can be addressed with these methods?", answer: "These methods work across all major AI detectors including Turnitin, GPTZero, Originality.AI, Copyleaks, Winston AI, and ZeroGPT. Each detector analyzes similar statistical patterns, so addressing the core signals reduces flags across all platforms."
   }, {
@@ -227,7 +227,7 @@ export default function RemoveAIDetection() {
             <section className="mb-12">
               <h2 className="text-2xl font-bold mb-4">Instant Method: Remove AI Detection with AI Free Text Pro</h2>
               <p>
-                Manual editing works, but it takes 20 to 40 minutes per 1,000 words. <Link to="/" className="text-primary hover:underline">AI Free Text Pro</Link> applies all five correction categories simultaneously in under 30 seconds. Here is how the process works:
+                Manual editing works, but it takes 20 to 40 minutes per 250 words. <Link to="/" className="text-primary hover:underline">AI Free Text Pro</Link> applies all five correction categories simultaneously in under 30 seconds. Here is how the process works:
               </p>
               <ol className="space-y-3 my-4">
                 <li><strong>Step 1:</strong> Paste your AI-generated or AI-assisted text into the humanizer.</li>

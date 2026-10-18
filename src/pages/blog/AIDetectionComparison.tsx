@@ -160,7 +160,7 @@ const AIDetectionComparison = () => {
                 <p>We evaluated each tool across five criteria:</p>
                 <ul>
                   <li><strong>Accuracy:</strong> Percentage of correct AI/human classifications</li>
-                  <li><strong>Speed:</strong> Time taken to analyze 1,000 words</li>
+                  <li><strong>Speed:</strong> Time taken to analyze 250 words</li>
                   <li><strong>Detail Level:</strong> Depth of analysis provided</li>
                   <li><strong>User Experience:</strong> Interface intuitiveness and ease of use</li>
                   <li><strong>Value:</strong> Features offered relative to price</li>
@@ -194,7 +194,7 @@ const AIDetectionComparison = () => {
                 <p><strong>Weaknesses:</strong></p>
                 <ul>
                   <li>Occasional false positives on technical writing</li>
-                  <li>Limited free tier (1,000 words/month)</li>
+                  <li>Limited free tier (250 words/month)</li>
                   <li>Less accurate with newer AI models</li>
                 </ul>
 
@@ -248,7 +248,7 @@ const AIDetectionComparison = () => {
                     </div>
                     <div className="flex items-center justify-between">
                       <span>Starting Price</span>
-                      <span className="font-semibold text-primary">Free (1,000 words/month)</span>
+                      <span className="font-semibold text-primary">Free (250 words/month)</span>
                     </div>
                   </div>
                 </div>
@@ -259,7 +259,7 @@ const AIDetectionComparison = () => {
                   <li><CheckCircle2 className="inline w-4 h-4 text-primary mr-1" />Comprehensive PDF reports with visual analysis</li>
                   <li><CheckCircle2 className="inline w-4 h-4 text-primary mr-1" />Support for PDF, DOCX, and TXT uploads</li>
                   <li><CheckCircle2 className="inline w-4 h-4 text-primary mr-1" />Advanced dashboard with usage analytics</li>
-                  <li><CheckCircle2 className="inline w-4 h-4 text-primary mr-1" />Generous free tier (1,000 words/month)</li>
+                  <li><CheckCircle2 className="inline w-4 h-4 text-primary mr-1" />Free plan (250 words/month)</li>
                   <li><CheckCircle2 className="inline w-4 h-4 text-primary mr-1" />Updated algorithms for GPT-4, Claude, and Gemini</li>
                 </ul>
                 <p><strong>Weaknesses:</strong></p>
@@ -288,9 +288,9 @@ const AIDetectionComparison = () => {
                       </tr>
                       <tr className="border-b">
                         <td className="p-3">Free Tier</td>
-                        <td className="text-center p-3">1,000 words</td>
+                        <td className="text-center p-3">250 words</td>
                         <td className="text-center p-3">500 words</td>
-                        <td className="text-center p-3 bg-primary/5 font-semibold">1,000 words</td>
+                        <td className="text-center p-3 bg-primary/5 font-semibold">250 words</td>
                       </tr>
                       <tr className="border-b">
                         <td className="p-3">File Upload</td>
@@ -357,12 +357,12 @@ const AIDetectionComparison = () => {
                   <li>You want the <strong>highest accuracy available</strong> (94% detection rate)</li>
                   <li>You need both <a href="/">detection</a> and <Link to="/blog/humanize-ai-text-without-losing-voice" className="text-primary hover:text-primary/80">humanization</Link> in one tool</li>
                   <li>You value comprehensive reports and <a href="/">usage analytics</a></li>
-                  <li>You want the best free tier (1,000 words/month)</li>
+                  <li>You want a free plan to try it on (250 words/month)</li>
                 </ul>
 
                 <h2>Conclusion: The Best AI Detector for 2025</h2>
                 <p>
-                  The AI detection landscape continues to evolve, but <a href="/">AI Free Text Pro</a> has emerged as the clear leader in 2025. Its superior accuracy, dual functionality, and generous free tier make it the smart choice for anyone serious about AI content detection.
+                  The AI detection landscape continues to evolve, but <a href="/">AI Free Text Pro</a> has emerged as the clear leader in 2025. Its accuracy, dual functionality, and free plan make it the smart choice for anyone serious about AI content detection.
                 </p>
                 <p>
                   Whether you're a student trying to <Link to="/blog/ai-writing-students-avoid-plagiarism" className="text-primary hover:text-primary/80">avoid plagiarism accusations</Link>, an educator protecting academic integrity, or a content creator ensuring authenticity, AI Free Text Pro delivers the reliability and features you need.
@@ -372,7 +372,7 @@ const AIDetectionComparison = () => {
               <div className="bg-gradient-to-r from-primary/10 to-secondary/10 p-8 rounded-lg text-center space-y-4 my-12">
                 <h3 className="text-2xl font-bold">Try AI Free Text Pro Today</h3>
                 <p className="text-muted-foreground max-w-2xl mx-auto">
-                  Experience the most accurate AI detector on the market. Start with 1,000 free words, no credit card required.
+                  Experience the most accurate AI detector on the market. Start with 250 free words, no credit card required.
                 </p>
                 <a href="https://app.aifreetextpro.com/" target="_blank" rel="noopener noreferrer">
                   <Button size="lg" className="text-lg px-8">

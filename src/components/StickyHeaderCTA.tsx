@@ -46,7 +46,7 @@ const StickyHeaderCTA = () => {
         <div className="flex items-center gap-2 md:gap-3">
           <div className="hidden md:flex items-center gap-2">
             <Shield className="w-4 h-4" />
-            <span className="text-sm font-medium">100% Money-Back Guarantee</span>
+            <span className="text-sm font-medium">Free plan, no credit card</span>
           </div>
           <span className="hidden lg:inline text-sm opacity-90">•</span>
           <p className="text-xs md:text-sm font-medium">

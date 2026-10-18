@@ -259,7 +259,7 @@ const AIHumanizerForWriters = () => {
                 <a href="https://app.aifreetextpro.com/" className="w-full sm:w-auto">
                   <Button size="lg" className="w-full bg-gradient-to-r from-primary to-secondary text-lg px-8 py-6">
                     <Pen className="mr-2 h-5 w-5" />
-                    Start Free, 1,000 Words
+                    Start Free, 250 words
                     <ArrowRight className="ml-2 h-5 w-5" />
                   </Button>
                 </a>
@@ -445,7 +445,7 @@ const AIHumanizerForWriters = () => {
                 </Button>
               </a>
               <p className="mt-6 text-sm text-muted-foreground">
-                1,000 free words/month. Cancel anytime. 100% money-back guarantee.
+                250 free words/month. Cancel anytime.
               </p>
             </div>
           </div>

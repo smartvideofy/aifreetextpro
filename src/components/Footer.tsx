@@ -86,7 +86,7 @@ const footerSections: FooterSection[] = [
       { href: "/blog", label: "Blog" },
       { href: "/free-ai-detector-word-limit", label: "Free Word Limits" },
       { href: "/pricing", label: "Pricing" },
-      { href: "/guarantee", label: "Money-Back Guarantee" },
+      { href: "/guarantee", label: "Billing & Refunds" },
       { href: "/help-center", label: "Help Center" },
       { href: "/about", label: "About Us" },
       { href: "/team", label: "Our Team" },

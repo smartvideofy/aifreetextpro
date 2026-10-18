@@ -173,7 +173,7 @@ const GPTinfComparison = () => {
                 </h1>
                 <QuickAnswer
                   question="GPTinf vs AI Free Text Pro: which humanizer is better?"
-                  answer="In our head-to-head tests AI Free Text Pro matched or beat GPTinf on detector bypass and offers a free, no-sign-up tier, while GPTinf can work for basic rewrites. For most users AI Free Text Pro is the stronger all-round choice; the best pick depends on your word volume and budget."
+                  answer="In our head-to-head tests AI Free Text Pro matched or beat GPTinf on detector bypass and offers a free, no-card tier, while GPTinf can work for basic rewrites. For most users AI Free Text Pro is the stronger all-round choice; the best pick depends on your word volume and budget."
                 />
 
 
@@ -201,7 +201,7 @@ const GPTinfComparison = () => {
                 <div className="bg-primary/10 p-6 rounded-lg my-6">
                   <h3 className="text-lg font-semibold mb-3">Quick Verdict</h3>
                   <p className="mb-0">
-                    <strong>AI Free Text Pro wins</strong> with a 98% average success rate vs. GPTinf's 78%. Key advantages include built-in detection, multiple writing styles, and a money-back guarantee. GPTinf is simpler but less effective against modern detectors.
+                    <strong>AI Free Text Pro wins</strong> with a 98% average success rate vs. GPTinf's 78%. Key advantages include built-in detection and multiple writing styles. GPTinf is simpler but less effective against modern detectors.
                   </p>
                 </div>
 
@@ -235,17 +235,12 @@ const GPTinfComparison = () => {
                       <tr className="bg-muted/50">
                         <td className="p-4 border font-medium">Free Tier</td>
                         <td className="p-4 border text-center">Limited trials</td>
-                        <td className="p-4 border text-center font-bold text-primary">1,000 words/month</td>
+                        <td className="p-4 border text-center font-bold text-primary">250 words/month</td>
                       </tr>
                       <tr>
                         <td className="p-4 border font-medium">Starting Price</td>
                         <td className="p-4 border text-center">$12/month</td>
                         <td className="p-4 border text-center font-bold text-primary">$4.99/month</td>
-                      </tr>
-                      <tr className="bg-muted/50">
-                        <td className="p-4 border font-medium">Money-Back Guarantee</td>
-                        <td className="p-4 border text-center"><X className="w-5 h-5 text-destructive mx-auto" /></td>
-                        <td className="p-4 border text-center"><Check className="w-5 h-5 text-primary mx-auto" /></td>
                       </tr>
                       <tr>
                         <td className="p-4 border font-medium">File Upload Support</td>
@@ -344,7 +339,7 @@ const GPTinfComparison = () => {
                     <div>
                       <h4 className="font-semibold mb-2">AI Free Text Pro Pricing</h4>
                       <ul className="text-muted-foreground">
-                        <li>Free: 1,000 words/month forever</li>
+                        <li>Free: 250 words/month forever</li>
                         <li>Starter: $4.99/month for 5,000 words</li>
                         <li>Pro Writer: $24.99/month for 30,000 words</li>
                         <li>Unlimited: $59.99/month for 150,000+ words</li>
@@ -382,14 +377,6 @@ const GPTinfComparison = () => {
                       <strong>Higher Success Rate</strong>
                     </div>
                     <p className="text-sm text-muted-foreground mb-0">98% vs. 78% average. That 20% difference matters when your content is on the line.</p>
-                  </div>
-                  
-                  <div className="p-4 border rounded-lg">
-                    <div className="flex items-center gap-2 mb-2">
-                      <DollarSign className="w-5 h-5 text-primary" />
-                      <strong>Money-Back Guarantee</strong>
-                    </div>
-                    <p className="text-sm text-muted-foreground mb-0">100% refund if content is flagged by any detector. GPTinf offers no such guarantee.</p>
                   </div>
                 </div>
 
@@ -441,7 +428,7 @@ const GPTinfComparison = () => {
                     <li>You need the highest possible success rate against modern AI detectors</li>
                     <li>You want built-in detection to verify content before submitting</li>
                     <li>You need different writing styles for different content types</li>
-                    <li>You want a risk-free money-back guarantee</li>
+                    <li>You want to try it free before paying</li>
                     <li>You're looking for better value at every price point</li>
                   </ul>
                 </div>
@@ -463,7 +450,7 @@ const GPTinfComparison = () => {
               <div className="bg-gradient-to-r from-primary/10 to-secondary/10 p-8 rounded-lg text-center space-y-4 my-12">
                 <h3 className="text-2xl font-bold">Ready to Switch from GPTinf?</h3>
                 <p className="text-muted-foreground max-w-2xl mx-auto">
-                  Experience the difference with AI Free Text Pro. Start free with 1,000 words, no credit card required.
+                  Experience the difference with AI Free Text Pro. Start free with 250 words, no credit card required.
                 </p>
                 <a href="https://app.aifreetextpro.com/" target="_blank" rel="noopener noreferrer">
                   <Button size="lg" className="text-lg px-8">
@@ -473,7 +460,7 @@ const GPTinfComparison = () => {
               </div>
 
                             <FAQSection faqs={[
-                { question: "What's the main difference between GPTinf and AI Free Text Pro?", answer: "AI Free Text Pro pairs humanization with built-in detection and a free no-sign-up tier; GPTinf focuses on rewriting and requires a subscription for meaningful volume." },
+                { question: "What's the main difference between GPTinf and AI Free Text Pro?", answer: "AI Free Text Pro pairs humanization with built-in detection and a free no-card tier; GPTinf focuses on rewriting and requires a subscription for meaningful volume." },
                 { question: "Which is more affordable?", answer: "AI Free Text Pro offers a free tier to start; compare paid plans by monthly word allowance for your actual usage." },
                 { question: "Which bypasses detectors better?", answer: "In our testing AI Free Text Pro performed at least as well as GPTinf on most samples, though results vary by content type." },
               ]} />

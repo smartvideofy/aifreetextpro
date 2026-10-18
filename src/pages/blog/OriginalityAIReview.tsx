@@ -161,7 +161,7 @@ const OriginalityAIReview = () => {
 
               <KeyTakeaways
                 points={[
-                  "Originality.AI is one of the most aggressive AI detectors, marketed to publishers and content agencies", "Its detection accuracy is high but prone to false positives on formal or structured human writing", "AI Free Text Pro achieves a 96% bypass rate against Originality.AI with a money-back guarantee", "Pricing starts at $14.95/month for 2,000 credits, making it expensive for high-volume users"
+                  "Originality.AI is one of the most aggressive AI detectors, marketed to publishers and content agencies", "Its detection accuracy is high but prone to false positives on formal or structured human writing", "AI Free Text Pro achieves a 96% bypass rate against Originality.AI", "Pricing starts at $14.95/month for 2,000 credits, making it expensive for high-volume users"
                 ]}
               />
 
@@ -418,7 +418,7 @@ const OriginalityAIReview = () => {
                   If you're using AI to generate content that will be checked by editors, clients, or publishers using Originality.AI, yes, you should take it seriously. It's one of the more capable detectors on the market.
                 </p>
                 <p>
-                  However, with the right tools, it's not a barrier. <Link to="/bypass-originality-ai" className="text-primary hover:text-primary/80">AI Free Text Pro achieves a 96% bypass rate</Link>, which is among the highest in the industry. Combined with our money-back guarantee, there's essentially no risk.
+                  However, with the right tools, it's not a barrier. <Link to="/bypass-originality-ai" className="text-primary hover:text-primary/80">AI Free Text Pro achieves a 96% bypass rate</Link>, which is among the highest in the industry. You can try it on the free plan before paying.
                 </p>
 
                 <h2>Conclusion</h2>

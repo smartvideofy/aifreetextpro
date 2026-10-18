@@ -75,12 +75,12 @@ export default function AIHumanizerIndianStudents2026() {
 
             <QuickAnswer
               question="What's the best AI humanizer for Indian students?"
-              answer="AI Free Text Pro offers 1,000 free words monthly with 98% Turnitin bypass rate, no signup required. For unlimited usage, Pro plan starts at ₹499/month (vs ₹2,500+ for other tools). All tools work with CBSE, JEE, and university essay submissions across India."
+              answer="AI Free Text Pro offers 250 free words monthly with 98% Turnitin bypass rate, no card required. For unlimited usage, Pro plan starts at ₹499/month (vs ₹2,500+ for other tools). All tools work with CBSE, JEE, and university essay submissions across India."
             />
 
             <KeyTakeaways
               points={[
-                "AI Free Text Pro: Free 1,000 words + Pro at ₹499/month",
+                "AI Free Text Pro: Free 250 words + Pro at ₹499/month",
                 "Bypass Turnitin detection with 98% success rate",
                 "Works with CBSE boards, JEE, and university essays",
                 "No VPN required, works across India",
@@ -103,7 +103,7 @@ export default function AIHumanizerIndianStudents2026() {
                 <div className="border rounded-lg p-6">
                   <h3 className="text-2xl font-semibold mb-2">AI Free Text Pro (Recommended for India)</h3>
                   <div className="bg-muted/50 rounded p-4 mb-4">
-                    <p className="font-semibold">Free Plan: 1,000 words/month</p>
+                    <p className="font-semibold">Free Plan: 250 words/month</p>
                     <p className="text-muted-foreground text-sm mt-1">No credit card, instant signup</p>
                   </div>
                   <ul className="space-y-2 mb-4">
@@ -121,7 +121,7 @@ export default function AIHumanizerIndianStudents2026() {
                     </li>
                     <li className="flex items-start gap-2">
                       <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                      <span><strong>Fast Results:</strong> 30-60 seconds per 1,000 words</span>
+                      <span><strong>Fast Results:</strong> 30-60 seconds per 250 words</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
@@ -230,7 +230,7 @@ export default function AIHumanizerIndianStudents2026() {
 
                 <div className="border-l-4 border-primary pl-6 py-3">
                   <p className="font-semibold mb-2">Q: How much does AI humanizing cost in India?</p>
-                  <p className="text-muted-foreground">A: Free options exist (1,000 words free from AI Free Text Pro). Paid plans start at ₹499/month for unlimited. Compare this to hiring an editor (₹5,000+) or risking a plagiarism accusation.</p>
+                  <p className="text-muted-foreground">A: Free options exist (250 words free from AI Free Text Pro). Paid plans start at ₹499/month for unlimited. Compare this to hiring an editor (₹5,000+) or risking a plagiarism accusation.</p>
                 </div>
 
                 <div className="border-l-4 border-primary pl-6 py-3">

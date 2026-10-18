@@ -39,7 +39,7 @@ const AIHumanizerForStudents = () => {
       icon: Award,
       title: "Grade Point Average Anxiety",
       problem: "Fear of AI detection leading to zero grades, academic probation, or worse affects mental health and performance.",
-      solution: "100% money-back guarantee if flagged. Study stress-free knowing your work passes all detection tools."
+      solution: "Check your draft before you submit, rewrite only what flags, and check it again."
     }
   ];
 
@@ -97,7 +97,7 @@ const AIHumanizerForStudents = () => {
     {
       plan: "Free Plan",
       best: "Testing & Small Assignments",
-      description: "1,000 words/month is enough for 2-3 short discussion posts or one essay. Great for trying the tool.",
+      description: "250 words/month is enough for 2-3 short discussion posts or one essay. Great for trying the tool.",
       price: "$0"
     },
     {
@@ -119,13 +119,13 @@ const AIHumanizerForStudents = () => {
     <div className="min-h-screen flex flex-col">
       <Helmet>
         <title>AI Humanizer for Students: Free, No Signup, Essay-Safe</title>
-        <meta name="description" content="Rewrite AI-assisted drafts in your own voice and cut false Turnitin and Canvas flags. 1,000 free words a month, citations kept intact, no signup or card." />
+        <meta name="description" content="Rewrite AI-assisted drafts in your own voice and cut false Turnitin and Canvas flags. 250 free words a month, citations kept intact, no card or card." />
         <meta name="keywords" content="ai humanizer for students, bypass turnitin, student ai writing tool, academic ai humanizer, pass turnitin ai detection" />
         <link rel="canonical" href="https://aifreetextpro.com/ai-humanizer-for-students" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta property="og:title" content="AI Humanizer for Students: Free, No Signup, Essay-Safe" />
-        <meta property="og:description" content="Reduce false Turnitin and Canvas flags on essays. 1,000 free words a month, citations kept, no signup." />
+        <meta property="og:description" content="Reduce false Turnitin and Canvas flags on essays. 250 free words a month, citations kept, no card." />
         <meta property="og:url" content="https://aifreetextpro.com/ai-humanizer-for-students" />
         <script type="application/ld+json">
           {JSON.stringify({
@@ -163,7 +163,7 @@ const AIHumanizerForStudents = () => {
                 "name": "How many free words do students get?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Students get 1,000 free words per month with no sign-up required. This is 2-4x more than competitors like Undetectable AI (375 words) and WriteHuman (500 words)."
+                  "text": "Students get 250 free words a month with a free account and no card, enough to check and rewrite a few paragraphs. Paid plans start at $4.99/month for 5,000 words."
                 }
               },
               {
@@ -188,7 +188,7 @@ const AIHumanizerForStudents = () => {
             "operatingSystem": "Web Browser",
             "url": "https://aifreetextpro.com/ai-humanizer-for-students",
             "offers": [
-              { "@type": "Offer", "price": "0", "priceCurrency": "USD", "name": "Free Plan", "description": "1,000 words/month" },
+              { "@type": "Offer", "price": "0", "priceCurrency": "USD", "name": "Free Plan", "description": "250 words/month" },
               { "@type": "Offer", "price": "9.99", "priceCurrency": "USD", "name": "Lite Plan", "description": "10,000 words/month" },
               { "@type": "Offer", "price": "24.99", "priceCurrency": "USD", "name": "Pro Writer", "description": "50,000 words/month" }
             ],
@@ -282,14 +282,14 @@ const AIHumanizerForStudents = () => {
                 </div>
                 <div className="flex items-center gap-2 px-4 py-2 bg-card rounded-lg border border-border">
                   <CheckCircle className="w-5 h-5 text-primary" />
-                  <span>100% Money-Back</span>
+                  <span>No Credit Card</span>
                 </div>
               </div>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a href="https://app.aifreetextpro.com/" className="w-full sm:w-auto">
                   <Button size="lg" className="w-full bg-gradient-to-r from-primary to-secondary text-lg px-8 py-6">
                     <BookOpen className="mr-2 h-5 w-5" />
-                    Start Free, 1,000 Words
+                    Start Free, 250 words
                     <ArrowRight className="ml-2 h-5 w-5" />
                   </Button>
                 </a>
@@ -479,7 +479,7 @@ const AIHumanizerForStudents = () => {
                   <h3 className="font-bold mb-2">Nigeria, Kenya and Ghana</h3>
                   <p className="text-sm text-muted-foreground">
                     Term papers and project write-ups often go through Turnitin at the department level. The free tier
-                    covers 1,000 words a month with no card, which is enough to clean the sections that actually flag
+                    covers 250 words a month with no card, which is enough to clean the sections that actually flag
                     rather than rewriting a whole chapter.
                   </p>
                 </div>
@@ -519,7 +519,7 @@ const AIHumanizerForStudents = () => {
                 </Button>
               </a>
               <p className="mt-6 text-sm text-muted-foreground">
-                1,000 free words/month. No credit card required. 100% money-back guarantee.
+                250 free words/month. No credit card required.
               </p>
             </div>
           </div>

@@ -341,7 +341,7 @@ export default function UndetectableAIEssayWriter() {
               <GraduationCap className="w-10 h-10 text-primary mx-auto mb-4" />
               <h2 className="text-2xl font-bold mb-3">Write Better Essays with AI Assistance</h2>
               <p className="text-muted-foreground mb-6 max-w-lg mx-auto">
-                Draft, humanize, and verify your essays in one workflow. Free to try with no signup required.
+                Draft, humanize, and verify your essays in one workflow. Free to try with no card required.
               </p>
               <a href="https://app.aifreetextpro.com" target="_blank" rel="noopener noreferrer">
                 <Button size="xl" className="gap-2">

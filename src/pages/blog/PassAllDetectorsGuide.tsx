@@ -137,11 +137,11 @@ const PassAllDetectorsGuide = () => {
 
                 <QuickAnswer
                   question="How do you pass all major AI detectors?"
-                  answer="Rewrite AI text so it varies in perplexity and burstiness, not just swapped synonyms, then re-check it. AI Free Text Pro reports a 96-98% pass rate across GPTZero, Turnitin, Originality.AI, ZeroGPT, and Copyleaks, backed by a money-back guarantee if humanized content is still flagged. Aim for under 15% AI probability before you submit."
+                  answer="Rewrite AI text so it varies in perplexity and burstiness, not just swapped synonyms, then re-check it. AI Free Text Pro reports a 96-98% pass rate across GPTZero, Turnitin, Originality.AI, ZeroGPT, and Copyleaks. Aim for under 15% AI probability before you submit."
                 />
 
                 <p className="text-xl text-muted-foreground">
-                  How to bypass GPTZero, Turnitin, Originality.AI, ZeroGPT, Copyleaks, and every other AI detector, with a money-back guarantee.
+                  How to bypass GPTZero, Turnitin, Originality.AI, ZeroGPT, Copyleaks, and every other AI detector.
                 </p>
               </header>
 
@@ -149,7 +149,7 @@ const PassAllDetectorsGuide = () => {
 
               <KeyTakeaways
                 points={[
-                  "AI Free Text Pro bypasses all major detectors (GPTZero, Turnitin, Originality.AI, ZeroGPT, Copyleaks) with 96-98% success", "Each detector has unique strengths and weaknesses that require different bypass strategies", "The only humanizer offering a 100% money-back guarantee if content is flagged by any detector", "Understanding how each detector works is key to creating universally undetectable content"
+                  "AI Free Text Pro bypasses all major detectors (GPTZero, Turnitin, Originality.AI, ZeroGPT, Copyleaks) with 96-98% success", "Each detector has unique strengths and weaknesses that require different bypass strategies", "Understanding how each detector works is key to creating universally undetectable content"
                 ]}
               />
 
@@ -168,7 +168,7 @@ const PassAllDetectorsGuide = () => {
                     <h3 className="text-lg font-semibold">The Bottom Line (For Those Who Want the Answer Now)</h3>
                   </div>
                   <p className="mb-0">
-                    <strong>AI Free Text Pro bypasses all major detectors with 96-98% success.</strong> It's the only humanizer with a 100% money-back guarantee: if your content is flagged by ANY detector, full refund. That's how confident we are. <a href="https://app.aifreetextpro.com/" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary/80">Try it free →</a>
+                    <strong>AI Free Text Pro bypasses all major detectors with 96-98% success.</strong> <a href="https://app.aifreetextpro.com/" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary/80">Try it free →</a>
                   </p>
                 </div>
 
@@ -362,14 +362,6 @@ const PassAllDetectorsGuide = () => {
                   
                   <div className="p-4 border rounded-lg">
                     <div className="flex items-center gap-2 mb-2">
-                      <Shield className="w-5 h-5 text-primary" />
-                      <strong>Money-Back Guarantee</strong>
-                    </div>
-                    <p className="text-sm text-muted-foreground mb-0">If ANY detector flags your humanized content, 100% refund. Zero risk.</p>
-                  </div>
-                  
-                  <div className="p-4 border rounded-lg">
-                    <div className="flex items-center gap-2 mb-2">
                       <CheckCircle className="w-5 h-5 text-primary" />
                       <strong>Dual Detection + Humanization</strong>
                     </div>
@@ -396,7 +388,7 @@ const PassAllDetectorsGuide = () => {
                   },
                   {
                     question: "What if my content still gets flagged?",
-                    answer: "That's what our money-back guarantee is for. If humanized content is flagged by any AI detector, we refund 100%, no questions asked."
+                    answer: "Run it through the humanizer again in smaller sections, edit the sentences that still flag by hand, and re-check. If a payment was for a period in which you haven't used any paid feature, our refund policy refunds it in full."
                   },
                   {
                     question: "Is this ethical?",
@@ -420,10 +412,10 @@ const PassAllDetectorsGuide = () => {
                   <li>96-98% success against every major detector</li>
                   <li>Four writing styles for any content type</li>
                   <li>Built-in detection to verify before submitting</li>
-                  <li>100% money-back guarantee if anything is flagged</li>
+                  <li>A free plan to try it on before you pay</li>
                 </ul>
                 <p>
-                  There's literally no risk. Try it free with 1,000 words and see for yourself.
+                  There's literally no risk. Try it free with 250 words and see for yourself.
                 </p>
               </div>
 
@@ -434,7 +426,7 @@ const PassAllDetectorsGuide = () => {
                 </p>
                 <a href="https://app.aifreetextpro.com/" target="_blank" rel="noopener noreferrer">
                   <Button size="lg" className="text-lg px-8">
-                    Try Free, 1,000 Words
+                    Try Free, 250 words
                   </Button>
                 </a>
               </div>

@@ -66,7 +66,7 @@ const Cta = ({ heading, text, label, position }: { heading: string; text: string
       <span>{label}</span>
       <ExternalLink className="w-4 h-4" aria-hidden="true" />
     </a>
-    <p className="text-xs text-muted-foreground mt-3">Free tier includes 1,000 words. No credit card needed.</p>
+    <p className="text-xs text-muted-foreground mt-3">Free tier includes 250 words. No credit card needed.</p>
   </div>
 );
 
@@ -209,7 +209,7 @@ const AIWritingChecker = () => {
 
             <Cta
               heading="Turn your score into a revision list"
-              text="Highlighted sentences, register control and a rewriter in the same place. First 1,000 words free."
+              text="Highlighted sentences, register control and a rewriter in the same place. First 250 words free."
               label="Open the writing checker"
               position="workflow"
             />

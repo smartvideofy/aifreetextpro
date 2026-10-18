@@ -71,7 +71,7 @@ export const blogPosts = [
   }, {
     slug: "check-my-essay-for-ai", title: "Check My Essay for AI: 7 Free Tools Before You Submit", excerpt: "Self-check your essay before your professor does. Compare 7 free AI detectors with accuracy rates and step-by-step instructions.", date: "2026-03-09", readTime: "12 min read", category: "How-To Guide"
   }, {
-    slug: "best-free-ai-humanizer-2026", title: "Best Free AI Humanizer 2026: No Signup, No Limit", excerpt: "We tested every major free AI humanizer with identical ChatGPT content. Real bypass rates, word limits, and quality scores compared.", date: "2026-03-09", readTime: "15 min read", category: "Comparison"
+    slug: "best-free-ai-humanizer-2026", title: "Best Free AI Humanizer 2026: No Card, No Limit", excerpt: "We tested every major free AI humanizer with identical ChatGPT content. Real bypass rates, word limits, and quality scores compared.", date: "2026-03-09", readTime: "15 min read", category: "Comparison"
   }, {
     slug: "chatgpt-alternatives-essays", title: "ChatGPT Alternatives for Essay Writing (2026)", excerpt: "10 best ChatGPT alternatives for essay writing. Compare Claude, Gemini, Perplexity, and more for academic quality and detection rates.", date: "2026-03-08", readTime: "13 min read", category: "Academic"
   }, {
@@ -588,7 +588,7 @@ const Blog = () => {
             <Card className="p-8 bg-gradient-to-br from-primary/5 via-secondary/5 to-primary/5 border-primary/20">
               <h3 className="text-2xl font-bold mb-3">Ready to Make Your AI Content Undetectable?</h3>
               <p className="text-muted-foreground mb-6">
-                Try AI Free Text Pro free, 1,000 words/month with no credit card required.
+                Try AI Free Text Pro free, 250 words/month with no credit card required.
               </p>
               <a href="https://app.aifreetextpro.com/">
                 <Button size="lg" className="bg-gradient-to-r from-primary to-secondary">

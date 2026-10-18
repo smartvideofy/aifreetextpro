@@ -24,7 +24,7 @@ const paraphraseRows = [
   {
     feature: "Free allowance",
     them: "Usually 125 to 500 words, then a paywall",
-    us: "1,000 words per rewrite, no card, no signup",
+    us: "250 words a month, no card",
   },
   {
     feature: "Detector check",
@@ -56,7 +56,7 @@ const faqs = [
   {
     question: "What is the best free paraphrasing tool?",
     answer:
-      "A paraphrasing tool is only useful if it changes structure, not just vocabulary. Synonym-swapping tools leave the original sentence skeleton intact, which is exactly what detectors and plagiarism checkers match on. AI Free Text Pro rewrites at sentence and paragraph level and gives you 1,000 words free per rewrite with no signup.",
+      "A paraphrasing tool is only useful if it changes structure, not just vocabulary. Synonym-swapping tools leave the original sentence skeleton intact, which is exactly what detectors and plagiarism checkers match on. AI Free Text Pro rewrites at sentence and paragraph level and gives you 250 free words a month with no card.",
   },
   {
     question: "Is there a genuinely free AI detector with no signup?",
@@ -100,7 +100,7 @@ const blocks = [
       { to: "/blog/rewrite-ai-text", label: "How to rewrite AI text" },
       { to: "/blog/best-paraphrasing-tool", label: "Paraphrasers compared" },
     ],
-    cta: { label: "Paraphrase 1,000 words free", position: "home_paraphrasing_block" },
+    cta: { label: "Paraphrase 250 words free", position: "home_paraphrasing_block" },
   },
   {
     icon: ScanSearch,
@@ -322,7 +322,7 @@ export const HomeToolAnswers = () => (
         <div className="text-center mt-10">
           <AppCTA label="Start rewriting and checking free" position="home_tool_answers_footer" />
           <p className="text-sm text-muted-foreground mt-3">
-            1,000 words free per rewrite. No card, no trial countdown.
+            250 free words a month. No card, no trial countdown.
           </p>
         </div>
       </div>

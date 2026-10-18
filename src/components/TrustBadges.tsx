@@ -2,7 +2,7 @@ import { Shield, Lock, Award, Users } from "lucide-react";
 
 const TrustBadges = () => {
   const badges = [
-    { icon: Shield, label: "Money-Back Guarantee" },
+    { icon: Shield, label: "Secure Payments by Paystack" },
     { icon: Lock, label: "256-bit SSL" },
     { icon: Award, label: "4.8/5 (1,200+ Reviews)" },
     { icon: Users, label: "50,000+ Users" },

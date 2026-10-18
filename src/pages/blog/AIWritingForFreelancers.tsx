@@ -96,7 +96,7 @@ const AIWritingForFreelancers = () => {
 
                 <div className="not-prose my-6 rounded-xl border border-primary/30 bg-primary/5 p-5">
                   <p className="font-semibold text-lg mb-2">What is the best AI humanizer for freelance writers?</p>
-                  <p className="text-muted-foreground mb-3">Pick one that keeps your voice, preserves facts and formatting, and shows a detection score before you deliver. AI Free Text Pro does all three, with 1,000 free words a month to test it on real client work.</p>
+                  <p className="text-muted-foreground mb-3">Pick one that keeps your voice, preserves facts and formatting, and shows a detection score before you deliver. AI Free Text Pro does all three, with 250 free words a month to test it on real client work.</p>
                   <ol className="list-decimal pl-5 space-y-1 text-sm text-muted-foreground">
                     <li>Draft with AI, then add your own research, examples and opinions.</li>
                     <li>Run the draft through a <Link to="/ai-checker" className="text-primary hover:underline">free AI checker</Link> to find robotic sections.</li>

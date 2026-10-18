@@ -48,7 +48,7 @@ const InteractiveDemo = () => {
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-10">
             <h2 className="text-2xl md:text-4xl font-bold mb-3">Try It Now</h2>
-            <p className="text-muted-foreground text-base md:text-lg">No sign up required, paste your text and see results instantly</p>
+            <p className="text-muted-foreground text-base md:text-lg">Free account, no card. Paste your text and see results instantly</p>
           </div>
           
           <Card className="p-6 md:p-8 shadow-xl border-primary/20">

@@ -30,7 +30,7 @@ const intents = [
     icon: Gauge,
     heading: "Free AI text tools, no signup",
     body:
-      "The free tier covers 1,000 words per rewrite with no card and no trial countdown. That is enough for a full essay section, a landing page, or a batch of product descriptions, so you can judge output quality on your own writing before paying anything.",
+      "The free tier covers 250 words a month with no card and no trial countdown. That is enough for a full essay section, a landing page, or a batch of product descriptions, so you can judge output quality on your own writing before paying anything.",
     link: { to: "/free-ai-detector-word-limit", label: "See the free word limit" },
   },
   {
@@ -162,7 +162,7 @@ export const HomeIntentContent = () => (
             size="lg"
             className="text-base md:text-lg px-8 py-6 font-bold bg-gradient-to-r from-primary to-secondary hover:opacity-90 shadow-xl group"
           >
-            Humanize 1,000 words free
+            Humanize 250 words free
             <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
           </Button>
         </a>

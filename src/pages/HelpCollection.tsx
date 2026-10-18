@@ -87,7 +87,7 @@ const collections = [
       { 
         title: "Refund Policy & Cancellations", 
         slug: "refund-policy",
-        description: "Our 7-day money-back guarantee and cancellation process"
+        description: "Our refund policy and how billing works"
       },
     ]
   },

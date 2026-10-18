@@ -2,14 +2,14 @@
 
 > Free AI humanizer and AI detector. Transforms AI-generated text into natural, human-like writing and detects ChatGPT, Claude, and Gemini output with 98% accuracy. Helps writers reduce false-positive flags from Turnitin, GPTZero, and Originality.AI.
 
-AI Free Text Pro offers free, no-signup tools for AI content detection and humanization, plus expert-reviewed educational content about AI writing, AI detectors, and ethical AI use in academic and professional contexts. All blog content is reviewed by Dr. Sarah Chen, PhD in Computational Linguistics. Canonical domain: https://aifreetextpro.com.
+AI Free Text Pro offers free, no-card tools for AI content detection and humanization, plus expert-reviewed educational content about AI writing, AI detectors, and ethical AI use in academic and professional contexts. All blog content is reviewed by Dr. Sarah Chen, PhD in Computational Linguistics. Canonical domain: https://aifreetextpro.com.
 
 ## Pages
 
 - [Home](https://aifreetextpro.com/): AI humanizer and AI detector overview.
 - [AI Checker](https://aifreetextpro.com/ai-checker): Free AI detection tool with 98% accuracy.
-- [Free word limits](https://aifreetextpro.com/free-ai-detector-word-limit): Exact free allowances: unmetered AI detection, 1,000 humanized words per month.
-- [Pricing](https://aifreetextpro.com/pricing): Five-tier pricing with 1,000 free words per month.
+- [Free word limits](https://aifreetextpro.com/free-ai-detector-word-limit): Exact free allowances: AI detection (10 checks a day), 250 words per month.
+- [Pricing](https://aifreetextpro.com/pricing): Five-tier pricing with 250 free words per month.
 - [API](https://aifreetextpro.com/api): Developer API for AI humanization.
 - [Bypass Turnitin](https://aifreetextpro.com/bypass-turnitin-ai-detection): Reduce Turnitin AI false flags.
 - [Bypass GPTZero](https://aifreetextpro.com/bypass-gptzero-detection): Reduce GPTZero false flags.

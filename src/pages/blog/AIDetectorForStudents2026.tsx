@@ -126,7 +126,7 @@ const AIDetectorForStudents2026 = () => {
                     <TableCell className="font-medium">AI Free Text Pro</TableCell>
                     <TableCell className="text-green-600">94%</TableCell>
                     <TableCell className="text-green-600">2%</TableCell>
-                    <TableCell>1,000 words/check</TableCell>
+                    <TableCell>250 words/month</TableCell>
                     <TableCell><span className="inline-flex items-center gap-1 text-green-600"><CheckCircle className="w-4 h-4" />No</span></TableCell>
                   </TableRow>
                   <TableRow><TableCell>GPTZero (free)</TableCell><TableCell>89%</TableCell><TableCell>5%</TableCell><TableCell>5,000 chars</TableCell><TableCell><span className="inline-flex items-center gap-1 text-destructive"><XCircle className="w-4 h-4" />Required</span></TableCell></TableRow>
@@ -172,7 +172,7 @@ const AIDetectorForStudents2026 = () => {
 
             <div className="bg-primary/5 border border-primary/20 rounded-lg p-8 my-8 text-center not-prose">
               <h3 className="text-xl font-bold mb-2">Self-Check Your Essay Free</h3>
-              <p className="text-muted-foreground mb-4">1,000 words free, no signup, lowest false-positive rate in 2026 testing. See your score before your teacher does.</p>
+              <p className="text-muted-foreground mb-4">250 words free, no card, lowest false-positive rate in 2026 testing. See your score before your teacher does.</p>
               <Link to="/ai-checker" className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg font-medium hover:opacity-90 transition-opacity">
                 Open Free AI Checker <ExternalLink className="w-4 h-4" />
               </Link>

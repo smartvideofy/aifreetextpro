@@ -388,7 +388,7 @@ const Technology = () => {
             <Card className="max-w-4xl mx-auto p-10 text-center bg-gradient-to-br from-primary via-primary to-secondary border-0 text-primary-foreground">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">Experience the Technology</h2>
               <p className="text-xl mb-8 opacity-90">
-                See our humanization in action. Try it free with no signup required.
+                See our humanization in action. Try it free with no card required.
               </p>
               <a 
                 href="https://app.aifreetextpro.com/humanizer"

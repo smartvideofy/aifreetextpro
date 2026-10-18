@@ -521,7 +521,7 @@ export default function AIDetectionPublishing() {
               <div className="bg-gradient-to-r from-primary/10 to-primary/5 rounded-xl p-8 my-12">
                 <h2 className="text-2xl font-bold mb-4">Publishers: Try AI Free Text Pro for Your Workflow</h2>
                 <p className="text-lg mb-6">
-                  Free, unlimited AI detection designed for editorial workflows. Screen submissions, verify authenticity, and maintain your publication's standards without breaking the budget.
+                  Free AI detection (250 words a month) designed for editorial workflows. Screen submissions, verify authenticity, and maintain your publication's standards without breaking the budget.
                 </p>
                 <a 
                   href="https://app.aifreetextpro.com"

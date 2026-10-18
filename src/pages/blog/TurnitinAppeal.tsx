@@ -157,7 +157,7 @@ const TurnitinAppeal = () => {
 
             <section className="not-prose my-12 p-8 bg-primary/5 border border-primary/20 rounded-xl text-center">
               <h2 className="text-2xl font-bold mb-3">Check Your Text with an Independent AI Detector</h2>
-              <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">Get a second opinion on your writing. Free, instant analysis with no signup required.</p>
+              <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">Get a second opinion on your writing. Free, instant analysis with no card required.</p>
               <a href="https://app.aifreetextpro.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center px-6 py-3 bg-primary text-primary-foreground rounded-lg font-medium hover:opacity-90 transition-opacity">
                 Try Free AI Detector <ArrowLeft className="w-4 h-4 ml-2 rotate-180" />
               </a>

@@ -67,7 +67,7 @@ const Cta = ({ heading, text, label, position }: { heading: string; text: string
       <span>{label}</span>
       <ExternalLink className="w-4 h-4" aria-hidden="true" />
     </a>
-    <p className="text-xs text-muted-foreground mt-3">Free tier includes 1,000 words. No credit card needed.</p>
+    <p className="text-xs text-muted-foreground mt-3">Free tier includes 250 words. No credit card needed.</p>
   </div>
 );
 
@@ -184,7 +184,7 @@ const FreeAIDetectorGuide = () => {
                   </TableRow>
                 </TableHeader>
                 <TableBody>
-                  <TableRow><TableCell className="font-bold">AI Free Text Pro</TableCell><TableCell>1,000 words per account</TableCell><TableCell>Yes</TableCell><TableCell>Yes</TableCell></TableRow>
+                  <TableRow><TableCell className="font-bold">AI Free Text Pro</TableCell><TableCell>250 words a month</TableCell><TableCell>Yes</TableCell><TableCell>Yes</TableCell></TableRow>
                   <TableRow><TableCell>GPTZero</TableCell><TableCell>Character-capped per scan</TableCell><TableCell>Partial</TableCell><TableCell>Yes for full features</TableCell></TableRow>
                   <TableRow><TableCell>ZeroGPT</TableCell><TableCell>Larger character cap</TableCell><TableCell>Yes</TableCell><TableCell>No</TableCell></TableRow>
                   <TableRow><TableCell>Copyleaks</TableCell><TableCell>Limited trial scans</TableCell><TableCell>Yes</TableCell><TableCell>Yes</TableCell></TableRow>
@@ -227,7 +227,7 @@ const FreeAIDetectorGuide = () => {
 
             <Cta
               heading="Get your score in under a minute"
-              text="Free AI detection with sentence-level highlighting. First 1,000 words included."
+              text="Free AI detection with sentence-level highlighting. First 250 words included."
               label="Check text for AI now"
               position="final"
             />

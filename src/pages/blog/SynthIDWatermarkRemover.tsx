@@ -70,7 +70,7 @@ const Cta = ({ heading, text, label, position }: { heading: string; text: string
       <span>{label}</span>
       <ExternalLink className="w-4 h-4" aria-hidden="true" />
     </a>
-    <p className="text-xs text-muted-foreground mt-3">Free tier includes 1,000 words. No credit card needed.</p>
+    <p className="text-xs text-muted-foreground mt-3">Free tier includes 250 words. No credit card needed.</p>
   </div>
 );
 
@@ -120,7 +120,7 @@ const SynthIDWatermarkRemover = () => {
         totalTime="PT10M"
         image={OG_IMAGE}
         steps={[
-          { name: "Open AI Free Text Pro", text: "Go to the web app at app.aifreetextpro.com. No sign-up is required for the free 1,000-word tier." },
+          { name: "Open AI Free Text Pro", text: "Go to the web app at app.aifreetextpro.com. No card is required for the free 250-word monthly tier." },
           { name: "Paste your Gemini output", text: "Paste the Gemini-generated draft into the humanizer input field, ideally one section at a time." },
           { name: "Pick a writing style", text: "Choose Academic, Professional, Creative or Casual so the rewrite matches the register your document needs." },
           { name: "Run the rewrite", text: "The humanizer restructures sentences, varies rhythm and replaces predictable token sequences rather than swapping isolated synonyms." },
@@ -231,7 +231,7 @@ const SynthIDWatermarkRemover = () => {
 
             <Cta
               heading="Try the Humanizer on Your Gemini Output"
-              text="Four writing styles, section-by-section control, and a built-in detector check. Free for your first 1,000 words."
+              text="Four writing styles, section-by-section control, and a built-in detector check. Free for your first 250 words."
               label="Humanize My Gemini Text Free"
               position="workflow"
             />

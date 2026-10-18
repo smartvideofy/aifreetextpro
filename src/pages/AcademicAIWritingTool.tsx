@@ -15,7 +15,7 @@ const AcademicAIWritingTool = () => {
     <div className="min-h-screen flex flex-col">
       <Helmet>
         <title>Academic AI Writing Tool: APA, MLA and Responsible Editing</title>
-        <meta name="description" content="Refine academic drafts with a policy-first workflow. Understand US university AI rules, APA/MLA citations and Turnitin reports. Try 1,000 words free." />
+        <meta name="description" content="Refine academic drafts with a policy-first workflow. Understand US university AI rules, APA/MLA citations and Turnitin reports. Try 250 words free." />
         <meta name="keywords" content="academic ai writing tool, academic ai editing, APA AI citation, MLA AI citation, US university AI policy" />
         <link rel="canonical" href="https://aifreetextpro.com/academic-ai-writing-tool" />
         <meta property="og:title" content="Academic AI Writing Tool: APA, MLA and Responsible Editing" />
@@ -239,12 +239,12 @@ const AcademicAIWritingTool = () => {
               </p>
               <a href="https://app.aifreetextpro.com/" target="_blank" rel="noopener noreferrer" onClick={() => trackCTAClick('academic_bottom', 'app')}>
                 <Button size="lg" className="bg-gradient-to-r from-primary to-secondary">
-                  Try Free - 1,000 Words/Month
+                  Try Free - 250 words/Month
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
               </a>
               <p className="text-sm text-muted-foreground mt-4">
-                1,000 free words per month. Check your course policy first.
+                250 free words per month. Check your course policy first.
               </p>
             </div>
           </div>

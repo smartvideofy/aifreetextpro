@@ -338,7 +338,7 @@ export default function ZeroGPTComparison() {
               <div className="bg-gradient-to-r from-primary/10 to-primary/5 rounded-xl p-8 my-12">
                 <h2 className="text-2xl font-bold mb-4">Try the Winner: AI Free Text Pro</h2>
                 <p className="text-lg mb-6">
-                  Experience the most accurate AI detection available in 2025. Free, unlimited, and trusted by thousands of users worldwide.
+                  Experience the most accurate AI detection available in 2025. Free to try, and trusted by thousands of users worldwide.
                 </p>
                 <Link 
                   to="/"

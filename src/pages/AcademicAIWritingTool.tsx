@@ -239,7 +239,7 @@ const AcademicAIWritingTool = () => {
               </p>
               <a href="https://app.aifreetextpro.com/" target="_blank" rel="noopener noreferrer" onClick={() => trackCTAClick('academic_bottom', 'app')}>
                 <Button size="lg" className="bg-gradient-to-r from-primary to-secondary">
-                  Try Free - 250 words/Month
+                  Try Free - 250 Words/Month
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
               </a>

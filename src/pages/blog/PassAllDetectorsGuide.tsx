@@ -426,7 +426,7 @@ const PassAllDetectorsGuide = () => {
                 </p>
                 <a href="https://app.aifreetextpro.com/" target="_blank" rel="noopener noreferrer">
                   <Button size="lg" className="text-lg px-8">
-                    Try Free, 250 words
+                    Try Free, 250 Words
                   </Button>
                 </a>
               </div>

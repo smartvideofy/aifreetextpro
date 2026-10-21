@@ -201,7 +201,7 @@ const VsUndetectable = () => {
                   </ul>
                   <a href="https://app.aifreetextpro.com/" className="block mt-6">
                     <Button size="lg" className="w-full bg-gradient-to-r from-primary to-secondary">
-                      Try Free, 250 words <ArrowRight className="ml-2 h-4 w-4" />
+                      Try Free, 250 Words <ArrowRight className="ml-2 h-4 w-4" />
                     </Button>
                   </a>
                 </Card>
@@ -351,7 +351,7 @@ const VsUndetectable = () => {
                 <a href="https://app.aifreetextpro.com/" className="w-full sm:w-auto">
                   <Button size="lg" className="w-full bg-gradient-to-r from-primary to-secondary text-lg px-8 py-6">
                     <Zap className="mr-2 h-5 w-5" />
-                    Start Free, 250 words
+                    Start Free, 250 Words
                     <ArrowRight className="ml-2 h-5 w-5" />
                   </Button>
                 </a>

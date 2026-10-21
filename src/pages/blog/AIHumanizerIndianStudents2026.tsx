@@ -121,7 +121,7 @@ export default function AIHumanizerIndianStudents2026() {
                     </li>
                     <li className="flex items-start gap-2">
                       <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                      <span><strong>Fast Results:</strong> 30-60 seconds per 250 words</span>
+                      <span><strong>Fast Results:</strong> 30-60 seconds per 1,000 words</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />

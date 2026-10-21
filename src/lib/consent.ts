@@ -6,8 +6,8 @@ export interface CookiePreferences {
 }
 
 export const CONSENT_EVENT = 'aftp:consent-changed';
-export const CONSENT_NOTICE_VERSION = '2026-10-tracking-v1';
-export const CONSENT_NOTICE = 'Optional analytics cookies measure site use with Google Analytics. Optional marketing cookies share page visits, app-link clicks and advertising click identifiers with Meta and X for advertising measurement. You can refuse or withdraw in Cookie Settings. No submitted writing or contact details are sent.';
+export const CONSENT_NOTICE_VERSION = '2026-10-tracking-v2';
+export const CONSENT_NOTICE = 'Optional analytics cookies measure site use with Google Analytics. Optional marketing cookies share page visits, app-link clicks and advertising click identifiers with Meta and X for advertising measurement, and remember which creator link brought you here. You can refuse or withdraw in Cookie Settings. No submitted writing or contact details are sent.';
 export const DEFAULT_PREFERENCES: CookiePreferences = {
   essential: true, analytics: false, marketing: false, functional: false,
 };

@@ -13,7 +13,7 @@ const Guarantee = () => {
     {
       icon: Settings,
       title: "Cancel Your Subscription",
-      description: "Go to Settings, then Manage Subscription, and select Cancel Subscription. Your access continues until the end of your current billing period."
+      description: "Go to Settings, then Subscriptions, and select Cancel Subscription. Your access continues until the end of your current billing period."
     },
     {
       icon: HelpCircle,
@@ -59,7 +59,7 @@ const Guarantee = () => {
                 "name": "How do I cancel my subscription?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Go to Settings, then Manage Subscription, and select Cancel Subscription. Your access continues until the end of your current billing period."
+                  "text": "Go to Settings, then Subscriptions, and select Cancel Subscription. You can also email support@aifreetextpro.com or create a ticket under Help Center, then Messages, then Create Message, and our support team will process the cancellation for you. Your access continues until the end of your current billing period."
                 }
               },
               {
@@ -203,7 +203,7 @@ const Guarantee = () => {
                     <ul className="space-y-2 text-muted-foreground ml-8">
                       <li className="flex items-start gap-2">
                         <span className="text-primary mt-1">-</span>
-                        <span>Cancel anytime from <strong>Settings &gt; Manage Subscription &gt; Cancel Subscription</strong></span>
+                        <span>Cancel anytime from <strong>Settings &gt; Subscriptions &gt; Cancel Subscription</strong>, or email <strong>support@aifreetextpro.com</strong> / create a ticket under <strong>Help Center &gt; Messages &gt; Create Message</strong> and our team will cancel it for you</span>
                       </li>
                       <li className="flex items-start gap-2">
                         <span className="text-primary mt-1">-</span>
@@ -281,7 +281,7 @@ const Guarantee = () => {
                 <Card className="p-6">
                   <h3 className="font-bold mb-2">How do I cancel my subscription?</h3>
                   <p className="text-muted-foreground text-sm">
-                    Go to Settings, then Manage Subscription, and select Cancel Subscription. Your paid features remain active until the end of your current billing period.
+                    Go to Settings, then Subscriptions, and select Cancel Subscription. You can also email support@aifreetextpro.com or create a ticket under Help Center, then Messages, then Create Message, and our support team will process the cancellation for you. Your paid features remain active until the end of your current billing period.
                   </p>
                 </Card>
 

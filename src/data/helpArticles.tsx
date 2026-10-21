@@ -1112,7 +1112,7 @@ export const articleContent: Record<string, Record<string, { title: string; cont
           <h2>How to Upgrade to Pro</h2>
           
           <h3>Step 1: Go to Account Settings</h3>
-          <p>Click your profile icon in the top-right corner and select "Account Settings" or "Manage Subscription."</p>
+          <p>Click your profile icon in the top-right corner and select "Account Settings" or "Subscriptions."</p>
           
           <h3>Step 2: Click "Upgrade Plan"</h3>
           <p>You'll see a comparison of your current Free plan and the Pro plan features.</p>
@@ -1144,7 +1144,7 @@ export const articleContent: Record<string, Record<string, { title: string; cont
           <h3>Step 1: Go to Account Settings</h3>
           <p>Navigate to your Account Settings from your profile menu.</p>
           
-          <h3>Step 2: Click "Manage Subscription"</h3>
+          <h3>Step 2: Open "Subscriptions"</h3>
           <p>Find the subscription management section.</p>
           
           <h3>Step 3: Select "Cancel Subscription"</h3>
@@ -1186,7 +1186,7 @@ export const articleContent: Record<string, Record<string, { title: string; cont
           <h2>Pausing Your Subscription</h2>
           <p>Not ready to commit to a full cancellation? You can pause your subscription for up to 3 months:</p>
           <ol>
-            <li>Go to Account Settings → Manage Subscription</li>
+            <li>Go to Account Settings → Subscriptions</li>
             <li>Select "Pause Subscription"</li>
             <li>Choose pause duration (1-3 months)</li>
             <li>You won't be charged during the pause</li>
@@ -1239,10 +1239,11 @@ export const articleContent: Record<string, Record<string, { title: string; cont
           <p>You can cancel your subscription at any time by following these steps:</p>
           <ol>
             <li>Go to <strong>Settings</strong></li>
-            <li>Click <strong>Manage Subscription</strong></li>
+            <li>Click <strong>Subscriptions</strong></li>
             <li>Select <strong>Cancel Subscription</strong></li>
             <li>Confirm your cancellation</li>
           </ol>
+          <p>Prefer a helping hand? You can also email <strong>support@aifreetextpro.com</strong>, or create a support ticket in the Help Center: go to <strong>Help Center &gt; Messages &gt; Create Message</strong>, and our support team will process the cancellation for you.</p>
           
           <h3>What Happens After Cancellation</h3>
           <ul>

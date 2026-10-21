@@ -17,6 +17,7 @@
  */
 
 import { readPreferences } from './consent';
+import { partnerFromPath } from './partnerLinks';
 
 export interface Attribution {
   channel: string;
@@ -62,6 +63,8 @@ const INTERNAL_HOSTS = [
 ];
 
 const CHANNELS: [RegExp, string][] = [
+  // Creator links (aifreetextpro.com/r/<handle>), tagged below.
+  [/^partner$/, "partner"],
   [/tiktok/, "tiktok"],
   [/(^|\.)google\.|^google$|gclid/, "google"],
   [/bing|msclkid/, "bing"],
@@ -112,10 +115,12 @@ export function channelFor(source: string | null, medium: string | null, referre
 export function attributionFromLocation(href: string, referrerUrl: string): Attribution | null {
   let params: URLSearchParams;
   let path: string;
+  let partner: { handle: string; slug: string } | null;
   try {
     const u = new URL(href);
     params = u.searchParams;
     path = u.hostname.replace(/^www\./, "") + u.pathname;
+    partner = partnerFromPath(u.pathname);
   } catch {
     return null;
   }
@@ -131,8 +136,9 @@ export function attributionFromLocation(href: string, referrerUrl: string): Attr
           : params.get("twclid")
             ? "twitter"
             : null;
-  const source = clean(params.get("utm_source")) ?? clickSource;
-  const medium = clean(params.get("utm_medium")) ?? (clickSource ? "cpc" : null);
+  // A creator link is the source, whatever app it was opened from.
+  const source = partner ? "partner" : clean(params.get("utm_source")) ?? clickSource;
+  const medium = partner ? "creator" : clean(params.get("utm_medium")) ?? (clickSource ? "cpc" : null);
   const refHost = referrerUrl ? hostOf(referrerUrl) : null;
   const ownHost = (() => { try { return new URL(href).hostname.replace(/^www./, ""); } catch { return ""; } })();
   const referrer = refHost && refHost !== ownHost && !isInternal(refHost) ? refHost : null;
@@ -142,9 +148,9 @@ export function attributionFromLocation(href: string, referrerUrl: string): Attr
     channel: channelFor(source, medium, referrer),
     source,
     medium,
-    campaign: clean(params.get("utm_campaign")),
+    campaign: partner ? partner.handle : clean(params.get("utm_campaign")),
     term: clean(params.get("utm_term")),
-    content: clean(params.get("utm_content")),
+    content: partner ? partner.slug || null : clean(params.get("utm_content")),
     referrer,
     landing_page: clean(path, 200),
     first_seen: new Date().toISOString(),

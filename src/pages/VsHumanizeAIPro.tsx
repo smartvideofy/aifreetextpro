@@ -104,7 +104,7 @@ const VsHumanizeAIPro = () => {
                 "name": "How much cheaper is AI Free Text Pro compared to HumanizeAI.pro?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "AI Free Text Pro is 60% cheaper at $4.99/mo vs $12/mo for entry plans. The cost per 250 words is $0.50 with AI Free Text Pro vs $0.98 with HumanizeAI.pro. Annual savings exceed $84."
+                  "text": "AI Free Text Pro is 60% cheaper at $4.99/mo vs $12/mo for entry plans. The cost per 1,000 words is $0.50 with AI Free Text Pro vs $0.98 with HumanizeAI.pro. Annual savings exceed $84."
                 }
               },
               {
@@ -200,7 +200,7 @@ const VsHumanizeAIPro = () => {
                   </ul>
                   <a href="https://app.aifreetextpro.com/" className="block mt-6">
                     <Button size="lg" className="w-full bg-gradient-to-r from-primary to-secondary">
-                      Try Free, 250 words <ArrowRight className="ml-2 h-4 w-4" />
+                      Try Free, 250 Words <ArrowRight className="ml-2 h-4 w-4" />
                     </Button>
                   </a>
                 </Card>

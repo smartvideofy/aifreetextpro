@@ -55,13 +55,13 @@ const Index = () => {
       <HowToSchema />
       <Breadcrumbs items={[{ label: "Home" }]} />
       <Helmet>
-        <title>Free AI Detector and Humanizer (2-in-1) | 250 words Free</title>
+        <title>Free AI Detector and Humanizer (2-in-1) | 250 Words Free</title>
         <meta name="description" content="Free AI detector and humanizer in one tool. Check your AI score, then rewrite flagged lines in your own voice. 250 free words a month, free account, no card." />
         <link rel="canonical" href="https://aifreetextpro.com/" />
         
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-        <meta property="og:title" content="Free AI Detector and Humanizer (2-in-1) | 250 words Free" />
+        <meta property="og:title" content="Free AI Detector and Humanizer (2-in-1) | 250 Words Free" />
         <meta property="og:description" content="Free AI detector and humanizer in one tool. Check your AI score, then rewrite flagged lines in your own voice. 250 free words a month, free account, no card." />
         <meta property="og:url" content="https://aifreetextpro.com/" />
         <meta property="og:type" content="website" />
@@ -70,7 +70,7 @@ const Index = () => {
         <meta property="og:locale" content="en_US" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@aifreetextpro" />
-        <meta name="twitter:title" content="Free AI Detector and Humanizer (2-in-1) | 250 words Free" />
+        <meta name="twitter:title" content="Free AI Detector and Humanizer (2-in-1) | 250 Words Free" />
         <meta name="twitter:description" content="Free AI detector and humanizer in one tool. Check your AI score, then rewrite flagged lines in your own voice. 250 free words a month, free account, no card." />
         <meta name="twitter:image" content="https://aifreetextpro.com/og-image.png" />
         

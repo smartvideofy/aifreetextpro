@@ -3,12 +3,16 @@ import App from "./App.tsx";
 import "./index.css";
 import { captureAttribution } from "./lib/attribution";
 import { trackVisit } from "./lib/visitTracking";
+import { handlePartnerLink } from "./lib/partnerLinks";
 
 // Remember where this visitor came from (TikTok, Google, a campaign...) so the
 // app can record it if they sign up. Skips itself during prerendering.
 captureAttribution();
 // Count this visit for the admin panel's Acquisition report (anonymous).
 trackVisit();
+// Creator links (/r/<handle>): count the click and show the homepage. Runs
+// after the two above so the visit is recorded as coming from the creator.
+handlePartnerLink();
 
 const container = document.getElementById("root")!;
 

@@ -44,7 +44,7 @@ const RefundPolicy = () => {
           </Link>
 
           <h1 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">Refund Policy</h1>
-          <p className="text-muted-foreground mb-8">Last updated: October 2, 2026</p>
+          <p className="text-muted-foreground mb-8">Last updated: October 21, 2026</p>
 
           <div className="prose prose-slate dark:prose-invert max-w-none space-y-6">
             <section>
@@ -132,7 +132,21 @@ const RefundPolicy = () => {
                 Cancelling a subscription and requesting a refund are two separate actions. Cancelling stops future renewals; unless required by law or confirmed by us, it does not refund a payment that has already been made. Likewise, an approved refund does not by itself cancel your subscription.
               </p>
               <p className="text-muted-foreground leading-relaxed mt-3">
-                To cancel, email <Email /> from the email address on your account. We will confirm by email once the cancellation is complete; please keep that confirmation for your records.
+                <strong>How to cancel your subscription:</strong> sign in to the{" "}
+                <a href="https://app.aifreetextpro.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
+                  AI Free Text Pro app
+                </a>{" "}
+                and go to <strong>Settings &gt; Subscriptions &gt; Cancel Subscription</strong>. Your plan stays active until the end of the current billing period and will not renew.
+              </p>
+              <p className="text-muted-foreground leading-relaxed mt-3">
+                <strong>Need help cancelling?</strong> You can also:
+              </p>
+              <ul className="list-disc list-inside space-y-2 text-muted-foreground">
+                <li>Email <Email /> from the email address on your account, or</li>
+                <li>Create a support ticket in the Help Center: go to <strong>Help Center &gt; Messages &gt; Create Message</strong>, and our support team will process the cancellation for you.</li>
+              </ul>
+              <p className="text-muted-foreground leading-relaxed mt-3">
+                We will confirm once the cancellation is complete; please keep that confirmation for your records.
               </p>
             </section>
 

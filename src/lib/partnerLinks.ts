@@ -3,7 +3,8 @@
  * /r/<handle>/<link>, e.g. /r/amy/tiktok or /r/amy/yt-oct-21-essay-demo.
  *
  * Runs before the page renders: the address is swapped for the homepage (so
- * the prerendered homepage is what shows), the click is counted in the app's
+ * the prerendered homepage is what shows), or for the page the creator chose
+ * with ?go= (checker, humanizer, pricing), the click is counted in the app's
  * database (record_partner_click), and, once the visitor has accepted
  * marketing cookies, the click is kept on a shared 30-day cookie so
  * app.aifreetextpro.com can credit the creator after sign-up (the app's
@@ -19,6 +20,13 @@ const APP_SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhY
 const PARTNER_COOKIE = "aftp_ref";
 const REFERRAL_SECONDS = 30 * 86400;
 const PATH = /^\/r\/([a-z0-9][a-z0-9_-]{1,29})(?:\/([a-z0-9][a-z0-9-]{0,39}))?\/?$/i;
+
+// Where a creator link can send people (?go=), set per link in the partner portal.
+const DESTINATIONS: Record<string, string> = {
+  checker: "/ai-checker",
+  humanizer: "/ai-humanizer-for-students",
+  pricing: "/pricing",
+};
 
 export function partnerFromPath(pathname: string): { handle: string; slug: string } | null {
   const m = PATH.exec(pathname);
@@ -54,8 +62,15 @@ function keepIfAllowed() {
 export function handlePartnerLink(): void {
   const partner = partnerFromPath(window.location.pathname);
   if (!partner) return;
-  // Show the homepage under its own address (matches the prerendered HTML).
-  window.history.replaceState(window.history.state, "", `/${window.location.search}${window.location.hash}`);
+  // Show the homepage under its own address (matches the prerendered HTML),
+  // or the page the creator chose.
+  const params = new URLSearchParams(window.location.search);
+  const target = DESTINATIONS[params.get("go") ?? ""] ?? "/";
+  params.delete("go");
+  const search = params.toString() ? `?${params}` : "";
+  window.history.replaceState(window.history.state, "", `${target}${search}${window.location.hash}`);
+  // The served HTML is the homepage: render the chosen page fresh instead of hydrating it.
+  if (target !== "/") document.getElementById("root")?.replaceChildren();
   if ((window as Window & { __PRERENDER_INJECT__?: unknown }).__PRERENDER_INJECT__ || navigator.webdriver) return;
 
   let referrer: string | null = null;

@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Mail, BookOpen, MessageSquare, Shield, Check, Target, Users, Sparkles, GraduationCap, ChevronDown, HelpCircle, Globe } from "lucide-react";
-import logo from "@/assets/logo.png";
+import logo from "@/assets/logo.svg";
 import { useState } from "react";
 
 type FooterSection = {

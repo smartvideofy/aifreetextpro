@@ -71,15 +71,15 @@ const AIChecker = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <Helmet>
-        <title>Free AI Checker: Check Text for AI in 30 Seconds (No Signup)</title>
-        <meta name="description" content="Paste text, get a sentence-by-sentence AI score in 30 seconds. Free AI checker built on the signals GPTZero, Turnitin and Originality.AI use. No signup, no word meter." />
+        <title>Free AI Checker: Check Text for AI in 30 Seconds (No Card Needed)</title>
+        <meta name="description" content="Paste text, get a sentence-by-sentence AI score in 30 seconds. Free AI checker built on the signals GPTZero, Turnitin and Originality.AI use. Free account, no card, no word meter." />
 
         <meta name="keywords" content="free ai detector, ai checker, ai detector unlimited words, free ai detector unlimited words, ai content detector, check ai text, detect ai writing, ai detection tool, free ai checker" />
         <link rel="canonical" href="https://aifreetextpro.com/ai-checker" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-        <meta property="og:title" content="Free AI Checker: Check Text for AI in 30 Seconds (No Signup)" />
-        <meta property="og:description" content="Check text against the signals 15+ AI detectors use, in one click. Free, instant, private, no account required." />
+        <meta property="og:title" content="Free AI Checker: Check Text for AI in 30 Seconds (No Card Needed)" />
+        <meta property="og:description" content="Check text against the signals 15+ AI detectors use, in one click. Free, instant and private, with a free account." />
 
         <meta property="og:url" content="https://aifreetextpro.com/ai-checker" />
         <meta property="og:type" content="website" />
@@ -159,7 +159,7 @@ const AIChecker = () => {
       </Helmet>
       <SoftwareApplicationSchema
         name="Free AI Detector"
-        description="Free AI content detector. Check essays, blog posts and marketing copy for AI patterns before you publish. No signup, instant results."
+        description="Free AI content detector. Check essays, blog posts and marketing copy for AI patterns before you publish. Free account, instant results."
         url="https://aifreetextpro.com/ai-checker"
         category="UtilityApplication"
       />
@@ -186,7 +186,7 @@ const AIChecker = () => {
                 Free AI Detector &amp; AI Checker
               </h1>
               <p className="text-xl md:text-2xl text-muted-foreground mb-8">
-                Paste your text, get an AI score in about 30 seconds. Scored against the signals GPTZero, Turnitin and Originality.AI use, with no word meter on detection and no signup.
+                Paste your text, get an AI score in about 30 seconds. Scored against the signals GPTZero, Turnitin and Originality.AI use, with no word meter on detection and no card needed.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
                 <a href="https://app.aifreetextpro.com/detector" className="w-full sm:w-auto">

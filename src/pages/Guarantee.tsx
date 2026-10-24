@@ -31,14 +31,14 @@ const Guarantee = () => {
     <div className="min-h-screen flex flex-col">
       <Helmet>
         <title>Billing & Refunds | AI Free Text Pro</title>
-        <meta name="description" content="If our AI humanizer gets flagged, you get a full refund. No questions asked. Learn about our guarantee, cancellation, and 24h support." />
+        <meta name="description" content="How billing and refunds work at AI Free Text Pro: 24-hour support, and refund requests reviewed case by case by our team." />
         <meta name="keywords" content="satisfaction guarantee, cancellation policy, ai humanizer support, service guarantee" />
         <link rel="canonical" href="https://aifreetextpro.com/guarantee" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="bingbot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta property="og:title" content="Billing & Refunds | AI Free Text Pro" />
-        <meta property="og:description" content="Flagged by AI detector? Full refund. No questions asked." />
+        <meta property="og:description" content="How billing and refund requests work, and how to reach our support team." />
         <meta property="og:url" content="https://aifreetextpro.com/guarantee" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="https://aifreetextpro.com/og-image.png" />
@@ -46,7 +46,7 @@ const Guarantee = () => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@aifreetextpro" />
         <meta name="twitter:title" content="Billing & Refunds | AI Free Text Pro" />
-        <meta name="twitter:description" content="Flagged by AI detector? Full refund. No questions asked." />
+        <meta name="twitter:description" content="How billing and refund requests work, and how to reach our support team." />
         <meta name="twitter:image" content="https://aifreetextpro.com/og-image.png" />
         
         <script type="application/ld+json">

@@ -8,20 +8,21 @@ import { QuickAnswer } from "@/components/QuickAnswer";
 import { FAQSection } from "@/components/FAQSection";
 import { KeyTakeaways } from "@/components/KeyTakeaways";
 import InternalLinks from "@/components/InternalLinks";
+import { AISignalChecker } from "@/components/AISignalChecker";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 
 const URL = "https://aifreetextpro.com/free-ai-detector-word-limit";
 
 const faqs = [
   { question: "How do I check essays without word cutoffs?", answer: "Create a free account (no card) and paste the essay into the AI checker. The free plan covers 250 words a month across detection and humanizing, so a long paper is best checked a section at a time, or on a paid plan from $4.99/month with 5,000 words and no daily limits. Turnitin requires an institutional login and GPTZero's free plan caps each scan." },
-  { question: "Is there an AI detector with no word limit?", answer: "Not on a free plan. On AI Free Text Pro the free plan gives you 250 words a month, shared by detection and humanizing, with up to 10 checks and 5 humanizations a day. Paid plans remove the daily limits, and Unlimited Creator has no monthly word cap." },
+  { question: "Is there an AI detector with no word limit?", answer: "Yes for a quick check: the writing-signal checker on this page has no word limit and needs no account, because it runs in your browser. For the model-based detector, On AI Free Text Pro the free plan gives you 250 words a month, shared by detection and humanizing, with up to 10 checks and 5 humanizations a day. Paid plans remove the daily limits, and Unlimited Creator has no monthly word cap." },
   {
     question: "How many words can I check for free?",
     answer: "250 words a month on the free plan, shared between AI detection and humanizing, with up to 10 checks and 5 humanizations a day. That is enough to check and rewrite a few paragraphs. Paid plans start at 5,000 words a month.",
   },
   {
     question: "Is there an AI detector with unlimited words?",
-    answer: "Only on a paid plan. Be sceptical of tools advertising unlimited free use: every check and every rewrite costs compute, so the limit is usually hidden in a daily cap, a queue, or a quality downgrade. We publish the number instead: 250 free words a month, and unlimited words on Unlimited Creator.",
+    answer: "For a style check, yes: the checker on this page is free and unlimited because it runs in your browser. For model-based detection, unlimited words are on the Unlimited Creator plan. Be sceptical of tools advertising unlimited free use: every check and every rewrite costs compute, so the limit is usually hidden in a daily cap, a queue, or a quality downgrade. We publish the number instead: 250 free words a month, and unlimited words on Unlimited Creator.",
   },
   {
     question: "What happens when I hit the 250-word monthly limit?",
@@ -40,10 +41,10 @@ const faqs = [
 const FreeWordLimit = () => (
   <>
     <Helmet>
-      <title>AI Detector Word Limit: How Many Words Are Free?</title>
+      <title>AI Detector With No Word Limit: Free Unlimited Check + Real Caps</title>
       <meta
         name="description"
-        content="Straight answer on free AI detector and humanizer word limits: 250 free words a month for detection and humanizing, up to 10 checks a day, no card. Compare the real caps."
+        content="Free AI detector with no word limit: check unlimited words in your browser, no sign-up. Plus the real caps on model-based detection (250 free words a month) and what 'unlimited' tools hide."
       />
       <meta
         name="keywords"
@@ -53,7 +54,7 @@ const FreeWordLimit = () => (
       <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
       <meta property="og:type" content="website" />
       <meta property="og:url" content={URL} />
-      <meta property="og:title" content="AI Detector Word Limit: How Many Words Are Free?" />
+      <meta property="og:title" content="AI Detector With No Word Limit: Free Unlimited Check + Real Caps" />
       <meta property="og:description" content="250 free words a month for AI detection and humanizing, and the real caps behind 'unlimited' claims." />
       <meta property="og:site_name" content="AI Free Text Pro" />
       <meta name="twitter:card" content="summary_large_image" />
@@ -87,18 +88,20 @@ const FreeWordLimit = () => (
 
         <article className="prose prose-lg max-w-none dark:prose-invert">
           <h1 className="text-4xl md:text-5xl font-bold mb-4 leading-tight">
-            AI Detector Word Limit: How Many Words Can You Check Free?
+            AI Detector With No Word Limit: What's Really Free
           </h1>
 
           <QuickAnswer
             question="Is there a free AI detector with no word limit?"
-            answer="Not on a free plan. Our free plan gives you 250 words a month for AI detection and humanizing, with up to 10 checks a day and no card. Every check and rewrite costs compute, so any tool promising unlimited free use is hiding the cap somewhere else. Paid plans remove the daily limits."
+            answer="For a quick check, yes: the writing-signal checker below has no word limit and no sign-up, because it runs in your browser. For model-based detection, our free plan gives you 250 words a month for AI detection and humanizing, with up to 10 checks a day and no card. Every check and rewrite costs compute, so any tool promising unlimited free use is hiding the cap somewhere else. Paid plans remove the daily limits."
           />
 
           <p className="text-xl text-muted-foreground">
             "Unlimited words" is the most oversold phrase in this category. Here is the honest version of the numbers,
             what each limit actually restricts, and how to get the most out of a free allowance.
           </p>
+
+          <AISignalChecker source="word_limit" title="Free AI check, no word limit" className="my-8" />
 
           <KeyTakeaways
             points={[

@@ -18,9 +18,7 @@ import { PostHowToSchema } from "@/components/PostHowToSchema";
 
 const relatedArticles = [
   {
-    title: "Best AI Essay Checker: Self-Check Before Submitting", description: "Comprehensive comparison of AI essay checkers for students in 2026.", href: "/blog/ai-essay-checker", category: "Tools"
-  }, {
-    title: "Free AI Content Detector Comparison", description: "Side-by-side accuracy testing of free AI detection tools.", href: "/blog/free-ai-content-detector", category: "Comparison"
+    title: "Best AI Essay Checker: Self-Check Before Submitting", description: "Comprehensive comparison of AI essay checkers for students in 2026.", href: "/ai-checker", category: "Tools"
   }, {
     title: "How to Check If Something Was Written by AI", description: "Manual and automated methods for detecting AI-generated text.", href: "/blog/how-to-check-if-written-by-ai", category: "How-To Guide"
   }, {

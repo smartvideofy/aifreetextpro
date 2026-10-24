@@ -21,7 +21,7 @@ const BypassZeroGPTDetection = () => {
     }, {
       title: "Bypass Winston AI Detection", description: "Learn strategies to reduce Winston AI detection scores while maintaining content quality.", href: "/blog/bypass-winston-ai-detection", category: "How-To Guide"
     }, {
-      title: "How AI Detectors Score Text: A Behind-the-Scenes Look", description: "Breaking down the metrics AI detectors use in plain language. Understand perplexity, burstiness, and confidence scores.", href: "/blog/how-ai-detectors-score-text", category: "Technical"
+      title: "How AI Detectors Score Text: A Behind-the-Scenes Look", description: "Breaking down the metrics AI detectors use in plain language. Understand perplexity, burstiness, and confidence scores.", href: "/blog/how-ai-detectors-work", category: "Technical"
     }, {
       title: "Bypass Copyleaks AI Detection", description: "Strategies to reduce Copyleaks AI detection scores effectively.", href: "/blog/bypass-copyleaks-ai-detection", category: "How-To Guide"
     }
@@ -196,7 +196,7 @@ const BypassZeroGPTDetection = () => {
               <div className="flex items-start gap-3">
                 <Lightbulb className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
                 <p className="text-muted-foreground">
-                  Even well-crafted AI text can be flagged without natural adjustments. Learn about <Link to="/blog/signal-vs-noise-human-text" className="text-primary hover:underline">what makes text human</Link> to understand why.
+                  Even well-crafted AI text can be flagged without natural adjustments. Learn about <Link to="/blog/how-ai-detectors-work" className="text-primary hover:underline">what makes text human</Link> to understand why.
                 </p>
               </div>
             </div>
@@ -275,7 +275,7 @@ const BypassZeroGPTDetection = () => {
                   </li>
                 </ul>
                 <p className="text-sm text-muted-foreground mt-4">
-                  Learn <Link to="/blog/how-ai-detectors-score-text" className="text-primary hover:underline">how AI detectors score text</Link> to understand perplexity metrics.
+                  Learn <Link to="/blog/how-ai-detectors-work" className="text-primary hover:underline">how AI detectors score text</Link> to understand perplexity metrics.
                 </p>
               </div>
 

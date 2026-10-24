@@ -15,9 +15,8 @@ import { SpeakableSchema } from "@/components/SpeakableSchema";
 import { PostHowToSchema } from "@/components/PostHowToSchema";
 
 const relatedArticles = [
-  { title: "Best Free AI Humanizers (2026)", description: "Compare the top free AI humanizer tools.", href: "/blog/best-free-ai-humanizer-tools-2025", category: "Tools" },
+  { title: "Best Free AI Humanizers (2026)", description: "Compare the top free AI humanizer tools.", href: "/blog/best-free-ai-humanizer-2026", category: "Tools" },
   { title: "Humanize AI Text Without Losing Your Voice", description: "Proven strategies for natural AI text.", href: "/blog/humanize-ai-text-without-losing-voice", category: "How-To Guide" },
-  { title: "Top 10 AI Humanizer Tools", description: "Complete rankings and reviews.", href: "/blog/top-10-ai-humanizer-tools-2025", category: "Comparison" },
   { title: "Paraphrasing vs. Humanizing", description: "Why simple paraphrasing is not enough.", href: "/blog/paraphrasing-vs-humanizing", category: "Marketing" },
 ];
 

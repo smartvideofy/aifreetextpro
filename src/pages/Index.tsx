@@ -178,7 +178,7 @@ const Index = () => {
           <div className="container mx-auto px-4 relative z-10">
             <div className="text-center space-y-6 md:space-y-8 max-w-4xl mx-auto">
               {/* Social Proof Badge */}
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-sm animate-fade-in">
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-sm">
                 <div className="flex -space-x-1.5">
                   {["MR", "JC", "SP", "EW"].map((initials, i) => (
                     <div 
@@ -200,19 +200,19 @@ const Index = () => {
               </div>
 
               {/* Main Headline with Gradient */}
-              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold leading-[1.1] animate-fade-in" style={{ animationDelay: "100ms" }}>
+              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold leading-[1.1]">
                 Free AI Detector
                 <br />
                 <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">&</span> Humanizer
               </h1>
               
               {/* Subheadline - Refined */}
-              <p className="hero-description text-base sm:text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed animate-fade-in px-4" style={{ animationDelay: "200ms" }}>
+              <p className="hero-description text-base sm:text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed px-4">
                 Detect AI-generated content with 98% accuracy. Transform robotic text into natural, human writing in seconds.
               </p>
 
               {/* Trust Indicators - Minimal inline */}
-              <div className="key-features flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-sm text-muted-foreground pt-2 animate-fade-in" style={{ animationDelay: "300ms" }}>
+              <div className="key-features flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-sm text-muted-foreground pt-2">
                 <div className="flex items-center gap-1.5">
                   <CheckCircle className="w-4 h-4 text-primary" />
                   <span>Free forever</span>
@@ -232,7 +232,7 @@ const Index = () => {
               </div>
               
               {/* CTA Buttons - Desktop-optimized sizing */}
-              <div className="flex flex-col sm:flex-row gap-4 justify-center pt-6 animate-fade-in" style={{ animationDelay: "400ms" }}>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center pt-6">
                 <a href="https://app.aifreetextpro.com/" target="_blank" rel="noopener noreferrer">
                   <Button
                     size="xl"
@@ -256,7 +256,7 @@ const Index = () => {
               </div>
 
               {/* Product Mockup Visual */}
-              <div className="mt-12 md:mt-20 animate-fade-in" style={{ animationDelay: "600ms" }}>
+              <div className="mt-12 md:mt-20">
                 <ProductMockup />
               </div>
             </div>
@@ -1078,7 +1078,7 @@ const Index = () => {
                 </Card>
               </Link>
 
-              <Link to="/blog/pass-all-ai-detectors-guide">
+              <Link to="/blog/bypass-ai-detection-guide">
                 <Card className="p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 cursor-pointer h-full">
                   <div className="space-y-3">
                     <div className="w-12 h-12 rounded-lg bg-secondary/10 flex items-center justify-center">

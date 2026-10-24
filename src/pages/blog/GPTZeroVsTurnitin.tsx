@@ -14,10 +14,10 @@ import { AuthorSchema } from "@/components/AuthorSchema";
 import { SpeakableSchema } from "@/components/SpeakableSchema";
 
 const relatedArticles = [
-  { title: "AI Detection Tools Compared", description: "GPTZero vs AI Free Text Pro vs Rewritify.", href: "/blog/ai-detection-tools-compared-2025", category: "Comparison" },
+  { title: "AI Detection Tools Compared", description: "GPTZero vs AI Free Text Pro vs Rewritify.", href: "/blog/best-ai-detector-2026", category: "Comparison" },
   { title: "AI Detection False Positives", description: "Why human writing gets wrongly flagged.", href: "/blog/ai-detection-false-positives", category: "Educational" },
   { title: "Originality.AI Review", description: "Accuracy, pricing, and bypass methods.", href: "/blog/originality-ai-review-how-to-beat", category: "Detector Review" },
-  { title: "How AI Detectors Score Text", description: "Perplexity, burstiness, and confidence scores.", href: "/blog/how-ai-detectors-score-text", category: "Technical" },
+  { title: "How AI Detectors Score Text", description: "Perplexity, burstiness, and confidence scores.", href: "/blog/how-ai-detectors-work", category: "Technical" },
 ];
 
 const GPTZeroVsTurnitin = () => {

@@ -14,11 +14,11 @@ import { FAQSection } from "@/components/FAQSection";
 import { AuthorSchema } from "@/components/AuthorSchema";
 import { SpeakableSchema } from "@/components/SpeakableSchema";
 import { PostHowToSchema } from "@/components/PostHowToSchema";
+import { AISignalChecker } from "@/components/AISignalChecker";
 
 const relatedArticles = [
   { title: "How AI Detectors Work", description: "The science behind AI text analysis.", href: "/blog/how-ai-detectors-work", category: "Educational" },
-  { title: "How AI Detectors Score Text", description: "Understanding perplexity and confidence scores.", href: "/blog/how-ai-detectors-score-text", category: "Technical" },
-  { title: "AI Detection Tools Compared", description: "GPTZero vs AI Free Text Pro vs Rewritify.", href: "/blog/ai-detection-tools-compared-2025", category: "Comparison" },
+  { title: "Free AI Detector", description: "Check any text for AI in seconds, no sign-up.", href: "/ai-checker", category: "Tool" },
   { title: "GPTZero vs Turnitin", description: "Which detector is more accurate?", href: "/blog/gptzero-vs-turnitin-comparison", category: "Comparison" }
 ];
 
@@ -63,7 +63,7 @@ const HowToCheckIfWrittenByAI = () => {
             "headline": "Did AI Write This? How to Check Text for AI (2026)",
             "author": { "@type": "Person", "name": "Dr. Sarah Chen", "url": "https://aifreetextpro.com/team#sarah-chen" },
             "publisher": { "@type": "Organization", "name": "AI Free Text Pro", "logo": { "@type": "ImageObject", "url": "https://aifreetextpro.com/favicon.ico" } },
-            "datePublished": "2026-02-28", "dateModified": "2026-08-20",
+            "datePublished": "2026-02-28", "dateModified": "2026-10-24",
             "mainEntityOfPage": "https://aifreetextpro.com/blog/how-to-check-if-written-by-ai", "wordCount": 1100
           })}
         </script>
@@ -84,7 +84,7 @@ const HowToCheckIfWrittenByAI = () => {
         headline="Did AI Write This? How to Check Text for AI (2026)"
         description="Free methods and tools to check if text was written by AI. Step-by-step guide for teachers, editors, and employers with accuracy comparisons."
         datePublished="2026-02-28"
-        dateModified="2026-08-20"
+        dateModified="2026-10-24"
       />
       <SpeakableSchema
         pageUrl="https://aifreetextpro.com/blog/how-to-check-if-written-by-ai"
@@ -122,6 +122,8 @@ const HowToCheckIfWrittenByAI = () => {
                     <li>6. Ask for drafts or version history before deciding.</li>
                   </ul>
                 </div>
+
+                <AISignalChecker source="how_to_check" title="Did AI write this? Check it now" className="my-8" />
 
               <p className="text-xl text-muted-foreground">If you are asking "did AI write this?", there are two answers worth having: what a free AI writing checker reports, and what four manual signals tell you. Teachers, editors, and hiring managers should use both, because neither one alone is proof. Need the tool itself? Run the text through our <Link to="/ai-checker" className="text-primary hover:underline">free AI checker</Link> first, then work through the checklist below.</p>
               <ReviewedBy name="Dr. Sarah Chen" role="AI Ethics Researcher" slug="sarah-chen" />
@@ -169,14 +171,14 @@ const HowToCheckIfWrittenByAI = () => {
                     </TableRow>
                   </TableHeader>
                   <TableBody>
-                    <TableRow><TableCell className="font-medium">AI Free Text Pro</TableCell><TableCell>Unlimited checks</TableCell><TableCell>92%</TableCell><TableCell>All-purpose detection</TableCell><TableCell>2026-03-12</TableCell></TableRow>
+                    <TableRow><TableCell className="font-medium">AI Free Text Pro</TableCell><TableCell>Signal check above: no limit. Full detector: 250 words/month</TableCell><TableCell>92%</TableCell><TableCell>All-purpose detection</TableCell><TableCell>2026-03-12</TableCell></TableRow>
                     <TableRow><TableCell className="font-medium">GPTZero</TableCell><TableCell>10K chars/month</TableCell><TableCell>88%</TableCell><TableCell>Academic papers</TableCell><TableCell>2026-03-12</TableCell></TableRow>
                     <TableRow><TableCell className="font-medium">Copyleaks</TableCell><TableCell>Limited scans</TableCell><TableCell>85%</TableCell><TableCell>Business content</TableCell><TableCell>2026-03-10</TableCell></TableRow>
                     <TableRow><TableCell className="font-medium">ZeroGPT</TableCell><TableCell>15K chars/check</TableCell><TableCell>79%</TableCell><TableCell>Quick checks</TableCell><TableCell>2026-03-10</TableCell></TableRow>
                   </TableBody>
                 </Table>
               </div>
-              <p>For the most reliable results, run suspicious text through at least two different detectors. If both flag it as AI, you can be reasonably confident. If they disagree, the text is likely in a gray zone, either lightly AI-assisted or an unusual human writing style. Our <Link to="/blog/ai-detection-tools-compared-2025" className="text-primary hover:underline">detailed comparison of detection tools</Link> covers the strengths and weaknesses of each.</p>
+              <p>The checker at the top of this page covers the first pass for free: it reads sentence rhythm, stock AI phrases and concrete detail in your browser, with no word limit. For the most reliable results, run suspicious text through at least two different detectors. If both flag it as AI, you can be reasonably confident. If they disagree, the text is likely in a gray zone, either lightly AI-assisted or an unusual human writing style. Our <Link to="/blog/best-ai-detector-2026" className="text-primary hover:underline">comparison of the best AI detectors</Link> covers the strengths and weaknesses of each.</p>
             </section>
 
             <section>
@@ -190,7 +192,7 @@ const HowToCheckIfWrittenByAI = () => {
               <p>AI-generated essays often follow a rigid pattern: introduction with thesis, three body paragraphs with topic sentences, conclusion restating the thesis. While this is "correct" essay structure, real student writing tends to be messier, with tangents, varied paragraph lengths, and occasional structural quirks.</p>
               <h3>Emotional and Personal Absence</h3>
               <p>AI text rarely includes genuine personal anecdotes, emotional reactions, or subjective opinions stated with conviction. If an essay about a "personal experience" reads like a textbook entry, it may be AI-generated.</p>
-              <p>These manual signals align with the <Link to="/blog/how-ai-detectors-score-text" className="text-primary hover:underline">metrics AI detectors analyze programmatically</Link>, particularly perplexity and burstiness.</p>
+              <p>These manual signals align with the <Link to="/blog/how-ai-detectors-work" className="text-primary hover:underline">metrics AI detectors analyze programmatically</Link>, particularly perplexity and burstiness.</p>
             </section>
 
             <section>
@@ -234,6 +236,28 @@ const HowToCheckIfWrittenByAI = () => {
             </section>
 
             <section>
+              <h2>Common Mistakes When Checking for AI</h2>
+              <ul>
+                <li><strong>Trusting one score.</strong> Detectors disagree on the same passage all the time. One high score is a reason to look closer, not a conclusion.</li>
+                <li><strong>Checking a single paragraph.</strong> Under about 150 words there isn't enough signal; results swing from 10% to 90% on minor edits.</li>
+                <li><strong>Ignoring the writer's baseline.</strong> Formal, formulaic or second-language writing reads as "AI-like" to every detector. Compare against the person's earlier work.</li>
+                <li><strong>Reading synonyms as proof.</strong> A paragraph full of "moreover" and "delve" is a strong hint, but people use those words too. Look for several signals together.</li>
+                <li><strong>Skipping the conversation.</strong> Asking the writer to walk through their argument settles more cases than any tool.</li>
+              </ul>
+            </section>
+
+            <section>
+              <h2>Signs of AI-Generated Text by Type</h2>
+              <ul>
+                <li><strong>Essays:</strong> perfect five-paragraph structure, a thesis restated word for word in the conclusion, no quoted sources with page numbers.</li>
+                <li><strong>Emails and cover letters:</strong> "I hope this message finds you well", enthusiasm with no specifics about the company or role.</li>
+                <li><strong>Blog posts and articles:</strong> "In today's fast-paced world" openers, headings every 150 words, a summary section that repeats every heading.</li>
+                <li><strong>Social posts:</strong> emoji at the start of each line, three hashtags, a question at the end asking for engagement.</li>
+                <li><strong>Reviews and testimonials:</strong> balanced pros and cons with no detail about actual use.</li>
+              </ul>
+            </section>
+
+            <section>
               <h2>A Practical Workflow for Checking Text</h2>
               <ol>
                 <li><strong>Step 1:</strong> Run the text through AI Free Text Pro's free detector for an initial score.</li>
@@ -247,9 +271,9 @@ const HowToCheckIfWrittenByAI = () => {
 
 
             <div className="not-prose bg-primary/5 border border-primary/20 rounded-xl p-8 text-center my-12">
-              <h2 className="text-2xl font-bold mb-3">Check Any Text for AI Content - Free</h2>
-              <p className="text-muted-foreground mb-6">Paste any text and get an instant AI probability score. No sign-up required.</p>
-              <a href="https://app.aifreetextpro.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center px-6 py-3 bg-primary text-primary-foreground rounded-lg font-semibold hover:bg-primary/90 transition-colors">
+              <h2 className="text-2xl font-bold mb-3">Get a Full AI Score - Free</h2>
+              <p className="text-muted-foreground mb-6">Sentence-level AI probability and a built-in humanizer. Free account, no card.</p>
+              <a href="https://app.aifreetextpro.com/detector?utm_source=blog&utm_medium=organic&utm_campaign=how_to_check" target="_blank" rel="noopener noreferrer" className="inline-flex items-center px-6 py-3 bg-primary text-primary-foreground rounded-lg font-semibold hover:bg-primary/90 transition-colors">
                 Try Free AI Detector <ArrowLeft className="w-4 h-4 ml-2 rotate-180" />
               </a>
             </div>

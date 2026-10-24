@@ -15,7 +15,7 @@ import { AuthorSchema } from "@/components/AuthorSchema";
 
 const relatedArticles = [
   {
-    title: "AI Detection Tools Compared (2026 Edition)", description: "Comprehensive comparison of the top AI detection tools in 2026", href: "/blog/ai-detection-tools-compared-2025", category: "Comparison"
+    title: "AI Detection Tools Compared (2026 Edition)", description: "Comprehensive comparison of the top AI detection tools in 2026", href: "/blog/best-ai-detector-2026", category: "Comparison"
   }, {
     title: "How AI Detectors Work: Inside the Science", description: "Understand the technology behind AI text detection algorithms", href: "/blog/how-ai-detectors-work", category: "Educational"
   }, {
@@ -156,7 +156,7 @@ export default function ZeroGPTComparison() {
                   <li><strong>100% Human-Written Content:</strong> Essays, articles, and creative writing from professional writers</li>
                   <li><strong>100% AI-Generated Content:</strong> Text from ChatGPT, Claude, and Gemini</li>
                   <li><strong>Mixed Content:</strong> AI-assisted writing with human editing</li>
-                  <li><strong>Humanized AI Text:</strong> AI content processed through <Link to="/blog/best-free-ai-humanizer-tools-2025" className="text-primary hover:underline">humanizer tools</Link></li>
+                  <li><strong>Humanized AI Text:</strong> AI content processed through <Link to="/blog/best-free-ai-humanizer-2026" className="text-primary hover:underline">humanizer tools</Link></li>
                   <li><strong>Technical Writing:</strong> Code documentation and research papers</li>
                 </ul>
               </section>

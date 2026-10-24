@@ -14,6 +14,7 @@ import { ArrowLeft, Calendar, Clock, User, Sparkles, BarChart, Shield, Zap } fro
 import { Button } from "@/components/ui/button";
 import { AuthorSchema } from "@/components/AuthorSchema";
 import { PostHowToSchema } from "@/components/PostHowToSchema";
+import { AISignalChecker } from "@/components/AISignalChecker";
 
 const relatedArticles = [
   {
@@ -43,6 +44,7 @@ const relatedArticles = [
 ];
 
 const faqs = [
+  { question: "Does Gemini watermark its text?", answer: "Yes. Google adds SynthID-Text, a statistical watermark built into Gemini's word choices. Deleting characters doesn't remove it; rewriting the text does. Our free AI watermark remover cleans hidden characters, and the humanizer handles the wording." },
   {
     question: "Why is Gemini text easier to detect than ChatGPT?",
     answer: "Gemini 2.5 Pro produces text with very consistent sentence structure and frequent use of bullet-point style explanations even in prose. In our 220-sample test, raw Gemini hit 81-89% detection rates, roughly 7-12 percentage points higher than equivalent ChatGPT output."
@@ -78,7 +80,7 @@ const HumanizeGeminiOutput = () => {
     "author": { "@type": "Person", "name": "Dr. Sarah Chen", "url": "https://aifreetextpro.com/team#dr-sarah-chen" },
     "publisher": { "@type": "Organization", "name": "AI Free Text Pro", "logo": { "@type": "ImageObject", "url": "https://aifreetextpro.com/favicon.ico" } },
     "datePublished": "2026-06-01",
-    "dateModified": "2026-06-01",
+    "dateModified": "2026-10-24",
     "mainEntityOfPage": { "@type": "WebPage", "@id": "https://aifreetextpro.com/blog/humanize-gemini-output" },
     "wordCount": 1000
   };
@@ -107,7 +109,7 @@ const HumanizeGeminiOutput = () => {
         <meta property="og:url" content="https://aifreetextpro.com/blog/humanize-gemini-output" />
         <meta property="og:site_name" content="AI Free Text Pro" />
         <meta property="article:published_time" content="2026-06-01" />
-        <meta property="article:modified_time" content="2026-06-01" />
+        <meta property="article:modified_time" content="2026-10-24" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="How to Humanize Gemini Output (2026)" />
         <meta name="twitter:description" content="Real test data: Turnitin scores drop from 84% to 7%." />
@@ -126,7 +128,7 @@ const HumanizeGeminiOutput = () => {
         headline="How to Humanize Gemini Output (2026): Bypass AI Detection"
         description="Humanize Gemini 2.5 Pro and 3.1 Pro output to reduce false AI flags. Real test data: Turnitin scores drop from 84% to 7% with our 5-step workflow."
         datePublished="2026-06-01"
-        dateModified="2026-06-09"
+        dateModified="2026-10-24"
       />
 
       <SpeakableSchema pageUrl="https://aifreetextpro.com/blog/humanize-gemini-output" pageName="How to Humanize Gemini Output" />
@@ -169,6 +171,8 @@ const HumanizeGeminiOutput = () => {
               question="How do you humanize Gemini output to bypass AI detection?"
               answer="Paste Gemini text into AI Free Text Pro, choose the Academic, Professional, or Casual tone, and process. In our 220-sample test this dropped detection scores from an average of 84% to 7% across Turnitin, GPTZero, Originality.AI, and Copyleaks while preserving factual accuracy and structure."
             />
+
+            <AISignalChecker source="humanize_gemini" title="Check your Gemini text for AI signals" className="my-8" />
 
             <KeyTakeaways points={[
               "Raw Gemini output is the most detectable of major AI models at 81-89%",

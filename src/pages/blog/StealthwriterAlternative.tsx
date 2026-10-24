@@ -14,7 +14,7 @@ import ReviewedBy from "@/components/ReviewedBy";
 import { AuthorSchema } from "@/components/AuthorSchema";
 
 const relatedArticles = [
-  { title: "Undetectable AI Alternative", description: "96% vs 89% bypass test results.", href: "/blog/undetectable-ai-vs-ai-free-text-pro", category: "Comparison" }, { title: "Quillbot vs AI Free Text Pro", description: "Paraphraser vs humanizer head-to-head.", href: "/blog/quillbot-vs-ai-free-text-pro", category: "Comparison" }, { title: "Top 10 AI Humanizer Tools", description: "Full 2026 rankings.", href: "/blog/top-10-ai-humanizer-tools-2025", category: "Comparison" }, { title: "Best Free AI Humanizer 2026", description: "Top free humanizers compared.", href: "/blog/best-free-ai-humanizer-2026", category: "Tools" },
+  { title: "Undetectable AI Alternative", description: "96% vs 89% bypass test results.", href: "/blog/undetectable-ai-vs-ai-free-text-pro", category: "Comparison" }, { title: "Quillbot vs AI Free Text Pro", description: "Paraphraser vs humanizer head-to-head.", href: "/blog/quillbot-vs-ai-free-text-pro", category: "Comparison" }, { title: "Top 10 AI Humanizer Tools", description: "Full 2026 rankings.", href: "/blog/best-free-ai-humanizer-2026", category: "Comparison" }
 ];
 
 const StealthwriterAlternative = () => {

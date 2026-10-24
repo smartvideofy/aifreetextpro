@@ -17,11 +17,11 @@ const relatedArticles = [
   {
     title: "Write AI-Resistant Content in 2026", description: "Strategies to create content that passes AI detection", href: "/blog/write-ai-resistant-content", category: "Guides"
   }, {
-    title: "AI Detection Comparison: Finding the Best Tool", description: "Accuracy, performance, and real-world testing results", href: "/blog/ai-detection-tools-compared-2025", category: "Comparison"
+    title: "AI Detection Comparison: Finding the Best Tool", description: "Accuracy, performance, and real-world testing results", href: "/blog/best-ai-detector-2026", category: "Comparison"
   }, {
     title: "How AI Detectors Work", description: "Understanding the technology behind AI detection", href: "/blog/how-ai-detectors-work", category: "Technical"
   }, {
-    title: "Top 10 AI Humanizer Tools for 2026", description: "Best tools to make AI content sound human", href: "/blog/top-10-ai-humanizer-tools-2025", category: "Tools"
+    title: "Top 10 AI Humanizer Tools for 2026", description: "Best tools to make AI content sound human", href: "/blog/best-free-ai-humanizer-2026", category: "Tools"
   }
 ];
 
@@ -496,7 +496,7 @@ export default function Top10AIWritingTools2026() {
               <section>
                 <h2 className="text-3xl font-bold mb-4">Related Resources</h2>
                 <ul className="space-y-2">
-                  <li><Link to="/blog/top-10-ai-humanizer-tools-2025" className="text-primary hover:underline">Top 10 AI Humanizer Tools for 2026</Link></li>
+                  <li><Link to="/blog/best-free-ai-humanizer-2026" className="text-primary hover:underline">Top 10 AI Humanizer Tools for 2026</Link></li>
                   <li><Link to="/blog/how-ai-detectors-work" className="text-primary hover:underline">How AI Detectors Work: The Technology Behind Detection</Link></li>
                   <li><Link to="/blog/ai-powered-seo-content-2026" className="text-primary hover:underline">AI-Powered SEO Content in 2026</Link></li>
                   <li><Link to="/blog/editing-ai-drafts-human-editor" className="text-primary hover:underline">Editing AI Drafts Like a Human Editor</Link></li>

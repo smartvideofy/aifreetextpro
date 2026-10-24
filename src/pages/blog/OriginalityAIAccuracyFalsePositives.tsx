@@ -14,7 +14,7 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@
 import { AuthorSchema } from "@/components/AuthorSchema";
 
 const relatedArticles = [
-  { title: "Originality.AI Review", description: "Full review of accuracy, pricing, and features.", href: "/blog/originality-ai-review-how-to-beat", category: "Detector Review" }, { title: "AI Detection False Positives", description: "Why human writing gets incorrectly flagged.", href: "/blog/ai-detection-false-positives", category: "Educational" }, { title: "Pass All AI Detectors Guide", description: "The definitive guide to human-like content.", href: "/blog/pass-all-ai-detectors-guide", category: "How-To Guide" }, { title: "Bypass Originality.AI", description: "Strategies for Originality.AI detection.", href: "/bypass-originality-ai", category: "How-To Guide" }
+  { title: "Originality.AI Review", description: "Full review of accuracy, pricing, and features.", href: "/blog/originality-ai-review-how-to-beat", category: "Detector Review" }, { title: "AI Detection False Positives", description: "Why human writing gets incorrectly flagged.", href: "/blog/ai-detection-false-positives", category: "Educational" }, { title: "Pass All AI Detectors Guide", description: "The definitive guide to human-like content.", href: "/blog/bypass-ai-detection-guide", category: "How-To Guide" }, { title: "Bypass Originality.AI", description: "Strategies for Originality.AI detection.", href: "/bypass-originality-ai", category: "How-To Guide" }
 ];
 
 const faqs = [
@@ -151,7 +151,7 @@ const OriginalityAIAccuracyFalsePositives = () => {
               <h2>What to Do If You Are Falsely Flagged</h2>
               <ol>
                 <li><strong>Do not panic.</strong> A single detector result is not proof. It is a probability estimate with known error rates.</li>
-                <li><strong>Run your text through other detectors.</strong> If GPTZero and Copyleaks show different results, this inconsistency suggests a false positive. Cross-referencing with our <Link to="/blog/pass-all-ai-detectors-guide" className="text-primary hover:underline">guide to passing all detectors</Link> can help you understand the landscape.</li>
+                <li><strong>Run your text through other detectors.</strong> If GPTZero and Copyleaks show different results, this inconsistency suggests a false positive. Cross-referencing with our <Link to="/blog/bypass-ai-detection-guide" className="text-primary hover:underline">guide to passing all detectors</Link> can help you understand the landscape.</li>
                 <li><strong>Provide process documentation.</strong> Share your drafts, research notes, browser history, or writing timeline. Real writing has a messy creation process; AI-generated content appears fully formed.</li>
                 <li><strong>Write a response.</strong> If accused in an academic or professional context, calmly explain that AI detectors have documented false positive rates and provide evidence of your authorship.</li>
                 <li><strong>Know your rights.</strong> Many institutions now have appeal processes specifically for AI detection disputes. Use them.</li>

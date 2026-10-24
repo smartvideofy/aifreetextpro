@@ -27,7 +27,7 @@ const DESCRIPTION =
 const relatedArticles = [
   { title: "How to Humanize Claude Output", description: "A 5-step workflow for rewriting Claude drafts into natural writing.", href: "/blog/humanize-claude-output", category: "How-To Guide" },
   { title: "How AI Detectors Work", description: "Perplexity, burstiness and the statistics behind AI detection.", href: "/blog/how-ai-detectors-work", category: "Technical" },
-  { title: "What Is Perplexity and Burstiness?", description: "The two statistical measures behind most AI detection scores.", href: "/blog/what-is-perplexity-burstiness", category: "Technical" },
+  { title: "What Is Perplexity and Burstiness?", description: "The two statistical measures behind most AI detection scores.", href: "/blog/ai-detection-patterns-explained", category: "Technical" },
   { title: "Paraphrasing vs Humanizing", description: "Why synonym swapping is not the same as deep rewriting.", href: "/blog/paraphrasing-vs-humanizing", category: "Comparison" },
 ];
 
@@ -194,7 +194,7 @@ const ClaudeWatermarkRemover = () => {
               <li>or a simple piece of metadata that can be deleted.</li>
             </ul>
             <p>Instead, Anthropic's system influences certain word choices during text generation. When the model has several reasonable ways to express an idea, the watermarking system can influence those choices according to a statistical pattern. Across enough text, that pattern can potentially be detected by a system with the appropriate detection mechanism.</p>
-            <p>This is why the recent announcement has created so much interest in Claude watermark removal. If you want the statistical background first, our guide to <Link to="/blog/what-is-perplexity-burstiness">perplexity and burstiness</Link> explains how these token-level probabilities are measured, and <Link to="/blog/how-ai-detectors-work">how AI detectors work</Link> covers how classifiers differ from watermark detection.</p>
+            <p>This is why the recent announcement has created so much interest in Claude watermark removal. If you want the statistical background first, our guide to <Link to="/blog/ai-detection-patterns-explained">perplexity and burstiness</Link> explains how these token-level probabilities are measured, and <Link to="/blog/how-ai-detectors-work">how AI detectors work</Link> covers how classifiers differ from watermark detection.</p>
             <p>A user cannot simply open a document, search for the watermark, and delete it.</p>
             <p>The text itself has to be transformed.</p>
 

@@ -29,10 +29,6 @@ export const blogPosts = [
   {
     slug: "free-ai-detector", title: "Free AI Detector: How to Check Text and Read the Score (2026)", excerpt: "How free AI detectors work, what the scores really mean, where the free limits sit, and a 4-step checking workflow that avoids the false-positive trap.", date: "2026-09-02", readTime: "15 min read", category: "Tools"
   }, {
-    slug: "ai-writing-checker", title: "AI Writing Checker: What It Checks and How to Use One (2026)", excerpt: "An AI writing checker flags predictable prose, not plagiarism. What it measures, how it differs from grammar and plagiarism tools, and a review workflow that improves the writing.", date: "2026-09-02", readTime: "14 min read", category: "Tools"
-  }, {
-    slug: "paraphrasing-tool", title: "Paraphrasing Tool Guide 2026: How to Rewrite Text Properly", excerpt: "What a paraphrasing tool actually does, when synonym swapping fails, and a 5-step rewriting workflow that keeps meaning, avoids plagiarism and reads as your own writing.", date: "2026-09-02", readTime: "14 min read", category: "Tools"
-  }, {
     slug: "humanize-deepseek-output", title: "How to Humanize DeepSeek Output (2026 Guide)", excerpt: "DeepSeek drafts get flagged by Turnitin, GPTZero and Originality.AI for predictable reasons. A tested 6-step workflow to rewrite DeepSeek text so it reads as your own writing.", date: "2026-08-27", readTime: "16 min read", category: "How-To Guide"
   }, {
     slug: "synthid-watermark-remover", title: "SynthID Watermark Remover: How to Remove Gemini's AI Text Watermark", excerpt: "Gemini text carries an invisible SynthID watermark. How SynthID-Text works, why Unicode cleaners and copy/paste do not remove it, and how substantial rewriting disrupts the signal.", date: "2026-08-26", readTime: "17 min read", category: "Technical"
@@ -77,8 +73,6 @@ export const blogPosts = [
   }, {
     slug: "ai-blog-post-generator", title: "AI Blog Post Generator That Passes AI Detection (2026)", excerpt: "Best AI blog generators compared. Learn the workflow for producing undetectable blog content at scale.", date: "2026-03-08", readTime: "12 min read", category: "Marketing"
   }, {
-    slug: "ai-essay-checker", title: "Best AI Essay Checker: Self-Check Before You Submit (2026)", excerpt: "Free AI essay checkers compared. Self-check your essay before your professor does with these 7 tools.", date: "2026-03-08", readTime: "11 min read", category: "Tools"
-  }, {
     slug: "make-ai-writing-creative", title: "How to Make AI Writing More Creative and Original", excerpt: "12 techniques to transform generic AI text into creative, distinctive writing that surprises and engages readers.", date: "2026-03-08", readTime: "13 min read", category: "Writing Craft"
   }, {
     slug: "ai-content-at-scale", title: "AI Content at Scale: 100+ Articles Without Getting Flagged", excerpt: "Production workflow for 100+ humanized AI articles per month. Complete guide for agencies and content teams.", date: "2026-03-08", readTime: "13 min read", category: "Marketing"
@@ -119,8 +113,6 @@ export const blogPosts = [
   }, {
     slug: "turnitin-appeal-ai-detection", title: "Is Turnitin Wrong? How to Appeal AI Detection", excerpt: "Step-by-step guide to appealing Turnitin AI detection false positives. Email templates, evidence gathering, and how to prove your writing is human.", date: "2026-03-08", readTime: "14 min read", category: "Academic"
   }, {
-    slug: "free-ai-content-detector", title: "Free AI Content Detector: Check Text Online (2026)", excerpt: "Compare the best free AI content detectors with accuracy data for ChatGPT, Claude, and Gemini. Find out which tools actually work.", date: "2026-03-08", readTime: "11 min read", category: "Tools"
-  }, {
     slug: "chatgpt-college-essays", title: "ChatGPT for College Essays: What Professors Detect", excerpt: "What college professors actually use to detect ChatGPT essays. University policies, detection scores, and responsible AI use in 2026.", date: "2026-03-08", readTime: "13 min read", category: "Academic"
   }, {
     slug: "ai-text-converter", title: "AI Text Converter: AI to Human Writing Instantly", excerpt: "Turn AI-generated writing into human writing instantly. Top 5 converters compared with detection test results and step-by-step guide.", date: "2026-03-08", readTime: "11 min read", category: "Tools"
@@ -137,13 +129,9 @@ export const blogPosts = [
   }, {
     slug: "best-ai-essay-writer-undetectable", title: "Best AI Essay Writer That Can't Be Detected (2026)", excerpt: "Discover the top AI essay writing workflows that pass Turnitin, GPTZero, and Originality.AI. Real test results and step-by-step guide.", date: "2026-03-05", readTime: "14 min read", category: "Academic"
   }, {
-    slug: "ai-paraphrasing-tool-avoid-plagiarism", title: "AI Paraphrasing Tool to Avoid Plagiarism (2026)", excerpt: "Compare AI paraphrasing tools for plagiarism avoidance. See which tools pass AI detection and which fail with real test results.", date: "2026-03-05", readTime: "12 min read", category: "Tools"
-  }, {
     slug: "ai-for-research-papers", title: "AI for Research Papers: Use AI Without Consequences", excerpt: "How graduate students and researchers can use AI tools ethically for thesis writing, literature reviews, and journal submissions.", date: "2026-03-04", readTime: "15 min read", category: "Academic"
   }, {
     slug: "ai-writing-business-reports-emails", title: "AI Writing for Business Reports & Emails (2026)", excerpt: "Professional guide to using AI for business reports, client emails, and proposals. Match brand voice and pass compliance checks.", date: "2026-03-04", readTime: "13 min read", category: "Professional"
-  }, {
-    slug: "best-ai-detector-for-teachers", title: "Best AI Detector for Teachers & Professors (2026)", excerpt: "Top 5 AI detectors ranked for classroom use. Accuracy rates, false positives, pricing, and practical advice for educators.", date: "2026-03-04", readTime: "14 min read", category: "Detector Review"
   }, {
     slug: "how-to-cite-ai-generated-content", title: "How to Cite AI-Generated Content: APA, MLA, Chicago & Harvard (2026)", excerpt: "Complete guide to citing ChatGPT, Claude, and Gemini in APA, MLA, Chicago, and Harvard formats with copy-paste templates.", date: "2026-02-28", readTime: "15 min read", category: "Academic"
   }, {
@@ -231,10 +219,6 @@ export const blogPosts = [
   }, {
     slug: "bypass-zerogpt-ai-detection", title: "Bypass ZeroGPT AI Detection - Humanize AI Content & Reduce Scores", excerpt: "Learn how to bypass ZeroGPT AI detection effectively. Strategies to humanize AI-generated content and reduce detection scores.", date: "2026-01-20", readTime: "10 min read", category: "How-To Guide"
   }, {
-    slug: "how-ai-detectors-score-text", title: "How AI Detectors Score Text: A Behind-the-Scenes Look", excerpt: "Breaking down the metrics AI detectors use in plain language. Understand perplexity, burstiness, and confidence scores.", date: "2026-01-15", readTime: "12 min read", category: "Technical"
-  }, {
-    slug: "signal-vs-noise-human-text", title: "Signal vs. Noise: What Makes Text Human in 2026", excerpt: "Current patterns detectors care about, with concrete examples of what distinguishes human writing from AI output.", date: "2026-01-15", readTime: "14 min read", category: "Technical"
-  }, {
     slug: "ai-humanization-pitfalls", title: "AI Humanization Pitfalls: Common Mistakes Writers Make", excerpt: "What to avoid when refining AI text. Learn the most common mistakes and how to fix them.", date: "2026-01-15", readTime: "11 min read", category: "Best Practices"
   }, {
     slug: "how-to-write-naturally-with-ai", title: "How to Write Naturally with AI: A Complete Guide", excerpt: "Learn the art of crafting natural, engaging content with AI assistance. Discover techniques for prompting, structuring, and refining AI-generated text.", date: "2026-01-12", readTime: "14 min read", category: "Writing Craft"
@@ -253,21 +237,15 @@ export const blogPosts = [
   }, {
     slug: "originality-ai-review-how-to-beat", title: "Originality.AI Detector Review: Accuracy, Pricing, and How It Works", excerpt: "Complete Originality.AI review covering accuracy, pricing, and what makes content appear more human-like.", date: "2026-01-02", readTime: "13 min read", category: "Detector Review"
   }, {
-    slug: "pass-all-ai-detectors-guide", title: "The Definitive Guide to Writing Human-Like Content (2026)", excerpt: "How to create naturally human content that reads authentically across GPTZero, Turnitin, Originality.AI, and more.", date: "2026-01-01", readTime: "14 min read", category: "How-To Guide"
-  }, {
     slug: "ai-content-seo-undetectable", title: "AI Content for SEO: Rank Without Getting Flagged", excerpt: "Generate AI articles at scale that sound natural and rank on Google. Proven workflow for undetectable SEO content.", date: "2026-01-28", readTime: "14 min read", category: "SEO"
   }, {
     slug: "academic-ai-writing-safely", title: "Academic AI Writing: Stay Ethical, Stay Safe", excerpt: "Use AI writing tools responsibly while preserving academic integrity. A thoughtful guide for students and researchers.", date: "2026-01-25", readTime: "12 min read", category: "Academic"
-  }, {
-    slug: "ai-detection-tools-compared-2025", title: "AI Detectors Compared: GPTZero vs AFTP (2026)", excerpt: "We tested GPTZero, Rewritify, and AI Free Text Pro. See which AI detector is most accurate in real-world tests.", date: "2026-01-22", readTime: "12 min read", category: "Comparison"
   }, {
     slug: "humanize-ai-text-without-losing-voice", title: "Humanize AI Text Without Losing Your Voice", excerpt: "Proven strategies to make ChatGPT or Gemini text sound naturally human while keeping your unique tone.", date: "2026-01-20", readTime: "10 min read", category: "How-To Guide"
   }, {
     slug: "ai-writing-students-avoid-plagiarism", title: "AI Writing for Students: Stay Ethical (2026)", excerpt: "Responsible ways to use AI writing assistants in academia while maintaining academic integrity standards.", date: "2026-01-18", readTime: "11 min read", category: "Academic"
   }, {
     slug: "zerogpt-vs-ai-free-text-pro-2025", title: "ZeroGPT vs AI Free Text Pro: Accuracy Test (2026)", excerpt: "We tested ZeroGPT and AI Free Text Pro on different writing samples. See which tool spots AI content more accurately.", date: "2026-01-15", readTime: "8 min read", category: "Comparison"
-  }, {
-    slug: "top-10-ai-humanizer-tools-2025", title: "Top 10 AI Humanizer Tools (Free & Paid) 2026", excerpt: "Curated list of the top AI humanizers with features, pricing, and accuracy ratings. Updated for 2026.", date: "2026-01-12", readTime: "12 min read", category: "Comparison"
   }, {
     slug: "how-ai-detectors-work", title: "How AI Detectors Work: The Science Explained", excerpt: "The machine-learning and linguistic patterns behind AI detectors. Learn how to write authentically human content.", date: "2026-01-10", readTime: "10 min read", category: "Educational"
   }, {
@@ -278,12 +256,6 @@ export const blogPosts = [
     slug: "can-ai-writing-be-original", title: "Can AI Writing Be Truly Original?", excerpt: "How AI assists rather than replaces creativity, and what 'original' means in the era of ChatGPT and humanizers.", date: "2026-01-02", readTime: "10 min read", category: "Educational"
   }, {
     slug: "ai-detection-in-publishing-2025", title: "AI Detection in Publishing: How to Adapt (2026)", excerpt: "How editors and publishers are adapting to AI-generated content and why AI Free Text Pro is part of the solution.", date: "2026-01-01", readTime: "12 min read", category: "Industry"
-  }, {
-    slug: "how-to-detect-ai-generated-text", title: "How to Detect AI Text: Complete Guide (2026)", excerpt: "Proven techniques and tools to identify AI-generated content. Key patterns and detection strategies used by experts.", date: "2026-01-01", readTime: "8 min read", category: "How-To Guide"
-  }, {
-    slug: "best-free-ai-humanizer-tools-2025", title: "Best Free AI Humanizer Tools in 2026", excerpt: "Compare the top free AI humanizer tools available. Find which works best for academic writing and content creation.", date: "2026-01-01", readTime: "10 min read", category: "Tools"
-  }, {
-    slug: "bypass-ai-detection-ethical-tips", title: "Ethical AI Writing: Disclosure Rules & Practices", excerpt: "What the 2026 rules require, when you must disclose AI use, and how to document your process so honest work survives a detector flag.", date: "2026-01-01", readTime: "9 min read", category: "Policy"
   }
 ];
 

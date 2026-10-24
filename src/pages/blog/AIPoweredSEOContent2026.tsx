@@ -23,13 +23,13 @@ const relatedArticles = [
   {
     title: "Top 10 AI Humanizer Tools for 2026",
     description: "Updated list of AI humanizers tested and rated",
-    href: "/blog/top-10-ai-humanizer-tools-2025",
+    href: "/blog/best-free-ai-humanizer-2026",
     category: "Tools"
   },
   {
     title: "How AI Detectors Score Text",
     description: "Understand how AI detection works under the hood",
-    href: "/blog/how-ai-detectors-score-text",
+    href: "/blog/how-ai-detectors-work",
     category: "Technical"
   },
   {

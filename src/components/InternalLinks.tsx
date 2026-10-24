@@ -81,17 +81,10 @@ const keyPages = [
   },
   {
     title: "Compare All Humanizers",
-    href: "/compare-ai-humanizers",
+    href: "/blog/best-free-ai-humanizer-2026",
     description: "Side-by-side AI humanizer comparison",
     icon: Sparkles,
     category: "compare"
-  },
-  {
-    title: "Free AI Detector",
-    href: "/ai-checker",
-    description: "Free online AI content detection tool",
-    icon: Shield,
-    category: "tool"
   },
   {
     title: "Pricing",
@@ -109,31 +102,58 @@ const keyPages = [
   }
 ];
 
+// The pages we most want to rank, linked with the words people search for.
+// Shown on every page that uses this component, so keep the anchors exact.
+const moneyLinks = [
+  { anchor: "Free AI detector and humanizer", href: "/" },
+  { anchor: "Free AI detector", href: "/ai-checker" },
+  { anchor: "Check if text was written by AI", href: "/blog/how-to-check-if-written-by-ai" },
+  { anchor: "Best free AI humanizer", href: "/blog/best-free-ai-humanizer-2026" },
+  { anchor: "AI detector for teachers", href: "/ai-detector-for-teachers" },
+  { anchor: "AI detector with no word limit", href: "/free-ai-detector-word-limit" },
+  { anchor: "AI paraphraser that avoids detection", href: "/ai-paraphraser" },
+  { anchor: "AI watermark remover", href: "/ai-watermark-remover" },
+  { anchor: "Bypass Turnitin AI detection", href: "/bypass-turnitin-ai-detection" },
+  { anchor: "AI humanizer API", href: "/api" },
+];
+
+const MoneyLinks = ({ currentPage }: { currentPage?: string }) => (
+  <nav aria-label="Free tools" className="flex flex-wrap gap-x-4 gap-y-2 text-sm">
+    <span className="font-medium">Free tools:</span>
+    {moneyLinks
+      .filter((l) => l.href !== currentPage)
+      .map((l) => (
+        <Link key={l.href} to={l.href} className="text-primary hover:underline">
+          {l.anchor}
+        </Link>
+      ))}
+  </nav>
+);
+
 const blogPosts = [
+  { title: "Best Free AI Humanizer 2026", href: "/blog/best-free-ai-humanizer-2026" },
+  { title: "Humanize DeepSeek Output", href: "/blog/humanize-deepseek-output" },
+  { title: "Humanize Gemini Output", href: "/blog/humanize-gemini-output" },
+  { title: "Does ChatGPT Plus Bypass AI Detection?", href: "/blog/chatgpt-plus-detection" },
   // High-priority 2026 hub posts
   { title: "Best AI Detector 2026", href: "/blog/best-ai-detector-2026" },
-  { title: "Best Free AI Humanizer 2026", href: "/blog/best-free-ai-humanizer-2026" },
   { title: "Top 10 AI Writing Tools 2026", href: "/blog/top-10-ai-writing-tools-2026" },
   { title: "Turnitin vs GPTZero vs Originality", href: "/blog/turnitin-vs-gptzero-vs-originality-ai" },
   { title: "AI Detectors: Claude, Gemini, GPT-5", href: "/blog/ai-detectors-claude-gemini-gpt5-2026" },
   { title: "Can Detectors Catch GPT-5?", href: "/blog/can-ai-detectors-detect-gpt5" },
   // Core education
+  { title: "AI Detection Statistics 2026", href: "/ai-detection-statistics" },
   { title: "How AI Detectors Work", href: "/blog/how-ai-detectors-work" },
-  { title: "How Detectors Score Text", href: "/blog/how-ai-detectors-score-text" },
+  { title: "Check If Written by AI", href: "/blog/how-to-check-if-written-by-ai" },
   { title: "AI Detection Patterns", href: "/blog/ai-detection-patterns-explained" },
-  { title: "Signal vs Noise in Human Text", href: "/blog/signal-vs-noise-human-text" },
   { title: "AI Detection False Positives", href: "/blog/ai-detection-false-positives" },
   // Humanizer guides
   { title: "Humanize AI Text Guide", href: "/blog/humanize-ai-text-without-losing-voice" },
   { title: "Humanize ChatGPT Text", href: "/blog/humanize-chatgpt-text" },
   { title: "Humanize Claude Output", href: "/blog/humanize-claude-output" },
-  { title: "Humanize Gemini Output", href: "/blog/humanize-gemini-output" },
   { title: "Paraphrasing vs Humanizing", href: "/blog/paraphrasing-vs-humanizing" },
   { title: "AI Humanization Pitfalls", href: "/blog/ai-humanization-pitfalls" },
-  { title: "Top 10 AI Humanizers", href: "/blog/top-10-ai-humanizer-tools-2025" },
-  { title: "Best Free AI Humanizers", href: "/blog/best-free-ai-humanizer-tools-2025" },
   // Bypass guides
-  { title: "Pass All AI Detectors", href: "/blog/pass-all-ai-detectors-guide" },
   { title: "Bypass AI Detection Guide", href: "/blog/bypass-ai-detection-guide" },
   { title: "Make ChatGPT Undetectable", href: "/blog/make-chatgpt-undetectable-2025" },
   { title: "Bypass Copyleaks", href: "/blog/bypass-copyleaks-ai-detection" },
@@ -174,11 +194,11 @@ const blogPosts = [
   { title: "AI Content & Google AI Overviews", href: "/blog/ai-content-google-ai-overviews" },
   // Verification & policy
   { title: "Can Teachers Detect ChatGPT?", href: "/blog/can-teachers-detect-chatgpt" },
+  { title: "Does Turnitin Detect ChatGPT?", href: "/blog/does-turnitin-detect-chatgpt" },
   { title: "Can Turnitin Detect DeepSeek?", href: "/blog/can-turnitin-detect-deepseek" },
   { title: "Can Turnitin Detect Perplexity?", href: "/blog/can-turnitin-detect-perplexity" },
   { title: "Does Canvas Detect ChatGPT?", href: "/blog/does-canvas-detect-chatgpt" },
   { title: "Does Turnitin Detect Gemini?", href: "/blog/does-turnitin-detect-gemini" },
-  { title: "Check If Written by AI", href: "/blog/how-to-check-if-written-by-ai" },
   { title: "Check My Essay for AI", href: "/blog/check-my-essay-for-ai" },
   { title: "AI Disclosure Policies 2026", href: "/blog/ai-disclosure-policies-2026" },
   { title: "Is AI for School Illegal?", href: "/blog/is-it-illegal-to-use-ai-for-school" },
@@ -233,6 +253,10 @@ export const InternalLinks = ({ currentPage, showTitle = true, variant = "compac
         </div>
         
         <div className="mt-4 pt-4 border-t border-border">
+          <MoneyLinks currentPage={currentPage} />
+        </div>
+
+        <div className="mt-4 pt-4 border-t border-border">
           <p className="text-sm font-medium mb-2">Popular Blog Posts:</p>
           <div className="grid grid-cols-2 gap-2">
             {filteredBlogPosts.slice(0, 6).map((post) => (
@@ -258,6 +282,10 @@ export const InternalLinks = ({ currentPage, showTitle = true, variant = "compac
           <h2 className="text-2xl font-bold mb-8 text-center">Explore More AI Tools & Resources</h2>
         )}
         
+        <div className="mb-8 rounded-xl border border-border bg-background/60 p-4">
+          <MoneyLinks currentPage={currentPage} />
+        </div>
+
         <div className="grid md:grid-cols-4 gap-6 mb-8">
           {/* Bypass Tools */}
           <div>

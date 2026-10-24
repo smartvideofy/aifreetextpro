@@ -208,7 +208,7 @@ const BypassWinstonAIDetection = () => {
               <div className="flex items-start gap-3">
                 <Lightbulb className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
                 <p className="text-muted-foreground">
-                  Even well-written AI content can receive high Winston AI scores if it lacks human-like variability. Check out our <Link to="/blog/top-10-ai-humanizer-tools-2025" className="text-primary hover:underline">top AI humanizer tools</Link> for solutions.
+                  Even well-written AI content can receive high Winston AI scores if it lacks human-like variability. Check out our <Link to="/blog/best-free-ai-humanizer-2026" className="text-primary hover:underline">top AI humanizer tools</Link> for solutions.
                 </p>
               </div>
             </div>
@@ -287,7 +287,7 @@ const BypassWinstonAIDetection = () => {
                   </li>
                 </ul>
                 <p className="text-sm text-muted-foreground mt-4">
-                  Understand <Link to="/blog/how-ai-detectors-score-text" className="text-primary hover:underline">how AI detectors score text</Link> to optimize your approach.
+                  Understand <Link to="/blog/how-ai-detectors-work" className="text-primary hover:underline">how AI detectors score text</Link> to optimize your approach.
                 </p>
               </div>
 

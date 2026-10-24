@@ -22,7 +22,7 @@ const relatedArticles = [
   }, {
     title: "AI Detection Patterns Explained", description: "5 subtle linguistic patterns AI detectors look for", href: "/blog/ai-detection-patterns-explained", category: "Technical"
   }, {
-    title: "The Definitive Guide to Writing Human-Like Content", description: "Complete guide to natural AI-assisted writing", href: "/blog/pass-all-ai-detectors-guide", category: "Guide"
+    title: "The Definitive Guide to Writing Human-Like Content", description: "Complete guide to natural AI-assisted writing", href: "/blog/bypass-ai-detection-guide", category: "Guide"
   }
 ];
 
@@ -367,7 +367,7 @@ const MakeChatGPTUndetectable = () => {
                   <li>View AI as an assistant, not a replacement for critical thinking</li>
                 </ul>
                 <p>
-                  <Link to="/blog/bypass-ai-detection-ethical-tips" className="text-primary hover:text-primary/80">Read our complete guide to ethical AI usage →</Link>
+                  <Link to="/blog/bypass-ai-detection-guide" className="text-primary hover:text-primary/80">Read our complete guide to ethical AI usage →</Link>
                 </p>
 
                 <h2>Conclusion: Stop Worrying About Detection</h2>

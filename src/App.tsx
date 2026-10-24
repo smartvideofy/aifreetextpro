@@ -46,11 +46,15 @@ const BypassOriginality = lazy(() => import("./pages/BypassOriginality"));
 const VsWriteHuman = lazy(() => import("./pages/VsWriteHuman"));
 const VsUndetectable = lazy(() => import("./pages/VsUndetectable"));
 const VsHumanizeAIPro = lazy(() => import("./pages/VsHumanizeAIPro"));
-const CompareAIHumanizers = lazy(() => import("./pages/CompareAIHumanizers"));
 
 // Programmatic templates (dynamic routes)
 const VsTemplate = lazy(() => import("./pages/programmatic/VsTemplate"));
 const DetectorTemplate = lazy(() => import("./pages/programmatic/DetectorTemplate"));
+const HumanizeModelTemplate = lazy(() => import("./pages/programmatic/HumanizeModelTemplate"));
+const AIDetectorForTeachers = lazy(() => import("./pages/AIDetectorForTeachers"));
+const AIParaphraser = lazy(() => import("./pages/AIParaphraser"));
+const AIWatermarkRemover = lazy(() => import("./pages/AIWatermarkRemover"));
+const AIDetectionStatistics = lazy(() => import("./pages/AIDetectionStatistics"));
 
 // Use case pages
 const AIHumanizerForStudents = lazy(() => import("./pages/AIHumanizerForStudents"));
@@ -61,14 +65,9 @@ const Partners = lazy(() => import("./pages/Partners"));
 
 
 // Blog posts - all lazy loaded
-const HowToDetectAI = lazy(() => import("./pages/blog/HowToDetectAI"));
-const BestAIHumanizers = lazy(() => import("./pages/blog/BestAIHumanizers"));
-const BypassAIDetection = lazy(() => import("./pages/blog/BypassAIDetection"));
-const AIDetectionComparison = lazy(() => import("./pages/blog/AIDetectionComparison"));
 const HumanizeAIText = lazy(() => import("./pages/blog/HumanizeAIText"));
 const AIWritingStudents = lazy(() => import("./pages/blog/AIWritingStudents"));
 const ZeroGPTComparison = lazy(() => import("./pages/blog/ZeroGPTComparison"));
-const Top10AIHumanizers = lazy(() => import("./pages/blog/Top10AIHumanizers"));
 const HowAIDetectorsWork = lazy(() => import("./pages/blog/HowAIDetectorsWork"));
 const WhyAIContentFails = lazy(() => import("./pages/blog/WhyAIContentFails"));
 const AIToolsForWriters = lazy(() => import("./pages/blog/AIToolsForWriters"));
@@ -79,14 +78,11 @@ const AIDetectionPatterns = lazy(() => import("./pages/blog/AIDetectionPatterns"
 const ParaphrasingVsHumanizing = lazy(() => import("./pages/blog/ParaphrasingVsHumanizing"));
 const GPTinfComparison = lazy(() => import("./pages/blog/GPTinfComparison"));
 const OriginalityAIReview = lazy(() => import("./pages/blog/OriginalityAIReview"));
-const PassAllDetectorsGuide = lazy(() => import("./pages/blog/PassAllDetectorsGuide"));
 const AIContentSEO = lazy(() => import("./pages/blog/AIContentSEO"));
 const AcademicAIWritingSafely = lazy(() => import("./pages/blog/AcademicAIWritingSafely"));
 const HowToWriteNaturallyWithAI = lazy(() => import("./pages/blog/HowToWriteNaturallyWithAI"));
 const EditingAIDraftsHumanEditor = lazy(() => import("./pages/blog/EditingAIDraftsHumanEditor"));
 const ToneVoiceFlowAIWriting = lazy(() => import("./pages/blog/ToneVoiceFlowAIWriting"));
-const HowAIDetectorsScoreText = lazy(() => import("./pages/blog/HowAIDetectorsScoreText"));
-const SignalVsNoiseHumanText = lazy(() => import("./pages/blog/SignalVsNoiseHumanText"));
 const AIHumanizationPitfalls = lazy(() => import("./pages/blog/AIHumanizationPitfalls"));
 const BypassCopyleaksDetection = lazy(() => import("./pages/blog/BypassCopyleaksDetection"));
 const BypassWinstonAIDetection = lazy(() => import("./pages/blog/BypassWinstonAIDetection"));
@@ -130,17 +126,14 @@ const AIHumanizerForBlogPosts = lazy(() => import("./pages/blog/AIHumanizerForBl
 const OriginalityAIAccuracyFalsePositives = lazy(() => import("./pages/blog/OriginalityAIAccuracyFalsePositives"));
 const AIForResearchPapers = lazy(() => import("./pages/blog/AIForResearchPapers"));
 const AIWritingBusinessReports = lazy(() => import("./pages/blog/AIWritingBusinessReports"));
-const BestAIDetectorForTeachers = lazy(() => import("./pages/blog/BestAIDetectorForTeachers"));
 const RemoveAIDetection = lazy(() => import("./pages/blog/RemoveAIDetection"));
 const UndetectableAIEssayWriter = lazy(() => import("./pages/blog/UndetectableAIEssayWriter"));
-const AIParaphrasingToolPlagiarism = lazy(() => import("./pages/blog/AIParaphrasingToolPlagiarism"));
 const AIHomeworkHelper = lazy(() => import("./pages/blog/AIHomeworkHelper"));
 const RewriteAIText = lazy(() => import("./pages/blog/RewriteAIText"));
 const BestAIDetector2026 = lazy(() => import("./pages/blog/BestAIDetector2026"));
 const StealthwriterAlternative = lazy(() => import("./pages/blog/StealthwriterAlternative"));
 const AIHumanizerForEssays = lazy(() => import("./pages/blog/AIHumanizerForEssays"));
 const TurnitinAppeal = lazy(() => import("./pages/blog/TurnitinAppeal"));
-const FreeAIContentDetector = lazy(() => import("./pages/blog/FreeAIContentDetector"));
 const ChatGPTCollegeEssays = lazy(() => import("./pages/blog/ChatGPTCollegeEssays"));
 const AITextConverter = lazy(() => import("./pages/blog/AITextConverter"));
 const DoesTurnitinDetectGemini = lazy(() => import("./pages/blog/DoesTurnitinDetectGemini"));
@@ -150,7 +143,6 @@ const ClaudeAcademicWriting = lazy(() => import("./pages/blog/ClaudeAcademicWrit
 const HumanizeChatGPTText = lazy(() => import("./pages/blog/HumanizeChatGPTText"));
 const BestAIToolsForStudents = lazy(() => import("./pages/blog/BestAIToolsForStudents"));
 const CanTurnitinDetectPerplexity = lazy(() => import("./pages/blog/CanTurnitinDetectPerplexity"));
-const WhatIsPerplexityBurstiness = lazy(() => import("./pages/blog/WhatIsPerplexityBurstiness"));
 const AIHumanizerIndianStudents2026 = lazy(() => import("./pages/blog/AIHumanizerIndianStudents2026"));
 const TurnitinSimilarityVsAIScore = lazy(() => import("./pages/blog/TurnitinSimilarityVsAIScore"));
 const GPTZeroAccuracyReview = lazy(() => import("./pages/blog/GPTZeroAccuracyReview"));
@@ -161,7 +153,6 @@ const AIInstagramCaptions = lazy(() => import("./pages/blog/AIInstagramCaptions"
 const AICoverLetterGenerator = lazy(() => import("./pages/blog/AICoverLetterGenerator"));
 const ChatGPTAlternativesEssays = lazy(() => import("./pages/blog/ChatGPTAlternativesEssays"));
 const AIBlogPostGenerator = lazy(() => import("./pages/blog/AIBlogPostGenerator"));
-const AIEssayChecker = lazy(() => import("./pages/blog/AIEssayChecker"));
 const MakeAIWritingCreative = lazy(() => import("./pages/blog/MakeAIWritingCreative"));
 const AIContentAtScale = lazy(() => import("./pages/blog/AIContentAtScale"));
 const AIGrantWriting = lazy(() => import("./pages/blog/AIGrantWriting"));
@@ -189,9 +180,7 @@ const ClaudeWatermarkRemover = lazy(() => import("./pages/blog/ClaudeWatermarkRe
 const AIDetectorForStudents2026 = lazy(() => import("./pages/blog/AIDetectorForStudents2026"));
 const SynthIDWatermarkRemover = lazy(() => import("./pages/blog/SynthIDWatermarkRemover"));
 const HumanizeDeepSeekOutput = lazy(() => import("./pages/blog/HumanizeDeepSeekOutput"));
-const BestParaphrasingTool = lazy(() => import("./pages/blog/BestParaphrasingTool"));
 const FreeAIDetectorGuide = lazy(() => import("./pages/blog/FreeAIDetectorGuide"));
-const AIWritingCheckerPost = lazy(() => import("./pages/blog/AIWritingChecker"));
 
 
 const queryClient = new QueryClient();
@@ -233,16 +222,16 @@ const App = () => (
               <Route path="/about" element={<About />} />
               <Route path="/blog" element={<Blog />} />
               <Route path="/blog/category/:slug" element={<BlogCategory />} />
-              <Route path="/blog/ai-detection-tools-compared-2025" element={<AIDetectionComparison />} />
+              <Route path="/blog/ai-detection-tools-compared-2025" element={<SEORedirect to="/blog/best-ai-detector-2026" />} />
               <Route path="/blog/humanize-ai-text-without-losing-voice" element={<HumanizeAIText />} />
               <Route path="/blog/ai-writing-students-avoid-plagiarism" element={<AIWritingStudents />} />
-              <Route path="/blog/how-to-detect-ai-generated-text" element={<HowToDetectAI />} />
-              <Route path="/blog/best-free-ai-humanizer-tools-2025" element={<BestAIHumanizers />} />
-              <Route path="/blog/bypass-ai-detection-ethical-tips" element={<BypassAIDetection />} />
+              <Route path="/blog/how-to-detect-ai-generated-text" element={<SEORedirect to="/blog/how-to-check-if-written-by-ai" />} />
+              <Route path="/blog/best-free-ai-humanizer-tools-2025" element={<SEORedirect to="/blog/best-free-ai-humanizer-2026" />} />
+              <Route path="/blog/bypass-ai-detection-ethical-tips" element={<SEORedirect to="/blog/bypass-ai-detection-guide" />} />
               <Route path="/blog/zerogpt-vs-ai-free-text-pro-2025" element={<ZeroGPTComparison />} />
-              <Route path="/blog/top-10-ai-humanizer-tools-2025" element={<Top10AIHumanizers />} />
+              <Route path="/blog/top-10-ai-humanizer-tools-2025" element={<SEORedirect to="/blog/best-free-ai-humanizer-2026" />} />
               <Route path="/blog/how-ai-detectors-work" element={<HowAIDetectorsWork />} />
-              <Route path="/blog/what-is-perplexity-burstiness" element={<WhatIsPerplexityBurstiness />} />
+              <Route path="/blog/what-is-perplexity-burstiness" element={<SEORedirect to="/blog/ai-detection-patterns-explained" />} />
               <Route path="/blog/why-ai-content-fails-human-review" element={<WhyAIContentFails />} />
               <Route path="/blog/ai-tools-for-writers-2025" element={<AIToolsForWriters />} />
               <Route path="/blog/can-ai-writing-be-original" element={<AICreativityOriginality />} />
@@ -252,14 +241,14 @@ const App = () => (
               <Route path="/blog/paraphrasing-vs-humanizing" element={<ParaphrasingVsHumanizing />} />
               <Route path="/blog/gptinf-vs-ai-free-text-pro" element={<GPTinfComparison />} />
               <Route path="/blog/originality-ai-review-how-to-beat" element={<OriginalityAIReview />} />
-              <Route path="/blog/pass-all-ai-detectors-guide" element={<PassAllDetectorsGuide />} />
+              <Route path="/blog/pass-all-ai-detectors-guide" element={<SEORedirect to="/blog/bypass-ai-detection-guide" />} />
               <Route path="/blog/ai-content-seo-undetectable" element={<AIContentSEO />} />
               <Route path="/blog/academic-ai-writing-safely" element={<AcademicAIWritingSafely />} />
               <Route path="/blog/how-to-write-naturally-with-ai" element={<HowToWriteNaturallyWithAI />} />
               <Route path="/blog/editing-ai-drafts-human-editor" element={<EditingAIDraftsHumanEditor />} />
               <Route path="/blog/tone-voice-flow-ai-writing" element={<ToneVoiceFlowAIWriting />} />
-              <Route path="/blog/how-ai-detectors-score-text" element={<HowAIDetectorsScoreText />} />
-              <Route path="/blog/signal-vs-noise-human-text" element={<SignalVsNoiseHumanText />} />
+              <Route path="/blog/how-ai-detectors-score-text" element={<SEORedirect to="/blog/how-ai-detectors-work" />} />
+              <Route path="/blog/signal-vs-noise-human-text" element={<SEORedirect to="/blog/how-ai-detectors-work" />} />
               <Route path="/blog/ai-humanizer-for-indian-students" element={<AIHumanizerIndianStudents2026 />} />
               <Route path="/blog/ai-humanization-pitfalls" element={<AIHumanizationPitfalls />} />
               <Route path="/blog/bypass-copyleaks-ai-detection" element={<BypassCopyleaksDetection />} />
@@ -304,17 +293,17 @@ const App = () => (
               <Route path="/blog/originality-ai-accuracy-false-positives" element={<OriginalityAIAccuracyFalsePositives />} />
               <Route path="/blog/ai-for-research-papers" element={<AIForResearchPapers />} />
               <Route path="/blog/ai-writing-business-reports-emails" element={<AIWritingBusinessReports />} />
-              <Route path="/blog/best-ai-detector-for-teachers" element={<BestAIDetectorForTeachers />} />
+              <Route path="/blog/best-ai-detector-for-teachers" element={<SEORedirect to="/ai-detector-for-teachers" />} />
               <Route path="/blog/remove-ai-detection-from-text" element={<RemoveAIDetection />} />
               <Route path="/blog/best-ai-essay-writer-undetectable" element={<UndetectableAIEssayWriter />} />
-              <Route path="/blog/ai-paraphrasing-tool-avoid-plagiarism" element={<AIParaphrasingToolPlagiarism />} />
+              <Route path="/blog/ai-paraphrasing-tool-avoid-plagiarism" element={<SEORedirect to="/ai-paraphraser" />} />
               <Route path="/blog/ai-homework-helper-undetectable" element={<AIHomeworkHelper />} />
               <Route path="/blog/rewrite-ai-text-sound-human" element={<RewriteAIText />} />
               <Route path="/blog/best-ai-detector-2026" element={<BestAIDetector2026 />} />
               <Route path="/blog/stealthwriter-alternative" element={<StealthwriterAlternative />} />
               <Route path="/blog/ai-humanizer-for-essays" element={<AIHumanizerForEssays />} />
               <Route path="/blog/turnitin-appeal-ai-detection" element={<TurnitinAppeal />} />
-              <Route path="/blog/free-ai-content-detector" element={<FreeAIContentDetector />} />
+              <Route path="/blog/free-ai-content-detector" element={<SEORedirect to="/ai-checker" />} />
               <Route path="/blog/chatgpt-college-essays" element={<ChatGPTCollegeEssays />} />
               <Route path="/blog/ai-text-converter" element={<AITextConverter />} />
               <Route path="/blog/does-turnitin-detect-gemini" element={<DoesTurnitinDetectGemini />} />
@@ -333,7 +322,7 @@ const App = () => (
               <Route path="/blog/ai-cover-letter-generator" element={<AICoverLetterGenerator />} />
               <Route path="/blog/chatgpt-alternatives-essays" element={<ChatGPTAlternativesEssays />} />
               <Route path="/blog/ai-blog-post-generator" element={<AIBlogPostGenerator />} />
-              <Route path="/blog/ai-essay-checker" element={<AIEssayChecker />} />
+              <Route path="/blog/ai-essay-checker" element={<SEORedirect to="/ai-checker" />} />
               <Route path="/blog/make-ai-writing-creative" element={<MakeAIWritingCreative />} />
               <Route path="/blog/ai-content-at-scale" element={<AIContentAtScale />} />
               <Route path="/blog/ai-grant-writing" element={<AIGrantWriting />} />
@@ -347,7 +336,7 @@ const App = () => (
               <Route path="/vs-writehuman" element={<VsWriteHuman />} />
               <Route path="/vs-undetectable-ai" element={<VsUndetectable />} />
               <Route path="/vs-humanizeai-pro" element={<VsHumanizeAIPro />} />
-              <Route path="/compare-ai-humanizers" element={<CompareAIHumanizers />} />
+              <Route path="/compare-ai-humanizers" element={<SEORedirect to="/blog/best-free-ai-humanizer-2026" />} />
               <Route path="/ai-humanizer-for-students" element={<AIHumanizerForStudents />} />
               <Route path="/ai-humanizer-for-writers" element={<AIHumanizerForWriters />} />
               <Route path="/academic-ai-writing-tool" element={<AcademicAIWritingTool />} />
@@ -398,14 +387,23 @@ const App = () => (
               <Route path="/blog/claude-watermark-remover" element={<ClaudeWatermarkRemover />} />
               <Route path="/blog/synthid-watermark-remover" element={<SynthIDWatermarkRemover />} />
               <Route path="/blog/humanize-deepseek-output" element={<HumanizeDeepSeekOutput />} />
-              <Route path="/blog/paraphrasing-tool" element={<BestParaphrasingTool />} />
+              <Route path="/blog/paraphrasing-tool" element={<SEORedirect to="/ai-paraphraser" />} />
               <Route path="/blog/free-ai-detector" element={<FreeAIDetectorGuide />} />
-              <Route path="/blog/ai-writing-checker" element={<AIWritingCheckerPost />} />
+              <Route path="/blog/ai-writing-checker" element={<SEORedirect to="/ai-checker" />} />
               <Route path="/blog/ai-detector-for-students-2026" element={<AIDetectorForStudents2026 />} />
 
               
 
               {/* Programmatic SEO routes */}
+              <Route path="/ai-detector-for-teachers" element={<AIDetectorForTeachers />} />
+              <Route path="/ai-paraphraser" element={<AIParaphraser />} />
+              <Route path="/ai-watermark-remover" element={<AIWatermarkRemover />} />
+              <Route path="/ai-detection-statistics" element={<AIDetectionStatistics />} />
+              <Route path="/blog/humanize-grok-output" element={<HumanizeModelTemplate slug="grok" />} />
+              <Route path="/blog/humanize-copilot-output" element={<HumanizeModelTemplate slug="copilot" />} />
+              <Route path="/blog/humanize-perplexity-output" element={<HumanizeModelTemplate slug="perplexity" />} />
+              <Route path="/blog/humanize-llama-output" element={<HumanizeModelTemplate slug="llama" />} />
+              <Route path="/blog/humanize-mistral-output" element={<HumanizeModelTemplate slug="mistral" />} />
               <Route path="/vs/:slug" element={<VsTemplate />} />
               <Route path="/detector/:slug" element={<DetectorTemplate />} />
 

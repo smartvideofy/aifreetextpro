@@ -14,7 +14,7 @@ import ReviewedBy from "@/components/ReviewedBy";
 import { AuthorSchema } from "@/components/AuthorSchema";
 
 const relatedArticles = [
-  { title: "GPTinf vs AI Free Text Pro", description: "Detailed comparison with test results.", href: "/blog/gptinf-vs-ai-free-text-pro", category: "Comparison" }, { title: "Best Free AI Humanizer Tools", description: "Top free tools compared.", href: "/blog/best-free-ai-humanizer-tools-2025", category: "Tools" }, { title: "Top 10 AI Humanizer Tools", description: "Complete rankings for 2026.", href: "/blog/top-10-ai-humanizer-tools-2025", category: "Comparison" }, { title: "Humanize AI Text for Free", description: "Free humanizer with no card.", href: "/blog/humanize-ai-text-free-no-signup", category: "How-To Guide" },
+  { title: "GPTinf vs AI Free Text Pro", description: "Detailed comparison with test results.", href: "/blog/gptinf-vs-ai-free-text-pro", category: "Comparison" }, { title: "Best Free AI Humanizer Tools", description: "Top free tools compared.", href: "/blog/best-free-ai-humanizer-2026", category: "Tools" }, { title: "Humanize AI Text for Free", description: "Free humanizer with no card.", href: "/blog/humanize-ai-text-free-no-signup", category: "How-To Guide" }
 ];
 
 const UndetectableAIvsAIFreeTextPro = () => {

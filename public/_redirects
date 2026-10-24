@@ -39,5 +39,23 @@ https://www.aifreetextpro.com/*      https://aifreetextpro.com/:splat  301!
 /blog/paraphrasing-vs-humanizing-ai-text           /blog/paraphrasing-vs-humanizing           301
 /bypass-turnitin                                   /bypass-turnitin-ai-detection              301
 
+# Consolidated pages (October 2026 SEO pass)
+/blog/best-free-ai-humanizer-tools-2025             /blog/best-free-ai-humanizer-2026         301
+/blog/top-10-ai-humanizer-tools-2025                /blog/best-free-ai-humanizer-2026         301
+/compare-ai-humanizers                              /blog/best-free-ai-humanizer-2026         301
+/blog/ai-writing-checker                            /ai-checker                               301
+/blog/ai-essay-checker                              /ai-checker                               301
+/blog/free-ai-content-detector                      /ai-checker                               301
+/blog/how-to-detect-ai-generated-text               /blog/how-to-check-if-written-by-ai       301
+/blog/how-ai-detectors-score-text                   /blog/how-ai-detectors-work               301
+/blog/signal-vs-noise-human-text                    /blog/how-ai-detectors-work               301
+/blog/what-is-perplexity-burstiness                 /blog/ai-detection-patterns-explained     301
+/blog/pass-all-ai-detectors-guide                   /blog/bypass-ai-detection-guide           301
+/blog/bypass-ai-detection-ethical-tips              /blog/bypass-ai-detection-guide           301
+/blog/ai-detection-tools-compared-2025              /blog/best-ai-detector-2026               301
+/blog/best-ai-detector-for-teachers                 /ai-detector-for-teachers                 301
+/blog/ai-paraphrasing-tool-avoid-plagiarism         /ai-paraphraser                           301
+/blog/paraphrasing-tool                             /ai-paraphraser                           301
+
 # SPA fallback — runs LAST, only when no static file matched
 /*  /index.html  200

@@ -16,10 +16,12 @@ const VsTemplate = () => {
   const { slug } = useParams<{ slug: string }>();
   const data = slug ? competitors[slug] : undefined;
 
-  if (!data) return <Navigate to="/compare-ai-humanizers" replace />;
+  if (!data) return <Navigate to="/blog/best-free-ai-humanizer-2026" replace />;
 
   const canonical = `/vs/${data.slug}`;
   const title = `${data.name} Alternative: AI Free Text Pro vs ${data.name} [2026]`;
+  const freeWords = typeof data.freeWords === "number" ? `${data.freeWords} free words / month` : data.freeWords;
+  const others = Object.values(competitors).filter((c) => c.slug !== data.slug);
 
   return (
     <div className="min-h-screen flex flex-col">
@@ -29,14 +31,14 @@ const VsTemplate = () => {
         canonicalUrl={canonical}
         keywords={`${data.name.toLowerCase()} alternative, ${data.name.toLowerCase()} vs ai free text pro, best ${data.name.toLowerCase()} alternative 2026`}
         ogType="article"
-        modifiedTime="2026-06-09"
+        modifiedTime="2026-10-24"
       />
       <AuthorSchema
         headline={title}
         description={data.metaDescription}
         articleUrl={`https://aifreetextpro.com${canonical}`}
         datePublished="2026-06-10"
-        dateModified="2026-06-09"
+        dateModified="2026-10-24"
       />
       <Helmet>
         <script type="application/ld+json">{JSON.stringify({
@@ -52,7 +54,7 @@ const VsTemplate = () => {
       <main className="flex-1 container mx-auto px-4 py-8 max-w-5xl">
         <Breadcrumbs items={[
           { label: "Home", href: "/" },
-          { label: "Compare", href: "/compare-ai-humanizers" },
+          { label: "Compare", href: "/blog/best-free-ai-humanizer-2026" },
           { label: `vs ${data.name}` },
         ]} />
 
@@ -61,11 +63,11 @@ const VsTemplate = () => {
             {data.name} Alternative: <span className="text-primary">AI Free Text Pro</span> vs {data.name}
           </h1>
           <p className="text-lg text-muted-foreground max-w-3xl">
-            {data.tagline} Here is how it stacks up against AI Free Text Pro on bypass rate, free word allowance, included detector, and monthly price in 2026.
+            {data.tagline} Here is how it stacks up against AI Free Text Pro on free word allowance, included AI detector, monthly price and fit in 2026.
           </p>
           <div className="flex items-center gap-2 mt-4 text-sm text-muted-foreground">
             <Star className="w-4 h-4 fill-primary text-primary" />
-            <span>4.8/5 from 1,247 reviews · Updated June 2026</span>
+            <span>4.8/5 from 1,247 reviews · Updated October 2026</span>
           </div>
         </header>
 
@@ -75,7 +77,9 @@ const VsTemplate = () => {
             <ul className="space-y-2 text-sm">
               <li className="flex gap-2"><CheckCircle2 className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" /> 250 free words / month</li>
               <li className="flex gap-2"><CheckCircle2 className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" /> Starts at $4.99/mo</li>
-              <li className="flex gap-2"><CheckCircle2 className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" /> {data.ourBypassRate} bypass rate</li>
+              {data.ourBypassRate && (
+                <li className="flex gap-2"><CheckCircle2 className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" /> {data.ourBypassRate} bypass rate</li>
+              )}
               <li className="flex gap-2"><CheckCircle2 className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" /> Free AI detector included</li>
               {data.ourAdvantages.slice(0, 3).map((a, i) => (
                 <li key={i} className="flex gap-2"><CheckCircle2 className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" /> {a}</li>
@@ -91,9 +95,11 @@ const VsTemplate = () => {
           <Card className="p-6">
             <h2 className="text-xl font-bold mb-3">{data.name}</h2>
             <ul className="space-y-2 text-sm">
-              <li className="flex gap-2"><XCircle className="w-4 h-4 text-muted-foreground mt-0.5 flex-shrink-0" /> {data.freeWords} free words / month</li>
+              <li className="flex gap-2"><XCircle className="w-4 h-4 text-muted-foreground mt-0.5 flex-shrink-0" /> {freeWords}</li>
               <li className="flex gap-2"><XCircle className="w-4 h-4 text-muted-foreground mt-0.5 flex-shrink-0" /> Starts at {data.startingPrice}</li>
-              <li className="flex gap-2"><XCircle className="w-4 h-4 text-muted-foreground mt-0.5 flex-shrink-0" /> {data.bypassRate} bypass rate</li>
+              {data.bypassRate && (
+                <li className="flex gap-2"><XCircle className="w-4 h-4 text-muted-foreground mt-0.5 flex-shrink-0" /> {data.bypassRate} bypass rate</li>
+              )}
               {data.weaknesses.map((w, i) => (
                 <li key={i} className="flex gap-2"><XCircle className="w-4 h-4 text-muted-foreground mt-0.5 flex-shrink-0" /> {w}</li>
               ))}
@@ -107,8 +113,27 @@ const VsTemplate = () => {
           <p>
             If you are evaluating {data.name} for student essays, marketing copy, or freelance writing in 2026, the most important questions are bypass quality on the detector your audience uses, the cost per humanized word, and whether a built-in AI detector saves you a second subscription.
           </p>
+          {data.ourBypassRate ? (
+            <p>
+              AI Free Text Pro answers all three: a {data.ourBypassRate} bypass rate against Turnitin, GPTZero, Originality.AI, Copyleaks, and Winston AI; a starting price of $4.99 per month; and a free AI detector that runs the same accuracy benchmark as the paid competition. {data.name} is a credible tool, but its higher monthly price and smaller free allowance leave money on the table for most users.
+            </p>
+          ) : (
+            <p>
+              AI Free Text Pro answers all three in one place: a humanizer and an AI detector in the same workspace, so you can check, rewrite and re-check without a second subscription; a starting price of $4.99 per month; and 250 free words every month with no card. Prices and free allowances for {data.name} change often, so confirm them on its pricing page before you buy.
+            </p>
+          )}
+          <h2>Other {data.name} alternatives</h2>
           <p>
-            AI Free Text Pro answers all three: a {data.ourBypassRate} bypass rate against Turnitin, GPTZero, Originality.AI, Copyleaks, and Winston AI; a starting price of $4.99 per month; and a free AI detector that runs the same accuracy benchmark as the paid competition. {data.name} is a credible tool, but its higher monthly price and smaller free allowance leave money on the table for most users.
+            Comparing more than two tools? See the{" "}
+            <Link to="/blog/best-free-ai-humanizer-2026">best free AI humanizers in 2026</Link>, check any draft with the{" "}
+            <Link to="/ai-checker">free AI detector</Link>, or compare AI Free Text Pro with{" "}
+            {others.map((c, i) => (
+              <span key={c.slug}>
+                <Link to={`/vs/${c.slug}`}>{c.name}</Link>
+                {i < others.length - 2 ? ", " : i === others.length - 2 ? " and " : ""}
+              </span>
+            ))}
+            .
           </p>
         </section>
 

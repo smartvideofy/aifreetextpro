@@ -29,7 +29,7 @@ const relatedArticles = [
   {
     title: "Top 10 AI Humanizer Tools for 2026",
     description: "A curated list of AI humanizers for content creators",
-    href: "/blog/top-10-ai-humanizer-tools-2025",
+    href: "/blog/best-free-ai-humanizer-2026",
     category: "Comparison"
   },
   {

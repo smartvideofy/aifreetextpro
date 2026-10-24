@@ -46,7 +46,7 @@ const footerSections: FooterSection[] = [
       { href: "/vs/phrasly", label: "vs Phrasly" },
       { href: "/vs/bypassgpt", label: "vs BypassGPT" },
       { href: "/vs/humbot", label: "vs Humbot" },
-      { href: "/compare-ai-humanizers", label: "All comparisons" },
+      { href: "/blog/best-free-ai-humanizer-2026", label: "All comparisons" },
     ],
   },
   {
@@ -75,9 +75,8 @@ const footerSections: FooterSection[] = [
     links: [
       { href: "/blog/how-ai-detectors-work", label: "How AI Detectors Work" },
       { href: "/blog/humanize-ai-text-without-losing-voice", label: "Humanize AI Text" },
-      { href: "/blog/pass-all-ai-detectors-guide", label: "Pass All AI Detectors" },
+      { href: "/blog/bypass-ai-detection-guide", label: "Pass All AI Detectors" },
       { href: "/blog/ai-content-seo-undetectable", label: "AI Content for SEO" },
-      { href: "/blog/top-10-ai-humanizer-tools-2025", label: "Top 10 AI Humanizers" },
       { href: "/blog/academic-ai-writing-safely", label: "Academic AI Writing" },
     ],
   },

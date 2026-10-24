@@ -15,10 +15,10 @@ import { ArrowLeft, Calendar, Clock, User } from "lucide-react";
 import { AuthorSchema } from "@/components/AuthorSchema";
 
 const relatedArticles = [
-  { title: "Best AI Detector for Teachers", description: "Top detection tools for educators ranked by accuracy.", href: "/blog/best-ai-detector-for-teachers", category: "Tools" },
+  { title: "Best AI Detector for Teachers", description: "Top detection tools for educators ranked by accuracy.", href: "/ai-detector-for-teachers", category: "Tools" },
   { title: "AI Humanizer for Resumes and Cover Letters", description: "How job seekers use AI tools for applications.", href: "/blog/ai-humanizer-resumes-cover-letters", category: "Career" },
   { title: "AI Detection False Positives Explained", description: "Why detectors sometimes flag human writing.", href: "/blog/ai-detection-false-positives", category: "Technical" },
-  { title: "How AI Detectors Score Text", description: "Technical breakdown of detection scoring systems.", href: "/blog/how-ai-detectors-score-text", category: "Technical" },
+  { title: "How AI Detectors Score Text", description: "Technical breakdown of detection scoring systems.", href: "/blog/how-ai-detectors-work", category: "Technical" },
 ];
 
 const faqs = [
@@ -163,7 +163,7 @@ const AIDetectorEmployers = () => {
                 <li><strong>Short email responses</strong> lack sufficient text for analysis</li>
                 <li><strong>Bullet-point answers</strong> in application forms</li>
               </ul>
-              <p>The recommended approach is to use AI detection as one signal among many. Use it on cover letters and writing samples, but always pair it with <Link to="/blog/how-ai-detectors-score-text" className="text-primary hover:underline">proper interpretation of scores</Link> and human judgment.</p>
+              <p>The recommended approach is to use AI detection as one signal among many. Use it on cover letters and writing samples, but always pair it with <Link to="/blog/how-ai-detectors-work" className="text-primary hover:underline">proper interpretation of scores</Link> and human judgment.</p>
             </section>
 
             <section>

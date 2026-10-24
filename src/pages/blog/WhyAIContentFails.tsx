@@ -16,7 +16,7 @@ const relatedArticles = [
   {
     title: "How to Humanize AI-Generated Text", description: "Make AI writing sound naturally human", href: "/blog/humanize-ai-text-without-losing-voice", category: "Guide"
   }, {
-    title: "Top 10 AI Humanizer Tools for 2026", description: "Best tools to improve AI-generated content", href: "/blog/top-10-ai-humanizer-tools-2025", category: "Tools"
+    title: "Top 10 AI Humanizer Tools for 2026", description: "Best tools to improve AI-generated content", href: "/blog/best-free-ai-humanizer-2026", category: "Tools"
   }, {
     title: "Editing AI Drafts Like a Human Editor", description: "Professional techniques for refining AI content", href: "/blog/editing-ai-drafts-human-editor", category: "Editing"
   }, {

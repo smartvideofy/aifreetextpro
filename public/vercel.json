@@ -3,33 +3,178 @@
   "cleanUrls": true,
   "trailingSlash": false,
   "rewrites": [
-    { "source": "/((?!api|assets|_debug|.*\\..*).*)", "destination": "/index.html" }
+    {
+      "source": "/((?!api|assets|_debug|.*\\..*).*)",
+      "destination": "/index.html"
+    }
   ],
   "redirects": [
     {
       "source": "/:path*",
-      "has": [{ "type": "host", "value": "aifreetextpro.lovable.app" }],
+      "has": [
+        {
+          "type": "host",
+          "value": "aifreetextpro.lovable.app"
+        }
+      ],
       "destination": "https://aifreetextpro.com/:path*",
       "permanent": true
     },
     {
       "source": "/:path*",
-      "has": [{ "type": "host", "value": "www.aifreetextpro.com" }],
+      "has": [
+        {
+          "type": "host",
+          "value": "www.aifreetextpro.com"
+        }
+      ],
       "destination": "https://aifreetextpro.com/:path*",
       "permanent": true
     },
-    { "source": "/humanizer", "destination": "https://app.aifreetextpro.com/humanizer", "permanent": true },
-    { "source": "/detector", "destination": "https://app.aifreetextpro.com/detector", "permanent": true },
-    { "source": "/auth", "destination": "https://app.aifreetextpro.com/auth", "permanent": true },
-    { "source": "/plagiarism", "destination": "https://app.aifreetextpro.com/plagiarism", "permanent": true },
-    { "source": "/blog/make-chatgpt-undetectable-guide-2025", "destination": "/blog/make-chatgpt-undetectable-2025", "permanent": true },
-    { "source": "/blog/ai-detection-patterns-perplexity-burstiness", "destination": "/blog/ai-detection-patterns-explained", "permanent": true },
-    { "source": "/blog/academic-ai-writing-thesis-essays-safely", "destination": "/blog/academic-ai-writing-safely", "permanent": true },
-    { "source": "/blog/ai-content-seo-undetectable-articles", "destination": "/blog/ai-content-seo-undetectable", "permanent": true },
-    { "source": "/blog/ai-content-seo", "destination": "/blog/ai-content-seo-undetectable", "permanent": true },
-    { "source": "/blog/gptinf-vs-ai-free-text-pro-comparison", "destination": "/blog/gptinf-vs-ai-free-text-pro", "permanent": true },
-    { "source": "/blog/originality-ai-review-pricing-bypass", "destination": "/blog/originality-ai-review-how-to-beat", "permanent": true },
-    { "source": "/blog/paraphrasing-vs-humanizing-ai-text", "destination": "/blog/paraphrasing-vs-humanizing", "permanent": true },
-    { "source": "/bypass-turnitin", "destination": "/bypass-turnitin-ai-detection", "permanent": true }
+    {
+      "source": "/humanizer",
+      "destination": "https://app.aifreetextpro.com/humanizer",
+      "permanent": true
+    },
+    {
+      "source": "/detector",
+      "destination": "https://app.aifreetextpro.com/detector",
+      "permanent": true
+    },
+    {
+      "source": "/auth",
+      "destination": "https://app.aifreetextpro.com/auth",
+      "permanent": true
+    },
+    {
+      "source": "/plagiarism",
+      "destination": "https://app.aifreetextpro.com/plagiarism",
+      "permanent": true
+    },
+    {
+      "source": "/blog/make-chatgpt-undetectable-guide-2025",
+      "destination": "/blog/make-chatgpt-undetectable-2025",
+      "permanent": true
+    },
+    {
+      "source": "/blog/ai-detection-patterns-perplexity-burstiness",
+      "destination": "/blog/ai-detection-patterns-explained",
+      "permanent": true
+    },
+    {
+      "source": "/blog/academic-ai-writing-thesis-essays-safely",
+      "destination": "/blog/academic-ai-writing-safely",
+      "permanent": true
+    },
+    {
+      "source": "/blog/ai-content-seo-undetectable-articles",
+      "destination": "/blog/ai-content-seo-undetectable",
+      "permanent": true
+    },
+    {
+      "source": "/blog/ai-content-seo",
+      "destination": "/blog/ai-content-seo-undetectable",
+      "permanent": true
+    },
+    {
+      "source": "/blog/gptinf-vs-ai-free-text-pro-comparison",
+      "destination": "/blog/gptinf-vs-ai-free-text-pro",
+      "permanent": true
+    },
+    {
+      "source": "/blog/originality-ai-review-pricing-bypass",
+      "destination": "/blog/originality-ai-review-how-to-beat",
+      "permanent": true
+    },
+    {
+      "source": "/blog/paraphrasing-vs-humanizing-ai-text",
+      "destination": "/blog/paraphrasing-vs-humanizing",
+      "permanent": true
+    },
+    {
+      "source": "/bypass-turnitin",
+      "destination": "/bypass-turnitin-ai-detection",
+      "permanent": true
+    },
+    {
+      "source": "/blog/best-free-ai-humanizer-tools-2025",
+      "destination": "/blog/best-free-ai-humanizer-2026",
+      "permanent": true
+    },
+    {
+      "source": "/blog/top-10-ai-humanizer-tools-2025",
+      "destination": "/blog/best-free-ai-humanizer-2026",
+      "permanent": true
+    },
+    {
+      "source": "/compare-ai-humanizers",
+      "destination": "/blog/best-free-ai-humanizer-2026",
+      "permanent": true
+    },
+    {
+      "source": "/blog/ai-writing-checker",
+      "destination": "/ai-checker",
+      "permanent": true
+    },
+    {
+      "source": "/blog/ai-essay-checker",
+      "destination": "/ai-checker",
+      "permanent": true
+    },
+    {
+      "source": "/blog/free-ai-content-detector",
+      "destination": "/ai-checker",
+      "permanent": true
+    },
+    {
+      "source": "/blog/how-to-detect-ai-generated-text",
+      "destination": "/blog/how-to-check-if-written-by-ai",
+      "permanent": true
+    },
+    {
+      "source": "/blog/how-ai-detectors-score-text",
+      "destination": "/blog/how-ai-detectors-work",
+      "permanent": true
+    },
+    {
+      "source": "/blog/signal-vs-noise-human-text",
+      "destination": "/blog/how-ai-detectors-work",
+      "permanent": true
+    },
+    {
+      "source": "/blog/what-is-perplexity-burstiness",
+      "destination": "/blog/ai-detection-patterns-explained",
+      "permanent": true
+    },
+    {
+      "source": "/blog/pass-all-ai-detectors-guide",
+      "destination": "/blog/bypass-ai-detection-guide",
+      "permanent": true
+    },
+    {
+      "source": "/blog/bypass-ai-detection-ethical-tips",
+      "destination": "/blog/bypass-ai-detection-guide",
+      "permanent": true
+    },
+    {
+      "source": "/blog/ai-detection-tools-compared-2025",
+      "destination": "/blog/best-ai-detector-2026",
+      "permanent": true
+    },
+    {
+      "source": "/blog/best-ai-detector-for-teachers",
+      "destination": "/ai-detector-for-teachers",
+      "permanent": true
+    },
+    {
+      "source": "/blog/ai-paraphrasing-tool-avoid-plagiarism",
+      "destination": "/ai-paraphraser",
+      "permanent": true
+    },
+    {
+      "source": "/blog/paraphrasing-tool",
+      "destination": "/ai-paraphraser",
+      "permanent": true
+    }
   ]
 }

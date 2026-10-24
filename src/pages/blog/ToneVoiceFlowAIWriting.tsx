@@ -16,7 +16,7 @@ import { AuthorSchema } from "@/components/AuthorSchema";
 
 const relatedArticles = [
   {
-    title: "Signal vs. Noise: What Makes Text Human", description: "Current patterns that distinguish human writing from AI output.", href: "/blog/signal-vs-noise-human-text", category: "Technical"
+    title: "Signal vs. Noise: What Makes Text Human", description: "Current patterns that distinguish human writing from AI output.", href: "/blog/how-ai-detectors-work", category: "Technical"
   }, {
     title: "How to Write Naturally with AI", description: "Master the fundamentals of natural AI-assisted content creation.", href: "/blog/how-to-write-naturally-with-ai", category: "Writing Craft"
   }, {

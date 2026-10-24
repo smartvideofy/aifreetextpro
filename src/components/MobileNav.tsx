@@ -4,7 +4,7 @@ import { Menu, Home, Info, DollarSign, BookOpen, Mail, ArrowRight, Users, Cpu, F
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger, SheetHeader, SheetTitle } from "@/components/ui/sheet";
 import { Separator } from "@/components/ui/separator";
-import logo from "@/assets/logo.png";
+import logo from "@/assets/logo.svg";
 
 const MobileNav = () => {
   const [open, setOpen] = useState(false);

@@ -1,68 +1,80 @@
-// Generates a crisp favicon/app-icon set from the brand brain mark.
-// Vector source (lucide "Brain") rendered via Puppeteer at each size — no upscaling blur.
-//   Outputs (to public/): favicon-16/32/48.png, favicon-192.png, favicon-512.png,
-//   apple-touch-icon.png (180, full-bleed/opaque). favicon.ico is assembled separately
-//   from the 16/32/48 PNGs by build-ico.py.
+// Generates the AI Free Text Pro logo and icon set from the brand mark: the
+// lucide "Brain" in purple #9767E4. This is the master for every app (site,
+// app, admin, partner portal); copy the outputs there when the logo changes.
+//
+// On screen the brain has no background, so it sits on light and dark themes.
+// Where an icon must be opaque (home screen, app launcher, search results) it
+// sits on the near-black #09090B square, as in the original logo.
+//
+//   Outputs: src/assets/logo.svg, public/logo.svg, public/favicon.svg,
+//   public/favicon-16/32/48.png, public/favicon-192.png, public/favicon-512.png,
+//   public/logo.png (512), public/apple-touch-icon.png (180),
+//   public/icon-maskable-512.png. Then run build-ico.py for favicon.ico.
 import puppeteer from "puppeteer";
+import { writeFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { dirname, resolve } from "node:path";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
-const PUBLIC = resolve(__dirname, "../../public");
+const ROOT = resolve(__dirname, "../..");
+const PUBLIC = resolve(ROOT, "public");
 
-// lucide Brain paths (viewBox 0 0 24 24, stroke 2, round caps/joins)
+const PURPLE = "#9767E4";
+const TILE = "#09090B";
+
+// lucide Brain (viewBox 0 0 24 24, stroke 2, round caps and joins)
 const BRAIN = [
-  "M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z",
-  "M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z",
-  "M15 13a4.5 4.5 0 0 1-3-4 4.5 4.5 0 0 1-3 4",
-  "M17.599 6.5a3 3 0 0 0 .399-1.375",
-  "M6.003 5.125A3 3 0 0 0 6.401 6.5",
-  "M3.477 10.896a4 4 0 0 1 .585-.396",
-  "M19.938 10.5a4 4 0 0 1 .585.396",
-  "M6 18a4 4 0 0 1-1.967-.516",
-  "M19.967 17.484A4 4 0 0 1 18 18",
-];
+  "M12 18V5",
+  "M15 13a4.17 4.17 0 0 1-3-4 4.17 4.17 0 0 1-3 4",
+  "M17.598 6.5A3 3 0 1 0 12 5a3 3 0 1 0-5.598 1.5",
+  "M17.997 5.125a4 4 0 0 1 2.526 5.77",
+  "M18 18a4 4 0 0 0 2-7.464",
+  "M19.967 17.483A4 4 0 1 1 12 18a4 4 0 1 1-7.967-.517",
+  "M6 18a4 4 0 0 1-2-7.464",
+  "M6.003 5.125a4 4 0 0 0-2.526 5.77",
+].map((d) => `<path d="${d}"/>`).join("");
 
-// Brand purple (sampled from logo.png = rgb(151,103,228) #9767E4)
-function svg({ size, rounded }) {
-  const rx = rounded ? 112 : 0;
-  const paths = BRAIN.map((d) => `<path d="${d}" />`).join("");
-  // brain scaled to ~300px and centered on a 512 canvas
-  return `<svg xmlns="http://www.w3.org/2000/svg" width="${size}" height="${size}" viewBox="0 0 512 512">
-  <defs>
-    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#A87BF0"/>
-      <stop offset="1" stop-color="#6D3FC4"/>
-    </linearGradient>
-  </defs>
-  <rect x="0" y="0" width="512" height="512" rx="${rx}" ry="${rx}" fill="url(#g)"/>
-  <g transform="translate(106 106) scale(12.5)" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-    ${paths}
-  </g>
-</svg>`;
-}
+const stroke = (width) =>
+  `fill="none" stroke="${PURPLE}" stroke-width="${width}" stroke-linecap="round" stroke-linejoin="round"`;
 
+/** The brain alone. A tighter box and heavier stroke keep it legible at favicon sizes. */
+const mark = ({ width = 2, box = "0 0 24 24" } = {}) =>
+  `<svg xmlns="http://www.w3.org/2000/svg" viewBox="${box}" ${stroke(width)}>${BRAIN}</svg>\n`;
+
+/** The brain on the dark square; scale 0.88 matches the original logo. */
+const tile = (scale) => {
+  const off = +(12 * (1 - scale)).toFixed(3);
+  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><rect width="24" height="24" fill="${TILE}"/><g transform="translate(${off} ${off}) scale(${scale})" ${stroke(2)}>${BRAIN}</g></svg>\n`;
+};
+
+writeFileSync(resolve(ROOT, "src/assets/logo.svg"), mark());
+writeFileSync(resolve(PUBLIC, "logo.svg"), mark());
+writeFileSync(resolve(PUBLIC, "favicon.svg"), mark({ width: 2.25, box: "1 1 22 22" }));
+
+const small = mark({ width: 2.5, box: "1 1 22 22" });
 const targets = [
-  { name: "favicon-16.png", size: 16, rounded: true, omit: true },
-  { name: "favicon-32.png", size: 32, rounded: true, omit: true },
-  { name: "favicon-48.png", size: 48, rounded: true, omit: true },
-  { name: "favicon-192.png", size: 192, rounded: true, omit: true },
-  { name: "favicon-512.png", size: 512, rounded: true, omit: true },
-  { name: "apple-touch-icon.png", size: 180, rounded: false, omit: false }, // opaque, iOS masks
+  { name: "favicon-16.png", size: 16, svg: small, opaque: false },
+  { name: "favicon-32.png", size: 32, svg: small, opaque: false },
+  { name: "favicon-48.png", size: 48, svg: small, opaque: false },
+  { name: "favicon-192.png", size: 192, svg: tile(0.88), opaque: true },
+  { name: "favicon-512.png", size: 512, svg: tile(0.88), opaque: true },
+  { name: "logo.png", size: 512, svg: tile(0.88), opaque: true },
+  { name: "apple-touch-icon.png", size: 180, svg: tile(0.88), opaque: true },
+  // Android crops maskable icons to a circle, so the brain needs more room.
+  { name: "icon-maskable-512.png", size: 512, svg: tile(0.66), opaque: true },
 ];
 
 const browser = await puppeteer.launch({ headless: "new" });
 try {
   const page = await browser.newPage();
   for (const t of targets) {
-    const markup = svg({ size: t.size, rounded: t.rounded });
     await page.setViewport({ width: t.size, height: t.size, deviceScaleFactor: 1 });
     await page.setContent(
-      `<!doctype html><meta charset="utf-8"><style>html,body{margin:0;padding:0;background:transparent}</style>${markup}`,
-      { waitUntil: "load" }
+      `<!doctype html><meta charset="utf-8"><style>html,body{margin:0;background:transparent}svg{display:block;width:${t.size}px;height:${t.size}px}</style>${t.svg}`,
+      { waitUntil: "load" },
     );
     const el = await page.$("svg");
-    await el.screenshot({ path: resolve(PUBLIC, t.name), omitBackground: t.omit });
+    await el.screenshot({ path: resolve(PUBLIC, t.name), omitBackground: !t.opaque });
     console.log("wrote", t.name, `${t.size}x${t.size}`);
   }
 } finally {

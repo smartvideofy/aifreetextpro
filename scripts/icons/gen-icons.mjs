@@ -6,7 +6,8 @@
 // Where an icon must be opaque (home screen, app launcher, search results) it
 // sits on the near-black #09090B square, as in the original logo.
 //
-//   Outputs: src/assets/logo.svg, public/logo.svg, public/favicon.svg,
+//   Outputs: src/assets/logo.svg, public/logo.svg, public/logo-tile.svg (for
+//   coloured backgrounds and avatars), public/favicon.svg,
 //   public/favicon-16/32/48.png, public/favicon-192.png, public/favicon-512.png,
 //   public/logo.png (512), public/apple-touch-icon.png (180),
 //   public/icon-maskable-512.png. Then run build-ico.py for favicon.ico.
@@ -49,6 +50,7 @@ const tile = (scale) => {
 
 writeFileSync(resolve(ROOT, "src/assets/logo.svg"), mark());
 writeFileSync(resolve(PUBLIC, "logo.svg"), mark());
+writeFileSync(resolve(PUBLIC, "logo-tile.svg"), tile(0.88));
 writeFileSync(resolve(PUBLIC, "favicon.svg"), mark({ width: 2.25, box: "1 1 22 22" }));
 
 const small = mark({ width: 2.5, box: "1 1 22 22" });

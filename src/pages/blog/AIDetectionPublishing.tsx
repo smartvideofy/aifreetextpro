@@ -15,7 +15,7 @@ import { AuthorSchema } from "@/components/AuthorSchema";
 
 const relatedArticles = [
   {
-    title: "AI Detection Tools Compared (2026 Edition)", description: "See which AI detector is most accurate for publishers", href: "/blog/ai-detection-tools-compared-2025", category: "Comparison"
+    title: "AI Detection Tools Compared (2026 Edition)", description: "See which AI detector is most accurate for publishers", href: "/blog/best-ai-detector-2026", category: "Comparison"
   }, {
     title: "How AI Detectors Work", description: "Understand the science behind AI text detection", href: "/blog/how-ai-detectors-work", category: "Educational"
   }, {
@@ -512,7 +512,7 @@ export default function AIDetectionPublishing() {
                 </p>
                 <ul className="space-y-2">
                   <li><Link to="/blog/how-ai-detectors-work" className="text-primary hover:underline">How AI detection technology actually works</Link></li>
-                  <li><Link to="/blog/ai-detection-tools-compared-2025" className="text-primary hover:underline">Comparing different AI detection tools for publishers</Link></li>
+                  <li><Link to="/blog/best-ai-detector-2026" className="text-primary hover:underline">Comparing different AI detection tools for publishers</Link></li>
                   <li><Link to="/blog/editing-ai-drafts-human-editor" className="text-primary hover:underline">Editing AI drafts like a human editor</Link></li>
                   <li><Link to="/blog/ai-writing-students-avoid-plagiarism" className="text-primary hover:underline">Educating writers on ethical AI use</Link></li>
                 </ul>

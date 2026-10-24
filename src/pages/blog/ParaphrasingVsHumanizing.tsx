@@ -24,7 +24,7 @@ const relatedArticles = [
   {
     title: "Top 10 AI Humanizer Tools for 2026",
     description: "Compare the best AI humanizers and find the right one for you",
-    href: "/blog/top-10-ai-humanizer-tools-2025",
+    href: "/blog/best-free-ai-humanizer-2026",
     category: "Comparison"
   },
   {

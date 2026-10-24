@@ -204,7 +204,7 @@ const BypassCopyleaksDetection = () => {
               <div className="flex items-start gap-3">
                 <Lightbulb className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
                 <p className="text-muted-foreground">
-                  <strong className="text-foreground">Tip:</strong> Even well-written AI content can get high Copyleaks scores if it lacks natural variation. Consider using an <Link to="/blog/best-free-ai-humanizer-tools-2025" className="text-primary hover:underline">AI humanizer tool</Link> to add authentic human qualities.
+                  <strong className="text-foreground">Tip:</strong> Even well-written AI content can get high Copyleaks scores if it lacks natural variation. Consider using an <Link to="/blog/best-free-ai-humanizer-2026" className="text-primary hover:underline">AI humanizer tool</Link> to add authentic human qualities.
                 </p>
               </div>
             </div>
@@ -283,7 +283,7 @@ const BypassCopyleaksDetection = () => {
                   </li>
                 </ul>
                 <p className="text-sm text-muted-foreground mt-4">
-                  Learn more about <Link to="/blog/how-ai-detectors-score-text" className="text-primary hover:underline">how AI detectors score text</Link> including perplexity metrics.
+                  Learn more about <Link to="/blog/how-ai-detectors-work" className="text-primary hover:underline">how AI detectors score text</Link> including perplexity metrics.
                 </p>
               </div>
 

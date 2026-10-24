@@ -15,13 +15,13 @@ import { AuthorSchema } from "@/components/AuthorSchema";
 
 const relatedArticles = [
   {
-    title: "The Definitive Guide to Writing Human-Like Content", description: "How to create natural content for GPTZero, Turnitin, Copyleaks, and more", href: "/blog/pass-all-ai-detectors-guide", category: "Guide"
+    title: "The Definitive Guide to Writing Human-Like Content", description: "How to create natural content for GPTZero, Turnitin, Copyleaks, and more", href: "/blog/bypass-ai-detection-guide", category: "Guide"
   }, {
     title: "How AI Detectors Work", description: "The science behind AI text analysis", href: "/blog/how-ai-detectors-work", category: "Educational"
   }, {
     title: "Bypass Originality AI Detection", description: "Strategies to pass Originality.AI detection", href: "/bypass-originality-ai", category: "Guide"
   }, {
-    title: "AI Detection Tools Compared (2026 Edition)", description: "See which AI detector is most accurate", href: "/blog/ai-detection-tools-compared-2025", category: "Comparison"
+    title: "AI Detection Tools Compared (2026 Edition)", description: "See which AI detector is most accurate", href: "/blog/best-ai-detector-2026", category: "Comparison"
   }
 ];
 

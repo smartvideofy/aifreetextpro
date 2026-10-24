@@ -11,18 +11,13 @@ import { KeyTakeaways } from "@/components/KeyTakeaways";
 import { QuickAnswer } from "@/components/QuickAnswer";
 import { AuthorSchema } from "@/components/AuthorSchema";
 import { SpeakableSchema } from "@/components/SpeakableSchema";
+import { AISignalChecker } from "@/components/AISignalChecker";
 
 const relatedArticles = [
-  { title: "What Is Perplexity and Burstiness?", description: "Plain definitions with AI vs human examples", href: "/blog/what-is-perplexity-burstiness", category: "Technical" },
-  { title: "What Do AI Detectors Look For?", description: "The 5 patterns that give AI text away, and how to fix each", href: "/blog/ai-detection-patterns-explained", category: "Technical" },
-  {
-    title: "How AI Detectors Score Text", description: "Behind-the-scenes look at detection metrics and scoring", href: "/blog/how-ai-detectors-score-text", category: "Technical"
+  { title: "What Is Perplexity and Burstiness?", description: "Plain definitions with AI vs human examples", href: "/blog/ai-detection-patterns-explained", category: "Technical" }, {
+    title: "AI Detection Tools Compared (2026 Edition)", description: "See which AI detector is most accurate in real-world tests", href: "/blog/best-ai-detector-2026", category: "Comparison"
   }, {
-    title: "Signal vs. Noise: What Makes Text Human", description: "Current patterns detectors care about with examples", href: "/blog/signal-vs-noise-human-text", category: "Technical"
-  }, {
-    title: "AI Detection Tools Compared (2026 Edition)", description: "See which AI detector is most accurate in real-world tests", href: "/blog/ai-detection-tools-compared-2025", category: "Comparison"
-  }, {
-    title: "How to Detect AI-Generated Text", description: "Expert techniques to spot AI writing patterns", href: "/blog/how-to-detect-ai-generated-text", category: "Guide"
+    title: "How to Detect AI-Generated Text", description: "Expert techniques to spot AI writing patterns", href: "/blog/how-to-check-if-written-by-ai", category: "Guide"
   }
 ];
 
@@ -55,7 +50,7 @@ export default function HowAIDetectorsWork() {
           {JSON.stringify({
             "@context": "https://schema.org", "@type": "Article", "headline": "How Do AI Detectors Work? GPTZero, Turnitin and Originality.AI Explained (2026)", "description": "Understand the machine-learning and linguistic patterns behind AI detectors and how to write authentically human content.", "image": {
               "@type": "ImageObject", "url": "https://aifreetextpro.com/logo.png", "width": 1200, "height": 675
-            }, "datePublished": "2026-02-02", "dateModified": "2026-06-02", "author": {
+            }, "datePublished": "2026-02-02", "dateModified": "2026-10-24", "author": {
               "@type": "Person", "name": "Dr. Sarah Chen", "url": "https://aifreetextpro.com/team#sarah-chen", "jobTitle": "Founder & CEO"
             }, "publisher": {
               "@type": "Organization", "name": "AI Free Text Pro", "logo": {
@@ -124,7 +119,7 @@ export default function HowAIDetectorsWork() {
         headline="How Do AI Detectors Work? GPTZero & Turnitin Explained (2026)"
         description="Exactly how GPTZero, Turnitin and Originality.AI use perplexity and burstiness to flag AI text. Plain-English math, real examples, and what to change to pass."
         datePublished="2026-02-02"
-        dateModified="2026-06-09"
+        dateModified="2026-10-24"
       />
       <SpeakableSchema
         pageUrl="https://aifreetextpro.com/blog/how-ai-detectors-work"
@@ -158,7 +153,7 @@ export default function HowAIDetectorsWork() {
               
               <p className="text-xl text-muted-foreground">
                 Understanding the technology behind AI detection helps you write better, more authentic content. New to the terms? Start with{" "}
-                <Link to="/blog/what-is-perplexity-burstiness" className="text-primary hover:underline">what perplexity and burstiness mean</Link>, or jump to{" "}
+                <Link to="/blog/ai-detection-patterns-explained" className="text-primary hover:underline">what perplexity and burstiness mean</Link>, or jump to{" "}
                 <Link to="/blog/ai-detection-patterns-explained" className="text-primary hover:underline">the 5 patterns AI detectors look for</Link>.
               </p>
             </header>
@@ -321,6 +316,36 @@ export default function HowAIDetectorsWork() {
               </section>
 
               <section>
+                <h2 className="text-3xl font-bold mb-4">From Signals to a Score: How Detectors Score Text</h2>
+                <p className="text-muted-foreground mb-4">
+                  Every commercial detector runs the same pipeline, whatever it calls its model:
+                </p>
+                <ol className="space-y-2 text-muted-foreground mb-4">
+                  <li><strong className="text-foreground">1. Split the text into windows.</strong> Turnitin, for example, scores overlapping segments of a few hundred words rather than the whole document at once.</li>
+                  <li><strong className="text-foreground">2. Measure each window.</strong> Perplexity, burstiness, vocabulary spread and token probabilities become a set of numbers.</li>
+                  <li><strong className="text-foreground">3. Classify.</strong> A model trained on known human and AI text turns those numbers into a probability for each window.</li>
+                  <li><strong className="text-foreground">4. Aggregate.</strong> Window scores combine into the headline percentage, and windows above a threshold are highlighted as "likely AI".</li>
+                </ol>
+                <h3 className="text-xl font-semibold mb-2">What "95% AI" actually means</h3>
+                <p className="text-muted-foreground mb-4">
+                  A detector that reports 95% is saying the text strongly matches the AI patterns it learned, not that
+                  there is a 95% chance a model wrote it. A person who writes in a very structured, formal style can
+                  trigger high confidence consistently: the measurement is precise, but it measures style, not
+                  authorship. That's why the useful question is never "what's my percentage?" but "which sentences are
+                  driving it, and why?"
+                </p>
+                <h3 className="text-xl font-semibold mb-2">Where human text sends a different signal</h3>
+                <p className="text-muted-foreground mb-4">
+                  Human writing carries "noise" that detectors read as signal: an abrupt three-word sentence, a
+                  half-finished thought, a specific number remembered rather than looked up, a joke, a shift in register
+                  mid-paragraph. Unedited AI drafts smooth all of that out. You can see the effect on your own writing
+                  with the checker below, which measures sentence rhythm, stock AI phrases and concrete detail.
+                </p>
+              </section>
+
+              <AISignalChecker source="how_detectors_work" title="See what a detector sees in your text" className="my-10" />
+
+              <section>
                 <h2 className="text-3xl font-bold mb-4">Limitations and False Positives</h2>
                 <p className="text-muted-foreground mb-4">
                   No AI detector is perfect. Understanding their limitations helps contextualize results:
@@ -397,7 +422,7 @@ export default function HowAIDetectorsWork() {
                 </ul>
                 <p className="text-muted-foreground mt-4">
                   For the metric definitions on their own, see{" "}
-                  <Link to="/blog/what-is-perplexity-burstiness" className="text-primary hover:underline">
+                  <Link to="/blog/ai-detection-patterns-explained" className="text-primary hover:underline">
                     what perplexity and burstiness mean
                   </Link>
                   .

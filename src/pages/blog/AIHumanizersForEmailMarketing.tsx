@@ -19,7 +19,7 @@ const relatedArticles = [
   }, {
     title: "AI-Powered SEO Content in 2026: Writing Naturally That Ranks", description: "Using AI to generate SEO-friendly content without losing authenticity", href: "/blog/ai-powered-seo-content-2026", category: "SEO"
   }, {
-    title: "How AI Detectors Score Text", description: "Understand the metrics behind AI detection tools", href: "/blog/how-ai-detectors-score-text", category: "Technical"
+    title: "How AI Detectors Score Text", description: "Understand the metrics behind AI detection tools", href: "/blog/how-ai-detectors-work", category: "Technical"
   }, {
     title: "Mastering AI-Powered Email Campaigns in 2026", description: "Advanced strategies for email personalization with AI", href: "/blog/mastering-ai-powered-email-campaigns-2026", category: "Email Marketing"
   }

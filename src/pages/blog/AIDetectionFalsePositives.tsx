@@ -13,7 +13,7 @@ import ReviewedBy from "@/components/ReviewedBy";
 import { AuthorSchema } from "@/components/AuthorSchema";
 
 const relatedArticles = [
-  { title: "Can Teachers Detect ChatGPT?", description: "How schools detect AI-generated work in 2026.", href: "/blog/can-teachers-detect-chatgpt", category: "Academic" }, { title: "How AI Detectors Score Text", description: "Understand perplexity, burstiness, and confidence scores.", href: "/blog/how-ai-detectors-score-text", category: "Technical" }, { title: "Signal vs. Noise in Human Text", description: "What makes text sound human to detectors.", href: "/blog/signal-vs-noise-human-text", category: "Technical" }, { title: "Academic AI Writing Safely", description: "Use AI responsibly in academic settings.", href: "/blog/academic-ai-writing-safely", category: "Academic" },
+  { title: "Can Teachers Detect ChatGPT?", description: "How schools detect AI-generated work in 2026.", href: "/blog/can-teachers-detect-chatgpt", category: "Academic" }, { title: "How AI Detectors Score Text", description: "Understand perplexity, burstiness, and confidence scores.", href: "/blog/how-ai-detectors-work", category: "Technical" }, { title: "Academic AI Writing Safely", description: "Use AI responsibly in academic settings.", href: "/blog/academic-ai-writing-safely", category: "Academic" }
 ];
 
 const AIDetectionFalsePositives = () => {

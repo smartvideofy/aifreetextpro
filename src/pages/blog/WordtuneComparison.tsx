@@ -18,7 +18,7 @@ const relatedArticles = [
   { title: "Quillbot vs AI Free Text Pro", description: "Another rewriter vs humanizer comparison", href: "/blog/quillbot-vs-ai-free-text-pro", category: "Comparison" },
   { title: "Paraphrasing vs Humanizing", description: "Why the distinction matters", href: "/blog/paraphrasing-vs-humanizing", category: "Comparison" },
   { title: "Undetectable AI vs AI Free Text Pro", description: "Humanizer head-to-head comparison", href: "/blog/undetectable-ai-vs-ai-free-text-pro", category: "Comparison" },
-  { title: "Top 10 AI Humanizer Tools", description: "Comprehensive humanizer roundup", href: "/blog/top-10-ai-humanizer-tools-2025", category: "Tools" },
+  { title: "Top 10 AI Humanizer Tools", description: "Comprehensive humanizer roundup", href: "/blog/best-free-ai-humanizer-2026", category: "Tools" },
 ];
 
 const faqs = [

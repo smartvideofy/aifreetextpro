@@ -111,7 +111,7 @@ const DetectorTemplate = () => {
             Every detector on this site scores the same two properties. Read{" "}
             <Link to="/blog/how-ai-detectors-work" className="text-primary hover:underline">how AI detectors work</Link>{" "}
             for the tested methodology, and{" "}
-            <Link to="/blog/what-is-perplexity-burstiness" className="text-primary hover:underline">
+            <Link to="/blog/ai-detection-patterns-explained" className="text-primary hover:underline">
               what perplexity and burstiness mean
             </Link>{" "}
             for the definitions behind the numbers.

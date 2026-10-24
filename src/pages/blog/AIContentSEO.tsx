@@ -18,7 +18,7 @@ const relatedArticles = [
   {
     title: "Paraphrasing vs. Humanizing for Marketers", description: "Why simple paraphrasers don't work for AI content", href: "/blog/paraphrasing-vs-humanizing", category: "Marketing"
   }, {
-    title: "The Definitive Guide to Writing Human-Like Content", description: "How to create natural content that reads authentically", href: "/blog/pass-all-ai-detectors-guide", category: "Guide"
+    title: "The Definitive Guide to Writing Human-Like Content", description: "How to create natural content that reads authentically", href: "/blog/bypass-ai-detection-guide", category: "Guide"
   }, {
     title: "AI-Powered SEO Content in 2026", description: "How AI is transforming search engine optimization", href: "/blog/ai-powered-seo-content-2026", category: "SEO"
   }, {

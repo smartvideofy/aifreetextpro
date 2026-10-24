@@ -17,7 +17,7 @@ const relatedArticles = [
   { title: "GPTZero Accuracy Review", description: "How accurate is GPTZero in 2026?", href: "/blog/gptzero-accuracy-review", category: "Review" },
   { title: "Originality.AI Review", description: "Pricing, accuracy, false positives.", href: "/blog/originality-ai-review-how-to-beat", category: "Review" },
   { title: "Turnitin vs GPTZero vs Originality.AI", description: "Side-by-side detector comparison.", href: "/blog/turnitin-vs-gptzero-vs-originality-ai", category: "Comparison" },
-  { title: "Free AI Content Detector", description: "Best free AI detection tools.", href: "/blog/free-ai-content-detector", category: "Tools" },
+  { title: "Free AI Content Detector", description: "Best free AI detection tools.", href: "/ai-checker", category: "Tools" },
 ];
 
 const BestAIDetector2026 = () => {

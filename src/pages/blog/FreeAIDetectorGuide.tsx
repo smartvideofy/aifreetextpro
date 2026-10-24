@@ -25,8 +25,8 @@ const DESCRIPTION =
   "How free AI detectors work, what their scores mean, where the free limits actually sit, and a 4-step checking workflow that avoids the false-positive trap.";
 
 const relatedArticles = [
-  { title: "Free AI Content Detector", description: "Check any text for AI patterns in seconds.", href: "/blog/free-ai-content-detector", category: "Tools" },
-  { title: "How AI Detectors Score Text", description: "The mechanics behind the percentage.", href: "/blog/how-ai-detectors-score-text", category: "Technical" },
+  { title: "Free AI Content Detector", description: "Check any text for AI patterns in seconds.", href: "/ai-checker", category: "Tools" },
+  { title: "How AI Detectors Score Text", description: "The mechanics behind the percentage.", href: "/blog/how-ai-detectors-work", category: "Technical" },
   { title: "AI Detection False Positives", description: "What to do when human writing gets flagged.", href: "/blog/ai-detection-false-positives", category: "Technical" },
   { title: "Best AI Detector 2026", description: "Accuracy ranking across the major tools.", href: "/blog/best-ai-detector-2026", category: "Comparison" },
 ];
@@ -161,7 +161,7 @@ const FreeAIDetectorGuide = () => {
 
             <h2>What a Detector Is Actually Measuring</h2>
             <p>An AI detector does not recognise machine text the way antivirus software recognises a known file. It runs a statistical test. The first quantity is perplexity: given everything before it, how surprising is each next word? Language models pick high-probability continuations by design, so their output has low perplexity. Human writing wanders, doubles back, and reaches for the word that is slightly off but exactly right.</p>
-            <p>The second quantity is burstiness, meaning variation across the passage. Human paragraphs lurch between a nine-word sentence and a thirty-four-word one, and paragraph lengths vary with the writer's attention. Model output tends to settle into a narrow band and stay there. Both {TURNITIN_AI} and {GPTZERO_FAQ} describe systems built around these surface properties rather than any provider-specific signal, and our deeper explainer on <Link to="/blog/how-ai-detectors-score-text">how AI detectors score text</Link> walks through the arithmetic.</p>
+            <p>The second quantity is burstiness, meaning variation across the passage. Human paragraphs lurch between a nine-word sentence and a thirty-four-word one, and paragraph lengths vary with the writer's attention. Model output tends to settle into a narrow band and stay there. Both {TURNITIN_AI} and {GPTZERO_FAQ} describe systems built around these surface properties rather than any provider-specific signal, and our deeper explainer on <Link to="/blog/how-ai-detectors-work">how AI detectors score text</Link> walks through the arithmetic.</p>
             <p>The consequence is worth sitting with, because it explains almost every confusing result people get. Since the test measures predictability, any writing that happens to be predictable scores high, whether a model was involved or not. Technical documentation, legal boilerplate, exam-style academic prose and carefully taught ESL writing are all statistically smooth for entirely innocent reasons.</p>
 
             <Cta

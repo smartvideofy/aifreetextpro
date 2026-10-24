@@ -13,16 +13,11 @@ import { InternalLinks } from "@/components/InternalLinks";
 import { AuthorSchema } from "@/components/AuthorSchema";
 import { QuickAnswer } from "@/components/QuickAnswer";
 import { FAQSection } from "@/components/FAQSection";
+import { AISignalChecker } from "@/components/AISignalChecker";
 
 const relatedArticles = [
-  { title: "How Do AI Detectors Work?", description: "How GPTZero, Turnitin and Originality.AI decide a text is AI", href: "/blog/how-ai-detectors-work", category: "Technical" },
-  { title: "What Is Perplexity and Burstiness?", description: "Plain definitions with AI vs human examples", href: "/blog/what-is-perplexity-burstiness", category: "Technical" },
-  {
-    title: "Signal vs. Noise: What Makes Text Human", description: "Deep dive into patterns that distinguish human writing", href: "/blog/signal-vs-noise-human-text", category: "Technical"
-  }, {
-    title: "How AI Detectors Score Text", description: "Behind-the-scenes look at detection metrics", href: "/blog/how-ai-detectors-score-text", category: "Technical"
-  }, {
-    title: "AI Detection Tools Compared (2026 Edition)", description: "Which AI detector is most accurate?", href: "/blog/ai-detection-tools-compared-2025", category: "Comparison"
+  { title: "How Do AI Detectors Work?", description: "How GPTZero, Turnitin and Originality.AI decide a text is AI", href: "/blog/how-ai-detectors-work", category: "Technical" }, {
+    title: "AI Detection Tools Compared (2026 Edition)", description: "Which AI detector is most accurate?", href: "/blog/best-ai-detector-2026", category: "Comparison"
   }
 ];
 
@@ -30,8 +25,8 @@ const AIDetectionPatterns = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <Helmet>
-        <title>What Do AI Detectors Look For? Perplexity, Burstiness + 3 More</title>
-        <meta name="description" content="AI detectors flag low perplexity, low burstiness and 3 other patterns. See each one in a real sentence, plus the 2-minute edit that fixes it." />
+        <title>What Is Burstiness and Perplexity? What AI Detectors Look For</title>
+        <meta name="description" content="Burstiness is how much sentence length varies; perplexity is how predictable the words are. See both in real sentences, measure your own text free, plus 3 more patterns AI detectors flag." />
         <meta name="keywords" content="what do AI detectors look for, AI detection patterns, signs of AI writing, is my writing human or AI, AI linguistic patterns" />
         <link rel="canonical" href="https://aifreetextpro.com/blog/ai-detection-patterns-explained" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
@@ -52,7 +47,7 @@ const AIDetectionPatterns = () => {
         
         <script type="application/ld+json">
           {JSON.stringify({
-            "@context": "https://schema.org", "@type": "Article", "headline": "What Do AI Detectors Look For? 5 Patterns That Give AI Text Away", "description": "Discover the 5 linguistic patterns AI detectors analyze to distinguish AI writing from human writing.", "datePublished": "2026-02-02", "dateModified": "2026-04-05", "author": {
+            "@context": "https://schema.org", "@type": "Article", "headline": "What Do AI Detectors Look For? 5 Patterns That Give AI Text Away", "description": "Discover the 5 linguistic patterns AI detectors analyze to distinguish AI writing from human writing.", "datePublished": "2026-02-02", "dateModified": "2026-10-24", "author": {
               "@type": "Person", "name": "Dr. Sarah Chen", "url": "https://aifreetextpro.com/team#sarah-chen", "jobTitle": "Founder & CEO"
             }, "publisher": {
               "@type": "Organization", "name": "AI Free Text Pro", "logo": {
@@ -84,7 +79,7 @@ const AIDetectionPatterns = () => {
         headline="What Do AI Detectors Look For? 5 Patterns (2026)"
         description="5 exact patterns AI detectors check (with examples). Fix each one in under 5 minutes. Tested on Turnitin, GPTZero, and Originality.AI."
         datePublished="2026-02-02"
-        dateModified="2026-06-09"
+        dateModified="2026-10-24"
       />
       <SpeakableSchema
         pageUrl="https://aifreetextpro.com/blog/ai-detection-patterns-explained"
@@ -124,7 +119,7 @@ const AIDetectionPatterns = () => {
                 </div>
 
                 <h1 className="text-4xl md:text-5xl font-bold leading-tight">
-                  What Do AI Detectors Look For? 5 Patterns That Give AI Text Away
+                  What Is Burstiness and Perplexity? 5 Patterns AI Detectors Look For
                 </h1>
 
                 <QuickAnswer
@@ -132,9 +127,28 @@ const AIDetectionPatterns = () => {
                   answer="AI detectors score five signals: low perplexity (text that is too predictable), low burstiness (uniform sentence length), narrow vocabulary distribution, overly smooth coherence, and a lack of emotional depth or specific detail. Human writing varies across all five; AI writing clusters in the 'too consistent' range, which is what detectors flag."
                 />
 
+                <div className="not-prose grid gap-4 md:grid-cols-2">
+                  <div className="rounded-xl border border-primary/20 bg-primary/5 p-5">
+                    <p className="mb-2 font-semibold">What is burstiness?</p>
+                    <p className="text-sm text-muted-foreground">
+                      Burstiness is the variation in sentence length and structure across a passage. Measured as the
+                      standard deviation of sentence length, human writing typically varies by 8 to 16 words, while
+                      unedited AI output varies by only 1 to 4. High burstiness means short and long sentences alternate;
+                      low burstiness means every sentence is about the same size, one of the two strongest AI signals.
+                    </p>
+                  </div>
+                  <div className="rounded-xl border border-primary/20 bg-primary/5 p-5">
+                    <p className="mb-2 font-semibold">What is perplexity?</p>
+                    <p className="text-sm text-muted-foreground">
+                      Perplexity measures how surprising each word is to a language model. Low perplexity means the model
+                      would have predicted those exact words; high perplexity means the choices were unexpected. AI text
+                      has low perplexity by construction, because generation favours high-probability words.
+                    </p>
+                  </div>
+                </div>
+
                 <p className="text-xl text-muted-foreground">
-                  The five patterns detectors flag, with the edit that fixes each. For definitions, see{" "}
-                  <Link to="/blog/what-is-perplexity-burstiness" className="text-primary hover:underline">what perplexity and burstiness are</Link>; for the scoring process, see{" "}
+                  The five patterns detectors flag, with the edit that fixes each. For the scoring process, see{" "}
                   <Link to="/blog/how-ai-detectors-work" className="text-primary hover:underline">how AI detectors work</Link>.
                 </p>
               </header>
@@ -149,13 +163,18 @@ const AIDetectionPatterns = () => {
 
               <div className="prose prose-lg max-w-none">
                 <p>
-                  AI detectors don't use magic. They use mathematics. Every detection tool analyzes specific linguistic patterns that statistically differentiate AI-generated text from human writing. Understanding these patterns isn't just academically interesting, it's the key to creating content that reads authentically human. For a deeper look at the scoring mechanics, see our guide on <Link to="/blog/how-ai-detectors-score-text" className="text-primary hover:underline">how AI detectors score text</Link>.
+                  AI detectors don't use magic. They use mathematics. Every detection tool analyzes specific linguistic patterns that statistically differentiate AI-generated text from human writing. Understanding these patterns isn't just academically interesting, it's the key to creating content that reads authentically human. For a deeper look at the scoring mechanics, see our guide on <Link to="/blog/how-ai-detectors-work" className="text-primary hover:underline">how AI detectors score text</Link>.
                 </p>
                 
                 <p>
-                  In this article, we'll break down the five most important patterns AI detectors analyze, explain the science behind each (based on research published by <a href="https://arxiv.org/abs/2301.10416" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary/80">OpenAI</a> and <a href="https://research.google/pubs/palm-scaling-language-modeling-with-pathways/" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary/80">Google Research</a>), and show you exactly how <a href="https://app.aifreetextpro.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary/80">AI Free Text Pro's humanizer</a> automatically fixes these issues. To learn practical strategies, check out our <Link to="/blog/bypass-ai-detection-ethical-tips" className="text-primary hover:underline">ethical bypass tips guide</Link>.
+                  In this article, we'll break down the five most important patterns AI detectors analyze, explain the science behind each (based on research published by <a href="https://arxiv.org/abs/2301.10416" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary/80">OpenAI</a> and <a href="https://research.google/pubs/palm-scaling-language-modeling-with-pathways/" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary/80">Google Research</a>), and show you exactly how <a href="https://app.aifreetextpro.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary/80">AI Free Text Pro's humanizer</a> automatically fixes these issues. To learn practical strategies, check out our <Link to="/blog/bypass-ai-detection-guide" className="text-primary hover:underline">ethical bypass tips guide</Link>.
                 </p>
 
+              </div>
+
+              <AISignalChecker source="patterns" title="Measure your text's burstiness" className="my-10" />
+
+              <div className="prose prose-lg max-w-none">
                 <h2>Pattern #1: Perplexity (Predictability)</h2>
                 
                 <div className="bg-primary/10 p-6 rounded-lg my-6">
@@ -351,7 +370,7 @@ const AIDetectionPatterns = () => {
               </div>
 
               <FAQSection faqs={[
-                { question: "What is perplexity in AI detection?", answer: "Perplexity measures how predictable each word is. AI tends to pick the statistically 'safe' next word, producing consistently low perplexity, while human writing is less predictable and scores higher. Detectors treat sustained low perplexity as an AI signal." }, { question: "What is burstiness?", answer: "Burstiness is the variation in sentence length and structure. Humans mix short and long sentences; AI tends to produce uniform, similar-length sentences. Low burstiness is one of the strongest AI indicators detectors rely on." }, { question: "Can human writing be flagged as AI?", answer: "Yes. Highly uniform, formal, or formulaic writing, common in technical, academic, and non-native English text, can show low perplexity and burstiness and trigger false positives. No detector is 100% accurate, so a score is a signal, not proof." }, { question: "How do you write content that doesn't trigger these patterns?", answer: "Vary your sentence length, use specific examples and concrete detail, add genuine perspective, and avoid repetitive transitions. Humanizing tools like AI Free Text Pro restructure AI text to raise perplexity and burstiness while preserving meaning." }, ]} />
+                { question: "What is perplexity in AI detection?", answer: "Perplexity measures how predictable each word is. AI tends to pick the statistically 'safe' next word, producing consistently low perplexity, while human writing is less predictable and scores higher. Detectors treat sustained low perplexity as an AI signal." }, { question: "What is burstiness?", answer: "Burstiness is the variation in sentence length and structure. Humans mix short and long sentences; AI tends to produce uniform, similar-length sentences. Low burstiness is one of the strongest AI indicators detectors rely on." }, { question: "What is a good burstiness score?", answer: "There is no universal scale, but as a rule of thumb, a standard deviation of sentence length above 8 words reads as human, and below 4 reads as machine-generated. In the checker on this page, a green Sentence rhythm bar means your text varies the way human writing does." }, { question: "How do you measure burstiness?", answer: "Count the words in each sentence across at least ten sentences, then take the standard deviation, or divide it by the average to get a coefficient of variation. The checker on this page does this automatically and shows the shortest, longest and average sentence." }, { question: "What is the difference between perplexity and burstiness?", answer: "Perplexity is about word choice: how predictable each word is. Burstiness is about rhythm: how much sentence length varies. AI text is usually low on both, which is why detectors weigh them together." }, { question: "Can human writing be flagged as AI?", answer: "Yes. Highly uniform, formal, or formulaic writing, common in technical, academic, and non-native English text, can show low perplexity and burstiness and trigger false positives. No detector is 100% accurate, so a score is a signal, not proof." }, { question: "How do you write content that doesn't trigger these patterns?", answer: "Vary your sentence length, use specific examples and concrete detail, add genuine perspective, and avoid repetitive transitions. Humanizing tools like AI Free Text Pro restructure AI text to raise perplexity and burstiness while preserving meaning." }, ]} />
 
               <RelatedArticles articles={relatedArticles} />
 

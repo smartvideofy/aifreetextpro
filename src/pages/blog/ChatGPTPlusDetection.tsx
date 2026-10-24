@@ -13,6 +13,7 @@ import InternalLinks from "@/components/InternalLinks";
 import { FAQSection } from "@/components/FAQSection";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { AuthorSchema } from "@/components/AuthorSchema";
+import { AISignalChecker } from "@/components/AISignalChecker";
 
 const relatedArticles = [
   { title: "Humanize ChatGPT Text", description: "Step-by-step ChatGPT humanization", href: "/blog/humanize-chatgpt-text", category: "How-To Guide" },
@@ -53,7 +54,7 @@ const ChatGPTPlusDetection = () => {
             "author": { "@type": "Person", "name": "Dr. Sarah Chen", "url": "https://aifreetextpro.com/team#sarah-chen" },
             "publisher": { "@type": "Organization", "name": "AI Free Text Pro", "logo": { "@type": "ImageObject", "url": "https://aifreetextpro.com/logo.png" } },
             "datePublished": "2026-03-08",
-            "dateModified": "2026-03-08",
+            "dateModified": "2026-10-24",
             "wordCount": 1100
           })}
         </script>
@@ -74,7 +75,7 @@ const ChatGPTPlusDetection = () => {
         headline="Does ChatGPT Plus Bypass AI Detection? (2026 Test Results) | AI Free Text Pro"
         description="We tested ChatGPT Plus, Pro, and free tier against 5 AI detectors. Paying for ChatGPT does not make your text less detectable. Real 2026 test data inside."
         datePublished="2026-03-08"
-        dateModified="2026-06-09"
+        dateModified="2026-10-24"
       />
       <SpeakableSchema
         pageUrl="https://aifreetextpro.com/blog/chatgpt-plus-detection"
@@ -112,6 +113,8 @@ const ChatGPTPlusDetection = () => {
             </header>
 
             <ReviewedBy name="Dr. Sarah Chen" role="Founder & CEO" slug="sarah-chen" />
+
+            <AISignalChecker source="chatgpt_plus" title="Check your ChatGPT text for AI signals" className="my-8" />
 
             <KeyTakeaways points={[
               "ChatGPT Plus does NOT produce less detectable text than the free tier",

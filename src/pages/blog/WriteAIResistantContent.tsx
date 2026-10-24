@@ -24,7 +24,7 @@ const relatedArticles = [
   {
     title: "AI Detection Comparison: Finding the Best Tool",
     description: "See which AI detector is most accurate in real-world tests",
-    href: "/blog/ai-detection-tools-compared-2025",
+    href: "/blog/best-ai-detector-2026",
     category: "Comparison"
   },
   {

@@ -10,51 +10,69 @@ import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { FAQSection } from "@/components/FAQSection";
 import { Link } from "react-router-dom";
 
-const API_PORTAL_URL = "https://api.aifreetextpro.com/";
+// Keys are issued by support for now; there is no self-serve developer portal yet.
+const API_KEY_REQUEST = "mailto:support@aifreetextpro.com?subject=API%20key%20request";
+const ENDPOINT = "https://uvprbzcxajreafjwbvrs.supabase.co/functions/v1/api-humanize";
 
 const codeExamples = {
-  curl: `curl -X POST https://api.aifreetextpro.com/v1/humanize \\
+  curl: `curl -X POST ${ENDPOINT} \\
   -H "Authorization: Bearer sk_live_your_api_key" \\
   -H "Content-Type: application/json" \\
-  -d '{
-    "text": "AI-generated text to humanize...", "style": "academic", "strength": "balanced"
-  }'`, python: `import requests
+  -d '{"text": "AI-generated text to humanize...", "style": "academic", "strength": 60}'`,
+  python: `import requests
 
 response = requests.post(
-    "https://api.aifreetextpro.com/v1/humanize", headers={
-        "Authorization": "Bearer sk_live_your_api_key", "Content-Type": "application/json"
-    }, json={
-        "text": "AI-generated text to humanize...", "style": "academic", "strength": "balanced"
-    }
+    "${ENDPOINT}",
+    headers={"Authorization": "Bearer sk_live_your_api_key"},
+    json={"text": "AI-generated text to humanize...", "style": "academic", "strength": 60},
+    timeout=120,
 )
-
-result = response.json()
-print(result["humanized_text"])`, javascript: `const response = await fetch(
-  "https://api.aifreetextpro.com/v1/humanize", {
-    method: "POST", headers: {
-      "Authorization": "Bearer sk_live_your_api_key", "Content-Type": "application/json"
-    }, body: JSON.stringify({
-      text: "AI-generated text to humanize...", style: "academic", strength: "balanced"
-    })
-  }
-);
+response.raise_for_status()
+print(response.json()["humanized_text"])`,
+  javascript: `const response = await fetch("${ENDPOINT}", {
+  method: "POST",
+  headers: {
+    Authorization: "Bearer sk_live_your_api_key",
+    "Content-Type": "application/json",
+  },
+  body: JSON.stringify({ text: "AI-generated text to humanize...", style: "academic", strength: 60 }),
+});
 
 const result = await response.json();
 console.log(result.humanized_text);`,
 };
 
 const responseExample = `{
-  "humanized_text": "Your naturally rewritten text...", "confidence_score": 0.97, "word_count": 142, "detection_risk": "low", "credits_remaining": 48500
+  "humanized_text": "Your naturally rewritten text...",
+  "word_count": 142,
+  "tokens_used": 185,
+  "tokens_remaining": 48315,
+  "style_used": "academic"
 }`;
+
+const params = [
+  ["text", "string, required", "The text to humanize. Up to 5,000 words per request."],
+  ["style", "string", "academic, professional (default), casual, creative or simple."],
+  ["strength", "number 0-100", "How far to move from the original wording. Default 50."],
+  ["language", "string", "en, es, fr, de or nl. Detected from the text when omitted."],
+];
+
+const errors = [
+  ["400", "Missing text, more than 5,000 words, or strength outside 0-100"],
+  ["401", "Missing, malformed or revoked API key"],
+  ["402", "Not enough API tokens left (code INSUFFICIENT_TOKENS)"],
+  ["429", "More than 10 requests a minute; retry after the Retry-After header"],
+  ["503", "Rewrite service temporarily unavailable; safe to retry"],
+];
 
 const benefits = [
   {
-    icon: Zap, title: "Lightning Fast", description: "Average response time under 2 seconds. Process thousands of words in a single request.", }, {
+    icon: Zap, title: "Up to 5,000 Words", description: "Send a full article or essay in one request; long texts are rewritten in sections and returned whole.", }, {
     icon: Shield, title: "98% Bypass Rate", description: "Same industry-leading accuracy as our web app, now available programmatically.", }, {
-    icon: Key, title: "Simple Auth", description: "Bearer token authentication. Generate and manage API keys from your developer portal.", }, {
+    icon: Key, title: "Simple Auth", description: "One Bearer token per account. Keys are hashed on our side and can be revoked at any time.", }, {
     icon: Globe, title: "RESTful Design", description: "Standard REST API with JSON payloads. Integrate with any language or framework.", }, {
-    icon: BarChart3, title: "Usage Analytics", description: "Real-time dashboard tracking requests, word counts, and error rates per key.", }, {
-    icon: Layers, title: "Multiple Styles", description: "Academic, casual, professional, and creative humanization modes via a single parameter.", },
+    icon: BarChart3, title: "Token Balance in Every Response", description: "Each response reports tokens used and remaining, so you can meter usage in your own product.", }, {
+    icon: Layers, title: "5 Styles, 5 Languages", description: "Academic, professional, casual, creative and simple, in English, Spanish, French, German and Dutch.", },
 ];
 
 const useCases = [
@@ -67,32 +85,33 @@ const useCases = [
 
 const faqs = [
   {
-    question: "What are the API rate limits?", answer: "Pro Writer plans include 1,000 API requests per day with up to 5,000 words per request. Unlimited Creator plans have 10,000 requests per day. Need higher limits? Contact us for enterprise plans.", }, {
-    question: "Which plans include API access?", answer: "API access is available on Pro Writer ($24.99/mo) and Unlimited Creator ($59.99/mo) plans. Free and Starter plans do not include API access. Visit our pricing page for full plan details.", }, {
-    question: "How do I authenticate API requests?", answer: "Generate an API key from the developer portal. Include it as a Bearer token in the Authorization header of every request. Keys can be revoked and regenerated at any time.", }, {
-    question: "What endpoints are available?", answer: "Currently we offer POST /v1/humanize for text humanization and POST /v1/detect for AI detection. Both accept JSON payloads with configurable style and strength parameters.", }, {
-    question: "Is there a sandbox or test environment?", answer: "Yes. Your API key works in both test and production modes. Test requests are free and don't count against your quota, just prefix your key with sk_test_ instead of sk_live_.", },
+    question: "Is there an AI humanizer API?", answer: "Yes. AI Free Text Pro's AI humanizer API rewrites AI-generated text into natural, human-sounding writing with one POST request: send the text, a style and a strength, and get the humanized text back as JSON.", }, {
+    question: "What are the API rate limits?", answer: "10 requests per minute per account and up to 5,000 words per request. Usage is metered in API tokens (about 1.3 tokens per word), and every response reports the tokens used and remaining.", }, {
+    question: "Which plans include API access?", answer: "API access is available on Pro Writer ($24.99/mo) and Unlimited Creator ($59.99/mo) plans. Email support@aifreetextpro.com from your account email to get a key.", }, {
+    question: "How do I authenticate API requests?", answer: "Send your key as a Bearer token in the Authorization header. Keys start with sk_live_. We store only a hash of the key, and can revoke and reissue it at any time.", }, {
+    question: "Is there an AI detection API?", answer: "The public API currently covers humanizing. AI detection is available in the web app; contact us if you need detection programmatically.", }, {
+    question: "Which languages does the humanizer API support?", answer: "English, Spanish, French, German and Dutch. Pass a language code, or leave it out and the API detects the language from the text.", },
 ];
 
 const Api = () => {
   return (
     <>
       <Helmet>
-        <title>AI Humanizer & Detector API: 1 Endpoint, 50ms</title>
-        <meta name="description" content="Add AI humanizing and detection to your product with one REST call. Simple bearer auth, JSON in and out, sandbox keys free, docs you can skim in 5 minutes." />
-        <meta name="keywords" content="AI humanizer API, AI detection API, text humanization API, REST API, developer API, AI writing API" />
+        <title>AI Humanizer API: Humanize AI Text With One REST Call</title>
+        <meta name="description" content="AI humanizer API: rewrite AI-generated text into natural writing with one POST request. 5 styles, 5 languages, up to 5,000 words per call, bearer auth, JSON in and out. Docs and code samples." />
+        <meta name="keywords" content="ai humanizer api, humanize ai text api, ai text humanizer api, ai rewriter api, ai detection api" />
         <link rel="canonical" href="https://aifreetextpro.com/api" />
         <meta name="robots" content="index, follow" />
-        <meta property="og:title" content="AI Humanizer & Detector API: 1 Endpoint, 50ms" />
-        <meta property="og:description" content="RESTful API for AI text humanization and detection. Integrate 98% bypass accuracy into your product." />
+        <meta property="og:title" content="AI Humanizer API: Humanize AI Text With One REST Call" />
+        <meta property="og:description" content="Humanize AI-generated text from your own product with one POST request." />
         <meta property="og:url" content="https://aifreetextpro.com/api" />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="AI Humanizer & Detector API: 1 Endpoint, 50ms" />
+        <meta name="twitter:title" content="AI Humanizer API: Humanize AI Text With One REST Call" />
         <meta name="twitter:description" content="Programmatic access to AI text humanization and detection. REST API with simple auth." />
         <script type="application/ld+json">
           {JSON.stringify({
-            "@context": "https://schema.org", "@type": "SoftwareApplication", "name": "AI Free Text Pro API", "applicationCategory": "DeveloperApplication", "operatingSystem": "Web", "description": "REST API for AI text humanization and detection with 98% accuracy", "url": "https://aifreetextpro.com/api", "offers": {
+            "@context": "https://schema.org", "@type": "SoftwareApplication", "name": "AI Free Text Pro API", "applicationCategory": "DeveloperApplication", "operatingSystem": "Web", "description": "REST API that humanizes AI-generated text: 5 styles, 5 languages, up to 5,000 words per request", "url": "https://aifreetextpro.com/api", "offers": {
               "@type": "Offer", "price": "24.99", "priceCurrency": "USD", "description": "API access included with Pro Writer plan"
             }, "provider": {
               "@type": "Organization", "name": "AI Free Text Pro", "url": "https://aifreetextpro.com"
@@ -129,16 +148,16 @@ const Api = () => {
               Developer API
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-              Build with AI Free Text Pro{" "}
+              AI Humanizer{" "}
               <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">API</span>
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Programmatic access to industry-leading AI humanization and detection. Simple REST endpoints, 98% accuracy, and real-time usage analytics.
+              Humanize AI-generated text from your own product with one POST request. Five styles, five languages, up to 5,000 words per call, and the same rewriting engine as the web app.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href={API_PORTAL_URL} target="_blank" rel="noopener noreferrer">
+              <a href={API_KEY_REQUEST}>
                 <Button size="lg" className="bg-gradient-to-r from-primary to-secondary text-lg px-8">
-                  Get Your API Key <ArrowRight className="ml-2 h-5 w-5" />
+                  Request an API Key <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
               </a>
               <a href="#code-examples">
@@ -149,8 +168,8 @@ const Api = () => {
             </div>
             <div className="flex flex-wrap items-center justify-center gap-6 mt-10 text-sm text-muted-foreground">
               <span className="flex items-center gap-1.5"><CheckCircle className="h-4 w-4 text-primary" /> RESTful</span>
-              <span className="flex items-center gap-1.5"><CheckCircle className="h-4 w-4 text-primary" /> 99.9% Uptime</span>
-              <span className="flex items-center gap-1.5"><CheckCircle className="h-4 w-4 text-primary" /> &lt;2s Response</span>
+              <span className="flex items-center gap-1.5"><CheckCircle className="h-4 w-4 text-primary" /> 5,000 words per call</span>
+              <span className="flex items-center gap-1.5"><CheckCircle className="h-4 w-4 text-primary" /> 10 requests/min</span>
               <span className="flex items-center gap-1.5"><CheckCircle className="h-4 w-4 text-primary" /> JSON I/O</span>
             </div>
           </div>
@@ -164,6 +183,7 @@ const Api = () => {
               <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
                 A single POST request is all you need. Choose your language and start humanizing.
               </p>
+              <p className="mt-3 font-mono text-xs text-muted-foreground break-all">POST {ENDPOINT}</p>
             </div>
 
             <div className="grid lg:grid-cols-2 gap-6">
@@ -204,6 +224,50 @@ const Api = () => {
                 </pre>
               </div>
             </div>
+          </div>
+        </section>
+
+        {/* Reference */}
+        <section className="py-16 md:py-20">
+          <div className="container mx-auto px-4 max-w-4xl">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-center">API Reference</h2>
+            <h3 className="font-bold text-lg mb-3">Request body</h3>
+            <div className="overflow-x-auto rounded-lg border border-border mb-10">
+              <table className="w-full text-sm">
+                <thead className="bg-muted/50 text-left">
+                  <tr><th className="p-3">Field</th><th className="p-3">Type</th><th className="p-3">Description</th></tr>
+                </thead>
+                <tbody>
+                  {params.map(([field, type, desc]) => (
+                    <tr key={field} className="border-t border-border">
+                      <td className="p-3 font-mono">{field}</td>
+                      <td className="p-3 text-muted-foreground">{type}</td>
+                      <td className="p-3">{desc}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            <h3 className="font-bold text-lg mb-3">Errors</h3>
+            <div className="overflow-x-auto rounded-lg border border-border">
+              <table className="w-full text-sm">
+                <thead className="bg-muted/50 text-left">
+                  <tr><th className="p-3">Status</th><th className="p-3">Meaning</th></tr>
+                </thead>
+                <tbody>
+                  {errors.map(([code, meaning]) => (
+                    <tr key={code} className="border-t border-border">
+                      <td className="p-3 font-mono">{code}</td>
+                      <td className="p-3">{meaning}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            <p className="text-sm text-muted-foreground mt-6">
+              Errors return JSON with an <code>error</code> message. Want to try the rewriting before integrating? Use
+              the <Link to="/" className="text-primary hover:underline">free AI detector and humanizer</Link> in the browser.
+            </p>
           </div>
         </section>
 
@@ -270,7 +334,7 @@ const Api = () => {
           <div className="container mx-auto px-4 text-center max-w-3xl">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">API Access Included</h2>
             <p className="text-muted-foreground text-lg mb-8">
-              API access is available on <strong>Pro Writer</strong> ($24.99/mo) and <strong>Unlimited Creator</strong> ($59.99/mo) plans. All plans include the developer portal, usage analytics, and key management.
+              API access is available on <strong>Pro Writer</strong> ($24.99/mo) and <strong>Unlimited Creator</strong> ($59.99/mo) plans. Email us from your account address and we'll issue your key.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link to="/pricing">
@@ -278,9 +342,9 @@ const Api = () => {
                   View All Plans
                 </Button>
               </Link>
-              <a href={API_PORTAL_URL} target="_blank" rel="noopener noreferrer">
+              <a href={API_KEY_REQUEST}>
                 <Button size="lg" className="bg-gradient-to-r from-primary to-secondary text-lg px-8">
-                  Start Building <ArrowRight className="ml-2 h-5 w-5" />
+                  Request an API Key <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
               </a>
             </div>
@@ -302,11 +366,11 @@ const Api = () => {
           <div className="container mx-auto px-4 text-center max-w-3xl">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Ready to Integrate?</h2>
             <p className="text-muted-foreground text-lg mb-8">
-              Get your API key in under 60 seconds. Start with the free sandbox, no credit card required.
+              Email support@aifreetextpro.com from your account address with a line about what you're building, and we'll send your key.
             </p>
-            <a href={API_PORTAL_URL} target="_blank" rel="noopener noreferrer">
+            <a href={API_KEY_REQUEST}>
               <Button size="lg" className="bg-gradient-to-r from-primary to-secondary text-lg px-12 py-6">
-                Get Your API Key <ArrowRight className="ml-2 h-5 w-5" />
+                Request an API Key <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </a>
           </div>

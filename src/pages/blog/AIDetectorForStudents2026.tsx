@@ -15,7 +15,7 @@ import { AuthorSchema } from "@/components/AuthorSchema";
 import { SpeakableSchema } from "@/components/SpeakableSchema";
 
 const relatedArticles = [
-  { title: "Best AI Detector 2026", description: "Full ranking of every major detector with accuracy data.", href: "/blog/best-ai-detector-2026", category: "Detector Review" }, { title: "Free AI Content Detector", description: "How our free detector compares to paid tools.", href: "/blog/free-ai-content-detector", category: "Tools" }, { title: "Best AI Detector for Teachers", description: "Detector ranking specifically for educators.", href: "/blog/best-ai-detector-for-teachers", category: "Academic" }, { title: "AI Writing for Students", description: "Safe AI workflows for assignments and essays.", href: "/blog/ai-writing-students", category: "Academic" },
+  { title: "Best AI Detector 2026", description: "Full ranking of every major detector with accuracy data.", href: "/blog/best-ai-detector-2026", category: "Detector Review" }, { title: "Free AI Content Detector", description: "How our free detector compares to paid tools.", href: "/ai-checker", category: "Tools" }, { title: "Best AI Detector for Teachers", description: "Detector ranking specifically for educators.", href: "/ai-detector-for-teachers", category: "Academic" }, { title: "AI Writing for Students", description: "Safe AI workflows for assignments and essays.", href: "/blog/ai-writing-students", category: "Academic" },
 ];
 
 const faqs = [

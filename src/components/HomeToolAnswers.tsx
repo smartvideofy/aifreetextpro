@@ -95,7 +95,7 @@ const blocks = [
       rows: paraphraseRows,
     },
     links: [
-      { to: "/blog/paraphrasing-tool", label: "Full paraphrasing tool guide" },
+      { to: "/ai-paraphraser", label: "Full paraphrasing tool guide" },
       { to: "/blog/paraphrasing-vs-humanizing", label: "Paraphrasing vs humanizing" },
       { to: "/blog/rewrite-ai-text", label: "How to rewrite AI text" },
       { to: "/blog/best-paraphrasing-tool", label: "Paraphrasers compared" },

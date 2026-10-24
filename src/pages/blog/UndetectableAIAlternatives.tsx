@@ -15,7 +15,7 @@ import { ArrowLeft, Calendar, Clock, User, CheckCircle, XCircle } from "lucide-r
 import { AuthorSchema } from "@/components/AuthorSchema";
 
 const relatedArticles = [
-  { title: "Undetectable AI vs AI Free Text Pro", description: "Direct head-to-head comparison with test data.", href: "/blog/undetectable-ai-vs-ai-free-text-pro", category: "Comparison" }, { title: "Top 10 AI Humanizer Tools (2025)", description: "Comprehensive ranking of all major humanization tools.", href: "/blog/top-10-ai-humanizer-tools-2025", category: "Tools" }, { title: "Compare AI Humanizers", description: "Side-by-side comparison of leading AI humanizers.", href: "/compare-ai-humanizers", category: "Comparison" }, { title: "Best Free AI Humanizer Tools (2025)", description: "Top free options for humanizing AI text.", href: "/blog/best-free-ai-humanizer-tools-2025", category: "Tools" },
+  { title: "Undetectable AI vs AI Free Text Pro", description: "Direct head-to-head comparison with test data.", href: "/blog/undetectable-ai-vs-ai-free-text-pro", category: "Comparison" }, { title: "Top 10 AI Humanizer Tools (2025)", description: "Comprehensive ranking of all major humanization tools.", href: "/blog/best-free-ai-humanizer-2026", category: "Tools" }
 ];
 
 const faqs = [

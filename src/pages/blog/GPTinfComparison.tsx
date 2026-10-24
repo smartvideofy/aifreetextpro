@@ -18,7 +18,7 @@ const relatedArticles = [
   {
     title: "Top 10 AI Humanizer Tools for 2026",
     description: "Complete comparison of the best AI humanizers available",
-    href: "/blog/top-10-ai-humanizer-tools-2025",
+    href: "/blog/best-free-ai-humanizer-2026",
     category: "Comparison"
   },
   {
@@ -26,12 +26,6 @@ const relatedArticles = [
     description: "The ultimate guide to bypassing AI detection",
     href: "/blog/make-chatgpt-undetectable-2025",
     category: "Guide"
-  },
-  {
-    title: "Best Free AI Humanizer Tools in 2026",
-    description: "Compare the top free AI humanizer tools available",
-    href: "/blog/best-free-ai-humanizer-tools-2025",
-    category: "Tools"
   },
   {
     title: "ZeroGPT vs AI Free Text Pro",

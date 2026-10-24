@@ -18,7 +18,7 @@ const relatedArticles = [
   { title: "Does Canvas Detect ChatGPT?", description: "How Canvas LMS handles AI detection in 2026.", href: "/blog/does-canvas-detect-chatgpt", category: "Academic" },
   { title: "How AI Detectors Work", description: "The science behind AI detection.", href: "/blog/how-ai-detectors-work", category: "Educational" },
   { title: "AI Detection Patterns Explained", description: "5 patterns detectors analyze.", href: "/blog/ai-detection-patterns-explained", category: "Educational" },
-  { title: "Pass All AI Detectors Guide", description: "Create human-like content across all detectors.", href: "/blog/pass-all-ai-detectors-guide", category: "How-To Guide" },
+  { title: "Pass All AI Detectors Guide", description: "Create human-like content across all detectors.", href: "/blog/bypass-ai-detection-guide", category: "How-To Guide" },
 ];
 
 const AIDetectorsClaudeGeminiGPT5 = () => {

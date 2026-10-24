@@ -7,9 +7,9 @@ import { Link } from "react-router-dom";
 const guides = [
   { href: "/blog/ai-humanizer-for-indian-students", title: "AI Humanizer for Indian Students" },
   { href: "/blog/ai-detector-for-students-2026", title: "AI Detector for Students" },
-  { href: "/blog/ai-writing-checker", title: "AI Writing Checker Guide" },
+  { href: "/ai-checker", title: "AI Writing Checker Guide" },
   { href: "/blog/free-ai-detector", title: "Free AI Detector Guide" },
-  { href: "/blog/paraphrasing-tool", title: "Best Paraphrasing Tool" },
+  { href: "/ai-paraphraser", title: "Best Paraphrasing Tool" },
   { href: "/blog/ai-text-converter", title: "AI Text Converter" },
   { href: "/blog/check-my-essay-for-ai", title: "Check My Essay for AI" },
   { href: "/blog/ai-humanizer-for-essays", title: "AI Humanizer for Essays" },

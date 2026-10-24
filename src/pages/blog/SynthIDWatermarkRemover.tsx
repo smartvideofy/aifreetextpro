@@ -27,7 +27,7 @@ const DESCRIPTION =
 const relatedArticles = [
   { title: "How to Humanize Gemini Output", description: "A full workflow for rewriting Gemini drafts into natural writing.", href: "/blog/humanize-gemini-output", category: "How-To Guide" },
   { title: "Claude Watermark Remover", description: "How Claude's statistical text watermark works and what removes it.", href: "/blog/claude-watermark-remover", category: "Technical" },
-  { title: "What Is Perplexity and Burstiness?", description: "The two statistical measures behind most AI detection scores.", href: "/blog/what-is-perplexity-burstiness", category: "Technical" },
+  { title: "What Is Perplexity and Burstiness?", description: "The two statistical measures behind most AI detection scores.", href: "/blog/ai-detection-patterns-explained", category: "Technical" },
   { title: "How AI Detectors Work", description: "The statistics behind AI detection, explained with worked examples.", href: "/blog/how-ai-detectors-work", category: "Technical" },
 ];
 
@@ -203,7 +203,7 @@ const SynthIDWatermarkRemover = () => {
             <h2>Why Length Matters More Than People Expect</h2>
             <p>Statistical watermarks are confidence estimates, not switches. A verifier adds up the pseudorandom scores across every token and asks how unlikely that total would be for unwatermarked text. With 40 tokens the total is noisy and the verdict is weak. With 800 tokens the evidence becomes overwhelming.</p>
             <p>Two practical consequences follow. First, a short Gemini snippet, a subject line or a two-sentence answer, carries almost no reliable signal in either direction, which is why watermark verifiers typically decline to judge very short inputs. Second, long documents are where the signal is strongest, and long documents are also where partial rewriting fails most often: rewriting your introduction while leaving 2,000 watermarked words underneath does very little.</p>
-            <p>This is the same length-sensitivity that governs conventional AI detectors, which we cover in <Link to="/blog/how-ai-detectors-work">how AI detectors work</Link> and in the primer on <Link to="/blog/what-is-perplexity-burstiness">perplexity and burstiness</Link>.</p>
+            <p>This is the same length-sensitivity that governs conventional AI detectors, which we cover in <Link to="/blog/how-ai-detectors-work">how AI detectors work</Link> and in the primer on <Link to="/blog/ai-detection-patterns-explained">perplexity and burstiness</Link>.</p>
 
             <h2>Watermark Verification Is Not AI Detection</h2>
             <p>These two systems get conflated constantly, and the confusion causes real harm to people accused of misconduct.</p>

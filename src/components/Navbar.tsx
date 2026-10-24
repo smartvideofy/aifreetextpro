@@ -120,7 +120,7 @@ const Navbar = () => {
                 </DropdownMenuItem>
                 <DropdownMenuSeparator />
                 <DropdownMenuItem asChild>
-                  <Link to="/compare-ai-humanizers" className="w-full cursor-pointer font-medium text-primary">Compare Tools</Link>
+                  <Link to="/blog/best-free-ai-humanizer-2026" className="w-full cursor-pointer font-medium text-primary">Compare Tools</Link>
                 </DropdownMenuItem>
                 <DropdownMenuSeparator />
                 <DropdownMenuItem asChild>

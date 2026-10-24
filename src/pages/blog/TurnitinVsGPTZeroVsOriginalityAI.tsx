@@ -17,8 +17,8 @@ import { AuthorSchema } from "@/components/AuthorSchema";
 const relatedArticles = [
   { title: "GPTZero vs Turnitin: Head-to-Head Comparison", description: "Detailed two-way comparison of the most popular AI detectors.", href: "/blog/gptzero-vs-turnitin", category: "Comparison" },
   { title: "Originality AI Accuracy & False Positives", description: "In-depth review of Originality AI's detection performance.", href: "/blog/originality-ai-accuracy-false-positives", category: "Comparison" },
-  { title: "How AI Detectors Score Your Text", description: "Technical deep-dive into detection scoring algorithms.", href: "/blog/how-ai-detectors-score-text", category: "How-To Guide" },
-  { title: "Free AI Content Detector Comparison", description: "Compare the best free AI detection tools available.", href: "/blog/free-ai-content-detector", category: "Tools" },
+  { title: "How AI Detectors Score Your Text", description: "Technical deep-dive into detection scoring algorithms.", href: "/blog/how-ai-detectors-work", category: "How-To Guide" },
+  { title: "Free AI Content Detector Comparison", description: "Compare the best free AI detection tools available.", href: "/ai-checker", category: "Tools" },
 ];
 
 const faqs = [

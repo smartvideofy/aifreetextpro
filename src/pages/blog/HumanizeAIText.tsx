@@ -16,7 +16,7 @@ import { PostHowToSchema } from "@/components/PostHowToSchema";
 
 const relatedArticles = [
   {
-    title: "Top 10 AI Humanizer Tools for 2026", description: "Compare the top AI humanizer tools and find the perfect one for your needs", href: "/blog/top-10-ai-humanizer-tools-2025", category: "Tools"
+    title: "Top 10 AI Humanizer Tools for 2026", description: "Compare the top AI humanizer tools and find the perfect one for your needs", href: "/blog/best-free-ai-humanizer-2026", category: "Tools"
   }, {
     title: "How AI Detectors Work", description: "Understand the technology behind AI detection", href: "/blog/how-ai-detectors-work", category: "Guide"
   }, {
@@ -306,7 +306,7 @@ const HumanizeAIText = () => {
                   <li><strong>Creative:</strong> Engaging storytelling with personality and flair</li>
                 </ul>
                 <p>
-                  You can also adjust humanization strength (0-100%) and choose from 5 content domains for optimized results. Our <a href="/blog/best-free-ai-humanizer-tools-2025">advanced algorithms</a> ensure your content maintains authenticity while <a href="/blog/bypass-ai-detection-ethical-tips">bypassing AI detection</a>.
+                  You can also adjust humanization strength (0-100%) and choose from 5 content domains for optimized results. Our <a href="/blog/best-free-ai-humanizer-2026">advanced algorithms</a> ensure your content maintains authenticity while <a href="/blog/bypass-ai-detection-guide">bypassing AI detection</a>.
                 </p>
 
                 <h2>Before & After: Real Examples</h2>
@@ -340,7 +340,7 @@ const HumanizeAIText = () => {
                   <li><strong>Over-editing:</strong> Don't lose the helpful structure AI provides. Maintain the logical flow while adding your voice.</li>
                   <li><strong>Ignoring your audience:</strong> Casual tone works for <Link to="/blog" className="text-primary hover:text-primary/80">blog posts</Link>, not legal documents or <Link to="/blog/ai-writing-students-avoid-plagiarism" className="text-primary hover:text-primary/80">academic papers</Link>.</li>
                   <li><strong>Forgetting to fact-check:</strong> AI can be confident and wrong. Always verify claims with reliable sources.</li>
-                  <li><strong>Using the same AI phrases everyone else uses:</strong> Avoid "game-changer," "unlock," "deep dive," "delve into", these are <a href="/blog/how-to-detect-ai-generated-text">AI detection red flags</a>.</li>
+                  <li><strong>Using the same AI phrases everyone else uses:</strong> Avoid "game-changer," "unlock," "deep dive," "delve into", these are <a href="/blog/how-to-check-if-written-by-ai">AI detection red flags</a>.</li>
                   <li><strong>Not reading it out loud:</strong> If it sounds weird spoken, it needs work. Natural writing flows conversationally.</li>
                 </ul>
 

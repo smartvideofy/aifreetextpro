@@ -126,7 +126,7 @@ const RewriteAIText = () => {
               <p>"It is" becomes "it's." "Do not" becomes "don't." AI avoids contractions by default, and this single change reduces detection scores by 10-15% on its own.</p>
 
               <h3>4. Insert personal perspective</h3>
-              <p>Add phrases like "In my experience," or "What I have found is." Even one personal observation per paragraph signals human authorship to detectors analyzing <Link to="/blog/signal-vs-noise-human-text" className="text-primary hover:underline">signal-to-noise ratios</Link>.</p>
+              <p>Add phrases like "In my experience," or "What I have found is." Even one personal observation per paragraph signals human authorship to detectors analyzing <Link to="/blog/how-ai-detectors-work" className="text-primary hover:underline">signal-to-noise ratios</Link>.</p>
 
               <h3>5. Use unexpected vocabulary</h3>
               <p>AI defaults to the most statistically common word. Swap "utilize" for "lean on." Replace "implement" with "put into practice." Choose the word a human would actually say, not the one an AI predicts.</p>

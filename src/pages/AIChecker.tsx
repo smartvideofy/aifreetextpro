@@ -15,13 +15,13 @@ const AIChecker = () => {
   const features = [
     {
       icon: Eye,
-      title: "Multi-Detector Analysis",
-      description: "Check against GPTZero, Turnitin, Originality.AI, ZeroGPT, Copyleaks, and 15+ other AI detectors simultaneously."
+      title: "AI Writing Review",
+      description: "Check essays, articles and other drafts for patterns that may indicate AI-generated writing."
     },
     {
       icon: Target,
-      title: "98% Accuracy Rate",
-      description: "Industry-leading detection accuracy with detailed probability scores and highlighted AI-generated sections."
+      title: "Scores With Context",
+      description: "Use an AI score as a prompt for review, not proof of authorship. Human writing can also be flagged."
     },
     {
       icon: FileText,
@@ -36,31 +36,31 @@ const AIChecker = () => {
     {
       icon: Shield,
       title: "Privacy First",
-      description: "Your content is never stored or shared. Full encryption and automatic deletion after analysis."
+      description: "Review our privacy policy before submitting sensitive text, personal information or unpublished work."
     },
     {
       icon: Zap,
       title: "Built-In Humanizer",
-      description: "Detected AI content? One-click humanization to bypass any detector with 97% success rate."
+      description: "Move from checking to revising your draft for clearer language and a more natural voice."
     }
   ];
 
   const faqs = [
     {
       question: "How accurate is the AI Checker?",
-      answer: "Our AI Checker has a 98% accuracy rate, tested against thousands of AI-generated and human-written samples. We use multiple detection models to minimize false positives and provide reliable results."
+      answer: "AI detection is an estimate, not proof that a person used AI. False positives and missed AI text are possible. Review the result alongside sources, draft history and your own reading of the text."
     },
     {
-      question: "Which AI detectors does it check against?",
-      answer: "Our tool checks against GPTZero, Turnitin, Originality.AI, ZeroGPT, Copyleaks, Crossplag, and 15+ other major AI detection systems to give you comprehensive coverage."
+      question: "Is this the same as a Turnitin or GPTZero report?",
+      answer: "No. This checker provides an AI-writing assessment in AI Free Text Pro. Different detectors can disagree, and its result does not predict a Turnitin, GPTZero or Originality.AI score."
     },
     {
       question: "Is my content safe and private?",
-      answer: "Absolutely. Your content is encrypted during analysis and automatically deleted after processing. We never store, share, or use your content for training purposes."
+      answer: "Read our privacy policy for how submitted content is handled. Remove confidential or identifying information before checking text you do not have permission to share."
     },
     {
       question: "Can I check and humanize in one tool?",
-      answer: "Yes! AI Free Text Pro is the only tool that combines AI detection and humanization. Detect AI content, then humanize it with one click, no need for separate tools."
+      answer: "Yes. AI Free Text Pro includes an AI checker and a humanizer, so you can check a draft and then revise its wording within the same app. A revised score is not a guarantee of academic or workplace compliance."
     },
     {
       question: "How many words can I check for free?",
@@ -71,15 +71,17 @@ const AIChecker = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <Helmet>
-        <title>Free AI Checker: Check Text for AI in 30 Seconds (No Card Needed)</title>
-        <meta name="description" content="Paste text, get a sentence-by-sentence AI score in 30 seconds. Free AI checker built on the signals GPTZero, Turnitin and Originality.AI use. Free account, no card, no word meter." />
+        <title>Free AI Checker for Essays &amp; Text | AI Free Text Pro</title>
+        <meta name="description" content="Check essays, articles and drafts for AI-writing patterns with AI Free Text Pro. Review an AI score, improve your draft and understand false positives." />
 
-        <meta name="keywords" content="free ai detector, ai checker, ai detector unlimited words, free ai detector unlimited words, ai content detector, check ai text, detect ai writing, ai detection tool, free ai checker" />
+        <meta name="keywords" content="free ai detector, ai checker, ai content detector, check ai text, detect ai writing, ai detection tool, free ai checker" />
         <link rel="canonical" href="https://aifreetextpro.com/ai-checker" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-        <meta property="og:title" content="Free AI Checker: Check Text for AI in 30 Seconds (No Card Needed)" />
-        <meta property="og:description" content="Check text against the signals 15+ AI detectors use, in one click. Free, instant and private, with a free account." />
+        <meta property="og:title" content="Free AI Checker for Essays & Text | AI Free Text Pro" />
+        <meta property="og:description" content="Check essays, articles and drafts for AI-writing patterns with AI Free Text Pro. Review an AI score, improve your draft and understand false positives." />
+        <meta name="twitter:title" content="Free AI Checker for Essays & Text | AI Free Text Pro" />
+        <meta name="twitter:description" content="Check essays, articles and drafts for AI-writing patterns with AI Free Text Pro. Review an AI score, improve your draft and understand false positives." />
 
         <meta property="og:url" content="https://aifreetextpro.com/ai-checker" />
         <meta property="og:type" content="website" />
@@ -130,7 +132,7 @@ const AIChecker = () => {
             "@context": "https://schema.org",
             "@type": "HowTo",
             "name": "How to Check Text for AI Detection",
-            "description": "Use AI Free Text Pro to check any text against 15+ AI detectors in one click.",
+            "description": "Use AI Free Text Pro to check a draft for AI-writing patterns and review the result in context.",
             "totalTime": "PT1M",
             "estimatedCost": { "@type": "MonetaryAmount", "currency": "USD", "value": "0" },
             "tool": [{ "@type": "HowToTool", "name": "AI Free Text Pro AI Checker" }],
@@ -144,14 +146,14 @@ const AIChecker = () => {
               {
                 "@type": "HowToStep",
                 "position": 2,
-                "name": "Run Multi-Detector Analysis",
-                "text": "Click 'Check for AI' to analyze against GPTZero, Turnitin, Originality.AI, and 15+ other detectors simultaneously."
+                "name": "Check for AI Writing",
+                "text": "Run the AI check in the app to receive an assessment of AI-writing patterns."
               },
               {
                 "@type": "HowToStep",
                 "position": 3,
                 "name": "Review Results & Humanize",
-                "text": "View detailed probability scores with highlighted AI sections. One-click humanize any flagged content."
+                "text": "Read the AI score alongside your sources and draft history, then revise unclear or generic wording if needed."
               }
             ]
           })}
@@ -180,16 +182,16 @@ const AIChecker = () => {
             <div className="text-center max-w-4xl mx-auto">
               <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full mb-6">
                 <Shield className="w-4 h-4" />
-                <span className="text-sm font-medium">98% Detection Accuracy</span>
+                <span className="text-sm font-medium">AI Writing Review</span>
               </div>
               <h1 className="text-4xl md:text-6xl font-bold mb-6">
-                Free AI Detector &amp; AI Checker
+                Free AI Checker for Essays and Text
               </h1>
               <p className="text-xl md:text-2xl text-muted-foreground mb-8">
-                Paste your text, get an AI score in about 30 seconds. Scored against the signals GPTZero, Turnitin and Originality.AI use, with no word meter on detection and no card needed.
+                Check an essay, article or draft for AI-writing patterns. Review the AI score, then use the built-in humanizer to improve clarity and preserve your voice. A detector score is a starting point for review, not proof of who wrote the text.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-                <a href="https://app.aifreetextpro.com/detector" className="w-full sm:w-auto">
+                <a href="https://app.aifreetextpro.com/detector" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
                   <Button size="lg" className="w-full bg-gradient-to-r from-primary to-secondary text-lg px-8 py-6">
                     <Eye className="mr-2 h-5 w-5" />
                     Check My Text Free
@@ -203,7 +205,7 @@ const AIChecker = () => {
                 </Link>
               </div>
               <p className="text-sm text-muted-foreground">
-                Free detection (10 checks a day) • 250 free words/month • No credit card required
+                Free plan available • No credit card required • <Link to="/free-ai-detector-word-limit" className="text-primary hover:underline">See current free limits</Link>
               </p>
               <p className="text-sm text-muted-foreground mt-4">
                 Want the method rather than the tool? Read{" "}
@@ -226,11 +228,11 @@ const AIChecker = () => {
               </div>
               <div className="flex items-center gap-2">
                 <CheckCircle className="w-5 h-5 text-primary" />
-                <span>98% Accuracy</span>
+                <span>Review AI-Writing Patterns</span>
               </div>
               <div className="flex items-center gap-2">
                 <CheckCircle className="w-5 h-5 text-primary" />
-                <span>15+ Detectors</span>
+                <span>Checker &amp; Humanizer</span>
               </div>
               <div className="flex items-center gap-2">
                 <CheckCircle className="w-5 h-5 text-primary" />
@@ -248,7 +250,7 @@ const AIChecker = () => {
                 Why Choose Our AI Checker?
               </h2>
               <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-                The most comprehensive AI detection tool available, check, analyze, and humanize all in one place.
+                Check your draft, interpret the result and improve its wording in one place.
               </p>
             </div>
 
@@ -287,12 +289,12 @@ const AIChecker = () => {
               <div className="text-center">
                 <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold text-primary-foreground">2</div>
                 <h3 className="text-xl font-semibold mb-2">Analyze</h3>
-                <p className="text-muted-foreground">Our AI checks against 15+ detectors and provides detailed probability scores.</p>
+                <p className="text-muted-foreground">Run an AI-writing check and review the score in context.</p>
               </div>
               <div className="text-center">
                 <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold text-primary-foreground">3</div>
                 <h3 className="text-xl font-semibold mb-2">Review & Humanize</h3>
-                <p className="text-muted-foreground">See highlighted AI sections and one-click humanize to bypass detection.</p>
+                <p className="text-muted-foreground">Review your sources and draft history, then revise for clarity and a natural voice.</p>
               </div>
             </div>
           </div>
@@ -327,7 +329,7 @@ const AIChecker = () => {
               <p className="text-xl text-muted-foreground mb-8">
                 Join 50,000+ users who trust AI Free Text Pro for accurate AI detection and humanization.
               </p>
-              <a href="https://app.aifreetextpro.com/detector" className="inline-block">
+              <a href="https://app.aifreetextpro.com/detector" target="_blank" rel="noopener noreferrer" className="inline-block">
                 <Button size="lg" className="bg-gradient-to-r from-primary to-secondary text-lg px-8 py-6">
                   <Zap className="mr-2 h-5 w-5" />
                   Try AI Checker Free
@@ -364,7 +366,7 @@ const AIChecker = () => {
             },
             {
               title: "How to Humanize AI Text Without Losing Voice",
-              description: "Learn techniques to make AI-generated content pass detection while maintaining your unique writing style.",
+              description: "Learn editing techniques for clearer AI-assisted drafts while maintaining your unique writing style.",
               href: "/blog/humanize-ai-text-without-losing-voice",
               category: "Guide"
             }

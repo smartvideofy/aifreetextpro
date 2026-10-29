@@ -137,7 +137,7 @@ const AITextConverter = () => {
                     </TableRow>
                   </TableHeader>
                   <TableBody>
-                    <TableRow><TableCell className="font-medium">AI Free Text Pro</TableCell><TableCell className="text-green-500">98%</TableCell><TableCell>Excellent</TableCell><TableCell>&lt;10s</TableCell><TableCell>300 words</TableCell></TableRow>
+                    <TableRow><TableCell className="font-medium">AI Free Text Pro</TableCell><TableCell className="text-green-500">98%</TableCell><TableCell>Excellent</TableCell><TableCell>&lt;10s</TableCell><TableCell>1,000 words</TableCell></TableRow>
                     <TableRow><TableCell className="font-medium">Undetectable AI</TableCell><TableCell>88%</TableCell><TableCell>Good</TableCell><TableCell>&lt;15s</TableCell><TableCell>250 words</TableCell></TableRow>
                     <TableRow><TableCell className="font-medium">WriteHuman</TableCell><TableCell>82%</TableCell><TableCell>Good</TableCell><TableCell>&lt;20s</TableCell><TableCell>200 words</TableCell></TableRow>
                     <TableRow><TableCell className="font-medium">Quillbot</TableCell><TableCell className="text-yellow-500">45%</TableCell><TableCell>Fair</TableCell><TableCell>&lt;5s</TableCell><TableCell>125 words</TableCell></TableRow>

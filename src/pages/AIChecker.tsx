@@ -24,7 +24,7 @@ const faqs = [
   {
     question: "Is this AI detector really free?",
     answer:
-      "Yes. The writing-signal check at the top of this page is free with no account and no word limit, because it runs in your browser. The full model-based detector in the app is free with an account: 250 words a month and up to 10 checks a day, no card. Paid plans start at $4.99 a month.",
+      "Yes. The writing-signal check at the top of this page is free with no account and no word limit, because it runs in your browser. The full model-based detector in the app is free with an account: 1,000 words a month and up to 10 checks a day, no card. Paid plans start at $4.99 a month.",
   },
   {
     question: "What is the best free AI detector?",
@@ -44,7 +44,7 @@ const faqs = [
   {
     question: "Is there a free AI detector with no word limit?",
     answer:
-      "The browser check on this page has no word limit. The model-based detector in the app gives 250 free words a month; the Unlimited Creator plan removes the limit. See the full breakdown on our free word limit page.",
+      "The browser check on this page has no word limit. The model-based detector in the app gives 1,000 free words a month; the Unlimited Creator plan removes the limit. See the full breakdown on our free word limit page.",
   },
   {
     question: "Is an AI checker the same as a plagiarism checker?",
@@ -172,7 +172,7 @@ const AIChecker = () => {
                 <a href={APP} className="font-medium text-primary hover:underline">
                   Open the full AI detector
                 </a>{" "}
-                (free account, 250 words a month, no card) ·{" "}
+                (free account, 1,000 words a month, no card) ·{" "}
                 <Link to="/free-ai-detector-word-limit" className="text-primary hover:underline">
                   free limits explained
                 </Link>
@@ -294,7 +294,7 @@ const AIChecker = () => {
               <TableBody>
                 <TableRow>
                   <TableCell className="font-medium">AI Free Text Pro</TableCell>
-                  <TableCell>Signal check: no limit. Full detector: 250 words a month, 10 checks a day</TableCell>
+                  <TableCell>Signal check: no limit. Full detector: 1,000 words a month, 10 checks a day</TableCell>
                   <TableCell>Not for the signal check</TableCell>
                   <TableCell>Yes, built-in humanizer</TableCell>
                 </TableRow>
@@ -418,7 +418,7 @@ const AIChecker = () => {
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
               </a>
-              <p className="mt-4 text-sm text-muted-foreground">Free account · 250 words a month · no card</p>
+              <p className="mt-4 text-sm text-muted-foreground">Free account · 1,000 words a month · no card</p>
             </div>
           </div>
         </section>

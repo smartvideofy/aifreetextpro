@@ -44,7 +44,7 @@ const terms = [
 
 const dos = [
   "Share your honest experience of checking and rewriting text",
-  "Mention 250 free words a month, no card needed, and plans from $4.99/month",
+  "Mention 1,000 free words a month, no card needed, and plans from $4.99/month",
   "Disclose the partnership clearly in the video or post itself (#ad, or the platform's paid-partnership label)",
 ];
 

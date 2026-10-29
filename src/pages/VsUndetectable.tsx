@@ -27,7 +27,7 @@ const VsUndetectable = () => {
     {
       category: "Pricing & Value",
       features: [
-        { name: "Free Plan Words", aiFreePro: "250 words/mo", undetectable: "375 words/mo" },
+        { name: "Free Plan Words", aiFreePro: "1,000 words/mo", undetectable: "375 words/mo" },
         { name: "Starter Price", aiFreePro: "$4.99/mo", undetectable: "$9.99/mo" },
         { name: "Pro Plan Value", aiFreePro: "$24.99 (50K words)", undetectable: "$49.99 (90K words)" },
         { name: "Best Value Ratio", aiFreePro: "2,000 words/$1", undetectable: "1,802 words/$1" },
@@ -55,13 +55,13 @@ const VsUndetectable = () => {
     <div className="min-h-screen flex flex-col">
       <Helmet>
         <title>Best Undetectable AI Alternative [2026 Test Data]</title>
-        <meta name="description" content="Looking for an Undetectable AI alternative? AI Free Text Pro beats it: 98% vs 95% bypass, $4.99 vs $9.99/mo, 250 vs 375 free words. Real test results." />
+        <meta name="description" content="Looking for an Undetectable AI alternative? AI Free Text Pro beats it: 98% vs 95% bypass, $4.99 vs $9.99/mo, 1,000 vs 375 free words. Real test results." />
         <meta name="keywords" content="undetectable ai alternative, undetectable ai vs ai free text pro, best undetectable ai alternative, undetectable ai replacement, better than undetectable ai, ai humanizer comparison 2026" />
         <link rel="canonical" href="https://aifreetextpro.com/vs-undetectable-ai" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         <meta property="og:title" content="Best Undetectable AI Alternative [2026 Test Data]" />
-        <meta property="og:description" content="Looking for an Undetectable AI alternative? 98% bypass, $4.99/mo, 250 free words. See real test data." />
+        <meta property="og:description" content="Looking for an Undetectable AI alternative? 98% bypass, $4.99/mo, 1,000 free words. See real test data." />
         <meta property="og:url" content="https://aifreetextpro.com/vs-undetectable-ai" />
         
         {/* BreadcrumbList Schema */}
@@ -112,7 +112,7 @@ const VsUndetectable = () => {
                 "name": "What is the free plan comparison between AI Free Text Pro and Undetectable AI?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "AI Free Text Pro offers 250 free words a month, Undetectable AI offers 375. AI Free Text Pro also includes a free AI detector, and paid plans start at $4.99/month."
+                  "text": "AI Free Text Pro offers 1,000 free words a month, Undetectable AI offers 375. AI Free Text Pro also includes a free AI detector, and paid plans start at $4.99/month."
                 }
               },
               {
@@ -201,7 +201,7 @@ const VsUndetectable = () => {
                   </ul>
                   <a href="https://app.aifreetextpro.com/" className="block mt-6">
                     <Button size="lg" className="w-full bg-gradient-to-r from-primary to-secondary">
-                      Try Free, 250 Words <ArrowRight className="ml-2 h-4 w-4" />
+                      Try Free, 1,000 Words <ArrowRight className="ml-2 h-4 w-4" />
                     </Button>
                   </a>
                 </Card>
@@ -351,7 +351,7 @@ const VsUndetectable = () => {
                 <a href="https://app.aifreetextpro.com/" className="w-full sm:w-auto">
                   <Button size="lg" className="w-full bg-gradient-to-r from-primary to-secondary text-lg px-8 py-6">
                     <Zap className="mr-2 h-5 w-5" />
-                    Start Free, 250 Words
+                    Start Free, 1,000 Words
                     <ArrowRight className="ml-2 h-5 w-5" />
                   </Button>
                 </a>

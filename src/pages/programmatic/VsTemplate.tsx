@@ -75,7 +75,7 @@ const VsTemplate = () => {
           <Card className="p-6 border-primary/40 bg-primary/5">
             <h2 className="text-xl font-bold mb-3">AI Free Text Pro</h2>
             <ul className="space-y-2 text-sm">
-              <li className="flex gap-2"><CheckCircle2 className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" /> 250 free words / month</li>
+              <li className="flex gap-2"><CheckCircle2 className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" /> 1,000 free words / month</li>
               <li className="flex gap-2"><CheckCircle2 className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" /> Starts at $4.99/mo</li>
               {data.ourBypassRate && (
                 <li className="flex gap-2"><CheckCircle2 className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" /> {data.ourBypassRate} bypass rate</li>
@@ -119,7 +119,7 @@ const VsTemplate = () => {
             </p>
           ) : (
             <p>
-              AI Free Text Pro answers all three in one place: a humanizer and an AI detector in the same workspace, so you can check, rewrite and re-check without a second subscription; a starting price of $4.99 per month; and 250 free words every month with no card. Prices and free allowances for {data.name} change often, so confirm them on its pricing page before you buy.
+              AI Free Text Pro answers all three in one place: a humanizer and an AI detector in the same workspace, so you can check, rewrite and re-check without a second subscription; a starting price of $4.99 per month; and 1,000 free words every month with no card. Prices and free allowances for {data.name} change often, so confirm them on its pricing page before you buy.
             </p>
           )}
           <h2>Other {data.name} alternatives</h2>
@@ -145,7 +145,7 @@ const VsTemplate = () => {
         <section className="my-12 text-center bg-gradient-to-br from-primary/10 to-accent/10 rounded-2xl p-10">
           <h2 className="text-3xl font-bold mb-3">Try the {data.name} alternative free</h2>
           <p className="text-muted-foreground mb-6 max-w-xl mx-auto">
-            250 free words, no card required. Test the humanizer on your own essay or blog draft before paying anything.
+            1,000 free words, no card required. Test the humanizer on your own essay or blog draft before paying anything.
           </p>
           <Button asChild size="lg">
             <a href="https://app.aifreetextpro.com" target="_blank" rel="noopener noreferrer">

@@ -228,7 +228,7 @@ const CheckMyEssayForAI = () => {
                       </div>
                     </TableCell>
                     <TableCell className="text-green-600 font-medium">96%</TableCell>
-                    <TableCell>250 words/month</TableCell>
+                    <TableCell>1,000 words/month</TableCell>
                     <TableCell>Academic essays, reports</TableCell>
                     <TableCell>
                       <div className="flex">

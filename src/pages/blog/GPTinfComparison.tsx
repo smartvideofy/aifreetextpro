@@ -229,7 +229,7 @@ const GPTinfComparison = () => {
                       <tr className="bg-muted/50">
                         <td className="p-4 border font-medium">Free Tier</td>
                         <td className="p-4 border text-center">Limited trials</td>
-                        <td className="p-4 border text-center font-bold text-primary">250 words/month</td>
+                        <td className="p-4 border text-center font-bold text-primary">1,000 words/month</td>
                       </tr>
                       <tr>
                         <td className="p-4 border font-medium">Starting Price</td>
@@ -333,7 +333,7 @@ const GPTinfComparison = () => {
                     <div>
                       <h4 className="font-semibold mb-2">AI Free Text Pro Pricing</h4>
                       <ul className="text-muted-foreground">
-                        <li>Free: 250 words/month forever</li>
+                        <li>Free: 1,000 words/month forever</li>
                         <li>Starter: $4.99/month for 5,000 words</li>
                         <li>Pro Writer: $24.99/month for 30,000 words</li>
                         <li>Unlimited: $59.99/month for 150,000+ words</li>
@@ -444,7 +444,7 @@ const GPTinfComparison = () => {
               <div className="bg-gradient-to-r from-primary/10 to-secondary/10 p-8 rounded-lg text-center space-y-4 my-12">
                 <h3 className="text-2xl font-bold">Ready to Switch from GPTinf?</h3>
                 <p className="text-muted-foreground max-w-2xl mx-auto">
-                  Experience the difference with AI Free Text Pro. Start free with 250 words, no credit card required.
+                  Experience the difference with AI Free Text Pro. Start free with 1,000 words, no credit card required.
                 </p>
                 <a href="https://app.aifreetextpro.com/" target="_blank" rel="noopener noreferrer">
                   <Button size="lg" className="text-lg px-8">

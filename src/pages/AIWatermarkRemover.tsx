@@ -45,7 +45,7 @@ const faqs = [
   {
     question: "Is removing an AI watermark free?",
     answer:
-      "The hidden-character cleaner on this page is free with no sign-up and no word limit. Rewriting with the humanizer is free for 250 words a month with a free account.",
+      "The hidden-character cleaner on this page is free with no sign-up and no word limit. Rewriting with the humanizer is free for 1,000 words a month with a free account.",
   },
   {
     question: "Will removing hidden characters stop AI detectors?",
@@ -199,7 +199,7 @@ const AIWatermarkRemover = () => (
 
           <div className="not-prose my-12 rounded-xl border border-primary/20 bg-primary/5 p-8 text-center">
             <h2 className="mb-3 text-2xl font-bold">Remove the watermark in the wording too</h2>
-            <p className="mb-6 text-muted-foreground">The humanizer rewrites sentence structure and rhythm. Free account, 250 words a month.</p>
+            <p className="mb-6 text-muted-foreground">The humanizer rewrites sentence structure and rhythm. Free account, 1,000 words a month.</p>
             <a
               href={HUMANIZER}
               className="inline-flex items-center rounded-lg bg-primary px-6 py-3 font-semibold text-primary-foreground transition-colors hover:bg-primary/90"

@@ -12,7 +12,7 @@ const faqs = [
   },
   {
     question: "Is AI Free Text Pro free forever?",
-    answer: "Yes, AI Free Text Pro has a free plan with 250 words a month for AI detection and humanization, up to 10 checks and 5 humanizations a day. You need a free account but no credit card. Paid plans with more words start at $4.99/month."
+    answer: "Yes, AI Free Text Pro has a free plan with 1,000 words a month for AI detection and humanization, up to 10 checks and 5 humanizations a day. You need a free account but no credit card. Paid plans with more words start at $4.99/month."
   },
   {
     question: "How does the AI humanizer work?",
@@ -64,15 +64,15 @@ const faqs = [
   },
   {
     question: "Is there a free AI humanizer tool?",
-    answer: "Yes! AI Free Text Pro is a free AI humanizer tool that transforms AI-generated text into natural, human-like writing. Get 250 free words per month with no credit card required."
+    answer: "Yes! AI Free Text Pro is a free AI humanizer tool that transforms AI-generated text into natural, human-like writing. Get 1,000 free words per month with no credit card required."
   },
   {
     question: "Can I use an AI detector with unlimited words?",
-    answer: "Our free tier includes 250 words per month for AI detection and humanization. Upgrade to Pro for unlimited AI detection and humanization with no word limits. This makes AI Free Text Pro perfect for high-volume content creators and agencies."
+    answer: "Our free tier includes 1,000 words per month for AI detection and humanization. Upgrade to Pro for unlimited AI detection and humanization with no word limits. This makes AI Free Text Pro perfect for high-volume content creators and agencies."
   },
   {
     question: "How do I use an AI humanizer for free?",
-    answer: "Simply paste your AI-generated text into our free AI humanizer at app.aifreetextpro.com. Select a writing style (Academic, Professional, Creative, or Casual) and click Humanize. Your first 250 words each month are completely free with no card required."
+    answer: "Simply paste your AI-generated text into our free AI humanizer at app.aifreetextpro.com. Select a writing style (Academic, Professional, Creative, or Casual) and click Humanize. Your first 1,000 words each month are completely free with no card required."
   }
 ];
 

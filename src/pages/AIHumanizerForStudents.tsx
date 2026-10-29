@@ -97,7 +97,7 @@ const AIHumanizerForStudents = () => {
     {
       plan: "Free Plan",
       best: "Testing & Small Assignments",
-      description: "1,000 words/month is enough for 2-3 short discussion posts or one essay. Great for trying the tool.",
+      description: "1,000 words/month covers a short essay or a few discussion posts. Great for trying the tool.",
       price: "$0"
     },
     {

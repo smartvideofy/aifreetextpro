@@ -146,7 +146,7 @@ const UndetectableAIAlternatives = () => {
                   <TableBody>
                     <TableRow><TableCell className="font-medium">Bypass Rate</TableCell><TableCell className="text-green-500">98%</TableCell><TableCell>88%</TableCell><TableCell>85%</TableCell><TableCell>82%</TableCell></TableRow>
                     <TableRow><TableCell className="font-medium">Monthly Price</TableCell><TableCell className="text-green-500">$9.99</TableCell><TableCell>$14.99</TableCell><TableCell>$12.99</TableCell><TableCell>$11.99</TableCell></TableRow>
-                    <TableRow><TableCell className="font-medium">Free Tier</TableCell><TableCell>300 words</TableCell><TableCell>250 words</TableCell><TableCell>200 words</TableCell><TableCell>100 words</TableCell></TableRow>
+                    <TableRow><TableCell className="font-medium">Free Tier</TableCell><TableCell>1,000 words</TableCell><TableCell>250 words</TableCell><TableCell>200 words</TableCell><TableCell>100 words</TableCell></TableRow>
                     <TableRow><TableCell className="font-medium">Academic Mode</TableCell><TableCell className="text-green-500">Yes</TableCell><TableCell>No</TableCell><TableCell>No</TableCell><TableCell>No</TableCell></TableRow>
                     <TableRow><TableCell className="font-medium">Built-in Detector</TableCell><TableCell className="text-green-500">Yes</TableCell><TableCell>Yes</TableCell><TableCell>No</TableCell><TableCell>No</TableCell></TableRow>
                     <TableRow><TableCell className="font-medium">Meaning Preservation</TableCell><TableCell>Excellent</TableCell><TableCell>Fair</TableCell><TableCell>Good</TableCell><TableCell>Good</TableCell></TableRow>

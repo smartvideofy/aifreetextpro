@@ -545,7 +545,7 @@ const BestFreeAIHumanizer2026 = () => {
 
             <h2>How to Choose a Free AI Humanizer</h2>
             <ul>
-              <li><strong>Check the free allowance in words, not "credits".</strong> 250 real words a month beats "unlimited" behind a daily queue.</li>
+              <li><strong>Check the free allowance in words, not "credits".</strong> A published monthly word count beats "unlimited" behind a daily queue.</li>
               <li><strong>Make sure there's a detector in the same tool.</strong> You need to check before and after; switching tools for every check wastes the free allowance of both.</li>
               <li><strong>Test meaning, not just the score.</strong> Paste a paragraph with a number and a name in it and confirm both survive the rewrite.</li>
               <li><strong>Look for tone modes.</strong> An academic essay and a LinkedIn post need different rewrites.</li>

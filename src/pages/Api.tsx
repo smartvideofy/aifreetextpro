@@ -95,7 +95,7 @@ const faqs = [
   {
     question: "Is there an AI humanizer API?", answer: "Yes. AI Free Text Pro's AI humanizer API rewrites AI-generated text into natural, human-sounding writing with one POST request: send the text, a style and a strength, and get the humanized text back as JSON.", }, {
     question: "What are the API rate limits?", answer: "10 requests per minute per account and up to 5,000 words per request for humanizing; 30 requests per minute and 50,000 characters for detection. Every response reports the tokens used and remaining.", }, {
-    question: "How is the API priced?", answer: "With prepaid token packs, separate from the web app plans: $10 for 20,000 words, $40 for 100,000 or $175 for 500,000. 1 token = 1 word humanized; detection costs 1 token per 5 words. New accounts get 500 free tokens, and you are not charged for a request that fails or comes back unchanged.", }, {
+    question: "How is the API priced?", answer: "With prepaid token packs, separate from the web app plans: $9.99 for 15,000 tokens, $24.99 for 45,000, $49.99 for 100,000 or $99.99 for 225,000. 1 token = 1 word humanized; detection costs 1 token per 5 words. New accounts get 500 free tokens, and you are not charged for a request that fails or comes back unchanged.", }, {
     question: "How do I authenticate API requests?", answer: "Create a key in the developer portal at api.aifreetextpro.com and send it as a Bearer token in the Authorization header. Keys start with sk_live_. We store only a hash of the key, and you can revoke it at any time.", }, {
     question: "Is there an AI detection API?", answer: "Yes. POST /v1/detect returns an AI score from 0 to 100, a verdict and the sentences the detector flags.", }, {
     question: "Can I use it in Claude or ChatGPT?", answer: "Yes. Our MCP server connects AI Free Text Pro to Claude, ChatGPT and other MCP clients and uses your web app plan. Setup steps are at api.aifreetextpro.com/mcp.", }, {
@@ -121,7 +121,7 @@ const Api = () => {
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org", "@type": "SoftwareApplication", "name": "AI Free Text Pro API", "applicationCategory": "DeveloperApplication", "operatingSystem": "Web", "description": "REST API that humanizes AI-generated text: 5 styles, 5 languages, up to 5,000 words per request", "url": "https://aifreetextpro.com/api", "offers": {
-              "@type": "Offer", "price": "10", "priceCurrency": "USD", "description": "Starter token pack: 20,000 words"
+              "@type": "Offer", "price": "9.99", "priceCurrency": "USD", "description": "Starter token pack: 15,000 tokens"
             }, "provider": {
               "@type": "Organization", "name": "AI Free Text Pro", "url": "https://aifreetextpro.com"
             }
@@ -347,7 +347,7 @@ const Api = () => {
           <div className="container mx-auto px-4 text-center max-w-3xl">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Pay Per Word</h2>
             <p className="text-muted-foreground text-lg mb-8">
-              Buy a token pack once and use it at your own pace: <strong>$10</strong> for 20,000 words, <strong>$40</strong> for 100,000 or <strong>$175</strong> for 500,000. No subscription needed, and new accounts get 500 words free.
+              Buy a token pack once and use it at your own pace: <strong>$9.99</strong> for 15,000 tokens, <strong>$24.99</strong> for 45,000, <strong>$49.99</strong> for 100,000 or <strong>$99.99</strong> for 225,000 (1 token = 1 word). No subscription needed, and new accounts get 500 tokens free.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a href={`${API_PORTAL}/docs#pricing`}>

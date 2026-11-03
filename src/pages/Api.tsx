@@ -9,10 +9,10 @@ import { InternalLinks } from "@/components/InternalLinks";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { FAQSection } from "@/components/FAQSection";
 import { Link } from "react-router-dom";
+import { API_BASE_URL, DEVELOPER_CONSOLE } from "@/lib/developerApi";
 
-// Keys, token packs and docs live in the developer portal.
-const API_PORTAL = "https://api.aifreetextpro.com";
-const ENDPOINT = "https://api.aifreetextpro.com/v1/humanize";
+// Keys and token packs are in the developer console; the docs are /api/docs.
+const ENDPOINT = `${API_BASE_URL}/humanize`;
 
 const codeExamples = {
   curl: `curl -X POST ${ENDPOINT} \\
@@ -95,10 +95,10 @@ const faqs = [
   {
     question: "Is there an AI humanizer API?", answer: "Yes. AI Free Text Pro's AI humanizer API rewrites AI-generated text into natural, human-sounding writing with one POST request: send the text, a style and a strength, and get the humanized text back as JSON.", }, {
     question: "What are the API rate limits?", answer: "10 requests per minute per account and up to 5,000 words per request for humanizing; 30 requests per minute and 50,000 characters for detection. Every response reports the tokens used and remaining.", }, {
-    question: "How is the API priced?", answer: "With prepaid token packs, separate from the web app plans: $9.99 for 15,000 tokens, $24.99 for 45,000, $49.99 for 100,000 or $99.99 for 225,000. 1 token = 1 word humanized; detection costs 1 token per 5 words. New accounts get 500 free tokens, and you are not charged for a request that fails or comes back unchanged.", }, {
-    question: "How do I authenticate API requests?", answer: "Create a key in the developer portal at api.aifreetextpro.com and send it as a Bearer token in the Authorization header. Keys start with sk_live_. We store only a hash of the key, and you can revoke it at any time.", }, {
+    question: "How is the API priced?", answer: "With prepaid token packs, separate from the web app plans: $9.99 for 15,000 tokens, $24.99 for 45,000, $49.99 for 100,000 or $99.99 for 225,000. 1 token = 1 word humanized; detection costs 1 token per 5 words. New accounts get 500 free tokens, and you are not charged for a request that fails.", }, {
+    question: "How do I authenticate API requests?", answer: "Create a key in the developer console at developer.aifreetextpro.com and send it as a Bearer token in the Authorization header. Keys start with sk_live_. We store only a hash of the key, and you can revoke it at any time.", }, {
     question: "Is there an AI detection API?", answer: "Yes. POST /v1/detect returns an AI score from 0 to 100, a verdict and the sentences the detector flags.", }, {
-    question: "Can I use it in Claude or ChatGPT?", answer: "Yes. Our MCP server connects AI Free Text Pro to Claude, ChatGPT and other MCP clients and uses your web app plan. Setup steps are at api.aifreetextpro.com/mcp.", }, {
+    question: "Can I use it in Claude or ChatGPT?", answer: "Yes. Our MCP server connects AI Free Text Pro to Claude, ChatGPT and other MCP clients and uses your web app plan. Setup steps are at aifreetextpro.com/api/mcp.", }, {
     question: "Which languages does the humanizer API support?", answer: "English, Spanish, French, German and Dutch. Pass a language code, or leave it out and the API detects the language from the text.", },
 ];
 
@@ -164,7 +164,7 @@ const Api = () => {
               Humanize AI-generated text from your own product with one POST request. Five styles, five languages, up to 5,000 words per call, and the same rewriting engine as the web app.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href={`${API_PORTAL}/signup`}>
+              <a href={`${DEVELOPER_CONSOLE}/signup`}>
                 <Button size="lg" className="bg-gradient-to-r from-primary to-secondary text-lg px-8">
                   Get an API Key <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
@@ -275,7 +275,8 @@ const Api = () => {
             </div>
             <p className="text-sm text-muted-foreground mt-6">
               AI detection works the same way: POST {"{ \"text\": \"...\" }"} to <code>/v1/detect</code> for a score, a verdict and the
-              flagged sentences. Full reference in the <a href={`${API_PORTAL}/docs`} className="text-primary hover:underline">API docs</a>.
+              flagged sentences. Full reference in the <Link to="/api/docs" className="text-primary hover:underline">API docs</Link>, and
+              setup for Claude and ChatGPT on the <Link to="/api/mcp" className="text-primary hover:underline">MCP page</Link>.
             </p>
             <p className="text-sm text-muted-foreground mt-3">
               Errors return JSON with an <code>error</code> code and message. Want to try the rewriting before integrating? Use
@@ -350,12 +351,12 @@ const Api = () => {
               Buy a token pack once and use it at your own pace: <strong>$9.99</strong> for 15,000 tokens, <strong>$24.99</strong> for 45,000, <strong>$49.99</strong> for 100,000 or <strong>$99.99</strong> for 225,000 (1 token = 1 word). No subscription needed, and new accounts get 500 tokens free.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href={`${API_PORTAL}/docs#pricing`}>
+              <Link to="/api/docs#pricing">
                 <Button size="lg" variant="outline" className="text-lg px-8">
                   API Pricing
                 </Button>
-              </a>
-              <a href={`${API_PORTAL}/signup`}>
+              </Link>
+              <a href={`${DEVELOPER_CONSOLE}/signup`}>
                 <Button size="lg" className="bg-gradient-to-r from-primary to-secondary text-lg px-8">
                   Get an API Key <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
@@ -379,9 +380,9 @@ const Api = () => {
           <div className="container mx-auto px-4 text-center max-w-3xl">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Ready to Integrate?</h2>
             <p className="text-muted-foreground text-lg mb-8">
-              Create your API key in the developer portal in under a minute. New accounts get 500 words free to try it, no card required.
+              Create your API key in the developer console in under a minute. New accounts get 500 words free to try it, no card required.
             </p>
-            <a href={`${API_PORTAL}/signup`}>
+            <a href={`${DEVELOPER_CONSOLE}/signup`}>
               <Button size="lg" className="bg-gradient-to-r from-primary to-secondary text-lg px-12 py-6">
                 Get an API Key <ArrowRight className="ml-2 h-5 w-5" />
               </Button>

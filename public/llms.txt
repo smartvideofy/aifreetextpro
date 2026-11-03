@@ -72,7 +72,9 @@ AI Free Text Pro offers free, no-card tools for AI content detection and humaniz
 - [AI Paraphraser That Avoids AI Detection](https://aifreetextpro.com/ai-paraphraser): Paraphrase-then-humanize workflow with a before/after AI check.
 - [AI Watermark Remover](https://aifreetextpro.com/ai-watermark-remover): Remove hidden Unicode characters from ChatGPT, Claude, Gemini and DeepSeek text; how statistical watermarks like SynthID work.
 - [AI Detection Statistics 2026](https://aifreetextpro.com/ai-detection-statistics): Sourced statistics on detector accuracy, false positives and AI use in education.
-- [AI Humanizer API](https://aifreetextpro.com/api): REST API reference for humanizing text.
+- [AI Humanizer API](https://aifreetextpro.com/api): REST API for humanizing and detecting AI text.
+- [API docs](https://aifreetextpro.com/api/docs): Endpoints, authentication, fields, errors, limits and token pricing.
+- [MCP server](https://aifreetextpro.com/api/mcp): Use AI Free Text Pro in Claude, ChatGPT and other MCP clients.
 - [Humanize Grok Output](https://aifreetextpro.com/blog/humanize-grok-output), [Copilot](https://aifreetextpro.com/blog/humanize-copilot-output), [Perplexity](https://aifreetextpro.com/blog/humanize-perplexity-output), [Llama](https://aifreetextpro.com/blog/humanize-llama-output), [Mistral](https://aifreetextpro.com/blog/humanize-mistral-output): Model-specific humanizing guides.
 
 ## Optional

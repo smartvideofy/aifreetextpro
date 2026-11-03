@@ -61,6 +61,8 @@ const AIHumanizerForStudents = lazy(() => import("./pages/AIHumanizerForStudents
 const AIHumanizerForWriters = lazy(() => import("./pages/AIHumanizerForWriters"));
 const AcademicAIWritingTool = lazy(() => import("./pages/AcademicAIWritingTool"));
 const Api = lazy(() => import("./pages/Api"));
+const ApiDocs = lazy(() => import("./pages/ApiDocs"));
+const ApiMcp = lazy(() => import("./pages/ApiMcp"));
 const Partners = lazy(() => import("./pages/Partners"));
 
 
@@ -211,6 +213,8 @@ const App = () => (
             <Routes>
               <Route path="/" element={<Index />} />
               <Route path="/api" element={<Api />} />
+              <Route path="/api/docs" element={<ApiDocs />} />
+              <Route path="/api/mcp" element={<ApiMcp />} />
               <Route path="/partners" element={<Partners />} />
               
               <Route path="/pricing" element={<Pricing />} />

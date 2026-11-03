@@ -61,7 +61,17 @@ const AIHumanizerForStudents = lazy(() => import("./pages/AIHumanizerForStudents
 const AIHumanizerForWriters = lazy(() => import("./pages/AIHumanizerForWriters"));
 const AcademicAIWritingTool = lazy(() => import("./pages/AcademicAIWritingTool"));
 const Api = lazy(() => import("./pages/Api"));
-const ApiDocs = lazy(() => import("./pages/ApiDocs"));
+const ApiDocs = lazy(() => import("./pages/api-docs/Overview"));
+const ApiDocsQuickstart = lazy(() => import("./pages/api-docs/Quickstart"));
+const ApiDocsAuthentication = lazy(() => import("./pages/api-docs/Authentication"));
+const ApiDocsHumanize = lazy(() => import("./pages/api-docs/Humanize"));
+const ApiDocsDetect = lazy(() => import("./pages/api-docs/Detect"));
+const ApiDocsErrors = lazy(() => import("./pages/api-docs/Errors"));
+const ApiDocsRateLimits = lazy(() => import("./pages/api-docs/RateLimits"));
+const ApiDocsPricing = lazy(() => import("./pages/api-docs/Pricing"));
+const ApiDocsBestPractices = lazy(() => import("./pages/api-docs/BestPractices"));
+const ApiDocsExamples = lazy(() => import("./pages/api-docs/Examples"));
+const ApiDocsChangelog = lazy(() => import("./pages/api-docs/Changelog"));
 const ApiMcp = lazy(() => import("./pages/ApiMcp"));
 const Partners = lazy(() => import("./pages/Partners"));
 
@@ -214,6 +224,16 @@ const App = () => (
               <Route path="/" element={<Index />} />
               <Route path="/api" element={<Api />} />
               <Route path="/api/docs" element={<ApiDocs />} />
+              <Route path="/api/docs/quickstart" element={<ApiDocsQuickstart />} />
+              <Route path="/api/docs/authentication" element={<ApiDocsAuthentication />} />
+              <Route path="/api/docs/humanize" element={<ApiDocsHumanize />} />
+              <Route path="/api/docs/detect" element={<ApiDocsDetect />} />
+              <Route path="/api/docs/errors" element={<ApiDocsErrors />} />
+              <Route path="/api/docs/rate-limits" element={<ApiDocsRateLimits />} />
+              <Route path="/api/docs/pricing" element={<ApiDocsPricing />} />
+              <Route path="/api/docs/best-practices" element={<ApiDocsBestPractices />} />
+              <Route path="/api/docs/examples" element={<ApiDocsExamples />} />
+              <Route path="/api/docs/changelog" element={<ApiDocsChangelog />} />
               <Route path="/api/mcp" element={<ApiMcp />} />
               <Route path="/partners" element={<Partners />} />
               

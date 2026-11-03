@@ -20,6 +20,7 @@ const footerSections: FooterSection[] = [
       { href: "https://app.getstudily.com", label: "Create Flashcard", external: true },
       { href: "https://getstudily.com", label: "AI Study Notes", external: true },
       { href: "/api", label: "API" },
+      { href: "/api/docs", label: "API Docs" },
       { href: "/partners", label: "Become a Partner" },
     ],
   },

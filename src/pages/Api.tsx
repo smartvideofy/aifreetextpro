@@ -10,9 +10,9 @@ import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { FAQSection } from "@/components/FAQSection";
 import { Link } from "react-router-dom";
 
-// Keys are issued by support for now; there is no self-serve developer portal yet.
-const API_KEY_REQUEST = "mailto:support@aifreetextpro.com?subject=API%20key%20request";
-const ENDPOINT = "https://uvprbzcxajreafjwbvrs.supabase.co/functions/v1/api-humanize";
+// Keys, token packs and docs live in the developer portal.
+const API_PORTAL = "https://api.aifreetextpro.com";
+const ENDPOINT = "https://api.aifreetextpro.com/v1/humanize";
 
 const codeExamples = {
   curl: `curl -X POST ${ENDPOINT} \\
@@ -25,7 +25,7 @@ response = requests.post(
     "${ENDPOINT}",
     headers={"Authorization": "Bearer sk_live_your_api_key"},
     json={"text": "AI-generated text to humanize...", "style": "academic", "strength": 60},
-    timeout=120,
+    timeout=150,
 )
 response.raise_for_status()
 print(response.json()["humanized_text"])`,
@@ -36,6 +36,7 @@ print(response.json()["humanized_text"])`,
     "Content-Type": "application/json",
   },
   body: JSON.stringify({ text: "AI-generated text to humanize...", style: "academic", strength: 60 }),
+  signal: AbortSignal.timeout(150_000),
 });
 
 const result = await response.json();
@@ -44,31 +45,38 @@ console.log(result.humanized_text);`,
 
 const responseExample = `{
   "humanized_text": "Your naturally rewritten text...",
+  "ai_score": { "before": 59.7, "after": 30.9 },
+  "versions": [
+    { "version": 1, "ai_score": 65.2 },
+    { "version": 2, "ai_score": 30.9 }
+  ],
+  "best_version": 2,
+  "unchanged": false,
   "word_count": 142,
-  "tokens_used": 185,
-  "tokens_remaining": 48315,
-  "style_used": "academic"
+  "tokens_used": 142,
+  "tokens_remaining": 19858
 }`;
 
 const params = [
   ["text", "string, required", "The text to humanize. Up to 5,000 words per request."],
   ["style", "string", "academic, professional (default), casual, creative or simple."],
-  ["strength", "number 0-100", "How far to move from the original wording. Default 50."],
+  ["strength", "string or number", "light, balanced, strong (default) or a number from 0 to 100."],
   ["language", "string", "en, es, fr, de or nl. Detected from the text when omitted."],
+  ["return_versions", "boolean", "Also return the text of every version (V1, V2, ...). Default false."],
 ];
 
 const errors = [
-  ["400", "Missing text, more than 5,000 words, or strength outside 0-100"],
+  ["400", "Missing text, more than 5,000 words, or an invalid style or strength"],
   ["401", "Missing, malformed or revoked API key"],
-  ["402", "Not enough API tokens left (code INSUFFICIENT_TOKENS)"],
+  ["402", "Not enough API tokens left (code insufficient_tokens)"],
   ["429", "More than 10 requests a minute; retry after the Retry-After header"],
-  ["503", "Rewrite service temporarily unavailable; safe to retry"],
+  ["503", "Rewrite service temporarily unavailable; you were not charged, safe to retry"],
 ];
 
 const benefits = [
   {
-    icon: Zap, title: "Up to 5,000 Words", description: "Send a full article or essay in one request; long texts are rewritten in sections and returned whole.", }, {
-    icon: Shield, title: "98% Bypass Rate", description: "Same industry-leading accuracy as our web app, now available programmatically.", }, {
+    icon: Zap, title: "Up to 5,000 Words", description: "Send a full article or essay in one request. It is rewritten sentence by sentence: nothing dropped or added, citations and numbers kept.", }, {
+    icon: Shield, title: "Checked by a Detector", description: "Every rewrite is scored by an AI detector and flagged sentences are retried. The scores come back with the text.", }, {
     icon: Key, title: "Simple Auth", description: "One Bearer token per account. Keys are hashed on our side and can be revoked at any time.", }, {
     icon: Globe, title: "RESTful Design", description: "Standard REST API with JSON payloads. Integrate with any language or framework.", }, {
     icon: BarChart3, title: "Token Balance in Every Response", description: "Each response reports tokens used and remaining, so you can meter usage in your own product.", }, {
@@ -86,10 +94,11 @@ const useCases = [
 const faqs = [
   {
     question: "Is there an AI humanizer API?", answer: "Yes. AI Free Text Pro's AI humanizer API rewrites AI-generated text into natural, human-sounding writing with one POST request: send the text, a style and a strength, and get the humanized text back as JSON.", }, {
-    question: "What are the API rate limits?", answer: "10 requests per minute per account and up to 5,000 words per request. Usage is metered in API tokens (about 1.3 tokens per word), and every response reports the tokens used and remaining.", }, {
-    question: "Which plans include API access?", answer: "API access is available on Pro Writer ($24.99/mo) and Unlimited Creator ($59.99/mo) plans. Email support@aifreetextpro.com from your account email to get a key.", }, {
-    question: "How do I authenticate API requests?", answer: "Send your key as a Bearer token in the Authorization header. Keys start with sk_live_. We store only a hash of the key, and can revoke and reissue it at any time.", }, {
-    question: "Is there an AI detection API?", answer: "The public API currently covers humanizing. AI detection is available in the web app; contact us if you need detection programmatically.", }, {
+    question: "What are the API rate limits?", answer: "10 requests per minute per account and up to 5,000 words per request for humanizing; 30 requests per minute and 50,000 characters for detection. Every response reports the tokens used and remaining.", }, {
+    question: "How is the API priced?", answer: "With prepaid token packs, separate from the web app plans: $10 for 20,000 words, $40 for 100,000 or $175 for 500,000. 1 token = 1 word humanized; detection costs 1 token per 5 words. New accounts get 500 free tokens, and you are not charged for a request that fails or comes back unchanged.", }, {
+    question: "How do I authenticate API requests?", answer: "Create a key in the developer portal at api.aifreetextpro.com and send it as a Bearer token in the Authorization header. Keys start with sk_live_. We store only a hash of the key, and you can revoke it at any time.", }, {
+    question: "Is there an AI detection API?", answer: "Yes. POST /v1/detect returns an AI score from 0 to 100, a verdict and the sentences the detector flags.", }, {
+    question: "Can I use it in Claude or ChatGPT?", answer: "Yes. Our MCP server connects AI Free Text Pro to Claude, ChatGPT and other MCP clients and uses your web app plan. Setup steps are at api.aifreetextpro.com/mcp.", }, {
     question: "Which languages does the humanizer API support?", answer: "English, Spanish, French, German and Dutch. Pass a language code, or leave it out and the API detects the language from the text.", },
 ];
 
@@ -112,7 +121,7 @@ const Api = () => {
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org", "@type": "SoftwareApplication", "name": "AI Free Text Pro API", "applicationCategory": "DeveloperApplication", "operatingSystem": "Web", "description": "REST API that humanizes AI-generated text: 5 styles, 5 languages, up to 5,000 words per request", "url": "https://aifreetextpro.com/api", "offers": {
-              "@type": "Offer", "price": "24.99", "priceCurrency": "USD", "description": "API access included with Pro Writer plan"
+              "@type": "Offer", "price": "10", "priceCurrency": "USD", "description": "Starter token pack: 20,000 words"
             }, "provider": {
               "@type": "Organization", "name": "AI Free Text Pro", "url": "https://aifreetextpro.com"
             }
@@ -155,9 +164,9 @@ const Api = () => {
               Humanize AI-generated text from your own product with one POST request. Five styles, five languages, up to 5,000 words per call, and the same rewriting engine as the web app.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href={API_KEY_REQUEST}>
+              <a href={`${API_PORTAL}/signup`}>
                 <Button size="lg" className="bg-gradient-to-r from-primary to-secondary text-lg px-8">
-                  Request an API Key <ArrowRight className="ml-2 h-5 w-5" />
+                  Get an API Key <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
               </a>
               <a href="#code-examples">
@@ -265,7 +274,11 @@ const Api = () => {
               </table>
             </div>
             <p className="text-sm text-muted-foreground mt-6">
-              Errors return JSON with an <code>error</code> message. Want to try the rewriting before integrating? Use
+              AI detection works the same way: POST {"{ \"text\": \"...\" }"} to <code>/v1/detect</code> for a score, a verdict and the
+              flagged sentences. Full reference in the <a href={`${API_PORTAL}/docs`} className="text-primary hover:underline">API docs</a>.
+            </p>
+            <p className="text-sm text-muted-foreground mt-3">
+              Errors return JSON with an <code>error</code> code and message. Want to try the rewriting before integrating? Use
               the <Link to="/" className="text-primary hover:underline">free AI detector and humanizer</Link> in the browser.
             </p>
           </div>
@@ -332,19 +345,19 @@ const Api = () => {
         {/* Pricing Reference */}
         <section className="py-16 md:py-24">
           <div className="container mx-auto px-4 text-center max-w-3xl">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">API Access Included</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Pay Per Word</h2>
             <p className="text-muted-foreground text-lg mb-8">
-              API access is available on <strong>Pro Writer</strong> ($24.99/mo) and <strong>Unlimited Creator</strong> ($59.99/mo) plans. Email us from your account address and we'll issue your key.
+              Buy a token pack once and use it at your own pace: <strong>$10</strong> for 20,000 words, <strong>$40</strong> for 100,000 or <strong>$175</strong> for 500,000. No subscription needed, and new accounts get 500 words free.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link to="/pricing">
+              <a href={`${API_PORTAL}/docs#pricing`}>
                 <Button size="lg" variant="outline" className="text-lg px-8">
-                  View All Plans
+                  API Pricing
                 </Button>
-              </Link>
-              <a href={API_KEY_REQUEST}>
+              </a>
+              <a href={`${API_PORTAL}/signup`}>
                 <Button size="lg" className="bg-gradient-to-r from-primary to-secondary text-lg px-8">
-                  Request an API Key <ArrowRight className="ml-2 h-5 w-5" />
+                  Get an API Key <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
               </a>
             </div>
@@ -366,11 +379,11 @@ const Api = () => {
           <div className="container mx-auto px-4 text-center max-w-3xl">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Ready to Integrate?</h2>
             <p className="text-muted-foreground text-lg mb-8">
-              Email support@aifreetextpro.com from your account address with a line about what you're building, and we'll send your key.
+              Create your API key in the developer portal in under a minute. New accounts get 500 words free to try it, no card required.
             </p>
-            <a href={API_KEY_REQUEST}>
+            <a href={`${API_PORTAL}/signup`}>
               <Button size="lg" className="bg-gradient-to-r from-primary to-secondary text-lg px-12 py-6">
-                Request an API Key <ArrowRight className="ml-2 h-5 w-5" />
+                Get an API Key <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </a>
           </div>

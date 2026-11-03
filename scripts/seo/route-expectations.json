@@ -20,6 +20,8 @@
     { "path": "/terms-of-service", "titleMustInclude": ["Terms"], "descriptionMustInclude": ["terms", "service", "use"], "requiredJsonLdTypes": ["BreadcrumbList"] },
     { "path": "/refund-policy", "titleMustInclude": ["Refund"], "descriptionMustInclude": ["refund", "subscription"], "requiredJsonLdTypes": ["BreadcrumbList"] },
     { "path": "/api", "titleMustInclude": ["API"], "descriptionMustInclude": ["API"], "requiredJsonLdTypes": ["BreadcrumbList"] },
+    { "path": "/api/docs", "titleMustInclude": ["API", "Docs"], "descriptionMustInclude": ["API"], "requiredJsonLdTypes": ["BreadcrumbList", "TechArticle"] },
+    { "path": "/api/mcp", "titleMustInclude": ["MCP"], "descriptionMustInclude": ["Claude"], "requiredJsonLdTypes": ["BreadcrumbList", "HowTo"] },
     { "path": "/blog", "titleMustInclude": ["Blog"], "descriptionMustInclude": ["AI"], "requiredJsonLdTypes": ["BreadcrumbList"] },
     { "path": "/help-center", "titleMustInclude": ["Help"], "descriptionMustInclude": ["help", "guide", "answer"], "requiredJsonLdTypes": ["BreadcrumbList"] },
 

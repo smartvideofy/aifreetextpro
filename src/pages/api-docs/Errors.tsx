@@ -24,6 +24,7 @@ const ApiDocsErrors = () => (
         ["402", "insufficient_tokens", "Your balance can't cover the request. Adds tokens_needed and tokens_remaining.", "No", "Add credits, or turn on auto-recharge."],
         ["404", "not_found", "No endpoint at that path.", "No", "Use /v1/humanize or /v1/detect."],
         ["405", "method_not_allowed", "Anything other than POST (or an OPTIONS preflight).", "No", "Use POST."],
+        ["413", "payload_too_large", "The request body is over 1 MB. Adds max_body_bytes.", "No", "Send only the documented fields; split long text."],
         ["429", "rate_limited", "Over the per-minute limit. Adds retry_after_seconds and a Retry-After header.", "No", "Wait Retry-After seconds, then retry."],
         ["500", "server_error", "Something unexpected went wrong on our side.", "Normally not", "Retry once after a short wait. If it keeps happening or your balance dropped, email support@aifreetextpro.com with the time of the request."],
         ["503", "service_unavailable", "The rewriting or detection service is temporarily unavailable. Comes with Retry-After.", "Refunded", "Retry after Retry-After seconds."],

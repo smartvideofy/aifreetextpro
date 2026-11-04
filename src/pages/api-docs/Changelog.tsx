@@ -4,6 +4,13 @@ import { H2, List } from "@/components/api-docs/DocsBlocks";
 // Newest first. Add an entry for every change customers can notice.
 const entries: { date: string; id: string; items: React.ReactNode[] }[] = [
   {
+    date: "4 November 2026",
+    id: "2026-11-04",
+    items: [
+      <>Request bodies over 1 MB are refused with <code>413 payload_too_large</code>, before anything is charged. Requests within the text limits are well under 1 MB.</>,
+    ],
+  },
+  {
     date: "3 November 2026",
     id: "2026-11-03",
     items: [

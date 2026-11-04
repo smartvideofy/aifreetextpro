@@ -11,10 +11,15 @@ interface SoftwareApplicationSchemaProps {
   ratingCount?: number;
   screenshot?: string;
   featureList?: string[];
+  /** Stable "@id" so other schema on the page can refer to this entity. */
+  id?: string;
+  /** "@id" of the Organization that publishes the app. */
+  publisherId?: string;
+  alternateName?: string[];
 }
 
 export const SoftwareApplicationSchema = ({
-  name, description, url, category = "UtilityApplication", price = "0", priceCurrency = "USD", ratingValue, ratingCount, screenshot, featureList,
+  name, description, url, category = "UtilityApplication", price = "0", priceCurrency = "USD", ratingValue, ratingCount, screenshot, featureList, id, publisherId, alternateName,
 }: SoftwareApplicationSchemaProps) => {
   const schema: Record<string, unknown> = {
     "@context": "https://schema.org", "@type": "SoftwareApplication", name, description, url, applicationCategory: category, operatingSystem: "Web", offers: {
@@ -26,6 +31,9 @@ export const SoftwareApplicationSchema = ({
     schema.aggregateRating = {
       "@type": "AggregateRating", ratingValue, ratingCount, bestRating: 5, worstRating: 1, };
   }
+  if (id) schema["@id"] = id;
+  if (publisherId) schema.publisher = { "@id": publisherId };
+  if (alternateName?.length) schema.alternateName = alternateName;
   if (screenshot) schema.screenshot = screenshot;
   if (featureList?.length) schema.featureList = featureList;
 

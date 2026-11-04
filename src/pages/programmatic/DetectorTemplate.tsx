@@ -9,6 +9,7 @@ import { AuthorSchema } from "@/components/AuthorSchema";
 import { FAQSection } from "@/components/FAQSection";
 import { PillarHubLinks } from "@/components/PillarHubLinks";
 import { detectors } from "@/data/detectors";
+import { formatIsoDate } from "@/lib/utils";
 import { ArrowRight, AlertTriangle, Lightbulb } from "lucide-react";
 
 const DetectorTemplate = () => {
@@ -28,14 +29,15 @@ const DetectorTemplate = () => {
         canonicalUrl={canonical}
         keywords={`${data.name.toLowerCase()}, how does ${data.name.toLowerCase()} work, ${data.name.toLowerCase()} accuracy, ${data.name.toLowerCase()} false positives`}
         ogType="article"
-        modifiedTime="2026-06-09"
+        publishedTime={data.published}
+        modifiedTime={data.updated}
       />
       <AuthorSchema
         headline={title}
         description={data.metaDescription}
         articleUrl={`https://aifreetextpro.com${canonical}`}
-        datePublished="2026-06-10"
-        dateModified="2026-06-09"
+        datePublished={data.published}
+        dateModified={data.updated}
       />
 
       <Navbar />
@@ -53,6 +55,9 @@ const DetectorTemplate = () => {
           </h1>
           <p className="text-lg text-muted-foreground">
             {data.intro}
+          </p>
+          <p className="mt-3 text-sm text-muted-foreground">
+            Updated <time dateTime={data.updated}>{formatIsoDate(data.updated)}</time>
           </p>
         </header>
 

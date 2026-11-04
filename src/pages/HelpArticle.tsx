@@ -8,6 +8,8 @@ import { Button } from "@/components/ui/button";
 import { useState } from "react";
 import { toast } from "sonner";
 import { articleContent, collectionNames } from "@/data/helpArticles";
+import { HELP_PUBLISHED, findHelpArticle } from "@/data/helpCollections";
+import { formatIsoDate } from "@/lib/utils";
 
 const HelpArticle = () => {
   const { collectionId, articleSlug } = useParams<{ collectionId: string; articleSlug: string }>();
@@ -39,15 +41,20 @@ const HelpArticle = () => {
     toast.success(type === "helpful" ? "Thanks for your feedback!" : "Sorry to hear that. We'll work on improving this article.");
   };
 
+  const info = findHelpArticle(collectionId, articleSlug);
+  const metaDescription = info?.description
+    ?? `Learn about ${article.title.toLowerCase()} in AI Free Text Pro. Step-by-step guide and troubleshooting tips.`;
+  const updated = info?.updated ?? HELP_PUBLISHED;
+
   // Generate Article schema
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": article.title,
-    "description": `Learn about ${article.title.toLowerCase()} in AI Free Text Pro. Step-by-step guide and troubleshooting tips.`,
+    "description": metaDescription,
     "url": `https://aifreetextpro.com/help-center/${collectionId}/${articleSlug}`,
-    "datePublished": "2026-01-27",
-    "dateModified": "2026-01-28",
+    "datePublished": HELP_PUBLISHED,
+    "dateModified": updated,
     "author": {
       "@type": "Organization",
       "name": "AI Free Text Pro",
@@ -69,7 +76,6 @@ const HelpArticle = () => {
     }
   };
 
-  const metaDescription = `Learn about ${article.title.toLowerCase()} in AI Free Text Pro. Step-by-step guide and troubleshooting tips.`;
 
   return (
     <>
@@ -108,7 +114,10 @@ const HelpArticle = () => {
           </Button>
 
           {/* Article Header */}
-          <h1 className="text-2xl md:text-3xl font-bold mb-8">{article.title}</h1>
+          <h1 className="text-2xl md:text-3xl font-bold mb-2">{article.title}</h1>
+          <p className="text-sm text-muted-foreground mb-8">
+            Updated <time dateTime={updated}>{formatIsoDate(updated)}</time>
+          </p>
 
           {/* Article Content */}
           <div className="mb-12">

@@ -1,5 +1,4 @@
 import { useParams, Link, Navigate } from "react-router-dom";
-import { Helmet } from "react-helmet-async";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import Navbar from "@/components/Navbar";
@@ -11,6 +10,7 @@ import { FAQSection } from "@/components/FAQSection";
 import { PillarHubLinks } from "@/components/PillarHubLinks";
 import { competitors } from "@/data/competitors";
 import { ArrowRight, CheckCircle2, XCircle, Star } from "lucide-react";
+import { formatIsoDate } from "@/lib/utils";
 
 const VsTemplate = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -31,23 +31,16 @@ const VsTemplate = () => {
         canonicalUrl={canonical}
         keywords={`${data.name.toLowerCase()} alternative, ${data.name.toLowerCase()} vs ai free text pro, best ${data.name.toLowerCase()} alternative 2026`}
         ogType="article"
-        modifiedTime="2026-10-24"
+        publishedTime={data.published}
+        modifiedTime={data.updated}
       />
       <AuthorSchema
         headline={title}
         description={data.metaDescription}
         articleUrl={`https://aifreetextpro.com${canonical}`}
-        datePublished="2026-06-10"
-        dateModified="2026-10-24"
+        datePublished={data.published}
+        dateModified={data.updated}
       />
-      <Helmet>
-        <script type="application/ld+json">{JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "ComparisonTable",
-          "name": `AI Free Text Pro vs ${data.name}`,
-          "url": `https://aifreetextpro.com${canonical}`,
-        })}</script>
-      </Helmet>
 
       <Navbar />
 
@@ -67,7 +60,7 @@ const VsTemplate = () => {
           </p>
           <div className="flex items-center gap-2 mt-4 text-sm text-muted-foreground">
             <Star className="w-4 h-4 fill-primary text-primary" />
-            <span>4.8/5 from 1,247 reviews · Updated October 2026</span>
+            <span>4.8/5 from 1,247 reviews · Updated <time dateTime={data.updated}>{formatIsoDate(data.updated)}</time></span>
           </div>
         </header>
 

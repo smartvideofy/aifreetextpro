@@ -3,78 +3,11 @@ import { Link } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
-import { ChevronRight, Rocket, Sparkles, CreditCard, Shield, AlertTriangle, HelpCircle, Search, Mail } from "lucide-react";
+import { ChevronRight, HelpCircle, Search, Mail } from "lucide-react";
+import { helpCollections as collections } from "@/data/helpCollections";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
-
-const collections = [
-  {
-    id: "getting-started",
-    title: "Getting Started",
-    description: "Learn the basics and get up and running quickly",
-    articleCount: 4,
-    icon: Rocket,
-    articles: [
-      { title: "How to Create an Account", slug: "create-account" },
-      { title: "Your First AI Humanization", slug: "first-humanization" },
-      { title: "Understanding Your Dashboard", slug: "understanding-dashboard" },
-      { title: "Choosing the Right Writing Style", slug: "choosing-writing-style" },
-    ]
-  },
-  {
-    id: "ai-humanizer-guide",
-    title: "AI Humanizer Guide",
-    description: "Master our AI humanization tools",
-    articleCount: 5,
-    icon: Sparkles,
-    articles: [
-      { title: "How AI Humanization Works", slug: "how-humanization-works" },
-      { title: "Writing Style Modes Explained", slug: "writing-style-modes" },
-      { title: "Tips for Best Results", slug: "tips-best-results" },
-      { title: "Bypassing AI Detectors", slug: "bypassing-detectors" },
-      { title: "Advanced Settings & Options", slug: "advanced-settings" },
-    ]
-  },
-  {
-    id: "billing-payments",
-    title: "Billing & Payments",
-    description: "Manage your subscription and payments",
-    articleCount: 3,
-    icon: CreditCard,
-    articles: [
-      { title: "Subscription Plans Explained", slug: "subscription-plans" },
-      { title: "How to Upgrade or Downgrade", slug: "upgrade-downgrade" },
-      { title: "Refund Policy & Cancellations", slug: "refund-policy" },
-    ]
-  },
-  {
-    id: "privacy-security",
-    title: "Privacy & Security",
-    description: "Your data protection and account security",
-    articleCount: 2,
-    icon: Shield,
-    articles: [
-      { title: "How We Protect Your Data", slug: "data-protection" },
-      { title: "Account Security Best Practices", slug: "account-security" },
-    ]
-  },
-  {
-    id: "troubleshooting",
-    title: "Troubleshooting",
-    description: "Solutions to common issues",
-    articleCount: 6,
-    icon: AlertTriangle,
-    articles: [
-      { title: "Why Isn't My Text Being Humanized?", slug: "text-not-humanized" },
-      { title: "Login & Account Issues", slug: "login-issues" },
-      { title: "Payment Failed - What To Do", slug: "payment-failed" },
-      { title: "Browser Compatibility Issues", slug: "browser-compatibility" },
-      { title: "Word Count Not Updating", slug: "word-count-issues" },
-      { title: "Contact Support", slug: "contact-support" },
-    ]
-  },
-];
 
 const HelpCenter = () => {
   const [searchQuery, setSearchQuery] = useState("");
@@ -193,7 +126,7 @@ const HelpCenter = () => {
                   <p className="text-sm text-muted-foreground">
                     {searchQuery 
                       ? `${collection.articles.length} matching articles`
-                      : `${collection.articleCount} articles`
+                      : `${collection.articles.length} articles`
                     }
                   </p>
                 </div>

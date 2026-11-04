@@ -4,6 +4,10 @@
 
 export interface Detector {
   slug: string;
+  /** First published (YYYY-MM-DD). */
+  published: string;
+  /** Last substantive content change (YYYY-MM-DD): set it whenever facts, prices or advice on the page change. */
+  updated: string;
   name: string;
   vendor: string;
   intro: string;
@@ -21,6 +25,8 @@ export interface Detector {
 export const detectors: Record<string, Detector> = {
   turnitin: {
     slug: "turnitin",
+    published: "2026-06-10",
+    updated: "2026-06-10",
     name: "Turnitin AI Detector",
     vendor: "Turnitin LLC",
     intro: "Turnitin is the most widely deployed AI writing detector in higher education. It is built into the Turnitin Similarity report and runs automatically on most student submissions in 2026.",
@@ -50,6 +56,8 @@ export const detectors: Record<string, Detector> = {
   },
   gptzero: {
     slug: "gptzero",
+    published: "2026-06-10",
+    updated: "2026-06-10",
     name: "GPTZero",
     vendor: "GPTZero Inc.",
     intro: "GPTZero is the consumer-facing AI detector most cited in mainstream media. It is used by educators, journalists, and recruiters to check if text was written by ChatGPT, Claude, or Gemini.",
@@ -79,6 +87,8 @@ export const detectors: Record<string, Detector> = {
   },
   originality: {
     slug: "originality",
+    published: "2026-06-10",
+    updated: "2026-06-10",
     name: "Originality.AI",
     vendor: "Originality.AI",
     intro: "Originality.AI is the AI detector most popular with publishers, agencies, and SEO teams. It is the default screening tool for many freelance content marketplaces in 2026.",
@@ -108,6 +118,8 @@ export const detectors: Record<string, Detector> = {
   },
   copyleaks: {
     slug: "copyleaks",
+    published: "2026-06-10",
+    updated: "2026-06-10",
     name: "Copyleaks AI Detector",
     vendor: "Copyleaks",
     intro: "Copyleaks is an enterprise AI and plagiarism detector used by universities, publishers, and SaaS platforms via API. It is bundled into many LMS integrations in 2026.",
@@ -136,6 +148,8 @@ export const detectors: Record<string, Detector> = {
   },
   winston: {
     slug: "winston",
+    published: "2026-06-10",
+    updated: "2026-06-10",
     name: "Winston AI",
     vendor: "Winston AI",
     intro: "Winston AI is a detector popular with content agencies and academic institutions. It markets itself as the highest-accuracy AI detector on the market in 2026.",

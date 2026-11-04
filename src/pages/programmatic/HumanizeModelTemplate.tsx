@@ -10,6 +10,7 @@ import { FAQSection } from "@/components/FAQSection";
 import InternalLinks from "@/components/InternalLinks";
 import { AISignalChecker } from "@/components/AISignalChecker";
 import { modelGuides } from "@/data/models";
+import { formatIsoDate } from "@/lib/utils";
 
 const HAND_WRITTEN = [
   { name: "ChatGPT", href: "/blog/humanize-chatgpt-text" },
@@ -43,10 +44,10 @@ const HumanizeModelTemplate = ({ slug }: { slug: string }) => {
         canonicalUrl={path}
         keywords={`humanize ${m.short.toLowerCase()} text, ${m.short.toLowerCase()} ai detection, can turnitin detect ${m.short.toLowerCase()}, make ${m.short.toLowerCase()} undetectable, ${m.short.toLowerCase()} humanizer`}
         ogType="article"
-        publishedTime="2026-10-24"
-        modifiedTime="2026-10-24"
+        publishedTime={m.published}
+        modifiedTime={m.updated}
       />
-      <AuthorSchema headline={title} description={m.metaDescription} articleUrl={url} datePublished="2026-10-24" dateModified="2026-10-24" />
+      <AuthorSchema headline={title} description={m.metaDescription} articleUrl={url} datePublished={m.published} dateModified={m.updated} />
 
       <Navbar />
       <main className="min-h-screen pb-16 pt-24">
@@ -55,6 +56,9 @@ const HumanizeModelTemplate = ({ slug }: { slug: string }) => {
 
           <article className="prose prose-lg max-w-none dark:prose-invert">
             <h1 className="mb-4 text-4xl font-bold leading-tight md:text-5xl">How to Humanize {m.name} Output</h1>
+            <p className="not-prose mb-6 text-sm text-muted-foreground">
+              Updated <time dateTime={m.updated}>{formatIsoDate(m.updated)}</time>
+            </p>
             <QuickAnswer
               question={`How do you make ${m.short} text sound human?`}
               answer={`Remove ${m.short}'s formatting habits, vary sentence length sharply, replace generic claims with details only you know, then run the draft through a humanizer that rebuilds sentence structure. Check the result with an AI detector before you use it.`}

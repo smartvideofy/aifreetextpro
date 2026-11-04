@@ -1,4 +1,3 @@
-import { useEffect, useState, useRef } from "react";
 import { Users, FileText, TrendingUp, Globe } from "lucide-react";
 
 interface StatItem {
@@ -22,57 +21,14 @@ const formatNumber = (num: number): string => {
   return num.toString();
 };
 
-const AnimatedCounter = ({ end, suffix, isVisible }: { end: number; suffix: string; isVisible: boolean }) => {
-  const [count, setCount] = useState(0);
-  
-  useEffect(() => {
-    if (!isVisible) return;
-    
-    const duration = 2000;
-    const steps = 60;
-    const increment = end / steps;
-    let current = 0;
-    
-    const timer = setInterval(() => {
-      current += increment;
-      if (current >= end) {
-        setCount(end);
-        clearInterval(timer);
-      } else {
-        setCount(Math.floor(current));
-      }
-    }, duration / steps);
-    
-    return () => clearInterval(timer);
-  }, [end, isVisible]);
-  
-  return <span>{formatNumber(count)}{suffix}</span>;
-};
-
+/**
+ * The figures are rendered as text from the start (no count-up from zero and
+ * no hidden-until-scrolled state), so prerendered HTML, crawlers and visitors
+ * who never scroll all see the real numbers.
+ */
 const AnimatedStats = () => {
-  const [isVisible, setIsVisible] = useState(false);
-  const sectionRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-          observer.disconnect();
-        }
-      },
-      { threshold: 0.3 }
-    );
-    
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current);
-    }
-    
-    return () => observer.disconnect();
-  }, []);
-
   return (
-    <section ref={sectionRef} className="py-10 md:py-20 bg-gradient-to-b from-card/10 to-background">
+    <section className="py-10 md:py-20 bg-gradient-to-b from-card/10 to-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-8 md:mb-16">
           <h2 className="text-2xl md:text-4xl font-bold mb-3 md:mb-4">Trusted by Writers Worldwide</h2>
@@ -85,10 +41,7 @@ const AnimatedStats = () => {
           {stats.map((stat, index) => (
             <div 
               key={index} 
-              className={`text-center space-y-1 md:space-y-2 transition-all duration-700 ${
-                isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
-              }`}
-              style={{ transitionDelay: `${index * 100}ms` }}
+              className="text-center space-y-1 md:space-y-2"
             >
               <div className={`w-12 h-12 md:w-16 md:h-16 rounded-full flex items-center justify-center mx-auto mb-2 md:mb-3 ${
                 stat.color === "primary" ? "bg-primary/10 text-primary" : "bg-secondary/10 text-secondary"
@@ -100,7 +53,7 @@ const AnimatedStats = () => {
               <div className={`text-2xl md:text-4xl font-bold ${
                 stat.color === "primary" ? "text-primary" : "text-secondary"
               }`}>
-                <AnimatedCounter end={stat.value} suffix={stat.suffix} isVisible={isVisible} />
+                {formatNumber(stat.value)}{stat.suffix}
               </div>
               <div className="text-[10px] md:text-sm text-muted-foreground">{stat.label}</div>
             </div>

@@ -74,30 +74,10 @@ const Index = () => {
         <meta name="twitter:description" content="Free AI detector and humanizer in one tool. Check your AI score, then rewrite flagged lines in your own voice. 1,000 free words a month, free account, no card." />
         <meta name="twitter:image" content="https://aifreetextpro.com/og-image.png" />
         
-        {/* Enhanced Schema Markup */}
+        {/* One graph: the Organization below, the SoftwareApplication (component after the Helmet) and this WebPage refer to each other by "@id". */}
         <script type="application/ld+json">
           {JSON.stringify({
-            "@context": "https://schema.org", "@type": "SoftwareApplication", "name": "AI Free Text Pro - Free AI Humanizer Tool", "alternateName": ["Free AI Humanizer", "AI Checker", "AI Detector", "AI Humanizer Tool Free"], "applicationCategory": "UtilitiesApplication", "offers": {
-              "@type": "Offer", "price": "0", "priceCurrency": "USD"
-            }, "operatingSystem": "Web Browser", "applicationSubCategory": "AI Text Analysis Tool", "featureList": [
-              "Free AI humanizer tool", "AI checker with 98% accuracy", "Unlimited words on Pro plan", "Turnitin bypass", "Originality.AI bypass", "GPTZero bypass", "PDF Export Reports", "Multiple Writing Styles", "File Upload Support (PDF, DOCX, TXT)", "Word-by-word Analysis"
-            ], "screenshot": "https://aifreetextpro.com/og-image.png"
-          })}
-        </script>
-        
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org", "@type": "Product", "name": "AI Free Text Pro - AI Detector & Humanizer", "description": "Free AI detector and humanizer tool. Detect ChatGPT and make AI text sound human with 98% accuracy.", "brand": {
-              "@type": "Brand", "name": "AI Free Text Pro"
-            }, "offers": {
-              "@type": "Offer", "price": "0", "priceCurrency": "USD", "availability": "https://schema.org/InStock"
-            }
-          })}
-        </script>
-        
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org", "@type": "Organization", "name": "AI Free Text Pro", "url": "https://aifreetextpro.com", "logo": "https://aifreetextpro.com/logo.png", "description": "Free AI detector and humanizer tool. Detect ChatGPT and make AI text sound human with 98% accuracy.", "sameAs": [
+            "@context": "https://schema.org", "@type": "Organization", "@id": "https://aifreetextpro.com/#organization", "name": "AI Free Text Pro", "url": "https://aifreetextpro.com", "logo": "https://aifreetextpro.com/logo.png", "description": "Free AI detector and humanizer tool. Detect ChatGPT and make AI text sound human with 98% accuracy.", "sameAs": [
               "https://app.aifreetextpro.com", "https://twitter.com/aifreetextpro", "https://www.linkedin.com/company/aifreetextpro"
             ], "contactPoint": {
               "@type": "ContactPoint", "contactType": "Customer Support", "url": "https://aifreetextpro.com/contact"
@@ -108,62 +88,27 @@ const Index = () => {
         {/* Speakable Schema for Voice Assistants */}
         <script type="application/ld+json">
           {JSON.stringify({
-            "@context": "https://schema.org", "@type": "WebPage", "name": "Free AI Humanizer & Detector Tool", "url": "https://aifreetextpro.com/", "speakable": {
+            "@context": "https://schema.org", "@type": "WebPage", "@id": "https://aifreetextpro.com/#webpage", "name": "Free AI Humanizer & Detector Tool", "url": "https://aifreetextpro.com/", "about": { "@id": "https://aifreetextpro.com/#software" }, "publisher": { "@id": "https://aifreetextpro.com/#organization" }, "speakable": {
               "@type": "SpeakableSpecification", "cssSelector": ["h1", ".hero-description", ".key-features"]
             }
           })}
         </script>
         
-        {/* FAQ Schema for Rich Snippets */}
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
-              {
-                "@type": "Question", "name": "How accurate is AI Free Text Pro compared to GPTZero?", "acceptedAnswer": {
-                  "@type": "Answer", "text": "AI Free Text Pro achieves 98% accuracy using advanced GPT-4o Mini models for text pattern analysis. Our testing shows we outperform GPTZero (90% accuracy) and ZeroGPT (85% accuracy) in detecting ChatGPT, Claude, and other AI-generated content."
-                }
-              }, {
-                "@type": "Question", "name": "Can AI Free Text Pro detect ChatGPT 4 and Claude?", "acceptedAnswer": {
-                  "@type": "Answer", "text": "Yes! AI Free Text Pro is specifically designed to detect the latest AI models including ChatGPT-5, GPT-5, Claude 4, Gemini 2, and other leading language models."
-                }
-              }, {
-                "@type": "Question", "name": "Is AI Free Text Pro free forever?", "acceptedAnswer": {
-                  "@type": "Answer", "text": "Yes, AI Free Text Pro has a free plan with 1,000 words a month for AI detection and humanization. You need a free account but no credit card."
-                }
-              }, {
-                "@type": "Question", "name": "How does the AI humanizer work?", "acceptedAnswer": {
-                  "@type": "Answer", "text": "Our AI humanizer transforms robotic AI text into natural, human-like writing using advanced language models. You can choose from 4 writing styles (Professional, Academic, Creative, Casual) and customize settings for tone and complexity."
-                }
-              }, {
-                "@type": "Question", "name": "Is my text stored or shared with anyone?", "acceptedAnswer": {
-                  "@type": "Answer", "text": "No, never. Your privacy is our top priority. AI Free Text Pro processes all content in real-time and does not store, log, or share your text with third parties."
-                }
-              }, {
-                "@type": "Question", "name": "What file formats can I upload?", "acceptedAnswer": {
-                  "@type": "Answer", "text": "AI Free Text Pro supports PDF, DOCX (Microsoft Word), and TXT file uploads up to 10MB in size. You can also paste text directly into the editor."
-                }
-              }, {
-                "@type": "Question", "name": "Is there a free AI humanizer tool?", "acceptedAnswer": {
-                  "@type": "Answer", "text": "Yes! AI Free Text Pro is a free AI humanizer tool that transforms AI-generated text into natural, human-like writing. Get 1,000 free words per month with no credit card required."
-                }
-              }, {
-                "@type": "Question", "name": "Is there a free AI detector with unlimited words?", "acceptedAnswer": {
-                  "@type": "Answer", "text": "AI Free Text Pro offers 1,000 free words per month. For unlimited AI detection and humanization, upgrade to our Pro plan with no word limits."
-                }
-              }, {
-                "@type": "Question", "name": "How do I use an AI humanizer for free?", "acceptedAnswer": {
-                  "@type": "Answer", "text": "Simply paste your AI-generated text into our free AI humanizer. Select a writing style (Academic, Professional, Creative, or Casual) and click Humanize. Your first 1,000 words each month are completely free."
-                }
-              }
-            ]
-          })}
-        </script>
+        {/* FAQ schema comes from the visible FAQ section (EnhancedFAQ), so it always matches what is on the page. */}
       </Helmet>
       <SoftwareApplicationSchema
         name="AI Free Text Pro"
         description="Free AI humanizer and AI detector. Rewrite ChatGPT, Claude and Gemini output to read naturally and reduce false flags from Turnitin, GPTZero and Originality.AI."
         url="https://aifreetextpro.com/"
         category="UtilityApplication"
+        id="https://aifreetextpro.com/#software"
+        publisherId="https://aifreetextpro.com/#organization"
+        alternateName={["Free AI Humanizer", "AI Checker", "AI Detector"]}
+        screenshot="https://aifreetextpro.com/og-image.png"
+        featureList={[
+          "Free AI humanizer", "AI checker with 98% accuracy in our benchmark", "Turnitin, GPTZero and Originality.AI checks",
+          "Multiple writing styles", "File upload (PDF, DOCX, TXT)", "Word-by-word analysis", "PDF export reports",
+        ]}
       />
       <Navbar />
       <StickyHeaderCTA />

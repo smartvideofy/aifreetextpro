@@ -4,6 +4,10 @@
 
 export interface Competitor {
   slug: string;
+  /** First published (YYYY-MM-DD). */
+  published: string;
+  /** Last substantive content change (YYYY-MM-DD): set it whenever facts, prices or advice on the page change. */
+  updated: string;
   name: string;
   tagline: string;
   // Pricing & limits
@@ -26,6 +30,8 @@ export interface Competitor {
 export const competitors: Record<string, Competitor> = {
   stealthwriter: {
     slug: "stealthwriter",
+    published: "2026-06-10",
+    updated: "2026-10-29",
     name: "StealthWriter",
     tagline: "Popular AI humanizer focused on essay rewriting.",
     freeWords: 250,
@@ -54,6 +60,8 @@ export const competitors: Record<string, Competitor> = {
   },
   phrasly: {
     slug: "phrasly",
+    published: "2026-06-10",
+    updated: "2026-10-29",
     name: "Phrasly",
     tagline: "AI humanizer marketed to students for essay rewriting.",
     freeWords: 300,
@@ -82,6 +90,8 @@ export const competitors: Record<string, Competitor> = {
   },
   bypassgpt: {
     slug: "bypassgpt",
+    published: "2026-06-10",
+    updated: "2026-10-29",
     name: "BypassGPT",
     tagline: "AI humanizer focused on bypassing detection tools.",
     freeWords: 150,
@@ -109,6 +119,8 @@ export const competitors: Record<string, Competitor> = {
   },
   "netus-ai": {
     slug: "netus-ai",
+    published: "2026-06-10",
+    updated: "2026-10-29",
     name: "Netus AI",
     tagline: "Paraphraser and AI humanizer marketed for SEO content.",
     freeWords: 500,
@@ -136,6 +148,8 @@ export const competitors: Record<string, Competitor> = {
   },
   twixify: {
     slug: "twixify",
+    published: "2026-06-10",
+    updated: "2026-10-29",
     name: "Twixify",
     tagline: "AI humanizer focused on rewriting ChatGPT output.",
     freeWords: 200,
@@ -163,6 +177,8 @@ export const competitors: Record<string, Competitor> = {
   },
   humbot: {
     slug: "humbot",
+    published: "2026-06-10",
+    updated: "2026-10-29",
     name: "Humbot",
     tagline: "AI humanizer aimed at content marketers and SEO writers.",
     freeWords: 300,
@@ -190,6 +206,8 @@ export const competitors: Record<string, Competitor> = {
   },
   "hix-bypass": {
     slug: "hix-bypass",
+    published: "2026-06-10",
+    updated: "2026-10-29",
     name: "HIX Bypass",
     tagline: "AI humanizer sold as part of the HIX.AI writing suite.",
     freeWords: "Small free trial",
@@ -215,6 +233,8 @@ export const competitors: Record<string, Competitor> = {
   },
   stealthgpt: {
     slug: "stealthgpt",
+    published: "2026-10-24",
+    updated: "2026-10-29",
     name: "StealthGPT",
     tagline: "AI humanizer and writer aimed at students and content creators.",
     freeWords: "Limited free tier",
@@ -240,6 +260,8 @@ export const competitors: Record<string, Competitor> = {
   },
   "walter-writes": {
     slug: "walter-writes",
+    published: "2026-10-24",
+    updated: "2026-10-29",
     name: "Walter Writes AI",
     tagline: "AI humanizer focused on bypassing detectors for essays and articles.",
     freeWords: "300-word one-time trial",
@@ -265,6 +287,8 @@ export const competitors: Record<string, Competitor> = {
   },
   smodin: {
     slug: "smodin",
+    published: "2026-06-10",
+    updated: "2026-10-29",
     name: "Smodin",
     tagline: "All-in-one AI writing suite that includes a humanizer and AI detector.",
     freeWords: "Small weekly allowance",

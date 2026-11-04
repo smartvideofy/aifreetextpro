@@ -4,6 +4,10 @@
 
 export interface ModelGuide {
   slug: string;
+  /** First published (YYYY-MM-DD). */
+  published: string;
+  /** Last substantive content change (YYYY-MM-DD): set it whenever facts, prices or advice on the page change. */
+  updated: string;
   /** As people write it: "Grok", "Microsoft Copilot". */
   name: string;
   /** Short form for headings and FAQs. */
@@ -21,6 +25,8 @@ export interface ModelGuide {
 export const modelGuides: Record<string, ModelGuide> = {
   grok: {
     slug: "grok",
+    published: "2026-10-24",
+    updated: "2026-10-24",
     name: "Grok",
     short: "Grok",
     maker: "xAI",
@@ -48,6 +54,8 @@ export const modelGuides: Record<string, ModelGuide> = {
   },
   copilot: {
     slug: "copilot",
+    published: "2026-10-24",
+    updated: "2026-10-24",
     name: "Microsoft Copilot",
     short: "Copilot",
     maker: "Microsoft",
@@ -75,6 +83,8 @@ export const modelGuides: Record<string, ModelGuide> = {
   },
   perplexity: {
     slug: "perplexity",
+    published: "2026-10-24",
+    updated: "2026-10-24",
     name: "Perplexity AI",
     short: "Perplexity",
     maker: "Perplexity",
@@ -102,6 +112,8 @@ export const modelGuides: Record<string, ModelGuide> = {
   },
   llama: {
     slug: "llama",
+    published: "2026-10-24",
+    updated: "2026-10-24",
     name: "Meta Llama and Meta AI",
     short: "Llama",
     maker: "Meta",
@@ -129,6 +141,8 @@ export const modelGuides: Record<string, ModelGuide> = {
   },
   mistral: {
     slug: "mistral",
+    published: "2026-10-24",
+    updated: "2026-10-24",
     name: "Mistral Le Chat",
     short: "Mistral",
     maker: "Mistral AI",

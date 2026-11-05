@@ -47,8 +47,8 @@ export const helpCollections: HelpCollectionInfo[] = [
       {
         title: "Understanding Your Dashboard",
         slug: "understanding-dashboard",
-        description: "A tour of the AI Free Text Pro dashboard: the word count tracker, quick actions, recent activity, usage statistics and your subscription status.",
-        updated: UPDATED,
+        description: "A tour of the AI Free Text Pro dashboard: usage cards, quick actions, recent activity, history and settings.",
+        updated: "2026-11-05",
       },
       {
         title: "Choosing the Right Writing Style",
@@ -79,8 +79,8 @@ export const helpCollections: HelpCollectionInfo[] = [
       {
         title: "Tips for Best Results",
         slug: "tips-best-results",
-        description: "What to do before, during and after a humanization to get more natural results, plus advanced tips for long documents and specialist writing.",
-        updated: UPDATED,
+        description: "How to prepare your text, choose style, content type and strength, and review the result for more natural humanization.",
+        updated: "2026-11-05",
       },
       {
         title: "Bypassing AI Detectors",

@@ -170,6 +170,7 @@ const AIDetectorEmployers = () => {
               <h2>Legal Considerations</h2>
               <p><strong>Disparate impact risk.</strong> AI detectors have documented biases against non-native English speakers. Using detection as an automatic rejection criterion could create legal liability under employment discrimination laws. Always have human review of flagged applications.</p>
               <p><strong>Transparency.</strong> Consider disclosing in job postings that AI detection will be used. Some jurisdictions are developing regulations around AI in hiring that may require disclosure.</p>
+              <p>If you hire freelancers, it also helps to know the platforms' own rules: see <Link to="/blog/ai-writing-upwork-fiverr-freelancers" className="text-primary hover:underline">what Upwork and Fiverr actually allow</Link> before you set expectations in a contract.</p>
               <p><strong>Reasonable accommodation.</strong> Candidates with certain disabilities may use AI tools as assistive technology. Blanket AI screening without accommodation processes could violate ADA requirements.</p>
               <p>Consult with your legal team before implementing any automated AI screening in hiring.</p>
             </section>

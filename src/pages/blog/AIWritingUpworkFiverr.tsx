@@ -1,249 +1,225 @@
-import { SpeakableSchema } from "@/components/SpeakableSchema";
 import { Link } from "react-router-dom";
-import { QuickAnswer } from "@/components/QuickAnswer";
 import { Helmet } from "react-helmet-async";
+import { Calendar, Clock, ArrowLeft, ExternalLink, User } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
-import { KeyTakeaways } from "@/components/KeyTakeaways";
 import ReviewedBy from "@/components/ReviewedBy";
-import { FAQSection } from "@/components/FAQSection";
+import KeyTakeaways from "@/components/KeyTakeaways";
 import { RelatedArticles } from "@/components/RelatedArticles";
 import InternalLinks from "@/components/InternalLinks";
-import { ArrowLeft, Calendar, Clock, Tag, Briefcase, AlertTriangle, DollarSign, Shield, CheckCircle } from "lucide-react";
+import { FAQSection } from "@/components/FAQSection";
+import { QuickAnswer } from "@/components/QuickAnswer";
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { AuthorSchema } from "@/components/AuthorSchema";
+import { SpeakableSchema } from "@/components/SpeakableSchema";
+import { trackCTAClick } from "@/lib/analytics";
+
+const PATH = "/blog/ai-writing-upwork-fiverr-freelancers";
+const URL = `https://aifreetextpro.com${PATH}`;
+const APP = "https://app.aifreetextpro.com?utm_source=blog&utm_medium=organic&utm_campaign=upwork_fiverr";
+const OG_IMAGE = "https://aifreetextpro.com/og-image.png";
+
+const TITLE = "Using AI on Upwork and Fiverr: What the Rules Actually Say (2026)";
+const DESCRIPTION =
+  "What Upwork's and Fiverr's own policies say about freelancers using AI, when you have to disclose it, what clients check for, and a transparent AI-assisted workflow that protects your reputation.";
 
 const relatedArticles = [
-  { title: "AI Writing for Freelancers", description: "How freelancers can use AI tools while maintaining client trust and professional integrity.", href: "/blog/ai-writing-for-freelancers", category: "Career" },
-  { title: "AI Cover Letter Generator", description: "Create compelling, human-sounding cover letters with AI assistance.", href: "/blog/ai-cover-letter-generator", category: "Career" },
-  { title: "AI Blog Post Generator", description: "Scale your blog content production with AI while maintaining quality.", href: "/blog/ai-blog-post-generator", category: "Tools" },
-  { title: "AI Content at Scale", description: "Strategies for producing high-volume content without sacrificing quality.", href: "/blog/ai-content-at-scale", category: "Content Strategy" },
+  { title: "AI Detector for Employers", description: "How hiring teams screen applications for AI.", href: "/blog/ai-detector-employers", category: "Professional" },
+  { title: "Falsely Accused of Using AI?", description: "How to prove you wrote your work.", href: "/blog/falsely-accused-of-using-ai", category: "Academic" },
+  { title: "How to Edit AI Drafts Like a Human Editor", description: "The editing pass that makes AI drafts usable.", href: "/blog/editing-ai-drafts-human-editor", category: "Writing Craft" },
+  { title: "Does Paraphrasing Avoid AI Detection?", description: "What research on paraphrasing found.", href: "/blog/does-paraphrasing-avoid-ai-detection", category: "Educational" },
 ];
 
 const faqs = [
-  { question: "Does Upwork allow freelancers to use AI tools?", answer: "Upwork's 2026 policy permits AI tool usage but requires disclosure when clients ask. Freelancers who misrepresent fully AI-generated work as handwritten risk account suspension. The platform's Trust & Safety team actively investigates client complaints about AI-generated deliverables." },
-  { question: "Can Fiverr clients detect if I used AI?", answer: "Sophisticated clients increasingly run deliverables through AI detectors like Originality.ai or GPTZero before accepting work. In 2026, approximately 34% of Fiverr buyers in the writing category report checking for AI content. Humanizing your output is essential for maintaining client satisfaction." },
-  { question: "How should I price my services if I use AI?", answer: "Price based on the value you deliver, not the time it takes. If AI helps you deliver a $500 article in 2 hours instead of 8, the article is still worth $500 to the client. However, be transparent about your workflow if asked, and ensure the quality justifies your rates." },
-  { question: "What happens if a client discovers I used AI?", answer: "Consequences range from revision requests to refund demands, negative reviews, and platform disputes. On Upwork, repeated AI-related disputes can lead to profile suspension. The best protection is humanizing your content and being upfront about your workflow when clients ask." },
+  { question: "Does Upwork allow freelancers to use AI?", answer: "Yes. Upwork's terms let freelancers use any tools, including generative AI, unless the client restricts them. Its Terms of Use prohibit using generative AI to substantially bolster proposals or work product when the client has restricted that use or when it violates someone else's rights. Whether AI fits a project is left to the client and freelancer to agree in their contract." },
+  { question: "Does Fiverr allow AI?", answer: "Yes. Fiverr's help center says AI may be used across all service categories, as long as freelancers follow its community standards, own the rights to what they deliver and stay accountable for the final work. Clients who don't want AI used should say so before ordering or straight after." },
+  { question: "Do I have to tell clients I used AI?", answer: "Fiverr says freelancers must disclose AI use when a client asks, though tools don't need to be listed in gig descriptions. On Upwork, the client's contract terms decide, and using AI on a project where the client restricted it breaks Upwork's terms. Research on freelance work suggests clients generally prefer you to tell them up front rather than only when asked." },
+  { question: "Can clients detect AI in my work?", answer: "Some run deliverables through AI detectors, and many notice the signs on their own: a sudden change of voice, generic content with no specifics, or factual errors. Detectors can also be wrong about human writing, so keep drafts and version history as a record of your process." },
+  { question: "Is it OK to put a client's material into ChatGPT?", answer: "Only if your agreement allows it. Client briefs, data and unpublished drafts may be confidential, and some contracts and NDAs restrict sharing them with AI tools. Check the contract and the AI tool's data settings first, and ask the client when in doubt." },
+  { question: "Should I charge less if I use AI?", answer: "Price for the outcome and quality you deliver, not the hours. Many freelancers offer clearly labelled options, such as AI-assisted with human editing versus fully human-written, so clients can choose with full information." },
 ];
 
+const src = (url: string, label: string) => (
+  <a href={url} target="_blank" rel="noopener noreferrer nofollow">{label}</a>
+);
+const FIVERR = src("https://help.fiverr.com/hc/en-us/articles/37333301560593-Using-AI-on-Fiverr-Guidelines-for-freelancers-and-clients", "Fiverr Help Center: Using AI on Fiverr, guidelines for freelancers and clients");
+const FIVERR_STANDARDS = src("https://help.fiverr.com/hc/en-us/articles/32243564776593", "Fiverr Community Standards: AI-generated content");
+const UPWORK_REG = src("https://www.theregister.com/2023/05/09/upwork_chatgpt_problem/", "The Register: Upwork's April 2023 terms update on generative AI");
+const DISCLOSURE_STUDY = src("https://arxiv.org/abs/2603.07459", "Hwang et al.: Practices and policies of AI disclosure in freelance work (2026)");
+const NDA = src("https://terms.law/2025/12/05/nda-no-ai-clauses-marketplace-terms/", "Terms.law: \"No AI\" clauses in NDAs and marketplace terms");
+
+const Cta = ({ heading, text, label, position }: { heading: string; text: string; label: string; position: string }) => (
+  <div className="bg-primary/5 border border-primary/20 rounded-lg p-8 my-8 text-center not-prose">
+    <h3 className="text-xl font-bold mb-2 text-foreground">{heading}</h3>
+    <p className="text-muted-foreground mb-5">{text}</p>
+    <a
+      href={APP}
+      target="_blank"
+      rel="noopener noreferrer"
+      onClick={() => trackCTAClick(`upwork_fiverr_${position}`, "app_detector")}
+      className="inline-flex items-center justify-center gap-2 bg-primary !text-primary-foreground px-7 py-3.5 rounded-lg font-semibold no-underline shadow-sm hover:bg-primary/90 hover:shadow-md transition-all"
+    >
+      <span>{label}</span>
+      <ExternalLink className="w-4 h-4" aria-hidden="true" />
+    </a>
+    <p className="text-xs text-muted-foreground mt-3">Free plan available. No credit card needed.</p>
+  </div>
+);
+
 const AIWritingUpworkFiverr = () => {
-  const articleSchema = {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "headline": "AI Writing for Upwork & Fiverr Freelancers: Scale Without Getting Caught (2026)",
-    "description": "Platform-specific strategies for freelancers using AI on Upwork and Fiverr. TOS compliance, client detection risks, pricing strategies, and humanization workflows.",
-    "author": { "@type": "Person", "name": "Dr. Sarah Chen", "url": "https://aifreetextpro.com/team#sarah-chen" },
-    "publisher": { "@type": "Organization", "name": "AI Free Text Pro", "logo": { "@type": "ImageObject", "url": "https://aifreetextpro.com/logo.png" } },
-    "datePublished": "2026-03-15",
-    "dateModified": "2026-03-15",
-    "mainEntityOfPage": "https://aifreetextpro.com/blog/ai-writing-upwork-fiverr-freelancers",
-    "wordCount": 1800,
-    "image": "https://aifreetextpro.com/og-image.png"
-  };
-
-  const breadcrumbSchema = {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://aifreetextpro.com" },
-      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://aifreetextpro.com/blog" },
-      { "@type": "ListItem", "position": 3, "name": "AI Writing for Upwork & Fiverr Freelancers" }
-    ]
-  };
-
   return (
     <>
       <Helmet>
-        <title>AI Writing for Upwork & Fiverr Freelancers (2026)</title>
-        <meta name="description" content="Platform-specific strategies for freelancers using AI on Upwork and Fiverr. TOS compliance, client detection avoidance, pricing, and humanization workflows." />
-        <meta name="keywords" content="AI writing Upwork, AI for Fiverr freelancers, freelance AI writing tools, Upwork AI policy, Fiverr AI detection, freelance writing AI 2026" />
-        <link rel="canonical" href="https://aifreetextpro.com/blog/ai-writing-upwork-fiverr-freelancers" />
-        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-        <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-        <meta name="bingbot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-        <meta name="author" content="Dr. Sarah Chen" />
+        <title>{TITLE}</title>
+        <meta name="description" content={DESCRIPTION} />
+        <meta name="keywords" content="upwork ai policy, fiverr ai policy, can i use ai on upwork, can i use ai on fiverr, ai for freelance writers, ai disclosure freelancers" />
+        <link rel="canonical" href={URL} />
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
         <meta property="og:type" content="article" />
-        <meta property="og:url" content="https://aifreetextpro.com/blog/ai-writing-upwork-fiverr-freelancers" />
-        <meta property="og:title" content="AI Writing for Upwork & Fiverr Freelancers: Scale Without Getting Caught (2026)" />
-        <meta property="og:description" content="Platform-specific AI strategies for Upwork and Fiverr freelancers in 2026." />
+        <meta property="og:url" content={URL} />
+        <meta property="og:title" content={TITLE} />
+        <meta property="og:description" content={DESCRIPTION} />
         <meta property="og:site_name" content="AI Free Text Pro" />
         <meta property="og:locale" content="en_US" />
+        <meta property="og:image" content={OG_IMAGE} />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
         <meta property="article:published_time" content="2026-03-15" />
-        <meta property="article:modified_time" content="2026-03-15" />
+        <meta property="article:modified_time" content="2026-11-05" />
         <meta property="article:author" content="Dr. Sarah Chen" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@aifreetextpro" />
-        <meta name="twitter:title" content="AI Writing for Upwork & Fiverr Freelancers (2026)" />
-        <meta name="twitter:description" content="Platform-specific AI strategies for Upwork and Fiverr freelancers." />
-        <script type="application/ld+json">{JSON.stringify(articleSchema)}</script>
-        <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
+        <meta name="twitter:title" content={TITLE} />
+        <meta name="twitter:description" content={DESCRIPTION} />
+        <meta name="twitter:image" content={OG_IMAGE} />
       </Helmet>
-      <AuthorSchema
-        articleUrl="https://aifreetextpro.com/blog/ai-writing-upwork-fiverr-freelancers"
-        headline="AI Writing for Upwork & Fiverr Freelancers (2026) | AI Free Text Pro"
-        description="Platform-specific strategies for freelancers using AI on Upwork and Fiverr. TOS compliance, client detection avoidance, pricing, and humanization workflows."
-        datePublished="2026-03-15"
-        dateModified="2026-06-09"
-      />
-      <SpeakableSchema
-        pageUrl="https://aifreetextpro.com/blog/ai-writing-upwork-fiverr-freelancers"
-        pageName="AI Writing for Upwork & Fiverr Freelancers (2026) | AI Free Text Pro"
-      />
 
+      <AuthorSchema articleUrl={URL} headline={TITLE} description={DESCRIPTION} datePublished="2026-03-15" dateModified="2026-11-05" image={OG_IMAGE} />
+      <SpeakableSchema pageUrl={URL} pageName="Using AI on Upwork and Fiverr" />
 
       <Navbar />
-      <main className="min-h-screen bg-background pt-24 pb-16">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <Breadcrumbs items={[
-            { label: "Home", href: "/" },
-            { label: "Blog", href: "/blog" },
-            { label: "AI Writing for Upwork & Fiverr Freelancers" }
-          ]} />
+      <main className="pt-20 pb-16">
+        <div className="container mx-auto px-4 max-w-4xl">
+          <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Blog", href: "/blog" }, { label: "Using AI on Upwork and Fiverr" }]} />
 
-          <Link to="/blog" className="inline-flex items-center text-primary hover:underline mb-6">
-            <ArrowLeft className="w-4 h-4 mr-2" /> Back to Blog
+          <Link to="/blog" className="inline-flex items-center text-primary hover:underline mb-6 text-sm">
+            <ArrowLeft className="w-4 h-4 mr-1" /> Back to Blog
           </Link>
 
           <article className="prose prose-lg max-w-none">
             <header className="mb-8 not-prose">
-              <div className="flex flex-wrap items-center gap-4 text-sm text-muted-foreground mb-4">
-                <span className="flex items-center gap-1"><Calendar className="w-4 h-4" /> March 15, 2026</span>
-                <span className="flex items-center gap-1"><Clock className="w-4 h-4" /> 12 min read</span>
-                <span className="flex items-center gap-1"><Tag className="w-4 h-4" /> Career</span>
+              <h1 className="text-3xl md:text-4xl font-bold mb-4">Using AI on Upwork and Fiverr: What the Rules Actually Say (2026)</h1>
+              <QuickAnswer
+                question="Can freelancers use AI on Upwork and Fiverr?"
+                answer="Yes, on both, with conditions. Upwork lets freelancers use any tools, including AI, unless the client restricts them, and its terms prohibit using AI to substantially bolster work where a client has said no. Fiverr allows AI in every category but says freelancers must disclose it when a client asks, own the rights to what they deliver and stay accountable for the result. In practice: read the contract, ask if it's unclear, and tell the client how you use AI."
+              />
+              <div className="flex flex-wrap items-center gap-4 text-sm text-muted-foreground">
+                <div className="flex items-center gap-1"><User className="w-4 h-4" /><Link to="/team#sarah-chen" className="hover:text-primary">Dr. Sarah Chen</Link></div>
+                <div className="flex items-center gap-1"><Calendar className="w-4 h-4" /><time dateTime="2026-03-15">March 15, 2026</time></div>
+                <span>Updated <time dateTime="2026-11-05">November 5, 2026</time></span>
+                <div className="flex items-center gap-1"><Clock className="w-4 h-4" />9 min read</div>
+                <span className="inline-block px-3 py-1 text-xs font-medium bg-primary/10 text-primary rounded-full">Professional</span>
               </div>
-              <h1 className="text-3xl sm:text-4xl font-bold mb-4">AI Writing for Upwork & Fiverr Freelancers: Scale Without Getting Caught (2026)</h1>
-                <QuickAnswer
-                  question="Can you use AI for Upwork and Fiverr writing gigs?"
-                  answer="Yes, to boost output, but quality and client expectations come first. Many clients accept AI-assisted work if it's well-edited and meets the brief; others require original writing. Always edit AI drafts for voice and accuracy, follow each platform's and client's rules, and be transparent when asked."
-                />
-
-              <p className="text-xl text-muted-foreground">Platform-specific strategies for using AI to increase your output, maintain quality, and avoid client detection on the two biggest freelancing platforms.</p>
+              <ReviewedBy name="Dr. Sarah Chen" role="AI Research Lead" slug="sarah-chen" />
             </header>
 
-            <ReviewedBy name="Dr. Sarah Chen" role="AI Research Lead" slug="sarah-chen" />
-
             <KeyTakeaways points={[
-              "Upwork and Fiverr have different AI policies, Upwork requires disclosure on request, Fiverr is stricter on misrepresentation",
-              "34% of writing clients on Fiverr now check deliverables with AI detectors before accepting",
-              "Humanized AI content passes client scrutiny 96% of the time vs. 23% for raw AI output",
-              "Price based on value delivered, not time saved, AI is a productivity tool, not a reason to undercharge",
-              "Building a portfolio with AI-assisted samples is fine, but always humanize and add your expertise"
+              "Neither Upwork nor Fiverr bans AI. Both put the client's wishes and the contract first.",
+              "Upwork prohibits using AI to substantially bolster proposals or work when the client has restricted it.",
+              "Fiverr requires you to disclose AI use when a client asks, and holds you accountable for the final work.",
+              "Research suggests clients prefer proactive disclosure, while many freelancers only disclose when asked.",
+              "Confidential client material needs care: some contracts and NDAs restrict putting it into AI tools.",
             ]} />
 
-            <section className="mb-8">
-              <h2 className="text-2xl font-bold mb-4 flex items-center gap-2">
-                <Briefcase className="w-6 h-6 text-primary" /> The Freelancer's AI Dilemma in 2026
-              </h2>
-              <p>If you're a freelance writer on Upwork or Fiverr, you're facing an impossible choice: ignore AI and watch your competitors deliver faster and cheaper, or use AI and risk getting caught, losing clients, and damaging your reputation.</p>
-              <p>The truth is that most successful freelancers in 2026 are using AI in some capacity. A survey of top-rated Upwork writers found that 67% use AI tools as part of their workflow. The difference between those who thrive and those who get banned comes down to how they use AI and how well they humanize the output.</p>
-              <p>This guide covers the platform-specific rules, client expectations, and workflows you need to use AI effectively on both Upwork and Fiverr without risking your livelihood.</p>
-            </section>
-
-            <section className="mb-8">
-              <h2 className="text-2xl font-bold mb-4 flex items-center gap-2">
-                <Shield className="w-6 h-6 text-primary" /> Platform Policies: Upwork vs. Fiverr
-              </h2>
-              <div className="overflow-x-auto not-prose my-6">
-                <table className="min-w-full border border-border rounded-lg">
-                  <thead className="bg-muted/50">
-                    <tr>
-                      <th className="px-4 py-3 text-left text-sm font-semibold">Policy Area</th>
-                      <th className="px-4 py-3 text-left text-sm font-semibold">Upwork (2026)</th>
-                      <th className="px-4 py-3 text-left text-sm font-semibold">Fiverr (2026)</th>
-                    </tr>
-                  </thead>
-                  <tbody className="divide-y divide-border">
-                    <tr><td className="px-4 py-3 text-sm font-medium">AI tool usage</td><td className="px-4 py-3 text-sm">Permitted with disclosure when asked</td><td className="px-4 py-3 text-sm">Permitted but must not misrepresent as handwritten</td></tr>
-                    <tr><td className="px-4 py-3 text-sm font-medium">AI disclosure requirement</td><td className="px-4 py-3 text-sm">Must disclose if client asks directly</td><td className="px-4 py-3 text-sm">Required in gig description if AI is primary tool</td></tr>
-                    <tr><td className="px-4 py-3 text-sm font-medium">Penalty for violations</td><td className="px-4 py-3 text-sm">Warning, then suspension</td><td className="px-4 py-3 text-sm">Gig removal, account suspension</td></tr>
-                    <tr><td className="px-4 py-3 text-sm font-medium">Client dispute resolution</td><td className="px-4 py-3 text-sm">Favors client if AI misrepresentation proven</td><td className="px-4 py-3 text-sm">Automatic refund if AI misrepresentation proven</td></tr>
-                    <tr><td className="px-4 py-3 text-sm font-medium">AI-specific gig categories</td><td className="px-4 py-3 text-sm">No separate category</td><td className="px-4 py-3 text-sm">Dedicated "AI-assisted" writing category</td></tr>
-                  </tbody>
-                </table>
-              </div>
-              <p>The key difference: Fiverr has created a dedicated "AI-assisted writing" category where freelancers can openly use AI tools. Gigs in this category typically charge 40-60% less than traditional writing gigs, but volume is higher. If you're comfortable with lower per-piece rates and higher volume, this can be a transparent and profitable approach.</p>
-            </section>
-
-            <section className="mb-8">
-              <h2 className="text-2xl font-bold mb-4">Client Detection: What Buyers Actually Check</h2>
-              <p>Understanding how clients detect AI content helps you avoid red flags:</p>
-              <ul className="space-y-3 my-4">
-                <li><CheckCircle className="w-4 h-4 text-primary inline mr-2" /><strong>AI detector tools:</strong> 34% of Fiverr writing buyers and 28% of Upwork clients run deliverables through AI detectors. Originality.ai is the most popular among buyers.</li>
-                <li><CheckCircle className="w-4 h-4 text-primary inline mr-2" /><strong>Style consistency:</strong> Repeat clients notice when your writing voice suddenly changes. If you've been delivering conversational blog posts and suddenly submit something clinical and polished, it raises flags.</li>
-                <li><CheckCircle className="w-4 h-4 text-primary inline mr-2" /><strong>Speed anomalies:</strong> Delivering a 3,000-word article 45 minutes after receiving the brief is suspicious. Manage delivery timelines realistically even when AI speeds up your workflow.</li>
-                <li><CheckCircle className="w-4 h-4 text-primary inline mr-2" /><strong>Generic content:</strong> AI tends to produce content that's technically correct but lacks specific examples, personal anecdotes, and industry-specific jargon that experienced writers include naturally.</li>
-              </ul>
-            </section>
-
-            <section className="mb-8">
-              <h2 className="text-2xl font-bold mb-4">The AI-Assisted Freelance Workflow</h2>
-              <p>Here's the workflow that top-earning freelancers use to leverage AI while maintaining quality and avoiding detection:</p>
-              <ol className="space-y-3 my-4">
-                <li><strong>1. Research manually.</strong> Read the client's existing content, competitor content, and industry sources yourself. AI can supplement research, but your unique perspective comes from genuine understanding.</li>
-                <li><strong>2. Create the outline yourself.</strong> Structure the piece based on your expertise and the client's specific needs. This ensures the content addresses what the client actually wants, not what AI thinks they want.</li>
-                <li><strong>3. Draft with AI assistance.</strong> Use AI to generate first-draft sections based on your outline. Prompt with specific instructions, examples, and tone guidelines.</li>
-                <li><strong>4. Add your expertise.</strong> Insert personal observations, specific examples, industry jargon, and the kind of nuanced commentary that only comes from real experience in the niche.</li>
-                <li><strong>5. Humanize the output.</strong> Run the complete draft through <a href="https://app.aifreetextpro.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">AI Free Text Pro</a> to eliminate AI patterns and ensure natural language flow.</li>
-                <li><strong>6. Final quality check.</strong> Review for client-specific requirements, brand voice alignment, and factual accuracy before delivery.</li>
-              </ol>
-            </section>
-
-            <section className="mb-8">
-              <h2 className="text-2xl font-bold mb-4 flex items-center gap-2">
-                <DollarSign className="w-6 h-6 text-primary" /> Pricing Strategy When Using AI
-              </h2>
-              <p>One of the biggest mistakes freelancers make with AI is dropping their prices. Here's why that's wrong and what to do instead:</p>
-              <div className="bg-primary/5 border border-primary/20 rounded-lg p-4 my-4 not-prose">
-                <p className="font-semibold text-sm mb-2">The Value Pricing Principle</p>
-                <p className="text-sm text-muted-foreground">A client paying $500 for a blog post is paying for the outcome (traffic, leads, brand authority), not for 8 hours of typing. If AI helps you deliver that outcome in 3 hours, the article is still worth $500. Your efficiency is your competitive advantage, not a reason to discount.</p>
-              </div>
-              <p>Practical pricing approaches for AI-assisted freelancers:</p>
-              <ul className="space-y-2 my-4">
-                <li><strong>Project-based pricing:</strong> Always quote per-project, never per-hour. This decouples your income from your time input.</li>
-                <li><strong>Tiered service packages:</strong> Offer "Standard" (AI-assisted with human editing) and "Premium" (fully human-crafted) tiers. Many clients will choose Standard at a slight discount, increasing your volume.</li>
-                <li><strong>Value-add services:</strong> Use the time AI saves to offer additional value: SEO optimization, meta descriptions, social media snippets, and image sourcing bundled into your writing service.</li>
-              </ul>
-            </section>
-
-            <section className="mb-8">
-              <h2 className="text-2xl font-bold mb-4">Building a Portfolio with AI-Assisted Samples</h2>
-              <p>Your portfolio is your storefront on freelance platforms. Here's how to build one that showcases your abilities while leveraging AI:</p>
-              <ul className="space-y-2 my-4">
-                <li><strong>Create niche-specific samples.</strong> Instead of generic writing samples, create portfolio pieces targeting the exact niches you want to work in. AI helps you produce samples quickly; your expertise makes them authoritative.</li>
-                <li><strong>Always humanize portfolio samples.</strong> Your portfolio represents your best work. Every sample should pass AI detection with confidence.</li>
-                <li><strong>Include process descriptions.</strong> On Upwork, your profile can describe your workflow. Mentioning "research-driven process with AI-assisted drafting and human editing" positions you as tech-savvy without being deceptive.</li>
-                <li><strong>Publish on your own blog.</strong> Having bylined content on your own website strengthens your credibility beyond platform profiles.</li>
-              </ul>
-            </section>
-
-            <section className="mb-8">
-              <h2 className="text-2xl font-bold mb-4 flex items-center gap-2">
-                <AlertTriangle className="w-6 h-6 text-primary" /> Red Flags to Avoid
-              </h2>
-              <p>These behaviors will get you caught or banned on freelance platforms:</p>
-              <ul className="space-y-2 my-4">
-                <li><strong>Copy-pasting raw ChatGPT output.</strong> Instant red flag for any client who checks. Always humanize.</li>
-                <li><strong>Delivering impossibly fast.</strong> If the brief arrived 30 minutes ago and you're submitting 2,000 words, the client will know.</li>
-                <li><strong>Inconsistent quality across orders.</strong> When some deliverables are clearly AI and others are human-written, it creates a pattern clients notice.</li>
-                <li><strong>Generic responses to specific briefs.</strong> AI often misses the nuance of what a client actually wants. Always customize for the specific brief.</li>
-                <li><strong>Lying about AI usage when asked directly.</strong> Both platforms penalize dishonesty more severely than AI usage itself. If a client asks, be honest about your workflow.</li>
-              </ul>
-            </section>
-
-            <div className="not-prose bg-primary/5 border border-primary/20 rounded-lg p-8 text-center my-12">
-              <h3 className="text-2xl font-bold mb-3">Scale Your Freelance Writing Business</h3>
-              <p className="text-muted-foreground mb-6">Humanize your AI-assisted deliverables before sending to clients. Pass every detector, every time.</p>
-              <a href="https://app.aifreetextpro.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center rounded-md bg-primary text-primary-foreground px-6 py-3 font-medium hover:bg-primary/90 transition-colors">
-                Try AI Free Text Pro Free
-              </a>
+            <h2>What the Platforms Actually Say</h2>
+            <p>There's a lot of folklore about AI on freelance platforms. Here's what the platforms' own rules say, with links so you can check the current wording.</p>
+            <div className="not-prose overflow-x-auto my-6">
+              <Table>
+                <TableHeader>
+                  <TableRow>
+                    <TableHead>Question</TableHead>
+                    <TableHead>Upwork</TableHead>
+                    <TableHead>Fiverr</TableHead>
+                  </TableRow>
+                </TableHeader>
+                <TableBody>
+                  <TableRow><TableCell className="font-medium">Is AI allowed?</TableCell><TableCell>Yes: any tools, including generative AI, unless the client restricts them</TableCell><TableCell>Yes, across all service categories</TableCell></TableRow>
+                  <TableRow><TableCell className="font-medium">When is it a breach?</TableCell><TableCell>Using AI to substantially bolster proposals or work when the client restricted it, or when it violates a third party's rights</TableCell><TableCell>Breaking the community standards on AI content, delivering work you don't have rights to, or misleading the client</TableCell></TableRow>
+                  <TableRow><TableCell className="font-medium">Disclosure</TableCell><TableCell>Set by the client's contract terms; clients can disallow AI tools</TableCell><TableCell>Required when the client asks; tools needn't be listed in gig descriptions</TableCell></TableRow>
+                  <TableRow><TableCell className="font-medium">Client who doesn't want AI</TableCell><TableCell>Can restrict it in the contract</TableCell><TableCell>Should say so before ordering or right after</TableCell></TableRow>
+                  <TableRow><TableCell className="font-medium">Who is accountable?</TableCell><TableCell>The freelancer, under the contract and terms</TableCell><TableCell>The freelancer, fully, for the final work</TableCell></TableRow>
+                </TableBody>
+              </Table>
             </div>
+            <p className="text-sm text-muted-foreground">Sources: {FIVERR}; {FIVERR_STANDARDS}; {UPWORK_REG}. Checked November 5, 2026. Platform terms change, so confirm the current versions before relying on them.</p>
+            <p>Upwork's position dates from an April 2023 update to its terms: freelancers may use any tools, including generative AI, unless the client restricts them, and a fraud clause bars using AI to substantially bolster proposals or work product where the client has restricted it ({UPWORK_REG}). Fiverr's help center says AI can be used in every category, that it's an aid rather than a substitute for the freelancer's own skill, and that freelancers must disclose AI use when clients ask ({FIVERR}).</p>
+
+            <h2>The Disclosure Gap</h2>
+            <p>The rules set a floor; client expectations sit above it. A 2026 study of freelance work, based on interviews with freelancers and surveys of freelancers and clients, found a clear mismatch: freelancers tend to disclose AI use only when asked, partly because they assume clients can tell anyway, while clients are less confident they can spot AI and prefer to be told up front ({DISCLOSURE_STUDY}). Where clients had no clear AI policy, freelancers often misjudged what they wanted.</p>
+            <p>The practical lesson is to close the gap yourself. A one-line note in your proposal or profile, such as "I use AI tools for research and first drafts; every deliverable is written, edited and fact-checked by me," removes the guesswork and protects you if a client later runs your work through a detector.</p>
+
+            <h2>What Clients Check For</h2>
+            <ul>
+              <li><strong>AI detectors.</strong> Some clients run deliverables through tools like Originality.ai or GPTZero. Detectors give probabilities, not proof, and they can flag careful human writing, especially formal or second-language English.</li>
+              <li><strong>Voice changes.</strong> Repeat clients notice when your writing suddenly sounds different.</li>
+              <li><strong>Generic content.</strong> Text that's correct but says nothing specific about the client, its customers or its industry.</li>
+              <li><strong>Factual errors.</strong> Invented statistics, sources that don't exist or out-of-date information are the fastest way to lose a client, AI or not.</li>
+            </ul>
+            <p>If a client questions work you wrote yourself, your drafts and version history are the best answer; see <Link to="/blog/falsely-accused-of-using-ai">what to do if you're falsely accused of using AI</Link>.</p>
+
+            <Cta
+              heading="Check a deliverable before you send it"
+              text="See which sentences read as AI-like, and revise them with specifics only you can add."
+              label="Check text for AI free"
+              position="mid"
+            />
+
+            <h2>A Transparent AI-Assisted Workflow</h2>
+            <ol>
+              <li><strong>Check the contract.</strong> Look for AI restrictions and confidentiality terms. If there's nothing, ask the client how they feel about AI assistance.</li>
+              <li><strong>Protect client material.</strong> Don't paste confidential briefs, data or drafts into AI tools unless the agreement allows it and the tool's data settings are appropriate ({NDA}).</li>
+              <li><strong>Do the thinking yourself.</strong> Research the client and audience, and write the outline. That's where your value lies.</li>
+              <li><strong>Use AI where it helps,</strong> for example first drafts of sections, alternative headlines or summaries of sources you've read.</li>
+              <li><strong>Edit hard.</strong> Add specifics, examples and opinions; fix rhythm; cut stock phrases. Our guide to <Link to="/blog/editing-ai-drafts-human-editor">editing AI drafts like a human editor</Link> walks through it.</li>
+              <li><strong>Fact-check everything.</strong> Verify every number, name and source.</li>
+              <li><strong>Disclose as agreed,</strong> and deliver on a realistic timeline for the quality you're providing.</li>
+            </ol>
+
+            <h2>Pricing When You Use AI</h2>
+            <p>Price for the outcome and the quality, not the hours. A well-researched article that brings a client traffic is worth the same whether drafting took two hours or eight. If you offer different service levels, label them honestly, for example "AI-assisted, human-edited" and "fully human-written", so clients can choose with full information. Use the time AI saves to add value: research depth, SEO briefs, editing passes or extra formats.</p>
+
+            <h2>Mistakes That Cost Freelancers Clients</h2>
+            <ul>
+              <li><strong>Using AI on a "no AI" contract.</strong> On Upwork it's a terms breach; on any platform it's a quick way to a dispute.</li>
+              <li><strong>Denying AI use when asked.</strong> Fiverr requires disclosure on request, and being caught in a denial does far more damage than the AI use itself.</li>
+              <li><strong>Delivering unchecked output.</strong> Generic or wrong content loses clients regardless of how it was made.</li>
+              <li><strong>Leaking confidential material.</strong> Putting client data into tools the contract doesn't allow.</li>
+            </ul>
+
+            <h2>The Bottom Line</h2>
+            <p>Upwork and Fiverr both allow AI, and both put the client's terms first. Freelancers who do well with AI treat it as a drafting and research aid, keep the thinking and editing for themselves, protect client material, and tell clients how they work. That's what keeps reviews strong and accounts safe.</p>
+
+            <Cta
+              heading="Self-check your next deliverable"
+              text="Overall score plus sentence-level highlighting, so you can see what reads as machine-written before your client does."
+              label="Run a free AI check"
+              position="final"
+            />
+
+            <h2>Sources</h2>
+            <ul>
+              <li>{FIVERR}</li>
+              <li>{FIVERR_STANDARDS}</li>
+              <li>{UPWORK_REG}</li>
+              <li>{DISCLOSURE_STUDY}</li>
+              <li>{NDA}</li>
+            </ul>
 
             <FAQSection faqs={faqs} />
             <RelatedArticles articles={relatedArticles} />
+            <InternalLinks currentPage={PATH} />
           </article>
-
-          <InternalLinks currentPage="/blog/ai-writing-upwork-fiverr-freelancers" />
         </div>
       </main>
       <Footer />

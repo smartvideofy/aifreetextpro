@@ -45,29 +45,6 @@ const WordtuneComparison = () => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@aifreetextpro" />
         <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Article",
-            "headline": "Wordtune vs AI Free Text Pro: Rewriter vs Humanizer (2026)",
-            "author": { "@type": "Person", "name": "Dr. Sarah Chen", "url": "https://aifreetextpro.com/team#sarah-chen" },
-            "publisher": { "@type": "Organization", "name": "AI Free Text Pro", "logo": { "@type": "ImageObject", "url": "https://aifreetextpro.com/logo.png" } },
-            "datePublished": "2026-03-08",
-            "dateModified": "2026-03-08",
-            "wordCount": 1050
-          })}
-        </script>
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            "itemListElement": [
-              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://aifreetextpro.com" },
-              { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://aifreetextpro.com/blog" },
-              { "@type": "ListItem", "position": 3, "name": "Wordtune vs AI Free Text Pro" }
-            ]
-          })}
-        </script>
       </Helmet>
 
       <AuthorSchema
@@ -75,7 +52,7 @@ const WordtuneComparison = () => {
         headline="Wordtune vs AI Free Text Pro: Rewriter vs Humanizer (2026) | AI Free Text Pro"
         description="Wordtune rewrites text for clarity. AI Free Text Pro humanizes it for detection. Compare features, test results, and learn when to use each tool in 2026."
         datePublished="2026-03-08"
-        dateModified="2026-06-09"
+        dateModified="2026-11-05"
       />
       <SpeakableSchema
         pageUrl="https://aifreetextpro.com/blog/wordtune-vs-ai-free-text-pro"
@@ -100,6 +77,7 @@ const WordtuneComparison = () => {
             <header className="mb-8">
               <div className="flex items-center gap-4 text-sm text-muted-foreground mb-3">
                 <span className="flex items-center gap-1"><Calendar className="w-4 h-4" /> March 8, 2026</span>
+                <span>Updated <time dateTime="2026-11-05">November 5, 2026</time></span>
                 <span className="flex items-center gap-1"><Clock className="w-4 h-4" /> 12 min read</span>
                 <span className="bg-primary/10 text-primary px-2 py-0.5 rounded text-xs font-medium">Comparison</span>
               </div>
@@ -151,7 +129,8 @@ const WordtuneComparison = () => {
                 </TableBody>
               </Table>
             </div>
-            <p>Wordtune reduces detection scores by 10-20 percentage points, noticeable but not enough to avoid flags. AI Free Text Pro reduces scores by 85-93 percentage points, bringing text into the safe range.</p>
+            <p>Wordtune reduces detection scores by 10-20 percentage points, noticeable but not enough to avoid flags. AI Free Text Pro reduced scores by 85-93 percentage points on this sample.</p>
+            <p className="text-sm text-muted-foreground">How we tested: one 500-word ChatGPT sample, run through each tool once and checked on the five detectors when this comparison was published in March 2026. Results vary with the text, its length and detector updates, and no rewriting tool guarantees a score. Where AI use is restricted, such as in coursework, follow the rules and disclose AI assistance rather than relying on any tool.</p>
 
             <h2>Feature Comparison</h2>
             <div className="overflow-x-auto my-6">
@@ -188,7 +167,7 @@ const WordtuneComparison = () => {
             <h3>Use AI Free Text Pro When:</h3>
             <ul>
               <li>You need AI-generated text to read as naturally human</li>
-              <li>You are submitting content that may be checked for AI use</li>
+              <li>You want AI-assisted drafts to read naturally, where AI use is allowed</li>
               <li>You want to check your own writing for AI-like patterns</li>
               <li>You need <Link to="/blog/ai-content-seo-undetectable" className="text-primary hover:underline">SEO content that passes detection</Link></li>
             </ul>

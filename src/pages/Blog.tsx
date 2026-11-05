@@ -85,7 +85,7 @@ export const blogPosts = [
   }, {
     slug: "ai-content-google-ai-overviews", title: "How to Get Your AI Content Into Google AI Overviews (2026)", excerpt: "Step-by-step guide to optimizing AI content for citation in Google's AI Overviews. Content structure, E-E-A-T signals, humanization strategies, and tracking methods.", date: "2026-03-15", readTime: "13 min read", category: "SEO"
   }, {
-    slug: "ai-writing-upwork-fiverr-freelancers", title: "AI Writing for Upwork & Fiverr Freelancers: Scale Without Getting Caught (2026)", excerpt: "Platform-specific strategies for using AI on Upwork and Fiverr. TOS compliance, client detection avoidance, pricing strategies, and humanization workflows.", date: "2026-03-15", readTime: "12 min read", category: "Career"
+    slug: "ai-writing-upwork-fiverr-freelancers", title: "Using AI on Upwork and Fiverr: What the Rules Actually Say (2026)", excerpt: "What Upwork's and Fiverr's own policies say about freelancers using AI, when to disclose it, and a transparent AI-assisted workflow.", date: "2026-03-15", readTime: "9 min read", category: "Career"
   }, {
     slug: "ai-legal-writing-law-school", title: "AI for Legal Writing & Law School Essays (2026)", excerpt: "Complete guide to using AI for legal memos, briefs, and law school essays. Ethical frameworks, detection avoidance, and workflow templates for legal professionals.", date: "2026-03-09", readTime: "14 min read", category: "Professional"
   }, {

@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { isPrerendering } from "@/lib/prerender";
 import { Search, Sparkles, FileText, CheckCircle, AlertTriangle, Copy, Download } from "lucide-react";
 
 const ProductMockup = () => {
@@ -6,8 +7,10 @@ const ProductMockup = () => {
   const [animationStep, setAnimationStep] = useState(0);
   const [isAnimating, setIsAnimating] = useState(false);
 
-  // Auto-animate demonstration
+  // Auto-animate demonstration. Not during the prerender, so the snapshot
+  // keeps the initial frame that the hydration render produces.
   useEffect(() => {
+    if (isPrerendering()) return;
     const interval = setInterval(() => {
       setIsAnimating(true);
       setAnimationStep((prev) => (prev + 1) % 4);
@@ -17,6 +20,7 @@ const ProductMockup = () => {
 
   // Switch tabs periodically
   useEffect(() => {
+    if (isPrerendering()) return;
     const tabInterval = setInterval(() => {
       setActiveTab((prev) => (prev === "detector" ? "humanizer" : "detector"));
       setAnimationStep(0);

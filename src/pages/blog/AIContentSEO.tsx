@@ -262,15 +262,14 @@ const AIContentSEO = () => {
                     <div className="flex-shrink-0 w-8 h-8 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-bold">5</div>
                     <div>
                       <h4 className="font-semibold">Add Unique Value</h4>
-                      <p className="text-muted-foreground mb-0">This is where you earn E-E-A-T. Add:
-                        <ul className="mt-2 mb-0">
-                          <li>Original statistics or data</li>
-                          <li>Personal experience or case studies</li>
-                          <li>Expert quotes or interviews</li>
-                          <li>Unique angles competitors miss</li>
-                          <li>Brand-specific insights</li>
-                        </ul>
-                      </p>
+                      <p className="text-muted-foreground mb-0">This is where you earn E-E-A-T. Add:</p>
+                      <ul className="mt-2 mb-0 text-muted-foreground">
+                        <li>Original statistics or data</li>
+                        <li>Personal experience or case studies</li>
+                        <li>Expert quotes or interviews</li>
+                        <li>Unique angles competitors miss</li>
+                        <li>Brand-specific insights</li>
+                      </ul>
                     </div>
                   </div>
                   

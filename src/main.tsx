@@ -4,6 +4,7 @@ import "./index.css";
 import { captureAttribution } from "./lib/attribution";
 import { trackVisit } from "./lib/visitTracking";
 import { handlePartnerLink } from "./lib/partnerLinks";
+import { finalizeSnapshot, isPrerendering } from "./lib/prerender";
 
 // Remember where this visitor came from (TikTok, Google, a campaign...) so the
 // app can record it if they sign up. Skips itself during prerendering.
@@ -111,6 +112,8 @@ const fireRenderEvent = () => {
     if (dispatched) return;
     dispatched = true;
     dumpInventory("pre-dispatch");
+    // Add the Suspense and text-node markers hydrateRoot needs (see lib/prerender).
+    if (isPrerendering()) finalizeSnapshot(container);
     document.dispatchEvent(new Event("render-event"));
   };
 

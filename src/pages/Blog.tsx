@@ -524,7 +524,7 @@ const Blog = () => {
                           <div className="flex items-center gap-2 text-xs text-muted-foreground">
                             <Calendar className="w-3.5 h-3.5" />
                             {new Date(post.date).toLocaleDateString('en-US', { 
-                              month: 'short', day: 'numeric', year: 'numeric' 
+                              month: 'short', day: 'numeric', year: 'numeric', timeZone: 'UTC'
                             })}
                           </div>
                           <Link to={`/blog/${post.slug}`} aria-label={`Read full article: ${post.title}`}>

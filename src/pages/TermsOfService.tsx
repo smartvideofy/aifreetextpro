@@ -36,7 +36,8 @@ const TermsOfService = () => {
           </Link>
 
           <h1 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">Terms of Service</h1>
-          <p className="text-muted-foreground mb-8">Last updated: {new Date().toLocaleDateString()}</p>
+          {/* Date differs from the prerender snapshot; React swaps in the visitor's date. */}
+          <p className="text-muted-foreground mb-8" suppressHydrationWarning>Last updated: {new Date().toLocaleDateString()}</p>
 
           <div className="prose prose-slate dark:prose-invert max-w-none space-y-6">
             <section>

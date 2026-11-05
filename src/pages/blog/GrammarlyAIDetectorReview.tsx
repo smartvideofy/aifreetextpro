@@ -193,7 +193,7 @@ const GrammarlyAIDetectorReview = () => {
               <li>stays under your control. Grammarly doesn't send the report to anyone; you generate it and share the link yourself.</li>
             </ul>
             <p>Grammarly's own framing is that detectors guess from the final draft while Authorship records the process. That's a fair distinction. A detector score can be argued with forever. A record showing you typed the essay over four evenings, with research pasted in and then rewritten, is much harder to dismiss. The catch is that it only helps if it was switched on <em>while</em> you were writing, so turn it on before you start an assignment rather than after you've been asked about one.</p>
-            <p>Authorship is one of several process-based tools. Google Docs version history and Microsoft Word version history do a similar job for free, and Turnitin now sells a writing environment called Clarity that records drafts. Our guide to <Link to="/blog/falsely-accused-of-using-ai">proving you wrote something if you're falsely accused of using AI</Link> covers how to use each of them as evidence.</p>
+            <p>Authorship is one of several process-based tools. Google Docs version history and Microsoft Word version history do a similar job for free, and Turnitin now sells a writing environment called <Link to="/blog/turnitin-clarity-explained">Clarity</Link> that records drafts. Our guide to <Link to="/blog/falsely-accused-of-using-ai">proving you wrote something if you're falsely accused of using AI</Link> covers how to use each of them as evidence.</p>
 
             <h2>Is Grammarly Itself AI?</h2>
             <p>Yes. Grammarly's suggestions come from machine-learning models, and it has generative AI features that draft, rewrite and change the tone of text from a prompt. Grammarly's parent company now operates under the Superhuman name, but the Grammarly product works the same way.</p>
@@ -236,7 +236,7 @@ const GrammarlyAIDetectorReview = () => {
                 </TableBody>
               </Table>
             </div>
-            <p>The biggest practical difference is the one in the second column. If you're a student, the detector that matters is the one your school runs, and in most universities that's Turnitin, which you can't check yourself. No outside tool, Grammarly included, will reproduce Turnitin's number. Our guide to <Link to="/blog/what-ai-detector-do-teachers-use">which AI detectors teachers actually use</Link> goes through what schools run and what instructors see.</p>
+            <p>The biggest practical difference is the one in the second column. If you're a student, the detector that matters is the one your school runs, and in most universities that's Turnitin, which you can't check yourself. No outside tool, Grammarly included, will reproduce Turnitin's number. Our guide to <Link to="/blog/what-ai-detector-do-teachers-use">which AI detectors teachers actually use</Link> goes through what schools run and what instructors see, and our <Link to="/blog/quillbot-ai-detector-review">QuillBot</Link> and <Link to="/blog/pangram-ai-detector-review">Pangram</Link> reviews cover two more detectors.</p>
 
             <h2>Who Should Use Grammarly's AI Detector</h2>
             <p><strong>Good fit:</strong> a quick sense-check of a draft you're already editing in Grammarly; editors and content teams screening submissions as one signal among several; teachers who want a first look before a conversation with a student.</p>

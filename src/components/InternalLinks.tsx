@@ -210,6 +210,13 @@ const blogPosts = [
   { title: "Grammarly AI Detector Review", href: "/blog/grammarly-ai-detector-review" },
   { title: "What AI Detector Do Teachers Use?", href: "/blog/what-ai-detector-do-teachers-use" },
   { title: "Falsely Accused of Using AI?", href: "/blog/falsely-accused-of-using-ai" },
+  { title: "QuillBot AI Detector Review", href: "/blog/quillbot-ai-detector-review" },
+  { title: "Does Paraphrasing Avoid AI Detection?", href: "/blog/does-paraphrasing-avoid-ai-detection" },
+  { title: "Colleges That Turned Off AI Detection", href: "/blog/colleges-that-turned-off-ai-detection" },
+  { title: "Em Dashes and AI Writing Tells", href: "/blog/em-dash-ai-writing-tells" },
+  { title: "Pangram AI Detector Review", href: "/blog/pangram-ai-detector-review" },
+  { title: "AI Detection in Other Languages", href: "/blog/ai-detection-other-languages" },
+  { title: "Turnitin Clarity Explained", href: "/blog/turnitin-clarity-explained" },
 ];
 
 export const InternalLinks = ({ currentPage, showTitle = true, variant = "compact" }: InternalLinksProps) => {

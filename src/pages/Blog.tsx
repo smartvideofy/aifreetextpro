@@ -27,6 +27,27 @@ const categoryThumbnails: Record<string, string> = {
 
 export const blogPosts = [
   {
+    slug: "turnitin-clarity-explained", title: "Turnitin Clarity Explained: What Students and Teachers See (2026)", excerpt: "What Turnitin Clarity is, what instructors can see about your writing process, how it flags pasted AI text, and how to use it without problems.", date: "2026-11-05", readTime: "8 min read", category: "Academic"
+  },
+  {
+    slug: "ai-detection-other-languages", title: "Do AI Detectors Work in Other Languages? Spanish, French, German and More (2026)", excerpt: "Which languages Turnitin, GPTZero, QuillBot and others support, why accuracy drops outside English, and how to check non-English text fairly.", date: "2026-11-05", readTime: "8 min read", category: "Educational"
+  },
+  {
+    slug: "pangram-ai-detector-review", title: "Pangram AI Detector Review: Accuracy, Pricing and Limits (2026)", excerpt: "What independent studies found about Pangram, including on humanized text, how it compares with GPTZero and Turnitin, and what it costs.", date: "2026-11-05", readTime: "9 min read", category: "Detector Review"
+  },
+  {
+    slug: "em-dash-ai-writing-tells", title: "Em Dashes and Other AI Writing Tells: What Actually Gives AI Away (2026)", excerpt: "Is the em dash a sign of ChatGPT? Why it's a weak signal alone, the word and structure patterns that matter more, and what detectors measure.", date: "2026-11-05", readTime: "8 min read", category: "Writing Craft"
+  },
+  {
+    slug: "colleges-that-turned-off-ai-detection", title: "Colleges That Turned Off AI Detection: 2026 List", excerpt: "Universities that switched off Turnitin's AI detector, with dates, reasons and links to each official announcement, and what it means for students.", date: "2026-11-05", readTime: "8 min read", category: "Academic"
+  },
+  {
+    slug: "does-paraphrasing-avoid-ai-detection", title: "Does Paraphrasing Avoid AI Detection? What the Research Shows (2026)", excerpt: "What research on paraphrase attacks found, how Turnitin flags AI-paraphrased and bypassed text, and where the ethical line sits.", date: "2026-11-05", readTime: "9 min read", category: "Educational"
+  },
+  {
+    slug: "quillbot-ai-detector-review", title: "QuillBot AI Detector Review: Is It Accurate? (2026)", excerpt: "How QuillBot's free AI detector works, its four result categories, supported languages, the Scribbr connection, and how far to trust it.", date: "2026-11-05", readTime: "9 min read", category: "Detector Review"
+  },
+  {
     slug: "falsely-accused-of-using-ai", title: "Falsely Accused of Using AI? How to Prove You Wrote It (2026)", excerpt: "How to gather version history and other evidence, respond to the allegation, and what recent court cases show about AI cheating accusations.", date: "2026-11-05", readTime: "12 min read", category: "Academic"
   },
   {
@@ -172,7 +193,7 @@ export const blogPosts = [
   }, {
     slug: "ai-humanizer-resumes-cover-letters", title: "AI Humanizer for Resumes and Cover Letters: Complete Guide", excerpt: "Make AI-generated resumes and cover letters sound authentic, professional, and pass recruiter review.", date: "2026-02-25", readTime: "12 min read", category: "Career"
   }, {
-    slug: "ai-detection-false-positives", title: "AI Detection False Positives: Why Your Human Writing Gets Flagged", excerpt: "AI detectors falsely flag human writing 5-15% of the time. Learn why it happens and how to protect yourself.", date: "2026-02-25", readTime: "13 min read", category: "Educational"
+    slug: "ai-detection-false-positives", title: "AI Detection False Positives: Why Your Human Writing Gets Flagged", excerpt: "Why AI detectors flag human writing, who is affected most, what the research says about false-positive rates, and how to protect yourself.", date: "2026-02-25", readTime: "13 min read", category: "Educational"
   }, {
     slug: "gptzero-vs-turnitin-comparison", title: "GPTZero vs Turnitin: Which AI Detector Is More Accurate?", excerpt: "Head-to-head comparison of GPTZero and Turnitin with real test results on accuracy, false positives, and pricing.", date: "2026-02-25", readTime: "12 min read", category: "Comparison"
   }, {

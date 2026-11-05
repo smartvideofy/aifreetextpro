@@ -70,6 +70,13 @@
     { "path": "/blog/grammarly-ai-detector-review", "titleMustInclude": ["Grammarly"], "descriptionMustInclude": ["Grammarly"], "requiredJsonLdTypes": ["Article", "BreadcrumbList"] },
     { "path": "/blog/what-ai-detector-do-teachers-use", "titleMustInclude": ["Teachers"], "descriptionMustInclude": ["teachers"], "requiredJsonLdTypes": ["Article", "BreadcrumbList"] },
     { "path": "/blog/falsely-accused-of-using-ai", "titleMustInclude": ["Falsely Accused"], "descriptionMustInclude": ["AI"], "requiredJsonLdTypes": ["Article", "BreadcrumbList"] },
+    { "path": "/blog/quillbot-ai-detector-review", "titleMustInclude": ["QuillBot"], "descriptionMustInclude": ["QuillBot"], "requiredJsonLdTypes": ["Article", "BreadcrumbList"] },
+    { "path": "/blog/does-paraphrasing-avoid-ai-detection", "titleMustInclude": ["Paraphrasing"], "descriptionMustInclude": ["paraphras"], "requiredJsonLdTypes": ["Article", "BreadcrumbList"] },
+    { "path": "/blog/colleges-that-turned-off-ai-detection", "titleMustInclude": ["Colleges"], "descriptionMustInclude": ["Turnitin"], "requiredJsonLdTypes": ["Article", "BreadcrumbList"] },
+    { "path": "/blog/em-dash-ai-writing-tells", "titleMustInclude": ["Em Dash"], "descriptionMustInclude": ["em dash"], "requiredJsonLdTypes": ["Article", "BreadcrumbList"] },
+    { "path": "/blog/pangram-ai-detector-review", "titleMustInclude": ["Pangram"], "descriptionMustInclude": ["Pangram"], "requiredJsonLdTypes": ["Article", "BreadcrumbList"] },
+    { "path": "/blog/ai-detection-other-languages", "titleMustInclude": ["Languages"], "descriptionMustInclude": ["languages"], "requiredJsonLdTypes": ["Article", "BreadcrumbList"] },
+    { "path": "/blog/turnitin-clarity-explained", "titleMustInclude": ["Clarity"], "descriptionMustInclude": ["Clarity"], "requiredJsonLdTypes": ["Article", "BreadcrumbList"] },
     { "path": "/blog/humanize-chatgpt-text", "titleMustInclude": ["Humanize", "ChatGPT"], "descriptionMustInclude": ["ChatGPT"], "requiredJsonLdTypes": ["Article", "BreadcrumbList"] }
   ]
 }

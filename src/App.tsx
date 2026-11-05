@@ -196,6 +196,13 @@ const FreeAIDetectorGuide = lazy(() => import("./pages/blog/FreeAIDetectorGuide"
 const GrammarlyAIDetectorReview = lazy(() => import("./pages/blog/GrammarlyAIDetectorReview"));
 const WhatAIDetectorDoTeachersUse = lazy(() => import("./pages/blog/WhatAIDetectorDoTeachersUse"));
 const FalselyAccusedOfUsingAI = lazy(() => import("./pages/blog/FalselyAccusedOfUsingAI"));
+const QuillBotAIDetectorReview = lazy(() => import("./pages/blog/QuillBotAIDetectorReview"));
+const DoesParaphrasingAvoidAIDetection = lazy(() => import("./pages/blog/DoesParaphrasingAvoidAIDetection"));
+const CollegesThatTurnedOffAIDetection = lazy(() => import("./pages/blog/CollegesThatTurnedOffAIDetection"));
+const EmDashAIWritingTells = lazy(() => import("./pages/blog/EmDashAIWritingTells"));
+const PangramAIDetectorReview = lazy(() => import("./pages/blog/PangramAIDetectorReview"));
+const AIDetectionOtherLanguages = lazy(() => import("./pages/blog/AIDetectionOtherLanguages"));
+const TurnitinClarityExplained = lazy(() => import("./pages/blog/TurnitinClarityExplained"));
 
 
 const queryClient = new QueryClient();
@@ -419,6 +426,13 @@ const App = () => (
               <Route path="/blog/grammarly-ai-detector-review" element={<GrammarlyAIDetectorReview />} />
               <Route path="/blog/what-ai-detector-do-teachers-use" element={<WhatAIDetectorDoTeachersUse />} />
               <Route path="/blog/falsely-accused-of-using-ai" element={<FalselyAccusedOfUsingAI />} />
+              <Route path="/blog/quillbot-ai-detector-review" element={<QuillBotAIDetectorReview />} />
+              <Route path="/blog/does-paraphrasing-avoid-ai-detection" element={<DoesParaphrasingAvoidAIDetection />} />
+              <Route path="/blog/colleges-that-turned-off-ai-detection" element={<CollegesThatTurnedOffAIDetection />} />
+              <Route path="/blog/em-dash-ai-writing-tells" element={<EmDashAIWritingTells />} />
+              <Route path="/blog/pangram-ai-detector-review" element={<PangramAIDetectorReview />} />
+              <Route path="/blog/ai-detection-other-languages" element={<AIDetectionOtherLanguages />} />
+              <Route path="/blog/turnitin-clarity-explained" element={<TurnitinClarityExplained />} />
               <Route path="/blog/ai-writing-checker" element={<SEORedirect to="/ai-checker" />} />
               <Route path="/blog/ai-detector-for-students-2026" element={<AIDetectorForStudents2026 />} />
 

@@ -144,6 +144,8 @@ const AIDetectionFalsePositives = () => {
               </ol>
             </div>
 
+            <p className="text-muted-foreground leading-relaxed">For a full walkthrough of the evidence to gather and how to present it, see <Link to="/blog/falsely-accused-of-using-ai" className="text-primary hover:underline">what to do if you're falsely accused of using AI</Link>.</p>
+
             <h2 className="text-2xl font-bold mt-10 mb-4 text-foreground">The Bigger Picture</h2>
             <p className="text-muted-foreground leading-relaxed">The false positive problem reveals a fundamental limitation of AI detection technology. These tools are making probabilistic guesses based on statistical patterns, not definitive determinations. No AI detector can say with certainty whether a specific piece of text was written by a human or machine. Educators, students, and institutions need to treat detection results as one data point in a broader assessment, not as conclusive proof.</p>
 

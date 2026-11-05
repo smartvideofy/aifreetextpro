@@ -193,6 +193,9 @@ const AIDetectorForStudents2026 = lazy(() => import("./pages/blog/AIDetectorForS
 const SynthIDWatermarkRemover = lazy(() => import("./pages/blog/SynthIDWatermarkRemover"));
 const HumanizeDeepSeekOutput = lazy(() => import("./pages/blog/HumanizeDeepSeekOutput"));
 const FreeAIDetectorGuide = lazy(() => import("./pages/blog/FreeAIDetectorGuide"));
+const GrammarlyAIDetectorReview = lazy(() => import("./pages/blog/GrammarlyAIDetectorReview"));
+const WhatAIDetectorDoTeachersUse = lazy(() => import("./pages/blog/WhatAIDetectorDoTeachersUse"));
+const FalselyAccusedOfUsingAI = lazy(() => import("./pages/blog/FalselyAccusedOfUsingAI"));
 
 
 const queryClient = new QueryClient();
@@ -413,6 +416,9 @@ const App = () => (
               <Route path="/blog/humanize-deepseek-output" element={<HumanizeDeepSeekOutput />} />
               <Route path="/blog/paraphrasing-tool" element={<SEORedirect to="/ai-paraphraser" />} />
               <Route path="/blog/free-ai-detector" element={<FreeAIDetectorGuide />} />
+              <Route path="/blog/grammarly-ai-detector-review" element={<GrammarlyAIDetectorReview />} />
+              <Route path="/blog/what-ai-detector-do-teachers-use" element={<WhatAIDetectorDoTeachersUse />} />
+              <Route path="/blog/falsely-accused-of-using-ai" element={<FalselyAccusedOfUsingAI />} />
               <Route path="/blog/ai-writing-checker" element={<SEORedirect to="/ai-checker" />} />
               <Route path="/blog/ai-detector-for-students-2026" element={<AIDetectorForStudents2026 />} />
 

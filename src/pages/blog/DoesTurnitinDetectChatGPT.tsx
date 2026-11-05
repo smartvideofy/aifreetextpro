@@ -49,11 +49,11 @@ const faqs = [
   },
   {
     question: "Can Turnitin detect ChatGPT if I edit the text?",
-    answer: "Light editing (fixing typos, changing a few words) does not significantly reduce detection rates. Our tests show that substantial rewriting, adding personal examples, and restructuring paragraphs can lower AI scores by 15-30%, but rarely below the 20% threshold without professional humanization tools."
+    answer: "Light editing (fixing typos, changing a few words) does not significantly reduce detection rates. In our tests, substantial rewriting, adding personal examples and restructuring paragraphs lowered AI scores by 15-30%, but rarely below 20%, the point at which Turnitin starts showing a number instead of an asterisk."
   },
   {
     question: "How accurate is Turnitin at detecting ChatGPT?",
-    answer: "Turnitin claims 98% accuracy with less than 1% false positives. Our independent testing confirms 94-98% detection rates for unedited ChatGPT content, though accuracy drops to 70-85% for heavily edited or humanized text."
+    answer: "Turnitin says its document-level false positive rate is under 1% for documents with 20% or more AI writing, and that about 4% of individual sentences it highlights may be human-written. Our March 2026 testing found 91-98% detection rates for unedited ChatGPT content, dropping to 70-85% for heavily edited or humanized text."
   },
   {
     question: "Does ChatGPT Plus avoid Turnitin detection?",
@@ -61,7 +61,7 @@ const faqs = [
   },
   {
     question: "What percentage triggers a Turnitin AI flag?",
-    answer: "Turnitin uses a color-coded system: 0-20% (blue) is considered low/acceptable, 21-40% (yellow) warrants review, 41-60% (orange) is concerning, and 61-100% (red) indicates likely AI generation. Most institutions investigate scores above 20-25%."
+    answer: "Turnitin doesn't set a pass or fail line; each institution decides what it does with a score. What Turnitin does fix is how scores are shown: 0% is shown as 0, scores from 1% to 19% appear only as an asterisk (*%) because false positives are more common in that range, and 20% or more is shown as a number with the flagged text highlighted. The detector also needs at least 300 words of prose to produce a score."
   },
   {
     question: "Can I use ChatGPT for research and still pass Turnitin?",
@@ -91,7 +91,7 @@ const DoesTurnitinDetectChatGPT = () => {
         <meta property="og:site_name" content="AI Free Text Pro" />
         <meta property="og:locale" content="en_US" />
         <meta property="article:published_time" content="2026-03-09" />
-        <meta property="article:modified_time" content="2026-03-09" />
+        <meta property="article:modified_time" content="2026-11-05" />
         <meta property="article:author" content="Dr. Sarah Chen" />
         
         <meta name="twitter:card" content="summary_large_image" />
@@ -100,35 +100,7 @@ const DoesTurnitinDetectChatGPT = () => {
         <meta name="twitter:description" content="Real 2026 test results: Turnitin detects ChatGPT at 94-98% accuracy. See detection rates by model and content type." />
         <meta name="twitter:image" content="https://aifreetextpro.com/og-image.png" />
         
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Article",
-            "headline": "Does Turnitin Detect ChatGPT? (2026 Real Test Results)",
-            "description": "Real 2026 test results: Turnitin detects ChatGPT at 94-98% accuracy. See detection rates by model, content type, and learn how to reduce false AI flags.",
-            "image": "https://aifreetextpro.com/og-image.png",
-            "author": {
-              "@type": "Person",
-              "name": "Dr. Sarah Chen",
-              "url": "https://aifreetextpro.com/team#sarah-chen"
-            },
-            "publisher": {
-              "@type": "Organization",
-              "name": "AI Free Text Pro",
-              "logo": {
-                "@type": "ImageObject",
-                "url": "https://aifreetextpro.com/logo.png"
-              }
-            },
-            "datePublished": "2026-03-09",
-            "dateModified": "2026-03-09",
-            "mainEntityOfPage": {
-              "@type": "WebPage",
-              "@id": "https://aifreetextpro.com/blog/does-turnitin-detect-chatgpt"
-            },
-            "wordCount": 2200
-          })}
-        </script>
+
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
@@ -143,10 +115,11 @@ const DoesTurnitinDetectChatGPT = () => {
       </Helmet>
       <AuthorSchema
         articleUrl="https://aifreetextpro.com/blog/does-turnitin-detect-chatgpt"
-        headline="Does Turnitin Detect ChatGPT? (2026)"
-        description="Real Turnitin detection rates for ChatGPT, including GPT-4, GPT-5, and humanized output in 2026."
-        datePublished="2026-05-10"
-        dateModified="2026-06-09"
+        headline="Does Turnitin Detect ChatGPT? (2026 Real Test Results)"
+        description="Real 2026 test results: Turnitin detects ChatGPT at 94-98% accuracy. See detection rates by model, content type, and learn how to reduce false AI flags."
+        datePublished="2026-03-09"
+        dateModified="2026-11-05"
+        image="https://aifreetextpro.com/og-image.png"
       />
       <SpeakableSchema
         pageUrl="https://aifreetextpro.com/blog/does-turnitin-detect-chatgpt"
@@ -179,7 +152,7 @@ const DoesTurnitinDetectChatGPT = () => {
 
             <QuickAnswer
               question="Does Turnitin detect ChatGPT?"
-              answer="Yes. Turnitin's AI writing indicator detects unmodified ChatGPT output at 94-98% accuracy as of 2026, including GPT-4o and GPT-5 drafts. It also flags Claude and Gemini text. False positives on human writing run around 1-4%, which is why a single high score should not be treated as proof of cheating without a human review."
+              answer="Yes. In our March 2026 test of 156 documents, Turnitin's AI writing indicator detected unedited ChatGPT output (GPT-3.5 to GPT-4o) 91-98% of the time. Turnitin says fewer than 1% of documents with 20%+ AI writing are false positives, and about 4% of highlighted sentences may be human-written, which is why a single high score should not be treated as proof of cheating without a human review."
             />
               <p className="text-xl text-muted-foreground mb-4">
                 We submitted 150+ ChatGPT-generated documents to Turnitin. Here are the actual detection rates by model, content type, and editing level.
@@ -191,7 +164,7 @@ const DoesTurnitinDetectChatGPT = () => {
                 </div>
                 <div className="flex items-center gap-1">
                   <Calendar className="w-4 h-4" />
-                  <span>March 9, 2026</span>
+                  <span>March 9, 2026 · Updated <time dateTime="2026-11-05">November 5, 2026</time></span>
                 </div>
                 <div className="flex items-center gap-1">
                   <Clock className="w-4 h-4" />
@@ -213,7 +186,8 @@ const DoesTurnitinDetectChatGPT = () => {
                 "GPT-4o has the highest detection rate (96-98%), GPT-3.5 is slightly lower (91-95%)",
                 "Light editing reduces scores by only 5-10%; substantial rewriting needed for 20%+ reduction",
                 "Content type matters: essays flagged higher (95%+) than creative writing (88-92%)",
-                "AI Free Text Pro humanization reduces ChatGPT detection to 5-15% in our tests"
+                "AI Free Text Pro humanization brought ChatGPT detection down to 5-15% in our tests; results vary by text, and Turnitin added detection of humanizer-modified text in August 2025",
+                "Turnitin shows scores of 1-19% only as an asterisk, needs 300+ words of prose, and says its score should never be the sole basis for action against a student"
               ]}
             />
             
@@ -236,6 +210,30 @@ const DoesTurnitinDetectChatGPT = () => {
               <li><strong>Editing levels:</strong> Unedited, light edits, moderate rewrites, professional humanization</li>
               <li><strong>Word counts:</strong> 500-3,000 words per document</li>
             </ul>
+            <div className="not-prose my-6 rounded-lg border border-border bg-muted/40 p-5 text-sm">
+              <p className="font-semibold text-foreground mb-2">Limits of this test</p>
+              <ul className="list-disc ml-5 space-y-1 text-muted-foreground">
+                <li>It covers GPT-3.5-turbo to GPT-4o. GPT-5 and later models weren't included; for those, see our <Link to="/blog/ai-detectors-claude-gemini-gpt5-2026" className="text-primary hover:underline">cross-model test of GPT-5, Claude and Gemini</Link>.</li>
+                <li>Turnitin updates its detector without version numbers, so the same documents can score differently later. Our numbers describe March 2026.</li>
+                <li>All documents were English. Turnitin's AI bypasser and paraphrase detection only runs on English submissions.</li>
+                <li>Each institution configures Turnitin and decides what score, if any, leads to a review. Nothing here predicts what your school will do with a result.</li>
+              </ul>
+            </div>
+
+            <h2>How Turnitin Reports an AI Score</h2>
+            <p>
+              Before looking at our numbers, it helps to know what a Turnitin AI report shows, because several of its rules surprise students:
+            </p>
+            <ul>
+              <li><strong>300 words minimum.</strong> The detector needs at least 300 words of prose in a long-form format. Shorter work, bulleted lists, code and poetry don't get a reliable score.</li>
+              <li><strong>1-19% shows as an asterisk.</strong> Turnitin hides numbers in this range (*%) because its testing found more false positives there. A number appears only at 20% and above.</li>
+              <li><strong>Two highlight colors.</strong> One marks text that looks AI-generated, including text that may have gone through an "AI bypasser" (humanizer). The other marks AI-generated text that was then reworded by a paraphrasing tool such as QuillBot.</li>
+              <li><strong>Bypasser detection since August 2025.</strong> Turnitin added detection aimed at humanizer tools in August 2025, for English submissions in Turnitin Originality.</li>
+              <li><strong>Not proof.</strong> Turnitin's own guidance says the model can misidentify human, AI-generated and paraphrased text, and its report shouldn't be the only basis for action against a student.</li>
+            </ul>
+            <p className="text-sm text-muted-foreground">
+              Sources: Turnitin's <a href="https://guides.ithenticate.com/hc/en-us/articles/27835303398541-AI-writing-detection-in-the-new-enhanced-Similarity-Report-view" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">AI writing detection guide</a>, <a href="https://guides.turnitin.com/hc/en-us/articles/27139000787853-How-should-I-review-the-AI-Writing-report" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">how to review the AI writing report</a>, and <a href="https://www.plagiarismtoday.com/2025/08/27/turnitin-launches-anti-ai-humanizer-feature/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Plagiarism Today on the bypasser launch</a>. Checked November 5, 2026.
+            </p>
             
             <h2>Detection Rates by ChatGPT Model</h2>
             <p>
@@ -401,7 +399,7 @@ const DoesTurnitinDetectChatGPT = () => {
             </div>
             
             <p>
-              The takeaway: light editing is not enough. Even moderate rewriting often leaves text above the 20% threshold that triggers institutional review. Only substantial human rewriting or professional humanization tools consistently achieve safe scores.
+              The takeaway: light editing is not enough. Even moderate rewriting usually left text well above 20%, the level at which Turnitin starts showing a number. Only substantial human rewriting or humanization brought scores down consistently in our tests.
             </p>
             
             <h2>Why Turnitin Is So Good at Detecting ChatGPT</h2>
@@ -460,7 +458,7 @@ const DoesTurnitinDetectChatGPT = () => {
             
             <h2>The Professional Humanization Solution</h2>
             <p>
-              For writers who need to work with AI-assisted content professionally, AI humanization tools offer a more reliable solution than manual editing. In our tests, AI Free Text Pro consistently reduced ChatGPT detection scores from 85-92% to 5-15%.
+              For writers who need to work with AI-assisted content professionally, AI humanization tools offer a more reliable solution than manual editing. In our tests, AI Free Text Pro consistently reduced ChatGPT detection scores from 85-92% to 5-15%. That is a test result, not a guarantee: individual texts vary, and Turnitin's August 2025 bypasser detection is built to catch humanizer-modified text, so check the score after every run.
             </p>
             <p>
               This is not about "cheating" detection. It is about transforming AI-assisted drafts into content with genuinely human writing characteristics: varied sentence structure, natural word choices, appropriate imperfections, and authentic voice.
@@ -469,7 +467,7 @@ const DoesTurnitinDetectChatGPT = () => {
             <div className="not-prose my-8 p-6 bg-primary/5 border border-primary/20 rounded-lg">
               <h3 className="text-xl font-bold mb-3">Check Your ChatGPT Content Before Submitting</h3>
               <p className="text-muted-foreground mb-4">
-                Use our free AI detector to see your Turnitin risk score, then humanize if needed.
+                Our free AI detector shows which sentences read as AI-written before you submit. It isn't Turnitin, and no other tool can tell you exactly what Turnitin will report.
               </p>
               <Button asChild size="lg">
                 <a 
@@ -495,7 +493,7 @@ const DoesTurnitinDetectChatGPT = () => {
               <li><strong>Appeal if needed:</strong> Most institutions have formal appeal processes for academic integrity cases.</li>
             </ol>
             <p>
-              False positives do occur, especially for non-native English speakers and technical writing. Turnitin's own data suggests a 1% false positive rate, but independent research indicates it may be higher for certain demographics.
+              False positives do occur, especially for non-native English speakers and technical writing. Turnitin puts its <a href="https://www.turnitin.co.uk/blog/understanding-the-false-positive-rate-for-sentences-of-our-ai-writing-detection-capability" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">sentence-level false positive rate at about 4%</a> and its document-level rate under 1% for documents with 20%+ AI writing. Independent research is less reassuring for some writers: a <a href="https://www.cell.com/patterns/fulltext/S2666-3899(23)00130-7" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">2023 Stanford study</a> found that several popular detectors (not Turnitin) flagged a majority of essays written by non-native English speakers as AI-generated. If you are flagged, our guide to <Link to="/blog/turnitin-appeal-ai-detection" className="text-primary hover:underline">appealing a Turnitin AI flag</Link> walks through the process.
             </p>
             
             <h2>The Bottom Line</h2>
@@ -503,7 +501,7 @@ const DoesTurnitinDetectChatGPT = () => {
               Yes, Turnitin detects ChatGPT with high accuracy in 2026. Unedited ChatGPT content will almost certainly be flagged. Light editing is insufficient to avoid detection.
             </p>
             <p>
-              If you need to use AI in your writing workflow, either use it only for non-writing tasks (research, outlining, proofreading) or invest in professional humanization to ensure your final content has genuine human characteristics.
+              If you need to use AI in your writing workflow, check what your course allows first. Where AI help is permitted, use it for research, outlining and proofreading, write the final text yourself, and disclose AI use the way your institution asks. Humanizing changes how text reads; it doesn't change whether using AI was allowed.
             </p>
             <p>
               The safest approach: use AI as a thinking partner, not a writing replacement. Let it help you develop ideas, then express those ideas in your own words.

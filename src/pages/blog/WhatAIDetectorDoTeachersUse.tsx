@@ -197,7 +197,7 @@ const WhatAIDetectorDoTeachersUse = () => {
             />
 
             <h2>The Schools That Switched AI Detection Off</h2>
-            <p>Not every institution runs an AI score. A growing list of universities has turned Turnitin's AI indicator off while keeping its plagiarism matching:</p>
+            <p>Not every institution runs an AI score. A growing list of universities has turned Turnitin's AI indicator off while keeping its plagiarism matching (see our <Link to="/blog/colleges-that-turned-off-ai-detection">full list of colleges that turned off AI detection</Link>):</p>
             <ul>
               <li><strong>Vanderbilt University</strong> disabled it in August 2023 after months of testing, pointing out that even a 1% false-positive rate would mean hundreds of wrongly flagged papers at its scale, and raising privacy concerns ({VANDERBILT}).</li>
               <li><strong>The University of Waterloo</strong> discontinued the AI detection functionality from September 2025 ({WATERLOO}).</li>
@@ -208,7 +208,7 @@ const WhatAIDetectorDoTeachersUse = () => {
             <h2>2026: From Detection to Process Evidence</h2>
             <p>The newest tools don't try to guess from finished text at all. They record the writing as it happens.</p>
             <ul>
-              <li><strong>Turnitin Clarity</strong> is a writing space inside Turnitin Feedback Studio, generally available since July 2025 as a paid add-on. Students draft the assignment there, and instructors can review pasted text, typing patterns, time spent and draft history, including a playback ({CLARITY}). UCLA is exploring it for the winter and spring 2026 terms ({UCLA}).</li>
+              <li><strong><Link to="/blog/turnitin-clarity-explained">Turnitin Clarity</Link></strong> is a writing space inside Turnitin Feedback Studio, generally available since July 2025 as a paid add-on. Students draft the assignment there, and instructors can review pasted text, typing patterns, time spent and draft history, including a playback ({CLARITY}). UCLA is exploring it for the winter and spring 2026 terms ({UCLA}).</li>
               <li><strong>Grammarly Authorship</strong> tracks whether text was typed, pasted or produced with Grammarly's AI, in Google Docs and Word, and lets students share a report with a replay. It's student-controlled: nothing is sent unless you share it ({AUTHORSHIP}). Our <Link to="/blog/grammarly-ai-detector-review">Grammarly AI detector review</Link> compares it with Grammarly's detector.</li>
               <li><strong>Version history</strong> in Google Docs and Microsoft Word does a simpler version of the same job for free.</li>
             </ul>

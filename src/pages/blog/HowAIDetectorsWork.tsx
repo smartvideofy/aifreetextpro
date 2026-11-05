@@ -10,6 +10,7 @@ import { ArrowRight, Brain, Search, Zap } from "lucide-react";
 import { KeyTakeaways } from "@/components/KeyTakeaways";
 import { QuickAnswer } from "@/components/QuickAnswer";
 import { AuthorSchema } from "@/components/AuthorSchema";
+import { FAQSection } from "@/components/FAQSection";
 import { SpeakableSchema } from "@/components/SpeakableSchema";
 import { AISignalChecker } from "@/components/AISignalChecker";
 
@@ -19,6 +20,18 @@ const relatedArticles = [
   }, {
     title: "How to Detect AI-Generated Text", description: "Expert techniques to spot AI writing patterns", href: "/blog/how-to-check-if-written-by-ai", category: "Guide"
   }
+];
+
+const faqs = [
+  { question: "What is perplexity in AI detection?", answer: "Perplexity measures how 'surprised' a language model is by text. AI-generated content typically has low perplexity because it chooses predictable words, while human writing has higher perplexity due to creative and varied word choices." },
+  { question: "What is burstiness in AI detection?", answer: "Burstiness measures variation in sentence structure. Humans naturally write with variation, mixing short, punchy sentences with longer, complex ones, while AI tends to generate uniform sentence lengths and structures." },
+  { question: "What patterns do AI detectors look for?", answer: "AI detectors look for overuse of transition phrases, repetitive sentence structures, lack of contractions, overly formal language, perfect grammar with no quirks, and balanced methodical organization." },
+  { question: "How accurate are AI detection tools?", answer: "It depends heavily on the text and the writer. On unedited AI text, the strongest commercial detectors are very accurate in independent tests; a 2025 NBER study found one with near-zero error rates. But many tools lose accuracy on edited, paraphrased and short text, and a 2023 Stanford study found detectors misclassified 61% of essays by non-native English writers as AI on average. Treat any score as a signal, not proof." },
+  { question: "Do AI detectors actually work?", answer: "Yes, within limits. They reliably separate long, unedited AI text from typical human writing, and the best ones now handle paraphrased and humanized text too. They are least reliable on short passages, heavily edited or mixed text, non-English text and writing by non-native English speakers. No detector can prove who wrote something." },
+  { question: "How do AI detectors work using perplexity and burstiness?", answer: "AI detectors run your text through a reference language model (often a GPT-2 derivative) and score two signals. Perplexity measures token-by-token predictability, low perplexity means the next word was easy to guess, a hallmark of AI. Burstiness measures variance in sentence-level perplexity, humans spike high then low; AI stays flat. A classifier combines both scores to produce the final AI probability." },
+  { question: "How does GPTZero use perplexity and burstiness officially?", answer: "GPTZero officially documents perplexity (overall predictability) and burstiness (sentence-level variation) as its two foundational metrics. Each sentence gets a perplexity score; the spread of those scores becomes the burstiness signal. Low perplexity plus low burstiness flags text as AI. GPTZero combines this with a transformer classifier trained on millions of labeled samples." },
+  { question: "How is perplexity and burstiness used in AI text detection, explained simply?", answer: "Imagine a model trying to guess every next word in your text. If it guesses easily, perplexity is low, which suggests AI. Now look at how that score changes across sentences: humans bounce between simple and complex sentences (high burstiness), while AI stays consistent (low burstiness). Detectors flag text that is both predictable AND uniform." },
+  { question: "Can AI detectors tell which AI model wrote the text?", answer: "Not reliably. Post-hoc detectors measure statistical patterns that look similar whether the text came from GPT, Claude, Gemini or another model. Identifying a specific model would need a watermark built in by the provider, such as Google's SynthID, and a way to check it." },
 ];
 
 export default function HowAIDetectorsWork() {
@@ -46,80 +59,13 @@ export default function HowAIDetectorsWork() {
         <meta name="twitter:description" content="How GPTZero, Turnitin and Originality.AI use perplexity and burstiness to flag AI text, with fixes." />
         <meta name="twitter:image" content="https://aifreetextpro.com/og-image.png" />
         
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org", "@type": "Article", "headline": "How Do AI Detectors Work? GPTZero, Turnitin and Originality.AI Explained (2026)", "description": "Understand the machine-learning and linguistic patterns behind AI detectors and how to write authentically human content.", "image": {
-              "@type": "ImageObject", "url": "https://aifreetextpro.com/logo.png", "width": 1200, "height": 675
-            }, "datePublished": "2026-02-02", "dateModified": "2026-10-24", "author": {
-              "@type": "Person", "name": "Dr. Sarah Chen", "url": "https://aifreetextpro.com/team#sarah-chen", "jobTitle": "Founder & CEO"
-            }, "publisher": {
-              "@type": "Organization", "name": "AI Free Text Pro", "logo": {
-                "@type": "ImageObject", "url": "https://aifreetextpro.com/logo.png"
-              }
-            }, "mainEntityOfPage": {
-              "@type": "WebPage", "@id": "https://aifreetextpro.com/blog/how-ai-detectors-work"
-            }
-          })}
-        </script>
-        
-        {/* BreadcrumbList Schema */}
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
-              {
-                "@type": "ListItem", "position": 1, "name": "Home", "item": "https://aifreetextpro.com/"
-              }, {
-                "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://aifreetextpro.com/blog"
-              }, {
-                "@type": "ListItem", "position": 3, "name": "How AI Detectors Work"
-              }
-            ]
-          })}
-        </script>
-        
-        {/* FAQPage Schema */}
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
-              {
-                "@type": "Question", "name": "What is perplexity in AI detection?", "acceptedAnswer": {
-                  "@type": "Answer", "text": "Perplexity measures how 'surprised' a language model is by text. AI-generated content typically has low perplexity because it chooses predictable words, while human writing has higher perplexity due to creative and varied word choices."
-                }
-              }, {
-                "@type": "Question", "name": "What is burstiness in AI detection?", "acceptedAnswer": {
-                  "@type": "Answer", "text": "Burstiness measures variation in sentence structure. Humans naturally write with variation, mixing short, punchy sentences with longer, complex ones, while AI tends to generate uniform sentence lengths and structures."
-                }
-              }, {
-                "@type": "Question", "name": "What patterns do AI detectors look for?", "acceptedAnswer": {
-                  "@type": "Answer", "text": "AI detectors look for overuse of transition phrases, repetitive sentence structures, lack of contractions, overly formal language, perfect grammar with no quirks, and balanced methodical organization."
-                }
-              }, {
-                "@type": "Question", "name": "How accurate are AI detection tools?", "acceptedAnswer": {
-                  "@type": "Answer", "text": "AI detection tools vary in accuracy, typically ranging from 70-95%. They use machine learning models trained on millions of texts, but can produce false positives on human content and false negatives on well-humanized AI content."
-                }
-              }, {
-                "@type": "Question", "name": "How do AI detectors work using perplexity and burstiness?", "acceptedAnswer": {
-                  "@type": "Answer", "text": "AI detectors run your text through a reference language model (often a GPT-2 derivative) and score two signals. Perplexity measures token-by-token predictability, low perplexity means the next word was easy to guess, a hallmark of AI. Burstiness measures variance in sentence-level perplexity, humans spike high then low; AI stays flat. A classifier combines both scores to produce the final AI probability."
-                }
-              }, {
-                "@type": "Question", "name": "How does GPTZero use perplexity and burstiness officially?", "acceptedAnswer": {
-                  "@type": "Answer", "text": "GPTZero officially documents perplexity (overall predictability) and burstiness (sentence-level variation) as its two foundational metrics. Each sentence gets a perplexity score; the spread of those scores becomes the burstiness signal. Low perplexity plus low burstiness flags text as AI. GPTZero combines this with a transformer classifier trained on millions of labeled samples."
-                }
-              }, {
-                "@type": "Question", "name": "How is perplexity and burstiness used in AI text detection, explained simply?", "acceptedAnswer": {
-                  "@type": "Answer", "text": "Imagine a model trying to guess every next word in your text. If it guesses easily, perplexity is low, that screams AI. Now look at how that score changes across sentences: humans bounce between simple and complex sentences (high burstiness), while AI stays consistent (low burstiness). Detectors flag text that is both predictable AND uniform."
-                }
-              }
-            ]
-          })}
-        </script>
       </Helmet>
       <AuthorSchema
         articleUrl="https://aifreetextpro.com/blog/how-ai-detectors-work"
         headline="How Do AI Detectors Work? GPTZero & Turnitin Explained (2026)"
         description="Exactly how GPTZero, Turnitin and Originality.AI use perplexity and burstiness to flag AI text. Plain-English math, real examples, and what to change to pass."
         datePublished="2026-02-02"
-        dateModified="2026-10-24"
+        dateModified="2026-11-05"
       />
       <SpeakableSchema
         pageUrl="https://aifreetextpro.com/blog/how-ai-detectors-work"
@@ -144,7 +90,9 @@ export default function HowAIDetectorsWork() {
                 <span>•</span>
                 <time dateTime="2026-02-02">February 2, 2026</time>
                 <span>•</span>
-                <span>10 min read</span>
+                <span>Updated <time dateTime="2026-11-05">November 5, 2026</time></span>
+                <span>•</span>
+                <span>13 min read</span>
               </div>
               
               <h1 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent">
@@ -346,6 +294,37 @@ export default function HowAIDetectorsWork() {
               <AISignalChecker source="how_detectors_work" title="See what a detector sees in your text" className="my-10" />
 
               <section>
+                <h2 className="text-3xl font-bold mb-4">Four Kinds of AI Detector</h2>
+                <p className="text-muted-foreground mb-4">
+                  "AI detector" covers several quite different technologies. Most tools you'll meet are the first kind, but the others explain a lot about where detection is heading.
+                </p>
+                <ul className="space-y-2 text-muted-foreground">
+                  <li><strong>Trained classifiers.</strong> A model trained on large sets of labelled human and AI text learns to tell them apart. Turnitin, GPTZero, Originality.ai, Copyleaks and Pangram all work this way, often using perplexity and burstiness as inputs.</li>
+                  <li><strong>Zero-shot statistical tests.</strong> Methods such as DetectGPT measure how a language model "sees" the text without training a separate classifier. They're useful in research but tend to be less robust in practice.</li>
+                  <li><strong>Watermarking.</strong> The AI provider hides a statistical pattern in the text as it's generated, which a matching detector can later check. Google's SynthID is the best-known example; it only works on text from a model that applied it.</li>
+                  <li><strong>Retrieval.</strong> The provider keeps a record of what its model generated and checks new text against it. Research found this catches most paraphrased AI text (<a href="https://arxiv.org/abs/2303.13408" target="_blank" rel="noopener noreferrer nofollow" className="text-primary hover:underline">Krishna et al., 2023</a>), but it needs the provider's cooperation.</li>
+                </ul>
+              </section>
+
+              <section>
+                <h2 className="text-3xl font-bold mb-4">Do AI Detectors Actually Work? What the Research Says</h2>
+                <p className="text-muted-foreground mb-4">
+                  The honest answer is: well on some text, poorly on other text, and never as proof. The key findings:
+                </p>
+                <ul className="space-y-2 text-muted-foreground">
+                  <li><strong>OpenAI withdrew its own detector.</strong> In 2023 OpenAI shut down its AI text classifier because of its low accuracy (<a href="https://openai.com/index/new-ai-classifier-for-indicating-ai-written-text/" target="_blank" rel="noopener noreferrer nofollow" className="text-primary hover:underline">OpenAI</a>), a reminder that this is a hard problem.</li>
+                  <li><strong>Paraphrasing beat early detectors.</strong> A 2023 study cut one detector's hit rate from 70.3% to 4.6% by paraphrasing AI text (<a href="https://arxiv.org/abs/2303.13408" target="_blank" rel="noopener noreferrer nofollow" className="text-primary hover:underline">Krishna et al.</a>). Detectors have since been trained on paraphrased text; see <Link to="/blog/does-paraphrasing-avoid-ai-detection" className="text-primary hover:underline">does paraphrasing avoid AI detection?</Link></li>
+                  <li><strong>Non-native writers are flagged far more often.</strong> Seven detectors misclassified 61% of non-native English essays as AI on average, while scoring native writers' essays almost perfectly (<a href="https://arxiv.org/abs/2304.02819" target="_blank" rel="noopener noreferrer nofollow" className="text-primary hover:underline">Liang et al., 2023</a>).</li>
+                  <li><strong>Robustness is now tested systematically.</strong> The RAID benchmark tests detectors against 11 kinds of adversarial attack across 6 million+ generations (<a href="https://arxiv.org/abs/2405.07940" target="_blank" rel="noopener noreferrer nofollow" className="text-primary hover:underline">Dugan et al., 2024</a>).</li>
+                  <li><strong>The best commercial detectors have improved.</strong> A 2025 NBER study found Pangram had near-zero false-positive and false-negative rates, including on humanized and very short text, while other tools varied more (<a href="https://www.nber.org/papers/w34223" target="_blank" rel="noopener noreferrer nofollow" className="text-primary hover:underline">Jabarian and Imas</a>). See our <Link to="/blog/pangram-ai-detector-review" className="text-primary hover:underline">Pangram review</Link>.</li>
+                  <li><strong>Language coverage is uneven.</strong> Turnitin's AI score covers English, Spanish and Japanese; outside the languages a detector was trained on, results are unreliable. See <Link to="/blog/ai-detection-other-languages" className="text-primary hover:underline">AI detection in other languages</Link>.</li>
+                </ul>
+                <p className="text-muted-foreground mb-4">
+                  Even the best result is a probability about the text, not a finding about the writer. That's why Turnitin advises against using its score as the sole basis for action, and why a growing number of universities have <Link to="/blog/colleges-that-turned-off-ai-detection" className="text-primary hover:underline">turned AI scores off</Link> altogether.
+                </p>
+              </section>
+
+              <section>
                 <h2 className="text-3xl font-bold mb-4">Limitations and False Positives</h2>
                 <p className="text-muted-foreground mb-4">
                   No AI detector is perfect. Understanding their limitations helps contextualize results:
@@ -362,14 +341,14 @@ export default function HowAIDetectorsWork() {
               <section>
                 <h2 className="text-3xl font-bold mb-4">How <Link to="/" className="text-primary hover:underline">AI Free Text Pro</Link> Uses This Science</h2>
                 <p className="text-muted-foreground mb-4">
-                  Our detector combines multiple detection methods for superior accuracy. We analyze perplexity, burstiness, token probabilities, and linguistic patterns, then cross-reference against our continuously updated trained models.
+                  Our detector scores your text for the same kinds of signals described above and highlights the specific sentences that drive the score, so you can see what reads as machine-like rather than just a percentage.
                 </p>
                 <p className="text-muted-foreground">
-                  The result is a comprehensive analysis that provides not just a score, but actionable insights into which specific patterns triggered detection and how to address them.
+                  Like every detector, it estimates; it can't prove who wrote something. Use the highlights to revise in your own words, and keep your drafts if you ever need to show your process.
                 </p>
               </section>
 
-              <section className="mb-12">
+              <section>
                 <h2 className="text-3xl font-bold mb-4">Worked Example: The Same Paragraph, Scored Twice</h2>
                 <p className="text-muted-foreground mb-4">
                   Abstractions only go so far, so here is one paragraph in two versions. Both say the same thing. We ran
@@ -408,7 +387,7 @@ export default function HowAIDetectorsWork() {
                 </p>
               </section>
 
-              <section className="mb-12">
+              <section>
                 <h2 className="text-3xl font-bold mb-4">How We Tested This</h2>
                 <p className="text-muted-foreground mb-4">
                   Every number on this page comes from the same procedure, so you can judge it rather than trust it:
@@ -445,6 +424,7 @@ export default function HowAIDetectorsWork() {
                 </a>
               </div>
             </div>
+            <FAQSection faqs={faqs} />
           </article>
 
           <RelatedArticles articles={relatedArticles} />

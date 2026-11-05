@@ -32,11 +32,11 @@ const faqs = [
   {
     question: "Can you get expelled for using ChatGPT?", answer: "Expulsion is possible but rare for first-time offenses. Most universities follow a tiered disciplinary system: first offense typically results in a failing grade on the assignment, second offense may mean failing the course, and repeated violations can lead to suspension or expulsion. The severity depends on your institution's specific policies and the extent of AI use."
   }, {
-    question: "Is using AI for homework illegal?", answer: "No, using AI for homework is not illegal in a criminal sense. There are no laws in any country that make using ChatGPT or other AI tools a crime. However, it can violate your school's academic integrity policies, which are contractual agreements you accept when enrolling. Violations can result in academic penalties, not legal ones."
+    question: "Is using AI for homework illegal?", answer: "No. In the US, UK, EU, Canada and Australia no law makes it a crime for a student to use ChatGPT or other AI tools for homework. The laws that do exist target businesses: England and Australia make it an offence to provide or advertise commercial cheating services to students. Using AI can still break your school's academic integrity rules, which carry academic penalties rather than legal ones."
   }, {
-    question: "Do universities allow AI tools in 2026?", answer: "Most universities now have nuanced AI policies rather than blanket bans. As of 2026, roughly 72% of U.S. universities allow some form of AI assistance, with policies varying by department and assignment. Common approaches include requiring AI use disclosure, allowing AI for brainstorming but not drafting, and permitting AI with mandatory citation."
+    question: "Do universities allow AI tools in 2026?", answer: "Most large universities now leave the decision to each course rather than banning AI outright. Harvard's arts and sciences faculty and the University of Toronto have instructors set course policies, Stanford treats AI help like help from another person unless the instructor says otherwise, and the University of Sydney bans AI by default only in supervised assessments. Disclosure is the common requirement, so check your syllabus for each course."
   }, {
-    question: "Can Turnitin detect AI writing?", answer: "Yes, Turnitin has an AI detection feature that claims 98% accuracy for fully AI-generated text. However, independent studies show false positive rates of 5-15%, meaning human-written text is sometimes incorrectly flagged. Turnitin's AI detector works best on unedited AI output and becomes less reliable when text has been substantially revised or humanized."
+    question: "Can Turnitin detect AI writing?", answer: "Yes. Turnitin's AI writing indicator scores submissions of at least 300 words and, since August 2025, also looks for text altered by humanizer tools in English. Turnitin says its document-level false positive rate is under 1% for documents with 20% or more AI writing, and that about 4% of highlighted sentences may be human-written. Its own guidance says the score should not be the sole basis for action against a student."
   }
 ];
 
@@ -63,7 +63,7 @@ const IsItIllegalToUseAIForSchool = () => {
         <meta property="og:site_name" content="AI Free Text Pro" />
         <meta property="og:image" content={ogImage} />
         <meta property="article:published_time" content={publishDate} />
-        <meta property="article:modified_time" content={publishDate} />
+        <meta property="article:modified_time" content="2026-11-05" />
         <meta property="article:author" content="Dr. Sarah Chen" />
         <meta property="article:section" content="Academic" />
         <meta property="article:tag" content="AI Academic Policy" />
@@ -77,41 +77,9 @@ const IsItIllegalToUseAIForSchool = () => {
 
         <script type="application/ld+json">
           {JSON.stringify({
-            "@context": "https://schema.org", "@type": "Article", "headline": "Is It Illegal to Use AI for School? Academic AI Policies Explained (2026)", "description": "Is using ChatGPT for school illegal? We break down academic AI policies at major universities, real consequences for getting caught, and how to use AI without breaking the rules.", "image": ogImage, "datePublished": publishDate, "dateModified": publishDate, "wordCount": 2200, "author": {
-              "@type": "Person", "name": "Dr. Sarah Chen", "url": "https://aifreetextpro.com/team#sarah-chen", "jobTitle": "AI Ethics Researcher"
-            }, "publisher": {
-              "@type": "Organization", "name": "AI Free Text Pro", "logo": {
-                "@type": "ImageObject", "url": ogImage
-              }
-            }, "mainEntityOfPage": {
-              "@type": "WebPage", "@id": canonicalUrl
-            }, "about": {
-              "@type": "Thing", "name": "Academic Integrity and AI Policies"
-            }, "mentions": [
-              { "@type": "Thing", "name": "ChatGPT" }, { "@type": "Thing", "name": "Turnitin" }, { "@type": "Thing", "name": "GPTZero" }, { "@type": "Organization", "name": "Harvard University" }, { "@type": "Organization", "name": "Stanford University" }, { "@type": "Organization", "name": "MIT" }
-            ], "citation": [
-              {
-                "@type": "CreativeWork", "name": "UNESCO Guidance on Generative AI in Education", "url": "https://www.unesco.org/en/digital-education/artificial-intelligence"
-              }
-            ]
-          })}
-        </script>
-
-        <script type="application/ld+json">
-          {JSON.stringify({
             "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
               { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://aifreetextpro.com" }, { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://aifreetextpro.com/blog" }, { "@type": "ListItem", "position": 3, "name": "Is It Illegal to Use AI for School?" }
             ]
-          })}
-        </script>
-
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org", "@type": "FAQPage", "mainEntity": faqs.map(faq => ({
-              "@type": "Question", "name": faq.question, "acceptedAnswer": {
-                "@type": "Answer", "text": faq.answer
-              }
-            }))
           })}
         </script>
       </Helmet>
@@ -119,8 +87,9 @@ const IsItIllegalToUseAIForSchool = () => {
         articleUrl="https://aifreetextpro.com/blog/is-it-illegal-to-use-ai-for-school"
         headline="Is Using AI for School Illegal? [2026 Answer]"
         description="Is using ChatGPT for school illegal? Academic AI policies at major universities, real consequences, and how to use AI without breaking any rules."
-        datePublished="2026-05-01"
-        dateModified="2026-06-09"
+        datePublished="2026-02-26"
+        dateModified="2026-11-05"
+        image={ogImage}
       />
       <SpeakableSchema
         pageUrl="https://aifreetextpro.com/blog/is-it-illegal-to-use-ai-for-school"
@@ -146,7 +115,8 @@ const IsItIllegalToUseAIForSchool = () => {
               <div className="flex items-center gap-4 text-sm text-muted-foreground mb-4">
                 <span className="bg-primary/10 text-primary px-3 py-1 rounded-full text-xs font-medium">Academic</span>
                 <span className="flex items-center gap-1"><Calendar className="w-4 h-4" /> February 26, 2026</span>
-                <span className="flex items-center gap-1"><Clock className="w-4 h-4" /> 15 min read</span>
+                <span>Updated <time dateTime="2026-11-05">November 5, 2026</time></span>
+                <span className="flex items-center gap-1"><Clock className="w-4 h-4" /> 13 min read</span>
               </div>
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 leading-tight">
                 Is It Illegal to Use AI for School? Academic AI Policies Explained (2026)
@@ -164,7 +134,7 @@ const IsItIllegalToUseAIForSchool = () => {
             </header>
 
             <KeyTakeaways points={[
-              "Using AI for school is NOT illegal - no country has laws criminalizing student AI use", "However, it CAN violate academic integrity policies, which carry serious academic penalties", "72% of U.S. universities now have formal AI use policies, up from 25% in 2024", "Consequences range from a zero on the assignment to expulsion, depending on severity and institution", "The key distinction in 2026 is between 'AI-assisted' work (often allowed) and 'AI-generated' work (usually prohibited)"
+              "Using AI for school is NOT a crime for students in the US, UK, EU, Canada or Australia; the cheating laws that exist target businesses that sell or advertise cheating services", "However, it CAN violate academic integrity policies, which carry serious academic penalties", "Most large universities let each course set its AI rules, so the syllabus is the policy that applies to you", "Consequences range from a zero on the assignment to expulsion, depending on severity and institution", "The key distinction in 2026 is between 'AI-assisted' work (often allowed) and 'AI-generated' work (usually prohibited)"
             ]} />
 
             {/* Section 1: The Short Answer */}
@@ -175,7 +145,19 @@ const IsItIllegalToUseAIForSchool = () => {
               </h2>
 
               <p>
-                Let's address the question directly: <strong>No, using AI for school is not illegal.</strong> There is no law in the United States, the European Union, the United Kingdom, Canada, Australia, or any other major country that makes it a criminal offense to use ChatGPT, Claude, Gemini, or any other AI tool for homework, essays, or school assignments.
+                Let's address the question directly: <strong>No, using AI for school is not illegal.</strong> There is no law in the United States, the European Union, the United Kingdom, Canada or Australia that makes it a criminal offense for a student to use ChatGPT, Claude, Gemini, or any other AI tool for homework, essays, or school assignments.
+              </p>
+
+              <p>
+                The laws that do exist are aimed at the businesses around cheating, not at students:
+              </p>
+              <ul>
+                <li><strong>England:</strong> the <a href="https://www.legislation.gov.uk/ukpga/2022/21/part/4/chapter/1" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Skills and Post-16 Education Act 2022</a> makes it an offence to provide or arrange, for money, cheating services that complete an assignment for a student (section 27), or to advertise them (section 28). It covers post-16 students in England and doesn't apply in Wales, Scotland or Northern Ireland.</li>
+                <li><strong>Australia:</strong> amendments to the TEQSA Act in 2020 made providing or advertising academic cheating services to Australian higher-education students an offence, and the regulator has used them to have cheating websites blocked.</li>
+                <li><strong>New Zealand and Ireland</strong> passed similar laws against commercial contract cheating services, in 2011 and 2019.</li>
+              </ul>
+              <p>
+                None of these makes a student a criminal for asking a chatbot for help. A business that sells "we'll write your essay with AI" services to students in England or Australia is a different matter. Separately, some countries treat cheating in official national exams as a crime, so exam rules are worth reading carefully if you sit state exams abroad.
               </p>
 
               <p>
@@ -195,74 +177,59 @@ const IsItIllegalToUseAIForSchool = () => {
               </h2>
 
               <p>
-                Universities have moved rapidly from confusion to formal policy frameworks. Here is how major institutions currently handle AI use:
+                Universities have moved rapidly from confusion to formal policy frameworks. Here is what five major institutions' published guidance says, with a link to each source:
               </p>
 
-              <div className="not-prose my-6 overflow-x-auto">
+              <div className="not-prose overflow-x-auto my-6">
                 <Table>
                   <TableHeader>
                     <TableRow>
-                      <TableHead className="font-semibold">University</TableHead>
-                      <TableHead className="font-semibold">AI Policy</TableHead>
-                      <TableHead className="font-semibold">Disclosure Required?</TableHead>
-                      <TableHead className="font-semibold">Key Rule</TableHead>
+                      <TableHead>University</TableHead>
+                      <TableHead>Default rule</TableHead>
+                      <TableHead>What students must do</TableHead>
+                      <TableHead>Source</TableHead>
                     </TableRow>
                   </TableHeader>
                   <TableBody>
                     <TableRow>
-                      <TableCell className="font-medium">Harvard</TableCell>
-                      <TableCell>AI-assisted allowed</TableCell>
-                      <TableCell>Yes</TableCell>
-                      <TableCell>Must disclose any AI use; final work must be original</TableCell>
-                    </TableRow>
-                    <TableRow>
-                      <TableCell className="font-medium">MIT</TableCell>
-                      <TableCell>Department-specific</TableCell>
-                      <TableCell>Yes</TableCell>
-                      <TableCell>Each course sets its own AI policy</TableCell>
+                      <TableCell className="font-medium">Harvard (Faculty of Arts and Sciences)</TableCell>
+                      <TableCell>Set course by course. Instructors choose from draft policies ranging from maximally restrictive to fully encouraging.</TableCell>
+                      <TableCell>Follow each course's stated policy; it's the student's responsibility to know it</TableCell>
+                      <TableCell><a href="https://oue.fas.harvard.edu/faculty-resources/generative-ai-guidance/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">FAS guidance</a></TableCell>
                     </TableRow>
                     <TableRow>
                       <TableCell className="font-medium">Stanford</TableCell>
-                      <TableCell>AI-assisted allowed</TableCell>
-                      <TableCell>Yes</TableCell>
-                      <TableCell>AI may not replace student reasoning or analysis</TableCell>
+                      <TableCell>Without a clear instructor statement, using generative AI is treated like getting help from another person</TableCell>
+                      <TableCell>Acknowledge any non-incidental use; when in doubt, disclose and ask</TableCell>
+                      <TableCell><a href="https://communitystandards.stanford.edu/generative-ai-policy-guidance" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Office of Community Standards</a></TableCell>
                     </TableRow>
                     <TableRow>
                       <TableCell className="font-medium">Oxford</TableCell>
-                      <TableCell>Restricted</TableCell>
-                      <TableCell>Yes</TableCell>
-                      <TableCell>AI use only for brainstorming, not drafting</TableCell>
+                      <TableCell>A university policy (July 2025) requires course teams to state whether and how AI may be used in summative assessment; unauthorised use falls under the plagiarism regulations</TableCell>
+                      <TableCell>Where AI is permitted, declare it in the form your course specifies</TableCell>
+                      <TableCell><a href="https://ctl.ox.ac.uk/ai" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Centre for Teaching and Learning</a></TableCell>
                     </TableRow>
                     <TableRow>
                       <TableCell className="font-medium">University of Sydney</TableCell>
-                      <TableCell>AI-assisted allowed</TableCell>
-                      <TableCell>Yes</TableCell>
-                      <TableCell>AI tools treated like calculators - permitted with citation</TableCell>
-                    </TableRow>
-                    <TableRow>
-                      <TableCell className="font-medium">Yale</TableCell>
-                      <TableCell>Faculty discretion</TableCell>
-                      <TableCell>Varies</TableCell>
-                      <TableCell>Professors set individual course AI policies</TableCell>
-                    </TableRow>
-                    <TableRow>
-                      <TableCell className="font-medium">UC Berkeley</TableCell>
-                      <TableCell>AI-assisted allowed</TableCell>
-                      <TableCell>Yes</TableCell>
-                      <TableCell>Must cite AI tools used and describe their role</TableCell>
+                      <TableCell>"Two-lane" assessment since 2025: AI is prohibited by default in supervised (secure) assessments and allowed in open assessments, where staff can't ban it</TableCell>
+                      <TableCell>In open assessments, explain how you used AI</TableCell>
+                      <TableCell><a href="https://educational-innovation.sydney.edu.au/teaching@sydney/frequently-asked-questions-about-the-two-lane-approach-to-assessment-in-the-age-of-ai/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Two-lane FAQ</a></TableCell>
                     </TableRow>
                     <TableRow>
                       <TableCell className="font-medium">University of Toronto</TableCell>
-                      <TableCell>Nuanced framework</TableCell>
-                      <TableCell>Yes</TableCell>
-                      <TableCell>Three-tier system: prohibited, assisted, integrated</TableCell>
+                      <TableCell>Instructors decide, using sample syllabus statements the university provides</TableCell>
+                      <TableCell>Follow the AI statement in each syllabus; ask if there isn't one</TableCell>
+                      <TableCell><a href="https://teaching.utoronto.ca/teaching-uoft-genai/institutional-guidance-genai/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Institutional guidance</a></TableCell>
                     </TableRow>
                   </TableBody>
                 </Table>
               </div>
+              <p className="text-sm text-muted-foreground">
+                Summaries of each university's published guidance, checked November 5, 2026. Policies change between terms and individual courses can be stricter, so the version on your own syllabus is the one that counts.
+              </p>
 
               <p>
-                The trend is clear: most elite institutions have moved away from blanket bans and toward nuanced frameworks that distinguish between different levels of AI involvement. The common thread is <strong>mandatory disclosure</strong> - almost every university now requires students to state when and how they used AI tools.
+                The pattern is clear: these institutions have moved away from blanket bans and toward course-by-course rules that distinguish between different levels of AI involvement. The common thread is <strong>disclosure</strong>: where AI is allowed, you're expected to say when and how you used it. For the exact wording to use, see <Link to="/blog/how-to-cite-ai-generated-content" className="text-primary hover:underline">how to cite AI-generated content in APA, MLA, Chicago and Harvard</Link>.
               </p>
             </section>
 
@@ -356,13 +323,13 @@ const IsItIllegalToUseAIForSchool = () => {
                   <span className="bg-red-700/20 text-red-700 dark:text-red-300 px-2 py-1 rounded text-xs font-bold shrink-0">Tier 4</span>
                   <div>
                     <p className="font-semibold text-sm">Suspension or Expulsion</p>
-                    <p className="text-sm text-muted-foreground">Reserved for repeat offenders, large-scale academic dishonesty, or thesis/dissertation fraud. In 2025-2026, several high-profile expulsion cases involved students submitting entire AI-generated dissertations.</p>
+                    <p className="text-sm text-muted-foreground">Reserved for repeat offenders, large-scale academic dishonesty, or thesis/dissertation fraud. Degrees can also be revoked after graduation if misconduct comes to light later.</p>
                   </div>
                 </div>
               </div>
 
               <p>
-                A 2025 survey by the International Center for Academic Integrity found that <strong>34% of students</strong> reported knowing someone who received academic penalties for AI use. The most common consequence was a zero on the assignment (48% of cases), followed by failing the course (28%), a formal warning (18%), and suspension or expulsion (6%).
+                Where you land in these tiers depends on your institution's procedure, whether it's a first offence, and how much of the work was AI-generated. Most procedures let you respond before a penalty is decided, so if you're accused, read your university's academic misconduct procedure first and, if you believe the flag is wrong, see <Link to="/blog/turnitin-appeal-ai-detection" className="text-primary hover:underline">how to appeal an AI detection flag</Link>.
               </p>
 
               <p>
@@ -383,7 +350,7 @@ const IsItIllegalToUseAIForSchool = () => {
 
               <h3>Copyright and AI Output</h3>
               <p>
-                In the United States, the Copyright Office has ruled that purely AI-generated content <strong>cannot be copyrighted</strong> because copyright requires human authorship. This was affirmed in the 2023 Thaler v. Perlmutter decision and subsequent rulings through 2025. The practical implication: if you submit fully AI-generated work, you technically have no intellectual property rights over it.
+                In the United States, the Copyright Office takes the position that purely AI-generated content <strong>cannot be copyrighted</strong> because copyright requires human authorship. A federal district court upheld that position in Thaler v. Perlmutter in 2023, and the D.C. Circuit Court of Appeals affirmed it in March 2025. The practical implication: if you submit fully AI-generated work, you technically have no copyright in it.
               </p>
 
               <p>
@@ -402,7 +369,7 @@ const IsItIllegalToUseAIForSchool = () => {
 
               <h3>Professional Consequences Beyond School</h3>
               <p>
-                For graduate and professional students, the stakes extend further. Medical schools, law schools, and engineering programs have reported cases where AI-related academic integrity violations affected licensing eligibility. Bar associations and medical boards in several states now ask about academic integrity records during the application process.
+                For graduate and professional students, the stakes extend further. Applications for admission to the bar typically include character-and-fitness questions about academic discipline, and some other licensing bodies and graduate programs ask similar questions. A misconduct finding that seemed minor at the time can mean extra explanation years later.
               </p>
             </section>
 
@@ -435,7 +402,7 @@ const IsItIllegalToUseAIForSchool = () => {
 
               <h3>Mandatory AI Literacy Courses</h3>
               <p>
-                Over 200 universities in the U.S. now require first-year students to complete an AI literacy module covering ethical use, proper citation, and the institution's specific policies. This trend is accelerating, with many schools integrating AI ethics into existing writing and research methods courses.
+                A growing number of universities offer or require AI literacy modules for new students, covering ethical use, proper citation, and the institution's specific policies. Others build AI ethics into existing writing and research methods courses.
               </p>
 
               <h3>Assignment Redesign</h3>

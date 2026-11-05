@@ -11,6 +11,7 @@ import { InternalLinks } from "@/components/InternalLinks";
 import ReviewedBy from "@/components/ReviewedBy";
 import { AuthorSchema } from "@/components/AuthorSchema";
 import { SpeakableSchema } from "@/components/SpeakableSchema";
+import { FAQSection } from "@/components/FAQSection";
 
 const relatedArticles = [
   { title: "How to Humanize Claude Output (2026)", description: "Step-by-step workflow to make Claude output undetectable.", href: "/blog/humanize-claude-output", category: "How-To Guide" },
@@ -19,6 +20,13 @@ const relatedArticles = [
   { title: "How AI Detectors Work", description: "The science behind AI detection.", href: "/blog/how-ai-detectors-work", category: "Educational" },
   { title: "AI Detection Patterns Explained", description: "5 patterns detectors analyze.", href: "/blog/ai-detection-patterns-explained", category: "Educational" },
   { title: "Pass All AI Detectors Guide", description: "Create human-like content across all detectors.", href: "/blog/bypass-ai-detection-guide", category: "How-To Guide" },
+];
+
+const faqs = [
+  { question: "Can AI detectors detect Claude?", answer: "Yes, but Claude was the hardest major model to detect in our test. Claude 4 essays were detected 72-84% of the time across the five detectors, against 85-92% for GPT-5. Claude's more varied sentence lengths and conversational tone are the likely reason." },
+  { question: "Can Turnitin detect Gemini?", answer: "Yes. Turnitin detected Gemini 2.5 essays 88% of the time in our test, between Claude 4 (84%) and GPT-5 (92%). Gemini's technical writing was flagged more often than its humanities writing." },
+  { question: "Is GPT-5 easier or harder to detect than GPT-4?", answer: "Slightly harder. GPT-5 shows more writing variety than GPT-4, which lowers detection rates by roughly 3-5 points. It was still the most reliably detected model in our test, likely because detector vendors have trained on large amounts of OpenAI output." },
+  { question: "Will these detection rates stay the same?", answer: "No. They are a snapshot of specific model versions and detector versions. Detector vendors retrain on new models' output, and new model versions change how text reads, so rates drift in both directions within months." },
 ];
 
 const AIDetectorsClaudeGeminiGPT5 = () => {
@@ -43,20 +51,13 @@ const AIDetectorsClaudeGeminiGPT5 = () => {
         <meta property="og:site_name" content="AI Free Text Pro" />
         <meta property="og:locale" content="en_US" />
         <meta property="article:published_time" content="2026-02-25T08:00:00Z" />
-        <meta property="article:modified_time" content="2026-02-25T08:00:00Z" />
+        <meta property="article:modified_time" content="2026-11-05" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@aifreetextpro" />
         <meta name="twitter:title" content="AI Detection vs Claude, Gemini, GPT-5 (2026 Tests)" />
         <meta name="twitter:description" content="Which AI model is hardest to detect? We tested them all." />
         <meta name="twitter:image" content="https://aifreetextpro.com/og-image.png" />
-        <script type="application/ld+json">{JSON.stringify({
-          "@context": "https://schema.org", "@type": "Article",
-          "headline": "Can AI Detectors Detect Claude, Gemini, and GPT-5? (2026 Tests)",
-          "author": { "@type": "Person", "name": "Thomas Mueller", "url": "https://aifreetextpro.com/team#thomas-mueller" },
-          "publisher": { "@type": "Organization", "name": "AI Free Text Pro", "logo": { "@type": "ImageObject", "url": "https://aifreetextpro.com/logo.png" } },
-          "datePublished": "2026-02-25T08:00:00Z", "dateModified": "2026-04-05",
-          "mainEntityOfPage": "https://aifreetextpro.com/blog/ai-detectors-claude-gemini-gpt5-2026", "wordCount": 1000
-        })}</script>
+
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org", "@type": "BreadcrumbList",
           "itemListElement": [
@@ -65,21 +66,14 @@ const AIDetectorsClaudeGeminiGPT5 = () => {
             { "@type": "ListItem", "position": 3, "name": "AI Detectors vs Claude, Gemini, GPT-5" }
           ]
         })}</script>
-        <script type="application/ld+json">{JSON.stringify({
-          "@context": "https://schema.org", "@type": "FAQPage",
-          "mainEntity": [
-            { "@type": "Question", "name": "Can AI detectors detect Claude?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, but Claude is the hardest major AI model to detect. In our tests, detection rates for Claude 4 ranged from 72-84% across major detectors, compared to 88-94% for GPT-4. Claude's more conversational and varied writing style contributes to lower detection rates." } },
-            { "@type": "Question", "name": "Can Turnitin detect Gemini?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Turnitin detects Gemini 2.5 output at approximately 86% accuracy. Gemini's detection rates fall between Claude (lower) and GPT-5 (higher), making it moderately detectable." } },
-            { "@type": "Question", "name": "Is GPT-5 easier or harder to detect than GPT-4?", "acceptedAnswer": { "@type": "Answer", "text": "Slightly harder. GPT-5 shows improved writing variety compared to GPT-4, reducing detection rates by about 3-5%. However, it remains the most reliably detected major model due to detectors' extensive training on OpenAI output." } }
-          ]
-        })}</script>
       </Helmet>
       <AuthorSchema
         articleUrl="https://aifreetextpro.com/blog/ai-detectors-claude-gemini-gpt5-2026"
         headline="Can AI Detectors Detect Claude, Gemini, and GPT-5? (2026 Tests)"
         description="We tested Claude 4, Gemini 2.5, and GPT-5 against Turnitin, GPTZero, Originality.AI, and more. Find out which AI models are hardest to detect in 2026."
         datePublished="2026-02-25"
-        dateModified="2026-06-09"
+        dateModified="2026-11-05"
+        image="https://aifreetextpro.com/og-image.png"
       />
       <SpeakableSchema
         pageUrl="https://aifreetextpro.com/blog/ai-detectors-claude-gemini-gpt5-2026"
@@ -104,7 +98,8 @@ const AIDetectorsClaudeGeminiGPT5 = () => {
 
               <div className="flex flex-wrap items-center gap-4 text-sm text-muted-foreground">
                 <span className="flex items-center gap-1"><Calendar className="w-4 h-4" /> February 25, 2026</span>
-                <span className="flex items-center gap-1"><Clock className="w-4 h-4" /> 14 min read</span>
+                <span>Updated <time dateTime="2026-11-05">November 5, 2026</time></span>
+                <span className="flex items-center gap-1"><Clock className="w-4 h-4" /> 9 min read</span>
                 <span className="flex items-center gap-1"><Cpu className="w-4 h-4" /> Technical</span>
               </div>
               <ReviewedBy name="Thomas Mueller" role="AI Research Engineer" slug="thomas-mueller" />
@@ -114,7 +109,7 @@ const AIDetectorsClaudeGeminiGPT5 = () => {
               "Claude 4 is the hardest to detect (72-84% detection rate), followed by Gemini 2.5 (80-88%), then GPT-5 (85-92%).",
               "All major AI models are still reliably detected by current tools, despite improvements in writing quality.",
               "Detection difficulty correlates with writing variety: models that produce more varied output are harder to flag.",
-              "Humanizing any model's output through AI Free Text Pro reduces detection rates to under 5% regardless of the source model.",
+              "In our test set, humanizing with AI Free Text Pro brought scores down to 2-5% for every source model. That is a test result, not a guarantee for every text or detector.",
               "The 'undetectable AI model' does not exist yet. All models leave statistical signatures."
             ]} />
 
@@ -123,6 +118,15 @@ const AIDetectorsClaudeGeminiGPT5 = () => {
 
             <h2 className="text-2xl font-bold mt-10 mb-4 text-foreground">Test Setup</h2>
             <p className="text-muted-foreground leading-relaxed">We generated 30 essays per model (90 total) across three subjects: English literature, business strategy, and psychology. Each essay was 800-1200 words. We used the default settings for each model with no special prompting tricks. Each essay was scanned through five detectors: Turnitin, GPTZero, Originality.AI, Copyleaks, and Winston AI.</p>
+
+            <div className="not-prose my-6 rounded-lg border border-border bg-muted/40 p-5 text-sm">
+              <p className="font-semibold text-foreground mb-2">How to read these results</p>
+              <ul className="list-disc ml-5 space-y-1 text-muted-foreground">
+                <li><strong>Snapshot:</strong> the test covers the model versions available before publication in February 2026 (Claude 4, Gemini 2.5, GPT-5, DeepSeek R1). Newer versions have shipped since, and detector vendors retrain without announcing it, so a re-run today would give different numbers.</li>
+                <li><strong>Scope:</strong> English academic essays of 800-1,200 words written with default settings. Short answers, other languages, other genres and text you have edited yourself all score differently.</li>
+                <li><strong>Each cell</strong> is the detection rate for one model's essays on one detector. Detectors report a probability, not proof of authorship; none of them should be the only basis for an academic decision, and <a href="https://guides.turnitin.com/hc/en-us/articles/27139000787853-How-should-I-review-the-AI-Writing-report" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Turnitin says the same about its own report</a>.</li>
+              </ul>
+            </div>
 
             <h2 className="text-2xl font-bold mt-10 mb-4 text-foreground">Complete Detection Results</h2>
             <div className="overflow-x-auto my-8 not-prose">
@@ -153,8 +157,19 @@ const AIDetectorsClaudeGeminiGPT5 = () => {
             <h2 className="text-2xl font-bold mt-10 mb-4 text-foreground">Gemini 2.5: The Middle Ground</h2>
             <p className="text-muted-foreground leading-relaxed">Google's Gemini 2.5 falls squarely between Claude and GPT-5 in detectability. Its output shows good vocabulary diversity but tends toward more uniform paragraph structures that detectors pick up on. Subject matter appears to influence detection rates more with Gemini than other models: its science and technical writing was detected at higher rates (90%+) while its humanities writing was harder to catch (78%).</p>
 
-            <h2 className="text-2xl font-bold mt-10 mb-4 text-foreground">After Humanization: All Models Pass</h2>
-            <p className="text-muted-foreground leading-relaxed">We ran each model's output through <Link to="/" className="text-primary hover:text-primary/80">AI Free Text Pro's humanizer</Link> and rescanned. The results were dramatic: detection rates dropped to 2-5% across all models and all detectors. This confirms that the source model matters far less than the post-processing. A well-humanized GPT-5 essay is just as undetectable as a well-humanized Claude essay.</p>
+            <h2 className="text-2xl font-bold mt-10 mb-4 text-foreground">After Humanization</h2>
+            <p className="text-muted-foreground leading-relaxed">We ran each model's output through <Link to="/" className="text-primary hover:text-primary/80">AI Free Text Pro's humanizer</Link> and rescanned. In this test set, detection rates dropped to 2-5% across all models and all detectors. The source model mattered far less than the post-processing: a humanized GPT-5 essay scored about the same as a humanized Claude essay.</p>
+            <p className="text-muted-foreground leading-relaxed">Two caveats. First, this was one test set; any single text can still score higher, which is why the app shows the detector score before and after every run. Second, detectors are adapting: in August 2025 <a href="https://www.plagiarismtoday.com/2025/08/27/turnitin-launches-anti-ai-humanizer-feature/" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary/80">Turnitin added "AI bypasser" detection</a> aimed specifically at text altered by humanizer tools (English submissions only). If your school or employer doesn't allow AI-written work, humanizing it doesn't change that.</p>
+
+            <h2 className="text-2xl font-bold mt-10 mb-4 text-foreground">What the Detector Vendors Say Themselves</h2>
+            <p className="text-muted-foreground leading-relaxed">Test numbers are only half the picture. How a detector reports its result matters just as much, and Turnitin, the one most students meet, documents several rules that change how a score should be read:</p>
+            <ul className="list-disc ml-6 space-y-2 text-muted-foreground">
+              <li><strong>Minimum length:</strong> Turnitin's AI detector needs at least 300 words of prose. It raised the minimum from 150 words in 2023 because short texts were less reliable.</li>
+              <li><strong>Low scores are hidden:</strong> scores from 1% to 19% are shown as an asterisk (*%) rather than a number, because Turnitin found false positives were more common in that range.</li>
+              <li><strong>Two categories:</strong> the report separates text that looks AI-generated (which may also have been run through a bypasser) from AI-generated text that was then changed by a paraphrasing tool.</li>
+              <li><strong>Not a verdict:</strong> Turnitin's guidance says the indicator can misidentify human writing and shouldn't be the sole basis for action against a student.</li>
+            </ul>
+            <p className="text-muted-foreground leading-relaxed">Sources: <a href="https://guides.ithenticate.com/hc/en-us/articles/27835303398541-AI-writing-detection-in-the-new-enhanced-Similarity-Report-view" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary/80">Turnitin's AI writing detection guide</a> and <a href="https://guides.turnitin.com/hc/en-us/articles/27139000787853-How-should-I-review-the-AI-Writing-report" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary/80">how to review the AI writing report</a>, checked November 5, 2026. For the full breakdown, see <Link to="/blog/does-turnitin-detect-chatgpt" className="text-primary hover:text-primary/80">does Turnitin detect ChatGPT?</Link></p>
 
             <h2 className="text-2xl font-bold mt-10 mb-4 text-foreground">Why These Detection Rates Will Shift</h2>
             <p className="text-muted-foreground leading-relaxed">Treat every number above as a snapshot, not a fixed property of the model. Detection is a cat-and-mouse game: the moment a new model like Claude 4 gains a following, detector vendors start feeding its output into their training sets, and the gap that made it "hardest to detect" begins to close. A model that slips through at a 72% catch rate this quarter can be sitting at 85% a few months later without anything about the model changing, simply because the detectors learned its fingerprint. That is the real reason chasing the "most undetectable model" is a losing strategy. The model's freshness buys you a temporary edge that erodes on its own, while the thing you control, how much you revise and add your own voice afterward, holds up regardless of which model you started from.</p>
@@ -167,6 +182,7 @@ const AIDetectorsClaudeGeminiGPT5 = () => {
               <p className="text-muted-foreground mb-6">Detect and humanize text from GPT-5, Claude, Gemini, DeepSeek, and more.</p>
               <a href="https://app.aifreetextpro.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg font-medium hover:bg-primary/90 transition-colors">Try Free Detector <ArrowLeft className="w-4 h-4 rotate-180" /></a>
             </div>
+            <FAQSection faqs={faqs} />
           </article>
 
           <RelatedArticles articles={relatedArticles} />

@@ -39,11 +39,8 @@ const MakeAIWritingCreative = () => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@aifreetextpro" />
         <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org", "@type": "Article", "headline": "How to Make AI Writing More Creative and Original", "author": { "@type": "Person", "name": "Dr. Sarah Chen", "url": "https://aifreetextpro.com/team#sarah-chen" }, "publisher": { "@type": "Organization", "name": "AI Free Text Pro", "logo": { "@type": "ImageObject", "url": "https://aifreetextpro.com/logo.png" } }, "datePublished": "2026-03-08", "dateModified": "2026-03-08", "wordCount": 1100
-          })}
-        </script>
+        <meta property="article:published_time" content="2026-03-08" />
+        <meta property="article:modified_time" content="2026-11-05" />
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
@@ -56,7 +53,7 @@ const MakeAIWritingCreative = () => {
         url="https://aifreetextpro.com/blog/make-ai-writing-creative"
         name="How to Make AI Writing Creative"
         description="Transform generic AI text into creative, original writing. 12 techniques for adding voice, style, and originality to AI-generated content in 2026."
-        steps={[{"name":"Run an initial AI detection check","text":"Paste your draft into a trusted AI detector to baseline its current AI-probability score before editing."},{"name":"Identify high-flag passages","text":"Use the detector's per-sentence highlights to find the spans most likely to trigger detection."},{"name":"Restructure sentence rhythm and burstiness","text":"Vary sentence length and structure so the text alternates between short, punchy sentences and longer, complex ones."},{"name":"Inject voice, perspective, and specificity","text":"Replace generic phrasing with first-person reasoning, concrete examples, and domain-specific vocabulary that reflects a human author."},{"name":"Re-check and iterate","text":"Run the detector again and repeat the targeted edits until the AI score falls below your safety threshold."}]}
+        steps={[{"name":"Give the AI a persona and a constraint","text":"Ask for the piece from a specific point of view and with one unusual constraint, such as a single extended metaphor or a strict word limit, instead of a bare topic."},{"name":"Generate two or three different versions","text":"Prompt for contrasting angles on the same brief and keep the strongest hook, structure and examples from each."},{"name":"Replace generic claims with your own material","text":"Swap phrases like 'studies show' for a named source, a real number, or something you saw or did yourself."},{"name":"Edit the rhythm by reading aloud","text":"Mix short and long sentences, cut stock transitions such as 'Furthermore', and break the intro-three-points-conclusion pattern where it helps."},{"name":"Run the creative editing checklist","text":"Check that the opening earns the next sentence, the piece sounds like a specific person, and it contains at least one real example and one surprising element."}]}
       />
 
       <AuthorSchema
@@ -64,7 +61,7 @@ const MakeAIWritingCreative = () => {
         headline="How to Make AI Writing More Creative and Original | AI Free Text Pro"
         description="Transform generic AI text into creative, original writing. 12 techniques for adding voice, style, and originality to AI-generated content in 2026."
         datePublished="2026-03-08"
-        dateModified="2026-06-09"
+        dateModified="2026-11-05"
       />
       <SpeakableSchema
         pageUrl="https://aifreetextpro.com/blog/make-ai-writing-creative"
@@ -87,7 +84,8 @@ const MakeAIWritingCreative = () => {
             <header className="mb-8">
               <div className="flex items-center gap-4 text-sm text-muted-foreground mb-3">
                 <span className="flex items-center gap-1"><Calendar className="w-4 h-4" /> March 8, 2026</span>
-                <span className="flex items-center gap-1"><Clock className="w-4 h-4" /> 13 min read</span>
+                <span>Updated <time dateTime="2026-11-05">November 5, 2026</time></span>
+                <span className="flex items-center gap-1"><Clock className="w-4 h-4" /> 10 min read</span>
                 <span className="bg-primary/10 text-primary px-2 py-0.5 rounded text-xs font-medium">Writing Craft</span>
               </div>
               <h1 className="text-3xl md:text-4xl font-bold mb-4">How to Make AI Writing More Creative and Original</h1>
@@ -146,6 +144,58 @@ const MakeAIWritingCreative = () => {
 
             <h3>12. Layer Multiple AI Passes</h3>
             <p>Generate multiple versions of the same piece with different prompts. Take the best elements from each: the hook from version one, the structure from version two, the examples from version three. This composite approach produces something more original than any single generation.</p>
+
+            <h2>Before and After: Three Techniques on One Paragraph</h2>
+            <p>Lists of techniques are easy to agree with and hard to apply, so here is one paragraph taken through the process. The first version is the kind of answer you get when you ask a chatbot to "write an intro about remote work productivity" with no other direction.</p>
+
+            <div className="not-prose my-6 space-y-4">
+              <div className="border border-border rounded-lg p-5">
+                <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground mb-2">Before: default AI output</p>
+                <p className="text-muted-foreground italic">"In today's fast-paced world, remote work has become increasingly popular. It offers numerous benefits, including flexibility and improved work-life balance. However, it also presents unique challenges, such as maintaining productivity and staying connected with colleagues. In this article, we will explore effective strategies to help you thrive while working remotely."</p>
+                <p className="text-sm text-muted-foreground mt-3">What's wrong with it: a stock opener ("In today's fast-paced world"), a benefits-then-challenges pattern every reader has seen, four sentences of almost the same length, and nothing a reader couldn't have guessed before reading.</p>
+              </div>
+              <div className="border border-primary/30 bg-primary/5 rounded-lg p-5">
+                <p className="text-xs font-semibold uppercase tracking-wide text-primary mb-2">After: persona, a real detail, varied rhythm</p>
+                <p className="italic">"My most productive day last month happened in a laundromat. No Slack, no second monitor, forty minutes until the dryer buzzed. That's the uncomfortable thing about remote work nobody puts in the onboarding deck: the home office often isn't where the focus is. What follows are the habits that brought that laundromat focus back to my desk."</p>
+                <p className="text-sm text-muted-foreground mt-3">What changed: it opens on a specific scene (technique 3), takes a position against the usual advice (technique 10), and mixes a 10-word opener with a fragment and a 22-word sentence (technique 9). The laundromat is the kind of detail only the writer can supply, so replace it with one of your own; an invented anecdote presented as true is still invented.</p>
+              </div>
+            </div>
+
+            <h2>Prompts You Can Copy</h2>
+            <p>These prompts apply the techniques above. Replace the bracketed parts; the more specific you are, the less generic the output.</p>
+            <div className="not-prose overflow-x-auto my-6">
+              <table className="w-full text-sm border-collapse border border-border">
+                <thead>
+                  <tr className="bg-muted">
+                    <th className="border border-border p-3 text-left font-semibold">Technique</th>
+                    <th className="border border-border p-3 text-left font-semibold">Prompt</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td className="border border-border p-3 align-top">Persona</td>
+                    <td className="border border-border p-3">"Write about [topic] as a [specific person, e.g. night-shift nurse with 15 years' experience] explaining it to a friend. Use one concrete moment from their working week."</td>
+                  </tr>
+                  <tr className="bg-muted/30">
+                    <td className="border border-border p-3 align-top">Constraint</td>
+                    <td className="border border-border p-3">"Explain [topic] in 150 words using a single extended metaphor from [unrelated field, e.g. cooking]. Don't use the words 'crucial', 'landscape' or 'delve'."</td>
+                  </tr>
+                  <tr>
+                    <td className="border border-border p-3 align-top">Contrasting versions</td>
+                    <td className="border border-border p-3">"Give me three openings for [piece]: one that starts with a scene, one with a surprising number, one with a strong opinion. Keep each under 60 words."</td>
+                  </tr>
+                  <tr className="bg-muted/30">
+                    <td className="border border-border p-3 align-top">Take a position</td>
+                    <td className="border border-border p-3">"Argue that [common advice] is wrong for [audience]. Give the best counterargument, then explain why it still doesn't hold."</td>
+                  </tr>
+                  <tr>
+                    <td className="border border-border p-3 align-top">Find the clichés</td>
+                    <td className="border border-border p-3">"List every phrase in this draft a reader has seen a hundred times, and suggest a plainer or more specific replacement for each: [paste draft]"</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p>Keep the checking step for yourself. A model can suggest a vivid detail, but only you know whether it's true, and readers trust writing that turns out to be specific and accurate. For the editing pass itself, see <Link to="/blog/editing-ai-drafts-human-editor" className="text-primary hover:underline">how to edit AI drafts like a human editor</Link>.</p>
 
             <h2>The Creative Editing Checklist</h2>
             <div className="bg-muted/50 p-6 rounded-lg my-6">

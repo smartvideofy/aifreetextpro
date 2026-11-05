@@ -192,6 +192,7 @@ const DoesGrammarlyTriggerAIDetection = () => {
 
             <h2 className="text-2xl font-bold mt-10 mb-4 text-foreground">Best Practices</h2>
             <p className="text-muted-foreground leading-relaxed">Use Grammarly freely for grammar, spelling, and punctuation. Be cautious with AI rewrite features. If you have used AI features on several paragraphs and are worried, scan your text with <a href="https://app.aifreetextpro.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary/80 underline">AI Free Text Pro's free detector</a> to see if anything was flagged. If sections score high, consider reverting to your original phrasing or humanizing the text.</p>
+            <p className="text-muted-foreground leading-relaxed">For a closer look at Grammarly's own AI detector, and at Grammarly Authorship, which records how you wrote a document, see our <Link to="/blog/grammarly-ai-detector-review" className="text-primary hover:underline">Grammarly AI detector review</Link>.</p>
 
             <h2 className="text-2xl font-bold mt-10 mb-4 text-foreground">The Bottom Line</h2>
             <p className="text-muted-foreground leading-relaxed">Standard Grammarly use is completely safe for academic submissions. AI detectors are designed to catch AI-generated content, not grammar-checked human writing. Just be mindful of the line between editing tools and content generation tools, and you will be fine.</p>

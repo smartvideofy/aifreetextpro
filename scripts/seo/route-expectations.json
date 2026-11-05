@@ -67,6 +67,9 @@
     { "path": "/blog/gptzero-accuracy-review", "titleMustInclude": ["GPTZero"], "descriptionMustInclude": ["GPTZero"], "requiredJsonLdTypes": ["Article", "BreadcrumbList"] },
     { "path": "/blog/originality-ai-review-how-to-beat", "titleMustInclude": ["Originality"], "descriptionMustInclude": ["Originality"], "requiredJsonLdTypes": ["Article", "BreadcrumbList"] },
     { "path": "/blog/free-ai-content-detector", "titleMustInclude": ["Free", "Detector"], "descriptionMustInclude": ["detector"], "requiredJsonLdTypes": ["Article", "BreadcrumbList"] },
+    { "path": "/blog/grammarly-ai-detector-review", "titleMustInclude": ["Grammarly"], "descriptionMustInclude": ["Grammarly"], "requiredJsonLdTypes": ["Article", "BreadcrumbList"] },
+    { "path": "/blog/what-ai-detector-do-teachers-use", "titleMustInclude": ["Teachers"], "descriptionMustInclude": ["teachers"], "requiredJsonLdTypes": ["Article", "BreadcrumbList"] },
+    { "path": "/blog/falsely-accused-of-using-ai", "titleMustInclude": ["Falsely Accused"], "descriptionMustInclude": ["AI"], "requiredJsonLdTypes": ["Article", "BreadcrumbList"] },
     { "path": "/blog/humanize-chatgpt-text", "titleMustInclude": ["Humanize", "ChatGPT"], "descriptionMustInclude": ["ChatGPT"], "requiredJsonLdTypes": ["Article", "BreadcrumbList"] }
   ]
 }

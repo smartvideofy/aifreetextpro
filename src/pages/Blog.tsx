@@ -27,6 +27,15 @@ const categoryThumbnails: Record<string, string> = {
 
 export const blogPosts = [
   {
+    slug: "falsely-accused-of-using-ai", title: "Falsely Accused of Using AI? How to Prove You Wrote It (2026)", excerpt: "How to gather version history and other evidence, respond to the allegation, and what recent court cases show about AI cheating accusations.", date: "2026-11-05", readTime: "12 min read", category: "Academic"
+  },
+  {
+    slug: "what-ai-detector-do-teachers-use", title: "What AI Detector Do Teachers Use? Turnitin, GPTZero and More (2026)", excerpt: "The AI detectors teachers and universities actually use, what instructors see, which schools switched detection off, and why version history matters more.", date: "2026-11-05", readTime: "11 min read", category: "Academic"
+  },
+  {
+    slug: "grammarly-ai-detector-review", title: "Grammarly AI Detector Review: How Accurate Is It? (2026)", excerpt: "What Grammarly's AI detector measures, what its 99% benchmark claim means, how Grammarly Authorship differs, and whether Grammarly counts as AI.", date: "2026-11-05", readTime: "11 min read", category: "Detector Review"
+  },
+  {
     slug: "free-ai-detector", title: "Free AI Detector: How to Check Text and Read the Score (2026)", excerpt: "How free AI detectors work, what the scores really mean, where the free limits sit, and a 4-step checking workflow that avoids the false-positive trap.", date: "2026-09-02", readTime: "15 min read", category: "Tools"
   }, {
     slug: "humanize-deepseek-output", title: "How to Humanize DeepSeek Output (2026 Guide)", excerpt: "DeepSeek drafts get flagged by Turnitin, GPTZero and Originality.AI for predictable reasons. A tested 6-step workflow to rewrite DeepSeek text so it reads as your own writing.", date: "2026-08-27", readTime: "16 min read", category: "How-To Guide"

@@ -153,6 +153,7 @@ const TurnitinAppeal = () => {
               <p><strong>Process documentation</strong> is the gold standard. If you write in Google Docs, your version history shows every keystroke. This is nearly impossible to fabricate and provides definitive proof of human authorship.</p>
               <p><strong>Multiple independent detectors</strong> showing low AI scores undermines the credibility of a single tool's positive result. If four out of five detectors say your text is human, the outlier is likely wrong.</p>
               <p><strong>Subject matter expertise</strong> demonstrated through an oral discussion of your paper shows you understand and can elaborate on the content, which is difficult if you did not write it yourself.</p>
+              <p>For a step-by-step guide to exporting version history and assembling this evidence, whichever detector flagged you, see <Link to="/blog/falsely-accused-of-using-ai">how to prove you wrote it if you're falsely accused of using AI</Link>.</p>
             </section>
 
             <section className="not-prose my-12 p-8 bg-primary/5 border border-primary/20 rounded-xl text-center">

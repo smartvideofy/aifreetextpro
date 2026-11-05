@@ -207,6 +207,9 @@ const blogPosts = [
   { title: "ChatGPT for College Essays", href: "/blog/chatgpt-college-essays" },
   { title: "AI Text Converter", href: "/blog/ai-text-converter" },
   { title: "Claude Academic Writing", href: "/blog/claude-academic-writing" },
+  { title: "Grammarly AI Detector Review", href: "/blog/grammarly-ai-detector-review" },
+  { title: "What AI Detector Do Teachers Use?", href: "/blog/what-ai-detector-do-teachers-use" },
+  { title: "Falsely Accused of Using AI?", href: "/blog/falsely-accused-of-using-ai" },
 ];
 
 export const InternalLinks = ({ currentPage, showTitle = true, variant = "compact" }: InternalLinksProps) => {

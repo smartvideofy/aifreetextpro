@@ -157,82 +157,44 @@ export const articleContent: Record<string, Record<string, { title: string; cont
     }, "understanding-dashboard": {
       title: "Understanding Your Dashboard", content: (
         <div className="prose prose-invert max-w-none">
-          <p className="lead">Your AI Free Text Pro dashboard is your command center for all AI humanization activities. This guide explains every feature and metric available to help you make the most of your account.</p>
-          
-          <h2>Dashboard Overview</h2>
-          <p>When you log in, you'll see a clean, intuitive interface designed to give you quick access to all essential features. The dashboard is divided into several key sections:</p>
-          
-          <h2>Word Count Tracker</h2>
-          <p>Located prominently at the top of your dashboard, the word count tracker shows:</p>
+          <p className="lead">The dashboard is the first page you see after signing in at app.aifreetextpro.com. It shows how much you've used each tool, gives you one-click access to the humanizer, detector and plagiarism checker, and lists your latest results.</p>
+
+          <h2>Usage at a Glance</h2>
+          <p>Four cards at the top summarise your activity. Use the period switcher (Today, Week, Month or All Time) to change the range they cover.</p>
           <ul>
-            <li><strong>Words Used:</strong> The total number of words you've humanized this billing period</li>
-            <li><strong>Words Remaining:</strong> How many words you have left in your current quota</li>
-            <li><strong>Usage Bar:</strong> A visual progress bar showing your consumption at a glance</li>
-            <li><strong>Reset Date:</strong> When your word count will reset for the new period</li>
+            <li><strong>Total Checks:</strong> AI detection scans you've run in the selected period.</li>
+            <li><strong>Humanizations:</strong> texts you've humanized.</li>
+            <li><strong>Plagiarism Checks:</strong> plagiarism scans you've run.</li>
+            <li><strong>Words Processed:</strong> the total number of words analysed across all tools.</li>
           </ul>
-          <div className="bg-muted/50 border border-border rounded-lg p-4 my-4">
-            <p className="text-sm m-0"><strong>Free Users:</strong> You receive 1,000 words per month, resetting on your account creation date.</p>
-            <p className="text-sm m-0 mt-2"><strong>Pro Users:</strong> Enjoy unlimited words with no tracking necessary!</p>
-          </div>
-          
-          <h2>Quick Action Buttons</h2>
-          <p>The dashboard features prominent quick action buttons for instant access to:</p>
+          <p>Your plan's monthly word allowance is shown on the <a href="/pricing" className="text-primary hover:underline">pricing page</a>. When you reach it, the app tells you and suggests the next plan up.</p>
+
+          <h2>Quick Actions</h2>
+          <p>Three buttons take you straight to each tool:</p>
           <ul>
-            <li><strong>AI Humanizer:</strong> Jump straight to the humanization tool</li>
-            <li><strong>AI Detector:</strong> Check if your content passes AI detection</li>
-            <li><strong>History:</strong> View and access previous humanizations</li>
-            <li><strong>Account Settings:</strong> Manage your profile and subscription</li>
+            <li><strong>AI Humanizer:</strong> rewrite AI-assisted text so it reads more naturally, with a choice of writing style, content type and strength.</li>
+            <li><strong>AI Detector:</strong> check text for AI-like patterns and see which sentences drive the score.</li>
+            <li><strong>Plagiarism Check:</strong> check text for matches with published sources.</li>
           </ul>
-          
+
           <h2>Recent Activity</h2>
-          <p>This section displays your most recent humanization activities, including:</p>
+          <p>Recent Activity lists your latest humanizations, AI detections and plagiarism checks, with the AI percentage shown for detections. Select <strong>View All History</strong> to see everything.</p>
+
+          <h2>History</h2>
+          <p>The History page keeps every result in three tabs: <strong>Humanizations</strong>, <strong>AI Checks</strong> and <strong>Plagiarism</strong>. You can search your history, open the full text or report, copy results, and delete records you no longer need. Deleting a record can't be undone.</p>
+
+          <h2>Settings and Preferences</h2>
           <ul>
-            <li>Date and time of each humanization</li>
-            <li>Word count of each submission</li>
-            <li>Writing style used</li>
-            <li>Quick access to view or re-humanize previous texts</li>
+            <li><strong>Humanizer defaults:</strong> set the writing style the humanizer starts with, so you don't have to choose it every time.</li>
+            <li><strong>Language:</strong> the app works in English, Spanish, French, German and Dutch.</li>
+            <li><strong>Account:</strong> change your password. To change plans, use the Pricing page in the app.</li>
           </ul>
-          <p>Click on any activity to expand and view the full original and humanized text.</p>
-          
-          <h2>Usage Statistics</h2>
-          <p>Track your humanization patterns with detailed statistics:</p>
-          <ul>
-            <li><strong>Total Words Humanized:</strong> Lifetime count across all billing periods</li>
-            <li><strong>Style Breakdown:</strong> Pie chart showing which writing styles you use most</li>
-            <li><strong>Success Rate:</strong> Percentage of texts that pass AI detection after humanization</li>
-            <li><strong>Average Text Length:</strong> Your typical submission size</li>
-          </ul>
-          
-          <h2>Subscription Status</h2>
-          <p>View your current plan details at a glance:</p>
-          <ul>
-            <li>Current plan (Free or Pro)</li>
-            <li>Billing cycle dates</li>
-            <li>Next payment date (if applicable)</li>
-            <li>Quick upgrade/downgrade options</li>
-          </ul>
-          
-          <h2>Tips & Suggestions</h2>
-          <p>The dashboard may display personalized tips based on your usage patterns, such as:</p>
-          <ul>
-            <li>Suggestions for improving humanization results</li>
-            <li>Features you haven't tried yet</li>
-            <li>Best practices for your most-used writing style</li>
-          </ul>
-          
-          <h2>Navigation Menu</h2>
-          <p>The sidebar or top navigation provides quick access to:</p>
-          <ul>
-            <li><strong>Dashboard:</strong> Return to this overview page</li>
-            <li><strong>Humanizer:</strong> The main AI humanization tool</li>
-            <li><strong>Detector:</strong> AI detection scanning tool</li>
-            <li><strong>History:</strong> Complete history of all humanizations</li>
-            <li><strong>Settings:</strong> Account, billing, and preferences</li>
-            <li><strong>Help:</strong> Access to this Help Center</li>
-          </ul>
-          
-          <div className="bg-primary/10 border border-primary/20 rounded-lg p-4 mt-6">
-            <p className="text-sm m-0"><strong>💡 Pro Tip:</strong> Bookmark the dashboard URL for quick access. You can also set it as your browser's homepage if you use AI Free Text Pro frequently!</p>
+
+          <h2>Notifications</h2>
+          <p>The Notifications page collects messages about your account in one place.</p>
+
+          <div className="bg-primary/10 border border-primary/20 rounded-lg p-4 my-6">
+            <p className="m-0"><strong>Tip:</strong> new to the app? Start with <a href="/help-center/getting-started/first-humanization" className="text-primary hover:underline">your first humanization</a>, then try the detector on the result to see which sentences still read as AI-like.</p>
           </div>
         </div>
       )
@@ -607,107 +569,59 @@ export const articleContent: Record<string, Record<string, { title: string; cont
     }, "tips-best-results": {
       title: "Tips for Best Results", content: (
         <div className="prose prose-invert max-w-none">
-          <p className="lead">Maximize your humanization success rate with these expert tips and best practices developed from analyzing millions of successful transformations.</p>
-          
-          <h2>Before Humanization</h2>
-          
-          <h3>1. Start with Quality AI Output</h3>
-          <p>The better your original AI-generated text, the better your humanized results will be. When generating your initial content:</p>
+          <p className="lead">The humanizer works best when you give it complete, well-prepared text and the right settings, then review the result yourself. These tips cover each stage, from preparing your draft to checking the output.</p>
+
+          <h2>Before You Humanize</h2>
+
+          <h3>1. Start with a better draft</h3>
+          <p>The humanizer improves how text reads; it can't add knowledge that isn't there. If you're working from an AI draft:</p>
           <ul>
-            <li>Use detailed, specific prompts with clear instructions</li>
-            <li>Ask the AI to write in a natural, conversational style</li>
-            <li>Request examples, anecdotes, or personal touches</li>
-            <li>Specify your target audience and purpose</li>
+            <li>Prompt with specifics: your audience, purpose, tone and any facts that must appear.</li>
+            <li>Add your own examples, numbers and opinions before humanizing. Specific detail is what makes writing sound like a particular person.</li>
+            <li>Remove leftovers such as "As an AI language model" or instructions that were pasted in by accident.</li>
           </ul>
-          
-          <h3>2. Prepare Your Text Properly</h3>
-          <p>Before pasting into AI Free Text Pro:</p>
+
+          <h3>2. Give it complete text</h3>
+          <p>The humanizer needs at least 10 words, but it works much better on full paragraphs. Paste complete sections rather than fragments, and keep formatting simple: headings, paragraphs and lists.</p>
+
+          <h2>Choosing Your Settings</h2>
+
+          <h3>3. Writing style</h3>
+          <p>Pick the style that matches where the text will be read:</p>
           <ul>
-            <li>Remove any AI system prompts or instructions that got included</li>
-            <li>Keep formatting simple (headings, paragraphs, bullet points)</li>
-            <li>Ensure the text is complete - partial sentences may not humanize well</li>
-            <li>Check for any obvious AI artifacts like "As an AI language model..."</li>
+            <li><strong>Professional:</strong> business writing, reports and client documents.</li>
+            <li><strong>Casual:</strong> social posts, newsletters and friendly emails.</li>
+            <li><strong>Academic:</strong> essays and research writing, where your course allows AI assistance.</li>
+            <li><strong>Creative:</strong> stories, personal essays and anything that needs more voice.</li>
           </ul>
-          
-          <h3>3. Choose the Right Style</h3>
-          <p>Style selection is crucial. Ask yourself:</p>
+          <p>You can save your usual style as a default in Settings. See <a href="/help-center/getting-started/choosing-writing-style" className="text-primary hover:underline">choosing the right writing style</a> for more detail.</p>
+
+          <h3>4. Content type</h3>
+          <p>Choose General, Blog Post, Marketing, Technical or Email so the rewrite follows the conventions of that kind of writing. For technical text, the Technical setting helps keep terminology intact.</p>
+
+          <h3>5. Strength</h3>
+          <p>The strength slider controls how much the text is rewritten. Lower settings keep closer to your wording, which suits text that's already mostly yours. Higher settings rewrite more, which suits rigid, formulaic drafts. If key phrases change more than you'd like, lower the strength.</p>
+
+          <h3>6. Language</h3>
+          <p>The app works in English, Spanish, French, German and Dutch. Humanize text in the language it was written in rather than translating it first.</p>
+
+          <h2>After You Humanize</h2>
+
+          <h3>7. Always review the output</h3>
           <ul>
-            <li>Who will read this content?</li>
-            <li>What platform will it be published on?</li>
-            <li>What tone does my audience expect?</li>
-            <li>Are there specific conventions I need to follow?</li>
+            <li>Read it through for meaning: check that every key point survived.</li>
+            <li>Verify names, numbers, quotes, citations and technical terms.</li>
+            <li>Make sure it sounds like you, and edit anything that doesn't.</li>
           </ul>
-          
-          <h2>During Humanization</h2>
-          
-          <h3>4. Process Appropriate Lengths</h3>
-          <p>Our system works best with certain text lengths:</p>
-          <ul>
-            <li><strong>Minimum:</strong> 50 words for effective pattern transformation</li>
-            <li><strong>Sweet Spot:</strong> 300-2,000 words for optimal results</li>
-            <li><strong>Long Content:</strong> For 3,000+ words, consider humanizing in sections</li>
-          </ul>
-          
-          <h3>5. Preserve Important Elements</h3>
-          <p>Mark or be aware of elements that should stay unchanged:</p>
-          <ul>
-            <li>Brand names and trademarks</li>
-            <li>Technical terminology</li>
-            <li>Proper nouns (names, places, organizations)</li>
-            <li>Quotes and citations</li>
-            <li>Statistics and specific data points</li>
-          </ul>
-          
-          <h2>After Humanization</h2>
-          
-          <h3>6. Always Review the Output</h3>
-          <p>Take time to carefully review humanized content:</p>
-          <ul>
-            <li>Read through completely for flow and coherence</li>
-            <li>Verify technical terms weren't altered incorrectly</li>
-            <li>Check that key arguments and points are preserved</li>
-            <li>Ensure names and references are accurate</li>
-          </ul>
-          
-          <h3>7. Add Personal Touches</h3>
-          <p>Make the content truly yours by adding:</p>
-          <ul>
-            <li>Personal anecdotes or experiences</li>
-            <li>Industry-specific examples from your knowledge</li>
-            <li>Your unique perspective or opinion</li>
-            <li>Local or contextual references</li>
-          </ul>
-          
-          <h3>8. Verify with AI Detection</h3>
-          <p>Before final use, always run your content through our AI Detector:</p>
-          <ul>
-            <li>Use the "Check with Detector" button after humanizing</li>
-            <li>Aim for a "human" score above 90%</li>
-            <li>If detection fails, try humanizing again with a different style</li>
-            <li>Consider making manual edits to flagged sections</li>
-          </ul>
-          
-          <h2>Advanced Tips</h2>
-          
-          <h3>9. Section-by-Section Approach</h3>
-          <p>For complex or long documents:</p>
-          <ul>
-            <li>Humanize each section separately</li>
-            <li>Adjust style per section if needed (intro might be Creative, body Academic)</li>
-            <li>Manually blend transitions between sections</li>
-          </ul>
-          
-          <h3>10. Iterative Refinement</h3>
-          <p>If results aren't perfect on the first try:</p>
-          <ul>
-            <li>Try a different writing style</li>
-            <li>Break the text into smaller sections</li>
-            <li>Manually edit and re-humanize problem areas</li>
-            <li>Combine multiple attempts, taking the best parts from each</li>
-          </ul>
-          
-          <div className="bg-primary/10 border border-primary/20 rounded-lg p-4 mt-6">
-            <p className="text-sm m-0"><strong>💡 Pro Users:</strong> Take advantage of Advanced Settings to fine-tune intensity levels and preserve specific keywords for even better results.</p>
+
+          <h3>8. Check it with the AI Detector</h3>
+          <p>Run the result through the AI Detector (at least 50 words) and look at which sentences are highlighted, not just the overall percentage. Revise the highlighted sentences by hand, adding specific detail or varying sentence length. Detector scores are estimates and different detectors disagree, so no score is a guarantee of how another tool will read your text.</p>
+
+          <h3>9. Work in sections for long documents</h3>
+          <p>For long pieces, humanize one section at a time, review each, then read the whole document once more to smooth the transitions.</p>
+
+          <div className="bg-primary/10 border border-primary/20 rounded-lg p-4 my-6">
+            <p className="m-0"><strong>Use it responsibly:</strong> if you're a student or working under a contract, follow your course's or client's rules on AI tools and disclose AI assistance where required. A humanizer improves readability; it doesn't change who wrote the work.</p>
           </div>
         </div>
       )

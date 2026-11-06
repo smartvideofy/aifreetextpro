@@ -27,7 +27,7 @@ const VsHumanizeAIPro = () => {
     {
       category: "Pricing Comparison",
       features: [
-        { name: "Free Tier", aiFreePro: "1,000 words/mo", humanizeAI: "300 words/mo" },
+        { name: "Free Tier", aiFreePro: "250 words/mo", humanizeAI: "300 words/mo" },
         { name: "Entry Plan", aiFreePro: "$4.99/mo", humanizeAI: "$12/mo" },
         { name: "Pro Plan", aiFreePro: "$24.99 (50K words)", humanizeAI: "$39 (40K words)" },
         { name: "Cost per 1000 Words", aiFreePro: "$0.50", humanizeAI: "$0.98" },
@@ -200,7 +200,7 @@ const VsHumanizeAIPro = () => {
                   </ul>
                   <a href="https://app.aifreetextpro.com/" className="block mt-6">
                     <Button size="lg" className="w-full bg-gradient-to-r from-primary to-secondary">
-                      Try Free, 1,000 Words <ArrowRight className="ml-2 h-4 w-4" />
+                      Try Free, 250 Words <ArrowRight className="ml-2 h-4 w-4" />
                     </Button>
                   </a>
                 </Card>

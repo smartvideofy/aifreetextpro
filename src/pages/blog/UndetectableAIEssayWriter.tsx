@@ -31,7 +31,7 @@ const relatedArticles = [
 
 const faqs = [
   { question: "Is there an essay writer that bypasses Turnitin?", answer: "No essay generator's raw output reliably passes Turnitin: every model writes with the even rhythm and predictable wording Turnitin scores. What works is a two-step process: draft with an AI writer, then rewrite with a humanizer and add your own sources and examples, and check the result before you submit." },
-  { question: "What is the best undetectable AI essay generator?", answer: "The combination matters more than the generator. A capable model (ChatGPT, Claude or Gemini) for the outline and draft, then a humanizer that rebuilds sentence structure, then your own edits. AI Free Text Pro gives you the humanizer and an AI detector in one place, free for 1,000 words a month." },
+  { question: "What is the best undetectable AI essay generator?", answer: "The combination matters more than the generator. A capable model (ChatGPT, Claude or Gemini) for the outline and draft, then a humanizer that rebuilds sentence structure, then your own edits. AI Free Text Pro gives you the humanizer and an AI detector in one place, free for 250 words a month." },
   {
     question: "What is the best AI essay writer that passes Turnitin?", answer: "No single AI writer produces text that passes Turnitin on its own. The most effective workflow is using a strong AI model (ChatGPT, Claude, or Gemini) for drafting, then running the output through a humanization tool like AI Free Text Pro. This two-step process consistently produces essays that score below 5% AI detection on Turnitin."
   }, {

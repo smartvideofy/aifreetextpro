@@ -42,7 +42,7 @@ const relatedArticles = [
 ];
 
 const faqs = [
-  { question: "Is there a free AI detector for teachers?", answer: "Yes. The checker at the top of this page is free with no account and no word limit: paste a student essay and it shows the AI-writing signals in seconds. For a model-based AI probability, the detector in AI Free Text Pro is free with an account (1,000 words a month), and GPTZero has a free tier as well." },
+  { question: "Is there a free AI detector for teachers?", answer: "Yes. The checker at the top of this page is free with no account and no word limit: paste a student essay and it shows the AI-writing signals in seconds. For a model-based AI probability, the detector in AI Free Text Pro is free with an account (250 words a month), and GPTZero has a free tier as well." },
   { question: "What AI checker do teachers use?", answer: "Most schools use Turnitin's AI writing indicator because it is built into assignment submission. Teachers without Turnitin most often use GPTZero, Originality.AI, Copyleaks or a free checker like ours for spot checks, and many run two tools on the same essay because detectors disagree." },
   { question: "What is the best AI detector for professors?", answer: "For university courses, Turnitin (if your institution licenses it) or Originality.AI for exportable reports. For quick checks of a single essay, a free checker is enough to decide whether a closer look is worth it." },
   { question: "Can a teacher rely on an AI detector as proof?", answer: "No. Every major vendor, Turnitin included, describes its AI score as an indicator requiring human review. With false-positive rates of 2-9%, a 150-student course can produce several wrongly flagged papers a term, and formal or non-native English writing is flagged most often. Use the score to decide whether to look closer, never as the finding itself." },
@@ -356,7 +356,7 @@ const AIDetectorForTeachers = () => {
 
               <div className="not-prose my-8 p-6 bg-primary/5 border border-primary/20 rounded-lg text-center">
                 <h3 className="text-xl font-bold mb-2">Try Our Free AI Detector</h3>
-                <p className="text-muted-foreground mb-4">Sentence-level AI probability and file uploads for whole assignments. Free account, 1,000 words a month, no card.</p>
+                <p className="text-muted-foreground mb-4">Sentence-level AI probability and file uploads for whole assignments. Free account, 250 words a month, no card.</p>
                 <a
                   href="https://app.aifreetextpro.com/detector?utm_source=site&utm_medium=landing&utm_campaign=teachers"
                   target="_blank"

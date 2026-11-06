@@ -81,7 +81,7 @@ const StealthwriterAlternative = () => {
             <QuickAnswer question="What is the best Stealthwriter alternative?" answer="The best Stealthwriter alternative in 2026 is AI Free Text Pro. In 40 head-to-head samples, AI Free Text Pro reduced detector flags on 95% of texts vs Stealthwriter's 86%, while scoring higher on readability (4.3 vs 3.6) and offering a free tier with no card." />
 
             <KeyTakeaways points={[
-              "AI Free Text Pro reduced AI flags on 95% of test samples vs Stealthwriter's 86% across 5 detectors.", "Readability scored 4.3/5 (AI Free Text Pro) vs 3.6/5 (Stealthwriter) in independent reviewer scoring.", "AI Free Text Pro has a free tier (1,000 words, no card). Stealthwriter requires an account and a 7-day trial.", "Stealthwriter's modes (Ninja, Ghost, Stealth) deliver inconsistent results; AI Free Text Pro's writing styles produced steadier output.", "For most users, AI Free Text Pro is the better Stealthwriter alternative on accuracy, price, and ease of use."
+              "AI Free Text Pro reduced AI flags on 95% of test samples vs Stealthwriter's 86% across 5 detectors.", "Readability scored 4.3/5 (AI Free Text Pro) vs 3.6/5 (Stealthwriter) in independent reviewer scoring.", "AI Free Text Pro has a free tier (250 words, no card). Stealthwriter requires an account and a 7-day trial.", "Stealthwriter's modes (Ninja, Ghost, Stealth) deliver inconsistent results; AI Free Text Pro's writing styles produced steadier output.", "For most users, AI Free Text Pro is the better Stealthwriter alternative on accuracy, price, and ease of use."
             ]} />
 
             <h2 className="text-2xl font-bold mt-10 mb-4 text-foreground">Why Look for a Stealthwriter Alternative?</h2>
@@ -105,7 +105,7 @@ const StealthwriterAlternative = () => {
                   <tr><td className="border border-border p-3 text-muted-foreground">Bypass Rate</td><td className="border border-border p-3 text-center font-semibold text-green-600">95%</td><td className="border border-border p-3 text-center text-muted-foreground">86%</td></tr>
                   <tr><td className="border border-border p-3 text-muted-foreground">Readability</td><td className="border border-border p-3 text-center font-semibold text-green-600">4.3/5</td><td className="border border-border p-3 text-center text-muted-foreground">3.6/5</td></tr>
                   <tr><td className="border border-border p-3 text-muted-foreground">Meaning Preserved</td><td className="border border-border p-3 text-center font-semibold text-green-600">94%</td><td className="border border-border p-3 text-center text-muted-foreground">85%</td></tr>
-                  <tr><td className="border border-border p-3 text-muted-foreground">Free Tier</td><td className="border border-border p-3 text-center text-muted-foreground">1,000 words, no card</td><td className="border border-border p-3 text-center text-muted-foreground">7-day trial, sign-up required</td></tr>
+                  <tr><td className="border border-border p-3 text-muted-foreground">Free Tier</td><td className="border border-border p-3 text-center text-muted-foreground">250 words, no card</td><td className="border border-border p-3 text-center text-muted-foreground">7-day trial, sign-up required</td></tr>
                   <tr><td className="border border-border p-3 text-muted-foreground">Starting Price</td><td className="border border-border p-3 text-center text-muted-foreground">Free / $9.99/mo</td><td className="border border-border p-3 text-center text-muted-foreground">$19.99/mo</td></tr>
                   <tr><td className="border border-border p-3 text-muted-foreground">Built-in Detector</td><td className="border border-border p-3 text-center text-muted-foreground">Yes</td><td className="border border-border p-3 text-center text-muted-foreground">Yes</td></tr>
                 </tbody>
@@ -116,7 +116,7 @@ const StealthwriterAlternative = () => {
             <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
               <li><strong>Higher accuracy across the board:</strong> The biggest gap was on Originality.AI 3.0, where AI Free Text Pro scored 96% vs Stealthwriter's 81%.</li>
               <li><strong>More natural output:</strong> Stealthwriter's "Ghost" mode often produced awkward word substitutions; AI Free Text Pro preserved tone and flow.</li>
-              <li><strong>Free without sign-up:</strong> You can paste 1,000 words and run a humanizer pass with a free account.</li>
+              <li><strong>Free without sign-up:</strong> You can paste 250 words and run a humanizer pass with a free account.</li>
               <li><strong>Lower paid pricing:</strong> $9.99/mo vs $19.99/mo for similar word allowances.</li>
             </ul>
 
@@ -135,7 +135,7 @@ const StealthwriterAlternative = () => {
 
             <div className="bg-primary/5 border border-primary/20 rounded-xl p-8 text-center my-12 not-prose">
               <h3 className="text-2xl font-bold mb-3 text-foreground">Try the Stealthwriter Alternative Free</h3>
-              <p className="text-muted-foreground mb-6">No card. 1,000 words on the house.</p>
+              <p className="text-muted-foreground mb-6">No card. 250 words on the house.</p>
               <a href="https://app.aifreetextpro.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg font-medium hover:bg-primary/90 transition-colors">Try AI Free Text Pro <ArrowLeft className="w-4 h-4 rotate-180" /></a>
             </div>
           </article>

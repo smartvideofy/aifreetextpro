@@ -429,7 +429,7 @@ const ParaphrasingVsHumanizing = () => {
               <div className="bg-gradient-to-r from-primary/10 to-secondary/10 p-8 rounded-lg text-center space-y-4 my-12">
                 <h3 className="text-2xl font-bold">Ready to Upgrade from Paraphrasing?</h3>
                 <p className="text-muted-foreground max-w-2xl mx-auto">
-                  See the difference a true AI humanizer makes. Start free with 1,000 words/month.
+                  See the difference a true AI humanizer makes. Start free with 250 words/month.
                 </p>
                 <a href="https://app.aifreetextpro.com/" target="_blank" rel="noopener noreferrer">
                   <Button size="lg" className="text-lg px-8">

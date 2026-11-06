@@ -590,7 +590,7 @@ const Blog = () => {
             <Card className="p-8 bg-gradient-to-br from-primary/5 via-secondary/5 to-primary/5 border-primary/20">
               <h3 className="text-2xl font-bold mb-3">Ready to Make Your AI Content Undetectable?</h3>
               <p className="text-muted-foreground mb-6">
-                Try AI Free Text Pro free, 1,000 words/month with no credit card required.
+                Try AI Free Text Pro free, 250 words/month with no credit card required.
               </p>
               <a href="https://app.aifreetextpro.com/">
                 <Button size="lg" className="bg-gradient-to-r from-primary to-secondary">

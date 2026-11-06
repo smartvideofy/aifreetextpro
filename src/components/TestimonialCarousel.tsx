@@ -3,6 +3,7 @@ import { Card } from "@/components/ui/card";
 import { Star, ChevronLeft, ChevronRight, BadgeCheck } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { isPrerendering } from "@/lib/prerender";
 
 import michaelRodriguez from "@/assets/testimonials/michael-rodriguez.jpg";
 import jamesChen from "@/assets/testimonials/james-chen.jpg";
@@ -81,7 +82,10 @@ const TestimonialCarousel = () => {
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);
   const [itemsPerView, setItemsPerView] = useState(1);
 
+  // Prerender snapshots keep the initial state (1 per view, first slide) so
+  // the hydration render matches them; real visitors resize/autoplay as before.
   useEffect(() => {
+    if (isPrerendering()) return;
     const updateItemsPerView = () => {
       setItemsPerView(window.innerWidth >= 768 ? 3 : 1);
     };
@@ -94,7 +98,7 @@ const TestimonialCarousel = () => {
   const maxIndex = Math.max(0, testimonials.length - itemsPerView);
 
   useEffect(() => {
-    if (!isAutoPlaying) return;
+    if (!isAutoPlaying || isPrerendering()) return;
     
     const interval = setInterval(() => {
       setCurrentIndex((prev) => (prev >= maxIndex ? 0 : prev + 1));

@@ -133,6 +133,14 @@ export default defineConfig(({ mode }) => ({
             rendered.html = html;
           }
 
+          // On every route (including "/"): drop the <template> Suspense
+          // markers. main.tsx already placed the <!--$--> / <!--/$--> comments
+          // hydrateRoot needs next to them (see src/lib/prerender.ts).
+          rendered.html = rendered.html.replace(
+            /<template data-suspense-marker="(?:start|fallback|end)"><\/template>/g,
+            ""
+          );
+
           // On every route (including "/"): drop malformed canonicals that
           // carry no href — hosts/tools can inject these and crawlers treat
           // an empty canonical as a conflicting signal.

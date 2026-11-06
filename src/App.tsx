@@ -4,13 +4,14 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
-import { useEffect, lazy, Suspense } from "react";
+import { useEffect, lazy } from "react";
 import { GoogleAnalytics, trackPageView } from "@/lib/analytics";
 import { SEORedirect } from "@/components/SEORedirect";
 import { ExternalSEORedirect } from "@/components/ExternalSEORedirect";
 import { ScrollToTop } from "./components/ScrollToTop";
 import CookieConsent from "./components/CookieConsent";
 import PageLoader from "./components/PageLoader";
+import HydratableSuspense from "./components/HydratableSuspense";
 
 // Eagerly loaded - critical pages for initial render
 import Index from "./pages/Index";
@@ -229,7 +230,7 @@ const App = () => (
           <RouteTracker />
           <ScrollToTop />
           <CookieConsent />
-          <Suspense fallback={<PageLoader />}>
+          <HydratableSuspense fallback={<PageLoader />}>
             <Routes>
               <Route path="/" element={<Index />} />
               <Route path="/api" element={<Api />} />
@@ -454,7 +455,7 @@ const App = () => (
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>
-          </Suspense>
+          </HydratableSuspense>
         </BrowserRouter>
       </TooltipProvider>
     </QueryClientProvider>

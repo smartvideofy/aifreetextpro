@@ -1,5 +1,6 @@
 import FeaturedGuides from "@/components/FeaturedGuides";
-﻿import { lazy, Suspense } from "react";
+﻿import { lazy } from "react";
+import HydratableSuspense from "@/components/HydratableSuspense";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { ArrowRight, CheckCircle, Shield, FileText, Sparkles, Brain, Star, Pen, BookOpen, Target, Zap, Lock, Crown, GraduationCap, TrendingUp, Globe } from "lucide-react";
@@ -44,9 +45,9 @@ const CrossHubNavModule = lazy(() => import("@/components/PillarHubLinks").then(
 // to a short placeholder and then expand, which was driving CLS. Overlay
 // sections pass nothing (0 height) since they render null until interaction.
 const LazySection = ({ children, fallbackClass = "" }: { children: React.ReactNode; fallbackClass?: string }) => (
-  <Suspense fallback={<div className={fallbackClass} aria-hidden="true" />}>
+  <HydratableSuspense fallback={<div className={fallbackClass} aria-hidden="true" />}>
     {children}
-  </Suspense>
+  </HydratableSuspense>
 );
 
 const Index = () => {

@@ -36,7 +36,7 @@ export const articleContent: Record<string, Record<string, { title: string; cont
           <h2>Step 5: Start Humanizing Your Content</h2>
           <p>Once your email is verified, you'll be automatically logged in and ready to go. Your free account includes:</p>
           <ul>
-            <li><strong>1,000 free words per month</strong> to humanize your AI-generated content</li>
+            <li><strong>250 free words per month</strong> to humanize your AI-generated content</li>
             <li>Access to all 4 writing styles (Academic, Professional, Creative, Casual)</li>
             <li>Unlimited AI detection scans to verify your content</li>
             <li>Full dashboard with usage tracking and history</li>
@@ -877,7 +877,7 @@ export const articleContent: Record<string, Record<string, { title: string; cont
           
           <h3>What's Included:</h3>
           <ul>
-            <li><strong>1,000 words per month</strong> for humanization</li>
+            <li><strong>250 words per month</strong> for humanization</li>
             <li>Access to all 4 writing styles (Academic, Professional, Creative, Casual)</li>
             <li>Unlimited AI detection scans</li>
             <li>Full dashboard with usage tracking</li>
@@ -887,7 +887,7 @@ export const articleContent: Record<string, Record<string, { title: string; cont
           
           <h3>Limitations:</h3>
           <ul>
-            <li>1,000-word monthly limit</li>
+            <li>250-word monthly limit</li>
             <li>No access to advanced settings</li>
             <li>No batch processing</li>
             <li>No API access</li>
@@ -1433,7 +1433,7 @@ export const articleContent: Record<string, Record<string, { title: string; cont
           <p><strong>Solution:</strong> Add more content to your text, or combine multiple short pieces before humanizing.</p>
           
           <h3>2. Word Limit Reached</h3>
-          <p><strong>Problem:</strong> Free users have a 1,000-word monthly limit.</p>
+          <p><strong>Problem:</strong> Free users have a 250-word monthly limit.</p>
           <p><strong>How to Check:</strong></p>
           <ol>
             <li>Go to your Dashboard</li>

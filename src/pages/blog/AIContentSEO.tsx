@@ -377,7 +377,7 @@ const AIContentSEO = () => {
               <div className="bg-gradient-to-r from-primary/10 to-secondary/10 p-8 rounded-lg text-center space-y-4 my-12">
                 <h3 className="text-2xl font-bold">Scale Your SEO Content Production</h3>
                 <p className="text-muted-foreground max-w-2xl mx-auto">
-                  Join agencies producing 5-10x more content with AI Free Text Pro. Start free with 1,000 words.
+                  Join agencies producing 5-10x more content with AI Free Text Pro. Start free with 250 words.
                 </p>
                 <a href="https://app.aifreetextpro.com/" target="_blank" rel="noopener noreferrer">
                   <Button size="lg" className="text-lg px-8">

@@ -120,7 +120,7 @@ const HumanizeModelTemplate = ({ slug }: { slug: string }) => {
 
             <div className="not-prose my-12 rounded-xl border border-primary/20 bg-primary/5 p-8 text-center">
               <h2 className="mb-3 text-2xl font-bold">Humanize your {m.short} draft free</h2>
-              <p className="mb-6 text-muted-foreground">1,000 free words a month, five languages, detector in the same place. No card.</p>
+              <p className="mb-6 text-muted-foreground">250 free words a month, five languages, detector in the same place. No card.</p>
               <a href={app} className="inline-flex items-center rounded-lg bg-primary px-6 py-3 font-semibold text-primary-foreground hover:bg-primary/90">
                 Humanize {m.short} text <ArrowRight className="ml-2 h-4 w-4" />
               </a>

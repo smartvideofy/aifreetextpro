@@ -33,12 +33,12 @@ const relatedArticles = [
 
 const faqs = [
   { question: "Is there a paraphrasing tool that avoids AI detection?", answer: "Not a synonym-swapping one. Paraphrasers that only replace words keep the sentence rhythm and structure that detectors measure, so the result still reads as AI. A humanizer rewrites at the sentence level, varying length, order and phrasing, which is what lowers AI scores. AI Free Text Pro's humanizer does this and lets you re-check the result in the same place." },
-  { question: "What is the best free AI paraphraser?", answer: "For avoiding AI detection, one that rewrites structure rather than vocabulary and has a detector built in so you can check the output. AI Free Text Pro gives you both free: 1,000 words a month with no card. For plain rewording of short snippets, QuillBot's free mode is fine." },
+  { question: "What is the best free AI paraphraser?", answer: "For avoiding AI detection, one that rewrites structure rather than vocabulary and has a detector built in so you can check the output. AI Free Text Pro gives you both free: 250 words a month with no card. For plain rewording of short snippets, QuillBot's free mode is fine." },
   { question: "Does QuillBot avoid AI detection?", answer: "Rarely on its own. QuillBot is a strong paraphraser, but its standard modes keep most of the sentence structure, so detectors like Turnitin and GPTZero still flag the text. See our QuillBot vs AI Free Text Pro comparison for test results." },
   { question: "What is a paraphrasing tool?", answer: "A paraphrasing tool rewrites a passage in different words while keeping the original meaning. Basic tools work at the word level, substituting synonyms and reordering clauses. Better tools rewrite at the sentence and paragraph level, changing structure, rhythm and emphasis rather than just vocabulary." },
   { question: "Is using a paraphrasing tool plagiarism?", answer: "Rewording someone else's idea without a citation is still plagiarism, no matter which tool produced the wording. A paraphrasing tool changes the surface, not the ownership of the idea. Paraphrase to make a source readable in your own voice, then cite the source. That combination is legitimate academic practice." },
   { question: "Do paraphrasing tools help you pass AI detection?", answer: "Not reliably. Synonym-level paraphrasing keeps sentence length, clause order and rhythm intact, and those are exactly the features detectors measure. In our March 2026 testing, light paraphrasing moved Turnitin AI scores by only a few percentage points. Structural rewriting moved them substantially." },
-  { question: "What is the best free paraphrasing tool?", answer: "For short snippets, most free tools are interchangeable. What separates them is register control, whether they preserve citations and technical terms, and whether the output reads naturally rather than thesaurus-flavoured. AI Free Text Pro includes 1,000 words free per account with academic, professional, creative and casual registers." },
+  { question: "What is the best free paraphrasing tool?", answer: "For short snippets, most free tools are interchangeable. What separates them is register control, whether they preserve citations and technical terms, and whether the output reads naturally rather than thesaurus-flavoured. AI Free Text Pro includes 250 words free per account with academic, professional, creative and casual registers." },
   { question: "How many words should I change when paraphrasing?", answer: "Word-count rules are the wrong frame. A good paraphrase can share vocabulary with the source and still be original because the sentence architecture and emphasis are yours. A bad paraphrase can change every word and still be too close because the structure is copied intact." },
   { question: "Can a paraphrasing tool preserve citations and technical terms?", answer: "Good ones can, weak ones cannot. The common failure is a tool that treats a defined term such as randomised controlled trial or net promoter score as ordinary prose and swaps in a synonym, quietly changing the meaning. Always re-read technical passages after any automated rewrite." },
   { question: "Does paraphrasing change my similarity score in Turnitin?", answer: "Usually yes, because the similarity index matches strings of text against sources. But the AI writing indicator is a separate measure that is not driven by string matching, so a low similarity score tells you nothing about the AI score. Our guide on similarity versus AI score explains the difference." },
@@ -69,7 +69,7 @@ const Cta = ({ heading, text, label, position }: { heading: string; text: string
       <span>{label}</span>
       <ExternalLink className="w-4 h-4" aria-hidden="true" />
     </a>
-    <p className="text-xs text-muted-foreground mt-3">Free tier includes 1,000 words. No credit card needed.</p>
+    <p className="text-xs text-muted-foreground mt-3">Free tier includes 250 words. No credit card needed.</p>
   </div>
 );
 
@@ -273,7 +273,7 @@ const AIParaphraser = () => {
 
             <Cta
               heading="Start with one paragraph"
-              text="Paste a passage you are stuck on and rewrite it with full register control. First 1,000 words are free."
+              text="Paste a passage you are stuck on and rewrite it with full register control. First 250 words are free."
               label="Rewrite my text now"
               position="final"
             />

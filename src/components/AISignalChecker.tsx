@@ -184,7 +184,7 @@ export function AISignalChecker({ source, title = "Check text for AI writing sig
           </div>
           <p className="text-xs text-muted-foreground">
             This check reads writing style: sentence rhythm, stock phrases, concrete detail. It's a quick screen, not proof
-            of who wrote the text. The detector in the app scores the text with a trained model (free account, 1,000 words a
+            of who wrote the text. The detector in the app scores the text with a trained model (free account, 250 words a
             month).
           </p>
         </div>

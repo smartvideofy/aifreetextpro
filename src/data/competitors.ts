@@ -45,7 +45,7 @@ export const competitors: Record<string, Competitor> = {
       "Limited tone control settings",
     ],
     ourAdvantages: [
-      "1,000 free words per month, no card",
+      "250 free words per month, no card",
       "Free AI detector included",
       "Starts at $4.99/mo (3x cheaper)",
       "Multiple humanization modes with tone presets",
@@ -75,7 +75,7 @@ export const competitors: Record<string, Competitor> = {
       "Higher starting price",
     ],
     ourAdvantages: [
-      "1,000 free words per month",
+      "250 free words per month",
       "Free AI detector with 98% accuracy",
       "Starts at $4.99/mo (66% cheaper)",
       "API access for power users",
@@ -83,10 +83,10 @@ export const competitors: Record<string, Competitor> = {
     faq: [
       { q: "Is AI Free Text Pro better than Phrasly?", a: "On price-per-word, free-tier limits, and the inclusion of a free AI detector, AI Free Text Pro outperforms Phrasly. Bypass quality on Turnitin and GPTZero is similar in our tests." },
       { q: "Does Phrasly work on Turnitin?", a: "Phrasly reduces detection in some cases. AI Free Text Pro produces a 98% Turnitin pass rate in our 2026 benchmark, compared to Phrasly's roughly 90%." },
-      { q: "What is the cheapest Phrasly alternative?", a: "AI Free Text Pro starts at $4.99/mo with 1,000 free words to test before paying." },
+      { q: "What is the cheapest Phrasly alternative?", a: "AI Free Text Pro starts at $4.99/mo with 250 free words to test before paying." },
     ],
     verdict: "AI Free Text Pro is a stronger Phrasly alternative for students who want a free detector and lower monthly cost.",
-    metaDescription: "Phrasly alternative comparison: AI Free Text Pro offers 1,000 free words, a free AI detector, and starts at $4.99/mo. Full Phrasly vs AI Free Text Pro guide.",
+    metaDescription: "Phrasly alternative comparison: AI Free Text Pro offers 250 free words, a free AI detector, and starts at $4.99/mo. Full Phrasly vs AI Free Text Pro guide.",
   },
   bypassgpt: {
     slug: "bypassgpt",
@@ -105,7 +105,7 @@ export const competitors: Record<string, Competitor> = {
       "Higher starting price",
     ],
     ourAdvantages: [
-      "1,000 free words per month, no card",
+      "250 free words per month, no card",
       "Multiple humanization modes",
       "Free AI detector included",
       "Starts at $4.99/mo",
@@ -134,7 +134,7 @@ export const competitors: Record<string, Competitor> = {
       "Slower processing on long texts",
     ],
     ourAdvantages: [
-      "1,000 free words per month",
+      "250 free words per month",
       "Real-time AI detector included free",
       "Five tone presets and three humanization modes",
       "Sub-10-second processing",
@@ -144,7 +144,7 @@ export const competitors: Record<string, Competitor> = {
       { q: "Does Netus AI work on Originality.AI?", a: "Netus AI passes Originality.AI roughly 89% of the time. AI Free Text Pro tested at 98% pass rate against Originality.AI in 2026." },
     ],
     verdict: "AI Free Text Pro outperforms Netus AI on bypass rate, free-tier value, and includes a free detector.",
-    metaDescription: "Netus AI alternative: AI Free Text Pro delivers 98% bypass rate, free AI detector, and 1,000 free words per month starting at $4.99.",
+    metaDescription: "Netus AI alternative: AI Free Text Pro delivers 98% bypass rate, free AI detector, and 250 free words per month starting at $4.99.",
   },
   twixify: {
     slug: "twixify",
@@ -163,7 +163,7 @@ export const competitors: Record<string, Competitor> = {
       "Manual paragraph processing",
     ],
     ourAdvantages: [
-      "1,000 free words per month",
+      "250 free words per month",
       "Built-in AI detector with 98% accuracy",
       "Bulk paragraph processing",
       "Five tone presets",
@@ -173,7 +173,7 @@ export const competitors: Record<string, Competitor> = {
       { q: "Does Twixify bypass Turnitin AI detection?", a: "Twixify reduces flags in many cases. AI Free Text Pro maintains a 98% pass rate against Turnitin's 2026 detector." },
     ],
     verdict: "AI Free Text Pro is the more complete Twixify alternative with a free detector and bulk processing.",
-    metaDescription: "Twixify alternative comparison: AI Free Text Pro offers a free AI detector, 1,000 free words, and bulk processing from $4.99/mo.",
+    metaDescription: "Twixify alternative comparison: AI Free Text Pro offers a free AI detector, 250 free words, and bulk processing from $4.99/mo.",
   },
   humbot: {
     slug: "humbot",
@@ -192,7 +192,7 @@ export const competitors: Record<string, Competitor> = {
       "No API access",
     ],
     ourAdvantages: [
-      "1,000 free words per month",
+      "250 free words per month",
       "Free AI detector",
       "Three humanization modes",
       "Developer API available",
@@ -202,7 +202,7 @@ export const competitors: Record<string, Competitor> = {
       { q: "Does Humbot work on Copyleaks?", a: "Humbot passes Copyleaks roughly 90% of the time. AI Free Text Pro tested at 98% against Copyleaks in 2026." },
     ],
     verdict: "AI Free Text Pro is the stronger Humbot alternative for content teams thanks to API access and a free detector.",
-    metaDescription: "Humbot alternative: AI Free Text Pro delivers 98% bypass, free AI detector, 1,000 free words, and an API. Compare Humbot vs AI Free Text Pro.",
+    metaDescription: "Humbot alternative: AI Free Text Pro delivers 98% bypass, free AI detector, 250 free words, and an API. Compare Humbot vs AI Free Text Pro.",
   },
   "hix-bypass": {
     slug: "hix-bypass",
@@ -218,18 +218,18 @@ export const competitors: Record<string, Competitor> = {
       "Entry plan caps how much text you can paste per request",
     ],
     ourAdvantages: [
-      "1,000 free words every month, no card",
+      "250 free words every month, no card",
       "Detector and humanizer in one workspace",
       "Plans from $4.99/mo",
       "Works in English, Spanish, French, German and Dutch",
     ],
     faq: [
-      { q: "Is AI Free Text Pro a good HIX Bypass alternative?", a: "Yes, especially if you want a free monthly allowance rather than a one-off trial. AI Free Text Pro gives 1,000 free words a month with a built-in AI detector, and paid plans start at $4.99 a month." },
+      { q: "Is AI Free Text Pro a good HIX Bypass alternative?", a: "Yes, especially if you want a free monthly allowance rather than a one-off trial. AI Free Text Pro gives 250 free words a month with a built-in AI detector, and paid plans start at $4.99 a month." },
       { q: "Is HIX Bypass free?", a: "HIX Bypass offers a small free trial; ongoing use needs a paid plan, which third-party listings put at around $14.99 a month on monthly billing. Check its pricing page for the current figures." },
       { q: "Which is cheaper, HIX Bypass or AI Free Text Pro?", a: "AI Free Text Pro. Its paid plans start at $4.99 a month, and the free plan renews every month." },
     ],
     verdict: "Pick AI Free Text Pro if you want a free plan that renews monthly, a detector in the same place, and a lower starting price. HIX Bypass makes sense mainly if you already pay for the wider HIX.AI suite.",
-    metaDescription: "HIX Bypass alternative: AI Free Text Pro gives 1,000 free words every month, a built-in AI detector, and plans from $4.99/mo. Compare free limits, price and features.",
+    metaDescription: "HIX Bypass alternative: AI Free Text Pro gives 250 free words every month, a built-in AI detector, and plans from $4.99/mo. Compare free limits, price and features.",
   },
   stealthgpt: {
     slug: "stealthgpt",
@@ -245,18 +245,18 @@ export const competitors: Record<string, Competitor> = {
       "Detector is secondary to the writing tools",
     ],
     ourAdvantages: [
-      "1,000 free words every month, no card",
+      "250 free words every month, no card",
       "Free AI detector included",
       "Plans from $4.99/mo",
       "Tone modes for academic, professional, casual and creative writing",
     ],
     faq: [
-      { q: "Is AI Free Text Pro a good StealthGPT alternative?", a: "Yes. AI Free Text Pro pairs a humanizer with a free AI detector, gives 1,000 free words a month, and starts at $4.99 a month." },
+      { q: "Is AI Free Text Pro a good StealthGPT alternative?", a: "Yes. AI Free Text Pro pairs a humanizer with a free AI detector, gives 250 free words a month, and starts at $4.99 a month." },
       { q: "Is StealthGPT free?", a: "StealthGPT has a limited free tier; published limits vary between sources, and full use requires a paid plan starting at roughly $15 a month. Check its pricing page for current limits." },
       { q: "Can I check my text for AI after humanizing?", a: "Yes. With AI Free Text Pro the detector sits in the same workspace, so you can rewrite and re-check without switching tools." },
     ],
     verdict: "AI Free Text Pro is the better value if you want a humanizer and detector together at a lower price. StealthGPT suits users who mainly want its long-form writing features.",
-    metaDescription: "StealthGPT alternative: compare free limits, pricing and features. AI Free Text Pro gives 1,000 free words a month, a built-in AI detector and plans from $4.99/mo.",
+    metaDescription: "StealthGPT alternative: compare free limits, pricing and features. AI Free Text Pro gives 250 free words a month, a built-in AI detector and plans from $4.99/mo.",
   },
   "walter-writes": {
     slug: "walter-writes",
@@ -272,18 +272,18 @@ export const competitors: Record<string, Competitor> = {
       "Detector access on the free trial is time-limited",
     ],
     ourAdvantages: [
-      "1,000 free words every month, no card",
+      "250 free words every month, no card",
       "Monthly billing from $4.99/mo",
       "Detector and humanizer share one workspace",
       "Five languages supported",
     ],
     faq: [
-      { q: "Is AI Free Text Pro a good Walter Writes alternative?", a: "Yes, if you want a free plan that renews every month and monthly billing. AI Free Text Pro gives 1,000 free words a month and starts at $4.99 a month." },
+      { q: "Is AI Free Text Pro a good Walter Writes alternative?", a: "Yes, if you want a free plan that renews every month and monthly billing. AI Free Text Pro gives 250 free words a month and starts at $4.99 a month." },
       { q: "Is Walter Writes AI free?", a: "Walter Writes offers a one-time free trial of about 300 humanizer words; ongoing use needs a paid plan, mostly billed annually. Check its pricing page for current plans." },
       { q: "Does AI Free Text Pro bill monthly?", a: "Yes. Every paid plan is available monthly, with a discount if you choose yearly billing." },
     ],
     verdict: "AI Free Text Pro is the easier choice if you want to keep using a free plan or pay month to month. Walter Writes suits heavy users happy to commit to a yearly plan.",
-    metaDescription: "Walter Writes AI alternative: AI Free Text Pro gives 1,000 free words every month, monthly billing from $4.99/mo and a built-in AI detector. Compare limits and price.",
+    metaDescription: "Walter Writes AI alternative: AI Free Text Pro gives 250 free words every month, monthly billing from $4.99/mo and a built-in AI detector. Compare limits and price.",
   },
   smodin: {
     slug: "smodin",
@@ -300,17 +300,17 @@ export const competitors: Record<string, Competitor> = {
     ],
     ourAdvantages: [
       "Built only for AI detection and humanizing",
-      "1,000 free words every month, no card",
+      "250 free words every month, no card",
       "Plans from $4.99/mo",
       "Sentence-level AI detection with the humanizer alongside",
     ],
     faq: [
-      { q: "Is AI Free Text Pro a good Smodin alternative?", a: "Yes, if your main job is checking and humanizing AI text. AI Free Text Pro focuses on exactly that, with 1,000 free words a month and plans from $4.99." },
+      { q: "Is AI Free Text Pro a good Smodin alternative?", a: "Yes, if your main job is checking and humanizing AI text. AI Free Text Pro focuses on exactly that, with 250 free words a month and plans from $4.99." },
       { q: "Is Smodin's AI humanizer free?", a: "Smodin has a small free allowance across its tools; regular use of the humanizer needs a paid plan. Check its pricing page for current limits." },
       { q: "Do I need a whole writing suite to humanize text?", a: "No. If you only need detection and humanizing, a focused tool costs less and keeps the workflow simple." },
     ],
     verdict: "Choose AI Free Text Pro for a focused, lower-cost detector and humanizer. Choose Smodin if you want many writing tools in one subscription.",
-    metaDescription: "Smodin alternative for humanizing AI text: AI Free Text Pro gives 1,000 free words a month, a built-in AI detector and plans from $4.99/mo. Compare features and price.",
+    metaDescription: "Smodin alternative for humanizing AI text: AI Free Text Pro gives 250 free words a month, a built-in AI detector and plans from $4.99/mo. Compare features and price.",
   },
 };
 

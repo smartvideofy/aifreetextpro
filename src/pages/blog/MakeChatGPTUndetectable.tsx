@@ -375,7 +375,7 @@ const MakeChatGPTUndetectable = () => {
                   In 2025, making AI writing undetectable is a solved problem, if you use the right tools. AI Free Text Pro gives you the fastest, most reliable method to transform any AI-generated content into undetectable human writing.
                 </p>
                 <p>
-                  Stop spending hours manually editing. Stop worrying if your content will pass. Start with 1,000 free words and see the difference.
+                  Stop spending hours manually editing. Stop worrying if your content will pass. Start with 250 free words and see the difference.
                 </p>
               </div>
 

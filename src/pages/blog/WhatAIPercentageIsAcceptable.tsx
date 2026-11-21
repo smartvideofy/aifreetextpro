@@ -11,9 +11,9 @@ const Cta = makeCta("ai_percentage_acceptable");
 const meta: GuideMeta = {
   path: "/blog/what-ai-percentage-is-acceptable",
   campaign: "ai_percentage_acceptable",
-  title: "What AI Percentage Is Acceptable? Reading AI Scores in 2026",
+  title: "What AI Percentage Is Acceptable on Turnitin? (2026 Guide)",
   h1: "What AI Percentage Is Acceptable? How to Read an AI Detection Score (2026)",
-  description: "What AI percentage is acceptable on Turnitin or GPTZero? Why there is no universal cutoff, what a score actually means, and what to do if yours looks high.",
+  description: "What AI percentage is acceptable? There is no universal cutoff. See how Turnitin and GPTZero scores are read, why they differ, and what to do if yours is high.",
   social: "There is no universal safe AI score. Here is what the percentage actually measures and what to do if yours is high.",
   keywords: "what ai percentage is acceptable, acceptable ai score, how much ai is allowed in an essay, turnitin ai score acceptable, what does ai score mean",
   crumb: "What AI Percentage Is Acceptable?",

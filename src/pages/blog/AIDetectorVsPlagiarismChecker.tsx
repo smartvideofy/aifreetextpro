@@ -11,9 +11,9 @@ const Cta = makeCta("ai_detector_vs_plagiarism");
 const meta: GuideMeta = {
   path: "/blog/ai-detector-vs-plagiarism-checker",
   campaign: "ai_detector_vs_plagiarism",
-  title: "AI Detector vs Plagiarism Checker: What Each One Catches",
+  title: "AI Detector vs Plagiarism Checker: Key Differences (2026)",
   h1: "AI Detector vs Plagiarism Checker: What Each One Actually Catches (2026)",
-  description: "AI detector vs plagiarism checker: how each works, what they miss, why a paper can pass one and fail the other, and when you need both before you submit.",
+  description: "AI detector vs plagiarism checker: one finds copied text, the other estimates AI writing. See why papers pass one and fail the other, and when to use both.",
   social: "One looks for copied text, the other for machine-written text. Here is how they differ and why you might need both.",
   keywords: "ai detector vs plagiarism checker, plagiarism checker vs ai checker, is ai detection the same as plagiarism, does plagiarism checker detect ai, ai plagiarism",
   crumb: "AI Detector vs Plagiarism Checker",

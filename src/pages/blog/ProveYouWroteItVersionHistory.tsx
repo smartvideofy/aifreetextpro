@@ -11,9 +11,9 @@ const Cta = makeCta("prove_you_wrote_it");
 const meta: GuideMeta = {
   path: "/blog/how-to-prove-you-didnt-use-ai",
   campaign: "prove_you_wrote_it",
-  title: "How to Prove You Didn't Use AI: Version History and Evidence",
+  title: "How to Prove You Didn't Use AI: 5 Types of Evidence (2026)",
   h1: "How to Prove You Didn't Use AI: Build Your Evidence Before You Need It (2026)",
-  description: "How to prove you didn't use AI: use version history in Google Docs and Word, keep drafts and notes, and present your writing process if an AI detector flags you.",
+  description: "How to prove you didn't use AI: use Google Docs or Word version history, drafts, notes and sources to show your writing process if a detector flags your work.",
   social: "The best defense against a false AI flag is evidence of your writing process. Here is how to build it as you write.",
   keywords: "how to prove you didn't use ai, prove you wrote your essay, google docs version history ai, show writing process, prove essay not ai generated",
   crumb: "How to Prove You Didn't Use AI",

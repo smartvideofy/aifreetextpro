@@ -198,6 +198,7 @@ const WhatAIDetectorDoTeachersUse = lazy(() => import("./pages/blog/WhatAIDetect
 const FalselyAccusedOfUsingAI = lazy(() => import("./pages/blog/FalselyAccusedOfUsingAI"));
 const QuillBotAIDetectorReview = lazy(() => import("./pages/blog/QuillBotAIDetectorReview"));
 const DoesParaphrasingAvoidAIDetection = lazy(() => import("./pages/blog/DoesParaphrasingAvoidAIDetection"));
+const ParaphrasingToolToAvoidAIDetection = lazy(() => import("./pages/blog/ParaphrasingToolToAvoidAIDetection"));
 const CollegesThatTurnedOffAIDetection = lazy(() => import("./pages/blog/CollegesThatTurnedOffAIDetection"));
 const EmDashAIWritingTells = lazy(() => import("./pages/blog/EmDashAIWritingTells"));
 const PangramAIDetectorReview = lazy(() => import("./pages/blog/PangramAIDetectorReview"));
@@ -428,6 +429,7 @@ const App = () => (
               <Route path="/blog/falsely-accused-of-using-ai" element={<FalselyAccusedOfUsingAI />} />
               <Route path="/blog/quillbot-ai-detector-review" element={<QuillBotAIDetectorReview />} />
               <Route path="/blog/does-paraphrasing-avoid-ai-detection" element={<DoesParaphrasingAvoidAIDetection />} />
+              <Route path="/blog/paraphrasing-tool-to-avoid-ai-detection" element={<ParaphrasingToolToAvoidAIDetection />} />
               <Route path="/blog/colleges-that-turned-off-ai-detection" element={<CollegesThatTurnedOffAIDetection />} />
               <Route path="/blog/em-dash-ai-writing-tells" element={<EmDashAIWritingTells />} />
               <Route path="/blog/pangram-ai-detector-review" element={<PangramAIDetectorReview />} />

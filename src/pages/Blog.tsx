@@ -42,6 +42,9 @@ export const blogPosts = [
     slug: "colleges-that-turned-off-ai-detection", title: "Colleges That Turned Off AI Detection: 2026 List", excerpt: "Universities that switched off Turnitin's AI detector, with dates, reasons and links to each official announcement, and what it means for students.", date: "2026-11-05", readTime: "8 min read", category: "Academic"
   },
   {
+    slug: "paraphrasing-tool-to-avoid-ai-detection", title: "Paraphrasing Tool to Avoid AI Detection: What Works in 2026", excerpt: "Why synonym-swapping paraphrasers still get flagged, how humanizing differs, and a safer workflow to reduce false AI flags.", date: "2026-11-21", readTime: "10 min read", category: "Guide"
+  },
+  {
     slug: "does-paraphrasing-avoid-ai-detection", title: "Does Paraphrasing Avoid AI Detection? What the Research Shows (2026)", excerpt: "What research on paraphrase attacks found, how Turnitin flags AI-paraphrased and bypassed text, and where the ethical line sits.", date: "2026-11-05", readTime: "9 min read", category: "Educational"
   },
   {

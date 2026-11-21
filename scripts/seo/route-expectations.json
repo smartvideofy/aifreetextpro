@@ -71,6 +71,7 @@
     { "path": "/blog/what-ai-detector-do-teachers-use", "titleMustInclude": ["Teachers"], "descriptionMustInclude": ["teachers"], "requiredJsonLdTypes": ["Article", "BreadcrumbList"] },
     { "path": "/blog/falsely-accused-of-using-ai", "titleMustInclude": ["Falsely Accused"], "descriptionMustInclude": ["AI"], "requiredJsonLdTypes": ["Article", "BreadcrumbList"] },
     { "path": "/blog/quillbot-ai-detector-review", "titleMustInclude": ["QuillBot"], "descriptionMustInclude": ["QuillBot"], "requiredJsonLdTypes": ["Article", "BreadcrumbList"] },
+    { "path": "/blog/paraphrasing-tool-to-avoid-ai-detection", "titleMustInclude": ["Paraphrasing"], "descriptionMustInclude": ["paraphras"], "requiredJsonLdTypes": ["Article", "BreadcrumbList"] },
     { "path": "/blog/does-paraphrasing-avoid-ai-detection", "titleMustInclude": ["Paraphrasing"], "descriptionMustInclude": ["paraphras"], "requiredJsonLdTypes": ["Article", "BreadcrumbList"] },
     { "path": "/blog/colleges-that-turned-off-ai-detection", "titleMustInclude": ["Colleges"], "descriptionMustInclude": ["Turnitin"], "requiredJsonLdTypes": ["Article", "BreadcrumbList"] },
     { "path": "/blog/em-dash-ai-writing-tells", "titleMustInclude": ["Em Dash"], "descriptionMustInclude": ["em dash"], "requiredJsonLdTypes": ["Article", "BreadcrumbList"] },

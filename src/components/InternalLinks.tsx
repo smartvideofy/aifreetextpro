@@ -212,6 +212,7 @@ const blogPosts = [
   { title: "Falsely Accused of Using AI?", href: "/blog/falsely-accused-of-using-ai" },
   { title: "QuillBot AI Detector Review", href: "/blog/quillbot-ai-detector-review" },
   { title: "Does Paraphrasing Avoid AI Detection?", href: "/blog/does-paraphrasing-avoid-ai-detection" },
+  { title: "Paraphrasing Tool to Avoid AI Detection", href: "/blog/paraphrasing-tool-to-avoid-ai-detection" },
   { title: "Colleges That Turned Off AI Detection", href: "/blog/colleges-that-turned-off-ai-detection" },
   { title: "Em Dashes and AI Writing Tells", href: "/blog/em-dash-ai-writing-tells" },
   { title: "Pangram AI Detector Review", href: "/blog/pangram-ai-detector-review" },

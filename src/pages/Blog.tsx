@@ -42,6 +42,15 @@ export const blogPosts = [
     slug: "colleges-that-turned-off-ai-detection", title: "Colleges That Turned Off AI Detection: 2026 List", excerpt: "Universities that switched off Turnitin's AI detector, with dates, reasons and links to each official announcement, and what it means for students.", date: "2026-11-05", readTime: "8 min read", category: "Academic"
   },
   {
+    slug: "ai-detector-vs-plagiarism-checker", title: "AI Detector vs Plagiarism Checker: What Each One Catches", excerpt: "How plagiarism checkers and AI detectors differ, why a paper can pass one and fail the other, and when to use both.", date: "2026-11-21", readTime: "9 min read", category: "Educational"
+  },
+  {
+    slug: "what-ai-percentage-is-acceptable", title: "What AI Percentage Is Acceptable? Reading AI Scores in 2026", excerpt: "Why there is no universal safe AI score, how instructors read score ranges, and what to do if yours looks high.", date: "2026-11-21", readTime: "9 min read", category: "Academic"
+  },
+  {
+    slug: "how-to-prove-you-didnt-use-ai", title: "How to Prove You Didn't Use AI: Version History and Evidence", excerpt: "Use version history, drafts and notes to show your writing process if an AI detector ever flags your work.", date: "2026-11-21", readTime: "9 min read", category: "Academic"
+  },
+  {
     slug: "paraphrasing-tool-to-avoid-ai-detection", title: "Paraphrasing Tool to Avoid AI Detection: What Works in 2026", excerpt: "Why synonym-swapping paraphrasers still get flagged, how humanizing differs, and a safer workflow to reduce false AI flags.", date: "2026-11-21", readTime: "10 min read", category: "Guide"
   },
   {
